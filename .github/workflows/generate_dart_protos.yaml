@@ -1,0 +1,38 @@
+name: Dart Workflow
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 2 * * *" # Runs at 2 AM UTC every day
+
+jobs:
+  dart-tasks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable # You can specify a Dart SDK version here
+
+      - name: Get dependencies
+        run: dart pub get
+
+      - name: Cloning the Google Cloud Events proto definitions
+        run: dart run scripts/clone_cloudevent_protos.dart
+
+      - name: Generating the Dart protobufs definitions
+        run: dart run scripts/generate_cloudevent_protos.dart
+
+      - name: Removing the Google Cloud Events .proto files
+        run: dart run scripts/remove_cloudevent_protos.dart
+
+      - name: Generating the exports for the Dart Cloud Events SDK
+        run: dart run scripts/generate_cloudevent_library.dart
+
+      - name: Run dart fix to ensure the code is properly formatted
+        run: dart fix --apply
