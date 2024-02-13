@@ -8,7 +8,8 @@ void setupLogging() {
 
   // Configure a listener for the root logger
   Logger.root.onRecord.listen((LogRecord rec) {
-    // Instead of print, use stdout and stderr for log messages based on severity
+    // Instead of print, use stdout and stderr for log messages based on
+    // severity
     if (rec.level >= Level.SEVERE) {
       stderr.writeln('${rec.level.name}: ${rec.time}: ${rec.message}');
     } else {
@@ -47,7 +48,7 @@ Future<void> generateDartProtos() async {
 
   // Dynamically add .proto files to the protoc command
   final directory = Directory(protosPath);
-  if (await directory.exists()) {
+  if (directory.existsSync()) {
     await for (final entity
         in directory.list(recursive: true, followLinks: false)) {
       if (entity.path.endsWith('.proto')) {

@@ -21,9 +21,11 @@ Future<void> cloneCloudEvents() async {
   const repoUrl = 'git@github.com:googleapis/google-cloudevents.git';
   const cloneDirectory = 'cloudevents';
 
-  if (await Directory(cloneDirectory).exists()) {
+  if (Directory(cloneDirectory).existsSync()) {
     _logger.info(
-        'The directory "$cloneDirectory" already exists. Skipping clone operation.',);
+      'The directory "$cloneDirectory" already exists. '
+      'Skipping clone operation.',
+    );
     return;
   }
 

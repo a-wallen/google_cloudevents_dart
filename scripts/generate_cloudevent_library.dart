@@ -57,8 +57,6 @@ Future<Set<String>> analyzeFile(String filePath) async {
 
 String generateExports(Map<String, Set<String>> fileSymbols) {
   final exports = StringBuffer();
-  final exportedSymbols = <String>{}; // Tracks symbols that have been exported
-
   fileSymbols.forEach((filePath, symbols) {
     final relativeFilePath = Uri.file(filePath)
         .path
@@ -66,13 +64,8 @@ String generateExports(Map<String, Set<String>> fileSymbols) {
         .replaceAll(r'\', '/')
         .replaceAll('lib/', '/');
 
-    final symbolsToExport =
-        symbols.where((s) => !exportedSymbols.contains(s)).toSet();
-
-    if (symbolsToExport.isNotEmpty) {
-      exports.writeln(
-          "export '$relativeFilePath' show ${symbolsToExport.join(', ')};",);
-      exportedSymbols.addAll(symbolsToExport); // Mark these symbols as exported
+    if (symbols.isNotEmpty) {
+      exports.writeln("export '$relativeFilePath' show ${symbols.join(', ')};");
     }
   });
 
@@ -80,10 +73,13 @@ String generateExports(Map<String, Set<String>> fileSymbols) {
 }
 
 void setupLogging() {
-  Logger.root.level = Level.ALL; // Adjust log level as needed
+  Logger.root.level = Level.INFO; // Set the global log level
   Logger.root.onRecord.listen((record) {
-    // Log format can be adjusted as needed
-    print(
-        '${record.level.name}: ${record.time}: ${record.loggerName}: ${record.message}',);
+    // Configure logging output here
+    final message = '${record.level.name}: ${record.time}: ${record.message}';
+    // Depending on the environment or log level, you could decide where to log.
+    // For example, you could write to a file for higher log levels or use
+    // stdout for others.
+    stdout.writeln(message); // Using stdout instead of print
   });
 }

@@ -28,14 +28,6 @@ For detailed documentation on all features and functionalities, please visit the
 1. How To Use Google Cloud Events (Triggers and Recievers of Cloud Events in Google Cloud Platform): [Event Driven Architectures With Eventarc](https://cloud.google.com/datastore/docs/eventarc) and [Eventarc Overview](https://cloud.google.com/eventarc/docs/overview). One way that Google makes it easier to register triggers and recievers for Cloud Events in Google Cloud Platform (GCP).
 1. [How To Deploy An Eventarc Reciever Service To Cloud Run](https://cloud.google.com/eventarc/docs/run/create-trigger-storage-gcloud). For now the easiest way to write a reciever in Dart looks like Cloud Run.
 
-## Examples
-
-Find more examples in the `examples` directory of this package, demonstrating various use cases and features.
-
-## Contributing
-
-Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) before submitting pull requests.
-
 ## License
 
 This SDK is released under the [MIT License](LICENSE).

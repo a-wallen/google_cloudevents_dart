@@ -16,7 +16,7 @@ void setupLogging() {
 
 Future<void> removeCloudeventsDir() async {
   final directory = Directory('cloudevents');
-  if (await directory.exists()) {
+  if (directory.existsSync()) {
     try {
       await directory.delete(recursive: true);
       logger.info('The "cloudevents" directory has been successfully removed.');
