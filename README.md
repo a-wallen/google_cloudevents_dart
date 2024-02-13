@@ -1,62 +1,45 @@
-# Google Cloudevents Dart
+# Google Cloud Events SDK for Dart
 
-[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
-[![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
-[![License: MIT][license_badge]][license_link]
+This Dart package provides developers with the tools necessary to easily interact with Google Cloud Events, facilitating the integration of Google Cloud services into Dart and Flutter applications. By abstracting the complexity of event handling, this SDK enables you to subscribe to, manage, and dispatch events from Google Cloud services with minimal effort.
 
-A Very Good Project created by Very Good CLI.
+## Features
 
-## Installation 💻
+- **Serialize and Deserialize Cloud Events From Protobuf Format** You can use this library with the Dart server framework of your choice in order to handle EventArc events in a Cloud Run instance.
+- _TODO_ Should this repo should follow [the SDK requirements](https://github.com/cloudevents/spec/blob/v1.0.1/SDK.md) so that it can be officially recognized?
 
-**❗ In order to start using Google Cloudevents Dart you must have the [Dart SDK][dart_install_link] installed on your machine.**
+## Installation
 
-Install via `dart pub add`:
+Add `google_cloud_events` to your `pubspec.yaml` file:
 
-```sh
-dart pub add google_cloudevents_dart
+```yaml
+dependencies:
+  google_cloudevents_dart: ^1.0.0
 ```
 
----
+Then, run `pub get` or `flutter pub get` to install the package.
 
-## Continuous Integration 🤖
+## Documentation
 
-Google Cloudevents Dart comes with a built-in [GitHub Actions workflow][github_actions_link] powered by [Very Good Workflows][very_good_workflows_link] but you can also add your preferred CI/CD solution.
+For detailed documentation on all features and functionalities, please visit the following documentation.
 
-Out of the box, on each pull request and push, the CI `formats`, `lints`, and `tests` the code. This ensures the code remains consistent and behaves correctly as you add functionality or make changes. The project uses [Very Good Analysis][very_good_analysis_link] for a strict set of analysis options used by our team. Code coverage is enforced using the [Very Good Workflows][very_good_coverage_link].
+1. What Are Cloud Events? [Cloud Events](https://cloudevents.io/) Describes the specificiation that Google Cloud Events is derived from.
+1. How Google Implements Cloud Events: [The Google Cloud Events Format (Detailed)](https://cloud.google.com/eventarc/docs/cloudevents#pubsub_1) Describes the packet
+1. How Does Google Send a Cloud Event? [Protocol Buffers](https://protobuf.dev/getting-started/darttutorial/) The way that Google serializes the data that it sends to cloud event recievers. [Bonus](https://github.com/googleapis/google-cloudevents/tree/main/proto) The object/event definitions are contained in this folder in the google-cloudevents repository.
+1. How To Use Google Cloud Events (Triggers and Recievers of Cloud Events in Google Cloud Platform): [Event Driven Architectures With Eventarc](https://cloud.google.com/datastore/docs/eventarc) and [Eventarc Overview](https://cloud.google.com/eventarc/docs/overview). One way that Google makes it easier to register triggers and recievers for Cloud Events in Google Cloud Platform (GCP).
+1. [How To Deploy An Eventarc Reciever Service To Cloud Run](https://cloud.google.com/eventarc/docs/run/create-trigger-storage-gcloud). For now the easiest way to write a reciever in Dart looks like Cloud Run.
 
----
+## Examples
 
-## Running Tests 🧪
+Find more examples in the `examples` directory of this package, demonstrating various use cases and features.
 
-To run all unit tests:
+## Contributing
 
-```sh
-dart pub global activate coverage 1.2.0
-dart test --coverage=coverage
-dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info
-```
+Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) before submitting pull requests.
 
-To view the generated coverage report you can use [lcov](https://github.com/linux-test-project/lcov).
+## License
 
-```sh
-# Generate Coverage Report
-genhtml coverage/lcov.info -o coverage/
+This SDK is released under the [MIT License](LICENSE).
 
-# Open Coverage Report
-open coverage/index.html
-```
+## Special Thanks
 
-[dart_install_link]: https://dart.dev/get-dart
-[github_actions_link]: https://docs.github.com/en/actions/learn-github-actions
-[license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[license_link]: https://opensource.org/licenses/MIT
-[logo_black]: https://raw.githubusercontent.com/VGVentures/very_good_brand/main/styles/README/vgv_logo_black.png#gh-light-mode-only
-[logo_white]: https://raw.githubusercontent.com/VGVentures/very_good_brand/main/styles/README/vgv_logo_white.png#gh-dark-mode-only
-[mason_link]: https://github.com/felangel/mason
-[very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
-[very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
-[very_good_coverage_link]: https://github.com/marketplace/actions/very-good-coverage
-[very_good_ventures_link]: https://verygood.ventures
-[very_good_ventures_link_light]: https://verygood.ventures#gh-light-mode-only
-[very_good_ventures_link_dark]: https://verygood.ventures#gh-dark-mode-only
-[very_good_workflows_link]: https://github.com/VeryGoodOpenSource/very_good_workflows
+Special thanks to Very Good Ventures (VGV) for being leaders in Dart/Flutter development. We used the `very_good_cli` to help generate the boilerplate for this package. We also recommend trying `dart_frog` for developing your first dart server application.
