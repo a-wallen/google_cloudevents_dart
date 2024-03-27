@@ -1,21 +1,21 @@
 import 'dart:io';
+
 import 'package:analyzer/dart/analysis/features.dart';
 import 'package:analyzer/dart/analysis/utilities.dart';
 import 'package:analyzer/dart/ast/ast.dart';
 import 'package:logging/logging.dart';
+import 'package:path/path.dart' as p;
 
 final logger = Logger('DartExportsGenerator');
 
 void main(List<String> arguments) async {
   setupLogging();
-  const target = 'lib/src/generated';
-  final lib = File('lib/google_cloudevents_dart.dart');
+  const libDirectoryPath = 'lib';
+  const targetDirectory = 'lib/src';
 
-  final fileSymbols = await analyzeDirectory(target);
-  final exportsContent = generateExports(fileSymbols);
-
-  await lib.writeAsString(exportsContent);
-  logger.info('Exported symbols to ${lib.path}');
+  final fileSymbols = await analyzeDirectory(targetDirectory);
+  await generateLibraryFiles(fileSymbols, libDirectoryPath);
+  logger.info('Exported symbols to library files');
 }
 
 Future<Map<String, Set<String>>> analyzeDirectory(String directoryPath) async {
@@ -55,31 +55,50 @@ Future<Set<String>> analyzeFile(String filePath) async {
   return symbols;
 }
 
-String generateExports(Map<String, Set<String>> fileSymbols) {
-  final exports = StringBuffer();
-  fileSymbols.forEach((filePath, symbols) {
-    final relativeFilePath = Uri.file(filePath)
-        .path
-        .replaceFirst('${Uri.file(Directory.current.path).path}/', '')
-        .replaceAll(r'\', '/')
-        .replaceAll('lib/', '/');
+Future<void> generateLibraryFiles(
+    Map<String, Set<String>> fileSymbols, String libDirectoryPath) async {
+  final libFiles = <String, StringBuffer>{};
 
-    if (symbols.isNotEmpty) {
-      exports.writeln("export '$relativeFilePath' show ${symbols.join(', ')};");
+  fileSymbols.forEach((filePath, symbols) {
+    if (symbols.isEmpty) {
+      // Skip files that do not have any symbols to export
+      return;
+    }
+
+    final relativeFilePath = p.relative(filePath, from: libDirectoryPath);
+    final normalizedPath = p.normalize(relativeFilePath);
+    final pathParts = p.split(normalizedPath).where((part) => part != 'src');
+
+    if (pathParts.isNotEmpty) {
+      final libraryPath =
+          pathParts.take(pathParts.length - 1).join(p.separator);
+      final libraryFilePath = p.join(libDirectoryPath, '$libraryPath.dart');
+
+      libFiles.putIfAbsent(libraryFilePath, () => StringBuffer());
+
+      final libFileDirectory = p.joinAll(pathParts.take(pathParts.length - 1));
+
+      final srcReferencePath =
+          p.relative(normalizedPath, from: '$libFileDirectory/..');
+
+      libFiles[libraryFilePath]!
+          .writeln("export '$srcReferencePath' show ${symbols.join(', ')};");
     }
   });
 
-  return exports.toString();
+  // Write each library file
+  for (final filePath in libFiles.keys) {
+    final file = File(filePath);
+    await file.create(recursive: true);
+    await file.writeAsString(libFiles[filePath]!.toString());
+    logger.info('Created library file: $filePath');
+  }
 }
 
 void setupLogging() {
-  Logger.root.level = Level.INFO; // Set the global log level
+  Logger.root.level = Level.INFO;
   Logger.root.onRecord.listen((record) {
-    // Configure logging output here
     final message = '${record.level.name}: ${record.time}: ${record.message}';
-    // Depending on the environment or log level, you could decide where to log.
-    // For example, you could write to a file for higher log levels or use
-    // stdout for others.
-    stdout.writeln(message); // Using stdout instead of print
+    stdout.writeln(message);
   });
 }
