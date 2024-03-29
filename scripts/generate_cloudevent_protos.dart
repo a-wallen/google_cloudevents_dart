@@ -1,4 +1,5 @@
 import 'dart:io';
+
 import 'package:logging/logging.dart';
 
 final logger = Logger('GenerateProtosLogger');
@@ -37,9 +38,9 @@ Future<void> generateDartProtos() async {
   }
 
   const protosPath = './cloudevents';
-  const outputPath = './lib/src/generated';
+  const outputPath = './lib/src';
   final protocCommand = [
-    './cloudevents/tmp/bin/protoc.exe',
+    'protoc',
     '-I$protosPath/proto',
     '-I$protosPath/third_party/googleapis',
     '-I$protosPath/tmp/include',
@@ -59,6 +60,13 @@ Future<void> generateDartProtos() async {
 
   final result =
       await Process.run(protocCommand.first, protocCommand.sublist(1));
+
+  // Move the generated files up a directory
+  await Process.run(
+    'bash',
+    ['-c', 'mv lib/src/google/* lib/src/ && rmdir lib/src/google'],
+  );
+
   if (result.exitCode != 0) {
     logger.severe('Error running protoc: ${result.stderr}');
   } else {

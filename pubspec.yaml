@@ -1,6 +1,6 @@
 name: google_cloudevents_dart
 description: An SDK for working with CloudEvents in Dart.
-version: 0.0.1+2
+version: 0.0.2
 repository: https://github.com/a-wallen/google_cloudevents_dart.git
 platforms:
   android:
@@ -15,6 +15,7 @@ environment:
 
 dev_dependencies:
   mocktail: ^1.0.0
+  path: ^1.9.0
   test: ^1.19.2
   very_good_analysis: ^5.1.0
 dependencies:
