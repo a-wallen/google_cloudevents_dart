@@ -18,6 +18,10 @@ dependencies:
 
 Then, run `pub get` or `flutter pub get` to install the package.
 
+## Usage
+
+For an example of using this package in a server application, see the example in this package.
+
 ## Documentation
 
 For detailed documentation on all features and functionalities, please visit the following documentation.
