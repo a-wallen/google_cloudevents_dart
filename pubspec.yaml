@@ -1,5 +1,5 @@
 name: google_cloudevents_dart
-description: An SDK for working with CloudEvents in Dart.
+description: This Dart package provides developers with the tools necessary to easily interact with Google Cloud Events, facilitating the integration of Google Cloud services into Dart and Flutter applications. By abstracting the complexity of event handling, this SDK enables you to subscribe to, manage, and dispatch events from Google Cloud services with minimal effort.
 version: 0.0.2
 repository: https://github.com/a-wallen/google_cloudevents_dart.git
 platforms:
