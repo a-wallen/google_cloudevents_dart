@@ -1,3 +1,8 @@
+## 0.0.3
+
+- Format source files.
+- Add longer description to pubspec.yaml to pass pub.dev analysis.
+
 ## 0.0.2
 
 > Note: This release has breaking changes.
