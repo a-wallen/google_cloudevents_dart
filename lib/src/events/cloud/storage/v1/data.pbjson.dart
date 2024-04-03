@@ -18,43 +18,108 @@ const StorageObjectData$json = {
   '1': 'StorageObjectData',
   '2': [
     {'1': 'content_encoding', '3': 1, '4': 1, '5': 9, '10': 'contentEncoding'},
-    {'1': 'content_disposition', '3': 2, '4': 1, '5': 9, '10': 'contentDisposition'},
+    {
+      '1': 'content_disposition',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'contentDisposition'
+    },
     {'1': 'cache_control', '3': 3, '4': 1, '5': 9, '10': 'cacheControl'},
     {'1': 'content_language', '3': 5, '4': 1, '5': 9, '10': 'contentLanguage'},
     {'1': 'metageneration', '3': 6, '4': 1, '5': 3, '10': 'metageneration'},
-    {'1': 'time_deleted', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timeDeleted'},
+    {
+      '1': 'time_deleted',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timeDeleted'
+    },
     {'1': 'content_type', '3': 8, '4': 1, '5': 9, '10': 'contentType'},
     {'1': 'size', '3': 9, '4': 1, '5': 3, '10': 'size'},
-    {'1': 'time_created', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timeCreated'},
+    {
+      '1': 'time_created',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timeCreated'
+    },
     {'1': 'crc32c', '3': 11, '4': 1, '5': 9, '10': 'crc32c'},
     {'1': 'component_count', '3': 12, '4': 1, '5': 5, '10': 'componentCount'},
     {'1': 'md5_hash', '3': 13, '4': 1, '5': 9, '10': 'md5Hash'},
     {'1': 'etag', '3': 14, '4': 1, '5': 9, '10': 'etag'},
-    {'1': 'updated', '3': 15, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updated'},
+    {
+      '1': 'updated',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updated'
+    },
     {'1': 'storage_class', '3': 16, '4': 1, '5': 9, '10': 'storageClass'},
     {'1': 'kms_key_name', '3': 17, '4': 1, '5': 9, '10': 'kmsKeyName'},
-    {'1': 'time_storage_class_updated', '3': 18, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timeStorageClassUpdated'},
+    {
+      '1': 'time_storage_class_updated',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timeStorageClassUpdated'
+    },
     {'1': 'temporary_hold', '3': 19, '4': 1, '5': 8, '10': 'temporaryHold'},
-    {'1': 'retention_expiration_time', '3': 20, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'retentionExpirationTime'},
-    {'1': 'metadata', '3': 21, '4': 3, '5': 11, '6': '.google.events.cloud.storage.v1.StorageObjectData.MetadataEntry', '10': 'metadata'},
+    {
+      '1': 'retention_expiration_time',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'retentionExpirationTime'
+    },
+    {
+      '1': 'metadata',
+      '3': 21,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.storage.v1.StorageObjectData.MetadataEntry',
+      '10': 'metadata'
+    },
     {'1': 'event_based_hold', '3': 29, '4': 1, '5': 8, '10': 'eventBasedHold'},
     {'1': 'name', '3': 23, '4': 1, '5': 9, '10': 'name'},
     {'1': 'id', '3': 24, '4': 1, '5': 9, '10': 'id'},
     {'1': 'bucket', '3': 25, '4': 1, '5': 9, '10': 'bucket'},
     {'1': 'generation', '3': 26, '4': 1, '5': 3, '10': 'generation'},
-    {'1': 'customer_encryption', '3': 28, '4': 1, '5': 11, '6': '.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption', '10': 'customerEncryption'},
+    {
+      '1': 'customer_encryption',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption',
+      '10': 'customerEncryption'
+    },
     {'1': 'media_link', '3': 100, '4': 1, '5': 9, '10': 'mediaLink'},
     {'1': 'self_link', '3': 101, '4': 1, '5': 9, '10': 'selfLink'},
     {'1': 'kind', '3': 102, '4': 1, '5': 9, '10': 'kind'},
   ],
-  '3': [StorageObjectData_CustomerEncryption$json, StorageObjectData_MetadataEntry$json],
+  '3': [
+    StorageObjectData_CustomerEncryption$json,
+    StorageObjectData_MetadataEntry$json
+  ],
 };
 
 @$core.Deprecated('Use storageObjectDataDescriptor instead')
 const StorageObjectData_CustomerEncryption$json = {
   '1': 'CustomerEncryption',
   '2': [
-    {'1': 'encryption_algorithm', '3': 1, '4': 1, '5': 9, '10': 'encryptionAlgorithm'},
+    {
+      '1': 'encryption_algorithm',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'encryptionAlgorithm'
+    },
     {'1': 'key_sha256', '3': 2, '4': 1, '5': 9, '10': 'keySha256'},
   ],
 };
@@ -98,4 +163,3 @@ final $typed_data.Uint8List storageObjectDataDescriptor = $convert.base64Decode(
     'cml0aG0YASABKAlSE2VuY3J5cHRpb25BbGdvcml0aG0SHQoKa2V5X3NoYTI1NhgCIAEoCVIJa2'
     'V5U2hhMjU2GjsKDU1ldGFkYXRhRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdWUYAiAB'
     'KAlSBXZhbHVlOgI4AQ==');
-

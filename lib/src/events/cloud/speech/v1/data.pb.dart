@@ -30,40 +30,54 @@ class CustomClass_ClassItem extends $pb.GeneratedMessage {
     return $result;
   }
   CustomClass_ClassItem._() : super();
-  factory CustomClass_ClassItem.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CustomClass_ClassItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CustomClass_ClassItem.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CustomClass_ClassItem.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomClass.ClassItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.speech.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CustomClass.ClassItem',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'value')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CustomClass_ClassItem clone() => CustomClass_ClassItem()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CustomClass_ClassItem copyWith(void Function(CustomClass_ClassItem) updates) => super.copyWith((message) => updates(message as CustomClass_ClassItem)) as CustomClass_ClassItem;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CustomClass_ClassItem clone() =>
+      CustomClass_ClassItem()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CustomClass_ClassItem copyWith(
+          void Function(CustomClass_ClassItem) updates) =>
+      super.copyWith((message) => updates(message as CustomClass_ClassItem))
+          as CustomClass_ClassItem;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CustomClass_ClassItem create() => CustomClass_ClassItem._();
   CustomClass_ClassItem createEmptyInstance() => create();
-  static $pb.PbList<CustomClass_ClassItem> createRepeated() => $pb.PbList<CustomClass_ClassItem>();
+  static $pb.PbList<CustomClass_ClassItem> createRepeated() =>
+      $pb.PbList<CustomClass_ClassItem>();
   @$core.pragma('dart2js:noInline')
-  static CustomClass_ClassItem getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CustomClass_ClassItem>(create);
+  static CustomClass_ClassItem getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CustomClass_ClassItem>(create);
   static CustomClass_ClassItem? _defaultInstance;
 
   /// The class item's value.
   @$pb.TagNumber(1)
   $core.String get value => $_getSZ(0);
   @$pb.TagNumber(1)
-  set value($core.String v) { $_setString(0, v); }
+  set value($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
@@ -132,36 +146,55 @@ class CustomClass extends $pb.GeneratedMessage {
     return $result;
   }
   CustomClass._() : super();
-  factory CustomClass.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CustomClass.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CustomClass.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CustomClass.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomClass', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.speech.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CustomClass',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'customClassId')
-    ..pc<CustomClass_ClassItem>(3, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: CustomClass_ClassItem.create)
+    ..pc<CustomClass_ClassItem>(
+        3, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM,
+        subBuilder: CustomClass_ClassItem.create)
     ..aOS(6, _omitFieldNames ? '' : 'kmsKeyName')
     ..aOS(7, _omitFieldNames ? '' : 'kmsKeyVersionName')
     ..aOS(8, _omitFieldNames ? '' : 'uid')
     ..aOS(9, _omitFieldNames ? '' : 'displayName')
-    ..e<CustomClass_State>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CustomClass_State.STATE_UNSPECIFIED, valueOf: CustomClass_State.valueOf, enumValues: CustomClass_State.values)
-    ..aOM<$2.Timestamp>(11, _omitFieldNames ? '' : 'deleteTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(12, _omitFieldNames ? '' : 'expireTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(13, _omitFieldNames ? '' : 'annotations', entryClassName: 'CustomClass.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.speech.v1'))
+    ..e<CustomClass_State>(
+        10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: CustomClass_State.STATE_UNSPECIFIED,
+        valueOf: CustomClass_State.valueOf,
+        enumValues: CustomClass_State.values)
+    ..aOM<$2.Timestamp>(11, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(12, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(13, _omitFieldNames ? '' : 'annotations',
+        entryClassName: 'CustomClass.AnnotationsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.speech.v1'))
     ..aOS(14, _omitFieldNames ? '' : 'etag')
     ..aOB(15, _omitFieldNames ? '' : 'reconciling')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CustomClass clone() => CustomClass()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CustomClass copyWith(void Function(CustomClass) updates) => super.copyWith((message) => updates(message as CustomClass)) as CustomClass;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CustomClass copyWith(void Function(CustomClass) updates) =>
+      super.copyWith((message) => updates(message as CustomClass))
+          as CustomClass;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -170,14 +203,18 @@ class CustomClass extends $pb.GeneratedMessage {
   CustomClass createEmptyInstance() => create();
   static $pb.PbList<CustomClass> createRepeated() => $pb.PbList<CustomClass>();
   @$core.pragma('dart2js:noInline')
-  static CustomClass getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CustomClass>(create);
+  static CustomClass getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CustomClass>(create);
   static CustomClass? _defaultInstance;
 
   /// The resource name of the custom class.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -188,7 +225,10 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get customClassId => $_getSZ(1);
   @$pb.TagNumber(2)
-  set customClassId($core.String v) { $_setString(1, v); }
+  set customClassId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCustomClassId() => $_has(1);
   @$pb.TagNumber(2)
@@ -205,7 +245,10 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get kmsKeyName => $_getSZ(3);
   @$pb.TagNumber(6)
-  set kmsKeyName($core.String v) { $_setString(3, v); }
+  set kmsKeyName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasKmsKeyName() => $_has(3);
   @$pb.TagNumber(6)
@@ -218,7 +261,10 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get kmsKeyVersionName => $_getSZ(4);
   @$pb.TagNumber(7)
-  set kmsKeyVersionName($core.String v) { $_setString(4, v); }
+  set kmsKeyVersionName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasKmsKeyVersionName() => $_has(4);
   @$pb.TagNumber(7)
@@ -229,7 +275,10 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get uid => $_getSZ(5);
   @$pb.TagNumber(8)
-  set uid($core.String v) { $_setString(5, v); }
+  set uid($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasUid() => $_has(5);
   @$pb.TagNumber(8)
@@ -240,7 +289,10 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get displayName => $_getSZ(6);
   @$pb.TagNumber(9)
-  set displayName($core.String v) { $_setString(6, v); }
+  set displayName($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasDisplayName() => $_has(6);
   @$pb.TagNumber(9)
@@ -251,7 +303,10 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   CustomClass_State get state => $_getN(7);
   @$pb.TagNumber(10)
-  set state(CustomClass_State v) { setField(10, v); }
+  set state(CustomClass_State v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(10)
@@ -262,7 +317,10 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $2.Timestamp get deleteTime => $_getN(8);
   @$pb.TagNumber(11)
-  set deleteTime($2.Timestamp v) { setField(11, v); }
+  set deleteTime($2.Timestamp v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasDeleteTime() => $_has(8);
   @$pb.TagNumber(11)
@@ -275,7 +333,10 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $2.Timestamp get expireTime => $_getN(9);
   @$pb.TagNumber(12)
-  set expireTime($2.Timestamp v) { setField(12, v); }
+  set expireTime($2.Timestamp v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasExpireTime() => $_has(9);
   @$pb.TagNumber(12)
@@ -297,7 +358,10 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get etag => $_getSZ(11);
   @$pb.TagNumber(14)
-  set etag($core.String v) { $_setString(11, v); }
+  set etag($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasEtag() => $_has(11);
   @$pb.TagNumber(14)
@@ -308,7 +372,10 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool get reconciling => $_getBF(12);
   @$pb.TagNumber(15)
-  set reconciling($core.bool v) { $_setBool(12, v); }
+  set reconciling($core.bool v) {
+    $_setBool(12, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasReconciling() => $_has(12);
   @$pb.TagNumber(15)
@@ -355,41 +422,53 @@ class PhraseSet_Phrase extends $pb.GeneratedMessage {
     return $result;
   }
   PhraseSet_Phrase._() : super();
-  factory PhraseSet_Phrase.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PhraseSet_Phrase.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PhraseSet_Phrase.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PhraseSet_Phrase.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PhraseSet.Phrase', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.speech.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PhraseSet.Phrase',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'value')
     ..a<$core.double>(2, _omitFieldNames ? '' : 'boost', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PhraseSet_Phrase clone() => PhraseSet_Phrase()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PhraseSet_Phrase copyWith(void Function(PhraseSet_Phrase) updates) => super.copyWith((message) => updates(message as PhraseSet_Phrase)) as PhraseSet_Phrase;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PhraseSet_Phrase copyWith(void Function(PhraseSet_Phrase) updates) =>
+      super.copyWith((message) => updates(message as PhraseSet_Phrase))
+          as PhraseSet_Phrase;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PhraseSet_Phrase create() => PhraseSet_Phrase._();
   PhraseSet_Phrase createEmptyInstance() => create();
-  static $pb.PbList<PhraseSet_Phrase> createRepeated() => $pb.PbList<PhraseSet_Phrase>();
+  static $pb.PbList<PhraseSet_Phrase> createRepeated() =>
+      $pb.PbList<PhraseSet_Phrase>();
   @$core.pragma('dart2js:noInline')
-  static PhraseSet_Phrase getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PhraseSet_Phrase>(create);
+  static PhraseSet_Phrase getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PhraseSet_Phrase>(create);
   static PhraseSet_Phrase? _defaultInstance;
 
   /// The phrase itself.
   @$pb.TagNumber(1)
   $core.String get value => $_getSZ(0);
   @$pb.TagNumber(1)
-  set value($core.String v) { $_setString(0, v); }
+  set value($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
@@ -407,7 +486,10 @@ class PhraseSet_Phrase extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get boost => $_getN(1);
   @$pb.TagNumber(2)
-  set boost($core.double v) { $_setFloat(1, v); }
+  set boost($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasBoost() => $_has(1);
   @$pb.TagNumber(2)
@@ -475,36 +557,53 @@ class PhraseSet extends $pb.GeneratedMessage {
     return $result;
   }
   PhraseSet._() : super();
-  factory PhraseSet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PhraseSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PhraseSet.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PhraseSet.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PhraseSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.speech.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PhraseSet',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<PhraseSet_Phrase>(2, _omitFieldNames ? '' : 'phrases', $pb.PbFieldType.PM, subBuilder: PhraseSet_Phrase.create)
+    ..pc<PhraseSet_Phrase>(
+        2, _omitFieldNames ? '' : 'phrases', $pb.PbFieldType.PM,
+        subBuilder: PhraseSet_Phrase.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'boost', $pb.PbFieldType.OF)
     ..aOS(7, _omitFieldNames ? '' : 'kmsKeyName')
     ..aOS(8, _omitFieldNames ? '' : 'kmsKeyVersionName')
     ..aOS(9, _omitFieldNames ? '' : 'uid')
     ..aOS(10, _omitFieldNames ? '' : 'displayName')
-    ..e<PhraseSet_State>(11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: PhraseSet_State.STATE_UNSPECIFIED, valueOf: PhraseSet_State.valueOf, enumValues: PhraseSet_State.values)
-    ..aOM<$2.Timestamp>(12, _omitFieldNames ? '' : 'deleteTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(13, _omitFieldNames ? '' : 'expireTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(14, _omitFieldNames ? '' : 'annotations', entryClassName: 'PhraseSet.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.speech.v1'))
+    ..e<PhraseSet_State>(11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: PhraseSet_State.STATE_UNSPECIFIED,
+        valueOf: PhraseSet_State.valueOf,
+        enumValues: PhraseSet_State.values)
+    ..aOM<$2.Timestamp>(12, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(13, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(14, _omitFieldNames ? '' : 'annotations',
+        entryClassName: 'PhraseSet.AnnotationsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.speech.v1'))
     ..aOS(15, _omitFieldNames ? '' : 'etag')
     ..aOB(16, _omitFieldNames ? '' : 'reconciling')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PhraseSet clone() => PhraseSet()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PhraseSet copyWith(void Function(PhraseSet) updates) => super.copyWith((message) => updates(message as PhraseSet)) as PhraseSet;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PhraseSet copyWith(void Function(PhraseSet) updates) =>
+      super.copyWith((message) => updates(message as PhraseSet)) as PhraseSet;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -513,14 +612,18 @@ class PhraseSet extends $pb.GeneratedMessage {
   PhraseSet createEmptyInstance() => create();
   static $pb.PbList<PhraseSet> createRepeated() => $pb.PbList<PhraseSet>();
   @$core.pragma('dart2js:noInline')
-  static PhraseSet getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PhraseSet>(create);
+  static PhraseSet getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PhraseSet>(create);
   static PhraseSet? _defaultInstance;
 
   /// The resource name of the phrase set.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -542,7 +645,10 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.double get boost => $_getN(2);
   @$pb.TagNumber(4)
-  set boost($core.double v) { $_setFloat(2, v); }
+  set boost($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBoost() => $_has(2);
   @$pb.TagNumber(4)
@@ -555,7 +661,10 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get kmsKeyName => $_getSZ(3);
   @$pb.TagNumber(7)
-  set kmsKeyName($core.String v) { $_setString(3, v); }
+  set kmsKeyName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasKmsKeyName() => $_has(3);
   @$pb.TagNumber(7)
@@ -568,7 +677,10 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get kmsKeyVersionName => $_getSZ(4);
   @$pb.TagNumber(8)
-  set kmsKeyVersionName($core.String v) { $_setString(4, v); }
+  set kmsKeyVersionName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasKmsKeyVersionName() => $_has(4);
   @$pb.TagNumber(8)
@@ -579,7 +691,10 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get uid => $_getSZ(5);
   @$pb.TagNumber(9)
-  set uid($core.String v) { $_setString(5, v); }
+  set uid($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasUid() => $_has(5);
   @$pb.TagNumber(9)
@@ -590,7 +705,10 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get displayName => $_getSZ(6);
   @$pb.TagNumber(10)
-  set displayName($core.String v) { $_setString(6, v); }
+  set displayName($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasDisplayName() => $_has(6);
   @$pb.TagNumber(10)
@@ -601,7 +719,10 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   PhraseSet_State get state => $_getN(7);
   @$pb.TagNumber(11)
-  set state(PhraseSet_State v) { setField(11, v); }
+  set state(PhraseSet_State v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(11)
@@ -612,7 +733,10 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $2.Timestamp get deleteTime => $_getN(8);
   @$pb.TagNumber(12)
-  set deleteTime($2.Timestamp v) { setField(12, v); }
+  set deleteTime($2.Timestamp v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasDeleteTime() => $_has(8);
   @$pb.TagNumber(12)
@@ -625,7 +749,10 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $2.Timestamp get expireTime => $_getN(9);
   @$pb.TagNumber(13)
-  set expireTime($2.Timestamp v) { setField(13, v); }
+  set expireTime($2.Timestamp v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasExpireTime() => $_has(9);
   @$pb.TagNumber(13)
@@ -647,7 +774,10 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get etag => $_getSZ(11);
   @$pb.TagNumber(15)
-  set etag($core.String v) { $_setString(11, v); }
+  set etag($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasEtag() => $_has(11);
   @$pb.TagNumber(15)
@@ -658,7 +788,10 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool get reconciling => $_getBF(12);
   @$pb.TagNumber(16)
-  set reconciling($core.bool v) { $_setBool(12, v); }
+  set reconciling($core.bool v) {
+    $_setBool(12, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasReconciling() => $_has(12);
   @$pb.TagNumber(16)
@@ -677,40 +810,53 @@ class PhraseSetEventData extends $pb.GeneratedMessage {
     return $result;
   }
   PhraseSetEventData._() : super();
-  factory PhraseSetEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PhraseSetEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PhraseSetEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PhraseSetEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PhraseSetEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.speech.v1'), createEmptyInstance: create)
-    ..aOM<PhraseSet>(1, _omitFieldNames ? '' : 'payload', subBuilder: PhraseSet.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PhraseSetEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
+      createEmptyInstance: create)
+    ..aOM<PhraseSet>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: PhraseSet.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PhraseSetEventData clone() => PhraseSetEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PhraseSetEventData copyWith(void Function(PhraseSetEventData) updates) => super.copyWith((message) => updates(message as PhraseSetEventData)) as PhraseSetEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PhraseSetEventData copyWith(void Function(PhraseSetEventData) updates) =>
+      super.copyWith((message) => updates(message as PhraseSetEventData))
+          as PhraseSetEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PhraseSetEventData create() => PhraseSetEventData._();
   PhraseSetEventData createEmptyInstance() => create();
-  static $pb.PbList<PhraseSetEventData> createRepeated() => $pb.PbList<PhraseSetEventData>();
+  static $pb.PbList<PhraseSetEventData> createRepeated() =>
+      $pb.PbList<PhraseSetEventData>();
   @$core.pragma('dart2js:noInline')
-  static PhraseSetEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PhraseSetEventData>(create);
+  static PhraseSetEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PhraseSetEventData>(create);
   static PhraseSetEventData? _defaultInstance;
 
   /// Optional. The PhraseSet event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   PhraseSet get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(PhraseSet v) { setField(1, v); }
+  set payload(PhraseSet v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -731,40 +877,54 @@ class CustomClassEventData extends $pb.GeneratedMessage {
     return $result;
   }
   CustomClassEventData._() : super();
-  factory CustomClassEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CustomClassEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CustomClassEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CustomClassEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomClassEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.speech.v1'), createEmptyInstance: create)
-    ..aOM<CustomClass>(1, _omitFieldNames ? '' : 'payload', subBuilder: CustomClass.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CustomClassEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.speech.v1'),
+      createEmptyInstance: create)
+    ..aOM<CustomClass>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: CustomClass.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CustomClassEventData clone() => CustomClassEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CustomClassEventData copyWith(void Function(CustomClassEventData) updates) => super.copyWith((message) => updates(message as CustomClassEventData)) as CustomClassEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CustomClassEventData clone() =>
+      CustomClassEventData()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CustomClassEventData copyWith(void Function(CustomClassEventData) updates) =>
+      super.copyWith((message) => updates(message as CustomClassEventData))
+          as CustomClassEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CustomClassEventData create() => CustomClassEventData._();
   CustomClassEventData createEmptyInstance() => create();
-  static $pb.PbList<CustomClassEventData> createRepeated() => $pb.PbList<CustomClassEventData>();
+  static $pb.PbList<CustomClassEventData> createRepeated() =>
+      $pb.PbList<CustomClassEventData>();
   @$core.pragma('dart2js:noInline')
-  static CustomClassEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CustomClassEventData>(create);
+  static CustomClassEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CustomClassEventData>(create);
   static CustomClassEventData? _defaultInstance;
 
   /// Optional. The CustomClass event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   CustomClass get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(CustomClass v) { setField(1, v); }
+  set payload(CustomClass v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -773,6 +933,6 @@ class CustomClassEventData extends $pb.GeneratedMessage {
   CustomClass ensurePayload() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

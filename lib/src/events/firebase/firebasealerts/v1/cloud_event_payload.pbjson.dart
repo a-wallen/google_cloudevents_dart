@@ -34,53 +34,98 @@ final $typed_data.Uint8List crashlyticsIssueDescriptor = $convert.base64Decode(
 const CrashlyticsNewFatalIssuePayload$json = {
   '1': 'CrashlyticsNewFatalIssuePayload',
   '2': [
-    {'1': 'issue', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue', '10': 'issue'},
+    {
+      '1': 'issue',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue',
+      '10': 'issue'
+    },
   ],
 };
 
 /// Descriptor for `CrashlyticsNewFatalIssuePayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List crashlyticsNewFatalIssuePayloadDescriptor = $convert.base64Decode(
-    'Ch9DcmFzaGx5dGljc05ld0ZhdGFsSXNzdWVQYXlsb2FkElAKBWlzc3VlGAEgASgLMjouZ29vZ2'
-    'xlLmV2ZW50cy5maXJlYmFzZS5maXJlYmFzZWFsZXJ0cy52MS5DcmFzaGx5dGljc0lzc3VlUgVp'
-    'c3N1ZQ==');
+final $typed_data.Uint8List crashlyticsNewFatalIssuePayloadDescriptor =
+    $convert.base64Decode(
+        'Ch9DcmFzaGx5dGljc05ld0ZhdGFsSXNzdWVQYXlsb2FkElAKBWlzc3VlGAEgASgLMjouZ29vZ2'
+        'xlLmV2ZW50cy5maXJlYmFzZS5maXJlYmFzZWFsZXJ0cy52MS5DcmFzaGx5dGljc0lzc3VlUgVp'
+        'c3N1ZQ==');
 
 @$core.Deprecated('Use crashlyticsNewNonfatalIssuePayloadDescriptor instead')
 const CrashlyticsNewNonfatalIssuePayload$json = {
   '1': 'CrashlyticsNewNonfatalIssuePayload',
   '2': [
-    {'1': 'issue', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue', '10': 'issue'},
+    {
+      '1': 'issue',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue',
+      '10': 'issue'
+    },
   ],
 };
 
 /// Descriptor for `CrashlyticsNewNonfatalIssuePayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List crashlyticsNewNonfatalIssuePayloadDescriptor = $convert.base64Decode(
-    'CiJDcmFzaGx5dGljc05ld05vbmZhdGFsSXNzdWVQYXlsb2FkElAKBWlzc3VlGAEgASgLMjouZ2'
-    '9vZ2xlLmV2ZW50cy5maXJlYmFzZS5maXJlYmFzZWFsZXJ0cy52MS5DcmFzaGx5dGljc0lzc3Vl'
-    'UgVpc3N1ZQ==');
+final $typed_data.Uint8List crashlyticsNewNonfatalIssuePayloadDescriptor =
+    $convert.base64Decode(
+        'CiJDcmFzaGx5dGljc05ld05vbmZhdGFsSXNzdWVQYXlsb2FkElAKBWlzc3VlGAEgASgLMjouZ2'
+        '9vZ2xlLmV2ZW50cy5maXJlYmFzZS5maXJlYmFzZWFsZXJ0cy52MS5DcmFzaGx5dGljc0lzc3Vl'
+        'UgVpc3N1ZQ==');
 
 @$core.Deprecated('Use crashlyticsRegressionAlertPayloadDescriptor instead')
 const CrashlyticsRegressionAlertPayload$json = {
   '1': 'CrashlyticsRegressionAlertPayload',
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
-    {'1': 'issue', '3': 2, '4': 1, '5': 11, '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue', '10': 'issue'},
-    {'1': 'resolve_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'resolveTime'},
+    {
+      '1': 'issue',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue',
+      '10': 'issue'
+    },
+    {
+      '1': 'resolve_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'resolveTime'
+    },
   ],
 };
 
 /// Descriptor for `CrashlyticsRegressionAlertPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List crashlyticsRegressionAlertPayloadDescriptor = $convert.base64Decode(
-    'CiFDcmFzaGx5dGljc1JlZ3Jlc3Npb25BbGVydFBheWxvYWQSEgoEdHlwZRgBIAEoCVIEdHlwZR'
-    'JQCgVpc3N1ZRgCIAEoCzI6Lmdvb2dsZS5ldmVudHMuZmlyZWJhc2UuZmlyZWJhc2VhbGVydHMu'
-    'djEuQ3Jhc2hseXRpY3NJc3N1ZVIFaXNzdWUSPQoMcmVzb2x2ZV90aW1lGAMgASgLMhouZ29vZ2'
-    'xlLnByb3RvYnVmLlRpbWVzdGFtcFILcmVzb2x2ZVRpbWU=');
+final $typed_data.Uint8List crashlyticsRegressionAlertPayloadDescriptor =
+    $convert.base64Decode(
+        'CiFDcmFzaGx5dGljc1JlZ3Jlc3Npb25BbGVydFBheWxvYWQSEgoEdHlwZRgBIAEoCVIEdHlwZR'
+        'JQCgVpc3N1ZRgCIAEoCzI6Lmdvb2dsZS5ldmVudHMuZmlyZWJhc2UuZmlyZWJhc2VhbGVydHMu'
+        'djEuQ3Jhc2hseXRpY3NJc3N1ZVIFaXNzdWUSPQoMcmVzb2x2ZV90aW1lGAMgASgLMhouZ29vZ2'
+        'xlLnByb3RvYnVmLlRpbWVzdGFtcFILcmVzb2x2ZVRpbWU=');
 
 @$core.Deprecated('Use crashlyticsVelocityAlertPayloadDescriptor instead')
 const CrashlyticsVelocityAlertPayload$json = {
   '1': 'CrashlyticsVelocityAlertPayload',
   '2': [
-    {'1': 'issue', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue', '10': 'issue'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {
+      '1': 'issue',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue',
+      '10': 'issue'
+    },
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
     {'1': 'crash_count', '3': 3, '4': 1, '5': 3, '10': 'crashCount'},
     {'1': 'crash_percentage', '3': 4, '4': 1, '5': 1, '10': 'crashPercentage'},
     {'1': 'first_version', '3': 5, '4': 1, '5': 9, '10': 'firstVersion'},
@@ -100,8 +145,23 @@ final $typed_data.Uint8List crashlyticsVelocityAlertPayloadDescriptor = $convert
 const CrashlyticsStabilityDigestPayload$json = {
   '1': 'CrashlyticsStabilityDigestPayload',
   '2': [
-    {'1': 'digest_date', '3': 5, '4': 1, '5': 11, '6': '.google.type.Date', '10': 'digestDate'},
-    {'1': 'trending_issues', '3': 6, '4': 3, '5': 11, '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsStabilityDigestPayload.TrendingIssueDetails', '10': 'trendingIssues'},
+    {
+      '1': 'digest_date',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.Date',
+      '10': 'digestDate'
+    },
+    {
+      '1': 'trending_issues',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.firebase.firebasealerts.v1.CrashlyticsStabilityDigestPayload.TrendingIssueDetails',
+      '10': 'trendingIssues'
+    },
   ],
   '3': [CrashlyticsStabilityDigestPayload_TrendingIssueDetails$json],
 };
@@ -111,7 +171,14 @@ const CrashlyticsStabilityDigestPayload_TrendingIssueDetails$json = {
   '1': 'TrendingIssueDetails',
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
-    {'1': 'issue', '3': 2, '4': 1, '5': 11, '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue', '10': 'issue'},
+    {
+      '1': 'issue',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue',
+      '10': 'issue'
+    },
     {'1': 'event_count', '3': 3, '4': 1, '5': 3, '10': 'eventCount'},
     {'1': 'user_count', '3': 4, '4': 1, '5': 3, '10': 'userCount'},
   ],
@@ -132,15 +199,23 @@ final $typed_data.Uint8List crashlyticsStabilityDigestPayloadDescriptor = $conve
 const CrashlyticsNewAnrIssuePayload$json = {
   '1': 'CrashlyticsNewAnrIssuePayload',
   '2': [
-    {'1': 'issue', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue', '10': 'issue'},
+    {
+      '1': 'issue',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.firebasealerts.v1.CrashlyticsIssue',
+      '10': 'issue'
+    },
   ],
 };
 
 /// Descriptor for `CrashlyticsNewAnrIssuePayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List crashlyticsNewAnrIssuePayloadDescriptor = $convert.base64Decode(
-    'Ch1DcmFzaGx5dGljc05ld0Fucklzc3VlUGF5bG9hZBJQCgVpc3N1ZRgBIAEoCzI6Lmdvb2dsZS'
-    '5ldmVudHMuZmlyZWJhc2UuZmlyZWJhc2VhbGVydHMudjEuQ3Jhc2hseXRpY3NJc3N1ZVIFaXNz'
-    'dWU=');
+final $typed_data.Uint8List crashlyticsNewAnrIssuePayloadDescriptor =
+    $convert.base64Decode(
+        'Ch1DcmFzaGx5dGljc05ld0Fucklzc3VlUGF5bG9hZBJQCgVpc3N1ZRgBIAEoCzI6Lmdvb2dsZS'
+        '5ldmVudHMuZmlyZWJhc2UuZmlyZWJhc2VhbGVydHMudjEuQ3Jhc2hseXRpY3NJc3N1ZVIFaXNz'
+        'dWU=');
 
 @$core.Deprecated('Use crashlyticsMissingSymbolsPayloadDescriptor instead')
 const CrashlyticsMissingSymbolsPayload$json = {
@@ -152,9 +227,10 @@ const CrashlyticsMissingSymbolsPayload$json = {
 };
 
 /// Descriptor for `CrashlyticsMissingSymbolsPayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List crashlyticsMissingSymbolsPayloadDescriptor = $convert.base64Decode(
-    'CiBDcmFzaGx5dGljc01pc3NpbmdTeW1ib2xzUGF5bG9hZBIfCgthcHBfdmVyc2lvbhgBIAEoCV'
-    'IKYXBwVmVyc2lvbhISCgR1dWlkGAIgASgJUgR1dWlk');
+final $typed_data.Uint8List crashlyticsMissingSymbolsPayloadDescriptor =
+    $convert.base64Decode(
+        'CiBDcmFzaGx5dGljc01pc3NpbmdTeW1ib2xzUGF5bG9hZBIfCgthcHBfdmVyc2lvbhgBIAEoCV'
+        'IKYXBwVmVyc2lvbhISCgR1dWlkGAIgASgJUgR1dWlk');
 
 @$core.Deprecated('Use fireperfThresholdAlertPayloadDescriptor instead')
 const FireperfThresholdAlertPayload$json = {
@@ -166,7 +242,13 @@ const FireperfThresholdAlertPayload$json = {
     {'1': 'num_samples', '3': 4, '4': 1, '5': 3, '10': 'numSamples'},
     {'1': 'threshold_value', '3': 5, '4': 1, '5': 2, '10': 'thresholdValue'},
     {'1': 'threshold_unit', '3': 6, '4': 1, '5': 9, '10': 'thresholdUnit'},
-    {'1': 'condition_percentile', '3': 7, '4': 1, '5': 5, '10': 'conditionPercentile'},
+    {
+      '1': 'condition_percentile',
+      '3': 7,
+      '4': 1,
+      '5': 5,
+      '10': 'conditionPercentile'
+    },
     {'1': 'app_version', '3': 8, '4': 1, '5': 9, '10': 'appVersion'},
     {'1': 'violation_value', '3': 9, '4': 1, '5': 2, '10': 'violationValue'},
     {'1': 'violation_unit', '3': 10, '4': 1, '5': 9, '10': 'violationUnit'},
@@ -191,24 +273,43 @@ const AppDistroNewTesterIosDevicePayload$json = {
   '2': [
     {'1': 'tester_name', '3': 1, '4': 1, '5': 9, '10': 'testerName'},
     {'1': 'tester_email', '3': 2, '4': 1, '5': 9, '10': 'testerEmail'},
-    {'1': 'tester_device_model_name', '3': 3, '4': 1, '5': 9, '10': 'testerDeviceModelName'},
-    {'1': 'tester_device_identifier', '3': 4, '4': 1, '5': 9, '10': 'testerDeviceIdentifier'},
+    {
+      '1': 'tester_device_model_name',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'testerDeviceModelName'
+    },
+    {
+      '1': 'tester_device_identifier',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'testerDeviceIdentifier'
+    },
   ],
 };
 
 /// Descriptor for `AppDistroNewTesterIosDevicePayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List appDistroNewTesterIosDevicePayloadDescriptor = $convert.base64Decode(
-    'CiJBcHBEaXN0cm9OZXdUZXN0ZXJJb3NEZXZpY2VQYXlsb2FkEh8KC3Rlc3Rlcl9uYW1lGAEgAS'
-    'gJUgp0ZXN0ZXJOYW1lEiEKDHRlc3Rlcl9lbWFpbBgCIAEoCVILdGVzdGVyRW1haWwSNwoYdGVz'
-    'dGVyX2RldmljZV9tb2RlbF9uYW1lGAMgASgJUhV0ZXN0ZXJEZXZpY2VNb2RlbE5hbWUSOAoYdG'
-    'VzdGVyX2RldmljZV9pZGVudGlmaWVyGAQgASgJUhZ0ZXN0ZXJEZXZpY2VJZGVudGlmaWVy');
+final $typed_data.Uint8List appDistroNewTesterIosDevicePayloadDescriptor =
+    $convert.base64Decode(
+        'CiJBcHBEaXN0cm9OZXdUZXN0ZXJJb3NEZXZpY2VQYXlsb2FkEh8KC3Rlc3Rlcl9uYW1lGAEgAS'
+        'gJUgp0ZXN0ZXJOYW1lEiEKDHRlc3Rlcl9lbWFpbBgCIAEoCVILdGVzdGVyRW1haWwSNwoYdGVz'
+        'dGVyX2RldmljZV9tb2RlbF9uYW1lGAMgASgJUhV0ZXN0ZXJEZXZpY2VNb2RlbE5hbWUSOAoYdG'
+        'VzdGVyX2RldmljZV9pZGVudGlmaWVyGAQgASgJUhZ0ZXN0ZXJEZXZpY2VJZGVudGlmaWVy');
 
 @$core.Deprecated('Use appDistroInAppFeedbackPayloadDescriptor instead')
 const AppDistroInAppFeedbackPayload$json = {
   '1': 'AppDistroInAppFeedbackPayload',
   '2': [
     {'1': 'feedback_report', '3': 1, '4': 1, '5': 9, '10': 'feedbackReport'},
-    {'1': 'feedback_console_uri', '3': 8, '4': 1, '5': 9, '10': 'feedbackConsoleUri'},
+    {
+      '1': 'feedback_console_uri',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'feedbackConsoleUri'
+    },
     {'1': 'tester_name', '3': 2, '4': 1, '5': 9, '10': 'testerName'},
     {'1': 'tester_email', '3': 3, '4': 1, '5': 9, '10': 'testerEmail'},
     {'1': 'app_version', '3': 9, '4': 1, '5': 9, '10': 'appVersion'},
@@ -238,7 +339,13 @@ const BillingPlanUpdatePayload$json = {
   '2': [
     {'1': 'billing_plan', '3': 1, '4': 1, '5': 9, '10': 'billingPlan'},
     {'1': 'principal_email', '3': 2, '4': 1, '5': 9, '10': 'principalEmail'},
-    {'1': 'notification_type', '3': 3, '4': 1, '5': 9, '10': 'notificationType'},
+    {
+      '1': 'notification_type',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'notificationType'
+    },
   ],
 };
 
@@ -253,13 +360,19 @@ const BillingPlanAutomatedUpdatePayload$json = {
   '1': 'BillingPlanAutomatedUpdatePayload',
   '2': [
     {'1': 'billing_plan', '3': 1, '4': 1, '5': 9, '10': 'billingPlan'},
-    {'1': 'notification_type', '3': 2, '4': 1, '5': 9, '10': 'notificationType'},
+    {
+      '1': 'notification_type',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'notificationType'
+    },
   ],
 };
 
 /// Descriptor for `BillingPlanAutomatedUpdatePayload`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List billingPlanAutomatedUpdatePayloadDescriptor = $convert.base64Decode(
-    'CiFCaWxsaW5nUGxhbkF1dG9tYXRlZFVwZGF0ZVBheWxvYWQSIQoMYmlsbGluZ19wbGFuGAEgAS'
-    'gJUgtiaWxsaW5nUGxhbhIrChFub3RpZmljYXRpb25fdHlwZRgCIAEoCVIQbm90aWZpY2F0aW9u'
-    'VHlwZQ==');
-
+final $typed_data.Uint8List billingPlanAutomatedUpdatePayloadDescriptor =
+    $convert.base64Decode(
+        'CiFCaWxsaW5nUGxhbkF1dG9tYXRlZFVwZGF0ZVBheWxvYWQSIQoMYmlsbGluZ19wbGFuGAEgAS'
+        'gJUgtiaWxsaW5nUGxhbhIrChFub3RpZmljYXRpb25fdHlwZRgCIAEoCVIQbm90aWZpY2F0aW9u'
+        'VHlwZQ==');

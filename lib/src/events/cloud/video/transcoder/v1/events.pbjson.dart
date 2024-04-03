@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const JobCreatedEvent$json = {
   '1': 'JobCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.JobEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.JobEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List jobCreatedEventDescriptor = $convert.base64Decode(
 const JobDeletedEvent$json = {
   '1': 'JobDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.JobEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.JobEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List jobDeletedEventDescriptor = $convert.base64Decode(
 const JobTemplateCreatedEvent$json = {
   '1': 'JobTemplateCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.JobTemplateEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.JobTemplateEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -63,7 +84,14 @@ final $typed_data.Uint8List jobTemplateCreatedEventDescriptor = $convert.base64D
 const JobTemplateDeletedEvent$json = {
   '1': 'JobTemplateDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.JobTemplateEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.JobTemplateEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -74,4 +102,3 @@ final $typed_data.Uint8List jobTemplateDeletedEventDescriptor = $convert.base64D
     '5jbG91ZC52aWRlby50cmFuc2NvZGVyLnYxLkpvYlRlbXBsYXRlRXZlbnREYXRhUgRkYXRhOkmy'
     '+NgsNGdvb2dsZS5jbG91ZC52aWRlby50cmFuc2NvZGVyLmpvYlRlbXBsYXRlLnYxLmRlbGV0ZW'
     'TK+NgsC2pvYnRlbXBsYXRl');
-

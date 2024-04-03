@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const JobExecutedEvent$json = {
   '1': 'JobExecutedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.scheduler.v1.SchedulerJobData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.scheduler.v1.SchedulerJobData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -27,4 +34,3 @@ final $typed_data.Uint8List jobExecutedEventDescriptor = $convert.base64Decode(
     'ChBKb2JFeGVjdXRlZEV2ZW50EkYKBGRhdGEYASABKAsyMi5nb29nbGUuZXZlbnRzLmNsb3VkLn'
     'NjaGVkdWxlci52MS5TY2hlZHVsZXJKb2JEYXRhUgRkYXRhOiuy+NgsJmdvb2dsZS5jbG91ZC5z'
     'Y2hlZHVsZXIuam9iLnYxLmV4ZWN1dGVk');
-

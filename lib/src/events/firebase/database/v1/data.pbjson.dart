@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const ReferenceEventData$json = {
   '1': 'ReferenceEventData',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'data'},
-    {'1': 'delta', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Value', '10': 'delta'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'data'
+    },
+    {
+      '1': 'delta',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Value',
+      '10': 'delta'
+    },
   ],
 };
 
@@ -26,4 +40,3 @@ const ReferenceEventData$json = {
 final $typed_data.Uint8List referenceEventDataDescriptor = $convert.base64Decode(
     'ChJSZWZlcmVuY2VFdmVudERhdGESKgoEZGF0YRgBIAEoCzIWLmdvb2dsZS5wcm90b2J1Zi5WYW'
     'x1ZVIEZGF0YRIsCgVkZWx0YRgCIAEoCzIWLmdvb2dsZS5wcm90b2J1Zi5WYWx1ZVIFZGVsdGE=');
-

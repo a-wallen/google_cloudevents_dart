@@ -22,14 +22,24 @@ const TrafficPortSelector$json = {
 };
 
 /// Descriptor for `TrafficPortSelector`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List trafficPortSelectorDescriptor = $convert.base64Decode(
-    'ChNUcmFmZmljUG9ydFNlbGVjdG9yEhQKBXBvcnRzGAEgAygJUgVwb3J0cw==');
+final $typed_data.Uint8List trafficPortSelectorDescriptor =
+    $convert.base64Decode(
+        'ChNUcmFmZmljUG9ydFNlbGVjdG9yEhQKBXBvcnRzGAEgAygJUgVwb3J0cw==');
 
 @$core.Deprecated('Use endpointMatcherDescriptor instead')
 const EndpointMatcher$json = {
   '1': 'EndpointMatcher',
   '2': [
-    {'1': 'metadata_label_matcher', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.EndpointMatcher.MetadataLabelMatcher', '9': 0, '10': 'metadataLabelMatcher'},
+    {
+      '1': 'metadata_label_matcher',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.EndpointMatcher.MetadataLabelMatcher',
+      '9': 0,
+      '10': 'metadataLabelMatcher'
+    },
   ],
   '3': [EndpointMatcher_MetadataLabelMatcher$json],
   '8': [
@@ -41,8 +51,24 @@ const EndpointMatcher$json = {
 const EndpointMatcher_MetadataLabelMatcher$json = {
   '1': 'MetadataLabelMatcher',
   '2': [
-    {'1': 'metadata_label_match_criteria', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.networkservices.v1.EndpointMatcher.MetadataLabelMatcher.MetadataLabelMatchCriteria', '10': 'metadataLabelMatchCriteria'},
-    {'1': 'metadata_labels', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.EndpointMatcher.MetadataLabelMatcher.MetadataLabels', '10': 'metadataLabels'},
+    {
+      '1': 'metadata_label_match_criteria',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkservices.v1.EndpointMatcher.MetadataLabelMatcher.MetadataLabelMatchCriteria',
+      '10': 'metadataLabelMatchCriteria'
+    },
+    {
+      '1': 'metadata_labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.EndpointMatcher.MetadataLabelMatcher.MetadataLabels',
+      '10': 'metadataLabels'
+    },
   ],
   '3': [EndpointMatcher_MetadataLabelMatcher_MetadataLabels$json],
   '4': [EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria$json],
@@ -88,16 +114,77 @@ const EndpointPolicy$json = {
   '1': 'EndpointPolicy',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.EndpointPolicy.LabelsEntry', '10': 'labels'},
-    {'1': 'type', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.networkservices.v1.EndpointPolicy.EndpointPolicyType', '10': 'type'},
-    {'1': 'authorization_policy', '3': 7, '4': 1, '5': 9, '10': 'authorizationPolicy'},
-    {'1': 'endpoint_matcher', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.EndpointMatcher', '10': 'endpointMatcher'},
-    {'1': 'traffic_port_selector', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.TrafficPortSelector', '10': 'trafficPortSelector'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.EndpointPolicy.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkservices.v1.EndpointPolicy.EndpointPolicyType',
+      '10': 'type'
+    },
+    {
+      '1': 'authorization_policy',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'authorizationPolicy'
+    },
+    {
+      '1': 'endpoint_matcher',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.EndpointMatcher',
+      '10': 'endpointMatcher'
+    },
+    {
+      '1': 'traffic_port_selector',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TrafficPortSelector',
+      '10': 'trafficPortSelector'
+    },
     {'1': 'description', '3': 11, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'server_tls_policy', '3': 12, '4': 1, '5': 9, '10': 'serverTlsPolicy'},
-    {'1': 'client_tls_policy', '3': 13, '4': 1, '5': 9, '10': 'clientTlsPolicy'},
+    {
+      '1': 'server_tls_policy',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '10': 'serverTlsPolicy'
+    },
+    {
+      '1': 'client_tls_policy',
+      '3': 13,
+      '4': 1,
+      '5': 9,
+      '10': 'clientTlsPolicy'
+    },
   ],
   '3': [EndpointPolicy_LabelsEntry$json],
   '4': [EndpointPolicy_EndpointPolicyType$json],
@@ -148,17 +235,51 @@ const Gateway$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'self_link', '3': 13, '4': 1, '5': 9, '10': 'selfLink'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.Gateway.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.Gateway.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'type', '3': 6, '4': 1, '5': 14, '6': '.google.events.cloud.networkservices.v1.Gateway.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkservices.v1.Gateway.Type',
+      '10': 'type'
+    },
     {'1': 'addresses', '3': 7, '4': 3, '5': 9, '10': 'addresses'},
     {'1': 'ports', '3': 11, '4': 3, '5': 5, '10': 'ports'},
     {'1': 'scope', '3': 8, '4': 1, '5': 9, '10': 'scope'},
     {'1': 'server_tls_policy', '3': 9, '4': 1, '5': 9, '10': 'serverTlsPolicy'},
     {'1': 'certificate_urls', '3': 14, '4': 3, '5': 9, '10': 'certificateUrls'},
-    {'1': 'gateway_security_policy', '3': 18, '4': 1, '5': 9, '10': 'gatewaySecurityPolicy'},
+    {
+      '1': 'gateway_security_policy',
+      '3': 18,
+      '4': 1,
+      '5': 9,
+      '10': 'gatewaySecurityPolicy'
+    },
     {'1': 'network', '3': 16, '4': 1, '5': 9, '10': 'network'},
     {'1': 'subnetwork', '3': 17, '4': 1, '5': 9, '10': 'subnetwork'},
   ],
@@ -209,26 +330,79 @@ const GrpcRoute$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'self_link', '3': 12, '4': 1, '5': 9, '10': 'selfLink'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRoute.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'hostnames', '3': 6, '4': 3, '5': 9, '10': 'hostnames'},
     {'1': 'meshes', '3': 9, '4': 3, '5': 9, '10': 'meshes'},
     {'1': 'gateways', '3': 10, '4': 3, '5': 9, '10': 'gateways'},
-    {'1': 'rules', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.RouteRule', '10': 'rules'},
+    {
+      '1': 'rules',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRoute.RouteRule',
+      '10': 'rules'
+    },
   ],
-  '3': [GrpcRoute_MethodMatch$json, GrpcRoute_HeaderMatch$json, GrpcRoute_RouteMatch$json, GrpcRoute_Destination$json, GrpcRoute_FaultInjectionPolicy$json, GrpcRoute_RetryPolicy$json, GrpcRoute_RouteAction$json, GrpcRoute_RouteRule$json, GrpcRoute_LabelsEntry$json],
+  '3': [
+    GrpcRoute_MethodMatch$json,
+    GrpcRoute_HeaderMatch$json,
+    GrpcRoute_RouteMatch$json,
+    GrpcRoute_Destination$json,
+    GrpcRoute_FaultInjectionPolicy$json,
+    GrpcRoute_RetryPolicy$json,
+    GrpcRoute_RouteAction$json,
+    GrpcRoute_RouteRule$json,
+    GrpcRoute_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use grpcRouteDescriptor instead')
 const GrpcRoute_MethodMatch$json = {
   '1': 'MethodMatch',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.MethodMatch.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRoute.MethodMatch.Type',
+      '10': 'type'
+    },
     {'1': 'grpc_service', '3': 2, '4': 1, '5': 9, '10': 'grpcService'},
     {'1': 'grpc_method', '3': 3, '4': 1, '5': 9, '10': 'grpcMethod'},
-    {'1': 'case_sensitive', '3': 4, '4': 1, '5': 8, '9': 0, '10': 'caseSensitive', '17': true},
+    {
+      '1': 'case_sensitive',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'caseSensitive',
+      '17': true
+    },
   ],
   '4': [GrpcRoute_MethodMatch_Type$json],
   '8': [
@@ -250,7 +424,14 @@ const GrpcRoute_MethodMatch_Type$json = {
 const GrpcRoute_HeaderMatch$json = {
   '1': 'HeaderMatch',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.HeaderMatch.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRoute.HeaderMatch.Type',
+      '10': 'type'
+    },
     {'1': 'key', '3': 2, '4': 1, '5': 9, '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 9, '10': 'value'},
   ],
@@ -271,8 +452,24 @@ const GrpcRoute_HeaderMatch_Type$json = {
 const GrpcRoute_RouteMatch$json = {
   '1': 'RouteMatch',
   '2': [
-    {'1': 'method', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.MethodMatch', '9': 0, '10': 'method', '17': true},
-    {'1': 'headers', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.HeaderMatch', '10': 'headers'},
+    {
+      '1': 'method',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRoute.MethodMatch',
+      '9': 0,
+      '10': 'method',
+      '17': true
+    },
+    {
+      '1': 'headers',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRoute.HeaderMatch',
+      '10': 'headers'
+    },
   ],
   '8': [
     {'1': '_method'},
@@ -296,10 +493,33 @@ const GrpcRoute_Destination$json = {
 const GrpcRoute_FaultInjectionPolicy$json = {
   '1': 'FaultInjectionPolicy',
   '2': [
-    {'1': 'delay', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.FaultInjectionPolicy.Delay', '9': 0, '10': 'delay', '17': true},
-    {'1': 'abort', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.FaultInjectionPolicy.Abort', '9': 1, '10': 'abort', '17': true},
+    {
+      '1': 'delay',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.GrpcRoute.FaultInjectionPolicy.Delay',
+      '9': 0,
+      '10': 'delay',
+      '17': true
+    },
+    {
+      '1': 'abort',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.GrpcRoute.FaultInjectionPolicy.Abort',
+      '9': 1,
+      '10': 'abort',
+      '17': true
+    },
   ],
-  '3': [GrpcRoute_FaultInjectionPolicy_Delay$json, GrpcRoute_FaultInjectionPolicy_Abort$json],
+  '3': [
+    GrpcRoute_FaultInjectionPolicy_Delay$json,
+    GrpcRoute_FaultInjectionPolicy_Abort$json
+  ],
   '8': [
     {'1': '_delay'},
     {'1': '_abort'},
@@ -310,8 +530,25 @@ const GrpcRoute_FaultInjectionPolicy$json = {
 const GrpcRoute_FaultInjectionPolicy_Delay$json = {
   '1': 'Delay',
   '2': [
-    {'1': 'fixed_delay', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'fixedDelay', '17': true},
-    {'1': 'percentage', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'percentage', '17': true},
+    {
+      '1': 'fixed_delay',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'fixedDelay',
+      '17': true
+    },
+    {
+      '1': 'percentage',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'percentage',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_fixed_delay'},
@@ -323,8 +560,24 @@ const GrpcRoute_FaultInjectionPolicy_Delay$json = {
 const GrpcRoute_FaultInjectionPolicy_Abort$json = {
   '1': 'Abort',
   '2': [
-    {'1': 'http_status', '3': 1, '4': 1, '5': 5, '9': 0, '10': 'httpStatus', '17': true},
-    {'1': 'percentage', '3': 2, '4': 1, '5': 5, '9': 1, '10': 'percentage', '17': true},
+    {
+      '1': 'http_status',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'httpStatus',
+      '17': true
+    },
+    {
+      '1': 'percentage',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '9': 1,
+      '10': 'percentage',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_http_status'},
@@ -345,10 +598,39 @@ const GrpcRoute_RetryPolicy$json = {
 const GrpcRoute_RouteAction$json = {
   '1': 'RouteAction',
   '2': [
-    {'1': 'destinations', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.Destination', '10': 'destinations'},
-    {'1': 'fault_injection_policy', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.FaultInjectionPolicy', '10': 'faultInjectionPolicy'},
-    {'1': 'timeout', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'timeout'},
-    {'1': 'retry_policy', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.RetryPolicy', '10': 'retryPolicy'},
+    {
+      '1': 'destinations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRoute.Destination',
+      '10': 'destinations'
+    },
+    {
+      '1': 'fault_injection_policy',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.GrpcRoute.FaultInjectionPolicy',
+      '10': 'faultInjectionPolicy'
+    },
+    {
+      '1': 'timeout',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'timeout'
+    },
+    {
+      '1': 'retry_policy',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRoute.RetryPolicy',
+      '10': 'retryPolicy'
+    },
   ],
 };
 
@@ -356,8 +638,22 @@ const GrpcRoute_RouteAction$json = {
 const GrpcRoute_RouteRule$json = {
   '1': 'RouteRule',
   '2': [
-    {'1': 'matches', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.RouteMatch', '10': 'matches'},
-    {'1': 'action', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute.RouteAction', '10': 'action'},
+    {
+      '1': 'matches',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRoute.RouteMatch',
+      '10': 'matches'
+    },
+    {
+      '1': 'action',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRoute.RouteAction',
+      '10': 'action'
+    },
   ],
 };
 
@@ -427,15 +723,58 @@ const HttpRoute$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'self_link', '3': 11, '4': 1, '5': 9, '10': 'selfLink'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'hostnames', '3': 5, '4': 3, '5': 9, '10': 'hostnames'},
     {'1': 'meshes', '3': 8, '4': 3, '5': 9, '10': 'meshes'},
     {'1': 'gateways', '3': 9, '4': 3, '5': 9, '10': 'gateways'},
-    {'1': 'labels', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.LabelsEntry', '10': 'labels'},
-    {'1': 'rules', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.RouteRule', '10': 'rules'},
+    {
+      '1': 'labels',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'rules',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.RouteRule',
+      '10': 'rules'
+    },
   ],
-  '3': [HttpRoute_HeaderMatch$json, HttpRoute_QueryParameterMatch$json, HttpRoute_RouteMatch$json, HttpRoute_Destination$json, HttpRoute_Redirect$json, HttpRoute_FaultInjectionPolicy$json, HttpRoute_HeaderModifier$json, HttpRoute_URLRewrite$json, HttpRoute_RetryPolicy$json, HttpRoute_RequestMirrorPolicy$json, HttpRoute_CorsPolicy$json, HttpRoute_RouteAction$json, HttpRoute_RouteRule$json, HttpRoute_LabelsEntry$json],
+  '3': [
+    HttpRoute_HeaderMatch$json,
+    HttpRoute_QueryParameterMatch$json,
+    HttpRoute_RouteMatch$json,
+    HttpRoute_Destination$json,
+    HttpRoute_Redirect$json,
+    HttpRoute_FaultInjectionPolicy$json,
+    HttpRoute_HeaderModifier$json,
+    HttpRoute_URLRewrite$json,
+    HttpRoute_RetryPolicy$json,
+    HttpRoute_RequestMirrorPolicy$json,
+    HttpRoute_CorsPolicy$json,
+    HttpRoute_RouteAction$json,
+    HttpRoute_RouteRule$json,
+    HttpRoute_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use httpRouteDescriptor instead')
@@ -445,9 +784,25 @@ const HttpRoute_HeaderMatch$json = {
     {'1': 'exact_match', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'exactMatch'},
     {'1': 'regex_match', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'regexMatch'},
     {'1': 'prefix_match', '3': 4, '4': 1, '5': 9, '9': 0, '10': 'prefixMatch'},
-    {'1': 'present_match', '3': 5, '4': 1, '5': 8, '9': 0, '10': 'presentMatch'},
+    {
+      '1': 'present_match',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'presentMatch'
+    },
     {'1': 'suffix_match', '3': 6, '4': 1, '5': 9, '9': 0, '10': 'suffixMatch'},
-    {'1': 'range_match', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.HeaderMatch.IntegerRange', '9': 0, '10': 'rangeMatch'},
+    {
+      '1': 'range_match',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.HttpRoute.HeaderMatch.IntegerRange',
+      '9': 0,
+      '10': 'rangeMatch'
+    },
     {'1': 'header', '3': 1, '4': 1, '5': 9, '10': 'header'},
     {'1': 'invert_match', '3': 8, '4': 1, '5': 8, '10': 'invertMatch'},
   ],
@@ -472,7 +827,14 @@ const HttpRoute_QueryParameterMatch$json = {
   '2': [
     {'1': 'exact_match', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'exactMatch'},
     {'1': 'regex_match', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'regexMatch'},
-    {'1': 'present_match', '3': 4, '4': 1, '5': 8, '9': 0, '10': 'presentMatch'},
+    {
+      '1': 'present_match',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'presentMatch'
+    },
     {'1': 'query_parameter', '3': 1, '4': 1, '5': 9, '10': 'queryParameter'},
   ],
   '8': [
@@ -484,12 +846,34 @@ const HttpRoute_QueryParameterMatch$json = {
 const HttpRoute_RouteMatch$json = {
   '1': 'RouteMatch',
   '2': [
-    {'1': 'full_path_match', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'fullPathMatch'},
+    {
+      '1': 'full_path_match',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'fullPathMatch'
+    },
     {'1': 'prefix_match', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'prefixMatch'},
     {'1': 'regex_match', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'regexMatch'},
     {'1': 'ignore_case', '3': 4, '4': 1, '5': 8, '10': 'ignoreCase'},
-    {'1': 'headers', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.HeaderMatch', '10': 'headers'},
-    {'1': 'query_parameters', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.QueryParameterMatch', '10': 'queryParameters'},
+    {
+      '1': 'headers',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.HeaderMatch',
+      '10': 'headers'
+    },
+    {
+      '1': 'query_parameters',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.HttpRoute.QueryParameterMatch',
+      '10': 'queryParameters'
+    },
   ],
   '8': [
     {'1': 'PathMatch'},
@@ -512,7 +896,15 @@ const HttpRoute_Redirect$json = {
     {'1': 'host_redirect', '3': 1, '4': 1, '5': 9, '10': 'hostRedirect'},
     {'1': 'path_redirect', '3': 2, '4': 1, '5': 9, '10': 'pathRedirect'},
     {'1': 'prefix_rewrite', '3': 3, '4': 1, '5': 9, '10': 'prefixRewrite'},
-    {'1': 'response_code', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.networkservices.v1.HttpRoute.Redirect.ResponseCode', '10': 'responseCode'},
+    {
+      '1': 'response_code',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkservices.v1.HttpRoute.Redirect.ResponseCode',
+      '10': 'responseCode'
+    },
     {'1': 'https_redirect', '3': 5, '4': 1, '5': 8, '10': 'httpsRedirect'},
     {'1': 'strip_query', '3': 6, '4': 1, '5': 8, '10': 'stripQuery'},
     {'1': 'port_redirect', '3': 7, '4': 1, '5': 5, '10': 'portRedirect'},
@@ -537,17 +929,43 @@ const HttpRoute_Redirect_ResponseCode$json = {
 const HttpRoute_FaultInjectionPolicy$json = {
   '1': 'FaultInjectionPolicy',
   '2': [
-    {'1': 'delay', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.FaultInjectionPolicy.Delay', '10': 'delay'},
-    {'1': 'abort', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.FaultInjectionPolicy.Abort', '10': 'abort'},
+    {
+      '1': 'delay',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.HttpRoute.FaultInjectionPolicy.Delay',
+      '10': 'delay'
+    },
+    {
+      '1': 'abort',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.HttpRoute.FaultInjectionPolicy.Abort',
+      '10': 'abort'
+    },
   ],
-  '3': [HttpRoute_FaultInjectionPolicy_Delay$json, HttpRoute_FaultInjectionPolicy_Abort$json],
+  '3': [
+    HttpRoute_FaultInjectionPolicy_Delay$json,
+    HttpRoute_FaultInjectionPolicy_Abort$json
+  ],
 };
 
 @$core.Deprecated('Use httpRouteDescriptor instead')
 const HttpRoute_FaultInjectionPolicy_Delay$json = {
   '1': 'Delay',
   '2': [
-    {'1': 'fixed_delay', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'fixedDelay'},
+    {
+      '1': 'fixed_delay',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'fixedDelay'
+    },
     {'1': 'percentage', '3': 2, '4': 1, '5': 5, '10': 'percentage'},
   ],
 };
@@ -565,11 +983,30 @@ const HttpRoute_FaultInjectionPolicy_Abort$json = {
 const HttpRoute_HeaderModifier$json = {
   '1': 'HeaderModifier',
   '2': [
-    {'1': 'set', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.HeaderModifier.SetEntry', '10': 'set'},
-    {'1': 'add', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.HeaderModifier.AddEntry', '10': 'add'},
+    {
+      '1': 'set',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.HttpRoute.HeaderModifier.SetEntry',
+      '10': 'set'
+    },
+    {
+      '1': 'add',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.HttpRoute.HeaderModifier.AddEntry',
+      '10': 'add'
+    },
     {'1': 'remove', '3': 3, '4': 3, '5': 9, '10': 'remove'},
   ],
-  '3': [HttpRoute_HeaderModifier_SetEntry$json, HttpRoute_HeaderModifier_AddEntry$json],
+  '3': [
+    HttpRoute_HeaderModifier_SetEntry$json,
+    HttpRoute_HeaderModifier_AddEntry$json
+  ],
 };
 
 @$core.Deprecated('Use httpRouteDescriptor instead')
@@ -596,7 +1033,13 @@ const HttpRoute_HeaderModifier_AddEntry$json = {
 const HttpRoute_URLRewrite$json = {
   '1': 'URLRewrite',
   '2': [
-    {'1': 'path_prefix_rewrite', '3': 1, '4': 1, '5': 9, '10': 'pathPrefixRewrite'},
+    {
+      '1': 'path_prefix_rewrite',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'pathPrefixRewrite'
+    },
     {'1': 'host_rewrite', '3': 2, '4': 1, '5': 9, '10': 'hostRewrite'},
   ],
 };
@@ -607,7 +1050,14 @@ const HttpRoute_RetryPolicy$json = {
   '2': [
     {'1': 'retry_conditions', '3': 1, '4': 3, '5': 9, '10': 'retryConditions'},
     {'1': 'num_retries', '3': 2, '4': 1, '5': 5, '10': 'numRetries'},
-    {'1': 'per_try_timeout', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'perTryTimeout'},
+    {
+      '1': 'per_try_timeout',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'perTryTimeout'
+    },
   ],
 };
 
@@ -615,7 +1065,14 @@ const HttpRoute_RetryPolicy$json = {
 const HttpRoute_RequestMirrorPolicy$json = {
   '1': 'RequestMirrorPolicy',
   '2': [
-    {'1': 'destination', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.Destination', '10': 'destination'},
+    {
+      '1': 'destination',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.Destination',
+      '10': 'destination'
+    },
   ],
 };
 
@@ -624,12 +1081,24 @@ const HttpRoute_CorsPolicy$json = {
   '1': 'CorsPolicy',
   '2': [
     {'1': 'allow_origins', '3': 1, '4': 3, '5': 9, '10': 'allowOrigins'},
-    {'1': 'allow_origin_regexes', '3': 2, '4': 3, '5': 9, '10': 'allowOriginRegexes'},
+    {
+      '1': 'allow_origin_regexes',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'allowOriginRegexes'
+    },
     {'1': 'allow_methods', '3': 3, '4': 3, '5': 9, '10': 'allowMethods'},
     {'1': 'allow_headers', '3': 4, '4': 3, '5': 9, '10': 'allowHeaders'},
     {'1': 'expose_headers', '3': 5, '4': 3, '5': 9, '10': 'exposeHeaders'},
     {'1': 'max_age', '3': 6, '4': 1, '5': 9, '10': 'maxAge'},
-    {'1': 'allow_credentials', '3': 7, '4': 1, '5': 8, '10': 'allowCredentials'},
+    {
+      '1': 'allow_credentials',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '10': 'allowCredentials'
+    },
     {'1': 'disabled', '3': 8, '4': 1, '5': 8, '10': 'disabled'},
   ],
 };
@@ -638,16 +1107,88 @@ const HttpRoute_CorsPolicy$json = {
 const HttpRoute_RouteAction$json = {
   '1': 'RouteAction',
   '2': [
-    {'1': 'destinations', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.Destination', '10': 'destinations'},
-    {'1': 'redirect', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.Redirect', '10': 'redirect'},
-    {'1': 'fault_injection_policy', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.FaultInjectionPolicy', '10': 'faultInjectionPolicy'},
-    {'1': 'request_header_modifier', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.HeaderModifier', '10': 'requestHeaderModifier'},
-    {'1': 'response_header_modifier', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.HeaderModifier', '10': 'responseHeaderModifier'},
-    {'1': 'url_rewrite', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.URLRewrite', '10': 'urlRewrite'},
-    {'1': 'timeout', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'timeout'},
-    {'1': 'retry_policy', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.RetryPolicy', '10': 'retryPolicy'},
-    {'1': 'request_mirror_policy', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.RequestMirrorPolicy', '10': 'requestMirrorPolicy'},
-    {'1': 'cors_policy', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.CorsPolicy', '10': 'corsPolicy'},
+    {
+      '1': 'destinations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.Destination',
+      '10': 'destinations'
+    },
+    {
+      '1': 'redirect',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.Redirect',
+      '10': 'redirect'
+    },
+    {
+      '1': 'fault_injection_policy',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.HttpRoute.FaultInjectionPolicy',
+      '10': 'faultInjectionPolicy'
+    },
+    {
+      '1': 'request_header_modifier',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.HeaderModifier',
+      '10': 'requestHeaderModifier'
+    },
+    {
+      '1': 'response_header_modifier',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.HeaderModifier',
+      '10': 'responseHeaderModifier'
+    },
+    {
+      '1': 'url_rewrite',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.URLRewrite',
+      '10': 'urlRewrite'
+    },
+    {
+      '1': 'timeout',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'timeout'
+    },
+    {
+      '1': 'retry_policy',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.RetryPolicy',
+      '10': 'retryPolicy'
+    },
+    {
+      '1': 'request_mirror_policy',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkservices.v1.HttpRoute.RequestMirrorPolicy',
+      '10': 'requestMirrorPolicy'
+    },
+    {
+      '1': 'cors_policy',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.CorsPolicy',
+      '10': 'corsPolicy'
+    },
   ],
 };
 
@@ -655,8 +1196,22 @@ const HttpRoute_RouteAction$json = {
 const HttpRoute_RouteRule$json = {
   '1': 'RouteRule',
   '2': [
-    {'1': 'matches', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.RouteMatch', '10': 'matches'},
-    {'1': 'action', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute.RouteAction', '10': 'action'},
+    {
+      '1': 'matches',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.RouteMatch',
+      '10': 'matches'
+    },
+    {
+      '1': 'action',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute.RouteAction',
+      '10': 'action'
+    },
   ],
 };
 
@@ -765,11 +1320,38 @@ const Mesh$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'self_link', '3': 9, '4': 1, '5': 9, '10': 'selfLink'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.Mesh.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.Mesh.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'interception_port', '3': 8, '4': 1, '5': 5, '10': 'interceptionPort'},
+    {
+      '1': 'interception_port',
+      '3': 8,
+      '4': 1,
+      '5': 5,
+      '10': 'interceptionPort'
+    },
   ],
   '3': [Mesh_LabelsEntry$json],
 };
@@ -801,11 +1383,32 @@ const ServiceBinding$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'service', '3': 5, '4': 1, '5': 9, '10': 'service'},
     {'1': 'service_id', '3': 8, '4': 1, '5': 9, '10': 'serviceId'},
-    {'1': 'labels', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.ServiceBinding.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.ServiceBinding.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [ServiceBinding_LabelsEntry$json],
 };
@@ -837,23 +1440,71 @@ const TcpRoute$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'self_link', '3': 11, '4': 1, '5': 9, '10': 'selfLink'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 4, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'rules', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.TcpRoute.RouteRule', '10': 'rules'},
+    {
+      '1': 'rules',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TcpRoute.RouteRule',
+      '10': 'rules'
+    },
     {'1': 'meshes', '3': 8, '4': 3, '5': 9, '10': 'meshes'},
     {'1': 'gateways', '3': 9, '4': 3, '5': 9, '10': 'gateways'},
-    {'1': 'labels', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.TcpRoute.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TcpRoute.LabelsEntry',
+      '10': 'labels'
+    },
   ],
-  '3': [TcpRoute_RouteRule$json, TcpRoute_RouteMatch$json, TcpRoute_RouteAction$json, TcpRoute_RouteDestination$json, TcpRoute_LabelsEntry$json],
+  '3': [
+    TcpRoute_RouteRule$json,
+    TcpRoute_RouteMatch$json,
+    TcpRoute_RouteAction$json,
+    TcpRoute_RouteDestination$json,
+    TcpRoute_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use tcpRouteDescriptor instead')
 const TcpRoute_RouteRule$json = {
   '1': 'RouteRule',
   '2': [
-    {'1': 'matches', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.TcpRoute.RouteMatch', '10': 'matches'},
-    {'1': 'action', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.TcpRoute.RouteAction', '10': 'action'},
+    {
+      '1': 'matches',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TcpRoute.RouteMatch',
+      '10': 'matches'
+    },
+    {
+      '1': 'action',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TcpRoute.RouteAction',
+      '10': 'action'
+    },
   ],
 };
 
@@ -870,8 +1521,21 @@ const TcpRoute_RouteMatch$json = {
 const TcpRoute_RouteAction$json = {
   '1': 'RouteAction',
   '2': [
-    {'1': 'destinations', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.TcpRoute.RouteDestination', '10': 'destinations'},
-    {'1': 'original_destination', '3': 3, '4': 1, '5': 8, '10': 'originalDestination'},
+    {
+      '1': 'destinations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TcpRoute.RouteDestination',
+      '10': 'destinations'
+    },
+    {
+      '1': 'original_destination',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'originalDestination'
+    },
   ],
 };
 
@@ -921,22 +1585,62 @@ const TlsRoute$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'self_link', '3': 8, '4': 1, '5': 9, '10': 'selfLink'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 4, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'rules', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.TlsRoute.RouteRule', '10': 'rules'},
+    {
+      '1': 'rules',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TlsRoute.RouteRule',
+      '10': 'rules'
+    },
     {'1': 'meshes', '3': 6, '4': 3, '5': 9, '10': 'meshes'},
     {'1': 'gateways', '3': 7, '4': 3, '5': 9, '10': 'gateways'},
   ],
-  '3': [TlsRoute_RouteRule$json, TlsRoute_RouteMatch$json, TlsRoute_RouteAction$json, TlsRoute_RouteDestination$json],
+  '3': [
+    TlsRoute_RouteRule$json,
+    TlsRoute_RouteMatch$json,
+    TlsRoute_RouteAction$json,
+    TlsRoute_RouteDestination$json
+  ],
 };
 
 @$core.Deprecated('Use tlsRouteDescriptor instead')
 const TlsRoute_RouteRule$json = {
   '1': 'RouteRule',
   '2': [
-    {'1': 'matches', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.TlsRoute.RouteMatch', '10': 'matches'},
-    {'1': 'action', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.TlsRoute.RouteAction', '10': 'action'},
+    {
+      '1': 'matches',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TlsRoute.RouteMatch',
+      '10': 'matches'
+    },
+    {
+      '1': 'action',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TlsRoute.RouteAction',
+      '10': 'action'
+    },
   ],
 };
 
@@ -953,7 +1657,14 @@ const TlsRoute_RouteMatch$json = {
 const TlsRoute_RouteAction$json = {
   '1': 'RouteAction',
   '2': [
-    {'1': 'destinations', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.networkservices.v1.TlsRoute.RouteDestination', '10': 'destinations'},
+    {
+      '1': 'destinations',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TlsRoute.RouteDestination',
+      '10': 'destinations'
+    },
   ],
 };
 
@@ -988,7 +1699,16 @@ final $typed_data.Uint8List tlsRouteDescriptor = $convert.base64Decode(
 const EndpointPolicyEventData$json = {
   '1': 'EndpointPolicyEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.EndpointPolicy', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.EndpointPolicy',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1005,7 +1725,16 @@ final $typed_data.Uint8List endpointPolicyEventDataDescriptor = $convert.base64D
 const HttpRouteEventData$json = {
   '1': 'HttpRouteEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRoute', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRoute',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1022,7 +1751,16 @@ final $typed_data.Uint8List httpRouteEventDataDescriptor = $convert.base64Decode
 const ServiceBindingEventData$json = {
   '1': 'ServiceBindingEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.ServiceBinding', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.ServiceBinding',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1039,7 +1777,16 @@ final $typed_data.Uint8List serviceBindingEventDataDescriptor = $convert.base64D
 const GatewayEventData$json = {
   '1': 'GatewayEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.Gateway', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.Gateway',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1055,7 +1802,16 @@ final $typed_data.Uint8List gatewayEventDataDescriptor = $convert.base64Decode(
 const TlsRouteEventData$json = {
   '1': 'TlsRouteEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.TlsRoute', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TlsRoute',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1072,7 +1828,16 @@ final $typed_data.Uint8List tlsRouteEventDataDescriptor = $convert.base64Decode(
 const GrpcRouteEventData$json = {
   '1': 'GrpcRouteEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRoute', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRoute',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1089,7 +1854,16 @@ final $typed_data.Uint8List grpcRouteEventDataDescriptor = $convert.base64Decode
 const MeshEventData$json = {
   '1': 'MeshEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.Mesh', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.Mesh',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1105,7 +1879,16 @@ final $typed_data.Uint8List meshEventDataDescriptor = $convert.base64Decode(
 const TcpRouteEventData$json = {
   '1': 'TcpRouteEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.TcpRoute', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TcpRoute',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1117,4 +1900,3 @@ final $typed_data.Uint8List tcpRouteEventDataDescriptor = $convert.base64Decode(
     'ChFUY3BSb3V0ZUV2ZW50RGF0YRJPCgdwYXlsb2FkGAEgASgLMjAuZ29vZ2xlLmV2ZW50cy5jbG'
     '91ZC5uZXR3b3Jrc2VydmljZXMudjEuVGNwUm91dGVIAFIHcGF5bG9hZIgBAUIKCghfcGF5bG9h'
     'ZA==');
-

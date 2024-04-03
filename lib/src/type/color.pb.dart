@@ -157,27 +157,33 @@ class Color extends $pb.GeneratedMessage {
     return $result;
   }
   Color._() : super();
-  factory Color.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Color.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Color.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Color.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Color', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Color',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'),
+      createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'red', $pb.PbFieldType.OF)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'green', $pb.PbFieldType.OF)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'blue', $pb.PbFieldType.OF)
-    ..aOM<$45.FloatValue>(4, _omitFieldNames ? '' : 'alpha', subBuilder: $45.FloatValue.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$45.FloatValue>(4, _omitFieldNames ? '' : 'alpha',
+        subBuilder: $45.FloatValue.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Color clone() => Color()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Color copyWith(void Function(Color) updates) => super.copyWith((message) => updates(message as Color)) as Color;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Color copyWith(void Function(Color) updates) =>
+      super.copyWith((message) => updates(message as Color)) as Color;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -186,14 +192,18 @@ class Color extends $pb.GeneratedMessage {
   Color createEmptyInstance() => create();
   static $pb.PbList<Color> createRepeated() => $pb.PbList<Color>();
   @$core.pragma('dart2js:noInline')
-  static Color getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Color>(create);
+  static Color getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Color>(create);
   static Color? _defaultInstance;
 
   /// The amount of red in the color as a value in the interval [0, 1].
   @$pb.TagNumber(1)
   $core.double get red => $_getN(0);
   @$pb.TagNumber(1)
-  set red($core.double v) { $_setFloat(0, v); }
+  set red($core.double v) {
+    $_setFloat(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRed() => $_has(0);
   @$pb.TagNumber(1)
@@ -203,7 +213,10 @@ class Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get green => $_getN(1);
   @$pb.TagNumber(2)
-  set green($core.double v) { $_setFloat(1, v); }
+  set green($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasGreen() => $_has(1);
   @$pb.TagNumber(2)
@@ -213,7 +226,10 @@ class Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get blue => $_getN(2);
   @$pb.TagNumber(3)
-  set blue($core.double v) { $_setFloat(2, v); }
+  set blue($core.double v) {
+    $_setFloat(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasBlue() => $_has(2);
   @$pb.TagNumber(3)
@@ -233,7 +249,10 @@ class Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $45.FloatValue get alpha => $_getN(3);
   @$pb.TagNumber(4)
-  set alpha($45.FloatValue v) { setField(4, v); }
+  set alpha($45.FloatValue v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAlpha() => $_has(3);
   @$pb.TagNumber(4)
@@ -242,6 +261,6 @@ class Color extends $pb.GeneratedMessage {
   $45.FloatValue ensureAlpha() => $_ensure(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const BackupPlanCreatedEvent$json = {
   '1': 'BackupPlanCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.BackupPlanEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.BackupPlanEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List backupPlanCreatedEventDescriptor = $convert.base64De
 const BackupPlanUpdatedEvent$json = {
   '1': 'BackupPlanUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.BackupPlanEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.BackupPlanEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List backupPlanUpdatedEventDescriptor = $convert.base64De
 const BackupPlanDeletedEvent$json = {
   '1': 'BackupPlanDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.BackupPlanEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.BackupPlanEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List backupPlanDeletedEventDescriptor = $convert.base64De
 const BackupCreatedEvent$json = {
   '1': 'BackupCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.BackupEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.BackupEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -77,7 +105,14 @@ final $typed_data.Uint8List backupCreatedEventDescriptor = $convert.base64Decode
 const BackupUpdatedEvent$json = {
   '1': 'BackupUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.BackupEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.BackupEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -92,7 +127,14 @@ final $typed_data.Uint8List backupUpdatedEventDescriptor = $convert.base64Decode
 const BackupDeletedEvent$json = {
   '1': 'BackupDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.BackupEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.BackupEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -107,7 +149,14 @@ final $typed_data.Uint8List backupDeletedEventDescriptor = $convert.base64Decode
 const RestorePlanCreatedEvent$json = {
   '1': 'RestorePlanCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestorePlanEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestorePlanEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -123,7 +172,14 @@ final $typed_data.Uint8List restorePlanCreatedEventDescriptor = $convert.base64D
 const RestorePlanUpdatedEvent$json = {
   '1': 'RestorePlanUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestorePlanEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestorePlanEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -139,7 +195,14 @@ final $typed_data.Uint8List restorePlanUpdatedEventDescriptor = $convert.base64D
 const RestorePlanDeletedEvent$json = {
   '1': 'RestorePlanDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestorePlanEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestorePlanEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -155,7 +218,14 @@ final $typed_data.Uint8List restorePlanDeletedEventDescriptor = $convert.base64D
 const RestoreCreatedEvent$json = {
   '1': 'RestoreCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestoreEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestoreEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -171,7 +241,14 @@ final $typed_data.Uint8List restoreCreatedEventDescriptor = $convert.base64Decod
 const RestoreUpdatedEvent$json = {
   '1': 'RestoreUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestoreEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestoreEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -187,7 +264,14 @@ final $typed_data.Uint8List restoreUpdatedEventDescriptor = $convert.base64Decod
 const RestoreDeletedEvent$json = {
   '1': 'RestoreDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestoreEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestoreEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -198,4 +282,3 @@ final $typed_data.Uint8List restoreDeletedEventDescriptor = $convert.base64Decod
     'VkLmdrZWJhY2t1cC52MS5SZXN0b3JlRXZlbnREYXRhUgRkYXRhOkqy+NgsKWdvb2dsZS5jbG91'
     'ZC5na2ViYWNrdXAucmVzdG9yZS52MS5kZWxldGVkyvjYLAtyZXN0b3JlcGxhbsr42CwHcmVzdG'
     '9yZQ==');
-

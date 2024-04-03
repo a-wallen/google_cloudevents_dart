@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const FileDescriptorSet$json = {
   '1': 'FileDescriptorSet',
   '2': [
-    {'1': 'file', '3': 1, '4': 3, '5': 11, '6': '.google.protobuf.FileDescriptorProto', '10': 'file'},
+    {
+      '1': 'file',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.FileDescriptorProto',
+      '10': 'file'
+    },
   ],
 };
 
@@ -33,14 +40,62 @@ const FileDescriptorProto$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'package', '3': 2, '4': 1, '5': 9, '10': 'package'},
     {'1': 'dependency', '3': 3, '4': 3, '5': 9, '10': 'dependency'},
-    {'1': 'public_dependency', '3': 10, '4': 3, '5': 5, '10': 'publicDependency'},
+    {
+      '1': 'public_dependency',
+      '3': 10,
+      '4': 3,
+      '5': 5,
+      '10': 'publicDependency'
+    },
     {'1': 'weak_dependency', '3': 11, '4': 3, '5': 5, '10': 'weakDependency'},
-    {'1': 'message_type', '3': 4, '4': 3, '5': 11, '6': '.google.protobuf.DescriptorProto', '10': 'messageType'},
-    {'1': 'enum_type', '3': 5, '4': 3, '5': 11, '6': '.google.protobuf.EnumDescriptorProto', '10': 'enumType'},
-    {'1': 'service', '3': 6, '4': 3, '5': 11, '6': '.google.protobuf.ServiceDescriptorProto', '10': 'service'},
-    {'1': 'extension', '3': 7, '4': 3, '5': 11, '6': '.google.protobuf.FieldDescriptorProto', '10': 'extension'},
-    {'1': 'options', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.FileOptions', '10': 'options'},
-    {'1': 'source_code_info', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.SourceCodeInfo', '10': 'sourceCodeInfo'},
+    {
+      '1': 'message_type',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.DescriptorProto',
+      '10': 'messageType'
+    },
+    {
+      '1': 'enum_type',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.EnumDescriptorProto',
+      '10': 'enumType'
+    },
+    {
+      '1': 'service',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.ServiceDescriptorProto',
+      '10': 'service'
+    },
+    {
+      '1': 'extension',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.FieldDescriptorProto',
+      '10': 'extension'
+    },
+    {
+      '1': 'options',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FileOptions',
+      '10': 'options'
+    },
+    {
+      '1': 'source_code_info',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.SourceCodeInfo',
+      '10': 'sourceCodeInfo'
+    },
     {'1': 'syntax', '3': 12, '4': 1, '5': 9, '10': 'syntax'},
   ],
 };
@@ -65,17 +120,76 @@ const DescriptorProto$json = {
   '1': 'DescriptorProto',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'field', '3': 2, '4': 3, '5': 11, '6': '.google.protobuf.FieldDescriptorProto', '10': 'field'},
-    {'1': 'extension', '3': 6, '4': 3, '5': 11, '6': '.google.protobuf.FieldDescriptorProto', '10': 'extension'},
-    {'1': 'nested_type', '3': 3, '4': 3, '5': 11, '6': '.google.protobuf.DescriptorProto', '10': 'nestedType'},
-    {'1': 'enum_type', '3': 4, '4': 3, '5': 11, '6': '.google.protobuf.EnumDescriptorProto', '10': 'enumType'},
-    {'1': 'extension_range', '3': 5, '4': 3, '5': 11, '6': '.google.protobuf.DescriptorProto.ExtensionRange', '10': 'extensionRange'},
-    {'1': 'oneof_decl', '3': 8, '4': 3, '5': 11, '6': '.google.protobuf.OneofDescriptorProto', '10': 'oneofDecl'},
-    {'1': 'options', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.MessageOptions', '10': 'options'},
-    {'1': 'reserved_range', '3': 9, '4': 3, '5': 11, '6': '.google.protobuf.DescriptorProto.ReservedRange', '10': 'reservedRange'},
+    {
+      '1': 'field',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.FieldDescriptorProto',
+      '10': 'field'
+    },
+    {
+      '1': 'extension',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.FieldDescriptorProto',
+      '10': 'extension'
+    },
+    {
+      '1': 'nested_type',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.DescriptorProto',
+      '10': 'nestedType'
+    },
+    {
+      '1': 'enum_type',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.EnumDescriptorProto',
+      '10': 'enumType'
+    },
+    {
+      '1': 'extension_range',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.DescriptorProto.ExtensionRange',
+      '10': 'extensionRange'
+    },
+    {
+      '1': 'oneof_decl',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.OneofDescriptorProto',
+      '10': 'oneofDecl'
+    },
+    {
+      '1': 'options',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.MessageOptions',
+      '10': 'options'
+    },
+    {
+      '1': 'reserved_range',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.DescriptorProto.ReservedRange',
+      '10': 'reservedRange'
+    },
     {'1': 'reserved_name', '3': 10, '4': 3, '5': 9, '10': 'reservedName'},
   ],
-  '3': [DescriptorProto_ExtensionRange$json, DescriptorProto_ReservedRange$json],
+  '3': [
+    DescriptorProto_ExtensionRange$json,
+    DescriptorProto_ReservedRange$json
+  ],
 };
 
 @$core.Deprecated('Use descriptorProtoDescriptor instead')
@@ -84,7 +198,14 @@ const DescriptorProto_ExtensionRange$json = {
   '2': [
     {'1': 'start', '3': 1, '4': 1, '5': 5, '10': 'start'},
     {'1': 'end', '3': 2, '4': 1, '5': 5, '10': 'end'},
-    {'1': 'options', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.ExtensionRangeOptions', '10': 'options'},
+    {
+      '1': 'options',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ExtensionRangeOptions',
+      '10': 'options'
+    },
   ],
 };
 
@@ -119,7 +240,14 @@ final $typed_data.Uint8List descriptorProtoDescriptor = $convert.base64Decode(
 const ExtensionRangeOptions$json = {
   '1': 'ExtensionRangeOptions',
   '2': [
-    {'1': 'uninterpreted_option', '3': 999, '4': 3, '5': 11, '6': '.google.protobuf.UninterpretedOption', '10': 'uninterpretedOption'},
+    {
+      '1': 'uninterpreted_option',
+      '3': 999,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.UninterpretedOption',
+      '10': 'uninterpretedOption'
+    },
   ],
   '5': [
     {'1': 1000, '2': 536870912},
@@ -138,14 +266,35 @@ const FieldDescriptorProto$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'number', '3': 3, '4': 1, '5': 5, '10': 'number'},
-    {'1': 'label', '3': 4, '4': 1, '5': 14, '6': '.google.protobuf.FieldDescriptorProto.Label', '10': 'label'},
-    {'1': 'type', '3': 5, '4': 1, '5': 14, '6': '.google.protobuf.FieldDescriptorProto.Type', '10': 'type'},
+    {
+      '1': 'label',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.protobuf.FieldDescriptorProto.Label',
+      '10': 'label'
+    },
+    {
+      '1': 'type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.protobuf.FieldDescriptorProto.Type',
+      '10': 'type'
+    },
     {'1': 'type_name', '3': 6, '4': 1, '5': 9, '10': 'typeName'},
     {'1': 'extendee', '3': 2, '4': 1, '5': 9, '10': 'extendee'},
     {'1': 'default_value', '3': 7, '4': 1, '5': 9, '10': 'defaultValue'},
     {'1': 'oneof_index', '3': 9, '4': 1, '5': 5, '10': 'oneofIndex'},
     {'1': 'json_name', '3': 10, '4': 1, '5': 9, '10': 'jsonName'},
-    {'1': 'options', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.FieldOptions', '10': 'options'},
+    {
+      '1': 'options',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldOptions',
+      '10': 'options'
+    },
     {'1': 'proto3_optional', '3': 17, '4': 1, '5': 8, '10': 'proto3Optional'},
   ],
   '4': [FieldDescriptorProto_Type$json, FieldDescriptorProto_Label$json],
@@ -210,7 +359,14 @@ const OneofDescriptorProto$json = {
   '1': 'OneofDescriptorProto',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'options', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.OneofOptions', '10': 'options'},
+    {
+      '1': 'options',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.OneofOptions',
+      '10': 'options'
+    },
   ],
 };
 
@@ -224,9 +380,30 @@ const EnumDescriptorProto$json = {
   '1': 'EnumDescriptorProto',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'value', '3': 2, '4': 3, '5': 11, '6': '.google.protobuf.EnumValueDescriptorProto', '10': 'value'},
-    {'1': 'options', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.EnumOptions', '10': 'options'},
-    {'1': 'reserved_range', '3': 4, '4': 3, '5': 11, '6': '.google.protobuf.EnumDescriptorProto.EnumReservedRange', '10': 'reservedRange'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.EnumValueDescriptorProto',
+      '10': 'value'
+    },
+    {
+      '1': 'options',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.EnumOptions',
+      '10': 'options'
+    },
+    {
+      '1': 'reserved_range',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.EnumDescriptorProto.EnumReservedRange',
+      '10': 'reservedRange'
+    },
     {'1': 'reserved_name', '3': 5, '4': 3, '5': 9, '10': 'reservedName'},
   ],
   '3': [EnumDescriptorProto_EnumReservedRange$json],
@@ -257,7 +434,14 @@ const EnumValueDescriptorProto$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'number', '3': 2, '4': 1, '5': 5, '10': 'number'},
-    {'1': 'options', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.EnumValueOptions', '10': 'options'},
+    {
+      '1': 'options',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.EnumValueOptions',
+      '10': 'options'
+    },
   ],
 };
 
@@ -272,8 +456,22 @@ const ServiceDescriptorProto$json = {
   '1': 'ServiceDescriptorProto',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'method', '3': 2, '4': 3, '5': 11, '6': '.google.protobuf.MethodDescriptorProto', '10': 'method'},
-    {'1': 'options', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.ServiceOptions', '10': 'options'},
+    {
+      '1': 'method',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.MethodDescriptorProto',
+      '10': 'method'
+    },
+    {
+      '1': 'options',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ServiceOptions',
+      '10': 'options'
+    },
   ],
 };
 
@@ -291,9 +489,30 @@ const MethodDescriptorProto$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'input_type', '3': 2, '4': 1, '5': 9, '10': 'inputType'},
     {'1': 'output_type', '3': 3, '4': 1, '5': 9, '10': 'outputType'},
-    {'1': 'options', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.MethodOptions', '10': 'options'},
-    {'1': 'client_streaming', '3': 5, '4': 1, '5': 8, '7': 'false', '10': 'clientStreaming'},
-    {'1': 'server_streaming', '3': 6, '4': 1, '5': 8, '7': 'false', '10': 'serverStreaming'},
+    {
+      '1': 'options',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.MethodOptions',
+      '10': 'options'
+    },
+    {
+      '1': 'client_streaming',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'clientStreaming'
+    },
+    {
+      '1': 'server_streaming',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'serverStreaming'
+    },
   ],
 };
 
@@ -310,8 +529,21 @@ const FileOptions$json = {
   '1': 'FileOptions',
   '2': [
     {'1': 'java_package', '3': 1, '4': 1, '5': 9, '10': 'javaPackage'},
-    {'1': 'java_outer_classname', '3': 8, '4': 1, '5': 9, '10': 'javaOuterClassname'},
-    {'1': 'java_multiple_files', '3': 10, '4': 1, '5': 8, '7': 'false', '10': 'javaMultipleFiles'},
+    {
+      '1': 'java_outer_classname',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'javaOuterClassname'
+    },
+    {
+      '1': 'java_multiple_files',
+      '3': 10,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'javaMultipleFiles'
+    },
     {
       '1': 'java_generate_equals_and_hash',
       '3': 20,
@@ -320,23 +552,99 @@ const FileOptions$json = {
       '8': {'3': true},
       '10': 'javaGenerateEqualsAndHash',
     },
-    {'1': 'java_string_check_utf8', '3': 27, '4': 1, '5': 8, '7': 'false', '10': 'javaStringCheckUtf8'},
-    {'1': 'optimize_for', '3': 9, '4': 1, '5': 14, '6': '.google.protobuf.FileOptions.OptimizeMode', '7': 'SPEED', '10': 'optimizeFor'},
+    {
+      '1': 'java_string_check_utf8',
+      '3': 27,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'javaStringCheckUtf8'
+    },
+    {
+      '1': 'optimize_for',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.protobuf.FileOptions.OptimizeMode',
+      '7': 'SPEED',
+      '10': 'optimizeFor'
+    },
     {'1': 'go_package', '3': 11, '4': 1, '5': 9, '10': 'goPackage'},
-    {'1': 'cc_generic_services', '3': 16, '4': 1, '5': 8, '7': 'false', '10': 'ccGenericServices'},
-    {'1': 'java_generic_services', '3': 17, '4': 1, '5': 8, '7': 'false', '10': 'javaGenericServices'},
-    {'1': 'py_generic_services', '3': 18, '4': 1, '5': 8, '7': 'false', '10': 'pyGenericServices'},
-    {'1': 'php_generic_services', '3': 42, '4': 1, '5': 8, '7': 'false', '10': 'phpGenericServices'},
-    {'1': 'deprecated', '3': 23, '4': 1, '5': 8, '7': 'false', '10': 'deprecated'},
-    {'1': 'cc_enable_arenas', '3': 31, '4': 1, '5': 8, '7': 'true', '10': 'ccEnableArenas'},
-    {'1': 'objc_class_prefix', '3': 36, '4': 1, '5': 9, '10': 'objcClassPrefix'},
+    {
+      '1': 'cc_generic_services',
+      '3': 16,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'ccGenericServices'
+    },
+    {
+      '1': 'java_generic_services',
+      '3': 17,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'javaGenericServices'
+    },
+    {
+      '1': 'py_generic_services',
+      '3': 18,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'pyGenericServices'
+    },
+    {
+      '1': 'php_generic_services',
+      '3': 42,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'phpGenericServices'
+    },
+    {
+      '1': 'deprecated',
+      '3': 23,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'deprecated'
+    },
+    {
+      '1': 'cc_enable_arenas',
+      '3': 31,
+      '4': 1,
+      '5': 8,
+      '7': 'true',
+      '10': 'ccEnableArenas'
+    },
+    {
+      '1': 'objc_class_prefix',
+      '3': 36,
+      '4': 1,
+      '5': 9,
+      '10': 'objcClassPrefix'
+    },
     {'1': 'csharp_namespace', '3': 37, '4': 1, '5': 9, '10': 'csharpNamespace'},
     {'1': 'swift_prefix', '3': 39, '4': 1, '5': 9, '10': 'swiftPrefix'},
     {'1': 'php_class_prefix', '3': 40, '4': 1, '5': 9, '10': 'phpClassPrefix'},
     {'1': 'php_namespace', '3': 41, '4': 1, '5': 9, '10': 'phpNamespace'},
-    {'1': 'php_metadata_namespace', '3': 44, '4': 1, '5': 9, '10': 'phpMetadataNamespace'},
+    {
+      '1': 'php_metadata_namespace',
+      '3': 44,
+      '4': 1,
+      '5': 9,
+      '10': 'phpMetadataNamespace'
+    },
     {'1': 'ruby_package', '3': 45, '4': 1, '5': 9, '10': 'rubyPackage'},
-    {'1': 'uninterpreted_option', '3': 999, '4': 3, '5': 11, '6': '.google.protobuf.UninterpretedOption', '10': 'uninterpretedOption'},
+    {
+      '1': 'uninterpreted_option',
+      '3': 999,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.UninterpretedOption',
+      '10': 'uninterpretedOption'
+    },
   ],
   '4': [FileOptions_OptimizeMode$json],
   '5': [
@@ -386,11 +694,39 @@ final $typed_data.Uint8List fileOptionsDescriptor = $convert.base64Decode(
 const MessageOptions$json = {
   '1': 'MessageOptions',
   '2': [
-    {'1': 'message_set_wire_format', '3': 1, '4': 1, '5': 8, '7': 'false', '10': 'messageSetWireFormat'},
-    {'1': 'no_standard_descriptor_accessor', '3': 2, '4': 1, '5': 8, '7': 'false', '10': 'noStandardDescriptorAccessor'},
-    {'1': 'deprecated', '3': 3, '4': 1, '5': 8, '7': 'false', '10': 'deprecated'},
+    {
+      '1': 'message_set_wire_format',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'messageSetWireFormat'
+    },
+    {
+      '1': 'no_standard_descriptor_accessor',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'noStandardDescriptorAccessor'
+    },
+    {
+      '1': 'deprecated',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'deprecated'
+    },
     {'1': 'map_entry', '3': 7, '4': 1, '5': 8, '10': 'mapEntry'},
-    {'1': 'uninterpreted_option', '3': 999, '4': 3, '5': 11, '6': '.google.protobuf.UninterpretedOption', '10': 'uninterpretedOption'},
+    {
+      '1': 'uninterpreted_option',
+      '3': 999,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.UninterpretedOption',
+      '10': 'uninterpretedOption'
+    },
   ],
   '5': [
     {'1': 1000, '2': 536870912},
@@ -415,13 +751,43 @@ final $typed_data.Uint8List messageOptionsDescriptor = $convert.base64Decode(
 const FieldOptions$json = {
   '1': 'FieldOptions',
   '2': [
-    {'1': 'ctype', '3': 1, '4': 1, '5': 14, '6': '.google.protobuf.FieldOptions.CType', '7': 'STRING', '10': 'ctype'},
+    {
+      '1': 'ctype',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.protobuf.FieldOptions.CType',
+      '7': 'STRING',
+      '10': 'ctype'
+    },
     {'1': 'packed', '3': 2, '4': 1, '5': 8, '10': 'packed'},
-    {'1': 'jstype', '3': 6, '4': 1, '5': 14, '6': '.google.protobuf.FieldOptions.JSType', '7': 'JS_NORMAL', '10': 'jstype'},
+    {
+      '1': 'jstype',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.protobuf.FieldOptions.JSType',
+      '7': 'JS_NORMAL',
+      '10': 'jstype'
+    },
     {'1': 'lazy', '3': 5, '4': 1, '5': 8, '7': 'false', '10': 'lazy'},
-    {'1': 'deprecated', '3': 3, '4': 1, '5': 8, '7': 'false', '10': 'deprecated'},
+    {
+      '1': 'deprecated',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'deprecated'
+    },
     {'1': 'weak', '3': 10, '4': 1, '5': 8, '7': 'false', '10': 'weak'},
-    {'1': 'uninterpreted_option', '3': 999, '4': 3, '5': 11, '6': '.google.protobuf.UninterpretedOption', '10': 'uninterpretedOption'},
+    {
+      '1': 'uninterpreted_option',
+      '3': 999,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.UninterpretedOption',
+      '10': 'uninterpretedOption'
+    },
   ],
   '4': [FieldOptions_CType$json, FieldOptions_JSType$json],
   '5': [
@@ -468,7 +834,14 @@ final $typed_data.Uint8List fieldOptionsDescriptor = $convert.base64Decode(
 const OneofOptions$json = {
   '1': 'OneofOptions',
   '2': [
-    {'1': 'uninterpreted_option', '3': 999, '4': 3, '5': 11, '6': '.google.protobuf.UninterpretedOption', '10': 'uninterpretedOption'},
+    {
+      '1': 'uninterpreted_option',
+      '3': 999,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.UninterpretedOption',
+      '10': 'uninterpretedOption'
+    },
   ],
   '5': [
     {'1': 1000, '2': 536870912},
@@ -486,8 +859,22 @@ const EnumOptions$json = {
   '1': 'EnumOptions',
   '2': [
     {'1': 'allow_alias', '3': 2, '4': 1, '5': 8, '10': 'allowAlias'},
-    {'1': 'deprecated', '3': 3, '4': 1, '5': 8, '7': 'false', '10': 'deprecated'},
-    {'1': 'uninterpreted_option', '3': 999, '4': 3, '5': 11, '6': '.google.protobuf.UninterpretedOption', '10': 'uninterpretedOption'},
+    {
+      '1': 'deprecated',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'deprecated'
+    },
+    {
+      '1': 'uninterpreted_option',
+      '3': 999,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.UninterpretedOption',
+      '10': 'uninterpretedOption'
+    },
   ],
   '5': [
     {'1': 1000, '2': 536870912},
@@ -508,8 +895,22 @@ final $typed_data.Uint8List enumOptionsDescriptor = $convert.base64Decode(
 const EnumValueOptions$json = {
   '1': 'EnumValueOptions',
   '2': [
-    {'1': 'deprecated', '3': 1, '4': 1, '5': 8, '7': 'false', '10': 'deprecated'},
-    {'1': 'uninterpreted_option', '3': 999, '4': 3, '5': 11, '6': '.google.protobuf.UninterpretedOption', '10': 'uninterpretedOption'},
+    {
+      '1': 'deprecated',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'deprecated'
+    },
+    {
+      '1': 'uninterpreted_option',
+      '3': 999,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.UninterpretedOption',
+      '10': 'uninterpretedOption'
+    },
   ],
   '5': [
     {'1': 1000, '2': 536870912},
@@ -526,8 +927,22 @@ final $typed_data.Uint8List enumValueOptionsDescriptor = $convert.base64Decode(
 const ServiceOptions$json = {
   '1': 'ServiceOptions',
   '2': [
-    {'1': 'deprecated', '3': 33, '4': 1, '5': 8, '7': 'false', '10': 'deprecated'},
-    {'1': 'uninterpreted_option', '3': 999, '4': 3, '5': 11, '6': '.google.protobuf.UninterpretedOption', '10': 'uninterpretedOption'},
+    {
+      '1': 'deprecated',
+      '3': 33,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'deprecated'
+    },
+    {
+      '1': 'uninterpreted_option',
+      '3': 999,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.UninterpretedOption',
+      '10': 'uninterpretedOption'
+    },
   ],
   '5': [
     {'1': 1000, '2': 536870912},
@@ -544,9 +959,31 @@ final $typed_data.Uint8List serviceOptionsDescriptor = $convert.base64Decode(
 const MethodOptions$json = {
   '1': 'MethodOptions',
   '2': [
-    {'1': 'deprecated', '3': 33, '4': 1, '5': 8, '7': 'false', '10': 'deprecated'},
-    {'1': 'idempotency_level', '3': 34, '4': 1, '5': 14, '6': '.google.protobuf.MethodOptions.IdempotencyLevel', '7': 'IDEMPOTENCY_UNKNOWN', '10': 'idempotencyLevel'},
-    {'1': 'uninterpreted_option', '3': 999, '4': 3, '5': 11, '6': '.google.protobuf.UninterpretedOption', '10': 'uninterpretedOption'},
+    {
+      '1': 'deprecated',
+      '3': 33,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'deprecated'
+    },
+    {
+      '1': 'idempotency_level',
+      '3': 34,
+      '4': 1,
+      '5': 14,
+      '6': '.google.protobuf.MethodOptions.IdempotencyLevel',
+      '7': 'IDEMPOTENCY_UNKNOWN',
+      '10': 'idempotencyLevel'
+    },
+    {
+      '1': 'uninterpreted_option',
+      '3': 999,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.UninterpretedOption',
+      '10': 'uninterpretedOption'
+    },
   ],
   '4': [MethodOptions_IdempotencyLevel$json],
   '5': [
@@ -578,10 +1015,29 @@ final $typed_data.Uint8List methodOptionsDescriptor = $convert.base64Decode(
 const UninterpretedOption$json = {
   '1': 'UninterpretedOption',
   '2': [
-    {'1': 'name', '3': 2, '4': 3, '5': 11, '6': '.google.protobuf.UninterpretedOption.NamePart', '10': 'name'},
+    {
+      '1': 'name',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.UninterpretedOption.NamePart',
+      '10': 'name'
+    },
     {'1': 'identifier_value', '3': 3, '4': 1, '5': 9, '10': 'identifierValue'},
-    {'1': 'positive_int_value', '3': 4, '4': 1, '5': 4, '10': 'positiveIntValue'},
-    {'1': 'negative_int_value', '3': 5, '4': 1, '5': 3, '10': 'negativeIntValue'},
+    {
+      '1': 'positive_int_value',
+      '3': 4,
+      '4': 1,
+      '5': 4,
+      '10': 'positiveIntValue'
+    },
+    {
+      '1': 'negative_int_value',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '10': 'negativeIntValue'
+    },
     {'1': 'double_value', '3': 6, '4': 1, '5': 1, '10': 'doubleValue'},
     {'1': 'string_value', '3': 7, '4': 1, '5': 12, '10': 'stringValue'},
     {'1': 'aggregate_value', '3': 8, '4': 1, '5': 9, '10': 'aggregateValue'},
@@ -613,7 +1069,14 @@ final $typed_data.Uint8List uninterpretedOptionDescriptor = $convert.base64Decod
 const SourceCodeInfo$json = {
   '1': 'SourceCodeInfo',
   '2': [
-    {'1': 'location', '3': 1, '4': 3, '5': 11, '6': '.google.protobuf.SourceCodeInfo.Location', '10': 'location'},
+    {
+      '1': 'location',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.SourceCodeInfo.Location',
+      '10': 'location'
+    },
   ],
   '3': [SourceCodeInfo_Location$json],
 };
@@ -639,8 +1102,20 @@ const SourceCodeInfo_Location$json = {
       '10': 'span',
     },
     {'1': 'leading_comments', '3': 3, '4': 1, '5': 9, '10': 'leadingComments'},
-    {'1': 'trailing_comments', '3': 4, '4': 1, '5': 9, '10': 'trailingComments'},
-    {'1': 'leading_detached_comments', '3': 6, '4': 3, '5': 9, '10': 'leadingDetachedComments'},
+    {
+      '1': 'trailing_comments',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'trailingComments'
+    },
+    {
+      '1': 'leading_detached_comments',
+      '3': 6,
+      '4': 3,
+      '5': 9,
+      '10': 'leadingDetachedComments'
+    },
   ],
 };
 
@@ -657,7 +1132,14 @@ final $typed_data.Uint8List sourceCodeInfoDescriptor = $convert.base64Decode(
 const GeneratedCodeInfo$json = {
   '1': 'GeneratedCodeInfo',
   '2': [
-    {'1': 'annotation', '3': 1, '4': 3, '5': 11, '6': '.google.protobuf.GeneratedCodeInfo.Annotation', '10': 'annotation'},
+    {
+      '1': 'annotation',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.GeneratedCodeInfo.Annotation',
+      '10': 'annotation'
+    },
   ],
   '3': [GeneratedCodeInfo_Annotation$json],
 };
@@ -686,4 +1168,3 @@ final $typed_data.Uint8List generatedCodeInfoDescriptor = $convert.base64Decode(
     'VmLkdlbmVyYXRlZENvZGVJbmZvLkFubm90YXRpb25SCmFubm90YXRpb24abQoKQW5ub3RhdGlv'
     'bhIWCgRwYXRoGAEgAygFQgIQAVIEcGF0aBIfCgtzb3VyY2VfZmlsZRgCIAEoCVIKc291cmNlRm'
     'lsZRIUCgViZWdpbhgDIAEoBVIFYmVnaW4SEAoDZW5kGAQgASgFUgNlbmQ=');
-

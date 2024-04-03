@@ -111,12 +111,35 @@ final $typed_data.Uint8List dataTypeDescriptor = $convert.base64Decode(
 const StreamAnnotation$json = {
   '1': 'StreamAnnotation',
   '2': [
-    {'1': 'active_zone', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.NormalizedPolygon', '9': 0, '10': 'activeZone'},
-    {'1': 'crossing_line', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.NormalizedPolyline', '9': 0, '10': 'crossingLine'},
+    {
+      '1': 'active_zone',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.NormalizedPolygon',
+      '9': 0,
+      '10': 'activeZone'
+    },
+    {
+      '1': 'crossing_line',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.NormalizedPolyline',
+      '9': 0,
+      '10': 'crossingLine'
+    },
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'source_stream', '3': 3, '4': 1, '5': 9, '10': 'sourceStream'},
-    {'1': 'type', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.StreamAnnotationType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.StreamAnnotationType',
+      '10': 'type'
+    },
   ],
   '8': [
     {'1': 'annotation_payload'},
@@ -137,7 +160,14 @@ final $typed_data.Uint8List streamAnnotationDescriptor = $convert.base64Decode(
 const NormalizedPolygon$json = {
   '1': 'NormalizedPolygon',
   '2': [
-    {'1': 'normalized_vertices', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.NormalizedVertex', '10': 'normalizedVertices'},
+    {
+      '1': 'normalized_vertices',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.NormalizedVertex',
+      '10': 'normalizedVertices'
+    },
   ],
 };
 
@@ -151,7 +181,14 @@ final $typed_data.Uint8List normalizedPolygonDescriptor = $convert.base64Decode(
 const NormalizedPolyline$json = {
   '1': 'NormalizedPolyline',
   '2': [
-    {'1': 'normalized_vertices', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.NormalizedVertex', '10': 'normalizedVertices'},
+    {
+      '1': 'normalized_vertices',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.NormalizedVertex',
+      '10': 'normalizedVertices'
+    },
   ],
 };
 
@@ -179,12 +216,53 @@ const Cluster$json = {
   '1': 'Cluster',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Cluster.LabelsEntry', '10': 'labels'},
-    {'1': 'annotations', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Cluster.AnnotationsEntry', '10': 'annotations'},
-    {'1': 'dataplane_service_endpoint', '3': 6, '4': 1, '5': 9, '10': 'dataplaneServiceEndpoint'},
-    {'1': 'state', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.Cluster.State', '10': 'state'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Cluster.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'annotations',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Cluster.AnnotationsEntry',
+      '10': 'annotations'
+    },
+    {
+      '1': 'dataplane_service_endpoint',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'dataplaneServiceEndpoint'
+    },
+    {
+      '1': 'state',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.Cluster.State',
+      '10': 'state'
+    },
     {'1': 'psc_target', '3': 8, '4': 1, '5': 9, '10': 'pscTarget'},
   ],
   '3': [Cluster_LabelsEntry$json, Cluster_AnnotationsEntry$json],
@@ -248,8 +326,8 @@ const GcsSource$json = {
 };
 
 /// Descriptor for `GcsSource`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List gcsSourceDescriptor = $convert.base64Decode(
-    'CglHY3NTb3VyY2USEgoEdXJpcxgBIAMoCVIEdXJpcw==');
+final $typed_data.Uint8List gcsSourceDescriptor =
+    $convert.base64Decode('CglHY3NTb3VyY2USEgoEdXJpcxgBIAMoCVIEdXJpcw==');
 
 @$core.Deprecated('Use attributeValueDescriptor instead')
 const AttributeValue$json = {
@@ -276,11 +354,36 @@ const AnalyzerDefinition$json = {
   '2': [
     {'1': 'analyzer', '3': 1, '4': 1, '5': 9, '10': 'analyzer'},
     {'1': 'operator', '3': 2, '4': 1, '5': 9, '10': 'operator'},
-    {'1': 'inputs', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.AnalyzerDefinition.StreamInput', '10': 'inputs'},
-    {'1': 'attrs', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.AnalyzerDefinition.AttrsEntry', '10': 'attrs'},
-    {'1': 'debug_options', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.AnalyzerDefinition.DebugOptions', '10': 'debugOptions'},
+    {
+      '1': 'inputs',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.AnalyzerDefinition.StreamInput',
+      '10': 'inputs'
+    },
+    {
+      '1': 'attrs',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.AnalyzerDefinition.AttrsEntry',
+      '10': 'attrs'
+    },
+    {
+      '1': 'debug_options',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.AnalyzerDefinition.DebugOptions',
+      '10': 'debugOptions'
+    },
   ],
-  '3': [AnalyzerDefinition_StreamInput$json, AnalyzerDefinition_DebugOptions$json, AnalyzerDefinition_AttrsEntry$json],
+  '3': [
+    AnalyzerDefinition_StreamInput$json,
+    AnalyzerDefinition_DebugOptions$json,
+    AnalyzerDefinition_AttrsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use analyzerDefinitionDescriptor instead')
@@ -295,7 +398,15 @@ const AnalyzerDefinition_StreamInput$json = {
 const AnalyzerDefinition_DebugOptions$json = {
   '1': 'DebugOptions',
   '2': [
-    {'1': 'environment_variables', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.AnalyzerDefinition.DebugOptions.EnvironmentVariablesEntry', '10': 'environmentVariables'},
+    {
+      '1': 'environment_variables',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.AnalyzerDefinition.DebugOptions.EnvironmentVariablesEntry',
+      '10': 'environmentVariables'
+    },
   ],
   '3': [AnalyzerDefinition_DebugOptions_EnvironmentVariablesEntry$json],
 };
@@ -315,7 +426,14 @@ const AnalyzerDefinition_AttrsEntry$json = {
   '1': 'AttrsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.AttributeValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.AttributeValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -341,7 +459,14 @@ final $typed_data.Uint8List analyzerDefinitionDescriptor = $convert.base64Decode
 const AnalysisDefinition$json = {
   '1': 'AnalysisDefinition',
   '2': [
-    {'1': 'analyzers', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.AnalyzerDefinition', '10': 'analyzers'},
+    {
+      '1': 'analyzers',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.AnalyzerDefinition',
+      '10': 'analyzers'
+    },
   ],
 };
 
@@ -354,7 +479,14 @@ final $typed_data.Uint8List analysisDefinitionDescriptor = $convert.base64Decode
 const RunStatus$json = {
   '1': 'RunStatus',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.RunStatus.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.RunStatus.State',
+      '10': 'state'
+    },
     {'1': 'reason', '3': 2, '4': 1, '5': 9, '10': 'reason'},
   ],
   '4': [RunStatus_State$json],
@@ -385,15 +517,68 @@ const Analysis$json = {
   '1': 'Analysis',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Analysis.LabelsEntry', '10': 'labels'},
-    {'1': 'analysis_definition', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.AnalysisDefinition', '10': 'analysisDefinition'},
-    {'1': 'input_streams_mapping', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Analysis.InputStreamsMappingEntry', '10': 'inputStreamsMapping'},
-    {'1': 'output_streams_mapping', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Analysis.OutputStreamsMappingEntry', '10': 'outputStreamsMapping'},
-    {'1': 'disable_event_watch', '3': 8, '4': 1, '5': 8, '10': 'disableEventWatch'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Analysis.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'analysis_definition',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.AnalysisDefinition',
+      '10': 'analysisDefinition'
+    },
+    {
+      '1': 'input_streams_mapping',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Analysis.InputStreamsMappingEntry',
+      '10': 'inputStreamsMapping'
+    },
+    {
+      '1': 'output_streams_mapping',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.Analysis.OutputStreamsMappingEntry',
+      '10': 'outputStreamsMapping'
+    },
+    {
+      '1': 'disable_event_watch',
+      '3': 8,
+      '4': 1,
+      '5': 8,
+      '10': 'disableEventWatch'
+    },
   ],
-  '3': [Analysis_LabelsEntry$json, Analysis_InputStreamsMappingEntry$json, Analysis_OutputStreamsMappingEntry$json],
+  '3': [
+    Analysis_LabelsEntry$json,
+    Analysis_InputStreamsMappingEntry$json,
+    Analysis_OutputStreamsMappingEntry$json
+  ],
 };
 
 @$core.Deprecated('Use analysisDescriptor instead')
@@ -449,12 +634,46 @@ const Process$json = {
   '1': 'Process',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'analysis', '3': 4, '4': 1, '5': 9, '10': 'analysis'},
-    {'1': 'attribute_overrides', '3': 5, '4': 3, '5': 9, '10': 'attributeOverrides'},
-    {'1': 'run_status', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.RunStatus', '10': 'runStatus'},
-    {'1': 'run_mode', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.RunMode', '10': 'runMode'},
+    {
+      '1': 'attribute_overrides',
+      '3': 5,
+      '4': 3,
+      '5': 9,
+      '10': 'attributeOverrides'
+    },
+    {
+      '1': 'run_status',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.RunStatus',
+      '10': 'runStatus'
+    },
+    {
+      '1': 'run_mode',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.RunMode',
+      '10': 'runMode'
+    },
     {'1': 'event_id', '3': 8, '4': 1, '5': 9, '10': 'eventId'},
     {'1': 'batch_id', '3': 9, '4': 1, '5': 9, '10': 'batchId'},
     {'1': 'retry_count', '3': 10, '4': 1, '5': 5, '10': 'retryCount'},
@@ -478,15 +697,65 @@ const Application$json = {
   '1': 'Application',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Application.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Application.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 6, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'application_configs', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ApplicationConfigs', '10': 'applicationConfigs'},
-    {'1': 'runtime_info', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.Application.ApplicationRuntimeInfo', '10': 'runtimeInfo'},
-    {'1': 'state', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.Application.State', '10': 'state'},
-    {'1': 'billing_mode', '3': 12, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.Application.BillingMode', '10': 'billingMode'},
+    {
+      '1': 'application_configs',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ApplicationConfigs',
+      '10': 'applicationConfigs'
+    },
+    {
+      '1': 'runtime_info',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.Application.ApplicationRuntimeInfo',
+      '10': 'runtimeInfo'
+    },
+    {
+      '1': 'state',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.Application.State',
+      '10': 'state'
+    },
+    {
+      '1': 'billing_mode',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.Application.BillingMode',
+      '10': 'billingMode'
+    },
   ],
   '3': [Application_ApplicationRuntimeInfo$json, Application_LabelsEntry$json],
   '4': [Application_State$json, Application_BillingMode$json],
@@ -496,11 +765,37 @@ const Application$json = {
 const Application_ApplicationRuntimeInfo$json = {
   '1': 'ApplicationRuntimeInfo',
   '2': [
-    {'1': 'deploy_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deployTime'},
-    {'1': 'global_output_resources', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Application.ApplicationRuntimeInfo.GlobalOutputResource', '10': 'globalOutputResources'},
-    {'1': 'monitoring_config', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.Application.ApplicationRuntimeInfo.MonitoringConfig', '10': 'monitoringConfig'},
+    {
+      '1': 'deploy_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deployTime'
+    },
+    {
+      '1': 'global_output_resources',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.Application.ApplicationRuntimeInfo.GlobalOutputResource',
+      '10': 'globalOutputResources'
+    },
+    {
+      '1': 'monitoring_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.Application.ApplicationRuntimeInfo.MonitoringConfig',
+      '10': 'monitoringConfig'
+    },
   ],
-  '3': [Application_ApplicationRuntimeInfo_GlobalOutputResource$json, Application_ApplicationRuntimeInfo_MonitoringConfig$json],
+  '3': [
+    Application_ApplicationRuntimeInfo_GlobalOutputResource$json,
+    Application_ApplicationRuntimeInfo_MonitoringConfig$json
+  ],
 };
 
 @$core.Deprecated('Use applicationDescriptor instead')
@@ -594,7 +889,14 @@ final $typed_data.Uint8List applicationDescriptor = $convert.base64Decode(
 const ApplicationConfigs$json = {
   '1': 'ApplicationConfigs',
   '2': [
-    {'1': 'nodes', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Node', '10': 'nodes'},
+    {
+      '1': 'nodes',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Node',
+      '10': 'nodes'
+    },
   ],
 };
 
@@ -607,12 +909,33 @@ final $typed_data.Uint8List applicationConfigsDescriptor = $convert.base64Decode
 const Node$json = {
   '1': 'Node',
   '2': [
-    {'1': 'output_all_output_channels_to_stream', '3': 6, '4': 1, '5': 8, '9': 0, '10': 'outputAllOutputChannelsToStream'},
+    {
+      '1': 'output_all_output_channels_to_stream',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'outputAllOutputChannelsToStream'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'node_config', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessorConfig', '10': 'nodeConfig'},
+    {
+      '1': 'node_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ProcessorConfig',
+      '10': 'nodeConfig'
+    },
     {'1': 'processor', '3': 4, '4': 1, '5': 9, '10': 'processor'},
-    {'1': 'parents', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Node.InputEdge', '10': 'parents'},
+    {
+      '1': 'parents',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Node.InputEdge',
+      '10': 'parents'
+    },
   ],
   '3': [Node_InputEdge$json],
   '8': [
@@ -625,8 +948,20 @@ const Node_InputEdge$json = {
   '1': 'InputEdge',
   '2': [
     {'1': 'parent_node', '3': 1, '4': 1, '5': 9, '10': 'parentNode'},
-    {'1': 'parent_output_channel', '3': 2, '4': 1, '5': 9, '10': 'parentOutputChannel'},
-    {'1': 'connected_input_channel', '3': 3, '4': 1, '5': 9, '10': 'connectedInputChannel'},
+    {
+      '1': 'parent_output_channel',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'parentOutputChannel'
+    },
+    {
+      '1': 'connected_input_channel',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'connectedInputChannel'
+    },
   ],
 };
 
@@ -648,12 +983,40 @@ const Draft$json = {
   '1': 'Draft',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Draft.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Draft.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 4, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'draft_application_configs', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ApplicationConfigs', '10': 'draftApplicationConfigs'},
+    {
+      '1': 'draft_application_configs',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ApplicationConfigs',
+      '10': 'draftApplicationConfigs'
+    },
   ],
   '3': [Draft_LabelsEntry$json],
 };
@@ -685,19 +1048,94 @@ const Processor$json = {
   '1': 'Processor',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Processor.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Processor.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 10, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'processor_type', '3': 6, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.Processor.ProcessorType', '10': 'processorType'},
-    {'1': 'model_type', '3': 13, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.ModelType', '10': 'modelType'},
-    {'1': 'custom_processor_source_info', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.CustomProcessorSourceInfo', '10': 'customProcessorSourceInfo'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.Processor.ProcessorState', '10': 'state'},
-    {'1': 'processor_io_spec', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessorIOSpec', '10': 'processorIoSpec'},
-    {'1': 'configuration_typeurl', '3': 14, '4': 1, '5': 9, '10': 'configurationTypeurl'},
-    {'1': 'supported_annotation_types', '3': 15, '4': 3, '5': 14, '6': '.google.events.cloud.visionai.v1.StreamAnnotationType', '10': 'supportedAnnotationTypes'},
-    {'1': 'supports_post_processing', '3': 17, '4': 1, '5': 8, '10': 'supportsPostProcessing'},
+    {
+      '1': 'processor_type',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.Processor.ProcessorType',
+      '10': 'processorType'
+    },
+    {
+      '1': 'model_type',
+      '3': 13,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.ModelType',
+      '10': 'modelType'
+    },
+    {
+      '1': 'custom_processor_source_info',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.CustomProcessorSourceInfo',
+      '10': 'customProcessorSourceInfo'
+    },
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.Processor.ProcessorState',
+      '10': 'state'
+    },
+    {
+      '1': 'processor_io_spec',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ProcessorIOSpec',
+      '10': 'processorIoSpec'
+    },
+    {
+      '1': 'configuration_typeurl',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '10': 'configurationTypeurl'
+    },
+    {
+      '1': 'supported_annotation_types',
+      '3': 15,
+      '4': 3,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.StreamAnnotationType',
+      '10': 'supportedAnnotationTypes'
+    },
+    {
+      '1': 'supports_post_processing',
+      '3': 17,
+      '4': 1,
+      '5': 8,
+      '10': 'supportsPostProcessing'
+    },
   ],
   '3': [Processor_LabelsEntry$json],
   '4': [Processor_ProcessorType$json, Processor_ProcessorState$json],
@@ -766,12 +1204,49 @@ final $typed_data.Uint8List processorDescriptor = $convert.base64Decode(
 const ProcessorIOSpec$json = {
   '1': 'ProcessorIOSpec',
   '2': [
-    {'1': 'graph_input_channel_specs', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphInputChannelSpec', '10': 'graphInputChannelSpecs'},
-    {'1': 'graph_output_channel_specs', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphOutputChannelSpec', '10': 'graphOutputChannelSpecs'},
-    {'1': 'instance_resource_input_binding_specs', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceInputBindingSpec', '10': 'instanceResourceInputBindingSpecs'},
-    {'1': 'instance_resource_output_binding_specs', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceOutputBindingSpec', '10': 'instanceResourceOutputBindingSpecs'},
+    {
+      '1': 'graph_input_channel_specs',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphInputChannelSpec',
+      '10': 'graphInputChannelSpecs'
+    },
+    {
+      '1': 'graph_output_channel_specs',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphOutputChannelSpec',
+      '10': 'graphOutputChannelSpecs'
+    },
+    {
+      '1': 'instance_resource_input_binding_specs',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceInputBindingSpec',
+      '10': 'instanceResourceInputBindingSpecs'
+    },
+    {
+      '1': 'instance_resource_output_binding_specs',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceOutputBindingSpec',
+      '10': 'instanceResourceOutputBindingSpecs'
+    },
   ],
-  '3': [ProcessorIOSpec_GraphInputChannelSpec$json, ProcessorIOSpec_GraphOutputChannelSpec$json, ProcessorIOSpec_InstanceResourceInputBindingSpec$json, ProcessorIOSpec_InstanceResourceOutputBindingSpec$json],
+  '3': [
+    ProcessorIOSpec_GraphInputChannelSpec$json,
+    ProcessorIOSpec_GraphOutputChannelSpec$json,
+    ProcessorIOSpec_InstanceResourceInputBindingSpec$json,
+    ProcessorIOSpec_InstanceResourceOutputBindingSpec$json
+  ],
 };
 
 @$core.Deprecated('Use processorIOSpecDescriptor instead')
@@ -779,10 +1254,29 @@ const ProcessorIOSpec_GraphInputChannelSpec$json = {
   '1': 'GraphInputChannelSpec',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'data_type', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.DataType', '10': 'dataType'},
-    {'1': 'accepted_data_type_uris', '3': 5, '4': 3, '5': 9, '10': 'acceptedDataTypeUris'},
+    {
+      '1': 'data_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.DataType',
+      '10': 'dataType'
+    },
+    {
+      '1': 'accepted_data_type_uris',
+      '3': 5,
+      '4': 3,
+      '5': 9,
+      '10': 'acceptedDataTypeUris'
+    },
     {'1': 'required', '3': 3, '4': 1, '5': 8, '10': 'required'},
-    {'1': 'max_connection_allowed', '3': 4, '4': 1, '5': 3, '10': 'maxConnectionAllowed'},
+    {
+      '1': 'max_connection_allowed',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '10': 'maxConnectionAllowed'
+    },
   ],
 };
 
@@ -791,7 +1285,14 @@ const ProcessorIOSpec_GraphOutputChannelSpec$json = {
   '1': 'GraphOutputChannelSpec',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'data_type', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.DataType', '10': 'dataType'},
+    {
+      '1': 'data_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.DataType',
+      '10': 'dataType'
+    },
     {'1': 'data_type_uri', '3': 3, '4': 1, '5': 9, '10': 'dataTypeUri'},
   ],
 };
@@ -800,8 +1301,22 @@ const ProcessorIOSpec_GraphOutputChannelSpec$json = {
 const ProcessorIOSpec_InstanceResourceInputBindingSpec$json = {
   '1': 'InstanceResourceInputBindingSpec',
   '2': [
-    {'1': 'config_type_uri', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'configTypeUri'},
-    {'1': 'resource_type_uri', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'resourceTypeUri'},
+    {
+      '1': 'config_type_uri',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'configTypeUri'
+    },
+    {
+      '1': 'resource_type_uri',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'resourceTypeUri'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
   ],
   '8': [
@@ -851,11 +1366,38 @@ const CustomProcessorSourceInfo$json = {
   '1': 'CustomProcessorSourceInfo',
   '2': [
     {'1': 'vertex_model', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'vertexModel'},
-    {'1': 'source_type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.CustomProcessorSourceInfo.SourceType', '10': 'sourceType'},
-    {'1': 'additional_info', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.CustomProcessorSourceInfo.AdditionalInfoEntry', '10': 'additionalInfo'},
-    {'1': 'model_schema', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.CustomProcessorSourceInfo.ModelSchema', '10': 'modelSchema'},
+    {
+      '1': 'source_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.visionai.v1.CustomProcessorSourceInfo.SourceType',
+      '10': 'sourceType'
+    },
+    {
+      '1': 'additional_info',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.CustomProcessorSourceInfo.AdditionalInfoEntry',
+      '10': 'additionalInfo'
+    },
+    {
+      '1': 'model_schema',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.CustomProcessorSourceInfo.ModelSchema',
+      '10': 'modelSchema'
+    },
   ],
-  '3': [CustomProcessorSourceInfo_ModelSchema$json, CustomProcessorSourceInfo_AdditionalInfoEntry$json],
+  '3': [
+    CustomProcessorSourceInfo_ModelSchema$json,
+    CustomProcessorSourceInfo_AdditionalInfoEntry$json
+  ],
   '4': [CustomProcessorSourceInfo_SourceType$json],
   '8': [
     {'1': 'artifact_path'},
@@ -866,9 +1408,30 @@ const CustomProcessorSourceInfo$json = {
 const CustomProcessorSourceInfo_ModelSchema$json = {
   '1': 'ModelSchema',
   '2': [
-    {'1': 'instances_schema', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.GcsSource', '10': 'instancesSchema'},
-    {'1': 'parameters_schema', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.GcsSource', '10': 'parametersSchema'},
-    {'1': 'predictions_schema', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.GcsSource', '10': 'predictionsSchema'},
+    {
+      '1': 'instances_schema',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.GcsSource',
+      '10': 'instancesSchema'
+    },
+    {
+      '1': 'parameters_schema',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.GcsSource',
+      '10': 'parametersSchema'
+    },
+    {
+      '1': 'predictions_schema',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.GcsSource',
+      '10': 'predictionsSchema'
+    },
   ],
 };
 
@@ -916,18 +1479,115 @@ final $typed_data.Uint8List customProcessorSourceInfoDescriptor = $convert.base6
 const ProcessorConfig$json = {
   '1': 'ProcessorConfig',
   '2': [
-    {'1': 'video_stream_input_config', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.VideoStreamInputConfig', '9': 0, '10': 'videoStreamInputConfig'},
-    {'1': 'ai_enabled_devices_input_config', '3': 20, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.AIEnabledDevicesInputConfig', '9': 0, '10': 'aiEnabledDevicesInputConfig'},
-    {'1': 'media_warehouse_config', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.MediaWarehouseConfig', '9': 0, '10': 'mediaWarehouseConfig'},
-    {'1': 'person_blur_config', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.PersonBlurConfig', '9': 0, '10': 'personBlurConfig'},
-    {'1': 'occupancy_count_config', '3': 12, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.OccupancyCountConfig', '9': 0, '10': 'occupancyCountConfig'},
-    {'1': 'person_vehicle_detection_config', '3': 15, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.PersonVehicleDetectionConfig', '9': 0, '10': 'personVehicleDetectionConfig'},
-    {'1': 'vertex_automl_vision_config', '3': 13, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.VertexAutoMLVisionConfig', '9': 0, '10': 'vertexAutomlVisionConfig'},
-    {'1': 'vertex_automl_video_config', '3': 14, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.VertexAutoMLVideoConfig', '9': 0, '10': 'vertexAutomlVideoConfig'},
-    {'1': 'vertex_custom_config', '3': 17, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.VertexCustomConfig', '9': 0, '10': 'vertexCustomConfig'},
-    {'1': 'general_object_detection_config', '3': 18, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.GeneralObjectDetectionConfig', '9': 0, '10': 'generalObjectDetectionConfig'},
-    {'1': 'big_query_config', '3': 19, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.BigQueryConfig', '9': 0, '10': 'bigQueryConfig'},
-    {'1': 'personal_protective_equipment_detection_config', '3': 22, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.PersonalProtectiveEquipmentDetectionConfig', '9': 0, '10': 'personalProtectiveEquipmentDetectionConfig'},
+    {
+      '1': 'video_stream_input_config',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.VideoStreamInputConfig',
+      '9': 0,
+      '10': 'videoStreamInputConfig'
+    },
+    {
+      '1': 'ai_enabled_devices_input_config',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.AIEnabledDevicesInputConfig',
+      '9': 0,
+      '10': 'aiEnabledDevicesInputConfig'
+    },
+    {
+      '1': 'media_warehouse_config',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.MediaWarehouseConfig',
+      '9': 0,
+      '10': 'mediaWarehouseConfig'
+    },
+    {
+      '1': 'person_blur_config',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.PersonBlurConfig',
+      '9': 0,
+      '10': 'personBlurConfig'
+    },
+    {
+      '1': 'occupancy_count_config',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.OccupancyCountConfig',
+      '9': 0,
+      '10': 'occupancyCountConfig'
+    },
+    {
+      '1': 'person_vehicle_detection_config',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.PersonVehicleDetectionConfig',
+      '9': 0,
+      '10': 'personVehicleDetectionConfig'
+    },
+    {
+      '1': 'vertex_automl_vision_config',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.VertexAutoMLVisionConfig',
+      '9': 0,
+      '10': 'vertexAutomlVisionConfig'
+    },
+    {
+      '1': 'vertex_automl_video_config',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.VertexAutoMLVideoConfig',
+      '9': 0,
+      '10': 'vertexAutomlVideoConfig'
+    },
+    {
+      '1': 'vertex_custom_config',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.VertexCustomConfig',
+      '9': 0,
+      '10': 'vertexCustomConfig'
+    },
+    {
+      '1': 'general_object_detection_config',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.GeneralObjectDetectionConfig',
+      '9': 0,
+      '10': 'generalObjectDetectionConfig'
+    },
+    {
+      '1': 'big_query_config',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.BigQueryConfig',
+      '9': 0,
+      '10': 'bigQueryConfig'
+    },
+    {
+      '1': 'personal_protective_equipment_detection_config',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.PersonalProtectiveEquipmentDetectionConfig',
+      '9': 0,
+      '10': 'personalProtectiveEquipmentDetectionConfig'
+    },
   ],
   '8': [
     {'1': 'processor_config'},
@@ -970,8 +1630,23 @@ const StreamWithAnnotation$json = {
   '1': 'StreamWithAnnotation',
   '2': [
     {'1': 'stream', '3': 1, '4': 1, '5': 9, '10': 'stream'},
-    {'1': 'application_annotations', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.StreamAnnotation', '10': 'applicationAnnotations'},
-    {'1': 'node_annotations', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.StreamWithAnnotation.NodeAnnotation', '10': 'nodeAnnotations'},
+    {
+      '1': 'application_annotations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.StreamAnnotation',
+      '10': 'applicationAnnotations'
+    },
+    {
+      '1': 'node_annotations',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.StreamWithAnnotation.NodeAnnotation',
+      '10': 'nodeAnnotations'
+    },
   ],
   '3': [StreamWithAnnotation_NodeAnnotation$json],
 };
@@ -981,7 +1656,14 @@ const StreamWithAnnotation_NodeAnnotation$json = {
   '1': 'NodeAnnotation',
   '2': [
     {'1': 'node', '3': 1, '4': 1, '5': 9, '10': 'node'},
-    {'1': 'annotations', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.StreamAnnotation', '10': 'annotations'},
+    {
+      '1': 'annotations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.StreamAnnotation',
+      '10': 'annotations'
+    },
   ],
 };
 
@@ -1001,7 +1683,14 @@ const VideoStreamInputConfig$json = {
   '1': 'VideoStreamInputConfig',
   '2': [
     {'1': 'streams', '3': 1, '4': 3, '5': 9, '10': 'streams'},
-    {'1': 'streams_with_annotation', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.StreamWithAnnotation', '10': 'streamsWithAnnotation'},
+    {
+      '1': 'streams_with_annotation',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.StreamWithAnnotation',
+      '10': 'streamsWithAnnotation'
+    },
   ],
 };
 
@@ -1017,8 +1706,8 @@ const AIEnabledDevicesInputConfig$json = {
 };
 
 /// Descriptor for `AIEnabledDevicesInputConfig`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List aIEnabledDevicesInputConfigDescriptor = $convert.base64Decode(
-    'ChtBSUVuYWJsZWREZXZpY2VzSW5wdXRDb25maWc=');
+final $typed_data.Uint8List aIEnabledDevicesInputConfigDescriptor =
+    $convert.base64Decode('ChtBSUVuYWJsZWREZXZpY2VzSW5wdXRDb25maWc=');
 
 @$core.Deprecated('Use mediaWarehouseConfigDescriptor instead')
 const MediaWarehouseConfig$json = {
@@ -1026,7 +1715,14 @@ const MediaWarehouseConfig$json = {
   '2': [
     {'1': 'corpus', '3': 1, '4': 1, '5': 9, '10': 'corpus'},
     {'1': 'region', '3': 2, '4': 1, '5': 9, '10': 'region'},
-    {'1': 'ttl', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'ttl'},
+    {
+      '1': 'ttl',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'ttl'
+    },
   ],
 };
 
@@ -1040,7 +1736,14 @@ final $typed_data.Uint8List mediaWarehouseConfigDescriptor = $convert.base64Deco
 const PersonBlurConfig$json = {
   '1': 'PersonBlurConfig',
   '2': [
-    {'1': 'person_blur_type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.PersonBlurConfig.PersonBlurType', '10': 'personBlurType'},
+    {
+      '1': 'person_blur_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.PersonBlurConfig.PersonBlurType',
+      '10': 'personBlurType'
+    },
     {'1': 'faces_only', '3': 2, '4': 1, '5': 8, '10': 'facesOnly'},
   ],
   '4': [PersonBlurConfig_PersonBlurType$json],
@@ -1068,9 +1771,27 @@ final $typed_data.Uint8List personBlurConfigDescriptor = $convert.base64Decode(
 const OccupancyCountConfig$json = {
   '1': 'OccupancyCountConfig',
   '2': [
-    {'1': 'enable_people_counting', '3': 1, '4': 1, '5': 8, '10': 'enablePeopleCounting'},
-    {'1': 'enable_vehicle_counting', '3': 2, '4': 1, '5': 8, '10': 'enableVehicleCounting'},
-    {'1': 'enable_dwelling_time_tracking', '3': 3, '4': 1, '5': 8, '10': 'enableDwellingTimeTracking'},
+    {
+      '1': 'enable_people_counting',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'enablePeopleCounting'
+    },
+    {
+      '1': 'enable_vehicle_counting',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'enableVehicleCounting'
+    },
+    {
+      '1': 'enable_dwelling_time_tracking',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'enableDwellingTimeTracking'
+    },
   ],
 };
 
@@ -1085,34 +1806,68 @@ final $typed_data.Uint8List occupancyCountConfigDescriptor = $convert.base64Deco
 const PersonVehicleDetectionConfig$json = {
   '1': 'PersonVehicleDetectionConfig',
   '2': [
-    {'1': 'enable_people_counting', '3': 1, '4': 1, '5': 8, '10': 'enablePeopleCounting'},
-    {'1': 'enable_vehicle_counting', '3': 2, '4': 1, '5': 8, '10': 'enableVehicleCounting'},
+    {
+      '1': 'enable_people_counting',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'enablePeopleCounting'
+    },
+    {
+      '1': 'enable_vehicle_counting',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'enableVehicleCounting'
+    },
   ],
 };
 
 /// Descriptor for `PersonVehicleDetectionConfig`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List personVehicleDetectionConfigDescriptor = $convert.base64Decode(
-    'ChxQZXJzb25WZWhpY2xlRGV0ZWN0aW9uQ29uZmlnEjQKFmVuYWJsZV9wZW9wbGVfY291bnRpbm'
-    'cYASABKAhSFGVuYWJsZVBlb3BsZUNvdW50aW5nEjYKF2VuYWJsZV92ZWhpY2xlX2NvdW50aW5n'
-    'GAIgASgIUhVlbmFibGVWZWhpY2xlQ291bnRpbmc=');
+final $typed_data.Uint8List personVehicleDetectionConfigDescriptor =
+    $convert.base64Decode(
+        'ChxQZXJzb25WZWhpY2xlRGV0ZWN0aW9uQ29uZmlnEjQKFmVuYWJsZV9wZW9wbGVfY291bnRpbm'
+        'cYASABKAhSFGVuYWJsZVBlb3BsZUNvdW50aW5nEjYKF2VuYWJsZV92ZWhpY2xlX2NvdW50aW5n'
+        'GAIgASgIUhVlbmFibGVWZWhpY2xlQ291bnRpbmc=');
 
-@$core.Deprecated('Use personalProtectiveEquipmentDetectionConfigDescriptor instead')
+@$core.Deprecated(
+    'Use personalProtectiveEquipmentDetectionConfigDescriptor instead')
 const PersonalProtectiveEquipmentDetectionConfig$json = {
   '1': 'PersonalProtectiveEquipmentDetectionConfig',
   '2': [
-    {'1': 'enable_face_coverage_detection', '3': 1, '4': 1, '5': 8, '10': 'enableFaceCoverageDetection'},
-    {'1': 'enable_head_coverage_detection', '3': 2, '4': 1, '5': 8, '10': 'enableHeadCoverageDetection'},
-    {'1': 'enable_hands_coverage_detection', '3': 3, '4': 1, '5': 8, '10': 'enableHandsCoverageDetection'},
+    {
+      '1': 'enable_face_coverage_detection',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'enableFaceCoverageDetection'
+    },
+    {
+      '1': 'enable_head_coverage_detection',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'enableHeadCoverageDetection'
+    },
+    {
+      '1': 'enable_hands_coverage_detection',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'enableHandsCoverageDetection'
+    },
   ],
 };
 
 /// Descriptor for `PersonalProtectiveEquipmentDetectionConfig`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List personalProtectiveEquipmentDetectionConfigDescriptor = $convert.base64Decode(
-    'CipQZXJzb25hbFByb3RlY3RpdmVFcXVpcG1lbnREZXRlY3Rpb25Db25maWcSQwoeZW5hYmxlX2'
-    'ZhY2VfY292ZXJhZ2VfZGV0ZWN0aW9uGAEgASgIUhtlbmFibGVGYWNlQ292ZXJhZ2VEZXRlY3Rp'
-    'b24SQwoeZW5hYmxlX2hlYWRfY292ZXJhZ2VfZGV0ZWN0aW9uGAIgASgIUhtlbmFibGVIZWFkQ2'
-    '92ZXJhZ2VEZXRlY3Rpb24SRQofZW5hYmxlX2hhbmRzX2NvdmVyYWdlX2RldGVjdGlvbhgDIAEo'
-    'CFIcZW5hYmxlSGFuZHNDb3ZlcmFnZURldGVjdGlvbg==');
+final $typed_data.Uint8List
+    personalProtectiveEquipmentDetectionConfigDescriptor =
+    $convert.base64Decode(
+        'CipQZXJzb25hbFByb3RlY3RpdmVFcXVpcG1lbnREZXRlY3Rpb25Db25maWcSQwoeZW5hYmxlX2'
+        'ZhY2VfY292ZXJhZ2VfZGV0ZWN0aW9uGAEgASgIUhtlbmFibGVGYWNlQ292ZXJhZ2VEZXRlY3Rp'
+        'b24SQwoeZW5hYmxlX2hlYWRfY292ZXJhZ2VfZGV0ZWN0aW9uGAIgASgIUhtlbmFibGVIZWFkQ2'
+        '92ZXJhZ2VEZXRlY3Rpb24SRQofZW5hYmxlX2hhbmRzX2NvdmVyYWdlX2RldGVjdGlvbhgDIAEo'
+        'CFIcZW5hYmxlSGFuZHNDb3ZlcmFnZURldGVjdGlvbg==');
 
 @$core.Deprecated('Use generalObjectDetectionConfigDescriptor instead')
 const GeneralObjectDetectionConfig$json = {
@@ -1120,16 +1875,30 @@ const GeneralObjectDetectionConfig$json = {
 };
 
 /// Descriptor for `GeneralObjectDetectionConfig`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List generalObjectDetectionConfigDescriptor = $convert.base64Decode(
-    'ChxHZW5lcmFsT2JqZWN0RGV0ZWN0aW9uQ29uZmln');
+final $typed_data.Uint8List generalObjectDetectionConfigDescriptor =
+    $convert.base64Decode('ChxHZW5lcmFsT2JqZWN0RGV0ZWN0aW9uQ29uZmln');
 
 @$core.Deprecated('Use bigQueryConfigDescriptor instead')
 const BigQueryConfig$json = {
   '1': 'BigQueryConfig',
   '2': [
     {'1': 'table', '3': 1, '4': 1, '5': 9, '10': 'table'},
-    {'1': 'cloud_function_mapping', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.BigQueryConfig.CloudFunctionMappingEntry', '10': 'cloudFunctionMapping'},
-    {'1': 'create_default_table_if_not_exists', '3': 3, '4': 1, '5': 8, '10': 'createDefaultTableIfNotExists'},
+    {
+      '1': 'cloud_function_mapping',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.visionai.v1.BigQueryConfig.CloudFunctionMappingEntry',
+      '10': 'cloudFunctionMapping'
+    },
+    {
+      '1': 'create_default_table_if_not_exists',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'createDefaultTableIfNotExists'
+    },
   ],
   '3': [BigQueryConfig_CloudFunctionMappingEntry$json],
 };
@@ -1157,7 +1926,13 @@ final $typed_data.Uint8List bigQueryConfigDescriptor = $convert.base64Decode(
 const VertexAutoMLVisionConfig$json = {
   '1': 'VertexAutoMLVisionConfig',
   '2': [
-    {'1': 'confidence_threshold', '3': 1, '4': 1, '5': 2, '10': 'confidenceThreshold'},
+    {
+      '1': 'confidence_threshold',
+      '3': 1,
+      '4': 1,
+      '5': 2,
+      '10': 'confidenceThreshold'
+    },
     {'1': 'max_predictions', '3': 2, '4': 1, '5': 5, '10': 'maxPredictions'},
   ],
 };
@@ -1172,10 +1947,22 @@ final $typed_data.Uint8List vertexAutoMLVisionConfigDescriptor = $convert.base64
 const VertexAutoMLVideoConfig$json = {
   '1': 'VertexAutoMLVideoConfig',
   '2': [
-    {'1': 'confidence_threshold', '3': 1, '4': 1, '5': 2, '10': 'confidenceThreshold'},
+    {
+      '1': 'confidence_threshold',
+      '3': 1,
+      '4': 1,
+      '5': 2,
+      '10': 'confidenceThreshold'
+    },
     {'1': 'blocked_labels', '3': 2, '4': 3, '5': 9, '10': 'blockedLabels'},
     {'1': 'max_predictions', '3': 3, '4': 1, '5': 5, '10': 'maxPredictions'},
-    {'1': 'bounding_box_size_limit', '3': 4, '4': 1, '5': 2, '10': 'boundingBoxSizeLimit'},
+    {
+      '1': 'bounding_box_size_limit',
+      '3': 4,
+      '4': 1,
+      '5': 2,
+      '10': 'boundingBoxSizeLimit'
+    },
   ],
 };
 
@@ -1190,10 +1977,35 @@ final $typed_data.Uint8List vertexAutoMLVideoConfigDescriptor = $convert.base64D
 const VertexCustomConfig$json = {
   '1': 'VertexCustomConfig',
   '2': [
-    {'1': 'max_prediction_fps', '3': 1, '4': 1, '5': 5, '10': 'maxPredictionFps'},
-    {'1': 'dedicated_resources', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.DedicatedResources', '10': 'dedicatedResources'},
-    {'1': 'post_processing_cloud_function', '3': 3, '4': 1, '5': 9, '10': 'postProcessingCloudFunction'},
-    {'1': 'attach_application_metadata', '3': 4, '4': 1, '5': 8, '10': 'attachApplicationMetadata'},
+    {
+      '1': 'max_prediction_fps',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'maxPredictionFps'
+    },
+    {
+      '1': 'dedicated_resources',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.DedicatedResources',
+      '10': 'dedicatedResources'
+    },
+    {
+      '1': 'post_processing_cloud_function',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'postProcessingCloudFunction'
+    },
+    {
+      '1': 'attach_application_metadata',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'attachApplicationMetadata'
+    },
   ],
 };
 
@@ -1211,8 +2023,21 @@ const MachineSpec$json = {
   '1': 'MachineSpec',
   '2': [
     {'1': 'machine_type', '3': 1, '4': 1, '5': 9, '10': 'machineType'},
-    {'1': 'accelerator_type', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.AcceleratorType', '10': 'acceleratorType'},
-    {'1': 'accelerator_count', '3': 3, '4': 1, '5': 5, '10': 'acceleratorCount'},
+    {
+      '1': 'accelerator_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.AcceleratorType',
+      '10': 'acceleratorType'
+    },
+    {
+      '1': 'accelerator_count',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'acceleratorCount'
+    },
   ],
 };
 
@@ -1241,10 +2066,24 @@ final $typed_data.Uint8List autoscalingMetricSpecDescriptor = $convert.base64Dec
 const DedicatedResources$json = {
   '1': 'DedicatedResources',
   '2': [
-    {'1': 'machine_spec', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.MachineSpec', '10': 'machineSpec'},
+    {
+      '1': 'machine_spec',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.MachineSpec',
+      '10': 'machineSpec'
+    },
     {'1': 'min_replica_count', '3': 2, '4': 1, '5': 5, '10': 'minReplicaCount'},
     {'1': 'max_replica_count', '3': 3, '4': 1, '5': 5, '10': 'maxReplicaCount'},
-    {'1': 'autoscaling_metric_specs', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.AutoscalingMetricSpec', '10': 'autoscalingMetricSpecs'},
+    {
+      '1': 'autoscaling_metric_specs',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.AutoscalingMetricSpec',
+      '10': 'autoscalingMetricSpecs'
+    },
   ],
 };
 
@@ -1262,13 +2101,53 @@ const Stream$json = {
   '1': 'Stream',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Stream.LabelsEntry', '10': 'labels'},
-    {'1': 'annotations', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Stream.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Stream.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'annotations',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Stream.AnnotationsEntry',
+      '10': 'annotations'
+    },
     {'1': 'display_name', '3': 6, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'enable_hls_playback', '3': 7, '4': 1, '5': 8, '10': 'enableHlsPlayback'},
-    {'1': 'media_warehouse_asset', '3': 8, '4': 1, '5': 9, '10': 'mediaWarehouseAsset'},
+    {
+      '1': 'enable_hls_playback',
+      '3': 7,
+      '4': 1,
+      '5': 8,
+      '10': 'enableHlsPlayback'
+    },
+    {
+      '1': 'media_warehouse_asset',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'mediaWarehouseAsset'
+    },
   ],
   '3': [Stream_LabelsEntry$json, Stream_AnnotationsEntry$json],
 };
@@ -1312,12 +2191,54 @@ const Event$json = {
   '1': 'Event',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Event.LabelsEntry', '10': 'labels'},
-    {'1': 'annotations', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Event.AnnotationsEntry', '10': 'annotations'},
-    {'1': 'alignment_clock', '3': 6, '4': 1, '5': 14, '6': '.google.events.cloud.visionai.v1.Event.Clock', '10': 'alignmentClock'},
-    {'1': 'grace_period', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'gracePeriod'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Event.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'annotations',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Event.AnnotationsEntry',
+      '10': 'annotations'
+    },
+    {
+      '1': 'alignment_clock',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.visionai.v1.Event.Clock',
+      '10': 'alignmentClock'
+    },
+    {
+      '1': 'grace_period',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'gracePeriod'
+    },
   ],
   '3': [Event_LabelsEntry$json, Event_AnnotationsEntry$json],
   '4': [Event_Clock$json],
@@ -1373,10 +2294,38 @@ const Series$json = {
   '1': 'Series',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Series.LabelsEntry', '10': 'labels'},
-    {'1': 'annotations', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.visionai.v1.Series.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Series.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'annotations',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Series.AnnotationsEntry',
+      '10': 'annotations'
+    },
     {'1': 'stream', '3': 6, '4': 1, '5': 9, '10': 'stream'},
     {'1': 'event', '3': 7, '4': 1, '5': 9, '10': 'event'},
   ],
@@ -1419,7 +2368,16 @@ final $typed_data.Uint8List seriesDescriptor = $convert.base64Decode(
 const SeriesEventData$json = {
   '1': 'SeriesEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.Series', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Series',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1435,7 +2393,16 @@ final $typed_data.Uint8List seriesEventDataDescriptor = $convert.base64Decode(
 const DraftEventData$json = {
   '1': 'DraftEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.Draft', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Draft',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1451,7 +2418,16 @@ final $typed_data.Uint8List draftEventDataDescriptor = $convert.base64Decode(
 const ProcessorEventData$json = {
   '1': 'ProcessorEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.Processor', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Processor',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1467,7 +2443,16 @@ final $typed_data.Uint8List processorEventDataDescriptor = $convert.base64Decode
 const AnalysisEventData$json = {
   '1': 'AnalysisEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.Analysis', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Analysis',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1483,7 +2468,16 @@ final $typed_data.Uint8List analysisEventDataDescriptor = $convert.base64Decode(
 const ClusterEventData$json = {
   '1': 'ClusterEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.Cluster', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Cluster',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1499,7 +2493,16 @@ final $typed_data.Uint8List clusterEventDataDescriptor = $convert.base64Decode(
 const EventEventData$json = {
   '1': 'EventEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.Event', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Event',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1515,7 +2518,16 @@ final $typed_data.Uint8List eventEventDataDescriptor = $convert.base64Decode(
 const ProcessEventData$json = {
   '1': 'ProcessEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.Process', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Process',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1531,7 +2543,16 @@ final $typed_data.Uint8List processEventDataDescriptor = $convert.base64Decode(
 const StreamEventData$json = {
   '1': 'StreamEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.Stream', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Stream',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1547,7 +2568,16 @@ final $typed_data.Uint8List streamEventDataDescriptor = $convert.base64Decode(
 const ApplicationEventData$json = {
   '1': 'ApplicationEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.Application', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.Application',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1558,4 +2588,3 @@ const ApplicationEventData$json = {
 final $typed_data.Uint8List applicationEventDataDescriptor = $convert.base64Decode(
     'ChRBcHBsaWNhdGlvbkV2ZW50RGF0YRJLCgdwYXlsb2FkGAEgASgLMiwuZ29vZ2xlLmV2ZW50cy'
     '5jbG91ZC52aXNpb25haS52MS5BcHBsaWNhdGlvbkgAUgdwYXlsb2FkiAEBQgoKCF9wYXlsb2Fk');
-

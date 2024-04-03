@@ -52,12 +52,53 @@ final $typed_data.Uint8List outcomeSummaryDescriptor = $convert.base64Decode(
 const TestMatrixEventData$json = {
   '1': 'TestMatrixEventData',
   '2': [
-    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.events.firebase.testlab.v1.TestState', '10': 'state'},
-    {'1': 'invalid_matrix_details', '3': 3, '4': 1, '5': 9, '10': 'invalidMatrixDetails'},
-    {'1': 'outcome_summary', '3': 4, '4': 1, '5': 14, '6': '.google.events.firebase.testlab.v1.OutcomeSummary', '10': 'outcomeSummary'},
-    {'1': 'result_storage', '3': 5, '4': 1, '5': 11, '6': '.google.events.firebase.testlab.v1.ResultStorage', '10': 'resultStorage'},
-    {'1': 'client_info', '3': 6, '4': 1, '5': 11, '6': '.google.events.firebase.testlab.v1.ClientInfo', '10': 'clientInfo'},
+    {
+      '1': 'create_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.firebase.testlab.v1.TestState',
+      '10': 'state'
+    },
+    {
+      '1': 'invalid_matrix_details',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'invalidMatrixDetails'
+    },
+    {
+      '1': 'outcome_summary',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.firebase.testlab.v1.OutcomeSummary',
+      '10': 'outcomeSummary'
+    },
+    {
+      '1': 'result_storage',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.testlab.v1.ResultStorage',
+      '10': 'resultStorage'
+    },
+    {
+      '1': 'client_info',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.testlab.v1.ClientInfo',
+      '10': 'clientInfo'
+    },
     {'1': 'test_matrix_id', '3': 7, '4': 1, '5': 9, '10': 'testMatrixId'},
   ],
 };
@@ -80,7 +121,14 @@ const ClientInfo$json = {
   '1': 'ClientInfo',
   '2': [
     {'1': 'client', '3': 1, '4': 1, '5': 9, '10': 'client'},
-    {'1': 'details', '3': 2, '4': 3, '5': 11, '6': '.google.events.firebase.testlab.v1.ClientInfo.DetailsEntry', '10': 'details'},
+    {
+      '1': 'details',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.firebase.testlab.v1.ClientInfo.DetailsEntry',
+      '10': 'details'
+    },
   ],
   '3': [ClientInfo_DetailsEntry$json],
 };
@@ -106,8 +154,20 @@ final $typed_data.Uint8List clientInfoDescriptor = $convert.base64Decode(
 const ResultStorage$json = {
   '1': 'ResultStorage',
   '2': [
-    {'1': 'tool_results_history', '3': 1, '4': 1, '5': 9, '10': 'toolResultsHistory'},
-    {'1': 'tool_results_execution', '3': 2, '4': 1, '5': 9, '10': 'toolResultsExecution'},
+    {
+      '1': 'tool_results_history',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'toolResultsHistory'
+    },
+    {
+      '1': 'tool_results_execution',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'toolResultsExecution'
+    },
     {'1': 'results_uri', '3': 3, '4': 1, '5': 9, '10': 'resultsUri'},
     {'1': 'gcs_path', '3': 4, '4': 1, '5': 9, '10': 'gcsPath'},
   ],
@@ -119,4 +179,3 @@ final $typed_data.Uint8List resultStorageDescriptor = $convert.base64Decode(
     'x0c0hpc3RvcnkSNAoWdG9vbF9yZXN1bHRzX2V4ZWN1dGlvbhgCIAEoCVIUdG9vbFJlc3VsdHNF'
     'eGVjdXRpb24SHwoLcmVzdWx0c191cmkYAyABKAlSCnJlc3VsdHNVcmkSGQoIZ2NzX3BhdGgYBC'
     'ABKAlSB2djc1BhdGg=');
-

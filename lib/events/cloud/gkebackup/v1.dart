@@ -1,3 +1,43 @@
-export '../../../src/events/cloud/gkebackup/v1/data.pbenum.dart' show Backup_State, Restore_State, RestoreConfig_VolumeDataRestorePolicy, RestoreConfig_ClusterResourceConflictPolicy, RestoreConfig_NamespacedResourceRestoreMode;
-export '../../../src/events/cloud/gkebackup/v1/data.pb.dart' show Namespaces, NamespacedName, NamespacedNames, EncryptionKey, Backup_ClusterMetadata, Backup, BackupPlan_RetentionPolicy, BackupPlan_Schedule, BackupPlan_BackupConfig, BackupPlan, Restore, RestoreConfig_GroupKind, RestoreConfig_ClusterResourceRestoreScope, RestoreConfig_SubstitutionRule, RestoreConfig, RestorePlan, RestorePlanEventData, BackupEventData, BackupPlanEventData, RestoreEventData;
-export '../../../src/events/cloud/gkebackup/v1/events.pb.dart' show BackupPlanCreatedEvent, BackupPlanUpdatedEvent, BackupPlanDeletedEvent, BackupCreatedEvent, BackupUpdatedEvent, BackupDeletedEvent, RestorePlanCreatedEvent, RestorePlanUpdatedEvent, RestorePlanDeletedEvent, RestoreCreatedEvent, RestoreUpdatedEvent, RestoreDeletedEvent;
+export '../../../src/events/cloud/gkebackup/v1/data.pbenum.dart'
+    show
+        Backup_State,
+        Restore_State,
+        RestoreConfig_VolumeDataRestorePolicy,
+        RestoreConfig_ClusterResourceConflictPolicy,
+        RestoreConfig_NamespacedResourceRestoreMode;
+export '../../../src/events/cloud/gkebackup/v1/data.pb.dart'
+    show
+        Namespaces,
+        NamespacedName,
+        NamespacedNames,
+        EncryptionKey,
+        Backup_ClusterMetadata,
+        Backup,
+        BackupPlan_RetentionPolicy,
+        BackupPlan_Schedule,
+        BackupPlan_BackupConfig,
+        BackupPlan,
+        Restore,
+        RestoreConfig_GroupKind,
+        RestoreConfig_ClusterResourceRestoreScope,
+        RestoreConfig_SubstitutionRule,
+        RestoreConfig,
+        RestorePlan,
+        RestorePlanEventData,
+        BackupEventData,
+        BackupPlanEventData,
+        RestoreEventData;
+export '../../../src/events/cloud/gkebackup/v1/events.pb.dart'
+    show
+        BackupPlanCreatedEvent,
+        BackupPlanUpdatedEvent,
+        BackupPlanDeletedEvent,
+        BackupCreatedEvent,
+        BackupUpdatedEvent,
+        BackupDeletedEvent,
+        RestorePlanCreatedEvent,
+        RestorePlanUpdatedEvent,
+        RestorePlanDeletedEvent,
+        RestoreCreatedEvent,
+        RestoreUpdatedEvent,
+        RestoreDeletedEvent;

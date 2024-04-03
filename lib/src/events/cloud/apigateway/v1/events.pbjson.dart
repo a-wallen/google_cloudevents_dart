@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const GatewayCreatedEvent$json = {
   '1': 'GatewayCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.GatewayEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.GatewayEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List gatewayCreatedEventDescriptor = $convert.base64Decod
 const GatewayUpdatedEvent$json = {
   '1': 'GatewayUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.GatewayEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.GatewayEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List gatewayUpdatedEventDescriptor = $convert.base64Decod
 const GatewayDeletedEvent$json = {
   '1': 'GatewayDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.GatewayEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.GatewayEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List gatewayDeletedEventDescriptor = $convert.base64Decod
 const ApiCreatedEvent$json = {
   '1': 'ApiCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -77,7 +105,14 @@ final $typed_data.Uint8List apiCreatedEventDescriptor = $convert.base64Decode(
 const ApiUpdatedEvent$json = {
   '1': 'ApiUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -92,7 +127,14 @@ final $typed_data.Uint8List apiUpdatedEventDescriptor = $convert.base64Decode(
 const ApiDeletedEvent$json = {
   '1': 'ApiDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -107,7 +149,14 @@ final $typed_data.Uint8List apiDeletedEventDescriptor = $convert.base64Decode(
 const ApiConfigCreatedEvent$json = {
   '1': 'ApiConfigCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiConfigEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiConfigEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -123,7 +172,14 @@ final $typed_data.Uint8List apiConfigCreatedEventDescriptor = $convert.base64Dec
 const ApiConfigUpdatedEvent$json = {
   '1': 'ApiConfigUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiConfigEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiConfigEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -139,7 +195,14 @@ final $typed_data.Uint8List apiConfigUpdatedEventDescriptor = $convert.base64Dec
 const ApiConfigDeletedEvent$json = {
   '1': 'ApiConfigDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiConfigEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiConfigEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -150,4 +213,3 @@ final $typed_data.Uint8List apiConfigDeletedEventDescriptor = $convert.base64Dec
     'xvdWQuYXBpZ2F0ZXdheS52MS5BcGlDb25maWdFdmVudERhdGFSBGRhdGE6R7L42CwsZ29vZ2xl'
     'LmNsb3VkLmFwaWdhdGV3YXkuYXBpQ29uZmlnLnYxLmRlbGV0ZWTK+NgsA2Fwacr42CwJYXBpY2'
     '9uZmln');
-

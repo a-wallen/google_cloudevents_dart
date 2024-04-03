@@ -24,4 +24,3 @@ const SchedulerJobData$json = {
 /// Descriptor for `SchedulerJobData`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List schedulerJobDataDescriptor = $convert.base64Decode(
     'ChBTY2hlZHVsZXJKb2JEYXRhEh8KC2N1c3RvbV9kYXRhGAEgASgMUgpjdXN0b21EYXRh');
-

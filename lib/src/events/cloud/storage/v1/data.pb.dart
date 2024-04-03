@@ -32,41 +32,59 @@ class StorageObjectData_CustomerEncryption extends $pb.GeneratedMessage {
     return $result;
   }
   StorageObjectData_CustomerEncryption._() : super();
-  factory StorageObjectData_CustomerEncryption.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StorageObjectData_CustomerEncryption.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StorageObjectData_CustomerEncryption.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StorageObjectData_CustomerEncryption.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StorageObjectData.CustomerEncryption', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.storage.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StorageObjectData.CustomerEncryption',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.storage.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'encryptionAlgorithm')
     ..aOS(2, _omitFieldNames ? '' : 'keySha256')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StorageObjectData_CustomerEncryption clone() => StorageObjectData_CustomerEncryption()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StorageObjectData_CustomerEncryption copyWith(void Function(StorageObjectData_CustomerEncryption) updates) => super.copyWith((message) => updates(message as StorageObjectData_CustomerEncryption)) as StorageObjectData_CustomerEncryption;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StorageObjectData_CustomerEncryption clone() =>
+      StorageObjectData_CustomerEncryption()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StorageObjectData_CustomerEncryption copyWith(
+          void Function(StorageObjectData_CustomerEncryption) updates) =>
+      super.copyWith((message) =>
+              updates(message as StorageObjectData_CustomerEncryption))
+          as StorageObjectData_CustomerEncryption;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StorageObjectData_CustomerEncryption create() => StorageObjectData_CustomerEncryption._();
+  static StorageObjectData_CustomerEncryption create() =>
+      StorageObjectData_CustomerEncryption._();
   StorageObjectData_CustomerEncryption createEmptyInstance() => create();
-  static $pb.PbList<StorageObjectData_CustomerEncryption> createRepeated() => $pb.PbList<StorageObjectData_CustomerEncryption>();
+  static $pb.PbList<StorageObjectData_CustomerEncryption> createRepeated() =>
+      $pb.PbList<StorageObjectData_CustomerEncryption>();
   @$core.pragma('dart2js:noInline')
-  static StorageObjectData_CustomerEncryption getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StorageObjectData_CustomerEncryption>(create);
+  static StorageObjectData_CustomerEncryption getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          StorageObjectData_CustomerEncryption>(create);
   static StorageObjectData_CustomerEncryption? _defaultInstance;
 
   /// The encryption algorithm.
   @$pb.TagNumber(1)
   $core.String get encryptionAlgorithm => $_getSZ(0);
   @$pb.TagNumber(1)
-  set encryptionAlgorithm($core.String v) { $_setString(0, v); }
+  set encryptionAlgorithm($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEncryptionAlgorithm() => $_has(0);
   @$pb.TagNumber(1)
@@ -76,7 +94,10 @@ class StorageObjectData_CustomerEncryption extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get keySha256 => $_getSZ(1);
   @$pb.TagNumber(2)
-  set keySha256($core.String v) { $_setString(1, v); }
+  set keySha256($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasKeySha256() => $_has(1);
   @$pb.TagNumber(2)
@@ -207,61 +228,82 @@ class StorageObjectData extends $pb.GeneratedMessage {
     return $result;
   }
   StorageObjectData._() : super();
-  factory StorageObjectData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StorageObjectData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StorageObjectData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StorageObjectData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StorageObjectData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.storage.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StorageObjectData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.storage.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'contentEncoding')
     ..aOS(2, _omitFieldNames ? '' : 'contentDisposition')
     ..aOS(3, _omitFieldNames ? '' : 'cacheControl')
     ..aOS(5, _omitFieldNames ? '' : 'contentLanguage')
     ..aInt64(6, _omitFieldNames ? '' : 'metageneration')
-    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'timeDeleted', subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'timeDeleted',
+        subBuilder: $2.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'contentType')
     ..aInt64(9, _omitFieldNames ? '' : 'size')
-    ..aOM<$2.Timestamp>(10, _omitFieldNames ? '' : 'timeCreated', subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(10, _omitFieldNames ? '' : 'timeCreated',
+        subBuilder: $2.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'crc32c')
-    ..a<$core.int>(12, _omitFieldNames ? '' : 'componentCount', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        12, _omitFieldNames ? '' : 'componentCount', $pb.PbFieldType.O3)
     ..aOS(13, _omitFieldNames ? '' : 'md5Hash')
     ..aOS(14, _omitFieldNames ? '' : 'etag')
-    ..aOM<$2.Timestamp>(15, _omitFieldNames ? '' : 'updated', subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(15, _omitFieldNames ? '' : 'updated',
+        subBuilder: $2.Timestamp.create)
     ..aOS(16, _omitFieldNames ? '' : 'storageClass')
     ..aOS(17, _omitFieldNames ? '' : 'kmsKeyName')
-    ..aOM<$2.Timestamp>(18, _omitFieldNames ? '' : 'timeStorageClassUpdated', subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(18, _omitFieldNames ? '' : 'timeStorageClassUpdated',
+        subBuilder: $2.Timestamp.create)
     ..aOB(19, _omitFieldNames ? '' : 'temporaryHold')
-    ..aOM<$2.Timestamp>(20, _omitFieldNames ? '' : 'retentionExpirationTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(21, _omitFieldNames ? '' : 'metadata', entryClassName: 'StorageObjectData.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.storage.v1'))
+    ..aOM<$2.Timestamp>(20, _omitFieldNames ? '' : 'retentionExpirationTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(21, _omitFieldNames ? '' : 'metadata',
+        entryClassName: 'StorageObjectData.MetadataEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.storage.v1'))
     ..aOS(23, _omitFieldNames ? '' : 'name')
     ..aOS(24, _omitFieldNames ? '' : 'id')
     ..aOS(25, _omitFieldNames ? '' : 'bucket')
     ..aInt64(26, _omitFieldNames ? '' : 'generation')
-    ..aOM<StorageObjectData_CustomerEncryption>(28, _omitFieldNames ? '' : 'customerEncryption', subBuilder: StorageObjectData_CustomerEncryption.create)
+    ..aOM<StorageObjectData_CustomerEncryption>(
+        28, _omitFieldNames ? '' : 'customerEncryption',
+        subBuilder: StorageObjectData_CustomerEncryption.create)
     ..aOB(29, _omitFieldNames ? '' : 'eventBasedHold')
     ..aOS(100, _omitFieldNames ? '' : 'mediaLink')
     ..aOS(101, _omitFieldNames ? '' : 'selfLink')
     ..aOS(102, _omitFieldNames ? '' : 'kind')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StorageObjectData clone() => StorageObjectData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StorageObjectData copyWith(void Function(StorageObjectData) updates) => super.copyWith((message) => updates(message as StorageObjectData)) as StorageObjectData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StorageObjectData copyWith(void Function(StorageObjectData) updates) =>
+      super.copyWith((message) => updates(message as StorageObjectData))
+          as StorageObjectData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StorageObjectData create() => StorageObjectData._();
   StorageObjectData createEmptyInstance() => create();
-  static $pb.PbList<StorageObjectData> createRepeated() => $pb.PbList<StorageObjectData>();
+  static $pb.PbList<StorageObjectData> createRepeated() =>
+      $pb.PbList<StorageObjectData>();
   @$core.pragma('dart2js:noInline')
-  static StorageObjectData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StorageObjectData>(create);
+  static StorageObjectData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StorageObjectData>(create);
   static StorageObjectData? _defaultInstance;
 
   /// Content-Encoding of the object data, matching
@@ -269,7 +311,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get contentEncoding => $_getSZ(0);
   @$pb.TagNumber(1)
-  set contentEncoding($core.String v) { $_setString(0, v); }
+  set contentEncoding($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasContentEncoding() => $_has(0);
   @$pb.TagNumber(1)
@@ -280,7 +325,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get contentDisposition => $_getSZ(1);
   @$pb.TagNumber(2)
-  set contentDisposition($core.String v) { $_setString(1, v); }
+  set contentDisposition($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasContentDisposition() => $_has(1);
   @$pb.TagNumber(2)
@@ -291,7 +339,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get cacheControl => $_getSZ(2);
   @$pb.TagNumber(3)
-  set cacheControl($core.String v) { $_setString(2, v); }
+  set cacheControl($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCacheControl() => $_has(2);
   @$pb.TagNumber(3)
@@ -302,7 +353,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get contentLanguage => $_getSZ(3);
   @$pb.TagNumber(5)
-  set contentLanguage($core.String v) { $_setString(3, v); }
+  set contentLanguage($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasContentLanguage() => $_has(3);
   @$pb.TagNumber(5)
@@ -315,7 +369,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $fixnum.Int64 get metageneration => $_getI64(4);
   @$pb.TagNumber(6)
-  set metageneration($fixnum.Int64 v) { $_setInt64(4, v); }
+  set metageneration($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasMetageneration() => $_has(4);
   @$pb.TagNumber(6)
@@ -326,7 +383,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $2.Timestamp get timeDeleted => $_getN(5);
   @$pb.TagNumber(7)
-  set timeDeleted($2.Timestamp v) { setField(7, v); }
+  set timeDeleted($2.Timestamp v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasTimeDeleted() => $_has(5);
   @$pb.TagNumber(7)
@@ -341,7 +401,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get contentType => $_getSZ(6);
   @$pb.TagNumber(8)
-  set contentType($core.String v) { $_setString(6, v); }
+  set contentType($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasContentType() => $_has(6);
   @$pb.TagNumber(8)
@@ -352,7 +415,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $fixnum.Int64 get size => $_getI64(7);
   @$pb.TagNumber(9)
-  set size($fixnum.Int64 v) { $_setInt64(7, v); }
+  set size($fixnum.Int64 v) {
+    $_setInt64(7, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasSize() => $_has(7);
   @$pb.TagNumber(9)
@@ -363,7 +429,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $2.Timestamp get timeCreated => $_getN(8);
   @$pb.TagNumber(10)
-  set timeCreated($2.Timestamp v) { setField(10, v); }
+  set timeCreated($2.Timestamp v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasTimeCreated() => $_has(8);
   @$pb.TagNumber(10)
@@ -378,7 +447,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get crc32c => $_getSZ(9);
   @$pb.TagNumber(11)
-  set crc32c($core.String v) { $_setString(9, v); }
+  set crc32c($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasCrc32c() => $_has(9);
   @$pb.TagNumber(11)
@@ -390,7 +462,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.int get componentCount => $_getIZ(10);
   @$pb.TagNumber(12)
-  set componentCount($core.int v) { $_setSignedInt32(10, v); }
+  set componentCount($core.int v) {
+    $_setSignedInt32(10, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasComponentCount() => $_has(10);
   @$pb.TagNumber(12)
@@ -404,7 +479,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.String get md5Hash => $_getSZ(11);
   @$pb.TagNumber(13)
-  set md5Hash($core.String v) { $_setString(11, v); }
+  set md5Hash($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasMd5Hash() => $_has(11);
   @$pb.TagNumber(13)
@@ -415,7 +493,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get etag => $_getSZ(12);
   @$pb.TagNumber(14)
-  set etag($core.String v) { $_setString(12, v); }
+  set etag($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasEtag() => $_has(12);
   @$pb.TagNumber(14)
@@ -425,7 +506,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $2.Timestamp get updated => $_getN(13);
   @$pb.TagNumber(15)
-  set updated($2.Timestamp v) { setField(15, v); }
+  set updated($2.Timestamp v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasUpdated() => $_has(13);
   @$pb.TagNumber(15)
@@ -437,7 +521,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get storageClass => $_getSZ(14);
   @$pb.TagNumber(16)
-  set storageClass($core.String v) { $_setString(14, v); }
+  set storageClass($core.String v) {
+    $_setString(14, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasStorageClass() => $_has(14);
   @$pb.TagNumber(16)
@@ -448,7 +535,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.String get kmsKeyName => $_getSZ(15);
   @$pb.TagNumber(17)
-  set kmsKeyName($core.String v) { $_setString(15, v); }
+  set kmsKeyName($core.String v) {
+    $_setString(15, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasKmsKeyName() => $_has(15);
   @$pb.TagNumber(17)
@@ -458,7 +548,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $2.Timestamp get timeStorageClassUpdated => $_getN(16);
   @$pb.TagNumber(18)
-  set timeStorageClassUpdated($2.Timestamp v) { setField(18, v); }
+  set timeStorageClassUpdated($2.Timestamp v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasTimeStorageClassUpdated() => $_has(16);
   @$pb.TagNumber(18)
@@ -470,7 +563,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.bool get temporaryHold => $_getBF(17);
   @$pb.TagNumber(19)
-  set temporaryHold($core.bool v) { $_setBool(17, v); }
+  set temporaryHold($core.bool v) {
+    $_setBool(17, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasTemporaryHold() => $_has(17);
   @$pb.TagNumber(19)
@@ -481,7 +577,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $2.Timestamp get retentionExpirationTime => $_getN(18);
   @$pb.TagNumber(20)
-  set retentionExpirationTime($2.Timestamp v) { setField(20, v); }
+  set retentionExpirationTime($2.Timestamp v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasRetentionExpirationTime() => $_has(18);
   @$pb.TagNumber(20)
@@ -497,7 +596,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.String get name => $_getSZ(20);
   @$pb.TagNumber(23)
-  set name($core.String v) { $_setString(20, v); }
+  set name($core.String v) {
+    $_setString(20, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasName() => $_has(20);
   @$pb.TagNumber(23)
@@ -508,7 +610,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $core.String get id => $_getSZ(21);
   @$pb.TagNumber(24)
-  set id($core.String v) { $_setString(21, v); }
+  set id($core.String v) {
+    $_setString(21, v);
+  }
+
   @$pb.TagNumber(24)
   $core.bool hasId() => $_has(21);
   @$pb.TagNumber(24)
@@ -518,7 +623,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $core.String get bucket => $_getSZ(22);
   @$pb.TagNumber(25)
-  set bucket($core.String v) { $_setString(22, v); }
+  set bucket($core.String v) {
+    $_setString(22, v);
+  }
+
   @$pb.TagNumber(25)
   $core.bool hasBucket() => $_has(22);
   @$pb.TagNumber(25)
@@ -529,7 +637,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   $fixnum.Int64 get generation => $_getI64(23);
   @$pb.TagNumber(26)
-  set generation($fixnum.Int64 v) { $_setInt64(23, v); }
+  set generation($fixnum.Int64 v) {
+    $_setInt64(23, v);
+  }
+
   @$pb.TagNumber(26)
   $core.bool hasGeneration() => $_has(23);
   @$pb.TagNumber(26)
@@ -540,19 +651,26 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   StorageObjectData_CustomerEncryption get customerEncryption => $_getN(24);
   @$pb.TagNumber(28)
-  set customerEncryption(StorageObjectData_CustomerEncryption v) { setField(28, v); }
+  set customerEncryption(StorageObjectData_CustomerEncryption v) {
+    setField(28, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasCustomerEncryption() => $_has(24);
   @$pb.TagNumber(28)
   void clearCustomerEncryption() => clearField(28);
   @$pb.TagNumber(28)
-  StorageObjectData_CustomerEncryption ensureCustomerEncryption() => $_ensure(24);
+  StorageObjectData_CustomerEncryption ensureCustomerEncryption() =>
+      $_ensure(24);
 
   /// Whether an object is under event-based hold.
   @$pb.TagNumber(29)
   $core.bool get eventBasedHold => $_getBF(25);
   @$pb.TagNumber(29)
-  set eventBasedHold($core.bool v) { $_setBool(25, v); }
+  set eventBasedHold($core.bool v) {
+    $_setBool(25, v);
+  }
+
   @$pb.TagNumber(29)
   $core.bool hasEventBasedHold() => $_has(25);
   @$pb.TagNumber(29)
@@ -562,7 +680,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(100)
   $core.String get mediaLink => $_getSZ(26);
   @$pb.TagNumber(100)
-  set mediaLink($core.String v) { $_setString(26, v); }
+  set mediaLink($core.String v) {
+    $_setString(26, v);
+  }
+
   @$pb.TagNumber(100)
   $core.bool hasMediaLink() => $_has(26);
   @$pb.TagNumber(100)
@@ -572,7 +693,10 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(101)
   $core.String get selfLink => $_getSZ(27);
   @$pb.TagNumber(101)
-  set selfLink($core.String v) { $_setString(27, v); }
+  set selfLink($core.String v) {
+    $_setString(27, v);
+  }
+
   @$pb.TagNumber(101)
   $core.bool hasSelfLink() => $_has(27);
   @$pb.TagNumber(101)
@@ -582,13 +706,16 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(102)
   $core.String get kind => $_getSZ(28);
   @$pb.TagNumber(102)
-  set kind($core.String v) { $_setString(28, v); }
+  set kind($core.String v) {
+    $_setString(28, v);
+  }
+
   @$pb.TagNumber(102)
   $core.bool hasKind() => $_has(28);
   @$pb.TagNumber(102)
   void clearKind() => clearField(102);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

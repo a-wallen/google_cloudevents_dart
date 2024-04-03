@@ -18,14 +18,55 @@ const ClientConnectorService$json = {
   '1': 'ClientConnectorService',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'display_name', '3': 4, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'ingress', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Ingress', '10': 'ingress'},
-    {'1': 'egress', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Egress', '10': 'egress'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.State', '10': 'state'},
+    {
+      '1': 'ingress',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Ingress',
+      '10': 'ingress'
+    },
+    {
+      '1': 'egress',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Egress',
+      '10': 'egress'
+    },
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.State',
+      '10': 'state'
+    },
   ],
-  '3': [ClientConnectorService_Ingress$json, ClientConnectorService_Egress$json],
+  '3': [
+    ClientConnectorService_Ingress$json,
+    ClientConnectorService_Egress$json
+  ],
   '4': [ClientConnectorService_State$json],
 };
 
@@ -33,7 +74,16 @@ const ClientConnectorService$json = {
 const ClientConnectorService_Ingress$json = {
   '1': 'Ingress',
   '2': [
-    {'1': 'config', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Ingress.Config', '9': 0, '10': 'config'},
+    {
+      '1': 'config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Ingress.Config',
+      '9': 0,
+      '10': 'config'
+    },
   ],
   '3': [ClientConnectorService_Ingress_Config$json],
   '8': [
@@ -45,8 +95,24 @@ const ClientConnectorService_Ingress$json = {
 const ClientConnectorService_Ingress_Config$json = {
   '1': 'Config',
   '2': [
-    {'1': 'transport_protocol', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Ingress.Config.TransportProtocol', '10': 'transportProtocol'},
-    {'1': 'destination_routes', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Ingress.Config.DestinationRoute', '10': 'destinationRoutes'},
+    {
+      '1': 'transport_protocol',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Ingress.Config.TransportProtocol',
+      '10': 'transportProtocol'
+    },
+    {
+      '1': 'destination_routes',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Ingress.Config.DestinationRoute',
+      '10': 'destinationRoutes'
+    },
   ],
   '3': [ClientConnectorService_Ingress_Config_DestinationRoute$json],
   '4': [ClientConnectorService_Ingress_Config_TransportProtocol$json],
@@ -74,7 +140,16 @@ const ClientConnectorService_Ingress_Config_TransportProtocol$json = {
 const ClientConnectorService_Egress$json = {
   '1': 'Egress',
   '2': [
-    {'1': 'peered_vpc', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Egress.PeeredVpc', '9': 0, '10': 'peeredVpc'},
+    {
+      '1': 'peered_vpc',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService.Egress.PeeredVpc',
+      '9': 0,
+      '10': 'peeredVpc'
+    },
   ],
   '3': [ClientConnectorService_Egress_PeeredVpc$json],
   '8': [
@@ -138,7 +213,17 @@ final $typed_data.Uint8List clientConnectorServiceDescriptor = $convert.base64De
 const ClientConnectorServiceEventData$json = {
   '1': 'ClientConnectorServiceEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -146,8 +231,8 @@ const ClientConnectorServiceEventData$json = {
 };
 
 /// Descriptor for `ClientConnectorServiceEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List clientConnectorServiceEventDataDescriptor = $convert.base64Decode(
-    'Ch9DbGllbnRDb25uZWN0b3JTZXJ2aWNlRXZlbnREYXRhEnAKB3BheWxvYWQYASABKAsyUS5nb2'
-    '9nbGUuZXZlbnRzLmNsb3VkLmJleW9uZGNvcnAuY2xpZW50Y29ubmVjdG9yc2VydmljZXMudjEu'
-    'Q2xpZW50Q29ubmVjdG9yU2VydmljZUgAUgdwYXlsb2FkiAEBQgoKCF9wYXlsb2Fk');
-
+final $typed_data.Uint8List clientConnectorServiceEventDataDescriptor =
+    $convert.base64Decode(
+        'Ch9DbGllbnRDb25uZWN0b3JTZXJ2aWNlRXZlbnREYXRhEnAKB3BheWxvYWQYASABKAsyUS5nb2'
+        '9nbGUuZXZlbnRzLmNsb3VkLmJleW9uZGNvcnAuY2xpZW50Y29ubmVjdG9yc2VydmljZXMudjEu'
+        'Q2xpZW50Q29ubmVjdG9yU2VydmljZUgAUgdwYXlsb2FkiAEBQgoKCF9wYXlsb2Fk');

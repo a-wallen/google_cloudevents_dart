@@ -35,9 +35,30 @@ const ResourceInfo$json = {
   '1': 'ResourceInfo',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'status', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.beyondcorp.appconnectors.v1.HealthStatus', '10': 'status'},
-    {'1': 'time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'time'},
-    {'1': 'sub', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnectors.v1.ResourceInfo', '10': 'sub'},
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.beyondcorp.appconnectors.v1.HealthStatus',
+      '10': 'status'
+    },
+    {
+      '1': 'time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'time'
+    },
+    {
+      '1': 'sub',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.beyondcorp.appconnectors.v1.ResourceInfo',
+      '10': 'sub'
+    },
   ],
 };
 
@@ -54,14 +75,59 @@ const AppConnector$json = {
   '1': 'AppConnector',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uid', '3': 6, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'state', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.State', '10': 'state'},
-    {'1': 'principal_info', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo', '10': 'principalInfo'},
-    {'1': 'resource_info', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnectors.v1.ResourceInfo', '10': 'resourceInfo'},
+    {
+      '1': 'state',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.State',
+      '10': 'state'
+    },
+    {
+      '1': 'principal_info',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo',
+      '10': 'principalInfo'
+    },
+    {
+      '1': 'resource_info',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.beyondcorp.appconnectors.v1.ResourceInfo',
+      '10': 'resourceInfo'
+    },
   ],
   '3': [AppConnector_PrincipalInfo$json, AppConnector_LabelsEntry$json],
   '4': [AppConnector_State$json],
@@ -71,7 +137,16 @@ const AppConnector$json = {
 const AppConnector_PrincipalInfo$json = {
   '1': 'PrincipalInfo',
   '2': [
-    {'1': 'service_account', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo.ServiceAccount', '9': 0, '10': 'serviceAccount'},
+    {
+      '1': 'service_account',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo.ServiceAccount',
+      '9': 0,
+      '10': 'serviceAccount'
+    },
   ],
   '3': [AppConnector_PrincipalInfo_ServiceAccount$json],
   '8': [
@@ -135,7 +210,16 @@ final $typed_data.Uint8List appConnectorDescriptor = $convert.base64Decode(
 const AppConnectorEventData$json = {
   '1': 'AppConnectorEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -147,4 +231,3 @@ final $typed_data.Uint8List appConnectorEventDataDescriptor = $convert.base64Dec
     'ChVBcHBDb25uZWN0b3JFdmVudERhdGESXAoHcGF5bG9hZBgBIAEoCzI9Lmdvb2dsZS5ldmVudH'
     'MuY2xvdWQuYmV5b25kY29ycC5hcHBjb25uZWN0b3JzLnYxLkFwcENvbm5lY3RvckgAUgdwYXls'
     'b2FkiAEBQgoKCF9wYXlsb2Fk');
-

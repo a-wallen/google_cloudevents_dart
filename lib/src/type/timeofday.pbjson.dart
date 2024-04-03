@@ -28,4 +28,3 @@ const TimeOfDay$json = {
 final $typed_data.Uint8List timeOfDayDescriptor = $convert.base64Decode(
     'CglUaW1lT2ZEYXkSFAoFaG91cnMYASABKAVSBWhvdXJzEhgKB21pbnV0ZXMYAiABKAVSB21pbn'
     'V0ZXMSGAoHc2Vjb25kcxgDIAEoBVIHc2Vjb25kcxIUCgVuYW5vcxgEIAEoBVIFbmFub3M=');
-

@@ -18,11 +18,39 @@ const Instance$json = {
   '1': 'Instance',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.apigeeregistry.v1.Instance.State', '10': 'state'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.apigeeregistry.v1.Instance.State',
+      '10': 'state'
+    },
     {'1': 'state_message', '3': 5, '4': 1, '5': 9, '10': 'stateMessage'},
-    {'1': 'config', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.Instance.Config', '10': 'config'},
+    {
+      '1': 'config',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.Instance.Config',
+      '10': 'config'
+    },
   ],
   '3': [Instance_Config$json],
   '4': [Instance_State$json],
@@ -71,13 +99,53 @@ const Api$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'availability', '3': 6, '4': 1, '5': 9, '10': 'availability'},
-    {'1': 'recommended_version', '3': 7, '4': 1, '5': 9, '10': 'recommendedVersion'},
-    {'1': 'recommended_deployment', '3': 8, '4': 1, '5': 9, '10': 'recommendedDeployment'},
-    {'1': 'labels', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.Api.LabelsEntry', '10': 'labels'},
-    {'1': 'annotations', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.Api.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'recommended_version',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'recommendedVersion'
+    },
+    {
+      '1': 'recommended_deployment',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'recommendedDeployment'
+    },
+    {
+      '1': 'labels',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.Api.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'annotations',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.Api.AnnotationsEntry',
+      '10': 'annotations'
+    },
   ],
   '3': [Api_LabelsEntry$json, Api_AnnotationsEntry$json],
 };
@@ -124,11 +192,39 @@ const ApiVersion$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'state', '3': 6, '4': 1, '5': 9, '10': 'state'},
-    {'1': 'labels', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiVersion.LabelsEntry', '10': 'labels'},
-    {'1': 'annotations', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiVersion.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'labels',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiVersion.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'annotations',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiVersion.AnnotationsEntry',
+      '10': 'annotations'
+    },
   ],
   '3': [ApiVersion_LabelsEntry$json, ApiVersion_AnnotationsEntry$json],
 };
@@ -175,15 +271,50 @@ const ApiSpec$json = {
     {'1': 'filename', '3': 2, '4': 1, '5': 9, '10': 'filename'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
     {'1': 'revision_id', '3': 4, '4': 1, '5': 9, '10': 'revisionId'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'revision_create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'revisionCreateTime'},
-    {'1': 'revision_update_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'revisionUpdateTime'},
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'revision_create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'revisionCreateTime'
+    },
+    {
+      '1': 'revision_update_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'revisionUpdateTime'
+    },
     {'1': 'mime_type', '3': 8, '4': 1, '5': 9, '10': 'mimeType'},
     {'1': 'size_bytes', '3': 9, '4': 1, '5': 5, '10': 'sizeBytes'},
     {'1': 'hash', '3': 10, '4': 1, '5': 9, '10': 'hash'},
     {'1': 'source_uri', '3': 11, '4': 1, '5': 9, '10': 'sourceUri'},
-    {'1': 'labels', '3': 14, '4': 3, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiSpec.LabelsEntry', '10': 'labels'},
-    {'1': 'annotations', '3': 15, '4': 3, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiSpec.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'labels',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiSpec.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'annotations',
+      '3': 15,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiSpec.AnnotationsEntry',
+      '10': 'annotations'
+    },
   ],
   '3': [ApiSpec_LabelsEntry$json, ApiSpec_AnnotationsEntry$json],
 };
@@ -233,16 +364,64 @@ const ApiDeployment$json = {
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
     {'1': 'revision_id', '3': 4, '4': 1, '5': 9, '10': 'revisionId'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'revision_create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'revisionCreateTime'},
-    {'1': 'revision_update_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'revisionUpdateTime'},
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'revision_create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'revisionCreateTime'
+    },
+    {
+      '1': 'revision_update_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'revisionUpdateTime'
+    },
     {'1': 'api_spec_revision', '3': 8, '4': 1, '5': 9, '10': 'apiSpecRevision'},
     {'1': 'endpoint_uri', '3': 9, '4': 1, '5': 9, '10': 'endpointUri'},
-    {'1': 'external_channel_uri', '3': 10, '4': 1, '5': 9, '10': 'externalChannelUri'},
-    {'1': 'intended_audience', '3': 11, '4': 1, '5': 9, '10': 'intendedAudience'},
+    {
+      '1': 'external_channel_uri',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '10': 'externalChannelUri'
+    },
+    {
+      '1': 'intended_audience',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '10': 'intendedAudience'
+    },
     {'1': 'access_guidance', '3': 12, '4': 1, '5': 9, '10': 'accessGuidance'},
-    {'1': 'labels', '3': 14, '4': 3, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiDeployment.LabelsEntry', '10': 'labels'},
-    {'1': 'annotations', '3': 15, '4': 3, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiDeployment.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'labels',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiDeployment.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'annotations',
+      '3': 15,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.apigeeregistry.v1.ApiDeployment.AnnotationsEntry',
+      '10': 'annotations'
+    },
   ],
   '3': [ApiDeployment_LabelsEntry$json, ApiDeployment_AnnotationsEntry$json],
 };
@@ -290,7 +469,16 @@ final $typed_data.Uint8List apiDeploymentDescriptor = $convert.base64Decode(
 const ApiVersionEventData$json = {
   '1': 'ApiVersionEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiVersion', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiVersion',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -307,7 +495,16 @@ final $typed_data.Uint8List apiVersionEventDataDescriptor = $convert.base64Decod
 const InstanceEventData$json = {
   '1': 'InstanceEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.Instance', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.Instance',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -323,7 +520,16 @@ final $typed_data.Uint8List instanceEventDataDescriptor = $convert.base64Decode(
 const ApiSpecEventData$json = {
   '1': 'ApiSpecEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiSpec', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiSpec',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -339,7 +545,16 @@ final $typed_data.Uint8List apiSpecEventDataDescriptor = $convert.base64Decode(
 const ApiDeploymentEventData$json = {
   '1': 'ApiDeploymentEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiDeployment', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiDeployment',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -356,7 +571,16 @@ final $typed_data.Uint8List apiDeploymentEventDataDescriptor = $convert.base64De
 const ApiEventData$json = {
   '1': 'ApiEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.Api', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.Api',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -367,4 +591,3 @@ const ApiEventData$json = {
 final $typed_data.Uint8List apiEventDataDescriptor = $convert.base64Decode(
     'CgxBcGlFdmVudERhdGESSQoHcGF5bG9hZBgBIAEoCzIqLmdvb2dsZS5ldmVudHMuY2xvdWQuYX'
     'BpZ2VlcmVnaXN0cnkudjEuQXBpSABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
-

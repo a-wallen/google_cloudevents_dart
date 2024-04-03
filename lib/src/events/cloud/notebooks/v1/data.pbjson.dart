@@ -20,10 +20,39 @@ const Environment$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'vm_image', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.VmImage', '9': 0, '10': 'vmImage'},
-    {'1': 'container_image', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ContainerImage', '9': 0, '10': 'containerImage'},
-    {'1': 'post_startup_script', '3': 8, '4': 1, '5': 9, '10': 'postStartupScript'},
-    {'1': 'create_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {
+      '1': 'vm_image',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.VmImage',
+      '9': 0,
+      '10': 'vmImage'
+    },
+    {
+      '1': 'container_image',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ContainerImage',
+      '9': 0,
+      '10': 'containerImage'
+    },
+    {
+      '1': 'post_startup_script',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'postStartupScript'
+    },
+    {
+      '1': 'create_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
   ],
   '8': [
     {'1': 'image_type'},
@@ -79,15 +108,79 @@ const Runtime$json = {
   '1': 'Runtime',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'virtual_machine', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.VirtualMachine', '9': 0, '10': 'virtualMachine'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.Runtime.State', '10': 'state'},
-    {'1': 'health_state', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.Runtime.HealthState', '10': 'healthState'},
-    {'1': 'access_config', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.RuntimeAccessConfig', '10': 'accessConfig'},
-    {'1': 'software_config', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.RuntimeSoftwareConfig', '10': 'softwareConfig'},
-    {'1': 'metrics', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.RuntimeMetrics', '10': 'metrics'},
-    {'1': 'create_time', '3': 20, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 21, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 23, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.Runtime.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'virtual_machine',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.VirtualMachine',
+      '9': 0,
+      '10': 'virtualMachine'
+    },
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.notebooks.v1.Runtime.State',
+      '10': 'state'
+    },
+    {
+      '1': 'health_state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.notebooks.v1.Runtime.HealthState',
+      '10': 'healthState'
+    },
+    {
+      '1': 'access_config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.RuntimeAccessConfig',
+      '10': 'accessConfig'
+    },
+    {
+      '1': 'software_config',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.RuntimeSoftwareConfig',
+      '10': 'softwareConfig'
+    },
+    {
+      '1': 'metrics',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.RuntimeMetrics',
+      '10': 'metrics'
+    },
+    {
+      '1': 'create_time',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 23,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Runtime.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [Runtime_LabelsEntry$json],
   '4': [Runtime_State$json, Runtime_HealthState$json],
@@ -161,7 +254,15 @@ final $typed_data.Uint8List runtimeDescriptor = $convert.base64Decode(
 const RuntimeAcceleratorConfig$json = {
   '1': 'RuntimeAcceleratorConfig',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.RuntimeAcceleratorConfig.AcceleratorType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.notebooks.v1.RuntimeAcceleratorConfig.AcceleratorType',
+      '10': 'type'
+    },
     {'1': 'core_count', '3': 2, '4': 1, '5': 3, '10': 'coreCount'},
   ],
   '4': [RuntimeAcceleratorConfig_AcceleratorType$json],
@@ -216,7 +317,14 @@ const LocalDisk$json = {
     {'1': 'auto_delete', '3': 1, '4': 1, '5': 8, '10': 'autoDelete'},
     {'1': 'boot', '3': 2, '4': 1, '5': 8, '10': 'boot'},
     {'1': 'device_name', '3': 3, '4': 1, '5': 9, '10': 'deviceName'},
-    {'1': 'guest_os_features', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.LocalDisk.RuntimeGuestOsFeature', '10': 'guestOsFeatures'},
+    {
+      '1': 'guest_os_features',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.LocalDisk.RuntimeGuestOsFeature',
+      '10': 'guestOsFeatures'
+    },
     {'1': 'index', '3': 5, '4': 1, '5': 5, '10': 'index'},
     {'1': 'interface', '3': 7, '4': 1, '5': 9, '10': 'interface'},
     {'1': 'kind', '3': 8, '4': 1, '5': 9, '10': 'kind'},
@@ -254,7 +362,15 @@ const LocalDiskInitializeParams$json = {
     {'1': 'description', '3': 1, '4': 1, '5': 9, '10': 'description'},
     {'1': 'disk_name', '3': 2, '4': 1, '5': 9, '10': 'diskName'},
     {'1': 'disk_size_gb', '3': 3, '4': 1, '5': 3, '10': 'diskSizeGb'},
-    {'1': 'labels', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.LocalDiskInitializeParams.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.notebooks.v1.LocalDiskInitializeParams.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [LocalDiskInitializeParams_LabelsEntry$json],
   '4': [LocalDiskInitializeParams_DiskType$json],
@@ -296,7 +412,15 @@ final $typed_data.Uint8List localDiskInitializeParamsDescriptor = $convert.base6
 const RuntimeAccessConfig$json = {
   '1': 'RuntimeAccessConfig',
   '2': [
-    {'1': 'access_type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.RuntimeAccessConfig.RuntimeAccessType', '10': 'accessType'},
+    {
+      '1': 'access_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.notebooks.v1.RuntimeAccessConfig.RuntimeAccessType',
+      '10': 'accessType'
+    },
     {'1': 'runtime_owner', '3': 2, '4': 1, '5': 9, '10': 'runtimeOwner'},
     {'1': 'proxy_uri', '3': 3, '4': 1, '5': 9, '10': 'proxyUri'},
   ],
@@ -326,19 +450,112 @@ final $typed_data.Uint8List runtimeAccessConfigDescriptor = $convert.base64Decod
 const RuntimeSoftwareConfig$json = {
   '1': 'RuntimeSoftwareConfig',
   '2': [
-    {'1': 'notebook_upgrade_schedule', '3': 1, '4': 1, '5': 9, '10': 'notebookUpgradeSchedule'},
-    {'1': 'enable_health_monitoring', '3': 2, '4': 1, '5': 8, '9': 0, '10': 'enableHealthMonitoring', '17': true},
-    {'1': 'idle_shutdown', '3': 3, '4': 1, '5': 8, '9': 1, '10': 'idleShutdown', '17': true},
-    {'1': 'idle_shutdown_timeout', '3': 4, '4': 1, '5': 5, '10': 'idleShutdownTimeout'},
-    {'1': 'install_gpu_driver', '3': 5, '4': 1, '5': 8, '10': 'installGpuDriver'},
-    {'1': 'custom_gpu_driver_path', '3': 6, '4': 1, '5': 9, '10': 'customGpuDriverPath'},
-    {'1': 'post_startup_script', '3': 7, '4': 1, '5': 9, '10': 'postStartupScript'},
-    {'1': 'kernels', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.ContainerImage', '10': 'kernels'},
-    {'1': 'upgradeable', '3': 9, '4': 1, '5': 8, '9': 2, '10': 'upgradeable', '17': true},
-    {'1': 'post_startup_script_behavior', '3': 10, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.RuntimeSoftwareConfig.PostStartupScriptBehavior', '10': 'postStartupScriptBehavior'},
-    {'1': 'disable_terminal', '3': 11, '4': 1, '5': 8, '9': 3, '10': 'disableTerminal', '17': true},
-    {'1': 'version', '3': 12, '4': 1, '5': 9, '9': 4, '10': 'version', '17': true},
-    {'1': 'mixer_disabled', '3': 13, '4': 1, '5': 8, '9': 5, '10': 'mixerDisabled', '17': true},
+    {
+      '1': 'notebook_upgrade_schedule',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'notebookUpgradeSchedule'
+    },
+    {
+      '1': 'enable_health_monitoring',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'enableHealthMonitoring',
+      '17': true
+    },
+    {
+      '1': 'idle_shutdown',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 1,
+      '10': 'idleShutdown',
+      '17': true
+    },
+    {
+      '1': 'idle_shutdown_timeout',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '10': 'idleShutdownTimeout'
+    },
+    {
+      '1': 'install_gpu_driver',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'installGpuDriver'
+    },
+    {
+      '1': 'custom_gpu_driver_path',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'customGpuDriverPath'
+    },
+    {
+      '1': 'post_startup_script',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'postStartupScript'
+    },
+    {
+      '1': 'kernels',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ContainerImage',
+      '10': 'kernels'
+    },
+    {
+      '1': 'upgradeable',
+      '3': 9,
+      '4': 1,
+      '5': 8,
+      '9': 2,
+      '10': 'upgradeable',
+      '17': true
+    },
+    {
+      '1': 'post_startup_script_behavior',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.notebooks.v1.RuntimeSoftwareConfig.PostStartupScriptBehavior',
+      '10': 'postStartupScriptBehavior'
+    },
+    {
+      '1': 'disable_terminal',
+      '3': 11,
+      '4': 1,
+      '5': 8,
+      '9': 3,
+      '10': 'disableTerminal',
+      '17': true
+    },
+    {
+      '1': 'version',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '9': 4,
+      '10': 'version',
+      '17': true
+    },
+    {
+      '1': 'mixer_disabled',
+      '3': 13,
+      '4': 1,
+      '5': 8,
+      '9': 5,
+      '10': 'mixerDisabled',
+      '17': true
+    },
   ],
   '4': [RuntimeSoftwareConfig_PostStartupScriptBehavior$json],
   '8': [
@@ -387,7 +604,15 @@ final $typed_data.Uint8List runtimeSoftwareConfigDescriptor = $convert.base64Dec
 const RuntimeMetrics$json = {
   '1': 'RuntimeMetrics',
   '2': [
-    {'1': 'system_metrics', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.RuntimeMetrics.SystemMetricsEntry', '10': 'systemMetrics'},
+    {
+      '1': 'system_metrics',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.notebooks.v1.RuntimeMetrics.SystemMetricsEntry',
+      '10': 'systemMetrics'
+    },
   ],
   '3': [RuntimeMetrics_SystemMetricsEntry$json],
 };
@@ -413,9 +638,21 @@ final $typed_data.Uint8List runtimeMetricsDescriptor = $convert.base64Decode(
 const RuntimeShieldedInstanceConfig$json = {
   '1': 'RuntimeShieldedInstanceConfig',
   '2': [
-    {'1': 'enable_secure_boot', '3': 1, '4': 1, '5': 8, '10': 'enableSecureBoot'},
+    {
+      '1': 'enable_secure_boot',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'enableSecureBoot'
+    },
     {'1': 'enable_vtpm', '3': 2, '4': 1, '5': 8, '10': 'enableVtpm'},
-    {'1': 'enable_integrity_monitoring', '3': 3, '4': 1, '5': 8, '10': 'enableIntegrityMonitoring'},
+    {
+      '1': 'enable_integrity_monitoring',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'enableIntegrityMonitoring'
+    },
   ],
 };
 
@@ -432,7 +669,14 @@ const VirtualMachine$json = {
   '2': [
     {'1': 'instance_name', '3': 1, '4': 1, '5': 9, '10': 'instanceName'},
     {'1': 'instance_id', '3': 2, '4': 1, '5': 9, '10': 'instanceId'},
-    {'1': 'virtual_machine_config', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.VirtualMachineConfig', '10': 'virtualMachineConfig'},
+    {
+      '1': 'virtual_machine_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.VirtualMachineConfig',
+      '10': 'virtualMachineConfig'
+    },
   ],
 };
 
@@ -449,23 +693,106 @@ const VirtualMachineConfig$json = {
   '2': [
     {'1': 'zone', '3': 1, '4': 1, '5': 9, '10': 'zone'},
     {'1': 'machine_type', '3': 2, '4': 1, '5': 9, '10': 'machineType'},
-    {'1': 'container_images', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.ContainerImage', '10': 'containerImages'},
-    {'1': 'data_disk', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.LocalDisk', '10': 'dataDisk'},
-    {'1': 'encryption_config', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.EncryptionConfig', '10': 'encryptionConfig'},
-    {'1': 'shielded_instance_config', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.RuntimeShieldedInstanceConfig', '10': 'shieldedInstanceConfig'},
-    {'1': 'accelerator_config', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.RuntimeAcceleratorConfig', '10': 'acceleratorConfig'},
+    {
+      '1': 'container_images',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ContainerImage',
+      '10': 'containerImages'
+    },
+    {
+      '1': 'data_disk',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.LocalDisk',
+      '10': 'dataDisk'
+    },
+    {
+      '1': 'encryption_config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.EncryptionConfig',
+      '10': 'encryptionConfig'
+    },
+    {
+      '1': 'shielded_instance_config',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.RuntimeShieldedInstanceConfig',
+      '10': 'shieldedInstanceConfig'
+    },
+    {
+      '1': 'accelerator_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.RuntimeAcceleratorConfig',
+      '10': 'acceleratorConfig'
+    },
     {'1': 'network', '3': 8, '4': 1, '5': 9, '10': 'network'},
     {'1': 'subnet', '3': 9, '4': 1, '5': 9, '10': 'subnet'},
     {'1': 'internal_ip_only', '3': 10, '4': 1, '5': 8, '10': 'internalIpOnly'},
     {'1': 'tags', '3': 13, '4': 3, '5': 9, '10': 'tags'},
-    {'1': 'guest_attributes', '3': 14, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.VirtualMachineConfig.GuestAttributesEntry', '10': 'guestAttributes'},
-    {'1': 'metadata', '3': 15, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.VirtualMachineConfig.MetadataEntry', '10': 'metadata'},
-    {'1': 'labels', '3': 16, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.VirtualMachineConfig.LabelsEntry', '10': 'labels'},
-    {'1': 'nic_type', '3': 17, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.VirtualMachineConfig.NicType', '10': 'nicType'},
-    {'1': 'reserved_ip_range', '3': 18, '4': 1, '5': 9, '10': 'reservedIpRange'},
-    {'1': 'boot_image', '3': 19, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.VirtualMachineConfig.BootImage', '10': 'bootImage'},
+    {
+      '1': 'guest_attributes',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.notebooks.v1.VirtualMachineConfig.GuestAttributesEntry',
+      '10': 'guestAttributes'
+    },
+    {
+      '1': 'metadata',
+      '3': 15,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.notebooks.v1.VirtualMachineConfig.MetadataEntry',
+      '10': 'metadata'
+    },
+    {
+      '1': 'labels',
+      '3': 16,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.VirtualMachineConfig.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'nic_type',
+      '3': 17,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.notebooks.v1.VirtualMachineConfig.NicType',
+      '10': 'nicType'
+    },
+    {
+      '1': 'reserved_ip_range',
+      '3': 18,
+      '4': 1,
+      '5': 9,
+      '10': 'reservedIpRange'
+    },
+    {
+      '1': 'boot_image',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.VirtualMachineConfig.BootImage',
+      '10': 'bootImage'
+    },
   ],
-  '3': [VirtualMachineConfig_BootImage$json, VirtualMachineConfig_GuestAttributesEntry$json, VirtualMachineConfig_MetadataEntry$json, VirtualMachineConfig_LabelsEntry$json],
+  '3': [
+    VirtualMachineConfig_BootImage$json,
+    VirtualMachineConfig_GuestAttributesEntry$json,
+    VirtualMachineConfig_MetadataEntry$json,
+    VirtualMachineConfig_LabelsEntry$json
+  ],
   '4': [VirtualMachineConfig_NicType$json],
 };
 
@@ -548,24 +875,98 @@ final $typed_data.Uint8List virtualMachineConfigDescriptor = $convert.base64Deco
 const ExecutionTemplate$json = {
   '1': 'ExecutionTemplate',
   '2': [
-    {'1': 'scale_tier', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate.ScaleTier', '10': 'scaleTier'},
+    {
+      '1': 'scale_tier',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate.ScaleTier',
+      '10': 'scaleTier'
+    },
     {'1': 'master_type', '3': 2, '4': 1, '5': 9, '10': 'masterType'},
-    {'1': 'accelerator_config', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate.SchedulerAcceleratorConfig', '10': 'acceleratorConfig'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate.LabelsEntry', '10': 'labels'},
-    {'1': 'input_notebook_file', '3': 5, '4': 1, '5': 9, '10': 'inputNotebookFile'},
-    {'1': 'container_image_uri', '3': 6, '4': 1, '5': 9, '10': 'containerImageUri'},
-    {'1': 'output_notebook_folder', '3': 7, '4': 1, '5': 9, '10': 'outputNotebookFolder'},
+    {
+      '1': 'accelerator_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.notebooks.v1.ExecutionTemplate.SchedulerAcceleratorConfig',
+      '10': 'acceleratorConfig'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'input_notebook_file',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'inputNotebookFile'
+    },
+    {
+      '1': 'container_image_uri',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'containerImageUri'
+    },
+    {
+      '1': 'output_notebook_folder',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'outputNotebookFolder'
+    },
     {'1': 'params_yaml_file', '3': 8, '4': 1, '5': 9, '10': 'paramsYamlFile'},
     {'1': 'parameters', '3': 9, '4': 1, '5': 9, '10': 'parameters'},
     {'1': 'service_account', '3': 10, '4': 1, '5': 9, '10': 'serviceAccount'},
-    {'1': 'job_type', '3': 11, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate.JobType', '10': 'jobType'},
-    {'1': 'dataproc_parameters', '3': 12, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate.DataprocParameters', '9': 0, '10': 'dataprocParameters'},
-    {'1': 'vertex_ai_parameters', '3': 13, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate.VertexAIParameters', '9': 0, '10': 'vertexAiParameters'},
+    {
+      '1': 'job_type',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate.JobType',
+      '10': 'jobType'
+    },
+    {
+      '1': 'dataproc_parameters',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.notebooks.v1.ExecutionTemplate.DataprocParameters',
+      '9': 0,
+      '10': 'dataprocParameters'
+    },
+    {
+      '1': 'vertex_ai_parameters',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.notebooks.v1.ExecutionTemplate.VertexAIParameters',
+      '9': 0,
+      '10': 'vertexAiParameters'
+    },
     {'1': 'kernel_spec', '3': 14, '4': 1, '5': 9, '10': 'kernelSpec'},
     {'1': 'tensorboard', '3': 15, '4': 1, '5': 9, '10': 'tensorboard'},
   ],
-  '3': [ExecutionTemplate_SchedulerAcceleratorConfig$json, ExecutionTemplate_DataprocParameters$json, ExecutionTemplate_VertexAIParameters$json, ExecutionTemplate_LabelsEntry$json],
-  '4': [ExecutionTemplate_ScaleTier$json, ExecutionTemplate_SchedulerAcceleratorType$json, ExecutionTemplate_JobType$json],
+  '3': [
+    ExecutionTemplate_SchedulerAcceleratorConfig$json,
+    ExecutionTemplate_DataprocParameters$json,
+    ExecutionTemplate_VertexAIParameters$json,
+    ExecutionTemplate_LabelsEntry$json
+  ],
+  '4': [
+    ExecutionTemplate_ScaleTier$json,
+    ExecutionTemplate_SchedulerAcceleratorType$json,
+    ExecutionTemplate_JobType$json
+  ],
   '8': [
     {'1': 'job_parameters'},
   ],
@@ -575,7 +976,15 @@ const ExecutionTemplate$json = {
 const ExecutionTemplate_SchedulerAcceleratorConfig$json = {
   '1': 'SchedulerAcceleratorConfig',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate.SchedulerAcceleratorType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.notebooks.v1.ExecutionTemplate.SchedulerAcceleratorType',
+      '10': 'type'
+    },
     {'1': 'core_count', '3': 2, '4': 1, '5': 3, '10': 'coreCount'},
   ],
 };
@@ -593,7 +1002,15 @@ const ExecutionTemplate_VertexAIParameters$json = {
   '1': 'VertexAIParameters',
   '2': [
     {'1': 'network', '3': 1, '4': 1, '5': 9, '10': 'network'},
-    {'1': 'env', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate.VertexAIParameters.EnvEntry', '10': 'env'},
+    {
+      '1': 'env',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.notebooks.v1.ExecutionTemplate.VertexAIParameters.EnvEntry',
+      '10': 'env'
+    },
   ],
   '3': [ExecutionTemplate_VertexAIParameters_EnvEntry$json],
 };
@@ -700,14 +1117,48 @@ final $typed_data.Uint8List executionTemplateDescriptor = $convert.base64Decode(
 const Execution$json = {
   '1': 'Execution',
   '2': [
-    {'1': 'execution_template', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate', '10': 'executionTemplate'},
+    {
+      '1': 'execution_template',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate',
+      '10': 'executionTemplate'
+    },
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 4, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'state', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.Execution.State', '10': 'state'},
-    {'1': 'output_notebook_file', '3': 8, '4': 1, '5': 9, '10': 'outputNotebookFile'},
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'state',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.notebooks.v1.Execution.State',
+      '10': 'state'
+    },
+    {
+      '1': 'output_notebook_file',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'outputNotebookFile'
+    },
     {'1': 'job_uri', '3': 9, '4': 1, '5': 9, '10': 'jobUri'},
   ],
   '4': [Execution_State$json],
@@ -749,7 +1200,14 @@ final $typed_data.Uint8List executionDescriptor = $convert.base64Decode(
 const ReservationAffinity$json = {
   '1': 'ReservationAffinity',
   '2': [
-    {'1': 'consume_reservation_type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.ReservationAffinity.Type', '10': 'consumeReservationType'},
+    {
+      '1': 'consume_reservation_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.notebooks.v1.ReservationAffinity.Type',
+      '10': 'consumeReservationType'
+    },
     {'1': 'key', '3': 2, '4': 1, '5': 9, '10': 'key'},
     {'1': 'values', '3': 3, '4': 3, '5': 9, '10': 'values'},
   ],
@@ -781,36 +1239,166 @@ const Instance$json = {
   '1': 'Instance',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'vm_image', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.VmImage', '9': 0, '10': 'vmImage'},
-    {'1': 'container_image', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ContainerImage', '9': 0, '10': 'containerImage'},
-    {'1': 'post_startup_script', '3': 4, '4': 1, '5': 9, '10': 'postStartupScript'},
+    {
+      '1': 'vm_image',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.VmImage',
+      '9': 0,
+      '10': 'vmImage'
+    },
+    {
+      '1': 'container_image',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ContainerImage',
+      '9': 0,
+      '10': 'containerImage'
+    },
+    {
+      '1': 'post_startup_script',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'postStartupScript'
+    },
     {'1': 'proxy_uri', '3': 5, '4': 1, '5': 9, '10': 'proxyUri'},
     {'1': 'service_account', '3': 7, '4': 1, '5': 9, '10': 'serviceAccount'},
-    {'1': 'service_account_scopes', '3': 31, '4': 3, '5': 9, '10': 'serviceAccountScopes'},
+    {
+      '1': 'service_account_scopes',
+      '3': 31,
+      '4': 3,
+      '5': 9,
+      '10': 'serviceAccountScopes'
+    },
     {'1': 'machine_type', '3': 8, '4': 1, '5': 9, '10': 'machineType'},
-    {'1': 'accelerator_config', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.Instance.AcceleratorConfig', '10': 'acceleratorConfig'},
-    {'1': 'state', '3': 10, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.Instance.State', '10': 'state'},
-    {'1': 'install_gpu_driver', '3': 11, '4': 1, '5': 8, '10': 'installGpuDriver'},
-    {'1': 'custom_gpu_driver_path', '3': 12, '4': 1, '5': 9, '10': 'customGpuDriverPath'},
-    {'1': 'disks', '3': 28, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.Instance.Disk', '10': 'disks'},
-    {'1': 'shielded_instance_config', '3': 30, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.Instance.ShieldedInstanceConfig', '10': 'shieldedInstanceConfig'},
+    {
+      '1': 'accelerator_config',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Instance.AcceleratorConfig',
+      '10': 'acceleratorConfig'
+    },
+    {
+      '1': 'state',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.notebooks.v1.Instance.State',
+      '10': 'state'
+    },
+    {
+      '1': 'install_gpu_driver',
+      '3': 11,
+      '4': 1,
+      '5': 8,
+      '10': 'installGpuDriver'
+    },
+    {
+      '1': 'custom_gpu_driver_path',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '10': 'customGpuDriverPath'
+    },
+    {
+      '1': 'disks',
+      '3': 28,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Instance.Disk',
+      '10': 'disks'
+    },
+    {
+      '1': 'shielded_instance_config',
+      '3': 30,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Instance.ShieldedInstanceConfig',
+      '10': 'shieldedInstanceConfig'
+    },
     {'1': 'no_public_ip', '3': 17, '4': 1, '5': 8, '10': 'noPublicIp'},
     {'1': 'no_proxy_access', '3': 18, '4': 1, '5': 8, '10': 'noProxyAccess'},
     {'1': 'network', '3': 19, '4': 1, '5': 9, '10': 'network'},
     {'1': 'subnet', '3': 20, '4': 1, '5': 9, '10': 'subnet'},
-    {'1': 'labels', '3': 21, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.Instance.LabelsEntry', '10': 'labels'},
-    {'1': 'metadata', '3': 22, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.Instance.MetadataEntry', '10': 'metadata'},
+    {
+      '1': 'labels',
+      '3': 21,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Instance.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'metadata',
+      '3': 22,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Instance.MetadataEntry',
+      '10': 'metadata'
+    },
     {'1': 'tags', '3': 32, '4': 3, '5': 9, '10': 'tags'},
-    {'1': 'upgrade_history', '3': 29, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.Instance.UpgradeHistoryEntry', '10': 'upgradeHistory'},
-    {'1': 'nic_type', '3': 33, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.Instance.NicType', '10': 'nicType'},
-    {'1': 'reservation_affinity', '3': 34, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ReservationAffinity', '10': 'reservationAffinity'},
+    {
+      '1': 'upgrade_history',
+      '3': 29,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Instance.UpgradeHistoryEntry',
+      '10': 'upgradeHistory'
+    },
+    {
+      '1': 'nic_type',
+      '3': 33,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.notebooks.v1.Instance.NicType',
+      '10': 'nicType'
+    },
+    {
+      '1': 'reservation_affinity',
+      '3': 34,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ReservationAffinity',
+      '10': 'reservationAffinity'
+    },
     {'1': 'creator', '3': 36, '4': 1, '5': 9, '10': 'creator'},
     {'1': 'can_ip_forward', '3': 39, '4': 1, '5': 8, '10': 'canIpForward'},
-    {'1': 'create_time', '3': 23, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 24, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
   ],
-  '3': [Instance_AcceleratorConfig$json, Instance_Disk$json, Instance_ShieldedInstanceConfig$json, Instance_UpgradeHistoryEntry$json, Instance_LabelsEntry$json, Instance_MetadataEntry$json],
-  '4': [Instance_AcceleratorType$json, Instance_State$json, Instance_DiskType$json, Instance_DiskEncryption$json, Instance_NicType$json],
+  '3': [
+    Instance_AcceleratorConfig$json,
+    Instance_Disk$json,
+    Instance_ShieldedInstanceConfig$json,
+    Instance_UpgradeHistoryEntry$json,
+    Instance_LabelsEntry$json,
+    Instance_MetadataEntry$json
+  ],
+  '4': [
+    Instance_AcceleratorType$json,
+    Instance_State$json,
+    Instance_DiskType$json,
+    Instance_DiskEncryption$json,
+    Instance_NicType$json
+  ],
   '8': [
     {'1': 'environment'},
   ],
@@ -820,7 +1408,14 @@ const Instance$json = {
 const Instance_AcceleratorConfig$json = {
   '1': 'AcceleratorConfig',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.Instance.AcceleratorType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.notebooks.v1.Instance.AcceleratorType',
+      '10': 'type'
+    },
     {'1': 'core_count', '3': 2, '4': 1, '5': 3, '10': 'coreCount'},
   ],
 };
@@ -833,7 +1428,14 @@ const Instance_Disk$json = {
     {'1': 'boot', '3': 2, '4': 1, '5': 8, '10': 'boot'},
     {'1': 'device_name', '3': 3, '4': 1, '5': 9, '10': 'deviceName'},
     {'1': 'disk_size_gb', '3': 4, '4': 1, '5': 3, '10': 'diskSizeGb'},
-    {'1': 'guest_os_features', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.Instance.Disk.GuestOsFeature', '10': 'guestOsFeatures'},
+    {
+      '1': 'guest_os_features',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Instance.Disk.GuestOsFeature',
+      '10': 'guestOsFeatures'
+    },
     {'1': 'index', '3': 6, '4': 1, '5': 3, '10': 'index'},
     {'1': 'interface', '3': 7, '4': 1, '5': 9, '10': 'interface'},
     {'1': 'kind', '3': 8, '4': 1, '5': 9, '10': 'kind'},
@@ -857,9 +1459,21 @@ const Instance_Disk_GuestOsFeature$json = {
 const Instance_ShieldedInstanceConfig$json = {
   '1': 'ShieldedInstanceConfig',
   '2': [
-    {'1': 'enable_secure_boot', '3': 1, '4': 1, '5': 8, '10': 'enableSecureBoot'},
+    {
+      '1': 'enable_secure_boot',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'enableSecureBoot'
+    },
     {'1': 'enable_vtpm', '3': 2, '4': 1, '5': 8, '10': 'enableVtpm'},
-    {'1': 'enable_integrity_monitoring', '3': 3, '4': 1, '5': 8, '10': 'enableIntegrityMonitoring'},
+    {
+      '1': 'enable_integrity_monitoring',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'enableIntegrityMonitoring'
+    },
   ],
 };
 
@@ -872,13 +1486,39 @@ const Instance_UpgradeHistoryEntry$json = {
     {'1': 'container_image', '3': 3, '4': 1, '5': 9, '10': 'containerImage'},
     {'1': 'framework', '3': 4, '4': 1, '5': 9, '10': 'framework'},
     {'1': 'version', '3': 5, '4': 1, '5': 9, '10': 'version'},
-    {'1': 'state', '3': 6, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.Instance.UpgradeHistoryEntry.State', '10': 'state'},
-    {'1': 'create_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.notebooks.v1.Instance.UpgradeHistoryEntry.State',
+      '10': 'state'
+    },
+    {
+      '1': 'create_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
     {'1': 'target_image', '3': 8, '4': 1, '5': 9, '10': 'targetImage'},
-    {'1': 'action', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.Instance.UpgradeHistoryEntry.Action', '10': 'action'},
+    {
+      '1': 'action',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.notebooks.v1.Instance.UpgradeHistoryEntry.Action',
+      '10': 'action'
+    },
     {'1': 'target_version', '3': 10, '4': 1, '5': 9, '10': 'targetVersion'},
   ],
-  '4': [Instance_UpgradeHistoryEntry_State$json, Instance_UpgradeHistoryEntry_Action$json],
+  '4': [
+    Instance_UpgradeHistoryEntry_State$json,
+    Instance_UpgradeHistoryEntry_Action$json
+  ],
 };
 
 @$core.Deprecated('Use instanceDescriptor instead')
@@ -1073,13 +1713,48 @@ const Schedule$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.notebooks.v1.Schedule.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.notebooks.v1.Schedule.State',
+      '10': 'state'
+    },
     {'1': 'cron_schedule', '3': 5, '4': 1, '5': 9, '10': 'cronSchedule'},
     {'1': 'time_zone', '3': 6, '4': 1, '5': 9, '10': 'timeZone'},
-    {'1': 'create_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'execution_template', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate', '10': 'executionTemplate'},
-    {'1': 'recent_executions', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.notebooks.v1.Execution', '10': 'recentExecutions'},
+    {
+      '1': 'create_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'execution_template',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ExecutionTemplate',
+      '10': 'executionTemplate'
+    },
+    {
+      '1': 'recent_executions',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Execution',
+      '10': 'recentExecutions'
+    },
   ],
   '4': [Schedule_State$json],
 };
@@ -1118,7 +1793,16 @@ final $typed_data.Uint8List scheduleDescriptor = $convert.base64Decode(
 const RuntimeEventData$json = {
   '1': 'RuntimeEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.Runtime', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Runtime',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1134,7 +1818,16 @@ final $typed_data.Uint8List runtimeEventDataDescriptor = $convert.base64Decode(
 const ExecutionEventData$json = {
   '1': 'ExecutionEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.Execution', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Execution',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1150,7 +1843,16 @@ final $typed_data.Uint8List executionEventDataDescriptor = $convert.base64Decode
 const InstanceEventData$json = {
   '1': 'InstanceEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.Instance', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Instance',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1166,7 +1868,16 @@ final $typed_data.Uint8List instanceEventDataDescriptor = $convert.base64Decode(
 const ScheduleEventData$json = {
   '1': 'ScheduleEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.Schedule', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Schedule',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1182,7 +1893,16 @@ final $typed_data.Uint8List scheduleEventDataDescriptor = $convert.base64Decode(
 const EnvironmentEventData$json = {
   '1': 'EnvironmentEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.Environment', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.Environment',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1194,4 +1914,3 @@ final $typed_data.Uint8List environmentEventDataDescriptor = $convert.base64Deco
     'ChRFbnZpcm9ubWVudEV2ZW50RGF0YRJMCgdwYXlsb2FkGAEgASgLMi0uZ29vZ2xlLmV2ZW50cy'
     '5jbG91ZC5ub3RlYm9va3MudjEuRW52aXJvbm1lbnRIAFIHcGF5bG9hZIgBAUIKCghfcGF5bG9h'
     'ZA==');
-

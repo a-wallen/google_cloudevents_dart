@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const AlertPublishedEvent$json = {
   '1': 'AlertPublishedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.firebasealerts.v1.AlertData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.firebasealerts.v1.AlertData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -28,4 +35,3 @@ final $typed_data.Uint8List alertPublishedEventDescriptor = $convert.base64Decod
     'ViYXNlLmZpcmViYXNlYWxlcnRzLnYxLkFsZXJ0RGF0YVIEZGF0YTpPsvjYLDJnb29nbGUuZmly'
     'ZWJhc2UuZmlyZWJhc2VhbGVydHMuYWxlcnRzLnYxLnB1Ymxpc2hlZMr42CwJYWxlcnR0eXBlyv'
     'jYLAVhcHBpZA==');
-

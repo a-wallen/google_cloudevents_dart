@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const ConnectivityTestCreatedEvent$json = {
   '1': 'ConnectivityTestCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.ConnectivityTestEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.ConnectivityTestEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +41,15 @@ final $typed_data.Uint8List connectivityTestCreatedEventDescriptor = $convert.ba
 const ConnectivityTestUpdatedEvent$json = {
   '1': 'ConnectivityTestUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.ConnectivityTestEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.ConnectivityTestEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -49,7 +65,15 @@ final $typed_data.Uint8List connectivityTestUpdatedEventDescriptor = $convert.ba
 const ConnectivityTestDeletedEvent$json = {
   '1': 'ConnectivityTestDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.ConnectivityTestEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.ConnectivityTestEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -60,4 +84,3 @@ final $typed_data.Uint8List connectivityTestDeletedEventDescriptor = $convert.ba
     'ZlbnRzLmNsb3VkLm5ldHdvcmttYW5hZ2VtZW50LnYxLkNvbm5lY3Rpdml0eVRlc3RFdmVudERh'
     'dGFSBGRhdGE6SLL42Cw6Z29vZ2xlLmNsb3VkLm5ldHdvcmttYW5hZ2VtZW50LmNvbm5lY3Rpdm'
     'l0eVRlc3QudjEuZGVsZXRlZMr42CwEdGVzdA==');
-

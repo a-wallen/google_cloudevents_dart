@@ -69,14 +69,63 @@ const ReplicationCycle$json = {
   '2': [
     {'1': 'name', '3': 13, '4': 1, '5': 9, '10': 'name'},
     {'1': 'cycle_number', '3': 10, '4': 1, '5': 5, '10': 'cycleNumber'},
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'total_pause_duration', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'totalPauseDuration'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'total_pause_duration',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'totalPauseDuration'
+    },
     {'1': 'progress_percent', '3': 5, '4': 1, '5': 5, '10': 'progressPercent'},
-    {'1': 'steps', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.CycleStep', '10': 'steps'},
-    {'1': 'state', '3': 11, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.ReplicationCycle.State', '10': 'state'},
-    {'1': 'error', '3': 12, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'warnings', '3': 14, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.MigrationWarning', '10': 'warnings'},
+    {
+      '1': 'steps',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.CycleStep',
+      '10': 'steps'
+    },
+    {
+      '1': 'state',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.ReplicationCycle.State',
+      '10': 'state'
+    },
+    {
+      '1': 'error',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'warnings',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.MigrationWarning',
+      '10': 'warnings'
+    },
   ],
   '4': [ReplicationCycle_State$json],
 };
@@ -112,11 +161,49 @@ final $typed_data.Uint8List replicationCycleDescriptor = $convert.base64Decode(
 const CycleStep$json = {
   '1': 'CycleStep',
   '2': [
-    {'1': 'initializing_replication', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.InitializingReplicationStep', '9': 0, '10': 'initializingReplication'},
-    {'1': 'replicating', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ReplicatingStep', '9': 0, '10': 'replicating'},
-    {'1': 'post_processing', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.PostProcessingStep', '9': 0, '10': 'postProcessing'},
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'initializing_replication',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.InitializingReplicationStep',
+      '9': 0,
+      '10': 'initializingReplication'
+    },
+    {
+      '1': 'replicating',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ReplicatingStep',
+      '9': 0,
+      '10': 'replicating'
+    },
+    {
+      '1': 'post_processing',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.PostProcessingStep',
+      '9': 0,
+      '10': 'postProcessing'
+    },
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
   '8': [
     {'1': 'step'},
@@ -141,8 +228,8 @@ const InitializingReplicationStep$json = {
 };
 
 /// Descriptor for `InitializingReplicationStep`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List initializingReplicationStepDescriptor = $convert.base64Decode(
-    'ChtJbml0aWFsaXppbmdSZXBsaWNhdGlvblN0ZXA=');
+final $typed_data.Uint8List initializingReplicationStepDescriptor =
+    $convert.base64Decode('ChtJbml0aWFsaXppbmdSZXBsaWNhdGlvblN0ZXA=');
 
 @$core.Deprecated('Use replicatingStepDescriptor instead')
 const ReplicatingStep$json = {
@@ -150,8 +237,20 @@ const ReplicatingStep$json = {
   '2': [
     {'1': 'total_bytes', '3': 1, '4': 1, '5': 3, '10': 'totalBytes'},
     {'1': 'replicated_bytes', '3': 2, '4': 1, '5': 3, '10': 'replicatedBytes'},
-    {'1': 'last_two_minutes_average_bytes_per_second', '3': 3, '4': 1, '5': 3, '10': 'lastTwoMinutesAverageBytesPerSecond'},
-    {'1': 'last_thirty_minutes_average_bytes_per_second', '3': 4, '4': 1, '5': 3, '10': 'lastThirtyMinutesAverageBytesPerSecond'},
+    {
+      '1': 'last_two_minutes_average_bytes_per_second',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '10': 'lastTwoMinutesAverageBytesPerSecond'
+    },
+    {
+      '1': 'last_thirty_minutes_average_bytes_per_second',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '10': 'lastThirtyMinutesAverageBytesPerSecond'
+    },
   ],
 };
 
@@ -169,14 +268,21 @@ const PostProcessingStep$json = {
 };
 
 /// Descriptor for `PostProcessingStep`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List postProcessingStepDescriptor = $convert.base64Decode(
-    'ChJQb3N0UHJvY2Vzc2luZ1N0ZXA=');
+final $typed_data.Uint8List postProcessingStepDescriptor =
+    $convert.base64Decode('ChJQb3N0UHJvY2Vzc2luZ1N0ZXA=');
 
 @$core.Deprecated('Use replicationSyncDescriptor instead')
 const ReplicationSync$json = {
   '1': 'ReplicationSync',
   '2': [
-    {'1': 'last_sync_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastSyncTime'},
+    {
+      '1': 'last_sync_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastSyncTime'
+    },
   ],
 };
 
@@ -189,26 +295,133 @@ final $typed_data.Uint8List replicationSyncDescriptor = $convert.base64Decode(
 const MigratingVm$json = {
   '1': 'MigratingVm',
   '2': [
-    {'1': 'compute_engine_target_defaults', '3': 26, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDefaults', '9': 0, '10': 'computeEngineTargetDefaults'},
-    {'1': 'aws_source_vm_details', '3': 29, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.AwsSourceVmDetails', '9': 1, '10': 'awsSourceVmDetails'},
+    {
+      '1': 'compute_engine_target_defaults',
+      '3': 26,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDefaults',
+      '9': 0,
+      '10': 'computeEngineTargetDefaults'
+    },
+    {
+      '1': 'aws_source_vm_details',
+      '3': 29,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.AwsSourceVmDetails',
+      '9': 1,
+      '10': 'awsSourceVmDetails'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'source_vm_id', '3': 2, '4': 1, '5': 9, '10': 'sourceVmId'},
     {'1': 'display_name', '3': 18, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'policy', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.SchedulePolicy', '10': 'policy'},
-    {'1': 'create_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'last_sync', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ReplicationSync', '10': 'lastSync'},
-    {'1': 'state', '3': 23, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.MigratingVm.State', '10': 'state'},
-    {'1': 'state_time', '3': 22, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'stateTime'},
-    {'1': 'current_sync_info', '3': 13, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ReplicationCycle', '10': 'currentSyncInfo'},
-    {'1': 'last_replication_cycle', '3': 32, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ReplicationCycle', '10': 'lastReplicationCycle'},
+    {
+      '1': 'policy',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.SchedulePolicy',
+      '10': 'policy'
+    },
+    {
+      '1': 'create_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'last_sync',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ReplicationSync',
+      '10': 'lastSync'
+    },
+    {
+      '1': 'state',
+      '3': 23,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.MigratingVm.State',
+      '10': 'state'
+    },
+    {
+      '1': 'state_time',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'stateTime'
+    },
+    {
+      '1': 'current_sync_info',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ReplicationCycle',
+      '10': 'currentSyncInfo'
+    },
+    {
+      '1': 'last_replication_cycle',
+      '3': 32,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ReplicationCycle',
+      '10': 'lastReplicationCycle'
+    },
     {'1': 'group', '3': 15, '4': 1, '5': 9, '10': 'group'},
-    {'1': 'labels', '3': 16, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.MigratingVm.LabelsEntry', '10': 'labels'},
-    {'1': 'recent_clone_jobs', '3': 17, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.CloneJob', '10': 'recentCloneJobs'},
-    {'1': 'error', '3': 19, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'recent_cutover_jobs', '3': 20, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.CutoverJob', '10': 'recentCutoverJobs'},
-    {'1': 'cutover_forecast', '3': 33, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.CutoverForecast', '10': 'cutoverForecast'},
+    {
+      '1': 'labels',
+      '3': 16,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.MigratingVm.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'recent_clone_jobs',
+      '3': 17,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.CloneJob',
+      '10': 'recentCloneJobs'
+    },
+    {
+      '1': 'error',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'recent_cutover_jobs',
+      '3': 20,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.CutoverJob',
+      '10': 'recentCutoverJobs'
+    },
+    {
+      '1': 'cutover_forecast',
+      '3': 33,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.CutoverForecast',
+      '10': 'cutoverForecast'
+    },
   ],
   '3': [MigratingVm_LabelsEntry$json],
   '4': [MigratingVm_State$json],
@@ -286,7 +499,14 @@ final $typed_data.Uint8List migratingVmDescriptor = $convert.base64Decode(
 const CutoverForecast$json = {
   '1': 'CutoverForecast',
   '2': [
-    {'1': 'estimated_cutover_job_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'estimatedCutoverJobDuration'},
+    {
+      '1': 'estimated_cutover_job_duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'estimatedCutoverJobDuration'
+    },
   ],
 };
 
@@ -300,14 +520,64 @@ final $typed_data.Uint8List cutoverForecastDescriptor = $convert.base64Decode(
 const CloneJob$json = {
   '1': 'CloneJob',
   '2': [
-    {'1': 'compute_engine_target_details', '3': 20, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDetails', '9': 0, '10': 'computeEngineTargetDetails'},
-    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'end_time', '3': 22, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'compute_engine_target_details',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDetails',
+      '9': 0,
+      '10': 'computeEngineTargetDetails'
+    },
+    {
+      '1': 'create_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'state', '3': 12, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.CloneJob.State', '10': 'state'},
-    {'1': 'state_time', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'stateTime'},
-    {'1': 'error', '3': 17, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'steps', '3': 23, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.CloneStep', '10': 'steps'},
+    {
+      '1': 'state',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.CloneJob.State',
+      '10': 'state'
+    },
+    {
+      '1': 'state_time',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'stateTime'
+    },
+    {
+      '1': 'error',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'steps',
+      '3': 23,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.CloneStep',
+      '10': 'steps'
+    },
   ],
   '4': [CloneJob_State$json],
   '8': [
@@ -350,11 +620,49 @@ final $typed_data.Uint8List cloneJobDescriptor = $convert.base64Decode(
 const CloneStep$json = {
   '1': 'CloneStep',
   '2': [
-    {'1': 'adapting_os', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.AdaptingOSStep', '9': 0, '10': 'adaptingOs'},
-    {'1': 'preparing_vm_disks', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.PreparingVMDisksStep', '9': 0, '10': 'preparingVmDisks'},
-    {'1': 'instantiating_migrated_vm', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.InstantiatingMigratedVMStep', '9': 0, '10': 'instantiatingMigratedVm'},
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'adapting_os',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.AdaptingOSStep',
+      '9': 0,
+      '10': 'adaptingOs'
+    },
+    {
+      '1': 'preparing_vm_disks',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.PreparingVMDisksStep',
+      '9': 0,
+      '10': 'preparingVmDisks'
+    },
+    {
+      '1': 'instantiating_migrated_vm',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.InstantiatingMigratedVMStep',
+      '9': 0,
+      '10': 'instantiatingMigratedVm'
+    },
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
   '8': [
     {'1': 'step'},
@@ -379,8 +687,8 @@ const AdaptingOSStep$json = {
 };
 
 /// Descriptor for `AdaptingOSStep`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List adaptingOSStepDescriptor = $convert.base64Decode(
-    'Cg5BZGFwdGluZ09TU3RlcA==');
+final $typed_data.Uint8List adaptingOSStepDescriptor =
+    $convert.base64Decode('Cg5BZGFwdGluZ09TU3RlcA==');
 
 @$core.Deprecated('Use preparingVMDisksStepDescriptor instead')
 const PreparingVMDisksStep$json = {
@@ -388,8 +696,8 @@ const PreparingVMDisksStep$json = {
 };
 
 /// Descriptor for `PreparingVMDisksStep`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List preparingVMDisksStepDescriptor = $convert.base64Decode(
-    'ChRQcmVwYXJpbmdWTURpc2tzU3RlcA==');
+final $typed_data.Uint8List preparingVMDisksStepDescriptor =
+    $convert.base64Decode('ChRQcmVwYXJpbmdWTURpc2tzU3RlcA==');
 
 @$core.Deprecated('Use instantiatingMigratedVMStepDescriptor instead')
 const InstantiatingMigratedVMStep$json = {
@@ -397,23 +705,73 @@ const InstantiatingMigratedVMStep$json = {
 };
 
 /// Descriptor for `InstantiatingMigratedVMStep`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List instantiatingMigratedVMStepDescriptor = $convert.base64Decode(
-    'ChtJbnN0YW50aWF0aW5nTWlncmF0ZWRWTVN0ZXA=');
+final $typed_data.Uint8List instantiatingMigratedVMStepDescriptor =
+    $convert.base64Decode('ChtJbnN0YW50aWF0aW5nTWlncmF0ZWRWTVN0ZXA=');
 
 @$core.Deprecated('Use cutoverJobDescriptor instead')
 const CutoverJob$json = {
   '1': 'CutoverJob',
   '2': [
-    {'1': 'compute_engine_target_details', '3': 14, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDetails', '9': 0, '10': 'computeEngineTargetDetails'},
-    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'end_time', '3': 16, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'compute_engine_target_details',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDetails',
+      '9': 0,
+      '10': 'computeEngineTargetDetails'
+    },
+    {
+      '1': 'create_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'state', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.CutoverJob.State', '10': 'state'},
-    {'1': 'state_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'stateTime'},
+    {
+      '1': 'state',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.CutoverJob.State',
+      '10': 'state'
+    },
+    {
+      '1': 'state_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'stateTime'
+    },
     {'1': 'progress_percent', '3': 13, '4': 1, '5': 5, '10': 'progressPercent'},
-    {'1': 'error', '3': 9, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
+    {
+      '1': 'error',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
     {'1': 'state_message', '3': 10, '4': 1, '5': 9, '10': 'stateMessage'},
-    {'1': 'steps', '3': 17, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.CutoverStep', '10': 'steps'},
+    {
+      '1': 'steps',
+      '3': 17,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.CutoverStep',
+      '10': 'steps'
+    },
   ],
   '4': [CutoverJob_State$json],
   '8': [
@@ -457,13 +815,67 @@ final $typed_data.Uint8List cutoverJobDescriptor = $convert.base64Decode(
 const CutoverStep$json = {
   '1': 'CutoverStep',
   '2': [
-    {'1': 'previous_replication_cycle', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ReplicationCycle', '9': 0, '10': 'previousReplicationCycle'},
-    {'1': 'shutting_down_source_vm', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ShuttingDownSourceVMStep', '9': 0, '10': 'shuttingDownSourceVm'},
-    {'1': 'final_sync', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ReplicationCycle', '9': 0, '10': 'finalSync'},
-    {'1': 'preparing_vm_disks', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.PreparingVMDisksStep', '9': 0, '10': 'preparingVmDisks'},
-    {'1': 'instantiating_migrated_vm', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.InstantiatingMigratedVMStep', '9': 0, '10': 'instantiatingMigratedVm'},
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'previous_replication_cycle',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ReplicationCycle',
+      '9': 0,
+      '10': 'previousReplicationCycle'
+    },
+    {
+      '1': 'shutting_down_source_vm',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ShuttingDownSourceVMStep',
+      '9': 0,
+      '10': 'shuttingDownSourceVm'
+    },
+    {
+      '1': 'final_sync',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ReplicationCycle',
+      '9': 0,
+      '10': 'finalSync'
+    },
+    {
+      '1': 'preparing_vm_disks',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.PreparingVMDisksStep',
+      '9': 0,
+      '10': 'preparingVmDisks'
+    },
+    {
+      '1': 'instantiating_migrated_vm',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.InstantiatingMigratedVMStep',
+      '9': 0,
+      '10': 'instantiatingMigratedVm'
+    },
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
   '8': [
     {'1': 'step'},
@@ -492,19 +904,56 @@ const ShuttingDownSourceVMStep$json = {
 };
 
 /// Descriptor for `ShuttingDownSourceVMStep`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List shuttingDownSourceVMStepDescriptor = $convert.base64Decode(
-    'ChhTaHV0dGluZ0Rvd25Tb3VyY2VWTVN0ZXA=');
+final $typed_data.Uint8List shuttingDownSourceVMStepDescriptor =
+    $convert.base64Decode('ChhTaHV0dGluZ0Rvd25Tb3VyY2VWTVN0ZXA=');
 
 @$core.Deprecated('Use sourceDescriptor instead')
 const Source$json = {
   '1': 'Source',
   '2': [
-    {'1': 'vmware', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.VmwareSourceDetails', '9': 0, '10': 'vmware'},
-    {'1': 'aws', '3': 12, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.AwsSourceDetails', '9': 0, '10': 'aws'},
+    {
+      '1': 'vmware',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.VmwareSourceDetails',
+      '9': 0,
+      '10': 'vmware'
+    },
+    {
+      '1': 'aws',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.AwsSourceDetails',
+      '9': 0,
+      '10': 'aws'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.Source.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.Source.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 6, '4': 1, '5': 9, '10': 'description'},
   ],
   '3': [Source_LabelsEntry$json],
@@ -542,7 +991,13 @@ const VmwareSourceDetails$json = {
     {'1': 'username', '3': 1, '4': 1, '5': 9, '10': 'username'},
     {'1': 'vcenter_ip', '3': 3, '4': 1, '5': 9, '10': 'vcenterIp'},
     {'1': 'thumbprint', '3': 4, '4': 1, '5': 9, '10': 'thumbprint'},
-    {'1': 'resolved_vcenter_host', '3': 5, '4': 1, '5': 9, '10': 'resolvedVcenterHost'},
+    {
+      '1': 'resolved_vcenter_host',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'resolvedVcenterHost'
+    },
   ],
 };
 
@@ -556,16 +1011,64 @@ final $typed_data.Uint8List vmwareSourceDetailsDescriptor = $convert.base64Decod
 const AwsSourceDetails$json = {
   '1': 'AwsSourceDetails',
   '2': [
-    {'1': 'access_key_creds', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.AwsSourceDetails.AccessKeyCredentials', '9': 0, '10': 'accessKeyCreds'},
+    {
+      '1': 'access_key_creds',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.vmmigration.v1.AwsSourceDetails.AccessKeyCredentials',
+      '9': 0,
+      '10': 'accessKeyCreds'
+    },
     {'1': 'aws_region', '3': 3, '4': 1, '5': 9, '10': 'awsRegion'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.AwsSourceDetails.State', '10': 'state'},
-    {'1': 'error', '3': 5, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'inventory_tag_list', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.AwsSourceDetails.Tag', '10': 'inventoryTagList'},
-    {'1': 'inventory_security_group_names', '3': 7, '4': 3, '5': 9, '10': 'inventorySecurityGroupNames'},
-    {'1': 'migration_resources_user_tags', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.AwsSourceDetails.MigrationResourcesUserTagsEntry', '10': 'migrationResourcesUserTags'},
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.AwsSourceDetails.State',
+      '10': 'state'
+    },
+    {
+      '1': 'error',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'inventory_tag_list',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.AwsSourceDetails.Tag',
+      '10': 'inventoryTagList'
+    },
+    {
+      '1': 'inventory_security_group_names',
+      '3': 7,
+      '4': 3,
+      '5': 9,
+      '10': 'inventorySecurityGroupNames'
+    },
+    {
+      '1': 'migration_resources_user_tags',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.vmmigration.v1.AwsSourceDetails.MigrationResourcesUserTagsEntry',
+      '10': 'migrationResourcesUserTags'
+    },
     {'1': 'public_ip', '3': 9, '4': 1, '5': 9, '10': 'publicIp'},
   ],
-  '3': [AwsSourceDetails_AccessKeyCredentials$json, AwsSourceDetails_Tag$json, AwsSourceDetails_MigrationResourcesUserTagsEntry$json],
+  '3': [
+    AwsSourceDetails_AccessKeyCredentials$json,
+    AwsSourceDetails_Tag$json,
+    AwsSourceDetails_MigrationResourcesUserTagsEntry$json
+  ],
   '4': [AwsSourceDetails_State$json],
   '8': [
     {'1': 'credentials_type'},
@@ -634,20 +1137,81 @@ final $typed_data.Uint8List awsSourceDetailsDescriptor = $convert.base64Decode(
 const DatacenterConnector$json = {
   '1': 'DatacenterConnector',
   '2': [
-    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     {'1': 'registration_id', '3': 12, '4': 1, '5': 9, '10': 'registrationId'},
     {'1': 'service_account', '3': 5, '4': 1, '5': 9, '10': 'serviceAccount'},
     {'1': 'version', '3': 6, '4': 1, '5': 9, '10': 'version'},
     {'1': 'bucket', '3': 10, '4': 1, '5': 9, '10': 'bucket'},
-    {'1': 'state', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.DatacenterConnector.State', '10': 'state'},
-    {'1': 'state_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'stateTime'},
-    {'1': 'error', '3': 11, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'appliance_infrastructure_version', '3': 13, '4': 1, '5': 9, '10': 'applianceInfrastructureVersion'},
-    {'1': 'appliance_software_version', '3': 14, '4': 1, '5': 9, '10': 'applianceSoftwareVersion'},
-    {'1': 'available_versions', '3': 15, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.AvailableUpdates', '10': 'availableVersions'},
-    {'1': 'upgrade_status', '3': 16, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.UpgradeStatus', '10': 'upgradeStatus'},
+    {
+      '1': 'state',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.DatacenterConnector.State',
+      '10': 'state'
+    },
+    {
+      '1': 'state_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'stateTime'
+    },
+    {
+      '1': 'error',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'appliance_infrastructure_version',
+      '3': 13,
+      '4': 1,
+      '5': 9,
+      '10': 'applianceInfrastructureVersion'
+    },
+    {
+      '1': 'appliance_software_version',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '10': 'applianceSoftwareVersion'
+    },
+    {
+      '1': 'available_versions',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.AvailableUpdates',
+      '10': 'availableVersions'
+    },
+    {
+      '1': 'upgrade_status',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.UpgradeStatus',
+      '10': 'upgradeStatus'
+    },
   ],
   '4': [DatacenterConnector_State$json],
 };
@@ -689,9 +1253,30 @@ const UpgradeStatus$json = {
   '1': 'UpgradeStatus',
   '2': [
     {'1': 'version', '3': 1, '4': 1, '5': 9, '10': 'version'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.UpgradeStatus.State', '10': 'state'},
-    {'1': 'error', '3': 3, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'start_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.UpgradeStatus.State',
+      '10': 'state'
+    },
+    {
+      '1': 'error',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'start_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
     {'1': 'previous_version', '3': 5, '4': 1, '5': 9, '10': 'previousVersion'},
   ],
   '4': [UpgradeStatus_State$json],
@@ -722,8 +1307,22 @@ final $typed_data.Uint8List upgradeStatusDescriptor = $convert.base64Decode(
 const AvailableUpdates$json = {
   '1': 'AvailableUpdates',
   '2': [
-    {'1': 'new_deployable_appliance', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ApplianceVersion', '10': 'newDeployableAppliance'},
-    {'1': 'in_place_update', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ApplianceVersion', '10': 'inPlaceUpdate'},
+    {
+      '1': 'new_deployable_appliance',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ApplianceVersion',
+      '10': 'newDeployableAppliance'
+    },
+    {
+      '1': 'in_place_update',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ApplianceVersion',
+      '10': 'inPlaceUpdate'
+    },
   ],
 };
 
@@ -758,16 +1357,48 @@ const VmwareVmDetails$json = {
   '2': [
     {'1': 'vm_id', '3': 1, '4': 1, '5': 9, '10': 'vmId'},
     {'1': 'datacenter_id', '3': 2, '4': 1, '5': 9, '10': 'datacenterId'},
-    {'1': 'datacenter_description', '3': 3, '4': 1, '5': 9, '10': 'datacenterDescription'},
+    {
+      '1': 'datacenter_description',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'datacenterDescription'
+    },
     {'1': 'uuid', '3': 4, '4': 1, '5': 9, '10': 'uuid'},
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'power_state', '3': 6, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.VmwareVmDetails.PowerState', '10': 'powerState'},
+    {
+      '1': 'power_state',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.VmwareVmDetails.PowerState',
+      '10': 'powerState'
+    },
     {'1': 'cpu_count', '3': 7, '4': 1, '5': 5, '10': 'cpuCount'},
     {'1': 'memory_mb', '3': 8, '4': 1, '5': 5, '10': 'memoryMb'},
     {'1': 'disk_count', '3': 9, '4': 1, '5': 5, '10': 'diskCount'},
-    {'1': 'committed_storage_mb', '3': 12, '4': 1, '5': 3, '10': 'committedStorageMb'},
-    {'1': 'guest_description', '3': 11, '4': 1, '5': 9, '10': 'guestDescription'},
-    {'1': 'boot_option', '3': 13, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.VmwareVmDetails.BootOption', '10': 'bootOption'},
+    {
+      '1': 'committed_storage_mb',
+      '3': 12,
+      '4': 1,
+      '5': 3,
+      '10': 'committedStorageMb'
+    },
+    {
+      '1': 'guest_description',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '10': 'guestDescription'
+    },
+    {
+      '1': 'boot_option',
+      '3': 13,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.VmwareVmDetails.BootOption',
+      '10': 'bootOption'
+    },
   ],
   '4': [VmwareVmDetails_PowerState$json, VmwareVmDetails_BootOption$json],
 };
@@ -815,14 +1446,63 @@ const UtilizationReport$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.UtilizationReport.State', '10': 'state'},
-    {'1': 'state_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'stateTime'},
-    {'1': 'error', '3': 5, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'time_frame', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.UtilizationReport.TimeFrame', '10': 'timeFrame'},
-    {'1': 'frame_end_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'frameEndTime'},
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.UtilizationReport.State',
+      '10': 'state'
+    },
+    {
+      '1': 'state_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'stateTime'
+    },
+    {
+      '1': 'error',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'time_frame',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.UtilizationReport.TimeFrame',
+      '10': 'timeFrame'
+    },
+    {
+      '1': 'frame_end_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'frameEndTime'
+    },
     {'1': 'vm_count', '3': 9, '4': 1, '5': 5, '10': 'vmCount'},
-    {'1': 'vms', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.VmUtilizationInfo', '10': 'vms'},
+    {
+      '1': 'vms',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.VmUtilizationInfo',
+      '10': 'vms'
+    },
   ],
   '4': [UtilizationReport_State$json, UtilizationReport_TimeFrame$json],
 };
@@ -870,9 +1550,24 @@ final $typed_data.Uint8List utilizationReportDescriptor = $convert.base64Decode(
 const VmUtilizationInfo$json = {
   '1': 'VmUtilizationInfo',
   '2': [
-    {'1': 'vmware_vm_details', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.VmwareVmDetails', '9': 0, '10': 'vmwareVmDetails'},
+    {
+      '1': 'vmware_vm_details',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.VmwareVmDetails',
+      '9': 0,
+      '10': 'vmwareVmDetails'
+    },
     {'1': 'vm_id', '3': 3, '4': 1, '5': 9, '10': 'vmId'},
-    {'1': 'utilization', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.VmUtilizationMetrics', '10': 'utilization'},
+    {
+      '1': 'utilization',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.VmUtilizationMetrics',
+      '10': 'utilization'
+    },
   ],
   '8': [
     {'1': 'VmDetails'},
@@ -892,13 +1587,55 @@ const VmUtilizationMetrics$json = {
   '1': 'VmUtilizationMetrics',
   '2': [
     {'1': 'cpu_max_percent', '3': 9, '4': 1, '5': 5, '10': 'cpuMaxPercent'},
-    {'1': 'cpu_average_percent', '3': 10, '4': 1, '5': 5, '10': 'cpuAveragePercent'},
-    {'1': 'memory_max_percent', '3': 11, '4': 1, '5': 5, '10': 'memoryMaxPercent'},
-    {'1': 'memory_average_percent', '3': 12, '4': 1, '5': 5, '10': 'memoryAveragePercent'},
-    {'1': 'disk_io_rate_max_kbps', '3': 13, '4': 1, '5': 3, '10': 'diskIoRateMaxKbps'},
-    {'1': 'disk_io_rate_average_kbps', '3': 14, '4': 1, '5': 3, '10': 'diskIoRateAverageKbps'},
-    {'1': 'network_throughput_max_kbps', '3': 15, '4': 1, '5': 3, '10': 'networkThroughputMaxKbps'},
-    {'1': 'network_throughput_average_kbps', '3': 16, '4': 1, '5': 3, '10': 'networkThroughputAverageKbps'},
+    {
+      '1': 'cpu_average_percent',
+      '3': 10,
+      '4': 1,
+      '5': 5,
+      '10': 'cpuAveragePercent'
+    },
+    {
+      '1': 'memory_max_percent',
+      '3': 11,
+      '4': 1,
+      '5': 5,
+      '10': 'memoryMaxPercent'
+    },
+    {
+      '1': 'memory_average_percent',
+      '3': 12,
+      '4': 1,
+      '5': 5,
+      '10': 'memoryAveragePercent'
+    },
+    {
+      '1': 'disk_io_rate_max_kbps',
+      '3': 13,
+      '4': 1,
+      '5': 3,
+      '10': 'diskIoRateMaxKbps'
+    },
+    {
+      '1': 'disk_io_rate_average_kbps',
+      '3': 14,
+      '4': 1,
+      '5': 3,
+      '10': 'diskIoRateAverageKbps'
+    },
+    {
+      '1': 'network_throughput_max_kbps',
+      '3': 15,
+      '4': 1,
+      '5': 3,
+      '10': 'networkThroughputMaxKbps'
+    },
+    {
+      '1': 'network_throughput_average_kbps',
+      '3': 16,
+      '4': 1,
+      '5': 3,
+      '10': 'networkThroughputAverageKbps'
+    },
   ],
 };
 
@@ -921,23 +1658,96 @@ const ComputeEngineTargetDefaults$json = {
     {'1': 'vm_name', '3': 1, '4': 1, '5': 9, '10': 'vmName'},
     {'1': 'target_project', '3': 2, '4': 1, '5': 9, '10': 'targetProject'},
     {'1': 'zone', '3': 3, '4': 1, '5': 9, '10': 'zone'},
-    {'1': 'machine_type_series', '3': 4, '4': 1, '5': 9, '10': 'machineTypeSeries'},
+    {
+      '1': 'machine_type_series',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'machineTypeSeries'
+    },
     {'1': 'machine_type', '3': 5, '4': 1, '5': 9, '10': 'machineType'},
     {'1': 'network_tags', '3': 6, '4': 3, '5': 9, '10': 'networkTags'},
-    {'1': 'network_interfaces', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.NetworkInterface', '10': 'networkInterfaces'},
+    {
+      '1': 'network_interfaces',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.NetworkInterface',
+      '10': 'networkInterfaces'
+    },
     {'1': 'service_account', '3': 8, '4': 1, '5': 9, '10': 'serviceAccount'},
-    {'1': 'disk_type', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineDiskType', '10': 'diskType'},
-    {'1': 'labels', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDefaults.LabelsEntry', '10': 'labels'},
-    {'1': 'license_type', '3': 11, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineLicenseType', '10': 'licenseType'},
-    {'1': 'applied_license', '3': 12, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.AppliedLicense', '10': 'appliedLicense'},
-    {'1': 'compute_scheduling', '3': 13, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ComputeScheduling', '10': 'computeScheduling'},
+    {
+      '1': 'disk_type',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeEngineDiskType',
+      '10': 'diskType'
+    },
+    {
+      '1': 'labels',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDefaults.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'license_type',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeEngineLicenseType',
+      '10': 'licenseType'
+    },
+    {
+      '1': 'applied_license',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.AppliedLicense',
+      '10': 'appliedLicense'
+    },
+    {
+      '1': 'compute_scheduling',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeScheduling',
+      '10': 'computeScheduling'
+    },
     {'1': 'secure_boot', '3': 14, '4': 1, '5': 8, '10': 'secureBoot'},
-    {'1': 'boot_option', '3': 15, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineBootOption', '10': 'bootOption'},
-    {'1': 'metadata', '3': 16, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDefaults.MetadataEntry', '10': 'metadata'},
-    {'1': 'additional_licenses', '3': 17, '4': 3, '5': 9, '10': 'additionalLicenses'},
+    {
+      '1': 'boot_option',
+      '3': 15,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeEngineBootOption',
+      '10': 'bootOption'
+    },
+    {
+      '1': 'metadata',
+      '3': 16,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDefaults.MetadataEntry',
+      '10': 'metadata'
+    },
+    {
+      '1': 'additional_licenses',
+      '3': 17,
+      '4': 3,
+      '5': 9,
+      '10': 'additionalLicenses'
+    },
     {'1': 'hostname', '3': 18, '4': 1, '5': 9, '10': 'hostname'},
   ],
-  '3': [ComputeEngineTargetDefaults_LabelsEntry$json, ComputeEngineTargetDefaults_MetadataEntry$json],
+  '3': [
+    ComputeEngineTargetDefaults_LabelsEntry$json,
+    ComputeEngineTargetDefaults_MetadataEntry$json
+  ],
 };
 
 @$core.Deprecated('Use computeEngineTargetDefaultsDescriptor instead')
@@ -994,23 +1804,96 @@ const ComputeEngineTargetDetails$json = {
     {'1': 'vm_name', '3': 1, '4': 1, '5': 9, '10': 'vmName'},
     {'1': 'project', '3': 2, '4': 1, '5': 9, '10': 'project'},
     {'1': 'zone', '3': 3, '4': 1, '5': 9, '10': 'zone'},
-    {'1': 'machine_type_series', '3': 4, '4': 1, '5': 9, '10': 'machineTypeSeries'},
+    {
+      '1': 'machine_type_series',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'machineTypeSeries'
+    },
     {'1': 'machine_type', '3': 5, '4': 1, '5': 9, '10': 'machineType'},
     {'1': 'network_tags', '3': 6, '4': 3, '5': 9, '10': 'networkTags'},
-    {'1': 'network_interfaces', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.NetworkInterface', '10': 'networkInterfaces'},
+    {
+      '1': 'network_interfaces',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.NetworkInterface',
+      '10': 'networkInterfaces'
+    },
     {'1': 'service_account', '3': 8, '4': 1, '5': 9, '10': 'serviceAccount'},
-    {'1': 'disk_type', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineDiskType', '10': 'diskType'},
-    {'1': 'labels', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDetails.LabelsEntry', '10': 'labels'},
-    {'1': 'license_type', '3': 11, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineLicenseType', '10': 'licenseType'},
-    {'1': 'applied_license', '3': 12, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.AppliedLicense', '10': 'appliedLicense'},
-    {'1': 'compute_scheduling', '3': 13, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ComputeScheduling', '10': 'computeScheduling'},
+    {
+      '1': 'disk_type',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeEngineDiskType',
+      '10': 'diskType'
+    },
+    {
+      '1': 'labels',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDetails.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'license_type',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeEngineLicenseType',
+      '10': 'licenseType'
+    },
+    {
+      '1': 'applied_license',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.AppliedLicense',
+      '10': 'appliedLicense'
+    },
+    {
+      '1': 'compute_scheduling',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeScheduling',
+      '10': 'computeScheduling'
+    },
     {'1': 'secure_boot', '3': 14, '4': 1, '5': 8, '10': 'secureBoot'},
-    {'1': 'boot_option', '3': 15, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineBootOption', '10': 'bootOption'},
-    {'1': 'metadata', '3': 16, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDetails.MetadataEntry', '10': 'metadata'},
-    {'1': 'additional_licenses', '3': 17, '4': 3, '5': 9, '10': 'additionalLicenses'},
+    {
+      '1': 'boot_option',
+      '3': 15,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeEngineBootOption',
+      '10': 'bootOption'
+    },
+    {
+      '1': 'metadata',
+      '3': 16,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.vmmigration.v1.ComputeEngineTargetDetails.MetadataEntry',
+      '10': 'metadata'
+    },
+    {
+      '1': 'additional_licenses',
+      '3': 17,
+      '4': 3,
+      '5': 9,
+      '10': 'additionalLicenses'
+    },
     {'1': 'hostname', '3': 18, '4': 1, '5': 9, '10': 'hostname'},
   ],
-  '3': [ComputeEngineTargetDetails_LabelsEntry$json, ComputeEngineTargetDetails_MetadataEntry$json],
+  '3': [
+    ComputeEngineTargetDetails_LabelsEntry$json,
+    ComputeEngineTargetDetails_MetadataEntry$json
+  ],
 };
 
 @$core.Deprecated('Use computeEngineTargetDetailsDescriptor instead')
@@ -1080,7 +1963,14 @@ final $typed_data.Uint8List networkInterfaceDescriptor = $convert.base64Decode(
 const AppliedLicense$json = {
   '1': 'AppliedLicense',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.AppliedLicense.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.AppliedLicense.Type',
+      '10': 'type'
+    },
     {'1': 'os_license', '3': 2, '4': 1, '5': 9, '10': 'osLicense'},
   ],
   '4': [AppliedLicense_Type$json],
@@ -1109,7 +1999,15 @@ const SchedulingNodeAffinity$json = {
   '1': 'SchedulingNodeAffinity',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'operator', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.SchedulingNodeAffinity.Operator', '10': 'operator'},
+    {
+      '1': 'operator',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.vmmigration.v1.SchedulingNodeAffinity.Operator',
+      '10': 'operator'
+    },
     {'1': 'values', '3': 3, '4': 3, '5': 9, '10': 'values'},
   ],
   '4': [SchedulingNodeAffinity_Operator$json],
@@ -1136,12 +2034,37 @@ final $typed_data.Uint8List schedulingNodeAffinityDescriptor = $convert.base64De
 const ComputeScheduling$json = {
   '1': 'ComputeScheduling',
   '2': [
-    {'1': 'on_host_maintenance', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.ComputeScheduling.OnHostMaintenance', '10': 'onHostMaintenance'},
-    {'1': 'restart_type', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.ComputeScheduling.RestartType', '10': 'restartType'},
-    {'1': 'node_affinities', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.SchedulingNodeAffinity', '10': 'nodeAffinities'},
+    {
+      '1': 'on_host_maintenance',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.vmmigration.v1.ComputeScheduling.OnHostMaintenance',
+      '10': 'onHostMaintenance'
+    },
+    {
+      '1': 'restart_type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.ComputeScheduling.RestartType',
+      '10': 'restartType'
+    },
+    {
+      '1': 'node_affinities',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.SchedulingNodeAffinity',
+      '10': 'nodeAffinities'
+    },
     {'1': 'min_node_cpus', '3': 4, '4': 1, '5': 5, '10': 'minNodeCpus'},
   ],
-  '4': [ComputeScheduling_OnHostMaintenance$json, ComputeScheduling_RestartType$json],
+  '4': [
+    ComputeScheduling_OnHostMaintenance$json,
+    ComputeScheduling_RestartType$json
+  ],
 };
 
 @$core.Deprecated('Use computeSchedulingDescriptor instead')
@@ -1182,8 +2105,21 @@ final $typed_data.Uint8List computeSchedulingDescriptor = $convert.base64Decode(
 const SchedulePolicy$json = {
   '1': 'SchedulePolicy',
   '2': [
-    {'1': 'idle_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'idleDuration'},
-    {'1': 'skip_os_adaptation', '3': 2, '4': 1, '5': 8, '10': 'skipOsAdaptation'},
+    {
+      '1': 'idle_duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'idleDuration'
+    },
+    {
+      '1': 'skip_os_adaptation',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'skipOsAdaptation'
+    },
   ],
 };
 
@@ -1200,8 +2136,22 @@ const TargetProject$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'project', '3': 2, '4': 1, '5': 9, '10': 'project'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
   ],
 };
 
@@ -1217,8 +2167,22 @@ const Group$json = {
   '1': 'Group',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 4, '4': 1, '5': 9, '10': 'description'},
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
   ],
@@ -1235,11 +2199,46 @@ final $typed_data.Uint8List groupDescriptor = $convert.base64Decode(
 const MigrationWarning$json = {
   '1': 'MigrationWarning',
   '2': [
-    {'1': 'code', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.MigrationWarning.WarningCode', '10': 'code'},
-    {'1': 'warning_message', '3': 2, '4': 1, '5': 11, '6': '.google.rpc.LocalizedMessage', '10': 'warningMessage'},
-    {'1': 'action_item', '3': 3, '4': 1, '5': 11, '6': '.google.rpc.LocalizedMessage', '10': 'actionItem'},
-    {'1': 'help_links', '3': 4, '4': 3, '5': 11, '6': '.google.rpc.Help.Link', '10': 'helpLinks'},
-    {'1': 'warning_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'warningTime'},
+    {
+      '1': 'code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.MigrationWarning.WarningCode',
+      '10': 'code'
+    },
+    {
+      '1': 'warning_message',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.LocalizedMessage',
+      '10': 'warningMessage'
+    },
+    {
+      '1': 'action_item',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.LocalizedMessage',
+      '10': 'actionItem'
+    },
+    {
+      '1': 'help_links',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.rpc.Help.Link',
+      '10': 'helpLinks'
+    },
+    {
+      '1': 'warning_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'warningTime'
+    },
   ],
   '4': [MigrationWarning_WarningCode$json],
 };
@@ -1268,9 +2267,30 @@ final $typed_data.Uint8List migrationWarningDescriptor = $convert.base64Decode(
 const AwsSourceVmDetails$json = {
   '1': 'AwsSourceVmDetails',
   '2': [
-    {'1': 'firmware', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.vmmigration.v1.AwsSourceVmDetails.Firmware', '10': 'firmware'},
-    {'1': 'committed_storage_bytes', '3': 2, '4': 1, '5': 3, '10': 'committedStorageBytes'},
-    {'1': 'disks', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.vmmigration.v1.AwsSourceVmDetails.AwsDiskDetails', '10': 'disks'},
+    {
+      '1': 'firmware',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.vmmigration.v1.AwsSourceVmDetails.Firmware',
+      '10': 'firmware'
+    },
+    {
+      '1': 'committed_storage_bytes',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'committedStorageBytes'
+    },
+    {
+      '1': 'disks',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.vmmigration.v1.AwsSourceVmDetails.AwsDiskDetails',
+      '10': 'disks'
+    },
   ],
   '3': [AwsSourceVmDetails_AwsDiskDetails$json],
   '4': [AwsSourceVmDetails_Firmware$json],
@@ -1311,7 +2331,16 @@ final $typed_data.Uint8List awsSourceVmDetailsDescriptor = $convert.base64Decode
 const UtilizationReportEventData$json = {
   '1': 'UtilizationReportEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.UtilizationReport', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.UtilizationReport',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1319,16 +2348,26 @@ const UtilizationReportEventData$json = {
 };
 
 /// Descriptor for `UtilizationReportEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List utilizationReportEventDataDescriptor = $convert.base64Decode(
-    'ChpVdGlsaXphdGlvblJlcG9ydEV2ZW50RGF0YRJUCgdwYXlsb2FkGAEgASgLMjUuZ29vZ2xlLm'
-    'V2ZW50cy5jbG91ZC52bW1pZ3JhdGlvbi52MS5VdGlsaXphdGlvblJlcG9ydEgAUgdwYXlsb2Fk'
-    'iAEBQgoKCF9wYXlsb2Fk');
+final $typed_data.Uint8List utilizationReportEventDataDescriptor =
+    $convert.base64Decode(
+        'ChpVdGlsaXphdGlvblJlcG9ydEV2ZW50RGF0YRJUCgdwYXlsb2FkGAEgASgLMjUuZ29vZ2xlLm'
+        'V2ZW50cy5jbG91ZC52bW1pZ3JhdGlvbi52MS5VdGlsaXphdGlvblJlcG9ydEgAUgdwYXlsb2Fk'
+        'iAEBQgoKCF9wYXlsb2Fk');
 
 @$core.Deprecated('Use groupEventDataDescriptor instead')
 const GroupEventData$json = {
   '1': 'GroupEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.Group', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.Group',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1344,7 +2383,14 @@ final $typed_data.Uint8List groupEventDataDescriptor = $convert.base64Decode(
 const CloneJobEventData$json = {
   '1': 'CloneJobEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.CloneJob', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.CloneJob',
+      '10': 'payload'
+    },
   ],
 };
 
@@ -1357,7 +2403,16 @@ final $typed_data.Uint8List cloneJobEventDataDescriptor = $convert.base64Decode(
 const DatacenterConnectorEventData$json = {
   '1': 'DatacenterConnectorEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.DatacenterConnector', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.DatacenterConnector',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1365,16 +2420,26 @@ const DatacenterConnectorEventData$json = {
 };
 
 /// Descriptor for `DatacenterConnectorEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List datacenterConnectorEventDataDescriptor = $convert.base64Decode(
-    'ChxEYXRhY2VudGVyQ29ubmVjdG9yRXZlbnREYXRhElYKB3BheWxvYWQYASABKAsyNy5nb29nbG'
-    'UuZXZlbnRzLmNsb3VkLnZtbWlncmF0aW9uLnYxLkRhdGFjZW50ZXJDb25uZWN0b3JIAFIHcGF5'
-    'bG9hZIgBAUIKCghfcGF5bG9hZA==');
+final $typed_data.Uint8List datacenterConnectorEventDataDescriptor =
+    $convert.base64Decode(
+        'ChxEYXRhY2VudGVyQ29ubmVjdG9yRXZlbnREYXRhElYKB3BheWxvYWQYASABKAsyNy5nb29nbG'
+        'UuZXZlbnRzLmNsb3VkLnZtbWlncmF0aW9uLnYxLkRhdGFjZW50ZXJDb25uZWN0b3JIAFIHcGF5'
+        'bG9hZIgBAUIKCghfcGF5bG9hZA==');
 
 @$core.Deprecated('Use targetProjectEventDataDescriptor instead')
 const TargetProjectEventData$json = {
   '1': 'TargetProjectEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.TargetProject', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.TargetProject',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1391,7 +2456,14 @@ final $typed_data.Uint8List targetProjectEventDataDescriptor = $convert.base64De
 const CutoverJobEventData$json = {
   '1': 'CutoverJobEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.CutoverJob', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.CutoverJob',
+      '10': 'payload'
+    },
   ],
 };
 
@@ -1404,7 +2476,16 @@ final $typed_data.Uint8List cutoverJobEventDataDescriptor = $convert.base64Decod
 const SourceEventData$json = {
   '1': 'SourceEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.Source', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.Source',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1420,7 +2501,16 @@ final $typed_data.Uint8List sourceEventDataDescriptor = $convert.base64Decode(
 const MigratingVmEventData$json = {
   '1': 'MigratingVmEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.MigratingVm', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.MigratingVm',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1432,4 +2522,3 @@ final $typed_data.Uint8List migratingVmEventDataDescriptor = $convert.base64Deco
     'ChRNaWdyYXRpbmdWbUV2ZW50RGF0YRJOCgdwYXlsb2FkGAEgASgLMi8uZ29vZ2xlLmV2ZW50cy'
     '5jbG91ZC52bW1pZ3JhdGlvbi52MS5NaWdyYXRpbmdWbUgAUgdwYXlsb2FkiAEBQgoKCF9wYXls'
     'b2Fk');
-

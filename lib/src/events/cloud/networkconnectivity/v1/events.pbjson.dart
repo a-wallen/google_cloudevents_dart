@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const ServiceConnectionMapCreatedEvent$json = {
   '1': 'ServiceConnectionMapCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMapEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMapEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -34,7 +42,15 @@ final $typed_data.Uint8List serviceConnectionMapCreatedEventDescriptor = $conver
 const ServiceConnectionMapUpdatedEvent$json = {
   '1': 'ServiceConnectionMapUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMapEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMapEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -51,7 +67,15 @@ final $typed_data.Uint8List serviceConnectionMapUpdatedEventDescriptor = $conver
 const ServiceConnectionMapDeletedEvent$json = {
   '1': 'ServiceConnectionMapDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMapEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMapEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -68,58 +92,92 @@ final $typed_data.Uint8List serviceConnectionMapDeletedEventDescriptor = $conver
 const ServiceConnectionPolicyCreatedEvent$json = {
   '1': 'ServiceConnectionPolicyCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicyEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicyEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `ServiceConnectionPolicyCreatedEvent`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List serviceConnectionPolicyCreatedEventDescriptor = $convert.base64Decode(
-    'CiNTZXJ2aWNlQ29ubmVjdGlvblBvbGljeUNyZWF0ZWRFdmVudBJgCgRkYXRhGAEgASgLMkwuZ2'
-    '9vZ2xlLmV2ZW50cy5jbG91ZC5uZXR3b3JrY29ubmVjdGl2aXR5LnYxLlNlcnZpY2VDb25uZWN0'
-    'aW9uUG9saWN5RXZlbnREYXRhUgRkYXRhOmSy+NgsQ2dvb2dsZS5jbG91ZC5uZXR3b3JrY29ubm'
-    'VjdGl2aXR5LnNlcnZpY2VDb25uZWN0aW9uUG9saWN5LnYxLmNyZWF0ZWTK+NgsF3NlcnZpY2Vj'
-    'b25uZWN0aW9ucG9saWN5');
+final $typed_data.Uint8List serviceConnectionPolicyCreatedEventDescriptor =
+    $convert.base64Decode(
+        'CiNTZXJ2aWNlQ29ubmVjdGlvblBvbGljeUNyZWF0ZWRFdmVudBJgCgRkYXRhGAEgASgLMkwuZ2'
+        '9vZ2xlLmV2ZW50cy5jbG91ZC5uZXR3b3JrY29ubmVjdGl2aXR5LnYxLlNlcnZpY2VDb25uZWN0'
+        'aW9uUG9saWN5RXZlbnREYXRhUgRkYXRhOmSy+NgsQ2dvb2dsZS5jbG91ZC5uZXR3b3JrY29ubm'
+        'VjdGl2aXR5LnNlcnZpY2VDb25uZWN0aW9uUG9saWN5LnYxLmNyZWF0ZWTK+NgsF3NlcnZpY2Vj'
+        'b25uZWN0aW9ucG9saWN5');
 
 @$core.Deprecated('Use serviceConnectionPolicyUpdatedEventDescriptor instead')
 const ServiceConnectionPolicyUpdatedEvent$json = {
   '1': 'ServiceConnectionPolicyUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicyEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicyEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `ServiceConnectionPolicyUpdatedEvent`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List serviceConnectionPolicyUpdatedEventDescriptor = $convert.base64Decode(
-    'CiNTZXJ2aWNlQ29ubmVjdGlvblBvbGljeVVwZGF0ZWRFdmVudBJgCgRkYXRhGAEgASgLMkwuZ2'
-    '9vZ2xlLmV2ZW50cy5jbG91ZC5uZXR3b3JrY29ubmVjdGl2aXR5LnYxLlNlcnZpY2VDb25uZWN0'
-    'aW9uUG9saWN5RXZlbnREYXRhUgRkYXRhOmSy+NgsQ2dvb2dsZS5jbG91ZC5uZXR3b3JrY29ubm'
-    'VjdGl2aXR5LnNlcnZpY2VDb25uZWN0aW9uUG9saWN5LnYxLnVwZGF0ZWTK+NgsF3NlcnZpY2Vj'
-    'b25uZWN0aW9ucG9saWN5');
+final $typed_data.Uint8List serviceConnectionPolicyUpdatedEventDescriptor =
+    $convert.base64Decode(
+        'CiNTZXJ2aWNlQ29ubmVjdGlvblBvbGljeVVwZGF0ZWRFdmVudBJgCgRkYXRhGAEgASgLMkwuZ2'
+        '9vZ2xlLmV2ZW50cy5jbG91ZC5uZXR3b3JrY29ubmVjdGl2aXR5LnYxLlNlcnZpY2VDb25uZWN0'
+        'aW9uUG9saWN5RXZlbnREYXRhUgRkYXRhOmSy+NgsQ2dvb2dsZS5jbG91ZC5uZXR3b3JrY29ubm'
+        'VjdGl2aXR5LnNlcnZpY2VDb25uZWN0aW9uUG9saWN5LnYxLnVwZGF0ZWTK+NgsF3NlcnZpY2Vj'
+        'b25uZWN0aW9ucG9saWN5');
 
 @$core.Deprecated('Use serviceConnectionPolicyDeletedEventDescriptor instead')
 const ServiceConnectionPolicyDeletedEvent$json = {
   '1': 'ServiceConnectionPolicyDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicyEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicyEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `ServiceConnectionPolicyDeletedEvent`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List serviceConnectionPolicyDeletedEventDescriptor = $convert.base64Decode(
-    'CiNTZXJ2aWNlQ29ubmVjdGlvblBvbGljeURlbGV0ZWRFdmVudBJgCgRkYXRhGAEgASgLMkwuZ2'
-    '9vZ2xlLmV2ZW50cy5jbG91ZC5uZXR3b3JrY29ubmVjdGl2aXR5LnYxLlNlcnZpY2VDb25uZWN0'
-    'aW9uUG9saWN5RXZlbnREYXRhUgRkYXRhOmSy+NgsQ2dvb2dsZS5jbG91ZC5uZXR3b3JrY29ubm'
-    'VjdGl2aXR5LnNlcnZpY2VDb25uZWN0aW9uUG9saWN5LnYxLmRlbGV0ZWTK+NgsF3NlcnZpY2Vj'
-    'b25uZWN0aW9ucG9saWN5');
+final $typed_data.Uint8List serviceConnectionPolicyDeletedEventDescriptor =
+    $convert.base64Decode(
+        'CiNTZXJ2aWNlQ29ubmVjdGlvblBvbGljeURlbGV0ZWRFdmVudBJgCgRkYXRhGAEgASgLMkwuZ2'
+        '9vZ2xlLmV2ZW50cy5jbG91ZC5uZXR3b3JrY29ubmVjdGl2aXR5LnYxLlNlcnZpY2VDb25uZWN0'
+        'aW9uUG9saWN5RXZlbnREYXRhUgRkYXRhOmSy+NgsQ2dvb2dsZS5jbG91ZC5uZXR3b3JrY29ubm'
+        'VjdGl2aXR5LnNlcnZpY2VDb25uZWN0aW9uUG9saWN5LnYxLmRlbGV0ZWTK+NgsF3NlcnZpY2Vj'
+        'b25uZWN0aW9ucG9saWN5');
 
 @$core.Deprecated('Use serviceClassUpdatedEventDescriptor instead')
 const ServiceClassUpdatedEvent$json = {
   '1': 'ServiceClassUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceClassEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.ServiceClassEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -135,7 +193,14 @@ final $typed_data.Uint8List serviceClassUpdatedEventDescriptor = $convert.base64
 const ServiceClassDeletedEvent$json = {
   '1': 'ServiceClassDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceClassEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.ServiceClassEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -151,41 +216,66 @@ final $typed_data.Uint8List serviceClassDeletedEventDescriptor = $convert.base64
 const ServiceConnectionTokenCreatedEvent$json = {
   '1': 'ServiceConnectionTokenCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionTokenEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionTokenEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `ServiceConnectionTokenCreatedEvent`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List serviceConnectionTokenCreatedEventDescriptor = $convert.base64Decode(
-    'CiJTZXJ2aWNlQ29ubmVjdGlvblRva2VuQ3JlYXRlZEV2ZW50El8KBGRhdGEYASABKAsySy5nb2'
-    '9nbGUuZXZlbnRzLmNsb3VkLm5ldHdvcmtjb25uZWN0aXZpdHkudjEuU2VydmljZUNvbm5lY3Rp'
-    'b25Ub2tlbkV2ZW50RGF0YVIEZGF0YTpisvjYLEJnb29nbGUuY2xvdWQubmV0d29ya2Nvbm5lY3'
-    'Rpdml0eS5zZXJ2aWNlQ29ubmVjdGlvblRva2VuLnYxLmNyZWF0ZWTK+NgsFnNlcnZpY2Vjb25u'
-    'ZWN0aW9udG9rZW4=');
+final $typed_data.Uint8List serviceConnectionTokenCreatedEventDescriptor =
+    $convert.base64Decode(
+        'CiJTZXJ2aWNlQ29ubmVjdGlvblRva2VuQ3JlYXRlZEV2ZW50El8KBGRhdGEYASABKAsySy5nb2'
+        '9nbGUuZXZlbnRzLmNsb3VkLm5ldHdvcmtjb25uZWN0aXZpdHkudjEuU2VydmljZUNvbm5lY3Rp'
+        'b25Ub2tlbkV2ZW50RGF0YVIEZGF0YTpisvjYLEJnb29nbGUuY2xvdWQubmV0d29ya2Nvbm5lY3'
+        'Rpdml0eS5zZXJ2aWNlQ29ubmVjdGlvblRva2VuLnYxLmNyZWF0ZWTK+NgsFnNlcnZpY2Vjb25u'
+        'ZWN0aW9udG9rZW4=');
 
 @$core.Deprecated('Use serviceConnectionTokenDeletedEventDescriptor instead')
 const ServiceConnectionTokenDeletedEvent$json = {
   '1': 'ServiceConnectionTokenDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionTokenEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionTokenEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `ServiceConnectionTokenDeletedEvent`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List serviceConnectionTokenDeletedEventDescriptor = $convert.base64Decode(
-    'CiJTZXJ2aWNlQ29ubmVjdGlvblRva2VuRGVsZXRlZEV2ZW50El8KBGRhdGEYASABKAsySy5nb2'
-    '9nbGUuZXZlbnRzLmNsb3VkLm5ldHdvcmtjb25uZWN0aXZpdHkudjEuU2VydmljZUNvbm5lY3Rp'
-    'b25Ub2tlbkV2ZW50RGF0YVIEZGF0YTpisvjYLEJnb29nbGUuY2xvdWQubmV0d29ya2Nvbm5lY3'
-    'Rpdml0eS5zZXJ2aWNlQ29ubmVjdGlvblRva2VuLnYxLmRlbGV0ZWTK+NgsFnNlcnZpY2Vjb25u'
-    'ZWN0aW9udG9rZW4=');
+final $typed_data.Uint8List serviceConnectionTokenDeletedEventDescriptor =
+    $convert.base64Decode(
+        'CiJTZXJ2aWNlQ29ubmVjdGlvblRva2VuRGVsZXRlZEV2ZW50El8KBGRhdGEYASABKAsySy5nb2'
+        '9nbGUuZXZlbnRzLmNsb3VkLm5ldHdvcmtjb25uZWN0aXZpdHkudjEuU2VydmljZUNvbm5lY3Rp'
+        'b25Ub2tlbkV2ZW50RGF0YVIEZGF0YTpisvjYLEJnb29nbGUuY2xvdWQubmV0d29ya2Nvbm5lY3'
+        'Rpdml0eS5zZXJ2aWNlQ29ubmVjdGlvblRva2VuLnYxLmRlbGV0ZWTK+NgsFnNlcnZpY2Vjb25u'
+        'ZWN0aW9udG9rZW4=');
 
 @$core.Deprecated('Use hubCreatedEventDescriptor instead')
 const HubCreatedEvent$json = {
   '1': 'HubCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.HubEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.HubEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -200,7 +290,14 @@ final $typed_data.Uint8List hubCreatedEventDescriptor = $convert.base64Decode(
 const HubUpdatedEvent$json = {
   '1': 'HubUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.HubEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.HubEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -215,7 +312,14 @@ final $typed_data.Uint8List hubUpdatedEventDescriptor = $convert.base64Decode(
 const HubDeletedEvent$json = {
   '1': 'HubDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.HubEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.HubEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -230,7 +334,14 @@ final $typed_data.Uint8List hubDeletedEventDescriptor = $convert.base64Decode(
 const SpokeCreatedEvent$json = {
   '1': 'SpokeCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.SpokeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.SpokeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -245,7 +356,14 @@ final $typed_data.Uint8List spokeCreatedEventDescriptor = $convert.base64Decode(
 const SpokeUpdatedEvent$json = {
   '1': 'SpokeUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.SpokeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.SpokeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -260,7 +378,14 @@ final $typed_data.Uint8List spokeUpdatedEventDescriptor = $convert.base64Decode(
 const SpokeDeletedEvent$json = {
   '1': 'SpokeDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.SpokeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.SpokeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -270,4 +395,3 @@ final $typed_data.Uint8List spokeDeletedEventDescriptor = $convert.base64Decode(
     'ChFTcG9rZURlbGV0ZWRFdmVudBJOCgRkYXRhGAEgASgLMjouZ29vZ2xlLmV2ZW50cy5jbG91ZC'
     '5uZXR3b3JrY29ubmVjdGl2aXR5LnYxLlNwb2tlRXZlbnREYXRhUgRkYXRhOkCy+NgsMWdvb2ds'
     'ZS5jbG91ZC5uZXR3b3JrY29ubmVjdGl2aXR5LnNwb2tlLnYxLmRlbGV0ZWTK+NgsBXNwb2tl');
-

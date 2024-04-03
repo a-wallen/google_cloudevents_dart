@@ -19,29 +19,138 @@ const BuildEventData$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'project_id', '3': 16, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'status', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.cloudbuild.v1.BuildEventData.Status', '10': 'status'},
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.cloudbuild.v1.BuildEventData.Status',
+      '10': 'status'
+    },
     {'1': 'status_detail', '3': 24, '4': 1, '5': 9, '10': 'statusDetail'},
-    {'1': 'source', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.Source', '10': 'source'},
-    {'1': 'steps', '3': 11, '4': 3, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.BuildStep', '10': 'steps'},
-    {'1': 'results', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.Results', '10': 'results'},
-    {'1': 'create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'start_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'finish_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'finishTime'},
-    {'1': 'timeout', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'timeout'},
+    {
+      '1': 'source',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.Source',
+      '10': 'source'
+    },
+    {
+      '1': 'steps',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.BuildStep',
+      '10': 'steps'
+    },
+    {
+      '1': 'results',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.Results',
+      '10': 'results'
+    },
+    {
+      '1': 'create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'start_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'finish_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'finishTime'
+    },
+    {
+      '1': 'timeout',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'timeout'
+    },
     {'1': 'images', '3': 13, '4': 3, '5': 9, '10': 'images'},
-    {'1': 'queue_ttl', '3': 40, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'queueTtl'},
-    {'1': 'artifacts', '3': 37, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.Artifacts', '10': 'artifacts'},
+    {
+      '1': 'queue_ttl',
+      '3': 40,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'queueTtl'
+    },
+    {
+      '1': 'artifacts',
+      '3': 37,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.Artifacts',
+      '10': 'artifacts'
+    },
     {'1': 'logs_bucket', '3': 19, '4': 1, '5': 9, '10': 'logsBucket'},
-    {'1': 'source_provenance', '3': 21, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.SourceProvenance', '10': 'sourceProvenance'},
+    {
+      '1': 'source_provenance',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.SourceProvenance',
+      '10': 'sourceProvenance'
+    },
     {'1': 'build_trigger_id', '3': 22, '4': 1, '5': 9, '10': 'buildTriggerId'},
-    {'1': 'options', '3': 23, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.BuildOptions', '10': 'options'},
+    {
+      '1': 'options',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.BuildOptions',
+      '10': 'options'
+    },
     {'1': 'log_url', '3': 25, '4': 1, '5': 9, '10': 'logUrl'},
-    {'1': 'substitutions', '3': 29, '4': 3, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.BuildEventData.SubstitutionsEntry', '10': 'substitutions'},
+    {
+      '1': 'substitutions',
+      '3': 29,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.cloudbuild.v1.BuildEventData.SubstitutionsEntry',
+      '10': 'substitutions'
+    },
     {'1': 'tags', '3': 31, '4': 3, '5': 9, '10': 'tags'},
-    {'1': 'secrets', '3': 32, '4': 3, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.Secret', '10': 'secrets'},
-    {'1': 'timing', '3': 33, '4': 3, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.BuildEventData.TimingEntry', '10': 'timing'},
+    {
+      '1': 'secrets',
+      '3': 32,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.Secret',
+      '10': 'secrets'
+    },
+    {
+      '1': 'timing',
+      '3': 33,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.BuildEventData.TimingEntry',
+      '10': 'timing'
+    },
   ],
-  '3': [BuildEventData_SubstitutionsEntry$json, BuildEventData_TimingEntry$json],
+  '3': [
+    BuildEventData_SubstitutionsEntry$json,
+    BuildEventData_TimingEntry$json
+  ],
   '4': [BuildEventData_Status$json],
 };
 
@@ -60,7 +169,14 @@ const BuildEventData_TimingEntry$json = {
   '1': 'TimingEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.TimeSpan', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.TimeSpan',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -118,8 +234,24 @@ final $typed_data.Uint8List buildEventDataDescriptor = $convert.base64Decode(
 const Source$json = {
   '1': 'Source',
   '2': [
-    {'1': 'storage_source', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.StorageSource', '9': 0, '10': 'storageSource'},
-    {'1': 'repo_source', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.RepoSource', '9': 0, '10': 'repoSource'},
+    {
+      '1': 'storage_source',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.StorageSource',
+      '9': 0,
+      '10': 'storageSource'
+    },
+    {
+      '1': 'repo_source',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.RepoSource',
+      '9': 0,
+      '10': 'repoSource'
+    },
   ],
   '8': [
     {'1': 'source'},
@@ -159,7 +291,14 @@ const RepoSource$json = {
     {'1': 'commit_sha', '3': 5, '4': 1, '5': 9, '9': 0, '10': 'commitSha'},
     {'1': 'dir', '3': 7, '4': 1, '5': 9, '10': 'dir'},
     {'1': 'invert_regex', '3': 8, '4': 1, '5': 8, '10': 'invertRegex'},
-    {'1': 'substitutions', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.RepoSource.SubstitutionsEntry', '10': 'substitutions'},
+    {
+      '1': 'substitutions',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.RepoSource.SubstitutionsEntry',
+      '10': 'substitutions'
+    },
   ],
   '3': [RepoSource_SubstitutionsEntry$json],
   '8': [
@@ -200,11 +339,46 @@ const BuildStep$json = {
     {'1': 'wait_for', '3': 6, '4': 3, '5': 9, '10': 'waitFor'},
     {'1': 'entrypoint', '3': 7, '4': 1, '5': 9, '10': 'entrypoint'},
     {'1': 'secret_env', '3': 8, '4': 3, '5': 9, '10': 'secretEnv'},
-    {'1': 'volumes', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.Volume', '10': 'volumes'},
-    {'1': 'timing', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.TimeSpan', '10': 'timing'},
-    {'1': 'pull_timing', '3': 13, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.TimeSpan', '10': 'pullTiming'},
-    {'1': 'timeout', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'timeout'},
-    {'1': 'status', '3': 12, '4': 1, '5': 14, '6': '.google.events.cloud.cloudbuild.v1.BuildEventData.Status', '10': 'status'},
+    {
+      '1': 'volumes',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.Volume',
+      '10': 'volumes'
+    },
+    {
+      '1': 'timing',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.TimeSpan',
+      '10': 'timing'
+    },
+    {
+      '1': 'pull_timing',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.TimeSpan',
+      '10': 'pullTiming'
+    },
+    {
+      '1': 'timeout',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'timeout'
+    },
+    {
+      '1': 'status',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.cloudbuild.v1.BuildEventData.Status',
+      '10': 'status'
+    },
   ],
 };
 
@@ -238,12 +412,38 @@ final $typed_data.Uint8List volumeDescriptor = $convert.base64Decode(
 const Results$json = {
   '1': 'Results',
   '2': [
-    {'1': 'images', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.BuiltImage', '10': 'images'},
+    {
+      '1': 'images',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.BuiltImage',
+      '10': 'images'
+    },
     {'1': 'build_step_images', '3': 3, '4': 3, '5': 9, '10': 'buildStepImages'},
-    {'1': 'artifact_manifest', '3': 4, '4': 1, '5': 9, '10': 'artifactManifest'},
+    {
+      '1': 'artifact_manifest',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'artifactManifest'
+    },
     {'1': 'num_artifacts', '3': 5, '4': 1, '5': 3, '10': 'numArtifacts'},
-    {'1': 'build_step_outputs', '3': 6, '4': 3, '5': 12, '10': 'buildStepOutputs'},
-    {'1': 'artifact_timing', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.TimeSpan', '10': 'artifactTiming'},
+    {
+      '1': 'build_step_outputs',
+      '3': 6,
+      '4': 3,
+      '5': 12,
+      '10': 'buildStepOutputs'
+    },
+    {
+      '1': 'artifact_timing',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.TimeSpan',
+      '10': 'artifactTiming'
+    },
   ],
 };
 
@@ -263,7 +463,14 @@ const BuiltImage$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'digest', '3': 3, '4': 1, '5': 9, '10': 'digest'},
-    {'1': 'push_timing', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.TimeSpan', '10': 'pushTiming'},
+    {
+      '1': 'push_timing',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.TimeSpan',
+      '10': 'pushTiming'
+    },
   ],
 };
 
@@ -278,7 +485,14 @@ const Artifacts$json = {
   '1': 'Artifacts',
   '2': [
     {'1': 'images', '3': 1, '4': 3, '5': 9, '10': 'images'},
-    {'1': 'objects', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.Artifacts.ArtifactObjects', '10': 'objects'},
+    {
+      '1': 'objects',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.Artifacts.ArtifactObjects',
+      '10': 'objects'
+    },
   ],
   '3': [Artifacts_ArtifactObjects$json],
 };
@@ -289,7 +503,14 @@ const Artifacts_ArtifactObjects$json = {
   '2': [
     {'1': 'location', '3': 1, '4': 1, '5': 9, '10': 'location'},
     {'1': 'paths', '3': 2, '4': 3, '5': 9, '10': 'paths'},
-    {'1': 'timing', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.TimeSpan', '10': 'timing'},
+    {
+      '1': 'timing',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.TimeSpan',
+      '10': 'timing'
+    },
   ],
 };
 
@@ -305,8 +526,22 @@ final $typed_data.Uint8List artifactsDescriptor = $convert.base64Decode(
 const TimeSpan$json = {
   '1': 'TimeSpan',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
 };
 
@@ -320,9 +555,31 @@ final $typed_data.Uint8List timeSpanDescriptor = $convert.base64Decode(
 const SourceProvenance$json = {
   '1': 'SourceProvenance',
   '2': [
-    {'1': 'resolved_storage_source', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.StorageSource', '10': 'resolvedStorageSource'},
-    {'1': 'resolved_repo_source', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.RepoSource', '10': 'resolvedRepoSource'},
-    {'1': 'file_hashes', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.SourceProvenance.FileHashesEntry', '10': 'fileHashes'},
+    {
+      '1': 'resolved_storage_source',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.StorageSource',
+      '10': 'resolvedStorageSource'
+    },
+    {
+      '1': 'resolved_repo_source',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.RepoSource',
+      '10': 'resolvedRepoSource'
+    },
+    {
+      '1': 'file_hashes',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.cloudbuild.v1.SourceProvenance.FileHashesEntry',
+      '10': 'fileHashes'
+    },
   ],
   '3': [SourceProvenance_FileHashesEntry$json],
 };
@@ -332,7 +589,14 @@ const SourceProvenance_FileHashesEntry$json = {
   '1': 'FileHashesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.FileHashes', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.FileHashes',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -352,7 +616,14 @@ final $typed_data.Uint8List sourceProvenanceDescriptor = $convert.base64Decode(
 const FileHashes$json = {
   '1': 'FileHashes',
   '2': [
-    {'1': 'file_hash', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.Hash', '10': 'fileHash'},
+    {
+      '1': 'file_hash',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.Hash',
+      '10': 'fileHash'
+    },
   ],
 };
 
@@ -365,7 +636,14 @@ final $typed_data.Uint8List fileHashesDescriptor = $convert.base64Decode(
 const Hash$json = {
   '1': 'Hash',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.cloudbuild.v1.Hash.HashType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.cloudbuild.v1.Hash.HashType',
+      '10': 'type'
+    },
     {'1': 'value', '3': 2, '4': 1, '5': 12, '10': 'value'},
   ],
   '4': [Hash_HashType$json],
@@ -392,7 +670,14 @@ const Secret$json = {
   '1': 'Secret',
   '2': [
     {'1': 'kms_key_name', '3': 1, '4': 1, '5': 9, '10': 'kmsKeyName'},
-    {'1': 'secret_env', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.Secret.SecretEnvEntry', '10': 'secretEnv'},
+    {
+      '1': 'secret_env',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.Secret.SecretEnvEntry',
+      '10': 'secretEnv'
+    },
   ],
   '3': [Secret_SecretEnvEntry$json],
 };
@@ -418,19 +703,74 @@ final $typed_data.Uint8List secretDescriptor = $convert.base64Decode(
 const BuildOptions$json = {
   '1': 'BuildOptions',
   '2': [
-    {'1': 'source_provenance_hash', '3': 1, '4': 3, '5': 14, '6': '.google.events.cloud.cloudbuild.v1.Hash.HashType', '10': 'sourceProvenanceHash'},
-    {'1': 'requested_verify_option', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.cloudbuild.v1.BuildOptions.VerifyOption', '10': 'requestedVerifyOption'},
-    {'1': 'machine_type', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.cloudbuild.v1.BuildOptions.MachineType', '10': 'machineType'},
+    {
+      '1': 'source_provenance_hash',
+      '3': 1,
+      '4': 3,
+      '5': 14,
+      '6': '.google.events.cloud.cloudbuild.v1.Hash.HashType',
+      '10': 'sourceProvenanceHash'
+    },
+    {
+      '1': 'requested_verify_option',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.cloudbuild.v1.BuildOptions.VerifyOption',
+      '10': 'requestedVerifyOption'
+    },
+    {
+      '1': 'machine_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.cloudbuild.v1.BuildOptions.MachineType',
+      '10': 'machineType'
+    },
     {'1': 'disk_size_gb', '3': 6, '4': 1, '5': 3, '10': 'diskSizeGb'},
-    {'1': 'substitution_option', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.cloudbuild.v1.BuildOptions.SubstitutionOption', '10': 'substitutionOption'},
-    {'1': 'log_streaming_option', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.cloudbuild.v1.BuildOptions.LogStreamingOption', '10': 'logStreamingOption'},
+    {
+      '1': 'substitution_option',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.cloudbuild.v1.BuildOptions.SubstitutionOption',
+      '10': 'substitutionOption'
+    },
+    {
+      '1': 'log_streaming_option',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.cloudbuild.v1.BuildOptions.LogStreamingOption',
+      '10': 'logStreamingOption'
+    },
     {'1': 'worker_pool', '3': 7, '4': 1, '5': 9, '10': 'workerPool'},
-    {'1': 'logging', '3': 11, '4': 1, '5': 14, '6': '.google.events.cloud.cloudbuild.v1.BuildOptions.LoggingMode', '10': 'logging'},
+    {
+      '1': 'logging',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.cloudbuild.v1.BuildOptions.LoggingMode',
+      '10': 'logging'
+    },
     {'1': 'env', '3': 12, '4': 3, '5': 9, '10': 'env'},
     {'1': 'secret_env', '3': 13, '4': 3, '5': 9, '10': 'secretEnv'},
-    {'1': 'volumes', '3': 14, '4': 3, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.Volume', '10': 'volumes'},
+    {
+      '1': 'volumes',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.Volume',
+      '10': 'volumes'
+    },
   ],
-  '4': [BuildOptions_VerifyOption$json, BuildOptions_MachineType$json, BuildOptions_SubstitutionOption$json, BuildOptions_LogStreamingOption$json, BuildOptions_LoggingMode$json],
+  '4': [
+    BuildOptions_VerifyOption$json,
+    BuildOptions_MachineType$json,
+    BuildOptions_SubstitutionOption$json,
+    BuildOptions_LogStreamingOption$json,
+    BuildOptions_LoggingMode$json
+  ],
 };
 
 @$core.Deprecated('Use buildOptionsDescriptor instead')
@@ -504,4 +844,3 @@ final $typed_data.Uint8List buildOptionsDescriptor = $convert.base64Decode(
     'TExPV19MT09TRRABIkcKEkxvZ1N0cmVhbWluZ09wdGlvbhISCg5TVFJFQU1fREVGQVVMVBAAEg'
     '0KCVNUUkVBTV9PThABEg4KClNUUkVBTV9PRkYQAiJACgtMb2dnaW5nTW9kZRIXChNMT0dHSU5H'
     'X1VOU1BFQ0lGSUVEEAASCgoGTEVHQUNZEAESDAoIR0NTX09OTFkQAg==');
-

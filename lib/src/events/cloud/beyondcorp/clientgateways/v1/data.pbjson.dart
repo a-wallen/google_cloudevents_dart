@@ -18,11 +18,39 @@ const ClientGateway$json = {
   '1': 'ClientGateway',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.beyondcorp.clientgateways.v1.ClientGateway.State', '10': 'state'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.beyondcorp.clientgateways.v1.ClientGateway.State',
+      '10': 'state'
+    },
     {'1': 'id', '3': 5, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'client_connector_service', '3': 6, '4': 1, '5': 9, '10': 'clientConnectorService'},
+    {
+      '1': 'client_connector_service',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'clientConnectorService'
+    },
   ],
   '4': [ClientGateway_State$json],
 };
@@ -56,7 +84,16 @@ final $typed_data.Uint8List clientGatewayDescriptor = $convert.base64Decode(
 const ClientGatewayEventData$json = {
   '1': 'ClientGatewayEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.clientgateways.v1.ClientGateway', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.beyondcorp.clientgateways.v1.ClientGateway',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -68,4 +105,3 @@ final $typed_data.Uint8List clientGatewayEventDataDescriptor = $convert.base64De
     'ChZDbGllbnRHYXRld2F5RXZlbnREYXRhEl4KB3BheWxvYWQYASABKAsyPy5nb29nbGUuZXZlbn'
     'RzLmNsb3VkLmJleW9uZGNvcnAuY2xpZW50Z2F0ZXdheXMudjEuQ2xpZW50R2F0ZXdheUgAUgdw'
     'YXlsb2FkiAEBQgoKCF9wYXlsb2Fk');
-

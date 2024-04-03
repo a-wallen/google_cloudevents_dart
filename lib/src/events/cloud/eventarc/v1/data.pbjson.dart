@@ -19,11 +19,32 @@ const Channel$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'provider', '3': 7, '4': 1, '5': 9, '10': 'provider'},
     {'1': 'pubsub_topic', '3': 8, '4': 1, '5': 9, '9': 0, '10': 'pubsubTopic'},
-    {'1': 'state', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.eventarc.v1.Channel.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.eventarc.v1.Channel.State',
+      '10': 'state'
+    },
     {'1': 'activation_token', '3': 10, '4': 1, '5': 9, '10': 'activationToken'},
     {'1': 'crypto_key_name', '3': 11, '4': 1, '5': 9, '10': 'cryptoKeyName'},
   ],
@@ -63,8 +84,22 @@ const ChannelConnection$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
     {'1': 'channel', '3': 5, '4': 1, '5': 9, '10': 'channel'},
-    {'1': 'create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
   ],
 };
 
@@ -81,16 +116,71 @@ const Trigger$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'event_filters', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.eventarc.v1.EventFilter', '10': 'eventFilters'},
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'event_filters',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.EventFilter',
+      '10': 'eventFilters'
+    },
     {'1': 'service_account', '3': 9, '4': 1, '5': 9, '10': 'serviceAccount'},
-    {'1': 'destination', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.Destination', '10': 'destination'},
-    {'1': 'transport', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.Transport', '10': 'transport'},
-    {'1': 'labels', '3': 12, '4': 3, '5': 11, '6': '.google.events.cloud.eventarc.v1.Trigger.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'destination',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.Destination',
+      '10': 'destination'
+    },
+    {
+      '1': 'transport',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.Transport',
+      '10': 'transport'
+    },
+    {
+      '1': 'labels',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.Trigger.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'channel', '3': 13, '4': 1, '5': 9, '10': 'channel'},
-    {'1': 'conditions', '3': 15, '4': 3, '5': 11, '6': '.google.events.cloud.eventarc.v1.Trigger.ConditionsEntry', '10': 'conditions'},
-    {'1': 'event_data_content_type', '3': 16, '4': 1, '5': 9, '10': 'eventDataContentType'},
+    {
+      '1': 'conditions',
+      '3': 15,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.Trigger.ConditionsEntry',
+      '10': 'conditions'
+    },
+    {
+      '1': 'event_data_content_type',
+      '3': 16,
+      '4': 1,
+      '5': 9,
+      '10': 'eventDataContentType'
+    },
     {'1': 'etag', '3': 99, '4': 1, '5': 9, '10': 'etag'},
   ],
   '3': [Trigger_LabelsEntry$json, Trigger_ConditionsEntry$json],
@@ -111,7 +201,14 @@ const Trigger_ConditionsEntry$json = {
   '1': 'ConditionsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.StateCondition', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.StateCondition',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -154,7 +251,14 @@ final $typed_data.Uint8List eventFilterDescriptor = $convert.base64Decode(
 const StateCondition$json = {
   '1': 'StateCondition',
   '2': [
-    {'1': 'code', '3': 1, '4': 1, '5': 14, '6': '.google.rpc.Code', '10': 'code'},
+    {
+      '1': 'code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.rpc.Code',
+      '10': 'code'
+    },
     {'1': 'message', '3': 2, '4': 1, '5': 9, '10': 'message'},
   ],
 };
@@ -168,9 +272,32 @@ final $typed_data.Uint8List stateConditionDescriptor = $convert.base64Decode(
 const Destination$json = {
   '1': 'Destination',
   '2': [
-    {'1': 'cloud_run', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.CloudRun', '9': 0, '10': 'cloudRun'},
-    {'1': 'cloud_function', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'cloudFunction'},
-    {'1': 'gke', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.GKE', '9': 0, '10': 'gke'},
+    {
+      '1': 'cloud_run',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.CloudRun',
+      '9': 0,
+      '10': 'cloudRun'
+    },
+    {
+      '1': 'cloud_function',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'cloudFunction'
+    },
+    {
+      '1': 'gke',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.GKE',
+      '9': 0,
+      '10': 'gke'
+    },
     {'1': 'workflow', '3': 4, '4': 1, '5': 9, '9': 0, '10': 'workflow'},
   ],
   '8': [
@@ -190,7 +317,15 @@ final $typed_data.Uint8List destinationDescriptor = $convert.base64Decode(
 const Transport$json = {
   '1': 'Transport',
   '2': [
-    {'1': 'pubsub', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.Pubsub', '9': 0, '10': 'pubsub'},
+    {
+      '1': 'pubsub',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.Pubsub',
+      '9': 0,
+      '10': 'pubsub'
+    },
   ],
   '8': [
     {'1': 'intermediary'},
@@ -253,7 +388,14 @@ final $typed_data.Uint8List pubsubDescriptor = $convert.base64Decode(
 const TriggerEventData$json = {
   '1': 'TriggerEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.Trigger', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.Trigger',
+      '10': 'payload'
+    },
   ],
 };
 
@@ -266,7 +408,14 @@ final $typed_data.Uint8List triggerEventDataDescriptor = $convert.base64Decode(
 const ChannelEventData$json = {
   '1': 'ChannelEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.Channel', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.Channel',
+      '10': 'payload'
+    },
   ],
 };
 
@@ -279,12 +428,19 @@ final $typed_data.Uint8List channelEventDataDescriptor = $convert.base64Decode(
 const ChannelConnectionEventData$json = {
   '1': 'ChannelConnectionEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.ChannelConnection', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.ChannelConnection',
+      '10': 'payload'
+    },
   ],
 };
 
 /// Descriptor for `ChannelConnectionEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List channelConnectionEventDataDescriptor = $convert.base64Decode(
-    'ChpDaGFubmVsQ29ubmVjdGlvbkV2ZW50RGF0YRJMCgdwYXlsb2FkGAEgASgLMjIuZ29vZ2xlLm'
-    'V2ZW50cy5jbG91ZC5ldmVudGFyYy52MS5DaGFubmVsQ29ubmVjdGlvblIHcGF5bG9hZA==');
-
+final $typed_data.Uint8List channelConnectionEventDataDescriptor =
+    $convert.base64Decode(
+        'ChpDaGFubmVsQ29ubmVjdGlvbkV2ZW50RGF0YRJMCgdwYXlsb2FkGAEgASgLMjIuZ29vZ2xlLm'
+        'V2ZW50cy5jbG91ZC5ldmVudGFyYy52MS5DaGFubmVsQ29ubmVjdGlvblIHcGF5bG9hZA==');

@@ -18,16 +18,67 @@ const AppGateway$json = {
   '1': 'AppGateway',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uid', '3': 6, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'type', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.Type', '10': 'type'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.State', '10': 'state'},
+    {
+      '1': 'type',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.State',
+      '10': 'state'
+    },
     {'1': 'uri', '3': 9, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'allocated_connections', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.AllocatedConnection', '10': 'allocatedConnections'},
-    {'1': 'host_type', '3': 11, '4': 1, '5': 14, '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.HostType', '10': 'hostType'},
+    {
+      '1': 'allocated_connections',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.AllocatedConnection',
+      '10': 'allocatedConnections'
+    },
+    {
+      '1': 'host_type',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.HostType',
+      '10': 'hostType'
+    },
   ],
   '3': [AppGateway_AllocatedConnection$json, AppGateway_LabelsEntry$json],
   '4': [AppGateway_Type$json, AppGateway_State$json, AppGateway_HostType$json],
@@ -110,7 +161,16 @@ final $typed_data.Uint8List appGatewayDescriptor = $convert.base64Decode(
 const AppGatewayEventData$json = {
   '1': 'AppGatewayEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGateway',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -122,4 +182,3 @@ final $typed_data.Uint8List appGatewayEventDataDescriptor = $convert.base64Decod
     'ChNBcHBHYXRld2F5RXZlbnREYXRhElgKB3BheWxvYWQYASABKAsyOS5nb29nbGUuZXZlbnRzLm'
     'Nsb3VkLmJleW9uZGNvcnAuYXBwZ2F0ZXdheXMudjEuQXBwR2F0ZXdheUgAUgdwYXlsb2FkiAEB'
     'QgoKCF9wYXlsb2Fk');
-

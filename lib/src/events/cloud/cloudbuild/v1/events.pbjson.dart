@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const CloudBuildEvent$json = {
   '1': 'CloudBuildEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.cloudbuild.v1.BuildEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.cloudbuild.v1.BuildEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -27,4 +34,3 @@ final $typed_data.Uint8List cloudBuildEventDescriptor = $convert.base64Decode(
     'Cg9DbG91ZEJ1aWxkRXZlbnQSRQoEZGF0YRgBIAEoCzIxLmdvb2dsZS5ldmVudHMuY2xvdWQuY2'
     'xvdWRidWlsZC52MS5CdWlsZEV2ZW50RGF0YVIEZGF0YTozsvjYLC5nb29nbGUuY2xvdWQuY2xv'
     'dWRidWlsZC5idWlsZC52MS5zdGF0dXNDaGFuZ2Vk');
-

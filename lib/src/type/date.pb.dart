@@ -42,26 +42,31 @@ class Date extends $pb.GeneratedMessage {
     return $result;
   }
   Date._() : super();
-  factory Date.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Date.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Date.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Date.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Date', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Date',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'year', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'month', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'day', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Date clone() => Date()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Date copyWith(void Function(Date) updates) => super.copyWith((message) => updates(message as Date)) as Date;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Date copyWith(void Function(Date) updates) =>
+      super.copyWith((message) => updates(message as Date)) as Date;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -70,7 +75,8 @@ class Date extends $pb.GeneratedMessage {
   Date createEmptyInstance() => create();
   static $pb.PbList<Date> createRepeated() => $pb.PbList<Date>();
   @$core.pragma('dart2js:noInline')
-  static Date getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Date>(create);
+  static Date getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Date>(create);
   static Date? _defaultInstance;
 
   /// Year of date. Must be from 1 to 9999, or 0 if specifying a date without
@@ -78,7 +84,10 @@ class Date extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get year => $_getIZ(0);
   @$pb.TagNumber(1)
-  set year($core.int v) { $_setSignedInt32(0, v); }
+  set year($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasYear() => $_has(0);
   @$pb.TagNumber(1)
@@ -89,7 +98,10 @@ class Date extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get month => $_getIZ(1);
   @$pb.TagNumber(2)
-  set month($core.int v) { $_setSignedInt32(1, v); }
+  set month($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMonth() => $_has(1);
   @$pb.TagNumber(2)
@@ -101,13 +113,16 @@ class Date extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get day => $_getIZ(2);
   @$pb.TagNumber(3)
-  set day($core.int v) { $_setSignedInt32(2, v); }
+  set day($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDay() => $_has(2);
   @$pb.TagNumber(3)
   void clearDay() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

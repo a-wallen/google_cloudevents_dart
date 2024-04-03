@@ -29,4 +29,3 @@ final $typed_data.Uint8List exprDescriptor = $convert.base64Decode(
     'CgRFeHByEh4KCmV4cHJlc3Npb24YASABKAlSCmV4cHJlc3Npb24SFAoFdGl0bGUYAiABKAlSBX'
     'RpdGxlEiAKC2Rlc2NyaXB0aW9uGAMgASgJUgtkZXNjcmlwdGlvbhIaCghsb2NhdGlvbhgEIAEo'
     'CVIIbG9jYXRpb24=');
-

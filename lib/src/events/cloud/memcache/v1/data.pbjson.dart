@@ -33,24 +33,124 @@ const Instance$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'labels', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.memcache.v1.Instance.LabelsEntry', '10': 'labels'},
-    {'1': 'authorized_network', '3': 4, '4': 1, '5': 9, '10': 'authorizedNetwork'},
+    {
+      '1': 'labels',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.Instance.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'authorized_network',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'authorizedNetwork'
+    },
     {'1': 'zones', '3': 5, '4': 3, '5': 9, '10': 'zones'},
     {'1': 'node_count', '3': 6, '4': 1, '5': 5, '10': 'nodeCount'},
-    {'1': 'node_config', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.memcache.v1.Instance.NodeConfig', '10': 'nodeConfig'},
-    {'1': 'memcache_version', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.memcache.v1.MemcacheVersion', '10': 'memcacheVersion'},
-    {'1': 'parameters', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.memcache.v1.MemcacheParameters', '10': 'parameters'},
-    {'1': 'memcache_nodes', '3': 12, '4': 3, '5': 11, '6': '.google.events.cloud.memcache.v1.Instance.Node', '10': 'memcacheNodes'},
-    {'1': 'create_time', '3': 13, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'state', '3': 15, '4': 1, '5': 14, '6': '.google.events.cloud.memcache.v1.Instance.State', '10': 'state'},
-    {'1': 'memcache_full_version', '3': 18, '4': 1, '5': 9, '10': 'memcacheFullVersion'},
-    {'1': 'instance_messages', '3': 19, '4': 3, '5': 11, '6': '.google.events.cloud.memcache.v1.Instance.InstanceMessage', '10': 'instanceMessages'},
-    {'1': 'discovery_endpoint', '3': 20, '4': 1, '5': 9, '10': 'discoveryEndpoint'},
-    {'1': 'maintenance_policy', '3': 21, '4': 1, '5': 11, '6': '.google.events.cloud.memcache.v1.MaintenancePolicy', '10': 'maintenancePolicy'},
-    {'1': 'maintenance_schedule', '3': 22, '4': 1, '5': 11, '6': '.google.events.cloud.memcache.v1.MaintenanceSchedule', '10': 'maintenanceSchedule'},
+    {
+      '1': 'node_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.Instance.NodeConfig',
+      '10': 'nodeConfig'
+    },
+    {
+      '1': 'memcache_version',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.memcache.v1.MemcacheVersion',
+      '10': 'memcacheVersion'
+    },
+    {
+      '1': 'parameters',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.MemcacheParameters',
+      '10': 'parameters'
+    },
+    {
+      '1': 'memcache_nodes',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.Instance.Node',
+      '10': 'memcacheNodes'
+    },
+    {
+      '1': 'create_time',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'state',
+      '3': 15,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.memcache.v1.Instance.State',
+      '10': 'state'
+    },
+    {
+      '1': 'memcache_full_version',
+      '3': 18,
+      '4': 1,
+      '5': 9,
+      '10': 'memcacheFullVersion'
+    },
+    {
+      '1': 'instance_messages',
+      '3': 19,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.Instance.InstanceMessage',
+      '10': 'instanceMessages'
+    },
+    {
+      '1': 'discovery_endpoint',
+      '3': 20,
+      '4': 1,
+      '5': 9,
+      '10': 'discoveryEndpoint'
+    },
+    {
+      '1': 'maintenance_policy',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.MaintenancePolicy',
+      '10': 'maintenancePolicy'
+    },
+    {
+      '1': 'maintenance_schedule',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.MaintenanceSchedule',
+      '10': 'maintenanceSchedule'
+    },
   ],
-  '3': [Instance_NodeConfig$json, Instance_Node$json, Instance_InstanceMessage$json, Instance_LabelsEntry$json],
+  '3': [
+    Instance_NodeConfig$json,
+    Instance_Node$json,
+    Instance_InstanceMessage$json,
+    Instance_LabelsEntry$json
+  ],
   '4': [Instance_State$json],
 };
 
@@ -69,10 +169,24 @@ const Instance_Node$json = {
   '2': [
     {'1': 'node_id', '3': 1, '4': 1, '5': 9, '10': 'nodeId'},
     {'1': 'zone', '3': 2, '4': 1, '5': 9, '10': 'zone'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.memcache.v1.Instance.Node.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.memcache.v1.Instance.Node.State',
+      '10': 'state'
+    },
     {'1': 'host', '3': 4, '4': 1, '5': 9, '10': 'host'},
     {'1': 'port', '3': 5, '4': 1, '5': 5, '10': 'port'},
-    {'1': 'parameters', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.memcache.v1.MemcacheParameters', '10': 'parameters'},
+    {
+      '1': 'parameters',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.MemcacheParameters',
+      '10': 'parameters'
+    },
   ],
   '4': [Instance_Node_State$json],
 };
@@ -93,7 +207,14 @@ const Instance_Node_State$json = {
 const Instance_InstanceMessage$json = {
   '1': 'InstanceMessage',
   '2': [
-    {'1': 'code', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.memcache.v1.Instance.InstanceMessage.Code', '10': 'code'},
+    {
+      '1': 'code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.memcache.v1.Instance.InstanceMessage.Code',
+      '10': 'code'
+    },
     {'1': 'message', '3': 2, '4': 1, '5': 9, '10': 'message'},
   ],
   '4': [Instance_InstanceMessage_Code$json],
@@ -174,10 +295,31 @@ final $typed_data.Uint8List instanceDescriptor = $convert.base64Decode(
 const MaintenancePolicy$json = {
   '1': 'MaintenancePolicy',
   '2': [
-    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'weekly_maintenance_window', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.memcache.v1.WeeklyMaintenanceWindow', '10': 'weeklyMaintenanceWindow'},
+    {
+      '1': 'weekly_maintenance_window',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.WeeklyMaintenanceWindow',
+      '10': 'weeklyMaintenanceWindow'
+    },
   ],
 };
 
@@ -194,9 +336,30 @@ final $typed_data.Uint8List maintenancePolicyDescriptor = $convert.base64Decode(
 const WeeklyMaintenanceWindow$json = {
   '1': 'WeeklyMaintenanceWindow',
   '2': [
-    {'1': 'day', '3': 1, '4': 1, '5': 14, '6': '.google.type.DayOfWeek', '10': 'day'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.type.TimeOfDay', '10': 'startTime'},
-    {'1': 'duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
+    {
+      '1': 'day',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.type.DayOfWeek',
+      '10': 'day'
+    },
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.TimeOfDay',
+      '10': 'startTime'
+    },
+    {
+      '1': 'duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
   ],
 };
 
@@ -211,9 +374,30 @@ final $typed_data.Uint8List weeklyMaintenanceWindowDescriptor = $convert.base64D
 const MaintenanceSchedule$json = {
   '1': 'MaintenanceSchedule',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'schedule_deadline_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'scheduleDeadlineTime'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'schedule_deadline_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'scheduleDeadlineTime'
+    },
   ],
 };
 
@@ -229,7 +413,14 @@ const MemcacheParameters$json = {
   '1': 'MemcacheParameters',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'params', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.memcache.v1.MemcacheParameters.ParamsEntry', '10': 'params'},
+    {
+      '1': 'params',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.MemcacheParameters.ParamsEntry',
+      '10': 'params'
+    },
   ],
   '3': [MemcacheParameters_ParamsEntry$json],
 };
@@ -255,7 +446,16 @@ final $typed_data.Uint8List memcacheParametersDescriptor = $convert.base64Decode
 const InstanceEventData$json = {
   '1': 'InstanceEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.memcache.v1.Instance', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.Instance',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -266,4 +466,3 @@ const InstanceEventData$json = {
 final $typed_data.Uint8List instanceEventDataDescriptor = $convert.base64Decode(
     'ChFJbnN0YW5jZUV2ZW50RGF0YRJICgdwYXlsb2FkGAEgASgLMikuZ29vZ2xlLmV2ZW50cy5jbG'
     '91ZC5tZW1jYWNoZS52MS5JbnN0YW5jZUgAUgdwYXlsb2FkiAEBQgoKCF9wYXlsb2Fk');
-

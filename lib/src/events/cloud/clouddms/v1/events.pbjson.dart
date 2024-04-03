@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const MigrationJobCreatedEvent$json = {
   '1': 'MigrationJobCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.MigrationJobEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.MigrationJobEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +40,14 @@ final $typed_data.Uint8List migrationJobCreatedEventDescriptor = $convert.base64
 const MigrationJobUpdatedEvent$json = {
   '1': 'MigrationJobUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.MigrationJobEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.MigrationJobEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -49,7 +63,14 @@ final $typed_data.Uint8List migrationJobUpdatedEventDescriptor = $convert.base64
 const MigrationJobDeletedEvent$json = {
   '1': 'MigrationJobDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.MigrationJobEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.MigrationJobEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -65,7 +86,14 @@ final $typed_data.Uint8List migrationJobDeletedEventDescriptor = $convert.base64
 const ConnectionProfileCreatedEvent$json = {
   '1': 'ConnectionProfileCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.ConnectionProfileEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.ConnectionProfileEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -81,7 +109,14 @@ final $typed_data.Uint8List connectionProfileCreatedEventDescriptor = $convert.b
 const ConnectionProfileUpdatedEvent$json = {
   '1': 'ConnectionProfileUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.ConnectionProfileEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.ConnectionProfileEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -97,7 +132,14 @@ final $typed_data.Uint8List connectionProfileUpdatedEventDescriptor = $convert.b
 const ConnectionProfileDeletedEvent$json = {
   '1': 'ConnectionProfileDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.ConnectionProfileEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.ConnectionProfileEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -108,4 +150,3 @@ final $typed_data.Uint8List connectionProfileDeletedEventDescriptor = $convert.b
     'V2ZW50cy5jbG91ZC5jbG91ZGRtcy52MS5Db25uZWN0aW9uUHJvZmlsZUV2ZW50RGF0YVIEZGF0'
     'YTpNsvjYLDJnb29nbGUuY2xvdWQuY2xvdWRkbXMuY29ubmVjdGlvblByb2ZpbGUudjEuZGVsZX'
     'RlZMr42CwRY29ubmVjdGlvbnByb2ZpbGU=');
-

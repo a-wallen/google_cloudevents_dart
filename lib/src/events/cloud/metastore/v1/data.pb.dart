@@ -68,33 +68,55 @@ class Federation extends $pb.GeneratedMessage {
     return $result;
   }
   Federation._() : super();
-  factory Federation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Federation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Federation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Federation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Federation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Federation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Federation.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Federation.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'version')
-    ..m<$core.int, BackendMetastore>(6, _omitFieldNames ? '' : 'backendMetastores', entryClassName: 'Federation.BackendMetastoresEntry', keyFieldType: $pb.PbFieldType.O3, valueFieldType: $pb.PbFieldType.OM, valueCreator: BackendMetastore.create, valueDefaultOrMaker: BackendMetastore.getDefault, packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
+    ..m<$core.int, BackendMetastore>(
+        6, _omitFieldNames ? '' : 'backendMetastores',
+        entryClassName: 'Federation.BackendMetastoresEntry',
+        keyFieldType: $pb.PbFieldType.O3,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: BackendMetastore.create,
+        valueDefaultOrMaker: BackendMetastore.getDefault,
+        packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
     ..aOS(7, _omitFieldNames ? '' : 'endpointUri')
-    ..e<Federation_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Federation_State.STATE_UNSPECIFIED, valueOf: Federation_State.valueOf, enumValues: Federation_State.values)
+    ..e<Federation_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Federation_State.STATE_UNSPECIFIED,
+        valueOf: Federation_State.valueOf,
+        enumValues: Federation_State.values)
     ..aOS(9, _omitFieldNames ? '' : 'stateMessage')
     ..aOS(10, _omitFieldNames ? '' : 'uid')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Federation clone() => Federation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Federation copyWith(void Function(Federation) updates) => super.copyWith((message) => updates(message as Federation)) as Federation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Federation copyWith(void Function(Federation) updates) =>
+      super.copyWith((message) => updates(message as Federation)) as Federation;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -103,7 +125,8 @@ class Federation extends $pb.GeneratedMessage {
   Federation createEmptyInstance() => create();
   static $pb.PbList<Federation> createRepeated() => $pb.PbList<Federation>();
   @$core.pragma('dart2js:noInline')
-  static Federation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Federation>(create);
+  static Federation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Federation>(create);
   static Federation? _defaultInstance;
 
   /// Immutable. The relative resource name of the federation, of the
@@ -112,7 +135,10 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -122,7 +148,10 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -134,7 +163,10 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) { setField(3, v); }
+  set updateTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -151,7 +183,10 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get version => $_getSZ(4);
   @$pb.TagNumber(5)
-  set version($core.String v) { $_setString(4, v); }
+  set version($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasVersion() => $_has(4);
   @$pb.TagNumber(5)
@@ -170,7 +205,10 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get endpointUri => $_getSZ(6);
   @$pb.TagNumber(7)
-  set endpointUri($core.String v) { $_setString(6, v); }
+  set endpointUri($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasEndpointUri() => $_has(6);
   @$pb.TagNumber(7)
@@ -180,7 +218,10 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Federation_State get state => $_getN(7);
   @$pb.TagNumber(8)
-  set state(Federation_State v) { setField(8, v); }
+  set state(Federation_State v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
@@ -191,7 +232,10 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get stateMessage => $_getSZ(8);
   @$pb.TagNumber(9)
-  set stateMessage($core.String v) { $_setString(8, v); }
+  set stateMessage($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasStateMessage() => $_has(8);
   @$pb.TagNumber(9)
@@ -202,7 +246,10 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get uid => $_getSZ(9);
   @$pb.TagNumber(10)
-  set uid($core.String v) { $_setString(9, v); }
+  set uid($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasUid() => $_has(9);
   @$pb.TagNumber(10)
@@ -225,34 +272,48 @@ class BackendMetastore extends $pb.GeneratedMessage {
     return $result;
   }
   BackendMetastore._() : super();
-  factory BackendMetastore.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BackendMetastore.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BackendMetastore.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BackendMetastore.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackendMetastore', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BackendMetastore',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<BackendMetastore_MetastoreType>(2, _omitFieldNames ? '' : 'metastoreType', $pb.PbFieldType.OE, defaultOrMaker: BackendMetastore_MetastoreType.METASTORE_TYPE_UNSPECIFIED, valueOf: BackendMetastore_MetastoreType.valueOf, enumValues: BackendMetastore_MetastoreType.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<BackendMetastore_MetastoreType>(
+        2, _omitFieldNames ? '' : 'metastoreType', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            BackendMetastore_MetastoreType.METASTORE_TYPE_UNSPECIFIED,
+        valueOf: BackendMetastore_MetastoreType.valueOf,
+        enumValues: BackendMetastore_MetastoreType.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BackendMetastore clone() => BackendMetastore()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BackendMetastore copyWith(void Function(BackendMetastore) updates) => super.copyWith((message) => updates(message as BackendMetastore)) as BackendMetastore;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BackendMetastore copyWith(void Function(BackendMetastore) updates) =>
+      super.copyWith((message) => updates(message as BackendMetastore))
+          as BackendMetastore;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackendMetastore create() => BackendMetastore._();
   BackendMetastore createEmptyInstance() => create();
-  static $pb.PbList<BackendMetastore> createRepeated() => $pb.PbList<BackendMetastore>();
+  static $pb.PbList<BackendMetastore> createRepeated() =>
+      $pb.PbList<BackendMetastore>();
   @$core.pragma('dart2js:noInline')
-  static BackendMetastore getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BackendMetastore>(create);
+  static BackendMetastore getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BackendMetastore>(create);
   static BackendMetastore? _defaultInstance;
 
   ///  The relative resource name of the metastore that is being federated.
@@ -266,7 +327,10 @@ class BackendMetastore extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -276,17 +340,17 @@ class BackendMetastore extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   BackendMetastore_MetastoreType get metastoreType => $_getN(1);
   @$pb.TagNumber(2)
-  set metastoreType(BackendMetastore_MetastoreType v) { setField(2, v); }
+  set metastoreType(BackendMetastore_MetastoreType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMetastoreType() => $_has(1);
   @$pb.TagNumber(2)
   void clearMetastoreType() => clearField(2);
 }
 
-enum Service_MetastoreConfig {
-  hiveMetastoreConfig, 
-  notSet
-}
+enum Service_MetastoreConfig { hiveMetastoreConfig, notSet }
 
 /// A managed metastore service that serves metadata queries.
 class Service extends $pb.GeneratedMessage {
@@ -380,49 +444,84 @@ class Service extends $pb.GeneratedMessage {
     return $result;
   }
   Service._() : super();
-  factory Service.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Service.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Service.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Service.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Service_MetastoreConfig> _Service_MetastoreConfigByTag = {
-    5 : Service_MetastoreConfig.hiveMetastoreConfig,
-    0 : Service_MetastoreConfig.notSet
+  static const $core.Map<$core.int, Service_MetastoreConfig>
+      _Service_MetastoreConfigByTag = {
+    5: Service_MetastoreConfig.hiveMetastoreConfig,
+    0: Service_MetastoreConfig.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Service', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Service',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Service.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
-    ..aOM<HiveMetastoreConfig>(5, _omitFieldNames ? '' : 'hiveMetastoreConfig', subBuilder: HiveMetastoreConfig.create)
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Service.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
+    ..aOM<HiveMetastoreConfig>(5, _omitFieldNames ? '' : 'hiveMetastoreConfig',
+        subBuilder: HiveMetastoreConfig.create)
     ..aOS(7, _omitFieldNames ? '' : 'network')
     ..aOS(8, _omitFieldNames ? '' : 'endpointUri')
     ..a<$core.int>(9, _omitFieldNames ? '' : 'port', $pb.PbFieldType.O3)
-    ..e<Service_State>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Service_State.STATE_UNSPECIFIED, valueOf: Service_State.valueOf, enumValues: Service_State.values)
+    ..e<Service_State>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Service_State.STATE_UNSPECIFIED,
+        valueOf: Service_State.valueOf,
+        enumValues: Service_State.values)
     ..aOS(11, _omitFieldNames ? '' : 'stateMessage')
     ..aOS(12, _omitFieldNames ? '' : 'artifactGcsUri')
-    ..e<Service_Tier>(13, _omitFieldNames ? '' : 'tier', $pb.PbFieldType.OE, defaultOrMaker: Service_Tier.TIER_UNSPECIFIED, valueOf: Service_Tier.valueOf, enumValues: Service_Tier.values)
-    ..aOM<MaintenanceWindow>(15, _omitFieldNames ? '' : 'maintenanceWindow', subBuilder: MaintenanceWindow.create)
+    ..e<Service_Tier>(13, _omitFieldNames ? '' : 'tier', $pb.PbFieldType.OE,
+        defaultOrMaker: Service_Tier.TIER_UNSPECIFIED,
+        valueOf: Service_Tier.valueOf,
+        enumValues: Service_Tier.values)
+    ..aOM<MaintenanceWindow>(15, _omitFieldNames ? '' : 'maintenanceWindow',
+        subBuilder: MaintenanceWindow.create)
     ..aOS(16, _omitFieldNames ? '' : 'uid')
-    ..aOM<MetadataManagementActivity>(17, _omitFieldNames ? '' : 'metadataManagementActivity', subBuilder: MetadataManagementActivity.create)
-    ..e<Service_ReleaseChannel>(19, _omitFieldNames ? '' : 'releaseChannel', $pb.PbFieldType.OE, defaultOrMaker: Service_ReleaseChannel.RELEASE_CHANNEL_UNSPECIFIED, valueOf: Service_ReleaseChannel.valueOf, enumValues: Service_ReleaseChannel.values)
-    ..aOM<EncryptionConfig>(20, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: EncryptionConfig.create)
-    ..aOM<NetworkConfig>(21, _omitFieldNames ? '' : 'networkConfig', subBuilder: NetworkConfig.create)
-    ..e<Service_DatabaseType>(22, _omitFieldNames ? '' : 'databaseType', $pb.PbFieldType.OE, defaultOrMaker: Service_DatabaseType.DATABASE_TYPE_UNSPECIFIED, valueOf: Service_DatabaseType.valueOf, enumValues: Service_DatabaseType.values)
-    ..aOM<TelemetryConfig>(23, _omitFieldNames ? '' : 'telemetryConfig', subBuilder: TelemetryConfig.create)
-    ..aOM<ScalingConfig>(24, _omitFieldNames ? '' : 'scalingConfig', subBuilder: ScalingConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<MetadataManagementActivity>(
+        17, _omitFieldNames ? '' : 'metadataManagementActivity',
+        subBuilder: MetadataManagementActivity.create)
+    ..e<Service_ReleaseChannel>(
+        19, _omitFieldNames ? '' : 'releaseChannel', $pb.PbFieldType.OE,
+        defaultOrMaker: Service_ReleaseChannel.RELEASE_CHANNEL_UNSPECIFIED,
+        valueOf: Service_ReleaseChannel.valueOf,
+        enumValues: Service_ReleaseChannel.values)
+    ..aOM<EncryptionConfig>(20, _omitFieldNames ? '' : 'encryptionConfig',
+        subBuilder: EncryptionConfig.create)
+    ..aOM<NetworkConfig>(21, _omitFieldNames ? '' : 'networkConfig',
+        subBuilder: NetworkConfig.create)
+    ..e<Service_DatabaseType>(
+        22, _omitFieldNames ? '' : 'databaseType', $pb.PbFieldType.OE,
+        defaultOrMaker: Service_DatabaseType.DATABASE_TYPE_UNSPECIFIED,
+        valueOf: Service_DatabaseType.valueOf,
+        enumValues: Service_DatabaseType.values)
+    ..aOM<TelemetryConfig>(23, _omitFieldNames ? '' : 'telemetryConfig',
+        subBuilder: TelemetryConfig.create)
+    ..aOM<ScalingConfig>(24, _omitFieldNames ? '' : 'scalingConfig',
+        subBuilder: ScalingConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Service clone() => Service()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Service copyWith(void Function(Service) updates) => super.copyWith((message) => updates(message as Service)) as Service;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Service copyWith(void Function(Service) updates) =>
+      super.copyWith((message) => updates(message as Service)) as Service;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -431,10 +530,12 @@ class Service extends $pb.GeneratedMessage {
   Service createEmptyInstance() => create();
   static $pb.PbList<Service> createRepeated() => $pb.PbList<Service>();
   @$core.pragma('dart2js:noInline')
-  static Service getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service>(create);
+  static Service getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Service>(create);
   static Service? _defaultInstance;
 
-  Service_MetastoreConfig whichMetastoreConfig() => _Service_MetastoreConfigByTag[$_whichOneof(0)]!;
+  Service_MetastoreConfig whichMetastoreConfig() =>
+      _Service_MetastoreConfigByTag[$_whichOneof(0)]!;
   void clearMetastoreConfig() => clearField($_whichOneof(0));
 
   ///  Immutable. The relative resource name of the metastore service, in the
@@ -444,7 +545,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -454,7 +558,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -466,7 +573,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) { setField(3, v); }
+  set updateTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -483,7 +593,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   HiveMetastoreConfig get hiveMetastoreConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set hiveMetastoreConfig(HiveMetastoreConfig v) { setField(5, v); }
+  set hiveMetastoreConfig(HiveMetastoreConfig v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasHiveMetastoreConfig() => $_has(4);
   @$pb.TagNumber(5)
@@ -498,7 +611,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get network => $_getSZ(5);
   @$pb.TagNumber(7)
-  set network($core.String v) { $_setString(5, v); }
+  set network($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasNetwork() => $_has(5);
   @$pb.TagNumber(7)
@@ -508,7 +624,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get endpointUri => $_getSZ(6);
   @$pb.TagNumber(8)
-  set endpointUri($core.String v) { $_setString(6, v); }
+  set endpointUri($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasEndpointUri() => $_has(6);
   @$pb.TagNumber(8)
@@ -518,7 +637,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.int get port => $_getIZ(7);
   @$pb.TagNumber(9)
-  set port($core.int v) { $_setSignedInt32(7, v); }
+  set port($core.int v) {
+    $_setSignedInt32(7, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasPort() => $_has(7);
   @$pb.TagNumber(9)
@@ -528,7 +650,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   Service_State get state => $_getN(8);
   @$pb.TagNumber(10)
-  set state(Service_State v) { setField(10, v); }
+  set state(Service_State v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasState() => $_has(8);
   @$pb.TagNumber(10)
@@ -539,7 +664,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get stateMessage => $_getSZ(9);
   @$pb.TagNumber(11)
-  set stateMessage($core.String v) { $_setString(9, v); }
+  set stateMessage($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasStateMessage() => $_has(9);
   @$pb.TagNumber(11)
@@ -550,7 +678,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get artifactGcsUri => $_getSZ(10);
   @$pb.TagNumber(12)
-  set artifactGcsUri($core.String v) { $_setString(10, v); }
+  set artifactGcsUri($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasArtifactGcsUri() => $_has(10);
   @$pb.TagNumber(12)
@@ -560,7 +691,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   Service_Tier get tier => $_getN(11);
   @$pb.TagNumber(13)
-  set tier(Service_Tier v) { setField(13, v); }
+  set tier(Service_Tier v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasTier() => $_has(11);
   @$pb.TagNumber(13)
@@ -573,7 +707,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   MaintenanceWindow get maintenanceWindow => $_getN(12);
   @$pb.TagNumber(15)
-  set maintenanceWindow(MaintenanceWindow v) { setField(15, v); }
+  set maintenanceWindow(MaintenanceWindow v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasMaintenanceWindow() => $_has(12);
   @$pb.TagNumber(15)
@@ -586,7 +723,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.String get uid => $_getSZ(13);
   @$pb.TagNumber(16)
-  set uid($core.String v) { $_setString(13, v); }
+  set uid($core.String v) {
+    $_setString(13, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasUid() => $_has(13);
   @$pb.TagNumber(16)
@@ -596,7 +736,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   MetadataManagementActivity get metadataManagementActivity => $_getN(14);
   @$pb.TagNumber(17)
-  set metadataManagementActivity(MetadataManagementActivity v) { setField(17, v); }
+  set metadataManagementActivity(MetadataManagementActivity v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasMetadataManagementActivity() => $_has(14);
   @$pb.TagNumber(17)
@@ -609,7 +752,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   Service_ReleaseChannel get releaseChannel => $_getN(15);
   @$pb.TagNumber(19)
-  set releaseChannel(Service_ReleaseChannel v) { setField(19, v); }
+  set releaseChannel(Service_ReleaseChannel v) {
+    setField(19, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasReleaseChannel() => $_has(15);
   @$pb.TagNumber(19)
@@ -620,7 +766,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   EncryptionConfig get encryptionConfig => $_getN(16);
   @$pb.TagNumber(20)
-  set encryptionConfig(EncryptionConfig v) { setField(20, v); }
+  set encryptionConfig(EncryptionConfig v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasEncryptionConfig() => $_has(16);
   @$pb.TagNumber(20)
@@ -633,7 +782,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   NetworkConfig get networkConfig => $_getN(17);
   @$pb.TagNumber(21)
-  set networkConfig(NetworkConfig v) { setField(21, v); }
+  set networkConfig(NetworkConfig v) {
+    setField(21, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasNetworkConfig() => $_has(17);
   @$pb.TagNumber(21)
@@ -645,7 +797,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   Service_DatabaseType get databaseType => $_getN(18);
   @$pb.TagNumber(22)
-  set databaseType(Service_DatabaseType v) { setField(22, v); }
+  set databaseType(Service_DatabaseType v) {
+    setField(22, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasDatabaseType() => $_has(18);
   @$pb.TagNumber(22)
@@ -656,7 +811,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   TelemetryConfig get telemetryConfig => $_getN(19);
   @$pb.TagNumber(23)
-  set telemetryConfig(TelemetryConfig v) { setField(23, v); }
+  set telemetryConfig(TelemetryConfig v) {
+    setField(23, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasTelemetryConfig() => $_has(19);
   @$pb.TagNumber(23)
@@ -668,7 +826,10 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   ScalingConfig get scalingConfig => $_getN(20);
   @$pb.TagNumber(24)
-  set scalingConfig(ScalingConfig v) { setField(24, v); }
+  set scalingConfig(ScalingConfig v) {
+    setField(24, v);
+  }
+
   @$pb.TagNumber(24)
   $core.bool hasScalingConfig() => $_has(20);
   @$pb.TagNumber(24)
@@ -694,41 +855,58 @@ class MaintenanceWindow extends $pb.GeneratedMessage {
     return $result;
   }
   MaintenanceWindow._() : super();
-  factory MaintenanceWindow.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MaintenanceWindow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MaintenanceWindow.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MaintenanceWindow.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaintenanceWindow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
-    ..aOM<$45.Int32Value>(1, _omitFieldNames ? '' : 'hourOfDay', subBuilder: $45.Int32Value.create)
-    ..e<$27.DayOfWeek>(2, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $27.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $27.DayOfWeek.valueOf, enumValues: $27.DayOfWeek.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MaintenanceWindow',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$45.Int32Value>(1, _omitFieldNames ? '' : 'hourOfDay',
+        subBuilder: $45.Int32Value.create)
+    ..e<$27.DayOfWeek>(
+        2, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE,
+        defaultOrMaker: $27.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
+        valueOf: $27.DayOfWeek.valueOf,
+        enumValues: $27.DayOfWeek.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MaintenanceWindow clone() => MaintenanceWindow()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MaintenanceWindow copyWith(void Function(MaintenanceWindow) updates) => super.copyWith((message) => updates(message as MaintenanceWindow)) as MaintenanceWindow;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MaintenanceWindow copyWith(void Function(MaintenanceWindow) updates) =>
+      super.copyWith((message) => updates(message as MaintenanceWindow))
+          as MaintenanceWindow;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MaintenanceWindow create() => MaintenanceWindow._();
   MaintenanceWindow createEmptyInstance() => create();
-  static $pb.PbList<MaintenanceWindow> createRepeated() => $pb.PbList<MaintenanceWindow>();
+  static $pb.PbList<MaintenanceWindow> createRepeated() =>
+      $pb.PbList<MaintenanceWindow>();
   @$core.pragma('dart2js:noInline')
-  static MaintenanceWindow getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaintenanceWindow>(create);
+  static MaintenanceWindow getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MaintenanceWindow>(create);
   static MaintenanceWindow? _defaultInstance;
 
   /// The hour of day (0-23) when the window starts.
   @$pb.TagNumber(1)
   $45.Int32Value get hourOfDay => $_getN(0);
   @$pb.TagNumber(1)
-  set hourOfDay($45.Int32Value v) { setField(1, v); }
+  set hourOfDay($45.Int32Value v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHourOfDay() => $_has(0);
   @$pb.TagNumber(1)
@@ -740,7 +918,10 @@ class MaintenanceWindow extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $27.DayOfWeek get dayOfWeek => $_getN(1);
   @$pb.TagNumber(2)
-  set dayOfWeek($27.DayOfWeek v) { setField(2, v); }
+  set dayOfWeek($27.DayOfWeek v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDayOfWeek() => $_has(1);
   @$pb.TagNumber(2)
@@ -772,43 +953,67 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
     return $result;
   }
   HiveMetastoreConfig._() : super();
-  factory HiveMetastoreConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory HiveMetastoreConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory HiveMetastoreConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory HiveMetastoreConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HiveMetastoreConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'HiveMetastoreConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'version')
-    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'configOverrides', entryClassName: 'HiveMetastoreConfig.ConfigOverridesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
-    ..aOM<KerberosConfig>(3, _omitFieldNames ? '' : 'kerberosConfig', subBuilder: KerberosConfig.create)
-    ..m<$core.String, AuxiliaryVersionConfig>(5, _omitFieldNames ? '' : 'auxiliaryVersions', entryClassName: 'HiveMetastoreConfig.AuxiliaryVersionsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: AuxiliaryVersionConfig.create, valueDefaultOrMaker: AuxiliaryVersionConfig.getDefault, packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'configOverrides',
+        entryClassName: 'HiveMetastoreConfig.ConfigOverridesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
+    ..aOM<KerberosConfig>(3, _omitFieldNames ? '' : 'kerberosConfig',
+        subBuilder: KerberosConfig.create)
+    ..m<$core.String, AuxiliaryVersionConfig>(
+        5, _omitFieldNames ? '' : 'auxiliaryVersions',
+        entryClassName: 'HiveMetastoreConfig.AuxiliaryVersionsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: AuxiliaryVersionConfig.create,
+        valueDefaultOrMaker: AuxiliaryVersionConfig.getDefault,
+        packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   HiveMetastoreConfig clone() => HiveMetastoreConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  HiveMetastoreConfig copyWith(void Function(HiveMetastoreConfig) updates) => super.copyWith((message) => updates(message as HiveMetastoreConfig)) as HiveMetastoreConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  HiveMetastoreConfig copyWith(void Function(HiveMetastoreConfig) updates) =>
+      super.copyWith((message) => updates(message as HiveMetastoreConfig))
+          as HiveMetastoreConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static HiveMetastoreConfig create() => HiveMetastoreConfig._();
   HiveMetastoreConfig createEmptyInstance() => create();
-  static $pb.PbList<HiveMetastoreConfig> createRepeated() => $pb.PbList<HiveMetastoreConfig>();
+  static $pb.PbList<HiveMetastoreConfig> createRepeated() =>
+      $pb.PbList<HiveMetastoreConfig>();
   @$core.pragma('dart2js:noInline')
-  static HiveMetastoreConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HiveMetastoreConfig>(create);
+  static HiveMetastoreConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<HiveMetastoreConfig>(create);
   static HiveMetastoreConfig? _defaultInstance;
 
   /// Immutable. The Hive metastore schema version.
   @$pb.TagNumber(1)
   $core.String get version => $_getSZ(0);
   @$pb.TagNumber(1)
-  set version($core.String v) { $_setString(0, v); }
+  set version($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -830,7 +1035,10 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   KerberosConfig get kerberosConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set kerberosConfig(KerberosConfig v) { setField(3, v); }
+  set kerberosConfig(KerberosConfig v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasKerberosConfig() => $_has(2);
   @$pb.TagNumber(3)
@@ -847,7 +1055,8 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
   /// following characters must be hyphens, lowercase letters, or digits, except
   /// the last character, which cannot be a hyphen.
   @$pb.TagNumber(5)
-  $core.Map<$core.String, AuxiliaryVersionConfig> get auxiliaryVersions => $_getMap(3);
+  $core.Map<$core.String, AuxiliaryVersionConfig> get auxiliaryVersions =>
+      $_getMap(3);
 }
 
 /// Configuration information for a Kerberos principal.
@@ -870,35 +1079,44 @@ class KerberosConfig extends $pb.GeneratedMessage {
     return $result;
   }
   KerberosConfig._() : super();
-  factory KerberosConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory KerberosConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory KerberosConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory KerberosConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KerberosConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'KerberosConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..aOM<Secret>(1, _omitFieldNames ? '' : 'keytab', subBuilder: Secret.create)
     ..aOS(2, _omitFieldNames ? '' : 'principal')
     ..aOS(3, _omitFieldNames ? '' : 'krb5ConfigGcsUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   KerberosConfig clone() => KerberosConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  KerberosConfig copyWith(void Function(KerberosConfig) updates) => super.copyWith((message) => updates(message as KerberosConfig)) as KerberosConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  KerberosConfig copyWith(void Function(KerberosConfig) updates) =>
+      super.copyWith((message) => updates(message as KerberosConfig))
+          as KerberosConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static KerberosConfig create() => KerberosConfig._();
   KerberosConfig createEmptyInstance() => create();
-  static $pb.PbList<KerberosConfig> createRepeated() => $pb.PbList<KerberosConfig>();
+  static $pb.PbList<KerberosConfig> createRepeated() =>
+      $pb.PbList<KerberosConfig>();
   @$core.pragma('dart2js:noInline')
-  static KerberosConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<KerberosConfig>(create);
+  static KerberosConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<KerberosConfig>(create);
   static KerberosConfig? _defaultInstance;
 
   /// A Kerberos keytab file that can be used to authenticate a service principal
@@ -906,7 +1124,10 @@ class KerberosConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Secret get keytab => $_getN(0);
   @$pb.TagNumber(1)
-  set keytab(Secret v) { setField(1, v); }
+  set keytab(Secret v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKeytab() => $_has(0);
   @$pb.TagNumber(1)
@@ -920,7 +1141,10 @@ class KerberosConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get principal => $_getSZ(1);
   @$pb.TagNumber(2)
-  set principal($core.String v) { $_setString(1, v); }
+  set principal($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPrincipal() => $_has(1);
   @$pb.TagNumber(2)
@@ -932,17 +1156,17 @@ class KerberosConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get krb5ConfigGcsUri => $_getSZ(2);
   @$pb.TagNumber(3)
-  set krb5ConfigGcsUri($core.String v) { $_setString(2, v); }
+  set krb5ConfigGcsUri($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasKrb5ConfigGcsUri() => $_has(2);
   @$pb.TagNumber(3)
   void clearKrb5ConfigGcsUri() => clearField(3);
 }
 
-enum Secret_Value {
-  cloudSecret, 
-  notSet
-}
+enum Secret_Value { cloudSecret, notSet }
 
 /// A securely stored value.
 class Secret extends $pb.GeneratedMessage {
@@ -956,29 +1180,35 @@ class Secret extends $pb.GeneratedMessage {
     return $result;
   }
   Secret._() : super();
-  factory Secret.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Secret.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Secret.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Secret.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, Secret_Value> _Secret_ValueByTag = {
-    2 : Secret_Value.cloudSecret,
-    0 : Secret_Value.notSet
+    2: Secret_Value.cloudSecret,
+    0: Secret_Value.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Secret', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Secret',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [2])
     ..aOS(2, _omitFieldNames ? '' : 'cloudSecret')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Secret clone() => Secret()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Secret copyWith(void Function(Secret) updates) => super.copyWith((message) => updates(message as Secret)) as Secret;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Secret copyWith(void Function(Secret) updates) =>
+      super.copyWith((message) => updates(message as Secret)) as Secret;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -987,7 +1217,8 @@ class Secret extends $pb.GeneratedMessage {
   Secret createEmptyInstance() => create();
   static $pb.PbList<Secret> createRepeated() => $pb.PbList<Secret>();
   @$core.pragma('dart2js:noInline')
-  static Secret getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Secret>(create);
+  static Secret getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Secret>(create);
   static Secret? _defaultInstance;
 
   Secret_Value whichValue() => _Secret_ValueByTag[$_whichOneof(0)]!;
@@ -1000,7 +1231,10 @@ class Secret extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get cloudSecret => $_getSZ(0);
   @$pb.TagNumber(2)
-  set cloudSecret($core.String v) { $_setString(0, v); }
+  set cloudSecret($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCloudSecret() => $_has(0);
   @$pb.TagNumber(2)
@@ -1019,33 +1253,42 @@ class EncryptionConfig extends $pb.GeneratedMessage {
     return $result;
   }
   EncryptionConfig._() : super();
-  factory EncryptionConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EncryptionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EncryptionConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EncryptionConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EncryptionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EncryptionConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kmsKey')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EncryptionConfig clone() => EncryptionConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EncryptionConfig copyWith(void Function(EncryptionConfig) updates) => super.copyWith((message) => updates(message as EncryptionConfig)) as EncryptionConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EncryptionConfig copyWith(void Function(EncryptionConfig) updates) =>
+      super.copyWith((message) => updates(message as EncryptionConfig))
+          as EncryptionConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EncryptionConfig create() => EncryptionConfig._();
   EncryptionConfig createEmptyInstance() => create();
-  static $pb.PbList<EncryptionConfig> createRepeated() => $pb.PbList<EncryptionConfig>();
+  static $pb.PbList<EncryptionConfig> createRepeated() =>
+      $pb.PbList<EncryptionConfig>();
   @$core.pragma('dart2js:noInline')
-  static EncryptionConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EncryptionConfig>(create);
+  static EncryptionConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EncryptionConfig>(create);
   static EncryptionConfig? _defaultInstance;
 
   ///  The fully qualified customer provided Cloud KMS key name to use for
@@ -1055,7 +1298,10 @@ class EncryptionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get kmsKey => $_getSZ(0);
   @$pb.TagNumber(1)
-  set kmsKey($core.String v) { $_setString(0, v); }
+  set kmsKey($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKmsKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -1082,35 +1328,51 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
     return $result;
   }
   AuxiliaryVersionConfig._() : super();
-  factory AuxiliaryVersionConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AuxiliaryVersionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AuxiliaryVersionConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AuxiliaryVersionConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuxiliaryVersionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AuxiliaryVersionConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'version')
-    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'configOverrides', entryClassName: 'AuxiliaryVersionConfig.ConfigOverridesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
-    ..aOM<NetworkConfig>(3, _omitFieldNames ? '' : 'networkConfig', subBuilder: NetworkConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'configOverrides',
+        entryClassName: 'AuxiliaryVersionConfig.ConfigOverridesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
+    ..aOM<NetworkConfig>(3, _omitFieldNames ? '' : 'networkConfig',
+        subBuilder: NetworkConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AuxiliaryVersionConfig clone() => AuxiliaryVersionConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AuxiliaryVersionConfig copyWith(void Function(AuxiliaryVersionConfig) updates) => super.copyWith((message) => updates(message as AuxiliaryVersionConfig)) as AuxiliaryVersionConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AuxiliaryVersionConfig clone() =>
+      AuxiliaryVersionConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AuxiliaryVersionConfig copyWith(
+          void Function(AuxiliaryVersionConfig) updates) =>
+      super.copyWith((message) => updates(message as AuxiliaryVersionConfig))
+          as AuxiliaryVersionConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuxiliaryVersionConfig create() => AuxiliaryVersionConfig._();
   AuxiliaryVersionConfig createEmptyInstance() => create();
-  static $pb.PbList<AuxiliaryVersionConfig> createRepeated() => $pb.PbList<AuxiliaryVersionConfig>();
+  static $pb.PbList<AuxiliaryVersionConfig> createRepeated() =>
+      $pb.PbList<AuxiliaryVersionConfig>();
   @$core.pragma('dart2js:noInline')
-  static AuxiliaryVersionConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuxiliaryVersionConfig>(create);
+  static AuxiliaryVersionConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AuxiliaryVersionConfig>(create);
   static AuxiliaryVersionConfig? _defaultInstance;
 
   /// The Hive metastore version of the auxiliary service. It must be less
@@ -1118,7 +1380,10 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get version => $_getSZ(0);
   @$pb.TagNumber(1)
-  set version($core.String v) { $_setString(0, v); }
+  set version($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -1137,7 +1402,10 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   NetworkConfig get networkConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set networkConfig(NetworkConfig v) { setField(3, v); }
+  set networkConfig(NetworkConfig v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasNetworkConfig() => $_has(2);
   @$pb.TagNumber(3)
@@ -1146,10 +1414,7 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
   NetworkConfig ensureNetworkConfig() => $_ensure(2);
 }
 
-enum NetworkConfig_Consumer_VpcResource {
-  subnetwork, 
-  notSet
-}
+enum NetworkConfig_Consumer_VpcResource { subnetwork, notSet }
 
 /// Contains information of the customer's network configurations.
 class NetworkConfig_Consumer extends $pb.GeneratedMessage {
@@ -1167,42 +1432,55 @@ class NetworkConfig_Consumer extends $pb.GeneratedMessage {
     return $result;
   }
   NetworkConfig_Consumer._() : super();
-  factory NetworkConfig_Consumer.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NetworkConfig_Consumer.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NetworkConfig_Consumer.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NetworkConfig_Consumer.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, NetworkConfig_Consumer_VpcResource> _NetworkConfig_Consumer_VpcResourceByTag = {
-    1 : NetworkConfig_Consumer_VpcResource.subnetwork,
-    0 : NetworkConfig_Consumer_VpcResource.notSet
+  static const $core.Map<$core.int, NetworkConfig_Consumer_VpcResource>
+      _NetworkConfig_Consumer_VpcResourceByTag = {
+    1: NetworkConfig_Consumer_VpcResource.subnetwork,
+    0: NetworkConfig_Consumer_VpcResource.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NetworkConfig.Consumer', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NetworkConfig.Consumer',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1])
     ..aOS(1, _omitFieldNames ? '' : 'subnetwork')
     ..aOS(3, _omitFieldNames ? '' : 'endpointUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  NetworkConfig_Consumer clone() => NetworkConfig_Consumer()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NetworkConfig_Consumer copyWith(void Function(NetworkConfig_Consumer) updates) => super.copyWith((message) => updates(message as NetworkConfig_Consumer)) as NetworkConfig_Consumer;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  NetworkConfig_Consumer clone() =>
+      NetworkConfig_Consumer()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NetworkConfig_Consumer copyWith(
+          void Function(NetworkConfig_Consumer) updates) =>
+      super.copyWith((message) => updates(message as NetworkConfig_Consumer))
+          as NetworkConfig_Consumer;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NetworkConfig_Consumer create() => NetworkConfig_Consumer._();
   NetworkConfig_Consumer createEmptyInstance() => create();
-  static $pb.PbList<NetworkConfig_Consumer> createRepeated() => $pb.PbList<NetworkConfig_Consumer>();
+  static $pb.PbList<NetworkConfig_Consumer> createRepeated() =>
+      $pb.PbList<NetworkConfig_Consumer>();
   @$core.pragma('dart2js:noInline')
-  static NetworkConfig_Consumer getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NetworkConfig_Consumer>(create);
+  static NetworkConfig_Consumer getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NetworkConfig_Consumer>(create);
   static NetworkConfig_Consumer? _defaultInstance;
 
-  NetworkConfig_Consumer_VpcResource whichVpcResource() => _NetworkConfig_Consumer_VpcResourceByTag[$_whichOneof(0)]!;
+  NetworkConfig_Consumer_VpcResource whichVpcResource() =>
+      _NetworkConfig_Consumer_VpcResourceByTag[$_whichOneof(0)]!;
   void clearVpcResource() => clearField($_whichOneof(0));
 
   ///  Immutable. The subnetwork of the customer project from which an IP
@@ -1216,7 +1494,10 @@ class NetworkConfig_Consumer extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get subnetwork => $_getSZ(0);
   @$pb.TagNumber(1)
-  set subnetwork($core.String v) { $_setString(0, v); }
+  set subnetwork($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSubnetwork() => $_has(0);
   @$pb.TagNumber(1)
@@ -1227,7 +1508,10 @@ class NetworkConfig_Consumer extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get endpointUri => $_getSZ(1);
   @$pb.TagNumber(3)
-  set endpointUri($core.String v) { $_setString(1, v); }
+  set endpointUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEndpointUri() => $_has(1);
   @$pb.TagNumber(3)
@@ -1246,33 +1530,44 @@ class NetworkConfig extends $pb.GeneratedMessage {
     return $result;
   }
   NetworkConfig._() : super();
-  factory NetworkConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NetworkConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NetworkConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NetworkConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NetworkConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
-    ..pc<NetworkConfig_Consumer>(1, _omitFieldNames ? '' : 'consumers', $pb.PbFieldType.PM, subBuilder: NetworkConfig_Consumer.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NetworkConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
+    ..pc<NetworkConfig_Consumer>(
+        1, _omitFieldNames ? '' : 'consumers', $pb.PbFieldType.PM,
+        subBuilder: NetworkConfig_Consumer.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   NetworkConfig clone() => NetworkConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NetworkConfig copyWith(void Function(NetworkConfig) updates) => super.copyWith((message) => updates(message as NetworkConfig)) as NetworkConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NetworkConfig copyWith(void Function(NetworkConfig) updates) =>
+      super.copyWith((message) => updates(message as NetworkConfig))
+          as NetworkConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NetworkConfig create() => NetworkConfig._();
   NetworkConfig createEmptyInstance() => create();
-  static $pb.PbList<NetworkConfig> createRepeated() => $pb.PbList<NetworkConfig>();
+  static $pb.PbList<NetworkConfig> createRepeated() =>
+      $pb.PbList<NetworkConfig>();
   @$core.pragma('dart2js:noInline')
-  static NetworkConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NetworkConfig>(create);
+  static NetworkConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NetworkConfig>(create);
   static NetworkConfig? _defaultInstance;
 
   /// Immutable. The consumer-side network configuration for the Dataproc
@@ -1293,40 +1588,56 @@ class TelemetryConfig extends $pb.GeneratedMessage {
     return $result;
   }
   TelemetryConfig._() : super();
-  factory TelemetryConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TelemetryConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TelemetryConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TelemetryConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TelemetryConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
-    ..e<TelemetryConfig_LogFormat>(1, _omitFieldNames ? '' : 'logFormat', $pb.PbFieldType.OE, defaultOrMaker: TelemetryConfig_LogFormat.LOG_FORMAT_UNSPECIFIED, valueOf: TelemetryConfig_LogFormat.valueOf, enumValues: TelemetryConfig_LogFormat.values)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TelemetryConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
+    ..e<TelemetryConfig_LogFormat>(
+        1, _omitFieldNames ? '' : 'logFormat', $pb.PbFieldType.OE,
+        defaultOrMaker: TelemetryConfig_LogFormat.LOG_FORMAT_UNSPECIFIED,
+        valueOf: TelemetryConfig_LogFormat.valueOf,
+        enumValues: TelemetryConfig_LogFormat.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TelemetryConfig clone() => TelemetryConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TelemetryConfig copyWith(void Function(TelemetryConfig) updates) => super.copyWith((message) => updates(message as TelemetryConfig)) as TelemetryConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TelemetryConfig copyWith(void Function(TelemetryConfig) updates) =>
+      super.copyWith((message) => updates(message as TelemetryConfig))
+          as TelemetryConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TelemetryConfig create() => TelemetryConfig._();
   TelemetryConfig createEmptyInstance() => create();
-  static $pb.PbList<TelemetryConfig> createRepeated() => $pb.PbList<TelemetryConfig>();
+  static $pb.PbList<TelemetryConfig> createRepeated() =>
+      $pb.PbList<TelemetryConfig>();
   @$core.pragma('dart2js:noInline')
-  static TelemetryConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TelemetryConfig>(create);
+  static TelemetryConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TelemetryConfig>(create);
   static TelemetryConfig? _defaultInstance;
 
   /// The output format of the Dataproc Metastore service's logs.
   @$pb.TagNumber(1)
   TelemetryConfig_LogFormat get logFormat => $_getN(0);
   @$pb.TagNumber(1)
-  set logFormat(TelemetryConfig_LogFormat v) { setField(1, v); }
+  set logFormat(TelemetryConfig_LogFormat v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLogFormat() => $_has(0);
   @$pb.TagNumber(1)
@@ -1349,34 +1660,49 @@ class MetadataManagementActivity extends $pb.GeneratedMessage {
     return $result;
   }
   MetadataManagementActivity._() : super();
-  factory MetadataManagementActivity.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MetadataManagementActivity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MetadataManagementActivity.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MetadataManagementActivity.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetadataManagementActivity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
-    ..pc<MetadataExport>(1, _omitFieldNames ? '' : 'metadataExports', $pb.PbFieldType.PM, subBuilder: MetadataExport.create)
-    ..pc<Restore>(2, _omitFieldNames ? '' : 'restores', $pb.PbFieldType.PM, subBuilder: Restore.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MetadataManagementActivity',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
+    ..pc<MetadataExport>(
+        1, _omitFieldNames ? '' : 'metadataExports', $pb.PbFieldType.PM,
+        subBuilder: MetadataExport.create)
+    ..pc<Restore>(2, _omitFieldNames ? '' : 'restores', $pb.PbFieldType.PM,
+        subBuilder: Restore.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MetadataManagementActivity clone() => MetadataManagementActivity()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MetadataManagementActivity copyWith(void Function(MetadataManagementActivity) updates) => super.copyWith((message) => updates(message as MetadataManagementActivity)) as MetadataManagementActivity;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MetadataManagementActivity clone() =>
+      MetadataManagementActivity()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MetadataManagementActivity copyWith(
+          void Function(MetadataManagementActivity) updates) =>
+      super.copyWith(
+              (message) => updates(message as MetadataManagementActivity))
+          as MetadataManagementActivity;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MetadataManagementActivity create() => MetadataManagementActivity._();
   MetadataManagementActivity createEmptyInstance() => create();
-  static $pb.PbList<MetadataManagementActivity> createRepeated() => $pb.PbList<MetadataManagementActivity>();
+  static $pb.PbList<MetadataManagementActivity> createRepeated() =>
+      $pb.PbList<MetadataManagementActivity>();
   @$core.pragma('dart2js:noInline')
-  static MetadataManagementActivity getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MetadataManagementActivity>(create);
+  static MetadataManagementActivity getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MetadataManagementActivity>(create);
   static MetadataManagementActivity? _defaultInstance;
 
   /// Output only. The latest metadata exports of the metastore service.
@@ -1413,43 +1739,68 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
     return $result;
   }
   MetadataImport_DatabaseDump._() : super();
-  factory MetadataImport_DatabaseDump.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MetadataImport_DatabaseDump.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MetadataImport_DatabaseDump.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MetadataImport_DatabaseDump.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetadataImport.DatabaseDump', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
-    ..e<MetadataImport_DatabaseDump_DatabaseType>(1, _omitFieldNames ? '' : 'databaseType', $pb.PbFieldType.OE, defaultOrMaker: MetadataImport_DatabaseDump_DatabaseType.DATABASE_TYPE_UNSPECIFIED, valueOf: MetadataImport_DatabaseDump_DatabaseType.valueOf, enumValues: MetadataImport_DatabaseDump_DatabaseType.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MetadataImport.DatabaseDump',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
+    ..e<MetadataImport_DatabaseDump_DatabaseType>(
+        1, _omitFieldNames ? '' : 'databaseType', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            MetadataImport_DatabaseDump_DatabaseType.DATABASE_TYPE_UNSPECIFIED,
+        valueOf: MetadataImport_DatabaseDump_DatabaseType.valueOf,
+        enumValues: MetadataImport_DatabaseDump_DatabaseType.values)
     ..aOS(2, _omitFieldNames ? '' : 'gcsUri')
     ..aOS(3, _omitFieldNames ? '' : 'sourceDatabase')
-    ..e<DatabaseDumpSpec_Type>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: DatabaseDumpSpec_Type.TYPE_UNSPECIFIED, valueOf: DatabaseDumpSpec_Type.valueOf, enumValues: DatabaseDumpSpec_Type.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<DatabaseDumpSpec_Type>(
+        4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: DatabaseDumpSpec_Type.TYPE_UNSPECIFIED,
+        valueOf: DatabaseDumpSpec_Type.valueOf,
+        enumValues: DatabaseDumpSpec_Type.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MetadataImport_DatabaseDump clone() => MetadataImport_DatabaseDump()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MetadataImport_DatabaseDump copyWith(void Function(MetadataImport_DatabaseDump) updates) => super.copyWith((message) => updates(message as MetadataImport_DatabaseDump)) as MetadataImport_DatabaseDump;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MetadataImport_DatabaseDump clone() =>
+      MetadataImport_DatabaseDump()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MetadataImport_DatabaseDump copyWith(
+          void Function(MetadataImport_DatabaseDump) updates) =>
+      super.copyWith(
+              (message) => updates(message as MetadataImport_DatabaseDump))
+          as MetadataImport_DatabaseDump;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static MetadataImport_DatabaseDump create() => MetadataImport_DatabaseDump._();
+  static MetadataImport_DatabaseDump create() =>
+      MetadataImport_DatabaseDump._();
   MetadataImport_DatabaseDump createEmptyInstance() => create();
-  static $pb.PbList<MetadataImport_DatabaseDump> createRepeated() => $pb.PbList<MetadataImport_DatabaseDump>();
+  static $pb.PbList<MetadataImport_DatabaseDump> createRepeated() =>
+      $pb.PbList<MetadataImport_DatabaseDump>();
   @$core.pragma('dart2js:noInline')
-  static MetadataImport_DatabaseDump getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MetadataImport_DatabaseDump>(create);
+  static MetadataImport_DatabaseDump getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MetadataImport_DatabaseDump>(create);
   static MetadataImport_DatabaseDump? _defaultInstance;
 
   /// The type of the database.
   @$pb.TagNumber(1)
   MetadataImport_DatabaseDump_DatabaseType get databaseType => $_getN(0);
   @$pb.TagNumber(1)
-  set databaseType(MetadataImport_DatabaseDump_DatabaseType v) { setField(1, v); }
+  set databaseType(MetadataImport_DatabaseDump_DatabaseType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDatabaseType() => $_has(0);
   @$pb.TagNumber(1)
@@ -1460,7 +1811,10 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get gcsUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set gcsUri($core.String v) { $_setString(1, v); }
+  set gcsUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasGcsUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -1470,7 +1824,10 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get sourceDatabase => $_getSZ(2);
   @$pb.TagNumber(3)
-  set sourceDatabase($core.String v) { $_setString(2, v); }
+  set sourceDatabase($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSourceDatabase() => $_has(2);
   @$pb.TagNumber(3)
@@ -1481,17 +1838,17 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   DatabaseDumpSpec_Type get type => $_getN(3);
   @$pb.TagNumber(4)
-  set type(DatabaseDumpSpec_Type v) { setField(4, v); }
+  set type(DatabaseDumpSpec_Type v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)
   void clearType() => clearField(4);
 }
 
-enum MetadataImport_Metadata {
-  databaseDump, 
-  notSet
-}
+enum MetadataImport_Metadata { databaseDump, notSet }
 
 /// A metastore resource that imports metadata.
 class MetadataImport extends $pb.GeneratedMessage {
@@ -1529,47 +1886,66 @@ class MetadataImport extends $pb.GeneratedMessage {
     return $result;
   }
   MetadataImport._() : super();
-  factory MetadataImport.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MetadataImport.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MetadataImport.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MetadataImport.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, MetadataImport_Metadata> _MetadataImport_MetadataByTag = {
-    6 : MetadataImport_Metadata.databaseDump,
-    0 : MetadataImport_Metadata.notSet
+  static const $core.Map<$core.int, MetadataImport_Metadata>
+      _MetadataImport_MetadataByTag = {
+    6: MetadataImport_Metadata.databaseDump,
+    0: MetadataImport_Metadata.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetadataImport', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MetadataImport',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
-    ..e<MetadataImport_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: MetadataImport_State.STATE_UNSPECIFIED, valueOf: MetadataImport_State.valueOf, enumValues: MetadataImport_State.values)
-    ..aOM<MetadataImport_DatabaseDump>(6, _omitFieldNames ? '' : 'databaseDump', subBuilder: MetadataImport_DatabaseDump.create)
-    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $2.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
+    ..e<MetadataImport_State>(
+        5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: MetadataImport_State.STATE_UNSPECIFIED,
+        valueOf: MetadataImport_State.valueOf,
+        enumValues: MetadataImport_State.values)
+    ..aOM<MetadataImport_DatabaseDump>(6, _omitFieldNames ? '' : 'databaseDump',
+        subBuilder: MetadataImport_DatabaseDump.create)
+    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $2.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MetadataImport clone() => MetadataImport()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MetadataImport copyWith(void Function(MetadataImport) updates) => super.copyWith((message) => updates(message as MetadataImport)) as MetadataImport;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MetadataImport copyWith(void Function(MetadataImport) updates) =>
+      super.copyWith((message) => updates(message as MetadataImport))
+          as MetadataImport;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MetadataImport create() => MetadataImport._();
   MetadataImport createEmptyInstance() => create();
-  static $pb.PbList<MetadataImport> createRepeated() => $pb.PbList<MetadataImport>();
+  static $pb.PbList<MetadataImport> createRepeated() =>
+      $pb.PbList<MetadataImport>();
   @$core.pragma('dart2js:noInline')
-  static MetadataImport getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MetadataImport>(create);
+  static MetadataImport getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MetadataImport>(create);
   static MetadataImport? _defaultInstance;
 
-  MetadataImport_Metadata whichMetadata() => _MetadataImport_MetadataByTag[$_whichOneof(0)]!;
+  MetadataImport_Metadata whichMetadata() =>
+      _MetadataImport_MetadataByTag[$_whichOneof(0)]!;
   void clearMetadata() => clearField($_whichOneof(0));
 
   ///  Immutable. The relative resource name of the metadata import, of the form:
@@ -1578,7 +1954,10 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1588,7 +1967,10 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
-  set description($core.String v) { $_setString(1, v); }
+  set description($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
@@ -1598,7 +1980,10 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($2.Timestamp v) { setField(3, v); }
+  set createTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -1610,7 +1995,10 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $2.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($2.Timestamp v) { setField(4, v); }
+  set updateTime($2.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -1622,7 +2010,10 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   MetadataImport_State get state => $_getN(4);
   @$pb.TagNumber(5)
-  set state(MetadataImport_State v) { setField(5, v); }
+  set state(MetadataImport_State v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(4);
   @$pb.TagNumber(5)
@@ -1632,7 +2023,10 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   MetadataImport_DatabaseDump get databaseDump => $_getN(5);
   @$pb.TagNumber(6)
-  set databaseDump(MetadataImport_DatabaseDump v) { setField(6, v); }
+  set databaseDump(MetadataImport_DatabaseDump v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDatabaseDump() => $_has(5);
   @$pb.TagNumber(6)
@@ -1644,7 +2038,10 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $2.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(7)
-  set endTime($2.Timestamp v) { setField(7, v); }
+  set endTime($2.Timestamp v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(7)
@@ -1653,10 +2050,7 @@ class MetadataImport extends $pb.GeneratedMessage {
   $2.Timestamp ensureEndTime() => $_ensure(6);
 }
 
-enum MetadataExport_Destination {
-  destinationGcsUri, 
-  notSet
-}
+enum MetadataExport_Destination { destinationGcsUri, notSet }
 
 /// The details of a metadata export operation.
 class MetadataExport extends $pb.GeneratedMessage {
@@ -1686,52 +2080,76 @@ class MetadataExport extends $pb.GeneratedMessage {
     return $result;
   }
   MetadataExport._() : super();
-  factory MetadataExport.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MetadataExport.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MetadataExport.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MetadataExport.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, MetadataExport_Destination> _MetadataExport_DestinationByTag = {
-    4 : MetadataExport_Destination.destinationGcsUri,
-    0 : MetadataExport_Destination.notSet
+  static const $core.Map<$core.int, MetadataExport_Destination>
+      _MetadataExport_DestinationByTag = {
+    4: MetadataExport_Destination.destinationGcsUri,
+    0: MetadataExport_Destination.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetadataExport', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MetadataExport',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [4])
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $2.Timestamp.create)
-    ..e<MetadataExport_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: MetadataExport_State.STATE_UNSPECIFIED, valueOf: MetadataExport_State.valueOf, enumValues: MetadataExport_State.values)
+    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $2.Timestamp.create)
+    ..e<MetadataExport_State>(
+        3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: MetadataExport_State.STATE_UNSPECIFIED,
+        valueOf: MetadataExport_State.valueOf,
+        enumValues: MetadataExport_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'destinationGcsUri')
-    ..e<DatabaseDumpSpec_Type>(5, _omitFieldNames ? '' : 'databaseDumpType', $pb.PbFieldType.OE, defaultOrMaker: DatabaseDumpSpec_Type.TYPE_UNSPECIFIED, valueOf: DatabaseDumpSpec_Type.valueOf, enumValues: DatabaseDumpSpec_Type.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<DatabaseDumpSpec_Type>(
+        5, _omitFieldNames ? '' : 'databaseDumpType', $pb.PbFieldType.OE,
+        defaultOrMaker: DatabaseDumpSpec_Type.TYPE_UNSPECIFIED,
+        valueOf: DatabaseDumpSpec_Type.valueOf,
+        enumValues: DatabaseDumpSpec_Type.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MetadataExport clone() => MetadataExport()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MetadataExport copyWith(void Function(MetadataExport) updates) => super.copyWith((message) => updates(message as MetadataExport)) as MetadataExport;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MetadataExport copyWith(void Function(MetadataExport) updates) =>
+      super.copyWith((message) => updates(message as MetadataExport))
+          as MetadataExport;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MetadataExport create() => MetadataExport._();
   MetadataExport createEmptyInstance() => create();
-  static $pb.PbList<MetadataExport> createRepeated() => $pb.PbList<MetadataExport>();
+  static $pb.PbList<MetadataExport> createRepeated() =>
+      $pb.PbList<MetadataExport>();
   @$core.pragma('dart2js:noInline')
-  static MetadataExport getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MetadataExport>(create);
+  static MetadataExport getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MetadataExport>(create);
   static MetadataExport? _defaultInstance;
 
-  MetadataExport_Destination whichDestination() => _MetadataExport_DestinationByTag[$_whichOneof(0)]!;
+  MetadataExport_Destination whichDestination() =>
+      _MetadataExport_DestinationByTag[$_whichOneof(0)]!;
   void clearDestination() => clearField($_whichOneof(0));
 
   /// Output only. The time when the export started.
   @$pb.TagNumber(1)
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($2.Timestamp v) { setField(1, v); }
+  set startTime($2.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -1743,7 +2161,10 @@ class MetadataExport extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($2.Timestamp v) { setField(2, v); }
+  set endTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1755,7 +2176,10 @@ class MetadataExport extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   MetadataExport_State get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state(MetadataExport_State v) { setField(3, v); }
+  set state(MetadataExport_State v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
@@ -1768,7 +2192,10 @@ class MetadataExport extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get destinationGcsUri => $_getSZ(3);
   @$pb.TagNumber(4)
-  set destinationGcsUri($core.String v) { $_setString(3, v); }
+  set destinationGcsUri($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDestinationGcsUri() => $_has(3);
   @$pb.TagNumber(4)
@@ -1778,7 +2205,10 @@ class MetadataExport extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   DatabaseDumpSpec_Type get databaseDumpType => $_getN(4);
   @$pb.TagNumber(5)
-  set databaseDumpType(DatabaseDumpSpec_Type v) { setField(5, v); }
+  set databaseDumpType(DatabaseDumpSpec_Type v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDatabaseDumpType() => $_has(4);
   @$pb.TagNumber(5)
@@ -1821,30 +2251,42 @@ class Backup extends $pb.GeneratedMessage {
     return $result;
   }
   Backup._() : super();
-  factory Backup.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Backup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Backup.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Backup.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Backup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Backup',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $2.Timestamp.create)
-    ..e<Backup_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Backup_State.STATE_UNSPECIFIED, valueOf: Backup_State.valueOf, enumValues: Backup_State.values)
-    ..aOM<Service>(5, _omitFieldNames ? '' : 'serviceRevision', subBuilder: Service.create)
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $2.Timestamp.create)
+    ..e<Backup_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Backup_State.STATE_UNSPECIFIED,
+        valueOf: Backup_State.valueOf,
+        enumValues: Backup_State.values)
+    ..aOM<Service>(5, _omitFieldNames ? '' : 'serviceRevision',
+        subBuilder: Service.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..pPS(7, _omitFieldNames ? '' : 'restoringServices')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Backup clone() => Backup()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Backup copyWith(void Function(Backup) updates) => super.copyWith((message) => updates(message as Backup)) as Backup;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Backup copyWith(void Function(Backup) updates) =>
+      super.copyWith((message) => updates(message as Backup)) as Backup;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1853,7 +2295,8 @@ class Backup extends $pb.GeneratedMessage {
   Backup createEmptyInstance() => create();
   static $pb.PbList<Backup> createRepeated() => $pb.PbList<Backup>();
   @$core.pragma('dart2js:noInline')
-  static Backup getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Backup>(create);
+  static Backup getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Backup>(create);
   static Backup? _defaultInstance;
 
   ///  Immutable. The relative resource name of the backup, in the following form:
@@ -1862,7 +2305,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1872,7 +2318,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1884,7 +2333,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($2.Timestamp v) { setField(3, v); }
+  set endTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -1896,7 +2348,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Backup_State get state => $_getN(3);
   @$pb.TagNumber(4)
-  set state(Backup_State v) { setField(4, v); }
+  set state(Backup_State v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
@@ -1906,7 +2361,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Service get serviceRevision => $_getN(4);
   @$pb.TagNumber(5)
-  set serviceRevision(Service v) { setField(5, v); }
+  set serviceRevision(Service v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasServiceRevision() => $_has(4);
   @$pb.TagNumber(5)
@@ -1918,7 +2376,10 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get description => $_getSZ(5);
   @$pb.TagNumber(6)
-  set description($core.String v) { $_setString(5, v); }
+  set description($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(5);
   @$pb.TagNumber(6)
@@ -1961,29 +2422,44 @@ class Restore extends $pb.GeneratedMessage {
     return $result;
   }
   Restore._() : super();
-  factory Restore.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Restore.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Restore.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Restore.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Restore', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $2.Timestamp.create)
-    ..e<Restore_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Restore_State.STATE_UNSPECIFIED, valueOf: Restore_State.valueOf, enumValues: Restore_State.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Restore',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $2.Timestamp.create)
+    ..e<Restore_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Restore_State.STATE_UNSPECIFIED,
+        valueOf: Restore_State.valueOf,
+        enumValues: Restore_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'backup')
-    ..e<Restore_RestoreType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Restore_RestoreType.RESTORE_TYPE_UNSPECIFIED, valueOf: Restore_RestoreType.valueOf, enumValues: Restore_RestoreType.values)
+    ..e<Restore_RestoreType>(
+        5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: Restore_RestoreType.RESTORE_TYPE_UNSPECIFIED,
+        valueOf: Restore_RestoreType.valueOf,
+        enumValues: Restore_RestoreType.values)
     ..aOS(6, _omitFieldNames ? '' : 'details')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Restore clone() => Restore()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Restore copyWith(void Function(Restore) updates) => super.copyWith((message) => updates(message as Restore)) as Restore;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Restore copyWith(void Function(Restore) updates) =>
+      super.copyWith((message) => updates(message as Restore)) as Restore;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1992,14 +2468,18 @@ class Restore extends $pb.GeneratedMessage {
   Restore createEmptyInstance() => create();
   static $pb.PbList<Restore> createRepeated() => $pb.PbList<Restore>();
   @$core.pragma('dart2js:noInline')
-  static Restore getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Restore>(create);
+  static Restore getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Restore>(create);
   static Restore? _defaultInstance;
 
   /// Output only. The time when the restore started.
   @$pb.TagNumber(1)
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($2.Timestamp v) { setField(1, v); }
+  set startTime($2.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -2011,7 +2491,10 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($2.Timestamp v) { setField(2, v); }
+  set endTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -2023,7 +2506,10 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Restore_State get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state(Restore_State v) { setField(3, v); }
+  set state(Restore_State v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
@@ -2036,7 +2522,10 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get backup => $_getSZ(3);
   @$pb.TagNumber(4)
-  set backup($core.String v) { $_setString(3, v); }
+  set backup($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBackup() => $_has(3);
   @$pb.TagNumber(4)
@@ -2046,7 +2535,10 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Restore_RestoreType get type => $_getN(4);
   @$pb.TagNumber(5)
-  set type(Restore_RestoreType v) { setField(5, v); }
+  set type(Restore_RestoreType v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)
@@ -2057,18 +2549,17 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get details => $_getSZ(5);
   @$pb.TagNumber(6)
-  set details($core.String v) { $_setString(5, v); }
+  set details($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDetails() => $_has(5);
   @$pb.TagNumber(6)
   void clearDetails() => clearField(6);
 }
 
-enum ScalingConfig_ScalingModel {
-  instanceSize, 
-  scalingFactor, 
-  notSet
-}
+enum ScalingConfig_ScalingModel { instanceSize, scalingFactor, notSet }
 
 /// Represents the scaling configuration of a metastore service.
 class ScalingConfig extends $pb.GeneratedMessage {
@@ -2086,43 +2577,59 @@ class ScalingConfig extends $pb.GeneratedMessage {
     return $result;
   }
   ScalingConfig._() : super();
-  factory ScalingConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ScalingConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ScalingConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ScalingConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ScalingConfig_ScalingModel> _ScalingConfig_ScalingModelByTag = {
-    1 : ScalingConfig_ScalingModel.instanceSize,
-    2 : ScalingConfig_ScalingModel.scalingFactor,
-    0 : ScalingConfig_ScalingModel.notSet
+  static const $core.Map<$core.int, ScalingConfig_ScalingModel>
+      _ScalingConfig_ScalingModelByTag = {
+    1: ScalingConfig_ScalingModel.instanceSize,
+    2: ScalingConfig_ScalingModel.scalingFactor,
+    0: ScalingConfig_ScalingModel.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ScalingConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ScalingConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..e<ScalingConfig_InstanceSize>(1, _omitFieldNames ? '' : 'instanceSize', $pb.PbFieldType.OE, defaultOrMaker: ScalingConfig_InstanceSize.INSTANCE_SIZE_UNSPECIFIED, valueOf: ScalingConfig_InstanceSize.valueOf, enumValues: ScalingConfig_InstanceSize.values)
-    ..a<$core.double>(2, _omitFieldNames ? '' : 'scalingFactor', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+    ..e<ScalingConfig_InstanceSize>(
+        1, _omitFieldNames ? '' : 'instanceSize', $pb.PbFieldType.OE,
+        defaultOrMaker: ScalingConfig_InstanceSize.INSTANCE_SIZE_UNSPECIFIED,
+        valueOf: ScalingConfig_InstanceSize.valueOf,
+        enumValues: ScalingConfig_InstanceSize.values)
+    ..a<$core.double>(
+        2, _omitFieldNames ? '' : 'scalingFactor', $pb.PbFieldType.OF)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ScalingConfig clone() => ScalingConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ScalingConfig copyWith(void Function(ScalingConfig) updates) => super.copyWith((message) => updates(message as ScalingConfig)) as ScalingConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ScalingConfig copyWith(void Function(ScalingConfig) updates) =>
+      super.copyWith((message) => updates(message as ScalingConfig))
+          as ScalingConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ScalingConfig create() => ScalingConfig._();
   ScalingConfig createEmptyInstance() => create();
-  static $pb.PbList<ScalingConfig> createRepeated() => $pb.PbList<ScalingConfig>();
+  static $pb.PbList<ScalingConfig> createRepeated() =>
+      $pb.PbList<ScalingConfig>();
   @$core.pragma('dart2js:noInline')
-  static ScalingConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ScalingConfig>(create);
+  static ScalingConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ScalingConfig>(create);
   static ScalingConfig? _defaultInstance;
 
-  ScalingConfig_ScalingModel whichScalingModel() => _ScalingConfig_ScalingModelByTag[$_whichOneof(0)]!;
+  ScalingConfig_ScalingModel whichScalingModel() =>
+      _ScalingConfig_ScalingModelByTag[$_whichOneof(0)]!;
   void clearScalingModel() => clearField($_whichOneof(0));
 
   /// An enum of readable instance sizes, with each instance size mapping to a
@@ -2130,7 +2637,10 @@ class ScalingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ScalingConfig_InstanceSize get instanceSize => $_getN(0);
   @$pb.TagNumber(1)
-  set instanceSize(ScalingConfig_InstanceSize v) { setField(1, v); }
+  set instanceSize(ScalingConfig_InstanceSize v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstanceSize() => $_has(0);
   @$pb.TagNumber(1)
@@ -2141,7 +2651,10 @@ class ScalingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get scalingFactor => $_getN(1);
   @$pb.TagNumber(2)
-  set scalingFactor($core.double v) { $_setFloat(1, v); }
+  set scalingFactor($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasScalingFactor() => $_has(1);
   @$pb.TagNumber(2)
@@ -2152,32 +2665,41 @@ class ScalingConfig extends $pb.GeneratedMessage {
 class DatabaseDumpSpec extends $pb.GeneratedMessage {
   factory DatabaseDumpSpec() => create();
   DatabaseDumpSpec._() : super();
-  factory DatabaseDumpSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DatabaseDumpSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DatabaseDumpSpec.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DatabaseDumpSpec.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DatabaseDumpSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DatabaseDumpSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DatabaseDumpSpec clone() => DatabaseDumpSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DatabaseDumpSpec copyWith(void Function(DatabaseDumpSpec) updates) => super.copyWith((message) => updates(message as DatabaseDumpSpec)) as DatabaseDumpSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DatabaseDumpSpec copyWith(void Function(DatabaseDumpSpec) updates) =>
+      super.copyWith((message) => updates(message as DatabaseDumpSpec))
+          as DatabaseDumpSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DatabaseDumpSpec create() => DatabaseDumpSpec._();
   DatabaseDumpSpec createEmptyInstance() => create();
-  static $pb.PbList<DatabaseDumpSpec> createRepeated() => $pb.PbList<DatabaseDumpSpec>();
+  static $pb.PbList<DatabaseDumpSpec> createRepeated() =>
+      $pb.PbList<DatabaseDumpSpec>();
   @$core.pragma('dart2js:noInline')
-  static DatabaseDumpSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DatabaseDumpSpec>(create);
+  static DatabaseDumpSpec getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DatabaseDumpSpec>(create);
   static DatabaseDumpSpec? _defaultInstance;
 }
 
@@ -2193,40 +2715,55 @@ class MetadataImportEventData extends $pb.GeneratedMessage {
     return $result;
   }
   MetadataImportEventData._() : super();
-  factory MetadataImportEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MetadataImportEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MetadataImportEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MetadataImportEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetadataImportEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
-    ..aOM<MetadataImport>(1, _omitFieldNames ? '' : 'payload', subBuilder: MetadataImport.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MetadataImportEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<MetadataImport>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: MetadataImport.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MetadataImportEventData clone() => MetadataImportEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MetadataImportEventData copyWith(void Function(MetadataImportEventData) updates) => super.copyWith((message) => updates(message as MetadataImportEventData)) as MetadataImportEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MetadataImportEventData clone() =>
+      MetadataImportEventData()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MetadataImportEventData copyWith(
+          void Function(MetadataImportEventData) updates) =>
+      super.copyWith((message) => updates(message as MetadataImportEventData))
+          as MetadataImportEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MetadataImportEventData create() => MetadataImportEventData._();
   MetadataImportEventData createEmptyInstance() => create();
-  static $pb.PbList<MetadataImportEventData> createRepeated() => $pb.PbList<MetadataImportEventData>();
+  static $pb.PbList<MetadataImportEventData> createRepeated() =>
+      $pb.PbList<MetadataImportEventData>();
   @$core.pragma('dart2js:noInline')
-  static MetadataImportEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MetadataImportEventData>(create);
+  static MetadataImportEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MetadataImportEventData>(create);
   static MetadataImportEventData? _defaultInstance;
 
   /// The MetadataImport event payload.
   @$pb.TagNumber(1)
   MetadataImport get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(MetadataImport v) { setField(1, v); }
+  set payload(MetadataImport v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2247,40 +2784,53 @@ class FederationEventData extends $pb.GeneratedMessage {
     return $result;
   }
   FederationEventData._() : super();
-  factory FederationEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FederationEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FederationEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FederationEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FederationEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
-    ..aOM<Federation>(1, _omitFieldNames ? '' : 'payload', subBuilder: Federation.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FederationEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<Federation>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: Federation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   FederationEventData clone() => FederationEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FederationEventData copyWith(void Function(FederationEventData) updates) => super.copyWith((message) => updates(message as FederationEventData)) as FederationEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FederationEventData copyWith(void Function(FederationEventData) updates) =>
+      super.copyWith((message) => updates(message as FederationEventData))
+          as FederationEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static FederationEventData create() => FederationEventData._();
   FederationEventData createEmptyInstance() => create();
-  static $pb.PbList<FederationEventData> createRepeated() => $pb.PbList<FederationEventData>();
+  static $pb.PbList<FederationEventData> createRepeated() =>
+      $pb.PbList<FederationEventData>();
   @$core.pragma('dart2js:noInline')
-  static FederationEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FederationEventData>(create);
+  static FederationEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FederationEventData>(create);
   static FederationEventData? _defaultInstance;
 
   /// Optional. The Federation event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Federation get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Federation v) { setField(1, v); }
+  set payload(Federation v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2301,40 +2851,53 @@ class BackupEventData extends $pb.GeneratedMessage {
     return $result;
   }
   BackupEventData._() : super();
-  factory BackupEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BackupEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BackupEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BackupEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackupEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
-    ..aOM<Backup>(1, _omitFieldNames ? '' : 'payload', subBuilder: Backup.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BackupEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<Backup>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: Backup.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BackupEventData clone() => BackupEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BackupEventData copyWith(void Function(BackupEventData) updates) => super.copyWith((message) => updates(message as BackupEventData)) as BackupEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BackupEventData copyWith(void Function(BackupEventData) updates) =>
+      super.copyWith((message) => updates(message as BackupEventData))
+          as BackupEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BackupEventData create() => BackupEventData._();
   BackupEventData createEmptyInstance() => create();
-  static $pb.PbList<BackupEventData> createRepeated() => $pb.PbList<BackupEventData>();
+  static $pb.PbList<BackupEventData> createRepeated() =>
+      $pb.PbList<BackupEventData>();
   @$core.pragma('dart2js:noInline')
-  static BackupEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BackupEventData>(create);
+  static BackupEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BackupEventData>(create);
   static BackupEventData? _defaultInstance;
 
   /// Optional. The Backup event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Backup get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Backup v) { setField(1, v); }
+  set payload(Backup v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2355,40 +2918,53 @@ class ServiceEventData extends $pb.GeneratedMessage {
     return $result;
   }
   ServiceEventData._() : super();
-  factory ServiceEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ServiceEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ServiceEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ServiceEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.metastore.v1'), createEmptyInstance: create)
-    ..aOM<Service>(1, _omitFieldNames ? '' : 'payload', subBuilder: Service.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ServiceEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<Service>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: Service.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ServiceEventData clone() => ServiceEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ServiceEventData copyWith(void Function(ServiceEventData) updates) => super.copyWith((message) => updates(message as ServiceEventData)) as ServiceEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ServiceEventData copyWith(void Function(ServiceEventData) updates) =>
+      super.copyWith((message) => updates(message as ServiceEventData))
+          as ServiceEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ServiceEventData create() => ServiceEventData._();
   ServiceEventData createEmptyInstance() => create();
-  static $pb.PbList<ServiceEventData> createRepeated() => $pb.PbList<ServiceEventData>();
+  static $pb.PbList<ServiceEventData> createRepeated() =>
+      $pb.PbList<ServiceEventData>();
   @$core.pragma('dart2js:noInline')
-  static ServiceEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ServiceEventData>(create);
+  static ServiceEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ServiceEventData>(create);
   static ServiceEventData? _defaultInstance;
 
   /// Optional. The Service event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Service get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Service v) { setField(1, v); }
+  set payload(Service v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -2397,6 +2973,6 @@ class ServiceEventData extends $pb.GeneratedMessage {
   Service ensurePayload() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

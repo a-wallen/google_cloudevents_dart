@@ -43,7 +43,14 @@ final $typed_data.Uint8List namespacedNameDescriptor = $convert.base64Decode(
 const NamespacedNames$json = {
   '1': 'NamespacedNames',
   '2': [
-    {'1': 'namespaced_names', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.gkebackup.v1.NamespacedName', '10': 'namespacedNames'},
+    {
+      '1': 'namespaced_names',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.NamespacedName',
+      '10': 'namespacedNames'
+    },
   ],
 };
 
@@ -56,7 +63,13 @@ final $typed_data.Uint8List namespacedNamesDescriptor = $convert.base64Decode(
 const EncryptionKey$json = {
   '1': 'EncryptionKey',
   '2': [
-    {'1': 'gcp_kms_encryption_key', '3': 1, '4': 1, '5': 9, '10': 'gcpKmsEncryptionKey'},
+    {
+      '1': 'gcp_kms_encryption_key',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'gcpKmsEncryptionKey'
+    },
   ],
 };
 
@@ -71,31 +84,129 @@ const Backup$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'manual', '3': 5, '4': 1, '5': 8, '10': 'manual'},
-    {'1': 'labels', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.gkebackup.v1.Backup.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.Backup.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'delete_lock_days', '3': 7, '4': 1, '5': 5, '10': 'deleteLockDays'},
-    {'1': 'delete_lock_expire_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deleteLockExpireTime'},
+    {
+      '1': 'delete_lock_expire_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deleteLockExpireTime'
+    },
     {'1': 'retain_days', '3': 9, '4': 1, '5': 5, '10': 'retainDays'},
-    {'1': 'retain_expire_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'retainExpireTime'},
-    {'1': 'encryption_key', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.EncryptionKey', '10': 'encryptionKey'},
-    {'1': 'all_namespaces', '3': 12, '4': 1, '5': 8, '9': 0, '10': 'allNamespaces'},
-    {'1': 'selected_namespaces', '3': 13, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.Namespaces', '9': 0, '10': 'selectedNamespaces'},
-    {'1': 'selected_applications', '3': 14, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.NamespacedNames', '9': 0, '10': 'selectedApplications'},
-    {'1': 'contains_volume_data', '3': 15, '4': 1, '5': 8, '10': 'containsVolumeData'},
+    {
+      '1': 'retain_expire_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'retainExpireTime'
+    },
+    {
+      '1': 'encryption_key',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.EncryptionKey',
+      '10': 'encryptionKey'
+    },
+    {
+      '1': 'all_namespaces',
+      '3': 12,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'allNamespaces'
+    },
+    {
+      '1': 'selected_namespaces',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.Namespaces',
+      '9': 0,
+      '10': 'selectedNamespaces'
+    },
+    {
+      '1': 'selected_applications',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.NamespacedNames',
+      '9': 0,
+      '10': 'selectedApplications'
+    },
+    {
+      '1': 'contains_volume_data',
+      '3': 15,
+      '4': 1,
+      '5': 8,
+      '10': 'containsVolumeData'
+    },
     {'1': 'contains_secrets', '3': 16, '4': 1, '5': 8, '10': 'containsSecrets'},
-    {'1': 'cluster_metadata', '3': 17, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.Backup.ClusterMetadata', '10': 'clusterMetadata'},
-    {'1': 'state', '3': 18, '4': 1, '5': 14, '6': '.google.events.cloud.gkebackup.v1.Backup.State', '10': 'state'},
+    {
+      '1': 'cluster_metadata',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.Backup.ClusterMetadata',
+      '10': 'clusterMetadata'
+    },
+    {
+      '1': 'state',
+      '3': 18,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.gkebackup.v1.Backup.State',
+      '10': 'state'
+    },
     {'1': 'state_reason', '3': 19, '4': 1, '5': 9, '10': 'stateReason'},
-    {'1': 'complete_time', '3': 20, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'completeTime'},
+    {
+      '1': 'complete_time',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'completeTime'
+    },
     {'1': 'resource_count', '3': 21, '4': 1, '5': 5, '10': 'resourceCount'},
     {'1': 'volume_count', '3': 22, '4': 1, '5': 5, '10': 'volumeCount'},
     {'1': 'size_bytes', '3': 23, '4': 1, '5': 3, '10': 'sizeBytes'},
     {'1': 'etag', '3': 24, '4': 1, '5': 9, '10': 'etag'},
     {'1': 'description', '3': 25, '4': 1, '5': 9, '10': 'description'},
     {'1': 'pod_count', '3': 26, '4': 1, '5': 5, '10': 'podCount'},
-    {'1': 'config_backup_size_bytes', '3': 27, '4': 1, '5': 3, '10': 'configBackupSizeBytes'},
+    {
+      '1': 'config_backup_size_bytes',
+      '3': 27,
+      '4': 1,
+      '5': 3,
+      '10': 'configBackupSizeBytes'
+    },
   ],
   '3': [Backup_ClusterMetadata$json, Backup_LabelsEntry$json],
   '4': [Backup_State$json],
@@ -110,9 +221,24 @@ const Backup_ClusterMetadata$json = {
   '2': [
     {'1': 'cluster', '3': 1, '4': 1, '5': 9, '10': 'cluster'},
     {'1': 'k8s_version', '3': 2, '4': 1, '5': 9, '10': 'k8sVersion'},
-    {'1': 'backup_crd_versions', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.gkebackup.v1.Backup.ClusterMetadata.BackupCrdVersionsEntry', '10': 'backupCrdVersions'},
+    {
+      '1': 'backup_crd_versions',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.gkebackup.v1.Backup.ClusterMetadata.BackupCrdVersionsEntry',
+      '10': 'backupCrdVersions'
+    },
     {'1': 'gke_version', '3': 4, '4': 1, '5': 9, '9': 0, '10': 'gkeVersion'},
-    {'1': 'anthos_version', '3': 5, '4': 1, '5': 9, '9': 0, '10': 'anthosVersion'},
+    {
+      '1': 'anthos_version',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'anthosVersion'
+    },
   ],
   '3': [Backup_ClusterMetadata_BackupCrdVersionsEntry$json],
   '8': [
@@ -198,27 +324,92 @@ const BackupPlan$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'cluster', '3': 6, '4': 1, '5': 9, '10': 'cluster'},
-    {'1': 'retention_policy', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.BackupPlan.RetentionPolicy', '10': 'retentionPolicy'},
-    {'1': 'labels', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.gkebackup.v1.BackupPlan.LabelsEntry', '10': 'labels'},
-    {'1': 'backup_schedule', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.BackupPlan.Schedule', '10': 'backupSchedule'},
+    {
+      '1': 'retention_policy',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.BackupPlan.RetentionPolicy',
+      '10': 'retentionPolicy'
+    },
+    {
+      '1': 'labels',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.BackupPlan.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'backup_schedule',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.BackupPlan.Schedule',
+      '10': 'backupSchedule'
+    },
     {'1': 'etag', '3': 10, '4': 1, '5': 9, '10': 'etag'},
     {'1': 'deactivated', '3': 11, '4': 1, '5': 8, '10': 'deactivated'},
-    {'1': 'backup_config', '3': 12, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.BackupPlan.BackupConfig', '10': 'backupConfig'},
-    {'1': 'protected_pod_count', '3': 13, '4': 1, '5': 5, '10': 'protectedPodCount'},
+    {
+      '1': 'backup_config',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.BackupPlan.BackupConfig',
+      '10': 'backupConfig'
+    },
+    {
+      '1': 'protected_pod_count',
+      '3': 13,
+      '4': 1,
+      '5': 5,
+      '10': 'protectedPodCount'
+    },
   ],
-  '3': [BackupPlan_RetentionPolicy$json, BackupPlan_Schedule$json, BackupPlan_BackupConfig$json, BackupPlan_LabelsEntry$json],
+  '3': [
+    BackupPlan_RetentionPolicy$json,
+    BackupPlan_Schedule$json,
+    BackupPlan_BackupConfig$json,
+    BackupPlan_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use backupPlanDescriptor instead')
 const BackupPlan_RetentionPolicy$json = {
   '1': 'RetentionPolicy',
   '2': [
-    {'1': 'backup_delete_lock_days', '3': 1, '4': 1, '5': 5, '10': 'backupDeleteLockDays'},
-    {'1': 'backup_retain_days', '3': 2, '4': 1, '5': 5, '10': 'backupRetainDays'},
+    {
+      '1': 'backup_delete_lock_days',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'backupDeleteLockDays'
+    },
+    {
+      '1': 'backup_retain_days',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'backupRetainDays'
+    },
     {'1': 'locked', '3': 3, '4': 1, '5': 8, '10': 'locked'},
   ],
 };
@@ -236,12 +427,48 @@ const BackupPlan_Schedule$json = {
 const BackupPlan_BackupConfig$json = {
   '1': 'BackupConfig',
   '2': [
-    {'1': 'all_namespaces', '3': 1, '4': 1, '5': 8, '9': 0, '10': 'allNamespaces'},
-    {'1': 'selected_namespaces', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.Namespaces', '9': 0, '10': 'selectedNamespaces'},
-    {'1': 'selected_applications', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.NamespacedNames', '9': 0, '10': 'selectedApplications'},
-    {'1': 'include_volume_data', '3': 4, '4': 1, '5': 8, '10': 'includeVolumeData'},
+    {
+      '1': 'all_namespaces',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'allNamespaces'
+    },
+    {
+      '1': 'selected_namespaces',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.Namespaces',
+      '9': 0,
+      '10': 'selectedNamespaces'
+    },
+    {
+      '1': 'selected_applications',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.NamespacedNames',
+      '9': 0,
+      '10': 'selectedApplications'
+    },
+    {
+      '1': 'include_volume_data',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'includeVolumeData'
+    },
     {'1': 'include_secrets', '3': 5, '4': 1, '5': 8, '10': 'includeSecrets'},
-    {'1': 'encryption_key', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.EncryptionKey', '10': 'encryptionKey'},
+    {
+      '1': 'encryption_key',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.EncryptionKey',
+      '10': 'encryptionKey'
+    },
   ],
   '8': [
     {'1': 'backup_scope'},
@@ -294,20 +521,86 @@ const Restore$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'backup', '3': 6, '4': 1, '5': 9, '10': 'backup'},
     {'1': 'cluster', '3': 7, '4': 1, '5': 9, '10': 'cluster'},
-    {'1': 'restore_config', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestoreConfig', '10': 'restoreConfig'},
-    {'1': 'labels', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.gkebackup.v1.Restore.LabelsEntry', '10': 'labels'},
-    {'1': 'state', '3': 10, '4': 1, '5': 14, '6': '.google.events.cloud.gkebackup.v1.Restore.State', '10': 'state'},
+    {
+      '1': 'restore_config',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestoreConfig',
+      '10': 'restoreConfig'
+    },
+    {
+      '1': 'labels',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.Restore.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'state',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.gkebackup.v1.Restore.State',
+      '10': 'state'
+    },
     {'1': 'state_reason', '3': 11, '4': 1, '5': 9, '10': 'stateReason'},
-    {'1': 'complete_time', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'completeTime'},
-    {'1': 'resources_restored_count', '3': 13, '4': 1, '5': 5, '10': 'resourcesRestoredCount'},
-    {'1': 'resources_excluded_count', '3': 14, '4': 1, '5': 5, '10': 'resourcesExcludedCount'},
-    {'1': 'resources_failed_count', '3': 15, '4': 1, '5': 5, '10': 'resourcesFailedCount'},
-    {'1': 'volumes_restored_count', '3': 16, '4': 1, '5': 5, '10': 'volumesRestoredCount'},
+    {
+      '1': 'complete_time',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'completeTime'
+    },
+    {
+      '1': 'resources_restored_count',
+      '3': 13,
+      '4': 1,
+      '5': 5,
+      '10': 'resourcesRestoredCount'
+    },
+    {
+      '1': 'resources_excluded_count',
+      '3': 14,
+      '4': 1,
+      '5': 5,
+      '10': 'resourcesExcludedCount'
+    },
+    {
+      '1': 'resources_failed_count',
+      '3': 15,
+      '4': 1,
+      '5': 5,
+      '10': 'resourcesFailedCount'
+    },
+    {
+      '1': 'volumes_restored_count',
+      '3': 16,
+      '4': 1,
+      '5': 5,
+      '10': 'volumesRestoredCount'
+    },
     {'1': 'etag', '3': 17, '4': 1, '5': 9, '10': 'etag'},
   ],
   '3': [Restore_LabelsEntry$json],
@@ -362,17 +655,87 @@ final $typed_data.Uint8List restoreDescriptor = $convert.base64Decode(
 const RestoreConfig$json = {
   '1': 'RestoreConfig',
   '2': [
-    {'1': 'volume_data_restore_policy', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.gkebackup.v1.RestoreConfig.VolumeDataRestorePolicy', '10': 'volumeDataRestorePolicy'},
-    {'1': 'cluster_resource_conflict_policy', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.gkebackup.v1.RestoreConfig.ClusterResourceConflictPolicy', '10': 'clusterResourceConflictPolicy'},
-    {'1': 'namespaced_resource_restore_mode', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.gkebackup.v1.RestoreConfig.NamespacedResourceRestoreMode', '10': 'namespacedResourceRestoreMode'},
-    {'1': 'cluster_resource_restore_scope', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestoreConfig.ClusterResourceRestoreScope', '10': 'clusterResourceRestoreScope'},
-    {'1': 'all_namespaces', '3': 5, '4': 1, '5': 8, '9': 0, '10': 'allNamespaces'},
-    {'1': 'selected_namespaces', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.Namespaces', '9': 0, '10': 'selectedNamespaces'},
-    {'1': 'selected_applications', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.NamespacedNames', '9': 0, '10': 'selectedApplications'},
-    {'1': 'substitution_rules', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestoreConfig.SubstitutionRule', '10': 'substitutionRules'},
+    {
+      '1': 'volume_data_restore_policy',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.gkebackup.v1.RestoreConfig.VolumeDataRestorePolicy',
+      '10': 'volumeDataRestorePolicy'
+    },
+    {
+      '1': 'cluster_resource_conflict_policy',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.gkebackup.v1.RestoreConfig.ClusterResourceConflictPolicy',
+      '10': 'clusterResourceConflictPolicy'
+    },
+    {
+      '1': 'namespaced_resource_restore_mode',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.gkebackup.v1.RestoreConfig.NamespacedResourceRestoreMode',
+      '10': 'namespacedResourceRestoreMode'
+    },
+    {
+      '1': 'cluster_resource_restore_scope',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.gkebackup.v1.RestoreConfig.ClusterResourceRestoreScope',
+      '10': 'clusterResourceRestoreScope'
+    },
+    {
+      '1': 'all_namespaces',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'allNamespaces'
+    },
+    {
+      '1': 'selected_namespaces',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.Namespaces',
+      '9': 0,
+      '10': 'selectedNamespaces'
+    },
+    {
+      '1': 'selected_applications',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.NamespacedNames',
+      '9': 0,
+      '10': 'selectedApplications'
+    },
+    {
+      '1': 'substitution_rules',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestoreConfig.SubstitutionRule',
+      '10': 'substitutionRules'
+    },
   ],
-  '3': [RestoreConfig_GroupKind$json, RestoreConfig_ClusterResourceRestoreScope$json, RestoreConfig_SubstitutionRule$json],
-  '4': [RestoreConfig_VolumeDataRestorePolicy$json, RestoreConfig_ClusterResourceConflictPolicy$json, RestoreConfig_NamespacedResourceRestoreMode$json],
+  '3': [
+    RestoreConfig_GroupKind$json,
+    RestoreConfig_ClusterResourceRestoreScope$json,
+    RestoreConfig_SubstitutionRule$json
+  ],
+  '4': [
+    RestoreConfig_VolumeDataRestorePolicy$json,
+    RestoreConfig_ClusterResourceConflictPolicy$json,
+    RestoreConfig_NamespacedResourceRestoreMode$json
+  ],
   '8': [
     {'1': 'namespaced_resource_restore_scope'},
   ],
@@ -391,7 +754,14 @@ const RestoreConfig_GroupKind$json = {
 const RestoreConfig_ClusterResourceRestoreScope$json = {
   '1': 'ClusterResourceRestoreScope',
   '2': [
-    {'1': 'selected_group_kinds', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestoreConfig.GroupKind', '10': 'selectedGroupKinds'},
+    {
+      '1': 'selected_group_kinds',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestoreConfig.GroupKind',
+      '10': 'selectedGroupKinds'
+    },
   ],
 };
 
@@ -399,10 +769,29 @@ const RestoreConfig_ClusterResourceRestoreScope$json = {
 const RestoreConfig_SubstitutionRule$json = {
   '1': 'SubstitutionRule',
   '2': [
-    {'1': 'target_namespaces', '3': 1, '4': 3, '5': 9, '10': 'targetNamespaces'},
-    {'1': 'target_group_kinds', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestoreConfig.GroupKind', '10': 'targetGroupKinds'},
+    {
+      '1': 'target_namespaces',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'targetNamespaces'
+    },
+    {
+      '1': 'target_group_kinds',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestoreConfig.GroupKind',
+      '10': 'targetGroupKinds'
+    },
     {'1': 'target_json_path', '3': 3, '4': 1, '5': 9, '10': 'targetJsonPath'},
-    {'1': 'original_value_pattern', '3': 4, '4': 1, '5': 9, '10': 'originalValuePattern'},
+    {
+      '1': 'original_value_pattern',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'originalValuePattern'
+    },
     {'1': 'new_value', '3': 5, '4': 1, '5': 9, '10': 'newValue'},
   ],
 };
@@ -483,13 +872,41 @@ const RestorePlan$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'backup_plan', '3': 6, '4': 1, '5': 9, '10': 'backupPlan'},
     {'1': 'cluster', '3': 7, '4': 1, '5': 9, '10': 'cluster'},
-    {'1': 'restore_config', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestoreConfig', '10': 'restoreConfig'},
-    {'1': 'labels', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestorePlan.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'restore_config',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestoreConfig',
+      '10': 'restoreConfig'
+    },
+    {
+      '1': 'labels',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestorePlan.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'etag', '3': 10, '4': 1, '5': 9, '10': 'etag'},
   ],
   '3': [RestorePlan_LabelsEntry$json],
@@ -522,7 +939,16 @@ final $typed_data.Uint8List restorePlanDescriptor = $convert.base64Decode(
 const RestorePlanEventData$json = {
   '1': 'RestorePlanEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.RestorePlan', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.RestorePlan',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -539,7 +965,16 @@ final $typed_data.Uint8List restorePlanEventDataDescriptor = $convert.base64Deco
 const BackupEventData$json = {
   '1': 'BackupEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.Backup', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.Backup',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -555,7 +990,16 @@ final $typed_data.Uint8List backupEventDataDescriptor = $convert.base64Decode(
 const BackupPlanEventData$json = {
   '1': 'BackupPlanEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.BackupPlan', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.BackupPlan',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -571,7 +1015,16 @@ final $typed_data.Uint8List backupPlanEventDataDescriptor = $convert.base64Decod
 const RestoreEventData$json = {
   '1': 'RestoreEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkebackup.v1.Restore', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkebackup.v1.Restore',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -582,4 +1035,3 @@ const RestoreEventData$json = {
 final $typed_data.Uint8List restoreEventDataDescriptor = $convert.base64Decode(
     'ChBSZXN0b3JlRXZlbnREYXRhEkgKB3BheWxvYWQYASABKAsyKS5nb29nbGUuZXZlbnRzLmNsb3'
     'VkLmdrZWJhY2t1cC52MS5SZXN0b3JlSABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
-

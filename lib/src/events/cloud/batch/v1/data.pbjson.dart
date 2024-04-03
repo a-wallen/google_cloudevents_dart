@@ -17,8 +17,24 @@ import 'dart:typed_data' as $typed_data;
 const Volume$json = {
   '1': 'Volume',
   '2': [
-    {'1': 'nfs', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.NFS', '9': 0, '10': 'nfs'},
-    {'1': 'gcs', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.GCS', '9': 0, '10': 'gcs'},
+    {
+      '1': 'nfs',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.NFS',
+      '9': 0,
+      '10': 'nfs'
+    },
+    {
+      '1': 'gcs',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.GCS',
+      '9': 0,
+      '10': 'gcs'
+    },
     {'1': 'device_name', '3': 6, '4': 1, '5': 9, '9': 0, '10': 'deviceName'},
     {'1': 'mount_path', '3': 4, '4': 1, '5': 9, '10': 'mountPath'},
     {'1': 'mount_options', '3': 5, '4': 3, '5': 9, '10': 'mountOptions'},
@@ -59,8 +75,8 @@ const GCS$json = {
 };
 
 /// Descriptor for `GCS`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List gCSDescriptor = $convert.base64Decode(
-    'CgNHQ1MSHwoLcmVtb3RlX3BhdGgYASABKAlSCnJlbW90ZVBhdGg=');
+final $typed_data.Uint8List gCSDescriptor = $convert
+    .base64Decode('CgNHQ1MSHwoLcmVtb3RlX3BhdGgYASABKAlSCnJlbW90ZVBhdGg=');
 
 @$core.Deprecated('Use computeResourceDescriptor instead')
 const ComputeResource$json = {
@@ -84,9 +100,30 @@ const StatusEvent$json = {
   '2': [
     {'1': 'type', '3': 3, '4': 1, '5': 9, '10': 'type'},
     {'1': 'description', '3': 1, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'event_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'eventTime'},
-    {'1': 'task_execution', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.TaskExecution', '10': 'taskExecution'},
-    {'1': 'task_state', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.batch.v1.TaskStatus.State', '10': 'taskState'},
+    {
+      '1': 'event_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'eventTime'
+    },
+    {
+      '1': 'task_execution',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.TaskExecution',
+      '10': 'taskExecution'
+    },
+    {
+      '1': 'task_state',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.batch.v1.TaskStatus.State',
+      '10': 'taskState'
+    },
   ],
 };
 
@@ -141,17 +178,73 @@ final $typed_data.Uint8List taskStatusDescriptor = $convert.base64Decode(
 const Runnable$json = {
   '1': 'Runnable',
   '2': [
-    {'1': 'container', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.Runnable.Container', '9': 0, '10': 'container'},
-    {'1': 'script', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.Runnable.Script', '9': 0, '10': 'script'},
-    {'1': 'barrier', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.Runnable.Barrier', '9': 0, '10': 'barrier'},
-    {'1': 'ignore_exit_status', '3': 3, '4': 1, '5': 8, '10': 'ignoreExitStatus'},
+    {
+      '1': 'container',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Runnable.Container',
+      '9': 0,
+      '10': 'container'
+    },
+    {
+      '1': 'script',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Runnable.Script',
+      '9': 0,
+      '10': 'script'
+    },
+    {
+      '1': 'barrier',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Runnable.Barrier',
+      '9': 0,
+      '10': 'barrier'
+    },
+    {
+      '1': 'ignore_exit_status',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'ignoreExitStatus'
+    },
     {'1': 'background', '3': 4, '4': 1, '5': 8, '10': 'background'},
     {'1': 'always_run', '3': 5, '4': 1, '5': 8, '10': 'alwaysRun'},
-    {'1': 'environment', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.Environment', '10': 'environment'},
-    {'1': 'timeout', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'timeout'},
-    {'1': 'labels', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.Runnable.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'environment',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Environment',
+      '10': 'environment'
+    },
+    {
+      '1': 'timeout',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'timeout'
+    },
+    {
+      '1': 'labels',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Runnable.LabelsEntry',
+      '10': 'labels'
+    },
   ],
-  '3': [Runnable_Container$json, Runnable_Script$json, Runnable_Barrier$json, Runnable_LabelsEntry$json],
+  '3': [
+    Runnable_Container$json,
+    Runnable_Script$json,
+    Runnable_Barrier$json,
+    Runnable_LabelsEntry$json
+  ],
   '8': [
     {'1': 'executable'},
   ],
@@ -166,7 +259,13 @@ const Runnable_Container$json = {
     {'1': 'entrypoint', '3': 3, '4': 1, '5': 9, '10': 'entrypoint'},
     {'1': 'volumes', '3': 7, '4': 3, '5': 9, '10': 'volumes'},
     {'1': 'options', '3': 8, '4': 1, '5': 9, '10': 'options'},
-    {'1': 'block_external_network', '3': 9, '4': 1, '5': 8, '10': 'blockExternalNetwork'},
+    {
+      '1': 'block_external_network',
+      '3': 9,
+      '4': 1,
+      '5': 8,
+      '10': 'blockExternalNetwork'
+    },
     {'1': 'username', '3': 10, '4': 1, '5': 9, '10': 'username'},
     {'1': 'password', '3': 11, '4': 1, '5': 9, '10': 'password'},
   ],
@@ -227,14 +326,63 @@ final $typed_data.Uint8List runnableDescriptor = $convert.base64Decode(
 const TaskSpec$json = {
   '1': 'TaskSpec',
   '2': [
-    {'1': 'runnables', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.Runnable', '10': 'runnables'},
-    {'1': 'compute_resource', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.ComputeResource', '10': 'computeResource'},
-    {'1': 'max_run_duration', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'maxRunDuration'},
+    {
+      '1': 'runnables',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Runnable',
+      '10': 'runnables'
+    },
+    {
+      '1': 'compute_resource',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.ComputeResource',
+      '10': 'computeResource'
+    },
+    {
+      '1': 'max_run_duration',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'maxRunDuration'
+    },
     {'1': 'max_retry_count', '3': 5, '4': 1, '5': 5, '10': 'maxRetryCount'},
-    {'1': 'lifecycle_policies', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.LifecyclePolicy', '10': 'lifecyclePolicies'},
-    {'1': 'environments', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.TaskSpec.EnvironmentsEntry', '10': 'environments'},
-    {'1': 'volumes', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.Volume', '10': 'volumes'},
-    {'1': 'environment', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.Environment', '10': 'environment'},
+    {
+      '1': 'lifecycle_policies',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.LifecyclePolicy',
+      '10': 'lifecyclePolicies'
+    },
+    {
+      '1': 'environments',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.TaskSpec.EnvironmentsEntry',
+      '10': 'environments'
+    },
+    {
+      '1': 'volumes',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Volume',
+      '10': 'volumes'
+    },
+    {
+      '1': 'environment',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Environment',
+      '10': 'environment'
+    },
   ],
   '3': [TaskSpec_EnvironmentsEntry$json],
 };
@@ -269,8 +417,22 @@ final $typed_data.Uint8List taskSpecDescriptor = $convert.base64Decode(
 const LifecyclePolicy$json = {
   '1': 'LifecyclePolicy',
   '2': [
-    {'1': 'action', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.batch.v1.LifecyclePolicy.Action', '10': 'action'},
-    {'1': 'action_condition', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.LifecyclePolicy.ActionCondition', '10': 'actionCondition'},
+    {
+      '1': 'action',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.batch.v1.LifecyclePolicy.Action',
+      '10': 'action'
+    },
+    {
+      '1': 'action_condition',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.LifecyclePolicy.ActionCondition',
+      '10': 'actionCondition'
+    },
   ],
   '3': [LifecyclePolicy_ActionCondition$json],
   '4': [LifecyclePolicy_Action$json],
@@ -307,11 +469,36 @@ final $typed_data.Uint8List lifecyclePolicyDescriptor = $convert.base64Decode(
 const Environment$json = {
   '1': 'Environment',
   '2': [
-    {'1': 'variables', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.Environment.VariablesEntry', '10': 'variables'},
-    {'1': 'secret_variables', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.Environment.SecretVariablesEntry', '10': 'secretVariables'},
-    {'1': 'encrypted_variables', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.Environment.KMSEnvMap', '10': 'encryptedVariables'},
+    {
+      '1': 'variables',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Environment.VariablesEntry',
+      '10': 'variables'
+    },
+    {
+      '1': 'secret_variables',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Environment.SecretVariablesEntry',
+      '10': 'secretVariables'
+    },
+    {
+      '1': 'encrypted_variables',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Environment.KMSEnvMap',
+      '10': 'encryptedVariables'
+    },
   ],
-  '3': [Environment_KMSEnvMap$json, Environment_VariablesEntry$json, Environment_SecretVariablesEntry$json],
+  '3': [
+    Environment_KMSEnvMap$json,
+    Environment_VariablesEntry$json,
+    Environment_SecretVariablesEntry$json
+  ],
 };
 
 @$core.Deprecated('Use environmentDescriptor instead')
@@ -363,14 +550,70 @@ const Job$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
     {'1': 'priority', '3': 3, '4': 1, '5': 3, '10': 'priority'},
-    {'1': 'task_groups', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.TaskGroup', '10': 'taskGroups'},
-    {'1': 'allocation_policy', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy', '10': 'allocationPolicy'},
-    {'1': 'labels', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.Job.LabelsEntry', '10': 'labels'},
-    {'1': 'status', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.JobStatus', '10': 'status'},
-    {'1': 'create_time', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'logs_policy', '3': 13, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.LogsPolicy', '10': 'logsPolicy'},
-    {'1': 'notifications', '3': 14, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.JobNotification', '10': 'notifications'},
+    {
+      '1': 'task_groups',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.TaskGroup',
+      '10': 'taskGroups'
+    },
+    {
+      '1': 'allocation_policy',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy',
+      '10': 'allocationPolicy'
+    },
+    {
+      '1': 'labels',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Job.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'status',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.JobStatus',
+      '10': 'status'
+    },
+    {
+      '1': 'create_time',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'logs_policy',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.LogsPolicy',
+      '10': 'logsPolicy'
+    },
+    {
+      '1': 'notifications',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.JobNotification',
+      '10': 'notifications'
+    },
   ],
   '3': [Job_LabelsEntry$json],
 };
@@ -405,7 +648,14 @@ final $typed_data.Uint8List jobDescriptor = $convert.base64Decode(
 const LogsPolicy$json = {
   '1': 'LogsPolicy',
   '2': [
-    {'1': 'destination', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.batch.v1.LogsPolicy.Destination', '10': 'destination'},
+    {
+      '1': 'destination',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.batch.v1.LogsPolicy.Destination',
+      '10': 'destination'
+    },
     {'1': 'logs_path', '3': 2, '4': 1, '5': 9, '10': 'logsPath'},
   ],
   '4': [LogsPolicy_Destination$json],
@@ -432,12 +682,44 @@ final $typed_data.Uint8List logsPolicyDescriptor = $convert.base64Decode(
 const JobStatus$json = {
   '1': 'JobStatus',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.batch.v1.JobStatus.State', '10': 'state'},
-    {'1': 'status_events', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.StatusEvent', '10': 'statusEvents'},
-    {'1': 'task_groups', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.JobStatus.TaskGroupsEntry', '10': 'taskGroups'},
-    {'1': 'run_duration', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'runDuration'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.batch.v1.JobStatus.State',
+      '10': 'state'
+    },
+    {
+      '1': 'status_events',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.StatusEvent',
+      '10': 'statusEvents'
+    },
+    {
+      '1': 'task_groups',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.JobStatus.TaskGroupsEntry',
+      '10': 'taskGroups'
+    },
+    {
+      '1': 'run_duration',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'runDuration'
+    },
   ],
-  '3': [JobStatus_InstanceStatus$json, JobStatus_TaskGroupStatus$json, JobStatus_TaskGroupsEntry$json],
+  '3': [
+    JobStatus_InstanceStatus$json,
+    JobStatus_TaskGroupStatus$json,
+    JobStatus_TaskGroupsEntry$json
+  ],
   '4': [JobStatus_State$json],
 };
 
@@ -446,9 +728,23 @@ const JobStatus_InstanceStatus$json = {
   '1': 'InstanceStatus',
   '2': [
     {'1': 'machine_type', '3': 1, '4': 1, '5': 9, '10': 'machineType'},
-    {'1': 'provisioning_model', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.batch.v1.AllocationPolicy.ProvisioningModel', '10': 'provisioningModel'},
+    {
+      '1': 'provisioning_model',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.ProvisioningModel',
+      '10': 'provisioningModel'
+    },
     {'1': 'task_pack', '3': 3, '4': 1, '5': 3, '10': 'taskPack'},
-    {'1': 'boot_disk', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.Disk', '10': 'bootDisk'},
+    {
+      '1': 'boot_disk',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.Disk',
+      '10': 'bootDisk'
+    },
   ],
 };
 
@@ -456,8 +752,23 @@ const JobStatus_InstanceStatus$json = {
 const JobStatus_TaskGroupStatus$json = {
   '1': 'TaskGroupStatus',
   '2': [
-    {'1': 'counts', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.JobStatus.TaskGroupStatus.CountsEntry', '10': 'counts'},
-    {'1': 'instances', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.JobStatus.InstanceStatus', '10': 'instances'},
+    {
+      '1': 'counts',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.batch.v1.JobStatus.TaskGroupStatus.CountsEntry',
+      '10': 'counts'
+    },
+    {
+      '1': 'instances',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.JobStatus.InstanceStatus',
+      '10': 'instances'
+    },
   ],
   '3': [JobStatus_TaskGroupStatus_CountsEntry$json],
 };
@@ -477,7 +788,14 @@ const JobStatus_TaskGroupsEntry$json = {
   '1': 'TaskGroupsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.JobStatus.TaskGroupStatus', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.JobStatus.TaskGroupStatus',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -524,7 +842,14 @@ const JobNotification$json = {
   '1': 'JobNotification',
   '2': [
     {'1': 'pubsub_topic', '3': 1, '4': 1, '5': 9, '10': 'pubsubTopic'},
-    {'1': 'message', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.JobNotification.Message', '10': 'message'},
+    {
+      '1': 'message',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.JobNotification.Message',
+      '10': 'message'
+    },
   ],
   '3': [JobNotification_Message$json],
   '4': [JobNotification_Type$json],
@@ -534,9 +859,30 @@ const JobNotification$json = {
 const JobNotification_Message$json = {
   '1': 'Message',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.batch.v1.JobNotification.Type', '10': 'type'},
-    {'1': 'new_job_state', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.batch.v1.JobStatus.State', '10': 'newJobState'},
-    {'1': 'new_task_state', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.batch.v1.TaskStatus.State', '10': 'newTaskState'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.batch.v1.JobNotification.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'new_job_state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.batch.v1.JobStatus.State',
+      '10': 'newJobState'
+    },
+    {
+      '1': 'new_task_state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.batch.v1.TaskStatus.State',
+      '10': 'newTaskState'
+    },
   ],
 };
 
@@ -566,14 +912,68 @@ final $typed_data.Uint8List jobNotificationDescriptor = $convert.base64Decode(
 const AllocationPolicy$json = {
   '1': 'AllocationPolicy',
   '2': [
-    {'1': 'location', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.LocationPolicy', '10': 'location'},
-    {'1': 'instances', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.InstancePolicyOrTemplate', '10': 'instances'},
-    {'1': 'service_account', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.ServiceAccount', '10': 'serviceAccount'},
-    {'1': 'labels', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.LabelsEntry', '10': 'labels'},
-    {'1': 'network', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.NetworkPolicy', '10': 'network'},
-    {'1': 'placement', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.PlacementPolicy', '10': 'placement'},
+    {
+      '1': 'location',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.LocationPolicy',
+      '10': 'location'
+    },
+    {
+      '1': 'instances',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.batch.v1.AllocationPolicy.InstancePolicyOrTemplate',
+      '10': 'instances'
+    },
+    {
+      '1': 'service_account',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.ServiceAccount',
+      '10': 'serviceAccount'
+    },
+    {
+      '1': 'labels',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'network',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.NetworkPolicy',
+      '10': 'network'
+    },
+    {
+      '1': 'placement',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.PlacementPolicy',
+      '10': 'placement'
+    },
   ],
-  '3': [AllocationPolicy_LocationPolicy$json, AllocationPolicy_Disk$json, AllocationPolicy_AttachedDisk$json, AllocationPolicy_Accelerator$json, AllocationPolicy_InstancePolicy$json, AllocationPolicy_InstancePolicyOrTemplate$json, AllocationPolicy_NetworkInterface$json, AllocationPolicy_NetworkPolicy$json, AllocationPolicy_PlacementPolicy$json, AllocationPolicy_LabelsEntry$json],
+  '3': [
+    AllocationPolicy_LocationPolicy$json,
+    AllocationPolicy_Disk$json,
+    AllocationPolicy_AttachedDisk$json,
+    AllocationPolicy_Accelerator$json,
+    AllocationPolicy_InstancePolicy$json,
+    AllocationPolicy_InstancePolicyOrTemplate$json,
+    AllocationPolicy_NetworkInterface$json,
+    AllocationPolicy_NetworkPolicy$json,
+    AllocationPolicy_PlacementPolicy$json,
+    AllocationPolicy_LabelsEntry$json
+  ],
   '4': [AllocationPolicy_ProvisioningModel$json],
 };
 
@@ -581,7 +981,13 @@ const AllocationPolicy$json = {
 const AllocationPolicy_LocationPolicy$json = {
   '1': 'LocationPolicy',
   '2': [
-    {'1': 'allowed_locations', '3': 1, '4': 3, '5': 9, '10': 'allowedLocations'},
+    {
+      '1': 'allowed_locations',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'allowedLocations'
+    },
   ],
 };
 
@@ -604,8 +1010,23 @@ const AllocationPolicy_Disk$json = {
 const AllocationPolicy_AttachedDisk$json = {
   '1': 'AttachedDisk',
   '2': [
-    {'1': 'new_disk', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.Disk', '9': 0, '10': 'newDisk'},
-    {'1': 'existing_disk', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'existingDisk'},
+    {
+      '1': 'new_disk',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.Disk',
+      '9': 0,
+      '10': 'newDisk'
+    },
+    {
+      '1': 'existing_disk',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'existingDisk'
+    },
     {'1': 'device_name', '3': 3, '4': 1, '5': 9, '10': 'deviceName'},
   ],
   '8': [
@@ -619,7 +1040,13 @@ const AllocationPolicy_Accelerator$json = {
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
     {'1': 'count', '3': 2, '4': 1, '5': 3, '10': 'count'},
-    {'1': 'install_gpu_drivers', '3': 3, '4': 1, '5': 8, '10': 'installGpuDrivers'},
+    {
+      '1': 'install_gpu_drivers',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'installGpuDrivers'
+    },
   ],
 };
 
@@ -629,10 +1056,38 @@ const AllocationPolicy_InstancePolicy$json = {
   '2': [
     {'1': 'machine_type', '3': 2, '4': 1, '5': 9, '10': 'machineType'},
     {'1': 'min_cpu_platform', '3': 3, '4': 1, '5': 9, '10': 'minCpuPlatform'},
-    {'1': 'provisioning_model', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.batch.v1.AllocationPolicy.ProvisioningModel', '10': 'provisioningModel'},
-    {'1': 'accelerators', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.Accelerator', '10': 'accelerators'},
-    {'1': 'boot_disk', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.Disk', '10': 'bootDisk'},
-    {'1': 'disks', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.AttachedDisk', '10': 'disks'},
+    {
+      '1': 'provisioning_model',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.ProvisioningModel',
+      '10': 'provisioningModel'
+    },
+    {
+      '1': 'accelerators',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.Accelerator',
+      '10': 'accelerators'
+    },
+    {
+      '1': 'boot_disk',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.Disk',
+      '10': 'bootDisk'
+    },
+    {
+      '1': 'disks',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.AttachedDisk',
+      '10': 'disks'
+    },
   ],
 };
 
@@ -640,9 +1095,30 @@ const AllocationPolicy_InstancePolicy$json = {
 const AllocationPolicy_InstancePolicyOrTemplate$json = {
   '1': 'InstancePolicyOrTemplate',
   '2': [
-    {'1': 'policy', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.InstancePolicy', '9': 0, '10': 'policy'},
-    {'1': 'instance_template', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'instanceTemplate'},
-    {'1': 'install_gpu_drivers', '3': 3, '4': 1, '5': 8, '10': 'installGpuDrivers'},
+    {
+      '1': 'policy',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.InstancePolicy',
+      '9': 0,
+      '10': 'policy'
+    },
+    {
+      '1': 'instance_template',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'instanceTemplate'
+    },
+    {
+      '1': 'install_gpu_drivers',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'installGpuDrivers'
+    },
   ],
   '8': [
     {'1': 'policy_template'},
@@ -655,7 +1131,13 @@ const AllocationPolicy_NetworkInterface$json = {
   '2': [
     {'1': 'network', '3': 1, '4': 1, '5': 9, '10': 'network'},
     {'1': 'subnetwork', '3': 2, '4': 1, '5': 9, '10': 'subnetwork'},
-    {'1': 'no_external_ip_address', '3': 3, '4': 1, '5': 8, '10': 'noExternalIpAddress'},
+    {
+      '1': 'no_external_ip_address',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'noExternalIpAddress'
+    },
   ],
 };
 
@@ -663,7 +1145,14 @@ const AllocationPolicy_NetworkInterface$json = {
 const AllocationPolicy_NetworkPolicy$json = {
   '1': 'NetworkPolicy',
   '2': [
-    {'1': 'network_interfaces', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.AllocationPolicy.NetworkInterface', '10': 'networkInterfaces'},
+    {
+      '1': 'network_interfaces',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.AllocationPolicy.NetworkInterface',
+      '10': 'networkInterfaces'
+    },
   ],
 };
 
@@ -747,13 +1236,46 @@ const TaskGroup$json = {
   '1': 'TaskGroup',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'task_spec', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.TaskSpec', '10': 'taskSpec'},
+    {
+      '1': 'task_spec',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.TaskSpec',
+      '10': 'taskSpec'
+    },
     {'1': 'task_count', '3': 4, '4': 1, '5': 3, '10': 'taskCount'},
     {'1': 'parallelism', '3': 5, '4': 1, '5': 3, '10': 'parallelism'},
-    {'1': 'scheduling_policy', '3': 6, '4': 1, '5': 14, '6': '.google.events.cloud.batch.v1.TaskGroup.SchedulingPolicy', '10': 'schedulingPolicy'},
-    {'1': 'task_environments', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.batch.v1.Environment', '10': 'taskEnvironments'},
-    {'1': 'task_count_per_node', '3': 10, '4': 1, '5': 3, '10': 'taskCountPerNode'},
-    {'1': 'require_hosts_file', '3': 11, '4': 1, '5': 8, '10': 'requireHostsFile'},
+    {
+      '1': 'scheduling_policy',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.batch.v1.TaskGroup.SchedulingPolicy',
+      '10': 'schedulingPolicy'
+    },
+    {
+      '1': 'task_environments',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Environment',
+      '10': 'taskEnvironments'
+    },
+    {
+      '1': 'task_count_per_node',
+      '3': 10,
+      '4': 1,
+      '5': 3,
+      '10': 'taskCountPerNode'
+    },
+    {
+      '1': 'require_hosts_file',
+      '3': 11,
+      '4': 1,
+      '5': 8,
+      '10': 'requireHostsFile'
+    },
     {'1': 'permissive_ssh', '3': 12, '4': 1, '5': 8, '10': 'permissiveSsh'},
   ],
   '4': [TaskGroup_SchedulingPolicy$json],
@@ -801,7 +1323,16 @@ final $typed_data.Uint8List serviceAccountDescriptor = $convert.base64Decode(
 const JobEventData$json = {
   '1': 'JobEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.Job', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.Job',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -812,4 +1343,3 @@ const JobEventData$json = {
 final $typed_data.Uint8List jobEventDataDescriptor = $convert.base64Decode(
     'CgxKb2JFdmVudERhdGESQAoHcGF5bG9hZBgBIAEoCzIhLmdvb2dsZS5ldmVudHMuY2xvdWQuYm'
     'F0Y2gudjEuSm9iSABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
-

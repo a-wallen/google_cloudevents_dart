@@ -33,4 +33,3 @@ final $typed_data.Uint8List calendarPeriodDescriptor = $convert.base64Decode(
     'Cg5DYWxlbmRhclBlcmlvZBIfChtDQUxFTkRBUl9QRVJJT0RfVU5TUEVDSUZJRUQQABIHCgNEQV'
     'kQARIICgRXRUVLEAISDQoJRk9SVE5JR0hUEAMSCQoFTU9OVEgQBBILCgdRVUFSVEVSEAUSCAoE'
     'SEFMRhAGEggKBFlFQVIQBw==');
-

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const ClusterCreatedEvent$json = {
   '1': 'ClusterCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.ClusterEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.ClusterEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List clusterCreatedEventDescriptor = $convert.base64Decod
 const ClusterUpdatedEvent$json = {
   '1': 'ClusterUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.ClusterEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.ClusterEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List clusterUpdatedEventDescriptor = $convert.base64Decod
 const ClusterDeletedEvent$json = {
   '1': 'ClusterDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.ClusterEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.ClusterEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List clusterDeletedEventDescriptor = $convert.base64Decod
 const InstanceCreatedEvent$json = {
   '1': 'InstanceCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -77,7 +105,14 @@ final $typed_data.Uint8List instanceCreatedEventDescriptor = $convert.base64Deco
 const InstanceUpdatedEvent$json = {
   '1': 'InstanceUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -92,7 +127,14 @@ final $typed_data.Uint8List instanceUpdatedEventDescriptor = $convert.base64Deco
 const InstanceDeletedEvent$json = {
   '1': 'InstanceDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -107,7 +149,14 @@ final $typed_data.Uint8List instanceDeletedEventDescriptor = $convert.base64Deco
 const BackupCreatedEvent$json = {
   '1': 'BackupCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.BackupEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.BackupEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -122,7 +171,14 @@ final $typed_data.Uint8List backupCreatedEventDescriptor = $convert.base64Decode
 const BackupUpdatedEvent$json = {
   '1': 'BackupUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.BackupEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.BackupEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -137,7 +193,14 @@ final $typed_data.Uint8List backupUpdatedEventDescriptor = $convert.base64Decode
 const BackupDeletedEvent$json = {
   '1': 'BackupDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.BackupEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.BackupEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -147,4 +210,3 @@ final $typed_data.Uint8List backupDeletedEventDescriptor = $convert.base64Decode
     'ChJCYWNrdXBEZWxldGVkRXZlbnQSQwoEZGF0YRgBIAEoCzIvLmdvb2dsZS5ldmVudHMuY2xvdW'
     'QuYWxsb3lkYi52MS5CYWNrdXBFdmVudERhdGFSBGRhdGE6NrL42CwmZ29vZ2xlLmNsb3VkLmFs'
     'bG95ZGIuYmFja3VwLnYxLmRlbGV0ZWTK+NgsBmJhY2t1cA==');
-

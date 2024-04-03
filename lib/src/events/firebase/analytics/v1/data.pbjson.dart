@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const AnalyticsLogData$json = {
   '1': 'AnalyticsLogData',
   '2': [
-    {'1': 'user_dim', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.analytics.v1.UserDimensions', '10': 'userDim'},
-    {'1': 'event_dim', '3': 2, '4': 3, '5': 11, '6': '.google.events.firebase.analytics.v1.EventDimensions', '10': 'eventDim'},
+    {
+      '1': 'user_dim',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.UserDimensions',
+      '10': 'userDim'
+    },
+    {
+      '1': 'event_dim',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.EventDimensions',
+      '10': 'eventDim'
+    },
   ],
 };
 
@@ -34,14 +48,70 @@ const UserDimensions$json = {
   '1': 'UserDimensions',
   '2': [
     {'1': 'user_id', '3': 1, '4': 1, '5': 9, '10': 'userId'},
-    {'1': 'first_open_timestamp_micros', '3': 2, '4': 1, '5': 3, '10': 'firstOpenTimestampMicros'},
-    {'1': 'user_properties', '3': 3, '4': 3, '5': 11, '6': '.google.events.firebase.analytics.v1.UserDimensions.UserPropertiesEntry', '10': 'userProperties'},
-    {'1': 'device_info', '3': 4, '4': 1, '5': 11, '6': '.google.events.firebase.analytics.v1.DeviceInfo', '10': 'deviceInfo'},
-    {'1': 'geo_info', '3': 5, '4': 1, '5': 11, '6': '.google.events.firebase.analytics.v1.GeoInfo', '10': 'geoInfo'},
-    {'1': 'app_info', '3': 6, '4': 1, '5': 11, '6': '.google.events.firebase.analytics.v1.AppInfo', '10': 'appInfo'},
-    {'1': 'traffic_source', '3': 7, '4': 1, '5': 11, '6': '.google.events.firebase.analytics.v1.TrafficSource', '10': 'trafficSource'},
-    {'1': 'bundle_info', '3': 8, '4': 1, '5': 11, '6': '.google.events.firebase.analytics.v1.ExportBundleInfo', '10': 'bundleInfo'},
-    {'1': 'ltv_info', '3': 9, '4': 1, '5': 11, '6': '.google.events.firebase.analytics.v1.LtvInfo', '10': 'ltvInfo'},
+    {
+      '1': 'first_open_timestamp_micros',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'firstOpenTimestampMicros'
+    },
+    {
+      '1': 'user_properties',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.firebase.analytics.v1.UserDimensions.UserPropertiesEntry',
+      '10': 'userProperties'
+    },
+    {
+      '1': 'device_info',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.DeviceInfo',
+      '10': 'deviceInfo'
+    },
+    {
+      '1': 'geo_info',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.GeoInfo',
+      '10': 'geoInfo'
+    },
+    {
+      '1': 'app_info',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.AppInfo',
+      '10': 'appInfo'
+    },
+    {
+      '1': 'traffic_source',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.TrafficSource',
+      '10': 'trafficSource'
+    },
+    {
+      '1': 'bundle_info',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.ExportBundleInfo',
+      '10': 'bundleInfo'
+    },
+    {
+      '1': 'ltv_info',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.LtvInfo',
+      '10': 'ltvInfo'
+    },
   ],
   '3': [UserDimensions_UserPropertiesEntry$json],
 };
@@ -51,7 +121,14 @@ const UserDimensions_UserPropertiesEntry$json = {
   '1': 'UserPropertiesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.firebase.analytics.v1.UserPropertyValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.UserPropertyValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -78,8 +155,21 @@ final $typed_data.Uint8List userDimensionsDescriptor = $convert.base64Decode(
 const UserPropertyValue$json = {
   '1': 'UserPropertyValue',
   '2': [
-    {'1': 'value', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.analytics.v1.AnalyticsValue', '10': 'value'},
-    {'1': 'set_timestamp_usec', '3': 2, '4': 1, '5': 3, '10': 'setTimestampUsec'},
+    {
+      '1': 'value',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.AnalyticsValue',
+      '10': 'value'
+    },
+    {
+      '1': 'set_timestamp_usec',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'setTimestampUsec'
+    },
     {'1': 'index', '3': 3, '4': 1, '5': 5, '10': 'index'},
   ],
 };
@@ -118,14 +208,44 @@ const DeviceInfo$json = {
     {'1': 'device_category', '3': 1, '4': 1, '5': 9, '10': 'deviceCategory'},
     {'1': 'mobile_brand_name', '3': 2, '4': 1, '5': 9, '10': 'mobileBrandName'},
     {'1': 'mobile_model_name', '3': 3, '4': 1, '5': 9, '10': 'mobileModelName'},
-    {'1': 'mobile_marketing_name', '3': 4, '4': 1, '5': 9, '10': 'mobileMarketingName'},
+    {
+      '1': 'mobile_marketing_name',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'mobileMarketingName'
+    },
     {'1': 'device_model', '3': 12, '4': 1, '5': 9, '10': 'deviceModel'},
     {'1': 'platform_version', '3': 6, '4': 1, '5': 9, '10': 'platformVersion'},
     {'1': 'device_id', '3': 7, '4': 1, '5': 9, '10': 'deviceId'},
-    {'1': 'resettable_device_id', '3': 8, '4': 1, '5': 9, '10': 'resettableDeviceId'},
-    {'1': 'user_default_language', '3': 9, '4': 1, '5': 9, '10': 'userDefaultLanguage'},
-    {'1': 'device_time_zone_offset_seconds', '3': 10, '4': 1, '5': 5, '10': 'deviceTimeZoneOffsetSeconds'},
-    {'1': 'limited_ad_tracking', '3': 11, '4': 1, '5': 8, '10': 'limitedAdTracking'},
+    {
+      '1': 'resettable_device_id',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'resettableDeviceId'
+    },
+    {
+      '1': 'user_default_language',
+      '3': 9,
+      '4': 1,
+      '5': 9,
+      '10': 'userDefaultLanguage'
+    },
+    {
+      '1': 'device_time_zone_offset_seconds',
+      '3': 10,
+      '4': 1,
+      '5': 5,
+      '10': 'deviceTimeZoneOffsetSeconds'
+    },
+    {
+      '1': 'limited_ad_tracking',
+      '3': 11,
+      '4': 1,
+      '5': 8,
+      '10': 'limitedAdTracking'
+    },
   ],
 };
 
@@ -181,9 +301,27 @@ final $typed_data.Uint8List geoInfoDescriptor = $convert.base64Decode(
 const TrafficSource$json = {
   '1': 'TrafficSource',
   '2': [
-    {'1': 'user_acquired_campaign', '3': 2, '4': 1, '5': 9, '10': 'userAcquiredCampaign'},
-    {'1': 'user_acquired_source', '3': 3, '4': 1, '5': 9, '10': 'userAcquiredSource'},
-    {'1': 'user_acquired_medium', '3': 4, '4': 1, '5': 9, '10': 'userAcquiredMedium'},
+    {
+      '1': 'user_acquired_campaign',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'userAcquiredCampaign'
+    },
+    {
+      '1': 'user_acquired_source',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'userAcquiredSource'
+    },
+    {
+      '1': 'user_acquired_medium',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'userAcquiredMedium'
+    },
   ],
 };
 
@@ -198,8 +336,20 @@ final $typed_data.Uint8List trafficSourceDescriptor = $convert.base64Decode(
 const ExportBundleInfo$json = {
   '1': 'ExportBundleInfo',
   '2': [
-    {'1': 'bundle_sequence_id', '3': 1, '4': 1, '5': 5, '10': 'bundleSequenceId'},
-    {'1': 'server_timestamp_offset_micros', '3': 2, '4': 1, '5': 3, '10': 'serverTimestampOffsetMicros'},
+    {
+      '1': 'bundle_sequence_id',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'bundleSequenceId'
+    },
+    {
+      '1': 'server_timestamp_offset_micros',
+      '3': 2,
+      '4': 1,
+      '5': 3,
+      '10': 'serverTimestampOffsetMicros'
+    },
   ],
 };
 
@@ -229,9 +379,22 @@ const EventDimensions$json = {
   '2': [
     {'1': 'date', '3': 6, '4': 1, '5': 9, '10': 'date'},
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'params', '3': 2, '4': 3, '5': 11, '6': '.google.events.firebase.analytics.v1.EventDimensions.ParamsEntry', '10': 'params'},
+    {
+      '1': 'params',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.EventDimensions.ParamsEntry',
+      '10': 'params'
+    },
     {'1': 'timestamp_micros', '3': 4, '4': 1, '5': 3, '10': 'timestampMicros'},
-    {'1': 'previous_timestamp_micros', '3': 5, '4': 1, '5': 3, '10': 'previousTimestampMicros'},
+    {
+      '1': 'previous_timestamp_micros',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '10': 'previousTimestampMicros'
+    },
     {'1': 'value_in_usd', '3': 7, '4': 1, '5': 1, '10': 'valueInUsd'},
   ],
   '3': [EventDimensions_ParamsEntry$json],
@@ -242,7 +405,14 @@ const EventDimensions_ParamsEntry$json = {
   '1': 'ParamsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.firebase.analytics.v1.AnalyticsValue', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.AnalyticsValue',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -257,4 +427,3 @@ final $typed_data.Uint8List eventDimensionsDescriptor = $convert.base64Decode(
     'VlSW5Vc2QabgoLUGFyYW1zRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSSQoFdmFsdWUYAiABKAsy'
     'My5nb29nbGUuZXZlbnRzLmZpcmViYXNlLmFuYWx5dGljcy52MS5BbmFseXRpY3NWYWx1ZVIFdm'
     'FsdWU6AjgB');
-

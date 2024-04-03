@@ -27,40 +27,53 @@ class EntityCreatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   EntityCreatedEvent._() : super();
-  factory EntityCreatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntityCreatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntityCreatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntityCreatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityCreatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $40.EntityEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntityCreatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $40.EntityEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EntityCreatedEvent clone() => EntityCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntityCreatedEvent copyWith(void Function(EntityCreatedEvent) updates) => super.copyWith((message) => updates(message as EntityCreatedEvent)) as EntityCreatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntityCreatedEvent copyWith(void Function(EntityCreatedEvent) updates) =>
+      super.copyWith((message) => updates(message as EntityCreatedEvent))
+          as EntityCreatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EntityCreatedEvent create() => EntityCreatedEvent._();
   EntityCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<EntityCreatedEvent> createRepeated() => $pb.PbList<EntityCreatedEvent>();
+  static $pb.PbList<EntityCreatedEvent> createRepeated() =>
+      $pb.PbList<EntityCreatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static EntityCreatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntityCreatedEvent>(create);
+  static EntityCreatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntityCreatedEvent>(create);
   static EntityCreatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $40.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) { setField(1, v); }
+  set data($40.EntityEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -81,40 +94,53 @@ class EntityUpdatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   EntityUpdatedEvent._() : super();
-  factory EntityUpdatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntityUpdatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntityUpdatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntityUpdatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityUpdatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $40.EntityEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntityUpdatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $40.EntityEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EntityUpdatedEvent clone() => EntityUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntityUpdatedEvent copyWith(void Function(EntityUpdatedEvent) updates) => super.copyWith((message) => updates(message as EntityUpdatedEvent)) as EntityUpdatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntityUpdatedEvent copyWith(void Function(EntityUpdatedEvent) updates) =>
+      super.copyWith((message) => updates(message as EntityUpdatedEvent))
+          as EntityUpdatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EntityUpdatedEvent create() => EntityUpdatedEvent._();
   EntityUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<EntityUpdatedEvent> createRepeated() => $pb.PbList<EntityUpdatedEvent>();
+  static $pb.PbList<EntityUpdatedEvent> createRepeated() =>
+      $pb.PbList<EntityUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static EntityUpdatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntityUpdatedEvent>(create);
+  static EntityUpdatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntityUpdatedEvent>(create);
   static EntityUpdatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $40.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) { setField(1, v); }
+  set data($40.EntityEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -135,40 +161,53 @@ class EntityDeletedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   EntityDeletedEvent._() : super();
-  factory EntityDeletedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntityDeletedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntityDeletedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntityDeletedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityDeletedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $40.EntityEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntityDeletedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $40.EntityEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EntityDeletedEvent clone() => EntityDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntityDeletedEvent copyWith(void Function(EntityDeletedEvent) updates) => super.copyWith((message) => updates(message as EntityDeletedEvent)) as EntityDeletedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntityDeletedEvent copyWith(void Function(EntityDeletedEvent) updates) =>
+      super.copyWith((message) => updates(message as EntityDeletedEvent))
+          as EntityDeletedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EntityDeletedEvent create() => EntityDeletedEvent._();
   EntityDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<EntityDeletedEvent> createRepeated() => $pb.PbList<EntityDeletedEvent>();
+  static $pb.PbList<EntityDeletedEvent> createRepeated() =>
+      $pb.PbList<EntityDeletedEvent>();
   @$core.pragma('dart2js:noInline')
-  static EntityDeletedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntityDeletedEvent>(create);
+  static EntityDeletedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntityDeletedEvent>(create);
   static EntityDeletedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $40.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) { setField(1, v); }
+  set data($40.EntityEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -190,40 +229,53 @@ class EntityWrittenEvent extends $pb.GeneratedMessage {
     return $result;
   }
   EntityWrittenEvent._() : super();
-  factory EntityWrittenEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntityWrittenEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntityWrittenEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntityWrittenEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityWrittenEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $40.EntityEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntityWrittenEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $40.EntityEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EntityWrittenEvent clone() => EntityWrittenEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntityWrittenEvent copyWith(void Function(EntityWrittenEvent) updates) => super.copyWith((message) => updates(message as EntityWrittenEvent)) as EntityWrittenEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntityWrittenEvent copyWith(void Function(EntityWrittenEvent) updates) =>
+      super.copyWith((message) => updates(message as EntityWrittenEvent))
+          as EntityWrittenEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EntityWrittenEvent create() => EntityWrittenEvent._();
   EntityWrittenEvent createEmptyInstance() => create();
-  static $pb.PbList<EntityWrittenEvent> createRepeated() => $pb.PbList<EntityWrittenEvent>();
+  static $pb.PbList<EntityWrittenEvent> createRepeated() =>
+      $pb.PbList<EntityWrittenEvent>();
   @$core.pragma('dart2js:noInline')
-  static EntityWrittenEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntityWrittenEvent>(create);
+  static EntityWrittenEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntityWrittenEvent>(create);
   static EntityWrittenEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $40.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) { setField(1, v); }
+  set data($40.EntityEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -245,40 +297,58 @@ class EntityCreatedEventWithAuthContext extends $pb.GeneratedMessage {
     return $result;
   }
   EntityCreatedEventWithAuthContext._() : super();
-  factory EntityCreatedEventWithAuthContext.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntityCreatedEventWithAuthContext.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntityCreatedEventWithAuthContext.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntityCreatedEventWithAuthContext.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityCreatedEventWithAuthContext', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $40.EntityEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntityCreatedEventWithAuthContext',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $40.EntityEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  EntityCreatedEventWithAuthContext clone() => EntityCreatedEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntityCreatedEventWithAuthContext copyWith(void Function(EntityCreatedEventWithAuthContext) updates) => super.copyWith((message) => updates(message as EntityCreatedEventWithAuthContext)) as EntityCreatedEventWithAuthContext;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  EntityCreatedEventWithAuthContext clone() =>
+      EntityCreatedEventWithAuthContext()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntityCreatedEventWithAuthContext copyWith(
+          void Function(EntityCreatedEventWithAuthContext) updates) =>
+      super.copyWith((message) =>
+              updates(message as EntityCreatedEventWithAuthContext))
+          as EntityCreatedEventWithAuthContext;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static EntityCreatedEventWithAuthContext create() => EntityCreatedEventWithAuthContext._();
+  static EntityCreatedEventWithAuthContext create() =>
+      EntityCreatedEventWithAuthContext._();
   EntityCreatedEventWithAuthContext createEmptyInstance() => create();
-  static $pb.PbList<EntityCreatedEventWithAuthContext> createRepeated() => $pb.PbList<EntityCreatedEventWithAuthContext>();
+  static $pb.PbList<EntityCreatedEventWithAuthContext> createRepeated() =>
+      $pb.PbList<EntityCreatedEventWithAuthContext>();
   @$core.pragma('dart2js:noInline')
-  static EntityCreatedEventWithAuthContext getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntityCreatedEventWithAuthContext>(create);
+  static EntityCreatedEventWithAuthContext getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntityCreatedEventWithAuthContext>(
+          create);
   static EntityCreatedEventWithAuthContext? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $40.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) { setField(1, v); }
+  set data($40.EntityEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -300,40 +370,58 @@ class EntityUpdatedEventWithAuthContext extends $pb.GeneratedMessage {
     return $result;
   }
   EntityUpdatedEventWithAuthContext._() : super();
-  factory EntityUpdatedEventWithAuthContext.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntityUpdatedEventWithAuthContext.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntityUpdatedEventWithAuthContext.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntityUpdatedEventWithAuthContext.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityUpdatedEventWithAuthContext', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $40.EntityEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntityUpdatedEventWithAuthContext',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $40.EntityEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  EntityUpdatedEventWithAuthContext clone() => EntityUpdatedEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntityUpdatedEventWithAuthContext copyWith(void Function(EntityUpdatedEventWithAuthContext) updates) => super.copyWith((message) => updates(message as EntityUpdatedEventWithAuthContext)) as EntityUpdatedEventWithAuthContext;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  EntityUpdatedEventWithAuthContext clone() =>
+      EntityUpdatedEventWithAuthContext()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntityUpdatedEventWithAuthContext copyWith(
+          void Function(EntityUpdatedEventWithAuthContext) updates) =>
+      super.copyWith((message) =>
+              updates(message as EntityUpdatedEventWithAuthContext))
+          as EntityUpdatedEventWithAuthContext;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static EntityUpdatedEventWithAuthContext create() => EntityUpdatedEventWithAuthContext._();
+  static EntityUpdatedEventWithAuthContext create() =>
+      EntityUpdatedEventWithAuthContext._();
   EntityUpdatedEventWithAuthContext createEmptyInstance() => create();
-  static $pb.PbList<EntityUpdatedEventWithAuthContext> createRepeated() => $pb.PbList<EntityUpdatedEventWithAuthContext>();
+  static $pb.PbList<EntityUpdatedEventWithAuthContext> createRepeated() =>
+      $pb.PbList<EntityUpdatedEventWithAuthContext>();
   @$core.pragma('dart2js:noInline')
-  static EntityUpdatedEventWithAuthContext getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntityUpdatedEventWithAuthContext>(create);
+  static EntityUpdatedEventWithAuthContext getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntityUpdatedEventWithAuthContext>(
+          create);
   static EntityUpdatedEventWithAuthContext? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $40.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) { setField(1, v); }
+  set data($40.EntityEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -355,40 +443,58 @@ class EntityDeletedEventWithAuthContext extends $pb.GeneratedMessage {
     return $result;
   }
   EntityDeletedEventWithAuthContext._() : super();
-  factory EntityDeletedEventWithAuthContext.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntityDeletedEventWithAuthContext.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntityDeletedEventWithAuthContext.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntityDeletedEventWithAuthContext.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityDeletedEventWithAuthContext', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $40.EntityEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntityDeletedEventWithAuthContext',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $40.EntityEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  EntityDeletedEventWithAuthContext clone() => EntityDeletedEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntityDeletedEventWithAuthContext copyWith(void Function(EntityDeletedEventWithAuthContext) updates) => super.copyWith((message) => updates(message as EntityDeletedEventWithAuthContext)) as EntityDeletedEventWithAuthContext;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  EntityDeletedEventWithAuthContext clone() =>
+      EntityDeletedEventWithAuthContext()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntityDeletedEventWithAuthContext copyWith(
+          void Function(EntityDeletedEventWithAuthContext) updates) =>
+      super.copyWith((message) =>
+              updates(message as EntityDeletedEventWithAuthContext))
+          as EntityDeletedEventWithAuthContext;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static EntityDeletedEventWithAuthContext create() => EntityDeletedEventWithAuthContext._();
+  static EntityDeletedEventWithAuthContext create() =>
+      EntityDeletedEventWithAuthContext._();
   EntityDeletedEventWithAuthContext createEmptyInstance() => create();
-  static $pb.PbList<EntityDeletedEventWithAuthContext> createRepeated() => $pb.PbList<EntityDeletedEventWithAuthContext>();
+  static $pb.PbList<EntityDeletedEventWithAuthContext> createRepeated() =>
+      $pb.PbList<EntityDeletedEventWithAuthContext>();
   @$core.pragma('dart2js:noInline')
-  static EntityDeletedEventWithAuthContext getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntityDeletedEventWithAuthContext>(create);
+  static EntityDeletedEventWithAuthContext getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntityDeletedEventWithAuthContext>(
+          create);
   static EntityDeletedEventWithAuthContext? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $40.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) { setField(1, v); }
+  set data($40.EntityEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -410,40 +516,58 @@ class EntityWrittenEventWithAuthContext extends $pb.GeneratedMessage {
     return $result;
   }
   EntityWrittenEventWithAuthContext._() : super();
-  factory EntityWrittenEventWithAuthContext.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EntityWrittenEventWithAuthContext.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EntityWrittenEventWithAuthContext.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EntityWrittenEventWithAuthContext.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityWrittenEventWithAuthContext', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $40.EntityEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EntityWrittenEventWithAuthContext',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $40.EntityEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  EntityWrittenEventWithAuthContext clone() => EntityWrittenEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EntityWrittenEventWithAuthContext copyWith(void Function(EntityWrittenEventWithAuthContext) updates) => super.copyWith((message) => updates(message as EntityWrittenEventWithAuthContext)) as EntityWrittenEventWithAuthContext;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  EntityWrittenEventWithAuthContext clone() =>
+      EntityWrittenEventWithAuthContext()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EntityWrittenEventWithAuthContext copyWith(
+          void Function(EntityWrittenEventWithAuthContext) updates) =>
+      super.copyWith((message) =>
+              updates(message as EntityWrittenEventWithAuthContext))
+          as EntityWrittenEventWithAuthContext;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static EntityWrittenEventWithAuthContext create() => EntityWrittenEventWithAuthContext._();
+  static EntityWrittenEventWithAuthContext create() =>
+      EntityWrittenEventWithAuthContext._();
   EntityWrittenEventWithAuthContext createEmptyInstance() => create();
-  static $pb.PbList<EntityWrittenEventWithAuthContext> createRepeated() => $pb.PbList<EntityWrittenEventWithAuthContext>();
+  static $pb.PbList<EntityWrittenEventWithAuthContext> createRepeated() =>
+      $pb.PbList<EntityWrittenEventWithAuthContext>();
   @$core.pragma('dart2js:noInline')
-  static EntityWrittenEventWithAuthContext getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EntityWrittenEventWithAuthContext>(create);
+  static EntityWrittenEventWithAuthContext getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EntityWrittenEventWithAuthContext>(
+          create);
   static EntityWrittenEventWithAuthContext? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $40.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) { setField(1, v); }
+  set data($40.EntityEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -452,6 +576,6 @@ class EntityWrittenEventWithAuthContext extends $pb.GeneratedMessage {
   $40.EntityEventData ensureData() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

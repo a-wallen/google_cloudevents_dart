@@ -26,4 +26,3 @@ const LatLng$json = {
 final $typed_data.Uint8List latLngDescriptor = $convert.base64Decode(
     'CgZMYXRMbmcSGgoIbGF0aXR1ZGUYASABKAFSCGxhdGl0dWRlEhwKCWxvbmdpdHVkZRgCIAEoAV'
     'IJbG9uZ2l0dWRl');
-

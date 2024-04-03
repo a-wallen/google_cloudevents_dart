@@ -24,8 +24,24 @@ const DateTime$json = {
     {'1': 'minutes', '3': 5, '4': 1, '5': 5, '10': 'minutes'},
     {'1': 'seconds', '3': 6, '4': 1, '5': 5, '10': 'seconds'},
     {'1': 'nanos', '3': 7, '4': 1, '5': 5, '10': 'nanos'},
-    {'1': 'utc_offset', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'utcOffset'},
-    {'1': 'time_zone', '3': 9, '4': 1, '5': 11, '6': '.google.type.TimeZone', '9': 0, '10': 'timeZone'},
+    {
+      '1': 'utc_offset',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'utcOffset'
+    },
+    {
+      '1': 'time_zone',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.TimeZone',
+      '9': 0,
+      '10': 'timeZone'
+    },
   ],
   '8': [
     {'1': 'time_offset'},
@@ -53,4 +69,3 @@ const TimeZone$json = {
 /// Descriptor for `TimeZone`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List timeZoneDescriptor = $convert.base64Decode(
     'CghUaW1lWm9uZRIOCgJpZBgBIAEoCVICaWQSGAoHdmVyc2lvbhgCIAEoCVIHdmVyc2lvbg==');
-

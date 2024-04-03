@@ -18,15 +18,78 @@ const Job$json = {
   '1': 'Job',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'config', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.JobConfig', '9': 0, '10': 'config'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.video.transcoder.v1.Job.ProcessingState', '10': 'state'},
-    {'1': 'create_time', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'start_time', '3': 13, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'ttl_after_completion_days', '3': 15, '4': 1, '5': 5, '10': 'ttlAfterCompletionDays'},
-    {'1': 'labels', '3': 16, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Job.LabelsEntry', '10': 'labels'},
-    {'1': 'error', '3': 17, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'mode', '3': 20, '4': 1, '5': 14, '6': '.google.events.cloud.video.transcoder.v1.Job.ProcessingMode', '10': 'mode'},
+    {
+      '1': 'config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.JobConfig',
+      '9': 0,
+      '10': 'config'
+    },
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.video.transcoder.v1.Job.ProcessingState',
+      '10': 'state'
+    },
+    {
+      '1': 'create_time',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'start_time',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'ttl_after_completion_days',
+      '3': 15,
+      '4': 1,
+      '5': 5,
+      '10': 'ttlAfterCompletionDays'
+    },
+    {
+      '1': 'labels',
+      '3': 16,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.Job.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'error',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'mode',
+      '3': 20,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.video.transcoder.v1.Job.ProcessingMode',
+      '10': 'mode'
+    },
   ],
   '3': [Job_LabelsEntry$json],
   '4': [Job_ProcessingState$json, Job_ProcessingMode$json],
@@ -92,8 +155,22 @@ const JobTemplate$json = {
   '1': 'JobTemplate',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'config', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.JobConfig', '10': 'config'},
-    {'1': 'labels', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.JobTemplate.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'config',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.JobConfig',
+      '10': 'config'
+    },
+    {
+      '1': 'labels',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.JobTemplate.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [JobTemplate_LabelsEntry$json],
 };
@@ -120,16 +197,86 @@ final $typed_data.Uint8List jobTemplateDescriptor = $convert.base64Decode(
 const JobConfig$json = {
   '1': 'JobConfig',
   '2': [
-    {'1': 'inputs', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Input', '10': 'inputs'},
-    {'1': 'edit_list', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.EditAtom', '10': 'editList'},
-    {'1': 'elementary_streams', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.ElementaryStream', '10': 'elementaryStreams'},
-    {'1': 'mux_streams', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.MuxStream', '10': 'muxStreams'},
-    {'1': 'manifests', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Manifest', '10': 'manifests'},
-    {'1': 'output', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Output', '10': 'output'},
-    {'1': 'ad_breaks', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.AdBreak', '10': 'adBreaks'},
-    {'1': 'pubsub_destination', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.PubsubDestination', '10': 'pubsubDestination'},
-    {'1': 'sprite_sheets', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.SpriteSheet', '10': 'spriteSheets'},
-    {'1': 'overlays', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Overlay', '10': 'overlays'},
+    {
+      '1': 'inputs',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.Input',
+      '10': 'inputs'
+    },
+    {
+      '1': 'edit_list',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.EditAtom',
+      '10': 'editList'
+    },
+    {
+      '1': 'elementary_streams',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.ElementaryStream',
+      '10': 'elementaryStreams'
+    },
+    {
+      '1': 'mux_streams',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.MuxStream',
+      '10': 'muxStreams'
+    },
+    {
+      '1': 'manifests',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.Manifest',
+      '10': 'manifests'
+    },
+    {
+      '1': 'output',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.Output',
+      '10': 'output'
+    },
+    {
+      '1': 'ad_breaks',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.AdBreak',
+      '10': 'adBreaks'
+    },
+    {
+      '1': 'pubsub_destination',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.PubsubDestination',
+      '10': 'pubsubDestination'
+    },
+    {
+      '1': 'sprite_sheets',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.SpriteSheet',
+      '10': 'spriteSheets'
+    },
+    {
+      '1': 'overlays',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.Overlay',
+      '10': 'overlays'
+    },
   ],
 };
 
@@ -158,7 +305,14 @@ const Input$json = {
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
     {'1': 'uri', '3': 2, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'preprocessing_config', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig', '10': 'preprocessingConfig'},
+    {
+      '1': 'preprocessing_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig',
+      '10': 'preprocessingConfig'
+    },
   ],
 };
 
@@ -177,8 +331,8 @@ const Output$json = {
 };
 
 /// Descriptor for `Output`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List outputDescriptor = $convert.base64Decode(
-    'CgZPdXRwdXQSEAoDdXJpGAEgASgJUgN1cmk=');
+final $typed_data.Uint8List outputDescriptor =
+    $convert.base64Decode('CgZPdXRwdXQSEAoDdXJpGAEgASgJUgN1cmk=');
 
 @$core.Deprecated('Use editAtomDescriptor instead')
 const EditAtom$json = {
@@ -186,8 +340,22 @@ const EditAtom$json = {
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
     {'1': 'inputs', '3': 2, '4': 3, '5': 9, '10': 'inputs'},
-    {'1': 'end_time_offset', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'endTimeOffset'},
-    {'1': 'start_time_offset', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'startTimeOffset'},
+    {
+      '1': 'end_time_offset',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'endTimeOffset'
+    },
+    {
+      '1': 'start_time_offset',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'startTimeOffset'
+    },
   ],
 };
 
@@ -202,7 +370,14 @@ final $typed_data.Uint8List editAtomDescriptor = $convert.base64Decode(
 const AdBreak$json = {
   '1': 'AdBreak',
   '2': [
-    {'1': 'start_time_offset', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'startTimeOffset'},
+    {
+      '1': 'start_time_offset',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'startTimeOffset'
+    },
   ],
 };
 
@@ -216,9 +391,33 @@ const ElementaryStream$json = {
   '1': 'ElementaryStream',
   '2': [
     {'1': 'key', '3': 4, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'video_stream', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.VideoStream', '9': 0, '10': 'videoStream'},
-    {'1': 'audio_stream', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.AudioStream', '9': 0, '10': 'audioStream'},
-    {'1': 'text_stream', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.TextStream', '9': 0, '10': 'textStream'},
+    {
+      '1': 'video_stream',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.VideoStream',
+      '9': 0,
+      '10': 'videoStream'
+    },
+    {
+      '1': 'audio_stream',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.AudioStream',
+      '9': 0,
+      '10': 'audioStream'
+    },
+    {
+      '1': 'text_stream',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.TextStream',
+      '9': 0,
+      '10': 'textStream'
+    },
   ],
   '8': [
     {'1': 'elementary_stream'},
@@ -241,8 +440,21 @@ const MuxStream$json = {
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
     {'1': 'file_name', '3': 2, '4': 1, '5': 9, '10': 'fileName'},
     {'1': 'container', '3': 3, '4': 1, '5': 9, '10': 'container'},
-    {'1': 'elementary_streams', '3': 4, '4': 3, '5': 9, '10': 'elementaryStreams'},
-    {'1': 'segment_settings', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.SegmentSettings', '10': 'segmentSettings'},
+    {
+      '1': 'elementary_streams',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '10': 'elementaryStreams'
+    },
+    {
+      '1': 'segment_settings',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.SegmentSettings',
+      '10': 'segmentSettings'
+    },
   ],
 };
 
@@ -259,7 +471,14 @@ const Manifest$json = {
   '1': 'Manifest',
   '2': [
     {'1': 'file_name', '3': 1, '4': 1, '5': 9, '10': 'fileName'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.video.transcoder.v1.Manifest.ManifestType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.video.transcoder.v1.Manifest.ManifestType',
+      '10': 'type'
+    },
     {'1': 'mux_streams', '3': 3, '4': 3, '5': 9, '10': 'muxStreams'},
   ],
   '4': [Manifest_ManifestType$json],
@@ -291,8 +510,8 @@ const PubsubDestination$json = {
 };
 
 /// Descriptor for `PubsubDestination`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List pubsubDestinationDescriptor = $convert.base64Decode(
-    'ChFQdWJzdWJEZXN0aW5hdGlvbhIUCgV0b3BpYxgBIAEoCVIFdG9waWM=');
+final $typed_data.Uint8List pubsubDestinationDescriptor = $convert
+    .base64Decode('ChFQdWJzdWJEZXN0aW5hdGlvbhIUCgV0b3BpYxgBIAEoCVIFdG9waWM=');
 
 @$core.Deprecated('Use spriteSheetDescriptor instead')
 const SpriteSheet$json = {
@@ -300,14 +519,48 @@ const SpriteSheet$json = {
   '2': [
     {'1': 'format', '3': 1, '4': 1, '5': 9, '10': 'format'},
     {'1': 'file_prefix', '3': 2, '4': 1, '5': 9, '10': 'filePrefix'},
-    {'1': 'sprite_width_pixels', '3': 3, '4': 1, '5': 5, '10': 'spriteWidthPixels'},
-    {'1': 'sprite_height_pixels', '3': 4, '4': 1, '5': 5, '10': 'spriteHeightPixels'},
+    {
+      '1': 'sprite_width_pixels',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'spriteWidthPixels'
+    },
+    {
+      '1': 'sprite_height_pixels',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '10': 'spriteHeightPixels'
+    },
     {'1': 'column_count', '3': 5, '4': 1, '5': 5, '10': 'columnCount'},
     {'1': 'row_count', '3': 6, '4': 1, '5': 5, '10': 'rowCount'},
-    {'1': 'start_time_offset', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'startTimeOffset'},
-    {'1': 'end_time_offset', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'endTimeOffset'},
+    {
+      '1': 'start_time_offset',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'startTimeOffset'
+    },
+    {
+      '1': 'end_time_offset',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'endTimeOffset'
+    },
     {'1': 'total_count', '3': 9, '4': 1, '5': 5, '9': 0, '10': 'totalCount'},
-    {'1': 'interval', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'interval'},
+    {
+      '1': 'interval',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'interval'
+    },
     {'1': 'quality', '3': 11, '4': 1, '5': 5, '10': 'quality'},
   ],
   '8': [
@@ -332,10 +585,31 @@ final $typed_data.Uint8List spriteSheetDescriptor = $convert.base64Decode(
 const Overlay$json = {
   '1': 'Overlay',
   '2': [
-    {'1': 'image', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Overlay.Image', '10': 'image'},
-    {'1': 'animations', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Overlay.Animation', '10': 'animations'},
+    {
+      '1': 'image',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.Overlay.Image',
+      '10': 'image'
+    },
+    {
+      '1': 'animations',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.Overlay.Animation',
+      '10': 'animations'
+    },
   ],
-  '3': [Overlay_NormalizedCoordinate$json, Overlay_Image$json, Overlay_AnimationStatic$json, Overlay_AnimationFade$json, Overlay_AnimationEnd$json, Overlay_Animation$json],
+  '3': [
+    Overlay_NormalizedCoordinate$json,
+    Overlay_Image$json,
+    Overlay_AnimationStatic$json,
+    Overlay_AnimationFade$json,
+    Overlay_AnimationEnd$json,
+    Overlay_Animation$json
+  ],
   '4': [Overlay_FadeType$json],
 };
 
@@ -353,7 +627,15 @@ const Overlay_Image$json = {
   '1': 'Image',
   '2': [
     {'1': 'uri', '3': 1, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'resolution', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Overlay.NormalizedCoordinate', '10': 'resolution'},
+    {
+      '1': 'resolution',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.video.transcoder.v1.Overlay.NormalizedCoordinate',
+      '10': 'resolution'
+    },
     {'1': 'alpha', '3': 3, '4': 1, '5': 1, '10': 'alpha'},
   ],
 };
@@ -362,8 +644,23 @@ const Overlay_Image$json = {
 const Overlay_AnimationStatic$json = {
   '1': 'AnimationStatic',
   '2': [
-    {'1': 'xy', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Overlay.NormalizedCoordinate', '10': 'xy'},
-    {'1': 'start_time_offset', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'startTimeOffset'},
+    {
+      '1': 'xy',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.video.transcoder.v1.Overlay.NormalizedCoordinate',
+      '10': 'xy'
+    },
+    {
+      '1': 'start_time_offset',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'startTimeOffset'
+    },
   ],
 };
 
@@ -371,10 +668,39 @@ const Overlay_AnimationStatic$json = {
 const Overlay_AnimationFade$json = {
   '1': 'AnimationFade',
   '2': [
-    {'1': 'fade_type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.video.transcoder.v1.Overlay.FadeType', '10': 'fadeType'},
-    {'1': 'xy', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Overlay.NormalizedCoordinate', '10': 'xy'},
-    {'1': 'start_time_offset', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'startTimeOffset'},
-    {'1': 'end_time_offset', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'endTimeOffset'},
+    {
+      '1': 'fade_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.video.transcoder.v1.Overlay.FadeType',
+      '10': 'fadeType'
+    },
+    {
+      '1': 'xy',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.video.transcoder.v1.Overlay.NormalizedCoordinate',
+      '10': 'xy'
+    },
+    {
+      '1': 'start_time_offset',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'startTimeOffset'
+    },
+    {
+      '1': 'end_time_offset',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'endTimeOffset'
+    },
   ],
 };
 
@@ -382,7 +708,14 @@ const Overlay_AnimationFade$json = {
 const Overlay_AnimationEnd$json = {
   '1': 'AnimationEnd',
   '2': [
-    {'1': 'start_time_offset', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'startTimeOffset'},
+    {
+      '1': 'start_time_offset',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'startTimeOffset'
+    },
   ],
 };
 
@@ -390,9 +723,33 @@ const Overlay_AnimationEnd$json = {
 const Overlay_Animation$json = {
   '1': 'Animation',
   '2': [
-    {'1': 'animation_static', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Overlay.AnimationStatic', '9': 0, '10': 'animationStatic'},
-    {'1': 'animation_fade', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Overlay.AnimationFade', '9': 0, '10': 'animationFade'},
-    {'1': 'animation_end', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Overlay.AnimationEnd', '9': 0, '10': 'animationEnd'},
+    {
+      '1': 'animation_static',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.Overlay.AnimationStatic',
+      '9': 0,
+      '10': 'animationStatic'
+    },
+    {
+      '1': 'animation_fade',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.Overlay.AnimationFade',
+      '9': 0,
+      '10': 'animationFade'
+    },
+    {
+      '1': 'animation_end',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.Overlay.AnimationEnd',
+      '9': 0,
+      '10': 'animationEnd'
+    },
   ],
   '8': [
     {'1': 'animation_type'},
@@ -442,15 +799,75 @@ final $typed_data.Uint8List overlayDescriptor = $convert.base64Decode(
 const PreprocessingConfig$json = {
   '1': 'PreprocessingConfig',
   '2': [
-    {'1': 'color', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Color', '10': 'color'},
-    {'1': 'denoise', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Denoise', '10': 'denoise'},
-    {'1': 'deblock', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Deblock', '10': 'deblock'},
-    {'1': 'audio', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Audio', '10': 'audio'},
-    {'1': 'crop', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Crop', '10': 'crop'},
-    {'1': 'pad', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Pad', '10': 'pad'},
-    {'1': 'deinterlace', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Deinterlace', '10': 'deinterlace'},
+    {
+      '1': 'color',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Color',
+      '10': 'color'
+    },
+    {
+      '1': 'denoise',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Denoise',
+      '10': 'denoise'
+    },
+    {
+      '1': 'deblock',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Deblock',
+      '10': 'deblock'
+    },
+    {
+      '1': 'audio',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Audio',
+      '10': 'audio'
+    },
+    {
+      '1': 'crop',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Crop',
+      '10': 'crop'
+    },
+    {
+      '1': 'pad',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Pad',
+      '10': 'pad'
+    },
+    {
+      '1': 'deinterlace',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Deinterlace',
+      '10': 'deinterlace'
+    },
   ],
-  '3': [PreprocessingConfig_Color$json, PreprocessingConfig_Denoise$json, PreprocessingConfig_Deblock$json, PreprocessingConfig_Audio$json, PreprocessingConfig_Crop$json, PreprocessingConfig_Pad$json, PreprocessingConfig_Deinterlace$json],
+  '3': [
+    PreprocessingConfig_Color$json,
+    PreprocessingConfig_Denoise$json,
+    PreprocessingConfig_Deblock$json,
+    PreprocessingConfig_Audio$json,
+    PreprocessingConfig_Crop$json,
+    PreprocessingConfig_Pad$json,
+    PreprocessingConfig_Deinterlace$json
+  ],
 };
 
 @$core.Deprecated('Use preprocessingConfigDescriptor instead')
@@ -517,10 +934,31 @@ const PreprocessingConfig_Pad$json = {
 const PreprocessingConfig_Deinterlace$json = {
   '1': 'Deinterlace',
   '2': [
-    {'1': 'yadif', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Deinterlace.YadifConfig', '9': 0, '10': 'yadif'},
-    {'1': 'bwdif', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Deinterlace.BwdifConfig', '9': 0, '10': 'bwdif'},
+    {
+      '1': 'yadif',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Deinterlace.YadifConfig',
+      '9': 0,
+      '10': 'yadif'
+    },
+    {
+      '1': 'bwdif',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Deinterlace.BwdifConfig',
+      '9': 0,
+      '10': 'bwdif'
+    },
   ],
-  '3': [PreprocessingConfig_Deinterlace_YadifConfig$json, PreprocessingConfig_Deinterlace_BwdifConfig$json],
+  '3': [
+    PreprocessingConfig_Deinterlace_YadifConfig$json,
+    PreprocessingConfig_Deinterlace_BwdifConfig$json
+  ],
   '8': [
     {'1': 'deinterlacing_filter'},
   ],
@@ -531,9 +969,21 @@ const PreprocessingConfig_Deinterlace_YadifConfig$json = {
   '1': 'YadifConfig',
   '2': [
     {'1': 'mode', '3': 1, '4': 1, '5': 9, '10': 'mode'},
-    {'1': 'disable_spatial_interlacing', '3': 2, '4': 1, '5': 8, '10': 'disableSpatialInterlacing'},
+    {
+      '1': 'disable_spatial_interlacing',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'disableSpatialInterlacing'
+    },
     {'1': 'parity', '3': 3, '4': 1, '5': 9, '10': 'parity'},
-    {'1': 'deinterlace_all_frames', '3': 4, '4': 1, '5': 8, '10': 'deinterlaceAllFrames'},
+    {
+      '1': 'deinterlace_all_frames',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'deinterlaceAllFrames'
+    },
   ],
 };
 
@@ -543,7 +993,13 @@ const PreprocessingConfig_Deinterlace_BwdifConfig$json = {
   '2': [
     {'1': 'mode', '3': 1, '4': 1, '5': 9, '10': 'mode'},
     {'1': 'parity', '3': 2, '4': 1, '5': 9, '10': 'parity'},
-    {'1': 'deinterlace_all_frames', '3': 3, '4': 1, '5': 8, '10': 'deinterlaceAllFrames'},
+    {
+      '1': 'deinterlace_all_frames',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'deinterlaceAllFrames'
+    },
   ],
 };
 
@@ -587,11 +1043,42 @@ final $typed_data.Uint8List preprocessingConfigDescriptor = $convert.base64Decod
 const VideoStream$json = {
   '1': 'VideoStream',
   '2': [
-    {'1': 'h264', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.VideoStream.H264CodecSettings', '9': 0, '10': 'h264'},
-    {'1': 'h265', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.VideoStream.H265CodecSettings', '9': 0, '10': 'h265'},
-    {'1': 'vp9', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.VideoStream.Vp9CodecSettings', '9': 0, '10': 'vp9'},
+    {
+      '1': 'h264',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.video.transcoder.v1.VideoStream.H264CodecSettings',
+      '9': 0,
+      '10': 'h264'
+    },
+    {
+      '1': 'h265',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.video.transcoder.v1.VideoStream.H265CodecSettings',
+      '9': 0,
+      '10': 'h265'
+    },
+    {
+      '1': 'vp9',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.video.transcoder.v1.VideoStream.Vp9CodecSettings',
+      '9': 0,
+      '10': 'vp9'
+    },
   ],
-  '3': [VideoStream_H264CodecSettings$json, VideoStream_H265CodecSettings$json, VideoStream_Vp9CodecSettings$json],
+  '3': [
+    VideoStream_H264CodecSettings$json,
+    VideoStream_H265CodecSettings$json,
+    VideoStream_Vp9CodecSettings$json
+  ],
   '8': [
     {'1': 'codec_settings'},
   ],
@@ -609,11 +1096,32 @@ const VideoStream_H264CodecSettings$json = {
     {'1': 'rate_control_mode', '3': 6, '4': 1, '5': 9, '10': 'rateControlMode'},
     {'1': 'crf_level', '3': 7, '4': 1, '5': 5, '10': 'crfLevel'},
     {'1': 'allow_open_gop', '3': 8, '4': 1, '5': 8, '10': 'allowOpenGop'},
-    {'1': 'gop_frame_count', '3': 9, '4': 1, '5': 5, '9': 0, '10': 'gopFrameCount'},
-    {'1': 'gop_duration', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'gopDuration'},
+    {
+      '1': 'gop_frame_count',
+      '3': 9,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'gopFrameCount'
+    },
+    {
+      '1': 'gop_duration',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'gopDuration'
+    },
     {'1': 'enable_two_pass', '3': 11, '4': 1, '5': 8, '10': 'enableTwoPass'},
     {'1': 'vbv_size_bits', '3': 12, '4': 1, '5': 5, '10': 'vbvSizeBits'},
-    {'1': 'vbv_fullness_bits', '3': 13, '4': 1, '5': 5, '10': 'vbvFullnessBits'},
+    {
+      '1': 'vbv_fullness_bits',
+      '3': 13,
+      '4': 1,
+      '5': 5,
+      '10': 'vbvFullnessBits'
+    },
     {'1': 'entropy_coder', '3': 14, '4': 1, '5': 9, '10': 'entropyCoder'},
     {'1': 'b_pyramid', '3': 15, '4': 1, '5': 8, '10': 'bPyramid'},
     {'1': 'b_frame_count', '3': 16, '4': 1, '5': 5, '10': 'bFrameCount'},
@@ -639,11 +1147,32 @@ const VideoStream_H265CodecSettings$json = {
     {'1': 'rate_control_mode', '3': 6, '4': 1, '5': 9, '10': 'rateControlMode'},
     {'1': 'crf_level', '3': 7, '4': 1, '5': 5, '10': 'crfLevel'},
     {'1': 'allow_open_gop', '3': 8, '4': 1, '5': 8, '10': 'allowOpenGop'},
-    {'1': 'gop_frame_count', '3': 9, '4': 1, '5': 5, '9': 0, '10': 'gopFrameCount'},
-    {'1': 'gop_duration', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'gopDuration'},
+    {
+      '1': 'gop_frame_count',
+      '3': 9,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'gopFrameCount'
+    },
+    {
+      '1': 'gop_duration',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'gopDuration'
+    },
     {'1': 'enable_two_pass', '3': 11, '4': 1, '5': 8, '10': 'enableTwoPass'},
     {'1': 'vbv_size_bits', '3': 12, '4': 1, '5': 5, '10': 'vbvSizeBits'},
-    {'1': 'vbv_fullness_bits', '3': 13, '4': 1, '5': 5, '10': 'vbvFullnessBits'},
+    {
+      '1': 'vbv_fullness_bits',
+      '3': 13,
+      '4': 1,
+      '5': 5,
+      '10': 'vbvFullnessBits'
+    },
     {'1': 'b_pyramid', '3': 14, '4': 1, '5': 8, '10': 'bPyramid'},
     {'1': 'b_frame_count', '3': 15, '4': 1, '5': 5, '10': 'bFrameCount'},
     {'1': 'aq_strength', '3': 16, '4': 1, '5': 1, '10': 'aqStrength'},
@@ -667,8 +1196,23 @@ const VideoStream_Vp9CodecSettings$json = {
     {'1': 'pixel_format', '3': 5, '4': 1, '5': 9, '10': 'pixelFormat'},
     {'1': 'rate_control_mode', '3': 6, '4': 1, '5': 9, '10': 'rateControlMode'},
     {'1': 'crf_level', '3': 7, '4': 1, '5': 5, '10': 'crfLevel'},
-    {'1': 'gop_frame_count', '3': 8, '4': 1, '5': 5, '9': 0, '10': 'gopFrameCount'},
-    {'1': 'gop_duration', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'gopDuration'},
+    {
+      '1': 'gop_frame_count',
+      '3': 8,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'gopFrameCount'
+    },
+    {
+      '1': 'gop_duration',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '9': 0,
+      '10': 'gopDuration'
+    },
     {'1': 'profile', '3': 10, '4': 1, '5': 9, '10': 'profile'},
   ],
   '8': [
@@ -727,7 +1271,14 @@ const AudioStream$json = {
     {'1': 'bitrate_bps', '3': 2, '4': 1, '5': 5, '10': 'bitrateBps'},
     {'1': 'channel_count', '3': 3, '4': 1, '5': 5, '10': 'channelCount'},
     {'1': 'channel_layout', '3': 4, '4': 3, '5': 9, '10': 'channelLayout'},
-    {'1': 'mapping', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.AudioStream.AudioMapping', '10': 'mapping'},
+    {
+      '1': 'mapping',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.AudioStream.AudioMapping',
+      '10': 'mapping'
+    },
     {'1': 'sample_rate_hertz', '3': 6, '4': 1, '5': 5, '10': 'sampleRateHertz'},
     {'1': 'language_code', '3': 7, '4': 1, '5': 9, '10': 'languageCode'},
     {'1': 'display_name', '3': 8, '4': 1, '5': 9, '10': 'displayName'},
@@ -768,7 +1319,14 @@ const TextStream$json = {
   '2': [
     {'1': 'codec', '3': 1, '4': 1, '5': 9, '10': 'codec'},
     {'1': 'language_code', '3': 2, '4': 1, '5': 9, '10': 'languageCode'},
-    {'1': 'mapping', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.TextStream.TextMapping', '10': 'mapping'},
+    {
+      '1': 'mapping',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.TextStream.TextMapping',
+      '10': 'mapping'
+    },
     {'1': 'display_name', '3': 4, '4': 1, '5': 9, '10': 'displayName'},
   ],
   '3': [TextStream_TextMapping$json],
@@ -797,8 +1355,21 @@ final $typed_data.Uint8List textStreamDescriptor = $convert.base64Decode(
 const SegmentSettings$json = {
   '1': 'SegmentSettings',
   '2': [
-    {'1': 'segment_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'segmentDuration'},
-    {'1': 'individual_segments', '3': 3, '4': 1, '5': 8, '10': 'individualSegments'},
+    {
+      '1': 'segment_duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'segmentDuration'
+    },
+    {
+      '1': 'individual_segments',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'individualSegments'
+    },
   ],
 };
 
@@ -812,7 +1383,16 @@ final $typed_data.Uint8List segmentSettingsDescriptor = $convert.base64Decode(
 const JobEventData$json = {
   '1': 'JobEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.Job', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.Job',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -828,7 +1408,16 @@ final $typed_data.Uint8List jobEventDataDescriptor = $convert.base64Decode(
 const JobTemplateEventData$json = {
   '1': 'JobTemplateEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.video.transcoder.v1.JobTemplate', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.video.transcoder.v1.JobTemplate',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -840,4 +1429,3 @@ final $typed_data.Uint8List jobTemplateEventDataDescriptor = $convert.base64Deco
     'ChRKb2JUZW1wbGF0ZUV2ZW50RGF0YRJTCgdwYXlsb2FkGAEgASgLMjQuZ29vZ2xlLmV2ZW50cy'
     '5jbG91ZC52aWRlby50cmFuc2NvZGVyLnYxLkpvYlRlbXBsYXRlSABSB3BheWxvYWSIAQFCCgoI'
     'X3BheWxvYWQ=');
-

@@ -23,10 +23,31 @@ const AuthEventData$json = {
     {'1': 'display_name', '3': 4, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'photo_URL', '3': 5, '4': 1, '5': 9, '10': 'photoURL'},
     {'1': 'disabled', '3': 6, '4': 1, '5': 8, '10': 'disabled'},
-    {'1': 'metadata', '3': 7, '4': 1, '5': 11, '6': '.google.events.firebase.auth.v1.UserMetadata', '10': 'metadata'},
-    {'1': 'provider_data', '3': 8, '4': 3, '5': 11, '6': '.google.events.firebase.auth.v1.UserInfo', '10': 'providerData'},
+    {
+      '1': 'metadata',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.auth.v1.UserMetadata',
+      '10': 'metadata'
+    },
+    {
+      '1': 'provider_data',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.firebase.auth.v1.UserInfo',
+      '10': 'providerData'
+    },
     {'1': 'phone_number', '3': 9, '4': 1, '5': 9, '10': 'phoneNumber'},
-    {'1': 'custom_claims', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'customClaims'},
+    {
+      '1': 'custom_claims',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'customClaims'
+    },
   ],
 };
 
@@ -45,8 +66,22 @@ final $typed_data.Uint8List authEventDataDescriptor = $convert.base64Decode(
 const UserMetadata$json = {
   '1': 'UserMetadata',
   '2': [
-    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'last_sign_in_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastSignInTime'},
+    {
+      '1': 'create_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'last_sign_in_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastSignInTime'
+    },
   ],
 };
 
@@ -73,4 +108,3 @@ final $typed_data.Uint8List userInfoDescriptor = $convert.base64Decode(
     'CghVc2VySW5mbxIQCgN1aWQYASABKAlSA3VpZBIUCgVlbWFpbBgCIAEoCVIFZW1haWwSIQoMZG'
     'lzcGxheV9uYW1lGAMgASgJUgtkaXNwbGF5TmFtZRIbCglwaG90b19VUkwYBCABKAlSCHBob3Rv'
     'VVJMEh8KC3Byb3ZpZGVyX2lkGAUgASgJUgpwcm92aWRlcklk');
-

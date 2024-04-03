@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const InstanceCreatedEvent$json = {
   '1': 'InstanceCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +40,14 @@ final $typed_data.Uint8List instanceCreatedEventDescriptor = $convert.base64Deco
 const InstanceDeletedEvent$json = {
   '1': 'InstanceDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -49,7 +63,14 @@ final $typed_data.Uint8List instanceDeletedEventDescriptor = $convert.base64Deco
 const ApiCreatedEvent$json = {
   '1': 'ApiCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -64,7 +85,14 @@ final $typed_data.Uint8List apiCreatedEventDescriptor = $convert.base64Decode(
 const ApiUpdatedEvent$json = {
   '1': 'ApiUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -79,7 +107,14 @@ final $typed_data.Uint8List apiUpdatedEventDescriptor = $convert.base64Decode(
 const ApiDeletedEvent$json = {
   '1': 'ApiDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -94,7 +129,14 @@ final $typed_data.Uint8List apiDeletedEventDescriptor = $convert.base64Decode(
 const ApiVersionCreatedEvent$json = {
   '1': 'ApiVersionCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiVersionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiVersionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -110,7 +152,14 @@ final $typed_data.Uint8List apiVersionCreatedEventDescriptor = $convert.base64De
 const ApiVersionUpdatedEvent$json = {
   '1': 'ApiVersionUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiVersionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiVersionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -126,7 +175,14 @@ final $typed_data.Uint8List apiVersionUpdatedEventDescriptor = $convert.base64De
 const ApiVersionDeletedEvent$json = {
   '1': 'ApiVersionDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiVersionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiVersionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -142,7 +198,14 @@ final $typed_data.Uint8List apiVersionDeletedEventDescriptor = $convert.base64De
 const ApiSpecCreatedEvent$json = {
   '1': 'ApiSpecCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiSpecEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiSpecEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -158,7 +221,14 @@ final $typed_data.Uint8List apiSpecCreatedEventDescriptor = $convert.base64Decod
 const ApiSpecUpdatedEvent$json = {
   '1': 'ApiSpecUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiSpecEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiSpecEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -174,7 +244,14 @@ final $typed_data.Uint8List apiSpecUpdatedEventDescriptor = $convert.base64Decod
 const ApiSpecDeletedEvent$json = {
   '1': 'ApiSpecDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiSpecEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiSpecEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -190,7 +267,14 @@ final $typed_data.Uint8List apiSpecDeletedEventDescriptor = $convert.base64Decod
 const ApiDeploymentCreatedEvent$json = {
   '1': 'ApiDeploymentCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiDeploymentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiDeploymentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -206,7 +290,14 @@ final $typed_data.Uint8List apiDeploymentCreatedEventDescriptor = $convert.base6
 const ApiDeploymentUpdatedEvent$json = {
   '1': 'ApiDeploymentUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiDeploymentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiDeploymentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -222,7 +313,14 @@ final $typed_data.Uint8List apiDeploymentUpdatedEventDescriptor = $convert.base6
 const ApiDeploymentDeletedEvent$json = {
   '1': 'ApiDeploymentDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigeeregistry.v1.ApiDeploymentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigeeregistry.v1.ApiDeploymentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -233,4 +331,3 @@ final $typed_data.Uint8List apiDeploymentDeletedEventDescriptor = $convert.base6
     'RzLmNsb3VkLmFwaWdlZXJlZ2lzdHJ5LnYxLkFwaURlcGxveW1lbnRFdmVudERhdGFSBGRhdGE6'
     'ULL42Cw0Z29vZ2xlLmNsb3VkLmFwaWdlZXJlZ2lzdHJ5LmFwaURlcGxveW1lbnQudjEuZGVsZX'
     'RlZMr42CwDYXBpyvjYLApkZXBsb3ltZW50');
-

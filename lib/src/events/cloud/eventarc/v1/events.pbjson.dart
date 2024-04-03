@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const TriggerCreatedEvent$json = {
   '1': 'TriggerCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.TriggerEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.TriggerEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List triggerCreatedEventDescriptor = $convert.base64Decod
 const TriggerUpdatedEvent$json = {
   '1': 'TriggerUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.TriggerEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.TriggerEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List triggerUpdatedEventDescriptor = $convert.base64Decod
 const TriggerDeletedEvent$json = {
   '1': 'TriggerDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.TriggerEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.TriggerEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List triggerDeletedEventDescriptor = $convert.base64Decod
 const ChannelCreatedEvent$json = {
   '1': 'ChannelCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.ChannelEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.ChannelEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -77,7 +105,14 @@ final $typed_data.Uint8List channelCreatedEventDescriptor = $convert.base64Decod
 const ChannelUpdatedEvent$json = {
   '1': 'ChannelUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.ChannelEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.ChannelEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -92,7 +127,14 @@ final $typed_data.Uint8List channelUpdatedEventDescriptor = $convert.base64Decod
 const ChannelDeletedEvent$json = {
   '1': 'ChannelDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.ChannelEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.ChannelEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -107,7 +149,14 @@ final $typed_data.Uint8List channelDeletedEventDescriptor = $convert.base64Decod
 const ChannelConnectionCreatedEvent$json = {
   '1': 'ChannelConnectionCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.ChannelConnectionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.ChannelConnectionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -123,7 +172,14 @@ final $typed_data.Uint8List channelConnectionCreatedEventDescriptor = $convert.b
 const ChannelConnectionDeletedEvent$json = {
   '1': 'ChannelConnectionDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.eventarc.v1.ChannelConnectionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.eventarc.v1.ChannelConnectionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -134,4 +190,3 @@ final $typed_data.Uint8List channelConnectionDeletedEventDescriptor = $convert.b
     'V2ZW50cy5jbG91ZC5ldmVudGFyYy52MS5DaGFubmVsQ29ubmVjdGlvbkV2ZW50RGF0YVIEZGF0'
     'YTpNsvjYLDJnb29nbGUuY2xvdWQuZXZlbnRhcmMuY2hhbm5lbENvbm5lY3Rpb24udjEuZGVsZX'
     'RlZMr42CwRY2hhbm5lbGNvbm5lY3Rpb24=');
-

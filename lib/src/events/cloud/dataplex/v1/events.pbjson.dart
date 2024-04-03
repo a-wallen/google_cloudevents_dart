@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const DataTaxonomyCreatedEvent$json = {
   '1': 'DataTaxonomyCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataTaxonomyEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataTaxonomyEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +40,14 @@ final $typed_data.Uint8List dataTaxonomyCreatedEventDescriptor = $convert.base64
 const DataTaxonomyUpdatedEvent$json = {
   '1': 'DataTaxonomyUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataTaxonomyEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataTaxonomyEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -49,7 +63,14 @@ final $typed_data.Uint8List dataTaxonomyUpdatedEventDescriptor = $convert.base64
 const DataTaxonomyDeletedEvent$json = {
   '1': 'DataTaxonomyDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataTaxonomyEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataTaxonomyEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -65,55 +86,86 @@ final $typed_data.Uint8List dataTaxonomyDeletedEventDescriptor = $convert.base64
 const DataAttributeBindingCreatedEvent$json = {
   '1': 'DataAttributeBindingCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAttributeBindingEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAttributeBindingEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `DataAttributeBindingCreatedEvent`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dataAttributeBindingCreatedEventDescriptor = $convert.base64Decode(
-    'CiBEYXRhQXR0cmlidXRlQmluZGluZ0NyZWF0ZWRFdmVudBJSCgRkYXRhGAEgASgLMj4uZ29vZ2'
-    'xlLmV2ZW50cy5jbG91ZC5kYXRhcGxleC52MS5EYXRhQXR0cmlidXRlQmluZGluZ0V2ZW50RGF0'
-    'YVIEZGF0YTpVsvjYLDVnb29nbGUuY2xvdWQuZGF0YXBsZXguZGF0YUF0dHJpYnV0ZUJpbmRpbm'
-    'cudjEuY3JlYXRlZMr42CwWZGF0YWF0dHJpYnV0ZWJpbmRpbmdpZA==');
+final $typed_data.Uint8List dataAttributeBindingCreatedEventDescriptor =
+    $convert.base64Decode(
+        'CiBEYXRhQXR0cmlidXRlQmluZGluZ0NyZWF0ZWRFdmVudBJSCgRkYXRhGAEgASgLMj4uZ29vZ2'
+        'xlLmV2ZW50cy5jbG91ZC5kYXRhcGxleC52MS5EYXRhQXR0cmlidXRlQmluZGluZ0V2ZW50RGF0'
+        'YVIEZGF0YTpVsvjYLDVnb29nbGUuY2xvdWQuZGF0YXBsZXguZGF0YUF0dHJpYnV0ZUJpbmRpbm'
+        'cudjEuY3JlYXRlZMr42CwWZGF0YWF0dHJpYnV0ZWJpbmRpbmdpZA==');
 
 @$core.Deprecated('Use dataAttributeBindingUpdatedEventDescriptor instead')
 const DataAttributeBindingUpdatedEvent$json = {
   '1': 'DataAttributeBindingUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAttributeBindingEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAttributeBindingEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `DataAttributeBindingUpdatedEvent`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dataAttributeBindingUpdatedEventDescriptor = $convert.base64Decode(
-    'CiBEYXRhQXR0cmlidXRlQmluZGluZ1VwZGF0ZWRFdmVudBJSCgRkYXRhGAEgASgLMj4uZ29vZ2'
-    'xlLmV2ZW50cy5jbG91ZC5kYXRhcGxleC52MS5EYXRhQXR0cmlidXRlQmluZGluZ0V2ZW50RGF0'
-    'YVIEZGF0YTpVsvjYLDVnb29nbGUuY2xvdWQuZGF0YXBsZXguZGF0YUF0dHJpYnV0ZUJpbmRpbm'
-    'cudjEudXBkYXRlZMr42CwWZGF0YWF0dHJpYnV0ZWJpbmRpbmdpZA==');
+final $typed_data.Uint8List dataAttributeBindingUpdatedEventDescriptor =
+    $convert.base64Decode(
+        'CiBEYXRhQXR0cmlidXRlQmluZGluZ1VwZGF0ZWRFdmVudBJSCgRkYXRhGAEgASgLMj4uZ29vZ2'
+        'xlLmV2ZW50cy5jbG91ZC5kYXRhcGxleC52MS5EYXRhQXR0cmlidXRlQmluZGluZ0V2ZW50RGF0'
+        'YVIEZGF0YTpVsvjYLDVnb29nbGUuY2xvdWQuZGF0YXBsZXguZGF0YUF0dHJpYnV0ZUJpbmRpbm'
+        'cudjEudXBkYXRlZMr42CwWZGF0YWF0dHJpYnV0ZWJpbmRpbmdpZA==');
 
 @$core.Deprecated('Use dataAttributeBindingDeletedEventDescriptor instead')
 const DataAttributeBindingDeletedEvent$json = {
   '1': 'DataAttributeBindingDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAttributeBindingEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAttributeBindingEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `DataAttributeBindingDeletedEvent`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dataAttributeBindingDeletedEventDescriptor = $convert.base64Decode(
-    'CiBEYXRhQXR0cmlidXRlQmluZGluZ0RlbGV0ZWRFdmVudBJSCgRkYXRhGAEgASgLMj4uZ29vZ2'
-    'xlLmV2ZW50cy5jbG91ZC5kYXRhcGxleC52MS5EYXRhQXR0cmlidXRlQmluZGluZ0V2ZW50RGF0'
-    'YVIEZGF0YTpVsvjYLDVnb29nbGUuY2xvdWQuZGF0YXBsZXguZGF0YUF0dHJpYnV0ZUJpbmRpbm'
-    'cudjEuZGVsZXRlZMr42CwWZGF0YWF0dHJpYnV0ZWJpbmRpbmdpZA==');
+final $typed_data.Uint8List dataAttributeBindingDeletedEventDescriptor =
+    $convert.base64Decode(
+        'CiBEYXRhQXR0cmlidXRlQmluZGluZ0RlbGV0ZWRFdmVudBJSCgRkYXRhGAEgASgLMj4uZ29vZ2'
+        'xlLmV2ZW50cy5jbG91ZC5kYXRhcGxleC52MS5EYXRhQXR0cmlidXRlQmluZGluZ0V2ZW50RGF0'
+        'YVIEZGF0YTpVsvjYLDVnb29nbGUuY2xvdWQuZGF0YXBsZXguZGF0YUF0dHJpYnV0ZUJpbmRpbm'
+        'cudjEuZGVsZXRlZMr42CwWZGF0YWF0dHJpYnV0ZWJpbmRpbmdpZA==');
 
 @$core.Deprecated('Use dataAttributeCreatedEventDescriptor instead')
 const DataAttributeCreatedEvent$json = {
   '1': 'DataAttributeCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAttributeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAttributeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -129,7 +181,14 @@ final $typed_data.Uint8List dataAttributeCreatedEventDescriptor = $convert.base6
 const DataAttributeUpdatedEvent$json = {
   '1': 'DataAttributeUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAttributeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAttributeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -145,7 +204,14 @@ final $typed_data.Uint8List dataAttributeUpdatedEventDescriptor = $convert.base6
 const DataAttributeDeletedEvent$json = {
   '1': 'DataAttributeDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAttributeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAttributeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -161,7 +227,14 @@ final $typed_data.Uint8List dataAttributeDeletedEventDescriptor = $convert.base6
 const DataScanCreatedEvent$json = {
   '1': 'DataScanCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataScanEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataScanEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -176,7 +249,14 @@ final $typed_data.Uint8List dataScanCreatedEventDescriptor = $convert.base64Deco
 const DataScanUpdatedEvent$json = {
   '1': 'DataScanUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataScanEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataScanEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -191,7 +271,14 @@ final $typed_data.Uint8List dataScanUpdatedEventDescriptor = $convert.base64Deco
 const DataScanDeletedEvent$json = {
   '1': 'DataScanDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataScanEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataScanEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -206,7 +293,14 @@ final $typed_data.Uint8List dataScanDeletedEventDescriptor = $convert.base64Deco
 const LakeCreatedEvent$json = {
   '1': 'LakeCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.LakeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.LakeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -221,7 +315,14 @@ final $typed_data.Uint8List lakeCreatedEventDescriptor = $convert.base64Decode(
 const LakeUpdatedEvent$json = {
   '1': 'LakeUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.LakeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.LakeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -236,7 +337,14 @@ final $typed_data.Uint8List lakeUpdatedEventDescriptor = $convert.base64Decode(
 const LakeDeletedEvent$json = {
   '1': 'LakeDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.LakeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.LakeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -251,7 +359,14 @@ final $typed_data.Uint8List lakeDeletedEventDescriptor = $convert.base64Decode(
 const ZoneCreatedEvent$json = {
   '1': 'ZoneCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.ZoneEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.ZoneEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -266,7 +381,14 @@ final $typed_data.Uint8List zoneCreatedEventDescriptor = $convert.base64Decode(
 const ZoneUpdatedEvent$json = {
   '1': 'ZoneUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.ZoneEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.ZoneEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -281,7 +403,14 @@ final $typed_data.Uint8List zoneUpdatedEventDescriptor = $convert.base64Decode(
 const ZoneDeletedEvent$json = {
   '1': 'ZoneDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.ZoneEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.ZoneEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -296,7 +425,14 @@ final $typed_data.Uint8List zoneDeletedEventDescriptor = $convert.base64Decode(
 const AssetCreatedEvent$json = {
   '1': 'AssetCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.AssetEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.AssetEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -311,7 +447,14 @@ final $typed_data.Uint8List assetCreatedEventDescriptor = $convert.base64Decode(
 const AssetUpdatedEvent$json = {
   '1': 'AssetUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.AssetEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.AssetEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -326,7 +469,14 @@ final $typed_data.Uint8List assetUpdatedEventDescriptor = $convert.base64Decode(
 const AssetDeletedEvent$json = {
   '1': 'AssetDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.AssetEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.AssetEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -341,7 +491,14 @@ final $typed_data.Uint8List assetDeletedEventDescriptor = $convert.base64Decode(
 const TaskCreatedEvent$json = {
   '1': 'TaskCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.TaskEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.TaskEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -356,7 +513,14 @@ final $typed_data.Uint8List taskCreatedEventDescriptor = $convert.base64Decode(
 const TaskUpdatedEvent$json = {
   '1': 'TaskUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.TaskEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.TaskEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -371,7 +535,14 @@ final $typed_data.Uint8List taskUpdatedEventDescriptor = $convert.base64Decode(
 const TaskDeletedEvent$json = {
   '1': 'TaskDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.TaskEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.TaskEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -386,7 +557,14 @@ final $typed_data.Uint8List taskDeletedEventDescriptor = $convert.base64Decode(
 const EnvironmentCreatedEvent$json = {
   '1': 'EnvironmentCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.EnvironmentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.EnvironmentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -402,7 +580,14 @@ final $typed_data.Uint8List environmentCreatedEventDescriptor = $convert.base64D
 const EnvironmentUpdatedEvent$json = {
   '1': 'EnvironmentUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.EnvironmentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.EnvironmentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -418,7 +603,14 @@ final $typed_data.Uint8List environmentUpdatedEventDescriptor = $convert.base64D
 const EnvironmentDeletedEvent$json = {
   '1': 'EnvironmentDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.EnvironmentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.EnvironmentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -429,4 +621,3 @@ final $typed_data.Uint8List environmentDeletedEventDescriptor = $convert.base64D
     '5jbG91ZC5kYXRhcGxleC52MS5FbnZpcm9ubWVudEV2ZW50RGF0YVIEZGF0YTpKsvjYLCxnb29n'
     'bGUuY2xvdWQuZGF0YXBsZXguZW52aXJvbm1lbnQudjEuZGVsZXRlZMr42CwEbGFrZcr42CwLZW'
     '52aXJvbm1lbnQ=');
-

@@ -18,12 +18,40 @@ const Api$json = {
   '1': 'Api',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.apigateway.v1.Api.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.Api.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'managed_service', '3': 7, '4': 1, '5': 9, '10': 'managedService'},
-    {'1': 'state', '3': 12, '4': 1, '5': 14, '6': '.google.events.cloud.apigateway.v1.Api.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.apigateway.v1.Api.State',
+      '10': 'state'
+    },
   ],
   '3': [Api_LabelsEntry$json],
   '4': [Api_State$json],
@@ -70,18 +98,84 @@ const ApiConfig$json = {
   '1': 'ApiConfig',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiConfig.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiConfig.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'gateway_service_account', '3': 14, '4': 1, '5': 9, '10': 'gatewayServiceAccount'},
-    {'1': 'service_config_id', '3': 12, '4': 1, '5': 9, '10': 'serviceConfigId'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.apigateway.v1.ApiConfig.State', '10': 'state'},
-    {'1': 'openapi_documents', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiConfig.OpenApiDocument', '10': 'openapiDocuments'},
-    {'1': 'grpc_services', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiConfig.GrpcServiceDefinition', '10': 'grpcServices'},
-    {'1': 'managed_service_configs', '3': 11, '4': 3, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiConfig.File', '10': 'managedServiceConfigs'},
+    {
+      '1': 'gateway_service_account',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '10': 'gatewayServiceAccount'
+    },
+    {
+      '1': 'service_config_id',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceConfigId'
+    },
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.apigateway.v1.ApiConfig.State',
+      '10': 'state'
+    },
+    {
+      '1': 'openapi_documents',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiConfig.OpenApiDocument',
+      '10': 'openapiDocuments'
+    },
+    {
+      '1': 'grpc_services',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiConfig.GrpcServiceDefinition',
+      '10': 'grpcServices'
+    },
+    {
+      '1': 'managed_service_configs',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiConfig.File',
+      '10': 'managedServiceConfigs'
+    },
   ],
-  '3': [ApiConfig_File$json, ApiConfig_OpenApiDocument$json, ApiConfig_GrpcServiceDefinition$json, ApiConfig_LabelsEntry$json],
+  '3': [
+    ApiConfig_File$json,
+    ApiConfig_OpenApiDocument$json,
+    ApiConfig_GrpcServiceDefinition$json,
+    ApiConfig_LabelsEntry$json
+  ],
   '4': [ApiConfig_State$json],
 };
 
@@ -98,7 +192,14 @@ const ApiConfig_File$json = {
 const ApiConfig_OpenApiDocument$json = {
   '1': 'OpenApiDocument',
   '2': [
-    {'1': 'document', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiConfig.File', '10': 'document'},
+    {
+      '1': 'document',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiConfig.File',
+      '10': 'document'
+    },
   ],
 };
 
@@ -106,7 +207,14 @@ const ApiConfig_OpenApiDocument$json = {
 const ApiConfig_GrpcServiceDefinition$json = {
   '1': 'GrpcServiceDefinition',
   '2': [
-    {'1': 'source', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiConfig.File', '10': 'source'},
+    {
+      '1': 'source',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiConfig.File',
+      '10': 'source'
+    },
   ],
 };
 
@@ -164,12 +272,40 @@ const Gateway$json = {
   '1': 'Gateway',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.apigateway.v1.Gateway.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.Gateway.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'api_config', '3': 6, '4': 1, '5': 9, '10': 'apiConfig'},
-    {'1': 'state', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.apigateway.v1.Gateway.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.apigateway.v1.Gateway.State',
+      '10': 'state'
+    },
     {'1': 'default_hostname', '3': 9, '4': 1, '5': 9, '10': 'defaultHostname'},
   ],
   '3': [Gateway_LabelsEntry$json],
@@ -217,7 +353,16 @@ final $typed_data.Uint8List gatewayDescriptor = $convert.base64Decode(
 const GatewayEventData$json = {
   '1': 'GatewayEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.Gateway', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.Gateway',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -233,7 +378,16 @@ final $typed_data.Uint8List gatewayEventDataDescriptor = $convert.base64Decode(
 const ApiConfigEventData$json = {
   '1': 'ApiConfigEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.ApiConfig', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.ApiConfig',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -249,7 +403,16 @@ final $typed_data.Uint8List apiConfigEventDataDescriptor = $convert.base64Decode
 const ApiEventData$json = {
   '1': 'ApiEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.apigateway.v1.Api', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.apigateway.v1.Api',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -260,4 +423,3 @@ const ApiEventData$json = {
 final $typed_data.Uint8List apiEventDataDescriptor = $convert.base64Decode(
     'CgxBcGlFdmVudERhdGESRQoHcGF5bG9hZBgBIAEoCzImLmdvb2dsZS5ldmVudHMuY2xvdWQuYX'
     'BpZ2F0ZXdheS52MS5BcGlIAFIHcGF5bG9hZIgBAUIKCghfcGF5bG9hZA==');
-

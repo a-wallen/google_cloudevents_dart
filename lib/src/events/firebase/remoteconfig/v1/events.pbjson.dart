@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const RemoteConfigUpdatedEvent$json = {
   '1': 'RemoteConfigUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.remoteconfig.v1.RemoteConfigEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.remoteconfig.v1.RemoteConfigEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -28,4 +35,3 @@ final $typed_data.Uint8List remoteConfigUpdatedEventDescriptor = $convert.base64
     'MuZmlyZWJhc2UucmVtb3RlY29uZmlnLnYxLlJlbW90ZUNvbmZpZ0V2ZW50RGF0YVIEZGF0YTo5'
     'svjYLDRnb29nbGUuZmlyZWJhc2UucmVtb3RlY29uZmlnLnJlbW90ZUNvbmZpZy52MS51cGRhdG'
     'Vk');
-

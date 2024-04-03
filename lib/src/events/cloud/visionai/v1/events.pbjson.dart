@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const AnalysisCreatedEvent$json = {
   '1': 'AnalysisCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.AnalysisEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.AnalysisEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +40,14 @@ final $typed_data.Uint8List analysisCreatedEventDescriptor = $convert.base64Deco
 const AnalysisUpdatedEvent$json = {
   '1': 'AnalysisUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.AnalysisEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.AnalysisEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -49,7 +63,14 @@ final $typed_data.Uint8List analysisUpdatedEventDescriptor = $convert.base64Deco
 const AnalysisDeletedEvent$json = {
   '1': 'AnalysisDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.AnalysisEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.AnalysisEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -65,7 +86,14 @@ final $typed_data.Uint8List analysisDeletedEventDescriptor = $convert.base64Deco
 const ProcessCreatedEvent$json = {
   '1': 'ProcessCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ProcessEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -80,7 +108,14 @@ final $typed_data.Uint8List processCreatedEventDescriptor = $convert.base64Decod
 const ProcessUpdatedEvent$json = {
   '1': 'ProcessUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ProcessEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -95,7 +130,14 @@ final $typed_data.Uint8List processUpdatedEventDescriptor = $convert.base64Decod
 const ProcessDeletedEvent$json = {
   '1': 'ProcessDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ProcessEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -110,7 +152,14 @@ final $typed_data.Uint8List processDeletedEventDescriptor = $convert.base64Decod
 const ApplicationCreatedEvent$json = {
   '1': 'ApplicationCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ApplicationEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ApplicationEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -126,7 +175,14 @@ final $typed_data.Uint8List applicationCreatedEventDescriptor = $convert.base64D
 const ApplicationUpdatedEvent$json = {
   '1': 'ApplicationUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ApplicationEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ApplicationEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -142,7 +198,14 @@ final $typed_data.Uint8List applicationUpdatedEventDescriptor = $convert.base64D
 const ApplicationDeletedEvent$json = {
   '1': 'ApplicationDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ApplicationEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ApplicationEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -158,7 +221,14 @@ final $typed_data.Uint8List applicationDeletedEventDescriptor = $convert.base64D
 const DraftCreatedEvent$json = {
   '1': 'DraftCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.DraftEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.DraftEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -173,7 +243,14 @@ final $typed_data.Uint8List draftCreatedEventDescriptor = $convert.base64Decode(
 const DraftUpdatedEvent$json = {
   '1': 'DraftUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.DraftEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.DraftEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -188,7 +265,14 @@ final $typed_data.Uint8List draftUpdatedEventDescriptor = $convert.base64Decode(
 const DraftDeletedEvent$json = {
   '1': 'DraftDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.DraftEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.DraftEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -203,7 +287,14 @@ final $typed_data.Uint8List draftDeletedEventDescriptor = $convert.base64Decode(
 const ProcessorCreatedEvent$json = {
   '1': 'ProcessorCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessorEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ProcessorEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -218,7 +309,14 @@ final $typed_data.Uint8List processorCreatedEventDescriptor = $convert.base64Dec
 const ProcessorUpdatedEvent$json = {
   '1': 'ProcessorUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessorEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ProcessorEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -233,7 +331,14 @@ final $typed_data.Uint8List processorUpdatedEventDescriptor = $convert.base64Dec
 const ProcessorDeletedEvent$json = {
   '1': 'ProcessorDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ProcessorEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ProcessorEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -248,7 +353,14 @@ final $typed_data.Uint8List processorDeletedEventDescriptor = $convert.base64Dec
 const ClusterCreatedEvent$json = {
   '1': 'ClusterCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ClusterEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ClusterEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -263,7 +375,14 @@ final $typed_data.Uint8List clusterCreatedEventDescriptor = $convert.base64Decod
 const ClusterUpdatedEvent$json = {
   '1': 'ClusterUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ClusterEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ClusterEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -278,7 +397,14 @@ final $typed_data.Uint8List clusterUpdatedEventDescriptor = $convert.base64Decod
 const ClusterDeletedEvent$json = {
   '1': 'ClusterDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.ClusterEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.ClusterEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -293,7 +419,14 @@ final $typed_data.Uint8List clusterDeletedEventDescriptor = $convert.base64Decod
 const StreamCreatedEvent$json = {
   '1': 'StreamCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.StreamEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.StreamEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -308,7 +441,14 @@ final $typed_data.Uint8List streamCreatedEventDescriptor = $convert.base64Decode
 const StreamUpdatedEvent$json = {
   '1': 'StreamUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.StreamEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.StreamEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -323,7 +463,14 @@ final $typed_data.Uint8List streamUpdatedEventDescriptor = $convert.base64Decode
 const StreamDeletedEvent$json = {
   '1': 'StreamDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.StreamEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.StreamEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -338,7 +485,14 @@ final $typed_data.Uint8List streamDeletedEventDescriptor = $convert.base64Decode
 const EventCreatedEvent$json = {
   '1': 'EventCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.EventEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.EventEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -353,7 +507,14 @@ final $typed_data.Uint8List eventCreatedEventDescriptor = $convert.base64Decode(
 const EventUpdatedEvent$json = {
   '1': 'EventUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.EventEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.EventEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -368,7 +529,14 @@ final $typed_data.Uint8List eventUpdatedEventDescriptor = $convert.base64Decode(
 const EventDeletedEvent$json = {
   '1': 'EventDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.EventEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.EventEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -383,7 +551,14 @@ final $typed_data.Uint8List eventDeletedEventDescriptor = $convert.base64Decode(
 const SeriesCreatedEvent$json = {
   '1': 'SeriesCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.SeriesEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.SeriesEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -398,7 +573,14 @@ final $typed_data.Uint8List seriesCreatedEventDescriptor = $convert.base64Decode
 const SeriesUpdatedEvent$json = {
   '1': 'SeriesUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.SeriesEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.SeriesEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -413,7 +595,14 @@ final $typed_data.Uint8List seriesUpdatedEventDescriptor = $convert.base64Decode
 const SeriesDeletedEvent$json = {
   '1': 'SeriesDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.visionai.v1.SeriesEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.visionai.v1.SeriesEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -423,4 +612,3 @@ final $typed_data.Uint8List seriesDeletedEventDescriptor = $convert.base64Decode
     'ChJTZXJpZXNEZWxldGVkRXZlbnQSRAoEZGF0YRgBIAEoCzIwLmdvb2dsZS5ldmVudHMuY2xvdW'
     'QudmlzaW9uYWkudjEuU2VyaWVzRXZlbnREYXRhUgRkYXRhOkOy+NgsJ2dvb2dsZS5jbG91ZC52'
     'aXNpb25haS5zZXJpZXMudjEuZGVsZXRlZMr42CwHY2x1c3Rlcsr42CwGc2VyaWVz');
-

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const MembershipCreatedEvent$json = {
   '1': 'MembershipCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MembershipEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MembershipEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List membershipCreatedEventDescriptor = $convert.base64De
 const FeatureCreatedEvent$json = {
   '1': 'FeatureCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.FeatureEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.FeatureEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List featureCreatedEventDescriptor = $convert.base64Decod
 const MembershipDeletedEvent$json = {
   '1': 'MembershipDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MembershipEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MembershipEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List membershipDeletedEventDescriptor = $convert.base64De
 const FeatureDeletedEvent$json = {
   '1': 'FeatureDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.FeatureEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.FeatureEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -77,7 +105,14 @@ final $typed_data.Uint8List featureDeletedEventDescriptor = $convert.base64Decod
 const MembershipUpdatedEvent$json = {
   '1': 'MembershipUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MembershipEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MembershipEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -92,7 +127,14 @@ final $typed_data.Uint8List membershipUpdatedEventDescriptor = $convert.base64De
 const FeatureUpdatedEvent$json = {
   '1': 'FeatureUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.FeatureEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.FeatureEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -107,7 +149,14 @@ final $typed_data.Uint8List featureUpdatedEventDescriptor = $convert.base64Decod
 const ScopeCreatedEvent$json = {
   '1': 'ScopeCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.ScopeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.ScopeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -122,7 +171,14 @@ final $typed_data.Uint8List scopeCreatedEventDescriptor = $convert.base64Decode(
 const ScopeDeletedEvent$json = {
   '1': 'ScopeDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.ScopeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.ScopeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -137,7 +193,14 @@ final $typed_data.Uint8List scopeDeletedEventDescriptor = $convert.base64Decode(
 const MembershipBindingCreatedEvent$json = {
   '1': 'MembershipBindingCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MembershipBindingEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MembershipBindingEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -153,7 +216,14 @@ final $typed_data.Uint8List membershipBindingCreatedEventDescriptor = $convert.b
 const MembershipBindingUpdatedEvent$json = {
   '1': 'MembershipBindingUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MembershipBindingEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MembershipBindingEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -169,7 +239,14 @@ final $typed_data.Uint8List membershipBindingUpdatedEventDescriptor = $convert.b
 const MembershipBindingDeletedEvent$json = {
   '1': 'MembershipBindingDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MembershipBindingEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MembershipBindingEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -180,4 +257,3 @@ final $typed_data.Uint8List membershipBindingDeletedEventDescriptor = $convert.b
     'V2ZW50cy5jbG91ZC5na2VodWIudjEuTWVtYmVyc2hpcEJpbmRpbmdFdmVudERhdGFSBGRhdGE6'
     'WrL42CwwZ29vZ2xlLmNsb3VkLmdrZWh1Yi5tZW1iZXJzaGlwQmluZGluZy52MS5kZWxldGVkyv'
     'jYLAptZW1iZXJzaGlwyvjYLBFtZW1iZXJzaGlwYmluZGluZw==');
-

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const FunctionCreatedEvent$json = {
   '1': 'FunctionCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.FunctionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.FunctionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List functionCreatedEventDescriptor = $convert.base64Deco
 const FunctionUpdatedEvent$json = {
   '1': 'FunctionUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.FunctionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.FunctionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List functionUpdatedEventDescriptor = $convert.base64Deco
 const FunctionDeletedEvent$json = {
   '1': 'FunctionDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.FunctionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.FunctionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -57,4 +78,3 @@ final $typed_data.Uint8List functionDeletedEventDescriptor = $convert.base64Deco
     'ChRGdW5jdGlvbkRlbGV0ZWRFdmVudBJHCgRkYXRhGAEgASgLMjMuZ29vZ2xlLmV2ZW50cy5jbG'
     '91ZC5mdW5jdGlvbnMudjIuRnVuY3Rpb25FdmVudERhdGFSBGRhdGE6PLL42CwqZ29vZ2xlLmNs'
     'b3VkLmZ1bmN0aW9ucy5mdW5jdGlvbi52Mi5kZWxldGVkyvjYLAhmdW5jdGlvbg==');
-

@@ -27,40 +27,54 @@ class AuditLogWrittenEvent extends $pb.GeneratedMessage {
     return $result;
   }
   AuditLogWrittenEvent._() : super();
-  factory AuditLogWrittenEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AuditLogWrittenEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AuditLogWrittenEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AuditLogWrittenEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuditLogWrittenEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
-    ..aOM<$44.LogEntryData>(1, _omitFieldNames ? '' : 'data', subBuilder: $44.LogEntryData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AuditLogWrittenEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
+    ..aOM<$44.LogEntryData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $44.LogEntryData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AuditLogWrittenEvent clone() => AuditLogWrittenEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AuditLogWrittenEvent copyWith(void Function(AuditLogWrittenEvent) updates) => super.copyWith((message) => updates(message as AuditLogWrittenEvent)) as AuditLogWrittenEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AuditLogWrittenEvent clone() =>
+      AuditLogWrittenEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AuditLogWrittenEvent copyWith(void Function(AuditLogWrittenEvent) updates) =>
+      super.copyWith((message) => updates(message as AuditLogWrittenEvent))
+          as AuditLogWrittenEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuditLogWrittenEvent create() => AuditLogWrittenEvent._();
   AuditLogWrittenEvent createEmptyInstance() => create();
-  static $pb.PbList<AuditLogWrittenEvent> createRepeated() => $pb.PbList<AuditLogWrittenEvent>();
+  static $pb.PbList<AuditLogWrittenEvent> createRepeated() =>
+      $pb.PbList<AuditLogWrittenEvent>();
   @$core.pragma('dart2js:noInline')
-  static AuditLogWrittenEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuditLogWrittenEvent>(create);
+  static AuditLogWrittenEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AuditLogWrittenEvent>(create);
   static AuditLogWrittenEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $44.LogEntryData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($44.LogEntryData v) { setField(1, v); }
+  set data($44.LogEntryData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -69,6 +83,6 @@ class AuditLogWrittenEvent extends $pb.GeneratedMessage {
   $44.LogEntryData ensureData() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

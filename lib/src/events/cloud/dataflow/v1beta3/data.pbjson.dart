@@ -39,9 +39,10 @@ const FlexResourceSchedulingGoal$json = {
 };
 
 /// Descriptor for `FlexResourceSchedulingGoal`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List flexResourceSchedulingGoalDescriptor = $convert.base64Decode(
-    'ChpGbGV4UmVzb3VyY2VTY2hlZHVsaW5nR29hbBIWChJGTEVYUlNfVU5TUEVDSUZJRUQQABIaCh'
-    'ZGTEVYUlNfU1BFRURfT1BUSU1JWkVEEAESGQoVRkxFWFJTX0NPU1RfT1BUSU1JWkVEEAI=');
+final $typed_data.Uint8List flexResourceSchedulingGoalDescriptor =
+    $convert.base64Decode(
+        'ChpGbGV4UmVzb3VyY2VTY2hlZHVsaW5nR29hbBIWChJGTEVYUlNfVU5TUEVDSUZJRUQQABIaCh'
+        'ZGTEVYUlNfU1BFRURfT1BUSU1JWkVEEAESGQoVRkxFWFJTX0NPU1RfT1BUSU1JWkVEEAI=');
 
 @$core.Deprecated('Use teardownPolicyDescriptor instead')
 const TeardownPolicy$json = {
@@ -103,9 +104,10 @@ const WorkerIPAddressConfiguration$json = {
 };
 
 /// Descriptor for `WorkerIPAddressConfiguration`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List workerIPAddressConfigurationDescriptor = $convert.base64Decode(
-    'ChxXb3JrZXJJUEFkZHJlc3NDb25maWd1cmF0aW9uEhkKFVdPUktFUl9JUF9VTlNQRUNJRklFRB'
-    'AAEhQKEFdPUktFUl9JUF9QVUJMSUMQARIVChFXT1JLRVJfSVBfUFJJVkFURRAC');
+final $typed_data.Uint8List workerIPAddressConfigurationDescriptor =
+    $convert.base64Decode(
+        'ChxXb3JrZXJJUEFkZHJlc3NDb25maWd1cmF0aW9uEhkKFVdPUktFUl9JUF9VTlNQRUNJRklFRB'
+        'AAEhQKEFdPUktFUl9JUF9QVUJMSUMQARIVChFXT1JLRVJfSVBfUFJJVkFURRAC');
 
 @$core.Deprecated('Use shuffleModeDescriptor instead')
 const ShuffleMode$json = {
@@ -155,22 +157,95 @@ final $typed_data.Uint8List jobStateDescriptor = $convert.base64Decode(
 const Environment$json = {
   '1': 'Environment',
   '2': [
-    {'1': 'temp_storage_prefix', '3': 1, '4': 1, '5': 9, '10': 'tempStoragePrefix'},
-    {'1': 'cluster_manager_api_service', '3': 2, '4': 1, '5': 9, '10': 'clusterManagerApiService'},
+    {
+      '1': 'temp_storage_prefix',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'tempStoragePrefix'
+    },
+    {
+      '1': 'cluster_manager_api_service',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'clusterManagerApiService'
+    },
     {'1': 'experiments', '3': 3, '4': 3, '5': 9, '10': 'experiments'},
     {'1': 'service_options', '3': 16, '4': 3, '5': 9, '10': 'serviceOptions'},
-    {'1': 'service_kms_key_name', '3': 12, '4': 1, '5': 9, '10': 'serviceKmsKeyName'},
-    {'1': 'worker_pools', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.WorkerPool', '10': 'workerPools'},
-    {'1': 'user_agent', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'userAgent'},
-    {'1': 'version', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'version'},
+    {
+      '1': 'service_kms_key_name',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceKmsKeyName'
+    },
+    {
+      '1': 'worker_pools',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.WorkerPool',
+      '10': 'workerPools'
+    },
+    {
+      '1': 'user_agent',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'userAgent'
+    },
+    {
+      '1': 'version',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'version'
+    },
     {'1': 'dataset', '3': 7, '4': 1, '5': 9, '10': 'dataset'},
-    {'1': 'sdk_pipeline_options', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'sdkPipelineOptions'},
-    {'1': 'service_account_email', '3': 10, '4': 1, '5': 9, '10': 'serviceAccountEmail'},
-    {'1': 'flex_resource_scheduling_goal', '3': 11, '4': 1, '5': 14, '6': '.google.events.cloud.dataflow.v1beta3.FlexResourceSchedulingGoal', '10': 'flexResourceSchedulingGoal'},
+    {
+      '1': 'sdk_pipeline_options',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'sdkPipelineOptions'
+    },
+    {
+      '1': 'service_account_email',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceAccountEmail'
+    },
+    {
+      '1': 'flex_resource_scheduling_goal',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataflow.v1beta3.FlexResourceSchedulingGoal',
+      '10': 'flexResourceSchedulingGoal'
+    },
     {'1': 'worker_region', '3': 13, '4': 1, '5': 9, '10': 'workerRegion'},
     {'1': 'worker_zone', '3': 14, '4': 1, '5': 9, '10': 'workerZone'},
-    {'1': 'shuffle_mode', '3': 15, '4': 1, '5': 14, '6': '.google.events.cloud.dataflow.v1beta3.ShuffleMode', '10': 'shuffleMode'},
-    {'1': 'debug_options', '3': 17, '4': 1, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.DebugOptions', '10': 'debugOptions'},
+    {
+      '1': 'shuffle_mode',
+      '3': 15,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataflow.v1beta3.ShuffleMode',
+      '10': 'shuffleMode'
+    },
+    {
+      '1': 'debug_options',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.DebugOptions',
+      '10': 'debugOptions'
+    },
   ],
 };
 
@@ -213,7 +288,14 @@ final $typed_data.Uint8List packageDescriptor = $convert.base64Decode(
 const AutoscalingSettings$json = {
   '1': 'AutoscalingSettings',
   '2': [
-    {'1': 'algorithm', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.dataflow.v1beta3.AutoscalingAlgorithm', '10': 'algorithm'},
+    {
+      '1': 'algorithm',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataflow.v1beta3.AutoscalingAlgorithm',
+      '10': 'algorithm'
+    },
     {'1': 'max_num_workers', '3': 2, '4': 1, '5': 5, '10': 'maxNumWorkers'},
   ],
 };
@@ -229,7 +311,13 @@ const SdkHarnessContainerImage$json = {
   '1': 'SdkHarnessContainerImage',
   '2': [
     {'1': 'container_image', '3': 1, '4': 1, '5': 9, '10': 'containerImage'},
-    {'1': 'use_single_core_per_container', '3': 2, '4': 1, '5': 8, '10': 'useSingleCorePerContainer'},
+    {
+      '1': 'use_single_core_per_container',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'useSingleCorePerContainer'
+    },
     {'1': 'environment_id', '3': 3, '4': 1, '5': 9, '10': 'environmentId'},
     {'1': 'capabilities', '3': 4, '4': 3, '5': 9, '10': 'capabilities'},
   ],
@@ -248,23 +336,90 @@ const WorkerPool$json = {
   '2': [
     {'1': 'kind', '3': 1, '4': 1, '5': 9, '10': 'kind'},
     {'1': 'num_workers', '3': 2, '4': 1, '5': 5, '10': 'numWorkers'},
-    {'1': 'packages', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.Package', '10': 'packages'},
-    {'1': 'default_package_set', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.dataflow.v1beta3.DefaultPackageSet', '10': 'defaultPackageSet'},
+    {
+      '1': 'packages',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.Package',
+      '10': 'packages'
+    },
+    {
+      '1': 'default_package_set',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataflow.v1beta3.DefaultPackageSet',
+      '10': 'defaultPackageSet'
+    },
     {'1': 'machine_type', '3': 5, '4': 1, '5': 9, '10': 'machineType'},
-    {'1': 'teardown_policy', '3': 6, '4': 1, '5': 14, '6': '.google.events.cloud.dataflow.v1beta3.TeardownPolicy', '10': 'teardownPolicy'},
+    {
+      '1': 'teardown_policy',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataflow.v1beta3.TeardownPolicy',
+      '10': 'teardownPolicy'
+    },
     {'1': 'disk_size_gb', '3': 7, '4': 1, '5': 5, '10': 'diskSizeGb'},
     {'1': 'disk_type', '3': 16, '4': 1, '5': 9, '10': 'diskType'},
     {'1': 'disk_source_image', '3': 8, '4': 1, '5': 9, '10': 'diskSourceImage'},
     {'1': 'zone', '3': 9, '4': 1, '5': 9, '10': 'zone'},
-    {'1': 'on_host_maintenance', '3': 11, '4': 1, '5': 9, '10': 'onHostMaintenance'},
-    {'1': 'metadata', '3': 13, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.WorkerPool.MetadataEntry', '10': 'metadata'},
-    {'1': 'autoscaling_settings', '3': 14, '4': 1, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.AutoscalingSettings', '10': 'autoscalingSettings'},
+    {
+      '1': 'on_host_maintenance',
+      '3': 11,
+      '4': 1,
+      '5': 9,
+      '10': 'onHostMaintenance'
+    },
+    {
+      '1': 'metadata',
+      '3': 13,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.WorkerPool.MetadataEntry',
+      '10': 'metadata'
+    },
+    {
+      '1': 'autoscaling_settings',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.AutoscalingSettings',
+      '10': 'autoscalingSettings'
+    },
     {'1': 'network', '3': 17, '4': 1, '5': 9, '10': 'network'},
     {'1': 'subnetwork', '3': 19, '4': 1, '5': 9, '10': 'subnetwork'},
-    {'1': 'worker_harness_container_image', '3': 18, '4': 1, '5': 9, '10': 'workerHarnessContainerImage'},
-    {'1': 'num_threads_per_worker', '3': 20, '4': 1, '5': 5, '10': 'numThreadsPerWorker'},
-    {'1': 'ip_configuration', '3': 21, '4': 1, '5': 14, '6': '.google.events.cloud.dataflow.v1beta3.WorkerIPAddressConfiguration', '10': 'ipConfiguration'},
-    {'1': 'sdk_harness_container_images', '3': 22, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.SdkHarnessContainerImage', '10': 'sdkHarnessContainerImages'},
+    {
+      '1': 'worker_harness_container_image',
+      '3': 18,
+      '4': 1,
+      '5': 9,
+      '10': 'workerHarnessContainerImage'
+    },
+    {
+      '1': 'num_threads_per_worker',
+      '3': 20,
+      '4': 1,
+      '5': 5,
+      '10': 'numThreadsPerWorker'
+    },
+    {
+      '1': 'ip_configuration',
+      '3': 21,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataflow.v1beta3.WorkerIPAddressConfiguration',
+      '10': 'ipConfiguration'
+    },
+    {
+      '1': 'sdk_harness_container_images',
+      '3': 22,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.SdkHarnessContainerImage',
+      '10': 'sdkHarnessContainerImages'
+    },
   ],
   '3': [WorkerPool_MetadataEntry$json],
 };
@@ -309,7 +464,13 @@ final $typed_data.Uint8List workerPoolDescriptor = $convert.base64Decode(
 const DebugOptions$json = {
   '1': 'DebugOptions',
   '2': [
-    {'1': 'enable_hot_key_logging', '3': 1, '4': 1, '5': 8, '10': 'enableHotKeyLogging'},
+    {
+      '1': 'enable_hot_key_logging',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '10': 'enableHotKeyLogging'
+    },
   ],
 };
 
@@ -325,24 +486,119 @@ const Job$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'type', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.dataflow.v1beta3.JobType', '10': 'type'},
-    {'1': 'environment', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.Environment', '10': 'environment'},
+    {
+      '1': 'type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataflow.v1beta3.JobType',
+      '10': 'type'
+    },
+    {
+      '1': 'environment',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.Environment',
+      '10': 'environment'
+    },
     {'1': 'steps_location', '3': 24, '4': 1, '5': 9, '10': 'stepsLocation'},
-    {'1': 'current_state', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.dataflow.v1beta3.JobState', '10': 'currentState'},
-    {'1': 'current_state_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'currentStateTime'},
-    {'1': 'requested_state', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.dataflow.v1beta3.JobState', '10': 'requestedState'},
-    {'1': 'execution_info', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.JobExecutionInfo', '10': 'executionInfo'},
-    {'1': 'create_time', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {
+      '1': 'current_state',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataflow.v1beta3.JobState',
+      '10': 'currentState'
+    },
+    {
+      '1': 'current_state_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'currentStateTime'
+    },
+    {
+      '1': 'requested_state',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataflow.v1beta3.JobState',
+      '10': 'requestedState'
+    },
+    {
+      '1': 'execution_info',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.JobExecutionInfo',
+      '10': 'executionInfo'
+    },
+    {
+      '1': 'create_time',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
     {'1': 'replace_job_id', '3': 12, '4': 1, '5': 9, '10': 'replaceJobId'},
-    {'1': 'client_request_id', '3': 14, '4': 1, '5': 9, '10': 'clientRequestId'},
-    {'1': 'replaced_by_job_id', '3': 15, '4': 1, '5': 9, '10': 'replacedByJobId'},
+    {
+      '1': 'client_request_id',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '10': 'clientRequestId'
+    },
+    {
+      '1': 'replaced_by_job_id',
+      '3': 15,
+      '4': 1,
+      '5': 9,
+      '10': 'replacedByJobId'
+    },
     {'1': 'temp_files', '3': 16, '4': 3, '5': 9, '10': 'tempFiles'},
-    {'1': 'labels', '3': 17, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.Job.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 17,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.Job.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'location', '3': 18, '4': 1, '5': 9, '10': 'location'},
-    {'1': 'stage_states', '3': 20, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.ExecutionStageState', '10': 'stageStates'},
-    {'1': 'job_metadata', '3': 21, '4': 1, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.JobMetadata', '10': 'jobMetadata'},
-    {'1': 'start_time', '3': 22, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'created_from_snapshot_id', '3': 23, '4': 1, '5': 9, '10': 'createdFromSnapshotId'},
+    {
+      '1': 'stage_states',
+      '3': 20,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.ExecutionStageState',
+      '10': 'stageStates'
+    },
+    {
+      '1': 'job_metadata',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.JobMetadata',
+      '10': 'jobMetadata'
+    },
+    {
+      '1': 'start_time',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'created_from_snapshot_id',
+      '3': 23,
+      '4': 1,
+      '5': 9,
+      '10': 'createdFromSnapshotId'
+    },
     {'1': 'satisfies_pzs', '3': 25, '4': 1, '5': 8, '10': 'satisfiesPzs'},
   ],
   '3': [Job_LabelsEntry$json],
@@ -478,8 +734,21 @@ const SdkVersion$json = {
   '1': 'SdkVersion',
   '2': [
     {'1': 'version', '3': 1, '4': 1, '5': 9, '10': 'version'},
-    {'1': 'version_display_name', '3': 2, '4': 1, '5': 9, '10': 'versionDisplayName'},
-    {'1': 'sdk_support_status', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.dataflow.v1beta3.SdkVersion.SdkSupportStatus', '10': 'sdkSupportStatus'},
+    {
+      '1': 'version_display_name',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'versionDisplayName'
+    },
+    {
+      '1': 'sdk_support_status',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataflow.v1beta3.SdkVersion.SdkSupportStatus',
+      '10': 'sdkSupportStatus'
+    },
   ],
   '4': [SdkVersion_SdkSupportStatus$json],
 };
@@ -509,13 +778,62 @@ final $typed_data.Uint8List sdkVersionDescriptor = $convert.base64Decode(
 const JobMetadata$json = {
   '1': 'JobMetadata',
   '2': [
-    {'1': 'sdk_version', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.SdkVersion', '10': 'sdkVersion'},
-    {'1': 'spanner_details', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.SpannerIODetails', '10': 'spannerDetails'},
-    {'1': 'bigquery_details', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.BigQueryIODetails', '10': 'bigqueryDetails'},
-    {'1': 'big_table_details', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.BigTableIODetails', '10': 'bigTableDetails'},
-    {'1': 'pubsub_details', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.PubSubIODetails', '10': 'pubsubDetails'},
-    {'1': 'file_details', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.FileIODetails', '10': 'fileDetails'},
-    {'1': 'datastore_details', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.DatastoreIODetails', '10': 'datastoreDetails'},
+    {
+      '1': 'sdk_version',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.SdkVersion',
+      '10': 'sdkVersion'
+    },
+    {
+      '1': 'spanner_details',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.SpannerIODetails',
+      '10': 'spannerDetails'
+    },
+    {
+      '1': 'bigquery_details',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.BigQueryIODetails',
+      '10': 'bigqueryDetails'
+    },
+    {
+      '1': 'big_table_details',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.BigTableIODetails',
+      '10': 'bigTableDetails'
+    },
+    {
+      '1': 'pubsub_details',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.PubSubIODetails',
+      '10': 'pubsubDetails'
+    },
+    {
+      '1': 'file_details',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.FileIODetails',
+      '10': 'fileDetails'
+    },
+    {
+      '1': 'datastore_details',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.DatastoreIODetails',
+      '10': 'datastoreDetails'
+    },
   ],
 };
 
@@ -539,9 +857,29 @@ final $typed_data.Uint8List jobMetadataDescriptor = $convert.base64Decode(
 const ExecutionStageState$json = {
   '1': 'ExecutionStageState',
   '2': [
-    {'1': 'execution_stage_name', '3': 1, '4': 1, '5': 9, '10': 'executionStageName'},
-    {'1': 'execution_stage_state', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.dataflow.v1beta3.JobState', '10': 'executionStageState'},
-    {'1': 'current_state_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'currentStateTime'},
+    {
+      '1': 'execution_stage_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'executionStageName'
+    },
+    {
+      '1': 'execution_stage_state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataflow.v1beta3.JobState',
+      '10': 'executionStageState'
+    },
+    {
+      '1': 'current_state_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'currentStateTime'
+    },
   ],
 };
 
@@ -557,7 +895,14 @@ final $typed_data.Uint8List executionStageStateDescriptor = $convert.base64Decod
 const JobExecutionInfo$json = {
   '1': 'JobExecutionInfo',
   '2': [
-    {'1': 'stages', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.JobExecutionInfo.StagesEntry', '10': 'stages'},
+    {
+      '1': 'stages',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.JobExecutionInfo.StagesEntry',
+      '10': 'stages'
+    },
   ],
   '3': [JobExecutionInfo_StagesEntry$json],
 };
@@ -567,7 +912,14 @@ const JobExecutionInfo_StagesEntry$json = {
   '1': 'StagesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.JobExecutionStageInfo', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.JobExecutionStageInfo',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -596,7 +948,14 @@ final $typed_data.Uint8List jobExecutionStageInfoDescriptor = $convert.base64Dec
 const JobEventData$json = {
   '1': 'JobEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.Job', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.Job',
+      '10': 'payload'
+    },
   ],
 };
 
@@ -604,4 +963,3 @@ const JobEventData$json = {
 final $typed_data.Uint8List jobEventDataDescriptor = $convert.base64Decode(
     'CgxKb2JFdmVudERhdGESQwoHcGF5bG9hZBgBIAEoCzIpLmdvb2dsZS5ldmVudHMuY2xvdWQuZG'
     'F0YWZsb3cudjFiZXRhMy5Kb2JSB3BheWxvYWQ=');
-

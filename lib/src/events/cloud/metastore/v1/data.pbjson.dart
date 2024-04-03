@@ -18,13 +18,49 @@ const Federation$json = {
   '1': 'Federation',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.metastore.v1.Federation.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.Federation.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'version', '3': 5, '4': 1, '5': 9, '10': 'version'},
-    {'1': 'backend_metastores', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.metastore.v1.Federation.BackendMetastoresEntry', '10': 'backendMetastores'},
+    {
+      '1': 'backend_metastores',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.metastore.v1.Federation.BackendMetastoresEntry',
+      '10': 'backendMetastores'
+    },
     {'1': 'endpoint_uri', '3': 7, '4': 1, '5': 9, '10': 'endpointUri'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.Federation.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.Federation.State',
+      '10': 'state'
+    },
     {'1': 'state_message', '3': 9, '4': 1, '5': 9, '10': 'stateMessage'},
     {'1': 'uid', '3': 10, '4': 1, '5': 9, '10': 'uid'},
   ],
@@ -47,7 +83,14 @@ const Federation_BackendMetastoresEntry$json = {
   '1': 'BackendMetastoresEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 5, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.BackendMetastore', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.BackendMetastore',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -88,7 +131,14 @@ const BackendMetastore$json = {
   '1': 'BackendMetastore',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'metastore_type', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.BackendMetastore.MetastoreType', '10': 'metastoreType'},
+    {
+      '1': 'metastore_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.BackendMetastore.MetastoreType',
+      '10': 'metastoreType'
+    },
   ],
   '4': [BackendMetastore_MetastoreType$json],
 };
@@ -113,30 +163,134 @@ final $typed_data.Uint8List backendMetastoreDescriptor = $convert.base64Decode(
 const Service$json = {
   '1': 'Service',
   '2': [
-    {'1': 'hive_metastore_config', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.HiveMetastoreConfig', '9': 0, '10': 'hiveMetastoreConfig'},
+    {
+      '1': 'hive_metastore_config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.HiveMetastoreConfig',
+      '9': 0,
+      '10': 'hiveMetastoreConfig'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.metastore.v1.Service.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.Service.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'network', '3': 7, '4': 1, '5': 9, '10': 'network'},
     {'1': 'endpoint_uri', '3': 8, '4': 1, '5': 9, '10': 'endpointUri'},
     {'1': 'port', '3': 9, '4': 1, '5': 5, '10': 'port'},
-    {'1': 'state', '3': 10, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.Service.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.Service.State',
+      '10': 'state'
+    },
     {'1': 'state_message', '3': 11, '4': 1, '5': 9, '10': 'stateMessage'},
     {'1': 'artifact_gcs_uri', '3': 12, '4': 1, '5': 9, '10': 'artifactGcsUri'},
-    {'1': 'tier', '3': 13, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.Service.Tier', '10': 'tier'},
-    {'1': 'maintenance_window', '3': 15, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.MaintenanceWindow', '10': 'maintenanceWindow'},
+    {
+      '1': 'tier',
+      '3': 13,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.Service.Tier',
+      '10': 'tier'
+    },
+    {
+      '1': 'maintenance_window',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.MaintenanceWindow',
+      '10': 'maintenanceWindow'
+    },
     {'1': 'uid', '3': 16, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'metadata_management_activity', '3': 17, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.MetadataManagementActivity', '10': 'metadataManagementActivity'},
-    {'1': 'release_channel', '3': 19, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.Service.ReleaseChannel', '10': 'releaseChannel'},
-    {'1': 'encryption_config', '3': 20, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.EncryptionConfig', '10': 'encryptionConfig'},
-    {'1': 'network_config', '3': 21, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.NetworkConfig', '10': 'networkConfig'},
-    {'1': 'database_type', '3': 22, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.Service.DatabaseType', '10': 'databaseType'},
-    {'1': 'telemetry_config', '3': 23, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.TelemetryConfig', '10': 'telemetryConfig'},
-    {'1': 'scaling_config', '3': 24, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.ScalingConfig', '10': 'scalingConfig'},
+    {
+      '1': 'metadata_management_activity',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.MetadataManagementActivity',
+      '10': 'metadataManagementActivity'
+    },
+    {
+      '1': 'release_channel',
+      '3': 19,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.Service.ReleaseChannel',
+      '10': 'releaseChannel'
+    },
+    {
+      '1': 'encryption_config',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.EncryptionConfig',
+      '10': 'encryptionConfig'
+    },
+    {
+      '1': 'network_config',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.NetworkConfig',
+      '10': 'networkConfig'
+    },
+    {
+      '1': 'database_type',
+      '3': 22,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.Service.DatabaseType',
+      '10': 'databaseType'
+    },
+    {
+      '1': 'telemetry_config',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.TelemetryConfig',
+      '10': 'telemetryConfig'
+    },
+    {
+      '1': 'scaling_config',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.ScalingConfig',
+      '10': 'scalingConfig'
+    },
   ],
   '3': [Service_LabelsEntry$json],
-  '4': [Service_State$json, Service_Tier$json, Service_ReleaseChannel$json, Service_DatabaseType$json],
+  '4': [
+    Service_State$json,
+    Service_Tier$json,
+    Service_ReleaseChannel$json,
+    Service_DatabaseType$json
+  ],
   '8': [
     {'1': 'metastore_config'},
   ],
@@ -238,8 +392,22 @@ final $typed_data.Uint8List serviceDescriptor = $convert.base64Decode(
 const MaintenanceWindow$json = {
   '1': 'MaintenanceWindow',
   '2': [
-    {'1': 'hour_of_day', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Int32Value', '10': 'hourOfDay'},
-    {'1': 'day_of_week', '3': 2, '4': 1, '5': 14, '6': '.google.type.DayOfWeek', '10': 'dayOfWeek'},
+    {
+      '1': 'hour_of_day',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '10': 'hourOfDay'
+    },
+    {
+      '1': 'day_of_week',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.type.DayOfWeek',
+      '10': 'dayOfWeek'
+    },
   ],
 };
 
@@ -254,11 +422,37 @@ const HiveMetastoreConfig$json = {
   '1': 'HiveMetastoreConfig',
   '2': [
     {'1': 'version', '3': 1, '4': 1, '5': 9, '10': 'version'},
-    {'1': 'config_overrides', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.metastore.v1.HiveMetastoreConfig.ConfigOverridesEntry', '10': 'configOverrides'},
-    {'1': 'kerberos_config', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.KerberosConfig', '10': 'kerberosConfig'},
-    {'1': 'auxiliary_versions', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.metastore.v1.HiveMetastoreConfig.AuxiliaryVersionsEntry', '10': 'auxiliaryVersions'},
+    {
+      '1': 'config_overrides',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.metastore.v1.HiveMetastoreConfig.ConfigOverridesEntry',
+      '10': 'configOverrides'
+    },
+    {
+      '1': 'kerberos_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.KerberosConfig',
+      '10': 'kerberosConfig'
+    },
+    {
+      '1': 'auxiliary_versions',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.metastore.v1.HiveMetastoreConfig.AuxiliaryVersionsEntry',
+      '10': 'auxiliaryVersions'
+    },
   ],
-  '3': [HiveMetastoreConfig_ConfigOverridesEntry$json, HiveMetastoreConfig_AuxiliaryVersionsEntry$json],
+  '3': [
+    HiveMetastoreConfig_ConfigOverridesEntry$json,
+    HiveMetastoreConfig_AuxiliaryVersionsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use hiveMetastoreConfigDescriptor instead')
@@ -276,7 +470,14 @@ const HiveMetastoreConfig_AuxiliaryVersionsEntry$json = {
   '1': 'AuxiliaryVersionsEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.AuxiliaryVersionConfig', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.AuxiliaryVersionConfig',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -299,9 +500,22 @@ final $typed_data.Uint8List hiveMetastoreConfigDescriptor = $convert.base64Decod
 const KerberosConfig$json = {
   '1': 'KerberosConfig',
   '2': [
-    {'1': 'keytab', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.Secret', '10': 'keytab'},
+    {
+      '1': 'keytab',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.Secret',
+      '10': 'keytab'
+    },
     {'1': 'principal', '3': 2, '4': 1, '5': 9, '10': 'principal'},
-    {'1': 'krb5_config_gcs_uri', '3': 3, '4': 1, '5': 9, '10': 'krb5ConfigGcsUri'},
+    {
+      '1': 'krb5_config_gcs_uri',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'krb5ConfigGcsUri'
+    },
   ],
 };
 
@@ -343,8 +557,23 @@ const AuxiliaryVersionConfig$json = {
   '1': 'AuxiliaryVersionConfig',
   '2': [
     {'1': 'version', '3': 1, '4': 1, '5': 9, '10': 'version'},
-    {'1': 'config_overrides', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.metastore.v1.AuxiliaryVersionConfig.ConfigOverridesEntry', '10': 'configOverrides'},
-    {'1': 'network_config', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.NetworkConfig', '10': 'networkConfig'},
+    {
+      '1': 'config_overrides',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.metastore.v1.AuxiliaryVersionConfig.ConfigOverridesEntry',
+      '10': 'configOverrides'
+    },
+    {
+      '1': 'network_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.NetworkConfig',
+      '10': 'networkConfig'
+    },
   ],
   '3': [AuxiliaryVersionConfig_ConfigOverridesEntry$json],
 };
@@ -372,7 +601,14 @@ final $typed_data.Uint8List auxiliaryVersionConfigDescriptor = $convert.base64De
 const NetworkConfig$json = {
   '1': 'NetworkConfig',
   '2': [
-    {'1': 'consumers', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.metastore.v1.NetworkConfig.Consumer', '10': 'consumers'},
+    {
+      '1': 'consumers',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.NetworkConfig.Consumer',
+      '10': 'consumers'
+    },
   ],
   '3': [NetworkConfig_Consumer$json],
 };
@@ -400,7 +636,14 @@ final $typed_data.Uint8List networkConfigDescriptor = $convert.base64Decode(
 const TelemetryConfig$json = {
   '1': 'TelemetryConfig',
   '2': [
-    {'1': 'log_format', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.TelemetryConfig.LogFormat', '10': 'logFormat'},
+    {
+      '1': 'log_format',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.TelemetryConfig.LogFormat',
+      '10': 'logFormat'
+    },
   ],
   '4': [TelemetryConfig_LogFormat$json],
 };
@@ -426,8 +669,22 @@ final $typed_data.Uint8List telemetryConfigDescriptor = $convert.base64Decode(
 const MetadataManagementActivity$json = {
   '1': 'MetadataManagementActivity',
   '2': [
-    {'1': 'metadata_exports', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.metastore.v1.MetadataExport', '10': 'metadataExports'},
-    {'1': 'restores', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.metastore.v1.Restore', '10': 'restores'},
+    {
+      '1': 'metadata_exports',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.MetadataExport',
+      '10': 'metadataExports'
+    },
+    {
+      '1': 'restores',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.Restore',
+      '10': 'restores'
+    },
   ],
 };
 
@@ -442,13 +699,49 @@ final $typed_data.Uint8List metadataManagementActivityDescriptor = $convert.base
 const MetadataImport$json = {
   '1': 'MetadataImport',
   '2': [
-    {'1': 'database_dump', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.MetadataImport.DatabaseDump', '9': 0, '10': 'databaseDump'},
+    {
+      '1': 'database_dump',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.MetadataImport.DatabaseDump',
+      '9': 0,
+      '10': 'databaseDump'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'end_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'state', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.MetadataImport.State', '10': 'state'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'state',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.MetadataImport.State',
+      '10': 'state'
+    },
   ],
   '3': [MetadataImport_DatabaseDump$json],
   '4': [MetadataImport_State$json],
@@ -461,10 +754,25 @@ const MetadataImport$json = {
 const MetadataImport_DatabaseDump$json = {
   '1': 'DatabaseDump',
   '2': [
-    {'1': 'database_type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.MetadataImport.DatabaseDump.DatabaseType', '10': 'databaseType'},
+    {
+      '1': 'database_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.metastore.v1.MetadataImport.DatabaseDump.DatabaseType',
+      '10': 'databaseType'
+    },
     {'1': 'gcs_uri', '3': 2, '4': 1, '5': 9, '10': 'gcsUri'},
     {'1': 'source_database', '3': 3, '4': 1, '5': 9, '10': 'sourceDatabase'},
-    {'1': 'type', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.DatabaseDumpSpec.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.DatabaseDumpSpec.Type',
+      '10': 'type'
+    },
   ],
   '4': [MetadataImport_DatabaseDump_DatabaseType$json],
 };
@@ -513,11 +821,46 @@ final $typed_data.Uint8List metadataImportDescriptor = $convert.base64Decode(
 const MetadataExport$json = {
   '1': 'MetadataExport',
   '2': [
-    {'1': 'destination_gcs_uri', '3': 4, '4': 1, '5': 9, '9': 0, '10': 'destinationGcsUri'},
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.MetadataExport.State', '10': 'state'},
-    {'1': 'database_dump_type', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.DatabaseDumpSpec.Type', '10': 'databaseDumpType'},
+    {
+      '1': 'destination_gcs_uri',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'destinationGcsUri'
+    },
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.MetadataExport.State',
+      '10': 'state'
+    },
+    {
+      '1': 'database_dump_type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.DatabaseDumpSpec.Type',
+      '10': 'databaseDumpType'
+    },
   ],
   '4': [MetadataExport_State$json],
   '8': [
@@ -554,12 +897,46 @@ const Backup$json = {
   '1': 'Backup',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'end_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.Backup.State', '10': 'state'},
-    {'1': 'service_revision', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.Service', '10': 'serviceRevision'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.Backup.State',
+      '10': 'state'
+    },
+    {
+      '1': 'service_revision',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.Service',
+      '10': 'serviceRevision'
+    },
     {'1': 'description', '3': 6, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'restoring_services', '3': 7, '4': 3, '5': 9, '10': 'restoringServices'},
+    {
+      '1': 'restoring_services',
+      '3': 7,
+      '4': 3,
+      '5': 9,
+      '10': 'restoringServices'
+    },
   ],
   '4': [Backup_State$json],
 };
@@ -593,11 +970,39 @@ final $typed_data.Uint8List backupDescriptor = $convert.base64Decode(
 const Restore$json = {
   '1': 'Restore',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.Restore.State', '10': 'state'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.Restore.State',
+      '10': 'state'
+    },
     {'1': 'backup', '3': 4, '4': 1, '5': 9, '10': 'backup'},
-    {'1': 'type', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.Restore.RestoreType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.Restore.RestoreType',
+      '10': 'type'
+    },
     {'1': 'details', '3': 6, '4': 1, '5': 9, '10': 'details'},
   ],
   '4': [Restore_State$json, Restore_RestoreType$json],
@@ -641,8 +1046,23 @@ final $typed_data.Uint8List restoreDescriptor = $convert.base64Decode(
 const ScalingConfig$json = {
   '1': 'ScalingConfig',
   '2': [
-    {'1': 'instance_size', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.metastore.v1.ScalingConfig.InstanceSize', '9': 0, '10': 'instanceSize'},
-    {'1': 'scaling_factor', '3': 2, '4': 1, '5': 2, '9': 0, '10': 'scalingFactor'},
+    {
+      '1': 'instance_size',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.metastore.v1.ScalingConfig.InstanceSize',
+      '9': 0,
+      '10': 'instanceSize'
+    },
+    {
+      '1': 'scaling_factor',
+      '3': 2,
+      '4': 1,
+      '5': 2,
+      '9': 0,
+      '10': 'scalingFactor'
+    },
   ],
   '4': [ScalingConfig_InstanceSize$json],
   '8': [
@@ -697,20 +1117,37 @@ final $typed_data.Uint8List databaseDumpSpecDescriptor = $convert.base64Decode(
 const MetadataImportEventData$json = {
   '1': 'MetadataImportEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.MetadataImport', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.MetadataImport',
+      '10': 'payload'
+    },
   ],
 };
 
 /// Descriptor for `MetadataImportEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List metadataImportEventDataDescriptor = $convert.base64Decode(
-    'ChdNZXRhZGF0YUltcG9ydEV2ZW50RGF0YRJKCgdwYXlsb2FkGAEgASgLMjAuZ29vZ2xlLmV2ZW'
-    '50cy5jbG91ZC5tZXRhc3RvcmUudjEuTWV0YWRhdGFJbXBvcnRSB3BheWxvYWQ=');
+final $typed_data.Uint8List metadataImportEventDataDescriptor =
+    $convert.base64Decode(
+        'ChdNZXRhZGF0YUltcG9ydEV2ZW50RGF0YRJKCgdwYXlsb2FkGAEgASgLMjAuZ29vZ2xlLmV2ZW'
+        '50cy5jbG91ZC5tZXRhc3RvcmUudjEuTWV0YWRhdGFJbXBvcnRSB3BheWxvYWQ=');
 
 @$core.Deprecated('Use federationEventDataDescriptor instead')
 const FederationEventData$json = {
   '1': 'FederationEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.Federation', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.Federation',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -726,7 +1163,16 @@ final $typed_data.Uint8List federationEventDataDescriptor = $convert.base64Decod
 const BackupEventData$json = {
   '1': 'BackupEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.Backup', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.Backup',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -742,7 +1188,16 @@ final $typed_data.Uint8List backupEventDataDescriptor = $convert.base64Decode(
 const ServiceEventData$json = {
   '1': 'ServiceEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.Service', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.Service',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -753,4 +1208,3 @@ const ServiceEventData$json = {
 final $typed_data.Uint8List serviceEventDataDescriptor = $convert.base64Decode(
     'ChBTZXJ2aWNlRXZlbnREYXRhEkgKB3BheWxvYWQYASABKAsyKS5nb29nbGUuZXZlbnRzLmNsb3'
     'VkLm1ldGFzdG9yZS52MS5TZXJ2aWNlSABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
-

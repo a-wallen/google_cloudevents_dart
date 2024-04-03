@@ -18,7 +18,14 @@ const MonitoredResource$json = {
   '1': 'MonitoredResource',
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
-    {'1': 'labels', '3': 2, '4': 3, '5': 11, '6': '.google.api.MonitoredResource.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.api.MonitoredResource.LabelsEntry',
+      '10': 'labels'
+    },
   ],
   '3': [MonitoredResource_LabelsEntry$json],
 };
@@ -38,4 +45,3 @@ final $typed_data.Uint8List monitoredResourceDescriptor = $convert.base64Decode(
     'ChFNb25pdG9yZWRSZXNvdXJjZRISCgR0eXBlGAEgASgJUgR0eXBlEkEKBmxhYmVscxgCIAMoCz'
     'IpLmdvb2dsZS5hcGkuTW9uaXRvcmVkUmVzb3VyY2UuTGFiZWxzRW50cnlSBmxhYmVscxo5CgtM'
     'YWJlbHNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEoCVIFdmFsdWU6AjgB');
-

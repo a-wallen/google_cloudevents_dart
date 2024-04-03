@@ -28,4 +28,3 @@ const Quaternion$json = {
 final $typed_data.Uint8List quaternionDescriptor = $convert.base64Decode(
     'CgpRdWF0ZXJuaW9uEgwKAXgYASABKAFSAXgSDAoBeRgCIAEoAVIBeRIMCgF6GAMgASgBUgF6Eg'
     'wKAXcYBCABKAFSAXc=');
-

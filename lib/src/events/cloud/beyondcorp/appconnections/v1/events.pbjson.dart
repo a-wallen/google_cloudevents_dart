@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const AppConnectionCreatedEvent$json = {
   '1': 'AppConnectionCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnections.v1.AppConnectionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnections.v1.AppConnectionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +41,15 @@ final $typed_data.Uint8List appConnectionCreatedEventDescriptor = $convert.base6
 const AppConnectionUpdatedEvent$json = {
   '1': 'AppConnectionUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnections.v1.AppConnectionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnections.v1.AppConnectionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -49,7 +65,15 @@ final $typed_data.Uint8List appConnectionUpdatedEventDescriptor = $convert.base6
 const AppConnectionDeletedEvent$json = {
   '1': 'AppConnectionDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnections.v1.AppConnectionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnections.v1.AppConnectionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -60,4 +84,3 @@ final $typed_data.Uint8List appConnectionDeletedEventDescriptor = $convert.base6
     'RzLmNsb3VkLmJleW9uZGNvcnAuYXBwY29ubmVjdGlvbnMudjEuQXBwQ29ubmVjdGlvbkV2ZW50'
     'RGF0YVIEZGF0YTpWsvjYLD9nb29nbGUuY2xvdWQuYmV5b25kY29ycC5hcHBjb25uZWN0aW9ucy'
     '5hcHBDb25uZWN0aW9uLnYxLmRlbGV0ZWTK+NgsDWFwcGNvbm5lY3Rpb24=');
-

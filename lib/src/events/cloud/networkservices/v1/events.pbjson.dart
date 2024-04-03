@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const EndpointPolicyCreatedEvent$json = {
   '1': 'EndpointPolicyCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.EndpointPolicyEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.EndpointPolicyEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +40,14 @@ final $typed_data.Uint8List endpointPolicyCreatedEventDescriptor = $convert.base
 const EndpointPolicyUpdatedEvent$json = {
   '1': 'EndpointPolicyUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.EndpointPolicyEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.EndpointPolicyEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -49,7 +63,14 @@ final $typed_data.Uint8List endpointPolicyUpdatedEventDescriptor = $convert.base
 const EndpointPolicyDeletedEvent$json = {
   '1': 'EndpointPolicyDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.EndpointPolicyEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.EndpointPolicyEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -65,7 +86,14 @@ final $typed_data.Uint8List endpointPolicyDeletedEventDescriptor = $convert.base
 const GatewayCreatedEvent$json = {
   '1': 'GatewayCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GatewayEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GatewayEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -80,7 +108,14 @@ final $typed_data.Uint8List gatewayCreatedEventDescriptor = $convert.base64Decod
 const GatewayUpdatedEvent$json = {
   '1': 'GatewayUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GatewayEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GatewayEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -95,7 +130,14 @@ final $typed_data.Uint8List gatewayUpdatedEventDescriptor = $convert.base64Decod
 const GatewayDeletedEvent$json = {
   '1': 'GatewayDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GatewayEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GatewayEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -110,7 +152,14 @@ final $typed_data.Uint8List gatewayDeletedEventDescriptor = $convert.base64Decod
 const GrpcRouteCreatedEvent$json = {
   '1': 'GrpcRouteCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -126,7 +175,14 @@ final $typed_data.Uint8List grpcRouteCreatedEventDescriptor = $convert.base64Dec
 const GrpcRouteUpdatedEvent$json = {
   '1': 'GrpcRouteUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -142,7 +198,14 @@ final $typed_data.Uint8List grpcRouteUpdatedEventDescriptor = $convert.base64Dec
 const GrpcRouteDeletedEvent$json = {
   '1': 'GrpcRouteDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.GrpcRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.GrpcRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -158,7 +221,14 @@ final $typed_data.Uint8List grpcRouteDeletedEventDescriptor = $convert.base64Dec
 const HttpRouteCreatedEvent$json = {
   '1': 'HttpRouteCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -174,7 +244,14 @@ final $typed_data.Uint8List httpRouteCreatedEventDescriptor = $convert.base64Dec
 const HttpRouteUpdatedEvent$json = {
   '1': 'HttpRouteUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -190,7 +267,14 @@ final $typed_data.Uint8List httpRouteUpdatedEventDescriptor = $convert.base64Dec
 const HttpRouteDeletedEvent$json = {
   '1': 'HttpRouteDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.HttpRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.HttpRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -206,7 +290,14 @@ final $typed_data.Uint8List httpRouteDeletedEventDescriptor = $convert.base64Dec
 const TcpRouteCreatedEvent$json = {
   '1': 'TcpRouteCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.TcpRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TcpRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -222,7 +313,14 @@ final $typed_data.Uint8List tcpRouteCreatedEventDescriptor = $convert.base64Deco
 const TcpRouteUpdatedEvent$json = {
   '1': 'TcpRouteUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.TcpRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TcpRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -238,7 +336,14 @@ final $typed_data.Uint8List tcpRouteUpdatedEventDescriptor = $convert.base64Deco
 const TcpRouteDeletedEvent$json = {
   '1': 'TcpRouteDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.TcpRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TcpRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -254,7 +359,14 @@ final $typed_data.Uint8List tcpRouteDeletedEventDescriptor = $convert.base64Deco
 const TlsRouteCreatedEvent$json = {
   '1': 'TlsRouteCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.TlsRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TlsRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -270,7 +382,14 @@ final $typed_data.Uint8List tlsRouteCreatedEventDescriptor = $convert.base64Deco
 const TlsRouteUpdatedEvent$json = {
   '1': 'TlsRouteUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.TlsRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TlsRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -286,7 +405,14 @@ final $typed_data.Uint8List tlsRouteUpdatedEventDescriptor = $convert.base64Deco
 const TlsRouteDeletedEvent$json = {
   '1': 'TlsRouteDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.TlsRouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.TlsRouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -302,7 +428,14 @@ final $typed_data.Uint8List tlsRouteDeletedEventDescriptor = $convert.base64Deco
 const ServiceBindingCreatedEvent$json = {
   '1': 'ServiceBindingCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.ServiceBindingEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.ServiceBindingEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -318,7 +451,14 @@ final $typed_data.Uint8List serviceBindingCreatedEventDescriptor = $convert.base
 const ServiceBindingDeletedEvent$json = {
   '1': 'ServiceBindingDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.ServiceBindingEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.ServiceBindingEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -334,7 +474,14 @@ final $typed_data.Uint8List serviceBindingDeletedEventDescriptor = $convert.base
 const MeshCreatedEvent$json = {
   '1': 'MeshCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.MeshEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.MeshEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -349,7 +496,14 @@ final $typed_data.Uint8List meshCreatedEventDescriptor = $convert.base64Decode(
 const MeshUpdatedEvent$json = {
   '1': 'MeshUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.MeshEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.MeshEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -364,7 +518,14 @@ final $typed_data.Uint8List meshUpdatedEventDescriptor = $convert.base64Decode(
 const MeshDeletedEvent$json = {
   '1': 'MeshDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkservices.v1.MeshEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkservices.v1.MeshEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -374,4 +535,3 @@ final $typed_data.Uint8List meshDeletedEventDescriptor = $convert.base64Decode(
     'ChBNZXNoRGVsZXRlZEV2ZW50EkkKBGRhdGEYASABKAsyNS5nb29nbGUuZXZlbnRzLmNsb3VkLm'
     '5ldHdvcmtzZXJ2aWNlcy52MS5NZXNoRXZlbnREYXRhUgRkYXRhOjqy+NgsLGdvb2dsZS5jbG91'
     'ZC5uZXR3b3Jrc2VydmljZXMubWVzaC52MS5kZWxldGVkyvjYLARtZXNo');
-

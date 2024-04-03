@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const CreateDeviceEvent$json = {
   '1': 'CreateDeviceEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.DeviceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.DeviceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List createDeviceEventDescriptor = $convert.base64Decode(
 const UpdateDeviceEvent$json = {
   '1': 'UpdateDeviceEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.DeviceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.DeviceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List updateDeviceEventDescriptor = $convert.base64Decode(
 const DeleteDeviceEvent$json = {
   '1': 'DeleteDeviceEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.DeviceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.DeviceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List deleteDeviceEventDescriptor = $convert.base64Decode(
 const CreateDeviceRegistryEvent$json = {
   '1': 'CreateDeviceRegistryEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.RegistryEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.RegistryEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -78,7 +106,14 @@ final $typed_data.Uint8List createDeviceRegistryEventDescriptor = $convert.base6
 const UpdateDeviceRegistryEvent$json = {
   '1': 'UpdateDeviceRegistryEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.RegistryEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.RegistryEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -94,7 +129,14 @@ final $typed_data.Uint8List updateDeviceRegistryEventDescriptor = $convert.base6
 const DeleteDeviceRegistryEvent$json = {
   '1': 'DeleteDeviceRegistryEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.RegistryEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.RegistryEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -105,4 +147,3 @@ final $typed_data.Uint8List deleteDeviceRegistryEventDescriptor = $convert.base6
     'RzLmNsb3VkLmlvdC52MS5SZWdpc3RyeUV2ZW50RGF0YVIEZGF0YTpIsvjYLDZnb29nbGUuY2xv'
     'dWQuaW90LnYxLkRldmljZU1hbmFnZXIuRGVsZXRlRGV2aWNlUmVnaXN0cnnK+NgsCHJlZ2lzdH'
     'J5');
-

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const AppGatewayCreatedEvent$json = {
   '1': 'AppGatewayCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGatewayEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGatewayEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +40,14 @@ final $typed_data.Uint8List appGatewayCreatedEventDescriptor = $convert.base64De
 const AppGatewayDeletedEvent$json = {
   '1': 'AppGatewayDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGatewayEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.beyondcorp.appgateways.v1.AppGatewayEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -44,4 +58,3 @@ final $typed_data.Uint8List appGatewayDeletedEventDescriptor = $convert.base64De
     'Nsb3VkLmJleW9uZGNvcnAuYXBwZ2F0ZXdheXMudjEuQXBwR2F0ZXdheUV2ZW50RGF0YVIEZGF0'
     'YTpNsvjYLDlnb29nbGUuY2xvdWQuYmV5b25kY29ycC5hcHBnYXRld2F5cy5hcHBHYXRld2F5Ln'
     'YxLmRlbGV0ZWTK+NgsCmFwcGdhdGV3YXk=');
-

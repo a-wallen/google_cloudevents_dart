@@ -21,7 +21,15 @@ const OracleProfile$json = {
     {'1': 'port', '3': 2, '4': 1, '5': 5, '10': 'port'},
     {'1': 'username', '3': 3, '4': 1, '5': 9, '10': 'username'},
     {'1': 'database_service', '3': 5, '4': 1, '5': 9, '10': 'databaseService'},
-    {'1': 'connection_attributes', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.OracleProfile.ConnectionAttributesEntry', '10': 'connectionAttributes'},
+    {
+      '1': 'connection_attributes',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.datastream.v1.OracleProfile.ConnectionAttributesEntry',
+      '10': 'connectionAttributes'
+    },
   ],
   '3': [OracleProfile_ConnectionAttributesEntry$json],
 };
@@ -53,7 +61,14 @@ const MysqlProfile$json = {
     {'1': 'hostname', '3': 1, '4': 1, '5': 9, '10': 'hostname'},
     {'1': 'port', '3': 2, '4': 1, '5': 5, '10': 'port'},
     {'1': 'username', '3': 3, '4': 1, '5': 9, '10': 'username'},
-    {'1': 'ssl_config', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.MysqlSslConfig', '10': 'sslConfig'},
+    {
+      '1': 'ssl_config',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.MysqlSslConfig',
+      '10': 'sslConfig'
+    },
   ],
 };
 
@@ -101,8 +116,8 @@ const BigQueryProfile$json = {
 };
 
 /// Descriptor for `BigQueryProfile`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List bigQueryProfileDescriptor = $convert.base64Decode(
-    'Cg9CaWdRdWVyeVByb2ZpbGU=');
+final $typed_data.Uint8List bigQueryProfileDescriptor =
+    $convert.base64Decode('Cg9CaWdRdWVyeVByb2ZpbGU=');
 
 @$core.Deprecated('Use staticServiceIpConnectivityDescriptor instead')
 const StaticServiceIpConnectivity$json = {
@@ -110,8 +125,8 @@ const StaticServiceIpConnectivity$json = {
 };
 
 /// Descriptor for `StaticServiceIpConnectivity`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List staticServiceIpConnectivityDescriptor = $convert.base64Decode(
-    'ChtTdGF0aWNTZXJ2aWNlSXBDb25uZWN0aXZpdHk=');
+final $typed_data.Uint8List staticServiceIpConnectivityDescriptor =
+    $convert.base64Decode('ChtTdGF0aWNTZXJ2aWNlSXBDb25uZWN0aXZpdHk=');
 
 @$core.Deprecated('Use forwardSshTunnelConnectivityDescriptor instead')
 const ForwardSshTunnelConnectivity$json = {
@@ -124,9 +139,10 @@ const ForwardSshTunnelConnectivity$json = {
 };
 
 /// Descriptor for `ForwardSshTunnelConnectivity`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List forwardSshTunnelConnectivityDescriptor = $convert.base64Decode(
-    'ChxGb3J3YXJkU3NoVHVubmVsQ29ubmVjdGl2aXR5EhoKCGhvc3RuYW1lGAEgASgJUghob3N0bm'
-    'FtZRIaCgh1c2VybmFtZRgCIAEoCVIIdXNlcm5hbWUSEgoEcG9ydBgDIAEoBVIEcG9ydA==');
+final $typed_data.Uint8List forwardSshTunnelConnectivityDescriptor =
+    $convert.base64Decode(
+        'ChxGb3J3YXJkU3NoVHVubmVsQ29ubmVjdGl2aXR5EhoKCGhvc3RuYW1lGAEgASgJUghob3N0bm'
+        'FtZRIaCgh1c2VybmFtZRgCIAEoCVIIdXNlcm5hbWUSEgoEcG9ydBgDIAEoBVIEcG9ydA==');
 
 @$core.Deprecated('Use vpcPeeringConfigDescriptor instead')
 const VpcPeeringConfig$json = {
@@ -147,13 +163,55 @@ const PrivateConnection$json = {
   '1': 'PrivateConnection',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.PrivateConnection.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PrivateConnection.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'state', '3': 6, '4': 1, '5': 14, '6': '.google.events.cloud.datastream.v1.PrivateConnection.State', '10': 'state'},
-    {'1': 'error', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.Error', '10': 'error'},
-    {'1': 'vpc_peering_config', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.VpcPeeringConfig', '10': 'vpcPeeringConfig'},
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.datastream.v1.PrivateConnection.State',
+      '10': 'state'
+    },
+    {
+      '1': 'error',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.Error',
+      '10': 'error'
+    },
+    {
+      '1': 'vpc_peering_config',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.VpcPeeringConfig',
+      '10': 'vpcPeeringConfig'
+    },
   ],
   '3': [PrivateConnection_LabelsEntry$json],
   '4': [PrivateConnection_State$json],
@@ -202,7 +260,13 @@ final $typed_data.Uint8List privateConnectionDescriptor = $convert.base64Decode(
 const PrivateConnectivity$json = {
   '1': 'PrivateConnectivity',
   '2': [
-    {'1': 'private_connection', '3': 1, '4': 1, '5': 9, '10': 'privateConnection'},
+    {
+      '1': 'private_connection',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'privateConnection'
+    },
   ],
 };
 
@@ -216,11 +280,38 @@ const Route$json = {
   '1': 'Route',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.Route.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.Route.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'destination_address', '3': 6, '4': 1, '5': 9, '10': 'destinationAddress'},
+    {
+      '1': 'destination_address',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'destinationAddress'
+    },
     {'1': 'destination_port', '3': 7, '4': 1, '5': 5, '10': 'destinationPort'},
   ],
   '3': [Route_LabelsEntry$json],
@@ -252,8 +343,20 @@ const MysqlSslConfig$json = {
   '1': 'MysqlSslConfig',
   '2': [
     {'1': 'client_key_set', '3': 2, '4': 1, '5': 8, '10': 'clientKeySet'},
-    {'1': 'client_certificate_set', '3': 4, '4': 1, '5': 8, '10': 'clientCertificateSet'},
-    {'1': 'ca_certificate_set', '3': 6, '4': 1, '5': 8, '10': 'caCertificateSet'},
+    {
+      '1': 'client_certificate_set',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'clientCertificateSet'
+    },
+    {
+      '1': 'ca_certificate_set',
+      '3': 6,
+      '4': 1,
+      '5': 8,
+      '10': 'caCertificateSet'
+    },
   ],
 };
 
@@ -268,18 +371,103 @@ const ConnectionProfile$json = {
   '1': 'ConnectionProfile',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.ConnectionProfile.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.ConnectionProfile.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'oracle_profile', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.OracleProfile', '9': 0, '10': 'oracleProfile'},
-    {'1': 'gcs_profile', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.GcsProfile', '9': 0, '10': 'gcsProfile'},
-    {'1': 'mysql_profile', '3': 102, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.MysqlProfile', '9': 0, '10': 'mysqlProfile'},
-    {'1': 'bigquery_profile', '3': 103, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.BigQueryProfile', '9': 0, '10': 'bigqueryProfile'},
-    {'1': 'postgresql_profile', '3': 104, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.PostgresqlProfile', '9': 0, '10': 'postgresqlProfile'},
-    {'1': 'static_service_ip_connectivity', '3': 200, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.StaticServiceIpConnectivity', '9': 1, '10': 'staticServiceIpConnectivity'},
-    {'1': 'forward_ssh_connectivity', '3': 201, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.ForwardSshTunnelConnectivity', '9': 1, '10': 'forwardSshConnectivity'},
-    {'1': 'private_connectivity', '3': 202, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.PrivateConnectivity', '9': 1, '10': 'privateConnectivity'},
+    {
+      '1': 'oracle_profile',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.OracleProfile',
+      '9': 0,
+      '10': 'oracleProfile'
+    },
+    {
+      '1': 'gcs_profile',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.GcsProfile',
+      '9': 0,
+      '10': 'gcsProfile'
+    },
+    {
+      '1': 'mysql_profile',
+      '3': 102,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.MysqlProfile',
+      '9': 0,
+      '10': 'mysqlProfile'
+    },
+    {
+      '1': 'bigquery_profile',
+      '3': 103,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.BigQueryProfile',
+      '9': 0,
+      '10': 'bigqueryProfile'
+    },
+    {
+      '1': 'postgresql_profile',
+      '3': 104,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PostgresqlProfile',
+      '9': 0,
+      '10': 'postgresqlProfile'
+    },
+    {
+      '1': 'static_service_ip_connectivity',
+      '3': 200,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.StaticServiceIpConnectivity',
+      '9': 1,
+      '10': 'staticServiceIpConnectivity'
+    },
+    {
+      '1': 'forward_ssh_connectivity',
+      '3': 201,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.ForwardSshTunnelConnectivity',
+      '9': 1,
+      '10': 'forwardSshConnectivity'
+    },
+    {
+      '1': 'private_connectivity',
+      '3': 202,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PrivateConnectivity',
+      '9': 1,
+      '10': 'privateConnectivity'
+    },
   ],
   '3': [ConnectionProfile_LabelsEntry$json],
   '8': [
@@ -352,7 +540,14 @@ const OracleTable$json = {
   '1': 'OracleTable',
   '2': [
     {'1': 'table', '3': 1, '4': 1, '5': 9, '10': 'table'},
-    {'1': 'oracle_columns', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.OracleColumn', '10': 'oracleColumns'},
+    {
+      '1': 'oracle_columns',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.OracleColumn',
+      '10': 'oracleColumns'
+    },
   ],
 };
 
@@ -367,7 +562,14 @@ const OracleSchema$json = {
   '1': 'OracleSchema',
   '2': [
     {'1': 'schema', '3': 1, '4': 1, '5': 9, '10': 'schema'},
-    {'1': 'oracle_tables', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.OracleTable', '10': 'oracleTables'},
+    {
+      '1': 'oracle_tables',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.OracleTable',
+      '10': 'oracleTables'
+    },
   ],
 };
 
@@ -381,7 +583,14 @@ final $typed_data.Uint8List oracleSchemaDescriptor = $convert.base64Decode(
 const OracleRdbms$json = {
   '1': 'OracleRdbms',
   '2': [
-    {'1': 'oracle_schemas', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.OracleSchema', '10': 'oracleSchemas'},
+    {
+      '1': 'oracle_schemas',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.OracleSchema',
+      '10': 'oracleSchemas'
+    },
   ],
 };
 
@@ -394,13 +603,54 @@ final $typed_data.Uint8List oracleRdbmsDescriptor = $convert.base64Decode(
 const OracleSourceConfig$json = {
   '1': 'OracleSourceConfig',
   '2': [
-    {'1': 'include_objects', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.OracleRdbms', '10': 'includeObjects'},
-    {'1': 'exclude_objects', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.OracleRdbms', '10': 'excludeObjects'},
-    {'1': 'max_concurrent_cdc_tasks', '3': 3, '4': 1, '5': 5, '10': 'maxConcurrentCdcTasks'},
-    {'1': 'drop_large_objects', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.OracleSourceConfig.DropLargeObjects', '9': 0, '10': 'dropLargeObjects'},
-    {'1': 'stream_large_objects', '3': 102, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.OracleSourceConfig.StreamLargeObjects', '9': 0, '10': 'streamLargeObjects'},
+    {
+      '1': 'include_objects',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.OracleRdbms',
+      '10': 'includeObjects'
+    },
+    {
+      '1': 'exclude_objects',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.OracleRdbms',
+      '10': 'excludeObjects'
+    },
+    {
+      '1': 'max_concurrent_cdc_tasks',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'maxConcurrentCdcTasks'
+    },
+    {
+      '1': 'drop_large_objects',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.datastream.v1.OracleSourceConfig.DropLargeObjects',
+      '9': 0,
+      '10': 'dropLargeObjects'
+    },
+    {
+      '1': 'stream_large_objects',
+      '3': 102,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.datastream.v1.OracleSourceConfig.StreamLargeObjects',
+      '9': 0,
+      '10': 'streamLargeObjects'
+    },
   ],
-  '3': [OracleSourceConfig_DropLargeObjects$json, OracleSourceConfig_StreamLargeObjects$json],
+  '3': [
+    OracleSourceConfig_DropLargeObjects$json,
+    OracleSourceConfig_StreamLargeObjects$json
+  ],
   '8': [
     {'1': 'large_objects_handling'},
   ],
@@ -458,7 +708,14 @@ const PostgresqlTable$json = {
   '1': 'PostgresqlTable',
   '2': [
     {'1': 'table', '3': 1, '4': 1, '5': 9, '10': 'table'},
-    {'1': 'postgresql_columns', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.PostgresqlColumn', '10': 'postgresqlColumns'},
+    {
+      '1': 'postgresql_columns',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PostgresqlColumn',
+      '10': 'postgresqlColumns'
+    },
   ],
 };
 
@@ -473,7 +730,14 @@ const PostgresqlSchema$json = {
   '1': 'PostgresqlSchema',
   '2': [
     {'1': 'schema', '3': 1, '4': 1, '5': 9, '10': 'schema'},
-    {'1': 'postgresql_tables', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.PostgresqlTable', '10': 'postgresqlTables'},
+    {
+      '1': 'postgresql_tables',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PostgresqlTable',
+      '10': 'postgresqlTables'
+    },
   ],
 };
 
@@ -487,7 +751,14 @@ final $typed_data.Uint8List postgresqlSchemaDescriptor = $convert.base64Decode(
 const PostgresqlRdbms$json = {
   '1': 'PostgresqlRdbms',
   '2': [
-    {'1': 'postgresql_schemas', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.PostgresqlSchema', '10': 'postgresqlSchemas'},
+    {
+      '1': 'postgresql_schemas',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PostgresqlSchema',
+      '10': 'postgresqlSchemas'
+    },
   ],
 };
 
@@ -501,8 +772,22 @@ final $typed_data.Uint8List postgresqlRdbmsDescriptor = $convert.base64Decode(
 const PostgresqlSourceConfig$json = {
   '1': 'PostgresqlSourceConfig',
   '2': [
-    {'1': 'include_objects', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.PostgresqlRdbms', '10': 'includeObjects'},
-    {'1': 'exclude_objects', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.PostgresqlRdbms', '10': 'excludeObjects'},
+    {
+      '1': 'include_objects',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PostgresqlRdbms',
+      '10': 'includeObjects'
+    },
+    {
+      '1': 'exclude_objects',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PostgresqlRdbms',
+      '10': 'excludeObjects'
+    },
     {'1': 'replication_slot', '3': 3, '4': 1, '5': 9, '10': 'replicationSlot'},
     {'1': 'publication', '3': 4, '4': 1, '5': 9, '10': 'publication'},
   ],
@@ -544,7 +829,14 @@ const MysqlTable$json = {
   '1': 'MysqlTable',
   '2': [
     {'1': 'table', '3': 1, '4': 1, '5': 9, '10': 'table'},
-    {'1': 'mysql_columns', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.MysqlColumn', '10': 'mysqlColumns'},
+    {
+      '1': 'mysql_columns',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.MysqlColumn',
+      '10': 'mysqlColumns'
+    },
   ],
 };
 
@@ -559,7 +851,14 @@ const MysqlDatabase$json = {
   '1': 'MysqlDatabase',
   '2': [
     {'1': 'database', '3': 1, '4': 1, '5': 9, '10': 'database'},
-    {'1': 'mysql_tables', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.MysqlTable', '10': 'mysqlTables'},
+    {
+      '1': 'mysql_tables',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.MysqlTable',
+      '10': 'mysqlTables'
+    },
   ],
 };
 
@@ -573,7 +872,14 @@ final $typed_data.Uint8List mysqlDatabaseDescriptor = $convert.base64Decode(
 const MysqlRdbms$json = {
   '1': 'MysqlRdbms',
   '2': [
-    {'1': 'mysql_databases', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.MysqlDatabase', '10': 'mysqlDatabases'},
+    {
+      '1': 'mysql_databases',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.MysqlDatabase',
+      '10': 'mysqlDatabases'
+    },
   ],
 };
 
@@ -586,9 +892,29 @@ final $typed_data.Uint8List mysqlRdbmsDescriptor = $convert.base64Decode(
 const MysqlSourceConfig$json = {
   '1': 'MysqlSourceConfig',
   '2': [
-    {'1': 'include_objects', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.MysqlRdbms', '10': 'includeObjects'},
-    {'1': 'exclude_objects', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.MysqlRdbms', '10': 'excludeObjects'},
-    {'1': 'max_concurrent_cdc_tasks', '3': 3, '4': 1, '5': 5, '10': 'maxConcurrentCdcTasks'},
+    {
+      '1': 'include_objects',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.MysqlRdbms',
+      '10': 'includeObjects'
+    },
+    {
+      '1': 'exclude_objects',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.MysqlRdbms',
+      '10': 'excludeObjects'
+    },
+    {
+      '1': 'max_concurrent_cdc_tasks',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'maxConcurrentCdcTasks'
+    },
   ],
 };
 
@@ -604,10 +930,40 @@ final $typed_data.Uint8List mysqlSourceConfigDescriptor = $convert.base64Decode(
 const SourceConfig$json = {
   '1': 'SourceConfig',
   '2': [
-    {'1': 'source_connection_profile', '3': 1, '4': 1, '5': 9, '10': 'sourceConnectionProfile'},
-    {'1': 'oracle_source_config', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.OracleSourceConfig', '9': 0, '10': 'oracleSourceConfig'},
-    {'1': 'mysql_source_config', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.MysqlSourceConfig', '9': 0, '10': 'mysqlSourceConfig'},
-    {'1': 'postgresql_source_config', '3': 102, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.PostgresqlSourceConfig', '9': 0, '10': 'postgresqlSourceConfig'},
+    {
+      '1': 'source_connection_profile',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'sourceConnectionProfile'
+    },
+    {
+      '1': 'oracle_source_config',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.OracleSourceConfig',
+      '9': 0,
+      '10': 'oracleSourceConfig'
+    },
+    {
+      '1': 'mysql_source_config',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.MysqlSourceConfig',
+      '9': 0,
+      '10': 'mysqlSourceConfig'
+    },
+    {
+      '1': 'postgresql_source_config',
+      '3': 102,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PostgresqlSourceConfig',
+      '9': 0,
+      '10': 'postgresqlSourceConfig'
+    },
   ],
   '8': [
     {'1': 'source_stream_config'},
@@ -631,17 +987,34 @@ const AvroFileFormat$json = {
 };
 
 /// Descriptor for `AvroFileFormat`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List avroFileFormatDescriptor = $convert.base64Decode(
-    'Cg5BdnJvRmlsZUZvcm1hdA==');
+final $typed_data.Uint8List avroFileFormatDescriptor =
+    $convert.base64Decode('Cg5BdnJvRmlsZUZvcm1hdA==');
 
 @$core.Deprecated('Use jsonFileFormatDescriptor instead')
 const JsonFileFormat$json = {
   '1': 'JsonFileFormat',
   '2': [
-    {'1': 'schema_file_format', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.datastream.v1.JsonFileFormat.SchemaFileFormat', '10': 'schemaFileFormat'},
-    {'1': 'compression', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.datastream.v1.JsonFileFormat.JsonCompression', '10': 'compression'},
+    {
+      '1': 'schema_file_format',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.datastream.v1.JsonFileFormat.SchemaFileFormat',
+      '10': 'schemaFileFormat'
+    },
+    {
+      '1': 'compression',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.datastream.v1.JsonFileFormat.JsonCompression',
+      '10': 'compression'
+    },
   ],
-  '4': [JsonFileFormat_SchemaFileFormat$json, JsonFileFormat_JsonCompression$json],
+  '4': [
+    JsonFileFormat_SchemaFileFormat$json,
+    JsonFileFormat_JsonCompression$json
+  ],
 };
 
 @$core.Deprecated('Use jsonFileFormatDescriptor instead')
@@ -681,9 +1054,32 @@ const GcsDestinationConfig$json = {
   '2': [
     {'1': 'path', '3': 1, '4': 1, '5': 9, '10': 'path'},
     {'1': 'file_rotation_mb', '3': 2, '4': 1, '5': 5, '10': 'fileRotationMb'},
-    {'1': 'file_rotation_interval', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'fileRotationInterval'},
-    {'1': 'avro_file_format', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.AvroFileFormat', '9': 0, '10': 'avroFileFormat'},
-    {'1': 'json_file_format', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.JsonFileFormat', '9': 0, '10': 'jsonFileFormat'},
+    {
+      '1': 'file_rotation_interval',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'fileRotationInterval'
+    },
+    {
+      '1': 'avro_file_format',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.AvroFileFormat',
+      '9': 0,
+      '10': 'avroFileFormat'
+    },
+    {
+      '1': 'json_file_format',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.JsonFileFormat',
+      '9': 0,
+      '10': 'jsonFileFormat'
+    },
   ],
   '8': [
     {'1': 'file_format'},
@@ -704,11 +1100,39 @@ final $typed_data.Uint8List gcsDestinationConfigDescriptor = $convert.base64Deco
 const BigQueryDestinationConfig$json = {
   '1': 'BigQueryDestinationConfig',
   '2': [
-    {'1': 'single_target_dataset', '3': 201, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.BigQueryDestinationConfig.SingleTargetDataset', '9': 0, '10': 'singleTargetDataset'},
-    {'1': 'source_hierarchy_datasets', '3': 202, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.BigQueryDestinationConfig.SourceHierarchyDatasets', '9': 0, '10': 'sourceHierarchyDatasets'},
-    {'1': 'data_freshness', '3': 300, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'dataFreshness'},
+    {
+      '1': 'single_target_dataset',
+      '3': 201,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.datastream.v1.BigQueryDestinationConfig.SingleTargetDataset',
+      '9': 0,
+      '10': 'singleTargetDataset'
+    },
+    {
+      '1': 'source_hierarchy_datasets',
+      '3': 202,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.datastream.v1.BigQueryDestinationConfig.SourceHierarchyDatasets',
+      '9': 0,
+      '10': 'sourceHierarchyDatasets'
+    },
+    {
+      '1': 'data_freshness',
+      '3': 300,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'dataFreshness'
+    },
   ],
-  '3': [BigQueryDestinationConfig_SingleTargetDataset$json, BigQueryDestinationConfig_SourceHierarchyDatasets$json],
+  '3': [
+    BigQueryDestinationConfig_SingleTargetDataset$json,
+    BigQueryDestinationConfig_SourceHierarchyDatasets$json
+  ],
   '8': [
     {'1': 'dataset_config'},
   ],
@@ -726,7 +1150,15 @@ const BigQueryDestinationConfig_SingleTargetDataset$json = {
 const BigQueryDestinationConfig_SourceHierarchyDatasets$json = {
   '1': 'SourceHierarchyDatasets',
   '2': [
-    {'1': 'dataset_template', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.BigQueryDestinationConfig.SourceHierarchyDatasets.DatasetTemplate', '10': 'datasetTemplate'},
+    {
+      '1': 'dataset_template',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.datastream.v1.BigQueryDestinationConfig.SourceHierarchyDatasets.DatasetTemplate',
+      '10': 'datasetTemplate'
+    },
   ],
   '3': [BigQueryDestinationConfig_SourceHierarchyDatasets_DatasetTemplate$json],
 };
@@ -762,9 +1194,31 @@ final $typed_data.Uint8List bigQueryDestinationConfigDescriptor = $convert.base6
 const DestinationConfig$json = {
   '1': 'DestinationConfig',
   '2': [
-    {'1': 'destination_connection_profile', '3': 1, '4': 1, '5': 9, '10': 'destinationConnectionProfile'},
-    {'1': 'gcs_destination_config', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.GcsDestinationConfig', '9': 0, '10': 'gcsDestinationConfig'},
-    {'1': 'bigquery_destination_config', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.BigQueryDestinationConfig', '9': 0, '10': 'bigqueryDestinationConfig'},
+    {
+      '1': 'destination_connection_profile',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'destinationConnectionProfile'
+    },
+    {
+      '1': 'gcs_destination_config',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.GcsDestinationConfig',
+      '9': 0,
+      '10': 'gcsDestinationConfig'
+    },
+    {
+      '1': 'bigquery_destination_config',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.BigQueryDestinationConfig',
+      '9': 0,
+      '10': 'bigqueryDestinationConfig'
+    },
   ],
   '8': [
     {'1': 'destination_stream_config'},
@@ -786,19 +1240,96 @@ const Stream$json = {
   '1': 'Stream',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.Stream.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.Stream.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'source_config', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.SourceConfig', '10': 'sourceConfig'},
-    {'1': 'destination_config', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.DestinationConfig', '10': 'destinationConfig'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.datastream.v1.Stream.State', '10': 'state'},
-    {'1': 'backfill_all', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.Stream.BackfillAllStrategy', '9': 0, '10': 'backfillAll'},
-    {'1': 'backfill_none', '3': 102, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.Stream.BackfillNoneStrategy', '9': 0, '10': 'backfillNone'},
-    {'1': 'errors', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.Error', '10': 'errors'},
-    {'1': 'customer_managed_encryption_key', '3': 10, '4': 1, '5': 9, '9': 1, '10': 'customerManagedEncryptionKey', '17': true},
+    {
+      '1': 'source_config',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.SourceConfig',
+      '10': 'sourceConfig'
+    },
+    {
+      '1': 'destination_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.DestinationConfig',
+      '10': 'destinationConfig'
+    },
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.datastream.v1.Stream.State',
+      '10': 'state'
+    },
+    {
+      '1': 'backfill_all',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.Stream.BackfillAllStrategy',
+      '9': 0,
+      '10': 'backfillAll'
+    },
+    {
+      '1': 'backfill_none',
+      '3': 102,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.Stream.BackfillNoneStrategy',
+      '9': 0,
+      '10': 'backfillNone'
+    },
+    {
+      '1': 'errors',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.Error',
+      '10': 'errors'
+    },
+    {
+      '1': 'customer_managed_encryption_key',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '9': 1,
+      '10': 'customerManagedEncryptionKey',
+      '17': true
+    },
   ],
-  '3': [Stream_BackfillAllStrategy$json, Stream_BackfillNoneStrategy$json, Stream_LabelsEntry$json],
+  '3': [
+    Stream_BackfillAllStrategy$json,
+    Stream_BackfillNoneStrategy$json,
+    Stream_LabelsEntry$json
+  ],
   '4': [Stream_State$json],
   '8': [
     {'1': 'backfill_strategy'},
@@ -810,9 +1341,33 @@ const Stream$json = {
 const Stream_BackfillAllStrategy$json = {
   '1': 'BackfillAllStrategy',
   '2': [
-    {'1': 'oracle_excluded_objects', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.OracleRdbms', '9': 0, '10': 'oracleExcludedObjects'},
-    {'1': 'mysql_excluded_objects', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.MysqlRdbms', '9': 0, '10': 'mysqlExcludedObjects'},
-    {'1': 'postgresql_excluded_objects', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.PostgresqlRdbms', '9': 0, '10': 'postgresqlExcludedObjects'},
+    {
+      '1': 'oracle_excluded_objects',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.OracleRdbms',
+      '9': 0,
+      '10': 'oracleExcludedObjects'
+    },
+    {
+      '1': 'mysql_excluded_objects',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.MysqlRdbms',
+      '9': 0,
+      '10': 'mysqlExcludedObjects'
+    },
+    {
+      '1': 'postgresql_excluded_objects',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PostgresqlRdbms',
+      '9': 0,
+      '10': 'postgresqlExcludedObjects'
+    },
   ],
   '8': [
     {'1': 'excluded_objects'},
@@ -888,8 +1443,22 @@ const Error$json = {
     {'1': 'reason', '3': 1, '4': 1, '5': 9, '10': 'reason'},
     {'1': 'error_uuid', '3': 2, '4': 1, '5': 9, '10': 'errorUuid'},
     {'1': 'message', '3': 3, '4': 1, '5': 9, '10': 'message'},
-    {'1': 'error_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'errorTime'},
-    {'1': 'details', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.datastream.v1.Error.DetailsEntry', '10': 'details'},
+    {
+      '1': 'error_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'errorTime'
+    },
+    {
+      '1': 'details',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.Error.DetailsEntry',
+      '10': 'details'
+    },
   ],
   '3': [Error_DetailsEntry$json],
 };
@@ -917,7 +1486,16 @@ final $typed_data.Uint8List errorDescriptor = $convert.base64Decode(
 const ConnectionProfileEventData$json = {
   '1': 'ConnectionProfileEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.ConnectionProfile', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.ConnectionProfile',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -925,16 +1503,26 @@ const ConnectionProfileEventData$json = {
 };
 
 /// Descriptor for `ConnectionProfileEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List connectionProfileEventDataDescriptor = $convert.base64Decode(
-    'ChpDb25uZWN0aW9uUHJvZmlsZUV2ZW50RGF0YRJTCgdwYXlsb2FkGAEgASgLMjQuZ29vZ2xlLm'
-    'V2ZW50cy5jbG91ZC5kYXRhc3RyZWFtLnYxLkNvbm5lY3Rpb25Qcm9maWxlSABSB3BheWxvYWSI'
-    'AQFCCgoIX3BheWxvYWQ=');
+final $typed_data.Uint8List connectionProfileEventDataDescriptor =
+    $convert.base64Decode(
+        'ChpDb25uZWN0aW9uUHJvZmlsZUV2ZW50RGF0YRJTCgdwYXlsb2FkGAEgASgLMjQuZ29vZ2xlLm'
+        'V2ZW50cy5jbG91ZC5kYXRhc3RyZWFtLnYxLkNvbm5lY3Rpb25Qcm9maWxlSABSB3BheWxvYWSI'
+        'AQFCCgoIX3BheWxvYWQ=');
 
 @$core.Deprecated('Use privateConnectionEventDataDescriptor instead')
 const PrivateConnectionEventData$json = {
   '1': 'PrivateConnectionEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.PrivateConnection', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PrivateConnection',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -942,16 +1530,26 @@ const PrivateConnectionEventData$json = {
 };
 
 /// Descriptor for `PrivateConnectionEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List privateConnectionEventDataDescriptor = $convert.base64Decode(
-    'ChpQcml2YXRlQ29ubmVjdGlvbkV2ZW50RGF0YRJTCgdwYXlsb2FkGAEgASgLMjQuZ29vZ2xlLm'
-    'V2ZW50cy5jbG91ZC5kYXRhc3RyZWFtLnYxLlByaXZhdGVDb25uZWN0aW9uSABSB3BheWxvYWSI'
-    'AQFCCgoIX3BheWxvYWQ=');
+final $typed_data.Uint8List privateConnectionEventDataDescriptor =
+    $convert.base64Decode(
+        'ChpQcml2YXRlQ29ubmVjdGlvbkV2ZW50RGF0YRJTCgdwYXlsb2FkGAEgASgLMjQuZ29vZ2xlLm'
+        'V2ZW50cy5jbG91ZC5kYXRhc3RyZWFtLnYxLlByaXZhdGVDb25uZWN0aW9uSABSB3BheWxvYWSI'
+        'AQFCCgoIX3BheWxvYWQ=');
 
 @$core.Deprecated('Use streamEventDataDescriptor instead')
 const StreamEventData$json = {
   '1': 'StreamEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.Stream', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.Stream',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -967,7 +1565,16 @@ final $typed_data.Uint8List streamEventDataDescriptor = $convert.base64Decode(
 const RouteEventData$json = {
   '1': 'RouteEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.Route', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.Route',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -978,4 +1585,3 @@ const RouteEventData$json = {
 final $typed_data.Uint8List routeEventDataDescriptor = $convert.base64Decode(
     'Cg5Sb3V0ZUV2ZW50RGF0YRJHCgdwYXlsb2FkGAEgASgLMiguZ29vZ2xlLmV2ZW50cy5jbG91ZC'
     '5kYXRhc3RyZWFtLnYxLlJvdXRlSABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
-

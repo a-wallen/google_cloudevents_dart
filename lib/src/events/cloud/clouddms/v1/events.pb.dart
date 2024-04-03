@@ -27,40 +27,55 @@ class MigrationJobCreatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   MigrationJobCreatedEvent._() : super();
-  factory MigrationJobCreatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MigrationJobCreatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MigrationJobCreatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MigrationJobCreatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MigrationJobCreatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$46.MigrationJobEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $46.MigrationJobEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MigrationJobCreatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
+      createEmptyInstance: create)
+    ..aOM<$46.MigrationJobEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $46.MigrationJobEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MigrationJobCreatedEvent clone() => MigrationJobCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MigrationJobCreatedEvent copyWith(void Function(MigrationJobCreatedEvent) updates) => super.copyWith((message) => updates(message as MigrationJobCreatedEvent)) as MigrationJobCreatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MigrationJobCreatedEvent clone() =>
+      MigrationJobCreatedEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MigrationJobCreatedEvent copyWith(
+          void Function(MigrationJobCreatedEvent) updates) =>
+      super.copyWith((message) => updates(message as MigrationJobCreatedEvent))
+          as MigrationJobCreatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MigrationJobCreatedEvent create() => MigrationJobCreatedEvent._();
   MigrationJobCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<MigrationJobCreatedEvent> createRepeated() => $pb.PbList<MigrationJobCreatedEvent>();
+  static $pb.PbList<MigrationJobCreatedEvent> createRepeated() =>
+      $pb.PbList<MigrationJobCreatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static MigrationJobCreatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MigrationJobCreatedEvent>(create);
+  static MigrationJobCreatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MigrationJobCreatedEvent>(create);
   static MigrationJobCreatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $46.MigrationJobEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.MigrationJobEventData v) { setField(1, v); }
+  set data($46.MigrationJobEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -81,40 +96,55 @@ class MigrationJobUpdatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   MigrationJobUpdatedEvent._() : super();
-  factory MigrationJobUpdatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MigrationJobUpdatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MigrationJobUpdatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MigrationJobUpdatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MigrationJobUpdatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$46.MigrationJobEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $46.MigrationJobEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MigrationJobUpdatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
+      createEmptyInstance: create)
+    ..aOM<$46.MigrationJobEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $46.MigrationJobEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MigrationJobUpdatedEvent clone() => MigrationJobUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MigrationJobUpdatedEvent copyWith(void Function(MigrationJobUpdatedEvent) updates) => super.copyWith((message) => updates(message as MigrationJobUpdatedEvent)) as MigrationJobUpdatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MigrationJobUpdatedEvent clone() =>
+      MigrationJobUpdatedEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MigrationJobUpdatedEvent copyWith(
+          void Function(MigrationJobUpdatedEvent) updates) =>
+      super.copyWith((message) => updates(message as MigrationJobUpdatedEvent))
+          as MigrationJobUpdatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MigrationJobUpdatedEvent create() => MigrationJobUpdatedEvent._();
   MigrationJobUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<MigrationJobUpdatedEvent> createRepeated() => $pb.PbList<MigrationJobUpdatedEvent>();
+  static $pb.PbList<MigrationJobUpdatedEvent> createRepeated() =>
+      $pb.PbList<MigrationJobUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static MigrationJobUpdatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MigrationJobUpdatedEvent>(create);
+  static MigrationJobUpdatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MigrationJobUpdatedEvent>(create);
   static MigrationJobUpdatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $46.MigrationJobEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.MigrationJobEventData v) { setField(1, v); }
+  set data($46.MigrationJobEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -135,40 +165,55 @@ class MigrationJobDeletedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   MigrationJobDeletedEvent._() : super();
-  factory MigrationJobDeletedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MigrationJobDeletedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MigrationJobDeletedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MigrationJobDeletedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MigrationJobDeletedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$46.MigrationJobEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $46.MigrationJobEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MigrationJobDeletedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
+      createEmptyInstance: create)
+    ..aOM<$46.MigrationJobEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $46.MigrationJobEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MigrationJobDeletedEvent clone() => MigrationJobDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MigrationJobDeletedEvent copyWith(void Function(MigrationJobDeletedEvent) updates) => super.copyWith((message) => updates(message as MigrationJobDeletedEvent)) as MigrationJobDeletedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MigrationJobDeletedEvent clone() =>
+      MigrationJobDeletedEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MigrationJobDeletedEvent copyWith(
+          void Function(MigrationJobDeletedEvent) updates) =>
+      super.copyWith((message) => updates(message as MigrationJobDeletedEvent))
+          as MigrationJobDeletedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MigrationJobDeletedEvent create() => MigrationJobDeletedEvent._();
   MigrationJobDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<MigrationJobDeletedEvent> createRepeated() => $pb.PbList<MigrationJobDeletedEvent>();
+  static $pb.PbList<MigrationJobDeletedEvent> createRepeated() =>
+      $pb.PbList<MigrationJobDeletedEvent>();
   @$core.pragma('dart2js:noInline')
-  static MigrationJobDeletedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MigrationJobDeletedEvent>(create);
+  static MigrationJobDeletedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MigrationJobDeletedEvent>(create);
   static MigrationJobDeletedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $46.MigrationJobEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.MigrationJobEventData v) { setField(1, v); }
+  set data($46.MigrationJobEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -189,40 +234,57 @@ class ConnectionProfileCreatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   ConnectionProfileCreatedEvent._() : super();
-  factory ConnectionProfileCreatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConnectionProfileCreatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConnectionProfileCreatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ConnectionProfileCreatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConnectionProfileCreatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$46.ConnectionProfileEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $46.ConnectionProfileEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ConnectionProfileCreatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
+      createEmptyInstance: create)
+    ..aOM<$46.ConnectionProfileEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $46.ConnectionProfileEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ConnectionProfileCreatedEvent clone() => ConnectionProfileCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ConnectionProfileCreatedEvent copyWith(void Function(ConnectionProfileCreatedEvent) updates) => super.copyWith((message) => updates(message as ConnectionProfileCreatedEvent)) as ConnectionProfileCreatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ConnectionProfileCreatedEvent clone() =>
+      ConnectionProfileCreatedEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ConnectionProfileCreatedEvent copyWith(
+          void Function(ConnectionProfileCreatedEvent) updates) =>
+      super.copyWith(
+              (message) => updates(message as ConnectionProfileCreatedEvent))
+          as ConnectionProfileCreatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ConnectionProfileCreatedEvent create() => ConnectionProfileCreatedEvent._();
+  static ConnectionProfileCreatedEvent create() =>
+      ConnectionProfileCreatedEvent._();
   ConnectionProfileCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ConnectionProfileCreatedEvent> createRepeated() => $pb.PbList<ConnectionProfileCreatedEvent>();
+  static $pb.PbList<ConnectionProfileCreatedEvent> createRepeated() =>
+      $pb.PbList<ConnectionProfileCreatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static ConnectionProfileCreatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConnectionProfileCreatedEvent>(create);
+  static ConnectionProfileCreatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ConnectionProfileCreatedEvent>(create);
   static ConnectionProfileCreatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $46.ConnectionProfileEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.ConnectionProfileEventData v) { setField(1, v); }
+  set data($46.ConnectionProfileEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -243,40 +305,57 @@ class ConnectionProfileUpdatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   ConnectionProfileUpdatedEvent._() : super();
-  factory ConnectionProfileUpdatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConnectionProfileUpdatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConnectionProfileUpdatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ConnectionProfileUpdatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConnectionProfileUpdatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$46.ConnectionProfileEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $46.ConnectionProfileEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ConnectionProfileUpdatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
+      createEmptyInstance: create)
+    ..aOM<$46.ConnectionProfileEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $46.ConnectionProfileEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ConnectionProfileUpdatedEvent clone() => ConnectionProfileUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ConnectionProfileUpdatedEvent copyWith(void Function(ConnectionProfileUpdatedEvent) updates) => super.copyWith((message) => updates(message as ConnectionProfileUpdatedEvent)) as ConnectionProfileUpdatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ConnectionProfileUpdatedEvent clone() =>
+      ConnectionProfileUpdatedEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ConnectionProfileUpdatedEvent copyWith(
+          void Function(ConnectionProfileUpdatedEvent) updates) =>
+      super.copyWith(
+              (message) => updates(message as ConnectionProfileUpdatedEvent))
+          as ConnectionProfileUpdatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ConnectionProfileUpdatedEvent create() => ConnectionProfileUpdatedEvent._();
+  static ConnectionProfileUpdatedEvent create() =>
+      ConnectionProfileUpdatedEvent._();
   ConnectionProfileUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ConnectionProfileUpdatedEvent> createRepeated() => $pb.PbList<ConnectionProfileUpdatedEvent>();
+  static $pb.PbList<ConnectionProfileUpdatedEvent> createRepeated() =>
+      $pb.PbList<ConnectionProfileUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static ConnectionProfileUpdatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConnectionProfileUpdatedEvent>(create);
+  static ConnectionProfileUpdatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ConnectionProfileUpdatedEvent>(create);
   static ConnectionProfileUpdatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $46.ConnectionProfileEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.ConnectionProfileEventData v) { setField(1, v); }
+  set data($46.ConnectionProfileEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -297,40 +376,57 @@ class ConnectionProfileDeletedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   ConnectionProfileDeletedEvent._() : super();
-  factory ConnectionProfileDeletedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ConnectionProfileDeletedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ConnectionProfileDeletedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ConnectionProfileDeletedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConnectionProfileDeletedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$46.ConnectionProfileEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $46.ConnectionProfileEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ConnectionProfileDeletedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.clouddms.v1'),
+      createEmptyInstance: create)
+    ..aOM<$46.ConnectionProfileEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $46.ConnectionProfileEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ConnectionProfileDeletedEvent clone() => ConnectionProfileDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ConnectionProfileDeletedEvent copyWith(void Function(ConnectionProfileDeletedEvent) updates) => super.copyWith((message) => updates(message as ConnectionProfileDeletedEvent)) as ConnectionProfileDeletedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ConnectionProfileDeletedEvent clone() =>
+      ConnectionProfileDeletedEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ConnectionProfileDeletedEvent copyWith(
+          void Function(ConnectionProfileDeletedEvent) updates) =>
+      super.copyWith(
+              (message) => updates(message as ConnectionProfileDeletedEvent))
+          as ConnectionProfileDeletedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ConnectionProfileDeletedEvent create() => ConnectionProfileDeletedEvent._();
+  static ConnectionProfileDeletedEvent create() =>
+      ConnectionProfileDeletedEvent._();
   ConnectionProfileDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<ConnectionProfileDeletedEvent> createRepeated() => $pb.PbList<ConnectionProfileDeletedEvent>();
+  static $pb.PbList<ConnectionProfileDeletedEvent> createRepeated() =>
+      $pb.PbList<ConnectionProfileDeletedEvent>();
   @$core.pragma('dart2js:noInline')
-  static ConnectionProfileDeletedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ConnectionProfileDeletedEvent>(create);
+  static ConnectionProfileDeletedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ConnectionProfileDeletedEvent>(create);
   static ConnectionProfileDeletedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $46.ConnectionProfileEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($46.ConnectionProfileEventData v) { setField(1, v); }
+  set data($46.ConnectionProfileEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -339,6 +435,6 @@ class ConnectionProfileDeletedEvent extends $pb.GeneratedMessage {
   $46.ConnectionProfileEventData ensureData() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

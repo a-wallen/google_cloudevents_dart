@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const MessagePublishedEvent$json = {
   '1': 'MessagePublishedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.pubsub.v1.MessagePublishedData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.pubsub.v1.MessagePublishedData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -27,4 +34,3 @@ final $typed_data.Uint8List messagePublishedEventDescriptor = $convert.base64Dec
     'ChVNZXNzYWdlUHVibGlzaGVkRXZlbnQSRwoEZGF0YRgBIAEoCzIzLmdvb2dsZS5ldmVudHMuY2'
     'xvdWQucHVic3ViLnYxLk1lc3NhZ2VQdWJsaXNoZWREYXRhUgRkYXRhOjyy+NgsLWdvb2dsZS5j'
     'bG91ZC5wdWJzdWIudG9waWMudjEubWVzc2FnZVB1Ymxpc2hlZMr42CwFdG9waWM=');
-

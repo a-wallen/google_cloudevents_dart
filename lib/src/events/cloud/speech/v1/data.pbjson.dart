@@ -19,15 +19,56 @@ const CustomClass$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'custom_class_id', '3': 2, '4': 1, '5': 9, '10': 'customClassId'},
-    {'1': 'items', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.speech.v1.CustomClass.ClassItem', '10': 'items'},
+    {
+      '1': 'items',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.CustomClass.ClassItem',
+      '10': 'items'
+    },
     {'1': 'kms_key_name', '3': 6, '4': 1, '5': 9, '10': 'kmsKeyName'},
-    {'1': 'kms_key_version_name', '3': 7, '4': 1, '5': 9, '10': 'kmsKeyVersionName'},
+    {
+      '1': 'kms_key_version_name',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'kmsKeyVersionName'
+    },
     {'1': 'uid', '3': 8, '4': 1, '5': 9, '10': 'uid'},
     {'1': 'display_name', '3': 9, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'state', '3': 10, '4': 1, '5': 14, '6': '.google.events.cloud.speech.v1.CustomClass.State', '10': 'state'},
-    {'1': 'delete_time', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deleteTime'},
-    {'1': 'expire_time', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expireTime'},
-    {'1': 'annotations', '3': 13, '4': 3, '5': 11, '6': '.google.events.cloud.speech.v1.CustomClass.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'state',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.speech.v1.CustomClass.State',
+      '10': 'state'
+    },
+    {
+      '1': 'delete_time',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deleteTime'
+    },
+    {
+      '1': 'expire_time',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expireTime'
+    },
+    {
+      '1': 'annotations',
+      '3': 13,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.CustomClass.AnnotationsEntry',
+      '10': 'annotations'
+    },
     {'1': 'etag', '3': 14, '4': 1, '5': 9, '10': 'etag'},
     {'1': 'reconciling', '3': 15, '4': 1, '5': 8, '10': 'reconciling'},
   ],
@@ -86,16 +127,57 @@ const PhraseSet$json = {
   '1': 'PhraseSet',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'phrases', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.speech.v1.PhraseSet.Phrase', '10': 'phrases'},
+    {
+      '1': 'phrases',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.PhraseSet.Phrase',
+      '10': 'phrases'
+    },
     {'1': 'boost', '3': 4, '4': 1, '5': 2, '10': 'boost'},
     {'1': 'kms_key_name', '3': 7, '4': 1, '5': 9, '10': 'kmsKeyName'},
-    {'1': 'kms_key_version_name', '3': 8, '4': 1, '5': 9, '10': 'kmsKeyVersionName'},
+    {
+      '1': 'kms_key_version_name',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'kmsKeyVersionName'
+    },
     {'1': 'uid', '3': 9, '4': 1, '5': 9, '10': 'uid'},
     {'1': 'display_name', '3': 10, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'state', '3': 11, '4': 1, '5': 14, '6': '.google.events.cloud.speech.v1.PhraseSet.State', '10': 'state'},
-    {'1': 'delete_time', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deleteTime'},
-    {'1': 'expire_time', '3': 13, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expireTime'},
-    {'1': 'annotations', '3': 14, '4': 3, '5': 11, '6': '.google.events.cloud.speech.v1.PhraseSet.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'state',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.speech.v1.PhraseSet.State',
+      '10': 'state'
+    },
+    {
+      '1': 'delete_time',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deleteTime'
+    },
+    {
+      '1': 'expire_time',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expireTime'
+    },
+    {
+      '1': 'annotations',
+      '3': 14,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.PhraseSet.AnnotationsEntry',
+      '10': 'annotations'
+    },
     {'1': 'etag', '3': 15, '4': 1, '5': 9, '10': 'etag'},
     {'1': 'reconciling', '3': 16, '4': 1, '5': 8, '10': 'reconciling'},
   ],
@@ -154,7 +236,14 @@ final $typed_data.Uint8List phraseSetDescriptor = $convert.base64Decode(
 const PhraseSetEventData$json = {
   '1': 'PhraseSetEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.speech.v1.PhraseSet', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.PhraseSet',
+      '10': 'payload'
+    },
   ],
 };
 
@@ -167,7 +256,14 @@ final $typed_data.Uint8List phraseSetEventDataDescriptor = $convert.base64Decode
 const CustomClassEventData$json = {
   '1': 'CustomClassEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.speech.v1.CustomClass', '10': 'payload'},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.CustomClass',
+      '10': 'payload'
+    },
   ],
 };
 
@@ -175,4 +271,3 @@ const CustomClassEventData$json = {
 final $typed_data.Uint8List customClassEventDataDescriptor = $convert.base64Decode(
     'ChRDdXN0b21DbGFzc0V2ZW50RGF0YRJECgdwYXlsb2FkGAEgASgLMiouZ29vZ2xlLmV2ZW50cy'
     '5jbG91ZC5zcGVlY2gudjEuQ3VzdG9tQ2xhc3NSB3BheWxvYWQ=');
-

@@ -37,25 +37,31 @@ class NodeInfo extends $pb.GeneratedMessage {
     return $result;
   }
   NodeInfo._() : super();
-  factory NodeInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NodeInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NodeInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NodeInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NodeInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.redis.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NodeInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.redis.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'zone')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   NodeInfo clone() => NodeInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NodeInfo copyWith(void Function(NodeInfo) updates) => super.copyWith((message) => updates(message as NodeInfo)) as NodeInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NodeInfo copyWith(void Function(NodeInfo) updates) =>
+      super.copyWith((message) => updates(message as NodeInfo)) as NodeInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -64,14 +70,18 @@ class NodeInfo extends $pb.GeneratedMessage {
   NodeInfo createEmptyInstance() => create();
   static $pb.PbList<NodeInfo> createRepeated() => $pb.PbList<NodeInfo>();
   @$core.pragma('dart2js:noInline')
-  static NodeInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NodeInfo>(create);
+  static NodeInfo getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NodeInfo>(create);
   static NodeInfo? _defaultInstance;
 
   /// Output only. Node identifying string. e.g. 'node-0', 'node-1'
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -81,7 +91,10 @@ class NodeInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get zone => $_getSZ(1);
   @$pb.TagNumber(2)
-  set zone($core.String v) { $_setString(1, v); }
+  set zone($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasZone() => $_has(1);
   @$pb.TagNumber(2)
@@ -236,13 +249,25 @@ class Instance extends $pb.GeneratedMessage {
     return $result;
   }
   Instance._() : super();
-  factory Instance.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Instance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Instance.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Instance.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Instance', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.redis.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Instance',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.redis.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels', entryClassName: 'Instance.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.redis.v1'))
+    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Instance.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.redis.v1'))
     ..aOS(4, _omitFieldNames ? '' : 'locationId')
     ..aOS(5, _omitFieldNames ? '' : 'alternativeLocationId')
     ..aOS(7, _omitFieldNames ? '' : 'redisVersion')
@@ -250,44 +275,81 @@ class Instance extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'host')
     ..a<$core.int>(11, _omitFieldNames ? '' : 'port', $pb.PbFieldType.O3)
     ..aOS(12, _omitFieldNames ? '' : 'currentLocationId')
-    ..aOM<$2.Timestamp>(13, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..e<Instance_State>(14, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Instance_State.STATE_UNSPECIFIED, valueOf: Instance_State.valueOf, enumValues: Instance_State.values)
+    ..aOM<$2.Timestamp>(13, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..e<Instance_State>(14, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Instance_State.STATE_UNSPECIFIED,
+        valueOf: Instance_State.valueOf,
+        enumValues: Instance_State.values)
     ..aOS(15, _omitFieldNames ? '' : 'statusMessage')
-    ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'redisConfigs', entryClassName: 'Instance.RedisConfigsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.redis.v1'))
-    ..e<Instance_Tier>(17, _omitFieldNames ? '' : 'tier', $pb.PbFieldType.OE, defaultOrMaker: Instance_Tier.TIER_UNSPECIFIED, valueOf: Instance_Tier.valueOf, enumValues: Instance_Tier.values)
-    ..a<$core.int>(18, _omitFieldNames ? '' : 'memorySizeGb', $pb.PbFieldType.O3)
+    ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'redisConfigs',
+        entryClassName: 'Instance.RedisConfigsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.redis.v1'))
+    ..e<Instance_Tier>(17, _omitFieldNames ? '' : 'tier', $pb.PbFieldType.OE,
+        defaultOrMaker: Instance_Tier.TIER_UNSPECIFIED,
+        valueOf: Instance_Tier.valueOf,
+        enumValues: Instance_Tier.values)
+    ..a<$core.int>(
+        18, _omitFieldNames ? '' : 'memorySizeGb', $pb.PbFieldType.O3)
     ..aOS(20, _omitFieldNames ? '' : 'authorizedNetwork')
     ..aOS(21, _omitFieldNames ? '' : 'persistenceIamIdentity')
-    ..e<Instance_ConnectMode>(22, _omitFieldNames ? '' : 'connectMode', $pb.PbFieldType.OE, defaultOrMaker: Instance_ConnectMode.CONNECT_MODE_UNSPECIFIED, valueOf: Instance_ConnectMode.valueOf, enumValues: Instance_ConnectMode.values)
+    ..e<Instance_ConnectMode>(
+        22, _omitFieldNames ? '' : 'connectMode', $pb.PbFieldType.OE,
+        defaultOrMaker: Instance_ConnectMode.CONNECT_MODE_UNSPECIFIED,
+        valueOf: Instance_ConnectMode.valueOf,
+        enumValues: Instance_ConnectMode.values)
     ..aOB(23, _omitFieldNames ? '' : 'authEnabled')
-    ..pc<TlsCertificate>(25, _omitFieldNames ? '' : 'serverCaCerts', $pb.PbFieldType.PM, subBuilder: TlsCertificate.create)
-    ..e<Instance_TransitEncryptionMode>(26, _omitFieldNames ? '' : 'transitEncryptionMode', $pb.PbFieldType.OE, defaultOrMaker: Instance_TransitEncryptionMode.TRANSIT_ENCRYPTION_MODE_UNSPECIFIED, valueOf: Instance_TransitEncryptionMode.valueOf, enumValues: Instance_TransitEncryptionMode.values)
-    ..aOM<MaintenancePolicy>(27, _omitFieldNames ? '' : 'maintenancePolicy', subBuilder: MaintenancePolicy.create)
-    ..aOM<MaintenanceSchedule>(28, _omitFieldNames ? '' : 'maintenanceSchedule', subBuilder: MaintenanceSchedule.create)
+    ..pc<TlsCertificate>(
+        25, _omitFieldNames ? '' : 'serverCaCerts', $pb.PbFieldType.PM,
+        subBuilder: TlsCertificate.create)
+    ..e<Instance_TransitEncryptionMode>(
+        26, _omitFieldNames ? '' : 'transitEncryptionMode', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Instance_TransitEncryptionMode.TRANSIT_ENCRYPTION_MODE_UNSPECIFIED,
+        valueOf: Instance_TransitEncryptionMode.valueOf,
+        enumValues: Instance_TransitEncryptionMode.values)
+    ..aOM<MaintenancePolicy>(27, _omitFieldNames ? '' : 'maintenancePolicy',
+        subBuilder: MaintenancePolicy.create)
+    ..aOM<MaintenanceSchedule>(28, _omitFieldNames ? '' : 'maintenanceSchedule',
+        subBuilder: MaintenanceSchedule.create)
     ..aOS(30, _omitFieldNames ? '' : 'secondaryIpRange')
-    ..a<$core.int>(31, _omitFieldNames ? '' : 'replicaCount', $pb.PbFieldType.O3)
-    ..pc<NodeInfo>(32, _omitFieldNames ? '' : 'nodes', $pb.PbFieldType.PM, subBuilder: NodeInfo.create)
+    ..a<$core.int>(
+        31, _omitFieldNames ? '' : 'replicaCount', $pb.PbFieldType.O3)
+    ..pc<NodeInfo>(32, _omitFieldNames ? '' : 'nodes', $pb.PbFieldType.PM,
+        subBuilder: NodeInfo.create)
     ..aOS(33, _omitFieldNames ? '' : 'readEndpoint')
-    ..a<$core.int>(34, _omitFieldNames ? '' : 'readEndpointPort', $pb.PbFieldType.O3)
-    ..e<Instance_ReadReplicasMode>(35, _omitFieldNames ? '' : 'readReplicasMode', $pb.PbFieldType.OE, defaultOrMaker: Instance_ReadReplicasMode.READ_REPLICAS_MODE_UNSPECIFIED, valueOf: Instance_ReadReplicasMode.valueOf, enumValues: Instance_ReadReplicasMode.values)
+    ..a<$core.int>(
+        34, _omitFieldNames ? '' : 'readEndpointPort', $pb.PbFieldType.O3)
+    ..e<Instance_ReadReplicasMode>(
+        35, _omitFieldNames ? '' : 'readReplicasMode', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Instance_ReadReplicasMode.READ_REPLICAS_MODE_UNSPECIFIED,
+        valueOf: Instance_ReadReplicasMode.valueOf,
+        enumValues: Instance_ReadReplicasMode.values)
     ..aOS(36, _omitFieldNames ? '' : 'customerManagedKey')
-    ..aOM<PersistenceConfig>(37, _omitFieldNames ? '' : 'persistenceConfig', subBuilder: PersistenceConfig.create)
-    ..pc<Instance_SuspensionReason>(38, _omitFieldNames ? '' : 'suspensionReasons', $pb.PbFieldType.KE, valueOf: Instance_SuspensionReason.valueOf, enumValues: Instance_SuspensionReason.values, defaultEnumValue: Instance_SuspensionReason.SUSPENSION_REASON_UNSPECIFIED)
+    ..aOM<PersistenceConfig>(37, _omitFieldNames ? '' : 'persistenceConfig',
+        subBuilder: PersistenceConfig.create)
+    ..pc<Instance_SuspensionReason>(
+        38, _omitFieldNames ? '' : 'suspensionReasons', $pb.PbFieldType.KE,
+        valueOf: Instance_SuspensionReason.valueOf,
+        enumValues: Instance_SuspensionReason.values,
+        defaultEnumValue:
+            Instance_SuspensionReason.SUSPENSION_REASON_UNSPECIFIED)
     ..aOS(39, _omitFieldNames ? '' : 'maintenanceVersion')
     ..pPS(40, _omitFieldNames ? '' : 'availableMaintenanceVersions')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Instance clone() => Instance()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Instance copyWith(void Function(Instance) updates) => super.copyWith((message) => updates(message as Instance)) as Instance;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Instance copyWith(void Function(Instance) updates) =>
+      super.copyWith((message) => updates(message as Instance)) as Instance;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -296,7 +358,8 @@ class Instance extends $pb.GeneratedMessage {
   Instance createEmptyInstance() => create();
   static $pb.PbList<Instance> createRepeated() => $pb.PbList<Instance>();
   @$core.pragma('dart2js:noInline')
-  static Instance getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Instance>(create);
+  static Instance getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Instance>(create);
   static Instance? _defaultInstance;
 
   ///  Required. Unique name of the resource in this scope including project and
@@ -313,7 +376,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -323,7 +389,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -341,7 +410,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get locationId => $_getSZ(3);
   @$pb.TagNumber(4)
-  set locationId($core.String v) { $_setString(3, v); }
+  set locationId($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLocationId() => $_has(3);
   @$pb.TagNumber(4)
@@ -355,7 +427,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get alternativeLocationId => $_getSZ(4);
   @$pb.TagNumber(5)
-  set alternativeLocationId($core.String v) { $_setString(4, v); }
+  set alternativeLocationId($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAlternativeLocationId() => $_has(4);
   @$pb.TagNumber(5)
@@ -372,7 +447,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get redisVersion => $_getSZ(5);
   @$pb.TagNumber(7)
-  set redisVersion($core.String v) { $_setString(5, v); }
+  set redisVersion($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRedisVersion() => $_has(5);
   @$pb.TagNumber(7)
@@ -389,7 +467,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get reservedIpRange => $_getSZ(6);
   @$pb.TagNumber(9)
-  set reservedIpRange($core.String v) { $_setString(6, v); }
+  set reservedIpRange($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasReservedIpRange() => $_has(6);
   @$pb.TagNumber(9)
@@ -400,7 +481,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get host => $_getSZ(7);
   @$pb.TagNumber(10)
-  set host($core.String v) { $_setString(7, v); }
+  set host($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasHost() => $_has(7);
   @$pb.TagNumber(10)
@@ -410,7 +494,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.int get port => $_getIZ(8);
   @$pb.TagNumber(11)
-  set port($core.int v) { $_setSignedInt32(8, v); }
+  set port($core.int v) {
+    $_setSignedInt32(8, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasPort() => $_has(8);
   @$pb.TagNumber(11)
@@ -422,7 +509,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get currentLocationId => $_getSZ(9);
   @$pb.TagNumber(12)
-  set currentLocationId($core.String v) { $_setString(9, v); }
+  set currentLocationId($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasCurrentLocationId() => $_has(9);
   @$pb.TagNumber(12)
@@ -432,7 +522,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $2.Timestamp get createTime => $_getN(10);
   @$pb.TagNumber(13)
-  set createTime($2.Timestamp v) { setField(13, v); }
+  set createTime($2.Timestamp v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasCreateTime() => $_has(10);
   @$pb.TagNumber(13)
@@ -444,7 +537,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   Instance_State get state => $_getN(11);
   @$pb.TagNumber(14)
-  set state(Instance_State v) { setField(14, v); }
+  set state(Instance_State v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasState() => $_has(11);
   @$pb.TagNumber(14)
@@ -455,7 +551,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get statusMessage => $_getSZ(12);
   @$pb.TagNumber(15)
-  set statusMessage($core.String v) { $_setString(12, v); }
+  set statusMessage($core.String v) {
+    $_setString(12, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasStatusMessage() => $_has(12);
   @$pb.TagNumber(15)
@@ -488,7 +587,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   Instance_Tier get tier => $_getN(14);
   @$pb.TagNumber(17)
-  set tier(Instance_Tier v) { setField(17, v); }
+  set tier(Instance_Tier v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasTier() => $_has(14);
   @$pb.TagNumber(17)
@@ -498,7 +600,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.int get memorySizeGb => $_getIZ(15);
   @$pb.TagNumber(18)
-  set memorySizeGb($core.int v) { $_setSignedInt32(15, v); }
+  set memorySizeGb($core.int v) {
+    $_setSignedInt32(15, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasMemorySizeGb() => $_has(15);
   @$pb.TagNumber(18)
@@ -511,7 +616,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.String get authorizedNetwork => $_getSZ(16);
   @$pb.TagNumber(20)
-  set authorizedNetwork($core.String v) { $_setString(16, v); }
+  set authorizedNetwork($core.String v) {
+    $_setString(16, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasAuthorizedNetwork() => $_has(16);
   @$pb.TagNumber(20)
@@ -525,7 +633,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $core.String get persistenceIamIdentity => $_getSZ(17);
   @$pb.TagNumber(21)
-  set persistenceIamIdentity($core.String v) { $_setString(17, v); }
+  set persistenceIamIdentity($core.String v) {
+    $_setString(17, v);
+  }
+
   @$pb.TagNumber(21)
   $core.bool hasPersistenceIamIdentity() => $_has(17);
   @$pb.TagNumber(21)
@@ -536,7 +647,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   Instance_ConnectMode get connectMode => $_getN(18);
   @$pb.TagNumber(22)
-  set connectMode(Instance_ConnectMode v) { setField(22, v); }
+  set connectMode(Instance_ConnectMode v) {
+    setField(22, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasConnectMode() => $_has(18);
   @$pb.TagNumber(22)
@@ -548,7 +662,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.bool get authEnabled => $_getBF(19);
   @$pb.TagNumber(23)
-  set authEnabled($core.bool v) { $_setBool(19, v); }
+  set authEnabled($core.bool v) {
+    $_setBool(19, v);
+  }
+
   @$pb.TagNumber(23)
   $core.bool hasAuthEnabled() => $_has(19);
   @$pb.TagNumber(23)
@@ -563,7 +680,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   Instance_TransitEncryptionMode get transitEncryptionMode => $_getN(21);
   @$pb.TagNumber(26)
-  set transitEncryptionMode(Instance_TransitEncryptionMode v) { setField(26, v); }
+  set transitEncryptionMode(Instance_TransitEncryptionMode v) {
+    setField(26, v);
+  }
+
   @$pb.TagNumber(26)
   $core.bool hasTransitEncryptionMode() => $_has(21);
   @$pb.TagNumber(26)
@@ -574,7 +694,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   MaintenancePolicy get maintenancePolicy => $_getN(22);
   @$pb.TagNumber(27)
-  set maintenancePolicy(MaintenancePolicy v) { setField(27, v); }
+  set maintenancePolicy(MaintenancePolicy v) {
+    setField(27, v);
+  }
+
   @$pb.TagNumber(27)
   $core.bool hasMaintenancePolicy() => $_has(22);
   @$pb.TagNumber(27)
@@ -587,7 +710,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   MaintenanceSchedule get maintenanceSchedule => $_getN(23);
   @$pb.TagNumber(28)
-  set maintenanceSchedule(MaintenanceSchedule v) { setField(28, v); }
+  set maintenanceSchedule(MaintenanceSchedule v) {
+    setField(28, v);
+  }
+
   @$pb.TagNumber(28)
   $core.bool hasMaintenanceSchedule() => $_has(23);
   @$pb.TagNumber(28)
@@ -603,7 +729,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(30)
   $core.String get secondaryIpRange => $_getSZ(24);
   @$pb.TagNumber(30)
-  set secondaryIpRange($core.String v) { $_setString(24, v); }
+  set secondaryIpRange($core.String v) {
+    $_setString(24, v);
+  }
+
   @$pb.TagNumber(30)
   $core.bool hasSecondaryIpRange() => $_has(24);
   @$pb.TagNumber(30)
@@ -617,7 +746,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(31)
   $core.int get replicaCount => $_getIZ(25);
   @$pb.TagNumber(31)
-  set replicaCount($core.int v) { $_setSignedInt32(25, v); }
+  set replicaCount($core.int v) {
+    $_setSignedInt32(25, v);
+  }
+
   @$pb.TagNumber(31)
   $core.bool hasReplicaCount() => $_has(25);
   @$pb.TagNumber(31)
@@ -634,7 +766,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(33)
   $core.String get readEndpoint => $_getSZ(27);
   @$pb.TagNumber(33)
-  set readEndpoint($core.String v) { $_setString(27, v); }
+  set readEndpoint($core.String v) {
+    $_setString(27, v);
+  }
+
   @$pb.TagNumber(33)
   $core.bool hasReadEndpoint() => $_has(27);
   @$pb.TagNumber(33)
@@ -645,7 +780,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(34)
   $core.int get readEndpointPort => $_getIZ(28);
   @$pb.TagNumber(34)
-  set readEndpointPort($core.int v) { $_setSignedInt32(28, v); }
+  set readEndpointPort($core.int v) {
+    $_setSignedInt32(28, v);
+  }
+
   @$pb.TagNumber(34)
   $core.bool hasReadEndpointPort() => $_has(28);
   @$pb.TagNumber(34)
@@ -656,7 +794,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(35)
   Instance_ReadReplicasMode get readReplicasMode => $_getN(29);
   @$pb.TagNumber(35)
-  set readReplicasMode(Instance_ReadReplicasMode v) { setField(35, v); }
+  set readReplicasMode(Instance_ReadReplicasMode v) {
+    setField(35, v);
+  }
+
   @$pb.TagNumber(35)
   $core.bool hasReadReplicasMode() => $_has(29);
   @$pb.TagNumber(35)
@@ -667,7 +808,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(36)
   $core.String get customerManagedKey => $_getSZ(30);
   @$pb.TagNumber(36)
-  set customerManagedKey($core.String v) { $_setString(30, v); }
+  set customerManagedKey($core.String v) {
+    $_setString(30, v);
+  }
+
   @$pb.TagNumber(36)
   $core.bool hasCustomerManagedKey() => $_has(30);
   @$pb.TagNumber(36)
@@ -677,7 +821,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(37)
   PersistenceConfig get persistenceConfig => $_getN(31);
   @$pb.TagNumber(37)
-  set persistenceConfig(PersistenceConfig v) { setField(37, v); }
+  set persistenceConfig(PersistenceConfig v) {
+    setField(37, v);
+  }
+
   @$pb.TagNumber(37)
   $core.bool hasPersistenceConfig() => $_has(31);
   @$pb.TagNumber(37)
@@ -694,7 +841,10 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(39)
   $core.String get maintenanceVersion => $_getSZ(33);
   @$pb.TagNumber(39)
-  set maintenanceVersion($core.String v) { $_setString(33, v); }
+  set maintenanceVersion($core.String v) {
+    $_setString(33, v);
+  }
+
   @$pb.TagNumber(39)
   $core.bool hasMaintenanceVersion() => $_has(33);
   @$pb.TagNumber(39)
@@ -730,36 +880,57 @@ class PersistenceConfig extends $pb.GeneratedMessage {
     return $result;
   }
   PersistenceConfig._() : super();
-  factory PersistenceConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PersistenceConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PersistenceConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PersistenceConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PersistenceConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.redis.v1'), createEmptyInstance: create)
-    ..e<PersistenceConfig_PersistenceMode>(1, _omitFieldNames ? '' : 'persistenceMode', $pb.PbFieldType.OE, defaultOrMaker: PersistenceConfig_PersistenceMode.PERSISTENCE_MODE_UNSPECIFIED, valueOf: PersistenceConfig_PersistenceMode.valueOf, enumValues: PersistenceConfig_PersistenceMode.values)
-    ..e<PersistenceConfig_SnapshotPeriod>(2, _omitFieldNames ? '' : 'rdbSnapshotPeriod', $pb.PbFieldType.OE, defaultOrMaker: PersistenceConfig_SnapshotPeriod.SNAPSHOT_PERIOD_UNSPECIFIED, valueOf: PersistenceConfig_SnapshotPeriod.valueOf, enumValues: PersistenceConfig_SnapshotPeriod.values)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'rdbNextSnapshotTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'rdbSnapshotStartTime', subBuilder: $2.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PersistenceConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.redis.v1'),
+      createEmptyInstance: create)
+    ..e<PersistenceConfig_PersistenceMode>(
+        1, _omitFieldNames ? '' : 'persistenceMode', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            PersistenceConfig_PersistenceMode.PERSISTENCE_MODE_UNSPECIFIED,
+        valueOf: PersistenceConfig_PersistenceMode.valueOf,
+        enumValues: PersistenceConfig_PersistenceMode.values)
+    ..e<PersistenceConfig_SnapshotPeriod>(
+        2, _omitFieldNames ? '' : 'rdbSnapshotPeriod', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            PersistenceConfig_SnapshotPeriod.SNAPSHOT_PERIOD_UNSPECIFIED,
+        valueOf: PersistenceConfig_SnapshotPeriod.valueOf,
+        enumValues: PersistenceConfig_SnapshotPeriod.values)
+    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'rdbNextSnapshotTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'rdbSnapshotStartTime',
+        subBuilder: $2.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PersistenceConfig clone() => PersistenceConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PersistenceConfig copyWith(void Function(PersistenceConfig) updates) => super.copyWith((message) => updates(message as PersistenceConfig)) as PersistenceConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PersistenceConfig copyWith(void Function(PersistenceConfig) updates) =>
+      super.copyWith((message) => updates(message as PersistenceConfig))
+          as PersistenceConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PersistenceConfig create() => PersistenceConfig._();
   PersistenceConfig createEmptyInstance() => create();
-  static $pb.PbList<PersistenceConfig> createRepeated() => $pb.PbList<PersistenceConfig>();
+  static $pb.PbList<PersistenceConfig> createRepeated() =>
+      $pb.PbList<PersistenceConfig>();
   @$core.pragma('dart2js:noInline')
-  static PersistenceConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PersistenceConfig>(create);
+  static PersistenceConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PersistenceConfig>(create);
   static PersistenceConfig? _defaultInstance;
 
   /// Optional. Controls whether Persistence features are enabled.
@@ -767,7 +938,10 @@ class PersistenceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   PersistenceConfig_PersistenceMode get persistenceMode => $_getN(0);
   @$pb.TagNumber(1)
-  set persistenceMode(PersistenceConfig_PersistenceMode v) { setField(1, v); }
+  set persistenceMode(PersistenceConfig_PersistenceMode v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPersistenceMode() => $_has(0);
   @$pb.TagNumber(1)
@@ -782,7 +956,10 @@ class PersistenceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   PersistenceConfig_SnapshotPeriod get rdbSnapshotPeriod => $_getN(1);
   @$pb.TagNumber(2)
-  set rdbSnapshotPeriod(PersistenceConfig_SnapshotPeriod v) { setField(2, v); }
+  set rdbSnapshotPeriod(PersistenceConfig_SnapshotPeriod v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRdbSnapshotPeriod() => $_has(1);
   @$pb.TagNumber(2)
@@ -792,7 +969,10 @@ class PersistenceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $2.Timestamp get rdbNextSnapshotTime => $_getN(2);
   @$pb.TagNumber(4)
-  set rdbNextSnapshotTime($2.Timestamp v) { setField(4, v); }
+  set rdbNextSnapshotTime($2.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRdbNextSnapshotTime() => $_has(2);
   @$pb.TagNumber(4)
@@ -806,7 +986,10 @@ class PersistenceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $2.Timestamp get rdbSnapshotStartTime => $_getN(3);
   @$pb.TagNumber(5)
-  set rdbSnapshotStartTime($2.Timestamp v) { setField(5, v); }
+  set rdbSnapshotStartTime($2.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasRdbSnapshotStartTime() => $_has(3);
   @$pb.TagNumber(5)
@@ -839,43 +1022,59 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
     return $result;
   }
   MaintenancePolicy._() : super();
-  factory MaintenancePolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MaintenancePolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MaintenancePolicy.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MaintenancePolicy.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaintenancePolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.redis.v1'), createEmptyInstance: create)
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MaintenancePolicy',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.redis.v1'),
+      createEmptyInstance: create)
+    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..pc<WeeklyMaintenanceWindow>(4, _omitFieldNames ? '' : 'weeklyMaintenanceWindow', $pb.PbFieldType.PM, subBuilder: WeeklyMaintenanceWindow.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<WeeklyMaintenanceWindow>(
+        4, _omitFieldNames ? '' : 'weeklyMaintenanceWindow', $pb.PbFieldType.PM,
+        subBuilder: WeeklyMaintenanceWindow.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MaintenancePolicy clone() => MaintenancePolicy()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MaintenancePolicy copyWith(void Function(MaintenancePolicy) updates) => super.copyWith((message) => updates(message as MaintenancePolicy)) as MaintenancePolicy;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MaintenancePolicy copyWith(void Function(MaintenancePolicy) updates) =>
+      super.copyWith((message) => updates(message as MaintenancePolicy))
+          as MaintenancePolicy;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MaintenancePolicy create() => MaintenancePolicy._();
   MaintenancePolicy createEmptyInstance() => create();
-  static $pb.PbList<MaintenancePolicy> createRepeated() => $pb.PbList<MaintenancePolicy>();
+  static $pb.PbList<MaintenancePolicy> createRepeated() =>
+      $pb.PbList<MaintenancePolicy>();
   @$core.pragma('dart2js:noInline')
-  static MaintenancePolicy getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaintenancePolicy>(create);
+  static MaintenancePolicy getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MaintenancePolicy>(create);
   static MaintenancePolicy? _defaultInstance;
 
   /// Output only. The time when the policy was created.
   @$pb.TagNumber(1)
   $2.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($2.Timestamp v) { setField(1, v); }
+  set createTime($2.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -887,7 +1086,10 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($2.Timestamp v) { setField(2, v); }
+  set updateTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -900,7 +1102,10 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
-  set description($core.String v) { $_setString(2, v); }
+  set description($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
@@ -910,7 +1115,8 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
   /// policy. Minimum 1. For the current version, the maximum number of
   /// weekly_window is expected to be one.
   @$pb.TagNumber(4)
-  $core.List<WeeklyMaintenanceWindow> get weeklyMaintenanceWindow => $_getList(3);
+  $core.List<WeeklyMaintenanceWindow> get weeklyMaintenanceWindow =>
+      $_getList(3);
 }
 
 /// Time window in which disruptive maintenance updates occur. Non-disruptive
@@ -934,42 +1140,61 @@ class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
     return $result;
   }
   WeeklyMaintenanceWindow._() : super();
-  factory WeeklyMaintenanceWindow.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory WeeklyMaintenanceWindow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory WeeklyMaintenanceWindow.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory WeeklyMaintenanceWindow.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WeeklyMaintenanceWindow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.redis.v1'), createEmptyInstance: create)
-    ..e<$27.DayOfWeek>(1, _omitFieldNames ? '' : 'day', $pb.PbFieldType.OE, defaultOrMaker: $27.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $27.DayOfWeek.valueOf, enumValues: $27.DayOfWeek.values)
-    ..aOM<$26.TimeOfDay>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $26.TimeOfDay.create)
-    ..aOM<$10.Duration>(3, _omitFieldNames ? '' : 'duration', subBuilder: $10.Duration.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'WeeklyMaintenanceWindow',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.redis.v1'),
+      createEmptyInstance: create)
+    ..e<$27.DayOfWeek>(1, _omitFieldNames ? '' : 'day', $pb.PbFieldType.OE,
+        defaultOrMaker: $27.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
+        valueOf: $27.DayOfWeek.valueOf,
+        enumValues: $27.DayOfWeek.values)
+    ..aOM<$26.TimeOfDay>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $26.TimeOfDay.create)
+    ..aOM<$10.Duration>(3, _omitFieldNames ? '' : 'duration',
+        subBuilder: $10.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  WeeklyMaintenanceWindow clone() => WeeklyMaintenanceWindow()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  WeeklyMaintenanceWindow copyWith(void Function(WeeklyMaintenanceWindow) updates) => super.copyWith((message) => updates(message as WeeklyMaintenanceWindow)) as WeeklyMaintenanceWindow;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  WeeklyMaintenanceWindow clone() =>
+      WeeklyMaintenanceWindow()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  WeeklyMaintenanceWindow copyWith(
+          void Function(WeeklyMaintenanceWindow) updates) =>
+      super.copyWith((message) => updates(message as WeeklyMaintenanceWindow))
+          as WeeklyMaintenanceWindow;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static WeeklyMaintenanceWindow create() => WeeklyMaintenanceWindow._();
   WeeklyMaintenanceWindow createEmptyInstance() => create();
-  static $pb.PbList<WeeklyMaintenanceWindow> createRepeated() => $pb.PbList<WeeklyMaintenanceWindow>();
+  static $pb.PbList<WeeklyMaintenanceWindow> createRepeated() =>
+      $pb.PbList<WeeklyMaintenanceWindow>();
   @$core.pragma('dart2js:noInline')
-  static WeeklyMaintenanceWindow getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WeeklyMaintenanceWindow>(create);
+  static WeeklyMaintenanceWindow getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<WeeklyMaintenanceWindow>(create);
   static WeeklyMaintenanceWindow? _defaultInstance;
 
   /// Required. The day of week that maintenance updates occur.
   @$pb.TagNumber(1)
   $27.DayOfWeek get day => $_getN(0);
   @$pb.TagNumber(1)
-  set day($27.DayOfWeek v) { setField(1, v); }
+  set day($27.DayOfWeek v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDay() => $_has(0);
   @$pb.TagNumber(1)
@@ -979,7 +1204,10 @@ class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $26.TimeOfDay get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($26.TimeOfDay v) { setField(2, v); }
+  set startTime($26.TimeOfDay v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -992,7 +1220,10 @@ class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $10.Duration get duration => $_getN(2);
   @$pb.TagNumber(3)
-  set duration($10.Duration v) { setField(3, v); }
+  set duration($10.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDuration() => $_has(2);
   @$pb.TagNumber(3)
@@ -1026,36 +1257,48 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
     return $result;
   }
   MaintenanceSchedule._() : super();
-  factory MaintenanceSchedule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MaintenanceSchedule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MaintenanceSchedule.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MaintenanceSchedule.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaintenanceSchedule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.redis.v1'), createEmptyInstance: create)
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $2.Timestamp.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MaintenanceSchedule',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.redis.v1'),
+      createEmptyInstance: create)
+    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $2.Timestamp.create)
     ..aOB(3, _omitFieldNames ? '' : 'canReschedule')
-    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'scheduleDeadlineTime', subBuilder: $2.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'scheduleDeadlineTime',
+        subBuilder: $2.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MaintenanceSchedule clone() => MaintenanceSchedule()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MaintenanceSchedule copyWith(void Function(MaintenanceSchedule) updates) => super.copyWith((message) => updates(message as MaintenanceSchedule)) as MaintenanceSchedule;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MaintenanceSchedule copyWith(void Function(MaintenanceSchedule) updates) =>
+      super.copyWith((message) => updates(message as MaintenanceSchedule))
+          as MaintenanceSchedule;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MaintenanceSchedule create() => MaintenanceSchedule._();
   MaintenanceSchedule createEmptyInstance() => create();
-  static $pb.PbList<MaintenanceSchedule> createRepeated() => $pb.PbList<MaintenanceSchedule>();
+  static $pb.PbList<MaintenanceSchedule> createRepeated() =>
+      $pb.PbList<MaintenanceSchedule>();
   @$core.pragma('dart2js:noInline')
-  static MaintenanceSchedule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaintenanceSchedule>(create);
+  static MaintenanceSchedule getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MaintenanceSchedule>(create);
   static MaintenanceSchedule? _defaultInstance;
 
   /// Output only. The start time of any upcoming scheduled maintenance for this
@@ -1063,7 +1306,10 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($2.Timestamp v) { setField(1, v); }
+  set startTime($2.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -1076,7 +1322,10 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($2.Timestamp v) { setField(2, v); }
+  set endTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1088,7 +1337,10 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get canReschedule => $_getBF(2);
   @$pb.TagNumber(3)
-  set canReschedule($core.bool v) { $_setBool(2, v); }
+  set canReschedule($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCanReschedule() => $_has(2);
   @$pb.TagNumber(3)
@@ -1099,7 +1351,10 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $2.Timestamp get scheduleDeadlineTime => $_getN(3);
   @$pb.TagNumber(5)
-  set scheduleDeadlineTime($2.Timestamp v) { setField(5, v); }
+  set scheduleDeadlineTime($2.Timestamp v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasScheduleDeadlineTime() => $_has(3);
   @$pb.TagNumber(5)
@@ -1132,43 +1387,57 @@ class TlsCertificate extends $pb.GeneratedMessage {
     return $result;
   }
   TlsCertificate._() : super();
-  factory TlsCertificate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TlsCertificate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TlsCertificate.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TlsCertificate.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TlsCertificate', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.redis.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TlsCertificate',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.redis.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serialNumber')
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'expireTime', subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $2.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'sha1Fingerprint')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TlsCertificate clone() => TlsCertificate()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TlsCertificate copyWith(void Function(TlsCertificate) updates) => super.copyWith((message) => updates(message as TlsCertificate)) as TlsCertificate;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TlsCertificate copyWith(void Function(TlsCertificate) updates) =>
+      super.copyWith((message) => updates(message as TlsCertificate))
+          as TlsCertificate;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static TlsCertificate create() => TlsCertificate._();
   TlsCertificate createEmptyInstance() => create();
-  static $pb.PbList<TlsCertificate> createRepeated() => $pb.PbList<TlsCertificate>();
+  static $pb.PbList<TlsCertificate> createRepeated() =>
+      $pb.PbList<TlsCertificate>();
   @$core.pragma('dart2js:noInline')
-  static TlsCertificate getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TlsCertificate>(create);
+  static TlsCertificate getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TlsCertificate>(create);
   static TlsCertificate? _defaultInstance;
 
   /// Serial number, as extracted from the certificate.
   @$pb.TagNumber(1)
   $core.String get serialNumber => $_getSZ(0);
   @$pb.TagNumber(1)
-  set serialNumber($core.String v) { $_setString(0, v); }
+  set serialNumber($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSerialNumber() => $_has(0);
   @$pb.TagNumber(1)
@@ -1180,7 +1449,10 @@ class TlsCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(3)
-  set createTime($2.Timestamp v) { setField(3, v); }
+  set createTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(3)
@@ -1194,7 +1466,10 @@ class TlsCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $2.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(4)
-  set expireTime($2.Timestamp v) { setField(4, v); }
+  set expireTime($2.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(4)
@@ -1206,7 +1481,10 @@ class TlsCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get sha1Fingerprint => $_getSZ(3);
   @$pb.TagNumber(5)
-  set sha1Fingerprint($core.String v) { $_setString(3, v); }
+  set sha1Fingerprint($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasSha1Fingerprint() => $_has(3);
   @$pb.TagNumber(5)
@@ -1225,40 +1503,53 @@ class InstanceEventData extends $pb.GeneratedMessage {
     return $result;
   }
   InstanceEventData._() : super();
-  factory InstanceEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory InstanceEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory InstanceEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InstanceEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InstanceEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.redis.v1'), createEmptyInstance: create)
-    ..aOM<Instance>(1, _omitFieldNames ? '' : 'payload', subBuilder: Instance.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InstanceEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.redis.v1'),
+      createEmptyInstance: create)
+    ..aOM<Instance>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: Instance.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   InstanceEventData clone() => InstanceEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  InstanceEventData copyWith(void Function(InstanceEventData) updates) => super.copyWith((message) => updates(message as InstanceEventData)) as InstanceEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InstanceEventData copyWith(void Function(InstanceEventData) updates) =>
+      super.copyWith((message) => updates(message as InstanceEventData))
+          as InstanceEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static InstanceEventData create() => InstanceEventData._();
   InstanceEventData createEmptyInstance() => create();
-  static $pb.PbList<InstanceEventData> createRepeated() => $pb.PbList<InstanceEventData>();
+  static $pb.PbList<InstanceEventData> createRepeated() =>
+      $pb.PbList<InstanceEventData>();
   @$core.pragma('dart2js:noInline')
-  static InstanceEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<InstanceEventData>(create);
+  static InstanceEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InstanceEventData>(create);
   static InstanceEventData? _defaultInstance;
 
   /// Optional. The Instance event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Instance get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Instance v) { setField(1, v); }
+  set payload(Instance v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -1267,6 +1558,6 @@ class InstanceEventData extends $pb.GeneratedMessage {
   Instance ensurePayload() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

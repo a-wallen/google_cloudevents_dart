@@ -19,14 +19,56 @@ const Workflow$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'state', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.workflows.v1.Workflow.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.workflows.v1.Workflow.State',
+      '10': 'state'
+    },
     {'1': 'revision_id', '3': 4, '4': 1, '5': 9, '10': 'revisionId'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'revision_create_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'revisionCreateTime'},
-    {'1': 'labels', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.workflows.v1.Workflow.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'revision_create_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'revisionCreateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.workflows.v1.Workflow.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'service_account', '3': 9, '4': 1, '5': 9, '10': 'serviceAccount'},
-    {'1': 'source_contents', '3': 10, '4': 1, '5': 9, '9': 0, '10': 'sourceContents'},
+    {
+      '1': 'source_contents',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'sourceContents'
+    },
   ],
   '3': [Workflow_LabelsEntry$json],
   '4': [Workflow_State$json],
@@ -73,7 +115,16 @@ final $typed_data.Uint8List workflowDescriptor = $convert.base64Decode(
 const WorkflowEventData$json = {
   '1': 'WorkflowEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.workflows.v1.Workflow', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.workflows.v1.Workflow',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -84,4 +135,3 @@ const WorkflowEventData$json = {
 final $typed_data.Uint8List workflowEventDataDescriptor = $convert.base64Decode(
     'ChFXb3JrZmxvd0V2ZW50RGF0YRJJCgdwYXlsb2FkGAEgASgLMiouZ29vZ2xlLmV2ZW50cy5jbG'
     '91ZC53b3JrZmxvd3MudjEuV29ya2Zsb3dIAFIHcGF5bG9hZIgBAUIKCghfcGF5bG9hZA==');
-

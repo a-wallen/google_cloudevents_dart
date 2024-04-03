@@ -31,41 +31,55 @@ class MessagePublishedData extends $pb.GeneratedMessage {
     return $result;
   }
   MessagePublishedData._() : super();
-  factory MessagePublishedData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MessagePublishedData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MessagePublishedData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MessagePublishedData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MessagePublishedData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.pubsub.v1'), createEmptyInstance: create)
-    ..aOM<PubsubMessage>(1, _omitFieldNames ? '' : 'message', subBuilder: PubsubMessage.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MessagePublishedData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.pubsub.v1'),
+      createEmptyInstance: create)
+    ..aOM<PubsubMessage>(1, _omitFieldNames ? '' : 'message',
+        subBuilder: PubsubMessage.create)
     ..aOS(2, _omitFieldNames ? '' : 'subscription')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MessagePublishedData clone() => MessagePublishedData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MessagePublishedData copyWith(void Function(MessagePublishedData) updates) => super.copyWith((message) => updates(message as MessagePublishedData)) as MessagePublishedData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MessagePublishedData clone() =>
+      MessagePublishedData()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MessagePublishedData copyWith(void Function(MessagePublishedData) updates) =>
+      super.copyWith((message) => updates(message as MessagePublishedData))
+          as MessagePublishedData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MessagePublishedData create() => MessagePublishedData._();
   MessagePublishedData createEmptyInstance() => create();
-  static $pb.PbList<MessagePublishedData> createRepeated() => $pb.PbList<MessagePublishedData>();
+  static $pb.PbList<MessagePublishedData> createRepeated() =>
+      $pb.PbList<MessagePublishedData>();
   @$core.pragma('dart2js:noInline')
-  static MessagePublishedData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MessagePublishedData>(create);
+  static MessagePublishedData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MessagePublishedData>(create);
   static MessagePublishedData? _defaultInstance;
 
   /// The message that was published.
   @$pb.TagNumber(1)
   PubsubMessage get message => $_getN(0);
   @$pb.TagNumber(1)
-  set message(PubsubMessage v) { setField(1, v); }
+  set message(PubsubMessage v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMessage() => $_has(0);
   @$pb.TagNumber(1)
@@ -79,7 +93,10 @@ class MessagePublishedData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get subscription => $_getSZ(1);
   @$pb.TagNumber(2)
-  set subscription($core.String v) { $_setString(1, v); }
+  set subscription($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSubscription() => $_has(1);
   @$pb.TagNumber(2)
@@ -114,44 +131,62 @@ class PubsubMessage extends $pb.GeneratedMessage {
     return $result;
   }
   PubsubMessage._() : super();
-  factory PubsubMessage.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PubsubMessage.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PubsubMessage.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PubsubMessage.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PubsubMessage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.pubsub.v1'), createEmptyInstance: create)
-    ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
-    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'attributes', entryClassName: 'PubsubMessage.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.pubsub.v1'))
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PubsubMessage',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.pubsub.v1'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
+    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'attributes',
+        entryClassName: 'PubsubMessage.AttributesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.pubsub.v1'))
     ..aOS(3, _omitFieldNames ? '' : 'messageId')
-    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'publishTime', subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'publishTime',
+        subBuilder: $2.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'orderingKey')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PubsubMessage clone() => PubsubMessage()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PubsubMessage copyWith(void Function(PubsubMessage) updates) => super.copyWith((message) => updates(message as PubsubMessage)) as PubsubMessage;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PubsubMessage copyWith(void Function(PubsubMessage) updates) =>
+      super.copyWith((message) => updates(message as PubsubMessage))
+          as PubsubMessage;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PubsubMessage create() => PubsubMessage._();
   PubsubMessage createEmptyInstance() => create();
-  static $pb.PbList<PubsubMessage> createRepeated() => $pb.PbList<PubsubMessage>();
+  static $pb.PbList<PubsubMessage> createRepeated() =>
+      $pb.PbList<PubsubMessage>();
   @$core.pragma('dart2js:noInline')
-  static PubsubMessage getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PubsubMessage>(create);
+  static PubsubMessage getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PubsubMessage>(create);
   static PubsubMessage? _defaultInstance;
 
   /// The binary data in the message.
   @$pb.TagNumber(1)
   $core.List<$core.int> get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($core.List<$core.int> v) { $_setBytes(0, v); }
+  set data($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -166,7 +201,10 @@ class PubsubMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get messageId => $_getSZ(2);
   @$pb.TagNumber(3)
-  set messageId($core.String v) { $_setString(2, v); }
+  set messageId($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMessageId() => $_has(2);
   @$pb.TagNumber(3)
@@ -177,7 +215,10 @@ class PubsubMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $2.Timestamp get publishTime => $_getN(3);
   @$pb.TagNumber(4)
-  set publishTime($2.Timestamp v) { setField(4, v); }
+  set publishTime($2.Timestamp v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasPublishTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -190,13 +231,16 @@ class PubsubMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get orderingKey => $_getSZ(4);
   @$pb.TagNumber(5)
-  set orderingKey($core.String v) { $_setString(4, v); }
+  set orderingKey($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasOrderingKey() => $_has(4);
   @$pb.TagNumber(5)
   void clearOrderingKey() => clearField(5);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

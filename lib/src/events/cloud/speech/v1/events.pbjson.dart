@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const PhraseSetCreatedEvent$json = {
   '1': 'PhraseSetCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.speech.v1.PhraseSetEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.PhraseSetEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List phraseSetCreatedEventDescriptor = $convert.base64Dec
 const PhraseSetUpdatedEvent$json = {
   '1': 'PhraseSetUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.speech.v1.PhraseSetEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.PhraseSetEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List phraseSetUpdatedEventDescriptor = $convert.base64Dec
 const PhraseSetDeletedEvent$json = {
   '1': 'PhraseSetDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.speech.v1.PhraseSetEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.PhraseSetEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List phraseSetDeletedEventDescriptor = $convert.base64Dec
 const CustomClassCreatedEvent$json = {
   '1': 'CustomClassCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.speech.v1.CustomClassEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.CustomClassEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -77,7 +105,14 @@ final $typed_data.Uint8List customClassCreatedEventDescriptor = $convert.base64D
 const CustomClassUpdatedEvent$json = {
   '1': 'CustomClassUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.speech.v1.CustomClassEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.CustomClassEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -92,7 +127,14 @@ final $typed_data.Uint8List customClassUpdatedEventDescriptor = $convert.base64D
 const CustomClassDeletedEvent$json = {
   '1': 'CustomClassDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.speech.v1.CustomClassEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.speech.v1.CustomClassEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -102,4 +144,3 @@ final $typed_data.Uint8List customClassDeletedEventDescriptor = $convert.base64D
     'ChdDdXN0b21DbGFzc0RlbGV0ZWRFdmVudBJHCgRkYXRhGAEgASgLMjMuZ29vZ2xlLmV2ZW50cy'
     '5jbG91ZC5zcGVlY2gudjEuQ3VzdG9tQ2xhc3NFdmVudERhdGFSBGRhdGE6P7L42CwqZ29vZ2xl'
     'LmNsb3VkLnNwZWVjaC5jdXN0b21DbGFzcy52MS5kZWxldGVkyvjYLAtjdXN0b21jbGFzcw==');
-

@@ -42,27 +42,33 @@ class Version extends $pb.GeneratedMessage {
     return $result;
   }
   Version._() : super();
-  factory Version.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Version.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Version.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Version.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Version', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.protobuf.compiler'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Version',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.protobuf.compiler'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'major', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'minor', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'patch', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'suffix')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Version clone() => Version()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Version copyWith(void Function(Version) updates) => super.copyWith((message) => updates(message as Version)) as Version;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Version copyWith(void Function(Version) updates) =>
+      super.copyWith((message) => updates(message as Version)) as Version;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -71,13 +77,17 @@ class Version extends $pb.GeneratedMessage {
   Version createEmptyInstance() => create();
   static $pb.PbList<Version> createRepeated() => $pb.PbList<Version>();
   @$core.pragma('dart2js:noInline')
-  static Version getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Version>(create);
+  static Version getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Version>(create);
   static Version? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.int get major => $_getIZ(0);
   @$pb.TagNumber(1)
-  set major($core.int v) { $_setSignedInt32(0, v); }
+  set major($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMajor() => $_has(0);
   @$pb.TagNumber(1)
@@ -86,7 +96,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get minor => $_getIZ(1);
   @$pb.TagNumber(2)
-  set minor($core.int v) { $_setSignedInt32(1, v); }
+  set minor($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMinor() => $_has(1);
   @$pb.TagNumber(2)
@@ -95,7 +108,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get patch => $_getIZ(2);
   @$pb.TagNumber(3)
-  set patch($core.int v) { $_setSignedInt32(2, v); }
+  set patch($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPatch() => $_has(2);
   @$pb.TagNumber(3)
@@ -106,7 +122,10 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get suffix => $_getSZ(3);
   @$pb.TagNumber(4)
-  set suffix($core.String v) { $_setString(3, v); }
+  set suffix($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasSuffix() => $_has(3);
   @$pb.TagNumber(4)
@@ -137,35 +156,48 @@ class CodeGeneratorRequest extends $pb.GeneratedMessage {
     return $result;
   }
   CodeGeneratorRequest._() : super();
-  factory CodeGeneratorRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CodeGeneratorRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CodeGeneratorRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CodeGeneratorRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CodeGeneratorRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.protobuf.compiler'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CodeGeneratorRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.protobuf.compiler'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'fileToGenerate')
     ..aOS(2, _omitFieldNames ? '' : 'parameter')
-    ..aOM<Version>(3, _omitFieldNames ? '' : 'compilerVersion', subBuilder: Version.create)
-    ..pc<$61.FileDescriptorProto>(15, _omitFieldNames ? '' : 'protoFile', $pb.PbFieldType.PM, subBuilder: $61.FileDescriptorProto.create)
-  ;
+    ..aOM<Version>(3, _omitFieldNames ? '' : 'compilerVersion',
+        subBuilder: Version.create)
+    ..pc<$61.FileDescriptorProto>(
+        15, _omitFieldNames ? '' : 'protoFile', $pb.PbFieldType.PM,
+        subBuilder: $61.FileDescriptorProto.create);
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CodeGeneratorRequest clone() => CodeGeneratorRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CodeGeneratorRequest copyWith(void Function(CodeGeneratorRequest) updates) => super.copyWith((message) => updates(message as CodeGeneratorRequest)) as CodeGeneratorRequest;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CodeGeneratorRequest clone() =>
+      CodeGeneratorRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CodeGeneratorRequest copyWith(void Function(CodeGeneratorRequest) updates) =>
+      super.copyWith((message) => updates(message as CodeGeneratorRequest))
+          as CodeGeneratorRequest;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CodeGeneratorRequest create() => CodeGeneratorRequest._();
   CodeGeneratorRequest createEmptyInstance() => create();
-  static $pb.PbList<CodeGeneratorRequest> createRepeated() => $pb.PbList<CodeGeneratorRequest>();
+  static $pb.PbList<CodeGeneratorRequest> createRepeated() =>
+      $pb.PbList<CodeGeneratorRequest>();
   @$core.pragma('dart2js:noInline')
-  static CodeGeneratorRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CodeGeneratorRequest>(create);
+  static CodeGeneratorRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CodeGeneratorRequest>(create);
   static CodeGeneratorRequest? _defaultInstance;
 
   /// The .proto files that were explicitly listed on the command-line.  The
@@ -178,7 +210,10 @@ class CodeGeneratorRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get parameter => $_getSZ(1);
   @$pb.TagNumber(2)
-  set parameter($core.String v) { $_setString(1, v); }
+  set parameter($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasParameter() => $_has(1);
   @$pb.TagNumber(2)
@@ -188,7 +223,10 @@ class CodeGeneratorRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Version get compilerVersion => $_getN(2);
   @$pb.TagNumber(3)
-  set compilerVersion(Version v) { setField(3, v); }
+  set compilerVersion(Version v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCompilerVersion() => $_has(2);
   @$pb.TagNumber(3)
@@ -238,36 +276,49 @@ class CodeGeneratorResponse_File extends $pb.GeneratedMessage {
     return $result;
   }
   CodeGeneratorResponse_File._() : super();
-  factory CodeGeneratorResponse_File.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CodeGeneratorResponse_File.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CodeGeneratorResponse_File.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CodeGeneratorResponse_File.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CodeGeneratorResponse.File', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.protobuf.compiler'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CodeGeneratorResponse.File',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.protobuf.compiler'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'insertionPoint')
     ..aOS(15, _omitFieldNames ? '' : 'content')
-    ..aOM<$61.GeneratedCodeInfo>(16, _omitFieldNames ? '' : 'generatedCodeInfo', subBuilder: $61.GeneratedCodeInfo.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$61.GeneratedCodeInfo>(16, _omitFieldNames ? '' : 'generatedCodeInfo',
+        subBuilder: $61.GeneratedCodeInfo.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CodeGeneratorResponse_File clone() => CodeGeneratorResponse_File()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CodeGeneratorResponse_File copyWith(void Function(CodeGeneratorResponse_File) updates) => super.copyWith((message) => updates(message as CodeGeneratorResponse_File)) as CodeGeneratorResponse_File;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CodeGeneratorResponse_File clone() =>
+      CodeGeneratorResponse_File()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CodeGeneratorResponse_File copyWith(
+          void Function(CodeGeneratorResponse_File) updates) =>
+      super.copyWith(
+              (message) => updates(message as CodeGeneratorResponse_File))
+          as CodeGeneratorResponse_File;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CodeGeneratorResponse_File create() => CodeGeneratorResponse_File._();
   CodeGeneratorResponse_File createEmptyInstance() => create();
-  static $pb.PbList<CodeGeneratorResponse_File> createRepeated() => $pb.PbList<CodeGeneratorResponse_File>();
+  static $pb.PbList<CodeGeneratorResponse_File> createRepeated() =>
+      $pb.PbList<CodeGeneratorResponse_File>();
   @$core.pragma('dart2js:noInline')
-  static CodeGeneratorResponse_File getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CodeGeneratorResponse_File>(create);
+  static CodeGeneratorResponse_File getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CodeGeneratorResponse_File>(create);
   static CodeGeneratorResponse_File? _defaultInstance;
 
   ///  The file name, relative to the output directory.  The name must not
@@ -284,7 +335,10 @@ class CodeGeneratorResponse_File extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -330,7 +384,10 @@ class CodeGeneratorResponse_File extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get insertionPoint => $_getSZ(1);
   @$pb.TagNumber(2)
-  set insertionPoint($core.String v) { $_setString(1, v); }
+  set insertionPoint($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasInsertionPoint() => $_has(1);
   @$pb.TagNumber(2)
@@ -340,7 +397,10 @@ class CodeGeneratorResponse_File extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.String get content => $_getSZ(2);
   @$pb.TagNumber(15)
-  set content($core.String v) { $_setString(2, v); }
+  set content($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasContent() => $_has(2);
   @$pb.TagNumber(15)
@@ -352,7 +412,10 @@ class CodeGeneratorResponse_File extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $61.GeneratedCodeInfo get generatedCodeInfo => $_getN(3);
   @$pb.TagNumber(16)
-  set generatedCodeInfo($61.GeneratedCodeInfo v) { setField(16, v); }
+  set generatedCodeInfo($61.GeneratedCodeInfo v) {
+    setField(16, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasGeneratedCodeInfo() => $_has(3);
   @$pb.TagNumber(16)
@@ -381,35 +444,50 @@ class CodeGeneratorResponse extends $pb.GeneratedMessage {
     return $result;
   }
   CodeGeneratorResponse._() : super();
-  factory CodeGeneratorResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CodeGeneratorResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CodeGeneratorResponse.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CodeGeneratorResponse.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CodeGeneratorResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.protobuf.compiler'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CodeGeneratorResponse',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.protobuf.compiler'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'error')
-    ..a<$fixnum.Int64>(2, _omitFieldNames ? '' : 'supportedFeatures', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
-    ..pc<CodeGeneratorResponse_File>(15, _omitFieldNames ? '' : 'file', $pb.PbFieldType.PM, subBuilder: CodeGeneratorResponse_File.create)
-    ..hasRequiredFields = false
-  ;
+    ..a<$fixnum.Int64>(
+        2, _omitFieldNames ? '' : 'supportedFeatures', $pb.PbFieldType.OU6,
+        defaultOrMaker: $fixnum.Int64.ZERO)
+    ..pc<CodeGeneratorResponse_File>(
+        15, _omitFieldNames ? '' : 'file', $pb.PbFieldType.PM,
+        subBuilder: CodeGeneratorResponse_File.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CodeGeneratorResponse clone() => CodeGeneratorResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CodeGeneratorResponse copyWith(void Function(CodeGeneratorResponse) updates) => super.copyWith((message) => updates(message as CodeGeneratorResponse)) as CodeGeneratorResponse;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CodeGeneratorResponse clone() =>
+      CodeGeneratorResponse()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CodeGeneratorResponse copyWith(
+          void Function(CodeGeneratorResponse) updates) =>
+      super.copyWith((message) => updates(message as CodeGeneratorResponse))
+          as CodeGeneratorResponse;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CodeGeneratorResponse create() => CodeGeneratorResponse._();
   CodeGeneratorResponse createEmptyInstance() => create();
-  static $pb.PbList<CodeGeneratorResponse> createRepeated() => $pb.PbList<CodeGeneratorResponse>();
+  static $pb.PbList<CodeGeneratorResponse> createRepeated() =>
+      $pb.PbList<CodeGeneratorResponse>();
   @$core.pragma('dart2js:noInline')
-  static CodeGeneratorResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CodeGeneratorResponse>(create);
+  static CodeGeneratorResponse getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CodeGeneratorResponse>(create);
   static CodeGeneratorResponse? _defaultInstance;
 
   ///  Error message.  If non-empty, code generation failed.  The plugin process
@@ -423,7 +501,10 @@ class CodeGeneratorResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get error => $_getSZ(0);
   @$pb.TagNumber(1)
-  set error($core.String v) { $_setString(0, v); }
+  set error($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasError() => $_has(0);
   @$pb.TagNumber(1)
@@ -434,7 +515,10 @@ class CodeGeneratorResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get supportedFeatures => $_getI64(1);
   @$pb.TagNumber(2)
-  set supportedFeatures($fixnum.Int64 v) { $_setInt64(1, v); }
+  set supportedFeatures($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasSupportedFeatures() => $_has(1);
   @$pb.TagNumber(2)
@@ -444,6 +528,6 @@ class CodeGeneratorResponse extends $pb.GeneratedMessage {
   $core.List<CodeGeneratorResponse_File> get file => $_getList(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

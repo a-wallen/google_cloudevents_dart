@@ -33,8 +33,21 @@ const Version$json = {
   '2': [
     {'1': 'version_number', '3': 1, '4': 1, '5': 9, '10': 'versionNumber'},
     {'1': 'default_version', '3': 2, '4': 1, '5': 8, '10': 'defaultVersion'},
-    {'1': 'available_features', '3': 3, '4': 3, '5': 9, '10': 'availableFeatures'},
-    {'1': 'type', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.datafusion.v1.Version.Type', '10': 'type'},
+    {
+      '1': 'available_features',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'availableFeatures'
+    },
+    {
+      '1': 'type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.datafusion.v1.Version.Type',
+      '10': 'type'
+    },
   ],
   '4': [Version_Type$json],
 };
@@ -62,8 +75,22 @@ final $typed_data.Uint8List versionDescriptor = $convert.base64Decode(
 const Accelerator$json = {
   '1': 'Accelerator',
   '2': [
-    {'1': 'accelerator_type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.datafusion.v1.Accelerator.AcceleratorType', '10': 'acceleratorType'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.datafusion.v1.Accelerator.State', '10': 'state'},
+    {
+      '1': 'accelerator_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.datafusion.v1.Accelerator.AcceleratorType',
+      '10': 'acceleratorType'
+    },
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.datafusion.v1.Accelerator.State',
+      '10': 'state'
+    },
   ],
   '4': [Accelerator_AcceleratorType$json, Accelerator_State$json],
 };
@@ -118,34 +145,154 @@ const Instance$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'type', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.datafusion.v1.Instance.Type', '10': 'type'},
-    {'1': 'enable_stackdriver_logging', '3': 4, '4': 1, '5': 8, '10': 'enableStackdriverLogging'},
-    {'1': 'enable_stackdriver_monitoring', '3': 5, '4': 1, '5': 8, '10': 'enableStackdriverMonitoring'},
+    {
+      '1': 'type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.datafusion.v1.Instance.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'enable_stackdriver_logging',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'enableStackdriverLogging'
+    },
+    {
+      '1': 'enable_stackdriver_monitoring',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'enableStackdriverMonitoring'
+    },
     {'1': 'private_instance', '3': 6, '4': 1, '5': 8, '10': 'privateInstance'},
-    {'1': 'network_config', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.datafusion.v1.NetworkConfig', '10': 'networkConfig'},
-    {'1': 'labels', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.datafusion.v1.Instance.LabelsEntry', '10': 'labels'},
-    {'1': 'options', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.datafusion.v1.Instance.OptionsEntry', '10': 'options'},
-    {'1': 'create_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'state', '3': 12, '4': 1, '5': 14, '6': '.google.events.cloud.datafusion.v1.Instance.State', '10': 'state'},
+    {
+      '1': 'network_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.NetworkConfig',
+      '10': 'networkConfig'
+    },
+    {
+      '1': 'labels',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.Instance.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'options',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.Instance.OptionsEntry',
+      '10': 'options'
+    },
+    {
+      '1': 'create_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'state',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.datafusion.v1.Instance.State',
+      '10': 'state'
+    },
     {'1': 'state_message', '3': 13, '4': 1, '5': 9, '10': 'stateMessage'},
     {'1': 'service_endpoint', '3': 14, '4': 1, '5': 9, '10': 'serviceEndpoint'},
     {'1': 'zone', '3': 15, '4': 1, '5': 9, '10': 'zone'},
     {'1': 'version', '3': 16, '4': 1, '5': 9, '10': 'version'},
     {'1': 'service_account', '3': 17, '4': 1, '5': 9, '10': 'serviceAccount'},
     {'1': 'display_name', '3': 18, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'available_version', '3': 19, '4': 3, '5': 11, '6': '.google.events.cloud.datafusion.v1.Version', '10': 'availableVersion'},
+    {
+      '1': 'available_version',
+      '3': 19,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.Version',
+      '10': 'availableVersion'
+    },
     {'1': 'api_endpoint', '3': 20, '4': 1, '5': 9, '10': 'apiEndpoint'},
     {'1': 'gcs_bucket', '3': 21, '4': 1, '5': 9, '10': 'gcsBucket'},
-    {'1': 'accelerators', '3': 22, '4': 3, '5': 11, '6': '.google.events.cloud.datafusion.v1.Accelerator', '10': 'accelerators'},
-    {'1': 'p4_service_account', '3': 23, '4': 1, '5': 9, '10': 'p4ServiceAccount'},
-    {'1': 'tenant_project_id', '3': 24, '4': 1, '5': 9, '10': 'tenantProjectId'},
-    {'1': 'dataproc_service_account', '3': 25, '4': 1, '5': 9, '10': 'dataprocServiceAccount'},
+    {
+      '1': 'accelerators',
+      '3': 22,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.Accelerator',
+      '10': 'accelerators'
+    },
+    {
+      '1': 'p4_service_account',
+      '3': 23,
+      '4': 1,
+      '5': 9,
+      '10': 'p4ServiceAccount'
+    },
+    {
+      '1': 'tenant_project_id',
+      '3': 24,
+      '4': 1,
+      '5': 9,
+      '10': 'tenantProjectId'
+    },
+    {
+      '1': 'dataproc_service_account',
+      '3': 25,
+      '4': 1,
+      '5': 9,
+      '10': 'dataprocServiceAccount'
+    },
     {'1': 'enable_rbac', '3': 27, '4': 1, '5': 8, '10': 'enableRbac'},
-    {'1': 'crypto_key_config', '3': 28, '4': 1, '5': 11, '6': '.google.events.cloud.datafusion.v1.CryptoKeyConfig', '10': 'cryptoKeyConfig'},
-    {'1': 'disabled_reason', '3': 29, '4': 3, '5': 14, '6': '.google.events.cloud.datafusion.v1.Instance.DisabledReason', '10': 'disabledReason'},
-    {'1': 'event_publish_config', '3': 30, '4': 1, '5': 11, '6': '.google.events.cloud.datafusion.v1.EventPublishConfig', '10': 'eventPublishConfig'},
-    {'1': 'enable_zone_separation', '3': 31, '4': 1, '5': 8, '10': 'enableZoneSeparation'},
+    {
+      '1': 'crypto_key_config',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.CryptoKeyConfig',
+      '10': 'cryptoKeyConfig'
+    },
+    {
+      '1': 'disabled_reason',
+      '3': 29,
+      '4': 3,
+      '5': 14,
+      '6': '.google.events.cloud.datafusion.v1.Instance.DisabledReason',
+      '10': 'disabledReason'
+    },
+    {
+      '1': 'event_publish_config',
+      '3': 30,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.EventPublishConfig',
+      '10': 'eventPublishConfig'
+    },
+    {
+      '1': 'enable_zone_separation',
+      '3': 31,
+      '4': 1,
+      '5': 8,
+      '10': 'enableZoneSeparation'
+    },
   ],
   '3': [Instance_LabelsEntry$json, Instance_OptionsEntry$json],
   '4': [Instance_Type$json, Instance_State$json, Instance_DisabledReason$json],
@@ -289,7 +436,16 @@ final $typed_data.Uint8List dnsPeeringDescriptor = $convert.base64Decode(
 const InstanceEventData$json = {
   '1': 'InstanceEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datafusion.v1.Instance', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.Instance',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -305,7 +461,16 @@ final $typed_data.Uint8List instanceEventDataDescriptor = $convert.base64Decode(
 const DnsPeeringEventData$json = {
   '1': 'DnsPeeringEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datafusion.v1.DnsPeering', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.DnsPeering',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -316,4 +481,3 @@ const DnsPeeringEventData$json = {
 final $typed_data.Uint8List dnsPeeringEventDataDescriptor = $convert.base64Decode(
     'ChNEbnNQZWVyaW5nRXZlbnREYXRhEkwKB3BheWxvYWQYASABKAsyLS5nb29nbGUuZXZlbnRzLm'
     'Nsb3VkLmRhdGFmdXNpb24udjEuRG5zUGVlcmluZ0gAUgdwYXlsb2FkiAEBQgoKCF9wYXlsb2Fk');
-

@@ -66,25 +66,95 @@ const ServiceConnectionMap$json = {
   '1': 'ServiceConnectionMap',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'service_class', '3': 7, '4': 1, '5': 9, '10': 'serviceClass'},
-    {'1': 'service_class_uri', '3': 12, '4': 1, '5': 9, '10': 'serviceClassUri'},
-    {'1': 'infrastructure', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.networkconnectivity.v1.Infrastructure', '10': 'infrastructure'},
-    {'1': 'producer_psc_configs', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ProducerPscConfig', '10': 'producerPscConfigs'},
-    {'1': 'consumer_psc_configs', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig', '10': 'consumerPscConfigs'},
-    {'1': 'consumer_psc_connections', '3': 11, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConnection', '10': 'consumerPscConnections'},
+    {
+      '1': 'service_class_uri',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceClassUri'
+    },
+    {
+      '1': 'infrastructure',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkconnectivity.v1.Infrastructure',
+      '10': 'infrastructure'
+    },
+    {
+      '1': 'producer_psc_configs',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ProducerPscConfig',
+      '10': 'producerPscConfigs'
+    },
+    {
+      '1': 'consumer_psc_configs',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig',
+      '10': 'consumerPscConfigs'
+    },
+    {
+      '1': 'consumer_psc_connections',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConnection',
+      '10': 'consumerPscConnections'
+    },
   ],
-  '3': [ServiceConnectionMap_ProducerPscConfig$json, ServiceConnectionMap_ConsumerPscConfig$json, ServiceConnectionMap_ConsumerPscConnection$json, ServiceConnectionMap_LabelsEntry$json],
+  '3': [
+    ServiceConnectionMap_ProducerPscConfig$json,
+    ServiceConnectionMap_ConsumerPscConfig$json,
+    ServiceConnectionMap_ConsumerPscConnection$json,
+    ServiceConnectionMap_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use serviceConnectionMapDescriptor instead')
 const ServiceConnectionMap_ProducerPscConfig$json = {
   '1': 'ProducerPscConfig',
   '2': [
-    {'1': 'service_attachment_uri', '3': 1, '4': 1, '5': 9, '10': 'serviceAttachmentUri'},
+    {
+      '1': 'service_attachment_uri',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceAttachmentUri'
+    },
   ],
 };
 
@@ -94,8 +164,22 @@ const ServiceConnectionMap_ConsumerPscConfig$json = {
   '2': [
     {'1': 'project', '3': 1, '4': 1, '5': 9, '10': 'project'},
     {'1': 'network', '3': 2, '4': 1, '5': 9, '10': 'network'},
-    {'1': 'disable_global_access', '3': 3, '4': 1, '5': 8, '10': 'disableGlobalAccess'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State', '10': 'state'},
+    {
+      '1': 'disable_global_access',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'disableGlobalAccess'
+    },
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State',
+      '10': 'state'
+    },
   ],
   '4': [ServiceConnectionMap_ConsumerPscConfig_State$json],
 };
@@ -114,14 +198,42 @@ const ServiceConnectionMap_ConsumerPscConfig_State$json = {
 const ServiceConnectionMap_ConsumerPscConnection$json = {
   '1': 'ConsumerPscConnection',
   '2': [
-    {'1': 'service_attachment_uri', '3': 1, '4': 1, '5': 9, '10': 'serviceAttachmentUri'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConnection.State', '10': 'state'},
+    {
+      '1': 'service_attachment_uri',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceAttachmentUri'
+    },
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConnection.State',
+      '10': 'state'
+    },
     {'1': 'project', '3': 3, '4': 1, '5': 9, '10': 'project'},
     {'1': 'network', '3': 4, '4': 1, '5': 9, '10': 'network'},
     {'1': 'psc_connection_id', '3': 5, '4': 1, '5': 9, '10': 'pscConnectionId'},
     {'1': 'ip', '3': 6, '4': 1, '5': 9, '10': 'ip'},
-    {'1': 'error_type', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.networkconnectivity.v1.ConnectionErrorType', '10': 'errorType'},
-    {'1': 'error', '3': 8, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
+    {
+      '1': 'error_type',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkconnectivity.v1.ConnectionErrorType',
+      '10': 'errorType'
+    },
+    {
+      '1': 'error',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
     {'1': 'gce_operation', '3': 9, '4': 1, '5': 9, '10': 'gceOperation'},
     {'1': 'forwarding_rule', '3': 10, '4': 1, '5': 9, '10': 'forwardingRule'},
   ],
@@ -194,17 +306,66 @@ const ServiceConnectionPolicy$json = {
   '1': 'ServiceConnectionPolicy',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'network', '3': 6, '4': 1, '5': 9, '10': 'network'},
     {'1': 'service_class', '3': 7, '4': 1, '5': 9, '10': 'serviceClass'},
-    {'1': 'infrastructure', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.networkconnectivity.v1.Infrastructure', '10': 'infrastructure'},
-    {'1': 'psc_config', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConfig', '10': 'pscConfig'},
-    {'1': 'psc_connections', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConnection', '10': 'pscConnections'},
+    {
+      '1': 'infrastructure',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkconnectivity.v1.Infrastructure',
+      '10': 'infrastructure'
+    },
+    {
+      '1': 'psc_config',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConfig',
+      '10': 'pscConfig'
+    },
+    {
+      '1': 'psc_connections',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConnection',
+      '10': 'pscConnections'
+    },
   ],
-  '3': [ServiceConnectionPolicy_PscConfig$json, ServiceConnectionPolicy_PscConnection$json, ServiceConnectionPolicy_LabelsEntry$json],
+  '3': [
+    ServiceConnectionPolicy_PscConfig$json,
+    ServiceConnectionPolicy_PscConnection$json,
+    ServiceConnectionPolicy_LabelsEntry$json
+  ],
   '4': [ServiceConnectionPolicy_State$json],
 };
 
@@ -224,13 +385,47 @@ const ServiceConnectionPolicy_PscConfig$json = {
 const ServiceConnectionPolicy_PscConnection$json = {
   '1': 'PscConnection',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.State', '10': 'state'},
-    {'1': 'consumer_forwarding_rule', '3': 2, '4': 1, '5': 9, '10': 'consumerForwardingRule'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.State',
+      '10': 'state'
+    },
+    {
+      '1': 'consumer_forwarding_rule',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'consumerForwardingRule'
+    },
     {'1': 'consumer_address', '3': 3, '4': 1, '5': 9, '10': 'consumerAddress'},
-    {'1': 'error_type', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.networkconnectivity.v1.ConnectionErrorType', '10': 'errorType'},
-    {'1': 'error', '3': 5, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
+    {
+      '1': 'error_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkconnectivity.v1.ConnectionErrorType',
+      '10': 'errorType'
+    },
+    {
+      '1': 'error',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
     {'1': 'gce_operation', '3': 6, '4': 1, '5': 9, '10': 'gceOperation'},
-    {'1': 'consumer_target_project', '3': 7, '4': 1, '5': 9, '10': 'consumerTargetProject'},
+    {
+      '1': 'consumer_target_project',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'consumerTargetProject'
+    },
     {'1': 'psc_connection_id', '3': 8, '4': 1, '5': 9, '10': 'pscConnectionId'},
   ],
 };
@@ -292,11 +487,39 @@ const ServiceClass$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'service_class', '3': 7, '4': 1, '5': 9, '10': 'serviceClass'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceClass.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceClass.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'service_connection_maps', '3': 6, '4': 3, '5': 9, '10': 'serviceConnectionMaps'},
+    {
+      '1': 'service_connection_maps',
+      '3': 6,
+      '4': 3,
+      '5': 9,
+      '10': 'serviceConnectionMaps'
+    },
   ],
   '3': [ServiceClass_LabelsEntry$json],
 };
@@ -327,9 +550,31 @@ const ServiceConnectionToken$json = {
   '1': 'ServiceConnectionToken',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionToken.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionToken.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'network', '3': 6, '4': 1, '5': 9, '10': 'network'},
   ],
@@ -362,13 +607,48 @@ const Hub$json = {
   '1': 'Hub',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.Hub.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.Hub.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'unique_id', '3': 8, '4': 1, '5': 9, '10': 'uniqueId'},
-    {'1': 'state', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.networkconnectivity.v1.State', '10': 'state'},
-    {'1': 'routing_vpcs', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.RoutingVPC', '10': 'routingVpcs'},
+    {
+      '1': 'state',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkconnectivity.v1.State',
+      '10': 'state'
+    },
+    {
+      '1': 'routing_vpcs',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.RoutingVPC',
+      '10': 'routingVpcs'
+    },
   ],
   '3': [Hub_LabelsEntry$json],
 };
@@ -401,7 +681,13 @@ const RoutingVPC$json = {
   '1': 'RoutingVPC',
   '2': [
     {'1': 'uri', '3': 1, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'required_for_new_site_to_site_data_transfer_spokes', '3': 2, '4': 1, '5': 8, '10': 'requiredForNewSiteToSiteDataTransferSpokes'},
+    {
+      '1': 'required_for_new_site_to_site_data_transfer_spokes',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'requiredForNewSiteToSiteDataTransferSpokes'
+    },
   ],
 };
 
@@ -416,16 +702,67 @@ const Spoke$json = {
   '1': 'Spoke',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.Spoke.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.Spoke.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'hub', '3': 6, '4': 1, '5': 9, '10': 'hub'},
-    {'1': 'linked_vpn_tunnels', '3': 17, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.LinkedVpnTunnels', '10': 'linkedVpnTunnels'},
-    {'1': 'linked_interconnect_attachments', '3': 18, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.LinkedInterconnectAttachments', '10': 'linkedInterconnectAttachments'},
-    {'1': 'linked_router_appliance_instances', '3': 19, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.LinkedRouterApplianceInstances', '10': 'linkedRouterApplianceInstances'},
+    {
+      '1': 'linked_vpn_tunnels',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.LinkedVpnTunnels',
+      '10': 'linkedVpnTunnels'
+    },
+    {
+      '1': 'linked_interconnect_attachments',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.LinkedInterconnectAttachments',
+      '10': 'linkedInterconnectAttachments'
+    },
+    {
+      '1': 'linked_router_appliance_instances',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.LinkedRouterApplianceInstances',
+      '10': 'linkedRouterApplianceInstances'
+    },
     {'1': 'unique_id', '3': 11, '4': 1, '5': 9, '10': 'uniqueId'},
-    {'1': 'state', '3': 15, '4': 1, '5': 14, '6': '.google.events.cloud.networkconnectivity.v1.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 15,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkconnectivity.v1.State',
+      '10': 'state'
+    },
   ],
   '3': [Spoke_LabelsEntry$json],
 };
@@ -464,7 +801,13 @@ const LinkedVpnTunnels$json = {
   '1': 'LinkedVpnTunnels',
   '2': [
     {'1': 'uris', '3': 1, '4': 3, '5': 9, '10': 'uris'},
-    {'1': 'site_to_site_data_transfer', '3': 2, '4': 1, '5': 8, '10': 'siteToSiteDataTransfer'},
+    {
+      '1': 'site_to_site_data_transfer',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'siteToSiteDataTransfer'
+    },
     {'1': 'vpc_network', '3': 3, '4': 1, '5': 9, '10': 'vpcNetwork'},
   ],
 };
@@ -480,23 +823,44 @@ const LinkedInterconnectAttachments$json = {
   '1': 'LinkedInterconnectAttachments',
   '2': [
     {'1': 'uris', '3': 1, '4': 3, '5': 9, '10': 'uris'},
-    {'1': 'site_to_site_data_transfer', '3': 2, '4': 1, '5': 8, '10': 'siteToSiteDataTransfer'},
+    {
+      '1': 'site_to_site_data_transfer',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'siteToSiteDataTransfer'
+    },
     {'1': 'vpc_network', '3': 3, '4': 1, '5': 9, '10': 'vpcNetwork'},
   ],
 };
 
 /// Descriptor for `LinkedInterconnectAttachments`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List linkedInterconnectAttachmentsDescriptor = $convert.base64Decode(
-    'Ch1MaW5rZWRJbnRlcmNvbm5lY3RBdHRhY2htZW50cxISCgR1cmlzGAEgAygJUgR1cmlzEjoKGn'
-    'NpdGVfdG9fc2l0ZV9kYXRhX3RyYW5zZmVyGAIgASgIUhZzaXRlVG9TaXRlRGF0YVRyYW5zZmVy'
-    'Eh8KC3ZwY19uZXR3b3JrGAMgASgJUgp2cGNOZXR3b3Jr');
+final $typed_data.Uint8List linkedInterconnectAttachmentsDescriptor =
+    $convert.base64Decode(
+        'Ch1MaW5rZWRJbnRlcmNvbm5lY3RBdHRhY2htZW50cxISCgR1cmlzGAEgAygJUgR1cmlzEjoKGn'
+        'NpdGVfdG9fc2l0ZV9kYXRhX3RyYW5zZmVyGAIgASgIUhZzaXRlVG9TaXRlRGF0YVRyYW5zZmVy'
+        'Eh8KC3ZwY19uZXR3b3JrGAMgASgJUgp2cGNOZXR3b3Jr');
 
 @$core.Deprecated('Use linkedRouterApplianceInstancesDescriptor instead')
 const LinkedRouterApplianceInstances$json = {
   '1': 'LinkedRouterApplianceInstances',
   '2': [
-    {'1': 'instances', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.RouterApplianceInstance', '10': 'instances'},
-    {'1': 'site_to_site_data_transfer', '3': 2, '4': 1, '5': 8, '10': 'siteToSiteDataTransfer'},
+    {
+      '1': 'instances',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.RouterApplianceInstance',
+      '10': 'instances'
+    },
+    {
+      '1': 'site_to_site_data_transfer',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'siteToSiteDataTransfer'
+    },
     {'1': 'vpc_network', '3': 3, '4': 1, '5': 9, '10': 'vpcNetwork'},
   ],
 };
@@ -519,15 +883,25 @@ const RouterApplianceInstance$json = {
 };
 
 /// Descriptor for `RouterApplianceInstance`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List routerApplianceInstanceDescriptor = $convert.base64Decode(
-    'ChdSb3V0ZXJBcHBsaWFuY2VJbnN0YW5jZRInCg92aXJ0dWFsX21hY2hpbmUYASABKAlSDnZpcn'
-    'R1YWxNYWNoaW5lEh0KCmlwX2FkZHJlc3MYAyABKAlSCWlwQWRkcmVzcw==');
+final $typed_data.Uint8List routerApplianceInstanceDescriptor =
+    $convert.base64Decode(
+        'ChdSb3V0ZXJBcHBsaWFuY2VJbnN0YW5jZRInCg92aXJ0dWFsX21hY2hpbmUYASABKAlSDnZpcn'
+        'R1YWxNYWNoaW5lEh0KCmlwX2FkZHJlc3MYAyABKAlSCWlwQWRkcmVzcw==');
 
 @$core.Deprecated('Use serviceClassEventDataDescriptor instead')
 const ServiceClassEventData$json = {
   '1': 'ServiceClassEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceClass', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.ServiceClass',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -544,7 +918,16 @@ final $typed_data.Uint8List serviceClassEventDataDescriptor = $convert.base64Dec
 const ServiceConnectionTokenEventData$json = {
   '1': 'ServiceConnectionTokenEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionToken', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionToken',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -552,16 +935,26 @@ const ServiceConnectionTokenEventData$json = {
 };
 
 /// Descriptor for `ServiceConnectionTokenEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List serviceConnectionTokenEventDataDescriptor = $convert.base64Decode(
-    'Ch9TZXJ2aWNlQ29ubmVjdGlvblRva2VuRXZlbnREYXRhEmEKB3BheWxvYWQYASABKAsyQi5nb2'
-    '9nbGUuZXZlbnRzLmNsb3VkLm5ldHdvcmtjb25uZWN0aXZpdHkudjEuU2VydmljZUNvbm5lY3Rp'
-    'b25Ub2tlbkgAUgdwYXlsb2FkiAEBQgoKCF9wYXlsb2Fk');
+final $typed_data.Uint8List serviceConnectionTokenEventDataDescriptor =
+    $convert.base64Decode(
+        'Ch9TZXJ2aWNlQ29ubmVjdGlvblRva2VuRXZlbnREYXRhEmEKB3BheWxvYWQYASABKAsyQi5nb2'
+        '9nbGUuZXZlbnRzLmNsb3VkLm5ldHdvcmtjb25uZWN0aXZpdHkudjEuU2VydmljZUNvbm5lY3Rp'
+        'b25Ub2tlbkgAUgdwYXlsb2FkiAEBQgoKCF9wYXlsb2Fk');
 
 @$core.Deprecated('Use serviceConnectionMapEventDataDescriptor instead')
 const ServiceConnectionMapEventData$json = {
   '1': 'ServiceConnectionMapEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -569,16 +962,26 @@ const ServiceConnectionMapEventData$json = {
 };
 
 /// Descriptor for `ServiceConnectionMapEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List serviceConnectionMapEventDataDescriptor = $convert.base64Decode(
-    'Ch1TZXJ2aWNlQ29ubmVjdGlvbk1hcEV2ZW50RGF0YRJfCgdwYXlsb2FkGAEgASgLMkAuZ29vZ2'
-    'xlLmV2ZW50cy5jbG91ZC5uZXR3b3JrY29ubmVjdGl2aXR5LnYxLlNlcnZpY2VDb25uZWN0aW9u'
-    'TWFwSABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
+final $typed_data.Uint8List serviceConnectionMapEventDataDescriptor =
+    $convert.base64Decode(
+        'Ch1TZXJ2aWNlQ29ubmVjdGlvbk1hcEV2ZW50RGF0YRJfCgdwYXlsb2FkGAEgASgLMkAuZ29vZ2'
+        'xlLmV2ZW50cy5jbG91ZC5uZXR3b3JrY29ubmVjdGl2aXR5LnYxLlNlcnZpY2VDb25uZWN0aW9u'
+        'TWFwSABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
 
 @$core.Deprecated('Use hubEventDataDescriptor instead')
 const HubEventData$json = {
   '1': 'HubEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.Hub', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.Hub',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -594,7 +997,16 @@ final $typed_data.Uint8List hubEventDataDescriptor = $convert.base64Decode(
 const SpokeEventData$json = {
   '1': 'SpokeEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.Spoke', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkconnectivity.v1.Spoke',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -610,7 +1022,17 @@ final $typed_data.Uint8List spokeEventDataDescriptor = $convert.base64Decode(
 const ServiceConnectionPolicyEventData$json = {
   '1': 'ServiceConnectionPolicyEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -618,8 +1040,8 @@ const ServiceConnectionPolicyEventData$json = {
 };
 
 /// Descriptor for `ServiceConnectionPolicyEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List serviceConnectionPolicyEventDataDescriptor = $convert.base64Decode(
-    'CiBTZXJ2aWNlQ29ubmVjdGlvblBvbGljeUV2ZW50RGF0YRJiCgdwYXlsb2FkGAEgASgLMkMuZ2'
-    '9vZ2xlLmV2ZW50cy5jbG91ZC5uZXR3b3JrY29ubmVjdGl2aXR5LnYxLlNlcnZpY2VDb25uZWN0'
-    'aW9uUG9saWN5SABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
-
+final $typed_data.Uint8List serviceConnectionPolicyEventDataDescriptor =
+    $convert.base64Decode(
+        'CiBTZXJ2aWNlQ29ubmVjdGlvblBvbGljeUV2ZW50RGF0YRJiCgdwYXlsb2FkGAEgASgLMkMuZ2'
+        '9vZ2xlLmV2ZW50cy5jbG91ZC5uZXR3b3JrY29ubmVjdGl2aXR5LnYxLlNlcnZpY2VDb25uZWN0'
+        'aW9uUG9saWN5SABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const InstanceCreatedEvent$json = {
   '1': 'InstanceCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datafusion.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List instanceCreatedEventDescriptor = $convert.base64Deco
 const InstanceDeletedEvent$json = {
   '1': 'InstanceDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datafusion.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List instanceDeletedEventDescriptor = $convert.base64Deco
 const InstanceUpdatedEvent$json = {
   '1': 'InstanceUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datafusion.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List instanceUpdatedEventDescriptor = $convert.base64Deco
 const DnsPeeringCreatedEvent$json = {
   '1': 'DnsPeeringCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datafusion.v1.DnsPeeringEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.DnsPeeringEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -78,7 +106,14 @@ final $typed_data.Uint8List dnsPeeringCreatedEventDescriptor = $convert.base64De
 const DnsPeeringDeletedEvent$json = {
   '1': 'DnsPeeringDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datafusion.v1.DnsPeeringEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datafusion.v1.DnsPeeringEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -89,4 +124,3 @@ final $typed_data.Uint8List dnsPeeringDeletedEventDescriptor = $convert.base64De
     'Nsb3VkLmRhdGFmdXNpb24udjEuRG5zUGVlcmluZ0V2ZW50RGF0YVIEZGF0YTpOsvjYLC1nb29n'
     'bGUuY2xvdWQuZGF0YWZ1c2lvbi5kbnNQZWVyaW5nLnYxLmRlbGV0ZWTK+NgsCGluc3RhbmNlyv'
     'jYLApkbnNwZWVyaW5n');
-

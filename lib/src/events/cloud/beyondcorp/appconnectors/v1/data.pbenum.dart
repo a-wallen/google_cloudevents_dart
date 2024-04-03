@@ -15,13 +15,18 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// HealthStatus represents the health status.
 class HealthStatus extends $pb.ProtobufEnum {
-  static const HealthStatus HEALTH_STATUS_UNSPECIFIED = HealthStatus._(0, _omitEnumNames ? '' : 'HEALTH_STATUS_UNSPECIFIED');
-  static const HealthStatus HEALTHY = HealthStatus._(1, _omitEnumNames ? '' : 'HEALTHY');
-  static const HealthStatus UNHEALTHY = HealthStatus._(2, _omitEnumNames ? '' : 'UNHEALTHY');
-  static const HealthStatus UNRESPONSIVE = HealthStatus._(3, _omitEnumNames ? '' : 'UNRESPONSIVE');
-  static const HealthStatus DEGRADED = HealthStatus._(4, _omitEnumNames ? '' : 'DEGRADED');
+  static const HealthStatus HEALTH_STATUS_UNSPECIFIED =
+      HealthStatus._(0, _omitEnumNames ? '' : 'HEALTH_STATUS_UNSPECIFIED');
+  static const HealthStatus HEALTHY =
+      HealthStatus._(1, _omitEnumNames ? '' : 'HEALTHY');
+  static const HealthStatus UNHEALTHY =
+      HealthStatus._(2, _omitEnumNames ? '' : 'UNHEALTHY');
+  static const HealthStatus UNRESPONSIVE =
+      HealthStatus._(3, _omitEnumNames ? '' : 'UNRESPONSIVE');
+  static const HealthStatus DEGRADED =
+      HealthStatus._(4, _omitEnumNames ? '' : 'DEGRADED');
 
-  static const $core.List<HealthStatus> values = <HealthStatus> [
+  static const $core.List<HealthStatus> values = <HealthStatus>[
     HEALTH_STATUS_UNSPECIFIED,
     HEALTHY,
     UNHEALTHY,
@@ -29,7 +34,8 @@ class HealthStatus extends $pb.ProtobufEnum {
     DEGRADED,
   ];
 
-  static final $core.Map<$core.int, HealthStatus> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, HealthStatus> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static HealthStatus? valueOf($core.int value) => _byValue[value];
 
   const HealthStatus._($core.int v, $core.String n) : super(v, n);
@@ -37,14 +43,20 @@ class HealthStatus extends $pb.ProtobufEnum {
 
 /// Represents the different states of a AppConnector.
 class AppConnector_State extends $pb.ProtobufEnum {
-  static const AppConnector_State STATE_UNSPECIFIED = AppConnector_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
-  static const AppConnector_State CREATING = AppConnector_State._(1, _omitEnumNames ? '' : 'CREATING');
-  static const AppConnector_State CREATED = AppConnector_State._(2, _omitEnumNames ? '' : 'CREATED');
-  static const AppConnector_State UPDATING = AppConnector_State._(3, _omitEnumNames ? '' : 'UPDATING');
-  static const AppConnector_State DELETING = AppConnector_State._(4, _omitEnumNames ? '' : 'DELETING');
-  static const AppConnector_State DOWN = AppConnector_State._(5, _omitEnumNames ? '' : 'DOWN');
+  static const AppConnector_State STATE_UNSPECIFIED =
+      AppConnector_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const AppConnector_State CREATING =
+      AppConnector_State._(1, _omitEnumNames ? '' : 'CREATING');
+  static const AppConnector_State CREATED =
+      AppConnector_State._(2, _omitEnumNames ? '' : 'CREATED');
+  static const AppConnector_State UPDATING =
+      AppConnector_State._(3, _omitEnumNames ? '' : 'UPDATING');
+  static const AppConnector_State DELETING =
+      AppConnector_State._(4, _omitEnumNames ? '' : 'DELETING');
+  static const AppConnector_State DOWN =
+      AppConnector_State._(5, _omitEnumNames ? '' : 'DOWN');
 
-  static const $core.List<AppConnector_State> values = <AppConnector_State> [
+  static const $core.List<AppConnector_State> values = <AppConnector_State>[
     STATE_UNSPECIFIED,
     CREATING,
     CREATED,
@@ -53,11 +65,11 @@ class AppConnector_State extends $pb.ProtobufEnum {
     DOWN,
   ];
 
-  static final $core.Map<$core.int, AppConnector_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, AppConnector_State> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static AppConnector_State? valueOf($core.int value) => _byValue[value];
 
   const AppConnector_State._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

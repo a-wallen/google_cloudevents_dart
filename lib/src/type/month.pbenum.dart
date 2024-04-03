@@ -15,7 +15,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Represents a month in the Gregorian calendar.
 class Month extends $pb.ProtobufEnum {
-  static const Month MONTH_UNSPECIFIED = Month._(0, _omitEnumNames ? '' : 'MONTH_UNSPECIFIED');
+  static const Month MONTH_UNSPECIFIED =
+      Month._(0, _omitEnumNames ? '' : 'MONTH_UNSPECIFIED');
   static const Month JANUARY = Month._(1, _omitEnumNames ? '' : 'JANUARY');
   static const Month FEBRUARY = Month._(2, _omitEnumNames ? '' : 'FEBRUARY');
   static const Month MARCH = Month._(3, _omitEnumNames ? '' : 'MARCH');
@@ -29,7 +30,7 @@ class Month extends $pb.ProtobufEnum {
   static const Month NOVEMBER = Month._(11, _omitEnumNames ? '' : 'NOVEMBER');
   static const Month DECEMBER = Month._(12, _omitEnumNames ? '' : 'DECEMBER');
 
-  static const $core.List<Month> values = <Month> [
+  static const $core.List<Month> values = <Month>[
     MONTH_UNSPECIFIED,
     JANUARY,
     FEBRUARY,
@@ -45,11 +46,11 @@ class Month extends $pb.ProtobufEnum {
     DECEMBER,
   ];
 
-  static final $core.Map<$core.int, Month> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Month> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Month? valueOf($core.int value) => _byValue[value];
 
   const Month._($core.int v, $core.String n) : super(v, n);
 }
-
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

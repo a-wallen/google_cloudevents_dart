@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const ReferenceCreatedEvent$json = {
   '1': 'ReferenceCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.database.v1.ReferenceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.database.v1.ReferenceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List referenceCreatedEventDescriptor = $convert.base64Dec
 const ReferenceUpdatedEvent$json = {
   '1': 'ReferenceUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.database.v1.ReferenceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.database.v1.ReferenceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List referenceUpdatedEventDescriptor = $convert.base64Dec
 const ReferenceDeletedEvent$json = {
   '1': 'ReferenceDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.database.v1.ReferenceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.database.v1.ReferenceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List referenceDeletedEventDescriptor = $convert.base64Dec
 const ReferenceWrittenEvent$json = {
   '1': 'ReferenceWrittenEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.database.v1.ReferenceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.database.v1.ReferenceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -72,4 +100,3 @@ final $typed_data.Uint8List referenceWrittenEventDescriptor = $convert.base64Dec
     'ChVSZWZlcmVuY2VXcml0dGVuRXZlbnQSSgoEZGF0YRgBIAEoCzI2Lmdvb2dsZS5ldmVudHMuZm'
     'lyZWJhc2UuZGF0YWJhc2UudjEuUmVmZXJlbmNlRXZlbnREYXRhUgRkYXRhOiyy+NgsJ2dvb2ds'
     'ZS5maXJlYmFzZS5kYXRhYmFzZS5yZWYudjEud3JpdHRlbg==');
-

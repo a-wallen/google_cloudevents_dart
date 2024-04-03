@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const UserCreatedEvent$json = {
   '1': 'UserCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.auth.v1.AuthEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.auth.v1.AuthEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List userCreatedEventDescriptor = $convert.base64Decode(
 const UserDeletedEvent$json = {
   '1': 'UserDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.auth.v1.AuthEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.auth.v1.AuthEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -42,4 +56,3 @@ final $typed_data.Uint8List userDeletedEventDescriptor = $convert.base64Decode(
     'ChBVc2VyRGVsZXRlZEV2ZW50EkEKBGRhdGEYASABKAsyLS5nb29nbGUuZXZlbnRzLmZpcmViYX'
     'NlLmF1dGgudjEuQXV0aEV2ZW50RGF0YVIEZGF0YTopsvjYLCRnb29nbGUuZmlyZWJhc2UuYXV0'
     'aC51c2VyLnYxLmRlbGV0ZWQ=');
-

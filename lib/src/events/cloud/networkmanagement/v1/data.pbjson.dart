@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const Trace$json = {
   '1': 'Trace',
   '2': [
-    {'1': 'endpoint_info', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.EndpointInfo', '10': 'endpointInfo'},
-    {'1': 'steps', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.Step', '10': 'steps'},
+    {
+      '1': 'endpoint_info',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.EndpointInfo',
+      '10': 'endpointInfo'
+    },
+    {
+      '1': 'steps',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.Step',
+      '10': 'steps'
+    },
   ],
 };
 
@@ -34,29 +48,196 @@ const Step$json = {
   '1': 'Step',
   '2': [
     {'1': 'description', '3': 1, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.Step.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkmanagement.v1.Step.State',
+      '10': 'state'
+    },
     {'1': 'causes_drop', '3': 3, '4': 1, '5': 8, '10': 'causesDrop'},
     {'1': 'project_id', '3': 4, '4': 1, '5': 9, '10': 'projectId'},
-    {'1': 'instance', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.InstanceInfo', '9': 0, '10': 'instance'},
-    {'1': 'firewall', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.FirewallInfo', '9': 0, '10': 'firewall'},
-    {'1': 'route', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.RouteInfo', '9': 0, '10': 'route'},
-    {'1': 'endpoint', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.EndpointInfo', '9': 0, '10': 'endpoint'},
-    {'1': 'google_service', '3': 24, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.GoogleServiceInfo', '9': 0, '10': 'googleService'},
-    {'1': 'forwarding_rule', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.ForwardingRuleInfo', '9': 0, '10': 'forwardingRule'},
-    {'1': 'vpn_gateway', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.VpnGatewayInfo', '9': 0, '10': 'vpnGateway'},
-    {'1': 'vpn_tunnel', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.VpnTunnelInfo', '9': 0, '10': 'vpnTunnel'},
-    {'1': 'vpc_connector', '3': 21, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.VpcConnectorInfo', '9': 0, '10': 'vpcConnector'},
-    {'1': 'deliver', '3': 12, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.DeliverInfo', '9': 0, '10': 'deliver'},
-    {'1': 'forward', '3': 13, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.ForwardInfo', '9': 0, '10': 'forward'},
-    {'1': 'abort', '3': 14, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.AbortInfo', '9': 0, '10': 'abort'},
-    {'1': 'drop', '3': 15, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.DropInfo', '9': 0, '10': 'drop'},
-    {'1': 'load_balancer', '3': 16, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.LoadBalancerInfo', '9': 0, '10': 'loadBalancer'},
-    {'1': 'network', '3': 17, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.NetworkInfo', '9': 0, '10': 'network'},
-    {'1': 'gke_master', '3': 18, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.GKEMasterInfo', '9': 0, '10': 'gkeMaster'},
-    {'1': 'cloud_sql_instance', '3': 19, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.CloudSQLInstanceInfo', '9': 0, '10': 'cloudSqlInstance'},
-    {'1': 'cloud_function', '3': 20, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.CloudFunctionInfo', '9': 0, '10': 'cloudFunction'},
-    {'1': 'app_engine_version', '3': 22, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.AppEngineVersionInfo', '9': 0, '10': 'appEngineVersion'},
-    {'1': 'cloud_run_revision', '3': 23, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.CloudRunRevisionInfo', '9': 0, '10': 'cloudRunRevision'},
+    {
+      '1': 'instance',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.InstanceInfo',
+      '9': 0,
+      '10': 'instance'
+    },
+    {
+      '1': 'firewall',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.FirewallInfo',
+      '9': 0,
+      '10': 'firewall'
+    },
+    {
+      '1': 'route',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.RouteInfo',
+      '9': 0,
+      '10': 'route'
+    },
+    {
+      '1': 'endpoint',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.EndpointInfo',
+      '9': 0,
+      '10': 'endpoint'
+    },
+    {
+      '1': 'google_service',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.GoogleServiceInfo',
+      '9': 0,
+      '10': 'googleService'
+    },
+    {
+      '1': 'forwarding_rule',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.ForwardingRuleInfo',
+      '9': 0,
+      '10': 'forwardingRule'
+    },
+    {
+      '1': 'vpn_gateway',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.VpnGatewayInfo',
+      '9': 0,
+      '10': 'vpnGateway'
+    },
+    {
+      '1': 'vpn_tunnel',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.VpnTunnelInfo',
+      '9': 0,
+      '10': 'vpnTunnel'
+    },
+    {
+      '1': 'vpc_connector',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.VpcConnectorInfo',
+      '9': 0,
+      '10': 'vpcConnector'
+    },
+    {
+      '1': 'deliver',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.DeliverInfo',
+      '9': 0,
+      '10': 'deliver'
+    },
+    {
+      '1': 'forward',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.ForwardInfo',
+      '9': 0,
+      '10': 'forward'
+    },
+    {
+      '1': 'abort',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.AbortInfo',
+      '9': 0,
+      '10': 'abort'
+    },
+    {
+      '1': 'drop',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.DropInfo',
+      '9': 0,
+      '10': 'drop'
+    },
+    {
+      '1': 'load_balancer',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.LoadBalancerInfo',
+      '9': 0,
+      '10': 'loadBalancer'
+    },
+    {
+      '1': 'network',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.NetworkInfo',
+      '9': 0,
+      '10': 'network'
+    },
+    {
+      '1': 'gke_master',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.GKEMasterInfo',
+      '9': 0,
+      '10': 'gkeMaster'
+    },
+    {
+      '1': 'cloud_sql_instance',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.CloudSQLInstanceInfo',
+      '9': 0,
+      '10': 'cloudSqlInstance'
+    },
+    {
+      '1': 'cloud_function',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.CloudFunctionInfo',
+      '9': 0,
+      '10': 'cloudFunction'
+    },
+    {
+      '1': 'app_engine_version',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.AppEngineVersionInfo',
+      '9': 0,
+      '10': 'appEngineVersion'
+    },
+    {
+      '1': 'cloud_run_revision',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.CloudRunRevisionInfo',
+      '9': 0,
+      '10': 'cloudRunRevision'
+    },
   ],
   '4': [Step_State$json],
   '8': [
@@ -202,9 +383,23 @@ const FirewallInfo$json = {
     {'1': 'priority', '3': 5, '4': 1, '5': 5, '10': 'priority'},
     {'1': 'network_uri', '3': 6, '4': 1, '5': 9, '10': 'networkUri'},
     {'1': 'target_tags', '3': 7, '4': 3, '5': 9, '10': 'targetTags'},
-    {'1': 'target_service_accounts', '3': 8, '4': 3, '5': 9, '10': 'targetServiceAccounts'},
+    {
+      '1': 'target_service_accounts',
+      '3': 8,
+      '4': 3,
+      '5': 9,
+      '10': 'targetServiceAccounts'
+    },
     {'1': 'policy', '3': 9, '4': 1, '5': 9, '10': 'policy'},
-    {'1': 'firewall_rule_type', '3': 10, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.FirewallInfo.FirewallRuleType', '10': 'firewallRuleType'},
+    {
+      '1': 'firewall_rule_type',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.FirewallInfo.FirewallRuleType',
+      '10': 'firewallRuleType'
+    },
   ],
   '4': [FirewallInfo_FirewallRuleType$json],
 };
@@ -241,8 +436,22 @@ final $typed_data.Uint8List firewallInfoDescriptor = $convert.base64Decode(
 const RouteInfo$json = {
   '1': 'RouteInfo',
   '2': [
-    {'1': 'route_type', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.RouteInfo.RouteType', '10': 'routeType'},
-    {'1': 'next_hop_type', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.RouteInfo.NextHopType', '10': 'nextHopType'},
+    {
+      '1': 'route_type',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkmanagement.v1.RouteInfo.RouteType',
+      '10': 'routeType'
+    },
+    {
+      '1': 'next_hop_type',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkmanagement.v1.RouteInfo.NextHopType',
+      '10': 'nextHopType'
+    },
     {'1': 'display_name', '3': 1, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uri', '3': 2, '4': 1, '5': 9, '10': 'uri'},
     {'1': 'dest_ip_range', '3': 3, '4': 1, '5': 9, '10': 'destIpRange'},
@@ -319,7 +528,15 @@ const GoogleServiceInfo$json = {
   '1': 'GoogleServiceInfo',
   '2': [
     {'1': 'source_ip', '3': 1, '4': 1, '5': 9, '10': 'sourceIp'},
-    {'1': 'google_service_type', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.GoogleServiceInfo.GoogleServiceType', '10': 'googleServiceType'},
+    {
+      '1': 'google_service_type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.GoogleServiceInfo.GoogleServiceType',
+      '10': 'googleServiceType'
+    },
   ],
   '4': [GoogleServiceInfo_GoogleServiceType$json],
 };
@@ -351,7 +568,13 @@ const ForwardingRuleInfo$json = {
     {'1': 'display_name', '3': 1, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uri', '3': 2, '4': 1, '5': 9, '10': 'uri'},
     {'1': 'matched_protocol', '3': 3, '4': 1, '5': 9, '10': 'matchedProtocol'},
-    {'1': 'matched_port_range', '3': 6, '4': 1, '5': 9, '10': 'matchedPortRange'},
+    {
+      '1': 'matched_port_range',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'matchedPortRange'
+    },
     {'1': 'vip', '3': 4, '4': 1, '5': 9, '10': 'vip'},
     {'1': 'target', '3': 5, '4': 1, '5': 9, '10': 'target'},
     {'1': 'network_uri', '3': 7, '4': 1, '5': 9, '10': 'networkUri'},
@@ -370,13 +593,39 @@ final $typed_data.Uint8List forwardingRuleInfoDescriptor = $convert.base64Decode
 const LoadBalancerInfo$json = {
   '1': 'LoadBalancerInfo',
   '2': [
-    {'1': 'load_balancer_type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.LoadBalancerInfo.LoadBalancerType', '10': 'loadBalancerType'},
+    {
+      '1': 'load_balancer_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.LoadBalancerInfo.LoadBalancerType',
+      '10': 'loadBalancerType'
+    },
     {'1': 'health_check_uri', '3': 2, '4': 1, '5': 9, '10': 'healthCheckUri'},
-    {'1': 'backends', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.LoadBalancerBackend', '10': 'backends'},
-    {'1': 'backend_type', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.LoadBalancerInfo.BackendType', '10': 'backendType'},
+    {
+      '1': 'backends',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.LoadBalancerBackend',
+      '10': 'backends'
+    },
+    {
+      '1': 'backend_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.LoadBalancerInfo.BackendType',
+      '10': 'backendType'
+    },
     {'1': 'backend_uri', '3': 5, '4': 1, '5': 9, '10': 'backendUri'},
   ],
-  '4': [LoadBalancerInfo_LoadBalancerType$json, LoadBalancerInfo_BackendType$json],
+  '4': [
+    LoadBalancerInfo_LoadBalancerType$json,
+    LoadBalancerInfo_BackendType$json
+  ],
 };
 
 @$core.Deprecated('Use loadBalancerInfoDescriptor instead')
@@ -424,9 +673,29 @@ const LoadBalancerBackend$json = {
   '2': [
     {'1': 'display_name', '3': 1, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uri', '3': 2, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'health_check_firewall_state', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.LoadBalancerBackend.HealthCheckFirewallState', '10': 'healthCheckFirewallState'},
-    {'1': 'health_check_allowing_firewall_rules', '3': 4, '4': 3, '5': 9, '10': 'healthCheckAllowingFirewallRules'},
-    {'1': 'health_check_blocking_firewall_rules', '3': 5, '4': 3, '5': 9, '10': 'healthCheckBlockingFirewallRules'},
+    {
+      '1': 'health_check_firewall_state',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.LoadBalancerBackend.HealthCheckFirewallState',
+      '10': 'healthCheckFirewallState'
+    },
+    {
+      '1': 'health_check_allowing_firewall_rules',
+      '3': 4,
+      '4': 3,
+      '5': 9,
+      '10': 'healthCheckAllowingFirewallRules'
+    },
+    {
+      '1': 'health_check_blocking_firewall_rules',
+      '3': 5,
+      '4': 3,
+      '5': 9,
+      '10': 'healthCheckBlockingFirewallRules'
+    },
   ],
   '4': [LoadBalancerBackend_HealthCheckFirewallState$json],
 };
@@ -485,7 +754,15 @@ const VpnTunnelInfo$json = {
     {'1': 'source_gateway_ip', '3': 6, '4': 1, '5': 9, '10': 'sourceGatewayIp'},
     {'1': 'network_uri', '3': 7, '4': 1, '5': 9, '10': 'networkUri'},
     {'1': 'region', '3': 8, '4': 1, '5': 9, '10': 'region'},
-    {'1': 'routing_type', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.VpnTunnelInfo.RoutingType', '10': 'routingType'},
+    {
+      '1': 'routing_type',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.VpnTunnelInfo.RoutingType',
+      '10': 'routingType'
+    },
   ],
   '4': [VpnTunnelInfo_RoutingType$json],
 };
@@ -522,8 +799,20 @@ const EndpointInfo$json = {
     {'1': 'protocol', '3': 3, '4': 1, '5': 9, '10': 'protocol'},
     {'1': 'source_port', '3': 4, '4': 1, '5': 5, '10': 'sourcePort'},
     {'1': 'destination_port', '3': 5, '4': 1, '5': 5, '10': 'destinationPort'},
-    {'1': 'source_network_uri', '3': 6, '4': 1, '5': 9, '10': 'sourceNetworkUri'},
-    {'1': 'destination_network_uri', '3': 7, '4': 1, '5': 9, '10': 'destinationNetworkUri'},
+    {
+      '1': 'source_network_uri',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'sourceNetworkUri'
+    },
+    {
+      '1': 'destination_network_uri',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'destinationNetworkUri'
+    },
   ],
 };
 
@@ -540,7 +829,14 @@ final $typed_data.Uint8List endpointInfoDescriptor = $convert.base64Decode(
 const DeliverInfo$json = {
   '1': 'DeliverInfo',
   '2': [
-    {'1': 'target', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.DeliverInfo.Target', '10': 'target'},
+    {
+      '1': 'target',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkmanagement.v1.DeliverInfo.Target',
+      '10': 'target'
+    },
     {'1': 'resource_uri', '3': 2, '4': 1, '5': 9, '10': 'resourceUri'},
   ],
   '4': [DeliverInfo_Target$json],
@@ -575,7 +871,14 @@ final $typed_data.Uint8List deliverInfoDescriptor = $convert.base64Decode(
 const ForwardInfo$json = {
   '1': 'ForwardInfo',
   '2': [
-    {'1': 'target', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.ForwardInfo.Target', '10': 'target'},
+    {
+      '1': 'target',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkmanagement.v1.ForwardInfo.Target',
+      '10': 'target'
+    },
     {'1': 'resource_uri', '3': 2, '4': 1, '5': 9, '10': 'resourceUri'},
   ],
   '4': [ForwardInfo_Target$json],
@@ -609,9 +912,22 @@ final $typed_data.Uint8List forwardInfoDescriptor = $convert.base64Decode(
 const AbortInfo$json = {
   '1': 'AbortInfo',
   '2': [
-    {'1': 'cause', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.AbortInfo.Cause', '10': 'cause'},
+    {
+      '1': 'cause',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkmanagement.v1.AbortInfo.Cause',
+      '10': 'cause'
+    },
     {'1': 'resource_uri', '3': 2, '4': 1, '5': 9, '10': 'resourceUri'},
-    {'1': 'projects_missing_permission', '3': 3, '4': 3, '5': 9, '10': 'projectsMissingPermission'},
+    {
+      '1': 'projects_missing_permission',
+      '3': 3,
+      '4': 3,
+      '5': 9,
+      '10': 'projectsMissingPermission'
+    },
   ],
   '4': [AbortInfo_Cause$json],
 };
@@ -662,7 +978,14 @@ final $typed_data.Uint8List abortInfoDescriptor = $convert.base64Decode(
 const DropInfo$json = {
   '1': 'DropInfo',
   '2': [
-    {'1': 'cause', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.DropInfo.Cause', '10': 'cause'},
+    {
+      '1': 'cause',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkmanagement.v1.DropInfo.Cause',
+      '10': 'cause'
+    },
     {'1': 'resource_uri', '3': 2, '4': 1, '5': 9, '10': 'resourceUri'},
   ],
   '4': [DropInfo_Cause$json],
@@ -751,7 +1074,13 @@ const GKEMasterInfo$json = {
   '1': 'GKEMasterInfo',
   '2': [
     {'1': 'cluster_uri', '3': 2, '4': 1, '5': 9, '10': 'clusterUri'},
-    {'1': 'cluster_network_uri', '3': 4, '4': 1, '5': 9, '10': 'clusterNetworkUri'},
+    {
+      '1': 'cluster_network_uri',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'clusterNetworkUri'
+    },
     {'1': 'internal_ip', '3': 5, '4': 1, '5': 9, '10': 'internalIp'},
     {'1': 'external_ip', '3': 6, '4': 1, '5': 9, '10': 'externalIp'},
   ],
@@ -855,15 +1184,58 @@ const ConnectivityTest$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'source', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.Endpoint', '10': 'source'},
-    {'1': 'destination', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.Endpoint', '10': 'destination'},
+    {
+      '1': 'source',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.Endpoint',
+      '10': 'source'
+    },
+    {
+      '1': 'destination',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.Endpoint',
+      '10': 'destination'
+    },
     {'1': 'protocol', '3': 5, '4': 1, '5': 9, '10': 'protocol'},
     {'1': 'related_projects', '3': 6, '4': 3, '5': 9, '10': 'relatedProjects'},
     {'1': 'display_name', '3': 7, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'labels', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.ConnectivityTest.LabelsEntry', '10': 'labels'},
-    {'1': 'create_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 11, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'reachability_details', '3': 12, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.ReachabilityDetails', '10': 'reachabilityDetails'},
+    {
+      '1': 'labels',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.ConnectivityTest.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'create_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'reachability_details',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.ReachabilityDetails',
+      '10': 'reachabilityDetails'
+    },
   ],
   '3': [ConnectivityTest_LabelsEntry$json],
 };
@@ -902,16 +1274,63 @@ const Endpoint$json = {
     {'1': 'ip_address', '3': 1, '4': 1, '5': 9, '10': 'ipAddress'},
     {'1': 'port', '3': 2, '4': 1, '5': 5, '10': 'port'},
     {'1': 'instance', '3': 3, '4': 1, '5': 9, '10': 'instance'},
-    {'1': 'gke_master_cluster', '3': 7, '4': 1, '5': 9, '10': 'gkeMasterCluster'},
-    {'1': 'cloud_sql_instance', '3': 8, '4': 1, '5': 9, '10': 'cloudSqlInstance'},
-    {'1': 'cloud_function', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.Endpoint.CloudFunctionEndpoint', '10': 'cloudFunction'},
-    {'1': 'app_engine_version', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.Endpoint.AppEngineVersionEndpoint', '10': 'appEngineVersion'},
-    {'1': 'cloud_run_revision', '3': 12, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.Endpoint.CloudRunRevisionEndpoint', '10': 'cloudRunRevision'},
+    {
+      '1': 'gke_master_cluster',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'gkeMasterCluster'
+    },
+    {
+      '1': 'cloud_sql_instance',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'cloudSqlInstance'
+    },
+    {
+      '1': 'cloud_function',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.Endpoint.CloudFunctionEndpoint',
+      '10': 'cloudFunction'
+    },
+    {
+      '1': 'app_engine_version',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.Endpoint.AppEngineVersionEndpoint',
+      '10': 'appEngineVersion'
+    },
+    {
+      '1': 'cloud_run_revision',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.Endpoint.CloudRunRevisionEndpoint',
+      '10': 'cloudRunRevision'
+    },
     {'1': 'network', '3': 4, '4': 1, '5': 9, '10': 'network'},
-    {'1': 'network_type', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.Endpoint.NetworkType', '10': 'networkType'},
+    {
+      '1': 'network_type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.networkmanagement.v1.Endpoint.NetworkType',
+      '10': 'networkType'
+    },
     {'1': 'project_id', '3': 6, '4': 1, '5': 9, '10': 'projectId'},
   ],
-  '3': [Endpoint_CloudFunctionEndpoint$json, Endpoint_AppEngineVersionEndpoint$json, Endpoint_CloudRunRevisionEndpoint$json],
+  '3': [
+    Endpoint_CloudFunctionEndpoint$json,
+    Endpoint_AppEngineVersionEndpoint$json,
+    Endpoint_CloudRunRevisionEndpoint$json
+  ],
   '4': [Endpoint_NetworkType$json],
 };
 
@@ -973,10 +1392,39 @@ final $typed_data.Uint8List endpointDescriptor = $convert.base64Decode(
 const ReachabilityDetails$json = {
   '1': 'ReachabilityDetails',
   '2': [
-    {'1': 'result', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.networkmanagement.v1.ReachabilityDetails.Result', '10': 'result'},
-    {'1': 'verify_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'verifyTime'},
-    {'1': 'error', '3': 3, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'traces', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.Trace', '10': 'traces'},
+    {
+      '1': 'result',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.networkmanagement.v1.ReachabilityDetails.Result',
+      '10': 'result'
+    },
+    {
+      '1': 'verify_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'verifyTime'
+    },
+    {
+      '1': 'error',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'traces',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.Trace',
+      '10': 'traces'
+    },
   ],
   '4': [ReachabilityDetails_Result$json],
 };
@@ -1008,7 +1456,16 @@ final $typed_data.Uint8List reachabilityDetailsDescriptor = $convert.base64Decod
 const ConnectivityTestEventData$json = {
   '1': 'ConnectivityTestEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.networkmanagement.v1.ConnectivityTest', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.networkmanagement.v1.ConnectivityTest',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1020,4 +1477,3 @@ final $typed_data.Uint8List connectivityTestEventDataDescriptor = $convert.base6
     'ChlDb25uZWN0aXZpdHlUZXN0RXZlbnREYXRhElkKB3BheWxvYWQYASABKAsyOi5nb29nbGUuZX'
     'ZlbnRzLmNsb3VkLm5ldHdvcmttYW5hZ2VtZW50LnYxLkNvbm5lY3Rpdml0eVRlc3RIAFIHcGF5'
     'bG9hZIgBAUIKCghfcGF5bG9hZA==');
-

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const AnalyticsLogWrittenEvent$json = {
   '1': 'AnalyticsLogWrittenEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.analytics.v1.AnalyticsLogData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.analytics.v1.AnalyticsLogData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -27,4 +34,3 @@ final $typed_data.Uint8List analyticsLogWrittenEventDescriptor = $convert.base64
     'ChhBbmFseXRpY3NMb2dXcml0dGVuRXZlbnQSSQoEZGF0YRgBIAEoCzI1Lmdvb2dsZS5ldmVudH'
     'MuZmlyZWJhc2UuYW5hbHl0aWNzLnYxLkFuYWx5dGljc0xvZ0RhdGFSBGRhdGE6LbL42CwoZ29v'
     'Z2xlLmZpcmViYXNlLmFuYWx5dGljcy5sb2cudjEud3JpdHRlbg==');
-

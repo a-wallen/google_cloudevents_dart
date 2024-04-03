@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const WorkflowCreatedEvent$json = {
   '1': 'WorkflowCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.workflows.v1.WorkflowEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.workflows.v1.WorkflowEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List workflowCreatedEventDescriptor = $convert.base64Deco
 const WorkflowDeletedEvent$json = {
   '1': 'WorkflowDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.workflows.v1.WorkflowEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.workflows.v1.WorkflowEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List workflowDeletedEventDescriptor = $convert.base64Deco
 const WorkflowUpdatedEvent$json = {
   '1': 'WorkflowUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.workflows.v1.WorkflowEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.workflows.v1.WorkflowEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -57,4 +78,3 @@ final $typed_data.Uint8List workflowUpdatedEventDescriptor = $convert.base64Deco
     'ChRXb3JrZmxvd1VwZGF0ZWRFdmVudBJHCgRkYXRhGAEgASgLMjMuZ29vZ2xlLmV2ZW50cy5jbG'
     '91ZC53b3JrZmxvd3MudjEuV29ya2Zsb3dFdmVudERhdGFSBGRhdGE6PLL42CwqZ29vZ2xlLmNs'
     'b3VkLndvcmtmbG93cy53b3JrZmxvdy52MS51cGRhdGVkyvjYLAh3b3JrZmxvdw==');
-

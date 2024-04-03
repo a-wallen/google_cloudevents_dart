@@ -41,42 +41,54 @@ class CrashlyticsIssue extends $pb.GeneratedMessage {
     return $result;
   }
   CrashlyticsIssue._() : super();
-  factory CrashlyticsIssue.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CrashlyticsIssue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CrashlyticsIssue.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CrashlyticsIssue.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CrashlyticsIssue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CrashlyticsIssue',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'title')
     ..aOS(3, _omitFieldNames ? '' : 'subtitle')
     ..aOS(4, _omitFieldNames ? '' : 'appVersion')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   CrashlyticsIssue clone() => CrashlyticsIssue()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CrashlyticsIssue copyWith(void Function(CrashlyticsIssue) updates) => super.copyWith((message) => updates(message as CrashlyticsIssue)) as CrashlyticsIssue;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CrashlyticsIssue copyWith(void Function(CrashlyticsIssue) updates) =>
+      super.copyWith((message) => updates(message as CrashlyticsIssue))
+          as CrashlyticsIssue;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CrashlyticsIssue create() => CrashlyticsIssue._();
   CrashlyticsIssue createEmptyInstance() => create();
-  static $pb.PbList<CrashlyticsIssue> createRepeated() => $pb.PbList<CrashlyticsIssue>();
+  static $pb.PbList<CrashlyticsIssue> createRepeated() =>
+      $pb.PbList<CrashlyticsIssue>();
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsIssue getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CrashlyticsIssue>(create);
+  static CrashlyticsIssue getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CrashlyticsIssue>(create);
   static CrashlyticsIssue? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -85,7 +97,10 @@ class CrashlyticsIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get title => $_getSZ(1);
   @$pb.TagNumber(2)
-  set title($core.String v) { $_setString(1, v); }
+  set title($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
@@ -94,7 +109,10 @@ class CrashlyticsIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get subtitle => $_getSZ(2);
   @$pb.TagNumber(3)
-  set subtitle($core.String v) { $_setString(2, v); }
+  set subtitle($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSubtitle() => $_has(2);
   @$pb.TagNumber(3)
@@ -103,7 +121,10 @@ class CrashlyticsIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get appVersion => $_getSZ(3);
   @$pb.TagNumber(4)
-  set appVersion($core.String v) { $_setString(3, v); }
+  set appVersion($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAppVersion() => $_has(3);
   @$pb.TagNumber(4)
@@ -121,40 +142,58 @@ class CrashlyticsNewFatalIssuePayload extends $pb.GeneratedMessage {
     return $result;
   }
   CrashlyticsNewFatalIssuePayload._() : super();
-  factory CrashlyticsNewFatalIssuePayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CrashlyticsNewFatalIssuePayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CrashlyticsNewFatalIssuePayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CrashlyticsNewFatalIssuePayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CrashlyticsNewFatalIssuePayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
-    ..aOM<CrashlyticsIssue>(1, _omitFieldNames ? '' : 'issue', subBuilder: CrashlyticsIssue.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CrashlyticsNewFatalIssuePayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
+    ..aOM<CrashlyticsIssue>(1, _omitFieldNames ? '' : 'issue',
+        subBuilder: CrashlyticsIssue.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CrashlyticsNewFatalIssuePayload clone() => CrashlyticsNewFatalIssuePayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CrashlyticsNewFatalIssuePayload copyWith(void Function(CrashlyticsNewFatalIssuePayload) updates) => super.copyWith((message) => updates(message as CrashlyticsNewFatalIssuePayload)) as CrashlyticsNewFatalIssuePayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CrashlyticsNewFatalIssuePayload clone() =>
+      CrashlyticsNewFatalIssuePayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CrashlyticsNewFatalIssuePayload copyWith(
+          void Function(CrashlyticsNewFatalIssuePayload) updates) =>
+      super.copyWith(
+              (message) => updates(message as CrashlyticsNewFatalIssuePayload))
+          as CrashlyticsNewFatalIssuePayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsNewFatalIssuePayload create() => CrashlyticsNewFatalIssuePayload._();
+  static CrashlyticsNewFatalIssuePayload create() =>
+      CrashlyticsNewFatalIssuePayload._();
   CrashlyticsNewFatalIssuePayload createEmptyInstance() => create();
-  static $pb.PbList<CrashlyticsNewFatalIssuePayload> createRepeated() => $pb.PbList<CrashlyticsNewFatalIssuePayload>();
+  static $pb.PbList<CrashlyticsNewFatalIssuePayload> createRepeated() =>
+      $pb.PbList<CrashlyticsNewFatalIssuePayload>();
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsNewFatalIssuePayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CrashlyticsNewFatalIssuePayload>(create);
+  static CrashlyticsNewFatalIssuePayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CrashlyticsNewFatalIssuePayload>(
+          create);
   static CrashlyticsNewFatalIssuePayload? _defaultInstance;
 
   /// Basic information of the Crashlytics issue
   @$pb.TagNumber(1)
   CrashlyticsIssue get issue => $_getN(0);
   @$pb.TagNumber(1)
-  set issue(CrashlyticsIssue v) { setField(1, v); }
+  set issue(CrashlyticsIssue v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIssue() => $_has(0);
   @$pb.TagNumber(1)
@@ -174,40 +213,58 @@ class CrashlyticsNewNonfatalIssuePayload extends $pb.GeneratedMessage {
     return $result;
   }
   CrashlyticsNewNonfatalIssuePayload._() : super();
-  factory CrashlyticsNewNonfatalIssuePayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CrashlyticsNewNonfatalIssuePayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CrashlyticsNewNonfatalIssuePayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CrashlyticsNewNonfatalIssuePayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CrashlyticsNewNonfatalIssuePayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
-    ..aOM<CrashlyticsIssue>(1, _omitFieldNames ? '' : 'issue', subBuilder: CrashlyticsIssue.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CrashlyticsNewNonfatalIssuePayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
+    ..aOM<CrashlyticsIssue>(1, _omitFieldNames ? '' : 'issue',
+        subBuilder: CrashlyticsIssue.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CrashlyticsNewNonfatalIssuePayload clone() => CrashlyticsNewNonfatalIssuePayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CrashlyticsNewNonfatalIssuePayload copyWith(void Function(CrashlyticsNewNonfatalIssuePayload) updates) => super.copyWith((message) => updates(message as CrashlyticsNewNonfatalIssuePayload)) as CrashlyticsNewNonfatalIssuePayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CrashlyticsNewNonfatalIssuePayload clone() =>
+      CrashlyticsNewNonfatalIssuePayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CrashlyticsNewNonfatalIssuePayload copyWith(
+          void Function(CrashlyticsNewNonfatalIssuePayload) updates) =>
+      super.copyWith((message) =>
+              updates(message as CrashlyticsNewNonfatalIssuePayload))
+          as CrashlyticsNewNonfatalIssuePayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsNewNonfatalIssuePayload create() => CrashlyticsNewNonfatalIssuePayload._();
+  static CrashlyticsNewNonfatalIssuePayload create() =>
+      CrashlyticsNewNonfatalIssuePayload._();
   CrashlyticsNewNonfatalIssuePayload createEmptyInstance() => create();
-  static $pb.PbList<CrashlyticsNewNonfatalIssuePayload> createRepeated() => $pb.PbList<CrashlyticsNewNonfatalIssuePayload>();
+  static $pb.PbList<CrashlyticsNewNonfatalIssuePayload> createRepeated() =>
+      $pb.PbList<CrashlyticsNewNonfatalIssuePayload>();
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsNewNonfatalIssuePayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CrashlyticsNewNonfatalIssuePayload>(create);
+  static CrashlyticsNewNonfatalIssuePayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CrashlyticsNewNonfatalIssuePayload>(
+          create);
   static CrashlyticsNewNonfatalIssuePayload? _defaultInstance;
 
   /// Basic information of the Crashlytics issue
   @$pb.TagNumber(1)
   CrashlyticsIssue get issue => $_getN(0);
   @$pb.TagNumber(1)
-  set issue(CrashlyticsIssue v) { setField(1, v); }
+  set issue(CrashlyticsIssue v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIssue() => $_has(0);
   @$pb.TagNumber(1)
@@ -235,42 +292,61 @@ class CrashlyticsRegressionAlertPayload extends $pb.GeneratedMessage {
     return $result;
   }
   CrashlyticsRegressionAlertPayload._() : super();
-  factory CrashlyticsRegressionAlertPayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CrashlyticsRegressionAlertPayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CrashlyticsRegressionAlertPayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CrashlyticsRegressionAlertPayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CrashlyticsRegressionAlertPayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CrashlyticsRegressionAlertPayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'type')
-    ..aOM<CrashlyticsIssue>(2, _omitFieldNames ? '' : 'issue', subBuilder: CrashlyticsIssue.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'resolveTime', subBuilder: $2.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<CrashlyticsIssue>(2, _omitFieldNames ? '' : 'issue',
+        subBuilder: CrashlyticsIssue.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'resolveTime',
+        subBuilder: $2.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CrashlyticsRegressionAlertPayload clone() => CrashlyticsRegressionAlertPayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CrashlyticsRegressionAlertPayload copyWith(void Function(CrashlyticsRegressionAlertPayload) updates) => super.copyWith((message) => updates(message as CrashlyticsRegressionAlertPayload)) as CrashlyticsRegressionAlertPayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CrashlyticsRegressionAlertPayload clone() =>
+      CrashlyticsRegressionAlertPayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CrashlyticsRegressionAlertPayload copyWith(
+          void Function(CrashlyticsRegressionAlertPayload) updates) =>
+      super.copyWith((message) =>
+              updates(message as CrashlyticsRegressionAlertPayload))
+          as CrashlyticsRegressionAlertPayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsRegressionAlertPayload create() => CrashlyticsRegressionAlertPayload._();
+  static CrashlyticsRegressionAlertPayload create() =>
+      CrashlyticsRegressionAlertPayload._();
   CrashlyticsRegressionAlertPayload createEmptyInstance() => create();
-  static $pb.PbList<CrashlyticsRegressionAlertPayload> createRepeated() => $pb.PbList<CrashlyticsRegressionAlertPayload>();
+  static $pb.PbList<CrashlyticsRegressionAlertPayload> createRepeated() =>
+      $pb.PbList<CrashlyticsRegressionAlertPayload>();
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsRegressionAlertPayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CrashlyticsRegressionAlertPayload>(create);
+  static CrashlyticsRegressionAlertPayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CrashlyticsRegressionAlertPayload>(
+          create);
   static CrashlyticsRegressionAlertPayload? _defaultInstance;
 
   /// The type of the Crashlytics issue, e.g. new fatal, new nonfatal, ANR
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
-  set type($core.String v) { $_setString(0, v); }
+  set type($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -280,7 +356,10 @@ class CrashlyticsRegressionAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   CrashlyticsIssue get issue => $_getN(1);
   @$pb.TagNumber(2)
-  set issue(CrashlyticsIssue v) { setField(2, v); }
+  set issue(CrashlyticsIssue v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIssue() => $_has(1);
   @$pb.TagNumber(2)
@@ -293,7 +372,10 @@ class CrashlyticsRegressionAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get resolveTime => $_getN(2);
   @$pb.TagNumber(3)
-  set resolveTime($2.Timestamp v) { setField(3, v); }
+  set resolveTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasResolveTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -329,44 +411,64 @@ class CrashlyticsVelocityAlertPayload extends $pb.GeneratedMessage {
     return $result;
   }
   CrashlyticsVelocityAlertPayload._() : super();
-  factory CrashlyticsVelocityAlertPayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CrashlyticsVelocityAlertPayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CrashlyticsVelocityAlertPayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CrashlyticsVelocityAlertPayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CrashlyticsVelocityAlertPayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
-    ..aOM<CrashlyticsIssue>(1, _omitFieldNames ? '' : 'issue', subBuilder: CrashlyticsIssue.create)
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CrashlyticsVelocityAlertPayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
+    ..aOM<CrashlyticsIssue>(1, _omitFieldNames ? '' : 'issue',
+        subBuilder: CrashlyticsIssue.create)
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
     ..aInt64(3, _omitFieldNames ? '' : 'crashCount')
-    ..a<$core.double>(4, _omitFieldNames ? '' : 'crashPercentage', $pb.PbFieldType.OD)
+    ..a<$core.double>(
+        4, _omitFieldNames ? '' : 'crashPercentage', $pb.PbFieldType.OD)
     ..aOS(5, _omitFieldNames ? '' : 'firstVersion')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CrashlyticsVelocityAlertPayload clone() => CrashlyticsVelocityAlertPayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CrashlyticsVelocityAlertPayload copyWith(void Function(CrashlyticsVelocityAlertPayload) updates) => super.copyWith((message) => updates(message as CrashlyticsVelocityAlertPayload)) as CrashlyticsVelocityAlertPayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CrashlyticsVelocityAlertPayload clone() =>
+      CrashlyticsVelocityAlertPayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CrashlyticsVelocityAlertPayload copyWith(
+          void Function(CrashlyticsVelocityAlertPayload) updates) =>
+      super.copyWith(
+              (message) => updates(message as CrashlyticsVelocityAlertPayload))
+          as CrashlyticsVelocityAlertPayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsVelocityAlertPayload create() => CrashlyticsVelocityAlertPayload._();
+  static CrashlyticsVelocityAlertPayload create() =>
+      CrashlyticsVelocityAlertPayload._();
   CrashlyticsVelocityAlertPayload createEmptyInstance() => create();
-  static $pb.PbList<CrashlyticsVelocityAlertPayload> createRepeated() => $pb.PbList<CrashlyticsVelocityAlertPayload>();
+  static $pb.PbList<CrashlyticsVelocityAlertPayload> createRepeated() =>
+      $pb.PbList<CrashlyticsVelocityAlertPayload>();
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsVelocityAlertPayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CrashlyticsVelocityAlertPayload>(create);
+  static CrashlyticsVelocityAlertPayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CrashlyticsVelocityAlertPayload>(
+          create);
   static CrashlyticsVelocityAlertPayload? _defaultInstance;
 
   /// Basic information of the Crashlytics issue
   @$pb.TagNumber(1)
   CrashlyticsIssue get issue => $_getN(0);
   @$pb.TagNumber(1)
-  set issue(CrashlyticsIssue v) { setField(1, v); }
+  set issue(CrashlyticsIssue v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIssue() => $_has(0);
   @$pb.TagNumber(1)
@@ -378,7 +480,10 @@ class CrashlyticsVelocityAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -392,7 +497,10 @@ class CrashlyticsVelocityAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get crashCount => $_getI64(2);
   @$pb.TagNumber(3)
-  set crashCount($fixnum.Int64 v) { $_setInt64(2, v); }
+  set crashCount($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCrashCount() => $_has(2);
   @$pb.TagNumber(3)
@@ -404,7 +512,10 @@ class CrashlyticsVelocityAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.double get crashPercentage => $_getN(3);
   @$pb.TagNumber(4)
-  set crashPercentage($core.double v) { $_setDouble(3, v); }
+  set crashPercentage($core.double v) {
+    $_setDouble(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasCrashPercentage() => $_has(3);
   @$pb.TagNumber(4)
@@ -415,14 +526,18 @@ class CrashlyticsVelocityAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get firstVersion => $_getSZ(4);
   @$pb.TagNumber(5)
-  set firstVersion($core.String v) { $_setString(4, v); }
+  set firstVersion($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasFirstVersion() => $_has(4);
   @$pb.TagNumber(5)
   void clearFirstVersion() => clearField(5);
 }
 
-class CrashlyticsStabilityDigestPayload_TrendingIssueDetails extends $pb.GeneratedMessage {
+class CrashlyticsStabilityDigestPayload_TrendingIssueDetails
+    extends $pb.GeneratedMessage {
   factory CrashlyticsStabilityDigestPayload_TrendingIssueDetails({
     $core.String? type,
     CrashlyticsIssue? issue,
@@ -445,43 +560,70 @@ class CrashlyticsStabilityDigestPayload_TrendingIssueDetails extends $pb.Generat
     return $result;
   }
   CrashlyticsStabilityDigestPayload_TrendingIssueDetails._() : super();
-  factory CrashlyticsStabilityDigestPayload_TrendingIssueDetails.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CrashlyticsStabilityDigestPayload_TrendingIssueDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CrashlyticsStabilityDigestPayload_TrendingIssueDetails.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CrashlyticsStabilityDigestPayload_TrendingIssueDetails.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CrashlyticsStabilityDigestPayload.TrendingIssueDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'CrashlyticsStabilityDigestPayload.TrendingIssueDetails',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'type')
-    ..aOM<CrashlyticsIssue>(2, _omitFieldNames ? '' : 'issue', subBuilder: CrashlyticsIssue.create)
+    ..aOM<CrashlyticsIssue>(2, _omitFieldNames ? '' : 'issue',
+        subBuilder: CrashlyticsIssue.create)
     ..aInt64(3, _omitFieldNames ? '' : 'eventCount')
     ..aInt64(4, _omitFieldNames ? '' : 'userCount')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CrashlyticsStabilityDigestPayload_TrendingIssueDetails clone() => CrashlyticsStabilityDigestPayload_TrendingIssueDetails()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CrashlyticsStabilityDigestPayload_TrendingIssueDetails copyWith(void Function(CrashlyticsStabilityDigestPayload_TrendingIssueDetails) updates) => super.copyWith((message) => updates(message as CrashlyticsStabilityDigestPayload_TrendingIssueDetails)) as CrashlyticsStabilityDigestPayload_TrendingIssueDetails;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CrashlyticsStabilityDigestPayload_TrendingIssueDetails clone() =>
+      CrashlyticsStabilityDigestPayload_TrendingIssueDetails()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CrashlyticsStabilityDigestPayload_TrendingIssueDetails copyWith(
+          void Function(CrashlyticsStabilityDigestPayload_TrendingIssueDetails)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as CrashlyticsStabilityDigestPayload_TrendingIssueDetails))
+          as CrashlyticsStabilityDigestPayload_TrendingIssueDetails;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsStabilityDigestPayload_TrendingIssueDetails create() => CrashlyticsStabilityDigestPayload_TrendingIssueDetails._();
-  CrashlyticsStabilityDigestPayload_TrendingIssueDetails createEmptyInstance() => create();
-  static $pb.PbList<CrashlyticsStabilityDigestPayload_TrendingIssueDetails> createRepeated() => $pb.PbList<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>();
+  static CrashlyticsStabilityDigestPayload_TrendingIssueDetails create() =>
+      CrashlyticsStabilityDigestPayload_TrendingIssueDetails._();
+  CrashlyticsStabilityDigestPayload_TrendingIssueDetails
+      createEmptyInstance() => create();
+  static $pb.PbList<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>
+      createRepeated() =>
+          $pb.PbList<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>();
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsStabilityDigestPayload_TrendingIssueDetails getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>(create);
-  static CrashlyticsStabilityDigestPayload_TrendingIssueDetails? _defaultInstance;
+  static CrashlyticsStabilityDigestPayload_TrendingIssueDetails getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          CrashlyticsStabilityDigestPayload_TrendingIssueDetails>(create);
+  static CrashlyticsStabilityDigestPayload_TrendingIssueDetails?
+      _defaultInstance;
 
   /// The type of the Crashlytics issue, e.g. new fatal, new nonfatal, ANR
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
-  set type($core.String v) { $_setString(0, v); }
+  set type($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -491,7 +633,10 @@ class CrashlyticsStabilityDigestPayload_TrendingIssueDetails extends $pb.Generat
   @$pb.TagNumber(2)
   CrashlyticsIssue get issue => $_getN(1);
   @$pb.TagNumber(2)
-  set issue(CrashlyticsIssue v) { setField(2, v); }
+  set issue(CrashlyticsIssue v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIssue() => $_has(1);
   @$pb.TagNumber(2)
@@ -503,7 +648,10 @@ class CrashlyticsStabilityDigestPayload_TrendingIssueDetails extends $pb.Generat
   @$pb.TagNumber(3)
   $fixnum.Int64 get eventCount => $_getI64(2);
   @$pb.TagNumber(3)
-  set eventCount($fixnum.Int64 v) { $_setInt64(2, v); }
+  set eventCount($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEventCount() => $_has(2);
   @$pb.TagNumber(3)
@@ -513,7 +661,10 @@ class CrashlyticsStabilityDigestPayload_TrendingIssueDetails extends $pb.Generat
   @$pb.TagNumber(4)
   $fixnum.Int64 get userCount => $_getI64(3);
   @$pb.TagNumber(4)
-  set userCount($fixnum.Int64 v) { $_setInt64(3, v); }
+  set userCount($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUserCount() => $_has(3);
   @$pb.TagNumber(4)
@@ -523,7 +674,8 @@ class CrashlyticsStabilityDigestPayload_TrendingIssueDetails extends $pb.Generat
 class CrashlyticsStabilityDigestPayload extends $pb.GeneratedMessage {
   factory CrashlyticsStabilityDigestPayload({
     $7.Date? digestDate,
-    $core.Iterable<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>? trendingIssues,
+    $core.Iterable<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>?
+        trendingIssues,
   }) {
     final $result = create();
     if (digestDate != null) {
@@ -535,34 +687,52 @@ class CrashlyticsStabilityDigestPayload extends $pb.GeneratedMessage {
     return $result;
   }
   CrashlyticsStabilityDigestPayload._() : super();
-  factory CrashlyticsStabilityDigestPayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CrashlyticsStabilityDigestPayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CrashlyticsStabilityDigestPayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CrashlyticsStabilityDigestPayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CrashlyticsStabilityDigestPayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
-    ..aOM<$7.Date>(5, _omitFieldNames ? '' : 'digestDate', subBuilder: $7.Date.create)
-    ..pc<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>(6, _omitFieldNames ? '' : 'trendingIssues', $pb.PbFieldType.PM, subBuilder: CrashlyticsStabilityDigestPayload_TrendingIssueDetails.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CrashlyticsStabilityDigestPayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
+    ..aOM<$7.Date>(5, _omitFieldNames ? '' : 'digestDate',
+        subBuilder: $7.Date.create)
+    ..pc<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>(
+        6, _omitFieldNames ? '' : 'trendingIssues', $pb.PbFieldType.PM,
+        subBuilder:
+            CrashlyticsStabilityDigestPayload_TrendingIssueDetails.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CrashlyticsStabilityDigestPayload clone() => CrashlyticsStabilityDigestPayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CrashlyticsStabilityDigestPayload copyWith(void Function(CrashlyticsStabilityDigestPayload) updates) => super.copyWith((message) => updates(message as CrashlyticsStabilityDigestPayload)) as CrashlyticsStabilityDigestPayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CrashlyticsStabilityDigestPayload clone() =>
+      CrashlyticsStabilityDigestPayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CrashlyticsStabilityDigestPayload copyWith(
+          void Function(CrashlyticsStabilityDigestPayload) updates) =>
+      super.copyWith((message) =>
+              updates(message as CrashlyticsStabilityDigestPayload))
+          as CrashlyticsStabilityDigestPayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsStabilityDigestPayload create() => CrashlyticsStabilityDigestPayload._();
+  static CrashlyticsStabilityDigestPayload create() =>
+      CrashlyticsStabilityDigestPayload._();
   CrashlyticsStabilityDigestPayload createEmptyInstance() => create();
-  static $pb.PbList<CrashlyticsStabilityDigestPayload> createRepeated() => $pb.PbList<CrashlyticsStabilityDigestPayload>();
+  static $pb.PbList<CrashlyticsStabilityDigestPayload> createRepeated() =>
+      $pb.PbList<CrashlyticsStabilityDigestPayload>();
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsStabilityDigestPayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CrashlyticsStabilityDigestPayload>(create);
+  static CrashlyticsStabilityDigestPayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CrashlyticsStabilityDigestPayload>(
+          create);
   static CrashlyticsStabilityDigestPayload? _defaultInstance;
 
   /// The date that the digest gets created, issues in the digest should
@@ -570,7 +740,10 @@ class CrashlyticsStabilityDigestPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $7.Date get digestDate => $_getN(0);
   @$pb.TagNumber(5)
-  set digestDate($7.Date v) { setField(5, v); }
+  set digestDate($7.Date v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDigestDate() => $_has(0);
   @$pb.TagNumber(5)
@@ -580,7 +753,8 @@ class CrashlyticsStabilityDigestPayload extends $pb.GeneratedMessage {
 
   /// A stability digest contains several trending Crashlytics issues
   @$pb.TagNumber(6)
-  $core.List<CrashlyticsStabilityDigestPayload_TrendingIssueDetails> get trendingIssues => $_getList(1);
+  $core.List<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>
+      get trendingIssues => $_getList(1);
 }
 
 class CrashlyticsNewAnrIssuePayload extends $pb.GeneratedMessage {
@@ -594,39 +768,56 @@ class CrashlyticsNewAnrIssuePayload extends $pb.GeneratedMessage {
     return $result;
   }
   CrashlyticsNewAnrIssuePayload._() : super();
-  factory CrashlyticsNewAnrIssuePayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CrashlyticsNewAnrIssuePayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CrashlyticsNewAnrIssuePayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CrashlyticsNewAnrIssuePayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CrashlyticsNewAnrIssuePayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
-    ..aOM<CrashlyticsIssue>(1, _omitFieldNames ? '' : 'issue', subBuilder: CrashlyticsIssue.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CrashlyticsNewAnrIssuePayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
+    ..aOM<CrashlyticsIssue>(1, _omitFieldNames ? '' : 'issue',
+        subBuilder: CrashlyticsIssue.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CrashlyticsNewAnrIssuePayload clone() => CrashlyticsNewAnrIssuePayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CrashlyticsNewAnrIssuePayload copyWith(void Function(CrashlyticsNewAnrIssuePayload) updates) => super.copyWith((message) => updates(message as CrashlyticsNewAnrIssuePayload)) as CrashlyticsNewAnrIssuePayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CrashlyticsNewAnrIssuePayload clone() =>
+      CrashlyticsNewAnrIssuePayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CrashlyticsNewAnrIssuePayload copyWith(
+          void Function(CrashlyticsNewAnrIssuePayload) updates) =>
+      super.copyWith(
+              (message) => updates(message as CrashlyticsNewAnrIssuePayload))
+          as CrashlyticsNewAnrIssuePayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsNewAnrIssuePayload create() => CrashlyticsNewAnrIssuePayload._();
+  static CrashlyticsNewAnrIssuePayload create() =>
+      CrashlyticsNewAnrIssuePayload._();
   CrashlyticsNewAnrIssuePayload createEmptyInstance() => create();
-  static $pb.PbList<CrashlyticsNewAnrIssuePayload> createRepeated() => $pb.PbList<CrashlyticsNewAnrIssuePayload>();
+  static $pb.PbList<CrashlyticsNewAnrIssuePayload> createRepeated() =>
+      $pb.PbList<CrashlyticsNewAnrIssuePayload>();
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsNewAnrIssuePayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CrashlyticsNewAnrIssuePayload>(create);
+  static CrashlyticsNewAnrIssuePayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CrashlyticsNewAnrIssuePayload>(create);
   static CrashlyticsNewAnrIssuePayload? _defaultInstance;
 
   @$pb.TagNumber(1)
   CrashlyticsIssue get issue => $_getN(0);
   @$pb.TagNumber(1)
-  set issue(CrashlyticsIssue v) { setField(1, v); }
+  set issue(CrashlyticsIssue v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIssue() => $_has(0);
   @$pb.TagNumber(1)
@@ -650,40 +841,57 @@ class CrashlyticsMissingSymbolsPayload extends $pb.GeneratedMessage {
     return $result;
   }
   CrashlyticsMissingSymbolsPayload._() : super();
-  factory CrashlyticsMissingSymbolsPayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CrashlyticsMissingSymbolsPayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CrashlyticsMissingSymbolsPayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CrashlyticsMissingSymbolsPayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CrashlyticsMissingSymbolsPayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CrashlyticsMissingSymbolsPayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'appVersion')
     ..aOS(2, _omitFieldNames ? '' : 'uuid')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CrashlyticsMissingSymbolsPayload clone() => CrashlyticsMissingSymbolsPayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CrashlyticsMissingSymbolsPayload copyWith(void Function(CrashlyticsMissingSymbolsPayload) updates) => super.copyWith((message) => updates(message as CrashlyticsMissingSymbolsPayload)) as CrashlyticsMissingSymbolsPayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CrashlyticsMissingSymbolsPayload clone() =>
+      CrashlyticsMissingSymbolsPayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CrashlyticsMissingSymbolsPayload copyWith(
+          void Function(CrashlyticsMissingSymbolsPayload) updates) =>
+      super.copyWith(
+              (message) => updates(message as CrashlyticsMissingSymbolsPayload))
+          as CrashlyticsMissingSymbolsPayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsMissingSymbolsPayload create() => CrashlyticsMissingSymbolsPayload._();
+  static CrashlyticsMissingSymbolsPayload create() =>
+      CrashlyticsMissingSymbolsPayload._();
   CrashlyticsMissingSymbolsPayload createEmptyInstance() => create();
-  static $pb.PbList<CrashlyticsMissingSymbolsPayload> createRepeated() => $pb.PbList<CrashlyticsMissingSymbolsPayload>();
+  static $pb.PbList<CrashlyticsMissingSymbolsPayload> createRepeated() =>
+      $pb.PbList<CrashlyticsMissingSymbolsPayload>();
   @$core.pragma('dart2js:noInline')
-  static CrashlyticsMissingSymbolsPayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CrashlyticsMissingSymbolsPayload>(create);
+  static CrashlyticsMissingSymbolsPayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CrashlyticsMissingSymbolsPayload>(
+          create);
   static CrashlyticsMissingSymbolsPayload? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get appVersion => $_getSZ(0);
   @$pb.TagNumber(1)
-  set appVersion($core.String v) { $_setString(0, v); }
+  set appVersion($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAppVersion() => $_has(0);
   @$pb.TagNumber(1)
@@ -692,7 +900,10 @@ class CrashlyticsMissingSymbolsPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get uuid => $_getSZ(1);
   @$pb.TagNumber(2)
-  set uuid($core.String v) { $_setString(1, v); }
+  set uuid($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasUuid() => $_has(1);
   @$pb.TagNumber(2)
@@ -750,43 +961,59 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
     return $result;
   }
   FireperfThresholdAlertPayload._() : super();
-  factory FireperfThresholdAlertPayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory FireperfThresholdAlertPayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory FireperfThresholdAlertPayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FireperfThresholdAlertPayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FireperfThresholdAlertPayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FireperfThresholdAlertPayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'eventName')
     ..aOS(2, _omitFieldNames ? '' : 'eventType')
     ..aOS(3, _omitFieldNames ? '' : 'metricType')
     ..aInt64(4, _omitFieldNames ? '' : 'numSamples')
-    ..a<$core.double>(5, _omitFieldNames ? '' : 'thresholdValue', $pb.PbFieldType.OF)
+    ..a<$core.double>(
+        5, _omitFieldNames ? '' : 'thresholdValue', $pb.PbFieldType.OF)
     ..aOS(6, _omitFieldNames ? '' : 'thresholdUnit')
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'conditionPercentile', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        7, _omitFieldNames ? '' : 'conditionPercentile', $pb.PbFieldType.O3)
     ..aOS(8, _omitFieldNames ? '' : 'appVersion')
-    ..a<$core.double>(9, _omitFieldNames ? '' : 'violationValue', $pb.PbFieldType.OF)
+    ..a<$core.double>(
+        9, _omitFieldNames ? '' : 'violationValue', $pb.PbFieldType.OF)
     ..aOS(10, _omitFieldNames ? '' : 'violationUnit')
     ..aOS(11, _omitFieldNames ? '' : 'investigateUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  FireperfThresholdAlertPayload clone() => FireperfThresholdAlertPayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  FireperfThresholdAlertPayload copyWith(void Function(FireperfThresholdAlertPayload) updates) => super.copyWith((message) => updates(message as FireperfThresholdAlertPayload)) as FireperfThresholdAlertPayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  FireperfThresholdAlertPayload clone() =>
+      FireperfThresholdAlertPayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FireperfThresholdAlertPayload copyWith(
+          void Function(FireperfThresholdAlertPayload) updates) =>
+      super.copyWith(
+              (message) => updates(message as FireperfThresholdAlertPayload))
+          as FireperfThresholdAlertPayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static FireperfThresholdAlertPayload create() => FireperfThresholdAlertPayload._();
+  static FireperfThresholdAlertPayload create() =>
+      FireperfThresholdAlertPayload._();
   FireperfThresholdAlertPayload createEmptyInstance() => create();
-  static $pb.PbList<FireperfThresholdAlertPayload> createRepeated() => $pb.PbList<FireperfThresholdAlertPayload>();
+  static $pb.PbList<FireperfThresholdAlertPayload> createRepeated() =>
+      $pb.PbList<FireperfThresholdAlertPayload>();
   @$core.pragma('dart2js:noInline')
-  static FireperfThresholdAlertPayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FireperfThresholdAlertPayload>(create);
+  static FireperfThresholdAlertPayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FireperfThresholdAlertPayload>(create);
   static FireperfThresholdAlertPayload? _defaultInstance;
 
   /// Name of the trace or network request this alert is for (e.g.
@@ -794,7 +1021,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get eventName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set eventName($core.String v) { $_setString(0, v); }
+  set eventName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEventName() => $_has(0);
   @$pb.TagNumber(1)
@@ -805,7 +1035,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get eventType => $_getSZ(1);
   @$pb.TagNumber(2)
-  set eventType($core.String v) { $_setString(1, v); }
+  set eventType($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEventType() => $_has(1);
   @$pb.TagNumber(2)
@@ -816,7 +1049,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get metricType => $_getSZ(2);
   @$pb.TagNumber(3)
-  set metricType($core.String v) { $_setString(2, v); }
+  set metricType($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMetricType() => $_has(2);
   @$pb.TagNumber(3)
@@ -826,7 +1062,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get numSamples => $_getI64(3);
   @$pb.TagNumber(4)
-  set numSamples($fixnum.Int64 v) { $_setInt64(3, v); }
+  set numSamples($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasNumSamples() => $_has(3);
   @$pb.TagNumber(4)
@@ -836,7 +1075,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.double get thresholdValue => $_getN(4);
   @$pb.TagNumber(5)
-  set thresholdValue($core.double v) { $_setFloat(4, v); }
+  set thresholdValue($core.double v) {
+    $_setFloat(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasThresholdValue() => $_has(4);
   @$pb.TagNumber(5)
@@ -846,7 +1088,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get thresholdUnit => $_getSZ(5);
   @$pb.TagNumber(6)
-  set thresholdUnit($core.String v) { $_setString(5, v); }
+  set thresholdUnit($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasThresholdUnit() => $_has(5);
   @$pb.TagNumber(6)
@@ -857,7 +1102,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.int get conditionPercentile => $_getIZ(6);
   @$pb.TagNumber(7)
-  set conditionPercentile($core.int v) { $_setSignedInt32(6, v); }
+  set conditionPercentile($core.int v) {
+    $_setSignedInt32(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasConditionPercentile() => $_has(6);
   @$pb.TagNumber(7)
@@ -869,7 +1117,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get appVersion => $_getSZ(7);
   @$pb.TagNumber(8)
-  set appVersion($core.String v) { $_setString(7, v); }
+  set appVersion($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasAppVersion() => $_has(7);
   @$pb.TagNumber(8)
@@ -879,7 +1130,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.double get violationValue => $_getN(8);
   @$pb.TagNumber(9)
-  set violationValue($core.double v) { $_setFloat(8, v); }
+  set violationValue($core.double v) {
+    $_setFloat(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasViolationValue() => $_has(8);
   @$pb.TagNumber(9)
@@ -889,7 +1143,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get violationUnit => $_getSZ(9);
   @$pb.TagNumber(10)
-  set violationUnit($core.String v) { $_setString(9, v); }
+  set violationUnit($core.String v) {
+    $_setString(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasViolationUnit() => $_has(9);
   @$pb.TagNumber(10)
@@ -899,7 +1156,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get investigateUri => $_getSZ(10);
   @$pb.TagNumber(11)
-  set investigateUri($core.String v) { $_setString(10, v); }
+  set investigateUri($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasInvestigateUri() => $_has(10);
   @$pb.TagNumber(11)
@@ -929,42 +1189,59 @@ class AppDistroNewTesterIosDevicePayload extends $pb.GeneratedMessage {
     return $result;
   }
   AppDistroNewTesterIosDevicePayload._() : super();
-  factory AppDistroNewTesterIosDevicePayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AppDistroNewTesterIosDevicePayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AppDistroNewTesterIosDevicePayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AppDistroNewTesterIosDevicePayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppDistroNewTesterIosDevicePayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AppDistroNewTesterIosDevicePayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'testerName')
     ..aOS(2, _omitFieldNames ? '' : 'testerEmail')
     ..aOS(3, _omitFieldNames ? '' : 'testerDeviceModelName')
     ..aOS(4, _omitFieldNames ? '' : 'testerDeviceIdentifier')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AppDistroNewTesterIosDevicePayload clone() => AppDistroNewTesterIosDevicePayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AppDistroNewTesterIosDevicePayload copyWith(void Function(AppDistroNewTesterIosDevicePayload) updates) => super.copyWith((message) => updates(message as AppDistroNewTesterIosDevicePayload)) as AppDistroNewTesterIosDevicePayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AppDistroNewTesterIosDevicePayload clone() =>
+      AppDistroNewTesterIosDevicePayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AppDistroNewTesterIosDevicePayload copyWith(
+          void Function(AppDistroNewTesterIosDevicePayload) updates) =>
+      super.copyWith((message) =>
+              updates(message as AppDistroNewTesterIosDevicePayload))
+          as AppDistroNewTesterIosDevicePayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AppDistroNewTesterIosDevicePayload create() => AppDistroNewTesterIosDevicePayload._();
+  static AppDistroNewTesterIosDevicePayload create() =>
+      AppDistroNewTesterIosDevicePayload._();
   AppDistroNewTesterIosDevicePayload createEmptyInstance() => create();
-  static $pb.PbList<AppDistroNewTesterIosDevicePayload> createRepeated() => $pb.PbList<AppDistroNewTesterIosDevicePayload>();
+  static $pb.PbList<AppDistroNewTesterIosDevicePayload> createRepeated() =>
+      $pb.PbList<AppDistroNewTesterIosDevicePayload>();
   @$core.pragma('dart2js:noInline')
-  static AppDistroNewTesterIosDevicePayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AppDistroNewTesterIosDevicePayload>(create);
+  static AppDistroNewTesterIosDevicePayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AppDistroNewTesterIosDevicePayload>(
+          create);
   static AppDistroNewTesterIosDevicePayload? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get testerName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set testerName($core.String v) { $_setString(0, v); }
+  set testerName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTesterName() => $_has(0);
   @$pb.TagNumber(1)
@@ -973,7 +1250,10 @@ class AppDistroNewTesterIosDevicePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get testerEmail => $_getSZ(1);
   @$pb.TagNumber(2)
-  set testerEmail($core.String v) { $_setString(1, v); }
+  set testerEmail($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTesterEmail() => $_has(1);
   @$pb.TagNumber(2)
@@ -982,7 +1262,10 @@ class AppDistroNewTesterIosDevicePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get testerDeviceModelName => $_getSZ(2);
   @$pb.TagNumber(3)
-  set testerDeviceModelName($core.String v) { $_setString(2, v); }
+  set testerDeviceModelName($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTesterDeviceModelName() => $_has(2);
   @$pb.TagNumber(3)
@@ -991,7 +1274,10 @@ class AppDistroNewTesterIosDevicePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get testerDeviceIdentifier => $_getSZ(3);
   @$pb.TagNumber(4)
-  set testerDeviceIdentifier($core.String v) { $_setString(3, v); }
+  set testerDeviceIdentifier($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasTesterDeviceIdentifier() => $_has(3);
   @$pb.TagNumber(4)
@@ -1033,10 +1319,18 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
     return $result;
   }
   AppDistroInAppFeedbackPayload._() : super();
-  factory AppDistroInAppFeedbackPayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AppDistroInAppFeedbackPayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AppDistroInAppFeedbackPayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AppDistroInAppFeedbackPayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppDistroInAppFeedbackPayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AppDistroInAppFeedbackPayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'feedbackReport')
     ..aOS(2, _omitFieldNames ? '' : 'testerName')
     ..aOS(3, _omitFieldNames ? '' : 'testerEmail')
@@ -1044,28 +1338,33 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'screenshotUri')
     ..aOS(8, _omitFieldNames ? '' : 'feedbackConsoleUri')
     ..aOS(9, _omitFieldNames ? '' : 'appVersion')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AppDistroInAppFeedbackPayload clone() => AppDistroInAppFeedbackPayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AppDistroInAppFeedbackPayload copyWith(void Function(AppDistroInAppFeedbackPayload) updates) => super.copyWith((message) => updates(message as AppDistroInAppFeedbackPayload)) as AppDistroInAppFeedbackPayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AppDistroInAppFeedbackPayload clone() =>
+      AppDistroInAppFeedbackPayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AppDistroInAppFeedbackPayload copyWith(
+          void Function(AppDistroInAppFeedbackPayload) updates) =>
+      super.copyWith(
+              (message) => updates(message as AppDistroInAppFeedbackPayload))
+          as AppDistroInAppFeedbackPayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AppDistroInAppFeedbackPayload create() => AppDistroInAppFeedbackPayload._();
+  static AppDistroInAppFeedbackPayload create() =>
+      AppDistroInAppFeedbackPayload._();
   AppDistroInAppFeedbackPayload createEmptyInstance() => create();
-  static $pb.PbList<AppDistroInAppFeedbackPayload> createRepeated() => $pb.PbList<AppDistroInAppFeedbackPayload>();
+  static $pb.PbList<AppDistroInAppFeedbackPayload> createRepeated() =>
+      $pb.PbList<AppDistroInAppFeedbackPayload>();
   @$core.pragma('dart2js:noInline')
-  static AppDistroInAppFeedbackPayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AppDistroInAppFeedbackPayload>(create);
+  static AppDistroInAppFeedbackPayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AppDistroInAppFeedbackPayload>(create);
   static AppDistroInAppFeedbackPayload? _defaultInstance;
 
   /// Resource name. Format:
@@ -1073,7 +1372,10 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get feedbackReport => $_getSZ(0);
   @$pb.TagNumber(1)
-  set feedbackReport($core.String v) { $_setString(0, v); }
+  set feedbackReport($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFeedbackReport() => $_has(0);
   @$pb.TagNumber(1)
@@ -1083,7 +1385,10 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get testerName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set testerName($core.String v) { $_setString(1, v); }
+  set testerName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTesterName() => $_has(1);
   @$pb.TagNumber(2)
@@ -1093,7 +1398,10 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get testerEmail => $_getSZ(2);
   @$pb.TagNumber(3)
-  set testerEmail($core.String v) { $_setString(2, v); }
+  set testerEmail($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTesterEmail() => $_has(2);
   @$pb.TagNumber(3)
@@ -1103,7 +1411,10 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get text => $_getSZ(3);
   @$pb.TagNumber(6)
-  set text($core.String v) { $_setString(3, v); }
+  set text($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasText() => $_has(3);
   @$pb.TagNumber(6)
@@ -1113,7 +1424,10 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get screenshotUri => $_getSZ(4);
   @$pb.TagNumber(7)
-  set screenshotUri($core.String v) { $_setString(4, v); }
+  set screenshotUri($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasScreenshotUri() => $_has(4);
   @$pb.TagNumber(7)
@@ -1123,7 +1437,10 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get feedbackConsoleUri => $_getSZ(5);
   @$pb.TagNumber(8)
-  set feedbackConsoleUri($core.String v) { $_setString(5, v); }
+  set feedbackConsoleUri($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasFeedbackConsoleUri() => $_has(5);
   @$pb.TagNumber(8)
@@ -1134,7 +1451,10 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get appVersion => $_getSZ(6);
   @$pb.TagNumber(9)
-  set appVersion($core.String v) { $_setString(6, v); }
+  set appVersion($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasAppVersion() => $_has(6);
   @$pb.TagNumber(9)
@@ -1160,42 +1480,56 @@ class BillingPlanUpdatePayload extends $pb.GeneratedMessage {
     return $result;
   }
   BillingPlanUpdatePayload._() : super();
-  factory BillingPlanUpdatePayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BillingPlanUpdatePayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BillingPlanUpdatePayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BillingPlanUpdatePayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BillingPlanUpdatePayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BillingPlanUpdatePayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'billingPlan')
     ..aOS(2, _omitFieldNames ? '' : 'principalEmail')
     ..aOS(3, _omitFieldNames ? '' : 'notificationType')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BillingPlanUpdatePayload clone() => BillingPlanUpdatePayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BillingPlanUpdatePayload copyWith(void Function(BillingPlanUpdatePayload) updates) => super.copyWith((message) => updates(message as BillingPlanUpdatePayload)) as BillingPlanUpdatePayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BillingPlanUpdatePayload clone() =>
+      BillingPlanUpdatePayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BillingPlanUpdatePayload copyWith(
+          void Function(BillingPlanUpdatePayload) updates) =>
+      super.copyWith((message) => updates(message as BillingPlanUpdatePayload))
+          as BillingPlanUpdatePayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BillingPlanUpdatePayload create() => BillingPlanUpdatePayload._();
   BillingPlanUpdatePayload createEmptyInstance() => create();
-  static $pb.PbList<BillingPlanUpdatePayload> createRepeated() => $pb.PbList<BillingPlanUpdatePayload>();
+  static $pb.PbList<BillingPlanUpdatePayload> createRepeated() =>
+      $pb.PbList<BillingPlanUpdatePayload>();
   @$core.pragma('dart2js:noInline')
-  static BillingPlanUpdatePayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BillingPlanUpdatePayload>(create);
+  static BillingPlanUpdatePayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BillingPlanUpdatePayload>(create);
   static BillingPlanUpdatePayload? _defaultInstance;
 
   /// A Firebase plan
   @$pb.TagNumber(1)
   $core.String get billingPlan => $_getSZ(0);
   @$pb.TagNumber(1)
-  set billingPlan($core.String v) { $_setString(0, v); }
+  set billingPlan($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBillingPlan() => $_has(0);
   @$pb.TagNumber(1)
@@ -1205,7 +1539,10 @@ class BillingPlanUpdatePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get principalEmail => $_getSZ(1);
   @$pb.TagNumber(2)
-  set principalEmail($core.String v) { $_setString(1, v); }
+  set principalEmail($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPrincipalEmail() => $_has(1);
   @$pb.TagNumber(2)
@@ -1215,7 +1552,10 @@ class BillingPlanUpdatePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get notificationType => $_getSZ(2);
   @$pb.TagNumber(3)
-  set notificationType($core.String v) { $_setString(2, v); }
+  set notificationType($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasNotificationType() => $_has(2);
   @$pb.TagNumber(3)
@@ -1237,41 +1577,58 @@ class BillingPlanAutomatedUpdatePayload extends $pb.GeneratedMessage {
     return $result;
   }
   BillingPlanAutomatedUpdatePayload._() : super();
-  factory BillingPlanAutomatedUpdatePayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BillingPlanAutomatedUpdatePayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BillingPlanAutomatedUpdatePayload.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BillingPlanAutomatedUpdatePayload.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BillingPlanAutomatedUpdatePayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BillingPlanAutomatedUpdatePayload',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'billingPlan')
     ..aOS(2, _omitFieldNames ? '' : 'notificationType')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  BillingPlanAutomatedUpdatePayload clone() => BillingPlanAutomatedUpdatePayload()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BillingPlanAutomatedUpdatePayload copyWith(void Function(BillingPlanAutomatedUpdatePayload) updates) => super.copyWith((message) => updates(message as BillingPlanAutomatedUpdatePayload)) as BillingPlanAutomatedUpdatePayload;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  BillingPlanAutomatedUpdatePayload clone() =>
+      BillingPlanAutomatedUpdatePayload()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BillingPlanAutomatedUpdatePayload copyWith(
+          void Function(BillingPlanAutomatedUpdatePayload) updates) =>
+      super.copyWith((message) =>
+              updates(message as BillingPlanAutomatedUpdatePayload))
+          as BillingPlanAutomatedUpdatePayload;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static BillingPlanAutomatedUpdatePayload create() => BillingPlanAutomatedUpdatePayload._();
+  static BillingPlanAutomatedUpdatePayload create() =>
+      BillingPlanAutomatedUpdatePayload._();
   BillingPlanAutomatedUpdatePayload createEmptyInstance() => create();
-  static $pb.PbList<BillingPlanAutomatedUpdatePayload> createRepeated() => $pb.PbList<BillingPlanAutomatedUpdatePayload>();
+  static $pb.PbList<BillingPlanAutomatedUpdatePayload> createRepeated() =>
+      $pb.PbList<BillingPlanAutomatedUpdatePayload>();
   @$core.pragma('dart2js:noInline')
-  static BillingPlanAutomatedUpdatePayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BillingPlanAutomatedUpdatePayload>(create);
+  static BillingPlanAutomatedUpdatePayload getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BillingPlanAutomatedUpdatePayload>(
+          create);
   static BillingPlanAutomatedUpdatePayload? _defaultInstance;
 
   /// A Firebase plan
   @$pb.TagNumber(1)
   $core.String get billingPlan => $_getSZ(0);
   @$pb.TagNumber(1)
-  set billingPlan($core.String v) { $_setString(0, v); }
+  set billingPlan($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBillingPlan() => $_has(0);
   @$pb.TagNumber(1)
@@ -1281,13 +1638,16 @@ class BillingPlanAutomatedUpdatePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get notificationType => $_getSZ(1);
   @$pb.TagNumber(2)
-  set notificationType($core.String v) { $_setString(1, v); }
+  set notificationType($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNotificationType() => $_has(1);
   @$pb.TagNumber(2)
   void clearNotificationType() => clearField(2);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

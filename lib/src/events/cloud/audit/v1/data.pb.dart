@@ -79,44 +79,66 @@ class LogEntryData extends $pb.GeneratedMessage {
     return $result;
   }
   LogEntryData._() : super();
-  factory LogEntryData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LogEntryData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LogEntryData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LogEntryData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogEntryData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
-    ..aOM<AuditLog>(2, _omitFieldNames ? '' : 'protoPayload', subBuilder: AuditLog.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LogEntryData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
+    ..aOM<AuditLog>(2, _omitFieldNames ? '' : 'protoPayload',
+        subBuilder: AuditLog.create)
     ..aOS(4, _omitFieldNames ? '' : 'insertId')
-    ..aOM<$42.MonitoredResource>(8, _omitFieldNames ? '' : 'resource', subBuilder: $42.MonitoredResource.create)
-    ..aOM<$2.Timestamp>(9, _omitFieldNames ? '' : 'timestamp', subBuilder: $2.Timestamp.create)
-    ..e<LogSeverity>(10, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: LogSeverity.DEFAULT, valueOf: LogSeverity.valueOf, enumValues: LogSeverity.values)
-    ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'LogEntryData.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.audit.v1'))
+    ..aOM<$42.MonitoredResource>(8, _omitFieldNames ? '' : 'resource',
+        subBuilder: $42.MonitoredResource.create)
+    ..aOM<$2.Timestamp>(9, _omitFieldNames ? '' : 'timestamp',
+        subBuilder: $2.Timestamp.create)
+    ..e<LogSeverity>(10, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE,
+        defaultOrMaker: LogSeverity.DEFAULT,
+        valueOf: LogSeverity.valueOf,
+        enumValues: LogSeverity.values)
+    ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'LogEntryData.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.audit.v1'))
     ..aOS(12, _omitFieldNames ? '' : 'logName')
-    ..aOM<LogEntryOperation>(15, _omitFieldNames ? '' : 'operation', subBuilder: LogEntryOperation.create)
+    ..aOM<LogEntryOperation>(15, _omitFieldNames ? '' : 'operation',
+        subBuilder: LogEntryOperation.create)
     ..aOS(22, _omitFieldNames ? '' : 'trace')
-    ..aOM<$2.Timestamp>(24, _omitFieldNames ? '' : 'receiveTimestamp', subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(24, _omitFieldNames ? '' : 'receiveTimestamp',
+        subBuilder: $2.Timestamp.create)
     ..aOS(27, _omitFieldNames ? '' : 'spanId')
-    ..aOM<LogSplit>(35, _omitFieldNames ? '' : 'split', subBuilder: LogSplit.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<LogSplit>(35, _omitFieldNames ? '' : 'split',
+        subBuilder: LogSplit.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LogEntryData clone() => LogEntryData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LogEntryData copyWith(void Function(LogEntryData) updates) => super.copyWith((message) => updates(message as LogEntryData)) as LogEntryData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LogEntryData copyWith(void Function(LogEntryData) updates) =>
+      super.copyWith((message) => updates(message as LogEntryData))
+          as LogEntryData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LogEntryData create() => LogEntryData._();
   LogEntryData createEmptyInstance() => create();
-  static $pb.PbList<LogEntryData> createRepeated() => $pb.PbList<LogEntryData>();
+  static $pb.PbList<LogEntryData> createRepeated() =>
+      $pb.PbList<LogEntryData>();
   @$core.pragma('dart2js:noInline')
-  static LogEntryData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogEntryData>(create);
+  static LogEntryData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LogEntryData>(create);
   static LogEntryData? _defaultInstance;
 
   /// The log entry payload, which is always an AuditLog for Cloud Audit Log
@@ -124,7 +146,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AuditLog get protoPayload => $_getN(0);
   @$pb.TagNumber(2)
-  set protoPayload(AuditLog v) { setField(2, v); }
+  set protoPayload(AuditLog v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProtoPayload() => $_has(0);
   @$pb.TagNumber(2)
@@ -136,7 +161,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get insertId => $_getSZ(1);
   @$pb.TagNumber(4)
-  set insertId($core.String v) { $_setString(1, v); }
+  set insertId($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasInsertId() => $_has(1);
   @$pb.TagNumber(4)
@@ -150,7 +178,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $42.MonitoredResource get resource => $_getN(2);
   @$pb.TagNumber(8)
-  set resource($42.MonitoredResource v) { setField(8, v); }
+  set resource($42.MonitoredResource v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasResource() => $_has(2);
   @$pb.TagNumber(8)
@@ -162,7 +193,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $2.Timestamp get timestamp => $_getN(3);
   @$pb.TagNumber(9)
-  set timestamp($2.Timestamp v) { setField(9, v); }
+  set timestamp($2.Timestamp v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasTimestamp() => $_has(3);
   @$pb.TagNumber(9)
@@ -174,7 +208,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   LogSeverity get severity => $_getN(4);
   @$pb.TagNumber(10)
-  set severity(LogSeverity v) { setField(10, v); }
+  set severity(LogSeverity v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasSeverity() => $_has(4);
   @$pb.TagNumber(10)
@@ -189,7 +226,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get logName => $_getSZ(6);
   @$pb.TagNumber(12)
-  set logName($core.String v) { $_setString(6, v); }
+  set logName($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasLogName() => $_has(6);
   @$pb.TagNumber(12)
@@ -200,7 +240,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   LogEntryOperation get operation => $_getN(7);
   @$pb.TagNumber(15)
-  set operation(LogEntryOperation v) { setField(15, v); }
+  set operation(LogEntryOperation v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasOperation() => $_has(7);
   @$pb.TagNumber(15)
@@ -215,7 +258,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.String get trace => $_getSZ(8);
   @$pb.TagNumber(22)
-  set trace($core.String v) { $_setString(8, v); }
+  set trace($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasTrace() => $_has(8);
   @$pb.TagNumber(22)
@@ -225,7 +271,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $2.Timestamp get receiveTimestamp => $_getN(9);
   @$pb.TagNumber(24)
-  set receiveTimestamp($2.Timestamp v) { setField(24, v); }
+  set receiveTimestamp($2.Timestamp v) {
+    setField(24, v);
+  }
+
   @$pb.TagNumber(24)
   $core.bool hasReceiveTimestamp() => $_has(9);
   @$pb.TagNumber(24)
@@ -241,7 +290,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   $core.String get spanId => $_getSZ(10);
   @$pb.TagNumber(27)
-  set spanId($core.String v) { $_setString(10, v); }
+  set spanId($core.String v) {
+    $_setString(10, v);
+  }
+
   @$pb.TagNumber(27)
   $core.bool hasSpanId() => $_has(10);
   @$pb.TagNumber(27)
@@ -252,7 +304,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(35)
   LogSplit get split => $_getN(11);
   @$pb.TagNumber(35)
-  set split(LogSplit v) { setField(35, v); }
+  set split(LogSplit v) {
+    setField(35, v);
+  }
+
   @$pb.TagNumber(35)
   $core.bool hasSplit() => $_has(11);
   @$pb.TagNumber(35)
@@ -286,36 +341,45 @@ class LogEntryOperation extends $pb.GeneratedMessage {
     return $result;
   }
   LogEntryOperation._() : super();
-  factory LogEntryOperation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LogEntryOperation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LogEntryOperation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LogEntryOperation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogEntryOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LogEntryOperation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'producer')
     ..aOB(3, _omitFieldNames ? '' : 'first')
     ..aOB(4, _omitFieldNames ? '' : 'last')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LogEntryOperation clone() => LogEntryOperation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LogEntryOperation copyWith(void Function(LogEntryOperation) updates) => super.copyWith((message) => updates(message as LogEntryOperation)) as LogEntryOperation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LogEntryOperation copyWith(void Function(LogEntryOperation) updates) =>
+      super.copyWith((message) => updates(message as LogEntryOperation))
+          as LogEntryOperation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static LogEntryOperation create() => LogEntryOperation._();
   LogEntryOperation createEmptyInstance() => create();
-  static $pb.PbList<LogEntryOperation> createRepeated() => $pb.PbList<LogEntryOperation>();
+  static $pb.PbList<LogEntryOperation> createRepeated() =>
+      $pb.PbList<LogEntryOperation>();
   @$core.pragma('dart2js:noInline')
-  static LogEntryOperation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogEntryOperation>(create);
+  static LogEntryOperation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<LogEntryOperation>(create);
   static LogEntryOperation? _defaultInstance;
 
   /// An arbitrary operation identifier. Log entries with the same
@@ -323,7 +387,10 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -335,7 +402,10 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get producer => $_getSZ(1);
   @$pb.TagNumber(2)
-  set producer($core.String v) { $_setString(1, v); }
+  set producer($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProducer() => $_has(1);
   @$pb.TagNumber(2)
@@ -345,7 +415,10 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get first => $_getBF(2);
   @$pb.TagNumber(3)
-  set first($core.bool v) { $_setBool(2, v); }
+  set first($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasFirst() => $_has(2);
   @$pb.TagNumber(3)
@@ -355,7 +428,10 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get last => $_getBF(3);
   @$pb.TagNumber(4)
-  set last($core.bool v) { $_setBool(3, v); }
+  set last($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLast() => $_has(3);
   @$pb.TagNumber(4)
@@ -429,37 +505,54 @@ class AuditLog extends $pb.GeneratedMessage {
     return $result;
   }
   AuditLog._() : super();
-  factory AuditLog.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AuditLog.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AuditLog.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AuditLog.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuditLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
-    ..aOM<$19.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $19.Status.create)
-    ..aOM<AuthenticationInfo>(3, _omitFieldNames ? '' : 'authenticationInfo', subBuilder: AuthenticationInfo.create)
-    ..aOM<RequestMetadata>(4, _omitFieldNames ? '' : 'requestMetadata', subBuilder: RequestMetadata.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AuditLog',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
+    ..aOM<$19.Status>(2, _omitFieldNames ? '' : 'status',
+        subBuilder: $19.Status.create)
+    ..aOM<AuthenticationInfo>(3, _omitFieldNames ? '' : 'authenticationInfo',
+        subBuilder: AuthenticationInfo.create)
+    ..aOM<RequestMetadata>(4, _omitFieldNames ? '' : 'requestMetadata',
+        subBuilder: RequestMetadata.create)
     ..aOS(7, _omitFieldNames ? '' : 'serviceName')
     ..aOS(8, _omitFieldNames ? '' : 'methodName')
-    ..pc<AuthorizationInfo>(9, _omitFieldNames ? '' : 'authorizationInfo', $pb.PbFieldType.PM, subBuilder: AuthorizationInfo.create)
+    ..pc<AuthorizationInfo>(
+        9, _omitFieldNames ? '' : 'authorizationInfo', $pb.PbFieldType.PM,
+        subBuilder: AuthorizationInfo.create)
     ..aOS(11, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(12, _omitFieldNames ? '' : 'numResponseItems')
-    ..aOM<$0.Struct>(15, _omitFieldNames ? '' : 'serviceData', subBuilder: $0.Struct.create)
-    ..aOM<$0.Struct>(16, _omitFieldNames ? '' : 'request', subBuilder: $0.Struct.create)
-    ..aOM<$0.Struct>(17, _omitFieldNames ? '' : 'response', subBuilder: $0.Struct.create)
-    ..aOM<$0.Struct>(18, _omitFieldNames ? '' : 'metadata', subBuilder: $0.Struct.create)
-    ..aOM<$0.Struct>(19, _omitFieldNames ? '' : 'resourceOriginalState', subBuilder: $0.Struct.create)
-    ..aOM<ResourceLocation>(20, _omitFieldNames ? '' : 'resourceLocation', subBuilder: ResourceLocation.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$0.Struct>(15, _omitFieldNames ? '' : 'serviceData',
+        subBuilder: $0.Struct.create)
+    ..aOM<$0.Struct>(16, _omitFieldNames ? '' : 'request',
+        subBuilder: $0.Struct.create)
+    ..aOM<$0.Struct>(17, _omitFieldNames ? '' : 'response',
+        subBuilder: $0.Struct.create)
+    ..aOM<$0.Struct>(18, _omitFieldNames ? '' : 'metadata',
+        subBuilder: $0.Struct.create)
+    ..aOM<$0.Struct>(19, _omitFieldNames ? '' : 'resourceOriginalState',
+        subBuilder: $0.Struct.create)
+    ..aOM<ResourceLocation>(20, _omitFieldNames ? '' : 'resourceLocation',
+        subBuilder: ResourceLocation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AuditLog clone() => AuditLog()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AuditLog copyWith(void Function(AuditLog) updates) => super.copyWith((message) => updates(message as AuditLog)) as AuditLog;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AuditLog copyWith(void Function(AuditLog) updates) =>
+      super.copyWith((message) => updates(message as AuditLog)) as AuditLog;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -468,14 +561,18 @@ class AuditLog extends $pb.GeneratedMessage {
   AuditLog createEmptyInstance() => create();
   static $pb.PbList<AuditLog> createRepeated() => $pb.PbList<AuditLog>();
   @$core.pragma('dart2js:noInline')
-  static AuditLog getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuditLog>(create);
+  static AuditLog getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuditLog>(create);
   static AuditLog? _defaultInstance;
 
   /// The status of the overall operation.
   @$pb.TagNumber(2)
   $19.Status get status => $_getN(0);
   @$pb.TagNumber(2)
-  set status($19.Status v) { setField(2, v); }
+  set status($19.Status v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(2)
@@ -487,7 +584,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   AuthenticationInfo get authenticationInfo => $_getN(1);
   @$pb.TagNumber(3)
-  set authenticationInfo(AuthenticationInfo v) { setField(3, v); }
+  set authenticationInfo(AuthenticationInfo v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAuthenticationInfo() => $_has(1);
   @$pb.TagNumber(3)
@@ -499,7 +599,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   RequestMetadata get requestMetadata => $_getN(2);
   @$pb.TagNumber(4)
-  set requestMetadata(RequestMetadata v) { setField(4, v); }
+  set requestMetadata(RequestMetadata v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasRequestMetadata() => $_has(2);
   @$pb.TagNumber(4)
@@ -512,7 +615,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get serviceName => $_getSZ(3);
   @$pb.TagNumber(7)
-  set serviceName($core.String v) { $_setString(3, v); }
+  set serviceName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasServiceName() => $_has(3);
   @$pb.TagNumber(7)
@@ -527,7 +633,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get methodName => $_getSZ(4);
   @$pb.TagNumber(8)
-  set methodName($core.String v) { $_setString(4, v); }
+  set methodName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasMethodName() => $_has(4);
   @$pb.TagNumber(8)
@@ -548,7 +657,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.String get resourceName => $_getSZ(6);
   @$pb.TagNumber(11)
-  set resourceName($core.String v) { $_setString(6, v); }
+  set resourceName($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasResourceName() => $_has(6);
   @$pb.TagNumber(11)
@@ -559,7 +671,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $fixnum.Int64 get numResponseItems => $_getI64(7);
   @$pb.TagNumber(12)
-  set numResponseItems($fixnum.Int64 v) { $_setInt64(7, v); }
+  set numResponseItems($fixnum.Int64 v) {
+    $_setInt64(7, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasNumResponseItems() => $_has(7);
   @$pb.TagNumber(12)
@@ -573,7 +688,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $0.Struct get serviceData => $_getN(8);
   @$pb.TagNumber(15)
-  set serviceData($0.Struct v) { setField(15, v); }
+  set serviceData($0.Struct v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasServiceData() => $_has(8);
   @$pb.TagNumber(15)
@@ -590,7 +708,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $0.Struct get request => $_getN(9);
   @$pb.TagNumber(16)
-  set request($0.Struct v) { setField(16, v); }
+  set request($0.Struct v) {
+    setField(16, v);
+  }
+
   @$pb.TagNumber(16)
   $core.bool hasRequest() => $_has(9);
   @$pb.TagNumber(16)
@@ -607,7 +728,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $0.Struct get response => $_getN(10);
   @$pb.TagNumber(17)
-  set response($0.Struct v) { setField(17, v); }
+  set response($0.Struct v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasResponse() => $_has(10);
   @$pb.TagNumber(17)
@@ -620,7 +744,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $0.Struct get metadata => $_getN(11);
   @$pb.TagNumber(18)
-  set metadata($0.Struct v) { setField(18, v); }
+  set metadata($0.Struct v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasMetadata() => $_has(11);
   @$pb.TagNumber(18)
@@ -638,7 +765,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $0.Struct get resourceOriginalState => $_getN(12);
   @$pb.TagNumber(19)
-  set resourceOriginalState($0.Struct v) { setField(19, v); }
+  set resourceOriginalState($0.Struct v) {
+    setField(19, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasResourceOriginalState() => $_has(12);
   @$pb.TagNumber(19)
@@ -650,7 +780,10 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   ResourceLocation get resourceLocation => $_getN(13);
   @$pb.TagNumber(20)
-  set resourceLocation(ResourceLocation v) { setField(20, v); }
+  set resourceLocation(ResourceLocation v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasResourceLocation() => $_has(13);
   @$pb.TagNumber(20)
@@ -691,38 +824,52 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
     return $result;
   }
   AuthenticationInfo._() : super();
-  factory AuthenticationInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AuthenticationInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AuthenticationInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AuthenticationInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthenticationInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AuthenticationInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'principalEmail')
     ..aOS(2, _omitFieldNames ? '' : 'authoritySelector')
-    ..aOM<$0.Struct>(4, _omitFieldNames ? '' : 'thirdPartyPrincipal', subBuilder: $0.Struct.create)
+    ..aOM<$0.Struct>(4, _omitFieldNames ? '' : 'thirdPartyPrincipal',
+        subBuilder: $0.Struct.create)
     ..aOS(5, _omitFieldNames ? '' : 'serviceAccountKeyName')
-    ..pc<ServiceAccountDelegationInfo>(6, _omitFieldNames ? '' : 'serviceAccountDelegationInfo', $pb.PbFieldType.PM, subBuilder: ServiceAccountDelegationInfo.create)
+    ..pc<ServiceAccountDelegationInfo>(
+        6,
+        _omitFieldNames ? '' : 'serviceAccountDelegationInfo',
+        $pb.PbFieldType.PM,
+        subBuilder: ServiceAccountDelegationInfo.create)
     ..aOS(8, _omitFieldNames ? '' : 'principalSubject')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AuthenticationInfo clone() => AuthenticationInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AuthenticationInfo copyWith(void Function(AuthenticationInfo) updates) => super.copyWith((message) => updates(message as AuthenticationInfo)) as AuthenticationInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AuthenticationInfo copyWith(void Function(AuthenticationInfo) updates) =>
+      super.copyWith((message) => updates(message as AuthenticationInfo))
+          as AuthenticationInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuthenticationInfo create() => AuthenticationInfo._();
   AuthenticationInfo createEmptyInstance() => create();
-  static $pb.PbList<AuthenticationInfo> createRepeated() => $pb.PbList<AuthenticationInfo>();
+  static $pb.PbList<AuthenticationInfo> createRepeated() =>
+      $pb.PbList<AuthenticationInfo>();
   @$core.pragma('dart2js:noInline')
-  static AuthenticationInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuthenticationInfo>(create);
+  static AuthenticationInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AuthenticationInfo>(create);
   static AuthenticationInfo? _defaultInstance;
 
   /// The email address of the authenticated user (or service account on behalf
@@ -734,7 +881,10 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get principalEmail => $_getSZ(0);
   @$pb.TagNumber(1)
-  set principalEmail($core.String v) { $_setString(0, v); }
+  set principalEmail($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPrincipalEmail() => $_has(0);
   @$pb.TagNumber(1)
@@ -745,7 +895,10 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get authoritySelector => $_getSZ(1);
   @$pb.TagNumber(2)
-  set authoritySelector($core.String v) { $_setString(1, v); }
+  set authoritySelector($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAuthoritySelector() => $_has(1);
   @$pb.TagNumber(2)
@@ -758,7 +911,10 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $0.Struct get thirdPartyPrincipal => $_getN(2);
   @$pb.TagNumber(4)
-  set thirdPartyPrincipal($0.Struct v) { setField(4, v); }
+  set thirdPartyPrincipal($0.Struct v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasThirdPartyPrincipal() => $_has(2);
   @$pb.TagNumber(4)
@@ -774,7 +930,10 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get serviceAccountKeyName => $_getSZ(3);
   @$pb.TagNumber(5)
-  set serviceAccountKeyName($core.String v) { $_setString(3, v); }
+  set serviceAccountKeyName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasServiceAccountKeyName() => $_has(3);
   @$pb.TagNumber(5)
@@ -786,14 +945,18 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   /// authorities present, they are guaranteed to be sorted based on the original
   /// ordering of the identity delegation events.
   @$pb.TagNumber(6)
-  $core.List<ServiceAccountDelegationInfo> get serviceAccountDelegationInfo => $_getList(4);
+  $core.List<ServiceAccountDelegationInfo> get serviceAccountDelegationInfo =>
+      $_getList(4);
 
   /// String representation of identity of requesting party.
   /// Populated for both first and third party identities.
   @$pb.TagNumber(8)
   $core.String get principalSubject => $_getSZ(5);
   @$pb.TagNumber(8)
-  set principalSubject($core.String v) { $_setString(5, v); }
+  set principalSubject($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasPrincipalSubject() => $_has(5);
   @$pb.TagNumber(8)
@@ -824,36 +987,47 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
     return $result;
   }
   AuthorizationInfo._() : super();
-  factory AuthorizationInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AuthorizationInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AuthorizationInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AuthorizationInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthorizationInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AuthorizationInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resource')
     ..aOS(2, _omitFieldNames ? '' : 'permission')
     ..aOB(3, _omitFieldNames ? '' : 'granted')
-    ..aOM<$43.AttributeContext_Resource>(5, _omitFieldNames ? '' : 'resourceAttributes', subBuilder: $43.AttributeContext_Resource.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$43.AttributeContext_Resource>(
+        5, _omitFieldNames ? '' : 'resourceAttributes',
+        subBuilder: $43.AttributeContext_Resource.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AuthorizationInfo clone() => AuthorizationInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AuthorizationInfo copyWith(void Function(AuthorizationInfo) updates) => super.copyWith((message) => updates(message as AuthorizationInfo)) as AuthorizationInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AuthorizationInfo copyWith(void Function(AuthorizationInfo) updates) =>
+      super.copyWith((message) => updates(message as AuthorizationInfo))
+          as AuthorizationInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AuthorizationInfo create() => AuthorizationInfo._();
   AuthorizationInfo createEmptyInstance() => create();
-  static $pb.PbList<AuthorizationInfo> createRepeated() => $pb.PbList<AuthorizationInfo>();
+  static $pb.PbList<AuthorizationInfo> createRepeated() =>
+      $pb.PbList<AuthorizationInfo>();
   @$core.pragma('dart2js:noInline')
-  static AuthorizationInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AuthorizationInfo>(create);
+  static AuthorizationInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AuthorizationInfo>(create);
   static AuthorizationInfo? _defaultInstance;
 
   ///  The resource being accessed, as a REST-style string. For example:
@@ -862,7 +1036,10 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get resource => $_getSZ(0);
   @$pb.TagNumber(1)
-  set resource($core.String v) { $_setString(0, v); }
+  set resource($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasResource() => $_has(0);
   @$pb.TagNumber(1)
@@ -872,7 +1049,10 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get permission => $_getSZ(1);
   @$pb.TagNumber(2)
-  set permission($core.String v) { $_setString(1, v); }
+  set permission($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPermission() => $_has(1);
   @$pb.TagNumber(2)
@@ -883,7 +1063,10 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get granted => $_getBF(2);
   @$pb.TagNumber(3)
-  set granted($core.bool v) { $_setBool(2, v); }
+  set granted($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasGranted() => $_has(2);
   @$pb.TagNumber(3)
@@ -898,7 +1081,10 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $43.AttributeContext_Resource get resourceAttributes => $_getN(3);
   @$pb.TagNumber(5)
-  set resourceAttributes($43.AttributeContext_Resource v) { setField(5, v); }
+  set resourceAttributes($43.AttributeContext_Resource v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasResourceAttributes() => $_has(3);
   @$pb.TagNumber(5)
@@ -935,37 +1121,50 @@ class RequestMetadata extends $pb.GeneratedMessage {
     return $result;
   }
   RequestMetadata._() : super();
-  factory RequestMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RequestMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RequestMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RequestMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RequestMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RequestMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'callerIp')
     ..aOS(2, _omitFieldNames ? '' : 'callerSuppliedUserAgent')
     ..aOS(3, _omitFieldNames ? '' : 'callerNetwork')
-    ..aOM<$43.AttributeContext_Request>(7, _omitFieldNames ? '' : 'requestAttributes', subBuilder: $43.AttributeContext_Request.create)
-    ..aOM<$43.AttributeContext_Peer>(8, _omitFieldNames ? '' : 'destinationAttributes', subBuilder: $43.AttributeContext_Peer.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$43.AttributeContext_Request>(
+        7, _omitFieldNames ? '' : 'requestAttributes',
+        subBuilder: $43.AttributeContext_Request.create)
+    ..aOM<$43.AttributeContext_Peer>(
+        8, _omitFieldNames ? '' : 'destinationAttributes',
+        subBuilder: $43.AttributeContext_Peer.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RequestMetadata clone() => RequestMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RequestMetadata copyWith(void Function(RequestMetadata) updates) => super.copyWith((message) => updates(message as RequestMetadata)) as RequestMetadata;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RequestMetadata copyWith(void Function(RequestMetadata) updates) =>
+      super.copyWith((message) => updates(message as RequestMetadata))
+          as RequestMetadata;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static RequestMetadata create() => RequestMetadata._();
   RequestMetadata createEmptyInstance() => create();
-  static $pb.PbList<RequestMetadata> createRepeated() => $pb.PbList<RequestMetadata>();
+  static $pb.PbList<RequestMetadata> createRepeated() =>
+      $pb.PbList<RequestMetadata>();
   @$core.pragma('dart2js:noInline')
-  static RequestMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RequestMetadata>(create);
+  static RequestMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RequestMetadata>(create);
   static RequestMetadata? _defaultInstance;
 
   /// The IP address of the caller.
@@ -980,7 +1179,10 @@ class RequestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get callerIp => $_getSZ(0);
   @$pb.TagNumber(1)
-  set callerIp($core.String v) { $_setString(0, v); }
+  set callerIp($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCallerIp() => $_has(0);
   @$pb.TagNumber(1)
@@ -1000,7 +1202,10 @@ class RequestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get callerSuppliedUserAgent => $_getSZ(1);
   @$pb.TagNumber(2)
-  set callerSuppliedUserAgent($core.String v) { $_setString(1, v); }
+  set callerSuppliedUserAgent($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCallerSuppliedUserAgent() => $_has(1);
   @$pb.TagNumber(2)
@@ -1016,7 +1221,10 @@ class RequestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get callerNetwork => $_getSZ(2);
   @$pb.TagNumber(3)
-  set callerNetwork($core.String v) { $_setString(2, v); }
+  set callerNetwork($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCallerNetwork() => $_has(2);
   @$pb.TagNumber(3)
@@ -1033,7 +1241,10 @@ class RequestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $43.AttributeContext_Request get requestAttributes => $_getN(3);
   @$pb.TagNumber(7)
-  set requestAttributes($43.AttributeContext_Request v) { setField(7, v); }
+  set requestAttributes($43.AttributeContext_Request v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRequestAttributes() => $_has(3);
   @$pb.TagNumber(7)
@@ -1049,7 +1260,10 @@ class RequestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $43.AttributeContext_Peer get destinationAttributes => $_getN(4);
   @$pb.TagNumber(8)
-  set destinationAttributes($43.AttributeContext_Peer v) { setField(8, v); }
+  set destinationAttributes($43.AttributeContext_Peer v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDestinationAttributes() => $_has(4);
   @$pb.TagNumber(8)
@@ -1074,34 +1288,43 @@ class ResourceLocation extends $pb.GeneratedMessage {
     return $result;
   }
   ResourceLocation._() : super();
-  factory ResourceLocation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ResourceLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ResourceLocation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ResourceLocation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResourceLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ResourceLocation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'currentLocations')
     ..pPS(2, _omitFieldNames ? '' : 'originalLocations')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ResourceLocation clone() => ResourceLocation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ResourceLocation copyWith(void Function(ResourceLocation) updates) => super.copyWith((message) => updates(message as ResourceLocation)) as ResourceLocation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ResourceLocation copyWith(void Function(ResourceLocation) updates) =>
+      super.copyWith((message) => updates(message as ResourceLocation))
+          as ResourceLocation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ResourceLocation create() => ResourceLocation._();
   ResourceLocation createEmptyInstance() => create();
-  static $pb.PbList<ResourceLocation> createRepeated() => $pb.PbList<ResourceLocation>();
+  static $pb.PbList<ResourceLocation> createRepeated() =>
+      $pb.PbList<ResourceLocation>();
   @$core.pragma('dart2js:noInline')
-  static ResourceLocation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResourceLocation>(create);
+  static ResourceLocation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ResourceLocation>(create);
   static ResourceLocation? _defaultInstance;
 
   ///  The locations of a resource after the execution of the operation.
@@ -1128,7 +1351,8 @@ class ResourceLocation extends $pb.GeneratedMessage {
 }
 
 /// First party identity principal.
-class ServiceAccountDelegationInfo_FirstPartyPrincipal extends $pb.GeneratedMessage {
+class ServiceAccountDelegationInfo_FirstPartyPrincipal
+    extends $pb.GeneratedMessage {
   factory ServiceAccountDelegationInfo_FirstPartyPrincipal({
     $core.String? principalEmail,
     $0.Struct? serviceMetadata,
@@ -1143,41 +1367,67 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal extends $pb.GeneratedMess
     return $result;
   }
   ServiceAccountDelegationInfo_FirstPartyPrincipal._() : super();
-  factory ServiceAccountDelegationInfo_FirstPartyPrincipal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ServiceAccountDelegationInfo_FirstPartyPrincipal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ServiceAccountDelegationInfo_FirstPartyPrincipal.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ServiceAccountDelegationInfo_FirstPartyPrincipal.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceAccountDelegationInfo.FirstPartyPrincipal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'ServiceAccountDelegationInfo.FirstPartyPrincipal',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'principalEmail')
-    ..aOM<$0.Struct>(2, _omitFieldNames ? '' : 'serviceMetadata', subBuilder: $0.Struct.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$0.Struct>(2, _omitFieldNames ? '' : 'serviceMetadata',
+        subBuilder: $0.Struct.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ServiceAccountDelegationInfo_FirstPartyPrincipal clone() => ServiceAccountDelegationInfo_FirstPartyPrincipal()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ServiceAccountDelegationInfo_FirstPartyPrincipal copyWith(void Function(ServiceAccountDelegationInfo_FirstPartyPrincipal) updates) => super.copyWith((message) => updates(message as ServiceAccountDelegationInfo_FirstPartyPrincipal)) as ServiceAccountDelegationInfo_FirstPartyPrincipal;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ServiceAccountDelegationInfo_FirstPartyPrincipal clone() =>
+      ServiceAccountDelegationInfo_FirstPartyPrincipal()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ServiceAccountDelegationInfo_FirstPartyPrincipal copyWith(
+          void Function(ServiceAccountDelegationInfo_FirstPartyPrincipal)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as ServiceAccountDelegationInfo_FirstPartyPrincipal))
+          as ServiceAccountDelegationInfo_FirstPartyPrincipal;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ServiceAccountDelegationInfo_FirstPartyPrincipal create() => ServiceAccountDelegationInfo_FirstPartyPrincipal._();
-  ServiceAccountDelegationInfo_FirstPartyPrincipal createEmptyInstance() => create();
-  static $pb.PbList<ServiceAccountDelegationInfo_FirstPartyPrincipal> createRepeated() => $pb.PbList<ServiceAccountDelegationInfo_FirstPartyPrincipal>();
+  static ServiceAccountDelegationInfo_FirstPartyPrincipal create() =>
+      ServiceAccountDelegationInfo_FirstPartyPrincipal._();
+  ServiceAccountDelegationInfo_FirstPartyPrincipal createEmptyInstance() =>
+      create();
+  static $pb.PbList<ServiceAccountDelegationInfo_FirstPartyPrincipal>
+      createRepeated() =>
+          $pb.PbList<ServiceAccountDelegationInfo_FirstPartyPrincipal>();
   @$core.pragma('dart2js:noInline')
-  static ServiceAccountDelegationInfo_FirstPartyPrincipal getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ServiceAccountDelegationInfo_FirstPartyPrincipal>(create);
+  static ServiceAccountDelegationInfo_FirstPartyPrincipal getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ServiceAccountDelegationInfo_FirstPartyPrincipal>(create);
   static ServiceAccountDelegationInfo_FirstPartyPrincipal? _defaultInstance;
 
   /// The email address of a Google account.
   @$pb.TagNumber(1)
   $core.String get principalEmail => $_getSZ(0);
   @$pb.TagNumber(1)
-  set principalEmail($core.String v) { $_setString(0, v); }
+  set principalEmail($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPrincipalEmail() => $_has(0);
   @$pb.TagNumber(1)
@@ -1187,7 +1437,10 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal extends $pb.GeneratedMess
   @$pb.TagNumber(2)
   $0.Struct get serviceMetadata => $_getN(1);
   @$pb.TagNumber(2)
-  set serviceMetadata($0.Struct v) { setField(2, v); }
+  set serviceMetadata($0.Struct v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasServiceMetadata() => $_has(1);
   @$pb.TagNumber(2)
@@ -1197,7 +1450,8 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal extends $pb.GeneratedMess
 }
 
 /// Third party identity principal.
-class ServiceAccountDelegationInfo_ThirdPartyPrincipal extends $pb.GeneratedMessage {
+class ServiceAccountDelegationInfo_ThirdPartyPrincipal
+    extends $pb.GeneratedMessage {
   factory ServiceAccountDelegationInfo_ThirdPartyPrincipal({
     $0.Struct? thirdPartyClaims,
   }) {
@@ -1208,40 +1462,66 @@ class ServiceAccountDelegationInfo_ThirdPartyPrincipal extends $pb.GeneratedMess
     return $result;
   }
   ServiceAccountDelegationInfo_ThirdPartyPrincipal._() : super();
-  factory ServiceAccountDelegationInfo_ThirdPartyPrincipal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ServiceAccountDelegationInfo_ThirdPartyPrincipal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ServiceAccountDelegationInfo_ThirdPartyPrincipal.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ServiceAccountDelegationInfo_ThirdPartyPrincipal.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceAccountDelegationInfo.ThirdPartyPrincipal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
-    ..aOM<$0.Struct>(1, _omitFieldNames ? '' : 'thirdPartyClaims', subBuilder: $0.Struct.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'ServiceAccountDelegationInfo.ThirdPartyPrincipal',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
+    ..aOM<$0.Struct>(1, _omitFieldNames ? '' : 'thirdPartyClaims',
+        subBuilder: $0.Struct.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ServiceAccountDelegationInfo_ThirdPartyPrincipal clone() => ServiceAccountDelegationInfo_ThirdPartyPrincipal()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ServiceAccountDelegationInfo_ThirdPartyPrincipal copyWith(void Function(ServiceAccountDelegationInfo_ThirdPartyPrincipal) updates) => super.copyWith((message) => updates(message as ServiceAccountDelegationInfo_ThirdPartyPrincipal)) as ServiceAccountDelegationInfo_ThirdPartyPrincipal;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ServiceAccountDelegationInfo_ThirdPartyPrincipal clone() =>
+      ServiceAccountDelegationInfo_ThirdPartyPrincipal()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ServiceAccountDelegationInfo_ThirdPartyPrincipal copyWith(
+          void Function(ServiceAccountDelegationInfo_ThirdPartyPrincipal)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as ServiceAccountDelegationInfo_ThirdPartyPrincipal))
+          as ServiceAccountDelegationInfo_ThirdPartyPrincipal;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ServiceAccountDelegationInfo_ThirdPartyPrincipal create() => ServiceAccountDelegationInfo_ThirdPartyPrincipal._();
-  ServiceAccountDelegationInfo_ThirdPartyPrincipal createEmptyInstance() => create();
-  static $pb.PbList<ServiceAccountDelegationInfo_ThirdPartyPrincipal> createRepeated() => $pb.PbList<ServiceAccountDelegationInfo_ThirdPartyPrincipal>();
+  static ServiceAccountDelegationInfo_ThirdPartyPrincipal create() =>
+      ServiceAccountDelegationInfo_ThirdPartyPrincipal._();
+  ServiceAccountDelegationInfo_ThirdPartyPrincipal createEmptyInstance() =>
+      create();
+  static $pb.PbList<ServiceAccountDelegationInfo_ThirdPartyPrincipal>
+      createRepeated() =>
+          $pb.PbList<ServiceAccountDelegationInfo_ThirdPartyPrincipal>();
   @$core.pragma('dart2js:noInline')
-  static ServiceAccountDelegationInfo_ThirdPartyPrincipal getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ServiceAccountDelegationInfo_ThirdPartyPrincipal>(create);
+  static ServiceAccountDelegationInfo_ThirdPartyPrincipal getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ServiceAccountDelegationInfo_ThirdPartyPrincipal>(create);
   static ServiceAccountDelegationInfo_ThirdPartyPrincipal? _defaultInstance;
 
   /// Metadata about third party identity.
   @$pb.TagNumber(1)
   $0.Struct get thirdPartyClaims => $_getN(0);
   @$pb.TagNumber(1)
-  set thirdPartyClaims($0.Struct v) { setField(1, v); }
+  set thirdPartyClaims($0.Struct v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasThirdPartyClaims() => $_has(0);
   @$pb.TagNumber(1)
@@ -1251,8 +1531,8 @@ class ServiceAccountDelegationInfo_ThirdPartyPrincipal extends $pb.GeneratedMess
 }
 
 enum ServiceAccountDelegationInfo_Authority {
-  firstPartyPrincipal, 
-  thirdPartyPrincipal, 
+  firstPartyPrincipal,
+  thirdPartyPrincipal,
   notSet
 }
 
@@ -1272,68 +1552,97 @@ class ServiceAccountDelegationInfo extends $pb.GeneratedMessage {
     return $result;
   }
   ServiceAccountDelegationInfo._() : super();
-  factory ServiceAccountDelegationInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ServiceAccountDelegationInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ServiceAccountDelegationInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ServiceAccountDelegationInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ServiceAccountDelegationInfo_Authority> _ServiceAccountDelegationInfo_AuthorityByTag = {
-    1 : ServiceAccountDelegationInfo_Authority.firstPartyPrincipal,
-    2 : ServiceAccountDelegationInfo_Authority.thirdPartyPrincipal,
-    0 : ServiceAccountDelegationInfo_Authority.notSet
+  static const $core.Map<$core.int, ServiceAccountDelegationInfo_Authority>
+      _ServiceAccountDelegationInfo_AuthorityByTag = {
+    1: ServiceAccountDelegationInfo_Authority.firstPartyPrincipal,
+    2: ServiceAccountDelegationInfo_Authority.thirdPartyPrincipal,
+    0: ServiceAccountDelegationInfo_Authority.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceAccountDelegationInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ServiceAccountDelegationInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<ServiceAccountDelegationInfo_FirstPartyPrincipal>(1, _omitFieldNames ? '' : 'firstPartyPrincipal', subBuilder: ServiceAccountDelegationInfo_FirstPartyPrincipal.create)
-    ..aOM<ServiceAccountDelegationInfo_ThirdPartyPrincipal>(2, _omitFieldNames ? '' : 'thirdPartyPrincipal', subBuilder: ServiceAccountDelegationInfo_ThirdPartyPrincipal.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<ServiceAccountDelegationInfo_FirstPartyPrincipal>(
+        1, _omitFieldNames ? '' : 'firstPartyPrincipal',
+        subBuilder: ServiceAccountDelegationInfo_FirstPartyPrincipal.create)
+    ..aOM<ServiceAccountDelegationInfo_ThirdPartyPrincipal>(
+        2, _omitFieldNames ? '' : 'thirdPartyPrincipal',
+        subBuilder: ServiceAccountDelegationInfo_ThirdPartyPrincipal.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ServiceAccountDelegationInfo clone() => ServiceAccountDelegationInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ServiceAccountDelegationInfo copyWith(void Function(ServiceAccountDelegationInfo) updates) => super.copyWith((message) => updates(message as ServiceAccountDelegationInfo)) as ServiceAccountDelegationInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ServiceAccountDelegationInfo clone() =>
+      ServiceAccountDelegationInfo()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ServiceAccountDelegationInfo copyWith(
+          void Function(ServiceAccountDelegationInfo) updates) =>
+      super.copyWith(
+              (message) => updates(message as ServiceAccountDelegationInfo))
+          as ServiceAccountDelegationInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ServiceAccountDelegationInfo create() => ServiceAccountDelegationInfo._();
+  static ServiceAccountDelegationInfo create() =>
+      ServiceAccountDelegationInfo._();
   ServiceAccountDelegationInfo createEmptyInstance() => create();
-  static $pb.PbList<ServiceAccountDelegationInfo> createRepeated() => $pb.PbList<ServiceAccountDelegationInfo>();
+  static $pb.PbList<ServiceAccountDelegationInfo> createRepeated() =>
+      $pb.PbList<ServiceAccountDelegationInfo>();
   @$core.pragma('dart2js:noInline')
-  static ServiceAccountDelegationInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ServiceAccountDelegationInfo>(create);
+  static ServiceAccountDelegationInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ServiceAccountDelegationInfo>(create);
   static ServiceAccountDelegationInfo? _defaultInstance;
 
-  ServiceAccountDelegationInfo_Authority whichAuthority() => _ServiceAccountDelegationInfo_AuthorityByTag[$_whichOneof(0)]!;
+  ServiceAccountDelegationInfo_Authority whichAuthority() =>
+      _ServiceAccountDelegationInfo_AuthorityByTag[$_whichOneof(0)]!;
   void clearAuthority() => clearField($_whichOneof(0));
 
   /// First party (Google) identity as the real authority.
   @$pb.TagNumber(1)
-  ServiceAccountDelegationInfo_FirstPartyPrincipal get firstPartyPrincipal => $_getN(0);
+  ServiceAccountDelegationInfo_FirstPartyPrincipal get firstPartyPrincipal =>
+      $_getN(0);
   @$pb.TagNumber(1)
-  set firstPartyPrincipal(ServiceAccountDelegationInfo_FirstPartyPrincipal v) { setField(1, v); }
+  set firstPartyPrincipal(ServiceAccountDelegationInfo_FirstPartyPrincipal v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasFirstPartyPrincipal() => $_has(0);
   @$pb.TagNumber(1)
   void clearFirstPartyPrincipal() => clearField(1);
   @$pb.TagNumber(1)
-  ServiceAccountDelegationInfo_FirstPartyPrincipal ensureFirstPartyPrincipal() => $_ensure(0);
+  ServiceAccountDelegationInfo_FirstPartyPrincipal
+      ensureFirstPartyPrincipal() => $_ensure(0);
 
   /// Third party identity as the real authority.
   @$pb.TagNumber(2)
-  ServiceAccountDelegationInfo_ThirdPartyPrincipal get thirdPartyPrincipal => $_getN(1);
+  ServiceAccountDelegationInfo_ThirdPartyPrincipal get thirdPartyPrincipal =>
+      $_getN(1);
   @$pb.TagNumber(2)
-  set thirdPartyPrincipal(ServiceAccountDelegationInfo_ThirdPartyPrincipal v) { setField(2, v); }
+  set thirdPartyPrincipal(ServiceAccountDelegationInfo_ThirdPartyPrincipal v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasThirdPartyPrincipal() => $_has(1);
   @$pb.TagNumber(2)
   void clearThirdPartyPrincipal() => clearField(2);
   @$pb.TagNumber(2)
-  ServiceAccountDelegationInfo_ThirdPartyPrincipal ensureThirdPartyPrincipal() => $_ensure(1);
+  ServiceAccountDelegationInfo_ThirdPartyPrincipal
+      ensureThirdPartyPrincipal() => $_ensure(1);
 }
 
 /// Additional information used to correlate multiple LogEntries. Used when a
@@ -1358,26 +1667,32 @@ class LogSplit extends $pb.GeneratedMessage {
     return $result;
   }
   LogSplit._() : super();
-  factory LogSplit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory LogSplit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory LogSplit.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory LogSplit.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogSplit', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.audit.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'LogSplit',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uid')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'index', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSplits', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   LogSplit clone() => LogSplit()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  LogSplit copyWith(void Function(LogSplit) updates) => super.copyWith((message) => updates(message as LogSplit)) as LogSplit;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  LogSplit copyWith(void Function(LogSplit) updates) =>
+      super.copyWith((message) => updates(message as LogSplit)) as LogSplit;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1386,7 +1701,8 @@ class LogSplit extends $pb.GeneratedMessage {
   LogSplit createEmptyInstance() => create();
   static $pb.PbList<LogSplit> createRepeated() => $pb.PbList<LogSplit>();
   @$core.pragma('dart2js:noInline')
-  static LogSplit getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogSplit>(create);
+  static LogSplit getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogSplit>(create);
   static LogSplit? _defaultInstance;
 
   /// A globally unique identifier for all LogEntries in a sequence of split
@@ -1395,7 +1711,10 @@ class LogSplit extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uid => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uid($core.String v) { $_setString(0, v); }
+  set uid($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUid() => $_has(0);
   @$pb.TagNumber(1)
@@ -1406,7 +1725,10 @@ class LogSplit extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get index => $_getIZ(1);
   @$pb.TagNumber(2)
-  set index($core.int v) { $_setSignedInt32(1, v); }
+  set index($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -1416,13 +1738,16 @@ class LogSplit extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get totalSplits => $_getIZ(2);
   @$pb.TagNumber(3)
-  set totalSplits($core.int v) { $_setSignedInt32(2, v); }
+  set totalSplits($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTotalSplits() => $_has(2);
   @$pb.TagNumber(3)
   void clearTotalSplits() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

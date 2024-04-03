@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const EntityCreatedEvent$json = {
   '1': 'EntityCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastore.v1.EntityEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastore.v1.EntityEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +40,14 @@ final $typed_data.Uint8List entityCreatedEventDescriptor = $convert.base64Decode
 const EntityUpdatedEvent$json = {
   '1': 'EntityUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastore.v1.EntityEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastore.v1.EntityEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -49,7 +63,14 @@ final $typed_data.Uint8List entityUpdatedEventDescriptor = $convert.base64Decode
 const EntityDeletedEvent$json = {
   '1': 'EntityDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastore.v1.EntityEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastore.v1.EntityEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -65,7 +86,14 @@ final $typed_data.Uint8List entityDeletedEventDescriptor = $convert.base64Decode
 const EntityWrittenEvent$json = {
   '1': 'EntityWrittenEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastore.v1.EntityEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastore.v1.EntityEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -81,7 +109,14 @@ final $typed_data.Uint8List entityWrittenEventDescriptor = $convert.base64Decode
 const EntityCreatedEventWithAuthContext$json = {
   '1': 'EntityCreatedEventWithAuthContext',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastore.v1.EntityEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastore.v1.EntityEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -98,7 +133,14 @@ final $typed_data.Uint8List entityCreatedEventWithAuthContextDescriptor = $conve
 const EntityUpdatedEventWithAuthContext$json = {
   '1': 'EntityUpdatedEventWithAuthContext',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastore.v1.EntityEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastore.v1.EntityEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -115,7 +157,14 @@ final $typed_data.Uint8List entityUpdatedEventWithAuthContextDescriptor = $conve
 const EntityDeletedEventWithAuthContext$json = {
   '1': 'EntityDeletedEventWithAuthContext',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastore.v1.EntityEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastore.v1.EntityEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -132,7 +181,14 @@ final $typed_data.Uint8List entityDeletedEventWithAuthContextDescriptor = $conve
 const EntityWrittenEventWithAuthContext$json = {
   '1': 'EntityWrittenEventWithAuthContext',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastore.v1.EntityEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastore.v1.EntityEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -144,4 +200,3 @@ final $typed_data.Uint8List entityWrittenEventWithAuthContextDescriptor = $conve
     'LDhnb29nbGUuY2xvdWQuZGF0YXN0b3JlLmVudGl0eS52MS53cml0dGVuLndpdGhBdXRoQ29udG'
     'V4dMr42CwIZGF0YWJhc2XK+NgsCW5hbWVzcGFjZcr42CwGZW50aXR5yvjYLAhhdXRodHlwZcr4'
     '2CwGYXV0aGlk');
-

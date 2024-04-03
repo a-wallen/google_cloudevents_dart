@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const ObjectFinalizedEvent$json = {
   '1': 'ObjectFinalizedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.storage.v1.StorageObjectData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.storage.v1.StorageObjectData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List objectFinalizedEventDescriptor = $convert.base64Deco
 const ObjectArchivedEvent$json = {
   '1': 'ObjectArchivedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.storage.v1.StorageObjectData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.storage.v1.StorageObjectData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List objectArchivedEventDescriptor = $convert.base64Decod
 const ObjectDeletedEvent$json = {
   '1': 'ObjectDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.storage.v1.StorageObjectData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.storage.v1.StorageObjectData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List objectDeletedEventDescriptor = $convert.base64Decode
 const ObjectMetadataUpdatedEvent$json = {
   '1': 'ObjectMetadataUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.storage.v1.StorageObjectData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.storage.v1.StorageObjectData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -72,4 +100,3 @@ final $typed_data.Uint8List objectMetadataUpdatedEventDescriptor = $convert.base
     'ChpPYmplY3RNZXRhZGF0YVVwZGF0ZWRFdmVudBJFCgRkYXRhGAEgASgLMjEuZ29vZ2xlLmV2ZW'
     '50cy5jbG91ZC5zdG9yYWdlLnYxLlN0b3JhZ2VPYmplY3REYXRhUgRkYXRhOj6y+NgsLmdvb2ds'
     'ZS5jbG91ZC5zdG9yYWdlLm9iamVjdC52MS5tZXRhZGF0YVVwZGF0ZWTK+NgsBmJ1Y2tldA==');
-

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const FederationCreatedEvent$json = {
   '1': 'FederationCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.FederationEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.FederationEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List federationCreatedEventDescriptor = $convert.base64De
 const FederationUpdatedEvent$json = {
   '1': 'FederationUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.FederationEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.FederationEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List federationUpdatedEventDescriptor = $convert.base64De
 const FederationDeletedEvent$json = {
   '1': 'FederationDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.FederationEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.FederationEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List federationDeletedEventDescriptor = $convert.base64De
 const ServiceCreatedEvent$json = {
   '1': 'ServiceCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.ServiceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.ServiceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -77,7 +105,14 @@ final $typed_data.Uint8List serviceCreatedEventDescriptor = $convert.base64Decod
 const ServiceUpdatedEvent$json = {
   '1': 'ServiceUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.ServiceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.ServiceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -92,7 +127,14 @@ final $typed_data.Uint8List serviceUpdatedEventDescriptor = $convert.base64Decod
 const ServiceDeletedEvent$json = {
   '1': 'ServiceDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.ServiceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.ServiceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -107,7 +149,14 @@ final $typed_data.Uint8List serviceDeletedEventDescriptor = $convert.base64Decod
 const MetadataImportCreatedEvent$json = {
   '1': 'MetadataImportCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.MetadataImportEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.MetadataImportEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -123,7 +172,14 @@ final $typed_data.Uint8List metadataImportCreatedEventDescriptor = $convert.base
 const MetadataImportUpdatedEvent$json = {
   '1': 'MetadataImportUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.MetadataImportEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.MetadataImportEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -139,7 +195,14 @@ final $typed_data.Uint8List metadataImportUpdatedEventDescriptor = $convert.base
 const BackupCreatedEvent$json = {
   '1': 'BackupCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.BackupEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.BackupEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -154,7 +217,14 @@ final $typed_data.Uint8List backupCreatedEventDescriptor = $convert.base64Decode
 const BackupDeletedEvent$json = {
   '1': 'BackupDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.metastore.v1.BackupEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.metastore.v1.BackupEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -164,4 +234,3 @@ final $typed_data.Uint8List backupDeletedEventDescriptor = $convert.base64Decode
     'ChJCYWNrdXBEZWxldGVkRXZlbnQSRQoEZGF0YRgBIAEoCzIxLmdvb2dsZS5ldmVudHMuY2xvdW'
     'QubWV0YXN0b3JlLnYxLkJhY2t1cEV2ZW50RGF0YVIEZGF0YTpEsvjYLChnb29nbGUuY2xvdWQu'
     'bWV0YXN0b3JlLmJhY2t1cC52MS5kZWxldGVkyvjYLAdzZXJ2aWNlyvjYLAZiYWNrdXA=');
-

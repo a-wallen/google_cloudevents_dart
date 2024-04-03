@@ -18,16 +18,76 @@ const Feature$json = {
   '1': 'Feature',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'labels', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.gkehub.v1.Feature.LabelsEntry', '10': 'labels'},
-    {'1': 'resource_state', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.FeatureResourceState', '10': 'resourceState'},
-    {'1': 'state', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.CommonFeatureState', '10': 'state'},
-    {'1': 'membership_states', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.gkehub.v1.Feature.MembershipStatesEntry', '10': 'membershipStates'},
-    {'1': 'create_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'delete_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deleteTime'},
-    {'1': 'scope_states', '3': 13, '4': 3, '5': 11, '6': '.google.events.cloud.gkehub.v1.Feature.ScopeStatesEntry', '10': 'scopeStates'},
+    {
+      '1': 'labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.Feature.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'resource_state',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.FeatureResourceState',
+      '10': 'resourceState'
+    },
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.CommonFeatureState',
+      '10': 'state'
+    },
+    {
+      '1': 'membership_states',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.Feature.MembershipStatesEntry',
+      '10': 'membershipStates'
+    },
+    {
+      '1': 'create_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deleteTime'
+    },
+    {
+      '1': 'scope_states',
+      '3': 13,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.Feature.ScopeStatesEntry',
+      '10': 'scopeStates'
+    },
   ],
-  '3': [Feature_LabelsEntry$json, Feature_MembershipStatesEntry$json, Feature_ScopeStatesEntry$json],
+  '3': [
+    Feature_LabelsEntry$json,
+    Feature_MembershipStatesEntry$json,
+    Feature_ScopeStatesEntry$json
+  ],
 };
 
 @$core.Deprecated('Use featureDescriptor instead')
@@ -45,7 +105,14 @@ const Feature_MembershipStatesEntry$json = {
   '1': 'MembershipStatesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MembershipFeatureState', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MembershipFeatureState',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -55,7 +122,14 @@ const Feature_ScopeStatesEntry$json = {
   '1': 'ScopeStatesEntry',
   '2': [
     {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.ScopeFeatureState', '10': 'value'},
+    {
+      '1': 'value',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.ScopeFeatureState',
+      '10': 'value'
+    },
   ],
   '7': {'7': true},
 };
@@ -85,7 +159,14 @@ final $typed_data.Uint8List featureDescriptor = $convert.base64Decode(
 const FeatureResourceState$json = {
   '1': 'FeatureResourceState',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.gkehub.v1.FeatureResourceState.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.gkehub.v1.FeatureResourceState.State',
+      '10': 'state'
+    },
   ],
   '4': [FeatureResourceState_State$json],
 };
@@ -114,9 +195,23 @@ final $typed_data.Uint8List featureResourceStateDescriptor = $convert.base64Deco
 const FeatureState$json = {
   '1': 'FeatureState',
   '2': [
-    {'1': 'code', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.gkehub.v1.FeatureState.Code', '10': 'code'},
+    {
+      '1': 'code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.gkehub.v1.FeatureState.Code',
+      '10': 'code'
+    },
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
   ],
   '4': [FeatureState_Code$json],
 };
@@ -144,7 +239,14 @@ final $typed_data.Uint8List featureStateDescriptor = $convert.base64Decode(
 const CommonFeatureState$json = {
   '1': 'CommonFeatureState',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.FeatureState', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.FeatureState',
+      '10': 'state'
+    },
   ],
 };
 
@@ -157,7 +259,14 @@ final $typed_data.Uint8List commonFeatureStateDescriptor = $convert.base64Decode
 const ScopeFeatureState$json = {
   '1': 'ScopeFeatureState',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.FeatureState', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.FeatureState',
+      '10': 'state'
+    },
   ],
 };
 
@@ -170,14 +279,22 @@ final $typed_data.Uint8List scopeFeatureStateDescriptor = $convert.base64Decode(
 const MembershipFeatureState$json = {
   '1': 'MembershipFeatureState',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.FeatureState', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.FeatureState',
+      '10': 'state'
+    },
   ],
 };
 
 /// Descriptor for `MembershipFeatureState`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List membershipFeatureStateDescriptor = $convert.base64Decode(
-    'ChZNZW1iZXJzaGlwRmVhdHVyZVN0YXRlEkEKBXN0YXRlGAEgASgLMisuZ29vZ2xlLmV2ZW50cy'
-    '5jbG91ZC5na2VodWIudjEuRmVhdHVyZVN0YXRlUgVzdGF0ZQ==');
+final $typed_data.Uint8List membershipFeatureStateDescriptor =
+    $convert.base64Decode(
+        'ChZNZW1iZXJzaGlwRmVhdHVyZVN0YXRlEkEKBXN0YXRlGAEgASgLMisuZ29vZ2xlLmV2ZW50cy'
+        '5jbG91ZC5na2VodWIudjEuRmVhdHVyZVN0YXRlUgVzdGF0ZQ==');
 
 @$core.Deprecated('Use scopeDescriptor instead')
 const Scope$json = {
@@ -185,10 +302,38 @@ const Scope$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'delete_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deleteTime'},
-    {'1': 'state', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.ScopeLifecycleState', '10': 'state'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deleteTime'
+    },
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.ScopeLifecycleState',
+      '10': 'state'
+    },
   ],
 };
 
@@ -205,7 +350,14 @@ final $typed_data.Uint8List scopeDescriptor = $convert.base64Decode(
 const ScopeLifecycleState$json = {
   '1': 'ScopeLifecycleState',
   '2': [
-    {'1': 'code', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.gkehub.v1.ScopeLifecycleState.Code', '10': 'code'},
+    {
+      '1': 'code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.gkehub.v1.ScopeLifecycleState.Code',
+      '10': 'code'
+    },
   ],
   '4': [ScopeLifecycleState_Code$json],
 };
@@ -237,10 +389,38 @@ const MembershipBinding$json = {
     {'1': 'fleet', '3': 4, '4': 1, '5': 8, '9': 0, '10': 'fleet'},
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'delete_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deleteTime'},
-    {'1': 'state', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MembershipBindingLifecycleState', '10': 'state'},
+    {
+      '1': 'create_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deleteTime'
+    },
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MembershipBindingLifecycleState',
+      '10': 'state'
+    },
   ],
   '8': [
     {'1': 'target'},
@@ -261,7 +441,15 @@ final $typed_data.Uint8List membershipBindingDescriptor = $convert.base64Decode(
 const MembershipBindingLifecycleState$json = {
   '1': 'MembershipBindingLifecycleState',
   '2': [
-    {'1': 'code', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.gkehub.v1.MembershipBindingLifecycleState.Code', '10': 'code'},
+    {
+      '1': 'code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.gkehub.v1.MembershipBindingLifecycleState.Code',
+      '10': 'code'
+    },
   ],
   '4': [MembershipBindingLifecycleState_Code$json],
 };
@@ -279,28 +467,86 @@ const MembershipBindingLifecycleState_Code$json = {
 };
 
 /// Descriptor for `MembershipBindingLifecycleState`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List membershipBindingLifecycleStateDescriptor = $convert.base64Decode(
-    'Ch9NZW1iZXJzaGlwQmluZGluZ0xpZmVjeWNsZVN0YXRlElcKBGNvZGUYASABKA4yQy5nb29nbG'
-    'UuZXZlbnRzLmNsb3VkLmdrZWh1Yi52MS5NZW1iZXJzaGlwQmluZGluZ0xpZmVjeWNsZVN0YXRl'
-    'LkNvZGVSBGNvZGUiUQoEQ29kZRIUChBDT0RFX1VOU1BFQ0lGSUVEEAASDAoIQ1JFQVRJTkcQAR'
-    'IJCgVSRUFEWRACEgwKCERFTEVUSU5HEAMSDAoIVVBEQVRJTkcQBA==');
+final $typed_data.Uint8List membershipBindingLifecycleStateDescriptor =
+    $convert.base64Decode(
+        'Ch9NZW1iZXJzaGlwQmluZGluZ0xpZmVjeWNsZVN0YXRlElcKBGNvZGUYASABKA4yQy5nb29nbG'
+        'UuZXZlbnRzLmNsb3VkLmdrZWh1Yi52MS5NZW1iZXJzaGlwQmluZGluZ0xpZmVjeWNsZVN0YXRl'
+        'LkNvZGVSBGNvZGUiUQoEQ29kZRIUChBDT0RFX1VOU1BFQ0lGSUVEEAASDAoIQ1JFQVRJTkcQAR'
+        'IJCgVSRUFEWRACEgwKCERFTEVUSU5HEAMSDAoIVVBEQVRJTkcQBA==');
 
 @$core.Deprecated('Use membershipDescriptor instead')
 const Membership$json = {
   '1': 'Membership',
   '2': [
-    {'1': 'endpoint', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MembershipEndpoint', '9': 0, '10': 'endpoint'},
+    {
+      '1': 'endpoint',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MembershipEndpoint',
+      '9': 0,
+      '10': 'endpoint'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'labels', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.gkehub.v1.Membership.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.Membership.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'state', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MembershipState', '10': 'state'},
-    {'1': 'create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'delete_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deleteTime'},
+    {
+      '1': 'state',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MembershipState',
+      '10': 'state'
+    },
+    {
+      '1': 'create_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deleteTime'
+    },
     {'1': 'external_id', '3': 9, '4': 1, '5': 9, '10': 'externalId'},
-    {'1': 'last_connection_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastConnectionTime'},
+    {
+      '1': 'last_connection_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastConnectionTime'
+    },
     {'1': 'unique_id', '3': 11, '4': 1, '5': 9, '10': 'uniqueId'},
-    {'1': 'authority', '3': 12, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.Authority', '10': 'authority'},
+    {
+      '1': 'authority',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.Authority',
+      '10': 'authority'
+    },
   ],
   '3': [Membership_LabelsEntry$json],
   '8': [
@@ -339,13 +585,67 @@ final $typed_data.Uint8List membershipDescriptor = $convert.base64Decode(
 const MembershipEndpoint$json = {
   '1': 'MembershipEndpoint',
   '2': [
-    {'1': 'gke_cluster', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.GkeCluster', '9': 0, '10': 'gkeCluster'},
-    {'1': 'on_prem_cluster', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.OnPremCluster', '9': 0, '10': 'onPremCluster'},
-    {'1': 'multi_cloud_cluster', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MultiCloudCluster', '9': 0, '10': 'multiCloudCluster'},
-    {'1': 'edge_cluster', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.EdgeCluster', '9': 0, '10': 'edgeCluster'},
-    {'1': 'appliance_cluster', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.ApplianceCluster', '9': 0, '10': 'applianceCluster'},
-    {'1': 'kubernetes_metadata', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.KubernetesMetadata', '10': 'kubernetesMetadata'},
-    {'1': 'kubernetes_resource', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.KubernetesResource', '10': 'kubernetesResource'},
+    {
+      '1': 'gke_cluster',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.GkeCluster',
+      '9': 0,
+      '10': 'gkeCluster'
+    },
+    {
+      '1': 'on_prem_cluster',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.OnPremCluster',
+      '9': 0,
+      '10': 'onPremCluster'
+    },
+    {
+      '1': 'multi_cloud_cluster',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MultiCloudCluster',
+      '9': 0,
+      '10': 'multiCloudCluster'
+    },
+    {
+      '1': 'edge_cluster',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.EdgeCluster',
+      '9': 0,
+      '10': 'edgeCluster'
+    },
+    {
+      '1': 'appliance_cluster',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.ApplianceCluster',
+      '9': 0,
+      '10': 'applianceCluster'
+    },
+    {
+      '1': 'kubernetes_metadata',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.KubernetesMetadata',
+      '10': 'kubernetesMetadata'
+    },
+    {
+      '1': 'kubernetes_resource',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.KubernetesResource',
+      '10': 'kubernetesResource'
+    },
     {'1': 'google_managed', '3': 8, '4': 1, '5': 8, '10': 'googleManaged'},
   ],
   '8': [
@@ -373,9 +673,30 @@ final $typed_data.Uint8List membershipEndpointDescriptor = $convert.base64Decode
 const KubernetesResource$json = {
   '1': 'KubernetesResource',
   '2': [
-    {'1': 'membership_resources', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.gkehub.v1.ResourceManifest', '10': 'membershipResources'},
-    {'1': 'connect_resources', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.gkehub.v1.ResourceManifest', '10': 'connectResources'},
-    {'1': 'resource_options', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.ResourceOptions', '10': 'resourceOptions'},
+    {
+      '1': 'membership_resources',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.ResourceManifest',
+      '10': 'membershipResources'
+    },
+    {
+      '1': 'connect_resources',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.ResourceManifest',
+      '10': 'connectResources'
+    },
+    {
+      '1': 'resource_options',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.ResourceOptions',
+      '10': 'resourceOptions'
+    },
   ],
 };
 
@@ -439,7 +760,14 @@ const OnPremCluster$json = {
     {'1': 'resource_link', '3': 1, '4': 1, '5': 9, '10': 'resourceLink'},
     {'1': 'cluster_missing', '3': 2, '4': 1, '5': 8, '10': 'clusterMissing'},
     {'1': 'admin_cluster', '3': 3, '4': 1, '5': 8, '10': 'adminCluster'},
-    {'1': 'cluster_type', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.gkehub.v1.OnPremCluster.ClusterType', '10': 'clusterType'},
+    {
+      '1': 'cluster_type',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.gkehub.v1.OnPremCluster.ClusterType',
+      '10': 'clusterType'
+    },
   ],
   '4': [OnPremCluster_ClusterType$json],
 };
@@ -508,12 +836,25 @@ final $typed_data.Uint8List applianceClusterDescriptor = $convert.base64Decode(
 const KubernetesMetadata$json = {
   '1': 'KubernetesMetadata',
   '2': [
-    {'1': 'kubernetes_api_server_version', '3': 1, '4': 1, '5': 9, '10': 'kubernetesApiServerVersion'},
+    {
+      '1': 'kubernetes_api_server_version',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'kubernetesApiServerVersion'
+    },
     {'1': 'node_provider_id', '3': 2, '4': 1, '5': 9, '10': 'nodeProviderId'},
     {'1': 'node_count', '3': 3, '4': 1, '5': 5, '10': 'nodeCount'},
     {'1': 'vcpu_count', '3': 4, '4': 1, '5': 5, '10': 'vcpuCount'},
     {'1': 'memory_mb', '3': 5, '4': 1, '5': 5, '10': 'memoryMb'},
-    {'1': 'update_time', '3': 100, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'update_time',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
   ],
 };
 
@@ -530,7 +871,14 @@ final $typed_data.Uint8List kubernetesMetadataDescriptor = $convert.base64Decode
 const MembershipState$json = {
   '1': 'MembershipState',
   '2': [
-    {'1': 'code', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.gkehub.v1.MembershipState.Code', '10': 'code'},
+    {
+      '1': 'code',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.gkehub.v1.MembershipState.Code',
+      '10': 'code'
+    },
   ],
   '4': [MembershipState_Code$json],
 };
@@ -560,8 +908,20 @@ const Authority$json = {
   '1': 'Authority',
   '2': [
     {'1': 'issuer', '3': 1, '4': 1, '5': 9, '10': 'issuer'},
-    {'1': 'workload_identity_pool', '3': 2, '4': 1, '5': 9, '10': 'workloadIdentityPool'},
-    {'1': 'identity_provider', '3': 3, '4': 1, '5': 9, '10': 'identityProvider'},
+    {
+      '1': 'workload_identity_pool',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'workloadIdentityPool'
+    },
+    {
+      '1': 'identity_provider',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'identityProvider'
+    },
     {'1': 'oidc_jwks', '3': 4, '4': 1, '5': 12, '10': 'oidcJwks'},
   ],
 };
@@ -576,7 +936,16 @@ final $typed_data.Uint8List authorityDescriptor = $convert.base64Decode(
 const ScopeEventData$json = {
   '1': 'ScopeEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.Scope', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.Scope',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -592,7 +961,16 @@ final $typed_data.Uint8List scopeEventDataDescriptor = $convert.base64Decode(
 const MembershipEventData$json = {
   '1': 'MembershipEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.Membership', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.Membership',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -608,7 +986,16 @@ final $typed_data.Uint8List membershipEventDataDescriptor = $convert.base64Decod
 const FeatureEventData$json = {
   '1': 'FeatureEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.Feature', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.Feature',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -624,7 +1011,16 @@ final $typed_data.Uint8List featureEventDataDescriptor = $convert.base64Decode(
 const MembershipBindingEventData$json = {
   '1': 'MembershipBindingEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.gkehub.v1.MembershipBinding', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.gkehub.v1.MembershipBinding',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -632,8 +1028,8 @@ const MembershipBindingEventData$json = {
 };
 
 /// Descriptor for `MembershipBindingEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List membershipBindingEventDataDescriptor = $convert.base64Decode(
-    'ChpNZW1iZXJzaGlwQmluZGluZ0V2ZW50RGF0YRJPCgdwYXlsb2FkGAEgASgLMjAuZ29vZ2xlLm'
-    'V2ZW50cy5jbG91ZC5na2VodWIudjEuTWVtYmVyc2hpcEJpbmRpbmdIAFIHcGF5bG9hZIgBAUIK'
-    'CghfcGF5bG9hZA==');
-
+final $typed_data.Uint8List membershipBindingEventDataDescriptor =
+    $convert.base64Decode(
+        'ChpNZW1iZXJzaGlwQmluZGluZ0V2ZW50RGF0YRJPCgdwYXlsb2FkGAEgASgLMjAuZ29vZ2xlLm'
+        'V2ZW50cy5jbG91ZC5na2VodWIudjEuTWVtYmVyc2hpcEJpbmRpbmdIAFIHcGF5bG9hZIgBAUIK'
+        'CghfcGF5bG9hZA==');

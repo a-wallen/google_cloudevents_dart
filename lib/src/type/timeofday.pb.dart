@@ -39,27 +39,32 @@ class TimeOfDay extends $pb.GeneratedMessage {
     return $result;
   }
   TimeOfDay._() : super();
-  factory TimeOfDay.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory TimeOfDay.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory TimeOfDay.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TimeOfDay.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeOfDay', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TimeOfDay',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'),
+      createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'hours', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'minutes', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'seconds', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'nanos', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   TimeOfDay clone() => TimeOfDay()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  TimeOfDay copyWith(void Function(TimeOfDay) updates) => super.copyWith((message) => updates(message as TimeOfDay)) as TimeOfDay;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TimeOfDay copyWith(void Function(TimeOfDay) updates) =>
+      super.copyWith((message) => updates(message as TimeOfDay)) as TimeOfDay;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -68,7 +73,8 @@ class TimeOfDay extends $pb.GeneratedMessage {
   TimeOfDay createEmptyInstance() => create();
   static $pb.PbList<TimeOfDay> createRepeated() => $pb.PbList<TimeOfDay>();
   @$core.pragma('dart2js:noInline')
-  static TimeOfDay getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TimeOfDay>(create);
+  static TimeOfDay getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TimeOfDay>(create);
   static TimeOfDay? _defaultInstance;
 
   /// Hours of day in 24 hour format. Should be from 0 to 23. An API may choose
@@ -76,7 +82,10 @@ class TimeOfDay extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get hours => $_getIZ(0);
   @$pb.TagNumber(1)
-  set hours($core.int v) { $_setSignedInt32(0, v); }
+  set hours($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasHours() => $_has(0);
   @$pb.TagNumber(1)
@@ -86,7 +95,10 @@ class TimeOfDay extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get minutes => $_getIZ(1);
   @$pb.TagNumber(2)
-  set minutes($core.int v) { $_setSignedInt32(1, v); }
+  set minutes($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMinutes() => $_has(1);
   @$pb.TagNumber(2)
@@ -97,7 +109,10 @@ class TimeOfDay extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get seconds => $_getIZ(2);
   @$pb.TagNumber(3)
-  set seconds($core.int v) { $_setSignedInt32(2, v); }
+  set seconds($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSeconds() => $_has(2);
   @$pb.TagNumber(3)
@@ -107,13 +122,16 @@ class TimeOfDay extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.int get nanos => $_getIZ(3);
   @$pb.TagNumber(4)
-  set nanos($core.int v) { $_setSignedInt32(3, v); }
+  set nanos($core.int v) {
+    $_setSignedInt32(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasNanos() => $_has(3);
   @$pb.TagNumber(4)
   void clearNanos() => clearField(4);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

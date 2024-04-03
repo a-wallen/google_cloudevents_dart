@@ -22,7 +22,13 @@ const PostalAddress$json = {
     {'1': 'language_code', '3': 3, '4': 1, '5': 9, '10': 'languageCode'},
     {'1': 'postal_code', '3': 4, '4': 1, '5': 9, '10': 'postalCode'},
     {'1': 'sorting_code', '3': 5, '4': 1, '5': 9, '10': 'sortingCode'},
-    {'1': 'administrative_area', '3': 6, '4': 1, '5': 9, '10': 'administrativeArea'},
+    {
+      '1': 'administrative_area',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'administrativeArea'
+    },
     {'1': 'locality', '3': 7, '4': 1, '5': 9, '10': 'locality'},
     {'1': 'sublocality', '3': 8, '4': 1, '5': 9, '10': 'sublocality'},
     {'1': 'address_lines', '3': 9, '4': 3, '5': 9, '10': 'addressLines'},
@@ -41,4 +47,3 @@ final $typed_data.Uint8List postalAddressDescriptor = $convert.base64Decode(
     'gJUgtzdWJsb2NhbGl0eRIjCg1hZGRyZXNzX2xpbmVzGAkgAygJUgxhZGRyZXNzTGluZXMSHgoK'
     'cmVjaXBpZW50cxgKIAMoCVIKcmVjaXBpZW50cxIiCgxvcmdhbml6YXRpb24YCyABKAlSDG9yZ2'
     'FuaXphdGlvbg==');
-

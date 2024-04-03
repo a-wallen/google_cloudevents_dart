@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const MessagePublishedData$json = {
   '1': 'MessagePublishedData',
   '2': [
-    {'1': 'message', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.pubsub.v1.PubsubMessage', '10': 'message'},
+    {
+      '1': 'message',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.pubsub.v1.PubsubMessage',
+      '10': 'message'
+    },
     {'1': 'subscription', '3': 2, '4': 1, '5': 9, '10': 'subscription'},
   ],
 };
@@ -33,9 +40,23 @@ const PubsubMessage$json = {
   '1': 'PubsubMessage',
   '2': [
     {'1': 'data', '3': 1, '4': 1, '5': 12, '10': 'data'},
-    {'1': 'attributes', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.pubsub.v1.PubsubMessage.AttributesEntry', '10': 'attributes'},
+    {
+      '1': 'attributes',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.pubsub.v1.PubsubMessage.AttributesEntry',
+      '10': 'attributes'
+    },
     {'1': 'message_id', '3': 3, '4': 1, '5': 9, '10': 'messageId'},
-    {'1': 'publish_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'publishTime'},
+    {
+      '1': 'publish_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'publishTime'
+    },
     {'1': 'ordering_key', '3': 5, '4': 1, '5': 9, '10': 'orderingKey'},
   ],
   '3': [PubsubMessage_AttributesEntry$json],
@@ -59,4 +80,3 @@ final $typed_data.Uint8List pubsubMessageDescriptor = $convert.base64Decode(
     'JsaXNoX3RpbWUYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUgtwdWJsaXNoVGlt'
     'ZRIhCgxvcmRlcmluZ19rZXkYBSABKAlSC29yZGVyaW5nS2V5Gj0KD0F0dHJpYnV0ZXNFbnRyeR'
     'IQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEoCVIFdmFsdWU6AjgB');
-

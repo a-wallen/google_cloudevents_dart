@@ -102,9 +102,10 @@ const PublicKeyCertificateFormat$json = {
 };
 
 /// Descriptor for `PublicKeyCertificateFormat`. Decode as a `google.protobuf.EnumDescriptorProto`.
-final $typed_data.Uint8List publicKeyCertificateFormatDescriptor = $convert.base64Decode(
-    'ChpQdWJsaWNLZXlDZXJ0aWZpY2F0ZUZvcm1hdBItCilVTlNQRUNJRklFRF9QVUJMSUNfS0VZX0'
-    'NFUlRJRklDQVRFX0ZPUk1BVBAAEhgKFFg1MDlfQ0VSVElGSUNBVEVfUEVNEAE=');
+final $typed_data.Uint8List publicKeyCertificateFormatDescriptor =
+    $convert.base64Decode(
+        'ChpQdWJsaWNLZXlDZXJ0aWZpY2F0ZUZvcm1hdBItCilVTlNQRUNJRklFRF9QVUJMSUNfS0VZX0'
+        'NFUlRJRklDQVRFX0ZPUk1BVBAAEhgKFFg1MDlfQ0VSVElGSUNBVEVfUEVNEAE=');
 
 @$core.Deprecated('Use publicKeyFormatDescriptor instead')
 const PublicKeyFormat$json = {
@@ -131,20 +132,111 @@ const Device$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'num_id', '3': 3, '4': 1, '5': 4, '10': 'numId'},
-    {'1': 'credentials', '3': 12, '4': 3, '5': 11, '6': '.google.events.cloud.iot.v1.DeviceCredential', '10': 'credentials'},
-    {'1': 'last_heartbeat_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastHeartbeatTime'},
-    {'1': 'last_event_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastEventTime'},
-    {'1': 'last_state_time', '3': 20, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastStateTime'},
-    {'1': 'last_config_ack_time', '3': 14, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastConfigAckTime'},
-    {'1': 'last_config_send_time', '3': 18, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastConfigSendTime'},
+    {
+      '1': 'credentials',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.DeviceCredential',
+      '10': 'credentials'
+    },
+    {
+      '1': 'last_heartbeat_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastHeartbeatTime'
+    },
+    {
+      '1': 'last_event_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastEventTime'
+    },
+    {
+      '1': 'last_state_time',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastStateTime'
+    },
+    {
+      '1': 'last_config_ack_time',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastConfigAckTime'
+    },
+    {
+      '1': 'last_config_send_time',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastConfigSendTime'
+    },
     {'1': 'blocked', '3': 19, '4': 1, '5': 8, '10': 'blocked'},
-    {'1': 'last_error_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastErrorTime'},
-    {'1': 'last_error_status', '3': 11, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'lastErrorStatus'},
-    {'1': 'config', '3': 13, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.DeviceConfig', '10': 'config'},
-    {'1': 'state', '3': 16, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.DeviceState', '10': 'state'},
-    {'1': 'log_level', '3': 21, '4': 1, '5': 14, '6': '.google.events.cloud.iot.v1.LogLevel', '10': 'logLevel'},
-    {'1': 'metadata', '3': 17, '4': 3, '5': 11, '6': '.google.events.cloud.iot.v1.Device.MetadataEntry', '10': 'metadata'},
-    {'1': 'gateway_config', '3': 24, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.GatewayConfig', '10': 'gatewayConfig'},
+    {
+      '1': 'last_error_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastErrorTime'
+    },
+    {
+      '1': 'last_error_status',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'lastErrorStatus'
+    },
+    {
+      '1': 'config',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.DeviceConfig',
+      '10': 'config'
+    },
+    {
+      '1': 'state',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.DeviceState',
+      '10': 'state'
+    },
+    {
+      '1': 'log_level',
+      '3': 21,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.iot.v1.LogLevel',
+      '10': 'logLevel'
+    },
+    {
+      '1': 'metadata',
+      '3': 17,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.Device.MetadataEntry',
+      '10': 'metadata'
+    },
+    {
+      '1': 'gateway_config',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.GatewayConfig',
+      '10': 'gatewayConfig'
+    },
   ],
   '3': [Device_MetadataEntry$json],
 };
@@ -186,10 +278,37 @@ final $typed_data.Uint8List deviceDescriptor = $convert.base64Decode(
 const GatewayConfig$json = {
   '1': 'GatewayConfig',
   '2': [
-    {'1': 'gateway_type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.iot.v1.GatewayType', '10': 'gatewayType'},
-    {'1': 'gateway_auth_method', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.iot.v1.GatewayAuthMethod', '10': 'gatewayAuthMethod'},
-    {'1': 'last_accessed_gateway_id', '3': 3, '4': 1, '5': 9, '10': 'lastAccessedGatewayId'},
-    {'1': 'last_accessed_gateway_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastAccessedGatewayTime'},
+    {
+      '1': 'gateway_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.iot.v1.GatewayType',
+      '10': 'gatewayType'
+    },
+    {
+      '1': 'gateway_auth_method',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.iot.v1.GatewayAuthMethod',
+      '10': 'gatewayAuthMethod'
+    },
+    {
+      '1': 'last_accessed_gateway_id',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '10': 'lastAccessedGatewayId'
+    },
+    {
+      '1': 'last_accessed_gateway_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastAccessedGatewayTime'
+    },
   ],
 };
 
@@ -208,12 +327,54 @@ const DeviceRegistry$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'event_notification_configs', '3': 10, '4': 3, '5': 11, '6': '.google.events.cloud.iot.v1.EventNotificationConfig', '10': 'eventNotificationConfigs'},
-    {'1': 'state_notification_config', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.StateNotificationConfig', '10': 'stateNotificationConfig'},
-    {'1': 'mqtt_config', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.MqttConfig', '10': 'mqttConfig'},
-    {'1': 'http_config', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.HttpConfig', '10': 'httpConfig'},
-    {'1': 'log_level', '3': 11, '4': 1, '5': 14, '6': '.google.events.cloud.iot.v1.LogLevel', '10': 'logLevel'},
-    {'1': 'credentials', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.iot.v1.RegistryCredential', '10': 'credentials'},
+    {
+      '1': 'event_notification_configs',
+      '3': 10,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.EventNotificationConfig',
+      '10': 'eventNotificationConfigs'
+    },
+    {
+      '1': 'state_notification_config',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.StateNotificationConfig',
+      '10': 'stateNotificationConfig'
+    },
+    {
+      '1': 'mqtt_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.MqttConfig',
+      '10': 'mqttConfig'
+    },
+    {
+      '1': 'http_config',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.HttpConfig',
+      '10': 'httpConfig'
+    },
+    {
+      '1': 'log_level',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.iot.v1.LogLevel',
+      '10': 'logLevel'
+    },
+    {
+      '1': 'credentials',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.RegistryCredential',
+      '10': 'credentials'
+    },
   ],
 };
 
@@ -235,7 +396,14 @@ final $typed_data.Uint8List deviceRegistryDescriptor = $convert.base64Decode(
 const MqttConfig$json = {
   '1': 'MqttConfig',
   '2': [
-    {'1': 'mqtt_enabled_state', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.iot.v1.MqttState', '10': 'mqttEnabledState'},
+    {
+      '1': 'mqtt_enabled_state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.iot.v1.MqttState',
+      '10': 'mqttEnabledState'
+    },
   ],
 };
 
@@ -248,7 +416,14 @@ final $typed_data.Uint8List mqttConfigDescriptor = $convert.base64Decode(
 const HttpConfig$json = {
   '1': 'HttpConfig',
   '2': [
-    {'1': 'http_enabled_state', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.iot.v1.HttpState', '10': 'httpEnabledState'},
+    {
+      '1': 'http_enabled_state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.iot.v1.HttpState',
+      '10': 'httpEnabledState'
+    },
   ],
 };
 
@@ -261,7 +436,13 @@ final $typed_data.Uint8List httpConfigDescriptor = $convert.base64Decode(
 const EventNotificationConfig$json = {
   '1': 'EventNotificationConfig',
   '2': [
-    {'1': 'subfolder_matches', '3': 2, '4': 1, '5': 9, '10': 'subfolderMatches'},
+    {
+      '1': 'subfolder_matches',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'subfolderMatches'
+    },
     {'1': 'pubsub_topic_name', '3': 1, '4': 1, '5': 9, '10': 'pubsubTopicName'},
   ],
 };
@@ -281,15 +462,24 @@ const StateNotificationConfig$json = {
 };
 
 /// Descriptor for `StateNotificationConfig`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List stateNotificationConfigDescriptor = $convert.base64Decode(
-    'ChdTdGF0ZU5vdGlmaWNhdGlvbkNvbmZpZxIqChFwdWJzdWJfdG9waWNfbmFtZRgBIAEoCVIPcH'
-    'Vic3ViVG9waWNOYW1l');
+final $typed_data.Uint8List stateNotificationConfigDescriptor =
+    $convert.base64Decode(
+        'ChdTdGF0ZU5vdGlmaWNhdGlvbkNvbmZpZxIqChFwdWJzdWJfdG9waWNfbmFtZRgBIAEoCVIPcH'
+        'Vic3ViVG9waWNOYW1l');
 
 @$core.Deprecated('Use registryCredentialDescriptor instead')
 const RegistryCredential$json = {
   '1': 'RegistryCredential',
   '2': [
-    {'1': 'public_key_certificate', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.PublicKeyCertificate', '9': 0, '10': 'publicKeyCertificate'},
+    {
+      '1': 'public_key_certificate',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.PublicKeyCertificate',
+      '9': 0,
+      '10': 'publicKeyCertificate'
+    },
   ],
   '8': [
     {'1': 'credential'},
@@ -308,9 +498,29 @@ const X509CertificateDetails$json = {
   '2': [
     {'1': 'issuer', '3': 1, '4': 1, '5': 9, '10': 'issuer'},
     {'1': 'subject', '3': 2, '4': 1, '5': 9, '10': 'subject'},
-    {'1': 'start_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'expiry_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expiryTime'},
-    {'1': 'signature_algorithm', '3': 5, '4': 1, '5': 9, '10': 'signatureAlgorithm'},
+    {
+      '1': 'start_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'expiry_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expiryTime'
+    },
+    {
+      '1': 'signature_algorithm',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'signatureAlgorithm'
+    },
     {'1': 'public_key_type', '3': 6, '4': 1, '5': 9, '10': 'publicKeyType'},
   ],
 };
@@ -328,9 +538,23 @@ final $typed_data.Uint8List x509CertificateDetailsDescriptor = $convert.base64De
 const PublicKeyCertificate$json = {
   '1': 'PublicKeyCertificate',
   '2': [
-    {'1': 'format', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.iot.v1.PublicKeyCertificateFormat', '10': 'format'},
+    {
+      '1': 'format',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.iot.v1.PublicKeyCertificateFormat',
+      '10': 'format'
+    },
     {'1': 'certificate', '3': 2, '4': 1, '5': 9, '10': 'certificate'},
-    {'1': 'x509_details', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.X509CertificateDetails', '10': 'x509Details'},
+    {
+      '1': 'x509_details',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.X509CertificateDetails',
+      '10': 'x509Details'
+    },
   ],
 };
 
@@ -346,8 +570,23 @@ final $typed_data.Uint8List publicKeyCertificateDescriptor = $convert.base64Deco
 const DeviceCredential$json = {
   '1': 'DeviceCredential',
   '2': [
-    {'1': 'public_key', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.PublicKeyCredential', '9': 0, '10': 'publicKey'},
-    {'1': 'expiration_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expirationTime'},
+    {
+      '1': 'public_key',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.PublicKeyCredential',
+      '9': 0,
+      '10': 'publicKey'
+    },
+    {
+      '1': 'expiration_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expirationTime'
+    },
   ],
   '8': [
     {'1': 'credential'},
@@ -365,7 +604,14 @@ final $typed_data.Uint8List deviceCredentialDescriptor = $convert.base64Decode(
 const PublicKeyCredential$json = {
   '1': 'PublicKeyCredential',
   '2': [
-    {'1': 'format', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.iot.v1.PublicKeyFormat', '10': 'format'},
+    {
+      '1': 'format',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.iot.v1.PublicKeyFormat',
+      '10': 'format'
+    },
     {'1': 'key', '3': 2, '4': 1, '5': 9, '10': 'key'},
   ],
 };
@@ -380,8 +626,22 @@ const DeviceConfig$json = {
   '1': 'DeviceConfig',
   '2': [
     {'1': 'version', '3': 1, '4': 1, '5': 3, '10': 'version'},
-    {'1': 'cloud_update_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'cloudUpdateTime'},
-    {'1': 'device_ack_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deviceAckTime'},
+    {
+      '1': 'cloud_update_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'cloudUpdateTime'
+    },
+    {
+      '1': 'device_ack_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deviceAckTime'
+    },
     {'1': 'binary_data', '3': 4, '4': 1, '5': 12, '10': 'binaryData'},
   ],
 };
@@ -397,7 +657,14 @@ final $typed_data.Uint8List deviceConfigDescriptor = $convert.base64Decode(
 const DeviceState$json = {
   '1': 'DeviceState',
   '2': [
-    {'1': 'update_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'update_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'binary_data', '3': 2, '4': 1, '5': 12, '10': 'binaryData'},
   ],
 };
@@ -411,7 +678,16 @@ final $typed_data.Uint8List deviceStateDescriptor = $convert.base64Decode(
 const DeviceEventData$json = {
   '1': 'DeviceEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.Device', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.Device',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -427,7 +703,16 @@ final $typed_data.Uint8List deviceEventDataDescriptor = $convert.base64Decode(
 const RegistryEventData$json = {
   '1': 'RegistryEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.iot.v1.DeviceRegistry', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.iot.v1.DeviceRegistry',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -438,4 +723,3 @@ const RegistryEventData$json = {
 final $typed_data.Uint8List registryEventDataDescriptor = $convert.base64Decode(
     'ChFSZWdpc3RyeUV2ZW50RGF0YRJJCgdwYXlsb2FkGAEgASgLMiouZ29vZ2xlLmV2ZW50cy5jbG'
     '91ZC5pb3QudjEuRGV2aWNlUmVnaXN0cnlIAFIHcGF5bG9hZIgBAUIKCghfcGF5bG9hZA==');
-

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const TestMatrixCompletedEvent$json = {
   '1': 'TestMatrixCompletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.firebase.testlab.v1.TestMatrixEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.firebase.testlab.v1.TestMatrixEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -27,4 +34,3 @@ final $typed_data.Uint8List testMatrixCompletedEventDescriptor = $convert.base64
     'ChhUZXN0TWF0cml4Q29tcGxldGVkRXZlbnQSSgoEZGF0YRgBIAEoCzI2Lmdvb2dsZS5ldmVudH'
     'MuZmlyZWJhc2UudGVzdGxhYi52MS5UZXN0TWF0cml4RXZlbnREYXRhUgRkYXRhOjSy+NgsL2dv'
     'b2dsZS5maXJlYmFzZS50ZXN0bGFiLnRlc3RNYXRyaXgudjEuY29tcGxldGVk');
-

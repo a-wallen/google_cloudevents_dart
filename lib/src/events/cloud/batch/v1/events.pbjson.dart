@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const JobCreatedEvent$json = {
   '1': 'JobCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.JobEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.JobEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List jobCreatedEventDescriptor = $convert.base64Decode(
 const JobDeletedEvent$json = {
   '1': 'JobDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.batch.v1.JobEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.batch.v1.JobEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -42,4 +56,3 @@ final $typed_data.Uint8List jobDeletedEventDescriptor = $convert.base64Decode(
     'Cg9Kb2JEZWxldGVkRXZlbnQSPgoEZGF0YRgBIAEoCzIqLmdvb2dsZS5ldmVudHMuY2xvdWQuYm'
     'F0Y2gudjEuSm9iRXZlbnREYXRhUgRkYXRhOi6y+NgsIWdvb2dsZS5jbG91ZC5iYXRjaC5qb2Iu'
     'djEuZGVsZXRlZMr42CwDam9i');
-

@@ -65,7 +65,14 @@ final $typed_data.Uint8List databaseProviderDescriptor = $convert.base64Decode(
 const SslConfig$json = {
   '1': 'SslConfig',
   '2': [
-    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.SslConfig.SslType', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.clouddms.v1.SslConfig.SslType',
+      '10': 'type'
+    },
   ],
   '4': [SslConfig_SslType$json],
 };
@@ -94,7 +101,14 @@ const MySqlConnectionProfile$json = {
     {'1': 'port', '3': 2, '4': 1, '5': 5, '10': 'port'},
     {'1': 'username', '3': 3, '4': 1, '5': 9, '10': 'username'},
     {'1': 'password_set', '3': 5, '4': 1, '5': 8, '10': 'passwordSet'},
-    {'1': 'ssl', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.SslConfig', '10': 'ssl'},
+    {
+      '1': 'ssl',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.SslConfig',
+      '10': 'ssl'
+    },
     {'1': 'cloud_sql_id', '3': 7, '4': 1, '5': 9, '10': 'cloudSqlId'},
   ],
 };
@@ -115,9 +129,23 @@ const PostgreSqlConnectionProfile$json = {
     {'1': 'port', '3': 2, '4': 1, '5': 5, '10': 'port'},
     {'1': 'username', '3': 3, '4': 1, '5': 9, '10': 'username'},
     {'1': 'password_set', '3': 5, '4': 1, '5': 8, '10': 'passwordSet'},
-    {'1': 'ssl', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.SslConfig', '10': 'ssl'},
+    {
+      '1': 'ssl',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.SslConfig',
+      '10': 'ssl'
+    },
     {'1': 'cloud_sql_id', '3': 7, '4': 1, '5': 9, '10': 'cloudSqlId'},
-    {'1': 'network_architecture', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.NetworkArchitecture', '10': 'networkArchitecture'},
+    {
+      '1': 'network_architecture',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.clouddms.v1.NetworkArchitecture',
+      '10': 'networkArchitecture'
+    },
   ],
 };
 
@@ -135,10 +163,23 @@ const CloudSqlConnectionProfile$json = {
   '1': 'CloudSqlConnectionProfile',
   '2': [
     {'1': 'cloud_sql_id', '3': 1, '4': 1, '5': 9, '10': 'cloudSqlId'},
-    {'1': 'settings', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.CloudSqlSettings', '10': 'settings'},
+    {
+      '1': 'settings',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.CloudSqlSettings',
+      '10': 'settings'
+    },
     {'1': 'private_ip', '3': 3, '4': 1, '5': 9, '10': 'privateIp'},
     {'1': 'public_ip', '3': 4, '4': 1, '5': 9, '10': 'publicIp'},
-    {'1': 'additional_public_ip', '3': 5, '4': 1, '5': 9, '10': 'additionalPublicIp'},
+    {
+      '1': 'additional_public_ip',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'additionalPublicIp'
+    },
   ],
 };
 
@@ -155,7 +196,14 @@ const AlloyDbConnectionProfile$json = {
   '1': 'AlloyDbConnectionProfile',
   '2': [
     {'1': 'cluster_id', '3': 1, '4': 1, '5': 9, '10': 'clusterId'},
-    {'1': 'settings', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.AlloyDbSettings', '10': 'settings'},
+    {
+      '1': 'settings',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.AlloyDbSettings',
+      '10': 'settings'
+    },
   ],
 };
 
@@ -170,7 +218,15 @@ const SqlAclEntry$json = {
   '1': 'SqlAclEntry',
   '2': [
     {'1': 'value', '3': 1, '4': 1, '5': 9, '10': 'value'},
-    {'1': 'expire_time', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'expireTime'},
+    {
+      '1': 'expire_time',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '9': 0,
+      '10': 'expireTime'
+    },
     {'1': 'label', '3': 3, '4': 1, '5': 9, '10': 'label'},
   ],
   '8': [
@@ -188,10 +244,31 @@ final $typed_data.Uint8List sqlAclEntryDescriptor = $convert.base64Decode(
 const SqlIpConfig$json = {
   '1': 'SqlIpConfig',
   '2': [
-    {'1': 'enable_ipv4', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '10': 'enableIpv4'},
+    {
+      '1': 'enable_ipv4',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '10': 'enableIpv4'
+    },
     {'1': 'private_network', '3': 2, '4': 1, '5': 9, '10': 'privateNetwork'},
-    {'1': 'require_ssl', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '10': 'requireSsl'},
-    {'1': 'authorized_networks', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.clouddms.v1.SqlAclEntry', '10': 'authorizedNetworks'},
+    {
+      '1': 'require_ssl',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '10': 'requireSsl'
+    },
+    {
+      '1': 'authorized_networks',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.SqlAclEntry',
+      '10': 'authorizedNetworks'
+    },
   ],
 };
 
@@ -207,26 +284,114 @@ final $typed_data.Uint8List sqlIpConfigDescriptor = $convert.base64Decode(
 const CloudSqlSettings$json = {
   '1': 'CloudSqlSettings',
   '2': [
-    {'1': 'database_version', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlDatabaseVersion', '10': 'databaseVersion'},
-    {'1': 'user_labels', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.clouddms.v1.CloudSqlSettings.UserLabelsEntry', '10': 'userLabels'},
+    {
+      '1': 'database_version',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlDatabaseVersion',
+      '10': 'databaseVersion'
+    },
+    {
+      '1': 'user_labels',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.CloudSqlSettings.UserLabelsEntry',
+      '10': 'userLabels'
+    },
     {'1': 'tier', '3': 3, '4': 1, '5': 9, '10': 'tier'},
-    {'1': 'storage_auto_resize_limit', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'storageAutoResizeLimit'},
-    {'1': 'activation_policy', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlActivationPolicy', '10': 'activationPolicy'},
-    {'1': 'ip_config', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.SqlIpConfig', '10': 'ipConfig'},
-    {'1': 'auto_storage_increase', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.BoolValue', '10': 'autoStorageIncrease'},
-    {'1': 'database_flags', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.clouddms.v1.CloudSqlSettings.DatabaseFlagsEntry', '10': 'databaseFlags'},
-    {'1': 'data_disk_type', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlDataDiskType', '10': 'dataDiskType'},
-    {'1': 'data_disk_size_gb', '3': 10, '4': 1, '5': 11, '6': '.google.protobuf.Int64Value', '10': 'dataDiskSizeGb'},
+    {
+      '1': 'storage_auto_resize_limit',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'storageAutoResizeLimit'
+    },
+    {
+      '1': 'activation_policy',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlActivationPolicy',
+      '10': 'activationPolicy'
+    },
+    {
+      '1': 'ip_config',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.SqlIpConfig',
+      '10': 'ipConfig'
+    },
+    {
+      '1': 'auto_storage_increase',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.BoolValue',
+      '10': 'autoStorageIncrease'
+    },
+    {
+      '1': 'database_flags',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.clouddms.v1.CloudSqlSettings.DatabaseFlagsEntry',
+      '10': 'databaseFlags'
+    },
+    {
+      '1': 'data_disk_type',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlDataDiskType',
+      '10': 'dataDiskType'
+    },
+    {
+      '1': 'data_disk_size_gb',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int64Value',
+      '10': 'dataDiskSizeGb'
+    },
     {'1': 'zone', '3': 11, '4': 1, '5': 9, '10': 'zone'},
     {'1': 'secondary_zone', '3': 18, '4': 1, '5': 9, '10': 'secondaryZone'},
     {'1': 'source_id', '3': 12, '4': 1, '5': 9, '10': 'sourceId'},
-    {'1': 'root_password_set', '3': 14, '4': 1, '5': 8, '10': 'rootPasswordSet'},
+    {
+      '1': 'root_password_set',
+      '3': 14,
+      '4': 1,
+      '5': 8,
+      '10': 'rootPasswordSet'
+    },
     {'1': 'collation', '3': 15, '4': 1, '5': 9, '10': 'collation'},
     {'1': 'cmek_key_name', '3': 16, '4': 1, '5': 9, '10': 'cmekKeyName'},
-    {'1': 'availability_type', '3': 17, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlAvailabilityType', '10': 'availabilityType'},
+    {
+      '1': 'availability_type',
+      '3': 17,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlAvailabilityType',
+      '10': 'availabilityType'
+    },
   ],
-  '3': [CloudSqlSettings_UserLabelsEntry$json, CloudSqlSettings_DatabaseFlagsEntry$json],
-  '4': [CloudSqlSettings_SqlActivationPolicy$json, CloudSqlSettings_SqlDataDiskType$json, CloudSqlSettings_SqlDatabaseVersion$json, CloudSqlSettings_SqlAvailabilityType$json],
+  '3': [
+    CloudSqlSettings_UserLabelsEntry$json,
+    CloudSqlSettings_DatabaseFlagsEntry$json
+  ],
+  '4': [
+    CloudSqlSettings_SqlActivationPolicy$json,
+    CloudSqlSettings_SqlDataDiskType$json,
+    CloudSqlSettings_SqlDatabaseVersion$json,
+    CloudSqlSettings_SqlAvailabilityType$json
+  ],
 };
 
 @$core.Deprecated('Use cloudSqlSettingsDescriptor instead')
@@ -337,10 +502,29 @@ const AlloyDbSettings$json = {
   '1': 'AlloyDbSettings',
   '2': [
     {'1': 'vpc_network', '3': 2, '4': 1, '5': 9, '10': 'vpcNetwork'},
-    {'1': 'labels', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.clouddms.v1.AlloyDbSettings.LabelsEntry', '10': 'labels'},
-    {'1': 'primary_instance_settings', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.AlloyDbSettings.PrimaryInstanceSettings', '10': 'primaryInstanceSettings'},
+    {
+      '1': 'labels',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.AlloyDbSettings.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'primary_instance_settings',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.clouddms.v1.AlloyDbSettings.PrimaryInstanceSettings',
+      '10': 'primaryInstanceSettings'
+    },
   ],
-  '3': [AlloyDbSettings_UserPassword$json, AlloyDbSettings_PrimaryInstanceSettings$json, AlloyDbSettings_LabelsEntry$json],
+  '3': [
+    AlloyDbSettings_UserPassword$json,
+    AlloyDbSettings_PrimaryInstanceSettings$json,
+    AlloyDbSettings_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use alloyDbSettingsDescriptor instead')
@@ -357,12 +541,40 @@ const AlloyDbSettings_PrimaryInstanceSettings$json = {
   '1': 'PrimaryInstanceSettings',
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
-    {'1': 'machine_config', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.AlloyDbSettings.PrimaryInstanceSettings.MachineConfig', '10': 'machineConfig'},
-    {'1': 'database_flags', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.clouddms.v1.AlloyDbSettings.PrimaryInstanceSettings.DatabaseFlagsEntry', '10': 'databaseFlags'},
-    {'1': 'labels', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.clouddms.v1.AlloyDbSettings.PrimaryInstanceSettings.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'machine_config',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.clouddms.v1.AlloyDbSettings.PrimaryInstanceSettings.MachineConfig',
+      '10': 'machineConfig'
+    },
+    {
+      '1': 'database_flags',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.clouddms.v1.AlloyDbSettings.PrimaryInstanceSettings.DatabaseFlagsEntry',
+      '10': 'databaseFlags'
+    },
+    {
+      '1': 'labels',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.clouddms.v1.AlloyDbSettings.PrimaryInstanceSettings.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'private_ip', '3': 8, '4': 1, '5': 9, '10': 'privateIp'},
   ],
-  '3': [AlloyDbSettings_PrimaryInstanceSettings_MachineConfig$json, AlloyDbSettings_PrimaryInstanceSettings_DatabaseFlagsEntry$json, AlloyDbSettings_PrimaryInstanceSettings_LabelsEntry$json],
+  '3': [
+    AlloyDbSettings_PrimaryInstanceSettings_MachineConfig$json,
+    AlloyDbSettings_PrimaryInstanceSettings_DatabaseFlagsEntry$json,
+    AlloyDbSettings_PrimaryInstanceSettings_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use alloyDbSettingsDescriptor instead')
@@ -431,8 +643,8 @@ const StaticIpConnectivity$json = {
 };
 
 /// Descriptor for `StaticIpConnectivity`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List staticIpConnectivityDescriptor = $convert.base64Decode(
-    'ChRTdGF0aWNJcENvbm5lY3Rpdml0eQ==');
+final $typed_data.Uint8List staticIpConnectivityDescriptor =
+    $convert.base64Decode('ChRTdGF0aWNJcENvbm5lY3Rpdml0eQ==');
 
 @$core.Deprecated('Use reverseSshConnectivityDescriptor instead')
 const ReverseSshConnectivity$json = {
@@ -446,9 +658,10 @@ const ReverseSshConnectivity$json = {
 };
 
 /// Descriptor for `ReverseSshConnectivity`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List reverseSshConnectivityDescriptor = $convert.base64Decode(
-    'ChZSZXZlcnNlU3NoQ29ubmVjdGl2aXR5EhMKBXZtX2lwGAEgASgJUgR2bUlwEhcKB3ZtX3Bvcn'
-    'QYAiABKAVSBnZtUG9ydBIOCgJ2bRgDIAEoCVICdm0SEAoDdnBjGAQgASgJUgN2cGM=');
+final $typed_data.Uint8List reverseSshConnectivityDescriptor =
+    $convert.base64Decode(
+        'ChZSZXZlcnNlU3NoQ29ubmVjdGl2aXR5EhMKBXZtX2lwGAEgASgJUgR2bUlwEhcKB3ZtX3Bvcn'
+        'QYAiABKAVSBnZtUG9ydBIOCgJ2bRgDIAEoCVICdm0SEAoDdnBjGAQgASgJUgN2cGM=');
 
 @$core.Deprecated('Use vpcPeeringConnectivityDescriptor instead')
 const VpcPeeringConnectivity$json = {
@@ -459,15 +672,29 @@ const VpcPeeringConnectivity$json = {
 };
 
 /// Descriptor for `VpcPeeringConnectivity`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List vpcPeeringConnectivityDescriptor = $convert.base64Decode(
-    'ChZWcGNQZWVyaW5nQ29ubmVjdGl2aXR5EhAKA3ZwYxgBIAEoCVIDdnBj');
+final $typed_data.Uint8List vpcPeeringConnectivityDescriptor = $convert
+    .base64Decode('ChZWcGNQZWVyaW5nQ29ubmVjdGl2aXR5EhAKA3ZwYxgBIAEoCVIDdnBj');
 
 @$core.Deprecated('Use databaseTypeDescriptor instead')
 const DatabaseType$json = {
   '1': 'DatabaseType',
   '2': [
-    {'1': 'provider', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.DatabaseProvider', '10': 'provider'},
-    {'1': 'engine', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.DatabaseEngine', '10': 'engine'},
+    {
+      '1': 'provider',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.clouddms.v1.DatabaseProvider',
+      '10': 'provider'
+    },
+    {
+      '1': 'engine',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.clouddms.v1.DatabaseEngine',
+      '10': 'engine'
+    },
   ],
 };
 
@@ -483,28 +710,144 @@ const MigrationJob$json = {
   '1': 'MigrationJob',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.clouddms.v1.MigrationJob.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.MigrationJob.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'state', '3': 6, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.MigrationJob.State', '10': 'state'},
-    {'1': 'phase', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.MigrationJob.Phase', '10': 'phase'},
-    {'1': 'type', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.MigrationJob.Type', '10': 'type'},
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.clouddms.v1.MigrationJob.State',
+      '10': 'state'
+    },
+    {
+      '1': 'phase',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.clouddms.v1.MigrationJob.Phase',
+      '10': 'phase'
+    },
+    {
+      '1': 'type',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.clouddms.v1.MigrationJob.Type',
+      '10': 'type'
+    },
     {'1': 'dump_path', '3': 9, '4': 1, '5': 9, '10': 'dumpPath'},
-    {'1': 'dump_flags', '3': 17, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.MigrationJob.DumpFlags', '10': 'dumpFlags'},
+    {
+      '1': 'dump_flags',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.MigrationJob.DumpFlags',
+      '10': 'dumpFlags'
+    },
     {'1': 'source', '3': 10, '4': 1, '5': 9, '10': 'source'},
     {'1': 'destination', '3': 11, '4': 1, '5': 9, '10': 'destination'},
-    {'1': 'reverse_ssh_connectivity', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.ReverseSshConnectivity', '9': 0, '10': 'reverseSshConnectivity'},
-    {'1': 'vpc_peering_connectivity', '3': 102, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.VpcPeeringConnectivity', '9': 0, '10': 'vpcPeeringConnectivity'},
-    {'1': 'static_ip_connectivity', '3': 103, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.StaticIpConnectivity', '9': 0, '10': 'staticIpConnectivity'},
-    {'1': 'duration', '3': 12, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
-    {'1': 'error', '3': 13, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'source_database', '3': 14, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.DatabaseType', '10': 'sourceDatabase'},
-    {'1': 'destination_database', '3': 15, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.DatabaseType', '10': 'destinationDatabase'},
-    {'1': 'end_time', '3': 16, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'reverse_ssh_connectivity',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.ReverseSshConnectivity',
+      '9': 0,
+      '10': 'reverseSshConnectivity'
+    },
+    {
+      '1': 'vpc_peering_connectivity',
+      '3': 102,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.VpcPeeringConnectivity',
+      '9': 0,
+      '10': 'vpcPeeringConnectivity'
+    },
+    {
+      '1': 'static_ip_connectivity',
+      '3': 103,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.StaticIpConnectivity',
+      '9': 0,
+      '10': 'staticIpConnectivity'
+    },
+    {
+      '1': 'duration',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
+    {
+      '1': 'error',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'source_database',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.DatabaseType',
+      '10': 'sourceDatabase'
+    },
+    {
+      '1': 'destination_database',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.DatabaseType',
+      '10': 'destinationDatabase'
+    },
+    {
+      '1': 'end_time',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
   ],
-  '3': [MigrationJob_DumpFlag$json, MigrationJob_DumpFlags$json, MigrationJob_LabelsEntry$json],
-  '4': [MigrationJob_State$json, MigrationJob_Phase$json, MigrationJob_Type$json],
+  '3': [
+    MigrationJob_DumpFlag$json,
+    MigrationJob_DumpFlags$json,
+    MigrationJob_LabelsEntry$json
+  ],
+  '4': [
+    MigrationJob_State$json,
+    MigrationJob_Phase$json,
+    MigrationJob_Type$json
+  ],
   '8': [
     {'1': 'connectivity'},
   ],
@@ -523,7 +866,14 @@ const MigrationJob_DumpFlag$json = {
 const MigrationJob_DumpFlags$json = {
   '1': 'DumpFlags',
   '2': [
-    {'1': 'dump_flags', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.clouddms.v1.MigrationJob.DumpFlag', '10': 'dumpFlags'},
+    {
+      '1': 'dump_flags',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.MigrationJob.DumpFlag',
+      '10': 'dumpFlags'
+    },
   ],
 };
 
@@ -628,17 +978,91 @@ const ConnectionProfile$json = {
   '1': 'ConnectionProfile',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.clouddms.v1.ConnectionProfile.LabelsEntry', '10': 'labels'},
-    {'1': 'state', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.ConnectionProfile.State', '10': 'state'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.ConnectionProfile.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'state',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.clouddms.v1.ConnectionProfile.State',
+      '10': 'state'
+    },
     {'1': 'display_name', '3': 6, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'mysql', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.MySqlConnectionProfile', '9': 0, '10': 'mysql'},
-    {'1': 'postgresql', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.PostgreSqlConnectionProfile', '9': 0, '10': 'postgresql'},
-    {'1': 'cloudsql', '3': 102, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.CloudSqlConnectionProfile', '9': 0, '10': 'cloudsql'},
-    {'1': 'alloydb', '3': 105, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.AlloyDbConnectionProfile', '9': 0, '10': 'alloydb'},
-    {'1': 'error', '3': 7, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
-    {'1': 'provider', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.clouddms.v1.DatabaseProvider', '10': 'provider'},
+    {
+      '1': 'mysql',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.MySqlConnectionProfile',
+      '9': 0,
+      '10': 'mysql'
+    },
+    {
+      '1': 'postgresql',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.PostgreSqlConnectionProfile',
+      '9': 0,
+      '10': 'postgresql'
+    },
+    {
+      '1': 'cloudsql',
+      '3': 102,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.CloudSqlConnectionProfile',
+      '9': 0,
+      '10': 'cloudsql'
+    },
+    {
+      '1': 'alloydb',
+      '3': 105,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.AlloyDbConnectionProfile',
+      '9': 0,
+      '10': 'alloydb'
+    },
+    {
+      '1': 'error',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'error'
+    },
+    {
+      '1': 'provider',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.clouddms.v1.DatabaseProvider',
+      '10': 'provider'
+    },
   ],
   '3': [ConnectionProfile_LabelsEntry$json],
   '4': [ConnectionProfile_State$json],
@@ -698,7 +1122,16 @@ final $typed_data.Uint8List connectionProfileDescriptor = $convert.base64Decode(
 const ConnectionProfileEventData$json = {
   '1': 'ConnectionProfileEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.ConnectionProfile', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.ConnectionProfile',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -706,16 +1139,26 @@ const ConnectionProfileEventData$json = {
 };
 
 /// Descriptor for `ConnectionProfileEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List connectionProfileEventDataDescriptor = $convert.base64Decode(
-    'ChpDb25uZWN0aW9uUHJvZmlsZUV2ZW50RGF0YRJRCgdwYXlsb2FkGAEgASgLMjIuZ29vZ2xlLm'
-    'V2ZW50cy5jbG91ZC5jbG91ZGRtcy52MS5Db25uZWN0aW9uUHJvZmlsZUgAUgdwYXlsb2FkiAEB'
-    'QgoKCF9wYXlsb2Fk');
+final $typed_data.Uint8List connectionProfileEventDataDescriptor =
+    $convert.base64Decode(
+        'ChpDb25uZWN0aW9uUHJvZmlsZUV2ZW50RGF0YRJRCgdwYXlsb2FkGAEgASgLMjIuZ29vZ2xlLm'
+        'V2ZW50cy5jbG91ZC5jbG91ZGRtcy52MS5Db25uZWN0aW9uUHJvZmlsZUgAUgdwYXlsb2FkiAEB'
+        'QgoKCF9wYXlsb2Fk');
 
 @$core.Deprecated('Use migrationJobEventDataDescriptor instead')
 const MigrationJobEventData$json = {
   '1': 'MigrationJobEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.clouddms.v1.MigrationJob', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.clouddms.v1.MigrationJob',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -727,4 +1170,3 @@ final $typed_data.Uint8List migrationJobEventDataDescriptor = $convert.base64Dec
     'ChVNaWdyYXRpb25Kb2JFdmVudERhdGESTAoHcGF5bG9hZBgBIAEoCzItLmdvb2dsZS5ldmVudH'
     'MuY2xvdWQuY2xvdWRkbXMudjEuTWlncmF0aW9uSm9iSABSB3BheWxvYWSIAQFCCgoIX3BheWxv'
     'YWQ=');
-

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const SourceCreatedEvent$json = {
   '1': 'SourceCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.SourceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.SourceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List sourceCreatedEventDescriptor = $convert.base64Decode
 const SourceUpdatedEvent$json = {
   '1': 'SourceUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.SourceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.SourceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List sourceUpdatedEventDescriptor = $convert.base64Decode
 const SourceDeletedEvent$json = {
   '1': 'SourceDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.SourceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.SourceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List sourceDeletedEventDescriptor = $convert.base64Decode
 const UtilizationReportCreatedEvent$json = {
   '1': 'UtilizationReportCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.UtilizationReportEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.UtilizationReportEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -78,7 +106,14 @@ final $typed_data.Uint8List utilizationReportCreatedEventDescriptor = $convert.b
 const UtilizationReportDeletedEvent$json = {
   '1': 'UtilizationReportDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.UtilizationReportEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.UtilizationReportEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -94,7 +129,14 @@ final $typed_data.Uint8List utilizationReportDeletedEventDescriptor = $convert.b
 const DatacenterConnectorCreatedEvent$json = {
   '1': 'DatacenterConnectorCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.DatacenterConnectorEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.DatacenterConnectorEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -110,7 +152,14 @@ final $typed_data.Uint8List datacenterConnectorCreatedEventDescriptor = $convert
 const DatacenterConnectorDeletedEvent$json = {
   '1': 'DatacenterConnectorDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.DatacenterConnectorEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.DatacenterConnectorEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -126,7 +175,14 @@ final $typed_data.Uint8List datacenterConnectorDeletedEventDescriptor = $convert
 const MigratingVmCreatedEvent$json = {
   '1': 'MigratingVmCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.MigratingVmEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.MigratingVmEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -142,7 +198,14 @@ final $typed_data.Uint8List migratingVmCreatedEventDescriptor = $convert.base64D
 const MigratingVmUpdatedEvent$json = {
   '1': 'MigratingVmUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.MigratingVmEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.MigratingVmEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -158,7 +221,14 @@ final $typed_data.Uint8List migratingVmUpdatedEventDescriptor = $convert.base64D
 const MigratingVmDeletedEvent$json = {
   '1': 'MigratingVmDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.MigratingVmEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.MigratingVmEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -174,7 +244,14 @@ final $typed_data.Uint8List migratingVmDeletedEventDescriptor = $convert.base64D
 const CloneJobCreatedEvent$json = {
   '1': 'CloneJobCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.CloneJobEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.CloneJobEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -190,7 +267,14 @@ final $typed_data.Uint8List cloneJobCreatedEventDescriptor = $convert.base64Deco
 const CutoverJobCreatedEvent$json = {
   '1': 'CutoverJobCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.CutoverJobEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.CutoverJobEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -206,7 +290,14 @@ final $typed_data.Uint8List cutoverJobCreatedEventDescriptor = $convert.base64De
 const GroupCreatedEvent$json = {
   '1': 'GroupCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.GroupEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.GroupEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -221,7 +312,14 @@ final $typed_data.Uint8List groupCreatedEventDescriptor = $convert.base64Decode(
 const GroupUpdatedEvent$json = {
   '1': 'GroupUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.GroupEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.GroupEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -236,7 +334,14 @@ final $typed_data.Uint8List groupUpdatedEventDescriptor = $convert.base64Decode(
 const GroupDeletedEvent$json = {
   '1': 'GroupDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.GroupEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.GroupEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -251,7 +356,14 @@ final $typed_data.Uint8List groupDeletedEventDescriptor = $convert.base64Decode(
 const TargetProjectCreatedEvent$json = {
   '1': 'TargetProjectCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.TargetProjectEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.TargetProjectEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -267,7 +379,14 @@ final $typed_data.Uint8List targetProjectCreatedEventDescriptor = $convert.base6
 const TargetProjectUpdatedEvent$json = {
   '1': 'TargetProjectUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.TargetProjectEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.TargetProjectEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -283,7 +402,14 @@ final $typed_data.Uint8List targetProjectUpdatedEventDescriptor = $convert.base6
 const TargetProjectDeletedEvent$json = {
   '1': 'TargetProjectDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.vmmigration.v1.TargetProjectEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.vmmigration.v1.TargetProjectEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -294,4 +420,3 @@ final $typed_data.Uint8List targetProjectDeletedEventDescriptor = $convert.base6
     'RzLmNsb3VkLnZtbWlncmF0aW9uLnYxLlRhcmdldFByb2plY3RFdmVudERhdGFSBGRhdGE6SLL4'
     '2CwxZ29vZ2xlLmNsb3VkLnZtbWlncmF0aW9uLnRhcmdldFByb2plY3QudjEuZGVsZXRlZMr42C'
     'wNdGFyZ2V0cHJvamVjdA==');
-

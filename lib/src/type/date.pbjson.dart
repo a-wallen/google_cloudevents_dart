@@ -27,4 +27,3 @@ const Date$json = {
 final $typed_data.Uint8List dateDescriptor = $convert.base64Decode(
     'CgREYXRlEhIKBHllYXIYASABKAVSBHllYXISFAoFbW9udGgYAiABKAVSBW1vbnRoEhAKA2RheR'
     'gDIAEoBVIDZGF5');
-

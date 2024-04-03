@@ -18,18 +18,76 @@ const AppConnection$json = {
   '1': 'AppConnection',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'display_name', '3': 5, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uid', '3': 6, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'type', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.Type', '10': 'type'},
-    {'1': 'application_endpoint', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.ApplicationEndpoint', '10': 'applicationEndpoint'},
+    {
+      '1': 'type',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'application_endpoint',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.ApplicationEndpoint',
+      '10': 'applicationEndpoint'
+    },
     {'1': 'connectors', '3': 9, '4': 3, '5': 9, '10': 'connectors'},
-    {'1': 'state', '3': 10, '4': 1, '5': 14, '6': '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.State', '10': 'state'},
-    {'1': 'gateway', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.Gateway', '10': 'gateway'},
+    {
+      '1': 'state',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.State',
+      '10': 'state'
+    },
+    {
+      '1': 'gateway',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.Gateway',
+      '10': 'gateway'
+    },
   ],
-  '3': [AppConnection_ApplicationEndpoint$json, AppConnection_Gateway$json, AppConnection_LabelsEntry$json],
+  '3': [
+    AppConnection_ApplicationEndpoint$json,
+    AppConnection_Gateway$json,
+    AppConnection_LabelsEntry$json
+  ],
   '4': [AppConnection_Type$json, AppConnection_State$json],
 };
 
@@ -46,7 +104,15 @@ const AppConnection_ApplicationEndpoint$json = {
 const AppConnection_Gateway$json = {
   '1': 'Gateway',
   '2': [
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.Gateway.Type', '10': 'type'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection.Gateway.Type',
+      '10': 'type'
+    },
     {'1': 'uri', '3': 3, '4': 1, '5': 9, '10': 'uri'},
     {'1': 'ingress_port', '3': 4, '4': 1, '5': 5, '10': 'ingressPort'},
     {'1': 'app_gateway', '3': 5, '4': 1, '5': 9, '10': 'appGateway'},
@@ -127,7 +193,16 @@ final $typed_data.Uint8List appConnectionDescriptor = $convert.base64Decode(
 const AppConnectionEventData$json = {
   '1': 'AppConnectionEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.beyondcorp.appconnections.v1.AppConnection',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -139,4 +214,3 @@ final $typed_data.Uint8List appConnectionEventDataDescriptor = $convert.base64De
     'ChZBcHBDb25uZWN0aW9uRXZlbnREYXRhEl4KB3BheWxvYWQYASABKAsyPy5nb29nbGUuZXZlbn'
     'RzLmNsb3VkLmJleW9uZGNvcnAuYXBwY29ubmVjdGlvbnMudjEuQXBwQ29ubmVjdGlvbkgAUgdw'
     'YXlsb2FkiAEBQgoKCF9wYXlsb2Fk');
-

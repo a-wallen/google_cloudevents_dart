@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const InstanceCreatedEvent$json = {
   '1': 'InstanceCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.memcache.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List instanceCreatedEventDescriptor = $convert.base64Deco
 const InstanceUpdatedEvent$json = {
   '1': 'InstanceUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.memcache.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List instanceUpdatedEventDescriptor = $convert.base64Deco
 const InstanceDeletedEvent$json = {
   '1': 'InstanceDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.memcache.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.memcache.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -57,4 +78,3 @@ final $typed_data.Uint8List instanceDeletedEventDescriptor = $convert.base64Deco
     'ChRJbnN0YW5jZURlbGV0ZWRFdmVudBJGCgRkYXRhGAEgASgLMjIuZ29vZ2xlLmV2ZW50cy5jbG'
     '91ZC5tZW1jYWNoZS52MS5JbnN0YW5jZUV2ZW50RGF0YVIEZGF0YTo7svjYLClnb29nbGUuY2xv'
     'dWQubWVtY2FjaGUuaW5zdGFuY2UudjEuZGVsZXRlZMr42CwIaW5zdGFuY2U=');
-

@@ -52,15 +52,64 @@ const Lake$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uid', '3': 3, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.Lake.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Lake.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 7, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.State',
+      '10': 'state'
+    },
     {'1': 'service_account', '3': 9, '4': 1, '5': 9, '10': 'serviceAccount'},
-    {'1': 'metastore', '3': 102, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Lake.Metastore', '10': 'metastore'},
-    {'1': 'asset_status', '3': 103, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.AssetStatus', '10': 'assetStatus'},
-    {'1': 'metastore_status', '3': 104, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Lake.MetastoreStatus', '10': 'metastoreStatus'},
+    {
+      '1': 'metastore',
+      '3': 102,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Lake.Metastore',
+      '10': 'metastore'
+    },
+    {
+      '1': 'asset_status',
+      '3': 103,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.AssetStatus',
+      '10': 'assetStatus'
+    },
+    {
+      '1': 'metastore_status',
+      '3': 104,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Lake.MetastoreStatus',
+      '10': 'metastoreStatus'
+    },
   ],
   '3': [Lake_Metastore$json, Lake_MetastoreStatus$json, Lake_LabelsEntry$json],
 };
@@ -77,9 +126,23 @@ const Lake_Metastore$json = {
 const Lake_MetastoreStatus$json = {
   '1': 'MetastoreStatus',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.Lake.MetastoreStatus.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.Lake.MetastoreStatus.State',
+      '10': 'state'
+    },
     {'1': 'message', '3': 2, '4': 1, '5': 9, '10': 'message'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'endpoint', '3': 4, '4': 1, '5': 9, '10': 'endpoint'},
   ],
   '4': [Lake_MetastoreStatus_State$json],
@@ -134,9 +197,22 @@ final $typed_data.Uint8List lakeDescriptor = $convert.base64Decode(
 const AssetStatus$json = {
   '1': 'AssetStatus',
   '2': [
-    {'1': 'update_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'update_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'active_assets', '3': 2, '4': 1, '5': 5, '10': 'activeAssets'},
-    {'1': 'security_policy_applying_assets', '3': 3, '4': 1, '5': 5, '10': 'securityPolicyApplyingAssets'},
+    {
+      '1': 'security_policy_applying_assets',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '10': 'securityPolicyApplyingAssets'
+    },
   ],
 };
 
@@ -154,15 +230,71 @@ const Zone$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uid', '3': 3, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.Zone.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Zone.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 7, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.State', '10': 'state'},
-    {'1': 'type', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.Zone.Type', '10': 'type'},
-    {'1': 'discovery_spec', '3': 103, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Zone.DiscoverySpec', '10': 'discoverySpec'},
-    {'1': 'resource_spec', '3': 104, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Zone.ResourceSpec', '10': 'resourceSpec'},
-    {'1': 'asset_status', '3': 105, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.AssetStatus', '10': 'assetStatus'},
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.State',
+      '10': 'state'
+    },
+    {
+      '1': 'type',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.Zone.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'discovery_spec',
+      '3': 103,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Zone.DiscoverySpec',
+      '10': 'discoverySpec'
+    },
+    {
+      '1': 'resource_spec',
+      '3': 104,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Zone.ResourceSpec',
+      '10': 'resourceSpec'
+    },
+    {
+      '1': 'asset_status',
+      '3': 105,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.AssetStatus',
+      '10': 'assetStatus'
+    },
   ],
   '3': [Zone_ResourceSpec$json, Zone_DiscoverySpec$json, Zone_LabelsEntry$json],
   '4': [Zone_Type$json],
@@ -172,7 +304,14 @@ const Zone$json = {
 const Zone_ResourceSpec$json = {
   '1': 'ResourceSpec',
   '2': [
-    {'1': 'location_type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.Zone.ResourceSpec.LocationType', '10': 'locationType'},
+    {
+      '1': 'location_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.Zone.ResourceSpec.LocationType',
+      '10': 'locationType'
+    },
   ],
   '4': [Zone_ResourceSpec_LocationType$json],
 };
@@ -194,11 +333,28 @@ const Zone_DiscoverySpec$json = {
     {'1': 'enabled', '3': 1, '4': 1, '5': 8, '10': 'enabled'},
     {'1': 'include_patterns', '3': 2, '4': 3, '5': 9, '10': 'includePatterns'},
     {'1': 'exclude_patterns', '3': 3, '4': 3, '5': 9, '10': 'excludePatterns'},
-    {'1': 'csv_options', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Zone.DiscoverySpec.CsvOptions', '10': 'csvOptions'},
-    {'1': 'json_options', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Zone.DiscoverySpec.JsonOptions', '10': 'jsonOptions'},
+    {
+      '1': 'csv_options',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Zone.DiscoverySpec.CsvOptions',
+      '10': 'csvOptions'
+    },
+    {
+      '1': 'json_options',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Zone.DiscoverySpec.JsonOptions',
+      '10': 'jsonOptions'
+    },
     {'1': 'schedule', '3': 10, '4': 1, '5': 9, '9': 0, '10': 'schedule'},
   ],
-  '3': [Zone_DiscoverySpec_CsvOptions$json, Zone_DiscoverySpec_JsonOptions$json],
+  '3': [
+    Zone_DiscoverySpec_CsvOptions$json,
+    Zone_DiscoverySpec_JsonOptions$json
+  ],
   '8': [
     {'1': 'trigger'},
   ],
@@ -211,7 +367,13 @@ const Zone_DiscoverySpec_CsvOptions$json = {
     {'1': 'header_rows', '3': 1, '4': 1, '5': 5, '10': 'headerRows'},
     {'1': 'delimiter', '3': 2, '4': 1, '5': 9, '10': 'delimiter'},
     {'1': 'encoding', '3': 3, '4': 1, '5': 9, '10': 'encoding'},
-    {'1': 'disable_type_inference', '3': 4, '4': 1, '5': 8, '10': 'disableTypeInference'},
+    {
+      '1': 'disable_type_inference',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'disableTypeInference'
+    },
   ],
 };
 
@@ -220,7 +382,13 @@ const Zone_DiscoverySpec_JsonOptions$json = {
   '1': 'JsonOptions',
   '2': [
     {'1': 'encoding', '3': 1, '4': 1, '5': 9, '10': 'encoding'},
-    {'1': 'disable_type_inference', '3': 2, '4': 1, '5': 8, '10': 'disableTypeInference'},
+    {
+      '1': 'disable_type_inference',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'disableTypeInference'
+    },
   ],
 };
 
@@ -284,27 +452,111 @@ const Asset$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uid', '3': 3, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.Asset.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Asset.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 7, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.State', '10': 'state'},
-    {'1': 'resource_spec', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Asset.ResourceSpec', '10': 'resourceSpec'},
-    {'1': 'resource_status', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Asset.ResourceStatus', '10': 'resourceStatus'},
-    {'1': 'security_status', '3': 103, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Asset.SecurityStatus', '10': 'securityStatus'},
-    {'1': 'discovery_spec', '3': 106, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Asset.DiscoverySpec', '10': 'discoverySpec'},
-    {'1': 'discovery_status', '3': 107, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Asset.DiscoveryStatus', '10': 'discoveryStatus'},
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.State',
+      '10': 'state'
+    },
+    {
+      '1': 'resource_spec',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Asset.ResourceSpec',
+      '10': 'resourceSpec'
+    },
+    {
+      '1': 'resource_status',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Asset.ResourceStatus',
+      '10': 'resourceStatus'
+    },
+    {
+      '1': 'security_status',
+      '3': 103,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Asset.SecurityStatus',
+      '10': 'securityStatus'
+    },
+    {
+      '1': 'discovery_spec',
+      '3': 106,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Asset.DiscoverySpec',
+      '10': 'discoverySpec'
+    },
+    {
+      '1': 'discovery_status',
+      '3': 107,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Asset.DiscoveryStatus',
+      '10': 'discoveryStatus'
+    },
   ],
-  '3': [Asset_SecurityStatus$json, Asset_DiscoverySpec$json, Asset_ResourceSpec$json, Asset_ResourceStatus$json, Asset_DiscoveryStatus$json, Asset_LabelsEntry$json],
+  '3': [
+    Asset_SecurityStatus$json,
+    Asset_DiscoverySpec$json,
+    Asset_ResourceSpec$json,
+    Asset_ResourceStatus$json,
+    Asset_DiscoveryStatus$json,
+    Asset_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use assetDescriptor instead')
 const Asset_SecurityStatus$json = {
   '1': 'SecurityStatus',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.Asset.SecurityStatus.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.Asset.SecurityStatus.State',
+      '10': 'state'
+    },
     {'1': 'message', '3': 2, '4': 1, '5': 9, '10': 'message'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
   ],
   '4': [Asset_SecurityStatus_State$json],
 };
@@ -327,11 +579,28 @@ const Asset_DiscoverySpec$json = {
     {'1': 'enabled', '3': 1, '4': 1, '5': 8, '10': 'enabled'},
     {'1': 'include_patterns', '3': 2, '4': 3, '5': 9, '10': 'includePatterns'},
     {'1': 'exclude_patterns', '3': 3, '4': 3, '5': 9, '10': 'excludePatterns'},
-    {'1': 'csv_options', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Asset.DiscoverySpec.CsvOptions', '10': 'csvOptions'},
-    {'1': 'json_options', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Asset.DiscoverySpec.JsonOptions', '10': 'jsonOptions'},
+    {
+      '1': 'csv_options',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Asset.DiscoverySpec.CsvOptions',
+      '10': 'csvOptions'
+    },
+    {
+      '1': 'json_options',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Asset.DiscoverySpec.JsonOptions',
+      '10': 'jsonOptions'
+    },
     {'1': 'schedule', '3': 10, '4': 1, '5': 9, '9': 0, '10': 'schedule'},
   ],
-  '3': [Asset_DiscoverySpec_CsvOptions$json, Asset_DiscoverySpec_JsonOptions$json],
+  '3': [
+    Asset_DiscoverySpec_CsvOptions$json,
+    Asset_DiscoverySpec_JsonOptions$json
+  ],
   '8': [
     {'1': 'trigger'},
   ],
@@ -344,7 +613,13 @@ const Asset_DiscoverySpec_CsvOptions$json = {
     {'1': 'header_rows', '3': 1, '4': 1, '5': 5, '10': 'headerRows'},
     {'1': 'delimiter', '3': 2, '4': 1, '5': 9, '10': 'delimiter'},
     {'1': 'encoding', '3': 3, '4': 1, '5': 9, '10': 'encoding'},
-    {'1': 'disable_type_inference', '3': 4, '4': 1, '5': 8, '10': 'disableTypeInference'},
+    {
+      '1': 'disable_type_inference',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'disableTypeInference'
+    },
   ],
 };
 
@@ -353,7 +628,13 @@ const Asset_DiscoverySpec_JsonOptions$json = {
   '1': 'JsonOptions',
   '2': [
     {'1': 'encoding', '3': 1, '4': 1, '5': 9, '10': 'encoding'},
-    {'1': 'disable_type_inference', '3': 2, '4': 1, '5': 8, '10': 'disableTypeInference'},
+    {
+      '1': 'disable_type_inference',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'disableTypeInference'
+    },
   ],
 };
 
@@ -362,8 +643,22 @@ const Asset_ResourceSpec$json = {
   '1': 'ResourceSpec',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.Asset.ResourceSpec.Type', '10': 'type'},
-    {'1': 'read_access_mode', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.Asset.ResourceSpec.AccessMode', '10': 'readAccessMode'},
+    {
+      '1': 'type',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.Asset.ResourceSpec.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'read_access_mode',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.Asset.ResourceSpec.AccessMode',
+      '10': 'readAccessMode'
+    },
   ],
   '4': [Asset_ResourceSpec_Type$json, Asset_ResourceSpec_AccessMode$json],
 };
@@ -392,10 +687,30 @@ const Asset_ResourceSpec_AccessMode$json = {
 const Asset_ResourceStatus$json = {
   '1': 'ResourceStatus',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.Asset.ResourceStatus.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.Asset.ResourceStatus.State',
+      '10': 'state'
+    },
     {'1': 'message', '3': 2, '4': 1, '5': 9, '10': 'message'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'managed_access_identity', '3': 4, '4': 1, '5': 9, '10': 'managedAccessIdentity'},
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'managed_access_identity',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '10': 'managedAccessIdentity'
+    },
   ],
   '4': [Asset_ResourceStatus_State$json],
 };
@@ -414,12 +729,47 @@ const Asset_ResourceStatus_State$json = {
 const Asset_DiscoveryStatus$json = {
   '1': 'DiscoveryStatus',
   '2': [
-    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.Asset.DiscoveryStatus.State', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.Asset.DiscoveryStatus.State',
+      '10': 'state'
+    },
     {'1': 'message', '3': 2, '4': 1, '5': 9, '10': 'message'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'last_run_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'lastRunTime'},
-    {'1': 'stats', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Asset.DiscoveryStatus.Stats', '10': 'stats'},
-    {'1': 'last_run_duration', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'lastRunDuration'},
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'last_run_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'lastRunTime'
+    },
+    {
+      '1': 'stats',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Asset.DiscoveryStatus.Stats',
+      '10': 'stats'
+    },
+    {
+      '1': 'last_run_duration',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'lastRunDuration'
+    },
   ],
   '3': [Asset_DiscoveryStatus_Stats$json],
   '4': [Asset_DiscoveryStatus_State$json],
@@ -524,27 +874,110 @@ const Environment$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uid', '3': 3, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.Environment.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Environment.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 7, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.State', '10': 'state'},
-    {'1': 'infrastructure_spec', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Environment.InfrastructureSpec', '10': 'infrastructureSpec'},
-    {'1': 'session_spec', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Environment.SessionSpec', '10': 'sessionSpec'},
-    {'1': 'session_status', '3': 102, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Environment.SessionStatus', '10': 'sessionStatus'},
-    {'1': 'endpoints', '3': 200, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Environment.Endpoints', '10': 'endpoints'},
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.State',
+      '10': 'state'
+    },
+    {
+      '1': 'infrastructure_spec',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Environment.InfrastructureSpec',
+      '10': 'infrastructureSpec'
+    },
+    {
+      '1': 'session_spec',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Environment.SessionSpec',
+      '10': 'sessionSpec'
+    },
+    {
+      '1': 'session_status',
+      '3': 102,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Environment.SessionStatus',
+      '10': 'sessionStatus'
+    },
+    {
+      '1': 'endpoints',
+      '3': 200,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Environment.Endpoints',
+      '10': 'endpoints'
+    },
   ],
-  '3': [Environment_InfrastructureSpec$json, Environment_SessionSpec$json, Environment_SessionStatus$json, Environment_Endpoints$json, Environment_LabelsEntry$json],
+  '3': [
+    Environment_InfrastructureSpec$json,
+    Environment_SessionSpec$json,
+    Environment_SessionStatus$json,
+    Environment_Endpoints$json,
+    Environment_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use environmentDescriptor instead')
 const Environment_InfrastructureSpec$json = {
   '1': 'InfrastructureSpec',
   '2': [
-    {'1': 'compute', '3': 50, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Environment.InfrastructureSpec.ComputeResources', '9': 0, '10': 'compute'},
-    {'1': 'os_image', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Environment.InfrastructureSpec.OsImageRuntime', '9': 1, '10': 'osImage'},
+    {
+      '1': 'compute',
+      '3': 50,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.Environment.InfrastructureSpec.ComputeResources',
+      '9': 0,
+      '10': 'compute'
+    },
+    {
+      '1': 'os_image',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.Environment.InfrastructureSpec.OsImageRuntime',
+      '9': 1,
+      '10': 'osImage'
+    },
   ],
-  '3': [Environment_InfrastructureSpec_ComputeResources$json, Environment_InfrastructureSpec_OsImageRuntime$json],
+  '3': [
+    Environment_InfrastructureSpec_ComputeResources$json,
+    Environment_InfrastructureSpec_OsImageRuntime$json
+  ],
   '8': [
     {'1': 'resources'},
     {'1': 'runtime'},
@@ -568,7 +1001,15 @@ const Environment_InfrastructureSpec_OsImageRuntime$json = {
     {'1': 'image_version', '3': 1, '4': 1, '5': 9, '10': 'imageVersion'},
     {'1': 'java_libraries', '3': 2, '4': 3, '5': 9, '10': 'javaLibraries'},
     {'1': 'python_packages', '3': 3, '4': 3, '5': 9, '10': 'pythonPackages'},
-    {'1': 'properties', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.Environment.InfrastructureSpec.OsImageRuntime.PropertiesEntry', '10': 'properties'},
+    {
+      '1': 'properties',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.Environment.InfrastructureSpec.OsImageRuntime.PropertiesEntry',
+      '10': 'properties'
+    },
   ],
   '3': [Environment_InfrastructureSpec_OsImageRuntime_PropertiesEntry$json],
 };
@@ -587,8 +1028,21 @@ const Environment_InfrastructureSpec_OsImageRuntime_PropertiesEntry$json = {
 const Environment_SessionSpec$json = {
   '1': 'SessionSpec',
   '2': [
-    {'1': 'max_idle_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'maxIdleDuration'},
-    {'1': 'enable_fast_startup', '3': 2, '4': 1, '5': 8, '10': 'enableFastStartup'},
+    {
+      '1': 'max_idle_duration',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'maxIdleDuration'
+    },
+    {
+      '1': 'enable_fast_startup',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '10': 'enableFastStartup'
+    },
   ],
 };
 
@@ -659,8 +1113,24 @@ final $typed_data.Uint8List environmentDescriptor = $convert.base64Decode(
 const Trigger$json = {
   '1': 'Trigger',
   '2': [
-    {'1': 'on_demand', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Trigger.OnDemand', '9': 0, '10': 'onDemand'},
-    {'1': 'schedule', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Trigger.Schedule', '9': 0, '10': 'schedule'},
+    {
+      '1': 'on_demand',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Trigger.OnDemand',
+      '9': 0,
+      '10': 'onDemand'
+    },
+    {
+      '1': 'schedule',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Trigger.Schedule',
+      '9': 0,
+      '10': 'schedule'
+    },
   ],
   '3': [Trigger_OnDemand$json, Trigger_Schedule$json],
   '8': [
@@ -708,7 +1178,15 @@ final $typed_data.Uint8List dataSourceDescriptor = $convert.base64Decode(
 const ScannedData$json = {
   '1': 'ScannedData',
   '2': [
-    {'1': 'incremental_field', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.ScannedData.IncrementalField', '9': 0, '10': 'incrementalField'},
+    {
+      '1': 'incremental_field',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.ScannedData.IncrementalField',
+      '9': 0,
+      '10': 'incrementalField'
+    },
   ],
   '3': [ScannedData_IncrementalField$json],
   '8': [
@@ -739,16 +1217,30 @@ const DataProfileSpec$json = {
 };
 
 /// Descriptor for `DataProfileSpec`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dataProfileSpecDescriptor = $convert.base64Decode(
-    'Cg9EYXRhUHJvZmlsZVNwZWM=');
+final $typed_data.Uint8List dataProfileSpecDescriptor =
+    $convert.base64Decode('Cg9EYXRhUHJvZmlsZVNwZWM=');
 
 @$core.Deprecated('Use dataProfileResultDescriptor instead')
 const DataProfileResult$json = {
   '1': 'DataProfileResult',
   '2': [
     {'1': 'row_count', '3': 3, '4': 1, '5': 3, '10': 'rowCount'},
-    {'1': 'profile', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataProfileResult.Profile', '10': 'profile'},
-    {'1': 'scanned_data', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.ScannedData', '10': 'scannedData'},
+    {
+      '1': 'profile',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataProfileResult.Profile',
+      '10': 'profile'
+    },
+    {
+      '1': 'scanned_data',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.ScannedData',
+      '10': 'scannedData'
+    },
   ],
   '3': [DataProfileResult_Profile$json],
 };
@@ -757,7 +1249,14 @@ const DataProfileResult$json = {
 const DataProfileResult_Profile$json = {
   '1': 'Profile',
   '2': [
-    {'1': 'fields', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field', '10': 'fields'},
+    {
+      '1': 'fields',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field',
+      '10': 'fields'
+    },
   ],
   '3': [DataProfileResult_Profile_Field$json],
 };
@@ -769,7 +1268,15 @@ const DataProfileResult_Profile_Field$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'type', '3': 2, '4': 1, '5': 9, '10': 'type'},
     {'1': 'mode', '3': 3, '4': 1, '5': 9, '10': 'mode'},
-    {'1': 'profile', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field.ProfileInfo', '10': 'profile'},
+    {
+      '1': 'profile',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field.ProfileInfo',
+      '10': 'profile'
+    },
   ],
   '3': [DataProfileResult_Profile_Field_ProfileInfo$json],
 };
@@ -780,12 +1287,52 @@ const DataProfileResult_Profile_Field_ProfileInfo$json = {
   '2': [
     {'1': 'null_ratio', '3': 2, '4': 1, '5': 1, '10': 'nullRatio'},
     {'1': 'distinct_ratio', '3': 3, '4': 1, '5': 1, '10': 'distinctRatio'},
-    {'1': 'top_n_values', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field.ProfileInfo.TopNValue', '10': 'topNValues'},
-    {'1': 'string_profile', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field.ProfileInfo.StringFieldInfo', '9': 0, '10': 'stringProfile'},
-    {'1': 'integer_profile', '3': 102, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field.ProfileInfo.IntegerFieldInfo', '9': 0, '10': 'integerProfile'},
-    {'1': 'double_profile', '3': 103, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field.ProfileInfo.DoubleFieldInfo', '9': 0, '10': 'doubleProfile'},
+    {
+      '1': 'top_n_values',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field.ProfileInfo.TopNValue',
+      '10': 'topNValues'
+    },
+    {
+      '1': 'string_profile',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field.ProfileInfo.StringFieldInfo',
+      '9': 0,
+      '10': 'stringProfile'
+    },
+    {
+      '1': 'integer_profile',
+      '3': 102,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field.ProfileInfo.IntegerFieldInfo',
+      '9': 0,
+      '10': 'integerProfile'
+    },
+    {
+      '1': 'double_profile',
+      '3': 103,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.DataProfileResult.Profile.Field.ProfileInfo.DoubleFieldInfo',
+      '9': 0,
+      '10': 'doubleProfile'
+    },
   ],
-  '3': [DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo$json, DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo$json, DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo$json, DataProfileResult_Profile_Field_ProfileInfo_TopNValue$json],
+  '3': [
+    DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo$json,
+    DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo$json,
+    DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo$json,
+    DataProfileResult_Profile_Field_ProfileInfo_TopNValue$json
+  ],
   '8': [
     {'1': 'field_info'},
   ],
@@ -806,7 +1353,13 @@ const DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo$json = {
   '1': 'IntegerFieldInfo',
   '2': [
     {'1': 'average', '3': 1, '4': 1, '5': 1, '10': 'average'},
-    {'1': 'standard_deviation', '3': 3, '4': 1, '5': 1, '10': 'standardDeviation'},
+    {
+      '1': 'standard_deviation',
+      '3': 3,
+      '4': 1,
+      '5': 1,
+      '10': 'standardDeviation'
+    },
     {'1': 'min', '3': 4, '4': 1, '5': 3, '10': 'min'},
     {'1': 'quartiles', '3': 6, '4': 3, '5': 3, '10': 'quartiles'},
     {'1': 'max', '3': 5, '4': 1, '5': 3, '10': 'max'},
@@ -818,7 +1371,13 @@ const DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo$json = {
   '1': 'DoubleFieldInfo',
   '2': [
     {'1': 'average', '3': 1, '4': 1, '5': 1, '10': 'average'},
-    {'1': 'standard_deviation', '3': 3, '4': 1, '5': 1, '10': 'standardDeviation'},
+    {
+      '1': 'standard_deviation',
+      '3': 3,
+      '4': 1,
+      '5': 1,
+      '10': 'standardDeviation'
+    },
     {'1': 'min', '3': 4, '4': 1, '5': 1, '10': 'min'},
     {'1': 'quartiles', '3': 6, '4': 3, '5': 1, '10': 'quartiles'},
     {'1': 'max', '3': 5, '4': 1, '5': 1, '10': 'max'},
@@ -871,7 +1430,14 @@ final $typed_data.Uint8List dataProfileResultDescriptor = $convert.base64Decode(
 const DataQualitySpec$json = {
   '1': 'DataQualitySpec',
   '2': [
-    {'1': 'rules', '3': 1, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityRule', '10': 'rules'},
+    {
+      '1': 'rules',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataQualityRule',
+      '10': 'rules'
+    },
   ],
 };
 
@@ -885,10 +1451,31 @@ const DataQualityResult$json = {
   '1': 'DataQualityResult',
   '2': [
     {'1': 'passed', '3': 5, '4': 1, '5': 8, '10': 'passed'},
-    {'1': 'dimensions', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityDimensionResult', '10': 'dimensions'},
-    {'1': 'rules', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityRuleResult', '10': 'rules'},
+    {
+      '1': 'dimensions',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataQualityDimensionResult',
+      '10': 'dimensions'
+    },
+    {
+      '1': 'rules',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataQualityRuleResult',
+      '10': 'rules'
+    },
     {'1': 'row_count', '3': 4, '4': 1, '5': 3, '10': 'rowCount'},
-    {'1': 'scanned_data', '3': 7, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.ScannedData', '10': 'scannedData'},
+    {
+      '1': 'scanned_data',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.ScannedData',
+      '10': 'scannedData'
+    },
   ],
 };
 
@@ -905,13 +1492,26 @@ final $typed_data.Uint8List dataQualityResultDescriptor = $convert.base64Decode(
 const DataQualityRuleResult$json = {
   '1': 'DataQualityRuleResult',
   '2': [
-    {'1': 'rule', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityRule', '10': 'rule'},
+    {
+      '1': 'rule',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataQualityRule',
+      '10': 'rule'
+    },
     {'1': 'passed', '3': 7, '4': 1, '5': 8, '10': 'passed'},
     {'1': 'evaluated_count', '3': 9, '4': 1, '5': 3, '10': 'evaluatedCount'},
     {'1': 'passed_count', '3': 8, '4': 1, '5': 3, '10': 'passedCount'},
     {'1': 'null_count', '3': 5, '4': 1, '5': 3, '10': 'nullCount'},
     {'1': 'pass_ratio', '3': 6, '4': 1, '5': 1, '10': 'passRatio'},
-    {'1': 'failing_rows_query', '3': 10, '4': 1, '5': 9, '10': 'failingRowsQuery'},
+    {
+      '1': 'failing_rows_query',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '10': 'failingRowsQuery'
+    },
   ],
 };
 
@@ -933,27 +1533,106 @@ const DataQualityDimensionResult$json = {
 };
 
 /// Descriptor for `DataQualityDimensionResult`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dataQualityDimensionResultDescriptor = $convert.base64Decode(
-    'ChpEYXRhUXVhbGl0eURpbWVuc2lvblJlc3VsdBIWCgZwYXNzZWQYAyABKAhSBnBhc3NlZA==');
+final $typed_data.Uint8List dataQualityDimensionResultDescriptor =
+    $convert.base64Decode(
+        'ChpEYXRhUXVhbGl0eURpbWVuc2lvblJlc3VsdBIWCgZwYXNzZWQYAyABKAhSBnBhc3NlZA==');
 
 @$core.Deprecated('Use dataQualityRuleDescriptor instead')
 const DataQualityRule$json = {
   '1': 'DataQualityRule',
   '2': [
-    {'1': 'range_expectation', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityRule.RangeExpectation', '9': 0, '10': 'rangeExpectation'},
-    {'1': 'non_null_expectation', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityRule.NonNullExpectation', '9': 0, '10': 'nonNullExpectation'},
-    {'1': 'set_expectation', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityRule.SetExpectation', '9': 0, '10': 'setExpectation'},
-    {'1': 'regex_expectation', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityRule.RegexExpectation', '9': 0, '10': 'regexExpectation'},
-    {'1': 'uniqueness_expectation', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityRule.UniquenessExpectation', '9': 0, '10': 'uniquenessExpectation'},
-    {'1': 'statistic_range_expectation', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityRule.StatisticRangeExpectation', '9': 0, '10': 'statisticRangeExpectation'},
-    {'1': 'row_condition_expectation', '3': 200, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityRule.RowConditionExpectation', '9': 0, '10': 'rowConditionExpectation'},
-    {'1': 'table_condition_expectation', '3': 201, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityRule.TableConditionExpectation', '9': 0, '10': 'tableConditionExpectation'},
+    {
+      '1': 'range_expectation',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataQualityRule.RangeExpectation',
+      '9': 0,
+      '10': 'rangeExpectation'
+    },
+    {
+      '1': 'non_null_expectation',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.DataQualityRule.NonNullExpectation',
+      '9': 0,
+      '10': 'nonNullExpectation'
+    },
+    {
+      '1': 'set_expectation',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataQualityRule.SetExpectation',
+      '9': 0,
+      '10': 'setExpectation'
+    },
+    {
+      '1': 'regex_expectation',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataQualityRule.RegexExpectation',
+      '9': 0,
+      '10': 'regexExpectation'
+    },
+    {
+      '1': 'uniqueness_expectation',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.DataQualityRule.UniquenessExpectation',
+      '9': 0,
+      '10': 'uniquenessExpectation'
+    },
+    {
+      '1': 'statistic_range_expectation',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.DataQualityRule.StatisticRangeExpectation',
+      '9': 0,
+      '10': 'statisticRangeExpectation'
+    },
+    {
+      '1': 'row_condition_expectation',
+      '3': 200,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.DataQualityRule.RowConditionExpectation',
+      '9': 0,
+      '10': 'rowConditionExpectation'
+    },
+    {
+      '1': 'table_condition_expectation',
+      '3': 201,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.DataQualityRule.TableConditionExpectation',
+      '9': 0,
+      '10': 'tableConditionExpectation'
+    },
     {'1': 'column', '3': 500, '4': 1, '5': 9, '10': 'column'},
     {'1': 'ignore_null', '3': 501, '4': 1, '5': 8, '10': 'ignoreNull'},
     {'1': 'dimension', '3': 502, '4': 1, '5': 9, '10': 'dimension'},
     {'1': 'threshold', '3': 503, '4': 1, '5': 1, '10': 'threshold'},
   ],
-  '3': [DataQualityRule_RangeExpectation$json, DataQualityRule_NonNullExpectation$json, DataQualityRule_SetExpectation$json, DataQualityRule_RegexExpectation$json, DataQualityRule_UniquenessExpectation$json, DataQualityRule_StatisticRangeExpectation$json, DataQualityRule_RowConditionExpectation$json, DataQualityRule_TableConditionExpectation$json],
+  '3': [
+    DataQualityRule_RangeExpectation$json,
+    DataQualityRule_NonNullExpectation$json,
+    DataQualityRule_SetExpectation$json,
+    DataQualityRule_RegexExpectation$json,
+    DataQualityRule_UniquenessExpectation$json,
+    DataQualityRule_StatisticRangeExpectation$json,
+    DataQualityRule_RowConditionExpectation$json,
+    DataQualityRule_TableConditionExpectation$json
+  ],
   '8': [
     {'1': 'rule_type'},
   ],
@@ -965,8 +1644,20 @@ const DataQualityRule_RangeExpectation$json = {
   '2': [
     {'1': 'min_value', '3': 1, '4': 1, '5': 9, '10': 'minValue'},
     {'1': 'max_value', '3': 2, '4': 1, '5': 9, '10': 'maxValue'},
-    {'1': 'strict_min_enabled', '3': 3, '4': 1, '5': 8, '10': 'strictMinEnabled'},
-    {'1': 'strict_max_enabled', '3': 4, '4': 1, '5': 8, '10': 'strictMaxEnabled'},
+    {
+      '1': 'strict_min_enabled',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'strictMinEnabled'
+    },
+    {
+      '1': 'strict_max_enabled',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'strictMaxEnabled'
+    },
   ],
 };
 
@@ -1000,11 +1691,31 @@ const DataQualityRule_UniquenessExpectation$json = {
 const DataQualityRule_StatisticRangeExpectation$json = {
   '1': 'StatisticRangeExpectation',
   '2': [
-    {'1': 'statistic', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.DataQualityRule.StatisticRangeExpectation.ColumnStatistic', '10': 'statistic'},
+    {
+      '1': 'statistic',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.dataplex.v1.DataQualityRule.StatisticRangeExpectation.ColumnStatistic',
+      '10': 'statistic'
+    },
     {'1': 'min_value', '3': 2, '4': 1, '5': 9, '10': 'minValue'},
     {'1': 'max_value', '3': 3, '4': 1, '5': 9, '10': 'maxValue'},
-    {'1': 'strict_min_enabled', '3': 4, '4': 1, '5': 8, '10': 'strictMinEnabled'},
-    {'1': 'strict_max_enabled', '3': 5, '4': 1, '5': 8, '10': 'strictMaxEnabled'},
+    {
+      '1': 'strict_min_enabled',
+      '3': 4,
+      '4': 1,
+      '5': 8,
+      '10': 'strictMinEnabled'
+    },
+    {
+      '1': 'strict_max_enabled',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '10': 'strictMaxEnabled'
+    },
   ],
   '4': [DataQualityRule_StatisticRangeExpectation_ColumnStatistic$json],
 };
@@ -1099,8 +1810,8 @@ const DataAccessSpec$json = {
 };
 
 /// Descriptor for `DataAccessSpec`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dataAccessSpecDescriptor = $convert.base64Decode(
-    'Cg5EYXRhQWNjZXNzU3BlYxIYCgdyZWFkZXJzGAEgAygJUgdyZWFkZXJz');
+final $typed_data.Uint8List dataAccessSpecDescriptor = $convert
+    .base64Decode('Cg5EYXRhQWNjZXNzU3BlYxIYCgdyZWFkZXJzGAEgAygJUgdyZWFkZXJz');
 
 @$core.Deprecated('Use dataTaxonomyDescriptor instead')
 const DataTaxonomy$json = {
@@ -1108,11 +1819,32 @@ const DataTaxonomy$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'display_name', '3': 6, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'labels', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataTaxonomy.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataTaxonomy.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'attribute_count', '3': 9, '4': 1, '5': 5, '10': 'attributeCount'},
     {'1': 'etag', '3': 10, '4': 1, '5': 9, '10': 'etag'},
   ],
@@ -1147,16 +1879,51 @@ const DataAttribute$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'display_name', '3': 6, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'labels', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAttribute.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAttribute.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'parent_id', '3': 8, '4': 1, '5': 9, '10': 'parentId'},
     {'1': 'attribute_count', '3': 9, '4': 1, '5': 5, '10': 'attributeCount'},
     {'1': 'etag', '3': 10, '4': 1, '5': 9, '10': 'etag'},
-    {'1': 'resource_access_spec', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.ResourceAccessSpec', '10': 'resourceAccessSpec'},
-    {'1': 'data_access_spec', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAccessSpec', '10': 'dataAccessSpec'},
+    {
+      '1': 'resource_access_spec',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.ResourceAccessSpec',
+      '10': 'resourceAccessSpec'
+    },
+    {
+      '1': 'data_access_spec',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAccessSpec',
+      '10': 'dataAccessSpec'
+    },
   ],
   '3': [DataAttribute_LabelsEntry$json],
 };
@@ -1193,15 +1960,43 @@ const DataAttributeBinding$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'display_name', '3': 6, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'labels', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAttributeBinding.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAttributeBinding.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'etag', '3': 8, '4': 1, '5': 9, '10': 'etag'},
     {'1': 'resource', '3': 100, '4': 1, '5': 9, '9': 0, '10': 'resource'},
     {'1': 'attributes', '3': 110, '4': 3, '5': 9, '10': 'attributes'},
-    {'1': 'paths', '3': 120, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAttributeBinding.Path', '10': 'paths'},
+    {
+      '1': 'paths',
+      '3': 120,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAttributeBinding.Path',
+      '10': 'paths'
+    },
   ],
   '3': [DataAttributeBinding_Path$json, DataAttributeBinding_LabelsEntry$json],
   '8': [
@@ -1251,20 +2046,112 @@ const DataScan$json = {
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
     {'1': 'display_name', '3': 4, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'labels', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataScan.LabelsEntry', '10': 'labels'},
-    {'1': 'state', '3': 6, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.State', '10': 'state'},
-    {'1': 'create_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'data', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataSource', '10': 'data'},
-    {'1': 'execution_spec', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataScan.ExecutionSpec', '10': 'executionSpec'},
-    {'1': 'execution_status', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataScan.ExecutionStatus', '10': 'executionStatus'},
-    {'1': 'type', '3': 12, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.DataScanType', '10': 'type'},
-    {'1': 'data_quality_spec', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualitySpec', '9': 0, '10': 'dataQualitySpec'},
-    {'1': 'data_profile_spec', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataProfileSpec', '9': 0, '10': 'dataProfileSpec'},
-    {'1': 'data_quality_result', '3': 200, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataQualityResult', '9': 1, '10': 'dataQualityResult'},
-    {'1': 'data_profile_result', '3': 201, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataProfileResult', '9': 1, '10': 'dataProfileResult'},
+    {
+      '1': 'labels',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataScan.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.State',
+      '10': 'state'
+    },
+    {
+      '1': 'create_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'data',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataSource',
+      '10': 'data'
+    },
+    {
+      '1': 'execution_spec',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataScan.ExecutionSpec',
+      '10': 'executionSpec'
+    },
+    {
+      '1': 'execution_status',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataScan.ExecutionStatus',
+      '10': 'executionStatus'
+    },
+    {
+      '1': 'type',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.DataScanType',
+      '10': 'type'
+    },
+    {
+      '1': 'data_quality_spec',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataQualitySpec',
+      '9': 0,
+      '10': 'dataQualitySpec'
+    },
+    {
+      '1': 'data_profile_spec',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataProfileSpec',
+      '9': 0,
+      '10': 'dataProfileSpec'
+    },
+    {
+      '1': 'data_quality_result',
+      '3': 200,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataQualityResult',
+      '9': 1,
+      '10': 'dataQualityResult'
+    },
+    {
+      '1': 'data_profile_result',
+      '3': 201,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataProfileResult',
+      '9': 1,
+      '10': 'dataProfileResult'
+    },
   ],
-  '3': [DataScan_ExecutionSpec$json, DataScan_ExecutionStatus$json, DataScan_LabelsEntry$json],
+  '3': [
+    DataScan_ExecutionSpec$json,
+    DataScan_ExecutionStatus$json,
+    DataScan_LabelsEntry$json
+  ],
   '8': [
     {'1': 'spec'},
     {'1': 'result'},
@@ -1275,7 +2162,14 @@ const DataScan$json = {
 const DataScan_ExecutionSpec$json = {
   '1': 'ExecutionSpec',
   '2': [
-    {'1': 'trigger', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Trigger', '10': 'trigger'},
+    {
+      '1': 'trigger',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Trigger',
+      '10': 'trigger'
+    },
     {'1': 'field', '3': 100, '4': 1, '5': 9, '9': 0, '10': 'field'},
   ],
   '8': [
@@ -1287,8 +2181,22 @@ const DataScan_ExecutionSpec$json = {
 const DataScan_ExecutionStatus$json = {
   '1': 'ExecutionStatus',
   '2': [
-    {'1': 'latest_job_start_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'latestJobStartTime'},
-    {'1': 'latest_job_end_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'latestJobEndTime'},
+    {
+      '1': 'latest_job_start_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'latestJobStartTime'
+    },
+    {
+      '1': 'latest_job_end_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'latestJobEndTime'
+    },
   ],
 };
 
@@ -1338,19 +2246,92 @@ const Task$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'display_name', '3': 6, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'state', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.State', '10': 'state'},
-    {'1': 'labels', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.LabelsEntry', '10': 'labels'},
-    {'1': 'trigger_spec', '3': 100, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.TriggerSpec', '10': 'triggerSpec'},
-    {'1': 'execution_spec', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.ExecutionSpec', '10': 'executionSpec'},
-    {'1': 'execution_status', '3': 201, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.ExecutionStatus', '10': 'executionStatus'},
-    {'1': 'spark', '3': 300, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.SparkTaskConfig', '9': 0, '10': 'spark'},
-    {'1': 'notebook', '3': 302, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.NotebookTaskConfig', '9': 0, '10': 'notebook'},
+    {
+      '1': 'state',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.State',
+      '10': 'state'
+    },
+    {
+      '1': 'labels',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Task.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'trigger_spec',
+      '3': 100,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Task.TriggerSpec',
+      '10': 'triggerSpec'
+    },
+    {
+      '1': 'execution_spec',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Task.ExecutionSpec',
+      '10': 'executionSpec'
+    },
+    {
+      '1': 'execution_status',
+      '3': 201,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Task.ExecutionStatus',
+      '10': 'executionStatus'
+    },
+    {
+      '1': 'spark',
+      '3': 300,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Task.SparkTaskConfig',
+      '9': 0,
+      '10': 'spark'
+    },
+    {
+      '1': 'notebook',
+      '3': 302,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Task.NotebookTaskConfig',
+      '9': 0,
+      '10': 'notebook'
+    },
   ],
-  '3': [Task_InfrastructureSpec$json, Task_TriggerSpec$json, Task_ExecutionSpec$json, Task_SparkTaskConfig$json, Task_NotebookTaskConfig$json, Task_ExecutionStatus$json, Task_LabelsEntry$json],
+  '3': [
+    Task_InfrastructureSpec$json,
+    Task_TriggerSpec$json,
+    Task_ExecutionSpec$json,
+    Task_SparkTaskConfig$json,
+    Task_NotebookTaskConfig$json,
+    Task_ExecutionStatus$json,
+    Task_LabelsEntry$json
+  ],
   '8': [
     {'1': 'config'},
   ],
@@ -1360,11 +2341,42 @@ const Task$json = {
 const Task_InfrastructureSpec$json = {
   '1': 'InfrastructureSpec',
   '2': [
-    {'1': 'batch', '3': 52, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.BatchComputeResources', '9': 0, '10': 'batch'},
-    {'1': 'container_image', '3': 101, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.ContainerImageRuntime', '9': 1, '10': 'containerImage'},
-    {'1': 'vpc_network', '3': 150, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.VpcNetwork', '9': 2, '10': 'vpcNetwork'},
+    {
+      '1': 'batch',
+      '3': 52,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.BatchComputeResources',
+      '9': 0,
+      '10': 'batch'
+    },
+    {
+      '1': 'container_image',
+      '3': 101,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.ContainerImageRuntime',
+      '9': 1,
+      '10': 'containerImage'
+    },
+    {
+      '1': 'vpc_network',
+      '3': 150,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.VpcNetwork',
+      '9': 2,
+      '10': 'vpcNetwork'
+    },
   ],
-  '3': [Task_InfrastructureSpec_BatchComputeResources$json, Task_InfrastructureSpec_ContainerImageRuntime$json, Task_InfrastructureSpec_VpcNetwork$json],
+  '3': [
+    Task_InfrastructureSpec_BatchComputeResources$json,
+    Task_InfrastructureSpec_ContainerImageRuntime$json,
+    Task_InfrastructureSpec_VpcNetwork$json
+  ],
   '8': [
     {'1': 'resources'},
     {'1': 'runtime'},
@@ -1377,7 +2389,13 @@ const Task_InfrastructureSpec_BatchComputeResources$json = {
   '1': 'BatchComputeResources',
   '2': [
     {'1': 'executors_count', '3': 1, '4': 1, '5': 5, '10': 'executorsCount'},
-    {'1': 'max_executors_count', '3': 2, '4': 1, '5': 5, '10': 'maxExecutorsCount'},
+    {
+      '1': 'max_executors_count',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '10': 'maxExecutorsCount'
+    },
   ],
 };
 
@@ -1388,7 +2406,15 @@ const Task_InfrastructureSpec_ContainerImageRuntime$json = {
     {'1': 'image', '3': 1, '4': 1, '5': 9, '10': 'image'},
     {'1': 'java_jars', '3': 2, '4': 3, '5': 9, '10': 'javaJars'},
     {'1': 'python_packages', '3': 3, '4': 3, '5': 9, '10': 'pythonPackages'},
-    {'1': 'properties', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.ContainerImageRuntime.PropertiesEntry', '10': 'properties'},
+    {
+      '1': 'properties',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.ContainerImageRuntime.PropertiesEntry',
+      '10': 'properties'
+    },
   ],
   '3': [Task_InfrastructureSpec_ContainerImageRuntime_PropertiesEntry$json],
 };
@@ -1420,8 +2446,22 @@ const Task_InfrastructureSpec_VpcNetwork$json = {
 const Task_TriggerSpec$json = {
   '1': 'TriggerSpec',
   '2': [
-    {'1': 'type', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.Task.TriggerSpec.Type', '10': 'type'},
-    {'1': 'start_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
+    {
+      '1': 'type',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.Task.TriggerSpec.Type',
+      '10': 'type'
+    },
+    {
+      '1': 'start_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
     {'1': 'disabled', '3': 4, '4': 1, '5': 8, '10': 'disabled'},
     {'1': 'max_retries', '3': 7, '4': 1, '5': 5, '10': 'maxRetries'},
     {'1': 'schedule', '3': 100, '4': 1, '5': 9, '9': 0, '10': 'schedule'},
@@ -1446,10 +2486,24 @@ const Task_TriggerSpec_Type$json = {
 const Task_ExecutionSpec$json = {
   '1': 'ExecutionSpec',
   '2': [
-    {'1': 'args', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.ExecutionSpec.ArgsEntry', '10': 'args'},
+    {
+      '1': 'args',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Task.ExecutionSpec.ArgsEntry',
+      '10': 'args'
+    },
     {'1': 'service_account', '3': 5, '4': 1, '5': 9, '10': 'serviceAccount'},
     {'1': 'project', '3': 7, '4': 1, '5': 9, '10': 'project'},
-    {'1': 'max_job_execution_lifetime', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'maxJobExecutionLifetime'},
+    {
+      '1': 'max_job_execution_lifetime',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'maxJobExecutionLifetime'
+    },
     {'1': 'kms_key', '3': 9, '4': 1, '5': 9, '10': 'kmsKey'},
   ],
   '3': [Task_ExecutionSpec_ArgsEntry$json],
@@ -1469,14 +2523,42 @@ const Task_ExecutionSpec_ArgsEntry$json = {
 const Task_SparkTaskConfig$json = {
   '1': 'SparkTaskConfig',
   '2': [
-    {'1': 'main_jar_file_uri', '3': 100, '4': 1, '5': 9, '9': 0, '10': 'mainJarFileUri'},
+    {
+      '1': 'main_jar_file_uri',
+      '3': 100,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'mainJarFileUri'
+    },
     {'1': 'main_class', '3': 101, '4': 1, '5': 9, '9': 0, '10': 'mainClass'},
-    {'1': 'python_script_file', '3': 102, '4': 1, '5': 9, '9': 0, '10': 'pythonScriptFile'},
-    {'1': 'sql_script_file', '3': 104, '4': 1, '5': 9, '9': 0, '10': 'sqlScriptFile'},
+    {
+      '1': 'python_script_file',
+      '3': 102,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'pythonScriptFile'
+    },
+    {
+      '1': 'sql_script_file',
+      '3': 104,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'sqlScriptFile'
+    },
     {'1': 'sql_script', '3': 105, '4': 1, '5': 9, '9': 0, '10': 'sqlScript'},
     {'1': 'file_uris', '3': 3, '4': 3, '5': 9, '10': 'fileUris'},
     {'1': 'archive_uris', '3': 4, '4': 3, '5': 9, '10': 'archiveUris'},
-    {'1': 'infrastructure_spec', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec', '10': 'infrastructureSpec'},
+    {
+      '1': 'infrastructure_spec',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec',
+      '10': 'infrastructureSpec'
+    },
   ],
   '8': [
     {'1': 'driver'},
@@ -1488,7 +2570,14 @@ const Task_NotebookTaskConfig$json = {
   '1': 'NotebookTaskConfig',
   '2': [
     {'1': 'notebook', '3': 4, '4': 1, '5': 9, '10': 'notebook'},
-    {'1': 'infrastructure_spec', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec', '10': 'infrastructureSpec'},
+    {
+      '1': 'infrastructure_spec',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Task.InfrastructureSpec',
+      '10': 'infrastructureSpec'
+    },
     {'1': 'file_uris', '3': 5, '4': 3, '5': 9, '10': 'fileUris'},
     {'1': 'archive_uris', '3': 6, '4': 3, '5': 9, '10': 'archiveUris'},
   ],
@@ -1498,8 +2587,22 @@ const Task_NotebookTaskConfig$json = {
 const Task_ExecutionStatus$json = {
   '1': 'ExecutionStatus',
   '2': [
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'latest_job', '3': 9, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Job', '10': 'latestJob'},
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'latest_job',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Job',
+      '10': 'latestJob'
+    },
   ],
 };
 
@@ -1581,11 +2684,39 @@ const Job$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'uid', '3': 2, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'start_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
-    {'1': 'state', '3': 5, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.Job.State', '10': 'state'},
+    {
+      '1': 'start_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
+    {
+      '1': 'state',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.Job.State',
+      '10': 'state'
+    },
     {'1': 'retry_count', '3': 6, '4': 1, '5': 13, '10': 'retryCount'},
-    {'1': 'service', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.dataplex.v1.Job.Service', '10': 'service'},
+    {
+      '1': 'service',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.dataplex.v1.Job.Service',
+      '10': 'service'
+    },
     {'1': 'service_job', '3': 8, '4': 1, '5': 9, '10': 'serviceJob'},
     {'1': 'message', '3': 9, '4': 1, '5': 9, '10': 'message'},
   ],
@@ -1632,7 +2763,16 @@ final $typed_data.Uint8List jobDescriptor = $convert.base64Decode(
 const TaskEventData$json = {
   '1': 'TaskEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Task', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Task',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1648,7 +2788,16 @@ final $typed_data.Uint8List taskEventDataDescriptor = $convert.base64Decode(
 const ZoneEventData$json = {
   '1': 'ZoneEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Zone', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Zone',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1664,7 +2813,16 @@ final $typed_data.Uint8List zoneEventDataDescriptor = $convert.base64Decode(
 const AssetEventData$json = {
   '1': 'AssetEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Asset', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Asset',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1680,7 +2838,16 @@ final $typed_data.Uint8List assetEventDataDescriptor = $convert.base64Decode(
 const EnvironmentEventData$json = {
   '1': 'EnvironmentEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Environment', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Environment',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1696,7 +2863,16 @@ final $typed_data.Uint8List environmentEventDataDescriptor = $convert.base64Deco
 const DataTaxonomyEventData$json = {
   '1': 'DataTaxonomyEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataTaxonomy', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataTaxonomy',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1713,7 +2889,16 @@ final $typed_data.Uint8List dataTaxonomyEventDataDescriptor = $convert.base64Dec
 const DataAttributeBindingEventData$json = {
   '1': 'DataAttributeBindingEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAttributeBinding', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAttributeBinding',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1721,16 +2906,26 @@ const DataAttributeBindingEventData$json = {
 };
 
 /// Descriptor for `DataAttributeBindingEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dataAttributeBindingEventDataDescriptor = $convert.base64Decode(
-    'Ch1EYXRhQXR0cmlidXRlQmluZGluZ0V2ZW50RGF0YRJUCgdwYXlsb2FkGAEgASgLMjUuZ29vZ2'
-    'xlLmV2ZW50cy5jbG91ZC5kYXRhcGxleC52MS5EYXRhQXR0cmlidXRlQmluZGluZ0gAUgdwYXls'
-    'b2FkiAEBQgoKCF9wYXlsb2Fk');
+final $typed_data.Uint8List dataAttributeBindingEventDataDescriptor =
+    $convert.base64Decode(
+        'Ch1EYXRhQXR0cmlidXRlQmluZGluZ0V2ZW50RGF0YRJUCgdwYXlsb2FkGAEgASgLMjUuZ29vZ2'
+        'xlLmV2ZW50cy5jbG91ZC5kYXRhcGxleC52MS5EYXRhQXR0cmlidXRlQmluZGluZ0gAUgdwYXls'
+        'b2FkiAEBQgoKCF9wYXlsb2Fk');
 
 @$core.Deprecated('Use dataScanEventDataDescriptor instead')
 const DataScanEventData$json = {
   '1': 'DataScanEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataScan', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataScan',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1746,7 +2941,16 @@ final $typed_data.Uint8List dataScanEventDataDescriptor = $convert.base64Decode(
 const LakeEventData$json = {
   '1': 'LakeEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.Lake', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.Lake',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1762,7 +2966,16 @@ final $typed_data.Uint8List lakeEventDataDescriptor = $convert.base64Decode(
 const DataAttributeEventData$json = {
   '1': 'DataAttributeEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataplex.v1.DataAttribute', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataplex.v1.DataAttribute',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -1774,4 +2987,3 @@ final $typed_data.Uint8List dataAttributeEventDataDescriptor = $convert.base64De
     'ChZEYXRhQXR0cmlidXRlRXZlbnREYXRhEk0KB3BheWxvYWQYASABKAsyLi5nb29nbGUuZXZlbn'
     'RzLmNsb3VkLmRhdGFwbGV4LnYxLkRhdGFBdHRyaWJ1dGVIAFIHcGF5bG9hZIgBAUIKCghfcGF5'
     'bG9hZA==');
-

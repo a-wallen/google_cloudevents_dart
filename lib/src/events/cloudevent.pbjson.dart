@@ -28,4 +28,3 @@ final $typed_data.Uint8List extensionAttributeDescriptor = $convert.base64Decode
     'ChJFeHRlbnNpb25BdHRyaWJ1dGUSEgoEbmFtZRgBIAEoCVIEbmFtZRIgCgtkZXNjcmlwdGlvbh'
     'gCIAEoCVILZGVzY3JpcHRpb24SJgoPY2FtZWxfY2FzZV9uYW1lGAMgASgJUg1jYW1lbENhc2VO'
     'YW1l');
-

@@ -20,11 +20,7 @@ import 'data.pbenum.dart';
 
 export 'data.pbenum.dart';
 
-enum StreamAnnotation_AnnotationPayload {
-  activeZone, 
-  crossingLine, 
-  notSet
-}
+enum StreamAnnotation_AnnotationPayload { activeZone, crossingLine, notSet }
 
 /// message about annotations about Vision AI stream resource.
 class StreamAnnotation extends $pb.GeneratedMessage {
@@ -58,47 +54,64 @@ class StreamAnnotation extends $pb.GeneratedMessage {
     return $result;
   }
   StreamAnnotation._() : super();
-  factory StreamAnnotation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamAnnotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StreamAnnotation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StreamAnnotation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, StreamAnnotation_AnnotationPayload> _StreamAnnotation_AnnotationPayloadByTag = {
-    5 : StreamAnnotation_AnnotationPayload.activeZone,
-    6 : StreamAnnotation_AnnotationPayload.crossingLine,
-    0 : StreamAnnotation_AnnotationPayload.notSet
+  static const $core.Map<$core.int, StreamAnnotation_AnnotationPayload>
+      _StreamAnnotation_AnnotationPayloadByTag = {
+    5: StreamAnnotation_AnnotationPayload.activeZone,
+    6: StreamAnnotation_AnnotationPayload.crossingLine,
+    0: StreamAnnotation_AnnotationPayload.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StreamAnnotation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..oo(0, [5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'sourceStream')
-    ..e<StreamAnnotationType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: StreamAnnotationType.STREAM_ANNOTATION_TYPE_UNSPECIFIED, valueOf: StreamAnnotationType.valueOf, enumValues: StreamAnnotationType.values)
-    ..aOM<NormalizedPolygon>(5, _omitFieldNames ? '' : 'activeZone', subBuilder: NormalizedPolygon.create)
-    ..aOM<NormalizedPolyline>(6, _omitFieldNames ? '' : 'crossingLine', subBuilder: NormalizedPolyline.create)
-    ..hasRequiredFields = false
-  ;
+    ..e<StreamAnnotationType>(
+        4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
+        defaultOrMaker: StreamAnnotationType.STREAM_ANNOTATION_TYPE_UNSPECIFIED,
+        valueOf: StreamAnnotationType.valueOf,
+        enumValues: StreamAnnotationType.values)
+    ..aOM<NormalizedPolygon>(5, _omitFieldNames ? '' : 'activeZone',
+        subBuilder: NormalizedPolygon.create)
+    ..aOM<NormalizedPolyline>(6, _omitFieldNames ? '' : 'crossingLine',
+        subBuilder: NormalizedPolyline.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StreamAnnotation clone() => StreamAnnotation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamAnnotation copyWith(void Function(StreamAnnotation) updates) => super.copyWith((message) => updates(message as StreamAnnotation)) as StreamAnnotation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StreamAnnotation copyWith(void Function(StreamAnnotation) updates) =>
+      super.copyWith((message) => updates(message as StreamAnnotation))
+          as StreamAnnotation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StreamAnnotation create() => StreamAnnotation._();
   StreamAnnotation createEmptyInstance() => create();
-  static $pb.PbList<StreamAnnotation> createRepeated() => $pb.PbList<StreamAnnotation>();
+  static $pb.PbList<StreamAnnotation> createRepeated() =>
+      $pb.PbList<StreamAnnotation>();
   @$core.pragma('dart2js:noInline')
-  static StreamAnnotation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamAnnotation>(create);
+  static StreamAnnotation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StreamAnnotation>(create);
   static StreamAnnotation? _defaultInstance;
 
-  StreamAnnotation_AnnotationPayload whichAnnotationPayload() => _StreamAnnotation_AnnotationPayloadByTag[$_whichOneof(0)]!;
+  StreamAnnotation_AnnotationPayload whichAnnotationPayload() =>
+      _StreamAnnotation_AnnotationPayloadByTag[$_whichOneof(0)]!;
   void clearAnnotationPayload() => clearField($_whichOneof(0));
 
   /// ID of the annotation. It must be unique when used in the certain context.
@@ -107,7 +120,10 @@ class StreamAnnotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
+  set id($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -117,7 +133,10 @@ class StreamAnnotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -127,7 +146,10 @@ class StreamAnnotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get sourceStream => $_getSZ(2);
   @$pb.TagNumber(3)
-  set sourceStream($core.String v) { $_setString(2, v); }
+  set sourceStream($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasSourceStream() => $_has(2);
   @$pb.TagNumber(3)
@@ -137,7 +159,10 @@ class StreamAnnotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   StreamAnnotationType get type => $_getN(3);
   @$pb.TagNumber(4)
-  set type(StreamAnnotationType v) { setField(4, v); }
+  set type(StreamAnnotationType v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)
@@ -147,7 +172,10 @@ class StreamAnnotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   NormalizedPolygon get activeZone => $_getN(4);
   @$pb.TagNumber(5)
-  set activeZone(NormalizedPolygon v) { setField(5, v); }
+  set activeZone(NormalizedPolygon v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasActiveZone() => $_has(4);
   @$pb.TagNumber(5)
@@ -159,7 +187,10 @@ class StreamAnnotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   NormalizedPolyline get crossingLine => $_getN(5);
   @$pb.TagNumber(6)
-  set crossingLine(NormalizedPolyline v) { setField(6, v); }
+  set crossingLine(NormalizedPolyline v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasCrossingLine() => $_has(5);
   @$pb.TagNumber(6)
@@ -180,33 +211,44 @@ class NormalizedPolygon extends $pb.GeneratedMessage {
     return $result;
   }
   NormalizedPolygon._() : super();
-  factory NormalizedPolygon.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NormalizedPolygon.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NormalizedPolygon.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NormalizedPolygon.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NormalizedPolygon', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..pc<NormalizedVertex>(1, _omitFieldNames ? '' : 'normalizedVertices', $pb.PbFieldType.PM, subBuilder: NormalizedVertex.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NormalizedPolygon',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..pc<NormalizedVertex>(
+        1, _omitFieldNames ? '' : 'normalizedVertices', $pb.PbFieldType.PM,
+        subBuilder: NormalizedVertex.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   NormalizedPolygon clone() => NormalizedPolygon()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NormalizedPolygon copyWith(void Function(NormalizedPolygon) updates) => super.copyWith((message) => updates(message as NormalizedPolygon)) as NormalizedPolygon;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NormalizedPolygon copyWith(void Function(NormalizedPolygon) updates) =>
+      super.copyWith((message) => updates(message as NormalizedPolygon))
+          as NormalizedPolygon;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NormalizedPolygon create() => NormalizedPolygon._();
   NormalizedPolygon createEmptyInstance() => create();
-  static $pb.PbList<NormalizedPolygon> createRepeated() => $pb.PbList<NormalizedPolygon>();
+  static $pb.PbList<NormalizedPolygon> createRepeated() =>
+      $pb.PbList<NormalizedPolygon>();
   @$core.pragma('dart2js:noInline')
-  static NormalizedPolygon getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NormalizedPolygon>(create);
+  static NormalizedPolygon getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NormalizedPolygon>(create);
   static NormalizedPolygon? _defaultInstance;
 
   /// The bounding polygon normalized vertices. Top left corner of the image
@@ -228,33 +270,44 @@ class NormalizedPolyline extends $pb.GeneratedMessage {
     return $result;
   }
   NormalizedPolyline._() : super();
-  factory NormalizedPolyline.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NormalizedPolyline.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NormalizedPolyline.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NormalizedPolyline.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NormalizedPolyline', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..pc<NormalizedVertex>(1, _omitFieldNames ? '' : 'normalizedVertices', $pb.PbFieldType.PM, subBuilder: NormalizedVertex.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NormalizedPolyline',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..pc<NormalizedVertex>(
+        1, _omitFieldNames ? '' : 'normalizedVertices', $pb.PbFieldType.PM,
+        subBuilder: NormalizedVertex.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   NormalizedPolyline clone() => NormalizedPolyline()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NormalizedPolyline copyWith(void Function(NormalizedPolyline) updates) => super.copyWith((message) => updates(message as NormalizedPolyline)) as NormalizedPolyline;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NormalizedPolyline copyWith(void Function(NormalizedPolyline) updates) =>
+      super.copyWith((message) => updates(message as NormalizedPolyline))
+          as NormalizedPolyline;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NormalizedPolyline create() => NormalizedPolyline._();
   NormalizedPolyline createEmptyInstance() => create();
-  static $pb.PbList<NormalizedPolyline> createRepeated() => $pb.PbList<NormalizedPolyline>();
+  static $pb.PbList<NormalizedPolyline> createRepeated() =>
+      $pb.PbList<NormalizedPolyline>();
   @$core.pragma('dart2js:noInline')
-  static NormalizedPolyline getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NormalizedPolyline>(create);
+  static NormalizedPolyline getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NormalizedPolyline>(create);
   static NormalizedPolyline? _defaultInstance;
 
   /// A sequence of vertices connected by straight lines.
@@ -280,41 +333,53 @@ class NormalizedVertex extends $pb.GeneratedMessage {
     return $result;
   }
   NormalizedVertex._() : super();
-  factory NormalizedVertex.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NormalizedVertex.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory NormalizedVertex.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NormalizedVertex.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NormalizedVertex', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NormalizedVertex',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'x', $pb.PbFieldType.OF)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'y', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   NormalizedVertex clone() => NormalizedVertex()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NormalizedVertex copyWith(void Function(NormalizedVertex) updates) => super.copyWith((message) => updates(message as NormalizedVertex)) as NormalizedVertex;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NormalizedVertex copyWith(void Function(NormalizedVertex) updates) =>
+      super.copyWith((message) => updates(message as NormalizedVertex))
+          as NormalizedVertex;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static NormalizedVertex create() => NormalizedVertex._();
   NormalizedVertex createEmptyInstance() => create();
-  static $pb.PbList<NormalizedVertex> createRepeated() => $pb.PbList<NormalizedVertex>();
+  static $pb.PbList<NormalizedVertex> createRepeated() =>
+      $pb.PbList<NormalizedVertex>();
   @$core.pragma('dart2js:noInline')
-  static NormalizedVertex getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NormalizedVertex>(create);
+  static NormalizedVertex getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NormalizedVertex>(create);
   static NormalizedVertex? _defaultInstance;
 
   /// X coordinate.
   @$pb.TagNumber(1)
   $core.double get x => $_getN(0);
   @$pb.TagNumber(1)
-  set x($core.double v) { $_setFloat(0, v); }
+  set x($core.double v) {
+    $_setFloat(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasX() => $_has(0);
   @$pb.TagNumber(1)
@@ -324,7 +389,10 @@ class NormalizedVertex extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get y => $_getN(1);
   @$pb.TagNumber(2)
-  set y($core.double v) { $_setFloat(1, v); }
+  set y($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasY() => $_has(1);
   @$pb.TagNumber(2)
@@ -371,31 +439,50 @@ class Cluster extends $pb.GeneratedMessage {
     return $result;
   }
   Cluster._() : super();
-  factory Cluster.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Cluster.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Cluster.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Cluster.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Cluster', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Cluster',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Cluster.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
-    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'Cluster.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Cluster.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations',
+        entryClassName: 'Cluster.AnnotationsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
     ..aOS(6, _omitFieldNames ? '' : 'dataplaneServiceEndpoint')
-    ..e<Cluster_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Cluster_State.STATE_UNSPECIFIED, valueOf: Cluster_State.valueOf, enumValues: Cluster_State.values)
+    ..e<Cluster_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Cluster_State.STATE_UNSPECIFIED,
+        valueOf: Cluster_State.valueOf,
+        enumValues: Cluster_State.values)
     ..aOS(8, _omitFieldNames ? '' : 'pscTarget')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Cluster clone() => Cluster()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Cluster copyWith(void Function(Cluster) updates) => super.copyWith((message) => updates(message as Cluster)) as Cluster;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Cluster copyWith(void Function(Cluster) updates) =>
+      super.copyWith((message) => updates(message as Cluster)) as Cluster;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -404,14 +491,18 @@ class Cluster extends $pb.GeneratedMessage {
   Cluster createEmptyInstance() => create();
   static $pb.PbList<Cluster> createRepeated() => $pb.PbList<Cluster>();
   @$core.pragma('dart2js:noInline')
-  static Cluster getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Cluster>(create);
+  static Cluster getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Cluster>(create);
   static Cluster? _defaultInstance;
 
   /// Output only. Name of the resource.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -421,7 +512,10 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -433,7 +527,10 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) { setField(3, v); }
+  set updateTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -453,7 +550,10 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get dataplaneServiceEndpoint => $_getSZ(5);
   @$pb.TagNumber(6)
-  set dataplaneServiceEndpoint($core.String v) { $_setString(5, v); }
+  set dataplaneServiceEndpoint($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDataplaneServiceEndpoint() => $_has(5);
   @$pb.TagNumber(6)
@@ -463,7 +563,10 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Cluster_State get state => $_getN(6);
   @$pb.TagNumber(7)
-  set state(Cluster_State v) { setField(7, v); }
+  set state(Cluster_State v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(7)
@@ -473,7 +576,10 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get pscTarget => $_getSZ(7);
   @$pb.TagNumber(8)
-  set pscTarget($core.String v) { $_setString(7, v); }
+  set pscTarget($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasPscTarget() => $_has(7);
   @$pb.TagNumber(8)
@@ -492,24 +598,30 @@ class GcsSource extends $pb.GeneratedMessage {
     return $result;
   }
   GcsSource._() : super();
-  factory GcsSource.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GcsSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GcsSource.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GcsSource.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GcsSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GcsSource',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'uris')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GcsSource clone() => GcsSource()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GcsSource copyWith(void Function(GcsSource) updates) => super.copyWith((message) => updates(message as GcsSource)) as GcsSource;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GcsSource copyWith(void Function(GcsSource) updates) =>
+      super.copyWith((message) => updates(message as GcsSource)) as GcsSource;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -518,7 +630,8 @@ class GcsSource extends $pb.GeneratedMessage {
   GcsSource createEmptyInstance() => create();
   static $pb.PbList<GcsSource> createRepeated() => $pb.PbList<GcsSource>();
   @$core.pragma('dart2js:noInline')
-  static GcsSource getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GcsSource>(create);
+  static GcsSource getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GcsSource>(create);
   static GcsSource? _defaultInstance;
 
   /// Required. References to a Google Cloud Storage paths.
@@ -526,13 +639,7 @@ class GcsSource extends $pb.GeneratedMessage {
   $core.List<$core.String> get uris => $_getList(0);
 }
 
-enum AttributeValue_Value {
-  i, 
-  f, 
-  b, 
-  s, 
-  notSet
-}
+enum AttributeValue_Value { i, f, b, s, notSet }
 
 /// Represents an actual value of an operator attribute.
 class AttributeValue extends $pb.GeneratedMessage {
@@ -558,54 +665,69 @@ class AttributeValue extends $pb.GeneratedMessage {
     return $result;
   }
   AttributeValue._() : super();
-  factory AttributeValue.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AttributeValue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AttributeValue.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AttributeValue.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, AttributeValue_Value> _AttributeValue_ValueByTag = {
-    1 : AttributeValue_Value.i,
-    2 : AttributeValue_Value.f,
-    3 : AttributeValue_Value.b,
-    4 : AttributeValue_Value.s,
-    0 : AttributeValue_Value.notSet
+  static const $core.Map<$core.int, AttributeValue_Value>
+      _AttributeValue_ValueByTag = {
+    1: AttributeValue_Value.i,
+    2: AttributeValue_Value.f,
+    3: AttributeValue_Value.b,
+    4: AttributeValue_Value.s,
+    0: AttributeValue_Value.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttributeValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AttributeValue',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4])
     ..aInt64(1, _omitFieldNames ? '' : 'i')
     ..a<$core.double>(2, _omitFieldNames ? '' : 'f', $pb.PbFieldType.OF)
     ..aOB(3, _omitFieldNames ? '' : 'b')
-    ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 's', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.List<$core.int>>(
+        4, _omitFieldNames ? '' : 's', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AttributeValue clone() => AttributeValue()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AttributeValue copyWith(void Function(AttributeValue) updates) => super.copyWith((message) => updates(message as AttributeValue)) as AttributeValue;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AttributeValue copyWith(void Function(AttributeValue) updates) =>
+      super.copyWith((message) => updates(message as AttributeValue))
+          as AttributeValue;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AttributeValue create() => AttributeValue._();
   AttributeValue createEmptyInstance() => create();
-  static $pb.PbList<AttributeValue> createRepeated() => $pb.PbList<AttributeValue>();
+  static $pb.PbList<AttributeValue> createRepeated() =>
+      $pb.PbList<AttributeValue>();
   @$core.pragma('dart2js:noInline')
-  static AttributeValue getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AttributeValue>(create);
+  static AttributeValue getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AttributeValue>(create);
   static AttributeValue? _defaultInstance;
 
-  AttributeValue_Value whichValue() => _AttributeValue_ValueByTag[$_whichOneof(0)]!;
+  AttributeValue_Value whichValue() =>
+      _AttributeValue_ValueByTag[$_whichOneof(0)]!;
   void clearValue() => clearField($_whichOneof(0));
 
   /// int.
   @$pb.TagNumber(1)
   $fixnum.Int64 get i => $_getI64(0);
   @$pb.TagNumber(1)
-  set i($fixnum.Int64 v) { $_setInt64(0, v); }
+  set i($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasI() => $_has(0);
   @$pb.TagNumber(1)
@@ -615,7 +737,10 @@ class AttributeValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.double get f => $_getN(1);
   @$pb.TagNumber(2)
-  set f($core.double v) { $_setFloat(1, v); }
+  set f($core.double v) {
+    $_setFloat(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasF() => $_has(1);
   @$pb.TagNumber(2)
@@ -625,7 +750,10 @@ class AttributeValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get b => $_getBF(2);
   @$pb.TagNumber(3)
-  set b($core.bool v) { $_setBool(2, v); }
+  set b($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasB() => $_has(2);
   @$pb.TagNumber(3)
@@ -635,7 +763,10 @@ class AttributeValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.List<$core.int> get s => $_getN(3);
   @$pb.TagNumber(4)
-  set s($core.List<$core.int> v) { $_setBytes(3, v); }
+  set s($core.List<$core.int> v) {
+    $_setBytes(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasS() => $_has(3);
   @$pb.TagNumber(4)
@@ -671,40 +802,56 @@ class AnalyzerDefinition_StreamInput extends $pb.GeneratedMessage {
     return $result;
   }
   AnalyzerDefinition_StreamInput._() : super();
-  factory AnalyzerDefinition_StreamInput.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AnalyzerDefinition_StreamInput.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AnalyzerDefinition_StreamInput.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AnalyzerDefinition_StreamInput.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalyzerDefinition.StreamInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AnalyzerDefinition.StreamInput',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'input')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AnalyzerDefinition_StreamInput clone() => AnalyzerDefinition_StreamInput()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AnalyzerDefinition_StreamInput copyWith(void Function(AnalyzerDefinition_StreamInput) updates) => super.copyWith((message) => updates(message as AnalyzerDefinition_StreamInput)) as AnalyzerDefinition_StreamInput;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AnalyzerDefinition_StreamInput clone() =>
+      AnalyzerDefinition_StreamInput()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AnalyzerDefinition_StreamInput copyWith(
+          void Function(AnalyzerDefinition_StreamInput) updates) =>
+      super.copyWith(
+              (message) => updates(message as AnalyzerDefinition_StreamInput))
+          as AnalyzerDefinition_StreamInput;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AnalyzerDefinition_StreamInput create() => AnalyzerDefinition_StreamInput._();
+  static AnalyzerDefinition_StreamInput create() =>
+      AnalyzerDefinition_StreamInput._();
   AnalyzerDefinition_StreamInput createEmptyInstance() => create();
-  static $pb.PbList<AnalyzerDefinition_StreamInput> createRepeated() => $pb.PbList<AnalyzerDefinition_StreamInput>();
+  static $pb.PbList<AnalyzerDefinition_StreamInput> createRepeated() =>
+      $pb.PbList<AnalyzerDefinition_StreamInput>();
   @$core.pragma('dart2js:noInline')
-  static AnalyzerDefinition_StreamInput getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AnalyzerDefinition_StreamInput>(create);
+  static AnalyzerDefinition_StreamInput getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AnalyzerDefinition_StreamInput>(create);
   static AnalyzerDefinition_StreamInput? _defaultInstance;
 
   /// The name of the stream input (as discussed above).
   @$pb.TagNumber(1)
   $core.String get input => $_getSZ(0);
   @$pb.TagNumber(1)
-  set input($core.String v) { $_setString(0, v); }
+  set input($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInput() => $_has(0);
   @$pb.TagNumber(1)
@@ -723,33 +870,53 @@ class AnalyzerDefinition_DebugOptions extends $pb.GeneratedMessage {
     return $result;
   }
   AnalyzerDefinition_DebugOptions._() : super();
-  factory AnalyzerDefinition_DebugOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AnalyzerDefinition_DebugOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AnalyzerDefinition_DebugOptions.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AnalyzerDefinition_DebugOptions.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalyzerDefinition.DebugOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..m<$core.String, $core.String>(1, _omitFieldNames ? '' : 'environmentVariables', entryClassName: 'AnalyzerDefinition.DebugOptions.EnvironmentVariablesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AnalyzerDefinition.DebugOptions',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..m<$core.String, $core.String>(
+        1, _omitFieldNames ? '' : 'environmentVariables',
+        entryClassName:
+            'AnalyzerDefinition.DebugOptions.EnvironmentVariablesEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AnalyzerDefinition_DebugOptions clone() => AnalyzerDefinition_DebugOptions()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AnalyzerDefinition_DebugOptions copyWith(void Function(AnalyzerDefinition_DebugOptions) updates) => super.copyWith((message) => updates(message as AnalyzerDefinition_DebugOptions)) as AnalyzerDefinition_DebugOptions;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AnalyzerDefinition_DebugOptions clone() =>
+      AnalyzerDefinition_DebugOptions()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AnalyzerDefinition_DebugOptions copyWith(
+          void Function(AnalyzerDefinition_DebugOptions) updates) =>
+      super.copyWith(
+              (message) => updates(message as AnalyzerDefinition_DebugOptions))
+          as AnalyzerDefinition_DebugOptions;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AnalyzerDefinition_DebugOptions create() => AnalyzerDefinition_DebugOptions._();
+  static AnalyzerDefinition_DebugOptions create() =>
+      AnalyzerDefinition_DebugOptions._();
   AnalyzerDefinition_DebugOptions createEmptyInstance() => create();
-  static $pb.PbList<AnalyzerDefinition_DebugOptions> createRepeated() => $pb.PbList<AnalyzerDefinition_DebugOptions>();
+  static $pb.PbList<AnalyzerDefinition_DebugOptions> createRepeated() =>
+      $pb.PbList<AnalyzerDefinition_DebugOptions>();
   @$core.pragma('dart2js:noInline')
-  static AnalyzerDefinition_DebugOptions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AnalyzerDefinition_DebugOptions>(create);
+  static AnalyzerDefinition_DebugOptions getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AnalyzerDefinition_DebugOptions>(
+          create);
   static AnalyzerDefinition_DebugOptions? _defaultInstance;
 
   /// Environment variables.
@@ -789,37 +956,56 @@ class AnalyzerDefinition extends $pb.GeneratedMessage {
     return $result;
   }
   AnalyzerDefinition._() : super();
-  factory AnalyzerDefinition.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AnalyzerDefinition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AnalyzerDefinition.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AnalyzerDefinition.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalyzerDefinition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AnalyzerDefinition',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'analyzer')
     ..aOS(2, _omitFieldNames ? '' : 'operator')
-    ..pc<AnalyzerDefinition_StreamInput>(3, _omitFieldNames ? '' : 'inputs', $pb.PbFieldType.PM, subBuilder: AnalyzerDefinition_StreamInput.create)
-    ..m<$core.String, AttributeValue>(4, _omitFieldNames ? '' : 'attrs', entryClassName: 'AnalyzerDefinition.AttrsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: AttributeValue.create, valueDefaultOrMaker: AttributeValue.getDefault, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
-    ..aOM<AnalyzerDefinition_DebugOptions>(5, _omitFieldNames ? '' : 'debugOptions', subBuilder: AnalyzerDefinition_DebugOptions.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<AnalyzerDefinition_StreamInput>(
+        3, _omitFieldNames ? '' : 'inputs', $pb.PbFieldType.PM,
+        subBuilder: AnalyzerDefinition_StreamInput.create)
+    ..m<$core.String, AttributeValue>(4, _omitFieldNames ? '' : 'attrs',
+        entryClassName: 'AnalyzerDefinition.AttrsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OM,
+        valueCreator: AttributeValue.create,
+        valueDefaultOrMaker: AttributeValue.getDefault,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..aOM<AnalyzerDefinition_DebugOptions>(
+        5, _omitFieldNames ? '' : 'debugOptions',
+        subBuilder: AnalyzerDefinition_DebugOptions.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AnalyzerDefinition clone() => AnalyzerDefinition()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AnalyzerDefinition copyWith(void Function(AnalyzerDefinition) updates) => super.copyWith((message) => updates(message as AnalyzerDefinition)) as AnalyzerDefinition;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AnalyzerDefinition copyWith(void Function(AnalyzerDefinition) updates) =>
+      super.copyWith((message) => updates(message as AnalyzerDefinition))
+          as AnalyzerDefinition;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AnalyzerDefinition create() => AnalyzerDefinition._();
   AnalyzerDefinition createEmptyInstance() => create();
-  static $pb.PbList<AnalyzerDefinition> createRepeated() => $pb.PbList<AnalyzerDefinition>();
+  static $pb.PbList<AnalyzerDefinition> createRepeated() =>
+      $pb.PbList<AnalyzerDefinition>();
   @$core.pragma('dart2js:noInline')
-  static AnalyzerDefinition getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AnalyzerDefinition>(create);
+  static AnalyzerDefinition getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AnalyzerDefinition>(create);
   static AnalyzerDefinition? _defaultInstance;
 
   ///  The name of this analyzer.
@@ -828,7 +1014,10 @@ class AnalyzerDefinition extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get analyzer => $_getSZ(0);
   @$pb.TagNumber(1)
-  set analyzer($core.String v) { $_setString(0, v); }
+  set analyzer($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasAnalyzer() => $_has(0);
   @$pb.TagNumber(1)
@@ -840,7 +1029,10 @@ class AnalyzerDefinition extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get operator => $_getSZ(1);
   @$pb.TagNumber(2)
-  set operator($core.String v) { $_setString(1, v); }
+  set operator($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOperator() => $_has(1);
   @$pb.TagNumber(2)
@@ -862,7 +1054,10 @@ class AnalyzerDefinition extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   AnalyzerDefinition_DebugOptions get debugOptions => $_getN(4);
   @$pb.TagNumber(5)
-  set debugOptions(AnalyzerDefinition_DebugOptions v) { setField(5, v); }
+  set debugOptions(AnalyzerDefinition_DebugOptions v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDebugOptions() => $_has(4);
   @$pb.TagNumber(5)
@@ -890,33 +1085,44 @@ class AnalysisDefinition extends $pb.GeneratedMessage {
     return $result;
   }
   AnalysisDefinition._() : super();
-  factory AnalysisDefinition.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AnalysisDefinition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AnalysisDefinition.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AnalysisDefinition.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalysisDefinition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..pc<AnalyzerDefinition>(1, _omitFieldNames ? '' : 'analyzers', $pb.PbFieldType.PM, subBuilder: AnalyzerDefinition.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AnalysisDefinition',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..pc<AnalyzerDefinition>(
+        1, _omitFieldNames ? '' : 'analyzers', $pb.PbFieldType.PM,
+        subBuilder: AnalyzerDefinition.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AnalysisDefinition clone() => AnalysisDefinition()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AnalysisDefinition copyWith(void Function(AnalysisDefinition) updates) => super.copyWith((message) => updates(message as AnalysisDefinition)) as AnalysisDefinition;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AnalysisDefinition copyWith(void Function(AnalysisDefinition) updates) =>
+      super.copyWith((message) => updates(message as AnalysisDefinition))
+          as AnalysisDefinition;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AnalysisDefinition create() => AnalysisDefinition._();
   AnalysisDefinition createEmptyInstance() => create();
-  static $pb.PbList<AnalysisDefinition> createRepeated() => $pb.PbList<AnalysisDefinition>();
+  static $pb.PbList<AnalysisDefinition> createRepeated() =>
+      $pb.PbList<AnalysisDefinition>();
   @$core.pragma('dart2js:noInline')
-  static AnalysisDefinition getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AnalysisDefinition>(create);
+  static AnalysisDefinition getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AnalysisDefinition>(create);
   static AnalysisDefinition? _defaultInstance;
 
   /// Analyzer definitions.
@@ -940,25 +1146,34 @@ class RunStatus extends $pb.GeneratedMessage {
     return $result;
   }
   RunStatus._() : super();
-  factory RunStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory RunStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory RunStatus.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RunStatus.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..e<RunStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: RunStatus_State.STATE_UNSPECIFIED, valueOf: RunStatus_State.valueOf, enumValues: RunStatus_State.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RunStatus',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..e<RunStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: RunStatus_State.STATE_UNSPECIFIED,
+        valueOf: RunStatus_State.valueOf,
+        enumValues: RunStatus_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'reason')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   RunStatus clone() => RunStatus()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  RunStatus copyWith(void Function(RunStatus) updates) => super.copyWith((message) => updates(message as RunStatus)) as RunStatus;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RunStatus copyWith(void Function(RunStatus) updates) =>
+      super.copyWith((message) => updates(message as RunStatus)) as RunStatus;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -967,14 +1182,18 @@ class RunStatus extends $pb.GeneratedMessage {
   RunStatus createEmptyInstance() => create();
   static $pb.PbList<RunStatus> createRepeated() => $pb.PbList<RunStatus>();
   @$core.pragma('dart2js:noInline')
-  static RunStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RunStatus>(create);
+  static RunStatus getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RunStatus>(create);
   static RunStatus? _defaultInstance;
 
   /// The state of the Process.
   @$pb.TagNumber(1)
   RunStatus_State get state => $_getN(0);
   @$pb.TagNumber(1)
-  set state(RunStatus_State v) { setField(1, v); }
+  set state(RunStatus_State v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
@@ -984,7 +1203,10 @@ class RunStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get reason => $_getSZ(1);
   @$pb.TagNumber(2)
-  set reason($core.String v) { $_setString(1, v); }
+  set reason($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasReason() => $_has(1);
   @$pb.TagNumber(2)
@@ -1031,31 +1253,54 @@ class Analysis extends $pb.GeneratedMessage {
     return $result;
   }
   Analysis._() : super();
-  factory Analysis.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Analysis.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Analysis.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Analysis.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Analysis', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Analysis',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Analysis.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
-    ..aOM<AnalysisDefinition>(5, _omitFieldNames ? '' : 'analysisDefinition', subBuilder: AnalysisDefinition.create)
-    ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'inputStreamsMapping', entryClassName: 'Analysis.InputStreamsMappingEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
-    ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'outputStreamsMapping', entryClassName: 'Analysis.OutputStreamsMappingEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Analysis.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..aOM<AnalysisDefinition>(5, _omitFieldNames ? '' : 'analysisDefinition',
+        subBuilder: AnalysisDefinition.create)
+    ..m<$core.String, $core.String>(
+        6, _omitFieldNames ? '' : 'inputStreamsMapping',
+        entryClassName: 'Analysis.InputStreamsMappingEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..m<$core.String, $core.String>(
+        7, _omitFieldNames ? '' : 'outputStreamsMapping',
+        entryClassName: 'Analysis.OutputStreamsMappingEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
     ..aOB(8, _omitFieldNames ? '' : 'disableEventWatch')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Analysis clone() => Analysis()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Analysis copyWith(void Function(Analysis) updates) => super.copyWith((message) => updates(message as Analysis)) as Analysis;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Analysis copyWith(void Function(Analysis) updates) =>
+      super.copyWith((message) => updates(message as Analysis)) as Analysis;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1064,14 +1309,18 @@ class Analysis extends $pb.GeneratedMessage {
   Analysis createEmptyInstance() => create();
   static $pb.PbList<Analysis> createRepeated() => $pb.PbList<Analysis>();
   @$core.pragma('dart2js:noInline')
-  static Analysis getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Analysis>(create);
+  static Analysis getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Analysis>(create);
   static Analysis? _defaultInstance;
 
   /// The name of resource.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1081,7 +1330,10 @@ class Analysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1093,7 +1345,10 @@ class Analysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) { setField(3, v); }
+  set updateTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -1109,7 +1364,10 @@ class Analysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   AnalysisDefinition get analysisDefinition => $_getN(4);
   @$pb.TagNumber(5)
-  set analysisDefinition(AnalysisDefinition v) { setField(5, v); }
+  set analysisDefinition(AnalysisDefinition v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasAnalysisDefinition() => $_has(4);
   @$pb.TagNumber(5)
@@ -1138,7 +1396,10 @@ class Analysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool get disableEventWatch => $_getBF(7);
   @$pb.TagNumber(8)
-  set disableEventWatch($core.bool v) { $_setBool(7, v); }
+  set disableEventWatch($core.bool v) {
+    $_setBool(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasDisableEventWatch() => $_has(7);
   @$pb.TagNumber(8)
@@ -1193,33 +1454,45 @@ class Process extends $pb.GeneratedMessage {
     return $result;
   }
   Process._() : super();
-  factory Process.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Process.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Process.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Process.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Process', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Process',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'analysis')
     ..pPS(5, _omitFieldNames ? '' : 'attributeOverrides')
-    ..aOM<RunStatus>(6, _omitFieldNames ? '' : 'runStatus', subBuilder: RunStatus.create)
-    ..e<RunMode>(7, _omitFieldNames ? '' : 'runMode', $pb.PbFieldType.OE, defaultOrMaker: RunMode.RUN_MODE_UNSPECIFIED, valueOf: RunMode.valueOf, enumValues: RunMode.values)
+    ..aOM<RunStatus>(6, _omitFieldNames ? '' : 'runStatus',
+        subBuilder: RunStatus.create)
+    ..e<RunMode>(7, _omitFieldNames ? '' : 'runMode', $pb.PbFieldType.OE,
+        defaultOrMaker: RunMode.RUN_MODE_UNSPECIFIED,
+        valueOf: RunMode.valueOf,
+        enumValues: RunMode.values)
     ..aOS(8, _omitFieldNames ? '' : 'eventId')
     ..aOS(9, _omitFieldNames ? '' : 'batchId')
     ..a<$core.int>(10, _omitFieldNames ? '' : 'retryCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Process clone() => Process()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Process copyWith(void Function(Process) updates) => super.copyWith((message) => updates(message as Process)) as Process;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Process copyWith(void Function(Process) updates) =>
+      super.copyWith((message) => updates(message as Process)) as Process;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1228,14 +1501,18 @@ class Process extends $pb.GeneratedMessage {
   Process createEmptyInstance() => create();
   static $pb.PbList<Process> createRepeated() => $pb.PbList<Process>();
   @$core.pragma('dart2js:noInline')
-  static Process getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Process>(create);
+  static Process getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Process>(create);
   static Process? _defaultInstance;
 
   /// The name of resource.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1245,7 +1522,10 @@ class Process extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1257,7 +1537,10 @@ class Process extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) { setField(3, v); }
+  set updateTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -1269,7 +1552,10 @@ class Process extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get analysis => $_getSZ(3);
   @$pb.TagNumber(4)
-  set analysis($core.String v) { $_setString(3, v); }
+  set analysis($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAnalysis() => $_has(3);
   @$pb.TagNumber(4)
@@ -1285,7 +1571,10 @@ class Process extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   RunStatus get runStatus => $_getN(5);
   @$pb.TagNumber(6)
-  set runStatus(RunStatus v) { setField(6, v); }
+  set runStatus(RunStatus v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasRunStatus() => $_has(5);
   @$pb.TagNumber(6)
@@ -1297,7 +1586,10 @@ class Process extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   RunMode get runMode => $_getN(6);
   @$pb.TagNumber(7)
-  set runMode(RunMode v) { setField(7, v); }
+  set runMode(RunMode v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasRunMode() => $_has(6);
   @$pb.TagNumber(7)
@@ -1309,7 +1601,10 @@ class Process extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get eventId => $_getSZ(7);
   @$pb.TagNumber(8)
-  set eventId($core.String v) { $_setString(7, v); }
+  set eventId($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasEventId() => $_has(7);
   @$pb.TagNumber(8)
@@ -1319,7 +1614,10 @@ class Process extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.String get batchId => $_getSZ(8);
   @$pb.TagNumber(9)
-  set batchId($core.String v) { $_setString(8, v); }
+  set batchId($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasBatchId() => $_has(8);
   @$pb.TagNumber(9)
@@ -1331,7 +1629,10 @@ class Process extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.int get retryCount => $_getIZ(9);
   @$pb.TagNumber(10)
-  set retryCount($core.int v) { $_setSignedInt32(9, v); }
+  set retryCount($core.int v) {
+    $_setSignedInt32(9, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasRetryCount() => $_has(9);
   @$pb.TagNumber(10)
@@ -1339,7 +1640,8 @@ class Process extends $pb.GeneratedMessage {
 }
 
 /// Message about output resources from application.
-class Application_ApplicationRuntimeInfo_GlobalOutputResource extends $pb.GeneratedMessage {
+class Application_ApplicationRuntimeInfo_GlobalOutputResource
+    extends $pb.GeneratedMessage {
   factory Application_ApplicationRuntimeInfo_GlobalOutputResource({
     $core.String? outputResource,
     $core.String? producerNode,
@@ -1358,42 +1660,68 @@ class Application_ApplicationRuntimeInfo_GlobalOutputResource extends $pb.Genera
     return $result;
   }
   Application_ApplicationRuntimeInfo_GlobalOutputResource._() : super();
-  factory Application_ApplicationRuntimeInfo_GlobalOutputResource.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Application_ApplicationRuntimeInfo_GlobalOutputResource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Application_ApplicationRuntimeInfo_GlobalOutputResource.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Application_ApplicationRuntimeInfo_GlobalOutputResource.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Application.ApplicationRuntimeInfo.GlobalOutputResource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'Application.ApplicationRuntimeInfo.GlobalOutputResource',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'outputResource')
     ..aOS(2, _omitFieldNames ? '' : 'producerNode')
     ..aOS(3, _omitFieldNames ? '' : 'key')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Application_ApplicationRuntimeInfo_GlobalOutputResource clone() => Application_ApplicationRuntimeInfo_GlobalOutputResource()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Application_ApplicationRuntimeInfo_GlobalOutputResource copyWith(void Function(Application_ApplicationRuntimeInfo_GlobalOutputResource) updates) => super.copyWith((message) => updates(message as Application_ApplicationRuntimeInfo_GlobalOutputResource)) as Application_ApplicationRuntimeInfo_GlobalOutputResource;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Application_ApplicationRuntimeInfo_GlobalOutputResource clone() =>
+      Application_ApplicationRuntimeInfo_GlobalOutputResource()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Application_ApplicationRuntimeInfo_GlobalOutputResource copyWith(
+          void Function(Application_ApplicationRuntimeInfo_GlobalOutputResource)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as Application_ApplicationRuntimeInfo_GlobalOutputResource))
+          as Application_ApplicationRuntimeInfo_GlobalOutputResource;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Application_ApplicationRuntimeInfo_GlobalOutputResource create() => Application_ApplicationRuntimeInfo_GlobalOutputResource._();
-  Application_ApplicationRuntimeInfo_GlobalOutputResource createEmptyInstance() => create();
-  static $pb.PbList<Application_ApplicationRuntimeInfo_GlobalOutputResource> createRepeated() => $pb.PbList<Application_ApplicationRuntimeInfo_GlobalOutputResource>();
+  static Application_ApplicationRuntimeInfo_GlobalOutputResource create() =>
+      Application_ApplicationRuntimeInfo_GlobalOutputResource._();
+  Application_ApplicationRuntimeInfo_GlobalOutputResource
+      createEmptyInstance() => create();
+  static $pb.PbList<Application_ApplicationRuntimeInfo_GlobalOutputResource>
+      createRepeated() =>
+          $pb.PbList<Application_ApplicationRuntimeInfo_GlobalOutputResource>();
   @$core.pragma('dart2js:noInline')
-  static Application_ApplicationRuntimeInfo_GlobalOutputResource getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Application_ApplicationRuntimeInfo_GlobalOutputResource>(create);
-  static Application_ApplicationRuntimeInfo_GlobalOutputResource? _defaultInstance;
+  static Application_ApplicationRuntimeInfo_GlobalOutputResource getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          Application_ApplicationRuntimeInfo_GlobalOutputResource>(create);
+  static Application_ApplicationRuntimeInfo_GlobalOutputResource?
+      _defaultInstance;
 
   /// The full resource name of the outputted resources.
   @$pb.TagNumber(1)
   $core.String get outputResource => $_getSZ(0);
   @$pb.TagNumber(1)
-  set outputResource($core.String v) { $_setString(0, v); }
+  set outputResource($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOutputResource() => $_has(0);
   @$pb.TagNumber(1)
@@ -1407,7 +1735,10 @@ class Application_ApplicationRuntimeInfo_GlobalOutputResource extends $pb.Genera
   @$pb.TagNumber(2)
   $core.String get producerNode => $_getSZ(1);
   @$pb.TagNumber(2)
-  set producerNode($core.String v) { $_setString(1, v); }
+  set producerNode($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasProducerNode() => $_has(1);
   @$pb.TagNumber(2)
@@ -1419,7 +1750,10 @@ class Application_ApplicationRuntimeInfo_GlobalOutputResource extends $pb.Genera
   @$pb.TagNumber(3)
   $core.String get key => $_getSZ(2);
   @$pb.TagNumber(3)
-  set key($core.String v) { $_setString(2, v); }
+  set key($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasKey() => $_has(2);
   @$pb.TagNumber(3)
@@ -1427,7 +1761,8 @@ class Application_ApplicationRuntimeInfo_GlobalOutputResource extends $pb.Genera
 }
 
 /// Monitoring-related configuration for an application.
-class Application_ApplicationRuntimeInfo_MonitoringConfig extends $pb.GeneratedMessage {
+class Application_ApplicationRuntimeInfo_MonitoringConfig
+    extends $pb.GeneratedMessage {
   factory Application_ApplicationRuntimeInfo_MonitoringConfig({
     $core.bool? enabled,
   }) {
@@ -1438,40 +1773,65 @@ class Application_ApplicationRuntimeInfo_MonitoringConfig extends $pb.GeneratedM
     return $result;
   }
   Application_ApplicationRuntimeInfo_MonitoringConfig._() : super();
-  factory Application_ApplicationRuntimeInfo_MonitoringConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Application_ApplicationRuntimeInfo_MonitoringConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Application_ApplicationRuntimeInfo_MonitoringConfig.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Application_ApplicationRuntimeInfo_MonitoringConfig.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Application.ApplicationRuntimeInfo.MonitoringConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'Application.ApplicationRuntimeInfo.MonitoringConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Application_ApplicationRuntimeInfo_MonitoringConfig clone() => Application_ApplicationRuntimeInfo_MonitoringConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Application_ApplicationRuntimeInfo_MonitoringConfig copyWith(void Function(Application_ApplicationRuntimeInfo_MonitoringConfig) updates) => super.copyWith((message) => updates(message as Application_ApplicationRuntimeInfo_MonitoringConfig)) as Application_ApplicationRuntimeInfo_MonitoringConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Application_ApplicationRuntimeInfo_MonitoringConfig clone() =>
+      Application_ApplicationRuntimeInfo_MonitoringConfig()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Application_ApplicationRuntimeInfo_MonitoringConfig copyWith(
+          void Function(Application_ApplicationRuntimeInfo_MonitoringConfig)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as Application_ApplicationRuntimeInfo_MonitoringConfig))
+          as Application_ApplicationRuntimeInfo_MonitoringConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Application_ApplicationRuntimeInfo_MonitoringConfig create() => Application_ApplicationRuntimeInfo_MonitoringConfig._();
-  Application_ApplicationRuntimeInfo_MonitoringConfig createEmptyInstance() => create();
-  static $pb.PbList<Application_ApplicationRuntimeInfo_MonitoringConfig> createRepeated() => $pb.PbList<Application_ApplicationRuntimeInfo_MonitoringConfig>();
+  static Application_ApplicationRuntimeInfo_MonitoringConfig create() =>
+      Application_ApplicationRuntimeInfo_MonitoringConfig._();
+  Application_ApplicationRuntimeInfo_MonitoringConfig createEmptyInstance() =>
+      create();
+  static $pb.PbList<Application_ApplicationRuntimeInfo_MonitoringConfig>
+      createRepeated() =>
+          $pb.PbList<Application_ApplicationRuntimeInfo_MonitoringConfig>();
   @$core.pragma('dart2js:noInline')
-  static Application_ApplicationRuntimeInfo_MonitoringConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Application_ApplicationRuntimeInfo_MonitoringConfig>(create);
+  static Application_ApplicationRuntimeInfo_MonitoringConfig getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          Application_ApplicationRuntimeInfo_MonitoringConfig>(create);
   static Application_ApplicationRuntimeInfo_MonitoringConfig? _defaultInstance;
 
   /// Whether this application has monitoring enabled.
   @$pb.TagNumber(1)
   $core.bool get enabled => $_getBF(0);
   @$pb.TagNumber(1)
-  set enabled($core.bool v) { $_setBool(0, v); }
+  set enabled($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEnabled() => $_has(0);
   @$pb.TagNumber(1)
@@ -1482,7 +1842,8 @@ class Application_ApplicationRuntimeInfo_MonitoringConfig extends $pb.GeneratedM
 class Application_ApplicationRuntimeInfo extends $pb.GeneratedMessage {
   factory Application_ApplicationRuntimeInfo({
     $2.Timestamp? deployTime,
-    $core.Iterable<Application_ApplicationRuntimeInfo_GlobalOutputResource>? globalOutputResources,
+    $core.Iterable<Application_ApplicationRuntimeInfo_GlobalOutputResource>?
+        globalOutputResources,
     Application_ApplicationRuntimeInfo_MonitoringConfig? monitoringConfig,
   }) {
     final $result = create();
@@ -1498,42 +1859,65 @@ class Application_ApplicationRuntimeInfo extends $pb.GeneratedMessage {
     return $result;
   }
   Application_ApplicationRuntimeInfo._() : super();
-  factory Application_ApplicationRuntimeInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Application_ApplicationRuntimeInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Application_ApplicationRuntimeInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Application_ApplicationRuntimeInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Application.ApplicationRuntimeInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'deployTime', subBuilder: $2.Timestamp.create)
-    ..pc<Application_ApplicationRuntimeInfo_GlobalOutputResource>(3, _omitFieldNames ? '' : 'globalOutputResources', $pb.PbFieldType.PM, subBuilder: Application_ApplicationRuntimeInfo_GlobalOutputResource.create)
-    ..aOM<Application_ApplicationRuntimeInfo_MonitoringConfig>(4, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: Application_ApplicationRuntimeInfo_MonitoringConfig.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Application.ApplicationRuntimeInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..aOM<$2.Timestamp>(1, _omitFieldNames ? '' : 'deployTime',
+        subBuilder: $2.Timestamp.create)
+    ..pc<Application_ApplicationRuntimeInfo_GlobalOutputResource>(
+        3, _omitFieldNames ? '' : 'globalOutputResources', $pb.PbFieldType.PM,
+        subBuilder:
+            Application_ApplicationRuntimeInfo_GlobalOutputResource.create)
+    ..aOM<Application_ApplicationRuntimeInfo_MonitoringConfig>(
+        4, _omitFieldNames ? '' : 'monitoringConfig',
+        subBuilder: Application_ApplicationRuntimeInfo_MonitoringConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  Application_ApplicationRuntimeInfo clone() => Application_ApplicationRuntimeInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Application_ApplicationRuntimeInfo copyWith(void Function(Application_ApplicationRuntimeInfo) updates) => super.copyWith((message) => updates(message as Application_ApplicationRuntimeInfo)) as Application_ApplicationRuntimeInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Application_ApplicationRuntimeInfo clone() =>
+      Application_ApplicationRuntimeInfo()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Application_ApplicationRuntimeInfo copyWith(
+          void Function(Application_ApplicationRuntimeInfo) updates) =>
+      super.copyWith((message) =>
+              updates(message as Application_ApplicationRuntimeInfo))
+          as Application_ApplicationRuntimeInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static Application_ApplicationRuntimeInfo create() => Application_ApplicationRuntimeInfo._();
+  static Application_ApplicationRuntimeInfo create() =>
+      Application_ApplicationRuntimeInfo._();
   Application_ApplicationRuntimeInfo createEmptyInstance() => create();
-  static $pb.PbList<Application_ApplicationRuntimeInfo> createRepeated() => $pb.PbList<Application_ApplicationRuntimeInfo>();
+  static $pb.PbList<Application_ApplicationRuntimeInfo> createRepeated() =>
+      $pb.PbList<Application_ApplicationRuntimeInfo>();
   @$core.pragma('dart2js:noInline')
-  static Application_ApplicationRuntimeInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Application_ApplicationRuntimeInfo>(create);
+  static Application_ApplicationRuntimeInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Application_ApplicationRuntimeInfo>(
+          create);
   static Application_ApplicationRuntimeInfo? _defaultInstance;
 
   /// Timestamp when the engine be deployed
   @$pb.TagNumber(1)
   $2.Timestamp get deployTime => $_getN(0);
   @$pb.TagNumber(1)
-  set deployTime($2.Timestamp v) { setField(1, v); }
+  set deployTime($2.Timestamp v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDeployTime() => $_has(0);
   @$pb.TagNumber(1)
@@ -1543,19 +1927,25 @@ class Application_ApplicationRuntimeInfo extends $pb.GeneratedMessage {
 
   /// Globally created resources like warehouse dataschemas.
   @$pb.TagNumber(3)
-  $core.List<Application_ApplicationRuntimeInfo_GlobalOutputResource> get globalOutputResources => $_getList(1);
+  $core.List<Application_ApplicationRuntimeInfo_GlobalOutputResource>
+      get globalOutputResources => $_getList(1);
 
   /// Monitoring-related configuration for this application.
   @$pb.TagNumber(4)
-  Application_ApplicationRuntimeInfo_MonitoringConfig get monitoringConfig => $_getN(2);
+  Application_ApplicationRuntimeInfo_MonitoringConfig get monitoringConfig =>
+      $_getN(2);
   @$pb.TagNumber(4)
-  set monitoringConfig(Application_ApplicationRuntimeInfo_MonitoringConfig v) { setField(4, v); }
+  set monitoringConfig(Application_ApplicationRuntimeInfo_MonitoringConfig v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMonitoringConfig() => $_has(2);
   @$pb.TagNumber(4)
   void clearMonitoringConfig() => clearField(4);
   @$pb.TagNumber(4)
-  Application_ApplicationRuntimeInfo_MonitoringConfig ensureMonitoringConfig() => $_ensure(2);
+  Application_ApplicationRuntimeInfo_MonitoringConfig
+      ensureMonitoringConfig() => $_ensure(2);
 }
 
 /// Message describing Application object
@@ -1606,33 +1996,57 @@ class Application extends $pb.GeneratedMessage {
     return $result;
   }
   Application._() : super();
-  factory Application.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Application.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Application.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Application.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Application', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Application',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Application.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Application.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..aOS(6, _omitFieldNames ? '' : 'description')
-    ..aOM<ApplicationConfigs>(7, _omitFieldNames ? '' : 'applicationConfigs', subBuilder: ApplicationConfigs.create)
-    ..aOM<Application_ApplicationRuntimeInfo>(8, _omitFieldNames ? '' : 'runtimeInfo', subBuilder: Application_ApplicationRuntimeInfo.create)
-    ..e<Application_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Application_State.STATE_UNSPECIFIED, valueOf: Application_State.valueOf, enumValues: Application_State.values)
-    ..e<Application_BillingMode>(12, _omitFieldNames ? '' : 'billingMode', $pb.PbFieldType.OE, defaultOrMaker: Application_BillingMode.BILLING_MODE_UNSPECIFIED, valueOf: Application_BillingMode.valueOf, enumValues: Application_BillingMode.values)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<ApplicationConfigs>(7, _omitFieldNames ? '' : 'applicationConfigs',
+        subBuilder: ApplicationConfigs.create)
+    ..aOM<Application_ApplicationRuntimeInfo>(
+        8, _omitFieldNames ? '' : 'runtimeInfo',
+        subBuilder: Application_ApplicationRuntimeInfo.create)
+    ..e<Application_State>(
+        9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Application_State.STATE_UNSPECIFIED,
+        valueOf: Application_State.valueOf,
+        enumValues: Application_State.values)
+    ..e<Application_BillingMode>(
+        12, _omitFieldNames ? '' : 'billingMode', $pb.PbFieldType.OE,
+        defaultOrMaker: Application_BillingMode.BILLING_MODE_UNSPECIFIED,
+        valueOf: Application_BillingMode.valueOf,
+        enumValues: Application_BillingMode.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Application clone() => Application()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Application copyWith(void Function(Application) updates) => super.copyWith((message) => updates(message as Application)) as Application;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Application copyWith(void Function(Application) updates) =>
+      super.copyWith((message) => updates(message as Application))
+          as Application;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1641,14 +2055,18 @@ class Application extends $pb.GeneratedMessage {
   Application createEmptyInstance() => create();
   static $pb.PbList<Application> createRepeated() => $pb.PbList<Application>();
   @$core.pragma('dart2js:noInline')
-  static Application getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Application>(create);
+  static Application getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Application>(create);
   static Application? _defaultInstance;
 
   /// name of resource
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1658,7 +2076,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -1670,7 +2091,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) { setField(3, v); }
+  set updateTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -1686,7 +2110,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get displayName => $_getSZ(4);
   @$pb.TagNumber(5)
-  set displayName($core.String v) { $_setString(4, v); }
+  set displayName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
@@ -1696,7 +2123,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get description => $_getSZ(5);
   @$pb.TagNumber(6)
-  set description($core.String v) { $_setString(5, v); }
+  set description($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(5);
   @$pb.TagNumber(6)
@@ -1706,7 +2136,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   ApplicationConfigs get applicationConfigs => $_getN(6);
   @$pb.TagNumber(7)
-  set applicationConfigs(ApplicationConfigs v) { setField(7, v); }
+  set applicationConfigs(ApplicationConfigs v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasApplicationConfigs() => $_has(6);
   @$pb.TagNumber(7)
@@ -1719,7 +2152,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Application_ApplicationRuntimeInfo get runtimeInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set runtimeInfo(Application_ApplicationRuntimeInfo v) { setField(8, v); }
+  set runtimeInfo(Application_ApplicationRuntimeInfo v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasRuntimeInfo() => $_has(7);
   @$pb.TagNumber(8)
@@ -1731,7 +2167,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   Application_State get state => $_getN(8);
   @$pb.TagNumber(9)
-  set state(Application_State v) { setField(9, v); }
+  set state(Application_State v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasState() => $_has(8);
   @$pb.TagNumber(9)
@@ -1741,7 +2180,10 @@ class Application extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   Application_BillingMode get billingMode => $_getN(9);
   @$pb.TagNumber(12)
-  set billingMode(Application_BillingMode v) { setField(12, v); }
+  set billingMode(Application_BillingMode v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasBillingMode() => $_has(9);
   @$pb.TagNumber(12)
@@ -1760,33 +2202,43 @@ class ApplicationConfigs extends $pb.GeneratedMessage {
     return $result;
   }
   ApplicationConfigs._() : super();
-  factory ApplicationConfigs.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ApplicationConfigs.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ApplicationConfigs.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ApplicationConfigs.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplicationConfigs', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..pc<Node>(1, _omitFieldNames ? '' : 'nodes', $pb.PbFieldType.PM, subBuilder: Node.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ApplicationConfigs',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..pc<Node>(1, _omitFieldNames ? '' : 'nodes', $pb.PbFieldType.PM,
+        subBuilder: Node.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ApplicationConfigs clone() => ApplicationConfigs()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ApplicationConfigs copyWith(void Function(ApplicationConfigs) updates) => super.copyWith((message) => updates(message as ApplicationConfigs)) as ApplicationConfigs;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ApplicationConfigs copyWith(void Function(ApplicationConfigs) updates) =>
+      super.copyWith((message) => updates(message as ApplicationConfigs))
+          as ApplicationConfigs;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApplicationConfigs create() => ApplicationConfigs._();
   ApplicationConfigs createEmptyInstance() => create();
-  static $pb.PbList<ApplicationConfigs> createRepeated() => $pb.PbList<ApplicationConfigs>();
+  static $pb.PbList<ApplicationConfigs> createRepeated() =>
+      $pb.PbList<ApplicationConfigs>();
   @$core.pragma('dart2js:noInline')
-  static ApplicationConfigs getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ApplicationConfigs>(create);
+  static ApplicationConfigs getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ApplicationConfigs>(create);
   static ApplicationConfigs? _defaultInstance;
 
   /// A list of nodes  in the application graph.
@@ -1814,42 +2266,54 @@ class Node_InputEdge extends $pb.GeneratedMessage {
     return $result;
   }
   Node_InputEdge._() : super();
-  factory Node_InputEdge.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Node_InputEdge.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Node_InputEdge.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Node_InputEdge.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Node.InputEdge', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Node.InputEdge',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parentNode')
     ..aOS(2, _omitFieldNames ? '' : 'parentOutputChannel')
     ..aOS(3, _omitFieldNames ? '' : 'connectedInputChannel')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Node_InputEdge clone() => Node_InputEdge()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Node_InputEdge copyWith(void Function(Node_InputEdge) updates) => super.copyWith((message) => updates(message as Node_InputEdge)) as Node_InputEdge;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Node_InputEdge copyWith(void Function(Node_InputEdge) updates) =>
+      super.copyWith((message) => updates(message as Node_InputEdge))
+          as Node_InputEdge;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static Node_InputEdge create() => Node_InputEdge._();
   Node_InputEdge createEmptyInstance() => create();
-  static $pb.PbList<Node_InputEdge> createRepeated() => $pb.PbList<Node_InputEdge>();
+  static $pb.PbList<Node_InputEdge> createRepeated() =>
+      $pb.PbList<Node_InputEdge>();
   @$core.pragma('dart2js:noInline')
-  static Node_InputEdge getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Node_InputEdge>(create);
+  static Node_InputEdge getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Node_InputEdge>(create);
   static Node_InputEdge? _defaultInstance;
 
   /// The name of the parent node.
   @$pb.TagNumber(1)
   $core.String get parentNode => $_getSZ(0);
   @$pb.TagNumber(1)
-  set parentNode($core.String v) { $_setString(0, v); }
+  set parentNode($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasParentNode() => $_has(0);
   @$pb.TagNumber(1)
@@ -1860,7 +2324,10 @@ class Node_InputEdge extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get parentOutputChannel => $_getSZ(1);
   @$pb.TagNumber(2)
-  set parentOutputChannel($core.String v) { $_setString(1, v); }
+  set parentOutputChannel($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasParentOutputChannel() => $_has(1);
   @$pb.TagNumber(2)
@@ -1871,17 +2338,17 @@ class Node_InputEdge extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get connectedInputChannel => $_getSZ(2);
   @$pb.TagNumber(3)
-  set connectedInputChannel($core.String v) { $_setString(2, v); }
+  set connectedInputChannel($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasConnectedInputChannel() => $_has(2);
   @$pb.TagNumber(3)
   void clearConnectedInputChannel() => clearField(3);
 }
 
-enum Node_StreamOutputConfig {
-  outputAllOutputChannelsToStream, 
-  notSet
-}
+enum Node_StreamOutputConfig { outputAllOutputChannelsToStream, notSet }
 
 /// Message describing node object.
 class Node extends $pb.GeneratedMessage {
@@ -1915,34 +2382,44 @@ class Node extends $pb.GeneratedMessage {
     return $result;
   }
   Node._() : super();
-  factory Node.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Node.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Node.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Node.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, Node_StreamOutputConfig> _Node_StreamOutputConfigByTag = {
-    6 : Node_StreamOutputConfig.outputAllOutputChannelsToStream,
-    0 : Node_StreamOutputConfig.notSet
+  static const $core.Map<$core.int, Node_StreamOutputConfig>
+      _Node_StreamOutputConfigByTag = {
+    6: Node_StreamOutputConfig.outputAllOutputChannelsToStream,
+    0: Node_StreamOutputConfig.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Node', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Node',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..oo(0, [6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<ProcessorConfig>(3, _omitFieldNames ? '' : 'nodeConfig', subBuilder: ProcessorConfig.create)
+    ..aOM<ProcessorConfig>(3, _omitFieldNames ? '' : 'nodeConfig',
+        subBuilder: ProcessorConfig.create)
     ..aOS(4, _omitFieldNames ? '' : 'processor')
-    ..pc<Node_InputEdge>(5, _omitFieldNames ? '' : 'parents', $pb.PbFieldType.PM, subBuilder: Node_InputEdge.create)
+    ..pc<Node_InputEdge>(
+        5, _omitFieldNames ? '' : 'parents', $pb.PbFieldType.PM,
+        subBuilder: Node_InputEdge.create)
     ..aOB(6, _omitFieldNames ? '' : 'outputAllOutputChannelsToStream')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Node clone() => Node()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Node copyWith(void Function(Node) updates) => super.copyWith((message) => updates(message as Node)) as Node;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Node copyWith(void Function(Node) updates) =>
+      super.copyWith((message) => updates(message as Node)) as Node;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -1951,17 +2428,22 @@ class Node extends $pb.GeneratedMessage {
   Node createEmptyInstance() => create();
   static $pb.PbList<Node> createRepeated() => $pb.PbList<Node>();
   @$core.pragma('dart2js:noInline')
-  static Node getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Node>(create);
+  static Node getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Node>(create);
   static Node? _defaultInstance;
 
-  Node_StreamOutputConfig whichStreamOutputConfig() => _Node_StreamOutputConfigByTag[$_whichOneof(0)]!;
+  Node_StreamOutputConfig whichStreamOutputConfig() =>
+      _Node_StreamOutputConfigByTag[$_whichOneof(0)]!;
   void clearStreamOutputConfig() => clearField($_whichOneof(0));
 
   /// Required. A unique name for the node.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -1971,7 +2453,10 @@ class Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get displayName => $_getSZ(1);
   @$pb.TagNumber(2)
-  set displayName($core.String v) { $_setString(1, v); }
+  set displayName($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
@@ -1981,7 +2466,10 @@ class Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ProcessorConfig get nodeConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set nodeConfig(ProcessorConfig v) { setField(3, v); }
+  set nodeConfig(ProcessorConfig v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasNodeConfig() => $_has(2);
   @$pb.TagNumber(3)
@@ -1993,7 +2481,10 @@ class Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get processor => $_getSZ(3);
   @$pb.TagNumber(4)
-  set processor($core.String v) { $_setString(3, v); }
+  set processor($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasProcessor() => $_has(3);
   @$pb.TagNumber(4)
@@ -2025,7 +2516,10 @@ class Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool get outputAllOutputChannelsToStream => $_getBF(5);
   @$pb.TagNumber(6)
-  set outputAllOutputChannelsToStream($core.bool v) { $_setBool(5, v); }
+  set outputAllOutputChannelsToStream($core.bool v) {
+    $_setBool(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasOutputAllOutputChannelsToStream() => $_has(5);
   @$pb.TagNumber(6)
@@ -2068,30 +2562,44 @@ class Draft extends $pb.GeneratedMessage {
     return $result;
   }
   Draft._() : super();
-  factory Draft.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Draft.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Draft.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Draft.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Draft', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Draft',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels', entryClassName: 'Draft.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Draft.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
     ..aOS(5, _omitFieldNames ? '' : 'description')
-    ..aOM<ApplicationConfigs>(6, _omitFieldNames ? '' : 'draftApplicationConfigs', subBuilder: ApplicationConfigs.create)
-    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<ApplicationConfigs>(
+        6, _omitFieldNames ? '' : 'draftApplicationConfigs',
+        subBuilder: ApplicationConfigs.create)
+    ..aOM<$2.Timestamp>(7, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Draft clone() => Draft()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Draft copyWith(void Function(Draft) updates) => super.copyWith((message) => updates(message as Draft)) as Draft;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Draft copyWith(void Function(Draft) updates) =>
+      super.copyWith((message) => updates(message as Draft)) as Draft;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2100,14 +2608,18 @@ class Draft extends $pb.GeneratedMessage {
   Draft createEmptyInstance() => create();
   static $pb.PbList<Draft> createRepeated() => $pb.PbList<Draft>();
   @$core.pragma('dart2js:noInline')
-  static Draft getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Draft>(create);
+  static Draft getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Draft>(create);
   static Draft? _defaultInstance;
 
   /// name of resource
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2117,7 +2629,10 @@ class Draft extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -2133,7 +2648,10 @@ class Draft extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get displayName => $_getSZ(3);
   @$pb.TagNumber(4)
-  set displayName($core.String v) { $_setString(3, v); }
+  set displayName($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasDisplayName() => $_has(3);
   @$pb.TagNumber(4)
@@ -2143,7 +2661,10 @@ class Draft extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get description => $_getSZ(4);
   @$pb.TagNumber(5)
-  set description($core.String v) { $_setString(4, v); }
+  set description($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
@@ -2153,7 +2674,10 @@ class Draft extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   ApplicationConfigs get draftApplicationConfigs => $_getN(5);
   @$pb.TagNumber(6)
-  set draftApplicationConfigs(ApplicationConfigs v) { setField(6, v); }
+  set draftApplicationConfigs(ApplicationConfigs v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDraftApplicationConfigs() => $_has(5);
   @$pb.TagNumber(6)
@@ -2165,7 +2689,10 @@ class Draft extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $2.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($2.Timestamp v) { setField(7, v); }
+  set updateTime($2.Timestamp v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
@@ -2239,37 +2766,68 @@ class Processor extends $pb.GeneratedMessage {
     return $result;
   }
   Processor._() : super();
-  factory Processor.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Processor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Processor.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Processor.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Processor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Processor',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Processor.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Processor.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
-    ..e<Processor_ProcessorType>(6, _omitFieldNames ? '' : 'processorType', $pb.PbFieldType.OE, defaultOrMaker: Processor_ProcessorType.PROCESSOR_TYPE_UNSPECIFIED, valueOf: Processor_ProcessorType.valueOf, enumValues: Processor_ProcessorType.values)
-    ..aOM<CustomProcessorSourceInfo>(7, _omitFieldNames ? '' : 'customProcessorSourceInfo', subBuilder: CustomProcessorSourceInfo.create)
-    ..e<Processor_ProcessorState>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Processor_ProcessorState.PROCESSOR_STATE_UNSPECIFIED, valueOf: Processor_ProcessorState.valueOf, enumValues: Processor_ProcessorState.values)
+    ..e<Processor_ProcessorType>(
+        6, _omitFieldNames ? '' : 'processorType', $pb.PbFieldType.OE,
+        defaultOrMaker: Processor_ProcessorType.PROCESSOR_TYPE_UNSPECIFIED,
+        valueOf: Processor_ProcessorType.valueOf,
+        enumValues: Processor_ProcessorType.values)
+    ..aOM<CustomProcessorSourceInfo>(
+        7, _omitFieldNames ? '' : 'customProcessorSourceInfo',
+        subBuilder: CustomProcessorSourceInfo.create)
+    ..e<Processor_ProcessorState>(
+        8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker: Processor_ProcessorState.PROCESSOR_STATE_UNSPECIFIED,
+        valueOf: Processor_ProcessorState.valueOf,
+        enumValues: Processor_ProcessorState.values)
     ..aOS(10, _omitFieldNames ? '' : 'description')
-    ..aOM<ProcessorIOSpec>(11, _omitFieldNames ? '' : 'processorIoSpec', subBuilder: ProcessorIOSpec.create)
-    ..e<ModelType>(13, _omitFieldNames ? '' : 'modelType', $pb.PbFieldType.OE, defaultOrMaker: ModelType.MODEL_TYPE_UNSPECIFIED, valueOf: ModelType.valueOf, enumValues: ModelType.values)
+    ..aOM<ProcessorIOSpec>(11, _omitFieldNames ? '' : 'processorIoSpec',
+        subBuilder: ProcessorIOSpec.create)
+    ..e<ModelType>(13, _omitFieldNames ? '' : 'modelType', $pb.PbFieldType.OE,
+        defaultOrMaker: ModelType.MODEL_TYPE_UNSPECIFIED,
+        valueOf: ModelType.valueOf,
+        enumValues: ModelType.values)
     ..aOS(14, _omitFieldNames ? '' : 'configurationTypeurl')
-    ..pc<StreamAnnotationType>(15, _omitFieldNames ? '' : 'supportedAnnotationTypes', $pb.PbFieldType.KE, valueOf: StreamAnnotationType.valueOf, enumValues: StreamAnnotationType.values, defaultEnumValue: StreamAnnotationType.STREAM_ANNOTATION_TYPE_UNSPECIFIED)
+    ..pc<StreamAnnotationType>(15,
+        _omitFieldNames ? '' : 'supportedAnnotationTypes', $pb.PbFieldType.KE,
+        valueOf: StreamAnnotationType.valueOf,
+        enumValues: StreamAnnotationType.values,
+        defaultEnumValue:
+            StreamAnnotationType.STREAM_ANNOTATION_TYPE_UNSPECIFIED)
     ..aOB(17, _omitFieldNames ? '' : 'supportsPostProcessing')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Processor clone() => Processor()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Processor copyWith(void Function(Processor) updates) => super.copyWith((message) => updates(message as Processor)) as Processor;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Processor copyWith(void Function(Processor) updates) =>
+      super.copyWith((message) => updates(message as Processor)) as Processor;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -2278,14 +2836,18 @@ class Processor extends $pb.GeneratedMessage {
   Processor createEmptyInstance() => create();
   static $pb.PbList<Processor> createRepeated() => $pb.PbList<Processor>();
   @$core.pragma('dart2js:noInline')
-  static Processor getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Processor>(create);
+  static Processor getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Processor>(create);
   static Processor? _defaultInstance;
 
   /// name of resource.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2295,7 +2857,10 @@ class Processor extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -2307,7 +2872,10 @@ class Processor extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) { setField(3, v); }
+  set updateTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -2323,7 +2891,10 @@ class Processor extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.String get displayName => $_getSZ(4);
   @$pb.TagNumber(5)
-  set displayName($core.String v) { $_setString(4, v); }
+  set displayName($core.String v) {
+    $_setString(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
@@ -2333,7 +2904,10 @@ class Processor extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Processor_ProcessorType get processorType => $_getN(5);
   @$pb.TagNumber(6)
-  set processorType(Processor_ProcessorType v) { setField(6, v); }
+  set processorType(Processor_ProcessorType v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasProcessorType() => $_has(5);
   @$pb.TagNumber(6)
@@ -2343,7 +2917,10 @@ class Processor extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   CustomProcessorSourceInfo get customProcessorSourceInfo => $_getN(6);
   @$pb.TagNumber(7)
-  set customProcessorSourceInfo(CustomProcessorSourceInfo v) { setField(7, v); }
+  set customProcessorSourceInfo(CustomProcessorSourceInfo v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasCustomProcessorSourceInfo() => $_has(6);
   @$pb.TagNumber(7)
@@ -2355,7 +2932,10 @@ class Processor extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   Processor_ProcessorState get state => $_getN(7);
   @$pb.TagNumber(8)
-  set state(Processor_ProcessorState v) { setField(8, v); }
+  set state(Processor_ProcessorState v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
@@ -2365,7 +2945,10 @@ class Processor extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.String get description => $_getSZ(8);
   @$pb.TagNumber(10)
-  set description($core.String v) { $_setString(8, v); }
+  set description($core.String v) {
+    $_setString(8, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasDescription() => $_has(8);
   @$pb.TagNumber(10)
@@ -2377,7 +2960,10 @@ class Processor extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   ProcessorIOSpec get processorIoSpec => $_getN(9);
   @$pb.TagNumber(11)
-  set processorIoSpec(ProcessorIOSpec v) { setField(11, v); }
+  set processorIoSpec(ProcessorIOSpec v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasProcessorIoSpec() => $_has(9);
   @$pb.TagNumber(11)
@@ -2389,7 +2975,10 @@ class Processor extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   ModelType get modelType => $_getN(10);
   @$pb.TagNumber(13)
-  set modelType(ModelType v) { setField(13, v); }
+  set modelType(ModelType v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasModelType() => $_has(10);
   @$pb.TagNumber(13)
@@ -2400,20 +2989,27 @@ class Processor extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.String get configurationTypeurl => $_getSZ(11);
   @$pb.TagNumber(14)
-  set configurationTypeurl($core.String v) { $_setString(11, v); }
+  set configurationTypeurl($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasConfigurationTypeurl() => $_has(11);
   @$pb.TagNumber(14)
   void clearConfigurationTypeurl() => clearField(14);
 
   @$pb.TagNumber(15)
-  $core.List<StreamAnnotationType> get supportedAnnotationTypes => $_getList(12);
+  $core.List<StreamAnnotationType> get supportedAnnotationTypes =>
+      $_getList(12);
 
   /// Indicates if the processor supports post processing.
   @$pb.TagNumber(17)
   $core.bool get supportsPostProcessing => $_getBF(13);
   @$pb.TagNumber(17)
-  set supportsPostProcessing($core.bool v) { $_setBool(13, v); }
+  set supportsPostProcessing($core.bool v) {
+    $_setBool(13, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasSupportsPostProcessing() => $_has(13);
   @$pb.TagNumber(17)
@@ -2448,44 +3044,65 @@ class ProcessorIOSpec_GraphInputChannelSpec extends $pb.GeneratedMessage {
     return $result;
   }
   ProcessorIOSpec_GraphInputChannelSpec._() : super();
-  factory ProcessorIOSpec_GraphInputChannelSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProcessorIOSpec_GraphInputChannelSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProcessorIOSpec_GraphInputChannelSpec.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProcessorIOSpec_GraphInputChannelSpec.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessorIOSpec.GraphInputChannelSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProcessorIOSpec.GraphInputChannelSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<DataType>(2, _omitFieldNames ? '' : 'dataType', $pb.PbFieldType.OE, defaultOrMaker: DataType.DATA_TYPE_UNSPECIFIED, valueOf: DataType.valueOf, enumValues: DataType.values)
+    ..e<DataType>(2, _omitFieldNames ? '' : 'dataType', $pb.PbFieldType.OE,
+        defaultOrMaker: DataType.DATA_TYPE_UNSPECIFIED,
+        valueOf: DataType.valueOf,
+        enumValues: DataType.values)
     ..aOB(3, _omitFieldNames ? '' : 'required')
     ..aInt64(4, _omitFieldNames ? '' : 'maxConnectionAllowed')
     ..pPS(5, _omitFieldNames ? '' : 'acceptedDataTypeUris')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProcessorIOSpec_GraphInputChannelSpec clone() => ProcessorIOSpec_GraphInputChannelSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProcessorIOSpec_GraphInputChannelSpec copyWith(void Function(ProcessorIOSpec_GraphInputChannelSpec) updates) => super.copyWith((message) => updates(message as ProcessorIOSpec_GraphInputChannelSpec)) as ProcessorIOSpec_GraphInputChannelSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProcessorIOSpec_GraphInputChannelSpec clone() =>
+      ProcessorIOSpec_GraphInputChannelSpec()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProcessorIOSpec_GraphInputChannelSpec copyWith(
+          void Function(ProcessorIOSpec_GraphInputChannelSpec) updates) =>
+      super.copyWith((message) =>
+              updates(message as ProcessorIOSpec_GraphInputChannelSpec))
+          as ProcessorIOSpec_GraphInputChannelSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ProcessorIOSpec_GraphInputChannelSpec create() => ProcessorIOSpec_GraphInputChannelSpec._();
+  static ProcessorIOSpec_GraphInputChannelSpec create() =>
+      ProcessorIOSpec_GraphInputChannelSpec._();
   ProcessorIOSpec_GraphInputChannelSpec createEmptyInstance() => create();
-  static $pb.PbList<ProcessorIOSpec_GraphInputChannelSpec> createRepeated() => $pb.PbList<ProcessorIOSpec_GraphInputChannelSpec>();
+  static $pb.PbList<ProcessorIOSpec_GraphInputChannelSpec> createRepeated() =>
+      $pb.PbList<ProcessorIOSpec_GraphInputChannelSpec>();
   @$core.pragma('dart2js:noInline')
-  static ProcessorIOSpec_GraphInputChannelSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProcessorIOSpec_GraphInputChannelSpec>(create);
+  static ProcessorIOSpec_GraphInputChannelSpec getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ProcessorIOSpec_GraphInputChannelSpec>(create);
   static ProcessorIOSpec_GraphInputChannelSpec? _defaultInstance;
 
   /// The name of the current input channel.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2497,7 +3114,10 @@ class ProcessorIOSpec_GraphInputChannelSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DataType get dataType => $_getN(1);
   @$pb.TagNumber(2)
-  set dataType(DataType v) { setField(2, v); }
+  set dataType(DataType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDataType() => $_has(1);
   @$pb.TagNumber(2)
@@ -2510,7 +3130,10 @@ class ProcessorIOSpec_GraphInputChannelSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get required => $_getBF(2);
   @$pb.TagNumber(3)
-  set required($core.bool v) { $_setBool(2, v); }
+  set required($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRequired() => $_has(2);
   @$pb.TagNumber(3)
@@ -2521,7 +3144,10 @@ class ProcessorIOSpec_GraphInputChannelSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get maxConnectionAllowed => $_getI64(3);
   @$pb.TagNumber(4)
-  set maxConnectionAllowed($fixnum.Int64 v) { $_setInt64(3, v); }
+  set maxConnectionAllowed($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasMaxConnectionAllowed() => $_has(3);
   @$pb.TagNumber(4)
@@ -2554,42 +3180,63 @@ class ProcessorIOSpec_GraphOutputChannelSpec extends $pb.GeneratedMessage {
     return $result;
   }
   ProcessorIOSpec_GraphOutputChannelSpec._() : super();
-  factory ProcessorIOSpec_GraphOutputChannelSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProcessorIOSpec_GraphOutputChannelSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProcessorIOSpec_GraphOutputChannelSpec.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProcessorIOSpec_GraphOutputChannelSpec.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessorIOSpec.GraphOutputChannelSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProcessorIOSpec.GraphOutputChannelSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<DataType>(2, _omitFieldNames ? '' : 'dataType', $pb.PbFieldType.OE, defaultOrMaker: DataType.DATA_TYPE_UNSPECIFIED, valueOf: DataType.valueOf, enumValues: DataType.values)
+    ..e<DataType>(2, _omitFieldNames ? '' : 'dataType', $pb.PbFieldType.OE,
+        defaultOrMaker: DataType.DATA_TYPE_UNSPECIFIED,
+        valueOf: DataType.valueOf,
+        enumValues: DataType.values)
     ..aOS(3, _omitFieldNames ? '' : 'dataTypeUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProcessorIOSpec_GraphOutputChannelSpec clone() => ProcessorIOSpec_GraphOutputChannelSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProcessorIOSpec_GraphOutputChannelSpec copyWith(void Function(ProcessorIOSpec_GraphOutputChannelSpec) updates) => super.copyWith((message) => updates(message as ProcessorIOSpec_GraphOutputChannelSpec)) as ProcessorIOSpec_GraphOutputChannelSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProcessorIOSpec_GraphOutputChannelSpec clone() =>
+      ProcessorIOSpec_GraphOutputChannelSpec()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProcessorIOSpec_GraphOutputChannelSpec copyWith(
+          void Function(ProcessorIOSpec_GraphOutputChannelSpec) updates) =>
+      super.copyWith((message) =>
+              updates(message as ProcessorIOSpec_GraphOutputChannelSpec))
+          as ProcessorIOSpec_GraphOutputChannelSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ProcessorIOSpec_GraphOutputChannelSpec create() => ProcessorIOSpec_GraphOutputChannelSpec._();
+  static ProcessorIOSpec_GraphOutputChannelSpec create() =>
+      ProcessorIOSpec_GraphOutputChannelSpec._();
   ProcessorIOSpec_GraphOutputChannelSpec createEmptyInstance() => create();
-  static $pb.PbList<ProcessorIOSpec_GraphOutputChannelSpec> createRepeated() => $pb.PbList<ProcessorIOSpec_GraphOutputChannelSpec>();
+  static $pb.PbList<ProcessorIOSpec_GraphOutputChannelSpec> createRepeated() =>
+      $pb.PbList<ProcessorIOSpec_GraphOutputChannelSpec>();
   @$core.pragma('dart2js:noInline')
-  static ProcessorIOSpec_GraphOutputChannelSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProcessorIOSpec_GraphOutputChannelSpec>(create);
+  static ProcessorIOSpec_GraphOutputChannelSpec getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ProcessorIOSpec_GraphOutputChannelSpec>(create);
   static ProcessorIOSpec_GraphOutputChannelSpec? _defaultInstance;
 
   /// The name of the current output channel.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2599,7 +3246,10 @@ class ProcessorIOSpec_GraphOutputChannelSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DataType get dataType => $_getN(1);
   @$pb.TagNumber(2)
-  set dataType(DataType v) { setField(2, v); }
+  set dataType(DataType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDataType() => $_has(1);
   @$pb.TagNumber(2)
@@ -2608,7 +3258,10 @@ class ProcessorIOSpec_GraphOutputChannelSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get dataTypeUri => $_getSZ(2);
   @$pb.TagNumber(3)
-  set dataTypeUri($core.String v) { $_setString(2, v); }
+  set dataTypeUri($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasDataTypeUri() => $_has(2);
   @$pb.TagNumber(3)
@@ -2616,8 +3269,8 @@ class ProcessorIOSpec_GraphOutputChannelSpec extends $pb.GeneratedMessage {
 }
 
 enum ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType {
-  configTypeUri, 
-  resourceTypeUri, 
+  configTypeUri,
+  resourceTypeUri,
   notSet
 }
 
@@ -2625,7 +3278,8 @@ enum ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType {
 /// External resources are virtual nodes which are not expressed in the
 /// application graph. Each processor expresses its out-graph spec, so customer
 /// is able to override the external source or destinations to the
-class ProcessorIOSpec_InstanceResourceInputBindingSpec extends $pb.GeneratedMessage {
+class ProcessorIOSpec_InstanceResourceInputBindingSpec
+    extends $pb.GeneratedMessage {
   factory ProcessorIOSpec_InstanceResourceInputBindingSpec({
     $core.String? name,
     $core.String? configTypeUri,
@@ -2644,51 +3298,83 @@ class ProcessorIOSpec_InstanceResourceInputBindingSpec extends $pb.GeneratedMess
     return $result;
   }
   ProcessorIOSpec_InstanceResourceInputBindingSpec._() : super();
-  factory ProcessorIOSpec_InstanceResourceInputBindingSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProcessorIOSpec_InstanceResourceInputBindingSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProcessorIOSpec_InstanceResourceInputBindingSpec.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProcessorIOSpec_InstanceResourceInputBindingSpec.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType> _ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceTypeByTag = {
-    2 : ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType.configTypeUri,
-    3 : ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType.resourceTypeUri,
-    0 : ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType.notSet
+  static const $core.Map<$core.int,
+          ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType>
+      _ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceTypeByTag = {
+    2: ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType
+        .configTypeUri,
+    3: ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType
+        .resourceTypeUri,
+    0: ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessorIOSpec.InstanceResourceInputBindingSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'ProcessorIOSpec.InstanceResourceInputBindingSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'configTypeUri')
     ..aOS(3, _omitFieldNames ? '' : 'resourceTypeUri')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProcessorIOSpec_InstanceResourceInputBindingSpec clone() => ProcessorIOSpec_InstanceResourceInputBindingSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProcessorIOSpec_InstanceResourceInputBindingSpec copyWith(void Function(ProcessorIOSpec_InstanceResourceInputBindingSpec) updates) => super.copyWith((message) => updates(message as ProcessorIOSpec_InstanceResourceInputBindingSpec)) as ProcessorIOSpec_InstanceResourceInputBindingSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProcessorIOSpec_InstanceResourceInputBindingSpec clone() =>
+      ProcessorIOSpec_InstanceResourceInputBindingSpec()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProcessorIOSpec_InstanceResourceInputBindingSpec copyWith(
+          void Function(ProcessorIOSpec_InstanceResourceInputBindingSpec)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as ProcessorIOSpec_InstanceResourceInputBindingSpec))
+          as ProcessorIOSpec_InstanceResourceInputBindingSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ProcessorIOSpec_InstanceResourceInputBindingSpec create() => ProcessorIOSpec_InstanceResourceInputBindingSpec._();
-  ProcessorIOSpec_InstanceResourceInputBindingSpec createEmptyInstance() => create();
-  static $pb.PbList<ProcessorIOSpec_InstanceResourceInputBindingSpec> createRepeated() => $pb.PbList<ProcessorIOSpec_InstanceResourceInputBindingSpec>();
+  static ProcessorIOSpec_InstanceResourceInputBindingSpec create() =>
+      ProcessorIOSpec_InstanceResourceInputBindingSpec._();
+  ProcessorIOSpec_InstanceResourceInputBindingSpec createEmptyInstance() =>
+      create();
+  static $pb.PbList<ProcessorIOSpec_InstanceResourceInputBindingSpec>
+      createRepeated() =>
+          $pb.PbList<ProcessorIOSpec_InstanceResourceInputBindingSpec>();
   @$core.pragma('dart2js:noInline')
-  static ProcessorIOSpec_InstanceResourceInputBindingSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProcessorIOSpec_InstanceResourceInputBindingSpec>(create);
+  static ProcessorIOSpec_InstanceResourceInputBindingSpec getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ProcessorIOSpec_InstanceResourceInputBindingSpec>(create);
   static ProcessorIOSpec_InstanceResourceInputBindingSpec? _defaultInstance;
 
-  ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType whichResourceType() => _ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceTypeByTag[$_whichOneof(0)]!;
+  ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceType
+      whichResourceType() =>
+          _ProcessorIOSpec_InstanceResourceInputBindingSpec_ResourceTypeByTag[
+              $_whichOneof(0)]!;
   void clearResourceType() => clearField($_whichOneof(0));
 
   /// Name of the input binding, unique within the processor.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2699,7 +3385,10 @@ class ProcessorIOSpec_InstanceResourceInputBindingSpec extends $pb.GeneratedMess
   @$pb.TagNumber(2)
   $core.String get configTypeUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set configTypeUri($core.String v) { $_setString(1, v); }
+  set configTypeUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasConfigTypeUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -2710,14 +3399,18 @@ class ProcessorIOSpec_InstanceResourceInputBindingSpec extends $pb.GeneratedMess
   @$pb.TagNumber(3)
   $core.String get resourceTypeUri => $_getSZ(2);
   @$pb.TagNumber(3)
-  set resourceTypeUri($core.String v) { $_setString(2, v); }
+  set resourceTypeUri($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasResourceTypeUri() => $_has(2);
   @$pb.TagNumber(3)
   void clearResourceTypeUri() => clearField(3);
 }
 
-class ProcessorIOSpec_InstanceResourceOutputBindingSpec extends $pb.GeneratedMessage {
+class ProcessorIOSpec_InstanceResourceOutputBindingSpec
+    extends $pb.GeneratedMessage {
   factory ProcessorIOSpec_InstanceResourceOutputBindingSpec({
     $core.String? name,
     $core.String? resourceTypeUri,
@@ -2736,42 +3429,67 @@ class ProcessorIOSpec_InstanceResourceOutputBindingSpec extends $pb.GeneratedMes
     return $result;
   }
   ProcessorIOSpec_InstanceResourceOutputBindingSpec._() : super();
-  factory ProcessorIOSpec_InstanceResourceOutputBindingSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProcessorIOSpec_InstanceResourceOutputBindingSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProcessorIOSpec_InstanceResourceOutputBindingSpec.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProcessorIOSpec_InstanceResourceOutputBindingSpec.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessorIOSpec.InstanceResourceOutputBindingSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'ProcessorIOSpec.InstanceResourceOutputBindingSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'resourceTypeUri')
     ..aOB(3, _omitFieldNames ? '' : 'explicit')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ProcessorIOSpec_InstanceResourceOutputBindingSpec clone() => ProcessorIOSpec_InstanceResourceOutputBindingSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProcessorIOSpec_InstanceResourceOutputBindingSpec copyWith(void Function(ProcessorIOSpec_InstanceResourceOutputBindingSpec) updates) => super.copyWith((message) => updates(message as ProcessorIOSpec_InstanceResourceOutputBindingSpec)) as ProcessorIOSpec_InstanceResourceOutputBindingSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProcessorIOSpec_InstanceResourceOutputBindingSpec clone() =>
+      ProcessorIOSpec_InstanceResourceOutputBindingSpec()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProcessorIOSpec_InstanceResourceOutputBindingSpec copyWith(
+          void Function(ProcessorIOSpec_InstanceResourceOutputBindingSpec)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as ProcessorIOSpec_InstanceResourceOutputBindingSpec))
+          as ProcessorIOSpec_InstanceResourceOutputBindingSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ProcessorIOSpec_InstanceResourceOutputBindingSpec create() => ProcessorIOSpec_InstanceResourceOutputBindingSpec._();
-  ProcessorIOSpec_InstanceResourceOutputBindingSpec createEmptyInstance() => create();
-  static $pb.PbList<ProcessorIOSpec_InstanceResourceOutputBindingSpec> createRepeated() => $pb.PbList<ProcessorIOSpec_InstanceResourceOutputBindingSpec>();
+  static ProcessorIOSpec_InstanceResourceOutputBindingSpec create() =>
+      ProcessorIOSpec_InstanceResourceOutputBindingSpec._();
+  ProcessorIOSpec_InstanceResourceOutputBindingSpec createEmptyInstance() =>
+      create();
+  static $pb.PbList<ProcessorIOSpec_InstanceResourceOutputBindingSpec>
+      createRepeated() =>
+          $pb.PbList<ProcessorIOSpec_InstanceResourceOutputBindingSpec>();
   @$core.pragma('dart2js:noInline')
-  static ProcessorIOSpec_InstanceResourceOutputBindingSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProcessorIOSpec_InstanceResourceOutputBindingSpec>(create);
+  static ProcessorIOSpec_InstanceResourceOutputBindingSpec getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          ProcessorIOSpec_InstanceResourceOutputBindingSpec>(create);
   static ProcessorIOSpec_InstanceResourceOutputBindingSpec? _defaultInstance;
 
   /// Name of the output binding, unique within the processor.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -2781,7 +3499,10 @@ class ProcessorIOSpec_InstanceResourceOutputBindingSpec extends $pb.GeneratedMes
   @$pb.TagNumber(2)
   $core.String get resourceTypeUri => $_getSZ(1);
   @$pb.TagNumber(2)
-  set resourceTypeUri($core.String v) { $_setString(1, v); }
+  set resourceTypeUri($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasResourceTypeUri() => $_has(1);
   @$pb.TagNumber(2)
@@ -2792,7 +3513,10 @@ class ProcessorIOSpec_InstanceResourceOutputBindingSpec extends $pb.GeneratedMes
   @$pb.TagNumber(3)
   $core.bool get explicit => $_getBF(2);
   @$pb.TagNumber(3)
-  set explicit($core.bool v) { $_setBool(2, v); }
+  set explicit($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasExplicit() => $_has(2);
   @$pb.TagNumber(3)
@@ -2802,10 +3526,14 @@ class ProcessorIOSpec_InstanceResourceOutputBindingSpec extends $pb.GeneratedMes
 /// Message describing the input / output specifications of a processor.
 class ProcessorIOSpec extends $pb.GeneratedMessage {
   factory ProcessorIOSpec({
-    $core.Iterable<ProcessorIOSpec_GraphInputChannelSpec>? graphInputChannelSpecs,
-    $core.Iterable<ProcessorIOSpec_GraphOutputChannelSpec>? graphOutputChannelSpecs,
-    $core.Iterable<ProcessorIOSpec_InstanceResourceInputBindingSpec>? instanceResourceInputBindingSpecs,
-    $core.Iterable<ProcessorIOSpec_InstanceResourceOutputBindingSpec>? instanceResourceOutputBindingSpecs,
+    $core.Iterable<ProcessorIOSpec_GraphInputChannelSpec>?
+        graphInputChannelSpecs,
+    $core.Iterable<ProcessorIOSpec_GraphOutputChannelSpec>?
+        graphOutputChannelSpecs,
+    $core.Iterable<ProcessorIOSpec_InstanceResourceInputBindingSpec>?
+        instanceResourceInputBindingSpecs,
+    $core.Iterable<ProcessorIOSpec_InstanceResourceOutputBindingSpec>?
+        instanceResourceOutputBindingSpecs,
   }) {
     final $result = create();
     if (graphInputChannelSpecs != null) {
@@ -2815,65 +3543,92 @@ class ProcessorIOSpec extends $pb.GeneratedMessage {
       $result.graphOutputChannelSpecs.addAll(graphOutputChannelSpecs);
     }
     if (instanceResourceInputBindingSpecs != null) {
-      $result.instanceResourceInputBindingSpecs.addAll(instanceResourceInputBindingSpecs);
+      $result.instanceResourceInputBindingSpecs
+          .addAll(instanceResourceInputBindingSpecs);
     }
     if (instanceResourceOutputBindingSpecs != null) {
-      $result.instanceResourceOutputBindingSpecs.addAll(instanceResourceOutputBindingSpecs);
+      $result.instanceResourceOutputBindingSpecs
+          .addAll(instanceResourceOutputBindingSpecs);
     }
     return $result;
   }
   ProcessorIOSpec._() : super();
-  factory ProcessorIOSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProcessorIOSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProcessorIOSpec.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProcessorIOSpec.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessorIOSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..pc<ProcessorIOSpec_GraphInputChannelSpec>(3, _omitFieldNames ? '' : 'graphInputChannelSpecs', $pb.PbFieldType.PM, subBuilder: ProcessorIOSpec_GraphInputChannelSpec.create)
-    ..pc<ProcessorIOSpec_GraphOutputChannelSpec>(4, _omitFieldNames ? '' : 'graphOutputChannelSpecs', $pb.PbFieldType.PM, subBuilder: ProcessorIOSpec_GraphOutputChannelSpec.create)
-    ..pc<ProcessorIOSpec_InstanceResourceInputBindingSpec>(5, _omitFieldNames ? '' : 'instanceResourceInputBindingSpecs', $pb.PbFieldType.PM, subBuilder: ProcessorIOSpec_InstanceResourceInputBindingSpec.create)
-    ..pc<ProcessorIOSpec_InstanceResourceOutputBindingSpec>(6, _omitFieldNames ? '' : 'instanceResourceOutputBindingSpecs', $pb.PbFieldType.PM, subBuilder: ProcessorIOSpec_InstanceResourceOutputBindingSpec.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProcessorIOSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..pc<ProcessorIOSpec_GraphInputChannelSpec>(
+        3, _omitFieldNames ? '' : 'graphInputChannelSpecs', $pb.PbFieldType.PM,
+        subBuilder: ProcessorIOSpec_GraphInputChannelSpec.create)
+    ..pc<ProcessorIOSpec_GraphOutputChannelSpec>(
+        4, _omitFieldNames ? '' : 'graphOutputChannelSpecs', $pb.PbFieldType.PM,
+        subBuilder: ProcessorIOSpec_GraphOutputChannelSpec.create)
+    ..pc<ProcessorIOSpec_InstanceResourceInputBindingSpec>(
+        5,
+        _omitFieldNames ? '' : 'instanceResourceInputBindingSpecs',
+        $pb.PbFieldType.PM,
+        subBuilder: ProcessorIOSpec_InstanceResourceInputBindingSpec.create)
+    ..pc<ProcessorIOSpec_InstanceResourceOutputBindingSpec>(
+        6,
+        _omitFieldNames ? '' : 'instanceResourceOutputBindingSpecs',
+        $pb.PbFieldType.PM,
+        subBuilder: ProcessorIOSpec_InstanceResourceOutputBindingSpec.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProcessorIOSpec clone() => ProcessorIOSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProcessorIOSpec copyWith(void Function(ProcessorIOSpec) updates) => super.copyWith((message) => updates(message as ProcessorIOSpec)) as ProcessorIOSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProcessorIOSpec copyWith(void Function(ProcessorIOSpec) updates) =>
+      super.copyWith((message) => updates(message as ProcessorIOSpec))
+          as ProcessorIOSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ProcessorIOSpec create() => ProcessorIOSpec._();
   ProcessorIOSpec createEmptyInstance() => create();
-  static $pb.PbList<ProcessorIOSpec> createRepeated() => $pb.PbList<ProcessorIOSpec>();
+  static $pb.PbList<ProcessorIOSpec> createRepeated() =>
+      $pb.PbList<ProcessorIOSpec>();
   @$core.pragma('dart2js:noInline')
-  static ProcessorIOSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProcessorIOSpec>(create);
+  static ProcessorIOSpec getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProcessorIOSpec>(create);
   static ProcessorIOSpec? _defaultInstance;
 
   /// For processors with input_channel_specs, the processor must be explicitly
   /// connected to another processor.
   @$pb.TagNumber(3)
-  $core.List<ProcessorIOSpec_GraphInputChannelSpec> get graphInputChannelSpecs => $_getList(0);
+  $core.List<ProcessorIOSpec_GraphInputChannelSpec>
+      get graphInputChannelSpecs => $_getList(0);
 
   /// The output artifact specifications for the current processor.
   @$pb.TagNumber(4)
-  $core.List<ProcessorIOSpec_GraphOutputChannelSpec> get graphOutputChannelSpecs => $_getList(1);
+  $core.List<ProcessorIOSpec_GraphOutputChannelSpec>
+      get graphOutputChannelSpecs => $_getList(1);
 
   /// The input resource that needs to be fed from the application instance.
   @$pb.TagNumber(5)
-  $core.List<ProcessorIOSpec_InstanceResourceInputBindingSpec> get instanceResourceInputBindingSpecs => $_getList(2);
+  $core.List<ProcessorIOSpec_InstanceResourceInputBindingSpec>
+      get instanceResourceInputBindingSpecs => $_getList(2);
 
   /// The output resource that the processor will generate per instance.
   /// Other than the explicitly listed output bindings here, all the processors'
   /// GraphOutputChannels can be binded to stream resource. The bind name then is
   /// the same as the GraphOutputChannel's name.
   @$pb.TagNumber(6)
-  $core.List<ProcessorIOSpec_InstanceResourceOutputBindingSpec> get instanceResourceOutputBindingSpecs => $_getList(3);
+  $core.List<ProcessorIOSpec_InstanceResourceOutputBindingSpec>
+      get instanceResourceOutputBindingSpecs => $_getList(3);
 }
 
 /// The schema is defined as an OpenAPI 3.0.2 [Schema
@@ -2897,35 +3652,53 @@ class CustomProcessorSourceInfo_ModelSchema extends $pb.GeneratedMessage {
     return $result;
   }
   CustomProcessorSourceInfo_ModelSchema._() : super();
-  factory CustomProcessorSourceInfo_ModelSchema.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CustomProcessorSourceInfo_ModelSchema.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CustomProcessorSourceInfo_ModelSchema.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CustomProcessorSourceInfo_ModelSchema.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomProcessorSourceInfo.ModelSchema', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<GcsSource>(1, _omitFieldNames ? '' : 'instancesSchema', subBuilder: GcsSource.create)
-    ..aOM<GcsSource>(2, _omitFieldNames ? '' : 'parametersSchema', subBuilder: GcsSource.create)
-    ..aOM<GcsSource>(3, _omitFieldNames ? '' : 'predictionsSchema', subBuilder: GcsSource.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CustomProcessorSourceInfo.ModelSchema',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..aOM<GcsSource>(1, _omitFieldNames ? '' : 'instancesSchema',
+        subBuilder: GcsSource.create)
+    ..aOM<GcsSource>(2, _omitFieldNames ? '' : 'parametersSchema',
+        subBuilder: GcsSource.create)
+    ..aOM<GcsSource>(3, _omitFieldNames ? '' : 'predictionsSchema',
+        subBuilder: GcsSource.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CustomProcessorSourceInfo_ModelSchema clone() => CustomProcessorSourceInfo_ModelSchema()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CustomProcessorSourceInfo_ModelSchema copyWith(void Function(CustomProcessorSourceInfo_ModelSchema) updates) => super.copyWith((message) => updates(message as CustomProcessorSourceInfo_ModelSchema)) as CustomProcessorSourceInfo_ModelSchema;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CustomProcessorSourceInfo_ModelSchema clone() =>
+      CustomProcessorSourceInfo_ModelSchema()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CustomProcessorSourceInfo_ModelSchema copyWith(
+          void Function(CustomProcessorSourceInfo_ModelSchema) updates) =>
+      super.copyWith((message) =>
+              updates(message as CustomProcessorSourceInfo_ModelSchema))
+          as CustomProcessorSourceInfo_ModelSchema;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CustomProcessorSourceInfo_ModelSchema create() => CustomProcessorSourceInfo_ModelSchema._();
+  static CustomProcessorSourceInfo_ModelSchema create() =>
+      CustomProcessorSourceInfo_ModelSchema._();
   CustomProcessorSourceInfo_ModelSchema createEmptyInstance() => create();
-  static $pb.PbList<CustomProcessorSourceInfo_ModelSchema> createRepeated() => $pb.PbList<CustomProcessorSourceInfo_ModelSchema>();
+  static $pb.PbList<CustomProcessorSourceInfo_ModelSchema> createRepeated() =>
+      $pb.PbList<CustomProcessorSourceInfo_ModelSchema>();
   @$core.pragma('dart2js:noInline')
-  static CustomProcessorSourceInfo_ModelSchema getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CustomProcessorSourceInfo_ModelSchema>(create);
+  static CustomProcessorSourceInfo_ModelSchema getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          CustomProcessorSourceInfo_ModelSchema>(create);
   static CustomProcessorSourceInfo_ModelSchema? _defaultInstance;
 
   /// Cloud Storage location to a YAML file that defines the format of a single
@@ -2933,7 +3706,10 @@ class CustomProcessorSourceInfo_ModelSchema extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   GcsSource get instancesSchema => $_getN(0);
   @$pb.TagNumber(1)
-  set instancesSchema(GcsSource v) { setField(1, v); }
+  set instancesSchema(GcsSource v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInstancesSchema() => $_has(0);
   @$pb.TagNumber(1)
@@ -2946,7 +3722,10 @@ class CustomProcessorSourceInfo_ModelSchema extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   GcsSource get parametersSchema => $_getN(1);
   @$pb.TagNumber(2)
-  set parametersSchema(GcsSource v) { setField(2, v); }
+  set parametersSchema(GcsSource v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasParametersSchema() => $_has(1);
   @$pb.TagNumber(2)
@@ -2959,7 +3738,10 @@ class CustomProcessorSourceInfo_ModelSchema extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   GcsSource get predictionsSchema => $_getN(2);
   @$pb.TagNumber(3)
-  set predictionsSchema(GcsSource v) { setField(3, v); }
+  set predictionsSchema(GcsSource v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPredictionsSchema() => $_has(2);
   @$pb.TagNumber(3)
@@ -2968,10 +3750,7 @@ class CustomProcessorSourceInfo_ModelSchema extends $pb.GeneratedMessage {
   GcsSource ensurePredictionsSchema() => $_ensure(2);
 }
 
-enum CustomProcessorSourceInfo_ArtifactPath {
-  vertexModel, 
-  notSet
-}
+enum CustomProcessorSourceInfo_ArtifactPath { vertexModel, notSet }
 
 /// Describes the source info for a custom processor.
 class CustomProcessorSourceInfo extends $pb.GeneratedMessage {
@@ -2997,51 +3776,78 @@ class CustomProcessorSourceInfo extends $pb.GeneratedMessage {
     return $result;
   }
   CustomProcessorSourceInfo._() : super();
-  factory CustomProcessorSourceInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CustomProcessorSourceInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory CustomProcessorSourceInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CustomProcessorSourceInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, CustomProcessorSourceInfo_ArtifactPath> _CustomProcessorSourceInfo_ArtifactPathByTag = {
-    2 : CustomProcessorSourceInfo_ArtifactPath.vertexModel,
-    0 : CustomProcessorSourceInfo_ArtifactPath.notSet
+  static const $core.Map<$core.int, CustomProcessorSourceInfo_ArtifactPath>
+      _CustomProcessorSourceInfo_ArtifactPathByTag = {
+    2: CustomProcessorSourceInfo_ArtifactPath.vertexModel,
+    0: CustomProcessorSourceInfo_ArtifactPath.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomProcessorSourceInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CustomProcessorSourceInfo',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..oo(0, [2])
-    ..e<CustomProcessorSourceInfo_SourceType>(1, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OE, defaultOrMaker: CustomProcessorSourceInfo_SourceType.SOURCE_TYPE_UNSPECIFIED, valueOf: CustomProcessorSourceInfo_SourceType.valueOf, enumValues: CustomProcessorSourceInfo_SourceType.values)
+    ..e<CustomProcessorSourceInfo_SourceType>(
+        1, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            CustomProcessorSourceInfo_SourceType.SOURCE_TYPE_UNSPECIFIED,
+        valueOf: CustomProcessorSourceInfo_SourceType.valueOf,
+        enumValues: CustomProcessorSourceInfo_SourceType.values)
     ..aOS(2, _omitFieldNames ? '' : 'vertexModel')
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'additionalInfo', entryClassName: 'CustomProcessorSourceInfo.AdditionalInfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
-    ..aOM<CustomProcessorSourceInfo_ModelSchema>(5, _omitFieldNames ? '' : 'modelSchema', subBuilder: CustomProcessorSourceInfo_ModelSchema.create)
-    ..hasRequiredFields = false
-  ;
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'additionalInfo',
+        entryClassName: 'CustomProcessorSourceInfo.AdditionalInfoEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..aOM<CustomProcessorSourceInfo_ModelSchema>(
+        5, _omitFieldNames ? '' : 'modelSchema',
+        subBuilder: CustomProcessorSourceInfo_ModelSchema.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CustomProcessorSourceInfo clone() => CustomProcessorSourceInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CustomProcessorSourceInfo copyWith(void Function(CustomProcessorSourceInfo) updates) => super.copyWith((message) => updates(message as CustomProcessorSourceInfo)) as CustomProcessorSourceInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CustomProcessorSourceInfo clone() =>
+      CustomProcessorSourceInfo()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CustomProcessorSourceInfo copyWith(
+          void Function(CustomProcessorSourceInfo) updates) =>
+      super.copyWith((message) => updates(message as CustomProcessorSourceInfo))
+          as CustomProcessorSourceInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static CustomProcessorSourceInfo create() => CustomProcessorSourceInfo._();
   CustomProcessorSourceInfo createEmptyInstance() => create();
-  static $pb.PbList<CustomProcessorSourceInfo> createRepeated() => $pb.PbList<CustomProcessorSourceInfo>();
+  static $pb.PbList<CustomProcessorSourceInfo> createRepeated() =>
+      $pb.PbList<CustomProcessorSourceInfo>();
   @$core.pragma('dart2js:noInline')
-  static CustomProcessorSourceInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CustomProcessorSourceInfo>(create);
+  static CustomProcessorSourceInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CustomProcessorSourceInfo>(create);
   static CustomProcessorSourceInfo? _defaultInstance;
 
-  CustomProcessorSourceInfo_ArtifactPath whichArtifactPath() => _CustomProcessorSourceInfo_ArtifactPathByTag[$_whichOneof(0)]!;
+  CustomProcessorSourceInfo_ArtifactPath whichArtifactPath() =>
+      _CustomProcessorSourceInfo_ArtifactPathByTag[$_whichOneof(0)]!;
   void clearArtifactPath() => clearField($_whichOneof(0));
 
   /// The original product which holds the custom processor's functionality.
   @$pb.TagNumber(1)
   CustomProcessorSourceInfo_SourceType get sourceType => $_getN(0);
   @$pb.TagNumber(1)
-  set sourceType(CustomProcessorSourceInfo_SourceType v) { setField(1, v); }
+  set sourceType(CustomProcessorSourceInfo_SourceType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasSourceType() => $_has(0);
   @$pb.TagNumber(1)
@@ -3051,7 +3857,10 @@ class CustomProcessorSourceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get vertexModel => $_getSZ(1);
   @$pb.TagNumber(2)
-  set vertexModel($core.String v) { $_setString(1, v); }
+  set vertexModel($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasVertexModel() => $_has(1);
   @$pb.TagNumber(2)
@@ -3070,7 +3879,10 @@ class CustomProcessorSourceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   CustomProcessorSourceInfo_ModelSchema get modelSchema => $_getN(3);
   @$pb.TagNumber(5)
-  set modelSchema(CustomProcessorSourceInfo_ModelSchema v) { setField(5, v); }
+  set modelSchema(CustomProcessorSourceInfo_ModelSchema v) {
+    setField(5, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasModelSchema() => $_has(3);
   @$pb.TagNumber(5)
@@ -3080,18 +3892,18 @@ class CustomProcessorSourceInfo extends $pb.GeneratedMessage {
 }
 
 enum ProcessorConfig_ProcessorConfig {
-  videoStreamInputConfig, 
-  mediaWarehouseConfig, 
-  personBlurConfig, 
-  occupancyCountConfig, 
-  vertexAutomlVisionConfig, 
-  vertexAutomlVideoConfig, 
-  personVehicleDetectionConfig, 
-  vertexCustomConfig, 
-  generalObjectDetectionConfig, 
-  bigQueryConfig, 
-  aiEnabledDevicesInputConfig, 
-  personalProtectiveEquipmentDetectionConfig, 
+  videoStreamInputConfig,
+  mediaWarehouseConfig,
+  personBlurConfig,
+  occupancyCountConfig,
+  vertexAutomlVisionConfig,
+  vertexAutomlVideoConfig,
+  personVehicleDetectionConfig,
+  vertexCustomConfig,
+  generalObjectDetectionConfig,
+  bigQueryConfig,
+  aiEnabledDevicesInputConfig,
+  personalProtectiveEquipmentDetectionConfig,
   notSet
 }
 
@@ -3109,7 +3921,8 @@ class ProcessorConfig extends $pb.GeneratedMessage {
     GeneralObjectDetectionConfig? generalObjectDetectionConfig,
     BigQueryConfig? bigQueryConfig,
     AIEnabledDevicesInputConfig? aiEnabledDevicesInputConfig,
-    PersonalProtectiveEquipmentDetectionConfig? personalProtectiveEquipmentDetectionConfig,
+    PersonalProtectiveEquipmentDetectionConfig?
+        personalProtectiveEquipmentDetectionConfig,
   }) {
     final $result = create();
     if (videoStreamInputConfig != null) {
@@ -3146,75 +3959,112 @@ class ProcessorConfig extends $pb.GeneratedMessage {
       $result.aiEnabledDevicesInputConfig = aiEnabledDevicesInputConfig;
     }
     if (personalProtectiveEquipmentDetectionConfig != null) {
-      $result.personalProtectiveEquipmentDetectionConfig = personalProtectiveEquipmentDetectionConfig;
+      $result.personalProtectiveEquipmentDetectionConfig =
+          personalProtectiveEquipmentDetectionConfig;
     }
     return $result;
   }
   ProcessorConfig._() : super();
-  factory ProcessorConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProcessorConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProcessorConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProcessorConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static const $core.Map<$core.int, ProcessorConfig_ProcessorConfig> _ProcessorConfig_ProcessorConfigByTag = {
-    9 : ProcessorConfig_ProcessorConfig.videoStreamInputConfig,
-    10 : ProcessorConfig_ProcessorConfig.mediaWarehouseConfig,
-    11 : ProcessorConfig_ProcessorConfig.personBlurConfig,
-    12 : ProcessorConfig_ProcessorConfig.occupancyCountConfig,
-    13 : ProcessorConfig_ProcessorConfig.vertexAutomlVisionConfig,
-    14 : ProcessorConfig_ProcessorConfig.vertexAutomlVideoConfig,
-    15 : ProcessorConfig_ProcessorConfig.personVehicleDetectionConfig,
-    17 : ProcessorConfig_ProcessorConfig.vertexCustomConfig,
-    18 : ProcessorConfig_ProcessorConfig.generalObjectDetectionConfig,
-    19 : ProcessorConfig_ProcessorConfig.bigQueryConfig,
-    20 : ProcessorConfig_ProcessorConfig.aiEnabledDevicesInputConfig,
-    22 : ProcessorConfig_ProcessorConfig.personalProtectiveEquipmentDetectionConfig,
-    0 : ProcessorConfig_ProcessorConfig.notSet
+  static const $core.Map<$core.int, ProcessorConfig_ProcessorConfig>
+      _ProcessorConfig_ProcessorConfigByTag = {
+    9: ProcessorConfig_ProcessorConfig.videoStreamInputConfig,
+    10: ProcessorConfig_ProcessorConfig.mediaWarehouseConfig,
+    11: ProcessorConfig_ProcessorConfig.personBlurConfig,
+    12: ProcessorConfig_ProcessorConfig.occupancyCountConfig,
+    13: ProcessorConfig_ProcessorConfig.vertexAutomlVisionConfig,
+    14: ProcessorConfig_ProcessorConfig.vertexAutomlVideoConfig,
+    15: ProcessorConfig_ProcessorConfig.personVehicleDetectionConfig,
+    17: ProcessorConfig_ProcessorConfig.vertexCustomConfig,
+    18: ProcessorConfig_ProcessorConfig.generalObjectDetectionConfig,
+    19: ProcessorConfig_ProcessorConfig.bigQueryConfig,
+    20: ProcessorConfig_ProcessorConfig.aiEnabledDevicesInputConfig,
+    22: ProcessorConfig_ProcessorConfig
+        .personalProtectiveEquipmentDetectionConfig,
+    0: ProcessorConfig_ProcessorConfig.notSet
   };
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessorConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProcessorConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..oo(0, [9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 22])
-    ..aOM<VideoStreamInputConfig>(9, _omitFieldNames ? '' : 'videoStreamInputConfig', subBuilder: VideoStreamInputConfig.create)
-    ..aOM<MediaWarehouseConfig>(10, _omitFieldNames ? '' : 'mediaWarehouseConfig', subBuilder: MediaWarehouseConfig.create)
-    ..aOM<PersonBlurConfig>(11, _omitFieldNames ? '' : 'personBlurConfig', subBuilder: PersonBlurConfig.create)
-    ..aOM<OccupancyCountConfig>(12, _omitFieldNames ? '' : 'occupancyCountConfig', subBuilder: OccupancyCountConfig.create)
-    ..aOM<VertexAutoMLVisionConfig>(13, _omitFieldNames ? '' : 'vertexAutomlVisionConfig', subBuilder: VertexAutoMLVisionConfig.create)
-    ..aOM<VertexAutoMLVideoConfig>(14, _omitFieldNames ? '' : 'vertexAutomlVideoConfig', subBuilder: VertexAutoMLVideoConfig.create)
-    ..aOM<PersonVehicleDetectionConfig>(15, _omitFieldNames ? '' : 'personVehicleDetectionConfig', subBuilder: PersonVehicleDetectionConfig.create)
-    ..aOM<VertexCustomConfig>(17, _omitFieldNames ? '' : 'vertexCustomConfig', subBuilder: VertexCustomConfig.create)
-    ..aOM<GeneralObjectDetectionConfig>(18, _omitFieldNames ? '' : 'generalObjectDetectionConfig', subBuilder: GeneralObjectDetectionConfig.create)
-    ..aOM<BigQueryConfig>(19, _omitFieldNames ? '' : 'bigQueryConfig', subBuilder: BigQueryConfig.create)
-    ..aOM<AIEnabledDevicesInputConfig>(20, _omitFieldNames ? '' : 'aiEnabledDevicesInputConfig', subBuilder: AIEnabledDevicesInputConfig.create)
-    ..aOM<PersonalProtectiveEquipmentDetectionConfig>(22, _omitFieldNames ? '' : 'personalProtectiveEquipmentDetectionConfig', subBuilder: PersonalProtectiveEquipmentDetectionConfig.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<VideoStreamInputConfig>(
+        9, _omitFieldNames ? '' : 'videoStreamInputConfig',
+        subBuilder: VideoStreamInputConfig.create)
+    ..aOM<MediaWarehouseConfig>(
+        10, _omitFieldNames ? '' : 'mediaWarehouseConfig',
+        subBuilder: MediaWarehouseConfig.create)
+    ..aOM<PersonBlurConfig>(11, _omitFieldNames ? '' : 'personBlurConfig',
+        subBuilder: PersonBlurConfig.create)
+    ..aOM<OccupancyCountConfig>(
+        12, _omitFieldNames ? '' : 'occupancyCountConfig',
+        subBuilder: OccupancyCountConfig.create)
+    ..aOM<VertexAutoMLVisionConfig>(
+        13, _omitFieldNames ? '' : 'vertexAutomlVisionConfig',
+        subBuilder: VertexAutoMLVisionConfig.create)
+    ..aOM<VertexAutoMLVideoConfig>(
+        14, _omitFieldNames ? '' : 'vertexAutomlVideoConfig',
+        subBuilder: VertexAutoMLVideoConfig.create)
+    ..aOM<PersonVehicleDetectionConfig>(
+        15, _omitFieldNames ? '' : 'personVehicleDetectionConfig',
+        subBuilder: PersonVehicleDetectionConfig.create)
+    ..aOM<VertexCustomConfig>(17, _omitFieldNames ? '' : 'vertexCustomConfig',
+        subBuilder: VertexCustomConfig.create)
+    ..aOM<GeneralObjectDetectionConfig>(
+        18, _omitFieldNames ? '' : 'generalObjectDetectionConfig',
+        subBuilder: GeneralObjectDetectionConfig.create)
+    ..aOM<BigQueryConfig>(19, _omitFieldNames ? '' : 'bigQueryConfig',
+        subBuilder: BigQueryConfig.create)
+    ..aOM<AIEnabledDevicesInputConfig>(
+        20, _omitFieldNames ? '' : 'aiEnabledDevicesInputConfig',
+        subBuilder: AIEnabledDevicesInputConfig.create)
+    ..aOM<PersonalProtectiveEquipmentDetectionConfig>(
+        22, _omitFieldNames ? '' : 'personalProtectiveEquipmentDetectionConfig',
+        subBuilder: PersonalProtectiveEquipmentDetectionConfig.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProcessorConfig clone() => ProcessorConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProcessorConfig copyWith(void Function(ProcessorConfig) updates) => super.copyWith((message) => updates(message as ProcessorConfig)) as ProcessorConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProcessorConfig copyWith(void Function(ProcessorConfig) updates) =>
+      super.copyWith((message) => updates(message as ProcessorConfig))
+          as ProcessorConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ProcessorConfig create() => ProcessorConfig._();
   ProcessorConfig createEmptyInstance() => create();
-  static $pb.PbList<ProcessorConfig> createRepeated() => $pb.PbList<ProcessorConfig>();
+  static $pb.PbList<ProcessorConfig> createRepeated() =>
+      $pb.PbList<ProcessorConfig>();
   @$core.pragma('dart2js:noInline')
-  static ProcessorConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProcessorConfig>(create);
+  static ProcessorConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProcessorConfig>(create);
   static ProcessorConfig? _defaultInstance;
 
-  ProcessorConfig_ProcessorConfig whichProcessorConfig() => _ProcessorConfig_ProcessorConfigByTag[$_whichOneof(0)]!;
+  ProcessorConfig_ProcessorConfig whichProcessorConfig() =>
+      _ProcessorConfig_ProcessorConfigByTag[$_whichOneof(0)]!;
   void clearProcessorConfig() => clearField($_whichOneof(0));
 
   /// Configs of stream input processor.
   @$pb.TagNumber(9)
   VideoStreamInputConfig get videoStreamInputConfig => $_getN(0);
   @$pb.TagNumber(9)
-  set videoStreamInputConfig(VideoStreamInputConfig v) { setField(9, v); }
+  set videoStreamInputConfig(VideoStreamInputConfig v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasVideoStreamInputConfig() => $_has(0);
   @$pb.TagNumber(9)
@@ -3226,7 +4076,10 @@ class ProcessorConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   MediaWarehouseConfig get mediaWarehouseConfig => $_getN(1);
   @$pb.TagNumber(10)
-  set mediaWarehouseConfig(MediaWarehouseConfig v) { setField(10, v); }
+  set mediaWarehouseConfig(MediaWarehouseConfig v) {
+    setField(10, v);
+  }
+
   @$pb.TagNumber(10)
   $core.bool hasMediaWarehouseConfig() => $_has(1);
   @$pb.TagNumber(10)
@@ -3238,7 +4091,10 @@ class ProcessorConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   PersonBlurConfig get personBlurConfig => $_getN(2);
   @$pb.TagNumber(11)
-  set personBlurConfig(PersonBlurConfig v) { setField(11, v); }
+  set personBlurConfig(PersonBlurConfig v) {
+    setField(11, v);
+  }
+
   @$pb.TagNumber(11)
   $core.bool hasPersonBlurConfig() => $_has(2);
   @$pb.TagNumber(11)
@@ -3250,7 +4106,10 @@ class ProcessorConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   OccupancyCountConfig get occupancyCountConfig => $_getN(3);
   @$pb.TagNumber(12)
-  set occupancyCountConfig(OccupancyCountConfig v) { setField(12, v); }
+  set occupancyCountConfig(OccupancyCountConfig v) {
+    setField(12, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasOccupancyCountConfig() => $_has(3);
   @$pb.TagNumber(12)
@@ -3262,7 +4121,10 @@ class ProcessorConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   VertexAutoMLVisionConfig get vertexAutomlVisionConfig => $_getN(4);
   @$pb.TagNumber(13)
-  set vertexAutomlVisionConfig(VertexAutoMLVisionConfig v) { setField(13, v); }
+  set vertexAutomlVisionConfig(VertexAutoMLVisionConfig v) {
+    setField(13, v);
+  }
+
   @$pb.TagNumber(13)
   $core.bool hasVertexAutomlVisionConfig() => $_has(4);
   @$pb.TagNumber(13)
@@ -3274,7 +4136,10 @@ class ProcessorConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   VertexAutoMLVideoConfig get vertexAutomlVideoConfig => $_getN(5);
   @$pb.TagNumber(14)
-  set vertexAutomlVideoConfig(VertexAutoMLVideoConfig v) { setField(14, v); }
+  set vertexAutomlVideoConfig(VertexAutoMLVideoConfig v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasVertexAutomlVideoConfig() => $_has(5);
   @$pb.TagNumber(14)
@@ -3286,19 +4151,26 @@ class ProcessorConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   PersonVehicleDetectionConfig get personVehicleDetectionConfig => $_getN(6);
   @$pb.TagNumber(15)
-  set personVehicleDetectionConfig(PersonVehicleDetectionConfig v) { setField(15, v); }
+  set personVehicleDetectionConfig(PersonVehicleDetectionConfig v) {
+    setField(15, v);
+  }
+
   @$pb.TagNumber(15)
   $core.bool hasPersonVehicleDetectionConfig() => $_has(6);
   @$pb.TagNumber(15)
   void clearPersonVehicleDetectionConfig() => clearField(15);
   @$pb.TagNumber(15)
-  PersonVehicleDetectionConfig ensurePersonVehicleDetectionConfig() => $_ensure(6);
+  PersonVehicleDetectionConfig ensurePersonVehicleDetectionConfig() =>
+      $_ensure(6);
 
   /// Configs of Vertex Custom processor.
   @$pb.TagNumber(17)
   VertexCustomConfig get vertexCustomConfig => $_getN(7);
   @$pb.TagNumber(17)
-  set vertexCustomConfig(VertexCustomConfig v) { setField(17, v); }
+  set vertexCustomConfig(VertexCustomConfig v) {
+    setField(17, v);
+  }
+
   @$pb.TagNumber(17)
   $core.bool hasVertexCustomConfig() => $_has(7);
   @$pb.TagNumber(17)
@@ -3310,19 +4182,26 @@ class ProcessorConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   GeneralObjectDetectionConfig get generalObjectDetectionConfig => $_getN(8);
   @$pb.TagNumber(18)
-  set generalObjectDetectionConfig(GeneralObjectDetectionConfig v) { setField(18, v); }
+  set generalObjectDetectionConfig(GeneralObjectDetectionConfig v) {
+    setField(18, v);
+  }
+
   @$pb.TagNumber(18)
   $core.bool hasGeneralObjectDetectionConfig() => $_has(8);
   @$pb.TagNumber(18)
   void clearGeneralObjectDetectionConfig() => clearField(18);
   @$pb.TagNumber(18)
-  GeneralObjectDetectionConfig ensureGeneralObjectDetectionConfig() => $_ensure(8);
+  GeneralObjectDetectionConfig ensureGeneralObjectDetectionConfig() =>
+      $_ensure(8);
 
   /// Configs of BigQuery processor.
   @$pb.TagNumber(19)
   BigQueryConfig get bigQueryConfig => $_getN(9);
   @$pb.TagNumber(19)
-  set bigQueryConfig(BigQueryConfig v) { setField(19, v); }
+  set bigQueryConfig(BigQueryConfig v) {
+    setField(19, v);
+  }
+
   @$pb.TagNumber(19)
   $core.bool hasBigQueryConfig() => $_has(9);
   @$pb.TagNumber(19)
@@ -3334,25 +4213,35 @@ class ProcessorConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   AIEnabledDevicesInputConfig get aiEnabledDevicesInputConfig => $_getN(10);
   @$pb.TagNumber(20)
-  set aiEnabledDevicesInputConfig(AIEnabledDevicesInputConfig v) { setField(20, v); }
+  set aiEnabledDevicesInputConfig(AIEnabledDevicesInputConfig v) {
+    setField(20, v);
+  }
+
   @$pb.TagNumber(20)
   $core.bool hasAiEnabledDevicesInputConfig() => $_has(10);
   @$pb.TagNumber(20)
   void clearAiEnabledDevicesInputConfig() => clearField(20);
   @$pb.TagNumber(20)
-  AIEnabledDevicesInputConfig ensureAiEnabledDevicesInputConfig() => $_ensure(10);
+  AIEnabledDevicesInputConfig ensureAiEnabledDevicesInputConfig() =>
+      $_ensure(10);
 
   /// Configs of personal_protective_equipment_detection_config
   @$pb.TagNumber(22)
-  PersonalProtectiveEquipmentDetectionConfig get personalProtectiveEquipmentDetectionConfig => $_getN(11);
+  PersonalProtectiveEquipmentDetectionConfig
+      get personalProtectiveEquipmentDetectionConfig => $_getN(11);
   @$pb.TagNumber(22)
-  set personalProtectiveEquipmentDetectionConfig(PersonalProtectiveEquipmentDetectionConfig v) { setField(22, v); }
+  set personalProtectiveEquipmentDetectionConfig(
+      PersonalProtectiveEquipmentDetectionConfig v) {
+    setField(22, v);
+  }
+
   @$pb.TagNumber(22)
   $core.bool hasPersonalProtectiveEquipmentDetectionConfig() => $_has(11);
   @$pb.TagNumber(22)
   void clearPersonalProtectiveEquipmentDetectionConfig() => clearField(22);
   @$pb.TagNumber(22)
-  PersonalProtectiveEquipmentDetectionConfig ensurePersonalProtectiveEquipmentDetectionConfig() => $_ensure(11);
+  PersonalProtectiveEquipmentDetectionConfig
+      ensurePersonalProtectiveEquipmentDetectionConfig() => $_ensure(11);
 }
 
 /// Message describing annotations specific to application node.
@@ -3371,41 +4260,61 @@ class StreamWithAnnotation_NodeAnnotation extends $pb.GeneratedMessage {
     return $result;
   }
   StreamWithAnnotation_NodeAnnotation._() : super();
-  factory StreamWithAnnotation_NodeAnnotation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamWithAnnotation_NodeAnnotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StreamWithAnnotation_NodeAnnotation.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StreamWithAnnotation_NodeAnnotation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamWithAnnotation.NodeAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StreamWithAnnotation.NodeAnnotation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'node')
-    ..pc<StreamAnnotation>(2, _omitFieldNames ? '' : 'annotations', $pb.PbFieldType.PM, subBuilder: StreamAnnotation.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<StreamAnnotation>(
+        2, _omitFieldNames ? '' : 'annotations', $pb.PbFieldType.PM,
+        subBuilder: StreamAnnotation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StreamWithAnnotation_NodeAnnotation clone() => StreamWithAnnotation_NodeAnnotation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamWithAnnotation_NodeAnnotation copyWith(void Function(StreamWithAnnotation_NodeAnnotation) updates) => super.copyWith((message) => updates(message as StreamWithAnnotation_NodeAnnotation)) as StreamWithAnnotation_NodeAnnotation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StreamWithAnnotation_NodeAnnotation clone() =>
+      StreamWithAnnotation_NodeAnnotation()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StreamWithAnnotation_NodeAnnotation copyWith(
+          void Function(StreamWithAnnotation_NodeAnnotation) updates) =>
+      super.copyWith((message) =>
+              updates(message as StreamWithAnnotation_NodeAnnotation))
+          as StreamWithAnnotation_NodeAnnotation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static StreamWithAnnotation_NodeAnnotation create() => StreamWithAnnotation_NodeAnnotation._();
+  static StreamWithAnnotation_NodeAnnotation create() =>
+      StreamWithAnnotation_NodeAnnotation._();
   StreamWithAnnotation_NodeAnnotation createEmptyInstance() => create();
-  static $pb.PbList<StreamWithAnnotation_NodeAnnotation> createRepeated() => $pb.PbList<StreamWithAnnotation_NodeAnnotation>();
+  static $pb.PbList<StreamWithAnnotation_NodeAnnotation> createRepeated() =>
+      $pb.PbList<StreamWithAnnotation_NodeAnnotation>();
   @$core.pragma('dart2js:noInline')
-  static StreamWithAnnotation_NodeAnnotation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamWithAnnotation_NodeAnnotation>(create);
+  static StreamWithAnnotation_NodeAnnotation getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          StreamWithAnnotation_NodeAnnotation>(create);
   static StreamWithAnnotation_NodeAnnotation? _defaultInstance;
 
   /// The node name of the application graph.
   @$pb.TagNumber(1)
   $core.String get node => $_getSZ(0);
   @$pb.TagNumber(1)
-  set node($core.String v) { $_setString(0, v); }
+  set node($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasNode() => $_has(0);
   @$pb.TagNumber(1)
@@ -3437,42 +4346,59 @@ class StreamWithAnnotation extends $pb.GeneratedMessage {
     return $result;
   }
   StreamWithAnnotation._() : super();
-  factory StreamWithAnnotation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamWithAnnotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StreamWithAnnotation.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StreamWithAnnotation.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamWithAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StreamWithAnnotation',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'stream')
-    ..pc<StreamAnnotation>(2, _omitFieldNames ? '' : 'applicationAnnotations', $pb.PbFieldType.PM, subBuilder: StreamAnnotation.create)
-    ..pc<StreamWithAnnotation_NodeAnnotation>(3, _omitFieldNames ? '' : 'nodeAnnotations', $pb.PbFieldType.PM, subBuilder: StreamWithAnnotation_NodeAnnotation.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<StreamAnnotation>(
+        2, _omitFieldNames ? '' : 'applicationAnnotations', $pb.PbFieldType.PM,
+        subBuilder: StreamAnnotation.create)
+    ..pc<StreamWithAnnotation_NodeAnnotation>(
+        3, _omitFieldNames ? '' : 'nodeAnnotations', $pb.PbFieldType.PM,
+        subBuilder: StreamWithAnnotation_NodeAnnotation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  StreamWithAnnotation clone() => StreamWithAnnotation()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamWithAnnotation copyWith(void Function(StreamWithAnnotation) updates) => super.copyWith((message) => updates(message as StreamWithAnnotation)) as StreamWithAnnotation;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  StreamWithAnnotation clone() =>
+      StreamWithAnnotation()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StreamWithAnnotation copyWith(void Function(StreamWithAnnotation) updates) =>
+      super.copyWith((message) => updates(message as StreamWithAnnotation))
+          as StreamWithAnnotation;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StreamWithAnnotation create() => StreamWithAnnotation._();
   StreamWithAnnotation createEmptyInstance() => create();
-  static $pb.PbList<StreamWithAnnotation> createRepeated() => $pb.PbList<StreamWithAnnotation>();
+  static $pb.PbList<StreamWithAnnotation> createRepeated() =>
+      $pb.PbList<StreamWithAnnotation>();
   @$core.pragma('dart2js:noInline')
-  static StreamWithAnnotation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamWithAnnotation>(create);
+  static StreamWithAnnotation getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StreamWithAnnotation>(create);
   static StreamWithAnnotation? _defaultInstance;
 
   /// Vision AI Stream resource name.
   @$pb.TagNumber(1)
   $core.String get stream => $_getSZ(0);
   @$pb.TagNumber(1)
-  set stream($core.String v) { $_setString(0, v); }
+  set stream($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasStream() => $_has(0);
   @$pb.TagNumber(1)
@@ -3491,7 +4417,8 @@ class StreamWithAnnotation extends $pb.GeneratedMessage {
   /// processor, then the Occupancy Analytic processor will have two active zones
   /// defined.
   @$pb.TagNumber(3)
-  $core.List<StreamWithAnnotation_NodeAnnotation> get nodeAnnotations => $_getList(2);
+  $core.List<StreamWithAnnotation_NodeAnnotation> get nodeAnnotations =>
+      $_getList(2);
 }
 
 /// Message describing Video Stream Input Config.
@@ -3513,34 +4440,47 @@ class VideoStreamInputConfig extends $pb.GeneratedMessage {
     return $result;
   }
   VideoStreamInputConfig._() : super();
-  factory VideoStreamInputConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VideoStreamInputConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VideoStreamInputConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VideoStreamInputConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoStreamInputConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VideoStreamInputConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'streams')
-    ..pc<StreamWithAnnotation>(2, _omitFieldNames ? '' : 'streamsWithAnnotation', $pb.PbFieldType.PM, subBuilder: StreamWithAnnotation.create)
-    ..hasRequiredFields = false
-  ;
+    ..pc<StreamWithAnnotation>(
+        2, _omitFieldNames ? '' : 'streamsWithAnnotation', $pb.PbFieldType.PM,
+        subBuilder: StreamWithAnnotation.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  VideoStreamInputConfig clone() => VideoStreamInputConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VideoStreamInputConfig copyWith(void Function(VideoStreamInputConfig) updates) => super.copyWith((message) => updates(message as VideoStreamInputConfig)) as VideoStreamInputConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  VideoStreamInputConfig clone() =>
+      VideoStreamInputConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VideoStreamInputConfig copyWith(
+          void Function(VideoStreamInputConfig) updates) =>
+      super.copyWith((message) => updates(message as VideoStreamInputConfig))
+          as VideoStreamInputConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VideoStreamInputConfig create() => VideoStreamInputConfig._();
   VideoStreamInputConfig createEmptyInstance() => create();
-  static $pb.PbList<VideoStreamInputConfig> createRepeated() => $pb.PbList<VideoStreamInputConfig>();
+  static $pb.PbList<VideoStreamInputConfig> createRepeated() =>
+      $pb.PbList<VideoStreamInputConfig>();
   @$core.pragma('dart2js:noInline')
-  static VideoStreamInputConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VideoStreamInputConfig>(create);
+  static VideoStreamInputConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VideoStreamInputConfig>(create);
   static VideoStreamInputConfig? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -3554,32 +4494,45 @@ class VideoStreamInputConfig extends $pb.GeneratedMessage {
 class AIEnabledDevicesInputConfig extends $pb.GeneratedMessage {
   factory AIEnabledDevicesInputConfig() => create();
   AIEnabledDevicesInputConfig._() : super();
-  factory AIEnabledDevicesInputConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AIEnabledDevicesInputConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AIEnabledDevicesInputConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AIEnabledDevicesInputConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AIEnabledDevicesInputConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AIEnabledDevicesInputConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AIEnabledDevicesInputConfig clone() => AIEnabledDevicesInputConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AIEnabledDevicesInputConfig copyWith(void Function(AIEnabledDevicesInputConfig) updates) => super.copyWith((message) => updates(message as AIEnabledDevicesInputConfig)) as AIEnabledDevicesInputConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AIEnabledDevicesInputConfig clone() =>
+      AIEnabledDevicesInputConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AIEnabledDevicesInputConfig copyWith(
+          void Function(AIEnabledDevicesInputConfig) updates) =>
+      super.copyWith(
+              (message) => updates(message as AIEnabledDevicesInputConfig))
+          as AIEnabledDevicesInputConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static AIEnabledDevicesInputConfig create() => AIEnabledDevicesInputConfig._();
+  static AIEnabledDevicesInputConfig create() =>
+      AIEnabledDevicesInputConfig._();
   AIEnabledDevicesInputConfig createEmptyInstance() => create();
-  static $pb.PbList<AIEnabledDevicesInputConfig> createRepeated() => $pb.PbList<AIEnabledDevicesInputConfig>();
+  static $pb.PbList<AIEnabledDevicesInputConfig> createRepeated() =>
+      $pb.PbList<AIEnabledDevicesInputConfig>();
   @$core.pragma('dart2js:noInline')
-  static AIEnabledDevicesInputConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AIEnabledDevicesInputConfig>(create);
+  static AIEnabledDevicesInputConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AIEnabledDevicesInputConfig>(create);
   static AIEnabledDevicesInputConfig? _defaultInstance;
 }
 
@@ -3603,35 +4556,46 @@ class MediaWarehouseConfig extends $pb.GeneratedMessage {
     return $result;
   }
   MediaWarehouseConfig._() : super();
-  factory MediaWarehouseConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MediaWarehouseConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MediaWarehouseConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MediaWarehouseConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MediaWarehouseConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MediaWarehouseConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'corpus')
     ..aOS(2, _omitFieldNames ? '' : 'region')
-    ..aOM<$10.Duration>(3, _omitFieldNames ? '' : 'ttl', subBuilder: $10.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$10.Duration>(3, _omitFieldNames ? '' : 'ttl',
+        subBuilder: $10.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  MediaWarehouseConfig clone() => MediaWarehouseConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MediaWarehouseConfig copyWith(void Function(MediaWarehouseConfig) updates) => super.copyWith((message) => updates(message as MediaWarehouseConfig)) as MediaWarehouseConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MediaWarehouseConfig clone() =>
+      MediaWarehouseConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MediaWarehouseConfig copyWith(void Function(MediaWarehouseConfig) updates) =>
+      super.copyWith((message) => updates(message as MediaWarehouseConfig))
+          as MediaWarehouseConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MediaWarehouseConfig create() => MediaWarehouseConfig._();
   MediaWarehouseConfig createEmptyInstance() => create();
-  static $pb.PbList<MediaWarehouseConfig> createRepeated() => $pb.PbList<MediaWarehouseConfig>();
+  static $pb.PbList<MediaWarehouseConfig> createRepeated() =>
+      $pb.PbList<MediaWarehouseConfig>();
   @$core.pragma('dart2js:noInline')
-  static MediaWarehouseConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MediaWarehouseConfig>(create);
+  static MediaWarehouseConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MediaWarehouseConfig>(create);
   static MediaWarehouseConfig? _defaultInstance;
 
   /// Resource name of the Media Warehouse corpus.
@@ -3640,7 +4604,10 @@ class MediaWarehouseConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get corpus => $_getSZ(0);
   @$pb.TagNumber(1)
-  set corpus($core.String v) { $_setString(0, v); }
+  set corpus($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasCorpus() => $_has(0);
   @$pb.TagNumber(1)
@@ -3650,7 +4617,10 @@ class MediaWarehouseConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get region => $_getSZ(1);
   @$pb.TagNumber(2)
-  set region($core.String v) { $_setString(1, v); }
+  set region($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasRegion() => $_has(1);
   @$pb.TagNumber(2)
@@ -3661,7 +4631,10 @@ class MediaWarehouseConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $10.Duration get ttl => $_getN(2);
   @$pb.TagNumber(3)
-  set ttl($10.Duration v) { setField(3, v); }
+  set ttl($10.Duration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTtl() => $_has(2);
   @$pb.TagNumber(3)
@@ -3686,41 +4659,58 @@ class PersonBlurConfig extends $pb.GeneratedMessage {
     return $result;
   }
   PersonBlurConfig._() : super();
-  factory PersonBlurConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PersonBlurConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PersonBlurConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PersonBlurConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PersonBlurConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..e<PersonBlurConfig_PersonBlurType>(1, _omitFieldNames ? '' : 'personBlurType', $pb.PbFieldType.OE, defaultOrMaker: PersonBlurConfig_PersonBlurType.PERSON_BLUR_TYPE_UNSPECIFIED, valueOf: PersonBlurConfig_PersonBlurType.valueOf, enumValues: PersonBlurConfig_PersonBlurType.values)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PersonBlurConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..e<PersonBlurConfig_PersonBlurType>(
+        1, _omitFieldNames ? '' : 'personBlurType', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            PersonBlurConfig_PersonBlurType.PERSON_BLUR_TYPE_UNSPECIFIED,
+        valueOf: PersonBlurConfig_PersonBlurType.valueOf,
+        enumValues: PersonBlurConfig_PersonBlurType.values)
     ..aOB(2, _omitFieldNames ? '' : 'facesOnly')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PersonBlurConfig clone() => PersonBlurConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PersonBlurConfig copyWith(void Function(PersonBlurConfig) updates) => super.copyWith((message) => updates(message as PersonBlurConfig)) as PersonBlurConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PersonBlurConfig copyWith(void Function(PersonBlurConfig) updates) =>
+      super.copyWith((message) => updates(message as PersonBlurConfig))
+          as PersonBlurConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static PersonBlurConfig create() => PersonBlurConfig._();
   PersonBlurConfig createEmptyInstance() => create();
-  static $pb.PbList<PersonBlurConfig> createRepeated() => $pb.PbList<PersonBlurConfig>();
+  static $pb.PbList<PersonBlurConfig> createRepeated() =>
+      $pb.PbList<PersonBlurConfig>();
   @$core.pragma('dart2js:noInline')
-  static PersonBlurConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PersonBlurConfig>(create);
+  static PersonBlurConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PersonBlurConfig>(create);
   static PersonBlurConfig? _defaultInstance;
 
   /// Person blur type.
   @$pb.TagNumber(1)
   PersonBlurConfig_PersonBlurType get personBlurType => $_getN(0);
   @$pb.TagNumber(1)
-  set personBlurType(PersonBlurConfig_PersonBlurType v) { setField(1, v); }
+  set personBlurType(PersonBlurConfig_PersonBlurType v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPersonBlurType() => $_has(0);
   @$pb.TagNumber(1)
@@ -3730,7 +4720,10 @@ class PersonBlurConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get facesOnly => $_getBF(1);
   @$pb.TagNumber(2)
-  set facesOnly($core.bool v) { $_setBool(1, v); }
+  set facesOnly($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFacesOnly() => $_has(1);
   @$pb.TagNumber(2)
@@ -3757,35 +4750,45 @@ class OccupancyCountConfig extends $pb.GeneratedMessage {
     return $result;
   }
   OccupancyCountConfig._() : super();
-  factory OccupancyCountConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory OccupancyCountConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory OccupancyCountConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OccupancyCountConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OccupancyCountConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OccupancyCountConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enablePeopleCounting')
     ..aOB(2, _omitFieldNames ? '' : 'enableVehicleCounting')
     ..aOB(3, _omitFieldNames ? '' : 'enableDwellingTimeTracking')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  OccupancyCountConfig clone() => OccupancyCountConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  OccupancyCountConfig copyWith(void Function(OccupancyCountConfig) updates) => super.copyWith((message) => updates(message as OccupancyCountConfig)) as OccupancyCountConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  OccupancyCountConfig clone() =>
+      OccupancyCountConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OccupancyCountConfig copyWith(void Function(OccupancyCountConfig) updates) =>
+      super.copyWith((message) => updates(message as OccupancyCountConfig))
+          as OccupancyCountConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static OccupancyCountConfig create() => OccupancyCountConfig._();
   OccupancyCountConfig createEmptyInstance() => create();
-  static $pb.PbList<OccupancyCountConfig> createRepeated() => $pb.PbList<OccupancyCountConfig>();
+  static $pb.PbList<OccupancyCountConfig> createRepeated() =>
+      $pb.PbList<OccupancyCountConfig>();
   @$core.pragma('dart2js:noInline')
-  static OccupancyCountConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OccupancyCountConfig>(create);
+  static OccupancyCountConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OccupancyCountConfig>(create);
   static OccupancyCountConfig? _defaultInstance;
 
   /// Whether to count the appearances of people, output counts have 'people' as
@@ -3793,7 +4796,10 @@ class OccupancyCountConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get enablePeopleCounting => $_getBF(0);
   @$pb.TagNumber(1)
-  set enablePeopleCounting($core.bool v) { $_setBool(0, v); }
+  set enablePeopleCounting($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEnablePeopleCounting() => $_has(0);
   @$pb.TagNumber(1)
@@ -3804,7 +4810,10 @@ class OccupancyCountConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get enableVehicleCounting => $_getBF(1);
   @$pb.TagNumber(2)
-  set enableVehicleCounting($core.bool v) { $_setBool(1, v); }
+  set enableVehicleCounting($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnableVehicleCounting() => $_has(1);
   @$pb.TagNumber(2)
@@ -3815,7 +4824,10 @@ class OccupancyCountConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get enableDwellingTimeTracking => $_getBF(2);
   @$pb.TagNumber(3)
-  set enableDwellingTimeTracking($core.bool v) { $_setBool(2, v); }
+  set enableDwellingTimeTracking($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEnableDwellingTimeTracking() => $_has(2);
   @$pb.TagNumber(3)
@@ -3838,34 +4850,47 @@ class PersonVehicleDetectionConfig extends $pb.GeneratedMessage {
     return $result;
   }
   PersonVehicleDetectionConfig._() : super();
-  factory PersonVehicleDetectionConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PersonVehicleDetectionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PersonVehicleDetectionConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PersonVehicleDetectionConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PersonVehicleDetectionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PersonVehicleDetectionConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enablePeopleCounting')
     ..aOB(2, _omitFieldNames ? '' : 'enableVehicleCounting')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PersonVehicleDetectionConfig clone() => PersonVehicleDetectionConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PersonVehicleDetectionConfig copyWith(void Function(PersonVehicleDetectionConfig) updates) => super.copyWith((message) => updates(message as PersonVehicleDetectionConfig)) as PersonVehicleDetectionConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PersonVehicleDetectionConfig clone() =>
+      PersonVehicleDetectionConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PersonVehicleDetectionConfig copyWith(
+          void Function(PersonVehicleDetectionConfig) updates) =>
+      super.copyWith(
+              (message) => updates(message as PersonVehicleDetectionConfig))
+          as PersonVehicleDetectionConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static PersonVehicleDetectionConfig create() => PersonVehicleDetectionConfig._();
+  static PersonVehicleDetectionConfig create() =>
+      PersonVehicleDetectionConfig._();
   PersonVehicleDetectionConfig createEmptyInstance() => create();
-  static $pb.PbList<PersonVehicleDetectionConfig> createRepeated() => $pb.PbList<PersonVehicleDetectionConfig>();
+  static $pb.PbList<PersonVehicleDetectionConfig> createRepeated() =>
+      $pb.PbList<PersonVehicleDetectionConfig>();
   @$core.pragma('dart2js:noInline')
-  static PersonVehicleDetectionConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PersonVehicleDetectionConfig>(create);
+  static PersonVehicleDetectionConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PersonVehicleDetectionConfig>(create);
   static PersonVehicleDetectionConfig? _defaultInstance;
 
   /// At least one of enable_people_counting and enable_vehicle_counting fields
@@ -3875,7 +4900,10 @@ class PersonVehicleDetectionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get enablePeopleCounting => $_getBF(0);
   @$pb.TagNumber(1)
-  set enablePeopleCounting($core.bool v) { $_setBool(0, v); }
+  set enablePeopleCounting($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEnablePeopleCounting() => $_has(0);
   @$pb.TagNumber(1)
@@ -3886,7 +4914,10 @@ class PersonVehicleDetectionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get enableVehicleCounting => $_getBF(1);
   @$pb.TagNumber(2)
-  set enableVehicleCounting($core.bool v) { $_setBool(1, v); }
+  set enableVehicleCounting($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnableVehicleCounting() => $_has(1);
   @$pb.TagNumber(2)
@@ -3913,42 +4944,61 @@ class PersonalProtectiveEquipmentDetectionConfig extends $pb.GeneratedMessage {
     return $result;
   }
   PersonalProtectiveEquipmentDetectionConfig._() : super();
-  factory PersonalProtectiveEquipmentDetectionConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PersonalProtectiveEquipmentDetectionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PersonalProtectiveEquipmentDetectionConfig.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PersonalProtectiveEquipmentDetectionConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PersonalProtectiveEquipmentDetectionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PersonalProtectiveEquipmentDetectionConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enableFaceCoverageDetection')
     ..aOB(2, _omitFieldNames ? '' : 'enableHeadCoverageDetection')
     ..aOB(3, _omitFieldNames ? '' : 'enableHandsCoverageDetection')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  PersonalProtectiveEquipmentDetectionConfig clone() => PersonalProtectiveEquipmentDetectionConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PersonalProtectiveEquipmentDetectionConfig copyWith(void Function(PersonalProtectiveEquipmentDetectionConfig) updates) => super.copyWith((message) => updates(message as PersonalProtectiveEquipmentDetectionConfig)) as PersonalProtectiveEquipmentDetectionConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PersonalProtectiveEquipmentDetectionConfig clone() =>
+      PersonalProtectiveEquipmentDetectionConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PersonalProtectiveEquipmentDetectionConfig copyWith(
+          void Function(PersonalProtectiveEquipmentDetectionConfig) updates) =>
+      super.copyWith((message) =>
+              updates(message as PersonalProtectiveEquipmentDetectionConfig))
+          as PersonalProtectiveEquipmentDetectionConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static PersonalProtectiveEquipmentDetectionConfig create() => PersonalProtectiveEquipmentDetectionConfig._();
+  static PersonalProtectiveEquipmentDetectionConfig create() =>
+      PersonalProtectiveEquipmentDetectionConfig._();
   PersonalProtectiveEquipmentDetectionConfig createEmptyInstance() => create();
-  static $pb.PbList<PersonalProtectiveEquipmentDetectionConfig> createRepeated() => $pb.PbList<PersonalProtectiveEquipmentDetectionConfig>();
+  static $pb.PbList<PersonalProtectiveEquipmentDetectionConfig>
+      createRepeated() =>
+          $pb.PbList<PersonalProtectiveEquipmentDetectionConfig>();
   @$core.pragma('dart2js:noInline')
-  static PersonalProtectiveEquipmentDetectionConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PersonalProtectiveEquipmentDetectionConfig>(create);
+  static PersonalProtectiveEquipmentDetectionConfig getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          PersonalProtectiveEquipmentDetectionConfig>(create);
   static PersonalProtectiveEquipmentDetectionConfig? _defaultInstance;
 
   /// Whether to enable face coverage detection.
   @$pb.TagNumber(1)
   $core.bool get enableFaceCoverageDetection => $_getBF(0);
   @$pb.TagNumber(1)
-  set enableFaceCoverageDetection($core.bool v) { $_setBool(0, v); }
+  set enableFaceCoverageDetection($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEnableFaceCoverageDetection() => $_has(0);
   @$pb.TagNumber(1)
@@ -3958,7 +5008,10 @@ class PersonalProtectiveEquipmentDetectionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get enableHeadCoverageDetection => $_getBF(1);
   @$pb.TagNumber(2)
-  set enableHeadCoverageDetection($core.bool v) { $_setBool(1, v); }
+  set enableHeadCoverageDetection($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnableHeadCoverageDetection() => $_has(1);
   @$pb.TagNumber(2)
@@ -3968,7 +5021,10 @@ class PersonalProtectiveEquipmentDetectionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get enableHandsCoverageDetection => $_getBF(2);
   @$pb.TagNumber(3)
-  set enableHandsCoverageDetection($core.bool v) { $_setBool(2, v); }
+  set enableHandsCoverageDetection($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasEnableHandsCoverageDetection() => $_has(2);
   @$pb.TagNumber(3)
@@ -3979,32 +5035,45 @@ class PersonalProtectiveEquipmentDetectionConfig extends $pb.GeneratedMessage {
 class GeneralObjectDetectionConfig extends $pb.GeneratedMessage {
   factory GeneralObjectDetectionConfig() => create();
   GeneralObjectDetectionConfig._() : super();
-  factory GeneralObjectDetectionConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GeneralObjectDetectionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GeneralObjectDetectionConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GeneralObjectDetectionConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GeneralObjectDetectionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GeneralObjectDetectionConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GeneralObjectDetectionConfig clone() => GeneralObjectDetectionConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GeneralObjectDetectionConfig copyWith(void Function(GeneralObjectDetectionConfig) updates) => super.copyWith((message) => updates(message as GeneralObjectDetectionConfig)) as GeneralObjectDetectionConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GeneralObjectDetectionConfig clone() =>
+      GeneralObjectDetectionConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GeneralObjectDetectionConfig copyWith(
+          void Function(GeneralObjectDetectionConfig) updates) =>
+      super.copyWith(
+              (message) => updates(message as GeneralObjectDetectionConfig))
+          as GeneralObjectDetectionConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GeneralObjectDetectionConfig create() => GeneralObjectDetectionConfig._();
+  static GeneralObjectDetectionConfig create() =>
+      GeneralObjectDetectionConfig._();
   GeneralObjectDetectionConfig createEmptyInstance() => create();
-  static $pb.PbList<GeneralObjectDetectionConfig> createRepeated() => $pb.PbList<GeneralObjectDetectionConfig>();
+  static $pb.PbList<GeneralObjectDetectionConfig> createRepeated() =>
+      $pb.PbList<GeneralObjectDetectionConfig>();
   @$core.pragma('dart2js:noInline')
-  static GeneralObjectDetectionConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GeneralObjectDetectionConfig>(create);
+  static GeneralObjectDetectionConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GeneralObjectDetectionConfig>(create);
   static GeneralObjectDetectionConfig? _defaultInstance;
 }
 
@@ -4028,42 +5097,59 @@ class BigQueryConfig extends $pb.GeneratedMessage {
     return $result;
   }
   BigQueryConfig._() : super();
-  factory BigQueryConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory BigQueryConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory BigQueryConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory BigQueryConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BigQueryConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'BigQueryConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'table')
-    ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'cloudFunctionMapping', entryClassName: 'BigQueryConfig.CloudFunctionMappingEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..m<$core.String, $core.String>(
+        2, _omitFieldNames ? '' : 'cloudFunctionMapping',
+        entryClassName: 'BigQueryConfig.CloudFunctionMappingEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
     ..aOB(3, _omitFieldNames ? '' : 'createDefaultTableIfNotExists')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   BigQueryConfig clone() => BigQueryConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  BigQueryConfig copyWith(void Function(BigQueryConfig) updates) => super.copyWith((message) => updates(message as BigQueryConfig)) as BigQueryConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  BigQueryConfig copyWith(void Function(BigQueryConfig) updates) =>
+      super.copyWith((message) => updates(message as BigQueryConfig))
+          as BigQueryConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static BigQueryConfig create() => BigQueryConfig._();
   BigQueryConfig createEmptyInstance() => create();
-  static $pb.PbList<BigQueryConfig> createRepeated() => $pb.PbList<BigQueryConfig>();
+  static $pb.PbList<BigQueryConfig> createRepeated() =>
+      $pb.PbList<BigQueryConfig>();
   @$core.pragma('dart2js:noInline')
-  static BigQueryConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BigQueryConfig>(create);
+  static BigQueryConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<BigQueryConfig>(create);
   static BigQueryConfig? _defaultInstance;
 
   /// BigQuery table resource for Vision AI Platform to ingest annotations to.
   @$pb.TagNumber(1)
   $core.String get table => $_getSZ(0);
   @$pb.TagNumber(1)
-  set table($core.String v) { $_setString(0, v); }
+  set table($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasTable() => $_has(0);
   @$pb.TagNumber(1)
@@ -4115,7 +5201,10 @@ class BigQueryConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get createDefaultTableIfNotExists => $_getBF(2);
   @$pb.TagNumber(3)
-  set createDefaultTableIfNotExists($core.bool v) { $_setBool(2, v); }
+  set createDefaultTableIfNotExists($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCreateDefaultTableIfNotExists() => $_has(2);
   @$pb.TagNumber(3)
@@ -4138,34 +5227,47 @@ class VertexAutoMLVisionConfig extends $pb.GeneratedMessage {
     return $result;
   }
   VertexAutoMLVisionConfig._() : super();
-  factory VertexAutoMLVisionConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VertexAutoMLVisionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VertexAutoMLVisionConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VertexAutoMLVisionConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VertexAutoMLVisionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'confidenceThreshold', $pb.PbFieldType.OF)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'maxPredictions', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VertexAutoMLVisionConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        1, _omitFieldNames ? '' : 'confidenceThreshold', $pb.PbFieldType.OF)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'maxPredictions', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  VertexAutoMLVisionConfig clone() => VertexAutoMLVisionConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VertexAutoMLVisionConfig copyWith(void Function(VertexAutoMLVisionConfig) updates) => super.copyWith((message) => updates(message as VertexAutoMLVisionConfig)) as VertexAutoMLVisionConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  VertexAutoMLVisionConfig clone() =>
+      VertexAutoMLVisionConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VertexAutoMLVisionConfig copyWith(
+          void Function(VertexAutoMLVisionConfig) updates) =>
+      super.copyWith((message) => updates(message as VertexAutoMLVisionConfig))
+          as VertexAutoMLVisionConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VertexAutoMLVisionConfig create() => VertexAutoMLVisionConfig._();
   VertexAutoMLVisionConfig createEmptyInstance() => create();
-  static $pb.PbList<VertexAutoMLVisionConfig> createRepeated() => $pb.PbList<VertexAutoMLVisionConfig>();
+  static $pb.PbList<VertexAutoMLVisionConfig> createRepeated() =>
+      $pb.PbList<VertexAutoMLVisionConfig>();
   @$core.pragma('dart2js:noInline')
-  static VertexAutoMLVisionConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VertexAutoMLVisionConfig>(create);
+  static VertexAutoMLVisionConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VertexAutoMLVisionConfig>(create);
   static VertexAutoMLVisionConfig? _defaultInstance;
 
   /// Only entities with higher score than the threshold will be returned.
@@ -4173,7 +5275,10 @@ class VertexAutoMLVisionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get confidenceThreshold => $_getN(0);
   @$pb.TagNumber(1)
-  set confidenceThreshold($core.double v) { $_setFloat(0, v); }
+  set confidenceThreshold($core.double v) {
+    $_setFloat(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasConfidenceThreshold() => $_has(0);
   @$pb.TagNumber(1)
@@ -4184,7 +5289,10 @@ class VertexAutoMLVisionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get maxPredictions => $_getIZ(1);
   @$pb.TagNumber(2)
-  set maxPredictions($core.int v) { $_setSignedInt32(1, v); }
+  set maxPredictions($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMaxPredictions() => $_has(1);
   @$pb.TagNumber(2)
@@ -4215,36 +5323,50 @@ class VertexAutoMLVideoConfig extends $pb.GeneratedMessage {
     return $result;
   }
   VertexAutoMLVideoConfig._() : super();
-  factory VertexAutoMLVideoConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VertexAutoMLVideoConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VertexAutoMLVideoConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VertexAutoMLVideoConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VertexAutoMLVideoConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..a<$core.double>(1, _omitFieldNames ? '' : 'confidenceThreshold', $pb.PbFieldType.OF)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VertexAutoMLVideoConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        1, _omitFieldNames ? '' : 'confidenceThreshold', $pb.PbFieldType.OF)
     ..pPS(2, _omitFieldNames ? '' : 'blockedLabels')
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'maxPredictions', $pb.PbFieldType.O3)
-    ..a<$core.double>(4, _omitFieldNames ? '' : 'boundingBoxSizeLimit', $pb.PbFieldType.OF)
-    ..hasRequiredFields = false
-  ;
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'maxPredictions', $pb.PbFieldType.O3)
+    ..a<$core.double>(
+        4, _omitFieldNames ? '' : 'boundingBoxSizeLimit', $pb.PbFieldType.OF)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  VertexAutoMLVideoConfig clone() => VertexAutoMLVideoConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VertexAutoMLVideoConfig copyWith(void Function(VertexAutoMLVideoConfig) updates) => super.copyWith((message) => updates(message as VertexAutoMLVideoConfig)) as VertexAutoMLVideoConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  VertexAutoMLVideoConfig clone() =>
+      VertexAutoMLVideoConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VertexAutoMLVideoConfig copyWith(
+          void Function(VertexAutoMLVideoConfig) updates) =>
+      super.copyWith((message) => updates(message as VertexAutoMLVideoConfig))
+          as VertexAutoMLVideoConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VertexAutoMLVideoConfig create() => VertexAutoMLVideoConfig._();
   VertexAutoMLVideoConfig createEmptyInstance() => create();
-  static $pb.PbList<VertexAutoMLVideoConfig> createRepeated() => $pb.PbList<VertexAutoMLVideoConfig>();
+  static $pb.PbList<VertexAutoMLVideoConfig> createRepeated() =>
+      $pb.PbList<VertexAutoMLVideoConfig>();
   @$core.pragma('dart2js:noInline')
-  static VertexAutoMLVideoConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VertexAutoMLVideoConfig>(create);
+  static VertexAutoMLVideoConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VertexAutoMLVideoConfig>(create);
   static VertexAutoMLVideoConfig? _defaultInstance;
 
   /// Only entities with higher score than the threshold will be returned.
@@ -4252,7 +5374,10 @@ class VertexAutoMLVideoConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.double get confidenceThreshold => $_getN(0);
   @$pb.TagNumber(1)
-  set confidenceThreshold($core.double v) { $_setFloat(0, v); }
+  set confidenceThreshold($core.double v) {
+    $_setFloat(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasConfidenceThreshold() => $_has(0);
   @$pb.TagNumber(1)
@@ -4267,7 +5392,10 @@ class VertexAutoMLVideoConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get maxPredictions => $_getIZ(2);
   @$pb.TagNumber(3)
-  set maxPredictions($core.int v) { $_setSignedInt32(2, v); }
+  set maxPredictions($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaxPredictions() => $_has(2);
   @$pb.TagNumber(3)
@@ -4279,7 +5407,10 @@ class VertexAutoMLVideoConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.double get boundingBoxSizeLimit => $_getN(3);
   @$pb.TagNumber(4)
-  set boundingBoxSizeLimit($core.double v) { $_setFloat(3, v); }
+  set boundingBoxSizeLimit($core.double v) {
+    $_setFloat(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasBoundingBoxSizeLimit() => $_has(3);
   @$pb.TagNumber(4)
@@ -4310,36 +5441,47 @@ class VertexCustomConfig extends $pb.GeneratedMessage {
     return $result;
   }
   VertexCustomConfig._() : super();
-  factory VertexCustomConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory VertexCustomConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory VertexCustomConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VertexCustomConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VertexCustomConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'maxPredictionFps', $pb.PbFieldType.O3)
-    ..aOM<DedicatedResources>(2, _omitFieldNames ? '' : 'dedicatedResources', subBuilder: DedicatedResources.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VertexCustomConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..a<$core.int>(
+        1, _omitFieldNames ? '' : 'maxPredictionFps', $pb.PbFieldType.O3)
+    ..aOM<DedicatedResources>(2, _omitFieldNames ? '' : 'dedicatedResources',
+        subBuilder: DedicatedResources.create)
     ..aOS(3, _omitFieldNames ? '' : 'postProcessingCloudFunction')
     ..aOB(4, _omitFieldNames ? '' : 'attachApplicationMetadata')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   VertexCustomConfig clone() => VertexCustomConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  VertexCustomConfig copyWith(void Function(VertexCustomConfig) updates) => super.copyWith((message) => updates(message as VertexCustomConfig)) as VertexCustomConfig;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VertexCustomConfig copyWith(void Function(VertexCustomConfig) updates) =>
+      super.copyWith((message) => updates(message as VertexCustomConfig))
+          as VertexCustomConfig;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static VertexCustomConfig create() => VertexCustomConfig._();
   VertexCustomConfig createEmptyInstance() => create();
-  static $pb.PbList<VertexCustomConfig> createRepeated() => $pb.PbList<VertexCustomConfig>();
+  static $pb.PbList<VertexCustomConfig> createRepeated() =>
+      $pb.PbList<VertexCustomConfig>();
   @$core.pragma('dart2js:noInline')
-  static VertexCustomConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<VertexCustomConfig>(create);
+  static VertexCustomConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VertexCustomConfig>(create);
   static VertexCustomConfig? _defaultInstance;
 
   /// The max prediction frame per second. This attribute sets how fast the
@@ -4349,7 +5491,10 @@ class VertexCustomConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get maxPredictionFps => $_getIZ(0);
   @$pb.TagNumber(1)
-  set maxPredictionFps($core.int v) { $_setSignedInt32(0, v); }
+  set maxPredictionFps($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMaxPredictionFps() => $_has(0);
   @$pb.TagNumber(1)
@@ -4360,7 +5505,10 @@ class VertexCustomConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DedicatedResources get dedicatedResources => $_getN(1);
   @$pb.TagNumber(2)
-  set dedicatedResources(DedicatedResources v) { setField(2, v); }
+  set dedicatedResources(DedicatedResources v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDedicatedResources() => $_has(1);
   @$pb.TagNumber(2)
@@ -4379,7 +5527,10 @@ class VertexCustomConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get postProcessingCloudFunction => $_getSZ(2);
   @$pb.TagNumber(3)
-  set postProcessingCloudFunction($core.String v) { $_setString(2, v); }
+  set postProcessingCloudFunction($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPostProcessingCloudFunction() => $_has(2);
   @$pb.TagNumber(3)
@@ -4397,7 +5548,10 @@ class VertexCustomConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool get attachApplicationMetadata => $_getBF(3);
   @$pb.TagNumber(4)
-  set attachApplicationMetadata($core.bool v) { $_setBool(3, v); }
+  set attachApplicationMetadata($core.bool v) {
+    $_setBool(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasAttachApplicationMetadata() => $_has(3);
   @$pb.TagNumber(4)
@@ -4424,26 +5578,38 @@ class MachineSpec extends $pb.GeneratedMessage {
     return $result;
   }
   MachineSpec._() : super();
-  factory MachineSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory MachineSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory MachineSpec.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MachineSpec.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MachineSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MachineSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'machineType')
-    ..e<AcceleratorType>(2, _omitFieldNames ? '' : 'acceleratorType', $pb.PbFieldType.OE, defaultOrMaker: AcceleratorType.ACCELERATOR_TYPE_UNSPECIFIED, valueOf: AcceleratorType.valueOf, enumValues: AcceleratorType.values)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'acceleratorCount', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..e<AcceleratorType>(
+        2, _omitFieldNames ? '' : 'acceleratorType', $pb.PbFieldType.OE,
+        defaultOrMaker: AcceleratorType.ACCELERATOR_TYPE_UNSPECIFIED,
+        valueOf: AcceleratorType.valueOf,
+        enumValues: AcceleratorType.values)
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'acceleratorCount', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   MachineSpec clone() => MachineSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  MachineSpec copyWith(void Function(MachineSpec) updates) => super.copyWith((message) => updates(message as MachineSpec)) as MachineSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MachineSpec copyWith(void Function(MachineSpec) updates) =>
+      super.copyWith((message) => updates(message as MachineSpec))
+          as MachineSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -4452,7 +5618,8 @@ class MachineSpec extends $pb.GeneratedMessage {
   MachineSpec createEmptyInstance() => create();
   static $pb.PbList<MachineSpec> createRepeated() => $pb.PbList<MachineSpec>();
   @$core.pragma('dart2js:noInline')
-  static MachineSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MachineSpec>(create);
+  static MachineSpec getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MachineSpec>(create);
   static MachineSpec? _defaultInstance;
 
   ///  Immutable. The type of the machine.
@@ -4469,7 +5636,10 @@ class MachineSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get machineType => $_getSZ(0);
   @$pb.TagNumber(1)
-  set machineType($core.String v) { $_setString(0, v); }
+  set machineType($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMachineType() => $_has(0);
   @$pb.TagNumber(1)
@@ -4481,7 +5651,10 @@ class MachineSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AcceleratorType get acceleratorType => $_getN(1);
   @$pb.TagNumber(2)
-  set acceleratorType(AcceleratorType v) { setField(2, v); }
+  set acceleratorType(AcceleratorType v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAcceleratorType() => $_has(1);
   @$pb.TagNumber(2)
@@ -4491,7 +5664,10 @@ class MachineSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get acceleratorCount => $_getIZ(2);
   @$pb.TagNumber(3)
-  set acceleratorCount($core.int v) { $_setSignedInt32(2, v); }
+  set acceleratorCount($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasAcceleratorCount() => $_has(2);
   @$pb.TagNumber(3)
@@ -4516,34 +5692,45 @@ class AutoscalingMetricSpec extends $pb.GeneratedMessage {
     return $result;
   }
   AutoscalingMetricSpec._() : super();
-  factory AutoscalingMetricSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AutoscalingMetricSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AutoscalingMetricSpec.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutoscalingMetricSpec.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutoscalingMetricSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutoscalingMetricSpec',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'metricName')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'target', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  AutoscalingMetricSpec clone() => AutoscalingMetricSpec()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AutoscalingMetricSpec copyWith(void Function(AutoscalingMetricSpec) updates) => super.copyWith((message) => updates(message as AutoscalingMetricSpec)) as AutoscalingMetricSpec;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutoscalingMetricSpec clone() =>
+      AutoscalingMetricSpec()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutoscalingMetricSpec copyWith(
+          void Function(AutoscalingMetricSpec) updates) =>
+      super.copyWith((message) => updates(message as AutoscalingMetricSpec))
+          as AutoscalingMetricSpec;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AutoscalingMetricSpec create() => AutoscalingMetricSpec._();
   AutoscalingMetricSpec createEmptyInstance() => create();
-  static $pb.PbList<AutoscalingMetricSpec> createRepeated() => $pb.PbList<AutoscalingMetricSpec>();
+  static $pb.PbList<AutoscalingMetricSpec> createRepeated() =>
+      $pb.PbList<AutoscalingMetricSpec>();
   @$core.pragma('dart2js:noInline')
-  static AutoscalingMetricSpec getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AutoscalingMetricSpec>(create);
+  static AutoscalingMetricSpec getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AutoscalingMetricSpec>(create);
   static AutoscalingMetricSpec? _defaultInstance;
 
   ///  Required. The resource metric name.
@@ -4555,7 +5742,10 @@ class AutoscalingMetricSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get metricName => $_getSZ(0);
   @$pb.TagNumber(1)
-  set metricName($core.String v) { $_setString(0, v); }
+  set metricName($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMetricName() => $_has(0);
   @$pb.TagNumber(1)
@@ -4568,7 +5758,10 @@ class AutoscalingMetricSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get target => $_getIZ(1);
   @$pb.TagNumber(2)
-  set target($core.int v) { $_setSignedInt32(1, v); }
+  set target($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasTarget() => $_has(1);
   @$pb.TagNumber(2)
@@ -4600,36 +5793,50 @@ class DedicatedResources extends $pb.GeneratedMessage {
     return $result;
   }
   DedicatedResources._() : super();
-  factory DedicatedResources.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DedicatedResources.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DedicatedResources.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DedicatedResources.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DedicatedResources', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<MachineSpec>(1, _omitFieldNames ? '' : 'machineSpec', subBuilder: MachineSpec.create)
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'minReplicaCount', $pb.PbFieldType.O3)
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'maxReplicaCount', $pb.PbFieldType.O3)
-    ..pc<AutoscalingMetricSpec>(4, _omitFieldNames ? '' : 'autoscalingMetricSpecs', $pb.PbFieldType.PM, subBuilder: AutoscalingMetricSpec.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DedicatedResources',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..aOM<MachineSpec>(1, _omitFieldNames ? '' : 'machineSpec',
+        subBuilder: MachineSpec.create)
+    ..a<$core.int>(
+        2, _omitFieldNames ? '' : 'minReplicaCount', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'maxReplicaCount', $pb.PbFieldType.O3)
+    ..pc<AutoscalingMetricSpec>(
+        4, _omitFieldNames ? '' : 'autoscalingMetricSpecs', $pb.PbFieldType.PM,
+        subBuilder: AutoscalingMetricSpec.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DedicatedResources clone() => DedicatedResources()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DedicatedResources copyWith(void Function(DedicatedResources) updates) => super.copyWith((message) => updates(message as DedicatedResources)) as DedicatedResources;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DedicatedResources copyWith(void Function(DedicatedResources) updates) =>
+      super.copyWith((message) => updates(message as DedicatedResources))
+          as DedicatedResources;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DedicatedResources create() => DedicatedResources._();
   DedicatedResources createEmptyInstance() => create();
-  static $pb.PbList<DedicatedResources> createRepeated() => $pb.PbList<DedicatedResources>();
+  static $pb.PbList<DedicatedResources> createRepeated() =>
+      $pb.PbList<DedicatedResources>();
   @$core.pragma('dart2js:noInline')
-  static DedicatedResources getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DedicatedResources>(create);
+  static DedicatedResources getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DedicatedResources>(create);
   static DedicatedResources? _defaultInstance;
 
   /// Required. Immutable. The specification of a single machine used by the
@@ -4637,7 +5844,10 @@ class DedicatedResources extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MachineSpec get machineSpec => $_getN(0);
   @$pb.TagNumber(1)
-  set machineSpec(MachineSpec v) { setField(1, v); }
+  set machineSpec(MachineSpec v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMachineSpec() => $_has(0);
   @$pb.TagNumber(1)
@@ -4655,7 +5865,10 @@ class DedicatedResources extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.int get minReplicaCount => $_getIZ(1);
   @$pb.TagNumber(2)
-  set minReplicaCount($core.int v) { $_setSignedInt32(1, v); }
+  set minReplicaCount($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasMinReplicaCount() => $_has(1);
   @$pb.TagNumber(2)
@@ -4678,7 +5891,10 @@ class DedicatedResources extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.int get maxReplicaCount => $_getIZ(2);
   @$pb.TagNumber(3)
-  set maxReplicaCount($core.int v) { $_setSignedInt32(2, v); }
+  set maxReplicaCount($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasMaxReplicaCount() => $_has(2);
   @$pb.TagNumber(3)
@@ -4753,31 +5969,47 @@ class Stream extends $pb.GeneratedMessage {
     return $result;
   }
   Stream._() : super();
-  factory Stream.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Stream.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Stream.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Stream.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Stream', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Stream',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Stream.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
-    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'Stream.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Stream.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations',
+        entryClassName: 'Stream.AnnotationsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
     ..aOB(7, _omitFieldNames ? '' : 'enableHlsPlayback')
     ..aOS(8, _omitFieldNames ? '' : 'mediaWarehouseAsset')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Stream clone() => Stream()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Stream copyWith(void Function(Stream) updates) => super.copyWith((message) => updates(message as Stream)) as Stream;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Stream copyWith(void Function(Stream) updates) =>
+      super.copyWith((message) => updates(message as Stream)) as Stream;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -4786,14 +6018,18 @@ class Stream extends $pb.GeneratedMessage {
   Stream createEmptyInstance() => create();
   static $pb.PbList<Stream> createRepeated() => $pb.PbList<Stream>();
   @$core.pragma('dart2js:noInline')
-  static Stream getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Stream>(create);
+  static Stream getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Stream>(create);
   static Stream? _defaultInstance;
 
   /// Name of the resource.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -4803,7 +6039,10 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -4815,7 +6054,10 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) { setField(3, v); }
+  set updateTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -4835,7 +6077,10 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get displayName => $_getSZ(5);
   @$pb.TagNumber(6)
-  set displayName($core.String v) { $_setString(5, v); }
+  set displayName($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasDisplayName() => $_has(5);
   @$pb.TagNumber(6)
@@ -4845,7 +6090,10 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool get enableHlsPlayback => $_getBF(6);
   @$pb.TagNumber(7)
-  set enableHlsPlayback($core.bool v) { $_setBool(6, v); }
+  set enableHlsPlayback($core.bool v) {
+    $_setBool(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasEnableHlsPlayback() => $_has(6);
   @$pb.TagNumber(7)
@@ -4857,7 +6105,10 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.String get mediaWarehouseAsset => $_getSZ(7);
   @$pb.TagNumber(8)
-  set mediaWarehouseAsset($core.String v) { $_setString(7, v); }
+  set mediaWarehouseAsset($core.String v) {
+    $_setString(7, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasMediaWarehouseAsset() => $_has(7);
   @$pb.TagNumber(8)
@@ -4900,30 +6151,51 @@ class Event extends $pb.GeneratedMessage {
     return $result;
   }
   Event._() : super();
-  factory Event.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Event.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Event.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Event.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Event',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Event.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
-    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'Event.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
-    ..e<Event_Clock>(6, _omitFieldNames ? '' : 'alignmentClock', $pb.PbFieldType.OE, defaultOrMaker: Event_Clock.CLOCK_UNSPECIFIED, valueOf: Event_Clock.valueOf, enumValues: Event_Clock.values)
-    ..aOM<$10.Duration>(7, _omitFieldNames ? '' : 'gracePeriod', subBuilder: $10.Duration.create)
-    ..hasRequiredFields = false
-  ;
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Event.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations',
+        entryClassName: 'Event.AnnotationsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..e<Event_Clock>(
+        6, _omitFieldNames ? '' : 'alignmentClock', $pb.PbFieldType.OE,
+        defaultOrMaker: Event_Clock.CLOCK_UNSPECIFIED,
+        valueOf: Event_Clock.valueOf,
+        enumValues: Event_Clock.values)
+    ..aOM<$10.Duration>(7, _omitFieldNames ? '' : 'gracePeriod',
+        subBuilder: $10.Duration.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Event clone() => Event()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Event copyWith(void Function(Event) updates) => super.copyWith((message) => updates(message as Event)) as Event;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Event copyWith(void Function(Event) updates) =>
+      super.copyWith((message) => updates(message as Event)) as Event;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -4932,14 +6204,18 @@ class Event extends $pb.GeneratedMessage {
   Event createEmptyInstance() => create();
   static $pb.PbList<Event> createRepeated() => $pb.PbList<Event>();
   @$core.pragma('dart2js:noInline')
-  static Event getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Event>(create);
+  static Event getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Event>(create);
   static Event? _defaultInstance;
 
   /// Name of the resource.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -4949,7 +6225,10 @@ class Event extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -4961,7 +6240,10 @@ class Event extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) { setField(3, v); }
+  set updateTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -4981,7 +6263,10 @@ class Event extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   Event_Clock get alignmentClock => $_getN(5);
   @$pb.TagNumber(6)
-  set alignmentClock(Event_Clock v) { setField(6, v); }
+  set alignmentClock(Event_Clock v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasAlignmentClock() => $_has(5);
   @$pb.TagNumber(6)
@@ -4994,7 +6279,10 @@ class Event extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $10.Duration get gracePeriod => $_getN(6);
   @$pb.TagNumber(7)
-  set gracePeriod($10.Duration v) { setField(7, v); }
+  set gracePeriod($10.Duration v) {
+    setField(7, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasGracePeriod() => $_has(6);
   @$pb.TagNumber(7)
@@ -5039,30 +6327,46 @@ class Series extends $pb.GeneratedMessage {
     return $result;
   }
   Series._() : super();
-  factory Series.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Series.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Series.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Series.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Series', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Series',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $2.Timestamp.create)
-    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $2.Timestamp.create)
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Series.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
-    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'Series.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $2.Timestamp.create)
+    ..aOM<$2.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $2.Timestamp.create)
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
+        entryClassName: 'Series.LabelsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
+    ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations',
+        entryClassName: 'Series.AnnotationsEntry',
+        keyFieldType: $pb.PbFieldType.OS,
+        valueFieldType: $pb.PbFieldType.OS,
+        packageName: const $pb.PackageName('google.events.cloud.visionai.v1'))
     ..aOS(6, _omitFieldNames ? '' : 'stream')
     ..aOS(7, _omitFieldNames ? '' : 'event')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Series clone() => Series()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Series copyWith(void Function(Series) updates) => super.copyWith((message) => updates(message as Series)) as Series;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Series copyWith(void Function(Series) updates) =>
+      super.copyWith((message) => updates(message as Series)) as Series;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -5071,14 +6375,18 @@ class Series extends $pb.GeneratedMessage {
   Series createEmptyInstance() => create();
   static $pb.PbList<Series> createRepeated() => $pb.PbList<Series>();
   @$core.pragma('dart2js:noInline')
-  static Series getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Series>(create);
+  static Series getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Series>(create);
   static Series? _defaultInstance;
 
   /// Name of the resource.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -5088,7 +6396,10 @@ class Series extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($2.Timestamp v) { setField(2, v); }
+  set createTime($2.Timestamp v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
@@ -5100,7 +6411,10 @@ class Series extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($2.Timestamp v) { setField(3, v); }
+  set updateTime($2.Timestamp v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
@@ -5120,7 +6434,10 @@ class Series extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.String get stream => $_getSZ(5);
   @$pb.TagNumber(6)
-  set stream($core.String v) { $_setString(5, v); }
+  set stream($core.String v) {
+    $_setString(5, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasStream() => $_has(5);
   @$pb.TagNumber(6)
@@ -5130,7 +6447,10 @@ class Series extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.String get event => $_getSZ(6);
   @$pb.TagNumber(7)
-  set event($core.String v) { $_setString(6, v); }
+  set event($core.String v) {
+    $_setString(6, v);
+  }
+
   @$pb.TagNumber(7)
   $core.bool hasEvent() => $_has(6);
   @$pb.TagNumber(7)
@@ -5149,40 +6469,53 @@ class SeriesEventData extends $pb.GeneratedMessage {
     return $result;
   }
   SeriesEventData._() : super();
-  factory SeriesEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory SeriesEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory SeriesEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SeriesEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SeriesEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<Series>(1, _omitFieldNames ? '' : 'payload', subBuilder: Series.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SeriesEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..aOM<Series>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: Series.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   SeriesEventData clone() => SeriesEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  SeriesEventData copyWith(void Function(SeriesEventData) updates) => super.copyWith((message) => updates(message as SeriesEventData)) as SeriesEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SeriesEventData copyWith(void Function(SeriesEventData) updates) =>
+      super.copyWith((message) => updates(message as SeriesEventData))
+          as SeriesEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static SeriesEventData create() => SeriesEventData._();
   SeriesEventData createEmptyInstance() => create();
-  static $pb.PbList<SeriesEventData> createRepeated() => $pb.PbList<SeriesEventData>();
+  static $pb.PbList<SeriesEventData> createRepeated() =>
+      $pb.PbList<SeriesEventData>();
   @$core.pragma('dart2js:noInline')
-  static SeriesEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SeriesEventData>(create);
+  static SeriesEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SeriesEventData>(create);
   static SeriesEventData? _defaultInstance;
 
   /// Optional. The Series event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Series get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Series v) { setField(1, v); }
+  set payload(Series v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5203,40 +6536,52 @@ class DraftEventData extends $pb.GeneratedMessage {
     return $result;
   }
   DraftEventData._() : super();
-  factory DraftEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DraftEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory DraftEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory DraftEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DraftEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'DraftEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOM<Draft>(1, _omitFieldNames ? '' : 'payload', subBuilder: Draft.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   DraftEventData clone() => DraftEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DraftEventData copyWith(void Function(DraftEventData) updates) => super.copyWith((message) => updates(message as DraftEventData)) as DraftEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  DraftEventData copyWith(void Function(DraftEventData) updates) =>
+      super.copyWith((message) => updates(message as DraftEventData))
+          as DraftEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static DraftEventData create() => DraftEventData._();
   DraftEventData createEmptyInstance() => create();
-  static $pb.PbList<DraftEventData> createRepeated() => $pb.PbList<DraftEventData>();
+  static $pb.PbList<DraftEventData> createRepeated() =>
+      $pb.PbList<DraftEventData>();
   @$core.pragma('dart2js:noInline')
-  static DraftEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DraftEventData>(create);
+  static DraftEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<DraftEventData>(create);
   static DraftEventData? _defaultInstance;
 
   /// Optional. The Draft event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Draft get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Draft v) { setField(1, v); }
+  set payload(Draft v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5257,40 +6602,53 @@ class ProcessorEventData extends $pb.GeneratedMessage {
     return $result;
   }
   ProcessorEventData._() : super();
-  factory ProcessorEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProcessorEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProcessorEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProcessorEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessorEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<Processor>(1, _omitFieldNames ? '' : 'payload', subBuilder: Processor.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProcessorEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..aOM<Processor>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: Processor.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProcessorEventData clone() => ProcessorEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProcessorEventData copyWith(void Function(ProcessorEventData) updates) => super.copyWith((message) => updates(message as ProcessorEventData)) as ProcessorEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProcessorEventData copyWith(void Function(ProcessorEventData) updates) =>
+      super.copyWith((message) => updates(message as ProcessorEventData))
+          as ProcessorEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ProcessorEventData create() => ProcessorEventData._();
   ProcessorEventData createEmptyInstance() => create();
-  static $pb.PbList<ProcessorEventData> createRepeated() => $pb.PbList<ProcessorEventData>();
+  static $pb.PbList<ProcessorEventData> createRepeated() =>
+      $pb.PbList<ProcessorEventData>();
   @$core.pragma('dart2js:noInline')
-  static ProcessorEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProcessorEventData>(create);
+  static ProcessorEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProcessorEventData>(create);
   static ProcessorEventData? _defaultInstance;
 
   /// Optional. The Processor event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Processor get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Processor v) { setField(1, v); }
+  set payload(Processor v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5311,40 +6669,53 @@ class AnalysisEventData extends $pb.GeneratedMessage {
     return $result;
   }
   AnalysisEventData._() : super();
-  factory AnalysisEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory AnalysisEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory AnalysisEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AnalysisEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalysisEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<Analysis>(1, _omitFieldNames ? '' : 'payload', subBuilder: Analysis.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AnalysisEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..aOM<Analysis>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: Analysis.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   AnalysisEventData clone() => AnalysisEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  AnalysisEventData copyWith(void Function(AnalysisEventData) updates) => super.copyWith((message) => updates(message as AnalysisEventData)) as AnalysisEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AnalysisEventData copyWith(void Function(AnalysisEventData) updates) =>
+      super.copyWith((message) => updates(message as AnalysisEventData))
+          as AnalysisEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static AnalysisEventData create() => AnalysisEventData._();
   AnalysisEventData createEmptyInstance() => create();
-  static $pb.PbList<AnalysisEventData> createRepeated() => $pb.PbList<AnalysisEventData>();
+  static $pb.PbList<AnalysisEventData> createRepeated() =>
+      $pb.PbList<AnalysisEventData>();
   @$core.pragma('dart2js:noInline')
-  static AnalysisEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AnalysisEventData>(create);
+  static AnalysisEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AnalysisEventData>(create);
   static AnalysisEventData? _defaultInstance;
 
   /// Optional. The Analysis event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Analysis get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Analysis v) { setField(1, v); }
+  set payload(Analysis v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5365,40 +6736,53 @@ class ClusterEventData extends $pb.GeneratedMessage {
     return $result;
   }
   ClusterEventData._() : super();
-  factory ClusterEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ClusterEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ClusterEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ClusterEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ClusterEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<Cluster>(1, _omitFieldNames ? '' : 'payload', subBuilder: Cluster.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ClusterEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..aOM<Cluster>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: Cluster.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ClusterEventData clone() => ClusterEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ClusterEventData copyWith(void Function(ClusterEventData) updates) => super.copyWith((message) => updates(message as ClusterEventData)) as ClusterEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ClusterEventData copyWith(void Function(ClusterEventData) updates) =>
+      super.copyWith((message) => updates(message as ClusterEventData))
+          as ClusterEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ClusterEventData create() => ClusterEventData._();
   ClusterEventData createEmptyInstance() => create();
-  static $pb.PbList<ClusterEventData> createRepeated() => $pb.PbList<ClusterEventData>();
+  static $pb.PbList<ClusterEventData> createRepeated() =>
+      $pb.PbList<ClusterEventData>();
   @$core.pragma('dart2js:noInline')
-  static ClusterEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ClusterEventData>(create);
+  static ClusterEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ClusterEventData>(create);
   static ClusterEventData? _defaultInstance;
 
   /// Optional. The Cluster event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Cluster get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Cluster v) { setField(1, v); }
+  set payload(Cluster v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5419,40 +6803,52 @@ class EventEventData extends $pb.GeneratedMessage {
     return $result;
   }
   EventEventData._() : super();
-  factory EventEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory EventEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory EventEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory EventEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EventEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EventEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
     ..aOM<Event>(1, _omitFieldNames ? '' : 'payload', subBuilder: Event.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   EventEventData clone() => EventEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  EventEventData copyWith(void Function(EventEventData) updates) => super.copyWith((message) => updates(message as EventEventData)) as EventEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  EventEventData copyWith(void Function(EventEventData) updates) =>
+      super.copyWith((message) => updates(message as EventEventData))
+          as EventEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static EventEventData create() => EventEventData._();
   EventEventData createEmptyInstance() => create();
-  static $pb.PbList<EventEventData> createRepeated() => $pb.PbList<EventEventData>();
+  static $pb.PbList<EventEventData> createRepeated() =>
+      $pb.PbList<EventEventData>();
   @$core.pragma('dart2js:noInline')
-  static EventEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EventEventData>(create);
+  static EventEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EventEventData>(create);
   static EventEventData? _defaultInstance;
 
   /// Optional. The Event event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Event get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Event v) { setField(1, v); }
+  set payload(Event v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5473,40 +6869,53 @@ class ProcessEventData extends $pb.GeneratedMessage {
     return $result;
   }
   ProcessEventData._() : super();
-  factory ProcessEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ProcessEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ProcessEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProcessEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<Process>(1, _omitFieldNames ? '' : 'payload', subBuilder: Process.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProcessEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..aOM<Process>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: Process.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProcessEventData clone() => ProcessEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProcessEventData copyWith(void Function(ProcessEventData) updates) => super.copyWith((message) => updates(message as ProcessEventData)) as ProcessEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProcessEventData copyWith(void Function(ProcessEventData) updates) =>
+      super.copyWith((message) => updates(message as ProcessEventData))
+          as ProcessEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ProcessEventData create() => ProcessEventData._();
   ProcessEventData createEmptyInstance() => create();
-  static $pb.PbList<ProcessEventData> createRepeated() => $pb.PbList<ProcessEventData>();
+  static $pb.PbList<ProcessEventData> createRepeated() =>
+      $pb.PbList<ProcessEventData>();
   @$core.pragma('dart2js:noInline')
-  static ProcessEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProcessEventData>(create);
+  static ProcessEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProcessEventData>(create);
   static ProcessEventData? _defaultInstance;
 
   /// Optional. The Process event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Process get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Process v) { setField(1, v); }
+  set payload(Process v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5527,40 +6936,53 @@ class StreamEventData extends $pb.GeneratedMessage {
     return $result;
   }
   StreamEventData._() : super();
-  factory StreamEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory StreamEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory StreamEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory StreamEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<Stream>(1, _omitFieldNames ? '' : 'payload', subBuilder: Stream.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'StreamEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..aOM<Stream>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: Stream.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   StreamEventData clone() => StreamEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  StreamEventData copyWith(void Function(StreamEventData) updates) => super.copyWith((message) => updates(message as StreamEventData)) as StreamEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  StreamEventData copyWith(void Function(StreamEventData) updates) =>
+      super.copyWith((message) => updates(message as StreamEventData))
+          as StreamEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static StreamEventData create() => StreamEventData._();
   StreamEventData createEmptyInstance() => create();
-  static $pb.PbList<StreamEventData> createRepeated() => $pb.PbList<StreamEventData>();
+  static $pb.PbList<StreamEventData> createRepeated() =>
+      $pb.PbList<StreamEventData>();
   @$core.pragma('dart2js:noInline')
-  static StreamEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StreamEventData>(create);
+  static StreamEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<StreamEventData>(create);
   static StreamEventData? _defaultInstance;
 
   /// Optional. The Stream event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Stream get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Stream v) { setField(1, v); }
+  set payload(Stream v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5581,40 +7003,54 @@ class ApplicationEventData extends $pb.GeneratedMessage {
     return $result;
   }
   ApplicationEventData._() : super();
-  factory ApplicationEventData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ApplicationEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ApplicationEventData.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ApplicationEventData.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplicationEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<Application>(1, _omitFieldNames ? '' : 'payload', subBuilder: Application.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ApplicationEventData',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
+      createEmptyInstance: create)
+    ..aOM<Application>(1, _omitFieldNames ? '' : 'payload',
+        subBuilder: Application.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ApplicationEventData clone() => ApplicationEventData()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ApplicationEventData copyWith(void Function(ApplicationEventData) updates) => super.copyWith((message) => updates(message as ApplicationEventData)) as ApplicationEventData;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ApplicationEventData clone() =>
+      ApplicationEventData()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ApplicationEventData copyWith(void Function(ApplicationEventData) updates) =>
+      super.copyWith((message) => updates(message as ApplicationEventData))
+          as ApplicationEventData;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApplicationEventData create() => ApplicationEventData._();
   ApplicationEventData createEmptyInstance() => create();
-  static $pb.PbList<ApplicationEventData> createRepeated() => $pb.PbList<ApplicationEventData>();
+  static $pb.PbList<ApplicationEventData> createRepeated() =>
+      $pb.PbList<ApplicationEventData>();
   @$core.pragma('dart2js:noInline')
-  static ApplicationEventData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ApplicationEventData>(create);
+  static ApplicationEventData getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ApplicationEventData>(create);
   static ApplicationEventData? _defaultInstance;
 
   /// Optional. The Application event payload. Unset for deletion events.
   @$pb.TagNumber(1)
   Application get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload(Application v) { setField(1, v); }
+  set payload(Application v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
@@ -5623,6 +7059,6 @@ class ApplicationEventData extends $pb.GeneratedMessage {
   Application ensurePayload() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

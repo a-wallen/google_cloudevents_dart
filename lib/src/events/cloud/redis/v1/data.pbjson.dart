@@ -32,42 +32,201 @@ const Instance$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
-    {'1': 'labels', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.redis.v1.Instance.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.redis.v1.Instance.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'location_id', '3': 4, '4': 1, '5': 9, '10': 'locationId'},
-    {'1': 'alternative_location_id', '3': 5, '4': 1, '5': 9, '10': 'alternativeLocationId'},
+    {
+      '1': 'alternative_location_id',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'alternativeLocationId'
+    },
     {'1': 'redis_version', '3': 7, '4': 1, '5': 9, '10': 'redisVersion'},
     {'1': 'reserved_ip_range', '3': 9, '4': 1, '5': 9, '10': 'reservedIpRange'},
-    {'1': 'secondary_ip_range', '3': 30, '4': 1, '5': 9, '10': 'secondaryIpRange'},
+    {
+      '1': 'secondary_ip_range',
+      '3': 30,
+      '4': 1,
+      '5': 9,
+      '10': 'secondaryIpRange'
+    },
     {'1': 'host', '3': 10, '4': 1, '5': 9, '10': 'host'},
     {'1': 'port', '3': 11, '4': 1, '5': 5, '10': 'port'},
-    {'1': 'current_location_id', '3': 12, '4': 1, '5': 9, '10': 'currentLocationId'},
-    {'1': 'create_time', '3': 13, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'state', '3': 14, '4': 1, '5': 14, '6': '.google.events.cloud.redis.v1.Instance.State', '10': 'state'},
+    {
+      '1': 'current_location_id',
+      '3': 12,
+      '4': 1,
+      '5': 9,
+      '10': 'currentLocationId'
+    },
+    {
+      '1': 'create_time',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'state',
+      '3': 14,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.redis.v1.Instance.State',
+      '10': 'state'
+    },
     {'1': 'status_message', '3': 15, '4': 1, '5': 9, '10': 'statusMessage'},
-    {'1': 'redis_configs', '3': 16, '4': 3, '5': 11, '6': '.google.events.cloud.redis.v1.Instance.RedisConfigsEntry', '10': 'redisConfigs'},
-    {'1': 'tier', '3': 17, '4': 1, '5': 14, '6': '.google.events.cloud.redis.v1.Instance.Tier', '10': 'tier'},
+    {
+      '1': 'redis_configs',
+      '3': 16,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.redis.v1.Instance.RedisConfigsEntry',
+      '10': 'redisConfigs'
+    },
+    {
+      '1': 'tier',
+      '3': 17,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.redis.v1.Instance.Tier',
+      '10': 'tier'
+    },
     {'1': 'memory_size_gb', '3': 18, '4': 1, '5': 5, '10': 'memorySizeGb'},
-    {'1': 'authorized_network', '3': 20, '4': 1, '5': 9, '10': 'authorizedNetwork'},
-    {'1': 'persistence_iam_identity', '3': 21, '4': 1, '5': 9, '10': 'persistenceIamIdentity'},
-    {'1': 'connect_mode', '3': 22, '4': 1, '5': 14, '6': '.google.events.cloud.redis.v1.Instance.ConnectMode', '10': 'connectMode'},
+    {
+      '1': 'authorized_network',
+      '3': 20,
+      '4': 1,
+      '5': 9,
+      '10': 'authorizedNetwork'
+    },
+    {
+      '1': 'persistence_iam_identity',
+      '3': 21,
+      '4': 1,
+      '5': 9,
+      '10': 'persistenceIamIdentity'
+    },
+    {
+      '1': 'connect_mode',
+      '3': 22,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.redis.v1.Instance.ConnectMode',
+      '10': 'connectMode'
+    },
     {'1': 'auth_enabled', '3': 23, '4': 1, '5': 8, '10': 'authEnabled'},
-    {'1': 'server_ca_certs', '3': 25, '4': 3, '5': 11, '6': '.google.events.cloud.redis.v1.TlsCertificate', '10': 'serverCaCerts'},
-    {'1': 'transit_encryption_mode', '3': 26, '4': 1, '5': 14, '6': '.google.events.cloud.redis.v1.Instance.TransitEncryptionMode', '10': 'transitEncryptionMode'},
-    {'1': 'maintenance_policy', '3': 27, '4': 1, '5': 11, '6': '.google.events.cloud.redis.v1.MaintenancePolicy', '10': 'maintenancePolicy'},
-    {'1': 'maintenance_schedule', '3': 28, '4': 1, '5': 11, '6': '.google.events.cloud.redis.v1.MaintenanceSchedule', '10': 'maintenanceSchedule'},
+    {
+      '1': 'server_ca_certs',
+      '3': 25,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.redis.v1.TlsCertificate',
+      '10': 'serverCaCerts'
+    },
+    {
+      '1': 'transit_encryption_mode',
+      '3': 26,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.redis.v1.Instance.TransitEncryptionMode',
+      '10': 'transitEncryptionMode'
+    },
+    {
+      '1': 'maintenance_policy',
+      '3': 27,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.redis.v1.MaintenancePolicy',
+      '10': 'maintenancePolicy'
+    },
+    {
+      '1': 'maintenance_schedule',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.redis.v1.MaintenanceSchedule',
+      '10': 'maintenanceSchedule'
+    },
     {'1': 'replica_count', '3': 31, '4': 1, '5': 5, '10': 'replicaCount'},
-    {'1': 'nodes', '3': 32, '4': 3, '5': 11, '6': '.google.events.cloud.redis.v1.NodeInfo', '10': 'nodes'},
+    {
+      '1': 'nodes',
+      '3': 32,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.redis.v1.NodeInfo',
+      '10': 'nodes'
+    },
     {'1': 'read_endpoint', '3': 33, '4': 1, '5': 9, '10': 'readEndpoint'},
-    {'1': 'read_endpoint_port', '3': 34, '4': 1, '5': 5, '10': 'readEndpointPort'},
-    {'1': 'read_replicas_mode', '3': 35, '4': 1, '5': 14, '6': '.google.events.cloud.redis.v1.Instance.ReadReplicasMode', '10': 'readReplicasMode'},
-    {'1': 'customer_managed_key', '3': 36, '4': 1, '5': 9, '10': 'customerManagedKey'},
-    {'1': 'persistence_config', '3': 37, '4': 1, '5': 11, '6': '.google.events.cloud.redis.v1.PersistenceConfig', '10': 'persistenceConfig'},
-    {'1': 'suspension_reasons', '3': 38, '4': 3, '5': 14, '6': '.google.events.cloud.redis.v1.Instance.SuspensionReason', '10': 'suspensionReasons'},
-    {'1': 'maintenance_version', '3': 39, '4': 1, '5': 9, '10': 'maintenanceVersion'},
-    {'1': 'available_maintenance_versions', '3': 40, '4': 3, '5': 9, '10': 'availableMaintenanceVersions'},
+    {
+      '1': 'read_endpoint_port',
+      '3': 34,
+      '4': 1,
+      '5': 5,
+      '10': 'readEndpointPort'
+    },
+    {
+      '1': 'read_replicas_mode',
+      '3': 35,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.redis.v1.Instance.ReadReplicasMode',
+      '10': 'readReplicasMode'
+    },
+    {
+      '1': 'customer_managed_key',
+      '3': 36,
+      '4': 1,
+      '5': 9,
+      '10': 'customerManagedKey'
+    },
+    {
+      '1': 'persistence_config',
+      '3': 37,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.redis.v1.PersistenceConfig',
+      '10': 'persistenceConfig'
+    },
+    {
+      '1': 'suspension_reasons',
+      '3': 38,
+      '4': 3,
+      '5': 14,
+      '6': '.google.events.cloud.redis.v1.Instance.SuspensionReason',
+      '10': 'suspensionReasons'
+    },
+    {
+      '1': 'maintenance_version',
+      '3': 39,
+      '4': 1,
+      '5': 9,
+      '10': 'maintenanceVersion'
+    },
+    {
+      '1': 'available_maintenance_versions',
+      '3': 40,
+      '4': 3,
+      '5': 9,
+      '10': 'availableMaintenanceVersions'
+    },
   ],
   '3': [Instance_LabelsEntry$json, Instance_RedisConfigsEntry$json],
-  '4': [Instance_State$json, Instance_Tier$json, Instance_ConnectMode$json, Instance_TransitEncryptionMode$json, Instance_ReadReplicasMode$json, Instance_SuspensionReason$json],
+  '4': [
+    Instance_State$json,
+    Instance_Tier$json,
+    Instance_ConnectMode$json,
+    Instance_TransitEncryptionMode$json,
+    Instance_ReadReplicasMode$json,
+    Instance_SuspensionReason$json
+  ],
 };
 
 @$core.Deprecated('Use instanceDescriptor instead')
@@ -213,12 +372,43 @@ final $typed_data.Uint8List instanceDescriptor = $convert.base64Decode(
 const PersistenceConfig$json = {
   '1': 'PersistenceConfig',
   '2': [
-    {'1': 'persistence_mode', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.redis.v1.PersistenceConfig.PersistenceMode', '10': 'persistenceMode'},
-    {'1': 'rdb_snapshot_period', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.redis.v1.PersistenceConfig.SnapshotPeriod', '10': 'rdbSnapshotPeriod'},
-    {'1': 'rdb_next_snapshot_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'rdbNextSnapshotTime'},
-    {'1': 'rdb_snapshot_start_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'rdbSnapshotStartTime'},
+    {
+      '1': 'persistence_mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.redis.v1.PersistenceConfig.PersistenceMode',
+      '10': 'persistenceMode'
+    },
+    {
+      '1': 'rdb_snapshot_period',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.redis.v1.PersistenceConfig.SnapshotPeriod',
+      '10': 'rdbSnapshotPeriod'
+    },
+    {
+      '1': 'rdb_next_snapshot_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'rdbNextSnapshotTime'
+    },
+    {
+      '1': 'rdb_snapshot_start_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'rdbSnapshotStartTime'
+    },
   ],
-  '4': [PersistenceConfig_PersistenceMode$json, PersistenceConfig_SnapshotPeriod$json],
+  '4': [
+    PersistenceConfig_PersistenceMode$json,
+    PersistenceConfig_SnapshotPeriod$json
+  ],
 };
 
 @$core.Deprecated('Use persistenceConfigDescriptor instead')
@@ -261,10 +451,31 @@ final $typed_data.Uint8List persistenceConfigDescriptor = $convert.base64Decode(
 const MaintenancePolicy$json = {
   '1': 'MaintenancePolicy',
   '2': [
-    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {
+      '1': 'create_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'weekly_maintenance_window', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.redis.v1.WeeklyMaintenanceWindow', '10': 'weeklyMaintenanceWindow'},
+    {
+      '1': 'weekly_maintenance_window',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.redis.v1.WeeklyMaintenanceWindow',
+      '10': 'weeklyMaintenanceWindow'
+    },
   ],
 };
 
@@ -281,9 +492,30 @@ final $typed_data.Uint8List maintenancePolicyDescriptor = $convert.base64Decode(
 const WeeklyMaintenanceWindow$json = {
   '1': 'WeeklyMaintenanceWindow',
   '2': [
-    {'1': 'day', '3': 1, '4': 1, '5': 14, '6': '.google.type.DayOfWeek', '10': 'day'},
-    {'1': 'start_time', '3': 2, '4': 1, '5': 11, '6': '.google.type.TimeOfDay', '10': 'startTime'},
-    {'1': 'duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'duration'},
+    {
+      '1': 'day',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.type.DayOfWeek',
+      '10': 'day'
+    },
+    {
+      '1': 'start_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.type.TimeOfDay',
+      '10': 'startTime'
+    },
+    {
+      '1': 'duration',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'duration'
+    },
   ],
 };
 
@@ -298,10 +530,31 @@ final $typed_data.Uint8List weeklyMaintenanceWindowDescriptor = $convert.base64D
 const MaintenanceSchedule$json = {
   '1': 'MaintenanceSchedule',
   '2': [
-    {'1': 'start_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
-    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {
+      '1': 'start_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'startTime'
+    },
+    {
+      '1': 'end_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'endTime'
+    },
     {'1': 'can_reschedule', '3': 3, '4': 1, '5': 8, '10': 'canReschedule'},
-    {'1': 'schedule_deadline_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'scheduleDeadlineTime'},
+    {
+      '1': 'schedule_deadline_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'scheduleDeadlineTime'
+    },
   ],
 };
 
@@ -318,8 +571,22 @@ const TlsCertificate$json = {
   '1': 'TlsCertificate',
   '2': [
     {'1': 'serial_number', '3': 1, '4': 1, '5': 9, '10': 'serialNumber'},
-    {'1': 'create_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'expire_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expireTime'},
+    {
+      '1': 'create_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'expire_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expireTime'
+    },
     {'1': 'sha1_fingerprint', '3': 5, '4': 1, '5': 9, '10': 'sha1Fingerprint'},
   ],
 };
@@ -335,7 +602,16 @@ final $typed_data.Uint8List tlsCertificateDescriptor = $convert.base64Decode(
 const InstanceEventData$json = {
   '1': 'InstanceEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.redis.v1.Instance', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.redis.v1.Instance',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -346,4 +622,3 @@ const InstanceEventData$json = {
 final $typed_data.Uint8List instanceEventDataDescriptor = $convert.base64Decode(
     'ChFJbnN0YW5jZUV2ZW50RGF0YRJFCgdwYXlsb2FkGAEgASgLMiYuZ29vZ2xlLmV2ZW50cy5jbG'
     '91ZC5yZWRpcy52MS5JbnN0YW5jZUgAUgdwYXlsb2FkiAEBQgoKCF9wYXlsb2Fk');
-

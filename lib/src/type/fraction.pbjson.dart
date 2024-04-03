@@ -26,4 +26,3 @@ const Fraction$json = {
 final $typed_data.Uint8List fractionDescriptor = $convert.base64Decode(
     'CghGcmFjdGlvbhIcCgludW1lcmF0b3IYASABKANSCW51bWVyYXRvchIgCgtkZW5vbWluYXRvch'
     'gCIAEoA1ILZGVub21pbmF0b3I=');
-

@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const ConnectionProfileCreatedEvent$json = {
   '1': 'ConnectionProfileCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.ConnectionProfileEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.ConnectionProfileEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +40,14 @@ final $typed_data.Uint8List connectionProfileCreatedEventDescriptor = $convert.b
 const ConnectionProfileUpdatedEvent$json = {
   '1': 'ConnectionProfileUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.ConnectionProfileEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.ConnectionProfileEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -49,7 +63,14 @@ final $typed_data.Uint8List connectionProfileUpdatedEventDescriptor = $convert.b
 const ConnectionProfileDeletedEvent$json = {
   '1': 'ConnectionProfileDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.ConnectionProfileEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.ConnectionProfileEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -65,7 +86,14 @@ final $typed_data.Uint8List connectionProfileDeletedEventDescriptor = $convert.b
 const StreamCreatedEvent$json = {
   '1': 'StreamCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.StreamEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.StreamEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -80,7 +108,14 @@ final $typed_data.Uint8List streamCreatedEventDescriptor = $convert.base64Decode
 const StreamUpdatedEvent$json = {
   '1': 'StreamUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.StreamEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.StreamEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -95,7 +130,14 @@ final $typed_data.Uint8List streamUpdatedEventDescriptor = $convert.base64Decode
 const StreamDeletedEvent$json = {
   '1': 'StreamDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.StreamEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.StreamEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -110,7 +152,14 @@ final $typed_data.Uint8List streamDeletedEventDescriptor = $convert.base64Decode
 const PrivateConnectionCreatedEvent$json = {
   '1': 'PrivateConnectionCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.PrivateConnectionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PrivateConnectionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -126,7 +175,14 @@ final $typed_data.Uint8List privateConnectionCreatedEventDescriptor = $convert.b
 const PrivateConnectionDeletedEvent$json = {
   '1': 'PrivateConnectionDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.PrivateConnectionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.PrivateConnectionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -142,7 +198,14 @@ final $typed_data.Uint8List privateConnectionDeletedEventDescriptor = $convert.b
 const RouteCreatedEvent$json = {
   '1': 'RouteCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.RouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.RouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -158,7 +221,14 @@ final $typed_data.Uint8List routeCreatedEventDescriptor = $convert.base64Decode(
 const RouteDeletedEvent$json = {
   '1': 'RouteDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.datastream.v1.RouteEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.datastream.v1.RouteEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -169,4 +239,3 @@ final $typed_data.Uint8List routeDeletedEventDescriptor = $convert.base64Decode(
     '5kYXRhc3RyZWFtLnYxLlJvdXRlRXZlbnREYXRhUgRkYXRhOk2y+NgsKGdvb2dsZS5jbG91ZC5k'
     'YXRhc3RyZWFtLnJvdXRlLnYxLmRlbGV0ZWTK+NgsEXByaXZhdGVjb25uZWN0aW9uyvjYLAVyb3'
     'V0ZQ==');
-

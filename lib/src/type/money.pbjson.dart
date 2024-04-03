@@ -27,4 +27,3 @@ const Money$json = {
 final $typed_data.Uint8List moneyDescriptor = $convert.base64Decode(
     'CgVNb25leRIjCg1jdXJyZW5jeV9jb2RlGAEgASgJUgxjdXJyZW5jeUNvZGUSFAoFdW5pdHMYAi'
     'ABKANSBXVuaXRzEhQKBW5hbm9zGAMgASgFUgVuYW5vcw==');
-

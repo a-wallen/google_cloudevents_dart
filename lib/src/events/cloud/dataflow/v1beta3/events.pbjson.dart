@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const JobStatusChangedEvent$json = {
   '1': 'JobStatusChangedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.dataflow.v1beta3.JobEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.dataflow.v1beta3.JobEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -27,4 +34,3 @@ final $typed_data.Uint8List jobStatusChangedEventDescriptor = $convert.base64Dec
     'ChVKb2JTdGF0dXNDaGFuZ2VkRXZlbnQSRgoEZGF0YRgBIAEoCzIyLmdvb2dsZS5ldmVudHMuY2'
     'xvdWQuZGF0YWZsb3cudjFiZXRhMy5Kb2JFdmVudERhdGFSBGRhdGE6PLL42CwvZ29vZ2xlLmNs'
     'b3VkLmRhdGFmbG93LmpvYi52MWJldGEzLnN0YXR1c0NoYW5nZWTK+NgsA2pvYg==');
-

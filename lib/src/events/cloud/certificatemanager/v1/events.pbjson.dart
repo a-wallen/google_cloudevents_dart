@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const CertificateCreatedEvent$json = {
   '1': 'CertificateCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.certificatemanager.v1.CertificateEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +40,14 @@ final $typed_data.Uint8List certificateCreatedEventDescriptor = $convert.base64D
 const CertificateUpdatedEvent$json = {
   '1': 'CertificateUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.certificatemanager.v1.CertificateEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -49,7 +63,14 @@ final $typed_data.Uint8List certificateUpdatedEventDescriptor = $convert.base64D
 const CertificateDeletedEvent$json = {
   '1': 'CertificateDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.certificatemanager.v1.CertificateEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -65,7 +86,14 @@ final $typed_data.Uint8List certificateDeletedEventDescriptor = $convert.base64D
 const CertificateMapCreatedEvent$json = {
   '1': 'CertificateMapCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -81,7 +109,14 @@ final $typed_data.Uint8List certificateMapCreatedEventDescriptor = $convert.base
 const CertificateMapUpdatedEvent$json = {
   '1': 'CertificateMapUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -97,7 +132,14 @@ final $typed_data.Uint8List certificateMapUpdatedEventDescriptor = $convert.base
 const CertificateMapDeletedEvent$json = {
   '1': 'CertificateMapDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -113,7 +155,15 @@ final $typed_data.Uint8List certificateMapDeletedEventDescriptor = $convert.base
 const CertificateMapEntryCreatedEvent$json = {
   '1': 'CertificateMapEntryCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEntryEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateMapEntryEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -130,7 +180,15 @@ final $typed_data.Uint8List certificateMapEntryCreatedEventDescriptor = $convert
 const CertificateMapEntryUpdatedEvent$json = {
   '1': 'CertificateMapEntryUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEntryEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateMapEntryEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -147,7 +205,15 @@ final $typed_data.Uint8List certificateMapEntryUpdatedEventDescriptor = $convert
 const CertificateMapEntryDeletedEvent$json = {
   '1': 'CertificateMapEntryDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEntryEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateMapEntryEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -164,7 +230,15 @@ final $typed_data.Uint8List certificateMapEntryDeletedEventDescriptor = $convert
 const DnsAuthorizationCreatedEvent$json = {
   '1': 'DnsAuthorizationCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.DnsAuthorizationEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.DnsAuthorizationEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -180,7 +254,15 @@ final $typed_data.Uint8List dnsAuthorizationCreatedEventDescriptor = $convert.ba
 const DnsAuthorizationUpdatedEvent$json = {
   '1': 'DnsAuthorizationUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.DnsAuthorizationEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.DnsAuthorizationEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -196,7 +278,15 @@ final $typed_data.Uint8List dnsAuthorizationUpdatedEventDescriptor = $convert.ba
 const DnsAuthorizationDeletedEvent$json = {
   '1': 'DnsAuthorizationDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.DnsAuthorizationEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.DnsAuthorizationEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -212,33 +302,50 @@ final $typed_data.Uint8List dnsAuthorizationDeletedEventDescriptor = $convert.ba
 const CertificateIssuanceConfigCreatedEvent$json = {
   '1': 'CertificateIssuanceConfigCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfigEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfigEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `CertificateIssuanceConfigCreatedEvent`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List certificateIssuanceConfigCreatedEventDescriptor = $convert.base64Decode(
-    'CiVDZXJ0aWZpY2F0ZUlzc3VhbmNlQ29uZmlnQ3JlYXRlZEV2ZW50EmEKBGRhdGEYASABKAsyTS'
-    '5nb29nbGUuZXZlbnRzLmNsb3VkLmNlcnRpZmljYXRlbWFuYWdlci52MS5DZXJ0aWZpY2F0ZUlz'
-    'c3VhbmNlQ29uZmlnRXZlbnREYXRhUgRkYXRhOmey+NgsRGdvb2dsZS5jbG91ZC5jZXJ0aWZpY2'
-    'F0ZW1hbmFnZXIuY2VydGlmaWNhdGVJc3N1YW5jZUNvbmZpZy52MS5jcmVhdGVkyvjYLBljZXJ0'
-    'aWZpY2F0ZWlzc3VhbmNlY29uZmln');
+final $typed_data.Uint8List certificateIssuanceConfigCreatedEventDescriptor =
+    $convert.base64Decode(
+        'CiVDZXJ0aWZpY2F0ZUlzc3VhbmNlQ29uZmlnQ3JlYXRlZEV2ZW50EmEKBGRhdGEYASABKAsyTS'
+        '5nb29nbGUuZXZlbnRzLmNsb3VkLmNlcnRpZmljYXRlbWFuYWdlci52MS5DZXJ0aWZpY2F0ZUlz'
+        'c3VhbmNlQ29uZmlnRXZlbnREYXRhUgRkYXRhOmey+NgsRGdvb2dsZS5jbG91ZC5jZXJ0aWZpY2'
+        'F0ZW1hbmFnZXIuY2VydGlmaWNhdGVJc3N1YW5jZUNvbmZpZy52MS5jcmVhdGVkyvjYLBljZXJ0'
+        'aWZpY2F0ZWlzc3VhbmNlY29uZmln');
 
 @$core.Deprecated('Use certificateIssuanceConfigDeletedEventDescriptor instead')
 const CertificateIssuanceConfigDeletedEvent$json = {
   '1': 'CertificateIssuanceConfigDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfigEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfigEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `CertificateIssuanceConfigDeletedEvent`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List certificateIssuanceConfigDeletedEventDescriptor = $convert.base64Decode(
-    'CiVDZXJ0aWZpY2F0ZUlzc3VhbmNlQ29uZmlnRGVsZXRlZEV2ZW50EmEKBGRhdGEYASABKAsyTS'
-    '5nb29nbGUuZXZlbnRzLmNsb3VkLmNlcnRpZmljYXRlbWFuYWdlci52MS5DZXJ0aWZpY2F0ZUlz'
-    'c3VhbmNlQ29uZmlnRXZlbnREYXRhUgRkYXRhOmey+NgsRGdvb2dsZS5jbG91ZC5jZXJ0aWZpY2'
-    'F0ZW1hbmFnZXIuY2VydGlmaWNhdGVJc3N1YW5jZUNvbmZpZy52MS5kZWxldGVkyvjYLBljZXJ0'
-    'aWZpY2F0ZWlzc3VhbmNlY29uZmln');
-
+final $typed_data.Uint8List certificateIssuanceConfigDeletedEventDescriptor =
+    $convert.base64Decode(
+        'CiVDZXJ0aWZpY2F0ZUlzc3VhbmNlQ29uZmlnRGVsZXRlZEV2ZW50EmEKBGRhdGEYASABKAsyTS'
+        '5nb29nbGUuZXZlbnRzLmNsb3VkLmNlcnRpZmljYXRlbWFuYWdlci52MS5DZXJ0aWZpY2F0ZUlz'
+        'c3VhbmNlQ29uZmlnRXZlbnREYXRhUgRkYXRhOmey+NgsRGdvb2dsZS5jbG91ZC5jZXJ0aWZpY2'
+        'F0ZW1hbmFnZXIuY2VydGlmaWNhdGVJc3N1YW5jZUNvbmZpZy52MS5kZWxldGVkyvjYLBljZXJ0'
+        'aWZpY2F0ZWlzc3VhbmNlY29uZmln');

@@ -27,40 +27,53 @@ class GatewayCreatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   GatewayCreatedEvent._() : super();
-  factory GatewayCreatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GatewayCreatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GatewayCreatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GatewayCreatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GatewayCreatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'), createEmptyInstance: create)
-    ..aOM<$56.GatewayEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $56.GatewayEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GatewayCreatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'),
+      createEmptyInstance: create)
+    ..aOM<$56.GatewayEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $56.GatewayEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GatewayCreatedEvent clone() => GatewayCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GatewayCreatedEvent copyWith(void Function(GatewayCreatedEvent) updates) => super.copyWith((message) => updates(message as GatewayCreatedEvent)) as GatewayCreatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GatewayCreatedEvent copyWith(void Function(GatewayCreatedEvent) updates) =>
+      super.copyWith((message) => updates(message as GatewayCreatedEvent))
+          as GatewayCreatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GatewayCreatedEvent create() => GatewayCreatedEvent._();
   GatewayCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<GatewayCreatedEvent> createRepeated() => $pb.PbList<GatewayCreatedEvent>();
+  static $pb.PbList<GatewayCreatedEvent> createRepeated() =>
+      $pb.PbList<GatewayCreatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static GatewayCreatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GatewayCreatedEvent>(create);
+  static GatewayCreatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GatewayCreatedEvent>(create);
   static GatewayCreatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $56.GatewayEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($56.GatewayEventData v) { setField(1, v); }
+  set data($56.GatewayEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -81,40 +94,53 @@ class GatewayUpdatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   GatewayUpdatedEvent._() : super();
-  factory GatewayUpdatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GatewayUpdatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GatewayUpdatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GatewayUpdatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GatewayUpdatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'), createEmptyInstance: create)
-    ..aOM<$56.GatewayEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $56.GatewayEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GatewayUpdatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'),
+      createEmptyInstance: create)
+    ..aOM<$56.GatewayEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $56.GatewayEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GatewayUpdatedEvent clone() => GatewayUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GatewayUpdatedEvent copyWith(void Function(GatewayUpdatedEvent) updates) => super.copyWith((message) => updates(message as GatewayUpdatedEvent)) as GatewayUpdatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GatewayUpdatedEvent copyWith(void Function(GatewayUpdatedEvent) updates) =>
+      super.copyWith((message) => updates(message as GatewayUpdatedEvent))
+          as GatewayUpdatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GatewayUpdatedEvent create() => GatewayUpdatedEvent._();
   GatewayUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<GatewayUpdatedEvent> createRepeated() => $pb.PbList<GatewayUpdatedEvent>();
+  static $pb.PbList<GatewayUpdatedEvent> createRepeated() =>
+      $pb.PbList<GatewayUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static GatewayUpdatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GatewayUpdatedEvent>(create);
+  static GatewayUpdatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GatewayUpdatedEvent>(create);
   static GatewayUpdatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $56.GatewayEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($56.GatewayEventData v) { setField(1, v); }
+  set data($56.GatewayEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -135,40 +161,53 @@ class GatewayDeletedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   GatewayDeletedEvent._() : super();
-  factory GatewayDeletedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GatewayDeletedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory GatewayDeletedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GatewayDeletedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GatewayDeletedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'), createEmptyInstance: create)
-    ..aOM<$56.GatewayEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $56.GatewayEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GatewayDeletedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'),
+      createEmptyInstance: create)
+    ..aOM<$56.GatewayEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $56.GatewayEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   GatewayDeletedEvent clone() => GatewayDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GatewayDeletedEvent copyWith(void Function(GatewayDeletedEvent) updates) => super.copyWith((message) => updates(message as GatewayDeletedEvent)) as GatewayDeletedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GatewayDeletedEvent copyWith(void Function(GatewayDeletedEvent) updates) =>
+      super.copyWith((message) => updates(message as GatewayDeletedEvent))
+          as GatewayDeletedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static GatewayDeletedEvent create() => GatewayDeletedEvent._();
   GatewayDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<GatewayDeletedEvent> createRepeated() => $pb.PbList<GatewayDeletedEvent>();
+  static $pb.PbList<GatewayDeletedEvent> createRepeated() =>
+      $pb.PbList<GatewayDeletedEvent>();
   @$core.pragma('dart2js:noInline')
-  static GatewayDeletedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GatewayDeletedEvent>(create);
+  static GatewayDeletedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GatewayDeletedEvent>(create);
   static GatewayDeletedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $56.GatewayEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($56.GatewayEventData v) { setField(1, v); }
+  set data($56.GatewayEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -189,40 +228,53 @@ class ApiCreatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   ApiCreatedEvent._() : super();
-  factory ApiCreatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ApiCreatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ApiCreatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ApiCreatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApiCreatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'), createEmptyInstance: create)
-    ..aOM<$56.ApiEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $56.ApiEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ApiCreatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'),
+      createEmptyInstance: create)
+    ..aOM<$56.ApiEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $56.ApiEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ApiCreatedEvent clone() => ApiCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ApiCreatedEvent copyWith(void Function(ApiCreatedEvent) updates) => super.copyWith((message) => updates(message as ApiCreatedEvent)) as ApiCreatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ApiCreatedEvent copyWith(void Function(ApiCreatedEvent) updates) =>
+      super.copyWith((message) => updates(message as ApiCreatedEvent))
+          as ApiCreatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiCreatedEvent create() => ApiCreatedEvent._();
   ApiCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ApiCreatedEvent> createRepeated() => $pb.PbList<ApiCreatedEvent>();
+  static $pb.PbList<ApiCreatedEvent> createRepeated() =>
+      $pb.PbList<ApiCreatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static ApiCreatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ApiCreatedEvent>(create);
+  static ApiCreatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ApiCreatedEvent>(create);
   static ApiCreatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $56.ApiEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($56.ApiEventData v) { setField(1, v); }
+  set data($56.ApiEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -243,40 +295,53 @@ class ApiUpdatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   ApiUpdatedEvent._() : super();
-  factory ApiUpdatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ApiUpdatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ApiUpdatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ApiUpdatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApiUpdatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'), createEmptyInstance: create)
-    ..aOM<$56.ApiEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $56.ApiEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ApiUpdatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'),
+      createEmptyInstance: create)
+    ..aOM<$56.ApiEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $56.ApiEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ApiUpdatedEvent clone() => ApiUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ApiUpdatedEvent copyWith(void Function(ApiUpdatedEvent) updates) => super.copyWith((message) => updates(message as ApiUpdatedEvent)) as ApiUpdatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ApiUpdatedEvent copyWith(void Function(ApiUpdatedEvent) updates) =>
+      super.copyWith((message) => updates(message as ApiUpdatedEvent))
+          as ApiUpdatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiUpdatedEvent create() => ApiUpdatedEvent._();
   ApiUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ApiUpdatedEvent> createRepeated() => $pb.PbList<ApiUpdatedEvent>();
+  static $pb.PbList<ApiUpdatedEvent> createRepeated() =>
+      $pb.PbList<ApiUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static ApiUpdatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ApiUpdatedEvent>(create);
+  static ApiUpdatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ApiUpdatedEvent>(create);
   static ApiUpdatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $56.ApiEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($56.ApiEventData v) { setField(1, v); }
+  set data($56.ApiEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -297,40 +362,53 @@ class ApiDeletedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   ApiDeletedEvent._() : super();
-  factory ApiDeletedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ApiDeletedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ApiDeletedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ApiDeletedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApiDeletedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'), createEmptyInstance: create)
-    ..aOM<$56.ApiEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $56.ApiEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ApiDeletedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'),
+      createEmptyInstance: create)
+    ..aOM<$56.ApiEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $56.ApiEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ApiDeletedEvent clone() => ApiDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ApiDeletedEvent copyWith(void Function(ApiDeletedEvent) updates) => super.copyWith((message) => updates(message as ApiDeletedEvent)) as ApiDeletedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ApiDeletedEvent copyWith(void Function(ApiDeletedEvent) updates) =>
+      super.copyWith((message) => updates(message as ApiDeletedEvent))
+          as ApiDeletedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiDeletedEvent create() => ApiDeletedEvent._();
   ApiDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<ApiDeletedEvent> createRepeated() => $pb.PbList<ApiDeletedEvent>();
+  static $pb.PbList<ApiDeletedEvent> createRepeated() =>
+      $pb.PbList<ApiDeletedEvent>();
   @$core.pragma('dart2js:noInline')
-  static ApiDeletedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ApiDeletedEvent>(create);
+  static ApiDeletedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ApiDeletedEvent>(create);
   static ApiDeletedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $56.ApiEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($56.ApiEventData v) { setField(1, v); }
+  set data($56.ApiEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -351,40 +429,55 @@ class ApiConfigCreatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   ApiConfigCreatedEvent._() : super();
-  factory ApiConfigCreatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ApiConfigCreatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ApiConfigCreatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ApiConfigCreatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApiConfigCreatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'), createEmptyInstance: create)
-    ..aOM<$56.ApiConfigEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $56.ApiConfigEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ApiConfigCreatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'),
+      createEmptyInstance: create)
+    ..aOM<$56.ApiConfigEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $56.ApiConfigEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ApiConfigCreatedEvent clone() => ApiConfigCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ApiConfigCreatedEvent copyWith(void Function(ApiConfigCreatedEvent) updates) => super.copyWith((message) => updates(message as ApiConfigCreatedEvent)) as ApiConfigCreatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ApiConfigCreatedEvent clone() =>
+      ApiConfigCreatedEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ApiConfigCreatedEvent copyWith(
+          void Function(ApiConfigCreatedEvent) updates) =>
+      super.copyWith((message) => updates(message as ApiConfigCreatedEvent))
+          as ApiConfigCreatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiConfigCreatedEvent create() => ApiConfigCreatedEvent._();
   ApiConfigCreatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ApiConfigCreatedEvent> createRepeated() => $pb.PbList<ApiConfigCreatedEvent>();
+  static $pb.PbList<ApiConfigCreatedEvent> createRepeated() =>
+      $pb.PbList<ApiConfigCreatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static ApiConfigCreatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ApiConfigCreatedEvent>(create);
+  static ApiConfigCreatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ApiConfigCreatedEvent>(create);
   static ApiConfigCreatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $56.ApiConfigEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($56.ApiConfigEventData v) { setField(1, v); }
+  set data($56.ApiConfigEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -405,40 +498,55 @@ class ApiConfigUpdatedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   ApiConfigUpdatedEvent._() : super();
-  factory ApiConfigUpdatedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ApiConfigUpdatedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ApiConfigUpdatedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ApiConfigUpdatedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApiConfigUpdatedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'), createEmptyInstance: create)
-    ..aOM<$56.ApiConfigEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $56.ApiConfigEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ApiConfigUpdatedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'),
+      createEmptyInstance: create)
+    ..aOM<$56.ApiConfigEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $56.ApiConfigEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ApiConfigUpdatedEvent clone() => ApiConfigUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ApiConfigUpdatedEvent copyWith(void Function(ApiConfigUpdatedEvent) updates) => super.copyWith((message) => updates(message as ApiConfigUpdatedEvent)) as ApiConfigUpdatedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ApiConfigUpdatedEvent clone() =>
+      ApiConfigUpdatedEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ApiConfigUpdatedEvent copyWith(
+          void Function(ApiConfigUpdatedEvent) updates) =>
+      super.copyWith((message) => updates(message as ApiConfigUpdatedEvent))
+          as ApiConfigUpdatedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiConfigUpdatedEvent create() => ApiConfigUpdatedEvent._();
   ApiConfigUpdatedEvent createEmptyInstance() => create();
-  static $pb.PbList<ApiConfigUpdatedEvent> createRepeated() => $pb.PbList<ApiConfigUpdatedEvent>();
+  static $pb.PbList<ApiConfigUpdatedEvent> createRepeated() =>
+      $pb.PbList<ApiConfigUpdatedEvent>();
   @$core.pragma('dart2js:noInline')
-  static ApiConfigUpdatedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ApiConfigUpdatedEvent>(create);
+  static ApiConfigUpdatedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ApiConfigUpdatedEvent>(create);
   static ApiConfigUpdatedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $56.ApiConfigEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($56.ApiConfigEventData v) { setField(1, v); }
+  set data($56.ApiConfigEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -459,40 +567,55 @@ class ApiConfigDeletedEvent extends $pb.GeneratedMessage {
     return $result;
   }
   ApiConfigDeletedEvent._() : super();
-  factory ApiConfigDeletedEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ApiConfigDeletedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ApiConfigDeletedEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ApiConfigDeletedEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApiConfigDeletedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'), createEmptyInstance: create)
-    ..aOM<$56.ApiConfigEventData>(1, _omitFieldNames ? '' : 'data', subBuilder: $56.ApiConfigEventData.create)
-    ..hasRequiredFields = false
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ApiConfigDeletedEvent',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.events.cloud.apigateway.v1'),
+      createEmptyInstance: create)
+    ..aOM<$56.ApiConfigEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $56.ApiConfigEventData.create)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ApiConfigDeletedEvent clone() => ApiConfigDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ApiConfigDeletedEvent copyWith(void Function(ApiConfigDeletedEvent) updates) => super.copyWith((message) => updates(message as ApiConfigDeletedEvent)) as ApiConfigDeletedEvent;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ApiConfigDeletedEvent clone() =>
+      ApiConfigDeletedEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ApiConfigDeletedEvent copyWith(
+          void Function(ApiConfigDeletedEvent) updates) =>
+      super.copyWith((message) => updates(message as ApiConfigDeletedEvent))
+          as ApiConfigDeletedEvent;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ApiConfigDeletedEvent create() => ApiConfigDeletedEvent._();
   ApiConfigDeletedEvent createEmptyInstance() => create();
-  static $pb.PbList<ApiConfigDeletedEvent> createRepeated() => $pb.PbList<ApiConfigDeletedEvent>();
+  static $pb.PbList<ApiConfigDeletedEvent> createRepeated() =>
+      $pb.PbList<ApiConfigDeletedEvent>();
   @$core.pragma('dart2js:noInline')
-  static ApiConfigDeletedEvent getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ApiConfigDeletedEvent>(create);
+  static ApiConfigDeletedEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ApiConfigDeletedEvent>(create);
   static ApiConfigDeletedEvent? _defaultInstance;
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
   $56.ApiConfigEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($56.ApiConfigEventData v) { setField(1, v); }
+  set data($56.ApiConfigEventData v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
@@ -501,6 +624,6 @@ class ApiConfigDeletedEvent extends $pb.GeneratedMessage {
   $56.ApiConfigEventData ensureData() => $_ensure(0);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

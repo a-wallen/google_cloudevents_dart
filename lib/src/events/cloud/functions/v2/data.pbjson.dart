@@ -33,15 +33,71 @@ const Function_$json = {
   '1': 'Function',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'environment', '3': 10, '4': 1, '5': 14, '6': '.google.events.cloud.functions.v2.Environment', '10': 'environment'},
+    {
+      '1': 'environment',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.functions.v2.Environment',
+      '10': 'environment'
+    },
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'build_config', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.BuildConfig', '10': 'buildConfig'},
-    {'1': 'service_config', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.ServiceConfig', '10': 'serviceConfig'},
-    {'1': 'event_trigger', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.EventTrigger', '10': 'eventTrigger'},
-    {'1': 'state', '3': 6, '4': 1, '5': 14, '6': '.google.events.cloud.functions.v2.Function.State', '10': 'state'},
-    {'1': 'update_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 8, '4': 3, '5': 11, '6': '.google.events.cloud.functions.v2.Function.LabelsEntry', '10': 'labels'},
-    {'1': 'state_messages', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.functions.v2.StateMessage', '10': 'stateMessages'},
+    {
+      '1': 'build_config',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.BuildConfig',
+      '10': 'buildConfig'
+    },
+    {
+      '1': 'service_config',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.ServiceConfig',
+      '10': 'serviceConfig'
+    },
+    {
+      '1': 'event_trigger',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.EventTrigger',
+      '10': 'eventTrigger'
+    },
+    {
+      '1': 'state',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.functions.v2.Function.State',
+      '10': 'state'
+    },
+    {
+      '1': 'update_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.Function.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'state_messages',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.StateMessage',
+      '10': 'stateMessages'
+    },
   ],
   '3': [Function__LabelsEntry$json],
   '4': [Function__State$json],
@@ -93,7 +149,14 @@ final $typed_data.Uint8List function_Descriptor = $convert.base64Decode(
 const StateMessage$json = {
   '1': 'StateMessage',
   '2': [
-    {'1': 'severity', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.functions.v2.StateMessage.Severity', '10': 'severity'},
+    {
+      '1': 'severity',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.functions.v2.StateMessage.Severity',
+      '10': 'severity'
+    },
     {'1': 'type', '3': 2, '4': 1, '5': 9, '10': 'type'},
     {'1': 'message', '3': 3, '4': 1, '5': 9, '10': 'message'},
   ],
@@ -162,8 +225,24 @@ final $typed_data.Uint8List repoSourceDescriptor = $convert.base64Decode(
 const Source$json = {
   '1': 'Source',
   '2': [
-    {'1': 'storage_source', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.StorageSource', '9': 0, '10': 'storageSource'},
-    {'1': 'repo_source', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.RepoSource', '9': 0, '10': 'repoSource'},
+    {
+      '1': 'storage_source',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.StorageSource',
+      '9': 0,
+      '10': 'storageSource'
+    },
+    {
+      '1': 'repo_source',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.RepoSource',
+      '9': 0,
+      '10': 'repoSource'
+    },
   ],
   '8': [
     {'1': 'source'},
@@ -181,8 +260,22 @@ final $typed_data.Uint8List sourceDescriptor = $convert.base64Decode(
 const SourceProvenance$json = {
   '1': 'SourceProvenance',
   '2': [
-    {'1': 'resolved_storage_source', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.StorageSource', '10': 'resolvedStorageSource'},
-    {'1': 'resolved_repo_source', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.RepoSource', '10': 'resolvedRepoSource'},
+    {
+      '1': 'resolved_storage_source',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.StorageSource',
+      '10': 'resolvedStorageSource'
+    },
+    {
+      '1': 'resolved_repo_source',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.RepoSource',
+      '10': 'resolvedRepoSource'
+    },
   ],
 };
 
@@ -200,12 +293,47 @@ const BuildConfig$json = {
     {'1': 'build', '3': 1, '4': 1, '5': 9, '10': 'build'},
     {'1': 'runtime', '3': 2, '4': 1, '5': 9, '10': 'runtime'},
     {'1': 'entry_point', '3': 3, '4': 1, '5': 9, '10': 'entryPoint'},
-    {'1': 'source', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.Source', '10': 'source'},
-    {'1': 'source_provenance', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.SourceProvenance', '10': 'sourceProvenance'},
+    {
+      '1': 'source',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.Source',
+      '10': 'source'
+    },
+    {
+      '1': 'source_provenance',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.SourceProvenance',
+      '10': 'sourceProvenance'
+    },
     {'1': 'worker_pool', '3': 5, '4': 1, '5': 9, '10': 'workerPool'},
-    {'1': 'environment_variables', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.functions.v2.BuildConfig.EnvironmentVariablesEntry', '10': 'environmentVariables'},
-    {'1': 'docker_registry', '3': 10, '4': 1, '5': 14, '6': '.google.events.cloud.functions.v2.BuildConfig.DockerRegistry', '10': 'dockerRegistry'},
-    {'1': 'docker_repository', '3': 7, '4': 1, '5': 9, '10': 'dockerRepository'},
+    {
+      '1': 'environment_variables',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.functions.v2.BuildConfig.EnvironmentVariablesEntry',
+      '10': 'environmentVariables'
+    },
+    {
+      '1': 'docker_registry',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.functions.v2.BuildConfig.DockerRegistry',
+      '10': 'dockerRegistry'
+    },
+    {
+      '1': 'docker_repository',
+      '3': 7,
+      '4': 1,
+      '5': 9,
+      '10': 'dockerRepository'
+    },
     {'1': 'buildpack_stack', '3': 9, '4': 1, '5': 9, '10': 'buildpackStack'},
   ],
   '3': [BuildConfig_EnvironmentVariablesEntry$json],
@@ -257,23 +385,101 @@ const ServiceConfig$json = {
     {'1': 'timeout_seconds', '3': 2, '4': 1, '5': 5, '10': 'timeoutSeconds'},
     {'1': 'available_memory', '3': 13, '4': 1, '5': 9, '10': 'availableMemory'},
     {'1': 'available_cpu', '3': 22, '4': 1, '5': 9, '10': 'availableCpu'},
-    {'1': 'environment_variables', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.functions.v2.ServiceConfig.EnvironmentVariablesEntry', '10': 'environmentVariables'},
-    {'1': 'max_instance_count', '3': 5, '4': 1, '5': 5, '10': 'maxInstanceCount'},
-    {'1': 'min_instance_count', '3': 12, '4': 1, '5': 5, '10': 'minInstanceCount'},
+    {
+      '1': 'environment_variables',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.functions.v2.ServiceConfig.EnvironmentVariablesEntry',
+      '10': 'environmentVariables'
+    },
+    {
+      '1': 'max_instance_count',
+      '3': 5,
+      '4': 1,
+      '5': 5,
+      '10': 'maxInstanceCount'
+    },
+    {
+      '1': 'min_instance_count',
+      '3': 12,
+      '4': 1,
+      '5': 5,
+      '10': 'minInstanceCount'
+    },
     {'1': 'vpc_connector', '3': 6, '4': 1, '5': 9, '10': 'vpcConnector'},
-    {'1': 'vpc_connector_egress_settings', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.functions.v2.ServiceConfig.VpcConnectorEgressSettings', '10': 'vpcConnectorEgressSettings'},
-    {'1': 'ingress_settings', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.functions.v2.ServiceConfig.IngressSettings', '10': 'ingressSettings'},
+    {
+      '1': 'vpc_connector_egress_settings',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.functions.v2.ServiceConfig.VpcConnectorEgressSettings',
+      '10': 'vpcConnectorEgressSettings'
+    },
+    {
+      '1': 'ingress_settings',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.functions.v2.ServiceConfig.IngressSettings',
+      '10': 'ingressSettings'
+    },
     {'1': 'uri', '3': 9, '4': 1, '5': 9, '10': 'uri'},
-    {'1': 'service_account_email', '3': 10, '4': 1, '5': 9, '10': 'serviceAccountEmail'},
-    {'1': 'all_traffic_on_latest_revision', '3': 16, '4': 1, '5': 8, '10': 'allTrafficOnLatestRevision'},
-    {'1': 'secret_environment_variables', '3': 17, '4': 3, '5': 11, '6': '.google.events.cloud.functions.v2.SecretEnvVar', '10': 'secretEnvironmentVariables'},
-    {'1': 'secret_volumes', '3': 19, '4': 3, '5': 11, '6': '.google.events.cloud.functions.v2.SecretVolume', '10': 'secretVolumes'},
+    {
+      '1': 'service_account_email',
+      '3': 10,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceAccountEmail'
+    },
+    {
+      '1': 'all_traffic_on_latest_revision',
+      '3': 16,
+      '4': 1,
+      '5': 8,
+      '10': 'allTrafficOnLatestRevision'
+    },
+    {
+      '1': 'secret_environment_variables',
+      '3': 17,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.SecretEnvVar',
+      '10': 'secretEnvironmentVariables'
+    },
+    {
+      '1': 'secret_volumes',
+      '3': 19,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.SecretVolume',
+      '10': 'secretVolumes'
+    },
     {'1': 'revision', '3': 18, '4': 1, '5': 9, '10': 'revision'},
-    {'1': 'max_instance_request_concurrency', '3': 20, '4': 1, '5': 5, '10': 'maxInstanceRequestConcurrency'},
-    {'1': 'security_level', '3': 21, '4': 1, '5': 14, '6': '.google.events.cloud.functions.v2.ServiceConfig.SecurityLevel', '10': 'securityLevel'},
+    {
+      '1': 'max_instance_request_concurrency',
+      '3': 20,
+      '4': 1,
+      '5': 5,
+      '10': 'maxInstanceRequestConcurrency'
+    },
+    {
+      '1': 'security_level',
+      '3': 21,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.functions.v2.ServiceConfig.SecurityLevel',
+      '10': 'securityLevel'
+    },
   ],
   '3': [ServiceConfig_EnvironmentVariablesEntry$json],
-  '4': [ServiceConfig_VpcConnectorEgressSettings$json, ServiceConfig_IngressSettings$json, ServiceConfig_SecurityLevel$json],
+  '4': [
+    ServiceConfig_VpcConnectorEgressSettings$json,
+    ServiceConfig_IngressSettings$json,
+    ServiceConfig_SecurityLevel$json
+  ],
 };
 
 @$core.Deprecated('Use serviceConfigDescriptor instead')
@@ -374,7 +580,14 @@ const SecretVolume$json = {
     {'1': 'mount_path', '3': 1, '4': 1, '5': 9, '10': 'mountPath'},
     {'1': 'project_id', '3': 2, '4': 1, '5': 9, '10': 'projectId'},
     {'1': 'secret', '3': 3, '4': 1, '5': 9, '10': 'secret'},
-    {'1': 'versions', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.functions.v2.SecretVolume.SecretVersion', '10': 'versions'},
+    {
+      '1': 'versions',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.SecretVolume.SecretVersion',
+      '10': 'versions'
+    },
   ],
   '3': [SecretVolume_SecretVersion$json],
 };
@@ -403,10 +616,30 @@ const EventTrigger$json = {
     {'1': 'trigger', '3': 1, '4': 1, '5': 9, '10': 'trigger'},
     {'1': 'trigger_region', '3': 2, '4': 1, '5': 9, '10': 'triggerRegion'},
     {'1': 'event_type', '3': 3, '4': 1, '5': 9, '10': 'eventType'},
-    {'1': 'event_filters', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.functions.v2.EventFilter', '10': 'eventFilters'},
+    {
+      '1': 'event_filters',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.EventFilter',
+      '10': 'eventFilters'
+    },
     {'1': 'pubsub_topic', '3': 5, '4': 1, '5': 9, '10': 'pubsubTopic'},
-    {'1': 'service_account_email', '3': 6, '4': 1, '5': 9, '10': 'serviceAccountEmail'},
-    {'1': 'retry_policy', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.functions.v2.EventTrigger.RetryPolicy', '10': 'retryPolicy'},
+    {
+      '1': 'service_account_email',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceAccountEmail'
+    },
+    {
+      '1': 'retry_policy',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.functions.v2.EventTrigger.RetryPolicy',
+      '10': 'retryPolicy'
+    },
     {'1': 'channel', '3': 8, '4': 1, '5': 9, '10': 'channel'},
   ],
   '4': [EventTrigger_RetryPolicy$json],
@@ -454,7 +687,16 @@ final $typed_data.Uint8List eventFilterDescriptor = $convert.base64Decode(
 const FunctionEventData$json = {
   '1': 'FunctionEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.functions.v2.Function', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.functions.v2.Function',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -465,4 +707,3 @@ const FunctionEventData$json = {
 final $typed_data.Uint8List functionEventDataDescriptor = $convert.base64Decode(
     'ChFGdW5jdGlvbkV2ZW50RGF0YRJJCgdwYXlsb2FkGAEgASgLMiouZ29vZ2xlLmV2ZW50cy5jbG'
     '91ZC5mdW5jdGlvbnMudjIuRnVuY3Rpb25IAFIHcGF5bG9hZIgBAUIKCghfcGF5bG9hZA==');
-

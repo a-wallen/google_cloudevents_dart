@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const RuntimeCreatedEvent$json = {
   '1': 'RuntimeCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.RuntimeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.RuntimeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -32,7 +39,14 @@ final $typed_data.Uint8List runtimeCreatedEventDescriptor = $convert.base64Decod
 const RuntimeUpdatedEvent$json = {
   '1': 'RuntimeUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.RuntimeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.RuntimeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -47,7 +61,14 @@ final $typed_data.Uint8List runtimeUpdatedEventDescriptor = $convert.base64Decod
 const RuntimeDeletedEvent$json = {
   '1': 'RuntimeDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.RuntimeEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.RuntimeEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -62,7 +83,14 @@ final $typed_data.Uint8List runtimeDeletedEventDescriptor = $convert.base64Decod
 const InstanceCreatedEvent$json = {
   '1': 'InstanceCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -77,7 +105,14 @@ final $typed_data.Uint8List instanceCreatedEventDescriptor = $convert.base64Deco
 const InstanceDeletedEvent$json = {
   '1': 'InstanceDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.InstanceEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.InstanceEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -92,7 +127,14 @@ final $typed_data.Uint8List instanceDeletedEventDescriptor = $convert.base64Deco
 const EnvironmentCreatedEvent$json = {
   '1': 'EnvironmentCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.EnvironmentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.EnvironmentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -108,7 +150,14 @@ final $typed_data.Uint8List environmentCreatedEventDescriptor = $convert.base64D
 const EnvironmentDeletedEvent$json = {
   '1': 'EnvironmentDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.EnvironmentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.EnvironmentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -124,7 +173,14 @@ final $typed_data.Uint8List environmentDeletedEventDescriptor = $convert.base64D
 const ScheduleDeletedEvent$json = {
   '1': 'ScheduleDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ScheduleEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ScheduleEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -139,7 +195,14 @@ final $typed_data.Uint8List scheduleDeletedEventDescriptor = $convert.base64Deco
 const ScheduleCreatedEvent$json = {
   '1': 'ScheduleCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ScheduleEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ScheduleEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -154,7 +217,14 @@ final $typed_data.Uint8List scheduleCreatedEventDescriptor = $convert.base64Deco
 const ExecutionDeletedEvent$json = {
   '1': 'ExecutionDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ExecutionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ExecutionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -169,7 +239,14 @@ final $typed_data.Uint8List executionDeletedEventDescriptor = $convert.base64Dec
 const ExecutionCreatedEvent$json = {
   '1': 'ExecutionCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.notebooks.v1.ExecutionEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.notebooks.v1.ExecutionEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -179,4 +256,3 @@ final $typed_data.Uint8List executionCreatedEventDescriptor = $convert.base64Dec
     'ChVFeGVjdXRpb25DcmVhdGVkRXZlbnQSSAoEZGF0YRgBIAEoCzI0Lmdvb2dsZS5ldmVudHMuY2'
     'xvdWQubm90ZWJvb2tzLnYxLkV4ZWN1dGlvbkV2ZW50RGF0YVIEZGF0YTo+svjYLCtnb29nbGUu'
     'Y2xvdWQubm90ZWJvb2tzLmV4ZWN1dGlvbi52MS5jcmVhdGVkyvjYLAlleGVjdXRpb24=');
-

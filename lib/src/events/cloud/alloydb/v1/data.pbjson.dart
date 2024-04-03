@@ -48,7 +48,15 @@ const MigrationSource$json = {
   '2': [
     {'1': 'host_port', '3': 1, '4': 1, '5': 9, '10': 'hostPort'},
     {'1': 'reference_id', '3': 2, '4': 1, '5': 9, '10': 'referenceId'},
-    {'1': 'source_type', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.MigrationSource.MigrationSourceType', '10': 'sourceType'},
+    {
+      '1': 'source_type',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.alloydb.v1.MigrationSource.MigrationSourceType',
+      '10': 'sourceType'
+    },
   ],
   '4': [MigrationSource_MigrationSourceType$json],
 };
@@ -86,7 +94,14 @@ final $typed_data.Uint8List encryptionConfigDescriptor = $convert.base64Decode(
 const EncryptionInfo$json = {
   '1': 'EncryptionInfo',
   '2': [
-    {'1': 'encryption_type', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.EncryptionInfo.Type', '10': 'encryptionType'},
+    {
+      '1': 'encryption_type',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.alloydb.v1.EncryptionInfo.Type',
+      '10': 'encryptionType'
+    },
     {'1': 'kms_key_versions', '3': 2, '4': 3, '5': 9, '10': 'kmsKeyVersions'},
   ],
   '4': [EncryptionInfo_Type$json],
@@ -114,8 +129,22 @@ final $typed_data.Uint8List encryptionInfoDescriptor = $convert.base64Decode(
 const SslConfig$json = {
   '1': 'SslConfig',
   '2': [
-    {'1': 'ssl_mode', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.SslConfig.SslMode', '10': 'sslMode'},
-    {'1': 'ca_source', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.SslConfig.CaSource', '10': 'caSource'},
+    {
+      '1': 'ssl_mode',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.alloydb.v1.SslConfig.SslMode',
+      '10': 'sslMode'
+    },
+    {
+      '1': 'ca_source',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.alloydb.v1.SslConfig.CaSource',
+      '10': 'caSource'
+    },
   ],
   '4': [SslConfig_SslMode$json, SslConfig_CaSource$json],
 };
@@ -154,16 +183,77 @@ final $typed_data.Uint8List sslConfigDescriptor = $convert.base64Decode(
 const AutomatedBackupPolicy$json = {
   '1': 'AutomatedBackupPolicy',
   '2': [
-    {'1': 'weekly_schedule', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.AutomatedBackupPolicy.WeeklySchedule', '9': 0, '10': 'weeklySchedule'},
-    {'1': 'time_based_retention', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.AutomatedBackupPolicy.TimeBasedRetention', '9': 1, '10': 'timeBasedRetention'},
-    {'1': 'quantity_based_retention', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.AutomatedBackupPolicy.QuantityBasedRetention', '9': 1, '10': 'quantityBasedRetention'},
-    {'1': 'enabled', '3': 1, '4': 1, '5': 8, '9': 2, '10': 'enabled', '17': true},
-    {'1': 'backup_window', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'backupWindow'},
-    {'1': 'encryption_config', '3': 8, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.EncryptionConfig', '10': 'encryptionConfig'},
+    {
+      '1': 'weekly_schedule',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.alloydb.v1.AutomatedBackupPolicy.WeeklySchedule',
+      '9': 0,
+      '10': 'weeklySchedule'
+    },
+    {
+      '1': 'time_based_retention',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.alloydb.v1.AutomatedBackupPolicy.TimeBasedRetention',
+      '9': 1,
+      '10': 'timeBasedRetention'
+    },
+    {
+      '1': 'quantity_based_retention',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.alloydb.v1.AutomatedBackupPolicy.QuantityBasedRetention',
+      '9': 1,
+      '10': 'quantityBasedRetention'
+    },
+    {
+      '1': 'enabled',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '9': 2,
+      '10': 'enabled',
+      '17': true
+    },
+    {
+      '1': 'backup_window',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'backupWindow'
+    },
+    {
+      '1': 'encryption_config',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.EncryptionConfig',
+      '10': 'encryptionConfig'
+    },
     {'1': 'location', '3': 6, '4': 1, '5': 9, '10': 'location'},
-    {'1': 'labels', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.alloydb.v1.AutomatedBackupPolicy.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'labels',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.AutomatedBackupPolicy.LabelsEntry',
+      '10': 'labels'
+    },
   ],
-  '3': [AutomatedBackupPolicy_WeeklySchedule$json, AutomatedBackupPolicy_TimeBasedRetention$json, AutomatedBackupPolicy_QuantityBasedRetention$json, AutomatedBackupPolicy_LabelsEntry$json],
+  '3': [
+    AutomatedBackupPolicy_WeeklySchedule$json,
+    AutomatedBackupPolicy_TimeBasedRetention$json,
+    AutomatedBackupPolicy_QuantityBasedRetention$json,
+    AutomatedBackupPolicy_LabelsEntry$json
+  ],
   '8': [
     {'1': 'schedule'},
     {'1': 'retention'},
@@ -175,8 +265,22 @@ const AutomatedBackupPolicy$json = {
 const AutomatedBackupPolicy_WeeklySchedule$json = {
   '1': 'WeeklySchedule',
   '2': [
-    {'1': 'start_times', '3': 1, '4': 3, '5': 11, '6': '.google.type.TimeOfDay', '10': 'startTimes'},
-    {'1': 'days_of_week', '3': 2, '4': 3, '5': 14, '6': '.google.type.DayOfWeek', '10': 'daysOfWeek'},
+    {
+      '1': 'start_times',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.type.TimeOfDay',
+      '10': 'startTimes'
+    },
+    {
+      '1': 'days_of_week',
+      '3': 2,
+      '4': 3,
+      '5': 14,
+      '6': '.google.type.DayOfWeek',
+      '10': 'daysOfWeek'
+    },
   ],
 };
 
@@ -184,7 +288,14 @@ const AutomatedBackupPolicy_WeeklySchedule$json = {
 const AutomatedBackupPolicy_TimeBasedRetention$json = {
   '1': 'TimeBasedRetention',
   '2': [
-    {'1': 'retention_period', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'retentionPeriod'},
+    {
+      '1': 'retention_period',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'retentionPeriod'
+    },
   ],
 };
 
@@ -247,30 +358,149 @@ final $typed_data.Uint8List backupSourceDescriptor = $convert.base64Decode(
 const Cluster$json = {
   '1': 'Cluster',
   '2': [
-    {'1': 'backup_source', '3': 15, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.BackupSource', '9': 0, '10': 'backupSource'},
-    {'1': 'migration_source', '3': 16, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.MigrationSource', '9': 0, '10': 'migrationSource'},
+    {
+      '1': 'backup_source',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.BackupSource',
+      '9': 0,
+      '10': 'backupSource'
+    },
+    {
+      '1': 'migration_source',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.MigrationSource',
+      '9': 0,
+      '10': 'migrationSource'
+    },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uid', '3': 3, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'delete_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deleteTime'},
-    {'1': 'labels', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.alloydb.v1.Cluster.LabelsEntry', '10': 'labels'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.Cluster.State', '10': 'state'},
-    {'1': 'cluster_type', '3': 24, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.Cluster.ClusterType', '10': 'clusterType'},
-    {'1': 'database_version', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.DatabaseVersion', '10': 'databaseVersion'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deleteTime'
+    },
+    {
+      '1': 'labels',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Cluster.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.alloydb.v1.Cluster.State',
+      '10': 'state'
+    },
+    {
+      '1': 'cluster_type',
+      '3': 24,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.alloydb.v1.Cluster.ClusterType',
+      '10': 'clusterType'
+    },
+    {
+      '1': 'database_version',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.alloydb.v1.DatabaseVersion',
+      '10': 'databaseVersion'
+    },
     {'1': 'network', '3': 10, '4': 1, '5': 9, '10': 'network'},
     {'1': 'etag', '3': 11, '4': 1, '5': 9, '10': 'etag'},
-    {'1': 'annotations', '3': 12, '4': 3, '5': 11, '6': '.google.events.cloud.alloydb.v1.Cluster.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'annotations',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Cluster.AnnotationsEntry',
+      '10': 'annotations'
+    },
     {'1': 'reconciling', '3': 13, '4': 1, '5': 8, '10': 'reconciling'},
-    {'1': 'automated_backup_policy', '3': 17, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.AutomatedBackupPolicy', '10': 'automatedBackupPolicy'},
-    {'1': 'ssl_config', '3': 18, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.SslConfig', '10': 'sslConfig'},
-    {'1': 'encryption_config', '3': 19, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.EncryptionConfig', '10': 'encryptionConfig'},
-    {'1': 'encryption_info', '3': 20, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.EncryptionInfo', '10': 'encryptionInfo'},
-    {'1': 'secondary_config', '3': 22, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.Cluster.SecondaryConfig', '10': 'secondaryConfig'},
-    {'1': 'primary_config', '3': 23, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.Cluster.PrimaryConfig', '10': 'primaryConfig'},
+    {
+      '1': 'automated_backup_policy',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.AutomatedBackupPolicy',
+      '10': 'automatedBackupPolicy'
+    },
+    {
+      '1': 'ssl_config',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.SslConfig',
+      '10': 'sslConfig'
+    },
+    {
+      '1': 'encryption_config',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.EncryptionConfig',
+      '10': 'encryptionConfig'
+    },
+    {
+      '1': 'encryption_info',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.EncryptionInfo',
+      '10': 'encryptionInfo'
+    },
+    {
+      '1': 'secondary_config',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Cluster.SecondaryConfig',
+      '10': 'secondaryConfig'
+    },
+    {
+      '1': 'primary_config',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Cluster.PrimaryConfig',
+      '10': 'primaryConfig'
+    },
   ],
-  '3': [Cluster_SecondaryConfig$json, Cluster_PrimaryConfig$json, Cluster_LabelsEntry$json, Cluster_AnnotationsEntry$json],
+  '3': [
+    Cluster_SecondaryConfig$json,
+    Cluster_PrimaryConfig$json,
+    Cluster_LabelsEntry$json,
+    Cluster_AnnotationsEntry$json
+  ],
   '4': [Cluster_State$json, Cluster_ClusterType$json],
   '8': [
     {'1': 'source'},
@@ -281,7 +511,13 @@ const Cluster$json = {
 const Cluster_SecondaryConfig$json = {
   '1': 'SecondaryConfig',
   '2': [
-    {'1': 'primary_cluster_name', '3': 1, '4': 1, '5': 9, '10': 'primaryClusterName'},
+    {
+      '1': 'primary_cluster_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '10': 'primaryClusterName'
+    },
   ],
 };
 
@@ -289,7 +525,13 @@ const Cluster_SecondaryConfig$json = {
 const Cluster_PrimaryConfig$json = {
   '1': 'PrimaryConfig',
   '2': [
-    {'1': 'secondary_cluster_names', '3': 1, '4': 3, '5': 9, '10': 'secondaryClusterNames'},
+    {
+      '1': 'secondary_cluster_names',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'secondaryClusterNames'
+    },
   ],
 };
 
@@ -387,27 +629,138 @@ const Instance$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uid', '3': 3, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'delete_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deleteTime'},
-    {'1': 'labels', '3': 7, '4': 3, '5': 11, '6': '.google.events.cloud.alloydb.v1.Instance.LabelsEntry', '10': 'labels'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.Instance.State', '10': 'state'},
-    {'1': 'instance_type', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.Instance.InstanceType', '10': 'instanceType'},
-    {'1': 'machine_config', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.Instance.MachineConfig', '10': 'machineConfig'},
-    {'1': 'availability_type', '3': 11, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.Instance.AvailabilityType', '10': 'availabilityType'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deleteTime'
+    },
+    {
+      '1': 'labels',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Instance.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.alloydb.v1.Instance.State',
+      '10': 'state'
+    },
+    {
+      '1': 'instance_type',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.alloydb.v1.Instance.InstanceType',
+      '10': 'instanceType'
+    },
+    {
+      '1': 'machine_config',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Instance.MachineConfig',
+      '10': 'machineConfig'
+    },
+    {
+      '1': 'availability_type',
+      '3': 11,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.alloydb.v1.Instance.AvailabilityType',
+      '10': 'availabilityType'
+    },
     {'1': 'gce_zone', '3': 12, '4': 1, '5': 9, '10': 'gceZone'},
-    {'1': 'database_flags', '3': 13, '4': 3, '5': 11, '6': '.google.events.cloud.alloydb.v1.Instance.DatabaseFlagsEntry', '10': 'databaseFlags'},
-    {'1': 'writable_node', '3': 19, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.Instance.Node', '10': 'writableNode'},
-    {'1': 'nodes', '3': 20, '4': 3, '5': 11, '6': '.google.events.cloud.alloydb.v1.Instance.Node', '10': 'nodes'},
-    {'1': 'query_insights_config', '3': 21, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.Instance.QueryInsightsInstanceConfig', '10': 'queryInsightsConfig'},
-    {'1': 'read_pool_config', '3': 14, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.Instance.ReadPoolConfig', '10': 'readPoolConfig'},
+    {
+      '1': 'database_flags',
+      '3': 13,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Instance.DatabaseFlagsEntry',
+      '10': 'databaseFlags'
+    },
+    {
+      '1': 'writable_node',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Instance.Node',
+      '10': 'writableNode'
+    },
+    {
+      '1': 'nodes',
+      '3': 20,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Instance.Node',
+      '10': 'nodes'
+    },
+    {
+      '1': 'query_insights_config',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.alloydb.v1.Instance.QueryInsightsInstanceConfig',
+      '10': 'queryInsightsConfig'
+    },
+    {
+      '1': 'read_pool_config',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Instance.ReadPoolConfig',
+      '10': 'readPoolConfig'
+    },
     {'1': 'ip_address', '3': 15, '4': 1, '5': 9, '10': 'ipAddress'},
     {'1': 'reconciling', '3': 16, '4': 1, '5': 8, '10': 'reconciling'},
     {'1': 'etag', '3': 17, '4': 1, '5': 9, '10': 'etag'},
-    {'1': 'annotations', '3': 18, '4': 3, '5': 11, '6': '.google.events.cloud.alloydb.v1.Instance.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'annotations',
+      '3': 18,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Instance.AnnotationsEntry',
+      '10': 'annotations'
+    },
   ],
-  '3': [Instance_MachineConfig$json, Instance_Node$json, Instance_QueryInsightsInstanceConfig$json, Instance_ReadPoolConfig$json, Instance_LabelsEntry$json, Instance_DatabaseFlagsEntry$json, Instance_AnnotationsEntry$json],
-  '4': [Instance_State$json, Instance_InstanceType$json, Instance_AvailabilityType$json],
+  '3': [
+    Instance_MachineConfig$json,
+    Instance_Node$json,
+    Instance_QueryInsightsInstanceConfig$json,
+    Instance_ReadPoolConfig$json,
+    Instance_LabelsEntry$json,
+    Instance_DatabaseFlagsEntry$json,
+    Instance_AnnotationsEntry$json
+  ],
+  '4': [
+    Instance_State$json,
+    Instance_InstanceType$json,
+    Instance_AvailabilityType$json
+  ],
 };
 
 @$core.Deprecated('Use instanceDescriptor instead')
@@ -433,10 +786,40 @@ const Instance_Node$json = {
 const Instance_QueryInsightsInstanceConfig$json = {
   '1': 'QueryInsightsInstanceConfig',
   '2': [
-    {'1': 'record_application_tags', '3': 2, '4': 1, '5': 8, '9': 0, '10': 'recordApplicationTags', '17': true},
-    {'1': 'record_client_address', '3': 3, '4': 1, '5': 8, '9': 1, '10': 'recordClientAddress', '17': true},
-    {'1': 'query_string_length', '3': 4, '4': 1, '5': 13, '10': 'queryStringLength'},
-    {'1': 'query_plans_per_minute', '3': 5, '4': 1, '5': 13, '9': 2, '10': 'queryPlansPerMinute', '17': true},
+    {
+      '1': 'record_application_tags',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '9': 0,
+      '10': 'recordApplicationTags',
+      '17': true
+    },
+    {
+      '1': 'record_client_address',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '9': 1,
+      '10': 'recordClientAddress',
+      '17': true
+    },
+    {
+      '1': 'query_string_length',
+      '3': 4,
+      '4': 1,
+      '5': 13,
+      '10': 'queryStringLength'
+    },
+    {
+      '1': 'query_plans_per_minute',
+      '3': 5,
+      '4': 1,
+      '5': 13,
+      '9': 2,
+      '10': 'queryPlansPerMinute',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_record_application_tags'},
@@ -574,22 +957,92 @@ const Backup$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 2, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'uid', '3': 3, '4': 1, '5': 9, '10': 'uid'},
-    {'1': 'create_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'delete_time', '3': 15, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'deleteTime'},
-    {'1': 'labels', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.alloydb.v1.Backup.LabelsEntry', '10': 'labels'},
-    {'1': 'state', '3': 7, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.Backup.State', '10': 'state'},
-    {'1': 'type', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.alloydb.v1.Backup.Type', '10': 'type'},
+    {
+      '1': 'create_time',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'delete_time',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'deleteTime'
+    },
+    {
+      '1': 'labels',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Backup.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'state',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.alloydb.v1.Backup.State',
+      '10': 'state'
+    },
+    {
+      '1': 'type',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.alloydb.v1.Backup.Type',
+      '10': 'type'
+    },
     {'1': 'description', '3': 9, '4': 1, '5': 9, '10': 'description'},
     {'1': 'cluster_uid', '3': 18, '4': 1, '5': 9, '10': 'clusterUid'},
     {'1': 'cluster_name', '3': 10, '4': 1, '5': 9, '10': 'clusterName'},
     {'1': 'reconciling', '3': 11, '4': 1, '5': 8, '10': 'reconciling'},
-    {'1': 'encryption_config', '3': 12, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.EncryptionConfig', '10': 'encryptionConfig'},
-    {'1': 'encryption_info', '3': 13, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.EncryptionInfo', '10': 'encryptionInfo'},
+    {
+      '1': 'encryption_config',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.EncryptionConfig',
+      '10': 'encryptionConfig'
+    },
+    {
+      '1': 'encryption_info',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.EncryptionInfo',
+      '10': 'encryptionInfo'
+    },
     {'1': 'etag', '3': 14, '4': 1, '5': 9, '10': 'etag'},
-    {'1': 'annotations', '3': 16, '4': 3, '5': 11, '6': '.google.events.cloud.alloydb.v1.Backup.AnnotationsEntry', '10': 'annotations'},
+    {
+      '1': 'annotations',
+      '3': 16,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Backup.AnnotationsEntry',
+      '10': 'annotations'
+    },
     {'1': 'size_bytes', '3': 17, '4': 1, '5': 3, '10': 'sizeBytes'},
-    {'1': 'expiry_time', '3': 19, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expiryTime'},
+    {
+      '1': 'expiry_time',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expiryTime'
+    },
   ],
   '3': [Backup_LabelsEntry$json, Backup_AnnotationsEntry$json],
   '4': [Backup_State$json, Backup_Type$json],
@@ -669,7 +1122,16 @@ final $typed_data.Uint8List backupDescriptor = $convert.base64Decode(
 const InstanceEventData$json = {
   '1': 'InstanceEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.Instance', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Instance',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -685,7 +1147,16 @@ final $typed_data.Uint8List instanceEventDataDescriptor = $convert.base64Decode(
 const BackupEventData$json = {
   '1': 'BackupEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.Backup', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Backup',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -701,7 +1172,16 @@ final $typed_data.Uint8List backupEventDataDescriptor = $convert.base64Decode(
 const ClusterEventData$json = {
   '1': 'ClusterEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.alloydb.v1.Cluster', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.alloydb.v1.Cluster',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -712,4 +1192,3 @@ const ClusterEventData$json = {
 final $typed_data.Uint8List clusterEventDataDescriptor = $convert.base64Decode(
     'ChBDbHVzdGVyRXZlbnREYXRhEkYKB3BheWxvYWQYASABKAsyJy5nb29nbGUuZXZlbnRzLmNsb3'
     'VkLmFsbG95ZGIudjEuQ2x1c3RlckgAUgdwYXlsb2FkiAEBQgoKCF9wYXlsb2Fk');
-

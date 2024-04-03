@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const DocumentCreatedEvent$json = {
   '1': 'DocumentCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.firestore.v1.DocumentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.firestore.v1.DocumentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +40,14 @@ final $typed_data.Uint8List documentCreatedEventDescriptor = $convert.base64Deco
 const DocumentUpdatedEvent$json = {
   '1': 'DocumentUpdatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.firestore.v1.DocumentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.firestore.v1.DocumentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -49,7 +63,14 @@ final $typed_data.Uint8List documentUpdatedEventDescriptor = $convert.base64Deco
 const DocumentDeletedEvent$json = {
   '1': 'DocumentDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.firestore.v1.DocumentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.firestore.v1.DocumentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -65,7 +86,14 @@ final $typed_data.Uint8List documentDeletedEventDescriptor = $convert.base64Deco
 const DocumentWrittenEvent$json = {
   '1': 'DocumentWrittenEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.firestore.v1.DocumentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.firestore.v1.DocumentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -81,67 +109,98 @@ final $typed_data.Uint8List documentWrittenEventDescriptor = $convert.base64Deco
 const DocumentCreatedEventWithAuthContext$json = {
   '1': 'DocumentCreatedEventWithAuthContext',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.firestore.v1.DocumentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.firestore.v1.DocumentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `DocumentCreatedEventWithAuthContext`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List documentCreatedEventWithAuthContextDescriptor = $convert.base64Decode(
-    'CiNEb2N1bWVudENyZWF0ZWRFdmVudFdpdGhBdXRoQ29udGV4dBJHCgRkYXRhGAEgASgLMjMuZ2'
-    '9vZ2xlLmV2ZW50cy5jbG91ZC5maXJlc3RvcmUudjEuRG9jdW1lbnRFdmVudERhdGFSBGRhdGE6'
-    'f7L42Cw6Z29vZ2xlLmNsb3VkLmZpcmVzdG9yZS5kb2N1bWVudC52MS5jcmVhdGVkLndpdGhBdX'
-    'RoQ29udGV4dMr42CwIZGF0YWJhc2XK+NgsCW5hbWVzcGFjZcr42CwIZG9jdW1lbnTK+NgsCGF1'
-    'dGh0eXBlyvjYLAZhdXRoaWQ=');
+final $typed_data.Uint8List documentCreatedEventWithAuthContextDescriptor =
+    $convert.base64Decode(
+        'CiNEb2N1bWVudENyZWF0ZWRFdmVudFdpdGhBdXRoQ29udGV4dBJHCgRkYXRhGAEgASgLMjMuZ2'
+        '9vZ2xlLmV2ZW50cy5jbG91ZC5maXJlc3RvcmUudjEuRG9jdW1lbnRFdmVudERhdGFSBGRhdGE6'
+        'f7L42Cw6Z29vZ2xlLmNsb3VkLmZpcmVzdG9yZS5kb2N1bWVudC52MS5jcmVhdGVkLndpdGhBdX'
+        'RoQ29udGV4dMr42CwIZGF0YWJhc2XK+NgsCW5hbWVzcGFjZcr42CwIZG9jdW1lbnTK+NgsCGF1'
+        'dGh0eXBlyvjYLAZhdXRoaWQ=');
 
 @$core.Deprecated('Use documentUpdatedEventWithAuthContextDescriptor instead')
 const DocumentUpdatedEventWithAuthContext$json = {
   '1': 'DocumentUpdatedEventWithAuthContext',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.firestore.v1.DocumentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.firestore.v1.DocumentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `DocumentUpdatedEventWithAuthContext`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List documentUpdatedEventWithAuthContextDescriptor = $convert.base64Decode(
-    'CiNEb2N1bWVudFVwZGF0ZWRFdmVudFdpdGhBdXRoQ29udGV4dBJHCgRkYXRhGAEgASgLMjMuZ2'
-    '9vZ2xlLmV2ZW50cy5jbG91ZC5maXJlc3RvcmUudjEuRG9jdW1lbnRFdmVudERhdGFSBGRhdGE6'
-    'f7L42Cw6Z29vZ2xlLmNsb3VkLmZpcmVzdG9yZS5kb2N1bWVudC52MS51cGRhdGVkLndpdGhBdX'
-    'RoQ29udGV4dMr42CwIZGF0YWJhc2XK+NgsCW5hbWVzcGFjZcr42CwIZG9jdW1lbnTK+NgsCGF1'
-    'dGh0eXBlyvjYLAZhdXRoaWQ=');
+final $typed_data.Uint8List documentUpdatedEventWithAuthContextDescriptor =
+    $convert.base64Decode(
+        'CiNEb2N1bWVudFVwZGF0ZWRFdmVudFdpdGhBdXRoQ29udGV4dBJHCgRkYXRhGAEgASgLMjMuZ2'
+        '9vZ2xlLmV2ZW50cy5jbG91ZC5maXJlc3RvcmUudjEuRG9jdW1lbnRFdmVudERhdGFSBGRhdGE6'
+        'f7L42Cw6Z29vZ2xlLmNsb3VkLmZpcmVzdG9yZS5kb2N1bWVudC52MS51cGRhdGVkLndpdGhBdX'
+        'RoQ29udGV4dMr42CwIZGF0YWJhc2XK+NgsCW5hbWVzcGFjZcr42CwIZG9jdW1lbnTK+NgsCGF1'
+        'dGh0eXBlyvjYLAZhdXRoaWQ=');
 
 @$core.Deprecated('Use documentDeletedEventWithAuthContextDescriptor instead')
 const DocumentDeletedEventWithAuthContext$json = {
   '1': 'DocumentDeletedEventWithAuthContext',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.firestore.v1.DocumentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.firestore.v1.DocumentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `DocumentDeletedEventWithAuthContext`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List documentDeletedEventWithAuthContextDescriptor = $convert.base64Decode(
-    'CiNEb2N1bWVudERlbGV0ZWRFdmVudFdpdGhBdXRoQ29udGV4dBJHCgRkYXRhGAEgASgLMjMuZ2'
-    '9vZ2xlLmV2ZW50cy5jbG91ZC5maXJlc3RvcmUudjEuRG9jdW1lbnRFdmVudERhdGFSBGRhdGE6'
-    'f7L42Cw6Z29vZ2xlLmNsb3VkLmZpcmVzdG9yZS5kb2N1bWVudC52MS5kZWxldGVkLndpdGhBdX'
-    'RoQ29udGV4dMr42CwIZGF0YWJhc2XK+NgsCW5hbWVzcGFjZcr42CwIZG9jdW1lbnTK+NgsCGF1'
-    'dGh0eXBlyvjYLAZhdXRoaWQ=');
+final $typed_data.Uint8List documentDeletedEventWithAuthContextDescriptor =
+    $convert.base64Decode(
+        'CiNEb2N1bWVudERlbGV0ZWRFdmVudFdpdGhBdXRoQ29udGV4dBJHCgRkYXRhGAEgASgLMjMuZ2'
+        '9vZ2xlLmV2ZW50cy5jbG91ZC5maXJlc3RvcmUudjEuRG9jdW1lbnRFdmVudERhdGFSBGRhdGE6'
+        'f7L42Cw6Z29vZ2xlLmNsb3VkLmZpcmVzdG9yZS5kb2N1bWVudC52MS5kZWxldGVkLndpdGhBdX'
+        'RoQ29udGV4dMr42CwIZGF0YWJhc2XK+NgsCW5hbWVzcGFjZcr42CwIZG9jdW1lbnTK+NgsCGF1'
+        'dGh0eXBlyvjYLAZhdXRoaWQ=');
 
 @$core.Deprecated('Use documentWrittenEventWithAuthContextDescriptor instead')
 const DocumentWrittenEventWithAuthContext$json = {
   '1': 'DocumentWrittenEventWithAuthContext',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.firestore.v1.DocumentEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.firestore.v1.DocumentEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
 
 /// Descriptor for `DocumentWrittenEventWithAuthContext`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List documentWrittenEventWithAuthContextDescriptor = $convert.base64Decode(
-    'CiNEb2N1bWVudFdyaXR0ZW5FdmVudFdpdGhBdXRoQ29udGV4dBJHCgRkYXRhGAEgASgLMjMuZ2'
-    '9vZ2xlLmV2ZW50cy5jbG91ZC5maXJlc3RvcmUudjEuRG9jdW1lbnRFdmVudERhdGFSBGRhdGE6'
-    'f7L42Cw6Z29vZ2xlLmNsb3VkLmZpcmVzdG9yZS5kb2N1bWVudC52MS53cml0dGVuLndpdGhBdX'
-    'RoQ29udGV4dMr42CwIZGF0YWJhc2XK+NgsCW5hbWVzcGFjZcr42CwIZG9jdW1lbnTK+NgsCGF1'
-    'dGh0eXBlyvjYLAZhdXRoaWQ=');
-
+final $typed_data.Uint8List documentWrittenEventWithAuthContextDescriptor =
+    $convert.base64Decode(
+        'CiNEb2N1bWVudFdyaXR0ZW5FdmVudFdpdGhBdXRoQ29udGV4dBJHCgRkYXRhGAEgASgLMjMuZ2'
+        '9vZ2xlLmV2ZW50cy5jbG91ZC5maXJlc3RvcmUudjEuRG9jdW1lbnRFdmVudERhdGFSBGRhdGE6'
+        'f7L42Cw6Z29vZ2xlLmNsb3VkLmZpcmVzdG9yZS5kb2N1bWVudC52MS53cml0dGVuLndpdGhBdX'
+        'RoQ29udGV4dMr42CwIZGF0YWJhc2XK+NgsCW5hbWVzcGFjZcr42CwIZG9jdW1lbnTK+NgsCGF1'
+        'dGh0eXBlyvjYLAZhdXRoaWQ=');

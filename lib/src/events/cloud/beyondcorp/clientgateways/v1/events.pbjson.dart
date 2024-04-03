@@ -17,7 +17,15 @@ import 'dart:typed_data' as $typed_data;
 const ClientGatewayCreatedEvent$json = {
   '1': 'ClientGatewayCreatedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.clientgateways.v1.ClientGatewayEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.clientgateways.v1.ClientGatewayEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -33,7 +41,15 @@ final $typed_data.Uint8List clientGatewayCreatedEventDescriptor = $convert.base6
 const ClientGatewayDeletedEvent$json = {
   '1': 'ClientGatewayDeletedEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.beyondcorp.clientgateways.v1.ClientGatewayEventData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.beyondcorp.clientgateways.v1.ClientGatewayEventData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -44,4 +60,3 @@ final $typed_data.Uint8List clientGatewayDeletedEventDescriptor = $convert.base6
     'RzLmNsb3VkLmJleW9uZGNvcnAuY2xpZW50Z2F0ZXdheXMudjEuQ2xpZW50R2F0ZXdheUV2ZW50'
     'RGF0YVIEZGF0YTpWsvjYLD9nb29nbGUuY2xvdWQuYmV5b25kY29ycC5jbGllbnRnYXRld2F5cy'
     '5jbGllbnRHYXRld2F5LnYxLmRlbGV0ZWTK+NgsDWNsaWVudGdhdGV3YXk=');
-

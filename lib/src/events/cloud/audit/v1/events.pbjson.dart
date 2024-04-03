@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const AuditLogWrittenEvent$json = {
   '1': 'AuditLogWrittenEvent',
   '2': [
-    {'1': 'data', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.audit.v1.LogEntryData', '10': 'data'},
+    {
+      '1': 'data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.audit.v1.LogEntryData',
+      '10': 'data'
+    },
   ],
   '7': {},
 };
@@ -28,4 +35,3 @@ final $typed_data.Uint8List auditLogWrittenEventDescriptor = $convert.base64Deco
     '91ZC5hdWRpdC52MS5Mb2dFbnRyeURhdGFSBGRhdGE6VrL42CwhZ29vZ2xlLmNsb3VkLmF1ZGl0'
     'LmxvZy52MS53cml0dGVuyvjYLAtzZXJ2aWNlbmFtZcr42CwKbWV0aG9kbmFtZcr42CwMcmVzb3'
     'VyY2VuYW1l');
-

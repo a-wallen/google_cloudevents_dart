@@ -33,16 +33,70 @@ const CertificateIssuanceConfig$json = {
   '1': 'CertificateIssuanceConfig',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'certificate_authority_config', '3': 6, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig.CertificateAuthorityConfig', '10': 'certificateAuthorityConfig'},
-    {'1': 'lifetime', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'lifetime'},
-    {'1': 'rotation_window_percentage', '3': 8, '4': 1, '5': 5, '10': 'rotationWindowPercentage'},
-    {'1': 'key_algorithm', '3': 9, '4': 1, '5': 14, '6': '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig.KeyAlgorithm', '10': 'keyAlgorithm'},
+    {
+      '1': 'certificate_authority_config',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig.CertificateAuthorityConfig',
+      '10': 'certificateAuthorityConfig'
+    },
+    {
+      '1': 'lifetime',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'lifetime'
+    },
+    {
+      '1': 'rotation_window_percentage',
+      '3': 8,
+      '4': 1,
+      '5': 5,
+      '10': 'rotationWindowPercentage'
+    },
+    {
+      '1': 'key_algorithm',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig.KeyAlgorithm',
+      '10': 'keyAlgorithm'
+    },
   ],
-  '3': [CertificateIssuanceConfig_CertificateAuthorityConfig$json, CertificateIssuanceConfig_LabelsEntry$json],
+  '3': [
+    CertificateIssuanceConfig_CertificateAuthorityConfig$json,
+    CertificateIssuanceConfig_LabelsEntry$json
+  ],
   '4': [CertificateIssuanceConfig_KeyAlgorithm$json],
 };
 
@@ -50,16 +104,28 @@ const CertificateIssuanceConfig$json = {
 const CertificateIssuanceConfig_CertificateAuthorityConfig$json = {
   '1': 'CertificateAuthorityConfig',
   '2': [
-    {'1': 'certificate_authority_service_config', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig.CertificateAuthorityConfig.CertificateAuthorityServiceConfig', '9': 0, '10': 'certificateAuthorityServiceConfig'},
+    {
+      '1': 'certificate_authority_service_config',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig.CertificateAuthorityConfig.CertificateAuthorityServiceConfig',
+      '9': 0,
+      '10': 'certificateAuthorityServiceConfig'
+    },
   ],
-  '3': [CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig$json],
+  '3': [
+    CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig$json
+  ],
   '8': [
     {'1': 'kind'},
   ],
 };
 
 @$core.Deprecated('Use certificateIssuanceConfigDescriptor instead')
-const CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig$json = {
+const CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig$json =
+    {
   '1': 'CertificateAuthorityServiceConfig',
   '2': [
     {'1': 'ca_pool', '3': 1, '4': 1, '5': 9, '10': 'caPool'},
@@ -116,17 +182,74 @@ const Certificate$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 8, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.Certificate.LabelsEntry', '10': 'labels'},
-    {'1': 'self_managed', '3': 5, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.Certificate.SelfManagedCertificate', '9': 0, '10': 'selfManaged'},
-    {'1': 'managed', '3': 11, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate', '9': 0, '10': 'managed'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.certificatemanager.v1.Certificate.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'self_managed',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.Certificate.SelfManagedCertificate',
+      '9': 0,
+      '10': 'selfManaged'
+    },
+    {
+      '1': 'managed',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate',
+      '9': 0,
+      '10': 'managed'
+    },
     {'1': 'san_dnsnames', '3': 6, '4': 3, '5': 9, '10': 'sanDnsnames'},
     {'1': 'pem_certificate', '3': 9, '4': 1, '5': 9, '10': 'pemCertificate'},
-    {'1': 'expire_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'expireTime'},
-    {'1': 'scope', '3': 12, '4': 1, '5': 14, '6': '.google.events.cloud.certificatemanager.v1.Certificate.Scope', '10': 'scope'},
+    {
+      '1': 'expire_time',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'expireTime'
+    },
+    {
+      '1': 'scope',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.certificatemanager.v1.Certificate.Scope',
+      '10': 'scope'
+    },
   ],
-  '3': [Certificate_SelfManagedCertificate$json, Certificate_ManagedCertificate$json, Certificate_LabelsEntry$json],
+  '3': [
+    Certificate_SelfManagedCertificate$json,
+    Certificate_ManagedCertificate$json,
+    Certificate_LabelsEntry$json
+  ],
   '4': [Certificate_Scope$json],
   '8': [
     {'1': 'type'},
@@ -143,13 +266,46 @@ const Certificate_ManagedCertificate$json = {
   '1': 'ManagedCertificate',
   '2': [
     {'1': 'domains', '3': 1, '4': 3, '5': 9, '10': 'domains'},
-    {'1': 'dns_authorizations', '3': 2, '4': 3, '5': 9, '10': 'dnsAuthorizations'},
+    {
+      '1': 'dns_authorizations',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'dnsAuthorizations'
+    },
     {'1': 'issuance_config', '3': 6, '4': 1, '5': 9, '10': 'issuanceConfig'},
-    {'1': 'state', '3': 4, '4': 1, '5': 14, '6': '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.State', '10': 'state'},
-    {'1': 'provisioning_issue', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.ProvisioningIssue', '10': 'provisioningIssue'},
-    {'1': 'authorization_attempt_info', '3': 5, '4': 3, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.AuthorizationAttemptInfo', '10': 'authorizationAttemptInfo'},
+    {
+      '1': 'state',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.State',
+      '10': 'state'
+    },
+    {
+      '1': 'provisioning_issue',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.ProvisioningIssue',
+      '10': 'provisioningIssue'
+    },
+    {
+      '1': 'authorization_attempt_info',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.AuthorizationAttemptInfo',
+      '10': 'authorizationAttemptInfo'
+    },
   ],
-  '3': [Certificate_ManagedCertificate_ProvisioningIssue$json, Certificate_ManagedCertificate_AuthorizationAttemptInfo$json],
+  '3': [
+    Certificate_ManagedCertificate_ProvisioningIssue$json,
+    Certificate_ManagedCertificate_AuthorizationAttemptInfo$json
+  ],
   '4': [Certificate_ManagedCertificate_State$json],
 };
 
@@ -157,7 +313,15 @@ const Certificate_ManagedCertificate$json = {
 const Certificate_ManagedCertificate_ProvisioningIssue$json = {
   '1': 'ProvisioningIssue',
   '2': [
-    {'1': 'reason', '3': 1, '4': 1, '5': 14, '6': '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.ProvisioningIssue.Reason', '10': 'reason'},
+    {
+      '1': 'reason',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.ProvisioningIssue.Reason',
+      '10': 'reason'
+    },
     {'1': 'details', '3': 2, '4': 1, '5': 9, '10': 'details'},
   ],
   '4': [Certificate_ManagedCertificate_ProvisioningIssue_Reason$json],
@@ -178,11 +342,30 @@ const Certificate_ManagedCertificate_AuthorizationAttemptInfo$json = {
   '1': 'AuthorizationAttemptInfo',
   '2': [
     {'1': 'domain', '3': 1, '4': 1, '5': 9, '10': 'domain'},
-    {'1': 'state', '3': 2, '4': 1, '5': 14, '6': '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.AuthorizationAttemptInfo.State', '10': 'state'},
-    {'1': 'failure_reason', '3': 3, '4': 1, '5': 14, '6': '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.AuthorizationAttemptInfo.FailureReason', '10': 'failureReason'},
+    {
+      '1': 'state',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.AuthorizationAttemptInfo.State',
+      '10': 'state'
+    },
+    {
+      '1': 'failure_reason',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.Certificate.ManagedCertificate.AuthorizationAttemptInfo.FailureReason',
+      '10': 'failureReason'
+    },
     {'1': 'details', '3': 4, '4': 1, '5': 9, '10': 'details'},
   ],
-  '4': [Certificate_ManagedCertificate_AuthorizationAttemptInfo_State$json, Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason$json],
+  '4': [
+    Certificate_ManagedCertificate_AuthorizationAttemptInfo_State$json,
+    Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason$json
+  ],
 };
 
 @$core.Deprecated('Use certificateDescriptor instead')
@@ -197,7 +380,8 @@ const Certificate_ManagedCertificate_AuthorizationAttemptInfo_State$json = {
 };
 
 @$core.Deprecated('Use certificateDescriptor instead')
-const Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason$json = {
+const Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason$json =
+    {
   '1': 'FailureReason',
   '2': [
     {'1': 'FAILURE_REASON_UNSPECIFIED', '2': 0},
@@ -287,10 +471,40 @@ const CertificateMap$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 3, '4': 3, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMap.LabelsEntry', '10': 'labels'},
-    {'1': 'gclb_targets', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMap.GclbTarget', '10': 'gclbTargets'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateMap.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'gclb_targets',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateMap.GclbTarget',
+      '10': 'gclbTargets'
+    },
   ],
   '3': [CertificateMap_GclbTarget$json, CertificateMap_LabelsEntry$json],
 };
@@ -299,9 +513,31 @@ const CertificateMap$json = {
 const CertificateMap_GclbTarget$json = {
   '1': 'GclbTarget',
   '2': [
-    {'1': 'target_https_proxy', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'targetHttpsProxy'},
-    {'1': 'target_ssl_proxy', '3': 3, '4': 1, '5': 9, '9': 0, '10': 'targetSslProxy'},
-    {'1': 'ip_configs', '3': 2, '4': 3, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMap.GclbTarget.IpConfig', '10': 'ipConfigs'},
+    {
+      '1': 'target_https_proxy',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'targetHttpsProxy'
+    },
+    {
+      '1': 'target_ssl_proxy',
+      '3': 3,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'targetSslProxy'
+    },
+    {
+      '1': 'ip_configs',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateMap.GclbTarget.IpConfig',
+      '10': 'ipConfigs'
+    },
   ],
   '3': [CertificateMap_GclbTarget_IpConfig$json],
   '8': [
@@ -351,13 +587,51 @@ const CertificateMapEntry$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 9, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEntry.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateMapEntry.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'hostname', '3': 5, '4': 1, '5': 9, '9': 0, '10': 'hostname'},
-    {'1': 'matcher', '3': 10, '4': 1, '5': 14, '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEntry.Matcher', '9': 0, '10': 'matcher'},
+    {
+      '1': 'matcher',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateMapEntry.Matcher',
+      '9': 0,
+      '10': 'matcher'
+    },
     {'1': 'certificates', '3': 7, '4': 3, '5': 9, '10': 'certificates'},
-    {'1': 'state', '3': 8, '4': 1, '5': 14, '6': '.google.events.cloud.certificatemanager.v1.ServingState', '10': 'state'},
+    {
+      '1': 'state',
+      '3': 8,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.certificatemanager.v1.ServingState',
+      '10': 'state'
+    },
   ],
   '3': [CertificateMapEntry_LabelsEntry$json],
   '4': [CertificateMapEntry_Matcher$json],
@@ -405,14 +679,47 @@ const DnsAuthorization$json = {
   '1': 'DnsAuthorization',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    {'1': 'create_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
-    {'1': 'update_time', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
-    {'1': 'labels', '3': 4, '4': 3, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.DnsAuthorization.LabelsEntry', '10': 'labels'},
+    {
+      '1': 'create_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'createTime'
+    },
+    {
+      '1': 'update_time',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'updateTime'
+    },
+    {
+      '1': 'labels',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.DnsAuthorization.LabelsEntry',
+      '10': 'labels'
+    },
     {'1': 'description', '3': 5, '4': 1, '5': 9, '10': 'description'},
     {'1': 'domain', '3': 6, '4': 1, '5': 9, '10': 'domain'},
-    {'1': 'dns_resource_record', '3': 10, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.DnsAuthorization.DnsResourceRecord', '10': 'dnsResourceRecord'},
+    {
+      '1': 'dns_resource_record',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.DnsAuthorization.DnsResourceRecord',
+      '10': 'dnsResourceRecord'
+    },
   ],
-  '3': [DnsAuthorization_DnsResourceRecord$json, DnsAuthorization_LabelsEntry$json],
+  '3': [
+    DnsAuthorization_DnsResourceRecord$json,
+    DnsAuthorization_LabelsEntry$json
+  ],
 };
 
 @$core.Deprecated('Use dnsAuthorizationDescriptor instead')
@@ -453,7 +760,16 @@ final $typed_data.Uint8List dnsAuthorizationDescriptor = $convert.base64Decode(
 const DnsAuthorizationEventData$json = {
   '1': 'DnsAuthorizationEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.DnsAuthorization', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.certificatemanager.v1.DnsAuthorization',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -470,7 +786,17 @@ final $typed_data.Uint8List dnsAuthorizationEventDataDescriptor = $convert.base6
 const CertificateIssuanceConfigEventData$json = {
   '1': 'CertificateIssuanceConfigEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -478,16 +804,26 @@ const CertificateIssuanceConfigEventData$json = {
 };
 
 /// Descriptor for `CertificateIssuanceConfigEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List certificateIssuanceConfigEventDataDescriptor = $convert.base64Decode(
-    'CiJDZXJ0aWZpY2F0ZUlzc3VhbmNlQ29uZmlnRXZlbnREYXRhEmMKB3BheWxvYWQYASABKAsyRC'
-    '5nb29nbGUuZXZlbnRzLmNsb3VkLmNlcnRpZmljYXRlbWFuYWdlci52MS5DZXJ0aWZpY2F0ZUlz'
-    'c3VhbmNlQ29uZmlnSABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
+final $typed_data.Uint8List certificateIssuanceConfigEventDataDescriptor =
+    $convert.base64Decode(
+        'CiJDZXJ0aWZpY2F0ZUlzc3VhbmNlQ29uZmlnRXZlbnREYXRhEmMKB3BheWxvYWQYASABKAsyRC'
+        '5nb29nbGUuZXZlbnRzLmNsb3VkLmNlcnRpZmljYXRlbWFuYWdlci52MS5DZXJ0aWZpY2F0ZUlz'
+        'c3VhbmNlQ29uZmlnSABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
 
 @$core.Deprecated('Use certificateMapEntryEventDataDescriptor instead')
 const CertificateMapEntryEventData$json = {
   '1': 'CertificateMapEntryEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEntry', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.certificatemanager.v1.CertificateMapEntry',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -495,16 +831,26 @@ const CertificateMapEntryEventData$json = {
 };
 
 /// Descriptor for `CertificateMapEntryEventData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List certificateMapEntryEventDataDescriptor = $convert.base64Decode(
-    'ChxDZXJ0aWZpY2F0ZU1hcEVudHJ5RXZlbnREYXRhEl0KB3BheWxvYWQYASABKAsyPi5nb29nbG'
-    'UuZXZlbnRzLmNsb3VkLmNlcnRpZmljYXRlbWFuYWdlci52MS5DZXJ0aWZpY2F0ZU1hcEVudHJ5'
-    'SABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
+final $typed_data.Uint8List certificateMapEntryEventDataDescriptor =
+    $convert.base64Decode(
+        'ChxDZXJ0aWZpY2F0ZU1hcEVudHJ5RXZlbnREYXRhEl0KB3BheWxvYWQYASABKAsyPi5nb29nbG'
+        'UuZXZlbnRzLmNsb3VkLmNlcnRpZmljYXRlbWFuYWdlci52MS5DZXJ0aWZpY2F0ZU1hcEVudHJ5'
+        'SABSB3BheWxvYWSIAQFCCgoIX3BheWxvYWQ=');
 
 @$core.Deprecated('Use certificateMapEventDataDescriptor instead')
 const CertificateMapEventData$json = {
   '1': 'CertificateMapEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.CertificateMap', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.certificatemanager.v1.CertificateMap',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -521,7 +867,16 @@ final $typed_data.Uint8List certificateMapEventDataDescriptor = $convert.base64D
 const CertificateEventData$json = {
   '1': 'CertificateEventData',
   '2': [
-    {'1': 'payload', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.certificatemanager.v1.Certificate', '9': 0, '10': 'payload', '17': true},
+    {
+      '1': 'payload',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.certificatemanager.v1.Certificate',
+      '9': 0,
+      '10': 'payload',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_payload'},
@@ -533,4 +888,3 @@ final $typed_data.Uint8List certificateEventDataDescriptor = $convert.base64Deco
     'ChRDZXJ0aWZpY2F0ZUV2ZW50RGF0YRJVCgdwYXlsb2FkGAEgASgLMjYuZ29vZ2xlLmV2ZW50cy'
     '5jbG91ZC5jZXJ0aWZpY2F0ZW1hbmFnZXIudjEuQ2VydGlmaWNhdGVIAFIHcGF5bG9hZIgBAUIK'
     'CghfcGF5bG9hZA==');
-

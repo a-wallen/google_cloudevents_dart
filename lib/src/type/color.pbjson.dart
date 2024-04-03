@@ -20,7 +20,14 @@ const Color$json = {
     {'1': 'red', '3': 1, '4': 1, '5': 2, '10': 'red'},
     {'1': 'green', '3': 2, '4': 1, '5': 2, '10': 'green'},
     {'1': 'blue', '3': 3, '4': 1, '5': 2, '10': 'blue'},
-    {'1': 'alpha', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.FloatValue', '10': 'alpha'},
+    {
+      '1': 'alpha',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FloatValue',
+      '10': 'alpha'
+    },
   ],
 };
 
@@ -29,4 +36,3 @@ final $typed_data.Uint8List colorDescriptor = $convert.base64Decode(
     'CgVDb2xvchIQCgNyZWQYASABKAJSA3JlZBIUCgVncmVlbhgCIAEoAlIFZ3JlZW4SEgoEYmx1ZR'
     'gDIAEoAlIEYmx1ZRIxCgVhbHBoYRgEIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVl'
     'UgVhbHBoYQ==');
-

@@ -40,17 +40,73 @@ const LogEntryData$json = {
   '1': 'LogEntryData',
   '2': [
     {'1': 'log_name', '3': 12, '4': 1, '5': 9, '10': 'logName'},
-    {'1': 'resource', '3': 8, '4': 1, '5': 11, '6': '.google.api.MonitoredResource', '10': 'resource'},
-    {'1': 'proto_payload', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.audit.v1.AuditLog', '10': 'protoPayload'},
+    {
+      '1': 'resource',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.api.MonitoredResource',
+      '10': 'resource'
+    },
+    {
+      '1': 'proto_payload',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.audit.v1.AuditLog',
+      '10': 'protoPayload'
+    },
     {'1': 'insert_id', '3': 4, '4': 1, '5': 9, '10': 'insertId'},
-    {'1': 'labels', '3': 11, '4': 3, '5': 11, '6': '.google.events.cloud.audit.v1.LogEntryData.LabelsEntry', '10': 'labels'},
-    {'1': 'operation', '3': 15, '4': 1, '5': 11, '6': '.google.events.cloud.audit.v1.LogEntryOperation', '10': 'operation'},
-    {'1': 'timestamp', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'timestamp'},
-    {'1': 'receive_timestamp', '3': 24, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'receiveTimestamp'},
-    {'1': 'severity', '3': 10, '4': 1, '5': 14, '6': '.google.events.cloud.audit.v1.LogSeverity', '10': 'severity'},
+    {
+      '1': 'labels',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.audit.v1.LogEntryData.LabelsEntry',
+      '10': 'labels'
+    },
+    {
+      '1': 'operation',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.audit.v1.LogEntryOperation',
+      '10': 'operation'
+    },
+    {
+      '1': 'timestamp',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'timestamp'
+    },
+    {
+      '1': 'receive_timestamp',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'receiveTimestamp'
+    },
+    {
+      '1': 'severity',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.events.cloud.audit.v1.LogSeverity',
+      '10': 'severity'
+    },
     {'1': 'trace', '3': 22, '4': 1, '5': 9, '10': 'trace'},
     {'1': 'span_id', '3': 27, '4': 1, '5': 9, '10': 'spanId'},
-    {'1': 'split', '3': 35, '4': 1, '5': 11, '6': '.google.events.cloud.audit.v1.LogSplit', '10': 'split'},
+    {
+      '1': 'split',
+      '3': 35,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.audit.v1.LogSplit',
+      '10': 'split'
+    },
   ],
   '3': [LogEntryData_LabelsEntry$json],
 };
@@ -105,17 +161,93 @@ const AuditLog$json = {
     {'1': 'service_name', '3': 7, '4': 1, '5': 9, '10': 'serviceName'},
     {'1': 'method_name', '3': 8, '4': 1, '5': 9, '10': 'methodName'},
     {'1': 'resource_name', '3': 11, '4': 1, '5': 9, '10': 'resourceName'},
-    {'1': 'resource_location', '3': 20, '4': 1, '5': 11, '6': '.google.events.cloud.audit.v1.ResourceLocation', '10': 'resourceLocation'},
-    {'1': 'resource_original_state', '3': 19, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'resourceOriginalState'},
-    {'1': 'num_response_items', '3': 12, '4': 1, '5': 3, '10': 'numResponseItems'},
-    {'1': 'status', '3': 2, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'status'},
-    {'1': 'authentication_info', '3': 3, '4': 1, '5': 11, '6': '.google.events.cloud.audit.v1.AuthenticationInfo', '10': 'authenticationInfo'},
-    {'1': 'authorization_info', '3': 9, '4': 3, '5': 11, '6': '.google.events.cloud.audit.v1.AuthorizationInfo', '10': 'authorizationInfo'},
-    {'1': 'request_metadata', '3': 4, '4': 1, '5': 11, '6': '.google.events.cloud.audit.v1.RequestMetadata', '10': 'requestMetadata'},
-    {'1': 'request', '3': 16, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'request'},
-    {'1': 'response', '3': 17, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'response'},
-    {'1': 'metadata', '3': 18, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'metadata'},
-    {'1': 'service_data', '3': 15, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'serviceData'},
+    {
+      '1': 'resource_location',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.audit.v1.ResourceLocation',
+      '10': 'resourceLocation'
+    },
+    {
+      '1': 'resource_original_state',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'resourceOriginalState'
+    },
+    {
+      '1': 'num_response_items',
+      '3': 12,
+      '4': 1,
+      '5': 3,
+      '10': 'numResponseItems'
+    },
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
+    {
+      '1': 'authentication_info',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.audit.v1.AuthenticationInfo',
+      '10': 'authenticationInfo'
+    },
+    {
+      '1': 'authorization_info',
+      '3': 9,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.audit.v1.AuthorizationInfo',
+      '10': 'authorizationInfo'
+    },
+    {
+      '1': 'request_metadata',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.events.cloud.audit.v1.RequestMetadata',
+      '10': 'requestMetadata'
+    },
+    {
+      '1': 'request',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'request'
+    },
+    {
+      '1': 'response',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'response'
+    },
+    {
+      '1': 'metadata',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'metadata'
+    },
+    {
+      '1': 'service_data',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'serviceData'
+    },
   ],
 };
 
@@ -143,11 +275,43 @@ const AuthenticationInfo$json = {
   '1': 'AuthenticationInfo',
   '2': [
     {'1': 'principal_email', '3': 1, '4': 1, '5': 9, '10': 'principalEmail'},
-    {'1': 'authority_selector', '3': 2, '4': 1, '5': 9, '10': 'authoritySelector'},
-    {'1': 'third_party_principal', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'thirdPartyPrincipal'},
-    {'1': 'service_account_key_name', '3': 5, '4': 1, '5': 9, '10': 'serviceAccountKeyName'},
-    {'1': 'service_account_delegation_info', '3': 6, '4': 3, '5': 11, '6': '.google.events.cloud.audit.v1.ServiceAccountDelegationInfo', '10': 'serviceAccountDelegationInfo'},
-    {'1': 'principal_subject', '3': 8, '4': 1, '5': 9, '10': 'principalSubject'},
+    {
+      '1': 'authority_selector',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'authoritySelector'
+    },
+    {
+      '1': 'third_party_principal',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'thirdPartyPrincipal'
+    },
+    {
+      '1': 'service_account_key_name',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '10': 'serviceAccountKeyName'
+    },
+    {
+      '1': 'service_account_delegation_info',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.events.cloud.audit.v1.ServiceAccountDelegationInfo',
+      '10': 'serviceAccountDelegationInfo'
+    },
+    {
+      '1': 'principal_subject',
+      '3': 8,
+      '4': 1,
+      '5': 9,
+      '10': 'principalSubject'
+    },
   ],
 };
 
@@ -169,7 +333,14 @@ const AuthorizationInfo$json = {
     {'1': 'resource', '3': 1, '4': 1, '5': 9, '10': 'resource'},
     {'1': 'permission', '3': 2, '4': 1, '5': 9, '10': 'permission'},
     {'1': 'granted', '3': 3, '4': 1, '5': 8, '10': 'granted'},
-    {'1': 'resource_attributes', '3': 5, '4': 1, '5': 11, '6': '.google.rpc.context.AttributeContext.Resource', '10': 'resourceAttributes'},
+    {
+      '1': 'resource_attributes',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.context.AttributeContext.Resource',
+      '10': 'resourceAttributes'
+    },
   ],
 };
 
@@ -185,10 +356,30 @@ const RequestMetadata$json = {
   '1': 'RequestMetadata',
   '2': [
     {'1': 'caller_ip', '3': 1, '4': 1, '5': 9, '10': 'callerIp'},
-    {'1': 'caller_supplied_user_agent', '3': 2, '4': 1, '5': 9, '10': 'callerSuppliedUserAgent'},
+    {
+      '1': 'caller_supplied_user_agent',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '10': 'callerSuppliedUserAgent'
+    },
     {'1': 'caller_network', '3': 3, '4': 1, '5': 9, '10': 'callerNetwork'},
-    {'1': 'request_attributes', '3': 7, '4': 1, '5': 11, '6': '.google.rpc.context.AttributeContext.Request', '10': 'requestAttributes'},
-    {'1': 'destination_attributes', '3': 8, '4': 1, '5': 11, '6': '.google.rpc.context.AttributeContext.Peer', '10': 'destinationAttributes'},
+    {
+      '1': 'request_attributes',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.context.AttributeContext.Request',
+      '10': 'requestAttributes'
+    },
+    {
+      '1': 'destination_attributes',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.context.AttributeContext.Peer',
+      '10': 'destinationAttributes'
+    },
   ],
 };
 
@@ -206,8 +397,20 @@ final $typed_data.Uint8List requestMetadataDescriptor = $convert.base64Decode(
 const ResourceLocation$json = {
   '1': 'ResourceLocation',
   '2': [
-    {'1': 'current_locations', '3': 1, '4': 3, '5': 9, '10': 'currentLocations'},
-    {'1': 'original_locations', '3': 2, '4': 3, '5': 9, '10': 'originalLocations'},
+    {
+      '1': 'current_locations',
+      '3': 1,
+      '4': 3,
+      '5': 9,
+      '10': 'currentLocations'
+    },
+    {
+      '1': 'original_locations',
+      '3': 2,
+      '4': 3,
+      '5': 9,
+      '10': 'originalLocations'
+    },
   ],
 };
 
@@ -220,10 +423,31 @@ final $typed_data.Uint8List resourceLocationDescriptor = $convert.base64Decode(
 const ServiceAccountDelegationInfo$json = {
   '1': 'ServiceAccountDelegationInfo',
   '2': [
-    {'1': 'first_party_principal', '3': 1, '4': 1, '5': 11, '6': '.google.events.cloud.audit.v1.ServiceAccountDelegationInfo.FirstPartyPrincipal', '9': 0, '10': 'firstPartyPrincipal'},
-    {'1': 'third_party_principal', '3': 2, '4': 1, '5': 11, '6': '.google.events.cloud.audit.v1.ServiceAccountDelegationInfo.ThirdPartyPrincipal', '9': 0, '10': 'thirdPartyPrincipal'},
+    {
+      '1': 'first_party_principal',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.audit.v1.ServiceAccountDelegationInfo.FirstPartyPrincipal',
+      '9': 0,
+      '10': 'firstPartyPrincipal'
+    },
+    {
+      '1': 'third_party_principal',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.events.cloud.audit.v1.ServiceAccountDelegationInfo.ThirdPartyPrincipal',
+      '9': 0,
+      '10': 'thirdPartyPrincipal'
+    },
   ],
-  '3': [ServiceAccountDelegationInfo_FirstPartyPrincipal$json, ServiceAccountDelegationInfo_ThirdPartyPrincipal$json],
+  '3': [
+    ServiceAccountDelegationInfo_FirstPartyPrincipal$json,
+    ServiceAccountDelegationInfo_ThirdPartyPrincipal$json
+  ],
   '8': [
     {'1': 'Authority'},
   ],
@@ -234,7 +458,14 @@ const ServiceAccountDelegationInfo_FirstPartyPrincipal$json = {
   '1': 'FirstPartyPrincipal',
   '2': [
     {'1': 'principal_email', '3': 1, '4': 1, '5': 9, '10': 'principalEmail'},
-    {'1': 'service_metadata', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'serviceMetadata'},
+    {
+      '1': 'service_metadata',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'serviceMetadata'
+    },
   ],
 };
 
@@ -242,7 +473,14 @@ const ServiceAccountDelegationInfo_FirstPartyPrincipal$json = {
 const ServiceAccountDelegationInfo_ThirdPartyPrincipal$json = {
   '1': 'ThirdPartyPrincipal',
   '2': [
-    {'1': 'third_party_claims', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'thirdPartyClaims'},
+    {
+      '1': 'third_party_claims',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'thirdPartyClaims'
+    },
   ],
 };
 
@@ -273,4 +511,3 @@ const LogSplit$json = {
 final $typed_data.Uint8List logSplitDescriptor = $convert.base64Decode(
     'CghMb2dTcGxpdBIQCgN1aWQYASABKAlSA3VpZBIUCgVpbmRleBgCIAEoBVIFaW5kZXgSIQoMdG'
     '90YWxfc3BsaXRzGAMgASgFUgt0b3RhbFNwbGl0cw==');
-
