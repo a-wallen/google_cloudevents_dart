@@ -80,9 +80,12 @@ Future<void> generateLibraryFiles(
 
       final srcReferencePath =
           p.relative(normalizedPath, from: '$libFileDirectory/..');
-
+      
+      // Dart export statements require forward slashes for paths, regardless of the
+      // operating system. This ensures compatibility, especially on Windows.
+      final dartSrcReferencePath = srcReferencePath.replaceAll(p.separator, '/');
       libFiles[libraryFilePath]!
-          .writeln("export '$srcReferencePath' show ${symbols.join(', ')};");
+          .writeln("export '$dartSrcReferencePath' show ${symbols.join(', ')};");
     }
   });
 

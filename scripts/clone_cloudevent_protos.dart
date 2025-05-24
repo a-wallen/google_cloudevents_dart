@@ -18,7 +18,7 @@ void setupLogging() {
 }
 
 Future<void> cloneCloudEvents() async {
-  const repoUrl = 'git@github.com:googleapis/google-cloudevents.git';
+  const repoUrl = 'https://github.com/googleapis/google-cloudevents.git';
   const cloneDirectory = 'cloudevents';
 
   if (Directory(cloneDirectory).existsSync()) {
