@@ -26,6 +26,16 @@ For an example of using this package in a server application, see the example in
 
 This library's Dart files are generated from protobuf definitions. To refresh these files with the latest specifications, use the scripts provided in the `scripts` directory. The `cloudevents` directory, used during this process, is temporarily created and is excluded from Git.
 
+TLDR:
+
+```bash
+dart run scripts/remove_cloudevent_protos.dart && \
+  dart run scripts/clone_cloudevent_protos.dart && \
+  dart run scripts/generate_cloudevent_protos.dart && \
+  dart run scripts/generate_cloudevent_library.dart && \
+  dart format lib
+```
+
 **Prerequisites**:
 The refresh scripts require the following command-line tools to be installed and available in your system's PATH:
 *   `git`
@@ -34,6 +44,7 @@ The refresh scripts require the following command-line tools to be installed and
 *   The Protocol Buffer compiler (defaults to `protoc`; its name/path can be specified as an argument in Step 2).
 
 Note: On Windows, you need to run these scripts using an environment that provides these Unix-like utilities, such as Git Bash or Windows Subsystem for Linux (WSL).
+
 
 Here's the typical workflow:
 
@@ -49,13 +60,20 @@ Here's the typical workflow:
 
     This script generates Dart files from the `.proto` definitions. It executes helper scripts, invokes the Protocol Buffer compiler, and organizes the output files.
     
-    The Protocol Buffer compiler executable can be provided as an argument and defaults to `protoc` if not specified. For example, if you installed `protoc` via the `protoc_plugin` package (https://pub.dev/packages/protoc_plugin), the command on Windows might be `protoc-gen-dart.bat` rather than `protoc`.
+    The Protocol Buffer compiler executable can be provided as an argument and defaults to `protoc` if not specified.
 
-4.  **Generate Library Export Files**:
+3.  **Generate Library Export Files**:
 
     Run `dart run scripts/generate_cloudevent_library.dart`
     
     This script analyzes the generated Dart files in `lib/src` and creates or updates the main library export files in `lib`.
+
+4.  **Format Generated Code**:
+
+    Run `dart format lib`
+    
+    This command formats the generated Dart files in the `lib` directory to ensure consistent code style.
+
 
 **Cleanup**:
 
