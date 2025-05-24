@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/apigeeregistry/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $12;
+import 'data.pb.dart' as $6;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when an Instance is created.
 class InstanceCreatedEvent extends $pb.GeneratedMessage {
   factory InstanceCreatedEvent({
-    $12.InstanceEventData? data,
+    $6.InstanceEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -39,18 +41,14 @@ class InstanceCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.InstanceEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.InstanceEventData.create)
+    ..aOM<$6.InstanceEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.InstanceEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceCreatedEvent clone() =>
       InstanceCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceCreatedEvent copyWith(void Function(InstanceCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as InstanceCreatedEvent))
           as InstanceCreatedEvent;
@@ -69,24 +67,24 @@ class InstanceCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.InstanceEventData get data => $_getN(0);
+  $6.InstanceEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.InstanceEventData v) {
-    setField(1, v);
+  set data($6.InstanceEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.InstanceEventData ensureData() => $_ensure(0);
+  $6.InstanceEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Instance is deleted.
 class InstanceDeletedEvent extends $pb.GeneratedMessage {
   factory InstanceDeletedEvent({
-    $12.InstanceEventData? data,
+    $6.InstanceEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -107,18 +105,14 @@ class InstanceDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.InstanceEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.InstanceEventData.create)
+    ..aOM<$6.InstanceEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.InstanceEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceDeletedEvent clone() =>
       InstanceDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceDeletedEvent copyWith(void Function(InstanceDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as InstanceDeletedEvent))
           as InstanceDeletedEvent;
@@ -137,24 +131,24 @@ class InstanceDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.InstanceEventData get data => $_getN(0);
+  $6.InstanceEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.InstanceEventData v) {
-    setField(1, v);
+  set data($6.InstanceEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.InstanceEventData ensureData() => $_ensure(0);
+  $6.InstanceEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Api is created.
 class ApiCreatedEvent extends $pb.GeneratedMessage {
   factory ApiCreatedEvent({
-    $12.ApiEventData? data,
+    $6.ApiEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -175,17 +169,13 @@ class ApiCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiEventData.create)
+    ..aOM<$6.ApiEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiCreatedEvent clone() => ApiCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiCreatedEvent copyWith(void Function(ApiCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiCreatedEvent))
           as ApiCreatedEvent;
@@ -204,24 +194,24 @@ class ApiCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiEventData get data => $_getN(0);
+  $6.ApiEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiEventData v) {
-    setField(1, v);
+  set data($6.ApiEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiEventData ensureData() => $_ensure(0);
+  $6.ApiEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Api is updated.
 class ApiUpdatedEvent extends $pb.GeneratedMessage {
   factory ApiUpdatedEvent({
-    $12.ApiEventData? data,
+    $6.ApiEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -242,17 +232,13 @@ class ApiUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiEventData.create)
+    ..aOM<$6.ApiEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiUpdatedEvent clone() => ApiUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiUpdatedEvent copyWith(void Function(ApiUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiUpdatedEvent))
           as ApiUpdatedEvent;
@@ -271,24 +257,24 @@ class ApiUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiEventData get data => $_getN(0);
+  $6.ApiEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiEventData v) {
-    setField(1, v);
+  set data($6.ApiEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiEventData ensureData() => $_ensure(0);
+  $6.ApiEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Api is deleted.
 class ApiDeletedEvent extends $pb.GeneratedMessage {
   factory ApiDeletedEvent({
-    $12.ApiEventData? data,
+    $6.ApiEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -309,17 +295,13 @@ class ApiDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiEventData.create)
+    ..aOM<$6.ApiEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeletedEvent clone() => ApiDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeletedEvent copyWith(void Function(ApiDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiDeletedEvent))
           as ApiDeletedEvent;
@@ -338,24 +320,24 @@ class ApiDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiEventData get data => $_getN(0);
+  $6.ApiEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiEventData v) {
-    setField(1, v);
+  set data($6.ApiEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiEventData ensureData() => $_ensure(0);
+  $6.ApiEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an ApiVersion is created.
 class ApiVersionCreatedEvent extends $pb.GeneratedMessage {
   factory ApiVersionCreatedEvent({
-    $12.ApiVersionEventData? data,
+    $6.ApiVersionEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -376,18 +358,14 @@ class ApiVersionCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiVersionEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiVersionEventData.create)
+    ..aOM<$6.ApiVersionEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiVersionEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersionCreatedEvent clone() =>
       ApiVersionCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersionCreatedEvent copyWith(
           void Function(ApiVersionCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiVersionCreatedEvent))
@@ -407,24 +385,24 @@ class ApiVersionCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiVersionEventData get data => $_getN(0);
+  $6.ApiVersionEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiVersionEventData v) {
-    setField(1, v);
+  set data($6.ApiVersionEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiVersionEventData ensureData() => $_ensure(0);
+  $6.ApiVersionEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an ApiVersion is updated.
 class ApiVersionUpdatedEvent extends $pb.GeneratedMessage {
   factory ApiVersionUpdatedEvent({
-    $12.ApiVersionEventData? data,
+    $6.ApiVersionEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -445,18 +423,14 @@ class ApiVersionUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiVersionEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiVersionEventData.create)
+    ..aOM<$6.ApiVersionEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiVersionEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersionUpdatedEvent clone() =>
       ApiVersionUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersionUpdatedEvent copyWith(
           void Function(ApiVersionUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiVersionUpdatedEvent))
@@ -476,24 +450,24 @@ class ApiVersionUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiVersionEventData get data => $_getN(0);
+  $6.ApiVersionEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiVersionEventData v) {
-    setField(1, v);
+  set data($6.ApiVersionEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiVersionEventData ensureData() => $_ensure(0);
+  $6.ApiVersionEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an ApiVersion is deleted.
 class ApiVersionDeletedEvent extends $pb.GeneratedMessage {
   factory ApiVersionDeletedEvent({
-    $12.ApiVersionEventData? data,
+    $6.ApiVersionEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -514,18 +488,14 @@ class ApiVersionDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiVersionEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiVersionEventData.create)
+    ..aOM<$6.ApiVersionEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiVersionEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersionDeletedEvent clone() =>
       ApiVersionDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersionDeletedEvent copyWith(
           void Function(ApiVersionDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiVersionDeletedEvent))
@@ -545,24 +515,24 @@ class ApiVersionDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiVersionEventData get data => $_getN(0);
+  $6.ApiVersionEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiVersionEventData v) {
-    setField(1, v);
+  set data($6.ApiVersionEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiVersionEventData ensureData() => $_ensure(0);
+  $6.ApiVersionEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an ApiSpec is created.
 class ApiSpecCreatedEvent extends $pb.GeneratedMessage {
   factory ApiSpecCreatedEvent({
-    $12.ApiSpecEventData? data,
+    $6.ApiSpecEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -583,17 +553,13 @@ class ApiSpecCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiSpecEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiSpecEventData.create)
+    ..aOM<$6.ApiSpecEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiSpecEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpecCreatedEvent clone() => ApiSpecCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpecCreatedEvent copyWith(void Function(ApiSpecCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiSpecCreatedEvent))
           as ApiSpecCreatedEvent;
@@ -612,24 +578,24 @@ class ApiSpecCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiSpecEventData get data => $_getN(0);
+  $6.ApiSpecEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiSpecEventData v) {
-    setField(1, v);
+  set data($6.ApiSpecEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiSpecEventData ensureData() => $_ensure(0);
+  $6.ApiSpecEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an ApiSpec is updated.
 class ApiSpecUpdatedEvent extends $pb.GeneratedMessage {
   factory ApiSpecUpdatedEvent({
-    $12.ApiSpecEventData? data,
+    $6.ApiSpecEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -650,17 +616,13 @@ class ApiSpecUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiSpecEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiSpecEventData.create)
+    ..aOM<$6.ApiSpecEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiSpecEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpecUpdatedEvent clone() => ApiSpecUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpecUpdatedEvent copyWith(void Function(ApiSpecUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiSpecUpdatedEvent))
           as ApiSpecUpdatedEvent;
@@ -679,24 +641,24 @@ class ApiSpecUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiSpecEventData get data => $_getN(0);
+  $6.ApiSpecEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiSpecEventData v) {
-    setField(1, v);
+  set data($6.ApiSpecEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiSpecEventData ensureData() => $_ensure(0);
+  $6.ApiSpecEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an ApiSpec is deleted.
 class ApiSpecDeletedEvent extends $pb.GeneratedMessage {
   factory ApiSpecDeletedEvent({
-    $12.ApiSpecEventData? data,
+    $6.ApiSpecEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -717,17 +679,13 @@ class ApiSpecDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiSpecEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiSpecEventData.create)
+    ..aOM<$6.ApiSpecEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiSpecEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpecDeletedEvent clone() => ApiSpecDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpecDeletedEvent copyWith(void Function(ApiSpecDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiSpecDeletedEvent))
           as ApiSpecDeletedEvent;
@@ -746,24 +704,24 @@ class ApiSpecDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiSpecEventData get data => $_getN(0);
+  $6.ApiSpecEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiSpecEventData v) {
-    setField(1, v);
+  set data($6.ApiSpecEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiSpecEventData ensureData() => $_ensure(0);
+  $6.ApiSpecEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an ApiDeployment is created.
 class ApiDeploymentCreatedEvent extends $pb.GeneratedMessage {
   factory ApiDeploymentCreatedEvent({
-    $12.ApiDeploymentEventData? data,
+    $6.ApiDeploymentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -784,18 +742,14 @@ class ApiDeploymentCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiDeploymentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiDeploymentEventData.create)
+    ..aOM<$6.ApiDeploymentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiDeploymentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeploymentCreatedEvent clone() =>
       ApiDeploymentCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeploymentCreatedEvent copyWith(
           void Function(ApiDeploymentCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiDeploymentCreatedEvent))
@@ -815,24 +769,24 @@ class ApiDeploymentCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiDeploymentEventData get data => $_getN(0);
+  $6.ApiDeploymentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiDeploymentEventData v) {
-    setField(1, v);
+  set data($6.ApiDeploymentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiDeploymentEventData ensureData() => $_ensure(0);
+  $6.ApiDeploymentEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an ApiDeployment is updated.
 class ApiDeploymentUpdatedEvent extends $pb.GeneratedMessage {
   factory ApiDeploymentUpdatedEvent({
-    $12.ApiDeploymentEventData? data,
+    $6.ApiDeploymentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -853,18 +807,14 @@ class ApiDeploymentUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiDeploymentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiDeploymentEventData.create)
+    ..aOM<$6.ApiDeploymentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiDeploymentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeploymentUpdatedEvent clone() =>
       ApiDeploymentUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeploymentUpdatedEvent copyWith(
           void Function(ApiDeploymentUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiDeploymentUpdatedEvent))
@@ -884,24 +834,24 @@ class ApiDeploymentUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiDeploymentEventData get data => $_getN(0);
+  $6.ApiDeploymentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiDeploymentEventData v) {
-    setField(1, v);
+  set data($6.ApiDeploymentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiDeploymentEventData ensureData() => $_ensure(0);
+  $6.ApiDeploymentEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an ApiDeployment is deleted.
 class ApiDeploymentDeletedEvent extends $pb.GeneratedMessage {
   factory ApiDeploymentDeletedEvent({
-    $12.ApiDeploymentEventData? data,
+    $6.ApiDeploymentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -922,18 +872,14 @@ class ApiDeploymentDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.apigeeregistry.v1'),
       createEmptyInstance: create)
-    ..aOM<$12.ApiDeploymentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $12.ApiDeploymentEventData.create)
+    ..aOM<$6.ApiDeploymentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $6.ApiDeploymentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeploymentDeletedEvent clone() =>
       ApiDeploymentDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeploymentDeletedEvent copyWith(
           void Function(ApiDeploymentDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ApiDeploymentDeletedEvent))
@@ -953,18 +899,18 @@ class ApiDeploymentDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $12.ApiDeploymentEventData get data => $_getN(0);
+  $6.ApiDeploymentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($12.ApiDeploymentEventData v) {
-    setField(1, v);
+  set data($6.ApiDeploymentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $12.ApiDeploymentEventData ensureData() => $_ensure(0);
+  $6.ApiDeploymentEventData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

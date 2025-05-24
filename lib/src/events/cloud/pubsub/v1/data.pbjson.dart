@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/pubsub/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -26,6 +26,7 @@ const MessagePublishedData$json = {
       '10': 'message'
     },
     {'1': 'subscription', '3': 2, '4': 1, '5': 9, '10': 'subscription'},
+    {'1': 'delivery_attempt', '3': 3, '4': 1, '5': 5, '10': 'deliveryAttempt'},
   ],
 };
 
@@ -33,7 +34,8 @@ const MessagePublishedData$json = {
 final $typed_data.Uint8List messagePublishedDataDescriptor = $convert.base64Decode(
     'ChRNZXNzYWdlUHVibGlzaGVkRGF0YRJGCgdtZXNzYWdlGAEgASgLMiwuZ29vZ2xlLmV2ZW50cy'
     '5jbG91ZC5wdWJzdWIudjEuUHVic3ViTWVzc2FnZVIHbWVzc2FnZRIiCgxzdWJzY3JpcHRpb24Y'
-    'AiABKAlSDHN1YnNjcmlwdGlvbg==');
+    'AiABKAlSDHN1YnNjcmlwdGlvbhIpChBkZWxpdmVyeV9hdHRlbXB0GAMgASgFUg9kZWxpdmVyeU'
+    'F0dGVtcHQ=');
 
 @$core.Deprecated('Use pubsubMessageDescriptor instead')
 const PubsubMessage$json = {

@@ -1,20 +1,3 @@
-export '../../../src/events/cloud/metastore/v1/data.pbenum.dart'
-    show
-        Federation_State,
-        BackendMetastore_MetastoreType,
-        Service_State,
-        Service_Tier,
-        Service_ReleaseChannel,
-        Service_DatabaseType,
-        TelemetryConfig_LogFormat,
-        MetadataImport_State,
-        MetadataImport_DatabaseDump_DatabaseType,
-        MetadataExport_State,
-        Backup_State,
-        Restore_State,
-        Restore_RestoreType,
-        ScalingConfig_InstanceSize,
-        DatabaseDumpSpec_Type;
 export '../../../src/events/cloud/metastore/v1/data.pb.dart'
     show
         Federation,
@@ -41,6 +24,23 @@ export '../../../src/events/cloud/metastore/v1/data.pb.dart'
         FederationEventData,
         BackupEventData,
         ServiceEventData;
+export '../../../src/events/cloud/metastore/v1/data.pbenum.dart'
+    show
+        Federation_State,
+        BackendMetastore_MetastoreType,
+        Service_State,
+        Service_Tier,
+        Service_ReleaseChannel,
+        Service_DatabaseType,
+        TelemetryConfig_LogFormat,
+        MetadataImport_State,
+        MetadataImport_DatabaseDump_DatabaseType,
+        MetadataExport_State,
+        Backup_State,
+        Restore_State,
+        Restore_RestoreType,
+        ScalingConfig_InstanceSize,
+        DatabaseDumpSpec_Type;
 export '../../../src/events/cloud/metastore/v1/events.pb.dart'
     show
         FederationCreatedEvent,

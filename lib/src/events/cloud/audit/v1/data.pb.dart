@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/audit/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,12 +14,14 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../api/monitored_resource.pb.dart' as $42;
-import '../../../../protobuf/struct.pb.dart' as $0;
+import '../../../../api/monitored_resource.pb.dart' as $8;
+import '../../../../protobuf/struct.pb.dart' as $10;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../rpc/context/attribute_context.pb.dart' as $43;
-import '../../../../rpc/status.pb.dart' as $19;
+import '../../../../rpc/context/attribute_context.pb.dart' as $11;
+import '../../../../rpc/status.pb.dart' as $9;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -28,10 +30,10 @@ class LogEntryData extends $pb.GeneratedMessage {
   factory LogEntryData({
     AuditLog? protoPayload,
     $core.String? insertId,
-    $42.MonitoredResource? resource,
+    $8.MonitoredResource? resource,
     $2.Timestamp? timestamp,
     LogSeverity? severity,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? logName,
     LogEntryOperation? operation,
     $core.String? trace,
@@ -56,7 +58,7 @@ class LogEntryData extends $pb.GeneratedMessage {
       $result.severity = severity;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (logName != null) {
       $result.logName = logName;
@@ -94,8 +96,8 @@ class LogEntryData extends $pb.GeneratedMessage {
     ..aOM<AuditLog>(2, _omitFieldNames ? '' : 'protoPayload',
         subBuilder: AuditLog.create)
     ..aOS(4, _omitFieldNames ? '' : 'insertId')
-    ..aOM<$42.MonitoredResource>(8, _omitFieldNames ? '' : 'resource',
-        subBuilder: $42.MonitoredResource.create)
+    ..aOM<$8.MonitoredResource>(8, _omitFieldNames ? '' : 'resource',
+        subBuilder: $8.MonitoredResource.create)
     ..aOM<$2.Timestamp>(9, _omitFieldNames ? '' : 'timestamp',
         subBuilder: $2.Timestamp.create)
     ..e<LogSeverity>(10, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE,
@@ -118,13 +120,9 @@ class LogEntryData extends $pb.GeneratedMessage {
         subBuilder: LogSplit.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogEntryData clone() => LogEntryData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogEntryData copyWith(void Function(LogEntryData) updates) =>
       super.copyWith((message) => updates(message as LogEntryData))
           as LogEntryData;
@@ -147,13 +145,13 @@ class LogEntryData extends $pb.GeneratedMessage {
   AuditLog get protoPayload => $_getN(0);
   @$pb.TagNumber(2)
   set protoPayload(AuditLog v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasProtoPayload() => $_has(0);
   @$pb.TagNumber(2)
-  void clearProtoPayload() => clearField(2);
+  void clearProtoPayload() => $_clearField(2);
   @$pb.TagNumber(2)
   AuditLog ensureProtoPayload() => $_ensure(0);
 
@@ -168,39 +166,39 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasInsertId() => $_has(1);
   @$pb.TagNumber(4)
-  void clearInsertId() => clearField(4);
+  void clearInsertId() => $_clearField(4);
 
-  ///  The monitored resource that produced this log entry.
+  /// The monitored resource that produced this log entry.
   ///
-  ///  Example: a log entry that reports a database error would be associated with
-  ///  the monitored resource designating the particular database that reported
-  ///  the error.
+  /// Example: a log entry that reports a database error would be associated with
+  /// the monitored resource designating the particular database that reported
+  /// the error.
   @$pb.TagNumber(8)
-  $42.MonitoredResource get resource => $_getN(2);
+  $8.MonitoredResource get resource => $_getN(2);
   @$pb.TagNumber(8)
-  set resource($42.MonitoredResource v) {
-    setField(8, v);
+  set resource($8.MonitoredResource v) {
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasResource() => $_has(2);
   @$pb.TagNumber(8)
-  void clearResource() => clearField(8);
+  void clearResource() => $_clearField(8);
   @$pb.TagNumber(8)
-  $42.MonitoredResource ensureResource() => $_ensure(2);
+  $8.MonitoredResource ensureResource() => $_ensure(2);
 
   /// The time the event described by the log entry occurred.
   @$pb.TagNumber(9)
   $2.Timestamp get timestamp => $_getN(3);
   @$pb.TagNumber(9)
   set timestamp($2.Timestamp v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasTimestamp() => $_has(3);
   @$pb.TagNumber(9)
-  void clearTimestamp() => clearField(9);
+  void clearTimestamp() => $_clearField(9);
   @$pb.TagNumber(9)
   $2.Timestamp ensureTimestamp() => $_ensure(3);
 
@@ -209,18 +207,18 @@ class LogEntryData extends $pb.GeneratedMessage {
   LogSeverity get severity => $_getN(4);
   @$pb.TagNumber(10)
   set severity(LogSeverity v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasSeverity() => $_has(4);
   @$pb.TagNumber(10)
-  void clearSeverity() => clearField(10);
+  void clearSeverity() => $_clearField(10);
 
   /// A set of user-defined (key, value) data that provides additional
   /// information about the log entry.
   @$pb.TagNumber(11)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(5);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(5);
 
   /// The resource name of the log to which this log entry belongs.
   @$pb.TagNumber(12)
@@ -233,7 +231,7 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasLogName() => $_has(6);
   @$pb.TagNumber(12)
-  void clearLogName() => clearField(12);
+  void clearLogName() => $_clearField(12);
 
   /// Information about an operation associated with the log entry, if
   /// applicable.
@@ -241,13 +239,13 @@ class LogEntryData extends $pb.GeneratedMessage {
   LogEntryOperation get operation => $_getN(7);
   @$pb.TagNumber(15)
   set operation(LogEntryOperation v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasOperation() => $_has(7);
   @$pb.TagNumber(15)
-  void clearOperation() => clearField(15);
+  void clearOperation() => $_clearField(15);
   @$pb.TagNumber(15)
   LogEntryOperation ensureOperation() => $_ensure(7);
 
@@ -265,28 +263,28 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.bool hasTrace() => $_has(8);
   @$pb.TagNumber(22)
-  void clearTrace() => clearField(22);
+  void clearTrace() => $_clearField(22);
 
   /// The time the log entry was received by Logging.
   @$pb.TagNumber(24)
   $2.Timestamp get receiveTimestamp => $_getN(9);
   @$pb.TagNumber(24)
   set receiveTimestamp($2.Timestamp v) {
-    setField(24, v);
+    $_setField(24, v);
   }
 
   @$pb.TagNumber(24)
   $core.bool hasReceiveTimestamp() => $_has(9);
   @$pb.TagNumber(24)
-  void clearReceiveTimestamp() => clearField(24);
+  void clearReceiveTimestamp() => $_clearField(24);
   @$pb.TagNumber(24)
   $2.Timestamp ensureReceiveTimestamp() => $_ensure(9);
 
-  ///  The span ID within the trace associated with the log entry, if any.
+  /// The span ID within the trace associated with the log entry, if any.
   ///
-  ///  For Trace spans, this is the same format that the Trace API v2 uses: a
-  ///  16-character hexadecimal encoding of an 8-byte array, such as
-  ///  `000000000000004a`.
+  /// For Trace spans, this is the same format that the Trace API v2 uses: a
+  /// 16-character hexadecimal encoding of an 8-byte array, such as
+  /// `000000000000004a`.
   @$pb.TagNumber(27)
   $core.String get spanId => $_getSZ(10);
   @$pb.TagNumber(27)
@@ -297,7 +295,7 @@ class LogEntryData extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   $core.bool hasSpanId() => $_has(10);
   @$pb.TagNumber(27)
-  void clearSpanId() => clearField(27);
+  void clearSpanId() => $_clearField(27);
 
   /// Information indicating this LogEntry is part of a sequence of multiple logs
   /// split from a single LogEntry.
@@ -305,13 +303,13 @@ class LogEntryData extends $pb.GeneratedMessage {
   LogSplit get split => $_getN(11);
   @$pb.TagNumber(35)
   set split(LogSplit v) {
-    setField(35, v);
+    $_setField(35, v);
   }
 
   @$pb.TagNumber(35)
   $core.bool hasSplit() => $_has(11);
   @$pb.TagNumber(35)
-  void clearSplit() => clearField(35);
+  void clearSplit() => $_clearField(35);
   @$pb.TagNumber(35)
   LogSplit ensureSplit() => $_ensure(11);
 }
@@ -359,13 +357,9 @@ class LogEntryOperation extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'last')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogEntryOperation clone() => LogEntryOperation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogEntryOperation copyWith(void Function(LogEntryOperation) updates) =>
       super.copyWith((message) => updates(message as LogEntryOperation))
           as LogEntryOperation;
@@ -394,7 +388,7 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearId() => clearField(1);
+  void clearId() => $_clearField(1);
 
   /// An arbitrary producer identifier. The combination of `id` and
   /// `producer` must be globally unique. Examples for `producer`:
@@ -409,7 +403,7 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasProducer() => $_has(1);
   @$pb.TagNumber(2)
-  void clearProducer() => clearField(2);
+  void clearProducer() => $_clearField(2);
 
   /// True if this is the first log entry in the operation.
   @$pb.TagNumber(3)
@@ -422,7 +416,7 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasFirst() => $_has(2);
   @$pb.TagNumber(3)
-  void clearFirst() => clearField(3);
+  void clearFirst() => $_clearField(3);
 
   /// True if this is the last log entry in the operation.
   @$pb.TagNumber(4)
@@ -435,7 +429,7 @@ class LogEntryOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasLast() => $_has(3);
   @$pb.TagNumber(4)
-  void clearLast() => clearField(4);
+  void clearLast() => $_clearField(4);
 }
 
 /// Common audit log format for Google Cloud Platform API operations.
@@ -444,7 +438,7 @@ class LogEntryOperation extends $pb.GeneratedMessage {
 /// but changing service_data from Any to Struct.
 class AuditLog extends $pb.GeneratedMessage {
   factory AuditLog({
-    $19.Status? status,
+    $9.Status? status,
     AuthenticationInfo? authenticationInfo,
     RequestMetadata? requestMetadata,
     $core.String? serviceName,
@@ -452,11 +446,11 @@ class AuditLog extends $pb.GeneratedMessage {
     $core.Iterable<AuthorizationInfo>? authorizationInfo,
     $core.String? resourceName,
     $fixnum.Int64? numResponseItems,
-    $0.Struct? serviceData,
-    $0.Struct? request,
-    $0.Struct? response,
-    $0.Struct? metadata,
-    $0.Struct? resourceOriginalState,
+    $10.Struct? serviceData,
+    $10.Struct? request,
+    $10.Struct? response,
+    $10.Struct? metadata,
+    $10.Struct? resourceOriginalState,
     ResourceLocation? resourceLocation,
   }) {
     final $result = create();
@@ -517,8 +511,8 @@ class AuditLog extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
       createEmptyInstance: create)
-    ..aOM<$19.Status>(2, _omitFieldNames ? '' : 'status',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(2, _omitFieldNames ? '' : 'status',
+        subBuilder: $9.Status.create)
     ..aOM<AuthenticationInfo>(3, _omitFieldNames ? '' : 'authenticationInfo',
         subBuilder: AuthenticationInfo.create)
     ..aOM<RequestMetadata>(4, _omitFieldNames ? '' : 'requestMetadata',
@@ -530,27 +524,23 @@ class AuditLog extends $pb.GeneratedMessage {
         subBuilder: AuthorizationInfo.create)
     ..aOS(11, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(12, _omitFieldNames ? '' : 'numResponseItems')
-    ..aOM<$0.Struct>(15, _omitFieldNames ? '' : 'serviceData',
-        subBuilder: $0.Struct.create)
-    ..aOM<$0.Struct>(16, _omitFieldNames ? '' : 'request',
-        subBuilder: $0.Struct.create)
-    ..aOM<$0.Struct>(17, _omitFieldNames ? '' : 'response',
-        subBuilder: $0.Struct.create)
-    ..aOM<$0.Struct>(18, _omitFieldNames ? '' : 'metadata',
-        subBuilder: $0.Struct.create)
-    ..aOM<$0.Struct>(19, _omitFieldNames ? '' : 'resourceOriginalState',
-        subBuilder: $0.Struct.create)
+    ..aOM<$10.Struct>(15, _omitFieldNames ? '' : 'serviceData',
+        subBuilder: $10.Struct.create)
+    ..aOM<$10.Struct>(16, _omitFieldNames ? '' : 'request',
+        subBuilder: $10.Struct.create)
+    ..aOM<$10.Struct>(17, _omitFieldNames ? '' : 'response',
+        subBuilder: $10.Struct.create)
+    ..aOM<$10.Struct>(18, _omitFieldNames ? '' : 'metadata',
+        subBuilder: $10.Struct.create)
+    ..aOM<$10.Struct>(19, _omitFieldNames ? '' : 'resourceOriginalState',
+        subBuilder: $10.Struct.create)
     ..aOM<ResourceLocation>(20, _omitFieldNames ? '' : 'resourceLocation',
         subBuilder: ResourceLocation.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuditLog clone() => AuditLog()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuditLog copyWith(void Function(AuditLog) updates) =>
       super.copyWith((message) => updates(message as AuditLog)) as AuditLog;
 
@@ -567,31 +557,31 @@ class AuditLog extends $pb.GeneratedMessage {
 
   /// The status of the overall operation.
   @$pb.TagNumber(2)
-  $19.Status get status => $_getN(0);
+  $9.Status get status => $_getN(0);
   @$pb.TagNumber(2)
-  set status($19.Status v) {
-    setField(2, v);
+  set status($9.Status v) {
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(2)
-  void clearStatus() => clearField(2);
+  void clearStatus() => $_clearField(2);
   @$pb.TagNumber(2)
-  $19.Status ensureStatus() => $_ensure(0);
+  $9.Status ensureStatus() => $_ensure(0);
 
   /// Authentication information.
   @$pb.TagNumber(3)
   AuthenticationInfo get authenticationInfo => $_getN(1);
   @$pb.TagNumber(3)
   set authenticationInfo(AuthenticationInfo v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasAuthenticationInfo() => $_has(1);
   @$pb.TagNumber(3)
-  void clearAuthenticationInfo() => clearField(3);
+  void clearAuthenticationInfo() => $_clearField(3);
   @$pb.TagNumber(3)
   AuthenticationInfo ensureAuthenticationInfo() => $_ensure(1);
 
@@ -600,13 +590,13 @@ class AuditLog extends $pb.GeneratedMessage {
   RequestMetadata get requestMetadata => $_getN(2);
   @$pb.TagNumber(4)
   set requestMetadata(RequestMetadata v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasRequestMetadata() => $_has(2);
   @$pb.TagNumber(4)
-  void clearRequestMetadata() => clearField(4);
+  void clearRequestMetadata() => $_clearField(4);
   @$pb.TagNumber(4)
   RequestMetadata ensureRequestMetadata() => $_ensure(2);
 
@@ -622,14 +612,14 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasServiceName() => $_has(3);
   @$pb.TagNumber(7)
-  void clearServiceName() => clearField(7);
+  void clearServiceName() => $_clearField(7);
 
-  ///  The name of the service method or operation.
-  ///  For API calls, this should be the name of the API method.
-  ///  For example,
+  /// The name of the service method or operation.
+  /// For API calls, this should be the name of the API method.
+  /// For example,
   ///
-  ///      "google.datastore.v1.Datastore.RunQuery"
-  ///      "google.logging.v1.LoggingService.DeleteLog"
+  ///     "google.datastore.v1.Datastore.RunQuery"
+  ///     "google.logging.v1.LoggingService.DeleteLog"
   @$pb.TagNumber(8)
   $core.String get methodName => $_getSZ(4);
   @$pb.TagNumber(8)
@@ -640,20 +630,20 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasMethodName() => $_has(4);
   @$pb.TagNumber(8)
-  void clearMethodName() => clearField(8);
+  void clearMethodName() => $_clearField(8);
 
   /// Authorization information. If there are multiple
   /// resources or permissions involved, then there is
   /// one AuthorizationInfo element for each {resource, permission} tuple.
   @$pb.TagNumber(9)
-  $core.List<AuthorizationInfo> get authorizationInfo => $_getList(5);
+  $pb.PbList<AuthorizationInfo> get authorizationInfo => $_getList(5);
 
-  ///  The resource or collection that is the target of the operation.
-  ///  The name is a scheme-less URI, not including the API service name.
-  ///  For example:
+  /// The resource or collection that is the target of the operation.
+  /// The name is a scheme-less URI, not including the API service name.
+  /// For example:
   ///
-  ///      "shelves/SHELF_ID/books"
-  ///      "shelves/SHELF_ID/books/BOOK_ID"
+  ///     "shelves/SHELF_ID/books"
+  ///     "shelves/SHELF_ID/books/BOOK_ID"
   @$pb.TagNumber(11)
   $core.String get resourceName => $_getSZ(6);
   @$pb.TagNumber(11)
@@ -664,7 +654,7 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasResourceName() => $_has(6);
   @$pb.TagNumber(11)
-  void clearResourceName() => clearField(11);
+  void clearResourceName() => $_clearField(11);
 
   /// The number of items returned from a List or Query API method,
   /// if applicable.
@@ -678,7 +668,7 @@ class AuditLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasNumResponseItems() => $_has(7);
   @$pb.TagNumber(12)
-  void clearNumResponseItems() => clearField(12);
+  void clearNumResponseItems() => $_clearField(12);
 
   /// Deprecated: Use `metadata` field instead.
   /// Other service-specific data about the request, response, and other
@@ -686,18 +676,18 @@ class AuditLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(15)
-  $0.Struct get serviceData => $_getN(8);
+  $10.Struct get serviceData => $_getN(8);
   @$pb.TagNumber(15)
-  set serviceData($0.Struct v) {
-    setField(15, v);
+  set serviceData($10.Struct v) {
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasServiceData() => $_has(8);
   @$pb.TagNumber(15)
-  void clearServiceData() => clearField(15);
+  void clearServiceData() => $_clearField(15);
   @$pb.TagNumber(15)
-  $0.Struct ensureServiceData() => $_ensure(8);
+  $10.Struct ensureServiceData() => $_ensure(8);
 
   /// The operation request. This may not include all request parameters,
   /// such as those that are too large, privacy-sensitive, or duplicated
@@ -706,18 +696,18 @@ class AuditLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(16)
-  $0.Struct get request => $_getN(9);
+  $10.Struct get request => $_getN(9);
   @$pb.TagNumber(16)
-  set request($0.Struct v) {
-    setField(16, v);
+  set request($10.Struct v) {
+    $_setField(16, v);
   }
 
   @$pb.TagNumber(16)
   $core.bool hasRequest() => $_has(9);
   @$pb.TagNumber(16)
-  void clearRequest() => clearField(16);
+  void clearRequest() => $_clearField(16);
   @$pb.TagNumber(16)
-  $0.Struct ensureRequest() => $_ensure(9);
+  $10.Struct ensureRequest() => $_ensure(9);
 
   /// The operation response. This may not include all response elements,
   /// such as those that are too large, privacy-sensitive, or duplicated
@@ -726,34 +716,34 @@ class AuditLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(17)
-  $0.Struct get response => $_getN(10);
+  $10.Struct get response => $_getN(10);
   @$pb.TagNumber(17)
-  set response($0.Struct v) {
-    setField(17, v);
+  set response($10.Struct v) {
+    $_setField(17, v);
   }
 
   @$pb.TagNumber(17)
   $core.bool hasResponse() => $_has(10);
   @$pb.TagNumber(17)
-  void clearResponse() => clearField(17);
+  void clearResponse() => $_clearField(17);
   @$pb.TagNumber(17)
-  $0.Struct ensureResponse() => $_ensure(10);
+  $10.Struct ensureResponse() => $_ensure(10);
 
   /// Other service-specific data about the request, response, and other
   /// information associated with the current audited event.
   @$pb.TagNumber(18)
-  $0.Struct get metadata => $_getN(11);
+  $10.Struct get metadata => $_getN(11);
   @$pb.TagNumber(18)
-  set metadata($0.Struct v) {
-    setField(18, v);
+  set metadata($10.Struct v) {
+    $_setField(18, v);
   }
 
   @$pb.TagNumber(18)
   $core.bool hasMetadata() => $_has(11);
   @$pb.TagNumber(18)
-  void clearMetadata() => clearField(18);
+  void clearMetadata() => $_clearField(18);
   @$pb.TagNumber(18)
-  $0.Struct ensureMetadata() => $_ensure(11);
+  $10.Struct ensureMetadata() => $_ensure(11);
 
   /// The resource's original state before mutation. Present only for
   /// operations which have successfully modified the targeted resource(s).
@@ -763,31 +753,31 @@ class AuditLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent,
   /// the proto name will be indicated in the `@type` property.
   @$pb.TagNumber(19)
-  $0.Struct get resourceOriginalState => $_getN(12);
+  $10.Struct get resourceOriginalState => $_getN(12);
   @$pb.TagNumber(19)
-  set resourceOriginalState($0.Struct v) {
-    setField(19, v);
+  set resourceOriginalState($10.Struct v) {
+    $_setField(19, v);
   }
 
   @$pb.TagNumber(19)
   $core.bool hasResourceOriginalState() => $_has(12);
   @$pb.TagNumber(19)
-  void clearResourceOriginalState() => clearField(19);
+  void clearResourceOriginalState() => $_clearField(19);
   @$pb.TagNumber(19)
-  $0.Struct ensureResourceOriginalState() => $_ensure(12);
+  $10.Struct ensureResourceOriginalState() => $_ensure(12);
 
   /// The resource location information.
   @$pb.TagNumber(20)
   ResourceLocation get resourceLocation => $_getN(13);
   @$pb.TagNumber(20)
   set resourceLocation(ResourceLocation v) {
-    setField(20, v);
+    $_setField(20, v);
   }
 
   @$pb.TagNumber(20)
   $core.bool hasResourceLocation() => $_has(13);
   @$pb.TagNumber(20)
-  void clearResourceLocation() => clearField(20);
+  void clearResourceLocation() => $_clearField(20);
   @$pb.TagNumber(20)
   ResourceLocation ensureResourceLocation() => $_ensure(13);
 }
@@ -797,7 +787,7 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   factory AuthenticationInfo({
     $core.String? principalEmail,
     $core.String? authoritySelector,
-    $0.Struct? thirdPartyPrincipal,
+    $10.Struct? thirdPartyPrincipal,
     $core.String? serviceAccountKeyName,
     $core.Iterable<ServiceAccountDelegationInfo>? serviceAccountDelegationInfo,
     $core.String? principalSubject,
@@ -838,8 +828,8 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'principalEmail')
     ..aOS(2, _omitFieldNames ? '' : 'authoritySelector')
-    ..aOM<$0.Struct>(4, _omitFieldNames ? '' : 'thirdPartyPrincipal',
-        subBuilder: $0.Struct.create)
+    ..aOM<$10.Struct>(4, _omitFieldNames ? '' : 'thirdPartyPrincipal',
+        subBuilder: $10.Struct.create)
     ..aOS(5, _omitFieldNames ? '' : 'serviceAccountKeyName')
     ..pc<ServiceAccountDelegationInfo>(
         6,
@@ -849,13 +839,9 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'principalSubject')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuthenticationInfo clone() => AuthenticationInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuthenticationInfo copyWith(void Function(AuthenticationInfo) updates) =>
       super.copyWith((message) => updates(message as AuthenticationInfo))
           as AuthenticationInfo;
@@ -888,7 +874,7 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPrincipalEmail() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPrincipalEmail() => clearField(1);
+  void clearPrincipalEmail() => $_clearField(1);
 
   /// The authority selector specified by the requestor, if any.
   /// It is not guaranteed that the principal was allowed to use this authority.
@@ -902,31 +888,31 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasAuthoritySelector() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAuthoritySelector() => clearField(2);
+  void clearAuthoritySelector() => $_clearField(2);
 
   /// The third party identification (if any) of the authenticated user making
   /// the request.
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(4)
-  $0.Struct get thirdPartyPrincipal => $_getN(2);
+  $10.Struct get thirdPartyPrincipal => $_getN(2);
   @$pb.TagNumber(4)
-  set thirdPartyPrincipal($0.Struct v) {
-    setField(4, v);
+  set thirdPartyPrincipal($10.Struct v) {
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasThirdPartyPrincipal() => $_has(2);
   @$pb.TagNumber(4)
-  void clearThirdPartyPrincipal() => clearField(4);
+  void clearThirdPartyPrincipal() => $_clearField(4);
   @$pb.TagNumber(4)
-  $0.Struct ensureThirdPartyPrincipal() => $_ensure(2);
+  $10.Struct ensureThirdPartyPrincipal() => $_ensure(2);
 
-  ///  The name of the service account key used to create or exchange
-  ///  credentials for authenticating the service account making the request.
-  ///  This is a scheme-less URI full resource name. For example:
+  /// The name of the service account key used to create or exchange
+  /// credentials for authenticating the service account making the request.
+  /// This is a scheme-less URI full resource name. For example:
   ///
-  ///  "//iam.googleapis.com/projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}/keys/{key}"
+  /// "//iam.googleapis.com/projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}/keys/{key}"
   @$pb.TagNumber(5)
   $core.String get serviceAccountKeyName => $_getSZ(3);
   @$pb.TagNumber(5)
@@ -937,7 +923,7 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasServiceAccountKeyName() => $_has(3);
   @$pb.TagNumber(5)
-  void clearServiceAccountKeyName() => clearField(5);
+  void clearServiceAccountKeyName() => $_clearField(5);
 
   /// Identity delegation history of an authenticated service account that makes
   /// the request. It contains information on the real authorities that try to
@@ -945,7 +931,7 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   /// authorities present, they are guaranteed to be sorted based on the original
   /// ordering of the identity delegation events.
   @$pb.TagNumber(6)
-  $core.List<ServiceAccountDelegationInfo> get serviceAccountDelegationInfo =>
+  $pb.PbList<ServiceAccountDelegationInfo> get serviceAccountDelegationInfo =>
       $_getList(4);
 
   /// String representation of identity of requesting party.
@@ -960,7 +946,7 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasPrincipalSubject() => $_has(5);
   @$pb.TagNumber(8)
-  void clearPrincipalSubject() => clearField(8);
+  void clearPrincipalSubject() => $_clearField(8);
 }
 
 /// Authorization information for the operation.
@@ -969,7 +955,7 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
     $core.String? resource,
     $core.String? permission,
     $core.bool? granted,
-    $43.AttributeContext_Resource? resourceAttributes,
+    $11.AttributeContext_Resource? resourceAttributes,
   }) {
     final $result = create();
     if (resource != null) {
@@ -1002,18 +988,14 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resource')
     ..aOS(2, _omitFieldNames ? '' : 'permission')
     ..aOB(3, _omitFieldNames ? '' : 'granted')
-    ..aOM<$43.AttributeContext_Resource>(
+    ..aOM<$11.AttributeContext_Resource>(
         5, _omitFieldNames ? '' : 'resourceAttributes',
-        subBuilder: $43.AttributeContext_Resource.create)
+        subBuilder: $11.AttributeContext_Resource.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuthorizationInfo clone() => AuthorizationInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuthorizationInfo copyWith(void Function(AuthorizationInfo) updates) =>
       super.copyWith((message) => updates(message as AuthorizationInfo))
           as AuthorizationInfo;
@@ -1030,9 +1012,9 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<AuthorizationInfo>(create);
   static AuthorizationInfo? _defaultInstance;
 
-  ///  The resource being accessed, as a REST-style string. For example:
+  /// The resource being accessed, as a REST-style string. For example:
   ///
-  ///      bigquery.googleapis.com/projects/PROJECTID/datasets/DATASETID
+  ///     bigquery.googleapis.com/projects/PROJECTID/datasets/DATASETID
   @$pb.TagNumber(1)
   $core.String get resource => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -1043,7 +1025,7 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasResource() => $_has(0);
   @$pb.TagNumber(1)
-  void clearResource() => clearField(1);
+  void clearResource() => $_clearField(1);
 
   /// The required IAM permission.
   @$pb.TagNumber(2)
@@ -1056,7 +1038,7 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPermission() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPermission() => clearField(2);
+  void clearPermission() => $_clearField(2);
 
   /// Whether or not authorization for `resource` and `permission`
   /// was granted.
@@ -1070,27 +1052,27 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasGranted() => $_has(2);
   @$pb.TagNumber(3)
-  void clearGranted() => clearField(3);
+  void clearGranted() => $_clearField(3);
 
-  ///  Resource attributes used in IAM condition evaluation. This field contains
-  ///  resource attributes like resource type and resource name.
+  /// Resource attributes used in IAM condition evaluation. This field contains
+  /// resource attributes like resource type and resource name.
   ///
-  ///  To get the whole view of the attributes used in IAM
-  ///  condition evaluation, the user must also look into
-  ///  `AuditLogData.request_metadata.request_attributes`.
+  /// To get the whole view of the attributes used in IAM
+  /// condition evaluation, the user must also look into
+  /// `AuditLogData.request_metadata.request_attributes`.
   @$pb.TagNumber(5)
-  $43.AttributeContext_Resource get resourceAttributes => $_getN(3);
+  $11.AttributeContext_Resource get resourceAttributes => $_getN(3);
   @$pb.TagNumber(5)
-  set resourceAttributes($43.AttributeContext_Resource v) {
-    setField(5, v);
+  set resourceAttributes($11.AttributeContext_Resource v) {
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasResourceAttributes() => $_has(3);
   @$pb.TagNumber(5)
-  void clearResourceAttributes() => clearField(5);
+  void clearResourceAttributes() => $_clearField(5);
   @$pb.TagNumber(5)
-  $43.AttributeContext_Resource ensureResourceAttributes() => $_ensure(3);
+  $11.AttributeContext_Resource ensureResourceAttributes() => $_ensure(3);
 }
 
 /// Metadata about the request.
@@ -1099,8 +1081,8 @@ class RequestMetadata extends $pb.GeneratedMessage {
     $core.String? callerIp,
     $core.String? callerSuppliedUserAgent,
     $core.String? callerNetwork,
-    $43.AttributeContext_Request? requestAttributes,
-    $43.AttributeContext_Peer? destinationAttributes,
+    $11.AttributeContext_Request? requestAttributes,
+    $11.AttributeContext_Peer? destinationAttributes,
   }) {
     final $result = create();
     if (callerIp != null) {
@@ -1136,21 +1118,17 @@ class RequestMetadata extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'callerIp')
     ..aOS(2, _omitFieldNames ? '' : 'callerSuppliedUserAgent')
     ..aOS(3, _omitFieldNames ? '' : 'callerNetwork')
-    ..aOM<$43.AttributeContext_Request>(
+    ..aOM<$11.AttributeContext_Request>(
         7, _omitFieldNames ? '' : 'requestAttributes',
-        subBuilder: $43.AttributeContext_Request.create)
-    ..aOM<$43.AttributeContext_Peer>(
+        subBuilder: $11.AttributeContext_Request.create)
+    ..aOM<$11.AttributeContext_Peer>(
         8, _omitFieldNames ? '' : 'destinationAttributes',
-        subBuilder: $43.AttributeContext_Peer.create)
+        subBuilder: $11.AttributeContext_Peer.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RequestMetadata clone() => RequestMetadata()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RequestMetadata copyWith(void Function(RequestMetadata) updates) =>
       super.copyWith((message) => updates(message as RequestMetadata))
           as RequestMetadata;
@@ -1186,19 +1164,19 @@ class RequestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCallerIp() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCallerIp() => clearField(1);
+  void clearCallerIp() => $_clearField(1);
 
-  ///  The user agent of the caller.
-  ///  This information is not authenticated and should be treated accordingly.
-  ///  For example:
+  /// The user agent of the caller.
+  /// This information is not authenticated and should be treated accordingly.
+  /// For example:
   ///
-  ///  +   `google-api-python-client/1.4.0`:
-  ///      The request was made by the Google API client for Python.
-  ///  +   `Cloud SDK Command Line Tool apitools-client/1.0 gcloud/0.9.62`:
-  ///      The request was made by the Google Cloud SDK CLI (gcloud).
-  ///  +   `AppEngine-Google; (+http://code.google.com/appengine; appid:
-  ///  s~my-project`:
-  ///      The request was made from the `my-project` App Engine app.
+  /// +   `google-api-python-client/1.4.0`:
+  ///     The request was made by the Google API client for Python.
+  /// +   `Cloud SDK Command Line Tool apitools-client/1.0 gcloud/0.9.62`:
+  ///     The request was made by the Google Cloud SDK CLI (gcloud).
+  /// +   `AppEngine-Google; (+http://code.google.com/appengine; appid:
+  /// s~my-project`:
+  ///     The request was made from the `my-project` App Engine app.
   @$pb.TagNumber(2)
   $core.String get callerSuppliedUserAgent => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -1209,15 +1187,15 @@ class RequestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCallerSuppliedUserAgent() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCallerSuppliedUserAgent() => clearField(2);
+  void clearCallerSuppliedUserAgent() => $_clearField(2);
 
-  ///  The network of the caller.
-  ///  Set only if the network host project is part of the same GCP organization
-  ///  (or project) as the accessed resource.
-  ///  See https://cloud.google.com/compute/docs/vpc/ for more information.
-  ///  This is a scheme-less URI full resource name. For example:
+  /// The network of the caller.
+  /// Set only if the network host project is part of the same GCP organization
+  /// (or project) as the accessed resource.
+  /// See https://cloud.google.com/compute/docs/vpc/ for more information.
+  /// This is a scheme-less URI full resource name. For example:
   ///
-  ///      "//compute.googleapis.com/projects/PROJECT_ID/global/networks/NETWORK_ID"
+  ///     "//compute.googleapis.com/projects/PROJECT_ID/global/networks/NETWORK_ID"
   @$pb.TagNumber(3)
   $core.String get callerNetwork => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -1228,29 +1206,29 @@ class RequestMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasCallerNetwork() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCallerNetwork() => clearField(3);
+  void clearCallerNetwork() => $_clearField(3);
 
-  ///  Request attributes used in IAM condition evaluation. This field contains
-  ///  request attributes like request time and access levels associated with
-  ///  the request.
+  /// Request attributes used in IAM condition evaluation. This field contains
+  /// request attributes like request time and access levels associated with
+  /// the request.
   ///
   ///
-  ///  To get the whole view of the attributes used in IAM
-  ///  condition evaluation, the user must also look into
-  ///  `AuditLog.authentication_info.resource_attributes`.
+  /// To get the whole view of the attributes used in IAM
+  /// condition evaluation, the user must also look into
+  /// `AuditLog.authentication_info.resource_attributes`.
   @$pb.TagNumber(7)
-  $43.AttributeContext_Request get requestAttributes => $_getN(3);
+  $11.AttributeContext_Request get requestAttributes => $_getN(3);
   @$pb.TagNumber(7)
-  set requestAttributes($43.AttributeContext_Request v) {
-    setField(7, v);
+  set requestAttributes($11.AttributeContext_Request v) {
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasRequestAttributes() => $_has(3);
   @$pb.TagNumber(7)
-  void clearRequestAttributes() => clearField(7);
+  void clearRequestAttributes() => $_clearField(7);
   @$pb.TagNumber(7)
-  $43.AttributeContext_Request ensureRequestAttributes() => $_ensure(3);
+  $11.AttributeContext_Request ensureRequestAttributes() => $_ensure(3);
 
   /// The destination of a network activity, such as accepting a TCP connection.
   /// In a multi hop network activity, the destination represents the receiver of
@@ -1258,18 +1236,18 @@ class RequestMetadata extends $pb.GeneratedMessage {
   /// Peer.ip. These fields are optionally populated by those services utilizing
   /// the IAM condition feature.
   @$pb.TagNumber(8)
-  $43.AttributeContext_Peer get destinationAttributes => $_getN(4);
+  $11.AttributeContext_Peer get destinationAttributes => $_getN(4);
   @$pb.TagNumber(8)
-  set destinationAttributes($43.AttributeContext_Peer v) {
-    setField(8, v);
+  set destinationAttributes($11.AttributeContext_Peer v) {
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasDestinationAttributes() => $_has(4);
   @$pb.TagNumber(8)
-  void clearDestinationAttributes() => clearField(8);
+  void clearDestinationAttributes() => $_clearField(8);
   @$pb.TagNumber(8)
-  $43.AttributeContext_Peer ensureDestinationAttributes() => $_ensure(4);
+  $11.AttributeContext_Peer ensureDestinationAttributes() => $_ensure(4);
 }
 
 /// Location information about a resource.
@@ -1304,13 +1282,9 @@ class ResourceLocation extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'originalLocations')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceLocation clone() => ResourceLocation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceLocation copyWith(void Function(ResourceLocation) updates) =>
       super.copyWith((message) => updates(message as ResourceLocation))
           as ResourceLocation;
@@ -1327,27 +1301,27 @@ class ResourceLocation extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<ResourceLocation>(create);
   static ResourceLocation? _defaultInstance;
 
-  ///  The locations of a resource after the execution of the operation.
-  ///  Requests to create or delete a location based resource must populate
-  ///  the 'current_locations' field and not the 'original_locations' field.
-  ///  For example:
+  /// The locations of a resource after the execution of the operation.
+  /// Requests to create or delete a location based resource must populate
+  /// the 'current_locations' field and not the 'original_locations' field.
+  /// For example:
   ///
-  ///      "europe-west1-a"
-  ///      "us-east1"
-  ///      "nam3"
+  ///     "europe-west1-a"
+  ///     "us-east1"
+  ///     "nam3"
   @$pb.TagNumber(1)
-  $core.List<$core.String> get currentLocations => $_getList(0);
+  $pb.PbList<$core.String> get currentLocations => $_getList(0);
 
-  ///  The locations of a resource prior to the execution of the operation.
-  ///  Requests that mutate the resource's location must populate both the
-  ///  'original_locations' as well as the 'current_locations' fields.
-  ///  For example:
+  /// The locations of a resource prior to the execution of the operation.
+  /// Requests that mutate the resource's location must populate both the
+  /// 'original_locations' as well as the 'current_locations' fields.
+  /// For example:
   ///
-  ///      "europe-west1-a"
-  ///      "us-east1"
-  ///      "nam3"
+  ///     "europe-west1-a"
+  ///     "us-east1"
+  ///     "nam3"
   @$pb.TagNumber(2)
-  $core.List<$core.String> get originalLocations => $_getList(1);
+  $pb.PbList<$core.String> get originalLocations => $_getList(1);
 }
 
 /// First party identity principal.
@@ -1355,7 +1329,7 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal
     extends $pb.GeneratedMessage {
   factory ServiceAccountDelegationInfo_FirstPartyPrincipal({
     $core.String? principalEmail,
-    $0.Struct? serviceMetadata,
+    $10.Struct? serviceMetadata,
   }) {
     final $result = create();
     if (principalEmail != null) {
@@ -1384,19 +1358,15 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal
           _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'principalEmail')
-    ..aOM<$0.Struct>(2, _omitFieldNames ? '' : 'serviceMetadata',
-        subBuilder: $0.Struct.create)
+    ..aOM<$10.Struct>(2, _omitFieldNames ? '' : 'serviceMetadata',
+        subBuilder: $10.Struct.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccountDelegationInfo_FirstPartyPrincipal clone() =>
       ServiceAccountDelegationInfo_FirstPartyPrincipal()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccountDelegationInfo_FirstPartyPrincipal copyWith(
           void Function(ServiceAccountDelegationInfo_FirstPartyPrincipal)
               updates) =>
@@ -1431,29 +1401,29 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal
   @$pb.TagNumber(1)
   $core.bool hasPrincipalEmail() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPrincipalEmail() => clearField(1);
+  void clearPrincipalEmail() => $_clearField(1);
 
   /// Metadata about the service that uses the service account.
   @$pb.TagNumber(2)
-  $0.Struct get serviceMetadata => $_getN(1);
+  $10.Struct get serviceMetadata => $_getN(1);
   @$pb.TagNumber(2)
-  set serviceMetadata($0.Struct v) {
-    setField(2, v);
+  set serviceMetadata($10.Struct v) {
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasServiceMetadata() => $_has(1);
   @$pb.TagNumber(2)
-  void clearServiceMetadata() => clearField(2);
+  void clearServiceMetadata() => $_clearField(2);
   @$pb.TagNumber(2)
-  $0.Struct ensureServiceMetadata() => $_ensure(1);
+  $10.Struct ensureServiceMetadata() => $_ensure(1);
 }
 
 /// Third party identity principal.
 class ServiceAccountDelegationInfo_ThirdPartyPrincipal
     extends $pb.GeneratedMessage {
   factory ServiceAccountDelegationInfo_ThirdPartyPrincipal({
-    $0.Struct? thirdPartyClaims,
+    $10.Struct? thirdPartyClaims,
   }) {
     final $result = create();
     if (thirdPartyClaims != null) {
@@ -1478,19 +1448,15 @@ class ServiceAccountDelegationInfo_ThirdPartyPrincipal
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.audit.v1'),
       createEmptyInstance: create)
-    ..aOM<$0.Struct>(1, _omitFieldNames ? '' : 'thirdPartyClaims',
-        subBuilder: $0.Struct.create)
+    ..aOM<$10.Struct>(1, _omitFieldNames ? '' : 'thirdPartyClaims',
+        subBuilder: $10.Struct.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccountDelegationInfo_ThirdPartyPrincipal clone() =>
       ServiceAccountDelegationInfo_ThirdPartyPrincipal()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccountDelegationInfo_ThirdPartyPrincipal copyWith(
           void Function(ServiceAccountDelegationInfo_ThirdPartyPrincipal)
               updates) =>
@@ -1516,18 +1482,18 @@ class ServiceAccountDelegationInfo_ThirdPartyPrincipal
 
   /// Metadata about third party identity.
   @$pb.TagNumber(1)
-  $0.Struct get thirdPartyClaims => $_getN(0);
+  $10.Struct get thirdPartyClaims => $_getN(0);
   @$pb.TagNumber(1)
-  set thirdPartyClaims($0.Struct v) {
-    setField(1, v);
+  set thirdPartyClaims($10.Struct v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasThirdPartyClaims() => $_has(0);
   @$pb.TagNumber(1)
-  void clearThirdPartyClaims() => clearField(1);
+  void clearThirdPartyClaims() => $_clearField(1);
   @$pb.TagNumber(1)
-  $0.Struct ensureThirdPartyClaims() => $_ensure(0);
+  $10.Struct ensureThirdPartyClaims() => $_ensure(0);
 }
 
 enum ServiceAccountDelegationInfo_Authority {
@@ -1579,14 +1545,10 @@ class ServiceAccountDelegationInfo extends $pb.GeneratedMessage {
         subBuilder: ServiceAccountDelegationInfo_ThirdPartyPrincipal.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccountDelegationInfo clone() =>
       ServiceAccountDelegationInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccountDelegationInfo copyWith(
           void Function(ServiceAccountDelegationInfo) updates) =>
       super.copyWith(
@@ -1608,7 +1570,7 @@ class ServiceAccountDelegationInfo extends $pb.GeneratedMessage {
 
   ServiceAccountDelegationInfo_Authority whichAuthority() =>
       _ServiceAccountDelegationInfo_AuthorityByTag[$_whichOneof(0)]!;
-  void clearAuthority() => clearField($_whichOneof(0));
+  void clearAuthority() => $_clearField($_whichOneof(0));
 
   /// First party (Google) identity as the real authority.
   @$pb.TagNumber(1)
@@ -1616,13 +1578,13 @@ class ServiceAccountDelegationInfo extends $pb.GeneratedMessage {
       $_getN(0);
   @$pb.TagNumber(1)
   set firstPartyPrincipal(ServiceAccountDelegationInfo_FirstPartyPrincipal v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasFirstPartyPrincipal() => $_has(0);
   @$pb.TagNumber(1)
-  void clearFirstPartyPrincipal() => clearField(1);
+  void clearFirstPartyPrincipal() => $_clearField(1);
   @$pb.TagNumber(1)
   ServiceAccountDelegationInfo_FirstPartyPrincipal
       ensureFirstPartyPrincipal() => $_ensure(0);
@@ -1633,13 +1595,13 @@ class ServiceAccountDelegationInfo extends $pb.GeneratedMessage {
       $_getN(1);
   @$pb.TagNumber(2)
   set thirdPartyPrincipal(ServiceAccountDelegationInfo_ThirdPartyPrincipal v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasThirdPartyPrincipal() => $_has(1);
   @$pb.TagNumber(2)
-  void clearThirdPartyPrincipal() => clearField(2);
+  void clearThirdPartyPrincipal() => $_clearField(2);
   @$pb.TagNumber(2)
   ServiceAccountDelegationInfo_ThirdPartyPrincipal
       ensureThirdPartyPrincipal() => $_ensure(1);
@@ -1684,13 +1646,9 @@ class LogSplit extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSplits', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogSplit clone() => LogSplit()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogSplit copyWith(void Function(LogSplit) updates) =>
       super.copyWith((message) => updates(message as LogSplit)) as LogSplit;
 
@@ -1718,7 +1676,7 @@ class LogSplit extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUid() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUid() => clearField(1);
+  void clearUid() => $_clearField(1);
 
   /// The index of this LogEntry in the sequence of split logs. LogEntries are
   /// given |index| values 0, 1, ..., n-1 for a sequence of n entries.
@@ -1732,7 +1690,7 @@ class LogSplit extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasIndex() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIndex() => clearField(2);
+  void clearIndex() => $_clearField(2);
 
   /// The total number of logs that the original LogEntry was split into.
   @$pb.TagNumber(3)
@@ -1745,7 +1703,7 @@ class LogSplit extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTotalSplits() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTotalSplits() => clearField(3);
+  void clearTotalSplits() => $_clearField(3);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

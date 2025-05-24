@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/type/money.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,6 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// Represents an amount of money with its currency type.
 class Money extends $pb.GeneratedMessage {
@@ -50,13 +52,9 @@ class Money extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'nanos', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Money clone() => Money()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Money copyWith(void Function(Money) updates) =>
       super.copyWith((message) => updates(message as Money)) as Money;
 
@@ -82,7 +80,7 @@ class Money extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCurrencyCode() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCurrencyCode() => clearField(1);
+  void clearCurrencyCode() => $_clearField(1);
 
   /// The whole units of the amount.
   /// For example if `currencyCode` is `"USD"`, then 1 unit is one US dollar.
@@ -96,7 +94,7 @@ class Money extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUnits() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUnits() => clearField(2);
+  void clearUnits() => $_clearField(2);
 
   /// Number of nano (10^-9) units of the amount.
   /// The value must be between -999,999,999 and +999,999,999 inclusive.
@@ -114,7 +112,7 @@ class Money extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasNanos() => $_has(2);
   @$pb.TagNumber(3)
-  void clearNanos() => clearField(3);
+  void clearNanos() => $_clearField(3);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

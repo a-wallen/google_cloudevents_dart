@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/datafusion/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,6 +15,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -55,13 +57,9 @@ class NetworkConfig extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'ipAllocation')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkConfig clone() => NetworkConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkConfig copyWith(void Function(NetworkConfig) updates) =>
       super.copyWith((message) => updates(message as NetworkConfig))
           as NetworkConfig;
@@ -92,7 +90,7 @@ class NetworkConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNetwork() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNetwork() => clearField(1);
+  void clearNetwork() => $_clearField(1);
 
   /// The IP range in CIDR notation to use for the managed Data Fusion instance
   /// nodes. This range must not overlap with any other ranges used in the
@@ -107,7 +105,7 @@ class NetworkConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasIpAllocation() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIpAllocation() => clearField(2);
+  void clearIpAllocation() => $_clearField(2);
 }
 
 /// The Data Fusion version. This proto message stores information about certain
@@ -156,13 +154,9 @@ class Version extends $pb.GeneratedMessage {
         enumValues: Version_Type.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Version clone() => Version()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Version copyWith(void Function(Version) updates) =>
       super.copyWith((message) => updates(message as Version)) as Version;
 
@@ -188,7 +182,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVersionNumber() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVersionNumber() => clearField(1);
+  void clearVersionNumber() => $_clearField(1);
 
   /// Whether this is currently the default version for Cloud Data Fusion
   @$pb.TagNumber(2)
@@ -201,24 +195,24 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDefaultVersion() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDefaultVersion() => clearField(2);
+  void clearDefaultVersion() => $_clearField(2);
 
   /// Represents a list of available feature names for a given version.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get availableFeatures => $_getList(2);
+  $pb.PbList<$core.String> get availableFeatures => $_getList(2);
 
   /// Type represents the release availability of the version
   @$pb.TagNumber(4)
   Version_Type get type => $_getN(3);
   @$pb.TagNumber(4)
   set type(Version_Type v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)
-  void clearType() => clearField(4);
+  void clearType() => $_clearField(4);
 }
 
 /// Identifies Data Fusion accelerators for an instance.
@@ -262,13 +256,9 @@ class Accelerator extends $pb.GeneratedMessage {
         enumValues: Accelerator_State.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Accelerator clone() => Accelerator()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Accelerator copyWith(void Function(Accelerator) updates) =>
       super.copyWith((message) => updates(message as Accelerator))
           as Accelerator;
@@ -289,26 +279,26 @@ class Accelerator extends $pb.GeneratedMessage {
   Accelerator_AcceleratorType get acceleratorType => $_getN(0);
   @$pb.TagNumber(1)
   set acceleratorType(Accelerator_AcceleratorType v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasAcceleratorType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAcceleratorType() => clearField(1);
+  void clearAcceleratorType() => $_clearField(1);
 
   /// The state of the accelerator.
   @$pb.TagNumber(2)
   Accelerator_State get state => $_getN(1);
   @$pb.TagNumber(2)
   set state(Accelerator_State v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
-  void clearState() => clearField(2);
+  void clearState() => $_clearField(2);
 }
 
 /// The crypto key configuration. This field is used by the Customer-managed
@@ -339,13 +329,9 @@ class CryptoKeyConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'keyReference')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CryptoKeyConfig clone() => CryptoKeyConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CryptoKeyConfig copyWith(void Function(CryptoKeyConfig) updates) =>
       super.copyWith((message) => updates(message as CryptoKeyConfig))
           as CryptoKeyConfig;
@@ -375,7 +361,7 @@ class CryptoKeyConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasKeyReference() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKeyReference() => clearField(1);
+  void clearKeyReference() => $_clearField(1);
 }
 
 /// Represents a Data Fusion instance.
@@ -388,8 +374,8 @@ class Instance extends $pb.GeneratedMessage {
     $core.bool? enableStackdriverMonitoring,
     $core.bool? privateInstance,
     NetworkConfig? networkConfig,
-    $core.Map<$core.String, $core.String>? labels,
-    $core.Map<$core.String, $core.String>? options,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? options,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
     Instance_State? state,
@@ -435,10 +421,10 @@ class Instance extends $pb.GeneratedMessage {
       $result.networkConfig = networkConfig;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (options != null) {
-      $result.options.addAll(options);
+      $result.options.addEntries(options);
     }
     if (createTime != null) {
       $result.createTime = createTime;
@@ -577,13 +563,9 @@ class Instance extends $pb.GeneratedMessage {
     ..aOB(31, _omitFieldNames ? '' : 'enableZoneSeparation')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance clone() => Instance()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance copyWith(void Function(Instance) updates) =>
       super.copyWith((message) => updates(message as Instance)) as Instance;
 
@@ -610,7 +592,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// A description of this instance.
   @$pb.TagNumber(2)
@@ -623,20 +605,20 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDescription() => clearField(2);
+  void clearDescription() => $_clearField(2);
 
   /// Required. Instance type.
   @$pb.TagNumber(3)
   Instance_Type get type => $_getN(2);
   @$pb.TagNumber(3)
   set type(Instance_Type v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)
-  void clearType() => clearField(3);
+  void clearType() => $_clearField(3);
 
   /// Option to enable Stackdriver Logging.
   @$pb.TagNumber(4)
@@ -649,7 +631,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasEnableStackdriverLogging() => $_has(3);
   @$pb.TagNumber(4)
-  void clearEnableStackdriverLogging() => clearField(4);
+  void clearEnableStackdriverLogging() => $_clearField(4);
 
   /// Option to enable Stackdriver Monitoring.
   @$pb.TagNumber(5)
@@ -662,7 +644,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasEnableStackdriverMonitoring() => $_has(4);
   @$pb.TagNumber(5)
-  void clearEnableStackdriverMonitoring() => clearField(5);
+  void clearEnableStackdriverMonitoring() => $_clearField(5);
 
   /// Specifies whether the Data Fusion instance should be private. If set to
   /// true, all Data Fusion nodes will have private IP addresses and will not be
@@ -677,7 +659,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasPrivateInstance() => $_has(5);
   @$pb.TagNumber(6)
-  void clearPrivateInstance() => clearField(6);
+  void clearPrivateInstance() => $_clearField(6);
 
   /// Network configuration options. These are required when a private Data
   /// Fusion instance is to be created.
@@ -685,13 +667,13 @@ class Instance extends $pb.GeneratedMessage {
   NetworkConfig get networkConfig => $_getN(6);
   @$pb.TagNumber(7)
   set networkConfig(NetworkConfig v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasNetworkConfig() => $_has(6);
   @$pb.TagNumber(7)
-  void clearNetworkConfig() => clearField(7);
+  void clearNetworkConfig() => $_clearField(7);
   @$pb.TagNumber(7)
   NetworkConfig ensureNetworkConfig() => $_ensure(6);
 
@@ -699,25 +681,25 @@ class Instance extends $pb.GeneratedMessage {
   /// resources such as Compute Engine VMs. The character '=' is not allowed to
   /// be used within the labels.
   @$pb.TagNumber(8)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(7);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(7);
 
   /// Map of additional options used to configure the behavior of
   /// Data Fusion instance.
   @$pb.TagNumber(9)
-  $core.Map<$core.String, $core.String> get options => $_getMap(8);
+  $pb.PbMap<$core.String, $core.String> get options => $_getMap(8);
 
   /// Output only. The time the instance was created.
   @$pb.TagNumber(10)
   $2.Timestamp get createTime => $_getN(9);
   @$pb.TagNumber(10)
   set createTime($2.Timestamp v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasCreateTime() => $_has(9);
   @$pb.TagNumber(10)
-  void clearCreateTime() => clearField(10);
+  void clearCreateTime() => $_clearField(10);
   @$pb.TagNumber(10)
   $2.Timestamp ensureCreateTime() => $_ensure(9);
 
@@ -726,13 +708,13 @@ class Instance extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(10);
   @$pb.TagNumber(11)
   set updateTime($2.Timestamp v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(10);
   @$pb.TagNumber(11)
-  void clearUpdateTime() => clearField(11);
+  void clearUpdateTime() => $_clearField(11);
   @$pb.TagNumber(11)
   $2.Timestamp ensureUpdateTime() => $_ensure(10);
 
@@ -741,13 +723,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_State get state => $_getN(11);
   @$pb.TagNumber(12)
   set state(Instance_State v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasState() => $_has(11);
   @$pb.TagNumber(12)
-  void clearState() => clearField(12);
+  void clearState() => $_clearField(12);
 
   /// Output only. Additional information about the current state of this Data
   /// Fusion instance if available.
@@ -761,7 +743,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasStateMessage() => $_has(12);
   @$pb.TagNumber(13)
-  void clearStateMessage() => clearField(13);
+  void clearStateMessage() => $_clearField(13);
 
   /// Output only. Endpoint on which the Data Fusion UI is accessible.
   @$pb.TagNumber(14)
@@ -774,7 +756,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasServiceEndpoint() => $_has(13);
   @$pb.TagNumber(14)
-  void clearServiceEndpoint() => clearField(14);
+  void clearServiceEndpoint() => $_clearField(14);
 
   /// Name of the zone in which the Data Fusion instance will be created. Only
   /// DEVELOPER instances use this field.
@@ -788,7 +770,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasZone() => $_has(14);
   @$pb.TagNumber(15)
-  void clearZone() => clearField(15);
+  void clearZone() => $_clearField(15);
 
   /// Current version of the Data Fusion. Only specifiable in Update.
   @$pb.TagNumber(16)
@@ -801,7 +783,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasVersion() => $_has(15);
   @$pb.TagNumber(16)
-  void clearVersion() => clearField(16);
+  void clearVersion() => $_clearField(16);
 
   /// Output only. Deprecated. Use tenant_project_id instead to extract the
   /// tenant project ID.
@@ -815,7 +797,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.bool hasServiceAccount() => $_has(16);
   @$pb.TagNumber(17)
-  void clearServiceAccount() => clearField(17);
+  void clearServiceAccount() => $_clearField(17);
 
   /// Display name for an instance.
   @$pb.TagNumber(18)
@@ -828,12 +810,12 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasDisplayName() => $_has(17);
   @$pb.TagNumber(18)
-  void clearDisplayName() => clearField(18);
+  void clearDisplayName() => $_clearField(18);
 
   /// Available versions that the instance can be upgraded to using
   /// UpdateInstanceRequest.
   @$pb.TagNumber(19)
-  $core.List<Version> get availableVersion => $_getList(18);
+  $pb.PbList<Version> get availableVersion => $_getList(18);
 
   /// Output only. Endpoint on which the REST APIs is accessible.
   @$pb.TagNumber(20)
@@ -846,7 +828,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.bool hasApiEndpoint() => $_has(19);
   @$pb.TagNumber(20)
-  void clearApiEndpoint() => clearField(20);
+  void clearApiEndpoint() => $_clearField(20);
 
   /// Output only. Cloud Storage bucket generated by Data Fusion in the customer
   /// project.
@@ -860,11 +842,11 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $core.bool hasGcsBucket() => $_has(20);
   @$pb.TagNumber(21)
-  void clearGcsBucket() => clearField(21);
+  void clearGcsBucket() => $_clearField(21);
 
   /// List of accelerators enabled for this CDF instance.
   @$pb.TagNumber(22)
-  $core.List<Accelerator> get accelerators => $_getList(21);
+  $pb.PbList<Accelerator> get accelerators => $_getList(21);
 
   /// Output only. P4 service account for the customer project.
   @$pb.TagNumber(23)
@@ -877,7 +859,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.bool hasP4ServiceAccount() => $_has(22);
   @$pb.TagNumber(23)
-  void clearP4ServiceAccount() => clearField(23);
+  void clearP4ServiceAccount() => $_clearField(23);
 
   /// Output only. The name of the tenant project.
   @$pb.TagNumber(24)
@@ -890,13 +872,13 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $core.bool hasTenantProjectId() => $_has(23);
   @$pb.TagNumber(24)
-  void clearTenantProjectId() => clearField(24);
+  void clearTenantProjectId() => $_clearField(24);
 
-  ///  User-managed service account to set on Dataproc when Cloud Data Fusion
-  ///  creates Dataproc to run data processing pipelines.
+  /// User-managed service account to set on Dataproc when Cloud Data Fusion
+  /// creates Dataproc to run data processing pipelines.
   ///
-  ///  This allows users to have fine-grained access control on Dataproc's
-  ///  accesses to cloud resources.
+  /// This allows users to have fine-grained access control on Dataproc's
+  /// accesses to cloud resources.
   @$pb.TagNumber(25)
   $core.String get dataprocServiceAccount => $_getSZ(24);
   @$pb.TagNumber(25)
@@ -907,7 +889,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $core.bool hasDataprocServiceAccount() => $_has(24);
   @$pb.TagNumber(25)
-  void clearDataprocServiceAccount() => clearField(25);
+  void clearDataprocServiceAccount() => $_clearField(25);
 
   /// Option to enable granular role-based access control.
   @$pb.TagNumber(27)
@@ -920,7 +902,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   $core.bool hasEnableRbac() => $_has(25);
   @$pb.TagNumber(27)
-  void clearEnableRbac() => clearField(27);
+  void clearEnableRbac() => $_clearField(27);
 
   /// The crypto key configuration. This field is used by the Customer-Managed
   /// Encryption Keys (CMEK) feature.
@@ -928,33 +910,33 @@ class Instance extends $pb.GeneratedMessage {
   CryptoKeyConfig get cryptoKeyConfig => $_getN(26);
   @$pb.TagNumber(28)
   set cryptoKeyConfig(CryptoKeyConfig v) {
-    setField(28, v);
+    $_setField(28, v);
   }
 
   @$pb.TagNumber(28)
   $core.bool hasCryptoKeyConfig() => $_has(26);
   @$pb.TagNumber(28)
-  void clearCryptoKeyConfig() => clearField(28);
+  void clearCryptoKeyConfig() => $_clearField(28);
   @$pb.TagNumber(28)
   CryptoKeyConfig ensureCryptoKeyConfig() => $_ensure(26);
 
   /// Output only. If the instance state is DISABLED, the reason for disabling
   /// the instance.
   @$pb.TagNumber(29)
-  $core.List<Instance_DisabledReason> get disabledReason => $_getList(27);
+  $pb.PbList<Instance_DisabledReason> get disabledReason => $_getList(27);
 
   /// Option to enable and pass metadata for event publishing.
   @$pb.TagNumber(30)
   EventPublishConfig get eventPublishConfig => $_getN(28);
   @$pb.TagNumber(30)
   set eventPublishConfig(EventPublishConfig v) {
-    setField(30, v);
+    $_setField(30, v);
   }
 
   @$pb.TagNumber(30)
   $core.bool hasEventPublishConfig() => $_has(28);
   @$pb.TagNumber(30)
-  void clearEventPublishConfig() => clearField(30);
+  void clearEventPublishConfig() => $_clearField(30);
   @$pb.TagNumber(30)
   EventPublishConfig ensureEventPublishConfig() => $_ensure(28);
 
@@ -969,7 +951,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(31)
   $core.bool hasEnableZoneSeparation() => $_has(29);
   @$pb.TagNumber(31)
-  void clearEnableZoneSeparation() => clearField(31);
+  void clearEnableZoneSeparation() => $_clearField(31);
 }
 
 /// Confirguration of PubSubEventWriter.
@@ -1004,13 +986,9 @@ class EventPublishConfig extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'topic')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventPublishConfig clone() => EventPublishConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventPublishConfig copyWith(void Function(EventPublishConfig) updates) =>
       super.copyWith((message) => updates(message as EventPublishConfig))
           as EventPublishConfig;
@@ -1038,7 +1016,7 @@ class EventPublishConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEnabled() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEnabled() => clearField(1);
+  void clearEnabled() => $_clearField(1);
 
   /// Required. The resource name of the Pub/Sub topic.
   /// Format: projects/{project_id}/topics/{topic_id}
@@ -1052,7 +1030,7 @@ class EventPublishConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTopic() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTopic() => clearField(2);
+  void clearTopic() => $_clearField(2);
 }
 
 /// DNS peering configuration. These configurations are used to create
@@ -1103,13 +1081,9 @@ class DnsPeering extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'targetNetwork')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsPeering clone() => DnsPeering()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsPeering copyWith(void Function(DnsPeering) updates) =>
       super.copyWith((message) => updates(message as DnsPeering)) as DnsPeering;
 
@@ -1137,7 +1111,7 @@ class DnsPeering extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Required. The dns name suffix of the zone.
   @$pb.TagNumber(2)
@@ -1150,7 +1124,7 @@ class DnsPeering extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDomain() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDomain() => clearField(2);
+  void clearDomain() => $_clearField(2);
 
   /// Optional. Optional description of the dns zone.
   @$pb.TagNumber(3)
@@ -1163,7 +1137,7 @@ class DnsPeering extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// Optional. Optional target project to which dns peering should happen.
   @$pb.TagNumber(4)
@@ -1176,7 +1150,7 @@ class DnsPeering extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasTargetProject() => $_has(3);
   @$pb.TagNumber(4)
-  void clearTargetProject() => clearField(4);
+  void clearTargetProject() => $_clearField(4);
 
   /// Optional. Optional target network to which dns peering should happen.
   @$pb.TagNumber(5)
@@ -1189,7 +1163,7 @@ class DnsPeering extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasTargetNetwork() => $_has(4);
   @$pb.TagNumber(5)
-  void clearTargetNetwork() => clearField(5);
+  void clearTargetNetwork() => $_clearField(5);
 }
 
 /// The data within all Instance events.
@@ -1220,13 +1194,9 @@ class InstanceEventData extends $pb.GeneratedMessage {
         subBuilder: Instance.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData clone() => InstanceEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData copyWith(void Function(InstanceEventData) updates) =>
       super.copyWith((message) => updates(message as InstanceEventData))
           as InstanceEventData;
@@ -1248,13 +1218,13 @@ class InstanceEventData extends $pb.GeneratedMessage {
   Instance get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Instance v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Instance ensurePayload() => $_ensure(0);
 }
@@ -1287,13 +1257,9 @@ class DnsPeeringEventData extends $pb.GeneratedMessage {
         subBuilder: DnsPeering.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsPeeringEventData clone() => DnsPeeringEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsPeeringEventData copyWith(void Function(DnsPeeringEventData) updates) =>
       super.copyWith((message) => updates(message as DnsPeeringEventData))
           as DnsPeeringEventData;
@@ -1315,13 +1281,13 @@ class DnsPeeringEventData extends $pb.GeneratedMessage {
   DnsPeering get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(DnsPeering v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   DnsPeering ensurePayload() => $_ensure(0);
 }

@@ -18,7 +18,7 @@ void main() {
   final event = DocumentEventData(
     value: Document(
       name: documentId,
-      fields: {'name': Value(stringValue: 'jonah')},
+      fields: {'name': Value(stringValue: 'jonah')}.entries,
       createTime: Timestamp(seconds: Int64(1631441406)),
     ),
   );

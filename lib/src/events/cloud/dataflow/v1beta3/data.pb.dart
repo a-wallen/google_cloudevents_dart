@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/dataflow/v1beta3/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,9 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $0;
+import '../../../../protobuf/struct.pb.dart' as $10;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -26,10 +28,10 @@ class Environment extends $pb.GeneratedMessage {
     $core.String? clusterManagerApiService,
     $core.Iterable<$core.String>? experiments,
     $core.Iterable<WorkerPool>? workerPools,
-    $0.Struct? userAgent,
-    $0.Struct? version,
+    $10.Struct? userAgent,
+    $10.Struct? version,
     $core.String? dataset,
-    $0.Struct? sdkPipelineOptions,
+    $10.Struct? sdkPipelineOptions,
     $core.String? serviceAccountEmail,
     FlexResourceSchedulingGoal? flexResourceSchedulingGoal,
     $core.String? serviceKmsKeyName,
@@ -109,13 +111,13 @@ class Environment extends $pb.GeneratedMessage {
     ..pc<WorkerPool>(
         4, _omitFieldNames ? '' : 'workerPools', $pb.PbFieldType.PM,
         subBuilder: WorkerPool.create)
-    ..aOM<$0.Struct>(5, _omitFieldNames ? '' : 'userAgent',
-        subBuilder: $0.Struct.create)
-    ..aOM<$0.Struct>(6, _omitFieldNames ? '' : 'version',
-        subBuilder: $0.Struct.create)
+    ..aOM<$10.Struct>(5, _omitFieldNames ? '' : 'userAgent',
+        subBuilder: $10.Struct.create)
+    ..aOM<$10.Struct>(6, _omitFieldNames ? '' : 'version',
+        subBuilder: $10.Struct.create)
     ..aOS(7, _omitFieldNames ? '' : 'dataset')
-    ..aOM<$0.Struct>(8, _omitFieldNames ? '' : 'sdkPipelineOptions',
-        subBuilder: $0.Struct.create)
+    ..aOM<$10.Struct>(8, _omitFieldNames ? '' : 'sdkPipelineOptions',
+        subBuilder: $10.Struct.create)
     ..aOS(10, _omitFieldNames ? '' : 'serviceAccountEmail')
     ..e<FlexResourceSchedulingGoal>(11,
         _omitFieldNames ? '' : 'flexResourceSchedulingGoal', $pb.PbFieldType.OE,
@@ -135,13 +137,9 @@ class Environment extends $pb.GeneratedMessage {
         subBuilder: DebugOptions.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment clone() => Environment()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment copyWith(void Function(Environment) updates) =>
       super.copyWith((message) => updates(message as Environment))
           as Environment;
@@ -157,19 +155,19 @@ class Environment extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<Environment>(create);
   static Environment? _defaultInstance;
 
-  ///  The prefix of the resources the system should use for temporary
-  ///  storage.  The system will append the suffix "/temp-{JOBNAME} to
-  ///  this resource prefix, where {JOBNAME} is the value of the
-  ///  job_name field.  The resulting bucket and object prefix is used
-  ///  as the prefix of the resources used to store temporary data
-  ///  needed during the job execution.  NOTE: This will override the
-  ///  value in taskrunner_settings.
-  ///  The supported resource type is:
+  /// The prefix of the resources the system should use for temporary
+  /// storage.  The system will append the suffix "/temp-{JOBNAME} to
+  /// this resource prefix, where {JOBNAME} is the value of the
+  /// job_name field.  The resulting bucket and object prefix is used
+  /// as the prefix of the resources used to store temporary data
+  /// needed during the job execution.  NOTE: This will override the
+  /// value in taskrunner_settings.
+  /// The supported resource type is:
   ///
-  ///  Google Cloud Storage:
+  /// Google Cloud Storage:
   ///
-  ///    storage.googleapis.com/{bucket}/{object}
-  ///    bucket.storage.googleapis.com/{object}
+  ///   storage.googleapis.com/{bucket}/{object}
+  ///   bucket.storage.googleapis.com/{object}
   @$pb.TagNumber(1)
   $core.String get tempStoragePrefix => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -180,7 +178,7 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTempStoragePrefix() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTempStoragePrefix() => clearField(1);
+  void clearTempStoragePrefix() => $_clearField(1);
 
   /// The type of cluster manager API to use.  If unknown or
   /// unspecified, the service will attempt to choose a reasonable
@@ -196,57 +194,57 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasClusterManagerApiService() => $_has(1);
   @$pb.TagNumber(2)
-  void clearClusterManagerApiService() => clearField(2);
+  void clearClusterManagerApiService() => $_clearField(2);
 
   /// The list of experiments to enable. This field should be used for SDK
   /// related experiments and not for service related experiments. The proper
   /// field for service related experiments is service_options.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get experiments => $_getList(2);
+  $pb.PbList<$core.String> get experiments => $_getList(2);
 
   /// The worker pools. At least one "harness" worker pool must be
   /// specified in order for the job to have workers.
   @$pb.TagNumber(4)
-  $core.List<WorkerPool> get workerPools => $_getList(3);
+  $pb.PbList<WorkerPool> get workerPools => $_getList(3);
 
   /// A description of the process that generated the request.
   @$pb.TagNumber(5)
-  $0.Struct get userAgent => $_getN(4);
+  $10.Struct get userAgent => $_getN(4);
   @$pb.TagNumber(5)
-  set userAgent($0.Struct v) {
-    setField(5, v);
+  set userAgent($10.Struct v) {
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUserAgent() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUserAgent() => clearField(5);
+  void clearUserAgent() => $_clearField(5);
   @$pb.TagNumber(5)
-  $0.Struct ensureUserAgent() => $_ensure(4);
+  $10.Struct ensureUserAgent() => $_ensure(4);
 
   /// A structure describing which components and their versions of the service
   /// are required in order to run the job.
   @$pb.TagNumber(6)
-  $0.Struct get version => $_getN(5);
+  $10.Struct get version => $_getN(5);
   @$pb.TagNumber(6)
-  set version($0.Struct v) {
-    setField(6, v);
+  set version($10.Struct v) {
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasVersion() => $_has(5);
   @$pb.TagNumber(6)
-  void clearVersion() => clearField(6);
+  void clearVersion() => $_clearField(6);
   @$pb.TagNumber(6)
-  $0.Struct ensureVersion() => $_ensure(5);
+  $10.Struct ensureVersion() => $_ensure(5);
 
-  ///  The dataset for the current project where various workflow
-  ///  related tables are stored.
+  /// The dataset for the current project where various workflow
+  /// related tables are stored.
   ///
-  ///  The supported resource type is:
+  /// The supported resource type is:
   ///
-  ///  Google BigQuery:
-  ///    bigquery.googleapis.com/{dataset}
+  /// Google BigQuery:
+  ///   bigquery.googleapis.com/{dataset}
   @$pb.TagNumber(7)
   $core.String get dataset => $_getSZ(6);
   @$pb.TagNumber(7)
@@ -257,25 +255,25 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasDataset() => $_has(6);
   @$pb.TagNumber(7)
-  void clearDataset() => clearField(7);
+  void clearDataset() => $_clearField(7);
 
   /// The Cloud Dataflow SDK pipeline options specified by the user. These
   /// options are passed through the service and are used to recreate the
   /// SDK pipeline options on the worker in a language agnostic and platform
   /// independent way.
   @$pb.TagNumber(8)
-  $0.Struct get sdkPipelineOptions => $_getN(7);
+  $10.Struct get sdkPipelineOptions => $_getN(7);
   @$pb.TagNumber(8)
-  set sdkPipelineOptions($0.Struct v) {
-    setField(8, v);
+  set sdkPipelineOptions($10.Struct v) {
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasSdkPipelineOptions() => $_has(7);
   @$pb.TagNumber(8)
-  void clearSdkPipelineOptions() => clearField(8);
+  void clearSdkPipelineOptions() => $_clearField(8);
   @$pb.TagNumber(8)
-  $0.Struct ensureSdkPipelineOptions() => $_ensure(7);
+  $10.Struct ensureSdkPipelineOptions() => $_ensure(7);
 
   /// Identity to run virtual machines as. Defaults to the default account.
   @$pb.TagNumber(10)
@@ -288,26 +286,26 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasServiceAccountEmail() => $_has(8);
   @$pb.TagNumber(10)
-  void clearServiceAccountEmail() => clearField(10);
+  void clearServiceAccountEmail() => $_clearField(10);
 
   /// Which Flexible Resource Scheduling mode to run in.
   @$pb.TagNumber(11)
   FlexResourceSchedulingGoal get flexResourceSchedulingGoal => $_getN(9);
   @$pb.TagNumber(11)
   set flexResourceSchedulingGoal(FlexResourceSchedulingGoal v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasFlexResourceSchedulingGoal() => $_has(9);
   @$pb.TagNumber(11)
-  void clearFlexResourceSchedulingGoal() => clearField(11);
+  void clearFlexResourceSchedulingGoal() => $_clearField(11);
 
-  ///  If set, contains the Cloud KMS key identifier used to encrypt data
-  ///  at rest, AKA a Customer Managed Encryption Key (CMEK).
+  /// If set, contains the Cloud KMS key identifier used to encrypt data
+  /// at rest, AKA a Customer Managed Encryption Key (CMEK).
   ///
-  ///  Format:
-  ///    projects/PROJECT_ID/locations/LOCATION/keyRings/KEY_RING/cryptoKeys/KEY
+  /// Format:
+  ///   projects/PROJECT_ID/locations/LOCATION/keyRings/KEY_RING/cryptoKeys/KEY
   @$pb.TagNumber(12)
   $core.String get serviceKmsKeyName => $_getSZ(10);
   @$pb.TagNumber(12)
@@ -318,7 +316,7 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasServiceKmsKeyName() => $_has(10);
   @$pb.TagNumber(12)
-  void clearServiceKmsKeyName() => clearField(12);
+  void clearServiceKmsKeyName() => $_clearField(12);
 
   /// The Compute Engine region
   /// (https://cloud.google.com/compute/docs/regions-zones/regions-zones) in
@@ -335,7 +333,7 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasWorkerRegion() => $_has(11);
   @$pb.TagNumber(13)
-  void clearWorkerRegion() => clearField(13);
+  void clearWorkerRegion() => $_clearField(13);
 
   /// The Compute Engine zone
   /// (https://cloud.google.com/compute/docs/regions-zones/regions-zones) in
@@ -352,52 +350,52 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasWorkerZone() => $_has(12);
   @$pb.TagNumber(14)
-  void clearWorkerZone() => clearField(14);
+  void clearWorkerZone() => $_clearField(14);
 
   /// Output only. The shuffle mode used for the job.
   @$pb.TagNumber(15)
   ShuffleMode get shuffleMode => $_getN(13);
   @$pb.TagNumber(15)
   set shuffleMode(ShuffleMode v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasShuffleMode() => $_has(13);
   @$pb.TagNumber(15)
-  void clearShuffleMode() => clearField(15);
+  void clearShuffleMode() => $_clearField(15);
 
   /// The list of service options to enable. This field should be used for
   /// service related experiments only. These experiments, when graduating to GA,
   /// should be replaced by dedicated fields or become default (i.e. always on).
   @$pb.TagNumber(16)
-  $core.List<$core.String> get serviceOptions => $_getList(14);
+  $pb.PbList<$core.String> get serviceOptions => $_getList(14);
 
   /// Any debugging options to be supplied to the job.
   @$pb.TagNumber(17)
   DebugOptions get debugOptions => $_getN(15);
   @$pb.TagNumber(17)
   set debugOptions(DebugOptions v) {
-    setField(17, v);
+    $_setField(17, v);
   }
 
   @$pb.TagNumber(17)
   $core.bool hasDebugOptions() => $_has(15);
   @$pb.TagNumber(17)
-  void clearDebugOptions() => clearField(17);
+  void clearDebugOptions() => $_clearField(17);
   @$pb.TagNumber(17)
   DebugOptions ensureDebugOptions() => $_ensure(15);
 }
 
-///  The packages that must be installed in order for a worker to run the
-///  steps of the Cloud Dataflow job that will be assigned to its worker
-///  pool.
+/// The packages that must be installed in order for a worker to run the
+/// steps of the Cloud Dataflow job that will be assigned to its worker
+/// pool.
 ///
-///  This is the mechanism by which the Cloud Dataflow SDK causes code to
-///  be loaded onto the workers. For example, the Cloud Dataflow Java SDK
-///  might use this to install jars containing the user's code and all of the
-///  various dependencies (libraries, data files, etc.) required in order
-///  for that code to run.
+/// This is the mechanism by which the Cloud Dataflow SDK causes code to
+/// be loaded onto the workers. For example, the Cloud Dataflow Java SDK
+/// might use this to install jars containing the user's code and all of the
+/// various dependencies (libraries, data files, etc.) required in order
+/// for that code to run.
 class Package extends $pb.GeneratedMessage {
   factory Package({
     $core.String? name,
@@ -429,13 +427,9 @@ class Package extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'location')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Package clone() => Package()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Package copyWith(void Function(Package) updates) =>
       super.copyWith((message) => updates(message as Package)) as Package;
 
@@ -461,14 +455,14 @@ class Package extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
-  ///  The resource to read the package from. The supported resource type is:
+  /// The resource to read the package from. The supported resource type is:
   ///
-  ///  Google Cloud Storage:
+  /// Google Cloud Storage:
   ///
-  ///    storage.googleapis.com/{bucket}
-  ///    bucket.storage.googleapis.com/
+  ///   storage.googleapis.com/{bucket}
+  ///   bucket.storage.googleapis.com/
   @$pb.TagNumber(2)
   $core.String get location => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -479,7 +473,7 @@ class Package extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasLocation() => $_has(1);
   @$pb.TagNumber(2)
-  void clearLocation() => clearField(2);
+  void clearLocation() => $_clearField(2);
 }
 
 /// Settings for WorkerPool autoscaling.
@@ -519,13 +513,9 @@ class AutoscalingSettings extends $pb.GeneratedMessage {
         2, _omitFieldNames ? '' : 'maxNumWorkers', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AutoscalingSettings clone() => AutoscalingSettings()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AutoscalingSettings copyWith(void Function(AutoscalingSettings) updates) =>
       super.copyWith((message) => updates(message as AutoscalingSettings))
           as AutoscalingSettings;
@@ -547,13 +537,13 @@ class AutoscalingSettings extends $pb.GeneratedMessage {
   AutoscalingAlgorithm get algorithm => $_getN(0);
   @$pb.TagNumber(1)
   set algorithm(AutoscalingAlgorithm v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasAlgorithm() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAlgorithm() => clearField(1);
+  void clearAlgorithm() => $_clearField(1);
 
   /// The maximum number of workers to cap scaling at.
   @$pb.TagNumber(2)
@@ -566,7 +556,7 @@ class AutoscalingSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMaxNumWorkers() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMaxNumWorkers() => clearField(2);
+  void clearMaxNumWorkers() => $_clearField(2);
 }
 
 /// Defines an SDK harness container for executing Dataflow pipelines.
@@ -611,14 +601,10 @@ class SdkHarnessContainerImage extends $pb.GeneratedMessage {
     ..pPS(4, _omitFieldNames ? '' : 'capabilities')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SdkHarnessContainerImage clone() =>
       SdkHarnessContainerImage()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SdkHarnessContainerImage copyWith(
           void Function(SdkHarnessContainerImage) updates) =>
       super.copyWith((message) => updates(message as SdkHarnessContainerImage))
@@ -647,7 +633,7 @@ class SdkHarnessContainerImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasContainerImage() => $_has(0);
   @$pb.TagNumber(1)
-  void clearContainerImage() => clearField(1);
+  void clearContainerImage() => $_clearField(1);
 
   /// If true, recommends the Dataflow service to use only one core per SDK
   /// container instance with this image. If false (or unset) recommends using
@@ -664,7 +650,7 @@ class SdkHarnessContainerImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUseSingleCorePerContainer() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUseSingleCorePerContainer() => clearField(2);
+  void clearUseSingleCorePerContainer() => $_clearField(2);
 
   /// Environment ID for the Beam runner API proto Environment that corresponds
   /// to the current SDK Harness.
@@ -678,12 +664,12 @@ class SdkHarnessContainerImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEnvironmentId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEnvironmentId() => clearField(3);
+  void clearEnvironmentId() => $_clearField(3);
 
   /// The set of capabilities enumerated in the above Environment proto. See also
   /// [beam_runner_api.proto](https://github.com/apache/beam/blob/master/model/pipeline/src/main/proto/org/apache/beam/model/pipeline/v1/beam_runner_api.proto)
   @$pb.TagNumber(4)
-  $core.List<$core.String> get capabilities => $_getList(3);
+  $pb.PbList<$core.String> get capabilities => $_getList(3);
 }
 
 /// Describes one particular pool of Cloud Dataflow workers to be
@@ -703,7 +689,7 @@ class WorkerPool extends $pb.GeneratedMessage {
     $core.String? diskSourceImage,
     $core.String? zone,
     $core.String? onHostMaintenance,
-    $core.Map<$core.String, $core.String>? metadata,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? metadata,
     AutoscalingSettings? autoscalingSettings,
     $core.String? diskType,
     $core.String? network,
@@ -745,7 +731,7 @@ class WorkerPool extends $pb.GeneratedMessage {
       $result.onHostMaintenance = onHostMaintenance;
     }
     if (metadata != null) {
-      $result.metadata.addAll(metadata);
+      $result.metadata.addEntries(metadata);
     }
     if (autoscalingSettings != null) {
       $result.autoscalingSettings = autoscalingSettings;
@@ -829,13 +815,9 @@ class WorkerPool extends $pb.GeneratedMessage {
         subBuilder: SdkHarnessContainerImage.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WorkerPool clone() => WorkerPool()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WorkerPool copyWith(void Function(WorkerPool) updates) =>
       super.copyWith((message) => updates(message as WorkerPool)) as WorkerPool;
 
@@ -862,7 +844,7 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasKind() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKind() => clearField(1);
+  void clearKind() => $_clearField(1);
 
   /// Number of Google Compute Engine workers in this pool needed to
   /// execute the job.  If zero or unspecified, the service will
@@ -877,11 +859,11 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNumWorkers() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNumWorkers() => clearField(2);
+  void clearNumWorkers() => $_clearField(2);
 
   /// Packages to be installed on workers.
   @$pb.TagNumber(3)
-  $core.List<Package> get packages => $_getList(2);
+  $pb.PbList<Package> get packages => $_getList(2);
 
   /// The default package set to install.  This allows the service to
   /// select a default set of packages which are useful to worker
@@ -890,13 +872,13 @@ class WorkerPool extends $pb.GeneratedMessage {
   DefaultPackageSet get defaultPackageSet => $_getN(3);
   @$pb.TagNumber(4)
   set defaultPackageSet(DefaultPackageSet v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasDefaultPackageSet() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDefaultPackageSet() => clearField(4);
+  void clearDefaultPackageSet() => $_clearField(4);
 
   /// Machine type (e.g. "n1-standard-1").  If empty or unspecified, the
   /// service will attempt to choose a reasonable default.
@@ -910,35 +892,35 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasMachineType() => $_has(4);
   @$pb.TagNumber(5)
-  void clearMachineType() => clearField(5);
+  void clearMachineType() => $_clearField(5);
 
-  ///  Sets the policy for determining when to turndown worker pool.
-  ///  Allowed values are: `TEARDOWN_ALWAYS`, `TEARDOWN_ON_SUCCESS`, and
-  ///  `TEARDOWN_NEVER`.
-  ///  `TEARDOWN_ALWAYS` means workers are always torn down regardless of whether
-  ///  the job succeeds. `TEARDOWN_ON_SUCCESS` means workers are torn down
-  ///  if the job succeeds. `TEARDOWN_NEVER` means the workers are never torn
-  ///  down.
+  /// Sets the policy for determining when to turndown worker pool.
+  /// Allowed values are: `TEARDOWN_ALWAYS`, `TEARDOWN_ON_SUCCESS`, and
+  /// `TEARDOWN_NEVER`.
+  /// `TEARDOWN_ALWAYS` means workers are always torn down regardless of whether
+  /// the job succeeds. `TEARDOWN_ON_SUCCESS` means workers are torn down
+  /// if the job succeeds. `TEARDOWN_NEVER` means the workers are never torn
+  /// down.
   ///
-  ///  If the workers are not torn down by the service, they will
-  ///  continue to run and use Google Compute Engine VM resources in the
-  ///  user's project until they are explicitly terminated by the user.
-  ///  Because of this, Google recommends using the `TEARDOWN_ALWAYS`
-  ///  policy except for small, manually supervised test jobs.
+  /// If the workers are not torn down by the service, they will
+  /// continue to run and use Google Compute Engine VM resources in the
+  /// user's project until they are explicitly terminated by the user.
+  /// Because of this, Google recommends using the `TEARDOWN_ALWAYS`
+  /// policy except for small, manually supervised test jobs.
   ///
-  ///  If unknown or unspecified, the service will attempt to choose a reasonable
-  ///  default.
+  /// If unknown or unspecified, the service will attempt to choose a reasonable
+  /// default.
   @$pb.TagNumber(6)
   TeardownPolicy get teardownPolicy => $_getN(5);
   @$pb.TagNumber(6)
   set teardownPolicy(TeardownPolicy v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasTeardownPolicy() => $_has(5);
   @$pb.TagNumber(6)
-  void clearTeardownPolicy() => clearField(6);
+  void clearTeardownPolicy() => $_clearField(6);
 
   /// Size of root disk for VMs, in GB.  If zero or unspecified, the service will
   /// attempt to choose a reasonable default.
@@ -952,7 +934,7 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasDiskSizeGb() => $_has(6);
   @$pb.TagNumber(7)
-  void clearDiskSizeGb() => clearField(7);
+  void clearDiskSizeGb() => $_clearField(7);
 
   /// Fully qualified source image for disks.
   @$pb.TagNumber(8)
@@ -965,7 +947,7 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasDiskSourceImage() => $_has(7);
   @$pb.TagNumber(8)
-  void clearDiskSourceImage() => clearField(8);
+  void clearDiskSourceImage() => $_clearField(8);
 
   /// Zone to run the worker pools in.  If empty or unspecified, the service
   /// will attempt to choose a reasonable default.
@@ -979,7 +961,7 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasZone() => $_has(8);
   @$pb.TagNumber(9)
-  void clearZone() => clearField(9);
+  void clearZone() => $_clearField(9);
 
   /// The action to take on host maintenance, as defined by the Google
   /// Compute Engine API.
@@ -993,24 +975,24 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasOnHostMaintenance() => $_has(9);
   @$pb.TagNumber(11)
-  void clearOnHostMaintenance() => clearField(11);
+  void clearOnHostMaintenance() => $_clearField(11);
 
   /// Metadata to set on the Google Compute Engine VMs.
   @$pb.TagNumber(13)
-  $core.Map<$core.String, $core.String> get metadata => $_getMap(10);
+  $pb.PbMap<$core.String, $core.String> get metadata => $_getMap(10);
 
   /// Settings for autoscaling of this WorkerPool.
   @$pb.TagNumber(14)
   AutoscalingSettings get autoscalingSettings => $_getN(11);
   @$pb.TagNumber(14)
   set autoscalingSettings(AutoscalingSettings v) {
-    setField(14, v);
+    $_setField(14, v);
   }
 
   @$pb.TagNumber(14)
   $core.bool hasAutoscalingSettings() => $_has(11);
   @$pb.TagNumber(14)
-  void clearAutoscalingSettings() => clearField(14);
+  void clearAutoscalingSettings() => $_clearField(14);
   @$pb.TagNumber(14)
   AutoscalingSettings ensureAutoscalingSettings() => $_ensure(11);
 
@@ -1026,7 +1008,7 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasDiskType() => $_has(12);
   @$pb.TagNumber(16)
-  void clearDiskType() => clearField(16);
+  void clearDiskType() => $_clearField(16);
 
   /// Network to which VMs will be assigned.  If empty or unspecified,
   /// the service will use the network "default".
@@ -1040,12 +1022,12 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.bool hasNetwork() => $_has(13);
   @$pb.TagNumber(17)
-  void clearNetwork() => clearField(17);
+  void clearNetwork() => $_clearField(17);
 
-  ///  Required. Docker container image that executes the Cloud Dataflow worker
-  ///  harness, residing in Google Container Registry.
+  /// Required. Docker container image that executes the Cloud Dataflow worker
+  /// harness, residing in Google Container Registry.
   ///
-  ///  Deprecated for the Fn API path. Use sdk_harness_container_images instead.
+  /// Deprecated for the Fn API path. Use sdk_harness_container_images instead.
   @$pb.TagNumber(18)
   $core.String get workerHarnessContainerImage => $_getSZ(14);
   @$pb.TagNumber(18)
@@ -1056,7 +1038,7 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasWorkerHarnessContainerImage() => $_has(14);
   @$pb.TagNumber(18)
-  void clearWorkerHarnessContainerImage() => clearField(18);
+  void clearWorkerHarnessContainerImage() => $_clearField(18);
 
   /// Subnetwork to which VMs will be assigned, if desired.  Expected to be of
   /// the form "regions/REGION/subnetworks/SUBNETWORK".
@@ -1070,7 +1052,7 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.bool hasSubnetwork() => $_has(15);
   @$pb.TagNumber(19)
-  void clearSubnetwork() => clearField(19);
+  void clearSubnetwork() => $_clearField(19);
 
   /// The number of threads per worker harness. If empty or unspecified, the
   /// service will choose a number of threads (according to the number of cores
@@ -1085,27 +1067,27 @@ class WorkerPool extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.bool hasNumThreadsPerWorker() => $_has(16);
   @$pb.TagNumber(20)
-  void clearNumThreadsPerWorker() => clearField(20);
+  void clearNumThreadsPerWorker() => $_clearField(20);
 
   /// Configuration for VM IPs.
   @$pb.TagNumber(21)
   WorkerIPAddressConfiguration get ipConfiguration => $_getN(17);
   @$pb.TagNumber(21)
   set ipConfiguration(WorkerIPAddressConfiguration v) {
-    setField(21, v);
+    $_setField(21, v);
   }
 
   @$pb.TagNumber(21)
   $core.bool hasIpConfiguration() => $_has(17);
   @$pb.TagNumber(21)
-  void clearIpConfiguration() => clearField(21);
+  void clearIpConfiguration() => $_clearField(21);
 
   /// Set of SDK harness containers needed to execute this pipeline. This will
   /// only be set in the Fn API path. For non-cross-language pipelines this
   /// should have only one entry. Cross-language pipelines will have two or more
   /// entries.
   @$pb.TagNumber(22)
-  $core.List<SdkHarnessContainerImage> get sdkHarnessContainerImages =>
+  $pb.PbList<SdkHarnessContainerImage> get sdkHarnessContainerImages =>
       $_getList(18);
 }
 
@@ -1136,13 +1118,9 @@ class DebugOptions extends $pb.GeneratedMessage {
     ..aOB(1, _omitFieldNames ? '' : 'enableHotKeyLogging')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DebugOptions clone() => DebugOptions()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DebugOptions copyWith(void Function(DebugOptions) updates) =>
       super.copyWith((message) => updates(message as DebugOptions))
           as DebugOptions;
@@ -1171,7 +1149,7 @@ class DebugOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEnableHotKeyLogging() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEnableHotKeyLogging() => clearField(1);
+  void clearEnableHotKeyLogging() => $_clearField(1);
 }
 
 /// Defines a job to be run by the Cloud Dataflow service. Do not enter
@@ -1196,7 +1174,7 @@ class Job extends $pb.GeneratedMessage {
     $core.String? clientRequestId,
     $core.String? replacedByJobId,
     $core.Iterable<$core.String>? tempFiles,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? location,
     $core.Iterable<ExecutionStageState>? stageStates,
     JobMetadata? jobMetadata,
@@ -1249,7 +1227,7 @@ class Job extends $pb.GeneratedMessage {
       $result.tempFiles.addAll(tempFiles);
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (location != null) {
       $result.location = location;
@@ -1334,13 +1312,9 @@ class Job extends $pb.GeneratedMessage {
     ..aOB(25, _omitFieldNames ? '' : 'satisfiesPzs')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Job clone() => Job()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Job copyWith(void Function(Job) updates) =>
       super.copyWith((message) => updates(message as Job)) as Job;
 
@@ -1355,10 +1329,10 @@ class Job extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Job>(create);
   static Job? _defaultInstance;
 
-  ///  The unique ID of this job.
+  /// The unique ID of this job.
   ///
-  ///  This field is set by the Cloud Dataflow service when the Job is
-  ///  created, and is immutable for the life of the job.
+  /// This field is set by the Cloud Dataflow service when the Job is
+  /// created, and is immutable for the life of the job.
   @$pb.TagNumber(1)
   $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -1369,7 +1343,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearId() => clearField(1);
+  void clearId() => $_clearField(1);
 
   /// The ID of the Cloud Platform project that the job belongs to.
   @$pb.TagNumber(2)
@@ -1382,18 +1356,18 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasProjectId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearProjectId() => clearField(2);
+  void clearProjectId() => $_clearField(2);
 
-  ///  The user-specified Cloud Dataflow job name.
+  /// The user-specified Cloud Dataflow job name.
   ///
-  ///  Only one Job with a given name can exist in a project within one region at
-  ///  any given time. Jobs in different regions can have the same name.
-  ///  If a caller attempts to create a Job with the same
-  ///  name as an already-existing Job, the attempt returns the
-  ///  existing Job.
+  /// Only one Job with a given name can exist in a project within one region at
+  /// any given time. Jobs in different regions can have the same name.
+  /// If a caller attempts to create a Job with the same
+  /// name as an already-existing Job, the attempt returns the
+  /// existing Job.
   ///
-  ///  The name must match the regular expression
-  ///  `[a-z]([-a-z0-9]{0,1022}[a-z0-9])?`
+  /// The name must match the regular expression
+  /// `[a-z]([-a-z0-9]{0,1022}[a-z0-9])?`
   @$pb.TagNumber(3)
   $core.String get name => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -1404,105 +1378,105 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearName() => clearField(3);
+  void clearName() => $_clearField(3);
 
   /// The type of Cloud Dataflow job.
   @$pb.TagNumber(4)
   JobType get type => $_getN(3);
   @$pb.TagNumber(4)
   set type(JobType v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)
-  void clearType() => clearField(4);
+  void clearType() => $_clearField(4);
 
   /// The environment for the job.
   @$pb.TagNumber(5)
   Environment get environment => $_getN(4);
   @$pb.TagNumber(5)
   set environment(Environment v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasEnvironment() => $_has(4);
   @$pb.TagNumber(5)
-  void clearEnvironment() => clearField(5);
+  void clearEnvironment() => $_clearField(5);
   @$pb.TagNumber(5)
   Environment ensureEnvironment() => $_ensure(4);
 
-  ///  The current state of the job.
+  /// The current state of the job.
   ///
-  ///  Jobs are created in the `JOB_STATE_STOPPED` state unless otherwise
-  ///  specified.
+  /// Jobs are created in the `JOB_STATE_STOPPED` state unless otherwise
+  /// specified.
   ///
-  ///  A job in the `JOB_STATE_RUNNING` state may asynchronously enter a
-  ///  terminal state. After a job has reached a terminal state, no
-  ///  further state updates may be made.
+  /// A job in the `JOB_STATE_RUNNING` state may asynchronously enter a
+  /// terminal state. After a job has reached a terminal state, no
+  /// further state updates may be made.
   ///
-  ///  This field may be mutated by the Cloud Dataflow service;
-  ///  callers cannot mutate it.
+  /// This field may be mutated by the Cloud Dataflow service;
+  /// callers cannot mutate it.
   @$pb.TagNumber(7)
   JobState get currentState => $_getN(5);
   @$pb.TagNumber(7)
   set currentState(JobState v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasCurrentState() => $_has(5);
   @$pb.TagNumber(7)
-  void clearCurrentState() => clearField(7);
+  void clearCurrentState() => $_clearField(7);
 
   /// The timestamp associated with the current state.
   @$pb.TagNumber(8)
   $2.Timestamp get currentStateTime => $_getN(6);
   @$pb.TagNumber(8)
   set currentStateTime($2.Timestamp v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasCurrentStateTime() => $_has(6);
   @$pb.TagNumber(8)
-  void clearCurrentStateTime() => clearField(8);
+  void clearCurrentStateTime() => $_clearField(8);
   @$pb.TagNumber(8)
   $2.Timestamp ensureCurrentStateTime() => $_ensure(6);
 
-  ///  The job's requested state.
+  /// The job's requested state.
   ///
-  ///  `UpdateJob` may be used to switch between the `JOB_STATE_STOPPED` and
-  ///  `JOB_STATE_RUNNING` states, by setting requested_state.  `UpdateJob` may
-  ///  also be used to directly set a job's requested state to
-  ///  `JOB_STATE_CANCELLED` or `JOB_STATE_DONE`, irrevocably terminating the
-  ///  job if it has not already reached a terminal state.
+  /// `UpdateJob` may be used to switch between the `JOB_STATE_STOPPED` and
+  /// `JOB_STATE_RUNNING` states, by setting requested_state.  `UpdateJob` may
+  /// also be used to directly set a job's requested state to
+  /// `JOB_STATE_CANCELLED` or `JOB_STATE_DONE`, irrevocably terminating the
+  /// job if it has not already reached a terminal state.
   @$pb.TagNumber(9)
   JobState get requestedState => $_getN(7);
   @$pb.TagNumber(9)
   set requestedState(JobState v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasRequestedState() => $_has(7);
   @$pb.TagNumber(9)
-  void clearRequestedState() => clearField(9);
+  void clearRequestedState() => $_clearField(9);
 
   /// Deprecated.
   @$pb.TagNumber(10)
   JobExecutionInfo get executionInfo => $_getN(8);
   @$pb.TagNumber(10)
   set executionInfo(JobExecutionInfo v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasExecutionInfo() => $_has(8);
   @$pb.TagNumber(10)
-  void clearExecutionInfo() => clearField(10);
+  void clearExecutionInfo() => $_clearField(10);
   @$pb.TagNumber(10)
   JobExecutionInfo ensureExecutionInfo() => $_ensure(8);
 
@@ -1512,22 +1486,22 @@ class Job extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(9);
   @$pb.TagNumber(11)
   set createTime($2.Timestamp v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(9);
   @$pb.TagNumber(11)
-  void clearCreateTime() => clearField(11);
+  void clearCreateTime() => $_clearField(11);
   @$pb.TagNumber(11)
   $2.Timestamp ensureCreateTime() => $_ensure(9);
 
-  ///  If this job is an update of an existing job, this field is the job ID
-  ///  of the job it replaced.
+  /// If this job is an update of an existing job, this field is the job ID
+  /// of the job it replaced.
   ///
-  ///  When sending a `CreateJobRequest`, you can update a job by specifying it
-  ///  here. The job named here is stopped, and its intermediate state is
-  ///  transferred to this job.
+  /// When sending a `CreateJobRequest`, you can update a job by specifying it
+  /// here. The job named here is stopped, and its intermediate state is
+  /// transferred to this job.
   @$pb.TagNumber(12)
   $core.String get replaceJobId => $_getSZ(10);
   @$pb.TagNumber(12)
@@ -1538,7 +1512,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasReplaceJobId() => $_has(10);
   @$pb.TagNumber(12)
-  void clearReplaceJobId() => clearField(12);
+  void clearReplaceJobId() => $_clearField(12);
 
   /// The client's unique identifier of the job, re-used across retried attempts.
   /// If this field is set, the service will ensure its uniqueness.
@@ -1557,7 +1531,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasClientRequestId() => $_has(11);
   @$pb.TagNumber(14)
-  void clearClientRequestId() => clearField(14);
+  void clearClientRequestId() => $_clearField(14);
 
   /// If another job is an update of this job (and thus, this job is in
   /// `JOB_STATE_UPDATED`), this field contains the ID of that job.
@@ -1571,34 +1545,34 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasReplacedByJobId() => $_has(12);
   @$pb.TagNumber(15)
-  void clearReplacedByJobId() => clearField(15);
+  void clearReplacedByJobId() => $_clearField(15);
 
-  ///  A set of files the system should be aware of that are used
-  ///  for temporary storage. These temporary files will be
-  ///  removed on job completion.
-  ///  No duplicates are allowed.
-  ///  No file patterns are supported.
+  /// A set of files the system should be aware of that are used
+  /// for temporary storage. These temporary files will be
+  /// removed on job completion.
+  /// No duplicates are allowed.
+  /// No file patterns are supported.
   ///
-  ///  The supported files are:
+  /// The supported files are:
   ///
-  ///  Google Cloud Storage:
+  /// Google Cloud Storage:
   ///
-  ///     storage.googleapis.com/{bucket}/{object}
-  ///     bucket.storage.googleapis.com/{object}
+  ///    storage.googleapis.com/{bucket}/{object}
+  ///    bucket.storage.googleapis.com/{object}
   @$pb.TagNumber(16)
-  $core.List<$core.String> get tempFiles => $_getList(13);
+  $pb.PbList<$core.String> get tempFiles => $_getList(13);
 
-  ///  User-defined labels for this job.
+  /// User-defined labels for this job.
   ///
-  ///  The labels map can contain no more than 64 entries.  Entries of the labels
-  ///  map are UTF8 strings that comply with the following restrictions:
+  /// The labels map can contain no more than 64 entries.  Entries of the labels
+  /// map are UTF8 strings that comply with the following restrictions:
   ///
-  ///  * Keys must conform to regexp:  [\p{Ll}\p{Lo}][\p{Ll}\p{Lo}\p{N}_-]{0,62}
-  ///  * Values must conform to regexp:  [\p{Ll}\p{Lo}\p{N}_-]{0,63}
-  ///  * Both keys and values are additionally constrained to be <= 128 bytes in
-  ///  size.
+  /// * Keys must conform to regexp:  [\p{Ll}\p{Lo}][\p{Ll}\p{Lo}\p{N}_-]{0,62}
+  /// * Values must conform to regexp:  [\p{Ll}\p{Lo}\p{N}_-]{0,63}
+  /// * Both keys and values are additionally constrained to be <= 128 bytes in
+  /// size.
   @$pb.TagNumber(17)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(14);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(14);
 
   /// The [regional endpoint]
   /// (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
@@ -1613,12 +1587,12 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasLocation() => $_has(15);
   @$pb.TagNumber(18)
-  void clearLocation() => clearField(18);
+  void clearLocation() => $_clearField(18);
 
   /// This field may be mutated by the Cloud Dataflow service;
   /// callers cannot mutate it.
   @$pb.TagNumber(20)
-  $core.List<ExecutionStageState> get stageStates => $_getList(16);
+  $pb.PbList<ExecutionStageState> get stageStates => $_getList(16);
 
   /// This field is populated by the Dataflow service to support filtering jobs
   /// by the metadata values provided here. Populated for ListJobs and all GetJob
@@ -1627,13 +1601,13 @@ class Job extends $pb.GeneratedMessage {
   JobMetadata get jobMetadata => $_getN(17);
   @$pb.TagNumber(21)
   set jobMetadata(JobMetadata v) {
-    setField(21, v);
+    $_setField(21, v);
   }
 
   @$pb.TagNumber(21)
   $core.bool hasJobMetadata() => $_has(17);
   @$pb.TagNumber(21)
-  void clearJobMetadata() => clearField(21);
+  void clearJobMetadata() => $_clearField(21);
   @$pb.TagNumber(21)
   JobMetadata ensureJobMetadata() => $_ensure(17);
 
@@ -1647,13 +1621,13 @@ class Job extends $pb.GeneratedMessage {
   $2.Timestamp get startTime => $_getN(18);
   @$pb.TagNumber(22)
   set startTime($2.Timestamp v) {
-    setField(22, v);
+    $_setField(22, v);
   }
 
   @$pb.TagNumber(22)
   $core.bool hasStartTime() => $_has(18);
   @$pb.TagNumber(22)
-  void clearStartTime() => clearField(22);
+  void clearStartTime() => $_clearField(22);
   @$pb.TagNumber(22)
   $2.Timestamp ensureStartTime() => $_ensure(18);
 
@@ -1669,7 +1643,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.bool hasCreatedFromSnapshotId() => $_has(19);
   @$pb.TagNumber(23)
-  void clearCreatedFromSnapshotId() => clearField(23);
+  void clearCreatedFromSnapshotId() => $_clearField(23);
 
   /// The Cloud Storage location where the steps are stored.
   @$pb.TagNumber(24)
@@ -1682,7 +1656,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $core.bool hasStepsLocation() => $_has(20);
   @$pb.TagNumber(24)
-  void clearStepsLocation() => clearField(24);
+  void clearStepsLocation() => $_clearField(24);
 
   /// Reserved for future use. This field is set only in responses from the
   /// server; it is ignored if it is set in any requests.
@@ -1696,7 +1670,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $core.bool hasSatisfiesPzs() => $_has(21);
   @$pb.TagNumber(25)
-  void clearSatisfiesPzs() => clearField(25);
+  void clearSatisfiesPzs() => $_clearField(25);
 }
 
 /// Metadata for a Datastore connector used by the job.
@@ -1731,13 +1705,9 @@ class DatastoreIODetails extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatastoreIODetails clone() => DatastoreIODetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatastoreIODetails copyWith(void Function(DatastoreIODetails) updates) =>
       super.copyWith((message) => updates(message as DatastoreIODetails))
           as DatastoreIODetails;
@@ -1765,7 +1735,7 @@ class DatastoreIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNamespace() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNamespace() => clearField(1);
+  void clearNamespace() => $_clearField(1);
 
   /// ProjectId accessed in the connection.
   @$pb.TagNumber(2)
@@ -1778,7 +1748,7 @@ class DatastoreIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasProjectId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearProjectId() => clearField(2);
+  void clearProjectId() => $_clearField(2);
 }
 
 /// Metadata for a Pub/Sub connector used by the job.
@@ -1813,13 +1783,9 @@ class PubSubIODetails extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'subscription')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PubSubIODetails clone() => PubSubIODetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PubSubIODetails copyWith(void Function(PubSubIODetails) updates) =>
       super.copyWith((message) => updates(message as PubSubIODetails))
           as PubSubIODetails;
@@ -1847,7 +1813,7 @@ class PubSubIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTopic() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTopic() => clearField(1);
+  void clearTopic() => $_clearField(1);
 
   /// Subscription used in the connection.
   @$pb.TagNumber(2)
@@ -1860,7 +1826,7 @@ class PubSubIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSubscription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSubscription() => clearField(2);
+  void clearSubscription() => $_clearField(2);
 }
 
 /// Metadata for a File connector used by the job.
@@ -1890,13 +1856,9 @@ class FileIODetails extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'filePattern')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FileIODetails clone() => FileIODetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FileIODetails copyWith(void Function(FileIODetails) updates) =>
       super.copyWith((message) => updates(message as FileIODetails))
           as FileIODetails;
@@ -1924,7 +1886,7 @@ class FileIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasFilePattern() => $_has(0);
   @$pb.TagNumber(1)
-  void clearFilePattern() => clearField(1);
+  void clearFilePattern() => $_clearField(1);
 }
 
 /// Metadata for a Cloud Bigtable connector used by the job.
@@ -1964,13 +1926,9 @@ class BigTableIODetails extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'tableId')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigTableIODetails clone() => BigTableIODetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigTableIODetails copyWith(void Function(BigTableIODetails) updates) =>
       super.copyWith((message) => updates(message as BigTableIODetails))
           as BigTableIODetails;
@@ -1998,7 +1956,7 @@ class BigTableIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearProjectId() => clearField(1);
+  void clearProjectId() => $_clearField(1);
 
   /// InstanceId accessed in the connection.
   @$pb.TagNumber(2)
@@ -2011,7 +1969,7 @@ class BigTableIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasInstanceId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearInstanceId() => clearField(2);
+  void clearInstanceId() => $_clearField(2);
 
   /// TableId accessed in the connection.
   @$pb.TagNumber(3)
@@ -2024,7 +1982,7 @@ class BigTableIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTableId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTableId() => clearField(3);
+  void clearTableId() => $_clearField(3);
 }
 
 /// Metadata for a BigQuery connector used by the job.
@@ -2069,13 +2027,9 @@ class BigQueryIODetails extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'query')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryIODetails clone() => BigQueryIODetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryIODetails copyWith(void Function(BigQueryIODetails) updates) =>
       super.copyWith((message) => updates(message as BigQueryIODetails))
           as BigQueryIODetails;
@@ -2103,7 +2057,7 @@ class BigQueryIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTable() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTable() => clearField(1);
+  void clearTable() => $_clearField(1);
 
   /// Dataset accessed in the connection.
   @$pb.TagNumber(2)
@@ -2116,7 +2070,7 @@ class BigQueryIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDataset() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDataset() => clearField(2);
+  void clearDataset() => $_clearField(2);
 
   /// Project accessed in the connection.
   @$pb.TagNumber(3)
@@ -2129,7 +2083,7 @@ class BigQueryIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasProjectId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearProjectId() => clearField(3);
+  void clearProjectId() => $_clearField(3);
 
   /// Query used to access data in the connection.
   @$pb.TagNumber(4)
@@ -2142,7 +2096,7 @@ class BigQueryIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasQuery() => $_has(3);
   @$pb.TagNumber(4)
-  void clearQuery() => clearField(4);
+  void clearQuery() => $_clearField(4);
 }
 
 /// Metadata for a Spanner connector used by the job.
@@ -2182,13 +2136,9 @@ class SpannerIODetails extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'databaseId')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpannerIODetails clone() => SpannerIODetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpannerIODetails copyWith(void Function(SpannerIODetails) updates) =>
       super.copyWith((message) => updates(message as SpannerIODetails))
           as SpannerIODetails;
@@ -2216,7 +2166,7 @@ class SpannerIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearProjectId() => clearField(1);
+  void clearProjectId() => $_clearField(1);
 
   /// InstanceId accessed in the connection.
   @$pb.TagNumber(2)
@@ -2229,7 +2179,7 @@ class SpannerIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasInstanceId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearInstanceId() => clearField(2);
+  void clearInstanceId() => $_clearField(2);
 
   /// DatabaseId accessed in the connection.
   @$pb.TagNumber(3)
@@ -2242,7 +2192,7 @@ class SpannerIODetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDatabaseId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDatabaseId() => clearField(3);
+  void clearDatabaseId() => $_clearField(3);
 }
 
 /// The version of the SDK used to run the job.
@@ -2286,13 +2236,9 @@ class SdkVersion extends $pb.GeneratedMessage {
         enumValues: SdkVersion_SdkSupportStatus.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SdkVersion clone() => SdkVersion()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SdkVersion copyWith(void Function(SdkVersion) updates) =>
       super.copyWith((message) => updates(message as SdkVersion)) as SdkVersion;
 
@@ -2318,7 +2264,7 @@ class SdkVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVersion() => clearField(1);
+  void clearVersion() => $_clearField(1);
 
   /// A readable string describing the version of the SDK.
   @$pb.TagNumber(2)
@@ -2331,20 +2277,20 @@ class SdkVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasVersionDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearVersionDisplayName() => clearField(2);
+  void clearVersionDisplayName() => $_clearField(2);
 
   /// The support status for this SDK version.
   @$pb.TagNumber(3)
   SdkVersion_SdkSupportStatus get sdkSupportStatus => $_getN(2);
   @$pb.TagNumber(3)
   set sdkSupportStatus(SdkVersion_SdkSupportStatus v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasSdkSupportStatus() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSdkSupportStatus() => clearField(3);
+  void clearSdkSupportStatus() => $_clearField(3);
 }
 
 /// Metadata available primarily for filtering jobs. Will be included in the
@@ -2418,13 +2364,9 @@ class JobMetadata extends $pb.GeneratedMessage {
         subBuilder: DatastoreIODetails.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobMetadata clone() => JobMetadata()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobMetadata copyWith(void Function(JobMetadata) updates) =>
       super.copyWith((message) => updates(message as JobMetadata))
           as JobMetadata;
@@ -2445,39 +2387,39 @@ class JobMetadata extends $pb.GeneratedMessage {
   SdkVersion get sdkVersion => $_getN(0);
   @$pb.TagNumber(1)
   set sdkVersion(SdkVersion v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasSdkVersion() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSdkVersion() => clearField(1);
+  void clearSdkVersion() => $_clearField(1);
   @$pb.TagNumber(1)
   SdkVersion ensureSdkVersion() => $_ensure(0);
 
   /// Identification of a Spanner source used in the Dataflow job.
   @$pb.TagNumber(2)
-  $core.List<SpannerIODetails> get spannerDetails => $_getList(1);
+  $pb.PbList<SpannerIODetails> get spannerDetails => $_getList(1);
 
   /// Identification of a BigQuery source used in the Dataflow job.
   @$pb.TagNumber(3)
-  $core.List<BigQueryIODetails> get bigqueryDetails => $_getList(2);
+  $pb.PbList<BigQueryIODetails> get bigqueryDetails => $_getList(2);
 
   /// Identification of a Cloud Bigtable source used in the Dataflow job.
   @$pb.TagNumber(4)
-  $core.List<BigTableIODetails> get bigTableDetails => $_getList(3);
+  $pb.PbList<BigTableIODetails> get bigTableDetails => $_getList(3);
 
   /// Identification of a Pub/Sub source used in the Dataflow job.
   @$pb.TagNumber(5)
-  $core.List<PubSubIODetails> get pubsubDetails => $_getList(4);
+  $pb.PbList<PubSubIODetails> get pubsubDetails => $_getList(4);
 
   /// Identification of a File source used in the Dataflow job.
   @$pb.TagNumber(6)
-  $core.List<FileIODetails> get fileDetails => $_getList(5);
+  $pb.PbList<FileIODetails> get fileDetails => $_getList(5);
 
   /// Identification of a Datastore source used in the Dataflow job.
   @$pb.TagNumber(7)
-  $core.List<DatastoreIODetails> get datastoreDetails => $_getList(6);
+  $pb.PbList<DatastoreIODetails> get datastoreDetails => $_getList(6);
 }
 
 /// A message describing the state of a particular execution stage.
@@ -2522,13 +2464,9 @@ class ExecutionStageState extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionStageState clone() => ExecutionStageState()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionStageState copyWith(void Function(ExecutionStageState) updates) =>
       super.copyWith((message) => updates(message as ExecutionStageState))
           as ExecutionStageState;
@@ -2556,33 +2494,33 @@ class ExecutionStageState extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasExecutionStageName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearExecutionStageName() => clearField(1);
+  void clearExecutionStageName() => $_clearField(1);
 
   /// Executions stage states allow the same set of values as JobState.
   @$pb.TagNumber(2)
   JobState get executionStageState => $_getN(1);
   @$pb.TagNumber(2)
   set executionStageState(JobState v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasExecutionStageState() => $_has(1);
   @$pb.TagNumber(2)
-  void clearExecutionStageState() => clearField(2);
+  void clearExecutionStageState() => $_clearField(2);
 
   /// The time at which the stage transitioned to this state.
   @$pb.TagNumber(3)
   $2.Timestamp get currentStateTime => $_getN(2);
   @$pb.TagNumber(3)
   set currentStateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasCurrentStateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCurrentStateTime() => clearField(3);
+  void clearCurrentStateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureCurrentStateTime() => $_ensure(2);
 }
@@ -2591,11 +2529,11 @@ class ExecutionStageState extends $pb.GeneratedMessage {
 /// isn't contained in the submitted job.
 class JobExecutionInfo extends $pb.GeneratedMessage {
   factory JobExecutionInfo({
-    $core.Map<$core.String, JobExecutionStageInfo>? stages,
+    $core.Iterable<$core.MapEntry<$core.String, JobExecutionStageInfo>>? stages,
   }) {
     final $result = create();
     if (stages != null) {
-      $result.stages.addAll(stages);
+      $result.stages.addEntries(stages);
     }
     return $result;
   }
@@ -2622,13 +2560,9 @@ class JobExecutionInfo extends $pb.GeneratedMessage {
             const $pb.PackageName('google.events.cloud.dataflow.v1beta3'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobExecutionInfo clone() => JobExecutionInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobExecutionInfo copyWith(void Function(JobExecutionInfo) updates) =>
       super.copyWith((message) => updates(message as JobExecutionInfo))
           as JobExecutionInfo;
@@ -2647,7 +2581,7 @@ class JobExecutionInfo extends $pb.GeneratedMessage {
 
   /// A mapping from each stage to the information about that stage.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, JobExecutionStageInfo> get stages => $_getMap(0);
+  $pb.PbMap<$core.String, JobExecutionStageInfo> get stages => $_getMap(0);
 }
 
 /// Contains information about how a particular
@@ -2679,14 +2613,10 @@ class JobExecutionStageInfo extends $pb.GeneratedMessage {
     ..pPS(1, _omitFieldNames ? '' : 'stepName')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobExecutionStageInfo clone() =>
       JobExecutionStageInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobExecutionStageInfo copyWith(
           void Function(JobExecutionStageInfo) updates) =>
       super.copyWith((message) => updates(message as JobExecutionStageInfo))
@@ -2708,7 +2638,7 @@ class JobExecutionStageInfo extends $pb.GeneratedMessage {
   /// Note that stages may have several steps, and that a given step
   /// might be run by more than one stage.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get stepName => $_getList(0);
+  $pb.PbList<$core.String> get stepName => $_getList(0);
 }
 
 /// The data within all Job events.
@@ -2738,13 +2668,9 @@ class JobEventData extends $pb.GeneratedMessage {
     ..aOM<Job>(1, _omitFieldNames ? '' : 'payload', subBuilder: Job.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobEventData clone() => JobEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobEventData copyWith(void Function(JobEventData) updates) =>
       super.copyWith((message) => updates(message as JobEventData))
           as JobEventData;
@@ -2766,13 +2692,13 @@ class JobEventData extends $pb.GeneratedMessage {
   Job get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Job v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Job ensurePayload() => $_ensure(0);
 }

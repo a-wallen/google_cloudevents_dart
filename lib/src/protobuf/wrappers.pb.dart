@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/protobuf/wrappers.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,9 +15,11 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 import 'package:protobuf/src/protobuf/mixins/well_known.dart' as $mixin;
 
-///  Wrapper message for `double`.
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
+/// Wrapper message for `double`.
 ///
-///  The JSON representation for `DoubleValue` is JSON number.
+/// The JSON representation for `DoubleValue` is JSON number.
 class DoubleValue extends $pb.GeneratedMessage with $mixin.DoubleValueMixin {
   factory DoubleValue({
     $core.double? value,
@@ -46,13 +48,9 @@ class DoubleValue extends $pb.GeneratedMessage with $mixin.DoubleValueMixin {
     ..a<$core.double>(1, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DoubleValue clone() => DoubleValue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DoubleValue copyWith(void Function(DoubleValue) updates) =>
       super.copyWith((message) => updates(message as DoubleValue))
           as DoubleValue;
@@ -79,12 +77,12 @@ class DoubleValue extends $pb.GeneratedMessage with $mixin.DoubleValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
-///  Wrapper message for `float`.
+/// Wrapper message for `float`.
 ///
-///  The JSON representation for `FloatValue` is JSON number.
+/// The JSON representation for `FloatValue` is JSON number.
 class FloatValue extends $pb.GeneratedMessage with $mixin.FloatValueMixin {
   factory FloatValue({
     $core.double? value,
@@ -113,13 +111,9 @@ class FloatValue extends $pb.GeneratedMessage with $mixin.FloatValueMixin {
     ..a<$core.double>(1, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OF)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FloatValue clone() => FloatValue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FloatValue copyWith(void Function(FloatValue) updates) =>
       super.copyWith((message) => updates(message as FloatValue)) as FloatValue;
 
@@ -145,12 +139,12 @@ class FloatValue extends $pb.GeneratedMessage with $mixin.FloatValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
-///  Wrapper message for `int64`.
+/// Wrapper message for `int64`.
 ///
-///  The JSON representation for `Int64Value` is JSON string.
+/// The JSON representation for `Int64Value` is JSON string.
 class Int64Value extends $pb.GeneratedMessage with $mixin.Int64ValueMixin {
   factory Int64Value({
     $fixnum.Int64? value,
@@ -179,13 +173,9 @@ class Int64Value extends $pb.GeneratedMessage with $mixin.Int64ValueMixin {
     ..aInt64(1, _omitFieldNames ? '' : 'value')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Int64Value clone() => Int64Value()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Int64Value copyWith(void Function(Int64Value) updates) =>
       super.copyWith((message) => updates(message as Int64Value)) as Int64Value;
 
@@ -211,12 +201,12 @@ class Int64Value extends $pb.GeneratedMessage with $mixin.Int64ValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
-///  Wrapper message for `uint64`.
+/// Wrapper message for `uint64`.
 ///
-///  The JSON representation for `UInt64Value` is JSON string.
+/// The JSON representation for `UInt64Value` is JSON string.
 class UInt64Value extends $pb.GeneratedMessage with $mixin.UInt64ValueMixin {
   factory UInt64Value({
     $fixnum.Int64? value,
@@ -246,13 +236,9 @@ class UInt64Value extends $pb.GeneratedMessage with $mixin.UInt64ValueMixin {
         defaultOrMaker: $fixnum.Int64.ZERO)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UInt64Value clone() => UInt64Value()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UInt64Value copyWith(void Function(UInt64Value) updates) =>
       super.copyWith((message) => updates(message as UInt64Value))
           as UInt64Value;
@@ -279,12 +265,12 @@ class UInt64Value extends $pb.GeneratedMessage with $mixin.UInt64ValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
-///  Wrapper message for `int32`.
+/// Wrapper message for `int32`.
 ///
-///  The JSON representation for `Int32Value` is JSON number.
+/// The JSON representation for `Int32Value` is JSON number.
 class Int32Value extends $pb.GeneratedMessage with $mixin.Int32ValueMixin {
   factory Int32Value({
     $core.int? value,
@@ -313,13 +299,9 @@ class Int32Value extends $pb.GeneratedMessage with $mixin.Int32ValueMixin {
     ..a<$core.int>(1, _omitFieldNames ? '' : 'value', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Int32Value clone() => Int32Value()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Int32Value copyWith(void Function(Int32Value) updates) =>
       super.copyWith((message) => updates(message as Int32Value)) as Int32Value;
 
@@ -345,12 +327,12 @@ class Int32Value extends $pb.GeneratedMessage with $mixin.Int32ValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
-///  Wrapper message for `uint32`.
+/// Wrapper message for `uint32`.
 ///
-///  The JSON representation for `UInt32Value` is JSON number.
+/// The JSON representation for `UInt32Value` is JSON number.
 class UInt32Value extends $pb.GeneratedMessage with $mixin.UInt32ValueMixin {
   factory UInt32Value({
     $core.int? value,
@@ -379,13 +361,9 @@ class UInt32Value extends $pb.GeneratedMessage with $mixin.UInt32ValueMixin {
     ..a<$core.int>(1, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OU3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UInt32Value clone() => UInt32Value()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UInt32Value copyWith(void Function(UInt32Value) updates) =>
       super.copyWith((message) => updates(message as UInt32Value))
           as UInt32Value;
@@ -412,12 +390,12 @@ class UInt32Value extends $pb.GeneratedMessage with $mixin.UInt32ValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
-///  Wrapper message for `bool`.
+/// Wrapper message for `bool`.
 ///
-///  The JSON representation for `BoolValue` is JSON `true` and `false`.
+/// The JSON representation for `BoolValue` is JSON `true` and `false`.
 class BoolValue extends $pb.GeneratedMessage with $mixin.BoolValueMixin {
   factory BoolValue({
     $core.bool? value,
@@ -446,13 +424,9 @@ class BoolValue extends $pb.GeneratedMessage with $mixin.BoolValueMixin {
     ..aOB(1, _omitFieldNames ? '' : 'value')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BoolValue clone() => BoolValue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BoolValue copyWith(void Function(BoolValue) updates) =>
       super.copyWith((message) => updates(message as BoolValue)) as BoolValue;
 
@@ -478,12 +452,12 @@ class BoolValue extends $pb.GeneratedMessage with $mixin.BoolValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
-///  Wrapper message for `string`.
+/// Wrapper message for `string`.
 ///
-///  The JSON representation for `StringValue` is JSON string.
+/// The JSON representation for `StringValue` is JSON string.
 class StringValue extends $pb.GeneratedMessage with $mixin.StringValueMixin {
   factory StringValue({
     $core.String? value,
@@ -512,13 +486,9 @@ class StringValue extends $pb.GeneratedMessage with $mixin.StringValueMixin {
     ..aOS(1, _omitFieldNames ? '' : 'value')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StringValue clone() => StringValue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StringValue copyWith(void Function(StringValue) updates) =>
       super.copyWith((message) => updates(message as StringValue))
           as StringValue;
@@ -545,12 +515,12 @@ class StringValue extends $pb.GeneratedMessage with $mixin.StringValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
-///  Wrapper message for `bytes`.
+/// Wrapper message for `bytes`.
 ///
-///  The JSON representation for `BytesValue` is JSON string.
+/// The JSON representation for `BytesValue` is JSON string.
 class BytesValue extends $pb.GeneratedMessage with $mixin.BytesValueMixin {
   factory BytesValue({
     $core.List<$core.int>? value,
@@ -580,13 +550,9 @@ class BytesValue extends $pb.GeneratedMessage with $mixin.BytesValueMixin {
         1, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OY)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BytesValue clone() => BytesValue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BytesValue copyWith(void Function(BytesValue) updates) =>
       super.copyWith((message) => updates(message as BytesValue)) as BytesValue;
 
@@ -612,7 +578,7 @@ class BytesValue extends $pb.GeneratedMessage with $mixin.BytesValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

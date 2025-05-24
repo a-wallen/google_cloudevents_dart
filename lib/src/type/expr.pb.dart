@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/type/expr.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,11 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-///  Represents an expression text. Example:
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
+/// Represents an expression text. Example:
 ///
-///      title: "User account presence"
-///      description: "Determines whether the request has a user account"
-///      expression: "size(request.user) > 0"
+///     title: "User account presence"
+///     description: "Determines whether the request has a user account"
+///     expression: "size(request.user) > 0"
 class Expr extends $pb.GeneratedMessage {
   factory Expr({
     $core.String? expression,
@@ -58,13 +60,9 @@ class Expr extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'location')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Expr clone() => Expr()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Expr copyWith(void Function(Expr) updates) =>
       super.copyWith((message) => updates(message as Expr)) as Expr;
 
@@ -79,11 +77,11 @@ class Expr extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Expr>(create);
   static Expr? _defaultInstance;
 
-  ///  Textual representation of an expression in
-  ///  Common Expression Language syntax.
+  /// Textual representation of an expression in
+  /// Common Expression Language syntax.
   ///
-  ///  The application context of the containing message determines which
-  ///  well-known feature set of CEL is supported.
+  /// The application context of the containing message determines which
+  /// well-known feature set of CEL is supported.
   @$pb.TagNumber(1)
   $core.String get expression => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -94,7 +92,7 @@ class Expr extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasExpression() => $_has(0);
   @$pb.TagNumber(1)
-  void clearExpression() => clearField(1);
+  void clearExpression() => $_clearField(1);
 
   /// An optional title for the expression, i.e. a short string describing
   /// its purpose. This can be used e.g. in UIs which allow to enter the
@@ -109,7 +107,7 @@ class Expr extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTitle() => clearField(2);
+  void clearTitle() => $_clearField(2);
 
   /// An optional description of the expression. This is a longer text which
   /// describes the expression, e.g. when hovered over it in a UI.
@@ -123,7 +121,7 @@ class Expr extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// An optional string indicating the location of the expression for error
   /// reporting, e.g. a file name and a position in the file.
@@ -137,7 +135,7 @@ class Expr extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasLocation() => $_has(3);
   @$pb.TagNumber(4)
-  void clearLocation() => clearField(4);
+  void clearLocation() => $_clearField(4);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

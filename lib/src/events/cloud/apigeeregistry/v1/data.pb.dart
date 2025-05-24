@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/apigeeregistry/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,6 +15,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -50,13 +52,9 @@ class Instance_Config extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'cmekKeyName')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_Config clone() => Instance_Config()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_Config copyWith(void Function(Instance_Config) updates) =>
       super.copyWith((message) => updates(message as Instance_Config))
           as Instance_Config;
@@ -84,7 +82,7 @@ class Instance_Config extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
-  void clearLocation() => clearField(1);
+  void clearLocation() => $_clearField(1);
 
   /// Required. The Customer Managed Encryption Key (CMEK) used for data
   /// encryption. The CMEK name should follow the format of
@@ -100,7 +98,7 @@ class Instance_Config extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCmekKeyName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCmekKeyName() => clearField(2);
+  void clearCmekKeyName() => $_clearField(2);
 }
 
 /// An Instance represents the instance resources of the Registry.
@@ -162,13 +160,9 @@ class Instance extends $pb.GeneratedMessage {
         subBuilder: Instance_Config.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance clone() => Instance()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance copyWith(void Function(Instance) updates) =>
       super.copyWith((message) => updates(message as Instance)) as Instance;
 
@@ -195,20 +189,20 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Creation timestamp.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -217,13 +211,13 @@ class Instance extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -232,13 +226,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_State get state => $_getN(3);
   @$pb.TagNumber(4)
   set state(Instance_State v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
-  void clearState() => clearField(4);
+  void clearState() => $_clearField(4);
 
   /// Output only. Extra information of Instance.State if the state is `FAILED`.
   @$pb.TagNumber(5)
@@ -251,20 +245,20 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasStateMessage() => $_has(4);
   @$pb.TagNumber(5)
-  void clearStateMessage() => clearField(5);
+  void clearStateMessage() => $_clearField(5);
 
   /// Required. Config of the Instance.
   @$pb.TagNumber(6)
   Instance_Config get config => $_getN(5);
   @$pb.TagNumber(6)
   set config(Instance_Config v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasConfig() => $_has(5);
   @$pb.TagNumber(6)
-  void clearConfig() => clearField(6);
+  void clearConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   Instance_Config ensureConfig() => $_ensure(5);
 }
@@ -281,8 +275,8 @@ class Api extends $pb.GeneratedMessage {
     $core.String? availability,
     $core.String? recommendedVersion,
     $core.String? recommendedDeployment,
-    $core.Map<$core.String, $core.String>? labels,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
   }) {
     final $result = create();
     if (name != null) {
@@ -310,10 +304,10 @@ class Api extends $pb.GeneratedMessage {
       $result.recommendedDeployment = recommendedDeployment;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     return $result;
   }
@@ -354,13 +348,9 @@ class Api extends $pb.GeneratedMessage {
             const $pb.PackageName('google.events.cloud.apigeeregistry.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Api clone() => Api()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Api copyWith(void Function(Api) updates) =>
       super.copyWith((message) => updates(message as Api)) as Api;
 
@@ -386,7 +376,7 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Human-meaningful name.
   @$pb.TagNumber(2)
@@ -399,7 +389,7 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// A detailed description.
   @$pb.TagNumber(3)
@@ -412,20 +402,20 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// Output only. Creation timestamp.
   @$pb.TagNumber(4)
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
   set createTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCreateTime() => clearField(4);
+  void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -434,13 +424,13 @@ class Api extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
   set updateTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUpdateTime() => clearField(5);
+  void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureUpdateTime() => $_ensure(4);
 
@@ -457,7 +447,7 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasAvailability() => $_has(5);
   @$pb.TagNumber(6)
-  void clearAvailability() => clearField(6);
+  void clearAvailability() => $_clearField(6);
 
   /// The recommended version of the API.
   /// Format:
@@ -472,7 +462,7 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasRecommendedVersion() => $_has(6);
   @$pb.TagNumber(7)
-  void clearRecommendedVersion() => clearField(7);
+  void clearRecommendedVersion() => $_clearField(7);
 
   /// The recommended deployment of the API.
   /// Format:
@@ -487,30 +477,30 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasRecommendedDeployment() => $_has(7);
   @$pb.TagNumber(8)
-  void clearRecommendedDeployment() => clearField(8);
+  void clearRecommendedDeployment() => $_clearField(8);
 
-  ///  Labels attach identifying metadata to resources. Identifying metadata can
-  ///  be used to filter list operations.
+  /// Labels attach identifying metadata to resources. Identifying metadata can
+  /// be used to filter list operations.
   ///
-  ///  Label keys and values can be no longer than 64 characters
-  ///  (Unicode codepoints), can only contain lowercase letters, numeric
-  ///  characters, underscores, and dashes. International characters are allowed.
-  ///  No more than 64 user labels can be associated with one resource (System
-  ///  labels are excluded).
+  /// Label keys and values can be no longer than 64 characters
+  /// (Unicode codepoints), can only contain lowercase letters, numeric
+  /// characters, underscores, and dashes. International characters are allowed.
+  /// No more than 64 user labels can be associated with one resource (System
+  /// labels are excluded).
   ///
-  ///  See https://goo.gl/xmQnxf for more information and examples of labels.
-  ///  System reserved label keys are prefixed with
-  ///  `apigeeregistry.googleapis.com/` and cannot be changed.
+  /// See https://goo.gl/xmQnxf for more information and examples of labels.
+  /// System reserved label keys are prefixed with
+  /// `apigeeregistry.googleapis.com/` and cannot be changed.
   @$pb.TagNumber(9)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(8);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(8);
 
-  ///  Annotations attach non-identifying metadata to resources.
+  /// Annotations attach non-identifying metadata to resources.
   ///
-  ///  Annotation keys and values are less restricted than those of labels, but
-  ///  should be generally used for small values of broad interest. Larger, topic-
-  ///  specific metadata should be stored in Artifacts.
+  /// Annotation keys and values are less restricted than those of labels, but
+  /// should be generally used for small values of broad interest. Larger, topic-
+  /// specific metadata should be stored in Artifacts.
   @$pb.TagNumber(10)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(9);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(9);
 }
 
 /// Describes a particular version of an API.
@@ -523,8 +513,8 @@ class ApiVersion extends $pb.GeneratedMessage {
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
     $core.String? state,
-    $core.Map<$core.String, $core.String>? labels,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
   }) {
     final $result = create();
     if (name != null) {
@@ -546,10 +536,10 @@ class ApiVersion extends $pb.GeneratedMessage {
       $result.state = state;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     return $result;
   }
@@ -588,13 +578,9 @@ class ApiVersion extends $pb.GeneratedMessage {
             const $pb.PackageName('google.events.cloud.apigeeregistry.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersion clone() => ApiVersion()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersion copyWith(void Function(ApiVersion) updates) =>
       super.copyWith((message) => updates(message as ApiVersion)) as ApiVersion;
 
@@ -620,7 +606,7 @@ class ApiVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Human-meaningful name.
   @$pb.TagNumber(2)
@@ -633,7 +619,7 @@ class ApiVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// A detailed description.
   @$pb.TagNumber(3)
@@ -646,20 +632,20 @@ class ApiVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// Output only. Creation timestamp.
   @$pb.TagNumber(4)
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
   set createTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCreateTime() => clearField(4);
+  void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -668,13 +654,13 @@ class ApiVersion extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
   set updateTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUpdateTime() => clearField(5);
+  void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureUpdateTime() => $_ensure(4);
 
@@ -692,30 +678,30 @@ class ApiVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(6)
-  void clearState() => clearField(6);
+  void clearState() => $_clearField(6);
 
-  ///  Labels attach identifying metadata to resources. Identifying metadata can
-  ///  be used to filter list operations.
+  /// Labels attach identifying metadata to resources. Identifying metadata can
+  /// be used to filter list operations.
   ///
-  ///  Label keys and values can be no longer than 64 characters
-  ///  (Unicode codepoints), can only contain lowercase letters, numeric
-  ///  characters, underscores and dashes. International characters are allowed.
-  ///  No more than 64 user labels can be associated with one resource (System
-  ///  labels are excluded).
+  /// Label keys and values can be no longer than 64 characters
+  /// (Unicode codepoints), can only contain lowercase letters, numeric
+  /// characters, underscores and dashes. International characters are allowed.
+  /// No more than 64 user labels can be associated with one resource (System
+  /// labels are excluded).
   ///
-  ///  See https://goo.gl/xmQnxf for more information and examples of labels.
-  ///  System reserved label keys are prefixed with
-  ///  `apigeeregistry.googleapis.com/` and cannot be changed.
+  /// See https://goo.gl/xmQnxf for more information and examples of labels.
+  /// System reserved label keys are prefixed with
+  /// `apigeeregistry.googleapis.com/` and cannot be changed.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(6);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(6);
 
-  ///  Annotations attach non-identifying metadata to resources.
+  /// Annotations attach non-identifying metadata to resources.
   ///
-  ///  Annotation keys and values are less restricted than those of labels, but
-  ///  should be generally used for small values of broad interest. Larger, topic-
-  ///  specific metadata should be stored in Artifacts.
+  /// Annotation keys and values are less restricted than those of labels, but
+  /// should be generally used for small values of broad interest. Larger, topic-
+  /// specific metadata should be stored in Artifacts.
   @$pb.TagNumber(8)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(7);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(7);
 }
 
 /// Describes a version of an API in a structured way.
@@ -739,8 +725,8 @@ class ApiSpec extends $pb.GeneratedMessage {
     $core.int? sizeBytes,
     $core.String? hash,
     $core.String? sourceUri,
-    $core.Map<$core.String, $core.String>? labels,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
   }) {
     final $result = create();
     if (name != null) {
@@ -777,10 +763,10 @@ class ApiSpec extends $pb.GeneratedMessage {
       $result.sourceUri = sourceUri;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     return $result;
   }
@@ -825,13 +811,9 @@ class ApiSpec extends $pb.GeneratedMessage {
             const $pb.PackageName('google.events.cloud.apigeeregistry.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpec clone() => ApiSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpec copyWith(void Function(ApiSpec) updates) =>
       super.copyWith((message) => updates(message as ApiSpec)) as ApiSpec;
 
@@ -857,7 +839,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// A possibly-hierarchical name used to refer to the spec from other specs.
   @$pb.TagNumber(2)
@@ -870,7 +852,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasFilename() => $_has(1);
   @$pb.TagNumber(2)
-  void clearFilename() => clearField(2);
+  void clearFilename() => $_clearField(2);
 
   /// A detailed description.
   @$pb.TagNumber(3)
@@ -883,7 +865,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// Output only. Immutable. The revision ID of the spec.
   /// A new revision is committed whenever the spec contents are changed.
@@ -898,20 +880,20 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasRevisionId() => $_has(3);
   @$pb.TagNumber(4)
-  void clearRevisionId() => clearField(4);
+  void clearRevisionId() => $_clearField(4);
 
   /// Output only. Creation timestamp; when the spec resource was created.
   @$pb.TagNumber(5)
   $2.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
   set createTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearCreateTime() => clearField(5);
+  void clearCreateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureCreateTime() => $_ensure(4);
 
@@ -921,13 +903,13 @@ class ApiSpec extends $pb.GeneratedMessage {
   $2.Timestamp get revisionCreateTime => $_getN(5);
   @$pb.TagNumber(6)
   set revisionCreateTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasRevisionCreateTime() => $_has(5);
   @$pb.TagNumber(6)
-  void clearRevisionCreateTime() => clearField(6);
+  void clearRevisionCreateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureRevisionCreateTime() => $_ensure(5);
 
@@ -937,13 +919,13 @@ class ApiSpec extends $pb.GeneratedMessage {
   $2.Timestamp get revisionUpdateTime => $_getN(6);
   @$pb.TagNumber(7)
   set revisionUpdateTime($2.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasRevisionUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
-  void clearRevisionUpdateTime() => clearField(7);
+  void clearRevisionUpdateTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $2.Timestamp ensureRevisionUpdateTime() => $_ensure(6);
 
@@ -965,7 +947,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasMimeType() => $_has(7);
   @$pb.TagNumber(8)
-  void clearMimeType() => clearField(8);
+  void clearMimeType() => $_clearField(8);
 
   /// Output only. The size of the spec file in bytes. If the spec is gzipped,
   /// this is the size of the uncompressed spec.
@@ -979,7 +961,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasSizeBytes() => $_has(8);
   @$pb.TagNumber(9)
-  void clearSizeBytes() => clearField(9);
+  void clearSizeBytes() => $_clearField(9);
 
   /// Output only. A SHA-256 hash of the spec's contents. If the spec is gzipped,
   /// this is the hash of the uncompressed spec.
@@ -993,7 +975,7 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasHash() => $_has(9);
   @$pb.TagNumber(10)
-  void clearHash() => clearField(10);
+  void clearHash() => $_clearField(10);
 
   /// The original source URI of the spec (if one exists).
   /// This is an external location that can be used for reference purposes
@@ -1009,30 +991,30 @@ class ApiSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasSourceUri() => $_has(10);
   @$pb.TagNumber(11)
-  void clearSourceUri() => clearField(11);
+  void clearSourceUri() => $_clearField(11);
 
-  ///  Labels attach identifying metadata to resources. Identifying metadata can
-  ///  be used to filter list operations.
+  /// Labels attach identifying metadata to resources. Identifying metadata can
+  /// be used to filter list operations.
   ///
-  ///  Label keys and values can be no longer than 64 characters
-  ///  (Unicode codepoints), can only contain lowercase letters, numeric
-  ///  characters, underscores and dashes. International characters are allowed.
-  ///  No more than 64 user labels can be associated with one resource (System
-  ///  labels are excluded).
+  /// Label keys and values can be no longer than 64 characters
+  /// (Unicode codepoints), can only contain lowercase letters, numeric
+  /// characters, underscores and dashes. International characters are allowed.
+  /// No more than 64 user labels can be associated with one resource (System
+  /// labels are excluded).
   ///
-  ///  See https://goo.gl/xmQnxf for more information and examples of labels.
-  ///  System reserved label keys are prefixed with
-  ///  `apigeeregistry.googleapis.com/` and cannot be changed.
+  /// See https://goo.gl/xmQnxf for more information and examples of labels.
+  /// System reserved label keys are prefixed with
+  /// `apigeeregistry.googleapis.com/` and cannot be changed.
   @$pb.TagNumber(14)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(11);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(11);
 
-  ///  Annotations attach non-identifying metadata to resources.
+  /// Annotations attach non-identifying metadata to resources.
   ///
-  ///  Annotation keys and values are less restricted than those of labels, but
-  ///  should be generally used for small values of broad interest. Larger, topic-
-  ///  specific metadata should be stored in Artifacts.
+  /// Annotation keys and values are less restricted than those of labels, but
+  /// should be generally used for small values of broad interest. Larger, topic-
+  /// specific metadata should be stored in Artifacts.
   @$pb.TagNumber(15)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(12);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(12);
 }
 
 /// Describes a service running at particular address that
@@ -1054,8 +1036,8 @@ class ApiDeployment extends $pb.GeneratedMessage {
     $core.String? externalChannelUri,
     $core.String? intendedAudience,
     $core.String? accessGuidance,
-    $core.Map<$core.String, $core.String>? labels,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
   }) {
     final $result = create();
     if (name != null) {
@@ -1095,10 +1077,10 @@ class ApiDeployment extends $pb.GeneratedMessage {
       $result.accessGuidance = accessGuidance;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     return $result;
   }
@@ -1144,13 +1126,9 @@ class ApiDeployment extends $pb.GeneratedMessage {
             const $pb.PackageName('google.events.cloud.apigeeregistry.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeployment clone() => ApiDeployment()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeployment copyWith(void Function(ApiDeployment) updates) =>
       super.copyWith((message) => updates(message as ApiDeployment))
           as ApiDeployment;
@@ -1178,7 +1156,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Human-meaningful name.
   @$pb.TagNumber(2)
@@ -1191,7 +1169,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// A detailed description.
   @$pb.TagNumber(3)
@@ -1204,7 +1182,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// Output only. Immutable. The revision ID of the deployment.
   /// A new revision is committed whenever the deployment contents are changed.
@@ -1219,20 +1197,20 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasRevisionId() => $_has(3);
   @$pb.TagNumber(4)
-  void clearRevisionId() => clearField(4);
+  void clearRevisionId() => $_clearField(4);
 
   /// Output only. Creation timestamp; when the deployment resource was created.
   @$pb.TagNumber(5)
   $2.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
   set createTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearCreateTime() => clearField(5);
+  void clearCreateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureCreateTime() => $_ensure(4);
 
@@ -1242,13 +1220,13 @@ class ApiDeployment extends $pb.GeneratedMessage {
   $2.Timestamp get revisionCreateTime => $_getN(5);
   @$pb.TagNumber(6)
   set revisionCreateTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasRevisionCreateTime() => $_has(5);
   @$pb.TagNumber(6)
-  void clearRevisionCreateTime() => clearField(6);
+  void clearRevisionCreateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureRevisionCreateTime() => $_ensure(5);
 
@@ -1258,13 +1236,13 @@ class ApiDeployment extends $pb.GeneratedMessage {
   $2.Timestamp get revisionUpdateTime => $_getN(6);
   @$pb.TagNumber(7)
   set revisionUpdateTime($2.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasRevisionUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
-  void clearRevisionUpdateTime() => clearField(7);
+  void clearRevisionUpdateTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $2.Timestamp ensureRevisionUpdateTime() => $_ensure(6);
 
@@ -1281,7 +1259,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasApiSpecRevision() => $_has(7);
   @$pb.TagNumber(8)
-  void clearApiSpecRevision() => clearField(8);
+  void clearApiSpecRevision() => $_clearField(8);
 
   /// The address where the deployment is serving. Changes to this value will
   /// update the revision.
@@ -1295,7 +1273,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasEndpointUri() => $_has(8);
   @$pb.TagNumber(9)
-  void clearEndpointUri() => clearField(9);
+  void clearEndpointUri() => $_clearField(9);
 
   /// The address of the external channel of the API (e.g., the Developer
   /// Portal). Changes to this value will not affect the revision.
@@ -1309,7 +1287,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasExternalChannelUri() => $_has(9);
   @$pb.TagNumber(10)
-  void clearExternalChannelUri() => clearField(10);
+  void clearExternalChannelUri() => $_clearField(10);
 
   /// Text briefly identifying the intended audience of the API. Changes to this
   /// value will not affect the revision.
@@ -1323,7 +1301,7 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasIntendedAudience() => $_has(10);
   @$pb.TagNumber(11)
-  void clearIntendedAudience() => clearField(11);
+  void clearIntendedAudience() => $_clearField(11);
 
   /// Text briefly describing how to access the endpoint. Changes to this value
   /// will not affect the revision.
@@ -1337,30 +1315,30 @@ class ApiDeployment extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasAccessGuidance() => $_has(11);
   @$pb.TagNumber(12)
-  void clearAccessGuidance() => clearField(12);
+  void clearAccessGuidance() => $_clearField(12);
 
-  ///  Labels attach identifying metadata to resources. Identifying metadata can
-  ///  be used to filter list operations.
+  /// Labels attach identifying metadata to resources. Identifying metadata can
+  /// be used to filter list operations.
   ///
-  ///  Label keys and values can be no longer than 64 characters
-  ///  (Unicode codepoints), can only contain lowercase letters, numeric
-  ///  characters, underscores and dashes. International characters are allowed.
-  ///  No more than 64 user labels can be associated with one resource (System
-  ///  labels are excluded).
+  /// Label keys and values can be no longer than 64 characters
+  /// (Unicode codepoints), can only contain lowercase letters, numeric
+  /// characters, underscores and dashes. International characters are allowed.
+  /// No more than 64 user labels can be associated with one resource (System
+  /// labels are excluded).
   ///
-  ///  See https://goo.gl/xmQnxf for more information and examples of labels.
-  ///  System reserved label keys are prefixed with
-  ///  `apigeeregistry.googleapis.com/` and cannot be changed.
+  /// See https://goo.gl/xmQnxf for more information and examples of labels.
+  /// System reserved label keys are prefixed with
+  /// `apigeeregistry.googleapis.com/` and cannot be changed.
   @$pb.TagNumber(14)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(12);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(12);
 
-  ///  Annotations attach non-identifying metadata to resources.
+  /// Annotations attach non-identifying metadata to resources.
   ///
-  ///  Annotation keys and values are less restricted than those of labels, but
-  ///  should be generally used for small values of broad interest. Larger, topic-
-  ///  specific metadata should be stored in Artifacts.
+  /// Annotation keys and values are less restricted than those of labels, but
+  /// should be generally used for small values of broad interest. Larger, topic-
+  /// specific metadata should be stored in Artifacts.
   @$pb.TagNumber(15)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(13);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(13);
 }
 
 /// The data within all ApiVersion events.
@@ -1391,13 +1369,9 @@ class ApiVersionEventData extends $pb.GeneratedMessage {
         subBuilder: ApiVersion.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersionEventData clone() => ApiVersionEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiVersionEventData copyWith(void Function(ApiVersionEventData) updates) =>
       super.copyWith((message) => updates(message as ApiVersionEventData))
           as ApiVersionEventData;
@@ -1419,13 +1393,13 @@ class ApiVersionEventData extends $pb.GeneratedMessage {
   ApiVersion get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ApiVersion v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ApiVersion ensurePayload() => $_ensure(0);
 }
@@ -1458,13 +1432,9 @@ class InstanceEventData extends $pb.GeneratedMessage {
         subBuilder: Instance.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData clone() => InstanceEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData copyWith(void Function(InstanceEventData) updates) =>
       super.copyWith((message) => updates(message as InstanceEventData))
           as InstanceEventData;
@@ -1486,13 +1456,13 @@ class InstanceEventData extends $pb.GeneratedMessage {
   Instance get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Instance v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Instance ensurePayload() => $_ensure(0);
 }
@@ -1525,13 +1495,9 @@ class ApiSpecEventData extends $pb.GeneratedMessage {
         subBuilder: ApiSpec.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpecEventData clone() => ApiSpecEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiSpecEventData copyWith(void Function(ApiSpecEventData) updates) =>
       super.copyWith((message) => updates(message as ApiSpecEventData))
           as ApiSpecEventData;
@@ -1553,13 +1519,13 @@ class ApiSpecEventData extends $pb.GeneratedMessage {
   ApiSpec get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ApiSpec v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ApiSpec ensurePayload() => $_ensure(0);
 }
@@ -1592,14 +1558,10 @@ class ApiDeploymentEventData extends $pb.GeneratedMessage {
         subBuilder: ApiDeployment.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeploymentEventData clone() =>
       ApiDeploymentEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiDeploymentEventData copyWith(
           void Function(ApiDeploymentEventData) updates) =>
       super.copyWith((message) => updates(message as ApiDeploymentEventData))
@@ -1622,13 +1584,13 @@ class ApiDeploymentEventData extends $pb.GeneratedMessage {
   ApiDeployment get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ApiDeployment v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ApiDeployment ensurePayload() => $_ensure(0);
 }
@@ -1660,13 +1622,9 @@ class ApiEventData extends $pb.GeneratedMessage {
     ..aOM<Api>(1, _omitFieldNames ? '' : 'payload', subBuilder: Api.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiEventData clone() => ApiEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiEventData copyWith(void Function(ApiEventData) updates) =>
       super.copyWith((message) => updates(message as ApiEventData))
           as ApiEventData;
@@ -1688,13 +1646,13 @@ class ApiEventData extends $pb.GeneratedMessage {
   Api get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Api v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Api ensurePayload() => $_ensure(0);
 }

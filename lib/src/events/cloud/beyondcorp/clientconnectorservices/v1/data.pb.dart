@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/beyondcorp/clientconnectorservices/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,6 +15,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -58,15 +60,11 @@ class ClientConnectorService_Ingress_Config_DestinationRoute
     ..aOS(2, _omitFieldNames ? '' : 'netmask')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Ingress_Config_DestinationRoute clone() =>
       ClientConnectorService_Ingress_Config_DestinationRoute()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Ingress_Config_DestinationRoute copyWith(
           void Function(ClientConnectorService_Ingress_Config_DestinationRoute)
               updates) =>
@@ -103,7 +101,7 @@ class ClientConnectorService_Ingress_Config_DestinationRoute
   @$pb.TagNumber(1)
   $core.bool hasAddress() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAddress() => clearField(1);
+  void clearAddress() => $_clearField(1);
 
   /// Required. The network mask of the subnet
   /// for which the packet is routed to the ClientGateway.
@@ -117,7 +115,7 @@ class ClientConnectorService_Ingress_Config_DestinationRoute
   @$pb.TagNumber(2)
   $core.bool hasNetmask() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNetmask() => clearField(2);
+  void clearNetmask() => $_clearField(2);
 }
 
 /// The basic ingress config for ClientGateways.
@@ -165,14 +163,10 @@ class ClientConnectorService_Ingress_Config extends $pb.GeneratedMessage {
             ClientConnectorService_Ingress_Config_DestinationRoute.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Ingress_Config clone() =>
       ClientConnectorService_Ingress_Config()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Ingress_Config copyWith(
           void Function(ClientConnectorService_Ingress_Config) updates) =>
       super.copyWith((message) =>
@@ -201,17 +195,17 @@ class ClientConnectorService_Ingress_Config extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set transportProtocol(
       ClientConnectorService_Ingress_Config_TransportProtocol v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasTransportProtocol() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTransportProtocol() => clearField(1);
+  void clearTransportProtocol() => $_clearField(1);
 
   /// Required. The settings used to configure basic ClientGateways.
   @$pb.TagNumber(2)
-  $core.List<ClientConnectorService_Ingress_Config_DestinationRoute>
+  $pb.PbList<ClientConnectorService_Ingress_Config_DestinationRoute>
       get destinationRoutes => $_getList(1);
 }
 
@@ -255,14 +249,10 @@ class ClientConnectorService_Ingress extends $pb.GeneratedMessage {
         subBuilder: ClientConnectorService_Ingress_Config.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Ingress clone() =>
       ClientConnectorService_Ingress()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Ingress copyWith(
           void Function(ClientConnectorService_Ingress) updates) =>
       super.copyWith(
@@ -284,20 +274,20 @@ class ClientConnectorService_Ingress extends $pb.GeneratedMessage {
 
   ClientConnectorService_Ingress_IngressConfig whichIngressConfig() =>
       _ClientConnectorService_Ingress_IngressConfigByTag[$_whichOneof(0)]!;
-  void clearIngressConfig() => clearField($_whichOneof(0));
+  void clearIngressConfig() => $_clearField($_whichOneof(0));
 
   /// The basic ingress config for ClientGateways.
   @$pb.TagNumber(1)
   ClientConnectorService_Ingress_Config get config => $_getN(0);
   @$pb.TagNumber(1)
   set config(ClientConnectorService_Ingress_Config v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasConfig() => $_has(0);
   @$pb.TagNumber(1)
-  void clearConfig() => clearField(1);
+  void clearConfig() => $_clearField(1);
   @$pb.TagNumber(1)
   ClientConnectorService_Ingress_Config ensureConfig() => $_ensure(0);
 }
@@ -331,14 +321,10 @@ class ClientConnectorService_Egress_PeeredVpc extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'networkVpc')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Egress_PeeredVpc clone() =>
       ClientConnectorService_Egress_PeeredVpc()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Egress_PeeredVpc copyWith(
           void Function(ClientConnectorService_Egress_PeeredVpc) updates) =>
       super.copyWith((message) =>
@@ -370,7 +356,7 @@ class ClientConnectorService_Egress_PeeredVpc extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNetworkVpc() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNetworkVpc() => clearField(1);
+  void clearNetworkVpc() => $_clearField(1);
 }
 
 enum ClientConnectorService_Egress_DestinationType { peeredVpc, notSet }
@@ -412,14 +398,10 @@ class ClientConnectorService_Egress extends $pb.GeneratedMessage {
         subBuilder: ClientConnectorService_Egress_PeeredVpc.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Egress clone() =>
       ClientConnectorService_Egress()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService_Egress copyWith(
           void Function(ClientConnectorService_Egress) updates) =>
       super.copyWith(
@@ -441,20 +423,20 @@ class ClientConnectorService_Egress extends $pb.GeneratedMessage {
 
   ClientConnectorService_Egress_DestinationType whichDestinationType() =>
       _ClientConnectorService_Egress_DestinationTypeByTag[$_whichOneof(0)]!;
-  void clearDestinationType() => clearField($_whichOneof(0));
+  void clearDestinationType() => $_clearField($_whichOneof(0));
 
   /// A VPC from the consumer project.
   @$pb.TagNumber(1)
   ClientConnectorService_Egress_PeeredVpc get peeredVpc => $_getN(0);
   @$pb.TagNumber(1)
   set peeredVpc(ClientConnectorService_Egress_PeeredVpc v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPeeredVpc() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPeeredVpc() => clearField(1);
+  void clearPeeredVpc() => $_clearField(1);
   @$pb.TagNumber(1)
   ClientConnectorService_Egress_PeeredVpc ensurePeeredVpc() => $_ensure(0);
 }
@@ -525,14 +507,10 @@ class ClientConnectorService extends $pb.GeneratedMessage {
         enumValues: ClientConnectorService_State.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService clone() =>
       ClientConnectorService()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorService copyWith(
           void Function(ClientConnectorService) updates) =>
       super.copyWith((message) => updates(message as ClientConnectorService))
@@ -561,20 +539,20 @@ class ClientConnectorService extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. [Output only] Create time stamp.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -583,13 +561,13 @@ class ClientConnectorService extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -608,20 +586,20 @@ class ClientConnectorService extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDisplayName() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDisplayName() => clearField(4);
+  void clearDisplayName() => $_clearField(4);
 
   /// Required. The details of the ingress settings.
   @$pb.TagNumber(6)
   ClientConnectorService_Ingress get ingress => $_getN(4);
   @$pb.TagNumber(6)
   set ingress(ClientConnectorService_Ingress v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasIngress() => $_has(4);
   @$pb.TagNumber(6)
-  void clearIngress() => clearField(6);
+  void clearIngress() => $_clearField(6);
   @$pb.TagNumber(6)
   ClientConnectorService_Ingress ensureIngress() => $_ensure(4);
 
@@ -630,13 +608,13 @@ class ClientConnectorService extends $pb.GeneratedMessage {
   ClientConnectorService_Egress get egress => $_getN(5);
   @$pb.TagNumber(7)
   set egress(ClientConnectorService_Egress v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasEgress() => $_has(5);
   @$pb.TagNumber(7)
-  void clearEgress() => clearField(7);
+  void clearEgress() => $_clearField(7);
   @$pb.TagNumber(7)
   ClientConnectorService_Egress ensureEgress() => $_ensure(5);
 
@@ -645,13 +623,13 @@ class ClientConnectorService extends $pb.GeneratedMessage {
   ClientConnectorService_State get state => $_getN(6);
   @$pb.TagNumber(8)
   set state(ClientConnectorService_State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 }
 
 /// The data within all ClientConnectorService events.
@@ -683,14 +661,10 @@ class ClientConnectorServiceEventData extends $pb.GeneratedMessage {
         subBuilder: ClientConnectorService.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorServiceEventData clone() =>
       ClientConnectorServiceEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientConnectorServiceEventData copyWith(
           void Function(ClientConnectorServiceEventData) updates) =>
       super.copyWith(
@@ -717,13 +691,13 @@ class ClientConnectorServiceEventData extends $pb.GeneratedMessage {
   ClientConnectorService get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ClientConnectorService v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ClientConnectorService ensurePayload() => $_ensure(0);
 }

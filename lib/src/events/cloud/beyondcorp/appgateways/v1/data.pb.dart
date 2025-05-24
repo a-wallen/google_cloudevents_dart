@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/beyondcorp/appgateways/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,6 +15,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -51,14 +53,10 @@ class AppGateway_AllocatedConnection extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'ingressPort', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppGateway_AllocatedConnection clone() =>
       AppGateway_AllocatedConnection()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppGateway_AllocatedConnection copyWith(
           void Function(AppGateway_AllocatedConnection) updates) =>
       super.copyWith(
@@ -89,7 +87,7 @@ class AppGateway_AllocatedConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPscUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPscUri() => clearField(1);
+  void clearPscUri() => $_clearField(1);
 
   /// Required. The ingress port of an allocated connection
   @$pb.TagNumber(2)
@@ -102,7 +100,7 @@ class AppGateway_AllocatedConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasIngressPort() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIngressPort() => clearField(2);
+  void clearIngressPort() => $_clearField(2);
 }
 
 /// A BeyondCorp AppGateway resource represents a BeyondCorp protected AppGateway
@@ -114,7 +112,7 @@ class AppGateway extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     $core.String? uid,
     AppGateway_Type? type,
@@ -134,7 +132,7 @@ class AppGateway extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (displayName != null) {
       $result.displayName = displayName;
@@ -205,13 +203,9 @@ class AppGateway extends $pb.GeneratedMessage {
         enumValues: AppGateway_HostType.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppGateway clone() => AppGateway()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppGateway copyWith(void Function(AppGateway) updates) =>
       super.copyWith((message) => updates(message as AppGateway)) as AppGateway;
 
@@ -238,20 +232,20 @@ class AppGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Timestamp when the resource was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -260,19 +254,19 @@ class AppGateway extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Resource labels to represent user provided metadata.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Optional. An arbitrary user-provided name for the AppGateway. Cannot exceed
   /// 64 characters.
@@ -286,7 +280,7 @@ class AppGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 
   /// Output only. A unique identifier for the instance generated by the
   /// system.
@@ -300,33 +294,33 @@ class AppGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasUid() => $_has(5);
   @$pb.TagNumber(6)
-  void clearUid() => clearField(6);
+  void clearUid() => $_clearField(6);
 
   /// Required. The type of network connectivity used by the AppGateway.
   @$pb.TagNumber(7)
   AppGateway_Type get type => $_getN(6);
   @$pb.TagNumber(7)
   set type(AppGateway_Type v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasType() => $_has(6);
   @$pb.TagNumber(7)
-  void clearType() => clearField(7);
+  void clearType() => $_clearField(7);
 
   /// Output only. The current state of the AppGateway.
   @$pb.TagNumber(8)
   AppGateway_State get state => $_getN(7);
   @$pb.TagNumber(8)
   set state(AppGateway_State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// Output only. Server-defined URI for this resource.
   @$pb.TagNumber(9)
@@ -339,11 +333,11 @@ class AppGateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasUri() => $_has(8);
   @$pb.TagNumber(9)
-  void clearUri() => clearField(9);
+  void clearUri() => $_clearField(9);
 
   /// Output only. A list of connections allocated for the Gateway
   @$pb.TagNumber(10)
-  $core.List<AppGateway_AllocatedConnection> get allocatedConnections =>
+  $pb.PbList<AppGateway_AllocatedConnection> get allocatedConnections =>
       $_getList(9);
 
   /// Required. The type of hosting used by the AppGateway.
@@ -351,13 +345,13 @@ class AppGateway extends $pb.GeneratedMessage {
   AppGateway_HostType get hostType => $_getN(10);
   @$pb.TagNumber(11)
   set hostType(AppGateway_HostType v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasHostType() => $_has(10);
   @$pb.TagNumber(11)
-  void clearHostType() => clearField(11);
+  void clearHostType() => $_clearField(11);
 }
 
 /// The data within all AppGateway events.
@@ -389,13 +383,9 @@ class AppGatewayEventData extends $pb.GeneratedMessage {
         subBuilder: AppGateway.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppGatewayEventData clone() => AppGatewayEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppGatewayEventData copyWith(void Function(AppGatewayEventData) updates) =>
       super.copyWith((message) => updates(message as AppGatewayEventData))
           as AppGatewayEventData;
@@ -417,13 +407,13 @@ class AppGatewayEventData extends $pb.GeneratedMessage {
   AppGateway get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(AppGateway v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   AppGateway ensurePayload() => $_ensure(0);
 }

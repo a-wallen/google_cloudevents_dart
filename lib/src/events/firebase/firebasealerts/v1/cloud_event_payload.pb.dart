@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/firebase/firebasealerts/v1/cloud_event_payload.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,7 +15,9 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../type/date.pb.dart' as $7;
+import '../../../../type/date.pb.dart' as $56;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// Basic information of the Crashlytics issue
 class CrashlyticsIssue extends $pb.GeneratedMessage {
@@ -59,13 +61,9 @@ class CrashlyticsIssue extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'appVersion')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsIssue clone() => CrashlyticsIssue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsIssue copyWith(void Function(CrashlyticsIssue) updates) =>
       super.copyWith((message) => updates(message as CrashlyticsIssue))
           as CrashlyticsIssue;
@@ -92,7 +90,7 @@ class CrashlyticsIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearId() => clearField(1);
+  void clearId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get title => $_getSZ(1);
@@ -104,7 +102,7 @@ class CrashlyticsIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTitle() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTitle() => clearField(2);
+  void clearTitle() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $core.String get subtitle => $_getSZ(2);
@@ -116,7 +114,7 @@ class CrashlyticsIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasSubtitle() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSubtitle() => clearField(3);
+  void clearSubtitle() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $core.String get appVersion => $_getSZ(3);
@@ -128,7 +126,7 @@ class CrashlyticsIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasAppVersion() => $_has(3);
   @$pb.TagNumber(4)
-  void clearAppVersion() => clearField(4);
+  void clearAppVersion() => $_clearField(4);
 }
 
 class CrashlyticsNewFatalIssuePayload extends $pb.GeneratedMessage {
@@ -158,14 +156,10 @@ class CrashlyticsNewFatalIssuePayload extends $pb.GeneratedMessage {
         subBuilder: CrashlyticsIssue.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsNewFatalIssuePayload clone() =>
       CrashlyticsNewFatalIssuePayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsNewFatalIssuePayload copyWith(
           void Function(CrashlyticsNewFatalIssuePayload) updates) =>
       super.copyWith(
@@ -191,13 +185,13 @@ class CrashlyticsNewFatalIssuePayload extends $pb.GeneratedMessage {
   CrashlyticsIssue get issue => $_getN(0);
   @$pb.TagNumber(1)
   set issue(CrashlyticsIssue v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasIssue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIssue() => clearField(1);
+  void clearIssue() => $_clearField(1);
   @$pb.TagNumber(1)
   CrashlyticsIssue ensureIssue() => $_ensure(0);
 }
@@ -229,14 +223,10 @@ class CrashlyticsNewNonfatalIssuePayload extends $pb.GeneratedMessage {
         subBuilder: CrashlyticsIssue.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsNewNonfatalIssuePayload clone() =>
       CrashlyticsNewNonfatalIssuePayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsNewNonfatalIssuePayload copyWith(
           void Function(CrashlyticsNewNonfatalIssuePayload) updates) =>
       super.copyWith((message) =>
@@ -262,13 +252,13 @@ class CrashlyticsNewNonfatalIssuePayload extends $pb.GeneratedMessage {
   CrashlyticsIssue get issue => $_getN(0);
   @$pb.TagNumber(1)
   set issue(CrashlyticsIssue v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasIssue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIssue() => clearField(1);
+  void clearIssue() => $_clearField(1);
   @$pb.TagNumber(1)
   CrashlyticsIssue ensureIssue() => $_ensure(0);
 }
@@ -311,14 +301,10 @@ class CrashlyticsRegressionAlertPayload extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsRegressionAlertPayload clone() =>
       CrashlyticsRegressionAlertPayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsRegressionAlertPayload copyWith(
           void Function(CrashlyticsRegressionAlertPayload) updates) =>
       super.copyWith((message) =>
@@ -350,20 +336,20 @@ class CrashlyticsRegressionAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// Basic information of the Crashlytics issue
   @$pb.TagNumber(2)
   CrashlyticsIssue get issue => $_getN(1);
   @$pb.TagNumber(2)
   set issue(CrashlyticsIssue v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasIssue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIssue() => clearField(2);
+  void clearIssue() => $_clearField(2);
   @$pb.TagNumber(2)
   CrashlyticsIssue ensureIssue() => $_ensure(1);
 
@@ -373,13 +359,13 @@ class CrashlyticsRegressionAlertPayload extends $pb.GeneratedMessage {
   $2.Timestamp get resolveTime => $_getN(2);
   @$pb.TagNumber(3)
   set resolveTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasResolveTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearResolveTime() => clearField(3);
+  void clearResolveTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureResolveTime() => $_ensure(2);
 }
@@ -433,14 +419,10 @@ class CrashlyticsVelocityAlertPayload extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'firstVersion')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsVelocityAlertPayload clone() =>
       CrashlyticsVelocityAlertPayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsVelocityAlertPayload copyWith(
           void Function(CrashlyticsVelocityAlertPayload) updates) =>
       super.copyWith(
@@ -466,13 +448,13 @@ class CrashlyticsVelocityAlertPayload extends $pb.GeneratedMessage {
   CrashlyticsIssue get issue => $_getN(0);
   @$pb.TagNumber(1)
   set issue(CrashlyticsIssue v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasIssue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIssue() => clearField(1);
+  void clearIssue() => $_clearField(1);
   @$pb.TagNumber(1)
   CrashlyticsIssue ensureIssue() => $_ensure(0);
 
@@ -481,13 +463,13 @@ class CrashlyticsVelocityAlertPayload extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -504,7 +486,7 @@ class CrashlyticsVelocityAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasCrashCount() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCrashCount() => clearField(3);
+  void clearCrashCount() => $_clearField(3);
 
   /// The percentage of user sessions for the given app version that had this
   /// specific crash issue in the time period used to trigger the velocity alert,
@@ -519,7 +501,7 @@ class CrashlyticsVelocityAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasCrashPercentage() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCrashPercentage() => clearField(4);
+  void clearCrashPercentage() => $_clearField(4);
 
   /// The first app version where this issue was seen, and not necessarily the
   /// version that has triggered the alert
@@ -533,7 +515,7 @@ class CrashlyticsVelocityAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasFirstVersion() => $_has(4);
   @$pb.TagNumber(5)
-  void clearFirstVersion() => clearField(5);
+  void clearFirstVersion() => $_clearField(5);
 }
 
 class CrashlyticsStabilityDigestPayload_TrendingIssueDetails
@@ -583,15 +565,11 @@ class CrashlyticsStabilityDigestPayload_TrendingIssueDetails
     ..aInt64(4, _omitFieldNames ? '' : 'userCount')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsStabilityDigestPayload_TrendingIssueDetails clone() =>
       CrashlyticsStabilityDigestPayload_TrendingIssueDetails()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsStabilityDigestPayload_TrendingIssueDetails copyWith(
           void Function(CrashlyticsStabilityDigestPayload_TrendingIssueDetails)
               updates) =>
@@ -627,20 +605,20 @@ class CrashlyticsStabilityDigestPayload_TrendingIssueDetails
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// Basic information of the Crashlytics issue
   @$pb.TagNumber(2)
   CrashlyticsIssue get issue => $_getN(1);
   @$pb.TagNumber(2)
   set issue(CrashlyticsIssue v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasIssue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIssue() => clearField(2);
+  void clearIssue() => $_clearField(2);
   @$pb.TagNumber(2)
   CrashlyticsIssue ensureIssue() => $_ensure(1);
 
@@ -655,7 +633,7 @@ class CrashlyticsStabilityDigestPayload_TrendingIssueDetails
   @$pb.TagNumber(3)
   $core.bool hasEventCount() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEventCount() => clearField(3);
+  void clearEventCount() => $_clearField(3);
 
   /// The number of distinct users that were affected by the issue
   @$pb.TagNumber(4)
@@ -668,12 +646,12 @@ class CrashlyticsStabilityDigestPayload_TrendingIssueDetails
   @$pb.TagNumber(4)
   $core.bool hasUserCount() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUserCount() => clearField(4);
+  void clearUserCount() => $_clearField(4);
 }
 
 class CrashlyticsStabilityDigestPayload extends $pb.GeneratedMessage {
   factory CrashlyticsStabilityDigestPayload({
-    $7.Date? digestDate,
+    $56.Date? digestDate,
     $core.Iterable<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>?
         trendingIssues,
   }) {
@@ -699,22 +677,18 @@ class CrashlyticsStabilityDigestPayload extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
       createEmptyInstance: create)
-    ..aOM<$7.Date>(5, _omitFieldNames ? '' : 'digestDate',
-        subBuilder: $7.Date.create)
+    ..aOM<$56.Date>(5, _omitFieldNames ? '' : 'digestDate',
+        subBuilder: $56.Date.create)
     ..pc<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>(
         6, _omitFieldNames ? '' : 'trendingIssues', $pb.PbFieldType.PM,
         subBuilder:
             CrashlyticsStabilityDigestPayload_TrendingIssueDetails.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsStabilityDigestPayload clone() =>
       CrashlyticsStabilityDigestPayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsStabilityDigestPayload copyWith(
           void Function(CrashlyticsStabilityDigestPayload) updates) =>
       super.copyWith((message) =>
@@ -738,22 +712,22 @@ class CrashlyticsStabilityDigestPayload extends $pb.GeneratedMessage {
   /// The date that the digest gets created, issues in the digest should
   /// have the same date as the digest date
   @$pb.TagNumber(5)
-  $7.Date get digestDate => $_getN(0);
+  $56.Date get digestDate => $_getN(0);
   @$pb.TagNumber(5)
-  set digestDate($7.Date v) {
-    setField(5, v);
+  set digestDate($56.Date v) {
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasDigestDate() => $_has(0);
   @$pb.TagNumber(5)
-  void clearDigestDate() => clearField(5);
+  void clearDigestDate() => $_clearField(5);
   @$pb.TagNumber(5)
-  $7.Date ensureDigestDate() => $_ensure(0);
+  $56.Date ensureDigestDate() => $_ensure(0);
 
   /// A stability digest contains several trending Crashlytics issues
   @$pb.TagNumber(6)
-  $core.List<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>
+  $pb.PbList<CrashlyticsStabilityDigestPayload_TrendingIssueDetails>
       get trendingIssues => $_getList(1);
 }
 
@@ -784,14 +758,10 @@ class CrashlyticsNewAnrIssuePayload extends $pb.GeneratedMessage {
         subBuilder: CrashlyticsIssue.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsNewAnrIssuePayload clone() =>
       CrashlyticsNewAnrIssuePayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsNewAnrIssuePayload copyWith(
           void Function(CrashlyticsNewAnrIssuePayload) updates) =>
       super.copyWith(
@@ -815,13 +785,13 @@ class CrashlyticsNewAnrIssuePayload extends $pb.GeneratedMessage {
   CrashlyticsIssue get issue => $_getN(0);
   @$pb.TagNumber(1)
   set issue(CrashlyticsIssue v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasIssue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIssue() => clearField(1);
+  void clearIssue() => $_clearField(1);
   @$pb.TagNumber(1)
   CrashlyticsIssue ensureIssue() => $_ensure(0);
 }
@@ -857,14 +827,10 @@ class CrashlyticsMissingSymbolsPayload extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'uuid')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsMissingSymbolsPayload clone() =>
       CrashlyticsMissingSymbolsPayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CrashlyticsMissingSymbolsPayload copyWith(
           void Function(CrashlyticsMissingSymbolsPayload) updates) =>
       super.copyWith(
@@ -895,7 +861,7 @@ class CrashlyticsMissingSymbolsPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasAppVersion() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAppVersion() => clearField(1);
+  void clearAppVersion() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get uuid => $_getSZ(1);
@@ -907,7 +873,7 @@ class CrashlyticsMissingSymbolsPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUuid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUuid() => clearField(2);
+  void clearUuid() => $_clearField(2);
 }
 
 class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
@@ -989,14 +955,10 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
     ..aOS(11, _omitFieldNames ? '' : 'investigateUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FireperfThresholdAlertPayload clone() =>
       FireperfThresholdAlertPayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FireperfThresholdAlertPayload copyWith(
           void Function(FireperfThresholdAlertPayload) updates) =>
       super.copyWith(
@@ -1028,7 +990,7 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEventName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEventName() => clearField(1);
+  void clearEventName() => $_clearField(1);
 
   /// The resource type this alert is for (i.e. trace, network request, screen
   /// rendering, etc.)
@@ -1042,7 +1004,7 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasEventType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEventType() => clearField(2);
+  void clearEventType() => $_clearField(2);
 
   /// The metric type this alert is for (i.e. success rate, response time,
   /// duration, etc.)
@@ -1056,7 +1018,7 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMetricType() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMetricType() => clearField(3);
+  void clearMetricType() => $_clearField(3);
 
   /// The number of events checked for this alert condition
   @$pb.TagNumber(4)
@@ -1069,7 +1031,7 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasNumSamples() => $_has(3);
   @$pb.TagNumber(4)
-  void clearNumSamples() => clearField(4);
+  void clearNumSamples() => $_clearField(4);
 
   /// The threshold value of the alert condition without units (e.g. "75", "2.1")
   @$pb.TagNumber(5)
@@ -1082,7 +1044,7 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasThresholdValue() => $_has(4);
   @$pb.TagNumber(5)
-  void clearThresholdValue() => clearField(5);
+  void clearThresholdValue() => $_clearField(5);
 
   /// The unit for the alert threshold (e.g. "percent", "seconds")
   @$pb.TagNumber(6)
@@ -1095,7 +1057,7 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasThresholdUnit() => $_has(5);
   @$pb.TagNumber(6)
-  void clearThresholdUnit() => clearField(6);
+  void clearThresholdUnit() => $_clearField(6);
 
   /// The percentile of the alert condition, can be 0 if percentile is not
   /// applicable to the alert condition; range: [0, 100]
@@ -1109,7 +1071,7 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasConditionPercentile() => $_has(6);
   @$pb.TagNumber(7)
-  void clearConditionPercentile() => clearField(7);
+  void clearConditionPercentile() => $_clearField(7);
 
   /// The app version this alert was triggered for, can be empty if the alert is
   /// for a network request (because the alert was checked against data from all
@@ -1124,7 +1086,7 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasAppVersion() => $_has(7);
   @$pb.TagNumber(8)
-  void clearAppVersion() => clearField(8);
+  void clearAppVersion() => $_clearField(8);
 
   /// The value that violated the alert condition (e.g. "76.5", "3")
   @$pb.TagNumber(9)
@@ -1137,7 +1099,7 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasViolationValue() => $_has(8);
   @$pb.TagNumber(9)
-  void clearViolationValue() => clearField(9);
+  void clearViolationValue() => $_clearField(9);
 
   /// The unit for the violation value (e.g. "percent", "seconds")
   @$pb.TagNumber(10)
@@ -1150,7 +1112,7 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasViolationUnit() => $_has(9);
   @$pb.TagNumber(10)
-  void clearViolationUnit() => clearField(10);
+  void clearViolationUnit() => $_clearField(10);
 
   /// The link to Fireconsole to investigate more into this alert
   @$pb.TagNumber(11)
@@ -1163,7 +1125,7 @@ class FireperfThresholdAlertPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasInvestigateUri() => $_has(10);
   @$pb.TagNumber(11)
-  void clearInvestigateUri() => clearField(11);
+  void clearInvestigateUri() => $_clearField(11);
 }
 
 class AppDistroNewTesterIosDevicePayload extends $pb.GeneratedMessage {
@@ -1207,14 +1169,10 @@ class AppDistroNewTesterIosDevicePayload extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'testerDeviceIdentifier')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppDistroNewTesterIosDevicePayload clone() =>
       AppDistroNewTesterIosDevicePayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppDistroNewTesterIosDevicePayload copyWith(
           void Function(AppDistroNewTesterIosDevicePayload) updates) =>
       super.copyWith((message) =>
@@ -1245,7 +1203,7 @@ class AppDistroNewTesterIosDevicePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTesterName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTesterName() => clearField(1);
+  void clearTesterName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get testerEmail => $_getSZ(1);
@@ -1257,7 +1215,7 @@ class AppDistroNewTesterIosDevicePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTesterEmail() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTesterEmail() => clearField(2);
+  void clearTesterEmail() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $core.String get testerDeviceModelName => $_getSZ(2);
@@ -1269,7 +1227,7 @@ class AppDistroNewTesterIosDevicePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTesterDeviceModelName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTesterDeviceModelName() => clearField(3);
+  void clearTesterDeviceModelName() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $core.String get testerDeviceIdentifier => $_getSZ(3);
@@ -1281,7 +1239,7 @@ class AppDistroNewTesterIosDevicePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasTesterDeviceIdentifier() => $_has(3);
   @$pb.TagNumber(4)
-  void clearTesterDeviceIdentifier() => clearField(4);
+  void clearTesterDeviceIdentifier() => $_clearField(4);
 }
 
 class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
@@ -1340,14 +1298,10 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
     ..aOS(9, _omitFieldNames ? '' : 'appVersion')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppDistroInAppFeedbackPayload clone() =>
       AppDistroInAppFeedbackPayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppDistroInAppFeedbackPayload copyWith(
           void Function(AppDistroInAppFeedbackPayload) updates) =>
       super.copyWith(
@@ -1379,7 +1333,7 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasFeedbackReport() => $_has(0);
   @$pb.TagNumber(1)
-  void clearFeedbackReport() => clearField(1);
+  void clearFeedbackReport() => $_clearField(1);
 
   /// Name of the tester.
   @$pb.TagNumber(2)
@@ -1392,7 +1346,7 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTesterName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTesterName() => clearField(2);
+  void clearTesterName() => $_clearField(2);
 
   /// Email address of the tester.
   @$pb.TagNumber(3)
@@ -1405,7 +1359,7 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTesterEmail() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTesterEmail() => clearField(3);
+  void clearTesterEmail() => $_clearField(3);
 
   /// Text entered by the tester.
   @$pb.TagNumber(6)
@@ -1418,7 +1372,7 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasText() => $_has(3);
   @$pb.TagNumber(6)
-  void clearText() => clearField(6);
+  void clearText() => $_clearField(6);
 
   /// URI to download screenshot.  This URI is fast expiring.
   @$pb.TagNumber(7)
@@ -1431,7 +1385,7 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasScreenshotUri() => $_has(4);
   @$pb.TagNumber(7)
-  void clearScreenshotUri() => clearField(7);
+  void clearScreenshotUri() => $_clearField(7);
 
   /// Deep link back to the Firebase console.
   @$pb.TagNumber(8)
@@ -1444,7 +1398,7 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasFeedbackConsoleUri() => $_has(5);
   @$pb.TagNumber(8)
-  void clearFeedbackConsoleUri() => clearField(8);
+  void clearFeedbackConsoleUri() => $_clearField(8);
 
   /// Version consisting of `versionName` and `versionCode` for Android and
   /// `CFBundleShortVersionString` and `CFBundleVersion` for iOS.
@@ -1458,7 +1412,7 @@ class AppDistroInAppFeedbackPayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasAppVersion() => $_has(6);
   @$pb.TagNumber(9)
-  void clearAppVersion() => clearField(9);
+  void clearAppVersion() => $_clearField(9);
 }
 
 class BillingPlanUpdatePayload extends $pb.GeneratedMessage {
@@ -1497,14 +1451,10 @@ class BillingPlanUpdatePayload extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'notificationType')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BillingPlanUpdatePayload clone() =>
       BillingPlanUpdatePayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BillingPlanUpdatePayload copyWith(
           void Function(BillingPlanUpdatePayload) updates) =>
       super.copyWith((message) => updates(message as BillingPlanUpdatePayload))
@@ -1533,7 +1483,7 @@ class BillingPlanUpdatePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasBillingPlan() => $_has(0);
   @$pb.TagNumber(1)
-  void clearBillingPlan() => clearField(1);
+  void clearBillingPlan() => $_clearField(1);
 
   /// The email address of the person that triggered billing plan change
   @$pb.TagNumber(2)
@@ -1546,7 +1496,7 @@ class BillingPlanUpdatePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPrincipalEmail() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPrincipalEmail() => clearField(2);
+  void clearPrincipalEmail() => $_clearField(2);
 
   /// The type of the notification, e.g. upgrade, downgrade
   @$pb.TagNumber(3)
@@ -1559,7 +1509,7 @@ class BillingPlanUpdatePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasNotificationType() => $_has(2);
   @$pb.TagNumber(3)
-  void clearNotificationType() => clearField(3);
+  void clearNotificationType() => $_clearField(3);
 }
 
 class BillingPlanAutomatedUpdatePayload extends $pb.GeneratedMessage {
@@ -1593,14 +1543,10 @@ class BillingPlanAutomatedUpdatePayload extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'notificationType')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BillingPlanAutomatedUpdatePayload clone() =>
       BillingPlanAutomatedUpdatePayload()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BillingPlanAutomatedUpdatePayload copyWith(
           void Function(BillingPlanAutomatedUpdatePayload) updates) =>
       super.copyWith((message) =>
@@ -1632,7 +1578,7 @@ class BillingPlanAutomatedUpdatePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasBillingPlan() => $_has(0);
   @$pb.TagNumber(1)
-  void clearBillingPlan() => clearField(1);
+  void clearBillingPlan() => $_clearField(1);
 
   /// The type of the notification, e.g. upgrade, downgrade
   @$pb.TagNumber(2)
@@ -1645,7 +1591,7 @@ class BillingPlanAutomatedUpdatePayload extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNotificationType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNotificationType() => clearField(2);
+  void clearNotificationType() => $_clearField(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

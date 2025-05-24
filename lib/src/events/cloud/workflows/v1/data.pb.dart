@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/workflows/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,6 +15,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -30,7 +32,7 @@ class Workflow extends $pb.GeneratedMessage {
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
     $2.Timestamp? revisionCreateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? serviceAccount,
     $core.String? sourceContents,
   }) {
@@ -57,7 +59,7 @@ class Workflow extends $pb.GeneratedMessage {
       $result.revisionCreateTime = revisionCreateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (serviceAccount != null) {
       $result.serviceAccount = serviceAccount;
@@ -108,13 +110,9 @@ class Workflow extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'sourceContents')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Workflow clone() => Workflow()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Workflow copyWith(void Function(Workflow) updates) =>
       super.copyWith((message) => updates(message as Workflow)) as Workflow;
 
@@ -131,7 +129,7 @@ class Workflow extends $pb.GeneratedMessage {
 
   Workflow_SourceCode whichSourceCode() =>
       _Workflow_SourceCodeByTag[$_whichOneof(0)]!;
-  void clearSourceCode() => clearField($_whichOneof(0));
+  void clearSourceCode() => $_clearField($_whichOneof(0));
 
   /// The resource name of the workflow.
   /// Format: projects/{project}/locations/{location}/workflows/{workflow}
@@ -145,7 +143,7 @@ class Workflow extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Description of the workflow provided by the user.
   /// Must be at most 1000 unicode characters long.
@@ -159,32 +157,32 @@ class Workflow extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDescription() => clearField(2);
+  void clearDescription() => $_clearField(2);
 
   /// Output only. State of the workflow deployment.
   @$pb.TagNumber(3)
   Workflow_State get state => $_getN(2);
   @$pb.TagNumber(3)
   set state(Workflow_State v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
-  void clearState() => clearField(3);
+  void clearState() => $_clearField(3);
 
-  ///  Output only. The revision of the workflow.
-  ///  A new revision of a workflow is created as a result of updating the
-  ///  following properties of a workflow:
+  /// Output only. The revision of the workflow.
+  /// A new revision of a workflow is created as a result of updating the
+  /// following properties of a workflow:
   ///
-  ///  - [Service account][google.cloud.workflows.v1.Workflow.service_account]
-  ///  - [Workflow code to be
-  ///  executed][google.cloud.workflows.v1.Workflow.source_contents]
+  /// - [Service account][google.cloud.workflows.v1.Workflow.service_account]
+  /// - [Workflow code to be
+  /// executed][google.cloud.workflows.v1.Workflow.source_contents]
   ///
-  ///  The format is "000001-a4d", where the first 6 characters define
-  ///  the zero-padded revision ordinal number. They are followed by a hyphen and
-  ///  3 hexadecimal random characters.
+  /// The format is "000001-a4d", where the first 6 characters define
+  /// the zero-padded revision ordinal number. They are followed by a hyphen and
+  /// 3 hexadecimal random characters.
   @$pb.TagNumber(4)
   $core.String get revisionId => $_getSZ(3);
   @$pb.TagNumber(4)
@@ -195,20 +193,20 @@ class Workflow extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasRevisionId() => $_has(3);
   @$pb.TagNumber(4)
-  void clearRevisionId() => clearField(4);
+  void clearRevisionId() => $_clearField(4);
 
   /// Output only. The timestamp of when the workflow was created.
   @$pb.TagNumber(5)
   $2.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
   set createTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearCreateTime() => clearField(5);
+  void clearCreateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureCreateTime() => $_ensure(4);
 
@@ -217,13 +215,13 @@ class Workflow extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
   set updateTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
-  void clearUpdateTime() => clearField(6);
+  void clearUpdateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureUpdateTime() => $_ensure(5);
 
@@ -233,13 +231,13 @@ class Workflow extends $pb.GeneratedMessage {
   $2.Timestamp get revisionCreateTime => $_getN(6);
   @$pb.TagNumber(7)
   set revisionCreateTime($2.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasRevisionCreateTime() => $_has(6);
   @$pb.TagNumber(7)
-  void clearRevisionCreateTime() => clearField(7);
+  void clearRevisionCreateTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $2.Timestamp ensureRevisionCreateTime() => $_ensure(6);
 
@@ -249,20 +247,20 @@ class Workflow extends $pb.GeneratedMessage {
   /// characters, underscores and dashes. Label keys must start with a letter.
   /// International characters are allowed.
   @$pb.TagNumber(8)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(7);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(7);
 
-  ///  The service account associated with the latest workflow version.
-  ///  This service account represents the identity of the workflow and determines
-  ///  what permissions the workflow has.
-  ///  Format: projects/{project}/serviceAccounts/{account} or {account}
+  /// The service account associated with the latest workflow version.
+  /// This service account represents the identity of the workflow and determines
+  /// what permissions the workflow has.
+  /// Format: projects/{project}/serviceAccounts/{account} or {account}
   ///
-  ///  Using `-` as a wildcard for the `{project}` or not providing one at all
-  ///  will infer the project from the account. The `{account}` value can be the
-  ///  `email` address or the `unique_id` of the service account.
+  /// Using `-` as a wildcard for the `{project}` or not providing one at all
+  /// will infer the project from the account. The `{account}` value can be the
+  /// `email` address or the `unique_id` of the service account.
   ///
-  ///  If not provided, workflow will use the project's default service account.
-  ///  Modifying this field for an existing workflow results in a new workflow
-  ///  revision.
+  /// If not provided, workflow will use the project's default service account.
+  /// Modifying this field for an existing workflow results in a new workflow
+  /// revision.
   @$pb.TagNumber(9)
   $core.String get serviceAccount => $_getSZ(8);
   @$pb.TagNumber(9)
@@ -273,7 +271,7 @@ class Workflow extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasServiceAccount() => $_has(8);
   @$pb.TagNumber(9)
-  void clearServiceAccount() => clearField(9);
+  void clearServiceAccount() => $_clearField(9);
 
   /// Workflow code to be executed. The size limit is 128KB.
   @$pb.TagNumber(10)
@@ -286,7 +284,7 @@ class Workflow extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasSourceContents() => $_has(9);
   @$pb.TagNumber(10)
-  void clearSourceContents() => clearField(10);
+  void clearSourceContents() => $_clearField(10);
 }
 
 /// The data within all Workflow events.
@@ -317,13 +315,9 @@ class WorkflowEventData extends $pb.GeneratedMessage {
         subBuilder: Workflow.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WorkflowEventData clone() => WorkflowEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WorkflowEventData copyWith(void Function(WorkflowEventData) updates) =>
       super.copyWith((message) => updates(message as WorkflowEventData))
           as WorkflowEventData;
@@ -345,13 +339,13 @@ class WorkflowEventData extends $pb.GeneratedMessage {
   Workflow get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Workflow v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Workflow ensurePayload() => $_ensure(0);
 }

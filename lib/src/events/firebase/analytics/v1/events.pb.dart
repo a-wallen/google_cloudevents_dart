@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/firebase/analytics/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $8;
+import 'data.pb.dart' as $53;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when a Firebase Analytics log is written.
 class AnalyticsLogWrittenEvent extends $pb.GeneratedMessage {
   factory AnalyticsLogWrittenEvent({
-    $8.AnalyticsLogData? data,
+    $53.AnalyticsLogData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -39,18 +41,14 @@ class AnalyticsLogWrittenEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.firebase.analytics.v1'),
       createEmptyInstance: create)
-    ..aOM<$8.AnalyticsLogData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $8.AnalyticsLogData.create)
+    ..aOM<$53.AnalyticsLogData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $53.AnalyticsLogData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalyticsLogWrittenEvent clone() =>
       AnalyticsLogWrittenEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalyticsLogWrittenEvent copyWith(
           void Function(AnalyticsLogWrittenEvent) updates) =>
       super.copyWith((message) => updates(message as AnalyticsLogWrittenEvent))
@@ -70,18 +68,18 @@ class AnalyticsLogWrittenEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $8.AnalyticsLogData get data => $_getN(0);
+  $53.AnalyticsLogData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($8.AnalyticsLogData v) {
-    setField(1, v);
+  set data($53.AnalyticsLogData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $8.AnalyticsLogData ensureData() => $_ensure(0);
+  $53.AnalyticsLogData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

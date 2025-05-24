@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/datastore/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $40;
+import 'data.pb.dart' as $27;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent is raised when a Firestore entity is created.
 class EntityCreatedEvent extends $pb.GeneratedMessage {
   factory EntityCreatedEvent({
-    $40.EntityEventData? data,
+    $27.EntityEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -39,17 +41,13 @@ class EntityCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $40.EntityEventData.create)
+    ..aOM<$27.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $27.EntityEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityCreatedEvent clone() => EntityCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityCreatedEvent copyWith(void Function(EntityCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as EntityCreatedEvent))
           as EntityCreatedEvent;
@@ -68,24 +66,24 @@ class EntityCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $40.EntityEventData get data => $_getN(0);
+  $27.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) {
-    setField(1, v);
+  set data($27.EntityEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $40.EntityEventData ensureData() => $_ensure(0);
+  $27.EntityEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent is raised when a Firestore entity is updated.
 class EntityUpdatedEvent extends $pb.GeneratedMessage {
   factory EntityUpdatedEvent({
-    $40.EntityEventData? data,
+    $27.EntityEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -106,17 +104,13 @@ class EntityUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $40.EntityEventData.create)
+    ..aOM<$27.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $27.EntityEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityUpdatedEvent clone() => EntityUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityUpdatedEvent copyWith(void Function(EntityUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as EntityUpdatedEvent))
           as EntityUpdatedEvent;
@@ -135,24 +129,24 @@ class EntityUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $40.EntityEventData get data => $_getN(0);
+  $27.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) {
-    setField(1, v);
+  set data($27.EntityEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $40.EntityEventData ensureData() => $_ensure(0);
+  $27.EntityEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent is raised when a Firestore entity is deleted.
 class EntityDeletedEvent extends $pb.GeneratedMessage {
   factory EntityDeletedEvent({
-    $40.EntityEventData? data,
+    $27.EntityEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -173,17 +167,13 @@ class EntityDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $40.EntityEventData.create)
+    ..aOM<$27.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $27.EntityEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityDeletedEvent clone() => EntityDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityDeletedEvent copyWith(void Function(EntityDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as EntityDeletedEvent))
           as EntityDeletedEvent;
@@ -202,25 +192,25 @@ class EntityDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $40.EntityEventData get data => $_getN(0);
+  $27.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) {
-    setField(1, v);
+  set data($27.EntityEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $40.EntityEventData ensureData() => $_ensure(0);
+  $27.EntityEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent is raised when a Firestore entity is created, updated or
 /// deleted.
 class EntityWrittenEvent extends $pb.GeneratedMessage {
   factory EntityWrittenEvent({
-    $40.EntityEventData? data,
+    $27.EntityEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -241,17 +231,13 @@ class EntityWrittenEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $40.EntityEventData.create)
+    ..aOM<$27.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $27.EntityEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityWrittenEvent clone() => EntityWrittenEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityWrittenEvent copyWith(void Function(EntityWrittenEvent) updates) =>
       super.copyWith((message) => updates(message as EntityWrittenEvent))
           as EntityWrittenEvent;
@@ -270,25 +256,25 @@ class EntityWrittenEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $40.EntityEventData get data => $_getN(0);
+  $27.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) {
-    setField(1, v);
+  set data($27.EntityEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $40.EntityEventData ensureData() => $_ensure(0);
+  $27.EntityEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent with Auth Context is raised when a Firestore entity is
 /// created.
 class EntityCreatedEventWithAuthContext extends $pb.GeneratedMessage {
   factory EntityCreatedEventWithAuthContext({
-    $40.EntityEventData? data,
+    $27.EntityEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -309,18 +295,14 @@ class EntityCreatedEventWithAuthContext extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $40.EntityEventData.create)
+    ..aOM<$27.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $27.EntityEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityCreatedEventWithAuthContext clone() =>
       EntityCreatedEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityCreatedEventWithAuthContext copyWith(
           void Function(EntityCreatedEventWithAuthContext) updates) =>
       super.copyWith((message) =>
@@ -343,25 +325,25 @@ class EntityCreatedEventWithAuthContext extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $40.EntityEventData get data => $_getN(0);
+  $27.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) {
-    setField(1, v);
+  set data($27.EntityEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $40.EntityEventData ensureData() => $_ensure(0);
+  $27.EntityEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent with Auth Context is raised when a Firestore entity is
 /// updated.
 class EntityUpdatedEventWithAuthContext extends $pb.GeneratedMessage {
   factory EntityUpdatedEventWithAuthContext({
-    $40.EntityEventData? data,
+    $27.EntityEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -382,18 +364,14 @@ class EntityUpdatedEventWithAuthContext extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $40.EntityEventData.create)
+    ..aOM<$27.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $27.EntityEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityUpdatedEventWithAuthContext clone() =>
       EntityUpdatedEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityUpdatedEventWithAuthContext copyWith(
           void Function(EntityUpdatedEventWithAuthContext) updates) =>
       super.copyWith((message) =>
@@ -416,25 +394,25 @@ class EntityUpdatedEventWithAuthContext extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $40.EntityEventData get data => $_getN(0);
+  $27.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) {
-    setField(1, v);
+  set data($27.EntityEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $40.EntityEventData ensureData() => $_ensure(0);
+  $27.EntityEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent with Auth Context is raised when a Firestore entity is
 /// deleted.
 class EntityDeletedEventWithAuthContext extends $pb.GeneratedMessage {
   factory EntityDeletedEventWithAuthContext({
-    $40.EntityEventData? data,
+    $27.EntityEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -455,18 +433,14 @@ class EntityDeletedEventWithAuthContext extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $40.EntityEventData.create)
+    ..aOM<$27.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $27.EntityEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityDeletedEventWithAuthContext clone() =>
       EntityDeletedEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityDeletedEventWithAuthContext copyWith(
           void Function(EntityDeletedEventWithAuthContext) updates) =>
       super.copyWith((message) =>
@@ -489,25 +463,25 @@ class EntityDeletedEventWithAuthContext extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $40.EntityEventData get data => $_getN(0);
+  $27.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) {
-    setField(1, v);
+  set data($27.EntityEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $40.EntityEventData ensureData() => $_ensure(0);
+  $27.EntityEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent with Auth Context is raised when a Firestore entity is
 /// created, updated or deleted.
 class EntityWrittenEventWithAuthContext extends $pb.GeneratedMessage {
   factory EntityWrittenEventWithAuthContext({
-    $40.EntityEventData? data,
+    $27.EntityEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -528,18 +502,14 @@ class EntityWrittenEventWithAuthContext extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$40.EntityEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $40.EntityEventData.create)
+    ..aOM<$27.EntityEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $27.EntityEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityWrittenEventWithAuthContext clone() =>
       EntityWrittenEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EntityWrittenEventWithAuthContext copyWith(
           void Function(EntityWrittenEventWithAuthContext) updates) =>
       super.copyWith((message) =>
@@ -562,18 +532,18 @@ class EntityWrittenEventWithAuthContext extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $40.EntityEventData get data => $_getN(0);
+  $27.EntityEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($40.EntityEventData v) {
-    setField(1, v);
+  set data($27.EntityEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $40.EntityEventData ensureData() => $_ensure(0);
+  $27.EntityEventData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/networkconnectivity/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $47;
+import 'data.pb.dart' as $39;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when a ServiceConnectionMap is created.
 class ServiceConnectionMapCreatedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionMapCreatedEvent({
-    $47.ServiceConnectionMapEventData? data,
+    $39.ServiceConnectionMapEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -40,18 +42,14 @@ class ServiceConnectionMapCreatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.ServiceConnectionMapEventData.create)
+    ..aOM<$39.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.ServiceConnectionMapEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapCreatedEvent clone() =>
       ServiceConnectionMapCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapCreatedEvent copyWith(
           void Function(ServiceConnectionMapCreatedEvent) updates) =>
       super.copyWith(
@@ -74,24 +72,24 @@ class ServiceConnectionMapCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.ServiceConnectionMapEventData get data => $_getN(0);
+  $39.ServiceConnectionMapEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.ServiceConnectionMapEventData v) {
-    setField(1, v);
+  set data($39.ServiceConnectionMapEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.ServiceConnectionMapEventData ensureData() => $_ensure(0);
+  $39.ServiceConnectionMapEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionMap is updated.
 class ServiceConnectionMapUpdatedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionMapUpdatedEvent({
-    $47.ServiceConnectionMapEventData? data,
+    $39.ServiceConnectionMapEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -113,18 +111,14 @@ class ServiceConnectionMapUpdatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.ServiceConnectionMapEventData.create)
+    ..aOM<$39.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.ServiceConnectionMapEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapUpdatedEvent clone() =>
       ServiceConnectionMapUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapUpdatedEvent copyWith(
           void Function(ServiceConnectionMapUpdatedEvent) updates) =>
       super.copyWith(
@@ -147,24 +141,24 @@ class ServiceConnectionMapUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.ServiceConnectionMapEventData get data => $_getN(0);
+  $39.ServiceConnectionMapEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.ServiceConnectionMapEventData v) {
-    setField(1, v);
+  set data($39.ServiceConnectionMapEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.ServiceConnectionMapEventData ensureData() => $_ensure(0);
+  $39.ServiceConnectionMapEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionMap is deleted.
 class ServiceConnectionMapDeletedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionMapDeletedEvent({
-    $47.ServiceConnectionMapEventData? data,
+    $39.ServiceConnectionMapEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -186,18 +180,14 @@ class ServiceConnectionMapDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.ServiceConnectionMapEventData.create)
+    ..aOM<$39.ServiceConnectionMapEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.ServiceConnectionMapEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapDeletedEvent clone() =>
       ServiceConnectionMapDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapDeletedEvent copyWith(
           void Function(ServiceConnectionMapDeletedEvent) updates) =>
       super.copyWith(
@@ -220,24 +210,24 @@ class ServiceConnectionMapDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.ServiceConnectionMapEventData get data => $_getN(0);
+  $39.ServiceConnectionMapEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.ServiceConnectionMapEventData v) {
-    setField(1, v);
+  set data($39.ServiceConnectionMapEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.ServiceConnectionMapEventData ensureData() => $_ensure(0);
+  $39.ServiceConnectionMapEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionPolicy is created.
 class ServiceConnectionPolicyCreatedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionPolicyCreatedEvent({
-    $47.ServiceConnectionPolicyEventData? data,
+    $39.ServiceConnectionPolicyEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -260,19 +250,15 @@ class ServiceConnectionPolicyCreatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.ServiceConnectionPolicyEventData>(
+    ..aOM<$39.ServiceConnectionPolicyEventData>(
         1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.ServiceConnectionPolicyEventData.create)
+        subBuilder: $39.ServiceConnectionPolicyEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyCreatedEvent clone() =>
       ServiceConnectionPolicyCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyCreatedEvent copyWith(
           void Function(ServiceConnectionPolicyCreatedEvent) updates) =>
       super.copyWith((message) =>
@@ -295,24 +281,24 @@ class ServiceConnectionPolicyCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.ServiceConnectionPolicyEventData get data => $_getN(0);
+  $39.ServiceConnectionPolicyEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.ServiceConnectionPolicyEventData v) {
-    setField(1, v);
+  set data($39.ServiceConnectionPolicyEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
+  $39.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionPolicy is updated.
 class ServiceConnectionPolicyUpdatedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionPolicyUpdatedEvent({
-    $47.ServiceConnectionPolicyEventData? data,
+    $39.ServiceConnectionPolicyEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -335,19 +321,15 @@ class ServiceConnectionPolicyUpdatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.ServiceConnectionPolicyEventData>(
+    ..aOM<$39.ServiceConnectionPolicyEventData>(
         1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.ServiceConnectionPolicyEventData.create)
+        subBuilder: $39.ServiceConnectionPolicyEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyUpdatedEvent clone() =>
       ServiceConnectionPolicyUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyUpdatedEvent copyWith(
           void Function(ServiceConnectionPolicyUpdatedEvent) updates) =>
       super.copyWith((message) =>
@@ -370,24 +352,24 @@ class ServiceConnectionPolicyUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.ServiceConnectionPolicyEventData get data => $_getN(0);
+  $39.ServiceConnectionPolicyEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.ServiceConnectionPolicyEventData v) {
-    setField(1, v);
+  set data($39.ServiceConnectionPolicyEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
+  $39.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionPolicy is deleted.
 class ServiceConnectionPolicyDeletedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionPolicyDeletedEvent({
-    $47.ServiceConnectionPolicyEventData? data,
+    $39.ServiceConnectionPolicyEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -410,19 +392,15 @@ class ServiceConnectionPolicyDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.ServiceConnectionPolicyEventData>(
+    ..aOM<$39.ServiceConnectionPolicyEventData>(
         1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.ServiceConnectionPolicyEventData.create)
+        subBuilder: $39.ServiceConnectionPolicyEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyDeletedEvent clone() =>
       ServiceConnectionPolicyDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyDeletedEvent copyWith(
           void Function(ServiceConnectionPolicyDeletedEvent) updates) =>
       super.copyWith((message) =>
@@ -445,24 +423,24 @@ class ServiceConnectionPolicyDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.ServiceConnectionPolicyEventData get data => $_getN(0);
+  $39.ServiceConnectionPolicyEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.ServiceConnectionPolicyEventData v) {
-    setField(1, v);
+  set data($39.ServiceConnectionPolicyEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
+  $39.ServiceConnectionPolicyEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceClass is updated.
 class ServiceClassUpdatedEvent extends $pb.GeneratedMessage {
   factory ServiceClassUpdatedEvent({
-    $47.ServiceClassEventData? data,
+    $39.ServiceClassEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -484,18 +462,14 @@ class ServiceClassUpdatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.ServiceClassEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.ServiceClassEventData.create)
+    ..aOM<$39.ServiceClassEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.ServiceClassEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClassUpdatedEvent clone() =>
       ServiceClassUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClassUpdatedEvent copyWith(
           void Function(ServiceClassUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as ServiceClassUpdatedEvent))
@@ -515,24 +489,24 @@ class ServiceClassUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.ServiceClassEventData get data => $_getN(0);
+  $39.ServiceClassEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.ServiceClassEventData v) {
-    setField(1, v);
+  set data($39.ServiceClassEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.ServiceClassEventData ensureData() => $_ensure(0);
+  $39.ServiceClassEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceClass is deleted.
 class ServiceClassDeletedEvent extends $pb.GeneratedMessage {
   factory ServiceClassDeletedEvent({
-    $47.ServiceClassEventData? data,
+    $39.ServiceClassEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -554,18 +528,14 @@ class ServiceClassDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.ServiceClassEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.ServiceClassEventData.create)
+    ..aOM<$39.ServiceClassEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.ServiceClassEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClassDeletedEvent clone() =>
       ServiceClassDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClassDeletedEvent copyWith(
           void Function(ServiceClassDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ServiceClassDeletedEvent))
@@ -585,24 +555,24 @@ class ServiceClassDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.ServiceClassEventData get data => $_getN(0);
+  $39.ServiceClassEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.ServiceClassEventData v) {
-    setField(1, v);
+  set data($39.ServiceClassEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.ServiceClassEventData ensureData() => $_ensure(0);
+  $39.ServiceClassEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionToken is created.
 class ServiceConnectionTokenCreatedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionTokenCreatedEvent({
-    $47.ServiceConnectionTokenEventData? data,
+    $39.ServiceConnectionTokenEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -624,18 +594,14 @@ class ServiceConnectionTokenCreatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.ServiceConnectionTokenEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.ServiceConnectionTokenEventData.create)
+    ..aOM<$39.ServiceConnectionTokenEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.ServiceConnectionTokenEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionTokenCreatedEvent clone() =>
       ServiceConnectionTokenCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionTokenCreatedEvent copyWith(
           void Function(ServiceConnectionTokenCreatedEvent) updates) =>
       super.copyWith((message) =>
@@ -658,24 +624,24 @@ class ServiceConnectionTokenCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.ServiceConnectionTokenEventData get data => $_getN(0);
+  $39.ServiceConnectionTokenEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.ServiceConnectionTokenEventData v) {
-    setField(1, v);
+  set data($39.ServiceConnectionTokenEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.ServiceConnectionTokenEventData ensureData() => $_ensure(0);
+  $39.ServiceConnectionTokenEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a ServiceConnectionToken is deleted.
 class ServiceConnectionTokenDeletedEvent extends $pb.GeneratedMessage {
   factory ServiceConnectionTokenDeletedEvent({
-    $47.ServiceConnectionTokenEventData? data,
+    $39.ServiceConnectionTokenEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -697,18 +663,14 @@ class ServiceConnectionTokenDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.ServiceConnectionTokenEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.ServiceConnectionTokenEventData.create)
+    ..aOM<$39.ServiceConnectionTokenEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.ServiceConnectionTokenEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionTokenDeletedEvent clone() =>
       ServiceConnectionTokenDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionTokenDeletedEvent copyWith(
           void Function(ServiceConnectionTokenDeletedEvent) updates) =>
       super.copyWith((message) =>
@@ -731,24 +693,24 @@ class ServiceConnectionTokenDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.ServiceConnectionTokenEventData get data => $_getN(0);
+  $39.ServiceConnectionTokenEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.ServiceConnectionTokenEventData v) {
-    setField(1, v);
+  set data($39.ServiceConnectionTokenEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.ServiceConnectionTokenEventData ensureData() => $_ensure(0);
+  $39.ServiceConnectionTokenEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Hub is created.
 class HubCreatedEvent extends $pb.GeneratedMessage {
   factory HubCreatedEvent({
-    $47.HubEventData? data,
+    $39.HubEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -770,17 +732,13 @@ class HubCreatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.HubEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.HubEventData.create)
+    ..aOM<$39.HubEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.HubEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubCreatedEvent clone() => HubCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubCreatedEvent copyWith(void Function(HubCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as HubCreatedEvent))
           as HubCreatedEvent;
@@ -799,24 +757,24 @@ class HubCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.HubEventData get data => $_getN(0);
+  $39.HubEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.HubEventData v) {
-    setField(1, v);
+  set data($39.HubEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.HubEventData ensureData() => $_ensure(0);
+  $39.HubEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Hub is updated.
 class HubUpdatedEvent extends $pb.GeneratedMessage {
   factory HubUpdatedEvent({
-    $47.HubEventData? data,
+    $39.HubEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -838,17 +796,13 @@ class HubUpdatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.HubEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.HubEventData.create)
+    ..aOM<$39.HubEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.HubEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubUpdatedEvent clone() => HubUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubUpdatedEvent copyWith(void Function(HubUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as HubUpdatedEvent))
           as HubUpdatedEvent;
@@ -867,24 +821,24 @@ class HubUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.HubEventData get data => $_getN(0);
+  $39.HubEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.HubEventData v) {
-    setField(1, v);
+  set data($39.HubEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.HubEventData ensureData() => $_ensure(0);
+  $39.HubEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Hub is deleted.
 class HubDeletedEvent extends $pb.GeneratedMessage {
   factory HubDeletedEvent({
-    $47.HubEventData? data,
+    $39.HubEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -906,17 +860,13 @@ class HubDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.HubEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.HubEventData.create)
+    ..aOM<$39.HubEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.HubEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubDeletedEvent clone() => HubDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubDeletedEvent copyWith(void Function(HubDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as HubDeletedEvent))
           as HubDeletedEvent;
@@ -935,24 +885,24 @@ class HubDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.HubEventData get data => $_getN(0);
+  $39.HubEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.HubEventData v) {
-    setField(1, v);
+  set data($39.HubEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.HubEventData ensureData() => $_ensure(0);
+  $39.HubEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Spoke is created.
 class SpokeCreatedEvent extends $pb.GeneratedMessage {
   factory SpokeCreatedEvent({
-    $47.SpokeEventData? data,
+    $39.SpokeEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -974,17 +924,13 @@ class SpokeCreatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.SpokeEventData.create)
+    ..aOM<$39.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.SpokeEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeCreatedEvent clone() => SpokeCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeCreatedEvent copyWith(void Function(SpokeCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as SpokeCreatedEvent))
           as SpokeCreatedEvent;
@@ -1003,24 +949,24 @@ class SpokeCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.SpokeEventData get data => $_getN(0);
+  $39.SpokeEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.SpokeEventData v) {
-    setField(1, v);
+  set data($39.SpokeEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.SpokeEventData ensureData() => $_ensure(0);
+  $39.SpokeEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Spoke is updated.
 class SpokeUpdatedEvent extends $pb.GeneratedMessage {
   factory SpokeUpdatedEvent({
-    $47.SpokeEventData? data,
+    $39.SpokeEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1042,17 +988,13 @@ class SpokeUpdatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.SpokeEventData.create)
+    ..aOM<$39.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.SpokeEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeUpdatedEvent clone() => SpokeUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeUpdatedEvent copyWith(void Function(SpokeUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as SpokeUpdatedEvent))
           as SpokeUpdatedEvent;
@@ -1071,24 +1013,24 @@ class SpokeUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.SpokeEventData get data => $_getN(0);
+  $39.SpokeEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.SpokeEventData v) {
-    setField(1, v);
+  set data($39.SpokeEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.SpokeEventData ensureData() => $_ensure(0);
+  $39.SpokeEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Spoke is deleted.
 class SpokeDeletedEvent extends $pb.GeneratedMessage {
   factory SpokeDeletedEvent({
-    $47.SpokeEventData? data,
+    $39.SpokeEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1110,17 +1052,13 @@ class SpokeDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.networkconnectivity.v1'),
       createEmptyInstance: create)
-    ..aOM<$47.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $47.SpokeEventData.create)
+    ..aOM<$39.SpokeEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $39.SpokeEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeDeletedEvent clone() => SpokeDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeDeletedEvent copyWith(void Function(SpokeDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as SpokeDeletedEvent))
           as SpokeDeletedEvent;
@@ -1139,18 +1077,18 @@ class SpokeDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $47.SpokeEventData get data => $_getN(0);
+  $39.SpokeEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($47.SpokeEventData v) {
-    setField(1, v);
+  set data($39.SpokeEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $47.SpokeEventData ensureData() => $_ensure(0);
+  $39.SpokeEventData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

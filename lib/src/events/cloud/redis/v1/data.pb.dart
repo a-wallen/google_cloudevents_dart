@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/redis/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,11 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $10;
+import '../../../../protobuf/duration.pb.dart' as $0;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../type/dayofweek.pbenum.dart' as $27;
-import '../../../../type/timeofday.pb.dart' as $26;
+import '../../../../type/dayofweek.pbenum.dart' as $3;
+import '../../../../type/timeofday.pb.dart' as $1;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -53,13 +55,9 @@ class NodeInfo extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'zone')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NodeInfo clone() => NodeInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NodeInfo copyWith(void Function(NodeInfo) updates) =>
       super.copyWith((message) => updates(message as NodeInfo)) as NodeInfo;
 
@@ -85,7 +83,7 @@ class NodeInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearId() => clearField(1);
+  void clearId() => $_clearField(1);
 
   /// Output only. Location of the node.
   @$pb.TagNumber(2)
@@ -98,7 +96,7 @@ class NodeInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasZone() => $_has(1);
   @$pb.TagNumber(2)
-  void clearZone() => clearField(2);
+  void clearZone() => $_clearField(2);
 }
 
 /// A Memorystore for Redis instance.
@@ -106,7 +104,7 @@ class Instance extends $pb.GeneratedMessage {
   factory Instance({
     $core.String? name,
     $core.String? displayName,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? locationId,
     $core.String? alternativeLocationId,
     $core.String? redisVersion,
@@ -117,7 +115,7 @@ class Instance extends $pb.GeneratedMessage {
     $2.Timestamp? createTime,
     Instance_State? state,
     $core.String? statusMessage,
-    $core.Map<$core.String, $core.String>? redisConfigs,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? redisConfigs,
     Instance_Tier? tier,
     $core.int? memorySizeGb,
     $core.String? authorizedNetwork,
@@ -148,7 +146,7 @@ class Instance extends $pb.GeneratedMessage {
       $result.displayName = displayName;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (locationId != null) {
       $result.locationId = locationId;
@@ -181,7 +179,7 @@ class Instance extends $pb.GeneratedMessage {
       $result.statusMessage = statusMessage;
     }
     if (redisConfigs != null) {
-      $result.redisConfigs.addAll(redisConfigs);
+      $result.redisConfigs.addEntries(redisConfigs);
     }
     if (tier != null) {
       $result.tier = tier;
@@ -341,13 +339,9 @@ class Instance extends $pb.GeneratedMessage {
     ..pPS(40, _omitFieldNames ? '' : 'availableMaintenanceVersions')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance clone() => Instance()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance copyWith(void Function(Instance) updates) =>
       super.copyWith((message) => updates(message as Instance)) as Instance;
 
@@ -362,17 +356,17 @@ class Instance extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Instance>(create);
   static Instance? _defaultInstance;
 
-  ///  Required. Unique name of the resource in this scope including project and
-  ///  location using the form:
-  ///      `projects/{project_id}/locations/{location_id}/instances/{instance_id}`
+  /// Required. Unique name of the resource in this scope including project and
+  /// location using the form:
+  ///     `projects/{project_id}/locations/{location_id}/instances/{instance_id}`
   ///
-  ///  Note: Redis instances are managed and addressed at regional level so
-  ///  location_id here refers to a GCP region; however, users may choose which
-  ///  specific zone (or collection of zones for cross-zone instances) an instance
-  ///  should be provisioned in. Refer to
-  ///  [location_id][google.cloud.redis.v1.Instance.location_id] and
-  ///  [alternative_location_id][google.cloud.redis.v1.Instance.alternative_location_id]
-  ///  fields for more details.
+  /// Note: Redis instances are managed and addressed at regional level so
+  /// location_id here refers to a GCP region; however, users may choose which
+  /// specific zone (or collection of zones for cross-zone instances) an instance
+  /// should be provisioned in. Refer to
+  /// [location_id][google.cloud.redis.v1.Instance.location_id] and
+  /// [alternative_location_id][google.cloud.redis.v1.Instance.alternative_location_id]
+  /// fields for more details.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -383,7 +377,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// An arbitrary and optional user-provided name for the instance.
   @$pb.TagNumber(2)
@@ -396,11 +390,11 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// Resource labels to represent user provided metadata
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(2);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(2);
 
   /// Optional. The zone where the instance will be provisioned. If not provided,
   /// the service will choose a zone from the specified region for the instance.
@@ -417,7 +411,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasLocationId() => $_has(3);
   @$pb.TagNumber(4)
-  void clearLocationId() => clearField(4);
+  void clearLocationId() => $_clearField(4);
 
   /// Optional. If specified, at least one node will be provisioned in this zone
   /// in addition to the zone specified in location_id. Only applicable to
@@ -434,16 +428,16 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasAlternativeLocationId() => $_has(4);
   @$pb.TagNumber(5)
-  void clearAlternativeLocationId() => clearField(5);
+  void clearAlternativeLocationId() => $_clearField(5);
 
-  ///  Optional. The version of Redis software.
-  ///  If not provided, latest supported version will be used. Currently, the
-  ///  supported values are:
+  /// Optional. The version of Redis software.
+  /// If not provided, latest supported version will be used. Currently, the
+  /// supported values are:
   ///
-  ///   *   `REDIS_3_2` for Redis 3.2 compatibility
-  ///   *   `REDIS_4_0` for Redis 4.0 compatibility (default)
-  ///   *   `REDIS_5_0` for Redis 5.0 compatibility
-  ///   *   `REDIS_6_X` for Redis 6.x compatibility
+  ///  *   `REDIS_3_2` for Redis 3.2 compatibility
+  ///  *   `REDIS_4_0` for Redis 4.0 compatibility (default)
+  ///  *   `REDIS_5_0` for Redis 5.0 compatibility
+  ///  *   `REDIS_6_X` for Redis 6.x compatibility
   @$pb.TagNumber(7)
   $core.String get redisVersion => $_getSZ(5);
   @$pb.TagNumber(7)
@@ -454,7 +448,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasRedisVersion() => $_has(5);
   @$pb.TagNumber(7)
-  void clearRedisVersion() => clearField(7);
+  void clearRedisVersion() => $_clearField(7);
 
   /// Optional. For DIRECT_PEERING mode, the CIDR range of internal addresses
   /// that are reserved for this instance. Range must
@@ -474,7 +468,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasReservedIpRange() => $_has(6);
   @$pb.TagNumber(9)
-  void clearReservedIpRange() => clearField(9);
+  void clearReservedIpRange() => $_clearField(9);
 
   /// Output only. Hostname or IP address of the exposed Redis endpoint used by
   /// clients to connect to the service.
@@ -488,7 +482,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasHost() => $_has(7);
   @$pb.TagNumber(10)
-  void clearHost() => clearField(10);
+  void clearHost() => $_clearField(10);
 
   /// Output only. The port number of the exposed Redis endpoint.
   @$pb.TagNumber(11)
@@ -501,7 +495,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasPort() => $_has(8);
   @$pb.TagNumber(11)
-  void clearPort() => clearField(11);
+  void clearPort() => $_clearField(11);
 
   /// Output only. The current zone where the Redis primary node is located. In
   /// basic tier, this will always be the same as [location_id]. In
@@ -516,20 +510,20 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasCurrentLocationId() => $_has(9);
   @$pb.TagNumber(12)
-  void clearCurrentLocationId() => clearField(12);
+  void clearCurrentLocationId() => $_clearField(12);
 
   /// Output only. The time the instance was created.
   @$pb.TagNumber(13)
   $2.Timestamp get createTime => $_getN(10);
   @$pb.TagNumber(13)
   set createTime($2.Timestamp v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasCreateTime() => $_has(10);
   @$pb.TagNumber(13)
-  void clearCreateTime() => clearField(13);
+  void clearCreateTime() => $_clearField(13);
   @$pb.TagNumber(13)
   $2.Timestamp ensureCreateTime() => $_ensure(10);
 
@@ -538,13 +532,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_State get state => $_getN(11);
   @$pb.TagNumber(14)
   set state(Instance_State v) {
-    setField(14, v);
+    $_setField(14, v);
   }
 
   @$pb.TagNumber(14)
   $core.bool hasState() => $_has(11);
   @$pb.TagNumber(14)
-  void clearState() => clearField(14);
+  void clearState() => $_clearField(14);
 
   /// Output only. Additional information about the current status of this
   /// instance, if available.
@@ -558,43 +552,43 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasStatusMessage() => $_has(12);
   @$pb.TagNumber(15)
-  void clearStatusMessage() => clearField(15);
+  void clearStatusMessage() => $_clearField(15);
 
-  ///  Optional. Redis configuration parameters, according to
-  ///  http://redis.io/topics/config. Currently, the only supported parameters
-  ///  are:
+  /// Optional. Redis configuration parameters, according to
+  /// http://redis.io/topics/config. Currently, the only supported parameters
+  /// are:
   ///
-  ///   Redis version 3.2 and newer:
+  ///  Redis version 3.2 and newer:
   ///
-  ///   *   maxmemory-policy
-  ///   *   notify-keyspace-events
+  ///  *   maxmemory-policy
+  ///  *   notify-keyspace-events
   ///
-  ///   Redis version 4.0 and newer:
+  ///  Redis version 4.0 and newer:
   ///
-  ///   *   activedefrag
-  ///   *   lfu-decay-time
-  ///   *   lfu-log-factor
-  ///   *   maxmemory-gb
+  ///  *   activedefrag
+  ///  *   lfu-decay-time
+  ///  *   lfu-log-factor
+  ///  *   maxmemory-gb
   ///
-  ///   Redis version 5.0 and newer:
+  ///  Redis version 5.0 and newer:
   ///
-  ///   *   stream-node-max-bytes
-  ///   *   stream-node-max-entries
+  ///  *   stream-node-max-bytes
+  ///  *   stream-node-max-entries
   @$pb.TagNumber(16)
-  $core.Map<$core.String, $core.String> get redisConfigs => $_getMap(13);
+  $pb.PbMap<$core.String, $core.String> get redisConfigs => $_getMap(13);
 
   /// Required. The service tier of the instance.
   @$pb.TagNumber(17)
   Instance_Tier get tier => $_getN(14);
   @$pb.TagNumber(17)
   set tier(Instance_Tier v) {
-    setField(17, v);
+    $_setField(17, v);
   }
 
   @$pb.TagNumber(17)
   $core.bool hasTier() => $_has(14);
   @$pb.TagNumber(17)
-  void clearTier() => clearField(17);
+  void clearTier() => $_clearField(17);
 
   /// Required. Redis memory size in GiB.
   @$pb.TagNumber(18)
@@ -607,7 +601,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasMemorySizeGb() => $_has(15);
   @$pb.TagNumber(18)
-  void clearMemorySizeGb() => clearField(18);
+  void clearMemorySizeGb() => $_clearField(18);
 
   /// Optional. The full name of the Google Compute Engine
   /// [network](https://cloud.google.com/vpc/docs/vpc) to which the
@@ -623,7 +617,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.bool hasAuthorizedNetwork() => $_has(16);
   @$pb.TagNumber(20)
-  void clearAuthorizedNetwork() => clearField(20);
+  void clearAuthorizedNetwork() => $_clearField(20);
 
   /// Output only. Cloud IAM identity used by import / export operations to
   /// transfer data to/from Cloud Storage. Format is
@@ -640,7 +634,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   $core.bool hasPersistenceIamIdentity() => $_has(17);
   @$pb.TagNumber(21)
-  void clearPersistenceIamIdentity() => clearField(21);
+  void clearPersistenceIamIdentity() => $_clearField(21);
 
   /// Optional. The network connect mode of the Redis instance.
   /// If not provided, the connect mode defaults to DIRECT_PEERING.
@@ -648,13 +642,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_ConnectMode get connectMode => $_getN(18);
   @$pb.TagNumber(22)
   set connectMode(Instance_ConnectMode v) {
-    setField(22, v);
+    $_setField(22, v);
   }
 
   @$pb.TagNumber(22)
   $core.bool hasConnectMode() => $_has(18);
   @$pb.TagNumber(22)
-  void clearConnectMode() => clearField(22);
+  void clearConnectMode() => $_clearField(22);
 
   /// Optional. Indicates whether OSS Redis AUTH is enabled for the instance. If
   /// set to "true" AUTH is enabled on the instance. Default value is "false"
@@ -669,11 +663,11 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.bool hasAuthEnabled() => $_has(19);
   @$pb.TagNumber(23)
-  void clearAuthEnabled() => clearField(23);
+  void clearAuthEnabled() => $_clearField(23);
 
   /// Output only. List of server CA certificates for the instance.
   @$pb.TagNumber(25)
-  $core.List<TlsCertificate> get serverCaCerts => $_getList(20);
+  $pb.PbList<TlsCertificate> get serverCaCerts => $_getList(20);
 
   /// Optional. The TLS mode of the Redis instance.
   /// If not provided, TLS is disabled for the instance.
@@ -681,13 +675,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_TransitEncryptionMode get transitEncryptionMode => $_getN(21);
   @$pb.TagNumber(26)
   set transitEncryptionMode(Instance_TransitEncryptionMode v) {
-    setField(26, v);
+    $_setField(26, v);
   }
 
   @$pb.TagNumber(26)
   $core.bool hasTransitEncryptionMode() => $_has(21);
   @$pb.TagNumber(26)
-  void clearTransitEncryptionMode() => clearField(26);
+  void clearTransitEncryptionMode() => $_clearField(26);
 
   /// Optional. The maintenance policy for the instance. If not provided,
   /// maintenance events can be performed at any time.
@@ -695,13 +689,13 @@ class Instance extends $pb.GeneratedMessage {
   MaintenancePolicy get maintenancePolicy => $_getN(22);
   @$pb.TagNumber(27)
   set maintenancePolicy(MaintenancePolicy v) {
-    setField(27, v);
+    $_setField(27, v);
   }
 
   @$pb.TagNumber(27)
   $core.bool hasMaintenancePolicy() => $_has(22);
   @$pb.TagNumber(27)
-  void clearMaintenancePolicy() => clearField(27);
+  void clearMaintenancePolicy() => $_clearField(27);
   @$pb.TagNumber(27)
   MaintenancePolicy ensureMaintenancePolicy() => $_ensure(22);
 
@@ -711,13 +705,13 @@ class Instance extends $pb.GeneratedMessage {
   MaintenanceSchedule get maintenanceSchedule => $_getN(23);
   @$pb.TagNumber(28)
   set maintenanceSchedule(MaintenanceSchedule v) {
-    setField(28, v);
+    $_setField(28, v);
   }
 
   @$pb.TagNumber(28)
   $core.bool hasMaintenanceSchedule() => $_has(23);
   @$pb.TagNumber(28)
-  void clearMaintenanceSchedule() => clearField(28);
+  void clearMaintenanceSchedule() => $_clearField(28);
   @$pb.TagNumber(28)
   MaintenanceSchedule ensureMaintenanceSchedule() => $_ensure(23);
 
@@ -736,7 +730,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(30)
   $core.bool hasSecondaryIpRange() => $_has(24);
   @$pb.TagNumber(30)
-  void clearSecondaryIpRange() => clearField(30);
+  void clearSecondaryIpRange() => $_clearField(30);
 
   /// Optional. The number of replica nodes. The valid range for the Standard
   /// Tier with read replicas enabled is [1-5] and defaults to 2. If read
@@ -753,11 +747,11 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(31)
   $core.bool hasReplicaCount() => $_has(25);
   @$pb.TagNumber(31)
-  void clearReplicaCount() => clearField(31);
+  void clearReplicaCount() => $_clearField(31);
 
   /// Output only. Info per node.
   @$pb.TagNumber(32)
-  $core.List<NodeInfo> get nodes => $_getList(26);
+  $pb.PbList<NodeInfo> get nodes => $_getList(26);
 
   /// Output only. Hostname or IP address of the exposed readonly Redis
   /// endpoint. Standard tier only. Targets all healthy replica nodes in
@@ -773,7 +767,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(33)
   $core.bool hasReadEndpoint() => $_has(27);
   @$pb.TagNumber(33)
-  void clearReadEndpoint() => clearField(33);
+  void clearReadEndpoint() => $_clearField(33);
 
   /// Output only. The port number of the exposed readonly redis
   /// endpoint. Standard tier only. Write requests should target 'port'.
@@ -787,7 +781,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(34)
   $core.bool hasReadEndpointPort() => $_has(28);
   @$pb.TagNumber(34)
-  void clearReadEndpointPort() => clearField(34);
+  void clearReadEndpointPort() => $_clearField(34);
 
   /// Optional. Read replicas mode for the instance. Defaults to
   /// READ_REPLICAS_DISABLED.
@@ -795,13 +789,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_ReadReplicasMode get readReplicasMode => $_getN(29);
   @$pb.TagNumber(35)
   set readReplicasMode(Instance_ReadReplicasMode v) {
-    setField(35, v);
+    $_setField(35, v);
   }
 
   @$pb.TagNumber(35)
   $core.bool hasReadReplicasMode() => $_has(29);
   @$pb.TagNumber(35)
-  void clearReadReplicasMode() => clearField(35);
+  void clearReadReplicasMode() => $_clearField(35);
 
   /// Optional. The KMS key reference that the customer provides when trying to
   /// create the instance.
@@ -815,26 +809,26 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(36)
   $core.bool hasCustomerManagedKey() => $_has(30);
   @$pb.TagNumber(36)
-  void clearCustomerManagedKey() => clearField(36);
+  void clearCustomerManagedKey() => $_clearField(36);
 
   /// Optional. Persistence configuration parameters
   @$pb.TagNumber(37)
   PersistenceConfig get persistenceConfig => $_getN(31);
   @$pb.TagNumber(37)
   set persistenceConfig(PersistenceConfig v) {
-    setField(37, v);
+    $_setField(37, v);
   }
 
   @$pb.TagNumber(37)
   $core.bool hasPersistenceConfig() => $_has(31);
   @$pb.TagNumber(37)
-  void clearPersistenceConfig() => clearField(37);
+  void clearPersistenceConfig() => $_clearField(37);
   @$pb.TagNumber(37)
   PersistenceConfig ensurePersistenceConfig() => $_ensure(31);
 
   /// Optional. reasons that causes instance in "SUSPENDED" state.
   @$pb.TagNumber(38)
-  $core.List<Instance_SuspensionReason> get suspensionReasons => $_getList(32);
+  $pb.PbList<Instance_SuspensionReason> get suspensionReasons => $_getList(32);
 
   /// Optional. The self service update maintenance version.
   /// The version is date based such as "20210712_00_00".
@@ -848,12 +842,12 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(39)
   $core.bool hasMaintenanceVersion() => $_has(33);
   @$pb.TagNumber(39)
-  void clearMaintenanceVersion() => clearField(39);
+  void clearMaintenanceVersion() => $_clearField(39);
 
   /// Optional. The available maintenance versions that an instance could update
   /// to.
   @$pb.TagNumber(40)
-  $core.List<$core.String> get availableMaintenanceVersions => $_getList(34);
+  $pb.PbList<$core.String> get availableMaintenanceVersions => $_getList(34);
 }
 
 /// Configuration of the persistence functionality.
@@ -910,13 +904,9 @@ class PersistenceConfig extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PersistenceConfig clone() => PersistenceConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PersistenceConfig copyWith(void Function(PersistenceConfig) updates) =>
       super.copyWith((message) => updates(message as PersistenceConfig))
           as PersistenceConfig;
@@ -939,13 +929,13 @@ class PersistenceConfig extends $pb.GeneratedMessage {
   PersistenceConfig_PersistenceMode get persistenceMode => $_getN(0);
   @$pb.TagNumber(1)
   set persistenceMode(PersistenceConfig_PersistenceMode v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPersistenceMode() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPersistenceMode() => clearField(1);
+  void clearPersistenceMode() => $_clearField(1);
 
   /// Optional. Period between RDB snapshots. Snapshots will be attempted every
   /// period starting from the provided snapshot start time. For example, a start
@@ -957,26 +947,26 @@ class PersistenceConfig extends $pb.GeneratedMessage {
   PersistenceConfig_SnapshotPeriod get rdbSnapshotPeriod => $_getN(1);
   @$pb.TagNumber(2)
   set rdbSnapshotPeriod(PersistenceConfig_SnapshotPeriod v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasRdbSnapshotPeriod() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRdbSnapshotPeriod() => clearField(2);
+  void clearRdbSnapshotPeriod() => $_clearField(2);
 
   /// Output only. The next time that a snapshot attempt is scheduled to occur.
   @$pb.TagNumber(4)
   $2.Timestamp get rdbNextSnapshotTime => $_getN(2);
   @$pb.TagNumber(4)
   set rdbNextSnapshotTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasRdbNextSnapshotTime() => $_has(2);
   @$pb.TagNumber(4)
-  void clearRdbNextSnapshotTime() => clearField(4);
+  void clearRdbNextSnapshotTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureRdbNextSnapshotTime() => $_ensure(2);
 
@@ -987,13 +977,13 @@ class PersistenceConfig extends $pb.GeneratedMessage {
   $2.Timestamp get rdbSnapshotStartTime => $_getN(3);
   @$pb.TagNumber(5)
   set rdbSnapshotStartTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasRdbSnapshotStartTime() => $_has(3);
   @$pb.TagNumber(5)
-  void clearRdbSnapshotStartTime() => clearField(5);
+  void clearRdbSnapshotStartTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureRdbSnapshotStartTime() => $_ensure(3);
 }
@@ -1044,13 +1034,9 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
         subBuilder: WeeklyMaintenanceWindow.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MaintenancePolicy clone() => MaintenancePolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MaintenancePolicy copyWith(void Function(MaintenancePolicy) updates) =>
       super.copyWith((message) => updates(message as MaintenancePolicy))
           as MaintenancePolicy;
@@ -1072,13 +1058,13 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
   set createTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCreateTime() => clearField(1);
+  void clearCreateTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureCreateTime() => $_ensure(0);
 
@@ -1087,13 +1073,13 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
   set updateTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUpdateTime() => clearField(2);
+  void clearUpdateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureUpdateTime() => $_ensure(1);
 
@@ -1109,13 +1095,13 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// Optional. Maintenance window that is applied to resources covered by this
   /// policy. Minimum 1. For the current version, the maximum number of
   /// weekly_window is expected to be one.
   @$pb.TagNumber(4)
-  $core.List<WeeklyMaintenanceWindow> get weeklyMaintenanceWindow =>
+  $pb.PbList<WeeklyMaintenanceWindow> get weeklyMaintenanceWindow =>
       $_getList(3);
 }
 
@@ -1123,9 +1109,9 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
 /// updates can occur inside or outside this window.
 class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
   factory WeeklyMaintenanceWindow({
-    $27.DayOfWeek? day,
-    $26.TimeOfDay? startTime,
-    $10.Duration? duration,
+    $3.DayOfWeek? day,
+    $1.TimeOfDay? startTime,
+    $0.Duration? duration,
   }) {
     final $result = create();
     if (day != null) {
@@ -1152,24 +1138,20 @@ class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.redis.v1'),
       createEmptyInstance: create)
-    ..e<$27.DayOfWeek>(1, _omitFieldNames ? '' : 'day', $pb.PbFieldType.OE,
-        defaultOrMaker: $27.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
-        valueOf: $27.DayOfWeek.valueOf,
-        enumValues: $27.DayOfWeek.values)
-    ..aOM<$26.TimeOfDay>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $26.TimeOfDay.create)
-    ..aOM<$10.Duration>(3, _omitFieldNames ? '' : 'duration',
-        subBuilder: $10.Duration.create)
+    ..e<$3.DayOfWeek>(1, _omitFieldNames ? '' : 'day', $pb.PbFieldType.OE,
+        defaultOrMaker: $3.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
+        valueOf: $3.DayOfWeek.valueOf,
+        enumValues: $3.DayOfWeek.values)
+    ..aOM<$1.TimeOfDay>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $1.TimeOfDay.create)
+    ..aOM<$0.Duration>(3, _omitFieldNames ? '' : 'duration',
+        subBuilder: $0.Duration.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WeeklyMaintenanceWindow clone() =>
       WeeklyMaintenanceWindow()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WeeklyMaintenanceWindow copyWith(
           void Function(WeeklyMaintenanceWindow) updates) =>
       super.copyWith((message) => updates(message as WeeklyMaintenanceWindow))
@@ -1189,47 +1171,47 @@ class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
 
   /// Required. The day of week that maintenance updates occur.
   @$pb.TagNumber(1)
-  $27.DayOfWeek get day => $_getN(0);
+  $3.DayOfWeek get day => $_getN(0);
   @$pb.TagNumber(1)
-  set day($27.DayOfWeek v) {
-    setField(1, v);
+  set day($3.DayOfWeek v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasDay() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDay() => clearField(1);
+  void clearDay() => $_clearField(1);
 
   /// Required. Start time of the window in UTC time.
   @$pb.TagNumber(2)
-  $26.TimeOfDay get startTime => $_getN(1);
+  $1.TimeOfDay get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($26.TimeOfDay v) {
-    setField(2, v);
+  set startTime($1.TimeOfDay v) {
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearStartTime() => clearField(2);
+  void clearStartTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $26.TimeOfDay ensureStartTime() => $_ensure(1);
+  $1.TimeOfDay ensureStartTime() => $_ensure(1);
 
   /// Output only. Duration of the maintenance window. The current window is
   /// fixed at 1 hour.
   @$pb.TagNumber(3)
-  $10.Duration get duration => $_getN(2);
+  $0.Duration get duration => $_getN(2);
   @$pb.TagNumber(3)
-  set duration($10.Duration v) {
-    setField(3, v);
+  set duration($0.Duration v) {
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasDuration() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDuration() => clearField(3);
+  void clearDuration() => $_clearField(3);
   @$pb.TagNumber(3)
-  $10.Duration ensureDuration() => $_ensure(2);
+  $0.Duration ensureDuration() => $_ensure(2);
 }
 
 /// Upcoming maintenance schedule. If no maintenance is scheduled, fields are not
@@ -1278,13 +1260,9 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MaintenanceSchedule clone() => MaintenanceSchedule()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MaintenanceSchedule copyWith(void Function(MaintenanceSchedule) updates) =>
       super.copyWith((message) => updates(message as MaintenanceSchedule))
           as MaintenanceSchedule;
@@ -1307,13 +1285,13 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
   set startTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStartTime() => clearField(1);
+  void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureStartTime() => $_ensure(0);
 
@@ -1323,13 +1301,13 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
   set endTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEndTime() => clearField(2);
+  void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureEndTime() => $_ensure(1);
 
@@ -1344,7 +1322,7 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasCanReschedule() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCanReschedule() => clearField(3);
+  void clearCanReschedule() => $_clearField(3);
 
   /// Output only. The deadline that the maintenance schedule start time can not
   /// go beyond, including reschedule.
@@ -1352,13 +1330,13 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   $2.Timestamp get scheduleDeadlineTime => $_getN(3);
   @$pb.TagNumber(5)
   set scheduleDeadlineTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasScheduleDeadlineTime() => $_has(3);
   @$pb.TagNumber(5)
-  void clearScheduleDeadlineTime() => clearField(5);
+  void clearScheduleDeadlineTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureScheduleDeadlineTime() => $_ensure(3);
 }
@@ -1407,13 +1385,9 @@ class TlsCertificate extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'sha1Fingerprint')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsCertificate clone() => TlsCertificate()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsCertificate copyWith(void Function(TlsCertificate) updates) =>
       super.copyWith((message) => updates(message as TlsCertificate))
           as TlsCertificate;
@@ -1441,7 +1415,7 @@ class TlsCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSerialNumber() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSerialNumber() => clearField(1);
+  void clearSerialNumber() => $_clearField(1);
 
   /// Output only. The time when the certificate was created in [RFC
   /// 3339](https://tools.ietf.org/html/rfc3339) format, for example
@@ -1450,13 +1424,13 @@ class TlsCertificate extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(3)
   set createTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(3)
-  void clearCreateTime() => clearField(3);
+  void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -1467,13 +1441,13 @@ class TlsCertificate extends $pb.GeneratedMessage {
   $2.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(4)
   set expireTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(4)
-  void clearExpireTime() => clearField(4);
+  void clearExpireTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureExpireTime() => $_ensure(2);
 
@@ -1488,7 +1462,7 @@ class TlsCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasSha1Fingerprint() => $_has(3);
   @$pb.TagNumber(5)
-  void clearSha1Fingerprint() => clearField(5);
+  void clearSha1Fingerprint() => $_clearField(5);
 }
 
 /// The data within all Instance events.
@@ -1519,13 +1493,9 @@ class InstanceEventData extends $pb.GeneratedMessage {
         subBuilder: Instance.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData clone() => InstanceEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData copyWith(void Function(InstanceEventData) updates) =>
       super.copyWith((message) => updates(message as InstanceEventData))
           as InstanceEventData;
@@ -1547,13 +1517,13 @@ class InstanceEventData extends $pb.GeneratedMessage {
   Instance get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Instance v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Instance ensurePayload() => $_ensure(0);
 }

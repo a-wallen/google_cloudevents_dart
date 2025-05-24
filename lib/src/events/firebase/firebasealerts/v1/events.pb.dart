@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/firebase/firebasealerts/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $6;
+import 'data.pb.dart' as $57;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when a alert has been published by Firebase Alerts.
 class AlertPublishedEvent extends $pb.GeneratedMessage {
   factory AlertPublishedEvent({
-    $6.AlertData? data,
+    $57.AlertData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -39,17 +41,13 @@ class AlertPublishedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.firebase.firebasealerts.v1'),
       createEmptyInstance: create)
-    ..aOM<$6.AlertData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $6.AlertData.create)
+    ..aOM<$57.AlertData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $57.AlertData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AlertPublishedEvent clone() => AlertPublishedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AlertPublishedEvent copyWith(void Function(AlertPublishedEvent) updates) =>
       super.copyWith((message) => updates(message as AlertPublishedEvent))
           as AlertPublishedEvent;
@@ -68,18 +66,18 @@ class AlertPublishedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $6.AlertData get data => $_getN(0);
+  $57.AlertData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($6.AlertData v) {
-    setField(1, v);
+  set data($57.AlertData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $6.AlertData ensureData() => $_ensure(0);
+  $57.AlertData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

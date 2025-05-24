@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/beyondcorp/appconnections/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $17;
+import 'data.pb.dart' as $14;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when an AppConnection is created.
 class AppConnectionCreatedEvent extends $pb.GeneratedMessage {
   factory AppConnectionCreatedEvent({
-    $17.AppConnectionEventData? data,
+    $14.AppConnectionEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -40,18 +42,14 @@ class AppConnectionCreatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.beyondcorp.appconnections.v1'),
       createEmptyInstance: create)
-    ..aOM<$17.AppConnectionEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $17.AppConnectionEventData.create)
+    ..aOM<$14.AppConnectionEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $14.AppConnectionEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnectionCreatedEvent clone() =>
       AppConnectionCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnectionCreatedEvent copyWith(
           void Function(AppConnectionCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as AppConnectionCreatedEvent))
@@ -71,24 +69,24 @@ class AppConnectionCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $17.AppConnectionEventData get data => $_getN(0);
+  $14.AppConnectionEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($17.AppConnectionEventData v) {
-    setField(1, v);
+  set data($14.AppConnectionEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $17.AppConnectionEventData ensureData() => $_ensure(0);
+  $14.AppConnectionEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an AppConnection is updated.
 class AppConnectionUpdatedEvent extends $pb.GeneratedMessage {
   factory AppConnectionUpdatedEvent({
-    $17.AppConnectionEventData? data,
+    $14.AppConnectionEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -110,18 +108,14 @@ class AppConnectionUpdatedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.beyondcorp.appconnections.v1'),
       createEmptyInstance: create)
-    ..aOM<$17.AppConnectionEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $17.AppConnectionEventData.create)
+    ..aOM<$14.AppConnectionEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $14.AppConnectionEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnectionUpdatedEvent clone() =>
       AppConnectionUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnectionUpdatedEvent copyWith(
           void Function(AppConnectionUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as AppConnectionUpdatedEvent))
@@ -141,24 +135,24 @@ class AppConnectionUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $17.AppConnectionEventData get data => $_getN(0);
+  $14.AppConnectionEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($17.AppConnectionEventData v) {
-    setField(1, v);
+  set data($14.AppConnectionEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $17.AppConnectionEventData ensureData() => $_ensure(0);
+  $14.AppConnectionEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an AppConnection is deleted.
 class AppConnectionDeletedEvent extends $pb.GeneratedMessage {
   factory AppConnectionDeletedEvent({
-    $17.AppConnectionEventData? data,
+    $14.AppConnectionEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -180,18 +174,14 @@ class AppConnectionDeletedEvent extends $pb.GeneratedMessage {
           ? ''
           : 'google.events.cloud.beyondcorp.appconnections.v1'),
       createEmptyInstance: create)
-    ..aOM<$17.AppConnectionEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $17.AppConnectionEventData.create)
+    ..aOM<$14.AppConnectionEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $14.AppConnectionEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnectionDeletedEvent clone() =>
       AppConnectionDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnectionDeletedEvent copyWith(
           void Function(AppConnectionDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as AppConnectionDeletedEvent))
@@ -211,18 +201,18 @@ class AppConnectionDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $17.AppConnectionEventData get data => $_getN(0);
+  $14.AppConnectionEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($17.AppConnectionEventData v) {
-    setField(1, v);
+  set data($14.AppConnectionEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $17.AppConnectionEventData ensureData() => $_ensure(0);
+  $14.AppConnectionEventData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -1,5 +1,3 @@
-export '../../../src/events/cloud/apigeeregistry/v1/data.pbenum.dart'
-    show Instance_State;
 export '../../../src/events/cloud/apigeeregistry/v1/data.pb.dart'
     show
         Instance_Config,
@@ -13,6 +11,8 @@ export '../../../src/events/cloud/apigeeregistry/v1/data.pb.dart'
         ApiSpecEventData,
         ApiDeploymentEventData,
         ApiEventData;
+export '../../../src/events/cloud/apigeeregistry/v1/data.pbenum.dart'
+    show Instance_State;
 export '../../../src/events/cloud/apigeeregistry/v1/events.pb.dart'
     show
         InstanceCreatedEvent,

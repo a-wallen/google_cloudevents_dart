@@ -1,25 +1,3 @@
-export '../../../src/events/cloud/vmmigration/v1/data.pbenum.dart'
-    show
-        ComputeEngineDiskType,
-        ComputeEngineLicenseType,
-        ComputeEngineBootOption,
-        ReplicationCycle_State,
-        MigratingVm_State,
-        CloneJob_State,
-        CutoverJob_State,
-        AwsSourceDetails_State,
-        DatacenterConnector_State,
-        UpgradeStatus_State,
-        VmwareVmDetails_PowerState,
-        VmwareVmDetails_BootOption,
-        UtilizationReport_State,
-        UtilizationReport_TimeFrame,
-        AppliedLicense_Type,
-        SchedulingNodeAffinity_Operator,
-        ComputeScheduling_OnHostMaintenance,
-        ComputeScheduling_RestartType,
-        MigrationWarning_WarningCode,
-        AwsSourceVmDetails_Firmware;
 export '../../../src/events/cloud/vmmigration/v1/data.pb.dart'
     show
         ReplicationCycle,
@@ -71,6 +49,28 @@ export '../../../src/events/cloud/vmmigration/v1/data.pb.dart'
         CutoverJobEventData,
         SourceEventData,
         MigratingVmEventData;
+export '../../../src/events/cloud/vmmigration/v1/data.pbenum.dart'
+    show
+        ComputeEngineDiskType,
+        ComputeEngineLicenseType,
+        ComputeEngineBootOption,
+        ReplicationCycle_State,
+        MigratingVm_State,
+        CloneJob_State,
+        CutoverJob_State,
+        AwsSourceDetails_State,
+        DatacenterConnector_State,
+        UpgradeStatus_State,
+        VmwareVmDetails_PowerState,
+        VmwareVmDetails_BootOption,
+        UtilizationReport_State,
+        UtilizationReport_TimeFrame,
+        AppliedLicense_Type,
+        SchedulingNodeAffinity_Operator,
+        ComputeScheduling_OnHostMaintenance,
+        ComputeScheduling_RestartType,
+        MigrationWarning_WarningCode,
+        AwsSourceVmDetails_Firmware;
 export '../../../src/events/cloud/vmmigration/v1/events.pb.dart'
     show
         SourceCreatedEvent,

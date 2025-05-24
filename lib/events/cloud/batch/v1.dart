@@ -1,12 +1,3 @@
-export '../../../src/events/cloud/batch/v1/data.pbenum.dart'
-    show
-        TaskStatus_State,
-        LifecyclePolicy_Action,
-        LogsPolicy_Destination,
-        JobStatus_State,
-        JobNotification_Type,
-        AllocationPolicy_ProvisioningModel,
-        TaskGroup_SchedulingPolicy;
 export '../../../src/events/cloud/batch/v1/data.pb.dart'
     show
         Volume,
@@ -45,5 +36,14 @@ export '../../../src/events/cloud/batch/v1/data.pb.dart'
         TaskGroup,
         ServiceAccount,
         JobEventData;
+export '../../../src/events/cloud/batch/v1/data.pbenum.dart'
+    show
+        TaskStatus_State,
+        LifecyclePolicy_Action,
+        LogsPolicy_Destination,
+        JobStatus_State,
+        JobNotification_Type,
+        AllocationPolicy_ProvisioningModel,
+        TaskGroup_SchedulingPolicy;
 export '../../../src/events/cloud/batch/v1/events.pb.dart'
     show JobCreatedEvent, JobDeletedEvent;

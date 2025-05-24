@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/type/color.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,133 +13,135 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/wrappers.pb.dart' as $45;
+import '../protobuf/wrappers.pb.dart' as $21;
 
-///  Represents a color in the RGBA color space. This representation is designed
-///  for simplicity of conversion to/from color representations in various
-///  languages over compactness; for example, the fields of this representation
-///  can be trivially provided to the constructor of "java.awt.Color" in Java; it
-///  can also be trivially provided to UIColor's "+colorWithRed:green:blue:alpha"
-///  method in iOS; and, with just a little work, it can be easily formatted into
-///  a CSS "rgba()" string in JavaScript, as well.
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
+/// Represents a color in the RGBA color space. This representation is designed
+/// for simplicity of conversion to/from color representations in various
+/// languages over compactness; for example, the fields of this representation
+/// can be trivially provided to the constructor of "java.awt.Color" in Java; it
+/// can also be trivially provided to UIColor's "+colorWithRed:green:blue:alpha"
+/// method in iOS; and, with just a little work, it can be easily formatted into
+/// a CSS "rgba()" string in JavaScript, as well.
 ///
-///  Note: this proto does not carry information about the absolute color space
-///  that should be used to interpret the RGB value (e.g. sRGB, Adobe RGB,
-///  DCI-P3, BT.2020, etc.). By default, applications SHOULD assume the sRGB color
-///  space.
+/// Note: this proto does not carry information about the absolute color space
+/// that should be used to interpret the RGB value (e.g. sRGB, Adobe RGB,
+/// DCI-P3, BT.2020, etc.). By default, applications SHOULD assume the sRGB color
+/// space.
 ///
-///  Example (Java):
+/// Example (Java):
 ///
-///       import com.google.type.Color;
+///      import com.google.type.Color;
 ///
-///       // ...
-///       public static java.awt.Color fromProto(Color protocolor) {
-///         float alpha = protocolor.hasAlpha()
-///             ? protocolor.getAlpha().getValue()
-///             : 1.0;
+///      // ...
+///      public static java.awt.Color fromProto(Color protocolor) {
+///        float alpha = protocolor.hasAlpha()
+///            ? protocolor.getAlpha().getValue()
+///            : 1.0;
 ///
-///         return new java.awt.Color(
-///             protocolor.getRed(),
-///             protocolor.getGreen(),
-///             protocolor.getBlue(),
-///             alpha);
-///       }
+///        return new java.awt.Color(
+///            protocolor.getRed(),
+///            protocolor.getGreen(),
+///            protocolor.getBlue(),
+///            alpha);
+///      }
 ///
-///       public static Color toProto(java.awt.Color color) {
-///         float red = (float) color.getRed();
-///         float green = (float) color.getGreen();
-///         float blue = (float) color.getBlue();
-///         float denominator = 255.0;
-///         Color.Builder resultBuilder =
-///             Color
-///                 .newBuilder()
-///                 .setRed(red / denominator)
-///                 .setGreen(green / denominator)
-///                 .setBlue(blue / denominator);
-///         int alpha = color.getAlpha();
-///         if (alpha != 255) {
-///           result.setAlpha(
-///               FloatValue
-///                   .newBuilder()
-///                   .setValue(((float) alpha) / denominator)
-///                   .build());
-///         }
-///         return resultBuilder.build();
-///       }
-///       // ...
-///
-///  Example (iOS / Obj-C):
-///
-///       // ...
-///       static UIColor* fromProto(Color* protocolor) {
-///          float red = [protocolor red];
-///          float green = [protocolor green];
-///          float blue = [protocolor blue];
-///          FloatValue* alpha_wrapper = [protocolor alpha];
-///          float alpha = 1.0;
-///          if (alpha_wrapper != nil) {
-///            alpha = [alpha_wrapper value];
-///          }
-///          return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
-///       }
-///
-///       static Color* toProto(UIColor* color) {
-///           CGFloat red, green, blue, alpha;
-///           if (![color getRed:&red green:&green blue:&blue alpha:&alpha]) {
-///             return nil;
-///           }
-///           Color* result = [[Color alloc] init];
-///           [result setRed:red];
-///           [result setGreen:green];
-///           [result setBlue:blue];
-///           if (alpha <= 0.9999) {
-///             [result setAlpha:floatWrapperWithValue(alpha)];
-///           }
-///           [result autorelease];
-///           return result;
+///      public static Color toProto(java.awt.Color color) {
+///        float red = (float) color.getRed();
+///        float green = (float) color.getGreen();
+///        float blue = (float) color.getBlue();
+///        float denominator = 255.0;
+///        Color.Builder resultBuilder =
+///            Color
+///                .newBuilder()
+///                .setRed(red / denominator)
+///                .setGreen(green / denominator)
+///                .setBlue(blue / denominator);
+///        int alpha = color.getAlpha();
+///        if (alpha != 255) {
+///          result.setAlpha(
+///              FloatValue
+///                  .newBuilder()
+///                  .setValue(((float) alpha) / denominator)
+///                  .build());
+///        }
+///        return resultBuilder.build();
 ///      }
 ///      // ...
 ///
-///   Example (JavaScript):
+/// Example (iOS / Obj-C):
 ///
 ///      // ...
-///
-///      var protoToCssColor = function(rgb_color) {
-///         var redFrac = rgb_color.red || 0.0;
-///         var greenFrac = rgb_color.green || 0.0;
-///         var blueFrac = rgb_color.blue || 0.0;
-///         var red = Math.floor(redFrac * 255);
-///         var green = Math.floor(greenFrac * 255);
-///         var blue = Math.floor(blueFrac * 255);
-///
-///         if (!('alpha' in rgb_color)) {
-///            return rgbToCssColor_(red, green, blue);
+///      static UIColor* fromProto(Color* protocolor) {
+///         float red = [protocolor red];
+///         float green = [protocolor green];
+///         float blue = [protocolor blue];
+///         FloatValue* alpha_wrapper = [protocolor alpha];
+///         float alpha = 1.0;
+///         if (alpha_wrapper != nil) {
+///           alpha = [alpha_wrapper value];
 ///         }
+///         return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+///      }
 ///
-///         var alphaFrac = rgb_color.alpha.value || 0.0;
-///         var rgbParams = [red, green, blue].join(',');
-///         return ['rgba(', rgbParams, ',', alphaFrac, ')'].join('');
-///      };
+///      static Color* toProto(UIColor* color) {
+///          CGFloat red, green, blue, alpha;
+///          if (![color getRed:&red green:&green blue:&blue alpha:&alpha]) {
+///            return nil;
+///          }
+///          Color* result = [[Color alloc] init];
+///          [result setRed:red];
+///          [result setGreen:green];
+///          [result setBlue:blue];
+///          if (alpha <= 0.9999) {
+///            [result setAlpha:floatWrapperWithValue(alpha)];
+///          }
+///          [result autorelease];
+///          return result;
+///     }
+///     // ...
 ///
-///      var rgbToCssColor_ = function(red, green, blue) {
-///        var rgbNumber = new Number((red << 16) | (green << 8) | blue);
-///        var hexString = rgbNumber.toString(16);
-///        var missingZeros = 6 - hexString.length;
-///        var resultBuilder = ['#'];
-///        for (var i = 0; i < missingZeros; i++) {
-///           resultBuilder.push('0');
+///  Example (JavaScript):
+///
+///     // ...
+///
+///     var protoToCssColor = function(rgb_color) {
+///        var redFrac = rgb_color.red || 0.0;
+///        var greenFrac = rgb_color.green || 0.0;
+///        var blueFrac = rgb_color.blue || 0.0;
+///        var red = Math.floor(redFrac * 255);
+///        var green = Math.floor(greenFrac * 255);
+///        var blue = Math.floor(blueFrac * 255);
+///
+///        if (!('alpha' in rgb_color)) {
+///           return rgbToCssColor_(red, green, blue);
 ///        }
-///        resultBuilder.push(hexString);
-///        return resultBuilder.join('');
-///      };
 ///
-///      // ...
+///        var alphaFrac = rgb_color.alpha.value || 0.0;
+///        var rgbParams = [red, green, blue].join(',');
+///        return ['rgba(', rgbParams, ',', alphaFrac, ')'].join('');
+///     };
+///
+///     var rgbToCssColor_ = function(red, green, blue) {
+///       var rgbNumber = new Number((red << 16) | (green << 8) | blue);
+///       var hexString = rgbNumber.toString(16);
+///       var missingZeros = 6 - hexString.length;
+///       var resultBuilder = ['#'];
+///       for (var i = 0; i < missingZeros; i++) {
+///          resultBuilder.push('0');
+///       }
+///       resultBuilder.push(hexString);
+///       return resultBuilder.join('');
+///     };
+///
+///     // ...
 class Color extends $pb.GeneratedMessage {
   factory Color({
     $core.double? red,
     $core.double? green,
     $core.double? blue,
-    $45.FloatValue? alpha,
+    $21.FloatValue? alpha,
   }) {
     final $result = create();
     if (red != null) {
@@ -171,17 +173,13 @@ class Color extends $pb.GeneratedMessage {
     ..a<$core.double>(1, _omitFieldNames ? '' : 'red', $pb.PbFieldType.OF)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'green', $pb.PbFieldType.OF)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'blue', $pb.PbFieldType.OF)
-    ..aOM<$45.FloatValue>(4, _omitFieldNames ? '' : 'alpha',
-        subBuilder: $45.FloatValue.create)
+    ..aOM<$21.FloatValue>(4, _omitFieldNames ? '' : 'alpha',
+        subBuilder: $21.FloatValue.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Color clone() => Color()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Color copyWith(void Function(Color) updates) =>
       super.copyWith((message) => updates(message as Color)) as Color;
 
@@ -207,7 +205,7 @@ class Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasRed() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRed() => clearField(1);
+  void clearRed() => $_clearField(1);
 
   /// The amount of green in the color as a value in the interval [0, 1].
   @$pb.TagNumber(2)
@@ -220,7 +218,7 @@ class Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasGreen() => $_has(1);
   @$pb.TagNumber(2)
-  void clearGreen() => clearField(2);
+  void clearGreen() => $_clearField(2);
 
   /// The amount of blue in the color as a value in the interval [0, 1].
   @$pb.TagNumber(3)
@@ -233,32 +231,32 @@ class Color extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasBlue() => $_has(2);
   @$pb.TagNumber(3)
-  void clearBlue() => clearField(3);
+  void clearBlue() => $_clearField(3);
 
-  ///  The fraction of this color that should be applied to the pixel. That is,
-  ///  the final pixel color is defined by the equation:
+  /// The fraction of this color that should be applied to the pixel. That is,
+  /// the final pixel color is defined by the equation:
   ///
-  ///    pixel color = alpha * (this color) + (1.0 - alpha) * (background color)
+  ///   pixel color = alpha * (this color) + (1.0 - alpha) * (background color)
   ///
-  ///  This means that a value of 1.0 corresponds to a solid color, whereas
-  ///  a value of 0.0 corresponds to a completely transparent color. This
-  ///  uses a wrapper message rather than a simple float scalar so that it is
-  ///  possible to distinguish between a default value and the value being unset.
-  ///  If omitted, this color object is to be rendered as a solid color
-  ///  (as if the alpha value had been explicitly given with a value of 1.0).
+  /// This means that a value of 1.0 corresponds to a solid color, whereas
+  /// a value of 0.0 corresponds to a completely transparent color. This
+  /// uses a wrapper message rather than a simple float scalar so that it is
+  /// possible to distinguish between a default value and the value being unset.
+  /// If omitted, this color object is to be rendered as a solid color
+  /// (as if the alpha value had been explicitly given with a value of 1.0).
   @$pb.TagNumber(4)
-  $45.FloatValue get alpha => $_getN(3);
+  $21.FloatValue get alpha => $_getN(3);
   @$pb.TagNumber(4)
-  set alpha($45.FloatValue v) {
-    setField(4, v);
+  set alpha($21.FloatValue v) {
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasAlpha() => $_has(3);
   @$pb.TagNumber(4)
-  void clearAlpha() => clearField(4);
+  void clearAlpha() => $_clearField(4);
   @$pb.TagNumber(4)
-  $45.FloatValue ensureAlpha() => $_ensure(3);
+  $21.FloatValue ensureAlpha() => $_ensure(3);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

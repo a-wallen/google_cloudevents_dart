@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/protobuf/source_context.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -12,6 +12,8 @@
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// `SourceContext` represents information about the source of a
 /// protobuf element, like the file in which it is defined.
@@ -41,13 +43,9 @@ class SourceContext extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'fileName')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SourceContext clone() => SourceContext()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SourceContext copyWith(void Function(SourceContext) updates) =>
       super.copyWith((message) => updates(message as SourceContext))
           as SourceContext;
@@ -76,7 +74,7 @@ class SourceContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasFileName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearFileName() => clearField(1);
+  void clearFileName() => $_clearField(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

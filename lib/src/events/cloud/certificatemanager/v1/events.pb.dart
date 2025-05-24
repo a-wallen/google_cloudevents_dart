@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/certificatemanager/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $58;
+import 'data.pb.dart' as $19;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when a Certificate is created.
 class CertificateCreatedEvent extends $pb.GeneratedMessage {
   factory CertificateCreatedEvent({
-    $58.CertificateEventData? data,
+    $19.CertificateEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -39,18 +41,14 @@ class CertificateCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.CertificateEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.CertificateEventData.create)
+    ..aOM<$19.CertificateEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.CertificateEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateCreatedEvent clone() =>
       CertificateCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateCreatedEvent copyWith(
           void Function(CertificateCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as CertificateCreatedEvent))
@@ -70,24 +68,24 @@ class CertificateCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.CertificateEventData get data => $_getN(0);
+  $19.CertificateEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.CertificateEventData v) {
-    setField(1, v);
+  set data($19.CertificateEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.CertificateEventData ensureData() => $_ensure(0);
+  $19.CertificateEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Certificate is updated.
 class CertificateUpdatedEvent extends $pb.GeneratedMessage {
   factory CertificateUpdatedEvent({
-    $58.CertificateEventData? data,
+    $19.CertificateEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -108,18 +106,14 @@ class CertificateUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.CertificateEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.CertificateEventData.create)
+    ..aOM<$19.CertificateEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.CertificateEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateUpdatedEvent clone() =>
       CertificateUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateUpdatedEvent copyWith(
           void Function(CertificateUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as CertificateUpdatedEvent))
@@ -139,24 +133,24 @@ class CertificateUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.CertificateEventData get data => $_getN(0);
+  $19.CertificateEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.CertificateEventData v) {
-    setField(1, v);
+  set data($19.CertificateEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.CertificateEventData ensureData() => $_ensure(0);
+  $19.CertificateEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Certificate is deleted.
 class CertificateDeletedEvent extends $pb.GeneratedMessage {
   factory CertificateDeletedEvent({
-    $58.CertificateEventData? data,
+    $19.CertificateEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -177,18 +171,14 @@ class CertificateDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.CertificateEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.CertificateEventData.create)
+    ..aOM<$19.CertificateEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.CertificateEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateDeletedEvent clone() =>
       CertificateDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateDeletedEvent copyWith(
           void Function(CertificateDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as CertificateDeletedEvent))
@@ -208,24 +198,24 @@ class CertificateDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.CertificateEventData get data => $_getN(0);
+  $19.CertificateEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.CertificateEventData v) {
-    setField(1, v);
+  set data($19.CertificateEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.CertificateEventData ensureData() => $_ensure(0);
+  $19.CertificateEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a CertificateMap is created.
 class CertificateMapCreatedEvent extends $pb.GeneratedMessage {
   factory CertificateMapCreatedEvent({
-    $58.CertificateMapEventData? data,
+    $19.CertificateMapEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -246,18 +236,14 @@ class CertificateMapCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.CertificateMapEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.CertificateMapEventData.create)
+    ..aOM<$19.CertificateMapEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.CertificateMapEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapCreatedEvent clone() =>
       CertificateMapCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapCreatedEvent copyWith(
           void Function(CertificateMapCreatedEvent) updates) =>
       super.copyWith(
@@ -278,24 +264,24 @@ class CertificateMapCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.CertificateMapEventData get data => $_getN(0);
+  $19.CertificateMapEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.CertificateMapEventData v) {
-    setField(1, v);
+  set data($19.CertificateMapEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.CertificateMapEventData ensureData() => $_ensure(0);
+  $19.CertificateMapEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a CertificateMap is updated.
 class CertificateMapUpdatedEvent extends $pb.GeneratedMessage {
   factory CertificateMapUpdatedEvent({
-    $58.CertificateMapEventData? data,
+    $19.CertificateMapEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -316,18 +302,14 @@ class CertificateMapUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.CertificateMapEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.CertificateMapEventData.create)
+    ..aOM<$19.CertificateMapEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.CertificateMapEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapUpdatedEvent clone() =>
       CertificateMapUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapUpdatedEvent copyWith(
           void Function(CertificateMapUpdatedEvent) updates) =>
       super.copyWith(
@@ -348,24 +330,24 @@ class CertificateMapUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.CertificateMapEventData get data => $_getN(0);
+  $19.CertificateMapEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.CertificateMapEventData v) {
-    setField(1, v);
+  set data($19.CertificateMapEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.CertificateMapEventData ensureData() => $_ensure(0);
+  $19.CertificateMapEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a CertificateMap is deleted.
 class CertificateMapDeletedEvent extends $pb.GeneratedMessage {
   factory CertificateMapDeletedEvent({
-    $58.CertificateMapEventData? data,
+    $19.CertificateMapEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -386,18 +368,14 @@ class CertificateMapDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.CertificateMapEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.CertificateMapEventData.create)
+    ..aOM<$19.CertificateMapEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.CertificateMapEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapDeletedEvent clone() =>
       CertificateMapDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapDeletedEvent copyWith(
           void Function(CertificateMapDeletedEvent) updates) =>
       super.copyWith(
@@ -418,24 +396,24 @@ class CertificateMapDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.CertificateMapEventData get data => $_getN(0);
+  $19.CertificateMapEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.CertificateMapEventData v) {
-    setField(1, v);
+  set data($19.CertificateMapEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.CertificateMapEventData ensureData() => $_ensure(0);
+  $19.CertificateMapEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a CertificateMapEntry is created.
 class CertificateMapEntryCreatedEvent extends $pb.GeneratedMessage {
   factory CertificateMapEntryCreatedEvent({
-    $58.CertificateMapEntryEventData? data,
+    $19.CertificateMapEntryEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -456,18 +434,14 @@ class CertificateMapEntryCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.CertificateMapEntryEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.CertificateMapEntryEventData.create)
+    ..aOM<$19.CertificateMapEntryEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.CertificateMapEntryEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntryCreatedEvent clone() =>
       CertificateMapEntryCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntryCreatedEvent copyWith(
           void Function(CertificateMapEntryCreatedEvent) updates) =>
       super.copyWith(
@@ -490,24 +464,24 @@ class CertificateMapEntryCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.CertificateMapEntryEventData get data => $_getN(0);
+  $19.CertificateMapEntryEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.CertificateMapEntryEventData v) {
-    setField(1, v);
+  set data($19.CertificateMapEntryEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.CertificateMapEntryEventData ensureData() => $_ensure(0);
+  $19.CertificateMapEntryEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a CertificateMapEntry is updated.
 class CertificateMapEntryUpdatedEvent extends $pb.GeneratedMessage {
   factory CertificateMapEntryUpdatedEvent({
-    $58.CertificateMapEntryEventData? data,
+    $19.CertificateMapEntryEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -528,18 +502,14 @@ class CertificateMapEntryUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.CertificateMapEntryEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.CertificateMapEntryEventData.create)
+    ..aOM<$19.CertificateMapEntryEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.CertificateMapEntryEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntryUpdatedEvent clone() =>
       CertificateMapEntryUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntryUpdatedEvent copyWith(
           void Function(CertificateMapEntryUpdatedEvent) updates) =>
       super.copyWith(
@@ -562,24 +532,24 @@ class CertificateMapEntryUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.CertificateMapEntryEventData get data => $_getN(0);
+  $19.CertificateMapEntryEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.CertificateMapEntryEventData v) {
-    setField(1, v);
+  set data($19.CertificateMapEntryEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.CertificateMapEntryEventData ensureData() => $_ensure(0);
+  $19.CertificateMapEntryEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a CertificateMapEntry is deleted.
 class CertificateMapEntryDeletedEvent extends $pb.GeneratedMessage {
   factory CertificateMapEntryDeletedEvent({
-    $58.CertificateMapEntryEventData? data,
+    $19.CertificateMapEntryEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -600,18 +570,14 @@ class CertificateMapEntryDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.CertificateMapEntryEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.CertificateMapEntryEventData.create)
+    ..aOM<$19.CertificateMapEntryEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.CertificateMapEntryEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntryDeletedEvent clone() =>
       CertificateMapEntryDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntryDeletedEvent copyWith(
           void Function(CertificateMapEntryDeletedEvent) updates) =>
       super.copyWith(
@@ -634,24 +600,24 @@ class CertificateMapEntryDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.CertificateMapEntryEventData get data => $_getN(0);
+  $19.CertificateMapEntryEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.CertificateMapEntryEventData v) {
-    setField(1, v);
+  set data($19.CertificateMapEntryEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.CertificateMapEntryEventData ensureData() => $_ensure(0);
+  $19.CertificateMapEntryEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a DnsAuthorization is created.
 class DnsAuthorizationCreatedEvent extends $pb.GeneratedMessage {
   factory DnsAuthorizationCreatedEvent({
-    $58.DnsAuthorizationEventData? data,
+    $19.DnsAuthorizationEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -672,18 +638,14 @@ class DnsAuthorizationCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.DnsAuthorizationEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.DnsAuthorizationEventData.create)
+    ..aOM<$19.DnsAuthorizationEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.DnsAuthorizationEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorizationCreatedEvent clone() =>
       DnsAuthorizationCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorizationCreatedEvent copyWith(
           void Function(DnsAuthorizationCreatedEvent) updates) =>
       super.copyWith(
@@ -705,24 +667,24 @@ class DnsAuthorizationCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.DnsAuthorizationEventData get data => $_getN(0);
+  $19.DnsAuthorizationEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.DnsAuthorizationEventData v) {
-    setField(1, v);
+  set data($19.DnsAuthorizationEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.DnsAuthorizationEventData ensureData() => $_ensure(0);
+  $19.DnsAuthorizationEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a DnsAuthorization is updated.
 class DnsAuthorizationUpdatedEvent extends $pb.GeneratedMessage {
   factory DnsAuthorizationUpdatedEvent({
-    $58.DnsAuthorizationEventData? data,
+    $19.DnsAuthorizationEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -743,18 +705,14 @@ class DnsAuthorizationUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.DnsAuthorizationEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.DnsAuthorizationEventData.create)
+    ..aOM<$19.DnsAuthorizationEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.DnsAuthorizationEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorizationUpdatedEvent clone() =>
       DnsAuthorizationUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorizationUpdatedEvent copyWith(
           void Function(DnsAuthorizationUpdatedEvent) updates) =>
       super.copyWith(
@@ -776,24 +734,24 @@ class DnsAuthorizationUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.DnsAuthorizationEventData get data => $_getN(0);
+  $19.DnsAuthorizationEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.DnsAuthorizationEventData v) {
-    setField(1, v);
+  set data($19.DnsAuthorizationEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.DnsAuthorizationEventData ensureData() => $_ensure(0);
+  $19.DnsAuthorizationEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a DnsAuthorization is deleted.
 class DnsAuthorizationDeletedEvent extends $pb.GeneratedMessage {
   factory DnsAuthorizationDeletedEvent({
-    $58.DnsAuthorizationEventData? data,
+    $19.DnsAuthorizationEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -814,18 +772,14 @@ class DnsAuthorizationDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.DnsAuthorizationEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.DnsAuthorizationEventData.create)
+    ..aOM<$19.DnsAuthorizationEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $19.DnsAuthorizationEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorizationDeletedEvent clone() =>
       DnsAuthorizationDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorizationDeletedEvent copyWith(
           void Function(DnsAuthorizationDeletedEvent) updates) =>
       super.copyWith(
@@ -847,24 +801,24 @@ class DnsAuthorizationDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.DnsAuthorizationEventData get data => $_getN(0);
+  $19.DnsAuthorizationEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.DnsAuthorizationEventData v) {
-    setField(1, v);
+  set data($19.DnsAuthorizationEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.DnsAuthorizationEventData ensureData() => $_ensure(0);
+  $19.DnsAuthorizationEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a CertificateIssuanceConfig is created.
 class CertificateIssuanceConfigCreatedEvent extends $pb.GeneratedMessage {
   factory CertificateIssuanceConfigCreatedEvent({
-    $58.CertificateIssuanceConfigEventData? data,
+    $19.CertificateIssuanceConfigEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -886,19 +840,15 @@ class CertificateIssuanceConfigCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.CertificateIssuanceConfigEventData>(
+    ..aOM<$19.CertificateIssuanceConfigEventData>(
         1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.CertificateIssuanceConfigEventData.create)
+        subBuilder: $19.CertificateIssuanceConfigEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfigCreatedEvent clone() =>
       CertificateIssuanceConfigCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfigCreatedEvent copyWith(
           void Function(CertificateIssuanceConfigCreatedEvent) updates) =>
       super.copyWith((message) =>
@@ -921,24 +871,24 @@ class CertificateIssuanceConfigCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.CertificateIssuanceConfigEventData get data => $_getN(0);
+  $19.CertificateIssuanceConfigEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.CertificateIssuanceConfigEventData v) {
-    setField(1, v);
+  set data($19.CertificateIssuanceConfigEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.CertificateIssuanceConfigEventData ensureData() => $_ensure(0);
+  $19.CertificateIssuanceConfigEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a CertificateIssuanceConfig is deleted.
 class CertificateIssuanceConfigDeletedEvent extends $pb.GeneratedMessage {
   factory CertificateIssuanceConfigDeletedEvent({
-    $58.CertificateIssuanceConfigEventData? data,
+    $19.CertificateIssuanceConfigEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -960,19 +910,15 @@ class CertificateIssuanceConfigDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.certificatemanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$58.CertificateIssuanceConfigEventData>(
+    ..aOM<$19.CertificateIssuanceConfigEventData>(
         1, _omitFieldNames ? '' : 'data',
-        subBuilder: $58.CertificateIssuanceConfigEventData.create)
+        subBuilder: $19.CertificateIssuanceConfigEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfigDeletedEvent clone() =>
       CertificateIssuanceConfigDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfigDeletedEvent copyWith(
           void Function(CertificateIssuanceConfigDeletedEvent) updates) =>
       super.copyWith((message) =>
@@ -995,18 +941,18 @@ class CertificateIssuanceConfigDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $58.CertificateIssuanceConfigEventData get data => $_getN(0);
+  $19.CertificateIssuanceConfigEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($58.CertificateIssuanceConfigEventData v) {
-    setField(1, v);
+  set data($19.CertificateIssuanceConfigEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $58.CertificateIssuanceConfigEventData ensureData() => $_ensure(0);
+  $19.CertificateIssuanceConfigEventData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/beyondcorp/appconnectors/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,6 +15,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -75,13 +77,9 @@ class ResourceInfo extends $pb.GeneratedMessage {
         subBuilder: ResourceInfo.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceInfo clone() => ResourceInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceInfo copyWith(void Function(ResourceInfo) updates) =>
       super.copyWith((message) => updates(message as ResourceInfo))
           as ResourceInfo;
@@ -109,7 +107,7 @@ class ResourceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearId() => clearField(1);
+  void clearId() => $_clearField(1);
 
   /// Overall health status. Overall status is derived based on the status of
   /// each sub level resources.
@@ -117,13 +115,13 @@ class ResourceInfo extends $pb.GeneratedMessage {
   HealthStatus get status => $_getN(1);
   @$pb.TagNumber(2)
   set status(HealthStatus v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
-  void clearStatus() => clearField(2);
+  void clearStatus() => $_clearField(2);
 
   /// The timestamp to collect the info. It is suggested to be set by
   /// the topmost level resource only.
@@ -131,19 +129,19 @@ class ResourceInfo extends $pb.GeneratedMessage {
   $2.Timestamp get time => $_getN(2);
   @$pb.TagNumber(4)
   set time($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasTime() => $_has(2);
   @$pb.TagNumber(4)
-  void clearTime() => clearField(4);
+  void clearTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureTime() => $_ensure(2);
 
   /// List of Info for the sub level resources.
   @$pb.TagNumber(5)
-  $core.List<ResourceInfo> get sub => $_getList(3);
+  $pb.PbList<ResourceInfo> get sub => $_getList(3);
 }
 
 /// ServiceAccount represents a GCP service account.
@@ -175,14 +173,10 @@ class AppConnector_PrincipalInfo_ServiceAccount extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'email')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnector_PrincipalInfo_ServiceAccount clone() =>
       AppConnector_PrincipalInfo_ServiceAccount()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnector_PrincipalInfo_ServiceAccount copyWith(
           void Function(AppConnector_PrincipalInfo_ServiceAccount) updates) =>
       super.copyWith((message) =>
@@ -215,7 +209,7 @@ class AppConnector_PrincipalInfo_ServiceAccount extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEmail() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEmail() => clearField(1);
+  void clearEmail() => $_clearField(1);
 }
 
 enum AppConnector_PrincipalInfo_Type { serviceAccount, notSet }
@@ -256,14 +250,10 @@ class AppConnector_PrincipalInfo extends $pb.GeneratedMessage {
         subBuilder: AppConnector_PrincipalInfo_ServiceAccount.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnector_PrincipalInfo clone() =>
       AppConnector_PrincipalInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnector_PrincipalInfo copyWith(
           void Function(AppConnector_PrincipalInfo) updates) =>
       super.copyWith(
@@ -284,20 +274,20 @@ class AppConnector_PrincipalInfo extends $pb.GeneratedMessage {
 
   AppConnector_PrincipalInfo_Type whichType() =>
       _AppConnector_PrincipalInfo_TypeByTag[$_whichOneof(0)]!;
-  void clearType() => clearField($_whichOneof(0));
+  void clearType() => $_clearField($_whichOneof(0));
 
   /// A GCP service account.
   @$pb.TagNumber(1)
   AppConnector_PrincipalInfo_ServiceAccount get serviceAccount => $_getN(0);
   @$pb.TagNumber(1)
   set serviceAccount(AppConnector_PrincipalInfo_ServiceAccount v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasServiceAccount() => $_has(0);
   @$pb.TagNumber(1)
-  void clearServiceAccount() => clearField(1);
+  void clearServiceAccount() => $_clearField(1);
   @$pb.TagNumber(1)
   AppConnector_PrincipalInfo_ServiceAccount ensureServiceAccount() =>
       $_ensure(0);
@@ -313,7 +303,7 @@ class AppConnector extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     $core.String? uid,
     AppConnector_State? state,
@@ -331,7 +321,7 @@ class AppConnector extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (displayName != null) {
       $result.displayName = displayName;
@@ -388,13 +378,9 @@ class AppConnector extends $pb.GeneratedMessage {
         subBuilder: ResourceInfo.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnector clone() => AppConnector()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnector copyWith(void Function(AppConnector) updates) =>
       super.copyWith((message) => updates(message as AppConnector))
           as AppConnector;
@@ -423,20 +409,20 @@ class AppConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Timestamp when the resource was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -445,19 +431,19 @@ class AppConnector extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Resource labels to represent user provided metadata.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Optional. An arbitrary user-provided name for the AppConnector. Cannot
   /// exceed 64 characters.
@@ -471,7 +457,7 @@ class AppConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 
   /// Output only. A unique identifier for the instance generated by the
   /// system.
@@ -485,33 +471,33 @@ class AppConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasUid() => $_has(5);
   @$pb.TagNumber(6)
-  void clearUid() => clearField(6);
+  void clearUid() => $_clearField(6);
 
   /// Output only. The current state of the AppConnector.
   @$pb.TagNumber(7)
   AppConnector_State get state => $_getN(6);
   @$pb.TagNumber(7)
   set state(AppConnector_State v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(7)
-  void clearState() => clearField(7);
+  void clearState() => $_clearField(7);
 
   /// Required. Principal information about the Identity of the AppConnector.
   @$pb.TagNumber(8)
   AppConnector_PrincipalInfo get principalInfo => $_getN(7);
   @$pb.TagNumber(8)
   set principalInfo(AppConnector_PrincipalInfo v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasPrincipalInfo() => $_has(7);
   @$pb.TagNumber(8)
-  void clearPrincipalInfo() => clearField(8);
+  void clearPrincipalInfo() => $_clearField(8);
   @$pb.TagNumber(8)
   AppConnector_PrincipalInfo ensurePrincipalInfo() => $_ensure(7);
 
@@ -520,13 +506,13 @@ class AppConnector extends $pb.GeneratedMessage {
   ResourceInfo get resourceInfo => $_getN(8);
   @$pb.TagNumber(11)
   set resourceInfo(ResourceInfo v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasResourceInfo() => $_has(8);
   @$pb.TagNumber(11)
-  void clearResourceInfo() => clearField(11);
+  void clearResourceInfo() => $_clearField(11);
   @$pb.TagNumber(11)
   ResourceInfo ensureResourceInfo() => $_ensure(8);
 }
@@ -560,14 +546,10 @@ class AppConnectorEventData extends $pb.GeneratedMessage {
         subBuilder: AppConnector.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnectorEventData clone() =>
       AppConnectorEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppConnectorEventData copyWith(
           void Function(AppConnectorEventData) updates) =>
       super.copyWith((message) => updates(message as AppConnectorEventData))
@@ -590,13 +572,13 @@ class AppConnectorEventData extends $pb.GeneratedMessage {
   AppConnector get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(AppConnector v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   AppConnector ensurePayload() => $_ensure(0);
 }

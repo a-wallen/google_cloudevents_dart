@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/networkmanagement/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,22 +15,24 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../rpc/status.pb.dart' as $19;
+import '../../../../rpc/status.pb.dart' as $9;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
-///  Trace represents one simulated packet forwarding path.
+/// Trace represents one simulated packet forwarding path.
 ///
-///    * Each trace contains multiple ordered steps.
-///    * Each step is in a particular state with associated configuration.
-///    * State is categorized as final or non-final states.
-///    * Each final state has a reason associated.
-///    * Each trace must end with a final state (the last step).
-///  ```
-///    |---------------------Trace----------------------|
-///    Step1(State) Step2(State) ---  StepN(State(final))
-///  ```
+///   * Each trace contains multiple ordered steps.
+///   * Each step is in a particular state with associated configuration.
+///   * State is categorized as final or non-final states.
+///   * Each final state has a reason associated.
+///   * Each trace must end with a final state (the last step).
+/// ```
+///   |---------------------Trace----------------------|
+///   Step1(State) Step2(State) ---  StepN(State(final))
+/// ```
 class Trace extends $pb.GeneratedMessage {
   factory Trace({
     EndpointInfo? endpointInfo,
@@ -64,13 +66,9 @@ class Trace extends $pb.GeneratedMessage {
         subBuilder: Step.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Trace clone() => Trace()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Trace copyWith(void Function(Trace) updates) =>
       super.copyWith((message) => updates(message as Trace)) as Trace;
 
@@ -93,24 +91,24 @@ class Trace extends $pb.GeneratedMessage {
   EndpointInfo get endpointInfo => $_getN(0);
   @$pb.TagNumber(1)
   set endpointInfo(EndpointInfo v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasEndpointInfo() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEndpointInfo() => clearField(1);
+  void clearEndpointInfo() => $_clearField(1);
   @$pb.TagNumber(1)
   EndpointInfo ensureEndpointInfo() => $_ensure(0);
 
-  ///  A trace of a test contains multiple steps from the initial state to the
-  ///  final state (delivered, dropped, forwarded, or aborted).
+  /// A trace of a test contains multiple steps from the initial state to the
+  /// final state (delivered, dropped, forwarded, or aborted).
   ///
-  ///  The steps are ordered by the processing sequence within the simulated
-  ///  network state machine. It is critical to preserve the order of the steps
-  ///  and avoid reordering or sorting them.
+  /// The steps are ordered by the processing sequence within the simulated
+  /// network state machine. It is critical to preserve the order of the steps
+  /// and avoid reordering or sorting them.
   @$pb.TagNumber(2)
-  $core.List<Step> get steps => $_getList(1);
+  $pb.PbList<Step> get steps => $_getList(1);
 }
 
 enum Step_StepInfo {
@@ -348,13 +346,9 @@ class Step extends $pb.GeneratedMessage {
         subBuilder: GoogleServiceInfo.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Step clone() => Step()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Step copyWith(void Function(Step) updates) =>
       super.copyWith((message) => updates(message as Step)) as Step;
 
@@ -370,7 +364,7 @@ class Step extends $pb.GeneratedMessage {
   static Step? _defaultInstance;
 
   Step_StepInfo whichStepInfo() => _Step_StepInfoByTag[$_whichOneof(0)]!;
-  void clearStepInfo() => clearField($_whichOneof(0));
+  void clearStepInfo() => $_clearField($_whichOneof(0));
 
   /// A description of the step. Usually this is a summary of the state.
   @$pb.TagNumber(1)
@@ -383,20 +377,20 @@ class Step extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDescription() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDescription() => clearField(1);
+  void clearDescription() => $_clearField(1);
 
   /// Each step is in one of the pre-defined states.
   @$pb.TagNumber(2)
   Step_State get state => $_getN(1);
   @$pb.TagNumber(2)
   set state(Step_State v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
-  void clearState() => clearField(2);
+  void clearState() => $_clearField(2);
 
   /// This is a step that leads to the final state Drop.
   @$pb.TagNumber(3)
@@ -409,7 +403,7 @@ class Step extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasCausesDrop() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCausesDrop() => clearField(3);
+  void clearCausesDrop() => $_clearField(3);
 
   /// Project ID that contains the configuration this step is validating.
   @$pb.TagNumber(4)
@@ -422,20 +416,20 @@ class Step extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasProjectId() => $_has(3);
   @$pb.TagNumber(4)
-  void clearProjectId() => clearField(4);
+  void clearProjectId() => $_clearField(4);
 
   /// Display information of a Compute Engine instance.
   @$pb.TagNumber(5)
   InstanceInfo get instance => $_getN(4);
   @$pb.TagNumber(5)
   set instance(InstanceInfo v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasInstance() => $_has(4);
   @$pb.TagNumber(5)
-  void clearInstance() => clearField(5);
+  void clearInstance() => $_clearField(5);
   @$pb.TagNumber(5)
   InstanceInfo ensureInstance() => $_ensure(4);
 
@@ -444,13 +438,13 @@ class Step extends $pb.GeneratedMessage {
   FirewallInfo get firewall => $_getN(5);
   @$pb.TagNumber(6)
   set firewall(FirewallInfo v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasFirewall() => $_has(5);
   @$pb.TagNumber(6)
-  void clearFirewall() => clearField(6);
+  void clearFirewall() => $_clearField(6);
   @$pb.TagNumber(6)
   FirewallInfo ensureFirewall() => $_ensure(5);
 
@@ -459,13 +453,13 @@ class Step extends $pb.GeneratedMessage {
   RouteInfo get route => $_getN(6);
   @$pb.TagNumber(7)
   set route(RouteInfo v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasRoute() => $_has(6);
   @$pb.TagNumber(7)
-  void clearRoute() => clearField(7);
+  void clearRoute() => $_clearField(7);
   @$pb.TagNumber(7)
   RouteInfo ensureRoute() => $_ensure(6);
 
@@ -477,13 +471,13 @@ class Step extends $pb.GeneratedMessage {
   EndpointInfo get endpoint => $_getN(7);
   @$pb.TagNumber(8)
   set endpoint(EndpointInfo v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasEndpoint() => $_has(7);
   @$pb.TagNumber(8)
-  void clearEndpoint() => clearField(8);
+  void clearEndpoint() => $_clearField(8);
   @$pb.TagNumber(8)
   EndpointInfo ensureEndpoint() => $_ensure(7);
 
@@ -492,13 +486,13 @@ class Step extends $pb.GeneratedMessage {
   ForwardingRuleInfo get forwardingRule => $_getN(8);
   @$pb.TagNumber(9)
   set forwardingRule(ForwardingRuleInfo v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasForwardingRule() => $_has(8);
   @$pb.TagNumber(9)
-  void clearForwardingRule() => clearField(9);
+  void clearForwardingRule() => $_clearField(9);
   @$pb.TagNumber(9)
   ForwardingRuleInfo ensureForwardingRule() => $_ensure(8);
 
@@ -507,13 +501,13 @@ class Step extends $pb.GeneratedMessage {
   VpnGatewayInfo get vpnGateway => $_getN(9);
   @$pb.TagNumber(10)
   set vpnGateway(VpnGatewayInfo v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasVpnGateway() => $_has(9);
   @$pb.TagNumber(10)
-  void clearVpnGateway() => clearField(10);
+  void clearVpnGateway() => $_clearField(10);
   @$pb.TagNumber(10)
   VpnGatewayInfo ensureVpnGateway() => $_ensure(9);
 
@@ -522,13 +516,13 @@ class Step extends $pb.GeneratedMessage {
   VpnTunnelInfo get vpnTunnel => $_getN(10);
   @$pb.TagNumber(11)
   set vpnTunnel(VpnTunnelInfo v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasVpnTunnel() => $_has(10);
   @$pb.TagNumber(11)
-  void clearVpnTunnel() => clearField(11);
+  void clearVpnTunnel() => $_clearField(11);
   @$pb.TagNumber(11)
   VpnTunnelInfo ensureVpnTunnel() => $_ensure(10);
 
@@ -537,13 +531,13 @@ class Step extends $pb.GeneratedMessage {
   DeliverInfo get deliver => $_getN(11);
   @$pb.TagNumber(12)
   set deliver(DeliverInfo v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasDeliver() => $_has(11);
   @$pb.TagNumber(12)
-  void clearDeliver() => clearField(12);
+  void clearDeliver() => $_clearField(12);
   @$pb.TagNumber(12)
   DeliverInfo ensureDeliver() => $_ensure(11);
 
@@ -552,13 +546,13 @@ class Step extends $pb.GeneratedMessage {
   ForwardInfo get forward => $_getN(12);
   @$pb.TagNumber(13)
   set forward(ForwardInfo v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasForward() => $_has(12);
   @$pb.TagNumber(13)
-  void clearForward() => clearField(13);
+  void clearForward() => $_clearField(13);
   @$pb.TagNumber(13)
   ForwardInfo ensureForward() => $_ensure(12);
 
@@ -567,13 +561,13 @@ class Step extends $pb.GeneratedMessage {
   AbortInfo get abort => $_getN(13);
   @$pb.TagNumber(14)
   set abort(AbortInfo v) {
-    setField(14, v);
+    $_setField(14, v);
   }
 
   @$pb.TagNumber(14)
   $core.bool hasAbort() => $_has(13);
   @$pb.TagNumber(14)
-  void clearAbort() => clearField(14);
+  void clearAbort() => $_clearField(14);
   @$pb.TagNumber(14)
   AbortInfo ensureAbort() => $_ensure(13);
 
@@ -582,13 +576,13 @@ class Step extends $pb.GeneratedMessage {
   DropInfo get drop => $_getN(14);
   @$pb.TagNumber(15)
   set drop(DropInfo v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasDrop() => $_has(14);
   @$pb.TagNumber(15)
-  void clearDrop() => clearField(15);
+  void clearDrop() => $_clearField(15);
   @$pb.TagNumber(15)
   DropInfo ensureDrop() => $_ensure(14);
 
@@ -597,13 +591,13 @@ class Step extends $pb.GeneratedMessage {
   LoadBalancerInfo get loadBalancer => $_getN(15);
   @$pb.TagNumber(16)
   set loadBalancer(LoadBalancerInfo v) {
-    setField(16, v);
+    $_setField(16, v);
   }
 
   @$pb.TagNumber(16)
   $core.bool hasLoadBalancer() => $_has(15);
   @$pb.TagNumber(16)
-  void clearLoadBalancer() => clearField(16);
+  void clearLoadBalancer() => $_clearField(16);
   @$pb.TagNumber(16)
   LoadBalancerInfo ensureLoadBalancer() => $_ensure(15);
 
@@ -612,13 +606,13 @@ class Step extends $pb.GeneratedMessage {
   NetworkInfo get network => $_getN(16);
   @$pb.TagNumber(17)
   set network(NetworkInfo v) {
-    setField(17, v);
+    $_setField(17, v);
   }
 
   @$pb.TagNumber(17)
   $core.bool hasNetwork() => $_has(16);
   @$pb.TagNumber(17)
-  void clearNetwork() => clearField(17);
+  void clearNetwork() => $_clearField(17);
   @$pb.TagNumber(17)
   NetworkInfo ensureNetwork() => $_ensure(16);
 
@@ -627,13 +621,13 @@ class Step extends $pb.GeneratedMessage {
   GKEMasterInfo get gkeMaster => $_getN(17);
   @$pb.TagNumber(18)
   set gkeMaster(GKEMasterInfo v) {
-    setField(18, v);
+    $_setField(18, v);
   }
 
   @$pb.TagNumber(18)
   $core.bool hasGkeMaster() => $_has(17);
   @$pb.TagNumber(18)
-  void clearGkeMaster() => clearField(18);
+  void clearGkeMaster() => $_clearField(18);
   @$pb.TagNumber(18)
   GKEMasterInfo ensureGkeMaster() => $_ensure(17);
 
@@ -642,13 +636,13 @@ class Step extends $pb.GeneratedMessage {
   CloudSQLInstanceInfo get cloudSqlInstance => $_getN(18);
   @$pb.TagNumber(19)
   set cloudSqlInstance(CloudSQLInstanceInfo v) {
-    setField(19, v);
+    $_setField(19, v);
   }
 
   @$pb.TagNumber(19)
   $core.bool hasCloudSqlInstance() => $_has(18);
   @$pb.TagNumber(19)
-  void clearCloudSqlInstance() => clearField(19);
+  void clearCloudSqlInstance() => $_clearField(19);
   @$pb.TagNumber(19)
   CloudSQLInstanceInfo ensureCloudSqlInstance() => $_ensure(18);
 
@@ -657,13 +651,13 @@ class Step extends $pb.GeneratedMessage {
   CloudFunctionInfo get cloudFunction => $_getN(19);
   @$pb.TagNumber(20)
   set cloudFunction(CloudFunctionInfo v) {
-    setField(20, v);
+    $_setField(20, v);
   }
 
   @$pb.TagNumber(20)
   $core.bool hasCloudFunction() => $_has(19);
   @$pb.TagNumber(20)
-  void clearCloudFunction() => clearField(20);
+  void clearCloudFunction() => $_clearField(20);
   @$pb.TagNumber(20)
   CloudFunctionInfo ensureCloudFunction() => $_ensure(19);
 
@@ -672,13 +666,13 @@ class Step extends $pb.GeneratedMessage {
   VpcConnectorInfo get vpcConnector => $_getN(20);
   @$pb.TagNumber(21)
   set vpcConnector(VpcConnectorInfo v) {
-    setField(21, v);
+    $_setField(21, v);
   }
 
   @$pb.TagNumber(21)
   $core.bool hasVpcConnector() => $_has(20);
   @$pb.TagNumber(21)
-  void clearVpcConnector() => clearField(21);
+  void clearVpcConnector() => $_clearField(21);
   @$pb.TagNumber(21)
   VpcConnectorInfo ensureVpcConnector() => $_ensure(20);
 
@@ -687,13 +681,13 @@ class Step extends $pb.GeneratedMessage {
   AppEngineVersionInfo get appEngineVersion => $_getN(21);
   @$pb.TagNumber(22)
   set appEngineVersion(AppEngineVersionInfo v) {
-    setField(22, v);
+    $_setField(22, v);
   }
 
   @$pb.TagNumber(22)
   $core.bool hasAppEngineVersion() => $_has(21);
   @$pb.TagNumber(22)
-  void clearAppEngineVersion() => clearField(22);
+  void clearAppEngineVersion() => $_clearField(22);
   @$pb.TagNumber(22)
   AppEngineVersionInfo ensureAppEngineVersion() => $_ensure(21);
 
@@ -702,13 +696,13 @@ class Step extends $pb.GeneratedMessage {
   CloudRunRevisionInfo get cloudRunRevision => $_getN(22);
   @$pb.TagNumber(23)
   set cloudRunRevision(CloudRunRevisionInfo v) {
-    setField(23, v);
+    $_setField(23, v);
   }
 
   @$pb.TagNumber(23)
   $core.bool hasCloudRunRevision() => $_has(22);
   @$pb.TagNumber(23)
-  void clearCloudRunRevision() => clearField(23);
+  void clearCloudRunRevision() => $_clearField(23);
   @$pb.TagNumber(23)
   CloudRunRevisionInfo ensureCloudRunRevision() => $_ensure(22);
 
@@ -717,13 +711,13 @@ class Step extends $pb.GeneratedMessage {
   GoogleServiceInfo get googleService => $_getN(23);
   @$pb.TagNumber(24)
   set googleService(GoogleServiceInfo v) {
-    setField(24, v);
+    $_setField(24, v);
   }
 
   @$pb.TagNumber(24)
   $core.bool hasGoogleService() => $_has(23);
   @$pb.TagNumber(24)
-  void clearGoogleService() => clearField(24);
+  void clearGoogleService() => $_clearField(24);
   @$pb.TagNumber(24)
   GoogleServiceInfo ensureGoogleService() => $_ensure(23);
 }
@@ -790,13 +784,9 @@ class InstanceInfo extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'serviceAccount')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceInfo clone() => InstanceInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceInfo copyWith(void Function(InstanceInfo) updates) =>
       super.copyWith((message) => updates(message as InstanceInfo))
           as InstanceInfo;
@@ -824,7 +814,7 @@ class InstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of a Compute Engine instance.
   @$pb.TagNumber(2)
@@ -837,7 +827,7 @@ class InstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// Name of the network interface of a Compute Engine instance.
   @$pb.TagNumber(3)
@@ -850,7 +840,7 @@ class InstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasInterface() => $_has(2);
   @$pb.TagNumber(3)
-  void clearInterface() => clearField(3);
+  void clearInterface() => $_clearField(3);
 
   /// URI of a Compute Engine network.
   @$pb.TagNumber(4)
@@ -863,7 +853,7 @@ class InstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasNetworkUri() => $_has(3);
   @$pb.TagNumber(4)
-  void clearNetworkUri() => clearField(4);
+  void clearNetworkUri() => $_clearField(4);
 
   /// Internal IP address of the network interface.
   @$pb.TagNumber(5)
@@ -876,7 +866,7 @@ class InstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasInternalIp() => $_has(4);
   @$pb.TagNumber(5)
-  void clearInternalIp() => clearField(5);
+  void clearInternalIp() => $_clearField(5);
 
   /// External IP address of the network interface.
   @$pb.TagNumber(6)
@@ -889,11 +879,11 @@ class InstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasExternalIp() => $_has(5);
   @$pb.TagNumber(6)
-  void clearExternalIp() => clearField(6);
+  void clearExternalIp() => $_clearField(6);
 
   /// Network tags configured on the instance.
   @$pb.TagNumber(7)
-  $core.List<$core.String> get networkTags => $_getList(6);
+  $pb.PbList<$core.String> get networkTags => $_getList(6);
 
   /// Service account authorized for the instance.
   @$pb.TagNumber(8)
@@ -906,7 +896,7 @@ class InstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasServiceAccount() => $_has(7);
   @$pb.TagNumber(8)
-  void clearServiceAccount() => clearField(8);
+  void clearServiceAccount() => $_clearField(8);
 }
 
 /// For display only. Metadata associated with a Compute Engine network.
@@ -946,13 +936,9 @@ class NetworkInfo extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'matchedIpRange')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkInfo clone() => NetworkInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkInfo copyWith(void Function(NetworkInfo) updates) =>
       super.copyWith((message) => updates(message as NetworkInfo))
           as NetworkInfo;
@@ -979,7 +965,7 @@ class NetworkInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of a Compute Engine network.
   @$pb.TagNumber(2)
@@ -992,7 +978,7 @@ class NetworkInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// The IP range that matches the test.
   @$pb.TagNumber(4)
@@ -1005,7 +991,7 @@ class NetworkInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasMatchedIpRange() => $_has(2);
   @$pb.TagNumber(4)
-  void clearMatchedIpRange() => clearField(4);
+  void clearMatchedIpRange() => $_clearField(4);
 }
 
 /// For display only. Metadata associated with a VPC firewall rule, an implied
@@ -1086,13 +1072,9 @@ class FirewallInfo extends $pb.GeneratedMessage {
         enumValues: FirewallInfo_FirewallRuleType.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FirewallInfo clone() => FirewallInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FirewallInfo copyWith(void Function(FirewallInfo) updates) =>
       super.copyWith((message) => updates(message as FirewallInfo))
           as FirewallInfo;
@@ -1121,7 +1103,7 @@ class FirewallInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// The URI of the VPC firewall rule. This field is not applicable to
   /// implied firewall rules or hierarchical firewall policy rules.
@@ -1135,7 +1117,7 @@ class FirewallInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// Possible values: INGRESS, EGRESS
   @$pb.TagNumber(3)
@@ -1148,7 +1130,7 @@ class FirewallInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDirection() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDirection() => clearField(3);
+  void clearDirection() => $_clearField(3);
 
   /// Possible values: ALLOW, DENY
   @$pb.TagNumber(4)
@@ -1161,7 +1143,7 @@ class FirewallInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasAction() => $_has(3);
   @$pb.TagNumber(4)
-  void clearAction() => clearField(4);
+  void clearAction() => $_clearField(4);
 
   /// The priority of the firewall rule.
   @$pb.TagNumber(5)
@@ -1174,7 +1156,7 @@ class FirewallInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasPriority() => $_has(4);
   @$pb.TagNumber(5)
-  void clearPriority() => clearField(5);
+  void clearPriority() => $_clearField(5);
 
   /// The URI of the VPC network that the firewall rule is associated with.
   /// This field is not applicable to hierarchical firewall policy rules.
@@ -1188,16 +1170,16 @@ class FirewallInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasNetworkUri() => $_has(5);
   @$pb.TagNumber(6)
-  void clearNetworkUri() => clearField(6);
+  void clearNetworkUri() => $_clearField(6);
 
   /// The target tags defined by the VPC firewall rule. This field is not
   /// applicable to hierarchical firewall policy rules.
   @$pb.TagNumber(7)
-  $core.List<$core.String> get targetTags => $_getList(6);
+  $pb.PbList<$core.String> get targetTags => $_getList(6);
 
   /// The target service accounts specified by the firewall rule.
   @$pb.TagNumber(8)
-  $core.List<$core.String> get targetServiceAccounts => $_getList(7);
+  $pb.PbList<$core.String> get targetServiceAccounts => $_getList(7);
 
   /// The hierarchical firewall policy that this rule is associated with.
   /// This field is not applicable to VPC firewall rules.
@@ -1211,20 +1193,20 @@ class FirewallInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasPolicy() => $_has(8);
   @$pb.TagNumber(9)
-  void clearPolicy() => clearField(9);
+  void clearPolicy() => $_clearField(9);
 
   /// The firewall rule's type.
   @$pb.TagNumber(10)
   FirewallInfo_FirewallRuleType get firewallRuleType => $_getN(9);
   @$pb.TagNumber(10)
   set firewallRuleType(FirewallInfo_FirewallRuleType v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasFirewallRuleType() => $_has(9);
   @$pb.TagNumber(10)
-  void clearFirewallRuleType() => clearField(10);
+  void clearFirewallRuleType() => $_clearField(10);
 }
 
 /// For display only. Metadata associated with a Compute Engine route.
@@ -1322,13 +1304,9 @@ class RouteInfo extends $pb.GeneratedMessage {
     ..pPS(13, _omitFieldNames ? '' : 'protocols')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RouteInfo clone() => RouteInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RouteInfo copyWith(void Function(RouteInfo) updates) =>
       super.copyWith((message) => updates(message as RouteInfo)) as RouteInfo;
 
@@ -1354,7 +1332,7 @@ class RouteInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of a Compute Engine route.
   /// Dynamic route from cloud router does not have a URI.
@@ -1370,7 +1348,7 @@ class RouteInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// Destination IP range of the route.
   @$pb.TagNumber(3)
@@ -1383,7 +1361,7 @@ class RouteInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDestIpRange() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDestIpRange() => clearField(3);
+  void clearDestIpRange() => $_clearField(3);
 
   /// Next hop of the route.
   @$pb.TagNumber(4)
@@ -1396,7 +1374,7 @@ class RouteInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasNextHop() => $_has(3);
   @$pb.TagNumber(4)
-  void clearNextHop() => clearField(4);
+  void clearNextHop() => $_clearField(4);
 
   /// URI of a Compute Engine network.
   @$pb.TagNumber(5)
@@ -1409,7 +1387,7 @@ class RouteInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasNetworkUri() => $_has(4);
   @$pb.TagNumber(5)
-  void clearNetworkUri() => clearField(5);
+  void clearNetworkUri() => $_clearField(5);
 
   /// Priority of the route.
   @$pb.TagNumber(6)
@@ -1422,37 +1400,37 @@ class RouteInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasPriority() => $_has(5);
   @$pb.TagNumber(6)
-  void clearPriority() => clearField(6);
+  void clearPriority() => $_clearField(6);
 
   /// Instance tags of the route.
   @$pb.TagNumber(7)
-  $core.List<$core.String> get instanceTags => $_getList(6);
+  $pb.PbList<$core.String> get instanceTags => $_getList(6);
 
   /// Type of route.
   @$pb.TagNumber(8)
   RouteInfo_RouteType get routeType => $_getN(7);
   @$pb.TagNumber(8)
   set routeType(RouteInfo_RouteType v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasRouteType() => $_has(7);
   @$pb.TagNumber(8)
-  void clearRouteType() => clearField(8);
+  void clearRouteType() => $_clearField(8);
 
   /// Type of next hop.
   @$pb.TagNumber(9)
   RouteInfo_NextHopType get nextHopType => $_getN(8);
   @$pb.TagNumber(9)
   set nextHopType(RouteInfo_NextHopType v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasNextHopType() => $_has(8);
   @$pb.TagNumber(9)
-  void clearNextHopType() => clearField(9);
+  void clearNextHopType() => $_clearField(9);
 
   /// Source IP address range of the route. Policy based routes only.
   @$pb.TagNumber(10)
@@ -1465,19 +1443,19 @@ class RouteInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasSrcIpRange() => $_has(9);
   @$pb.TagNumber(10)
-  void clearSrcIpRange() => clearField(10);
+  void clearSrcIpRange() => $_clearField(10);
 
   /// Destination port ranges of the route. Policy based routes only.
   @$pb.TagNumber(11)
-  $core.List<$core.String> get destPortRanges => $_getList(10);
+  $pb.PbList<$core.String> get destPortRanges => $_getList(10);
 
   /// Source port ranges of the route. Policy based routes only.
   @$pb.TagNumber(12)
-  $core.List<$core.String> get srcPortRanges => $_getList(11);
+  $pb.PbList<$core.String> get srcPortRanges => $_getList(11);
 
   /// Protocols of the route. Policy based routes only.
   @$pb.TagNumber(13)
-  $core.List<$core.String> get protocols => $_getList(12);
+  $pb.PbList<$core.String> get protocols => $_getList(12);
 }
 
 /// For display only. Details of a Google Service sending packets to a
@@ -1521,13 +1499,9 @@ class GoogleServiceInfo extends $pb.GeneratedMessage {
         enumValues: GoogleServiceInfo_GoogleServiceType.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GoogleServiceInfo clone() => GoogleServiceInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GoogleServiceInfo copyWith(void Function(GoogleServiceInfo) updates) =>
       super.copyWith((message) => updates(message as GoogleServiceInfo))
           as GoogleServiceInfo;
@@ -1555,20 +1529,20 @@ class GoogleServiceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSourceIp() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSourceIp() => clearField(1);
+  void clearSourceIp() => $_clearField(1);
 
   /// Recognized type of a Google Service.
   @$pb.TagNumber(2)
   GoogleServiceInfo_GoogleServiceType get googleServiceType => $_getN(1);
   @$pb.TagNumber(2)
   set googleServiceType(GoogleServiceInfo_GoogleServiceType v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasGoogleServiceType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearGoogleServiceType() => clearField(2);
+  void clearGoogleServiceType() => $_clearField(2);
 }
 
 /// For display only. Metadata associated with a Compute Engine forwarding rule.
@@ -1628,13 +1602,9 @@ class ForwardingRuleInfo extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'networkUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ForwardingRuleInfo clone() => ForwardingRuleInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ForwardingRuleInfo copyWith(void Function(ForwardingRuleInfo) updates) =>
       super.copyWith((message) => updates(message as ForwardingRuleInfo))
           as ForwardingRuleInfo;
@@ -1662,7 +1632,7 @@ class ForwardingRuleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of a Compute Engine forwarding rule.
   @$pb.TagNumber(2)
@@ -1675,7 +1645,7 @@ class ForwardingRuleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// Protocol defined in the forwarding rule that matches the test.
   @$pb.TagNumber(3)
@@ -1688,7 +1658,7 @@ class ForwardingRuleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMatchedProtocol() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMatchedProtocol() => clearField(3);
+  void clearMatchedProtocol() => $_clearField(3);
 
   /// VIP of the forwarding rule.
   @$pb.TagNumber(4)
@@ -1701,7 +1671,7 @@ class ForwardingRuleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasVip() => $_has(3);
   @$pb.TagNumber(4)
-  void clearVip() => clearField(4);
+  void clearVip() => $_clearField(4);
 
   /// Target type of the forwarding rule.
   @$pb.TagNumber(5)
@@ -1714,7 +1684,7 @@ class ForwardingRuleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasTarget() => $_has(4);
   @$pb.TagNumber(5)
-  void clearTarget() => clearField(5);
+  void clearTarget() => $_clearField(5);
 
   /// Port range defined in the forwarding rule that matches the test.
   @$pb.TagNumber(6)
@@ -1727,7 +1697,7 @@ class ForwardingRuleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasMatchedPortRange() => $_has(5);
   @$pb.TagNumber(6)
-  void clearMatchedPortRange() => clearField(6);
+  void clearMatchedPortRange() => $_clearField(6);
 
   /// Network URI. Only valid for Internal Load Balancer.
   @$pb.TagNumber(7)
@@ -1740,7 +1710,7 @@ class ForwardingRuleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasNetworkUri() => $_has(6);
   @$pb.TagNumber(7)
-  void clearNetworkUri() => clearField(7);
+  void clearNetworkUri() => $_clearField(7);
 }
 
 /// For display only. Metadata associated with a load balancer.
@@ -1801,13 +1771,9 @@ class LoadBalancerInfo extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'backendUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LoadBalancerInfo clone() => LoadBalancerInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LoadBalancerInfo copyWith(void Function(LoadBalancerInfo) updates) =>
       super.copyWith((message) => updates(message as LoadBalancerInfo))
           as LoadBalancerInfo;
@@ -1829,13 +1795,13 @@ class LoadBalancerInfo extends $pb.GeneratedMessage {
   LoadBalancerInfo_LoadBalancerType get loadBalancerType => $_getN(0);
   @$pb.TagNumber(1)
   set loadBalancerType(LoadBalancerInfo_LoadBalancerType v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasLoadBalancerType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearLoadBalancerType() => clearField(1);
+  void clearLoadBalancerType() => $_clearField(1);
 
   /// URI of the health check for the load balancer.
   @$pb.TagNumber(2)
@@ -1848,24 +1814,24 @@ class LoadBalancerInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasHealthCheckUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearHealthCheckUri() => clearField(2);
+  void clearHealthCheckUri() => $_clearField(2);
 
   /// Information for the loadbalancer backends.
   @$pb.TagNumber(3)
-  $core.List<LoadBalancerBackend> get backends => $_getList(2);
+  $pb.PbList<LoadBalancerBackend> get backends => $_getList(2);
 
   /// Type of load balancer's backend configuration.
   @$pb.TagNumber(4)
   LoadBalancerInfo_BackendType get backendType => $_getN(3);
   @$pb.TagNumber(4)
   set backendType(LoadBalancerInfo_BackendType v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasBackendType() => $_has(3);
   @$pb.TagNumber(4)
-  void clearBackendType() => clearField(4);
+  void clearBackendType() => $_clearField(4);
 
   /// Backend configuration URI.
   @$pb.TagNumber(5)
@@ -1878,7 +1844,7 @@ class LoadBalancerInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasBackendUri() => $_has(4);
   @$pb.TagNumber(5)
-  void clearBackendUri() => clearField(5);
+  void clearBackendUri() => $_clearField(5);
 }
 
 /// For display only. Metadata associated with a specific load balancer backend.
@@ -1935,13 +1901,9 @@ class LoadBalancerBackend extends $pb.GeneratedMessage {
     ..pPS(5, _omitFieldNames ? '' : 'healthCheckBlockingFirewallRules')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LoadBalancerBackend clone() => LoadBalancerBackend()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LoadBalancerBackend copyWith(void Function(LoadBalancerBackend) updates) =>
       super.copyWith((message) => updates(message as LoadBalancerBackend))
           as LoadBalancerBackend;
@@ -1969,7 +1931,7 @@ class LoadBalancerBackend extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of a Compute Engine instance or network endpoint.
   @$pb.TagNumber(2)
@@ -1982,7 +1944,7 @@ class LoadBalancerBackend extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// State of the health check firewall configuration.
   @$pb.TagNumber(3)
@@ -1990,21 +1952,21 @@ class LoadBalancerBackend extends $pb.GeneratedMessage {
       $_getN(2);
   @$pb.TagNumber(3)
   set healthCheckFirewallState(LoadBalancerBackend_HealthCheckFirewallState v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasHealthCheckFirewallState() => $_has(2);
   @$pb.TagNumber(3)
-  void clearHealthCheckFirewallState() => clearField(3);
+  void clearHealthCheckFirewallState() => $_clearField(3);
 
   /// A list of firewall rule URIs allowing probes from health check IP ranges.
   @$pb.TagNumber(4)
-  $core.List<$core.String> get healthCheckAllowingFirewallRules => $_getList(3);
+  $pb.PbList<$core.String> get healthCheckAllowingFirewallRules => $_getList(3);
 
   /// A list of firewall rule URIs blocking probes from health check IP ranges.
   @$pb.TagNumber(5)
-  $core.List<$core.String> get healthCheckBlockingFirewallRules => $_getList(4);
+  $pb.PbList<$core.String> get healthCheckBlockingFirewallRules => $_getList(4);
 }
 
 /// For display only. Metadata associated with a Compute Engine VPN gateway.
@@ -2059,13 +2021,9 @@ class VpnGatewayInfo extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'region')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VpnGatewayInfo clone() => VpnGatewayInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VpnGatewayInfo copyWith(void Function(VpnGatewayInfo) updates) =>
       super.copyWith((message) => updates(message as VpnGatewayInfo))
           as VpnGatewayInfo;
@@ -2093,7 +2051,7 @@ class VpnGatewayInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of a VPN gateway.
   @$pb.TagNumber(2)
@@ -2106,7 +2064,7 @@ class VpnGatewayInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// URI of a Compute Engine network where the VPN gateway is configured.
   @$pb.TagNumber(3)
@@ -2119,7 +2077,7 @@ class VpnGatewayInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasNetworkUri() => $_has(2);
   @$pb.TagNumber(3)
-  void clearNetworkUri() => clearField(3);
+  void clearNetworkUri() => $_clearField(3);
 
   /// IP address of the VPN gateway.
   @$pb.TagNumber(4)
@@ -2132,7 +2090,7 @@ class VpnGatewayInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasIpAddress() => $_has(3);
   @$pb.TagNumber(4)
-  void clearIpAddress() => clearField(4);
+  void clearIpAddress() => $_clearField(4);
 
   /// A VPN tunnel that is associated with this VPN gateway.
   /// There may be multiple VPN tunnels configured on a VPN gateway, and only
@@ -2147,7 +2105,7 @@ class VpnGatewayInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasVpnTunnelUri() => $_has(4);
   @$pb.TagNumber(5)
-  void clearVpnTunnelUri() => clearField(5);
+  void clearVpnTunnelUri() => $_clearField(5);
 
   /// Name of a Google Cloud region where this VPN gateway is configured.
   @$pb.TagNumber(6)
@@ -2160,7 +2118,7 @@ class VpnGatewayInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasRegion() => $_has(5);
   @$pb.TagNumber(6)
-  void clearRegion() => clearField(6);
+  void clearRegion() => $_clearField(6);
 }
 
 /// For display only. Metadata associated with a Compute Engine VPN tunnel.
@@ -2234,13 +2192,9 @@ class VpnTunnelInfo extends $pb.GeneratedMessage {
         enumValues: VpnTunnelInfo_RoutingType.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VpnTunnelInfo clone() => VpnTunnelInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VpnTunnelInfo copyWith(void Function(VpnTunnelInfo) updates) =>
       super.copyWith((message) => updates(message as VpnTunnelInfo))
           as VpnTunnelInfo;
@@ -2268,7 +2222,7 @@ class VpnTunnelInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of a VPN tunnel.
   @$pb.TagNumber(2)
@@ -2281,7 +2235,7 @@ class VpnTunnelInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// URI of the VPN gateway at local end of the tunnel.
   @$pb.TagNumber(3)
@@ -2294,7 +2248,7 @@ class VpnTunnelInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasSourceGateway() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSourceGateway() => clearField(3);
+  void clearSourceGateway() => $_clearField(3);
 
   /// URI of a VPN gateway at remote end of the tunnel.
   @$pb.TagNumber(4)
@@ -2307,7 +2261,7 @@ class VpnTunnelInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasRemoteGateway() => $_has(3);
   @$pb.TagNumber(4)
-  void clearRemoteGateway() => clearField(4);
+  void clearRemoteGateway() => $_clearField(4);
 
   /// Remote VPN gateway's IP address.
   @$pb.TagNumber(5)
@@ -2320,7 +2274,7 @@ class VpnTunnelInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasRemoteGatewayIp() => $_has(4);
   @$pb.TagNumber(5)
-  void clearRemoteGatewayIp() => clearField(5);
+  void clearRemoteGatewayIp() => $_clearField(5);
 
   /// Local VPN gateway's IP address.
   @$pb.TagNumber(6)
@@ -2333,7 +2287,7 @@ class VpnTunnelInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasSourceGatewayIp() => $_has(5);
   @$pb.TagNumber(6)
-  void clearSourceGatewayIp() => clearField(6);
+  void clearSourceGatewayIp() => $_clearField(6);
 
   /// URI of a Compute Engine network where the VPN tunnel is configured.
   @$pb.TagNumber(7)
@@ -2346,7 +2300,7 @@ class VpnTunnelInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasNetworkUri() => $_has(6);
   @$pb.TagNumber(7)
-  void clearNetworkUri() => clearField(7);
+  void clearNetworkUri() => $_clearField(7);
 
   /// Name of a Google Cloud region where this VPN tunnel is configured.
   @$pb.TagNumber(8)
@@ -2359,20 +2313,20 @@ class VpnTunnelInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasRegion() => $_has(7);
   @$pb.TagNumber(8)
-  void clearRegion() => clearField(8);
+  void clearRegion() => $_clearField(8);
 
   /// Type of the routing policy.
   @$pb.TagNumber(9)
   VpnTunnelInfo_RoutingType get routingType => $_getN(8);
   @$pb.TagNumber(9)
   set routingType(VpnTunnelInfo_RoutingType v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasRoutingType() => $_has(8);
   @$pb.TagNumber(9)
-  void clearRoutingType() => clearField(9);
+  void clearRoutingType() => $_clearField(9);
 }
 
 /// For display only. The specification of the endpoints for the test.
@@ -2435,13 +2389,9 @@ class EndpointInfo extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'destinationNetworkUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointInfo clone() => EndpointInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointInfo copyWith(void Function(EndpointInfo) updates) =>
       super.copyWith((message) => updates(message as EndpointInfo))
           as EndpointInfo;
@@ -2469,7 +2419,7 @@ class EndpointInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSourceIp() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSourceIp() => clearField(1);
+  void clearSourceIp() => $_clearField(1);
 
   /// Destination IP address.
   @$pb.TagNumber(2)
@@ -2482,7 +2432,7 @@ class EndpointInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDestinationIp() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDestinationIp() => clearField(2);
+  void clearDestinationIp() => $_clearField(2);
 
   /// IP protocol in string format, for example: "TCP", "UDP", "ICMP".
   @$pb.TagNumber(3)
@@ -2495,7 +2445,7 @@ class EndpointInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasProtocol() => $_has(2);
   @$pb.TagNumber(3)
-  void clearProtocol() => clearField(3);
+  void clearProtocol() => $_clearField(3);
 
   /// Source port. Only valid when protocol is TCP or UDP.
   @$pb.TagNumber(4)
@@ -2508,7 +2458,7 @@ class EndpointInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasSourcePort() => $_has(3);
   @$pb.TagNumber(4)
-  void clearSourcePort() => clearField(4);
+  void clearSourcePort() => $_clearField(4);
 
   /// Destination port. Only valid when protocol is TCP or UDP.
   @$pb.TagNumber(5)
@@ -2521,7 +2471,7 @@ class EndpointInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDestinationPort() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDestinationPort() => clearField(5);
+  void clearDestinationPort() => $_clearField(5);
 
   /// URI of the network where this packet originates from.
   @$pb.TagNumber(6)
@@ -2534,7 +2484,7 @@ class EndpointInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasSourceNetworkUri() => $_has(5);
   @$pb.TagNumber(6)
-  void clearSourceNetworkUri() => clearField(6);
+  void clearSourceNetworkUri() => $_clearField(6);
 
   /// URI of the network where this packet is sent to.
   @$pb.TagNumber(7)
@@ -2547,7 +2497,7 @@ class EndpointInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasDestinationNetworkUri() => $_has(6);
   @$pb.TagNumber(7)
-  void clearDestinationNetworkUri() => clearField(7);
+  void clearDestinationNetworkUri() => $_clearField(7);
 }
 
 /// Details of the final state "deliver" and associated resource.
@@ -2586,13 +2536,9 @@ class DeliverInfo extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'resourceUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeliverInfo clone() => DeliverInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeliverInfo copyWith(void Function(DeliverInfo) updates) =>
       super.copyWith((message) => updates(message as DeliverInfo))
           as DeliverInfo;
@@ -2613,13 +2559,13 @@ class DeliverInfo extends $pb.GeneratedMessage {
   DeliverInfo_Target get target => $_getN(0);
   @$pb.TagNumber(1)
   set target(DeliverInfo_Target v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasTarget() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTarget() => clearField(1);
+  void clearTarget() => $_clearField(1);
 
   /// URI of the resource that the packet is delivered to.
   @$pb.TagNumber(2)
@@ -2632,7 +2578,7 @@ class DeliverInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasResourceUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearResourceUri() => clearField(2);
+  void clearResourceUri() => $_clearField(2);
 }
 
 /// Details of the final state "forward" and associated resource.
@@ -2671,13 +2617,9 @@ class ForwardInfo extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'resourceUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ForwardInfo clone() => ForwardInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ForwardInfo copyWith(void Function(ForwardInfo) updates) =>
       super.copyWith((message) => updates(message as ForwardInfo))
           as ForwardInfo;
@@ -2698,13 +2640,13 @@ class ForwardInfo extends $pb.GeneratedMessage {
   ForwardInfo_Target get target => $_getN(0);
   @$pb.TagNumber(1)
   set target(ForwardInfo_Target v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasTarget() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTarget() => clearField(1);
+  void clearTarget() => $_clearField(1);
 
   /// URI of the resource that the packet is forwarded to.
   @$pb.TagNumber(2)
@@ -2717,7 +2659,7 @@ class ForwardInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasResourceUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearResourceUri() => clearField(2);
+  void clearResourceUri() => $_clearField(2);
 }
 
 /// Details of the final state "abort" and associated resource.
@@ -2760,13 +2702,9 @@ class AbortInfo extends $pb.GeneratedMessage {
     ..pPS(3, _omitFieldNames ? '' : 'projectsMissingPermission')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AbortInfo clone() => AbortInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AbortInfo copyWith(void Function(AbortInfo) updates) =>
       super.copyWith((message) => updates(message as AbortInfo)) as AbortInfo;
 
@@ -2786,13 +2724,13 @@ class AbortInfo extends $pb.GeneratedMessage {
   AbortInfo_Cause get cause => $_getN(0);
   @$pb.TagNumber(1)
   set cause(AbortInfo_Cause v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCause() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCause() => clearField(1);
+  void clearCause() => $_clearField(1);
 
   /// URI of the resource that caused the abort.
   @$pb.TagNumber(2)
@@ -2805,13 +2743,13 @@ class AbortInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasResourceUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearResourceUri() => clearField(2);
+  void clearResourceUri() => $_clearField(2);
 
   /// List of project IDs that the user has specified in the request but does
   /// not have permission to access network configs. Analysis is aborted in this
   /// case with the PERMISSION_DENIED cause.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get projectsMissingPermission => $_getList(2);
+  $pb.PbList<$core.String> get projectsMissingPermission => $_getList(2);
 }
 
 /// Details of the final state "drop" and associated resource.
@@ -2849,13 +2787,9 @@ class DropInfo extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'resourceUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DropInfo clone() => DropInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DropInfo copyWith(void Function(DropInfo) updates) =>
       super.copyWith((message) => updates(message as DropInfo)) as DropInfo;
 
@@ -2875,13 +2809,13 @@ class DropInfo extends $pb.GeneratedMessage {
   DropInfo_Cause get cause => $_getN(0);
   @$pb.TagNumber(1)
   set cause(DropInfo_Cause v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCause() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCause() => clearField(1);
+  void clearCause() => $_clearField(1);
 
   /// URI of the resource that caused the drop.
   @$pb.TagNumber(2)
@@ -2894,7 +2828,7 @@ class DropInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasResourceUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearResourceUri() => clearField(2);
+  void clearResourceUri() => $_clearField(2);
 }
 
 /// For display only. Metadata associated with a Google Kubernetes Engine (GKE)
@@ -2940,13 +2874,9 @@ class GKEMasterInfo extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'externalIp')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GKEMasterInfo clone() => GKEMasterInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GKEMasterInfo copyWith(void Function(GKEMasterInfo) updates) =>
       super.copyWith((message) => updates(message as GKEMasterInfo))
           as GKEMasterInfo;
@@ -2974,7 +2904,7 @@ class GKEMasterInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasClusterUri() => $_has(0);
   @$pb.TagNumber(2)
-  void clearClusterUri() => clearField(2);
+  void clearClusterUri() => $_clearField(2);
 
   /// URI of a GKE cluster network.
   @$pb.TagNumber(4)
@@ -2987,7 +2917,7 @@ class GKEMasterInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasClusterNetworkUri() => $_has(1);
   @$pb.TagNumber(4)
-  void clearClusterNetworkUri() => clearField(4);
+  void clearClusterNetworkUri() => $_clearField(4);
 
   /// Internal IP address of a GKE cluster master.
   @$pb.TagNumber(5)
@@ -3000,7 +2930,7 @@ class GKEMasterInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasInternalIp() => $_has(2);
   @$pb.TagNumber(5)
-  void clearInternalIp() => clearField(5);
+  void clearInternalIp() => $_clearField(5);
 
   /// External IP address of a GKE cluster master.
   @$pb.TagNumber(6)
@@ -3013,7 +2943,7 @@ class GKEMasterInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasExternalIp() => $_has(3);
   @$pb.TagNumber(6)
-  void clearExternalIp() => clearField(6);
+  void clearExternalIp() => $_clearField(6);
 }
 
 /// For display only. Metadata associated with a Cloud SQL instance.
@@ -3068,14 +2998,10 @@ class CloudSQLInstanceInfo extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'region')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloudSQLInstanceInfo clone() =>
       CloudSQLInstanceInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloudSQLInstanceInfo copyWith(void Function(CloudSQLInstanceInfo) updates) =>
       super.copyWith((message) => updates(message as CloudSQLInstanceInfo))
           as CloudSQLInstanceInfo;
@@ -3103,7 +3029,7 @@ class CloudSQLInstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of a Cloud SQL instance.
   @$pb.TagNumber(2)
@@ -3116,7 +3042,7 @@ class CloudSQLInstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// URI of a Cloud SQL instance network or empty string if the instance does
   /// not have one.
@@ -3130,7 +3056,7 @@ class CloudSQLInstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasNetworkUri() => $_has(2);
   @$pb.TagNumber(4)
-  void clearNetworkUri() => clearField(4);
+  void clearNetworkUri() => $_clearField(4);
 
   /// Internal IP address of a Cloud SQL instance.
   @$pb.TagNumber(5)
@@ -3143,7 +3069,7 @@ class CloudSQLInstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasInternalIp() => $_has(3);
   @$pb.TagNumber(5)
-  void clearInternalIp() => clearField(5);
+  void clearInternalIp() => $_clearField(5);
 
   /// External IP address of a Cloud SQL instance.
   @$pb.TagNumber(6)
@@ -3156,7 +3082,7 @@ class CloudSQLInstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasExternalIp() => $_has(4);
   @$pb.TagNumber(6)
-  void clearExternalIp() => clearField(6);
+  void clearExternalIp() => $_clearField(6);
 
   /// Region in which the Cloud SQL instance is running.
   @$pb.TagNumber(7)
@@ -3169,7 +3095,7 @@ class CloudSQLInstanceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasRegion() => $_has(5);
   @$pb.TagNumber(7)
-  void clearRegion() => clearField(7);
+  void clearRegion() => $_clearField(7);
 }
 
 /// For display only. Metadata associated with a Cloud Function.
@@ -3214,13 +3140,9 @@ class CloudFunctionInfo extends $pb.GeneratedMessage {
     ..aInt64(4, _omitFieldNames ? '' : 'versionId')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloudFunctionInfo clone() => CloudFunctionInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloudFunctionInfo copyWith(void Function(CloudFunctionInfo) updates) =>
       super.copyWith((message) => updates(message as CloudFunctionInfo))
           as CloudFunctionInfo;
@@ -3248,7 +3170,7 @@ class CloudFunctionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of a Cloud Function.
   @$pb.TagNumber(2)
@@ -3261,7 +3183,7 @@ class CloudFunctionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// Location in which the Cloud Function is deployed.
   @$pb.TagNumber(3)
@@ -3274,7 +3196,7 @@ class CloudFunctionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasLocation() => $_has(2);
   @$pb.TagNumber(3)
-  void clearLocation() => clearField(3);
+  void clearLocation() => $_clearField(3);
 
   /// Latest successfully deployed version id of the Cloud Function.
   @$pb.TagNumber(4)
@@ -3287,7 +3209,7 @@ class CloudFunctionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasVersionId() => $_has(3);
   @$pb.TagNumber(4)
-  void clearVersionId() => clearField(4);
+  void clearVersionId() => $_clearField(4);
 }
 
 /// For display only. Metadata associated with a Cloud Run revision.
@@ -3332,14 +3254,10 @@ class CloudRunRevisionInfo extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'serviceUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloudRunRevisionInfo clone() =>
       CloudRunRevisionInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloudRunRevisionInfo copyWith(void Function(CloudRunRevisionInfo) updates) =>
       super.copyWith((message) => updates(message as CloudRunRevisionInfo))
           as CloudRunRevisionInfo;
@@ -3367,7 +3285,7 @@ class CloudRunRevisionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of a Cloud Run revision.
   @$pb.TagNumber(2)
@@ -3380,7 +3298,7 @@ class CloudRunRevisionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// Location in which this revision is deployed.
   @$pb.TagNumber(4)
@@ -3393,7 +3311,7 @@ class CloudRunRevisionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasLocation() => $_has(2);
   @$pb.TagNumber(4)
-  void clearLocation() => clearField(4);
+  void clearLocation() => $_clearField(4);
 
   /// URI of Cloud Run service this revision belongs to.
   @$pb.TagNumber(5)
@@ -3406,7 +3324,7 @@ class CloudRunRevisionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasServiceUri() => $_has(3);
   @$pb.TagNumber(5)
-  void clearServiceUri() => clearField(5);
+  void clearServiceUri() => $_clearField(5);
 }
 
 /// For display only. Metadata associated with an App Engine version.
@@ -3451,14 +3369,10 @@ class AppEngineVersionInfo extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'environment')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppEngineVersionInfo clone() =>
       AppEngineVersionInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppEngineVersionInfo copyWith(void Function(AppEngineVersionInfo) updates) =>
       super.copyWith((message) => updates(message as AppEngineVersionInfo))
           as AppEngineVersionInfo;
@@ -3486,7 +3400,7 @@ class AppEngineVersionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of an App Engine version.
   @$pb.TagNumber(2)
@@ -3499,7 +3413,7 @@ class AppEngineVersionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// Runtime of the App Engine version.
   @$pb.TagNumber(3)
@@ -3512,7 +3426,7 @@ class AppEngineVersionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRuntime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearRuntime() => clearField(3);
+  void clearRuntime() => $_clearField(3);
 
   /// App Engine execution environment for a version.
   @$pb.TagNumber(4)
@@ -3525,7 +3439,7 @@ class AppEngineVersionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasEnvironment() => $_has(3);
   @$pb.TagNumber(4)
-  void clearEnvironment() => clearField(4);
+  void clearEnvironment() => $_clearField(4);
 }
 
 /// For display only. Metadata associated with a VPC connector.
@@ -3565,13 +3479,9 @@ class VpcConnectorInfo extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'location')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VpcConnectorInfo clone() => VpcConnectorInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VpcConnectorInfo copyWith(void Function(VpcConnectorInfo) updates) =>
       super.copyWith((message) => updates(message as VpcConnectorInfo))
           as VpcConnectorInfo;
@@ -3599,7 +3509,7 @@ class VpcConnectorInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDisplayName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDisplayName() => clearField(1);
+  void clearDisplayName() => $_clearField(1);
 
   /// URI of a VPC connector.
   @$pb.TagNumber(2)
@@ -3612,7 +3522,7 @@ class VpcConnectorInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// Location in which the VPC connector is deployed.
   @$pb.TagNumber(3)
@@ -3625,7 +3535,7 @@ class VpcConnectorInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasLocation() => $_has(2);
   @$pb.TagNumber(3)
-  void clearLocation() => clearField(3);
+  void clearLocation() => $_clearField(3);
 }
 
 /// A Connectivity Test for a network reachability analysis.
@@ -3638,7 +3548,7 @@ class ConnectivityTest extends $pb.GeneratedMessage {
     $core.String? protocol,
     $core.Iterable<$core.String>? relatedProjects,
     $core.String? displayName,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
     ReachabilityDetails? reachabilityDetails,
@@ -3666,7 +3576,7 @@ class ConnectivityTest extends $pb.GeneratedMessage {
       $result.displayName = displayName;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (createTime != null) {
       $result.createTime = createTime;
@@ -3715,13 +3625,9 @@ class ConnectivityTest extends $pb.GeneratedMessage {
         subBuilder: ReachabilityDetails.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ConnectivityTest clone() => ConnectivityTest()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ConnectivityTest copyWith(void Function(ConnectivityTest) updates) =>
       super.copyWith((message) => updates(message as ConnectivityTest))
           as ConnectivityTest;
@@ -3750,7 +3656,7 @@ class ConnectivityTest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// The user-supplied description of the Connectivity Test.
   /// Maximum of 512 characters.
@@ -3764,73 +3670,73 @@ class ConnectivityTest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDescription() => clearField(2);
+  void clearDescription() => $_clearField(2);
 
-  ///  Required. Source specification of the Connectivity Test.
+  /// Required. Source specification of the Connectivity Test.
   ///
-  ///  You can use a combination of source IP address, virtual machine
-  ///  (VM) instance, or Compute Engine network to uniquely identify
-  ///  the source location.
+  /// You can use a combination of source IP address, virtual machine
+  /// (VM) instance, or Compute Engine network to uniquely identify
+  /// the source location.
   ///
-  ///  Examples:
-  ///  If the source IP address is an internal IP address within a Google Cloud
-  ///  Virtual Private Cloud (VPC) network, then you must also specify the VPC
-  ///  network. Otherwise, specify the VM instance, which already contains its
-  ///  internal IP address and VPC network information.
+  /// Examples:
+  /// If the source IP address is an internal IP address within a Google Cloud
+  /// Virtual Private Cloud (VPC) network, then you must also specify the VPC
+  /// network. Otherwise, specify the VM instance, which already contains its
+  /// internal IP address and VPC network information.
   ///
-  ///  If the source of the test is within an on-premises network, then you must
-  ///  provide the destination VPC network.
+  /// If the source of the test is within an on-premises network, then you must
+  /// provide the destination VPC network.
   ///
-  ///  If the source endpoint is a Compute Engine VM instance with multiple
-  ///  network interfaces, the instance itself is not sufficient to identify the
-  ///  endpoint. So, you must also specify the source IP address or VPC network.
+  /// If the source endpoint is a Compute Engine VM instance with multiple
+  /// network interfaces, the instance itself is not sufficient to identify the
+  /// endpoint. So, you must also specify the source IP address or VPC network.
   ///
-  ///  A reachability analysis proceeds even if the source location is
-  ///  ambiguous. However, the test result may include endpoints that you don't
-  ///  intend to test.
+  /// A reachability analysis proceeds even if the source location is
+  /// ambiguous. However, the test result may include endpoints that you don't
+  /// intend to test.
   @$pb.TagNumber(3)
   Endpoint get source => $_getN(2);
   @$pb.TagNumber(3)
   set source(Endpoint v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasSource() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSource() => clearField(3);
+  void clearSource() => $_clearField(3);
   @$pb.TagNumber(3)
   Endpoint ensureSource() => $_ensure(2);
 
-  ///  Required. Destination specification of the Connectivity Test.
+  /// Required. Destination specification of the Connectivity Test.
   ///
-  ///  You can use a combination of destination IP address, Compute Engine
-  ///  VM instance, or VPC network to uniquely identify the destination
-  ///  location.
+  /// You can use a combination of destination IP address, Compute Engine
+  /// VM instance, or VPC network to uniquely identify the destination
+  /// location.
   ///
-  ///  Even if the destination IP address is not unique, the source IP
-  ///  location is unique. Usually, the analysis can infer the destination
-  ///  endpoint from route information.
+  /// Even if the destination IP address is not unique, the source IP
+  /// location is unique. Usually, the analysis can infer the destination
+  /// endpoint from route information.
   ///
-  ///  If the destination you specify is a VM instance and the instance has
-  ///  multiple network interfaces, then you must also specify either
-  ///  a destination IP address  or VPC network to identify the destination
-  ///  interface.
+  /// If the destination you specify is a VM instance and the instance has
+  /// multiple network interfaces, then you must also specify either
+  /// a destination IP address  or VPC network to identify the destination
+  /// interface.
   ///
-  ///  A reachability analysis proceeds even if the destination location is
-  ///  ambiguous. However, the result can include endpoints that you don't
-  ///  intend to test.
+  /// A reachability analysis proceeds even if the destination location is
+  /// ambiguous. However, the result can include endpoints that you don't
+  /// intend to test.
   @$pb.TagNumber(4)
   Endpoint get destination => $_getN(3);
   @$pb.TagNumber(4)
   set destination(Endpoint v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasDestination() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDestination() => clearField(4);
+  void clearDestination() => $_clearField(4);
   @$pb.TagNumber(4)
   Endpoint ensureDestination() => $_ensure(3);
 
@@ -3845,12 +3751,12 @@ class ConnectivityTest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasProtocol() => $_has(4);
   @$pb.TagNumber(5)
-  void clearProtocol() => clearField(5);
+  void clearProtocol() => $_clearField(5);
 
   /// Other projects that may be relevant for reachability analysis.
   /// This is applicable to scenarios where a test can cross project boundaries.
   @$pb.TagNumber(6)
-  $core.List<$core.String> get relatedProjects => $_getList(5);
+  $pb.PbList<$core.String> get relatedProjects => $_getList(5);
 
   /// Output only. The display name of a Connectivity Test.
   @$pb.TagNumber(7)
@@ -3863,24 +3769,24 @@ class ConnectivityTest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasDisplayName() => $_has(6);
   @$pb.TagNumber(7)
-  void clearDisplayName() => clearField(7);
+  void clearDisplayName() => $_clearField(7);
 
   /// Resource labels to represent user-provided metadata.
   @$pb.TagNumber(8)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(7);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(7);
 
   /// Output only. The time the test was created.
   @$pb.TagNumber(10)
   $2.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(10)
   set createTime($2.Timestamp v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(10)
-  void clearCreateTime() => clearField(10);
+  void clearCreateTime() => $_clearField(10);
   @$pb.TagNumber(10)
   $2.Timestamp ensureCreateTime() => $_ensure(8);
 
@@ -3889,13 +3795,13 @@ class ConnectivityTest extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(11)
   set updateTime($2.Timestamp v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(11)
-  void clearUpdateTime() => clearField(11);
+  void clearUpdateTime() => $_clearField(11);
   @$pb.TagNumber(11)
   $2.Timestamp ensureUpdateTime() => $_ensure(9);
 
@@ -3906,13 +3812,13 @@ class ConnectivityTest extends $pb.GeneratedMessage {
   ReachabilityDetails get reachabilityDetails => $_getN(10);
   @$pb.TagNumber(12)
   set reachabilityDetails(ReachabilityDetails v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasReachabilityDetails() => $_has(10);
   @$pb.TagNumber(12)
-  void clearReachabilityDetails() => clearField(12);
+  void clearReachabilityDetails() => $_clearField(12);
   @$pb.TagNumber(12)
   ReachabilityDetails ensureReachabilityDetails() => $_ensure(10);
 }
@@ -3944,14 +3850,10 @@ class Endpoint_CloudFunctionEndpoint extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'uri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Endpoint_CloudFunctionEndpoint clone() =>
       Endpoint_CloudFunctionEndpoint()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Endpoint_CloudFunctionEndpoint copyWith(
           void Function(Endpoint_CloudFunctionEndpoint) updates) =>
       super.copyWith(
@@ -3982,7 +3884,7 @@ class Endpoint_CloudFunctionEndpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUri() => clearField(1);
+  void clearUri() => $_clearField(1);
 }
 
 /// Wrapper for the App Engine service version attributes.
@@ -4012,14 +3914,10 @@ class Endpoint_AppEngineVersionEndpoint extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'uri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Endpoint_AppEngineVersionEndpoint clone() =>
       Endpoint_AppEngineVersionEndpoint()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Endpoint_AppEngineVersionEndpoint copyWith(
           void Function(Endpoint_AppEngineVersionEndpoint) updates) =>
       super.copyWith((message) =>
@@ -4053,7 +3951,7 @@ class Endpoint_AppEngineVersionEndpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUri() => clearField(1);
+  void clearUri() => $_clearField(1);
 }
 
 /// Wrapper for Cloud Run revision attributes.
@@ -4083,14 +3981,10 @@ class Endpoint_CloudRunRevisionEndpoint extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'uri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Endpoint_CloudRunRevisionEndpoint clone() =>
       Endpoint_CloudRunRevisionEndpoint()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Endpoint_CloudRunRevisionEndpoint copyWith(
           void Function(Endpoint_CloudRunRevisionEndpoint) updates) =>
       super.copyWith((message) =>
@@ -4125,7 +4019,7 @@ class Endpoint_CloudRunRevisionEndpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUri() => clearField(1);
+  void clearUri() => $_clearField(1);
 }
 
 /// Source or destination of the Connectivity Test.
@@ -4215,13 +4109,9 @@ class Endpoint extends $pb.GeneratedMessage {
         subBuilder: Endpoint_CloudRunRevisionEndpoint.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Endpoint clone() => Endpoint()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Endpoint copyWith(void Function(Endpoint) updates) =>
       super.copyWith((message) => updates(message as Endpoint)) as Endpoint;
 
@@ -4249,7 +4139,7 @@ class Endpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasIpAddress() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIpAddress() => clearField(1);
+  void clearIpAddress() => $_clearField(1);
 
   /// The IP protocol port of the endpoint.
   /// Only applicable when protocol is TCP or UDP.
@@ -4263,7 +4153,7 @@ class Endpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPort() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPort() => clearField(2);
+  void clearPort() => $_clearField(2);
 
   /// A Compute Engine instance URI.
   @$pb.TagNumber(3)
@@ -4276,7 +4166,7 @@ class Endpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasInstance() => $_has(2);
   @$pb.TagNumber(3)
-  void clearInstance() => clearField(3);
+  void clearInstance() => $_clearField(3);
 
   /// A Compute Engine network URI.
   @$pb.TagNumber(4)
@@ -4289,7 +4179,7 @@ class Endpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasNetwork() => $_has(3);
   @$pb.TagNumber(4)
-  void clearNetwork() => clearField(4);
+  void clearNetwork() => $_clearField(4);
 
   /// Type of the network where the endpoint is located.
   /// Applicable only to source endpoint, as destination network type can be
@@ -4298,13 +4188,13 @@ class Endpoint extends $pb.GeneratedMessage {
   Endpoint_NetworkType get networkType => $_getN(4);
   @$pb.TagNumber(5)
   set networkType(Endpoint_NetworkType v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasNetworkType() => $_has(4);
   @$pb.TagNumber(5)
-  void clearNetworkType() => clearField(5);
+  void clearNetworkType() => $_clearField(5);
 
   /// Project ID where the endpoint is located.
   /// The Project ID can be derived from the URI if you provide a VM instance or
@@ -4325,7 +4215,7 @@ class Endpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasProjectId() => $_has(5);
   @$pb.TagNumber(6)
-  void clearProjectId() => clearField(6);
+  void clearProjectId() => $_clearField(6);
 
   /// A cluster URI for [Google Kubernetes Engine
   /// master](https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-architecture).
@@ -4339,7 +4229,7 @@ class Endpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasGkeMasterCluster() => $_has(6);
   @$pb.TagNumber(7)
-  void clearGkeMasterCluster() => clearField(7);
+  void clearGkeMasterCluster() => $_clearField(7);
 
   /// A [Cloud SQL](https://cloud.google.com/sql) instance URI.
   @$pb.TagNumber(8)
@@ -4352,20 +4242,20 @@ class Endpoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasCloudSqlInstance() => $_has(7);
   @$pb.TagNumber(8)
-  void clearCloudSqlInstance() => clearField(8);
+  void clearCloudSqlInstance() => $_clearField(8);
 
   /// A [Cloud Function](https://cloud.google.com/functions).
   @$pb.TagNumber(10)
   Endpoint_CloudFunctionEndpoint get cloudFunction => $_getN(8);
   @$pb.TagNumber(10)
   set cloudFunction(Endpoint_CloudFunctionEndpoint v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasCloudFunction() => $_has(8);
   @$pb.TagNumber(10)
-  void clearCloudFunction() => clearField(10);
+  void clearCloudFunction() => $_clearField(10);
   @$pb.TagNumber(10)
   Endpoint_CloudFunctionEndpoint ensureCloudFunction() => $_ensure(8);
 
@@ -4375,13 +4265,13 @@ class Endpoint extends $pb.GeneratedMessage {
   Endpoint_AppEngineVersionEndpoint get appEngineVersion => $_getN(9);
   @$pb.TagNumber(11)
   set appEngineVersion(Endpoint_AppEngineVersionEndpoint v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasAppEngineVersion() => $_has(9);
   @$pb.TagNumber(11)
-  void clearAppEngineVersion() => clearField(11);
+  void clearAppEngineVersion() => $_clearField(11);
   @$pb.TagNumber(11)
   Endpoint_AppEngineVersionEndpoint ensureAppEngineVersion() => $_ensure(9);
 
@@ -4391,13 +4281,13 @@ class Endpoint extends $pb.GeneratedMessage {
   Endpoint_CloudRunRevisionEndpoint get cloudRunRevision => $_getN(10);
   @$pb.TagNumber(12)
   set cloudRunRevision(Endpoint_CloudRunRevisionEndpoint v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasCloudRunRevision() => $_has(10);
   @$pb.TagNumber(12)
-  void clearCloudRunRevision() => clearField(12);
+  void clearCloudRunRevision() => $_clearField(12);
   @$pb.TagNumber(12)
   Endpoint_CloudRunRevisionEndpoint ensureCloudRunRevision() => $_ensure(10);
 }
@@ -4407,7 +4297,7 @@ class ReachabilityDetails extends $pb.GeneratedMessage {
   factory ReachabilityDetails({
     ReachabilityDetails_Result? result,
     $2.Timestamp? verifyTime,
-    $19.Status? error,
+    $9.Status? error,
     $core.Iterable<Trace>? traces,
   }) {
     final $result = create();
@@ -4445,19 +4335,15 @@ class ReachabilityDetails extends $pb.GeneratedMessage {
         enumValues: ReachabilityDetails_Result.values)
     ..aOM<$2.Timestamp>(2, _omitFieldNames ? '' : 'verifyTime',
         subBuilder: $2.Timestamp.create)
-    ..aOM<$19.Status>(3, _omitFieldNames ? '' : 'error',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(3, _omitFieldNames ? '' : 'error',
+        subBuilder: $9.Status.create)
     ..pc<Trace>(5, _omitFieldNames ? '' : 'traces', $pb.PbFieldType.PM,
         subBuilder: Trace.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReachabilityDetails clone() => ReachabilityDetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReachabilityDetails copyWith(void Function(ReachabilityDetails) updates) =>
       super.copyWith((message) => updates(message as ReachabilityDetails))
           as ReachabilityDetails;
@@ -4479,49 +4365,49 @@ class ReachabilityDetails extends $pb.GeneratedMessage {
   ReachabilityDetails_Result get result => $_getN(0);
   @$pb.TagNumber(1)
   set result(ReachabilityDetails_Result v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasResult() => $_has(0);
   @$pb.TagNumber(1)
-  void clearResult() => clearField(1);
+  void clearResult() => $_clearField(1);
 
   /// The time of the configuration analysis.
   @$pb.TagNumber(2)
   $2.Timestamp get verifyTime => $_getN(1);
   @$pb.TagNumber(2)
   set verifyTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasVerifyTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearVerifyTime() => clearField(2);
+  void clearVerifyTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureVerifyTime() => $_ensure(1);
 
   /// The details of a failure or a cancellation of reachability analysis.
   @$pb.TagNumber(3)
-  $19.Status get error => $_getN(2);
+  $9.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($19.Status v) {
-    setField(3, v);
+  set error($9.Status v) {
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
-  void clearError() => clearField(3);
+  void clearError() => $_clearField(3);
   @$pb.TagNumber(3)
-  $19.Status ensureError() => $_ensure(2);
+  $9.Status ensureError() => $_ensure(2);
 
   /// Result may contain a list of traces if a test has multiple possible
   /// paths in the network, such as when destination endpoint is a load balancer
   /// with multiple backends.
   @$pb.TagNumber(5)
-  $core.List<Trace> get traces => $_getList(3);
+  $pb.PbList<Trace> get traces => $_getList(3);
 }
 
 /// The data within all ConnectivityTest events.
@@ -4552,14 +4438,10 @@ class ConnectivityTestEventData extends $pb.GeneratedMessage {
         subBuilder: ConnectivityTest.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ConnectivityTestEventData clone() =>
       ConnectivityTestEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ConnectivityTestEventData copyWith(
           void Function(ConnectivityTestEventData) updates) =>
       super.copyWith((message) => updates(message as ConnectivityTestEventData))
@@ -4582,13 +4464,13 @@ class ConnectivityTestEventData extends $pb.GeneratedMessage {
   ConnectivityTest get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ConnectivityTest v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ConnectivityTest ensurePayload() => $_ensure(0);
 }

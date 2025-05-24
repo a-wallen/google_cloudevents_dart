@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/apigateway/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -16,6 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
 
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
 export 'data.pbenum.dart';
 
 /// An API that can be served by one or more Gateways.
@@ -24,7 +26,7 @@ class Api extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     $core.String? managedService,
     Api_State? state,
@@ -40,7 +42,7 @@ class Api extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (displayName != null) {
       $result.displayName = displayName;
@@ -84,13 +86,9 @@ class Api extends $pb.GeneratedMessage {
         enumValues: Api_State.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Api clone() => Api()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Api copyWith(void Function(Api) updates) =>
       super.copyWith((message) => updates(message as Api)) as Api;
 
@@ -117,20 +115,20 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Created time.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -139,13 +137,13 @@ class Api extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -153,7 +151,7 @@ class Api extends $pb.GeneratedMessage {
   /// Refer to cloud documentation on labels for more details.
   /// https://cloud.google.com/compute/docs/labeling-resources
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Optional. Display name.
   @$pb.TagNumber(5)
@@ -166,7 +164,7 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 
   /// Optional. Immutable. The name of a Google Managed Service (
   /// https://cloud.google.com/service-infrastructure/docs/glossary#managed).
@@ -182,20 +180,20 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasManagedService() => $_has(5);
   @$pb.TagNumber(7)
-  void clearManagedService() => clearField(7);
+  void clearManagedService() => $_clearField(7);
 
   /// Output only. State of the API.
   @$pb.TagNumber(12)
   Api_State get state => $_getN(6);
   @$pb.TagNumber(12)
   set state(Api_State v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(12)
-  void clearState() => clearField(12);
+  void clearState() => $_clearField(12);
 }
 
 /// A lightweight description of a file.
@@ -231,13 +229,9 @@ class ApiConfig_File extends $pb.GeneratedMessage {
         2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.OY)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiConfig_File clone() => ApiConfig_File()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiConfig_File copyWith(void Function(ApiConfig_File) updates) =>
       super.copyWith((message) => updates(message as ApiConfig_File))
           as ApiConfig_File;
@@ -266,7 +260,7 @@ class ApiConfig_File extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPath() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPath() => clearField(1);
+  void clearPath() => $_clearField(1);
 
   /// The bytes that constitute the file.
   @$pb.TagNumber(2)
@@ -279,7 +273,7 @@ class ApiConfig_File extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasContents() => $_has(1);
   @$pb.TagNumber(2)
-  void clearContents() => clearField(2);
+  void clearContents() => $_clearField(2);
 }
 
 /// An OpenAPI Specification Document describing an API.
@@ -310,14 +304,10 @@ class ApiConfig_OpenApiDocument extends $pb.GeneratedMessage {
         subBuilder: ApiConfig_File.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiConfig_OpenApiDocument clone() =>
       ApiConfig_OpenApiDocument()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiConfig_OpenApiDocument copyWith(
           void Function(ApiConfig_OpenApiDocument) updates) =>
       super.copyWith((message) => updates(message as ApiConfig_OpenApiDocument))
@@ -340,13 +330,13 @@ class ApiConfig_OpenApiDocument extends $pb.GeneratedMessage {
   ApiConfig_File get document => $_getN(0);
   @$pb.TagNumber(1)
   set document(ApiConfig_File v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasDocument() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDocument() => clearField(1);
+  void clearDocument() => $_clearField(1);
   @$pb.TagNumber(1)
   ApiConfig_File ensureDocument() => $_ensure(0);
 }
@@ -379,14 +369,10 @@ class ApiConfig_GrpcServiceDefinition extends $pb.GeneratedMessage {
         subBuilder: ApiConfig_File.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiConfig_GrpcServiceDefinition clone() =>
       ApiConfig_GrpcServiceDefinition()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiConfig_GrpcServiceDefinition copyWith(
           void Function(ApiConfig_GrpcServiceDefinition) updates) =>
       super.copyWith(
@@ -412,7 +398,7 @@ class ApiConfig_GrpcServiceDefinition extends $pb.GeneratedMessage {
   /// should match the inputs to 'protoc' command used to generate
   /// file_descriptor_set.
   @$pb.TagNumber(2)
-  $core.List<ApiConfig_File> get source => $_getList(0);
+  $pb.PbList<ApiConfig_File> get source => $_getList(0);
 }
 
 /// An API Configuration is a combination of settings for both the Managed
@@ -422,7 +408,7 @@ class ApiConfig extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     ApiConfig_State? state,
     $core.Iterable<ApiConfig_OpenApiDocument>? openapiDocuments,
@@ -442,7 +428,7 @@ class ApiConfig extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (displayName != null) {
       $result.displayName = displayName;
@@ -508,13 +494,9 @@ class ApiConfig extends $pb.GeneratedMessage {
     ..aOS(14, _omitFieldNames ? '' : 'gatewayServiceAccount')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiConfig clone() => ApiConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiConfig copyWith(void Function(ApiConfig) updates) =>
       super.copyWith((message) => updates(message as ApiConfig)) as ApiConfig;
 
@@ -541,20 +523,20 @@ class ApiConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Created time.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -563,13 +545,13 @@ class ApiConfig extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -577,7 +559,7 @@ class ApiConfig extends $pb.GeneratedMessage {
   /// Refer to cloud documentation on labels for more details.
   /// https://cloud.google.com/compute/docs/labeling-resources
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Optional. Display name.
   @$pb.TagNumber(5)
@@ -590,45 +572,45 @@ class ApiConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 
   /// Output only. State of the API Config.
   @$pb.TagNumber(8)
   ApiConfig_State get state => $_getN(5);
   @$pb.TagNumber(8)
   set state(ApiConfig_State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// Optional. OpenAPI specification documents. If specified, grpc_services and
   /// managed_service_configs must not be included.
   @$pb.TagNumber(9)
-  $core.List<ApiConfig_OpenApiDocument> get openapiDocuments => $_getList(6);
+  $pb.PbList<ApiConfig_OpenApiDocument> get openapiDocuments => $_getList(6);
 
   /// Optional. gRPC service definition files. If specified, openapi_documents
   /// must not be included.
   @$pb.TagNumber(10)
-  $core.List<ApiConfig_GrpcServiceDefinition> get grpcServices => $_getList(7);
+  $pb.PbList<ApiConfig_GrpcServiceDefinition> get grpcServices => $_getList(7);
 
-  ///  Optional. Service Configuration files. At least one must be included when
-  ///  using gRPC service definitions. See
-  ///  https://cloud.google.com/endpoints/docs/grpc/grpc-service-config#service_configuration_overview
-  ///  for the expected file contents.
+  /// Optional. Service Configuration files. At least one must be included when
+  /// using gRPC service definitions. See
+  /// https://cloud.google.com/endpoints/docs/grpc/grpc-service-config#service_configuration_overview
+  /// for the expected file contents.
   ///
-  ///  If multiple files are specified, the files are merged with the following
-  ///  rules:
-  ///  * All singular scalar fields are merged using "last one wins" semantics in
-  ///  the order of the files uploaded.
-  ///  * Repeated fields are concatenated.
-  ///  * Singular embedded messages are merged using these rules for nested
-  ///  fields.
+  /// If multiple files are specified, the files are merged with the following
+  /// rules:
+  /// * All singular scalar fields are merged using "last one wins" semantics in
+  /// the order of the files uploaded.
+  /// * Repeated fields are concatenated.
+  /// * Singular embedded messages are merged using these rules for nested
+  /// fields.
   @$pb.TagNumber(11)
-  $core.List<ApiConfig_File> get managedServiceConfigs => $_getList(8);
+  $pb.PbList<ApiConfig_File> get managedServiceConfigs => $_getList(8);
 
   /// Output only. The ID of the associated Service Config (
   /// https://cloud.google.com/service-infrastructure/docs/glossary#config).
@@ -642,7 +624,7 @@ class ApiConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasServiceConfigId() => $_has(9);
   @$pb.TagNumber(12)
-  void clearServiceConfigId() => clearField(12);
+  void clearServiceConfigId() => $_clearField(12);
 
   /// Immutable. The Google Cloud IAM Service Account that Gateways serving this
   /// config should use to authenticate to other services. This may either be the
@@ -661,7 +643,7 @@ class ApiConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasGatewayServiceAccount() => $_has(10);
   @$pb.TagNumber(14)
-  void clearGatewayServiceAccount() => clearField(14);
+  void clearGatewayServiceAccount() => $_clearField(14);
 }
 
 /// A Gateway is an API-aware HTTP proxy. It performs API-Method and/or
@@ -672,7 +654,7 @@ class Gateway extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     $core.String? apiConfig,
     Gateway_State? state,
@@ -689,7 +671,7 @@ class Gateway extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (displayName != null) {
       $result.displayName = displayName;
@@ -737,13 +719,9 @@ class Gateway extends $pb.GeneratedMessage {
     ..aOS(9, _omitFieldNames ? '' : 'defaultHostname')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Gateway clone() => Gateway()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Gateway copyWith(void Function(Gateway) updates) =>
       super.copyWith((message) => updates(message as Gateway)) as Gateway;
 
@@ -770,20 +748,20 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Created time.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -792,13 +770,13 @@ class Gateway extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -806,7 +784,7 @@ class Gateway extends $pb.GeneratedMessage {
   /// Refer to cloud documentation on labels for more details.
   /// https://cloud.google.com/compute/docs/labeling-resources
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Optional. Display name.
   @$pb.TagNumber(5)
@@ -819,7 +797,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 
   /// Required. Resource name of the API Config for this Gateway.
   /// Format: projects/{project}/locations/global/apis/{api}/configs/{apiConfig}
@@ -833,20 +811,20 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasApiConfig() => $_has(5);
   @$pb.TagNumber(6)
-  void clearApiConfig() => clearField(6);
+  void clearApiConfig() => $_clearField(6);
 
   /// Output only. The current state of the Gateway.
   @$pb.TagNumber(7)
   Gateway_State get state => $_getN(6);
   @$pb.TagNumber(7)
   set state(Gateway_State v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(7)
-  void clearState() => clearField(7);
+  void clearState() => $_clearField(7);
 
   /// Output only. The default API Gateway host name of the form
   /// `{gateway_id}-{hash}.{region_code}.gateway.dev`.
@@ -860,7 +838,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasDefaultHostname() => $_has(7);
   @$pb.TagNumber(9)
-  void clearDefaultHostname() => clearField(9);
+  void clearDefaultHostname() => $_clearField(9);
 }
 
 /// The data within all Gateway events.
@@ -891,13 +869,9 @@ class GatewayEventData extends $pb.GeneratedMessage {
         subBuilder: Gateway.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GatewayEventData clone() => GatewayEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GatewayEventData copyWith(void Function(GatewayEventData) updates) =>
       super.copyWith((message) => updates(message as GatewayEventData))
           as GatewayEventData;
@@ -919,13 +893,13 @@ class GatewayEventData extends $pb.GeneratedMessage {
   Gateway get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Gateway v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Gateway ensurePayload() => $_ensure(0);
 }
@@ -958,13 +932,9 @@ class ApiConfigEventData extends $pb.GeneratedMessage {
         subBuilder: ApiConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiConfigEventData clone() => ApiConfigEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiConfigEventData copyWith(void Function(ApiConfigEventData) updates) =>
       super.copyWith((message) => updates(message as ApiConfigEventData))
           as ApiConfigEventData;
@@ -986,13 +956,13 @@ class ApiConfigEventData extends $pb.GeneratedMessage {
   ApiConfig get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ApiConfig v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ApiConfig ensurePayload() => $_ensure(0);
 }
@@ -1024,13 +994,9 @@ class ApiEventData extends $pb.GeneratedMessage {
     ..aOM<Api>(1, _omitFieldNames ? '' : 'payload', subBuilder: Api.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiEventData clone() => ApiEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApiEventData copyWith(void Function(ApiEventData) updates) =>
       super.copyWith((message) => updates(message as ApiEventData))
           as ApiEventData;
@@ -1052,13 +1018,13 @@ class ApiEventData extends $pb.GeneratedMessage {
   Api get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Api v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Api ensurePayload() => $_ensure(0);
 }

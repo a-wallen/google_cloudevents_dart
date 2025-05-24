@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/firebase/remoteconfig/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -16,6 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -88,14 +90,10 @@ class RemoteConfigEventData extends $pb.GeneratedMessage {
     ..aInt64(7, _omitFieldNames ? '' : 'rollbackSource')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RemoteConfigEventData clone() =>
       RemoteConfigEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RemoteConfigEventData copyWith(
           void Function(RemoteConfigEventData) updates) =>
       super.copyWith((message) => updates(message as RemoteConfigEventData))
@@ -124,20 +122,20 @@ class RemoteConfigEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVersionNumber() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVersionNumber() => clearField(1);
+  void clearVersionNumber() => $_clearField(1);
 
   /// When the Remote Config template was written to the Remote Config server.
   @$pb.TagNumber(2)
   $2.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
   set updateTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUpdateTime() => clearField(2);
+  void clearUpdateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureUpdateTime() => $_ensure(1);
 
@@ -147,13 +145,13 @@ class RemoteConfigEventData extends $pb.GeneratedMessage {
   RemoteConfigUser get updateUser => $_getN(2);
   @$pb.TagNumber(3)
   set updateUser(RemoteConfigUser v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateUser() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateUser() => clearField(3);
+  void clearUpdateUser() => $_clearField(3);
   @$pb.TagNumber(3)
   RemoteConfigUser ensureUpdateUser() => $_ensure(2);
 
@@ -168,33 +166,33 @@ class RemoteConfigEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDescription() => clearField(4);
+  void clearDescription() => $_clearField(4);
 
   /// Where the update action originated.
   @$pb.TagNumber(5)
   RemoteConfigUpdateOrigin get updateOrigin => $_getN(4);
   @$pb.TagNumber(5)
   set updateOrigin(RemoteConfigUpdateOrigin v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUpdateOrigin() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUpdateOrigin() => clearField(5);
+  void clearUpdateOrigin() => $_clearField(5);
 
   /// What type of update was made.
   @$pb.TagNumber(6)
   RemoteConfigUpdateType get updateType => $_getN(5);
   @$pb.TagNumber(6)
   set updateType(RemoteConfigUpdateType v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasUpdateType() => $_has(5);
   @$pb.TagNumber(6)
-  void clearUpdateType() => clearField(6);
+  void clearUpdateType() => $_clearField(6);
 
   /// Only present if this version is the result of a rollback, and will be the
   /// version number of the Remote Config template that was rolled-back to.
@@ -208,7 +206,7 @@ class RemoteConfigEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasRollbackSource() => $_has(6);
   @$pb.TagNumber(7)
-  void clearRollbackSource() => clearField(7);
+  void clearRollbackSource() => $_clearField(7);
 }
 
 /// All the fields associated with the person/service account
@@ -249,13 +247,9 @@ class RemoteConfigUser extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'imageUrl')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RemoteConfigUser clone() => RemoteConfigUser()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RemoteConfigUser copyWith(void Function(RemoteConfigUser) updates) =>
       super.copyWith((message) => updates(message as RemoteConfigUser))
           as RemoteConfigUser;
@@ -283,7 +277,7 @@ class RemoteConfigUser extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Email address.
   @$pb.TagNumber(2)
@@ -296,7 +290,7 @@ class RemoteConfigUser extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasEmail() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEmail() => clearField(2);
+  void clearEmail() => $_clearField(2);
 
   /// Image URL.
   @$pb.TagNumber(3)
@@ -309,7 +303,7 @@ class RemoteConfigUser extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasImageUrl() => $_has(2);
   @$pb.TagNumber(3)
-  void clearImageUrl() => clearField(3);
+  void clearImageUrl() => $_clearField(3);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

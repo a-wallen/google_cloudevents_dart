@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/eventarc/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,8 +14,10 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../rpc/code.pbenum.dart' as $49;
+import '../../../../rpc/code.pbenum.dart' as $30;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -99,13 +101,9 @@ class Channel extends $pb.GeneratedMessage {
     ..aOS(11, _omitFieldNames ? '' : 'cryptoKeyName')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Channel clone() => Channel()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Channel copyWith(void Function(Channel) updates) =>
       super.copyWith((message) => updates(message as Channel)) as Channel;
 
@@ -122,7 +120,7 @@ class Channel extends $pb.GeneratedMessage {
 
   Channel_Transport whichTransport() =>
       _Channel_TransportByTag[$_whichOneof(0)]!;
-  void clearTransport() => clearField($_whichOneof(0));
+  void clearTransport() => $_clearField($_whichOneof(0));
 
   /// Required. The resource name of the channel. Must be unique within the
   /// location on the project and must be in
@@ -137,7 +135,7 @@ class Channel extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Server assigned unique identifier for the channel. The value
   /// is a UUID4 string and guaranteed to remain unchanged until the resource is
@@ -152,20 +150,20 @@ class Channel extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
   /// Output only. The creation time.
   @$pb.TagNumber(5)
   $2.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(5)
   set createTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(5)
-  void clearCreateTime() => clearField(5);
+  void clearCreateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureCreateTime() => $_ensure(2);
 
@@ -174,13 +172,13 @@ class Channel extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(6)
   set updateTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(6)
-  void clearUpdateTime() => clearField(6);
+  void clearUpdateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureUpdateTime() => $_ensure(3);
 
@@ -198,7 +196,7 @@ class Channel extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasProvider() => $_has(4);
   @$pb.TagNumber(7)
-  void clearProvider() => clearField(7);
+  void clearProvider() => $_clearField(7);
 
   /// Output only. The name of the Pub/Sub topic created and managed by
   /// Eventarc system as a transport for the event delivery. Format:
@@ -213,20 +211,20 @@ class Channel extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasPubsubTopic() => $_has(5);
   @$pb.TagNumber(8)
-  void clearPubsubTopic() => clearField(8);
+  void clearPubsubTopic() => $_clearField(8);
 
   /// Output only. The state of a Channel.
   @$pb.TagNumber(9)
   Channel_State get state => $_getN(6);
   @$pb.TagNumber(9)
   set state(Channel_State v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(9)
-  void clearState() => clearField(9);
+  void clearState() => $_clearField(9);
 
   /// Output only. The activation token for the channel. The token must be used
   /// by the provider to register the channel for publishing.
@@ -240,13 +238,13 @@ class Channel extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasActivationToken() => $_has(7);
   @$pb.TagNumber(10)
-  void clearActivationToken() => clearField(10);
+  void clearActivationToken() => $_clearField(10);
 
-  ///  Resource name of a KMS crypto key (managed by the user) used to
-  ///  encrypt/decrypt their event data.
+  /// Resource name of a KMS crypto key (managed by the user) used to
+  /// encrypt/decrypt their event data.
   ///
-  ///  It must match the pattern
-  ///  `projects/*/locations/*/keyRings/*/cryptoKeys/*`.
+  /// It must match the pattern
+  /// `projects/*/locations/*/keyRings/*/cryptoKeys/*`.
   @$pb.TagNumber(11)
   $core.String get cryptoKeyName => $_getSZ(8);
   @$pb.TagNumber(11)
@@ -257,7 +255,7 @@ class Channel extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasCryptoKeyName() => $_has(8);
   @$pb.TagNumber(11)
-  void clearCryptoKeyName() => clearField(11);
+  void clearCryptoKeyName() => $_clearField(11);
 }
 
 /// A representation of the ChannelConnection resource.
@@ -312,13 +310,9 @@ class ChannelConnection extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ChannelConnection clone() => ChannelConnection()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ChannelConnection copyWith(void Function(ChannelConnection) updates) =>
       super.copyWith((message) => updates(message as ChannelConnection))
           as ChannelConnection;
@@ -346,7 +340,7 @@ class ChannelConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Server assigned ID of the resource.
   /// The server guarantees uniqueness and immutability until deleted.
@@ -360,7 +354,7 @@ class ChannelConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
   /// Required. The name of the connected subscriber Channel.
   /// This is a weak reference to avoid cross project and cross accounts
@@ -376,20 +370,20 @@ class ChannelConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasChannel() => $_has(2);
   @$pb.TagNumber(5)
-  void clearChannel() => clearField(5);
+  void clearChannel() => $_clearField(5);
 
   /// Output only. The creation time.
   @$pb.TagNumber(6)
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(6)
   set createTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(6)
-  void clearCreateTime() => clearField(6);
+  void clearCreateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -398,13 +392,13 @@ class ChannelConnection extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(7)
   set updateTime($2.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(7)
-  void clearUpdateTime() => clearField(7);
+  void clearUpdateTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $2.Timestamp ensureUpdateTime() => $_ensure(4);
 }
@@ -420,9 +414,9 @@ class Trigger extends $pb.GeneratedMessage {
     $core.String? serviceAccount,
     Destination? destination,
     Transport? transport,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? channel,
-    $core.Map<$core.String, StateCondition>? conditions,
+    $core.Iterable<$core.MapEntry<$core.String, StateCondition>>? conditions,
     $core.String? eventDataContentType,
     $core.String? etag,
   }) {
@@ -452,13 +446,13 @@ class Trigger extends $pb.GeneratedMessage {
       $result.transport = transport;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (channel != null) {
       $result.channel = channel;
     }
     if (conditions != null) {
-      $result.conditions.addAll(conditions);
+      $result.conditions.addEntries(conditions);
     }
     if (eventDataContentType != null) {
       $result.eventDataContentType = eventDataContentType;
@@ -512,13 +506,9 @@ class Trigger extends $pb.GeneratedMessage {
     ..aOS(99, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Trigger clone() => Trigger()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Trigger copyWith(void Function(Trigger) updates) =>
       super.copyWith((message) => updates(message as Trigger)) as Trigger;
 
@@ -546,7 +536,7 @@ class Trigger extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Server-assigned unique identifier for the trigger. The value
   /// is a UUID4 string and guaranteed to remain unchanged until the resource is
@@ -561,20 +551,20 @@ class Trigger extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
   /// Output only. The creation time.
   @$pb.TagNumber(5)
   $2.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(5)
   set createTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(5)
-  void clearCreateTime() => clearField(5);
+  void clearCreateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureCreateTime() => $_ensure(2);
 
@@ -583,13 +573,13 @@ class Trigger extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(6)
   set updateTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(6)
-  void clearUpdateTime() => clearField(6);
+  void clearUpdateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureUpdateTime() => $_ensure(3);
 
@@ -597,22 +587,22 @@ class Trigger extends $pb.GeneratedMessage {
   /// attributes. Only events that match all the provided filters are sent to the
   /// destination.
   @$pb.TagNumber(8)
-  $core.List<EventFilter> get eventFilters => $_getList(4);
+  $pb.PbList<EventFilter> get eventFilters => $_getList(4);
 
-  ///  Optional. The IAM service account email associated with the trigger. The
-  ///  service account represents the identity of the trigger.
+  /// Optional. The IAM service account email associated with the trigger. The
+  /// service account represents the identity of the trigger.
   ///
-  ///  The principal who calls this API must have the `iam.serviceAccounts.actAs`
-  ///  permission in the service account. See
-  ///  https://cloud.google.com/iam/docs/understanding-service-accounts?hl=en#sa_common
-  ///  for more information.
+  /// The principal who calls this API must have the `iam.serviceAccounts.actAs`
+  /// permission in the service account. See
+  /// https://cloud.google.com/iam/docs/understanding-service-accounts?hl=en#sa_common
+  /// for more information.
   ///
-  ///  For Cloud Run destinations, this service account is used to generate
-  ///  identity tokens when invoking the service. See
-  ///  https://cloud.google.com/run/docs/triggering/pubsub-push#create-service-account
-  ///  for information on how to invoke authenticated Cloud Run services.
-  ///  To create Audit Log triggers, the service account should also
-  ///  have the `roles/eventarc.eventReceiver` IAM role.
+  /// For Cloud Run destinations, this service account is used to generate
+  /// identity tokens when invoking the service. See
+  /// https://cloud.google.com/run/docs/triggering/pubsub-push#create-service-account
+  /// for information on how to invoke authenticated Cloud Run services.
+  /// To create Audit Log triggers, the service account should also
+  /// have the `roles/eventarc.eventReceiver` IAM role.
   @$pb.TagNumber(9)
   $core.String get serviceAccount => $_getSZ(5);
   @$pb.TagNumber(9)
@@ -623,20 +613,20 @@ class Trigger extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasServiceAccount() => $_has(5);
   @$pb.TagNumber(9)
-  void clearServiceAccount() => clearField(9);
+  void clearServiceAccount() => $_clearField(9);
 
   /// Required. Destination specifies where the events should be sent to.
   @$pb.TagNumber(10)
   Destination get destination => $_getN(6);
   @$pb.TagNumber(10)
   set destination(Destination v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasDestination() => $_has(6);
   @$pb.TagNumber(10)
-  void clearDestination() => clearField(10);
+  void clearDestination() => $_clearField(10);
   @$pb.TagNumber(10)
   Destination ensureDestination() => $_ensure(6);
 
@@ -648,20 +638,20 @@ class Trigger extends $pb.GeneratedMessage {
   Transport get transport => $_getN(7);
   @$pb.TagNumber(11)
   set transport(Transport v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasTransport() => $_has(7);
   @$pb.TagNumber(11)
-  void clearTransport() => clearField(11);
+  void clearTransport() => $_clearField(11);
   @$pb.TagNumber(11)
   Transport ensureTransport() => $_ensure(7);
 
   /// Optional. User labels attached to the triggers that can be used to group
   /// resources.
   @$pb.TagNumber(12)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(8);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(8);
 
   /// Optional. The name of the channel associated with the trigger in
   /// `projects/{project}/locations/{location}/channels/{channel}` format.
@@ -676,11 +666,11 @@ class Trigger extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasChannel() => $_has(9);
   @$pb.TagNumber(13)
-  void clearChannel() => clearField(13);
+  void clearChannel() => $_clearField(13);
 
   /// Output only. The reason(s) why a trigger is in FAILED state.
   @$pb.TagNumber(15)
-  $core.Map<$core.String, StateCondition> get conditions => $_getMap(10);
+  $pb.PbMap<$core.String, StateCondition> get conditions => $_getMap(10);
 
   /// Optional. EventDataContentType specifies the type of payload in MIME
   /// format that is expected from the CloudEvent data field. This is set to
@@ -695,7 +685,7 @@ class Trigger extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasEventDataContentType() => $_has(11);
   @$pb.TagNumber(16)
-  void clearEventDataContentType() => clearField(16);
+  void clearEventDataContentType() => $_clearField(16);
 
   /// Output only. This checksum is computed by the server based on the value of
   /// other fields, and might be sent only on create requests to ensure that the
@@ -710,7 +700,7 @@ class Trigger extends $pb.GeneratedMessage {
   @$pb.TagNumber(99)
   $core.bool hasEtag() => $_has(12);
   @$pb.TagNumber(99)
-  void clearEtag() => clearField(99);
+  void clearEtag() => $_clearField(99);
 }
 
 /// Filters events based on exact matches on the CloudEvents attributes.
@@ -750,13 +740,9 @@ class EventFilter extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'operator')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventFilter clone() => EventFilter()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventFilter copyWith(void Function(EventFilter) updates) =>
       super.copyWith((message) => updates(message as EventFilter))
           as EventFilter;
@@ -772,10 +758,10 @@ class EventFilter extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<EventFilter>(create);
   static EventFilter? _defaultInstance;
 
-  ///  Required. The name of a CloudEvents attribute. Currently, only a subset of
-  ///  attributes are supported for filtering.
+  /// Required. The name of a CloudEvents attribute. Currently, only a subset of
+  /// attributes are supported for filtering.
   ///
-  ///  All triggers MUST provide a filter for the 'type' attribute.
+  /// All triggers MUST provide a filter for the 'type' attribute.
   @$pb.TagNumber(1)
   $core.String get attribute => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -786,7 +772,7 @@ class EventFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasAttribute() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAttribute() => clearField(1);
+  void clearAttribute() => $_clearField(1);
 
   /// Required. The value for the attribute.
   @$pb.TagNumber(2)
@@ -799,7 +785,7 @@ class EventFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearValue() => clearField(2);
+  void clearValue() => $_clearField(2);
 
   /// Optional. The operator used for matching the events with the value of the
   /// filter. If not specified, only events that have an exact key-value pair
@@ -815,13 +801,13 @@ class EventFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasOperator() => $_has(2);
   @$pb.TagNumber(3)
-  void clearOperator() => clearField(3);
+  void clearOperator() => $_clearField(3);
 }
 
 /// A condition that is part of the trigger state computation.
 class StateCondition extends $pb.GeneratedMessage {
   factory StateCondition({
-    $49.Code? code,
+    $30.Code? code,
     $core.String? message,
   }) {
     final $result = create();
@@ -846,20 +832,16 @@ class StateCondition extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.eventarc.v1'),
       createEmptyInstance: create)
-    ..e<$49.Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE,
-        defaultOrMaker: $49.Code.OK,
-        valueOf: $49.Code.valueOf,
-        enumValues: $49.Code.values)
+    ..e<$30.Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE,
+        defaultOrMaker: $30.Code.OK,
+        valueOf: $30.Code.valueOf,
+        enumValues: $30.Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'message')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StateCondition clone() => StateCondition()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StateCondition copyWith(void Function(StateCondition) updates) =>
       super.copyWith((message) => updates(message as StateCondition))
           as StateCondition;
@@ -878,16 +860,16 @@ class StateCondition extends $pb.GeneratedMessage {
 
   /// The canonical code of the condition.
   @$pb.TagNumber(1)
-  $49.Code get code => $_getN(0);
+  $30.Code get code => $_getN(0);
   @$pb.TagNumber(1)
-  set code($49.Code v) {
-    setField(1, v);
+  set code($30.Code v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCode() => clearField(1);
+  void clearCode() => $_clearField(1);
 
   /// Human-readable message.
   @$pb.TagNumber(2)
@@ -900,7 +882,7 @@ class StateCondition extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMessage() => clearField(2);
+  void clearMessage() => $_clearField(2);
 }
 
 enum Destination_Descriptor { cloudRun, cloudFunction, gke, workflow, notSet }
@@ -957,13 +939,9 @@ class Destination extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'workflow')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Destination clone() => Destination()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Destination copyWith(void Function(Destination) updates) =>
       super.copyWith((message) => updates(message as Destination))
           as Destination;
@@ -981,7 +959,7 @@ class Destination extends $pb.GeneratedMessage {
 
   Destination_Descriptor whichDescriptor() =>
       _Destination_DescriptorByTag[$_whichOneof(0)]!;
-  void clearDescriptor() => clearField($_whichOneof(0));
+  void clearDescriptor() => $_clearField($_whichOneof(0));
 
   /// Cloud Run fully-managed resource that receives the events. The resource
   /// should be in the same project as the trigger.
@@ -989,22 +967,22 @@ class Destination extends $pb.GeneratedMessage {
   CloudRun get cloudRun => $_getN(0);
   @$pb.TagNumber(1)
   set cloudRun(CloudRun v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCloudRun() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCloudRun() => clearField(1);
+  void clearCloudRun() => $_clearField(1);
   @$pb.TagNumber(1)
   CloudRun ensureCloudRun() => $_ensure(0);
 
-  ///  The Cloud Function resource name. Only Cloud Functions V2 is supported.
-  ///  Format: `projects/{project}/locations/{location}/functions/{function}`
+  /// The Cloud Function resource name. Only Cloud Functions V2 is supported.
+  /// Format: `projects/{project}/locations/{location}/functions/{function}`
   ///
-  ///  This is a read-only field. Creating Cloud Functions V2 triggers is only
-  ///  supported via the Cloud Functions product. An error will be returned if
-  ///  the user sets this value.
+  /// This is a read-only field. Creating Cloud Functions V2 triggers is only
+  /// supported via the Cloud Functions product. An error will be returned if
+  /// the user sets this value.
   @$pb.TagNumber(2)
   $core.String get cloudFunction => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -1015,7 +993,7 @@ class Destination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCloudFunction() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCloudFunction() => clearField(2);
+  void clearCloudFunction() => $_clearField(2);
 
   /// A GKE service capable of receiving events. The service should be running
   /// in the same project as the trigger.
@@ -1023,13 +1001,13 @@ class Destination extends $pb.GeneratedMessage {
   GKE get gke => $_getN(2);
   @$pb.TagNumber(3)
   set gke(GKE v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasGke() => $_has(2);
   @$pb.TagNumber(3)
-  void clearGke() => clearField(3);
+  void clearGke() => $_clearField(3);
   @$pb.TagNumber(3)
   GKE ensureGke() => $_ensure(2);
 
@@ -1047,7 +1025,7 @@ class Destination extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasWorkflow() => $_has(3);
   @$pb.TagNumber(4)
-  void clearWorkflow() => clearField(4);
+  void clearWorkflow() => $_clearField(4);
 }
 
 enum Transport_Intermediary { pubsub, notSet }
@@ -1086,13 +1064,9 @@ class Transport extends $pb.GeneratedMessage {
     ..aOM<Pubsub>(1, _omitFieldNames ? '' : 'pubsub', subBuilder: Pubsub.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Transport clone() => Transport()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Transport copyWith(void Function(Transport) updates) =>
       super.copyWith((message) => updates(message as Transport)) as Transport;
 
@@ -1109,7 +1083,7 @@ class Transport extends $pb.GeneratedMessage {
 
   Transport_Intermediary whichIntermediary() =>
       _Transport_IntermediaryByTag[$_whichOneof(0)]!;
-  void clearIntermediary() => clearField($_whichOneof(0));
+  void clearIntermediary() => $_clearField($_whichOneof(0));
 
   /// The Pub/Sub topic and subscription used by Eventarc as a transport
   /// intermediary.
@@ -1117,13 +1091,13 @@ class Transport extends $pb.GeneratedMessage {
   Pubsub get pubsub => $_getN(0);
   @$pb.TagNumber(1)
   set pubsub(Pubsub v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPubsub() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPubsub() => clearField(1);
+  void clearPubsub() => $_clearField(1);
   @$pb.TagNumber(1)
   Pubsub ensurePubsub() => $_ensure(0);
 }
@@ -1165,13 +1139,9 @@ class CloudRun extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'region')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloudRun clone() => CloudRun()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloudRun copyWith(void Function(CloudRun) updates) =>
       super.copyWith((message) => updates(message as CloudRun)) as CloudRun;
 
@@ -1186,11 +1156,11 @@ class CloudRun extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CloudRun>(create);
   static CloudRun? _defaultInstance;
 
-  ///  Required. The name of the Cloud Run service being addressed. See
-  ///  https://cloud.google.com/run/docs/reference/rest/v1/namespaces.services.
+  /// Required. The name of the Cloud Run service being addressed. See
+  /// https://cloud.google.com/run/docs/reference/rest/v1/namespaces.services.
   ///
-  ///  Only services located in the same project as the trigger object
-  ///  can be addressed.
+  /// Only services located in the same project as the trigger object
+  /// can be addressed.
   @$pb.TagNumber(1)
   $core.String get service => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -1201,13 +1171,13 @@ class CloudRun extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
-  void clearService() => clearField(1);
+  void clearService() => $_clearField(1);
 
-  ///  Optional. The relative path on the Cloud Run service the events should be
-  ///  sent to.
+  /// Optional. The relative path on the Cloud Run service the events should be
+  /// sent to.
   ///
-  ///  The value must conform to the definition of a URI path segment (section 3.3
-  ///  of RFC2396). Examples: "/route", "route", "route/subroute".
+  /// The value must conform to the definition of a URI path segment (section 3.3
+  /// of RFC2396). Examples: "/route", "route", "route/subroute".
   @$pb.TagNumber(2)
   $core.String get path => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -1218,7 +1188,7 @@ class CloudRun extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPath() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPath() => clearField(2);
+  void clearPath() => $_clearField(2);
 
   /// Required. The region the Cloud Run service is deployed in.
   @$pb.TagNumber(3)
@@ -1231,7 +1201,7 @@ class CloudRun extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRegion() => $_has(2);
   @$pb.TagNumber(3)
-  void clearRegion() => clearField(3);
+  void clearRegion() => $_clearField(3);
 }
 
 /// Represents a GKE destination.
@@ -1281,13 +1251,9 @@ class GKE extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'path')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GKE clone() => GKE()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GKE copyWith(void Function(GKE) updates) =>
       super.copyWith((message) => updates(message as GKE)) as GKE;
 
@@ -1314,7 +1280,7 @@ class GKE extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCluster() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCluster() => clearField(1);
+  void clearCluster() => $_clearField(1);
 
   /// Required. The name of the Google Compute Engine in which the cluster
   /// resides, which can either be compute zone (for example, us-central1-a) for
@@ -1330,7 +1296,7 @@ class GKE extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasLocation() => $_has(1);
   @$pb.TagNumber(2)
-  void clearLocation() => clearField(2);
+  void clearLocation() => $_clearField(2);
 
   /// Required. The namespace the GKE service is running in.
   @$pb.TagNumber(3)
@@ -1343,7 +1309,7 @@ class GKE extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasNamespace() => $_has(2);
   @$pb.TagNumber(3)
-  void clearNamespace() => clearField(3);
+  void clearNamespace() => $_clearField(3);
 
   /// Required. Name of the GKE service.
   @$pb.TagNumber(4)
@@ -1356,13 +1322,13 @@ class GKE extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasService() => $_has(3);
   @$pb.TagNumber(4)
-  void clearService() => clearField(4);
+  void clearService() => $_clearField(4);
 
-  ///  Optional. The relative path on the GKE service the events should be sent
-  ///  to.
+  /// Optional. The relative path on the GKE service the events should be sent
+  /// to.
   ///
-  ///  The value must conform to the definition of a URI path segment (section 3.3
-  ///  of RFC2396). Examples: "/route", "route", "route/subroute".
+  /// The value must conform to the definition of a URI path segment (section 3.3
+  /// of RFC2396). Examples: "/route", "route", "route/subroute".
   @$pb.TagNumber(5)
   $core.String get path => $_getSZ(4);
   @$pb.TagNumber(5)
@@ -1373,7 +1339,7 @@ class GKE extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasPath() => $_has(4);
   @$pb.TagNumber(5)
-  void clearPath() => clearField(5);
+  void clearPath() => $_clearField(5);
 }
 
 /// Represents a Pub/Sub transport.
@@ -1408,13 +1374,9 @@ class Pubsub extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'subscription')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Pubsub clone() => Pubsub()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Pubsub copyWith(void Function(Pubsub) updates) =>
       super.copyWith((message) => updates(message as Pubsub)) as Pubsub;
 
@@ -1429,13 +1391,13 @@ class Pubsub extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Pubsub>(create);
   static Pubsub? _defaultInstance;
 
-  ///  Optional. The name of the Pub/Sub topic created and managed by Eventarc as
-  ///  a transport for the event delivery. Format:
-  ///  `projects/{PROJECT_ID}/topics/{TOPIC_NAME}`.
+  /// Optional. The name of the Pub/Sub topic created and managed by Eventarc as
+  /// a transport for the event delivery. Format:
+  /// `projects/{PROJECT_ID}/topics/{TOPIC_NAME}`.
   ///
-  ///  You can set an existing topic for triggers of the type
-  ///  `google.cloud.pubsub.topic.v1.messagePublished`. The topic you provide
-  ///  here is not deleted by Eventarc at trigger deletion.
+  /// You can set an existing topic for triggers of the type
+  /// `google.cloud.pubsub.topic.v1.messagePublished`. The topic you provide
+  /// here is not deleted by Eventarc at trigger deletion.
   @$pb.TagNumber(1)
   $core.String get topic => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -1446,7 +1408,7 @@ class Pubsub extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTopic() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTopic() => clearField(1);
+  void clearTopic() => $_clearField(1);
 
   /// Output only. The name of the Pub/Sub subscription created and managed by
   /// Eventarc as a transport for the event delivery. Format:
@@ -1461,7 +1423,7 @@ class Pubsub extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSubscription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSubscription() => clearField(2);
+  void clearSubscription() => $_clearField(2);
 }
 
 /// The data within all Trigger events.
@@ -1492,13 +1454,9 @@ class TriggerEventData extends $pb.GeneratedMessage {
         subBuilder: Trigger.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TriggerEventData clone() => TriggerEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TriggerEventData copyWith(void Function(TriggerEventData) updates) =>
       super.copyWith((message) => updates(message as TriggerEventData))
           as TriggerEventData;
@@ -1520,13 +1478,13 @@ class TriggerEventData extends $pb.GeneratedMessage {
   Trigger get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Trigger v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Trigger ensurePayload() => $_ensure(0);
 }
@@ -1559,13 +1517,9 @@ class ChannelEventData extends $pb.GeneratedMessage {
         subBuilder: Channel.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ChannelEventData clone() => ChannelEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ChannelEventData copyWith(void Function(ChannelEventData) updates) =>
       super.copyWith((message) => updates(message as ChannelEventData))
           as ChannelEventData;
@@ -1587,13 +1541,13 @@ class ChannelEventData extends $pb.GeneratedMessage {
   Channel get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Channel v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Channel ensurePayload() => $_ensure(0);
 }
@@ -1626,14 +1580,10 @@ class ChannelConnectionEventData extends $pb.GeneratedMessage {
         subBuilder: ChannelConnection.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ChannelConnectionEventData clone() =>
       ChannelConnectionEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ChannelConnectionEventData copyWith(
           void Function(ChannelConnectionEventData) updates) =>
       super.copyWith(
@@ -1657,13 +1607,13 @@ class ChannelConnectionEventData extends $pb.GeneratedMessage {
   ChannelConnection get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ChannelConnection v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ChannelConnection ensurePayload() => $_ensure(0);
 }

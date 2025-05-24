@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/protobuf/duration.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,64 +15,66 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 import 'package:protobuf/src/protobuf/mixins/well_known.dart' as $mixin;
 
-///  A Duration represents a signed, fixed-length span of time represented
-///  as a count of seconds and fractions of seconds at nanosecond
-///  resolution. It is independent of any calendar and concepts like "day"
-///  or "month". It is related to Timestamp in that the difference between
-///  two Timestamp values is a Duration and it can be added or subtracted
-///  from a Timestamp. Range is approximately +-10,000 years.
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
+/// A Duration represents a signed, fixed-length span of time represented
+/// as a count of seconds and fractions of seconds at nanosecond
+/// resolution. It is independent of any calendar and concepts like "day"
+/// or "month". It is related to Timestamp in that the difference between
+/// two Timestamp values is a Duration and it can be added or subtracted
+/// from a Timestamp. Range is approximately +-10,000 years.
 ///
-///  # Examples
+/// # Examples
 ///
-///  Example 1: Compute Duration from two Timestamps in pseudo code.
+/// Example 1: Compute Duration from two Timestamps in pseudo code.
 ///
-///      Timestamp start = ...;
-///      Timestamp end = ...;
-///      Duration duration = ...;
+///     Timestamp start = ...;
+///     Timestamp end = ...;
+///     Duration duration = ...;
 ///
-///      duration.seconds = end.seconds - start.seconds;
-///      duration.nanos = end.nanos - start.nanos;
+///     duration.seconds = end.seconds - start.seconds;
+///     duration.nanos = end.nanos - start.nanos;
 ///
-///      if (duration.seconds < 0 && duration.nanos > 0) {
-///        duration.seconds += 1;
-///        duration.nanos -= 1000000000;
-///      } else if (duration.seconds > 0 && duration.nanos < 0) {
-///        duration.seconds -= 1;
-///        duration.nanos += 1000000000;
-///      }
+///     if (duration.seconds < 0 && duration.nanos > 0) {
+///       duration.seconds += 1;
+///       duration.nanos -= 1000000000;
+///     } else if (duration.seconds > 0 && duration.nanos < 0) {
+///       duration.seconds -= 1;
+///       duration.nanos += 1000000000;
+///     }
 ///
-///  Example 2: Compute Timestamp from Timestamp + Duration in pseudo code.
+/// Example 2: Compute Timestamp from Timestamp + Duration in pseudo code.
 ///
-///      Timestamp start = ...;
-///      Duration duration = ...;
-///      Timestamp end = ...;
+///     Timestamp start = ...;
+///     Duration duration = ...;
+///     Timestamp end = ...;
 ///
-///      end.seconds = start.seconds + duration.seconds;
-///      end.nanos = start.nanos + duration.nanos;
+///     end.seconds = start.seconds + duration.seconds;
+///     end.nanos = start.nanos + duration.nanos;
 ///
-///      if (end.nanos < 0) {
-///        end.seconds -= 1;
-///        end.nanos += 1000000000;
-///      } else if (end.nanos >= 1000000000) {
-///        end.seconds += 1;
-///        end.nanos -= 1000000000;
-///      }
+///     if (end.nanos < 0) {
+///       end.seconds -= 1;
+///       end.nanos += 1000000000;
+///     } else if (end.nanos >= 1000000000) {
+///       end.seconds += 1;
+///       end.nanos -= 1000000000;
+///     }
 ///
-///  Example 3: Compute Duration from datetime.timedelta in Python.
+/// Example 3: Compute Duration from datetime.timedelta in Python.
 ///
-///      td = datetime.timedelta(days=3, minutes=10)
-///      duration = Duration()
-///      duration.FromTimedelta(td)
+///     td = datetime.timedelta(days=3, minutes=10)
+///     duration = Duration()
+///     duration.FromTimedelta(td)
 ///
-///  # JSON Mapping
+/// # JSON Mapping
 ///
-///  In JSON format, the Duration type is encoded as a string rather than an
-///  object, where the string ends in the suffix "s" (indicating seconds) and
-///  is preceded by the number of seconds, with nanoseconds expressed as
-///  fractional seconds. For example, 3 seconds with 0 nanoseconds should be
-///  encoded in JSON format as "3s", while 3 seconds and 1 nanosecond should
-///  be expressed in JSON format as "3.000000001s", and 3 seconds and 1
-///  microsecond should be expressed in JSON format as "3.000001s".
+/// In JSON format, the Duration type is encoded as a string rather than an
+/// object, where the string ends in the suffix "s" (indicating seconds) and
+/// is preceded by the number of seconds, with nanoseconds expressed as
+/// fractional seconds. For example, 3 seconds with 0 nanoseconds should be
+/// encoded in JSON format as "3s", while 3 seconds and 1 nanosecond should
+/// be expressed in JSON format as "3.000000001s", and 3 seconds and 1
+/// microsecond should be expressed in JSON format as "3.000001s".
 class Duration extends $pb.GeneratedMessage with $mixin.DurationMixin {
   factory Duration({
     $fixnum.Int64? seconds,
@@ -106,13 +108,9 @@ class Duration extends $pb.GeneratedMessage with $mixin.DurationMixin {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'nanos', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Duration clone() => Duration()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Duration copyWith(void Function(Duration) updates) =>
       super.copyWith((message) => updates(message as Duration)) as Duration;
 
@@ -140,7 +138,7 @@ class Duration extends $pb.GeneratedMessage with $mixin.DurationMixin {
   @$pb.TagNumber(1)
   $core.bool hasSeconds() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSeconds() => clearField(1);
+  void clearSeconds() => $_clearField(1);
 
   /// Signed fractions of a second at nanosecond resolution of the span
   /// of time. Durations less than one second are represented with a 0
@@ -158,7 +156,22 @@ class Duration extends $pb.GeneratedMessage with $mixin.DurationMixin {
   @$pb.TagNumber(2)
   $core.bool hasNanos() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNanos() => clearField(2);
+  void clearNanos() => $_clearField(2);
+
+  /// Converts the [Duration] to [$core.Duration].
+  ///
+  /// This is a lossy conversion, as [$core.Duration] is limited to [int]
+  /// microseconds and also does not support nanosecond precision.
+  $core.Duration toDart() => $core.Duration(
+        seconds: seconds.toInt(),
+        microseconds: nanos ~/ 1000,
+      );
+
+  /// Creates a new instance from [$core.Duration].
+  static Duration fromDart($core.Duration duration) => Duration()
+    ..seconds = $fixnum.Int64(duration.inSeconds)
+    ..nanos =
+        (duration.inMicroseconds % $core.Duration.microsecondsPerSecond) * 1000;
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

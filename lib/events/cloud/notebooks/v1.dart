@@ -1,25 +1,3 @@
-export '../../../src/events/cloud/notebooks/v1/data.pbenum.dart'
-    show
-        Runtime_State,
-        Runtime_HealthState,
-        RuntimeAcceleratorConfig_AcceleratorType,
-        LocalDiskInitializeParams_DiskType,
-        RuntimeAccessConfig_RuntimeAccessType,
-        RuntimeSoftwareConfig_PostStartupScriptBehavior,
-        VirtualMachineConfig_NicType,
-        ExecutionTemplate_ScaleTier,
-        ExecutionTemplate_SchedulerAcceleratorType,
-        ExecutionTemplate_JobType,
-        Execution_State,
-        ReservationAffinity_Type,
-        Instance_AcceleratorType,
-        Instance_State,
-        Instance_DiskType,
-        Instance_DiskEncryption,
-        Instance_NicType,
-        Instance_UpgradeHistoryEntry_State,
-        Instance_UpgradeHistoryEntry_Action,
-        Schedule_State;
 export '../../../src/events/cloud/notebooks/v1/data.pb.dart'
     show
         Environment,
@@ -56,6 +34,28 @@ export '../../../src/events/cloud/notebooks/v1/data.pb.dart'
         InstanceEventData,
         ScheduleEventData,
         EnvironmentEventData;
+export '../../../src/events/cloud/notebooks/v1/data.pbenum.dart'
+    show
+        Runtime_State,
+        Runtime_HealthState,
+        RuntimeAcceleratorConfig_AcceleratorType,
+        LocalDiskInitializeParams_DiskType,
+        RuntimeAccessConfig_RuntimeAccessType,
+        RuntimeSoftwareConfig_PostStartupScriptBehavior,
+        VirtualMachineConfig_NicType,
+        ExecutionTemplate_ScaleTier,
+        ExecutionTemplate_SchedulerAcceleratorType,
+        ExecutionTemplate_JobType,
+        Execution_State,
+        ReservationAffinity_Type,
+        Instance_AcceleratorType,
+        Instance_State,
+        Instance_DiskType,
+        Instance_DiskEncryption,
+        Instance_NicType,
+        Instance_UpgradeHistoryEntry_State,
+        Instance_UpgradeHistoryEntry_Action,
+        Schedule_State;
 export '../../../src/events/cloud/notebooks/v1/events.pb.dart'
     show
         RuntimeCreatedEvent,

@@ -1,9 +1,3 @@
-export '../../../../src/events/cloud/video/transcoder/v1/data.pbenum.dart'
-    show
-        Job_ProcessingState,
-        Job_ProcessingMode,
-        Manifest_ManifestType,
-        Overlay_FadeType;
 export '../../../../src/events/cloud/video/transcoder/v1/data.pb.dart'
     show
         Job,
@@ -46,6 +40,12 @@ export '../../../../src/events/cloud/video/transcoder/v1/data.pb.dart'
         SegmentSettings,
         JobEventData,
         JobTemplateEventData;
+export '../../../../src/events/cloud/video/transcoder/v1/data.pbenum.dart'
+    show
+        Job_ProcessingState,
+        Job_ProcessingMode,
+        Manifest_ManifestType,
+        Overlay_FadeType;
 export '../../../../src/events/cloud/video/transcoder/v1/events.pb.dart'
     show
         JobCreatedEvent,

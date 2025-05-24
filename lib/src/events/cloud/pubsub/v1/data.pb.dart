@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/pubsub/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,11 +15,14 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
 /// The event data when a message is published to a topic.
 class MessagePublishedData extends $pb.GeneratedMessage {
   factory MessagePublishedData({
     PubsubMessage? message,
     $core.String? subscription,
+    $core.int? deliveryAttempt,
   }) {
     final $result = create();
     if (message != null) {
@@ -27,6 +30,9 @@ class MessagePublishedData extends $pb.GeneratedMessage {
     }
     if (subscription != null) {
       $result.subscription = subscription;
+    }
+    if (deliveryAttempt != null) {
+      $result.deliveryAttempt = deliveryAttempt;
     }
     return $result;
   }
@@ -46,16 +52,14 @@ class MessagePublishedData extends $pb.GeneratedMessage {
     ..aOM<PubsubMessage>(1, _omitFieldNames ? '' : 'message',
         subBuilder: PubsubMessage.create)
     ..aOS(2, _omitFieldNames ? '' : 'subscription')
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'deliveryAttempt', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MessagePublishedData clone() =>
       MessagePublishedData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MessagePublishedData copyWith(void Function(MessagePublishedData) updates) =>
       super.copyWith((message) => updates(message as MessagePublishedData))
           as MessagePublishedData;
@@ -77,13 +81,13 @@ class MessagePublishedData extends $pb.GeneratedMessage {
   PubsubMessage get message => $_getN(0);
   @$pb.TagNumber(1)
   set message(PubsubMessage v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasMessage() => $_has(0);
   @$pb.TagNumber(1)
-  void clearMessage() => clearField(1);
+  void clearMessage() => $_clearField(1);
   @$pb.TagNumber(1)
   PubsubMessage ensureMessage() => $_ensure(0);
 
@@ -100,14 +104,36 @@ class MessagePublishedData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSubscription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSubscription() => clearField(2);
+  void clearSubscription() => $_clearField(2);
+
+  /// The approximate number of times that Pub/Sub has attempted to deliver
+  /// the associated message to a subscriber.
+  ///
+  /// More precisely, this is 1 + (number of NACKs) +
+  /// (number of ack_deadline exceeds) for this message.
+  ///
+  /// Upon the first delivery of a given message, `delivery_attempt` will have a
+  /// value of 1. The value is calculated at best effort and is approximate.
+  ///
+  /// If a DeadLetterPolicy is not set on the subscription, this will be 0.
+  @$pb.TagNumber(3)
+  $core.int get deliveryAttempt => $_getIZ(2);
+  @$pb.TagNumber(3)
+  set deliveryAttempt($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasDeliveryAttempt() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearDeliveryAttempt() => $_clearField(3);
 }
 
 /// A message published to a topic.
 class PubsubMessage extends $pb.GeneratedMessage {
   factory PubsubMessage({
     $core.List<$core.int>? data,
-    $core.Map<$core.String, $core.String>? attributes,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? attributes,
     $core.String? messageId,
     $2.Timestamp? publishTime,
     $core.String? orderingKey,
@@ -117,7 +143,7 @@ class PubsubMessage extends $pb.GeneratedMessage {
       $result.data = data;
     }
     if (attributes != null) {
-      $result.attributes.addAll(attributes);
+      $result.attributes.addEntries(attributes);
     }
     if (messageId != null) {
       $result.messageId = messageId;
@@ -156,13 +182,9 @@ class PubsubMessage extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'orderingKey')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PubsubMessage clone() => PubsubMessage()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PubsubMessage copyWith(void Function(PubsubMessage) updates) =>
       super.copyWith((message) => updates(message as PubsubMessage))
           as PubsubMessage;
@@ -190,11 +212,11 @@ class PubsubMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
 
   /// Attributes for this message.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $core.String> get attributes => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get attributes => $_getMap(1);
 
   /// ID of this message, assigned by the server when the message is published.
   /// Guaranteed to be unique within the topic.
@@ -208,7 +230,7 @@ class PubsubMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMessageId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMessageId() => clearField(3);
+  void clearMessageId() => $_clearField(3);
 
   /// The time at which the message was published, populated by the server when
   /// it receives the `Publish` call.
@@ -216,13 +238,13 @@ class PubsubMessage extends $pb.GeneratedMessage {
   $2.Timestamp get publishTime => $_getN(3);
   @$pb.TagNumber(4)
   set publishTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasPublishTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearPublishTime() => clearField(4);
+  void clearPublishTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensurePublishTime() => $_ensure(3);
 
@@ -238,7 +260,7 @@ class PubsubMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasOrderingKey() => $_has(4);
   @$pb.TagNumber(5)
-  void clearOrderingKey() => clearField(5);
+  void clearOrderingKey() => $_clearField(5);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/cloudbuild/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,9 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $10;
+import '../../../../protobuf/duration.pb.dart' as $0;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -31,7 +33,7 @@ class BuildEventData extends $pb.GeneratedMessage {
     $2.Timestamp? finishTime,
     Results? results,
     $core.Iterable<BuildStep>? steps,
-    $10.Duration? timeout,
+    $0.Duration? timeout,
     $core.Iterable<$core.String>? images,
     $core.String? projectId,
     $core.String? logsBucket,
@@ -40,12 +42,12 @@ class BuildEventData extends $pb.GeneratedMessage {
     BuildOptions? options,
     $core.String? statusDetail,
     $core.String? logUrl,
-    $core.Map<$core.String, $core.String>? substitutions,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? substitutions,
     $core.Iterable<$core.String>? tags,
     $core.Iterable<Secret>? secrets,
-    $core.Map<$core.String, TimeSpan>? timing,
+    $core.Iterable<$core.MapEntry<$core.String, TimeSpan>>? timing,
     Artifacts? artifacts,
-    $10.Duration? queueTtl,
+    $0.Duration? queueTtl,
   }) {
     final $result = create();
     if (id != null) {
@@ -100,7 +102,7 @@ class BuildEventData extends $pb.GeneratedMessage {
       $result.logUrl = logUrl;
     }
     if (substitutions != null) {
-      $result.substitutions.addAll(substitutions);
+      $result.substitutions.addEntries(substitutions);
     }
     if (tags != null) {
       $result.tags.addAll(tags);
@@ -109,7 +111,7 @@ class BuildEventData extends $pb.GeneratedMessage {
       $result.secrets.addAll(secrets);
     }
     if (timing != null) {
-      $result.timing.addAll(timing);
+      $result.timing.addEntries(timing);
     }
     if (artifacts != null) {
       $result.artifacts = artifacts;
@@ -149,8 +151,8 @@ class BuildEventData extends $pb.GeneratedMessage {
         subBuilder: Results.create)
     ..pc<BuildStep>(11, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM,
         subBuilder: BuildStep.create)
-    ..aOM<$10.Duration>(12, _omitFieldNames ? '' : 'timeout',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(12, _omitFieldNames ? '' : 'timeout',
+        subBuilder: $0.Duration.create)
     ..pPS(13, _omitFieldNames ? '' : 'images')
     ..aOS(16, _omitFieldNames ? '' : 'projectId')
     ..aOS(19, _omitFieldNames ? '' : 'logsBucket')
@@ -178,17 +180,13 @@ class BuildEventData extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.cloudbuild.v1'))
     ..aOM<Artifacts>(37, _omitFieldNames ? '' : 'artifacts',
         subBuilder: Artifacts.create)
-    ..aOM<$10.Duration>(40, _omitFieldNames ? '' : 'queueTtl',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(40, _omitFieldNames ? '' : 'queueTtl',
+        subBuilder: $0.Duration.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuildEventData clone() => BuildEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuildEventData copyWith(void Function(BuildEventData) updates) =>
       super.copyWith((message) => updates(message as BuildEventData))
           as BuildEventData;
@@ -216,33 +214,33 @@ class BuildEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearId() => clearField(1);
+  void clearId() => $_clearField(1);
 
   /// Status of the build.
   @$pb.TagNumber(2)
   BuildEventData_Status get status => $_getN(1);
   @$pb.TagNumber(2)
   set status(BuildEventData_Status v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
-  void clearStatus() => clearField(2);
+  void clearStatus() => $_clearField(2);
 
   /// The location of the source files to build.
   @$pb.TagNumber(3)
   Source get source => $_getN(2);
   @$pb.TagNumber(3)
   set source(Source v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasSource() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSource() => clearField(3);
+  void clearSource() => $_clearField(3);
   @$pb.TagNumber(3)
   Source ensureSource() => $_ensure(2);
 
@@ -251,13 +249,13 @@ class BuildEventData extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(6)
   set createTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(6)
-  void clearCreateTime() => clearField(6);
+  void clearCreateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -266,31 +264,31 @@ class BuildEventData extends $pb.GeneratedMessage {
   $2.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(7)
   set startTime($2.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasStartTime() => $_has(4);
   @$pb.TagNumber(7)
-  void clearStartTime() => clearField(7);
+  void clearStartTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $2.Timestamp ensureStartTime() => $_ensure(4);
 
-  ///  Time at which execution of the build was finished.
+  /// Time at which execution of the build was finished.
   ///
-  ///  The difference between finish_time and start_time is the duration of the
-  ///  build's execution.
+  /// The difference between finish_time and start_time is the duration of the
+  /// build's execution.
   @$pb.TagNumber(8)
   $2.Timestamp get finishTime => $_getN(5);
   @$pb.TagNumber(8)
   set finishTime($2.Timestamp v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasFinishTime() => $_has(5);
   @$pb.TagNumber(8)
-  void clearFinishTime() => clearField(8);
+  void clearFinishTime() => $_clearField(8);
   @$pb.TagNumber(8)
   $2.Timestamp ensureFinishTime() => $_ensure(5);
 
@@ -299,49 +297,49 @@ class BuildEventData extends $pb.GeneratedMessage {
   Results get results => $_getN(6);
   @$pb.TagNumber(10)
   set results(Results v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasResults() => $_has(6);
   @$pb.TagNumber(10)
-  void clearResults() => clearField(10);
+  void clearResults() => $_clearField(10);
   @$pb.TagNumber(10)
   Results ensureResults() => $_ensure(6);
 
   /// The operations to be performed on the workspace.
   @$pb.TagNumber(11)
-  $core.List<BuildStep> get steps => $_getList(7);
+  $pb.PbList<BuildStep> get steps => $_getList(7);
 
   /// Amount of time that this build should be allowed to run, to second
   /// granularity. If this amount of time elapses, work on the build will cease
   /// and the build status will be `TIMEOUT`.
   @$pb.TagNumber(12)
-  $10.Duration get timeout => $_getN(8);
+  $0.Duration get timeout => $_getN(8);
   @$pb.TagNumber(12)
-  set timeout($10.Duration v) {
-    setField(12, v);
+  set timeout($0.Duration v) {
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasTimeout() => $_has(8);
   @$pb.TagNumber(12)
-  void clearTimeout() => clearField(12);
+  void clearTimeout() => $_clearField(12);
   @$pb.TagNumber(12)
-  $10.Duration ensureTimeout() => $_ensure(8);
+  $0.Duration ensureTimeout() => $_ensure(8);
 
-  ///  A list of images to be pushed upon the successful completion of all build
-  ///  steps.
+  /// A list of images to be pushed upon the successful completion of all build
+  /// steps.
   ///
-  ///  The images are pushed using the builder service account's credentials.
+  /// The images are pushed using the builder service account's credentials.
   ///
-  ///  The digests of the pushed images will be stored in the `Build` resource's
-  ///  results field.
+  /// The digests of the pushed images will be stored in the `Build` resource's
+  /// results field.
   ///
-  ///  If any of the images fail to be pushed, the build status is marked
-  ///  `FAILURE`.
+  /// If any of the images fail to be pushed, the build status is marked
+  /// `FAILURE`.
   @$pb.TagNumber(13)
-  $core.List<$core.String> get images => $_getList(9);
+  $pb.PbList<$core.String> get images => $_getList(9);
 
   /// ID of the project.
   @$pb.TagNumber(16)
@@ -354,7 +352,7 @@ class BuildEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasProjectId() => $_has(10);
   @$pb.TagNumber(16)
-  void clearProjectId() => clearField(16);
+  void clearProjectId() => $_clearField(16);
 
   /// Google Cloud Storage bucket where logs should be written (see
   /// [Bucket Name
@@ -370,20 +368,20 @@ class BuildEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.bool hasLogsBucket() => $_has(11);
   @$pb.TagNumber(19)
-  void clearLogsBucket() => clearField(19);
+  void clearLogsBucket() => $_clearField(19);
 
   /// A permanent fixed identifier for source.
   @$pb.TagNumber(21)
   SourceProvenance get sourceProvenance => $_getN(12);
   @$pb.TagNumber(21)
   set sourceProvenance(SourceProvenance v) {
-    setField(21, v);
+    $_setField(21, v);
   }
 
   @$pb.TagNumber(21)
   $core.bool hasSourceProvenance() => $_has(12);
   @$pb.TagNumber(21)
-  void clearSourceProvenance() => clearField(21);
+  void clearSourceProvenance() => $_clearField(21);
   @$pb.TagNumber(21)
   SourceProvenance ensureSourceProvenance() => $_ensure(12);
 
@@ -399,20 +397,20 @@ class BuildEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.bool hasBuildTriggerId() => $_has(13);
   @$pb.TagNumber(22)
-  void clearBuildTriggerId() => clearField(22);
+  void clearBuildTriggerId() => $_clearField(22);
 
   /// Special options for this build.
   @$pb.TagNumber(23)
   BuildOptions get options => $_getN(14);
   @$pb.TagNumber(23)
   set options(BuildOptions v) {
-    setField(23, v);
+    $_setField(23, v);
   }
 
   @$pb.TagNumber(23)
   $core.bool hasOptions() => $_has(14);
   @$pb.TagNumber(23)
-  void clearOptions() => clearField(23);
+  void clearOptions() => $_clearField(23);
   @$pb.TagNumber(23)
   BuildOptions ensureOptions() => $_ensure(14);
 
@@ -427,7 +425,7 @@ class BuildEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $core.bool hasStatusDetail() => $_has(15);
   @$pb.TagNumber(24)
-  void clearStatusDetail() => clearField(24);
+  void clearStatusDetail() => $_clearField(24);
 
   /// URL to logs for this build in Google Cloud Console.
   @$pb.TagNumber(25)
@@ -440,31 +438,31 @@ class BuildEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $core.bool hasLogUrl() => $_has(16);
   @$pb.TagNumber(25)
-  void clearLogUrl() => clearField(25);
+  void clearLogUrl() => $_clearField(25);
 
   /// Substitutions data for `Build` resource.
   @$pb.TagNumber(29)
-  $core.Map<$core.String, $core.String> get substitutions => $_getMap(17);
+  $pb.PbMap<$core.String, $core.String> get substitutions => $_getMap(17);
 
   /// Tags for annotation of a `Build`. These are not docker tags.
   @$pb.TagNumber(31)
-  $core.List<$core.String> get tags => $_getList(18);
+  $pb.PbList<$core.String> get tags => $_getList(18);
 
   /// Secrets to decrypt using Cloud Key Management Service.
   @$pb.TagNumber(32)
-  $core.List<Secret> get secrets => $_getList(19);
+  $pb.PbList<Secret> get secrets => $_getList(19);
 
-  ///  Stores timing information for phases of the build. Valid keys
-  ///  are:
+  /// Stores timing information for phases of the build. Valid keys
+  /// are:
   ///
-  ///  * BUILD: time to execute all build steps
-  ///  * PUSH: time to push all specified images.
-  ///  * FETCHSOURCE: time to fetch source.
+  /// * BUILD: time to execute all build steps
+  /// * PUSH: time to push all specified images.
+  /// * FETCHSOURCE: time to fetch source.
   ///
-  ///  If the build does not specify source or images,
-  ///  these keys will not be included.
+  /// If the build does not specify source or images,
+  /// these keys will not be included.
   @$pb.TagNumber(33)
-  $core.Map<$core.String, TimeSpan> get timing => $_getMap(20);
+  $pb.PbMap<$core.String, TimeSpan> get timing => $_getMap(20);
 
   /// Artifacts produced by the build that should be uploaded upon
   /// successful completion of all build steps.
@@ -472,34 +470,34 @@ class BuildEventData extends $pb.GeneratedMessage {
   Artifacts get artifacts => $_getN(21);
   @$pb.TagNumber(37)
   set artifacts(Artifacts v) {
-    setField(37, v);
+    $_setField(37, v);
   }
 
   @$pb.TagNumber(37)
   $core.bool hasArtifacts() => $_has(21);
   @$pb.TagNumber(37)
-  void clearArtifacts() => clearField(37);
+  void clearArtifacts() => $_clearField(37);
   @$pb.TagNumber(37)
   Artifacts ensureArtifacts() => $_ensure(21);
 
-  ///  TTL in queue for this build. If provided and the build is enqueued longer
-  ///  than this value, the build will expire and the build status will be
-  ///  `EXPIRED`.
+  /// TTL in queue for this build. If provided and the build is enqueued longer
+  /// than this value, the build will expire and the build status will be
+  /// `EXPIRED`.
   ///
-  ///  The TTL starts ticking from create_time.
+  /// The TTL starts ticking from create_time.
   @$pb.TagNumber(40)
-  $10.Duration get queueTtl => $_getN(22);
+  $0.Duration get queueTtl => $_getN(22);
   @$pb.TagNumber(40)
-  set queueTtl($10.Duration v) {
-    setField(40, v);
+  set queueTtl($0.Duration v) {
+    $_setField(40, v);
   }
 
   @$pb.TagNumber(40)
   $core.bool hasQueueTtl() => $_has(22);
   @$pb.TagNumber(40)
-  void clearQueueTtl() => clearField(40);
+  void clearQueueTtl() => $_clearField(40);
   @$pb.TagNumber(40)
-  $10.Duration ensureQueueTtl() => $_ensure(22);
+  $0.Duration ensureQueueTtl() => $_ensure(22);
 }
 
 enum Source_Source { storageSource, repoSource, notSet }
@@ -543,13 +541,9 @@ class Source extends $pb.GeneratedMessage {
         subBuilder: RepoSource.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Source clone() => Source()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Source copyWith(void Function(Source) updates) =>
       super.copyWith((message) => updates(message as Source)) as Source;
 
@@ -565,20 +559,20 @@ class Source extends $pb.GeneratedMessage {
   static Source? _defaultInstance;
 
   Source_Source whichSource() => _Source_SourceByTag[$_whichOneof(0)]!;
-  void clearSource() => clearField($_whichOneof(0));
+  void clearSource() => $_clearField($_whichOneof(0));
 
   /// If provided, get the source from this location in Google Cloud Storage.
   @$pb.TagNumber(2)
   StorageSource get storageSource => $_getN(0);
   @$pb.TagNumber(2)
   set storageSource(StorageSource v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasStorageSource() => $_has(0);
   @$pb.TagNumber(2)
-  void clearStorageSource() => clearField(2);
+  void clearStorageSource() => $_clearField(2);
   @$pb.TagNumber(2)
   StorageSource ensureStorageSource() => $_ensure(0);
 
@@ -588,13 +582,13 @@ class Source extends $pb.GeneratedMessage {
   RepoSource get repoSource => $_getN(1);
   @$pb.TagNumber(3)
   set repoSource(RepoSource v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasRepoSource() => $_has(1);
   @$pb.TagNumber(3)
-  void clearRepoSource() => clearField(3);
+  void clearRepoSource() => $_clearField(3);
   @$pb.TagNumber(3)
   RepoSource ensureRepoSource() => $_ensure(1);
 }
@@ -636,13 +630,9 @@ class StorageSource extends $pb.GeneratedMessage {
     ..aInt64(3, _omitFieldNames ? '' : 'generation')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StorageSource clone() => StorageSource()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StorageSource copyWith(void Function(StorageSource) updates) =>
       super.copyWith((message) => updates(message as StorageSource))
           as StorageSource;
@@ -672,7 +662,7 @@ class StorageSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasBucket() => $_has(0);
   @$pb.TagNumber(1)
-  void clearBucket() => clearField(1);
+  void clearBucket() => $_clearField(1);
 
   /// Google Cloud Storage object containing the source.
   @$pb.TagNumber(2)
@@ -685,7 +675,7 @@ class StorageSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasObject() => $_has(1);
   @$pb.TagNumber(2)
-  void clearObject() => clearField(2);
+  void clearObject() => $_clearField(2);
 
   /// Google Cloud Storage generation for the object. If the generation is
   /// omitted, the latest generation will be used.
@@ -699,7 +689,7 @@ class StorageSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasGeneration() => $_has(2);
   @$pb.TagNumber(3)
-  void clearGeneration() => clearField(3);
+  void clearGeneration() => $_clearField(3);
 }
 
 enum RepoSource_Revision { branchName, tagName, commitSha, notSet }
@@ -714,7 +704,7 @@ class RepoSource extends $pb.GeneratedMessage {
     $core.String? commitSha,
     $core.String? dir,
     $core.bool? invertRegex,
-    $core.Map<$core.String, $core.String>? substitutions,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? substitutions,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -739,7 +729,7 @@ class RepoSource extends $pb.GeneratedMessage {
       $result.invertRegex = invertRegex;
     }
     if (substitutions != null) {
-      $result.substitutions.addAll(substitutions);
+      $result.substitutions.addEntries(substitutions);
     }
     return $result;
   }
@@ -778,13 +768,9 @@ class RepoSource extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.cloudbuild.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RepoSource clone() => RepoSource()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RepoSource copyWith(void Function(RepoSource) updates) =>
       super.copyWith((message) => updates(message as RepoSource)) as RepoSource;
 
@@ -801,7 +787,7 @@ class RepoSource extends $pb.GeneratedMessage {
 
   RepoSource_Revision whichRevision() =>
       _RepoSource_RevisionByTag[$_whichOneof(0)]!;
-  void clearRevision() => clearField($_whichOneof(0));
+  void clearRevision() => $_clearField($_whichOneof(0));
 
   /// ID of the project that owns the Cloud Source Repository.
   @$pb.TagNumber(1)
@@ -814,7 +800,7 @@ class RepoSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasProjectId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearProjectId() => clearField(1);
+  void clearProjectId() => $_clearField(1);
 
   /// Name of the Cloud Source Repository.
   @$pb.TagNumber(2)
@@ -827,12 +813,12 @@ class RepoSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasRepoName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRepoName() => clearField(2);
+  void clearRepoName() => $_clearField(2);
 
-  ///  Regex matching branches to build.
+  /// Regex matching branches to build.
   ///
-  ///  The syntax of the regular expressions accepted is the syntax accepted by
-  ///  RE2 and described at https://github.com/google/re2/wiki/Syntax
+  /// The syntax of the regular expressions accepted is the syntax accepted by
+  /// RE2 and described at https://github.com/google/re2/wiki/Syntax
   @$pb.TagNumber(3)
   $core.String get branchName => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -843,12 +829,12 @@ class RepoSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasBranchName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearBranchName() => clearField(3);
+  void clearBranchName() => $_clearField(3);
 
-  ///  Regex matching tags to build.
+  /// Regex matching tags to build.
   ///
-  ///  The syntax of the regular expressions accepted is the syntax accepted by
-  ///  RE2 and described at https://github.com/google/re2/wiki/Syntax
+  /// The syntax of the regular expressions accepted is the syntax accepted by
+  /// RE2 and described at https://github.com/google/re2/wiki/Syntax
   @$pb.TagNumber(4)
   $core.String get tagName => $_getSZ(3);
   @$pb.TagNumber(4)
@@ -859,7 +845,7 @@ class RepoSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasTagName() => $_has(3);
   @$pb.TagNumber(4)
-  void clearTagName() => clearField(4);
+  void clearTagName() => $_clearField(4);
 
   /// Explicit commit SHA to build.
   @$pb.TagNumber(5)
@@ -872,12 +858,12 @@ class RepoSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasCommitSha() => $_has(4);
   @$pb.TagNumber(5)
-  void clearCommitSha() => clearField(5);
+  void clearCommitSha() => $_clearField(5);
 
-  ///  Directory, relative to the source root, in which to run the build.
+  /// Directory, relative to the source root, in which to run the build.
   ///
-  ///  This must be a relative path. If a step's `dir` is specified and is an
-  ///  absolute path, this value is ignored for that step's execution.
+  /// This must be a relative path. If a step's `dir` is specified and is an
+  /// absolute path, this value is ignored for that step's execution.
   @$pb.TagNumber(7)
   $core.String get dir => $_getSZ(5);
   @$pb.TagNumber(7)
@@ -888,7 +874,7 @@ class RepoSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasDir() => $_has(5);
   @$pb.TagNumber(7)
-  void clearDir() => clearField(7);
+  void clearDir() => $_clearField(7);
 
   /// Only trigger a build if the revision regex does NOT match the revision
   /// regex.
@@ -902,12 +888,12 @@ class RepoSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasInvertRegex() => $_has(6);
   @$pb.TagNumber(8)
-  void clearInvertRegex() => clearField(8);
+  void clearInvertRegex() => $_clearField(8);
 
   /// Substitutions to use in a triggered build.
   /// Should only be used with RunBuildTrigger
   @$pb.TagNumber(9)
-  $core.Map<$core.String, $core.String> get substitutions => $_getMap(7);
+  $pb.PbMap<$core.String, $core.String> get substitutions => $_getMap(7);
 }
 
 /// A step in the build pipeline.
@@ -923,7 +909,7 @@ class BuildStep extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? secretEnv,
     $core.Iterable<Volume>? volumes,
     TimeSpan? timing,
-    $10.Duration? timeout,
+    $0.Duration? timeout,
     BuildEventData_Status? status,
     TimeSpan? pullTiming,
   }) {
@@ -994,8 +980,8 @@ class BuildStep extends $pb.GeneratedMessage {
         subBuilder: Volume.create)
     ..aOM<TimeSpan>(10, _omitFieldNames ? '' : 'timing',
         subBuilder: TimeSpan.create)
-    ..aOM<$10.Duration>(11, _omitFieldNames ? '' : 'timeout',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(11, _omitFieldNames ? '' : 'timeout',
+        subBuilder: $0.Duration.create)
     ..e<BuildEventData_Status>(
         12, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
         defaultOrMaker: BuildEventData_Status.STATUS_UNKNOWN,
@@ -1005,13 +991,9 @@ class BuildStep extends $pb.GeneratedMessage {
         subBuilder: TimeSpan.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuildStep clone() => BuildStep()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuildStep copyWith(void Function(BuildStep) updates) =>
       super.copyWith((message) => updates(message as BuildStep)) as BuildStep;
 
@@ -1026,23 +1008,23 @@ class BuildStep extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BuildStep>(create);
   static BuildStep? _defaultInstance;
 
-  ///  The name of the container image that will run this particular
-  ///  build step.
+  /// The name of the container image that will run this particular
+  /// build step.
   ///
-  ///  If the image is available in the host's Docker daemon's cache, it
-  ///  will be run directly. If not, the host will attempt to pull the image
-  ///  first, using the builder service account's credentials if necessary.
+  /// If the image is available in the host's Docker daemon's cache, it
+  /// will be run directly. If not, the host will attempt to pull the image
+  /// first, using the builder service account's credentials if necessary.
   ///
-  ///  The Docker daemon's cache will already have the latest versions of all of
-  ///  the officially supported build steps
-  ///  ([https://github.com/GoogleCloudPlatform/cloud-builders](https://github.com/GoogleCloudPlatform/cloud-builders)).
-  ///  The Docker daemon will also have cached many of the layers for some popular
-  ///  images, like "ubuntu", "debian", but they will be refreshed at the time you
-  ///  attempt to use them.
+  /// The Docker daemon's cache will already have the latest versions of all of
+  /// the officially supported build steps
+  /// ([https://github.com/GoogleCloudPlatform/cloud-builders](https://github.com/GoogleCloudPlatform/cloud-builders)).
+  /// The Docker daemon will also have cached many of the layers for some popular
+  /// images, like "ubuntu", "debian", but they will be refreshed at the time you
+  /// attempt to use them.
   ///
-  ///  If you built an image in a previous build step, it will be stored in the
-  ///  host's Docker daemon's cache and is available to use as the name for a
-  ///  later build step.
+  /// If you built an image in a previous build step, it will be stored in the
+  /// host's Docker daemon's cache and is available to use as the name for a
+  /// later build step.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -1053,34 +1035,34 @@ class BuildStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
-  ///  A list of environment variable definitions to be used when running a step.
+  /// A list of environment variable definitions to be used when running a step.
   ///
-  ///  The elements are of the form "KEY=VALUE" for the environment variable "KEY"
-  ///  being given the value "VALUE".
+  /// The elements are of the form "KEY=VALUE" for the environment variable "KEY"
+  /// being given the value "VALUE".
   @$pb.TagNumber(2)
-  $core.List<$core.String> get env => $_getList(1);
+  $pb.PbList<$core.String> get env => $_getList(1);
 
-  ///  A list of arguments that will be presented to the step when it is started.
+  /// A list of arguments that will be presented to the step when it is started.
   ///
-  ///  If the image used to run the step's container has an entrypoint, the `args`
-  ///  are used as arguments to that entrypoint. If the image does not define
-  ///  an entrypoint, the first element in args is used as the entrypoint,
-  ///  and the remainder will be used as arguments.
+  /// If the image used to run the step's container has an entrypoint, the `args`
+  /// are used as arguments to that entrypoint. If the image does not define
+  /// an entrypoint, the first element in args is used as the entrypoint,
+  /// and the remainder will be used as arguments.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get args => $_getList(2);
+  $pb.PbList<$core.String> get args => $_getList(2);
 
-  ///  Working directory to use when running this step's container.
+  /// Working directory to use when running this step's container.
   ///
-  ///  If this value is a relative path, it is relative to the build's working
-  ///  directory. If this value is absolute, it may be outside the build's working
-  ///  directory, in which case the contents of the path may not be persisted
-  ///  across build step executions, unless a `volume` for that path is specified.
+  /// If this value is a relative path, it is relative to the build's working
+  /// directory. If this value is absolute, it may be outside the build's working
+  /// directory, in which case the contents of the path may not be persisted
+  /// across build step executions, unless a `volume` for that path is specified.
   ///
-  ///  If the build specifies a `RepoSource` with `dir` and a step with a `dir`,
-  ///  which specifies an absolute path, the `RepoSource` `dir` is ignored for
-  ///  the step's execution.
+  /// If the build specifies a `RepoSource` with `dir` and a step with a `dir`,
+  /// which specifies an absolute path, the `RepoSource` `dir` is ignored for
+  /// the step's execution.
   @$pb.TagNumber(4)
   $core.String get dir => $_getSZ(3);
   @$pb.TagNumber(4)
@@ -1091,7 +1073,7 @@ class BuildStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDir() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDir() => clearField(4);
+  void clearDir() => $_clearField(4);
 
   /// Unique identifier for this build step, used in `wait_for` to
   /// reference this build step as a dependency.
@@ -1105,7 +1087,7 @@ class BuildStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasId() => $_has(4);
   @$pb.TagNumber(5)
-  void clearId() => clearField(5);
+  void clearId() => $_clearField(5);
 
   /// The ID(s) of the step(s) that this build step depends on.
   /// This build step will not start until all the build steps in `wait_for`
@@ -1113,7 +1095,7 @@ class BuildStep extends $pb.GeneratedMessage {
   /// start when all previous build steps in the `Build.Steps` list have
   /// completed successfully.
   @$pb.TagNumber(6)
-  $core.List<$core.String> get waitFor => $_getList(5);
+  $pb.PbList<$core.String> get waitFor => $_getList(5);
 
   /// Entrypoint to be used instead of the build step image's default entrypoint.
   /// If unset, the image's default entrypoint is used.
@@ -1127,37 +1109,37 @@ class BuildStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasEntrypoint() => $_has(6);
   @$pb.TagNumber(7)
-  void clearEntrypoint() => clearField(7);
+  void clearEntrypoint() => $_clearField(7);
 
   /// A list of environment variables which are encrypted using a Cloud Key
   /// Management Service crypto key. These values must be specified in the
   /// build's `Secret`.
   @$pb.TagNumber(8)
-  $core.List<$core.String> get secretEnv => $_getList(7);
+  $pb.PbList<$core.String> get secretEnv => $_getList(7);
 
-  ///  List of volumes to mount into the build step.
+  /// List of volumes to mount into the build step.
   ///
-  ///  Each volume is created as an empty volume prior to execution of the
-  ///  build step. Upon completion of the build, volumes and their contents are
-  ///  discarded.
+  /// Each volume is created as an empty volume prior to execution of the
+  /// build step. Upon completion of the build, volumes and their contents are
+  /// discarded.
   ///
-  ///  Using a named volume in only one step is not valid as it is indicative
-  ///  of a build request with an incorrect configuration.
+  /// Using a named volume in only one step is not valid as it is indicative
+  /// of a build request with an incorrect configuration.
   @$pb.TagNumber(9)
-  $core.List<Volume> get volumes => $_getList(8);
+  $pb.PbList<Volume> get volumes => $_getList(8);
 
   /// Stores timing information for executing this build step.
   @$pb.TagNumber(10)
   TimeSpan get timing => $_getN(9);
   @$pb.TagNumber(10)
   set timing(TimeSpan v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasTiming() => $_has(9);
   @$pb.TagNumber(10)
-  void clearTiming() => clearField(10);
+  void clearTiming() => $_clearField(10);
   @$pb.TagNumber(10)
   TimeSpan ensureTiming() => $_ensure(9);
 
@@ -1165,18 +1147,18 @@ class BuildStep extends $pb.GeneratedMessage {
   /// time limit and will be allowed to continue to run until either it completes
   /// or the build itself times out.
   @$pb.TagNumber(11)
-  $10.Duration get timeout => $_getN(10);
+  $0.Duration get timeout => $_getN(10);
   @$pb.TagNumber(11)
-  set timeout($10.Duration v) {
-    setField(11, v);
+  set timeout($0.Duration v) {
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasTimeout() => $_has(10);
   @$pb.TagNumber(11)
-  void clearTimeout() => clearField(11);
+  void clearTimeout() => $_clearField(11);
   @$pb.TagNumber(11)
-  $10.Duration ensureTimeout() => $_ensure(10);
+  $0.Duration ensureTimeout() => $_ensure(10);
 
   /// Status of the build step. At this time, build step status is
   /// only updated on build completion; step status is not updated in real-time
@@ -1185,13 +1167,13 @@ class BuildStep extends $pb.GeneratedMessage {
   BuildEventData_Status get status => $_getN(11);
   @$pb.TagNumber(12)
   set status(BuildEventData_Status v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasStatus() => $_has(11);
   @$pb.TagNumber(12)
-  void clearStatus() => clearField(12);
+  void clearStatus() => $_clearField(12);
 
   /// Stores timing information for pulling this build step's
   /// builder image only.
@@ -1199,13 +1181,13 @@ class BuildStep extends $pb.GeneratedMessage {
   TimeSpan get pullTiming => $_getN(12);
   @$pb.TagNumber(13)
   set pullTiming(TimeSpan v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasPullTiming() => $_has(12);
   @$pb.TagNumber(13)
-  void clearPullTiming() => clearField(13);
+  void clearPullTiming() => $_clearField(13);
   @$pb.TagNumber(13)
   TimeSpan ensurePullTiming() => $_ensure(12);
 }
@@ -1243,13 +1225,9 @@ class Volume extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'path')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Volume clone() => Volume()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Volume copyWith(void Function(Volume) updates) =>
       super.copyWith((message) => updates(message as Volume)) as Volume;
 
@@ -1264,10 +1242,10 @@ class Volume extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Volume>(create);
   static Volume? _defaultInstance;
 
-  ///  Name of the volume to mount.
+  /// Name of the volume to mount.
   ///
-  ///  Volume names must be unique per build step and must be valid names for
-  ///  Docker volumes. Each named volume must be used by at least two build steps.
+  /// Volume names must be unique per build step and must be valid names for
+  /// Docker volumes. Each named volume must be used by at least two build steps.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -1278,12 +1256,12 @@ class Volume extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
-  ///  Path at which to mount the volume.
+  /// Path at which to mount the volume.
   ///
-  ///  Paths must be absolute and cannot conflict with other volume paths on the
-  ///  same build step or with certain reserved volume paths.
+  /// Paths must be absolute and cannot conflict with other volume paths on the
+  /// same build step or with certain reserved volume paths.
   @$pb.TagNumber(2)
   $core.String get path => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -1294,7 +1272,7 @@ class Volume extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPath() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPath() => clearField(2);
+  void clearPath() => $_clearField(2);
 }
 
 /// Artifacts created by the build pipeline.
@@ -1352,13 +1330,9 @@ class Results extends $pb.GeneratedMessage {
         subBuilder: TimeSpan.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Results clone() => Results()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Results copyWith(void Function(Results) updates) =>
       super.copyWith((message) => updates(message as Results)) as Results;
 
@@ -1375,12 +1349,12 @@ class Results extends $pb.GeneratedMessage {
 
   /// Container images that were built as a part of the build.
   @$pb.TagNumber(2)
-  $core.List<BuiltImage> get images => $_getList(0);
+  $pb.PbList<BuiltImage> get images => $_getList(0);
 
   /// List of build step digests, in the order corresponding to build step
   /// indices.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get buildStepImages => $_getList(1);
+  $pb.PbList<$core.String> get buildStepImages => $_getList(1);
 
   /// Path to the artifact manifest. Only populated when artifacts are uploaded.
   @$pb.TagNumber(4)
@@ -1393,7 +1367,7 @@ class Results extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasArtifactManifest() => $_has(2);
   @$pb.TagNumber(4)
-  void clearArtifactManifest() => clearField(4);
+  void clearArtifactManifest() => $_clearField(4);
 
   /// Number of artifacts uploaded. Only populated when artifacts are uploaded.
   @$pb.TagNumber(5)
@@ -1406,29 +1380,29 @@ class Results extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasNumArtifacts() => $_has(3);
   @$pb.TagNumber(5)
-  void clearNumArtifacts() => clearField(5);
+  void clearNumArtifacts() => $_clearField(5);
 
-  ///  List of build step outputs, produced by builder images, in the order
-  ///  corresponding to build step indices.
+  /// List of build step outputs, produced by builder images, in the order
+  /// corresponding to build step indices.
   ///
-  ///  [Cloud Builders](https://cloud.google.com/cloud-build/docs/cloud-builders)
-  ///  can produce this output by writing to `$BUILDER_OUTPUT/output`.
-  ///  Only the first 4KB of data is stored.
+  /// [Cloud Builders](https://cloud.google.com/cloud-build/docs/cloud-builders)
+  /// can produce this output by writing to `$BUILDER_OUTPUT/output`.
+  /// Only the first 4KB of data is stored.
   @$pb.TagNumber(6)
-  $core.List<$core.List<$core.int>> get buildStepOutputs => $_getList(4);
+  $pb.PbList<$core.List<$core.int>> get buildStepOutputs => $_getList(4);
 
   /// Time to push all non-container artifacts.
   @$pb.TagNumber(7)
   TimeSpan get artifactTiming => $_getN(5);
   @$pb.TagNumber(7)
   set artifactTiming(TimeSpan v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasArtifactTiming() => $_has(5);
   @$pb.TagNumber(7)
-  void clearArtifactTiming() => clearField(7);
+  void clearArtifactTiming() => $_clearField(7);
   @$pb.TagNumber(7)
   TimeSpan ensureArtifactTiming() => $_ensure(5);
 }
@@ -1471,13 +1445,9 @@ class BuiltImage extends $pb.GeneratedMessage {
         subBuilder: TimeSpan.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuiltImage clone() => BuiltImage()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuiltImage copyWith(void Function(BuiltImage) updates) =>
       super.copyWith((message) => updates(message as BuiltImage)) as BuiltImage;
 
@@ -1504,7 +1474,7 @@ class BuiltImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Docker Registry 2.0 digest.
   @$pb.TagNumber(3)
@@ -1517,20 +1487,20 @@ class BuiltImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDigest() => $_has(1);
   @$pb.TagNumber(3)
-  void clearDigest() => clearField(3);
+  void clearDigest() => $_clearField(3);
 
   /// Stores timing information for pushing the specified image.
   @$pb.TagNumber(4)
   TimeSpan get pushTiming => $_getN(2);
   @$pb.TagNumber(4)
   set pushTiming(TimeSpan v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasPushTiming() => $_has(2);
   @$pb.TagNumber(4)
-  void clearPushTiming() => clearField(4);
+  void clearPushTiming() => $_clearField(4);
   @$pb.TagNumber(4)
   TimeSpan ensurePushTiming() => $_ensure(2);
 }
@@ -1574,14 +1544,10 @@ class Artifacts_ArtifactObjects extends $pb.GeneratedMessage {
         subBuilder: TimeSpan.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Artifacts_ArtifactObjects clone() =>
       Artifacts_ArtifactObjects()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Artifacts_ArtifactObjects copyWith(
           void Function(Artifacts_ArtifactObjects) updates) =>
       super.copyWith((message) => updates(message as Artifacts_ArtifactObjects))
@@ -1599,12 +1565,12 @@ class Artifacts_ArtifactObjects extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<Artifacts_ArtifactObjects>(create);
   static Artifacts_ArtifactObjects? _defaultInstance;
 
-  ///  Cloud Storage bucket and optional object path, in the form
-  ///  "gs://bucket/path/to/somewhere/". (see [Bucket Name
-  ///  Requirements](https://cloud.google.com/storage/docs/bucket-naming#requirements)).
+  /// Cloud Storage bucket and optional object path, in the form
+  /// "gs://bucket/path/to/somewhere/". (see [Bucket Name
+  /// Requirements](https://cloud.google.com/storage/docs/bucket-naming#requirements)).
   ///
-  ///  Files in the workspace matching any path pattern will be uploaded to
-  ///  Cloud Storage with this location as a prefix.
+  /// Files in the workspace matching any path pattern will be uploaded to
+  /// Cloud Storage with this location as a prefix.
   @$pb.TagNumber(1)
   $core.String get location => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -1615,24 +1581,24 @@ class Artifacts_ArtifactObjects extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
-  void clearLocation() => clearField(1);
+  void clearLocation() => $_clearField(1);
 
   /// Path globs used to match files in the build's workspace.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get paths => $_getList(1);
+  $pb.PbList<$core.String> get paths => $_getList(1);
 
   /// Stores timing information for pushing all artifact objects.
   @$pb.TagNumber(3)
   TimeSpan get timing => $_getN(2);
   @$pb.TagNumber(3)
   set timing(TimeSpan v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasTiming() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTiming() => clearField(3);
+  void clearTiming() => $_clearField(3);
   @$pb.TagNumber(3)
   TimeSpan ensureTiming() => $_ensure(2);
 }
@@ -1671,13 +1637,9 @@ class Artifacts extends $pb.GeneratedMessage {
         subBuilder: Artifacts_ArtifactObjects.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Artifacts clone() => Artifacts()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Artifacts copyWith(void Function(Artifacts) updates) =>
       super.copyWith((message) => updates(message as Artifacts)) as Artifacts;
 
@@ -1692,40 +1654,40 @@ class Artifacts extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Artifacts>(create);
   static Artifacts? _defaultInstance;
 
-  ///  A list of images to be pushed upon the successful completion of all build
-  ///  steps.
+  /// A list of images to be pushed upon the successful completion of all build
+  /// steps.
   ///
-  ///  The images will be pushed using the builder service account's credentials.
+  /// The images will be pushed using the builder service account's credentials.
   ///
-  ///  The digests of the pushed images will be stored in the Build resource's
-  ///  results field.
+  /// The digests of the pushed images will be stored in the Build resource's
+  /// results field.
   ///
-  ///  If any of the images fail to be pushed, the build is marked FAILURE.
+  /// If any of the images fail to be pushed, the build is marked FAILURE.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get images => $_getList(0);
+  $pb.PbList<$core.String> get images => $_getList(0);
 
-  ///  A list of objects to be uploaded to Cloud Storage upon successful
-  ///  completion of all build steps.
+  /// A list of objects to be uploaded to Cloud Storage upon successful
+  /// completion of all build steps.
   ///
-  ///  Files in the workspace matching specified paths globs will be uploaded to
-  ///  the specified Cloud Storage location using the builder service account's
-  ///  credentials.
+  /// Files in the workspace matching specified paths globs will be uploaded to
+  /// the specified Cloud Storage location using the builder service account's
+  /// credentials.
   ///
-  ///  The location and generation of the uploaded objects will be stored in the
-  ///  Build resource's results field.
+  /// The location and generation of the uploaded objects will be stored in the
+  /// Build resource's results field.
   ///
-  ///  If any objects fail to be pushed, the build is marked FAILURE.
+  /// If any objects fail to be pushed, the build is marked FAILURE.
   @$pb.TagNumber(2)
   Artifacts_ArtifactObjects get objects => $_getN(1);
   @$pb.TagNumber(2)
   set objects(Artifacts_ArtifactObjects v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasObjects() => $_has(1);
   @$pb.TagNumber(2)
-  void clearObjects() => clearField(2);
+  void clearObjects() => $_clearField(2);
   @$pb.TagNumber(2)
   Artifacts_ArtifactObjects ensureObjects() => $_ensure(1);
 }
@@ -1764,13 +1726,9 @@ class TimeSpan extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TimeSpan clone() => TimeSpan()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TimeSpan copyWith(void Function(TimeSpan) updates) =>
       super.copyWith((message) => updates(message as TimeSpan)) as TimeSpan;
 
@@ -1790,13 +1748,13 @@ class TimeSpan extends $pb.GeneratedMessage {
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
   set startTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStartTime() => clearField(1);
+  void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureStartTime() => $_ensure(0);
 
@@ -1805,13 +1763,13 @@ class TimeSpan extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
   set endTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEndTime() => clearField(2);
+  void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureEndTime() => $_ensure(1);
 }
@@ -1821,7 +1779,7 @@ class TimeSpan extends $pb.GeneratedMessage {
 class SourceProvenance extends $pb.GeneratedMessage {
   factory SourceProvenance({
     StorageSource? resolvedStorageSource,
-    $core.Map<$core.String, FileHashes>? fileHashes,
+    $core.Iterable<$core.MapEntry<$core.String, FileHashes>>? fileHashes,
     RepoSource? resolvedRepoSource,
   }) {
     final $result = create();
@@ -1829,7 +1787,7 @@ class SourceProvenance extends $pb.GeneratedMessage {
       $result.resolvedStorageSource = resolvedStorageSource;
     }
     if (fileHashes != null) {
-      $result.fileHashes.addAll(fileHashes);
+      $result.fileHashes.addEntries(fileHashes);
     }
     if (resolvedRepoSource != null) {
       $result.resolvedRepoSource = resolvedRepoSource;
@@ -1862,13 +1820,9 @@ class SourceProvenance extends $pb.GeneratedMessage {
         subBuilder: RepoSource.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SourceProvenance clone() => SourceProvenance()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SourceProvenance copyWith(void Function(SourceProvenance) updates) =>
       super.copyWith((message) => updates(message as SourceProvenance))
           as SourceProvenance;
@@ -1891,28 +1845,28 @@ class SourceProvenance extends $pb.GeneratedMessage {
   StorageSource get resolvedStorageSource => $_getN(0);
   @$pb.TagNumber(3)
   set resolvedStorageSource(StorageSource v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasResolvedStorageSource() => $_has(0);
   @$pb.TagNumber(3)
-  void clearResolvedStorageSource() => clearField(3);
+  void clearResolvedStorageSource() => $_clearField(3);
   @$pb.TagNumber(3)
   StorageSource ensureResolvedStorageSource() => $_ensure(0);
 
-  ///  Hash(es) of the build source, which can be used to verify that
-  ///  the original source integrity was maintained in the build. Note that
-  ///  `FileHashes` will only be populated if `BuildOptions` has requested a
-  ///  `SourceProvenanceHash`.
+  /// Hash(es) of the build source, which can be used to verify that
+  /// the original source integrity was maintained in the build. Note that
+  /// `FileHashes` will only be populated if `BuildOptions` has requested a
+  /// `SourceProvenanceHash`.
   ///
-  ///  The keys to this map are file paths used as build source and the values
-  ///  contain the hash values for those files.
+  /// The keys to this map are file paths used as build source and the values
+  /// contain the hash values for those files.
   ///
-  ///  If the build source came in a single package such as a gzipped tarfile
-  ///  (`.tar.gz`), the `FileHash` will be for the single path to that file.
+  /// If the build source came in a single package such as a gzipped tarfile
+  /// (`.tar.gz`), the `FileHash` will be for the single path to that file.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, FileHashes> get fileHashes => $_getMap(1);
+  $pb.PbMap<$core.String, FileHashes> get fileHashes => $_getMap(1);
 
   /// A copy of the build's `source.repo_source`, if exists, with any
   /// revisions resolved.
@@ -1920,13 +1874,13 @@ class SourceProvenance extends $pb.GeneratedMessage {
   RepoSource get resolvedRepoSource => $_getN(2);
   @$pb.TagNumber(6)
   set resolvedRepoSource(RepoSource v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasResolvedRepoSource() => $_has(2);
   @$pb.TagNumber(6)
-  void clearResolvedRepoSource() => clearField(6);
+  void clearResolvedRepoSource() => $_clearField(6);
   @$pb.TagNumber(6)
   RepoSource ensureResolvedRepoSource() => $_ensure(2);
 }
@@ -1960,13 +1914,9 @@ class FileHashes extends $pb.GeneratedMessage {
         subBuilder: Hash.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FileHashes clone() => FileHashes()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FileHashes copyWith(void Function(FileHashes) updates) =>
       super.copyWith((message) => updates(message as FileHashes)) as FileHashes;
 
@@ -1983,7 +1933,7 @@ class FileHashes extends $pb.GeneratedMessage {
 
   /// Collection of file hashes.
   @$pb.TagNumber(1)
-  $core.List<Hash> get fileHash => $_getList(0);
+  $pb.PbList<Hash> get fileHash => $_getList(0);
 }
 
 /// Container message for hash values.
@@ -2022,13 +1972,9 @@ class Hash extends $pb.GeneratedMessage {
         2, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OY)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Hash clone() => Hash()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Hash copyWith(void Function(Hash) updates) =>
       super.copyWith((message) => updates(message as Hash)) as Hash;
 
@@ -2048,13 +1994,13 @@ class Hash extends $pb.GeneratedMessage {
   Hash_HashType get type => $_getN(0);
   @$pb.TagNumber(1)
   set type(Hash_HashType v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// The hash value.
   @$pb.TagNumber(2)
@@ -2067,7 +2013,7 @@ class Hash extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearValue() => clearField(2);
+  void clearValue() => $_clearField(2);
 }
 
 /// Pairs a set of secret environment variables containing encrypted
@@ -2075,14 +2021,15 @@ class Hash extends $pb.GeneratedMessage {
 class Secret extends $pb.GeneratedMessage {
   factory Secret({
     $core.String? kmsKeyName,
-    $core.Map<$core.String, $core.List<$core.int>>? secretEnv,
+    $core.Iterable<$core.MapEntry<$core.String, $core.List<$core.int>>>?
+        secretEnv,
   }) {
     final $result = create();
     if (kmsKeyName != null) {
       $result.kmsKeyName = kmsKeyName;
     }
     if (secretEnv != null) {
-      $result.secretEnv.addAll(secretEnv);
+      $result.secretEnv.addEntries(secretEnv);
     }
     return $result;
   }
@@ -2108,13 +2055,9 @@ class Secret extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.cloudbuild.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Secret clone() => Secret()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Secret copyWith(void Function(Secret) updates) =>
       super.copyWith((message) => updates(message as Secret)) as Secret;
 
@@ -2140,16 +2083,16 @@ class Secret extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasKmsKeyName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKmsKeyName() => clearField(1);
+  void clearKmsKeyName() => $_clearField(1);
 
-  ///  Map of environment variable name to its encrypted value.
+  /// Map of environment variable name to its encrypted value.
   ///
-  ///  Secret environment variables must be unique across all of a build's
-  ///  secrets, and must be used by at least one build step. Values can be at most
-  ///  64 KB in size. There can be at most 100 secret values across all of a
-  ///  build's secrets.
+  /// Secret environment variables must be unique across all of a build's
+  /// secrets, and must be used by at least one build step. Values can be at most
+  /// 64 KB in size. There can be at most 100 secret values across all of a
+  /// build's secrets.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $core.List<$core.int>> get secretEnv => $_getMap(1);
+  $pb.PbMap<$core.String, $core.List<$core.int>> get secretEnv => $_getMap(1);
 }
 
 /// Optional arguments to enable specific features of builds.
@@ -2254,13 +2197,9 @@ class BuildOptions extends $pb.GeneratedMessage {
         subBuilder: Volume.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuildOptions clone() => BuildOptions()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BuildOptions copyWith(void Function(BuildOptions) updates) =>
       super.copyWith((message) => updates(message as BuildOptions))
           as BuildOptions;
@@ -2279,33 +2218,33 @@ class BuildOptions extends $pb.GeneratedMessage {
 
   /// Requested hash for SourceProvenance.
   @$pb.TagNumber(1)
-  $core.List<Hash_HashType> get sourceProvenanceHash => $_getList(0);
+  $pb.PbList<Hash_HashType> get sourceProvenanceHash => $_getList(0);
 
   /// Requested verifiability options.
   @$pb.TagNumber(2)
   BuildOptions_VerifyOption get requestedVerifyOption => $_getN(1);
   @$pb.TagNumber(2)
   set requestedVerifyOption(BuildOptions_VerifyOption v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasRequestedVerifyOption() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRequestedVerifyOption() => clearField(2);
+  void clearRequestedVerifyOption() => $_clearField(2);
 
   /// Compute Engine machine type on which to run the build.
   @$pb.TagNumber(3)
   BuildOptions_MachineType get machineType => $_getN(2);
   @$pb.TagNumber(3)
   set machineType(BuildOptions_MachineType v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasMachineType() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMachineType() => clearField(3);
+  void clearMachineType() => $_clearField(3);
 
   /// Option to specify behavior when there is an error in the substitution
   /// checks.
@@ -2313,13 +2252,13 @@ class BuildOptions extends $pb.GeneratedMessage {
   BuildOptions_SubstitutionOption get substitutionOption => $_getN(3);
   @$pb.TagNumber(4)
   set substitutionOption(BuildOptions_SubstitutionOption v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasSubstitutionOption() => $_has(3);
   @$pb.TagNumber(4)
-  void clearSubstitutionOption() => clearField(4);
+  void clearSubstitutionOption() => $_clearField(4);
 
   /// Option to define build log streaming behavior to Google Cloud
   /// Storage.
@@ -2327,13 +2266,13 @@ class BuildOptions extends $pb.GeneratedMessage {
   BuildOptions_LogStreamingOption get logStreamingOption => $_getN(4);
   @$pb.TagNumber(5)
   set logStreamingOption(BuildOptions_LogStreamingOption v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasLogStreamingOption() => $_has(4);
   @$pb.TagNumber(5)
-  void clearLogStreamingOption() => clearField(5);
+  void clearLogStreamingOption() => $_clearField(5);
 
   /// Requested disk size for the VM that runs the build. Note that this is *NOT*
   /// "disk free"; some of the space will be used by the operating system and
@@ -2351,7 +2290,7 @@ class BuildOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDiskSizeGb() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDiskSizeGb() => clearField(6);
+  void clearDiskSizeGb() => $_clearField(6);
 
   /// Option to specify a `WorkerPool` for the build.
   /// Format: projects/{project}/locations/{location}/workerPools/{workerPool}
@@ -2365,7 +2304,7 @@ class BuildOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasWorkerPool() => $_has(6);
   @$pb.TagNumber(7)
-  void clearWorkerPool() => clearField(7);
+  void clearWorkerPool() => $_clearField(7);
 
   /// Option to specify the logging mode, which determines where the logs are
   /// stored.
@@ -2373,41 +2312,41 @@ class BuildOptions extends $pb.GeneratedMessage {
   BuildOptions_LoggingMode get logging => $_getN(7);
   @$pb.TagNumber(11)
   set logging(BuildOptions_LoggingMode v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasLogging() => $_has(7);
   @$pb.TagNumber(11)
-  void clearLogging() => clearField(11);
+  void clearLogging() => $_clearField(11);
 
-  ///  A list of global environment variable definitions that will exist for all
-  ///  build steps in this build. If a variable is defined in both globally and in
-  ///  a build step, the variable will use the build step value.
+  /// A list of global environment variable definitions that will exist for all
+  /// build steps in this build. If a variable is defined in both globally and in
+  /// a build step, the variable will use the build step value.
   ///
-  ///  The elements are of the form "KEY=VALUE" for the environment variable "KEY"
-  ///  being given the value "VALUE".
+  /// The elements are of the form "KEY=VALUE" for the environment variable "KEY"
+  /// being given the value "VALUE".
   @$pb.TagNumber(12)
-  $core.List<$core.String> get env => $_getList(8);
+  $pb.PbList<$core.String> get env => $_getList(8);
 
   /// A list of global environment variables, which are encrypted using a Cloud
   /// Key Management Service crypto key. These values must be specified in the
   /// build's `Secret`. These variables will be available to all build steps
   /// in this build.
   @$pb.TagNumber(13)
-  $core.List<$core.String> get secretEnv => $_getList(9);
+  $pb.PbList<$core.String> get secretEnv => $_getList(9);
 
-  ///  Global list of volumes to mount for ALL build steps
+  /// Global list of volumes to mount for ALL build steps
   ///
-  ///  Each volume is created as an empty volume prior to starting the build
-  ///  process. Upon completion of the build, volumes and their contents are
-  ///  discarded. Global volume names and paths cannot conflict with the volumes
-  ///  defined a build step.
+  /// Each volume is created as an empty volume prior to starting the build
+  /// process. Upon completion of the build, volumes and their contents are
+  /// discarded. Global volume names and paths cannot conflict with the volumes
+  /// defined a build step.
   ///
-  ///  Using a global volume in a build with only one step is not valid as
-  ///  it is indicative of a build request with an incorrect configuration.
+  /// Using a global volume in a build with only one step is not valid as
+  /// it is indicative of a build request with an incorrect configuration.
   @$pb.TagNumber(14)
-  $core.List<Volume> get volumes => $_getList(10);
+  $pb.PbList<Volume> get volumes => $_getList(10);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

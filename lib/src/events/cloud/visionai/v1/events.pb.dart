@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/visionai/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $55;
+import 'data.pb.dart' as $49;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when an Analysis is created.
 class AnalysisCreatedEvent extends $pb.GeneratedMessage {
   factory AnalysisCreatedEvent({
-    $55.AnalysisEventData? data,
+    $49.AnalysisEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -39,18 +41,14 @@ class AnalysisCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.AnalysisEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.AnalysisEventData.create)
+    ..aOM<$49.AnalysisEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.AnalysisEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalysisCreatedEvent clone() =>
       AnalysisCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalysisCreatedEvent copyWith(void Function(AnalysisCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as AnalysisCreatedEvent))
           as AnalysisCreatedEvent;
@@ -69,24 +67,24 @@ class AnalysisCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.AnalysisEventData get data => $_getN(0);
+  $49.AnalysisEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.AnalysisEventData v) {
-    setField(1, v);
+  set data($49.AnalysisEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.AnalysisEventData ensureData() => $_ensure(0);
+  $49.AnalysisEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Analysis is updated.
 class AnalysisUpdatedEvent extends $pb.GeneratedMessage {
   factory AnalysisUpdatedEvent({
-    $55.AnalysisEventData? data,
+    $49.AnalysisEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -107,18 +105,14 @@ class AnalysisUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.AnalysisEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.AnalysisEventData.create)
+    ..aOM<$49.AnalysisEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.AnalysisEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalysisUpdatedEvent clone() =>
       AnalysisUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalysisUpdatedEvent copyWith(void Function(AnalysisUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as AnalysisUpdatedEvent))
           as AnalysisUpdatedEvent;
@@ -137,24 +131,24 @@ class AnalysisUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.AnalysisEventData get data => $_getN(0);
+  $49.AnalysisEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.AnalysisEventData v) {
-    setField(1, v);
+  set data($49.AnalysisEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.AnalysisEventData ensureData() => $_ensure(0);
+  $49.AnalysisEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Analysis is deleted.
 class AnalysisDeletedEvent extends $pb.GeneratedMessage {
   factory AnalysisDeletedEvent({
-    $55.AnalysisEventData? data,
+    $49.AnalysisEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -175,18 +169,14 @@ class AnalysisDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.AnalysisEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.AnalysisEventData.create)
+    ..aOM<$49.AnalysisEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.AnalysisEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalysisDeletedEvent clone() =>
       AnalysisDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalysisDeletedEvent copyWith(void Function(AnalysisDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as AnalysisDeletedEvent))
           as AnalysisDeletedEvent;
@@ -205,24 +195,24 @@ class AnalysisDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.AnalysisEventData get data => $_getN(0);
+  $49.AnalysisEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.AnalysisEventData v) {
-    setField(1, v);
+  set data($49.AnalysisEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.AnalysisEventData ensureData() => $_ensure(0);
+  $49.AnalysisEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Process is created.
 class ProcessCreatedEvent extends $pb.GeneratedMessage {
   factory ProcessCreatedEvent({
-    $55.ProcessEventData? data,
+    $49.ProcessEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -243,17 +233,13 @@ class ProcessCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ProcessEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ProcessEventData.create)
+    ..aOM<$49.ProcessEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ProcessEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessCreatedEvent clone() => ProcessCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessCreatedEvent copyWith(void Function(ProcessCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as ProcessCreatedEvent))
           as ProcessCreatedEvent;
@@ -272,24 +258,24 @@ class ProcessCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ProcessEventData get data => $_getN(0);
+  $49.ProcessEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ProcessEventData v) {
-    setField(1, v);
+  set data($49.ProcessEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ProcessEventData ensureData() => $_ensure(0);
+  $49.ProcessEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Process is updated.
 class ProcessUpdatedEvent extends $pb.GeneratedMessage {
   factory ProcessUpdatedEvent({
-    $55.ProcessEventData? data,
+    $49.ProcessEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -310,17 +296,13 @@ class ProcessUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ProcessEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ProcessEventData.create)
+    ..aOM<$49.ProcessEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ProcessEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessUpdatedEvent clone() => ProcessUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessUpdatedEvent copyWith(void Function(ProcessUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as ProcessUpdatedEvent))
           as ProcessUpdatedEvent;
@@ -339,24 +321,24 @@ class ProcessUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ProcessEventData get data => $_getN(0);
+  $49.ProcessEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ProcessEventData v) {
-    setField(1, v);
+  set data($49.ProcessEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ProcessEventData ensureData() => $_ensure(0);
+  $49.ProcessEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Process is deleted.
 class ProcessDeletedEvent extends $pb.GeneratedMessage {
   factory ProcessDeletedEvent({
-    $55.ProcessEventData? data,
+    $49.ProcessEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -377,17 +359,13 @@ class ProcessDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ProcessEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ProcessEventData.create)
+    ..aOM<$49.ProcessEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ProcessEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessDeletedEvent clone() => ProcessDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessDeletedEvent copyWith(void Function(ProcessDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ProcessDeletedEvent))
           as ProcessDeletedEvent;
@@ -406,24 +384,24 @@ class ProcessDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ProcessEventData get data => $_getN(0);
+  $49.ProcessEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ProcessEventData v) {
-    setField(1, v);
+  set data($49.ProcessEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ProcessEventData ensureData() => $_ensure(0);
+  $49.ProcessEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Application is created.
 class ApplicationCreatedEvent extends $pb.GeneratedMessage {
   factory ApplicationCreatedEvent({
-    $55.ApplicationEventData? data,
+    $49.ApplicationEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -444,18 +422,14 @@ class ApplicationCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ApplicationEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ApplicationEventData.create)
+    ..aOM<$49.ApplicationEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ApplicationEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApplicationCreatedEvent clone() =>
       ApplicationCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApplicationCreatedEvent copyWith(
           void Function(ApplicationCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as ApplicationCreatedEvent))
@@ -475,24 +449,24 @@ class ApplicationCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ApplicationEventData get data => $_getN(0);
+  $49.ApplicationEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ApplicationEventData v) {
-    setField(1, v);
+  set data($49.ApplicationEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ApplicationEventData ensureData() => $_ensure(0);
+  $49.ApplicationEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Application is updated.
 class ApplicationUpdatedEvent extends $pb.GeneratedMessage {
   factory ApplicationUpdatedEvent({
-    $55.ApplicationEventData? data,
+    $49.ApplicationEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -513,18 +487,14 @@ class ApplicationUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ApplicationEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ApplicationEventData.create)
+    ..aOM<$49.ApplicationEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ApplicationEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApplicationUpdatedEvent clone() =>
       ApplicationUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApplicationUpdatedEvent copyWith(
           void Function(ApplicationUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as ApplicationUpdatedEvent))
@@ -544,24 +514,24 @@ class ApplicationUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ApplicationEventData get data => $_getN(0);
+  $49.ApplicationEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ApplicationEventData v) {
-    setField(1, v);
+  set data($49.ApplicationEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ApplicationEventData ensureData() => $_ensure(0);
+  $49.ApplicationEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Application is deleted.
 class ApplicationDeletedEvent extends $pb.GeneratedMessage {
   factory ApplicationDeletedEvent({
-    $55.ApplicationEventData? data,
+    $49.ApplicationEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -582,18 +552,14 @@ class ApplicationDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ApplicationEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ApplicationEventData.create)
+    ..aOM<$49.ApplicationEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ApplicationEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApplicationDeletedEvent clone() =>
       ApplicationDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApplicationDeletedEvent copyWith(
           void Function(ApplicationDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ApplicationDeletedEvent))
@@ -613,24 +579,24 @@ class ApplicationDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ApplicationEventData get data => $_getN(0);
+  $49.ApplicationEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ApplicationEventData v) {
-    setField(1, v);
+  set data($49.ApplicationEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ApplicationEventData ensureData() => $_ensure(0);
+  $49.ApplicationEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Draft is created.
 class DraftCreatedEvent extends $pb.GeneratedMessage {
   factory DraftCreatedEvent({
-    $55.DraftEventData? data,
+    $49.DraftEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -651,17 +617,13 @@ class DraftCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.DraftEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.DraftEventData.create)
+    ..aOM<$49.DraftEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.DraftEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DraftCreatedEvent clone() => DraftCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DraftCreatedEvent copyWith(void Function(DraftCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as DraftCreatedEvent))
           as DraftCreatedEvent;
@@ -680,24 +642,24 @@ class DraftCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.DraftEventData get data => $_getN(0);
+  $49.DraftEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.DraftEventData v) {
-    setField(1, v);
+  set data($49.DraftEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.DraftEventData ensureData() => $_ensure(0);
+  $49.DraftEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Draft is updated.
 class DraftUpdatedEvent extends $pb.GeneratedMessage {
   factory DraftUpdatedEvent({
-    $55.DraftEventData? data,
+    $49.DraftEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -718,17 +680,13 @@ class DraftUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.DraftEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.DraftEventData.create)
+    ..aOM<$49.DraftEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.DraftEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DraftUpdatedEvent clone() => DraftUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DraftUpdatedEvent copyWith(void Function(DraftUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as DraftUpdatedEvent))
           as DraftUpdatedEvent;
@@ -747,24 +705,24 @@ class DraftUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.DraftEventData get data => $_getN(0);
+  $49.DraftEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.DraftEventData v) {
-    setField(1, v);
+  set data($49.DraftEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.DraftEventData ensureData() => $_ensure(0);
+  $49.DraftEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Draft is deleted.
 class DraftDeletedEvent extends $pb.GeneratedMessage {
   factory DraftDeletedEvent({
-    $55.DraftEventData? data,
+    $49.DraftEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -785,17 +743,13 @@ class DraftDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.DraftEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.DraftEventData.create)
+    ..aOM<$49.DraftEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.DraftEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DraftDeletedEvent clone() => DraftDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DraftDeletedEvent copyWith(void Function(DraftDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as DraftDeletedEvent))
           as DraftDeletedEvent;
@@ -814,24 +768,24 @@ class DraftDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.DraftEventData get data => $_getN(0);
+  $49.DraftEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.DraftEventData v) {
-    setField(1, v);
+  set data($49.DraftEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.DraftEventData ensureData() => $_ensure(0);
+  $49.DraftEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Processor is created.
 class ProcessorCreatedEvent extends $pb.GeneratedMessage {
   factory ProcessorCreatedEvent({
-    $55.ProcessorEventData? data,
+    $49.ProcessorEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -852,18 +806,14 @@ class ProcessorCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ProcessorEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ProcessorEventData.create)
+    ..aOM<$49.ProcessorEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ProcessorEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessorCreatedEvent clone() =>
       ProcessorCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessorCreatedEvent copyWith(
           void Function(ProcessorCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as ProcessorCreatedEvent))
@@ -883,24 +833,24 @@ class ProcessorCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ProcessorEventData get data => $_getN(0);
+  $49.ProcessorEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ProcessorEventData v) {
-    setField(1, v);
+  set data($49.ProcessorEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ProcessorEventData ensureData() => $_ensure(0);
+  $49.ProcessorEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Processor is updated.
 class ProcessorUpdatedEvent extends $pb.GeneratedMessage {
   factory ProcessorUpdatedEvent({
-    $55.ProcessorEventData? data,
+    $49.ProcessorEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -921,18 +871,14 @@ class ProcessorUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ProcessorEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ProcessorEventData.create)
+    ..aOM<$49.ProcessorEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ProcessorEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessorUpdatedEvent clone() =>
       ProcessorUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessorUpdatedEvent copyWith(
           void Function(ProcessorUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as ProcessorUpdatedEvent))
@@ -952,24 +898,24 @@ class ProcessorUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ProcessorEventData get data => $_getN(0);
+  $49.ProcessorEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ProcessorEventData v) {
-    setField(1, v);
+  set data($49.ProcessorEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ProcessorEventData ensureData() => $_ensure(0);
+  $49.ProcessorEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Processor is deleted.
 class ProcessorDeletedEvent extends $pb.GeneratedMessage {
   factory ProcessorDeletedEvent({
-    $55.ProcessorEventData? data,
+    $49.ProcessorEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -990,18 +936,14 @@ class ProcessorDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ProcessorEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ProcessorEventData.create)
+    ..aOM<$49.ProcessorEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ProcessorEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessorDeletedEvent clone() =>
       ProcessorDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProcessorDeletedEvent copyWith(
           void Function(ProcessorDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ProcessorDeletedEvent))
@@ -1021,24 +963,24 @@ class ProcessorDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ProcessorEventData get data => $_getN(0);
+  $49.ProcessorEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ProcessorEventData v) {
-    setField(1, v);
+  set data($49.ProcessorEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ProcessorEventData ensureData() => $_ensure(0);
+  $49.ProcessorEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Cluster is created.
 class ClusterCreatedEvent extends $pb.GeneratedMessage {
   factory ClusterCreatedEvent({
-    $55.ClusterEventData? data,
+    $49.ClusterEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1059,17 +1001,13 @@ class ClusterCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ClusterEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ClusterEventData.create)
+    ..aOM<$49.ClusterEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ClusterEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClusterCreatedEvent clone() => ClusterCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClusterCreatedEvent copyWith(void Function(ClusterCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as ClusterCreatedEvent))
           as ClusterCreatedEvent;
@@ -1088,24 +1026,24 @@ class ClusterCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ClusterEventData get data => $_getN(0);
+  $49.ClusterEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ClusterEventData v) {
-    setField(1, v);
+  set data($49.ClusterEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ClusterEventData ensureData() => $_ensure(0);
+  $49.ClusterEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Cluster is updated.
 class ClusterUpdatedEvent extends $pb.GeneratedMessage {
   factory ClusterUpdatedEvent({
-    $55.ClusterEventData? data,
+    $49.ClusterEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1126,17 +1064,13 @@ class ClusterUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ClusterEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ClusterEventData.create)
+    ..aOM<$49.ClusterEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ClusterEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClusterUpdatedEvent clone() => ClusterUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClusterUpdatedEvent copyWith(void Function(ClusterUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as ClusterUpdatedEvent))
           as ClusterUpdatedEvent;
@@ -1155,24 +1089,24 @@ class ClusterUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ClusterEventData get data => $_getN(0);
+  $49.ClusterEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ClusterEventData v) {
-    setField(1, v);
+  set data($49.ClusterEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ClusterEventData ensureData() => $_ensure(0);
+  $49.ClusterEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Cluster is deleted.
 class ClusterDeletedEvent extends $pb.GeneratedMessage {
   factory ClusterDeletedEvent({
-    $55.ClusterEventData? data,
+    $49.ClusterEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1193,17 +1127,13 @@ class ClusterDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.ClusterEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.ClusterEventData.create)
+    ..aOM<$49.ClusterEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.ClusterEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClusterDeletedEvent clone() => ClusterDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClusterDeletedEvent copyWith(void Function(ClusterDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ClusterDeletedEvent))
           as ClusterDeletedEvent;
@@ -1222,24 +1152,24 @@ class ClusterDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.ClusterEventData get data => $_getN(0);
+  $49.ClusterEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.ClusterEventData v) {
-    setField(1, v);
+  set data($49.ClusterEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.ClusterEventData ensureData() => $_ensure(0);
+  $49.ClusterEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Stream is created.
 class StreamCreatedEvent extends $pb.GeneratedMessage {
   factory StreamCreatedEvent({
-    $55.StreamEventData? data,
+    $49.StreamEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1260,17 +1190,13 @@ class StreamCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.StreamEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.StreamEventData.create)
+    ..aOM<$49.StreamEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.StreamEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StreamCreatedEvent clone() => StreamCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StreamCreatedEvent copyWith(void Function(StreamCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as StreamCreatedEvent))
           as StreamCreatedEvent;
@@ -1289,24 +1215,24 @@ class StreamCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.StreamEventData get data => $_getN(0);
+  $49.StreamEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.StreamEventData v) {
-    setField(1, v);
+  set data($49.StreamEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.StreamEventData ensureData() => $_ensure(0);
+  $49.StreamEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Stream is updated.
 class StreamUpdatedEvent extends $pb.GeneratedMessage {
   factory StreamUpdatedEvent({
-    $55.StreamEventData? data,
+    $49.StreamEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1327,17 +1253,13 @@ class StreamUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.StreamEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.StreamEventData.create)
+    ..aOM<$49.StreamEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.StreamEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StreamUpdatedEvent clone() => StreamUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StreamUpdatedEvent copyWith(void Function(StreamUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as StreamUpdatedEvent))
           as StreamUpdatedEvent;
@@ -1356,24 +1278,24 @@ class StreamUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.StreamEventData get data => $_getN(0);
+  $49.StreamEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.StreamEventData v) {
-    setField(1, v);
+  set data($49.StreamEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.StreamEventData ensureData() => $_ensure(0);
+  $49.StreamEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Stream is deleted.
 class StreamDeletedEvent extends $pb.GeneratedMessage {
   factory StreamDeletedEvent({
-    $55.StreamEventData? data,
+    $49.StreamEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1394,17 +1316,13 @@ class StreamDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.StreamEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.StreamEventData.create)
+    ..aOM<$49.StreamEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.StreamEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StreamDeletedEvent clone() => StreamDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StreamDeletedEvent copyWith(void Function(StreamDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as StreamDeletedEvent))
           as StreamDeletedEvent;
@@ -1423,24 +1341,24 @@ class StreamDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.StreamEventData get data => $_getN(0);
+  $49.StreamEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.StreamEventData v) {
-    setField(1, v);
+  set data($49.StreamEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.StreamEventData ensureData() => $_ensure(0);
+  $49.StreamEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Event is created.
 class EventCreatedEvent extends $pb.GeneratedMessage {
   factory EventCreatedEvent({
-    $55.EventEventData? data,
+    $49.EventEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1461,17 +1379,13 @@ class EventCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.EventEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.EventEventData.create)
+    ..aOM<$49.EventEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.EventEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventCreatedEvent clone() => EventCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventCreatedEvent copyWith(void Function(EventCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as EventCreatedEvent))
           as EventCreatedEvent;
@@ -1490,24 +1404,24 @@ class EventCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.EventEventData get data => $_getN(0);
+  $49.EventEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.EventEventData v) {
-    setField(1, v);
+  set data($49.EventEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.EventEventData ensureData() => $_ensure(0);
+  $49.EventEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Event is updated.
 class EventUpdatedEvent extends $pb.GeneratedMessage {
   factory EventUpdatedEvent({
-    $55.EventEventData? data,
+    $49.EventEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1528,17 +1442,13 @@ class EventUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.EventEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.EventEventData.create)
+    ..aOM<$49.EventEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.EventEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventUpdatedEvent clone() => EventUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventUpdatedEvent copyWith(void Function(EventUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as EventUpdatedEvent))
           as EventUpdatedEvent;
@@ -1557,24 +1467,24 @@ class EventUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.EventEventData get data => $_getN(0);
+  $49.EventEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.EventEventData v) {
-    setField(1, v);
+  set data($49.EventEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.EventEventData ensureData() => $_ensure(0);
+  $49.EventEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Event is deleted.
 class EventDeletedEvent extends $pb.GeneratedMessage {
   factory EventDeletedEvent({
-    $55.EventEventData? data,
+    $49.EventEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1595,17 +1505,13 @@ class EventDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.EventEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.EventEventData.create)
+    ..aOM<$49.EventEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.EventEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventDeletedEvent clone() => EventDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventDeletedEvent copyWith(void Function(EventDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as EventDeletedEvent))
           as EventDeletedEvent;
@@ -1624,24 +1530,24 @@ class EventDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.EventEventData get data => $_getN(0);
+  $49.EventEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.EventEventData v) {
-    setField(1, v);
+  set data($49.EventEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.EventEventData ensureData() => $_ensure(0);
+  $49.EventEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Series is created.
 class SeriesCreatedEvent extends $pb.GeneratedMessage {
   factory SeriesCreatedEvent({
-    $55.SeriesEventData? data,
+    $49.SeriesEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1662,17 +1568,13 @@ class SeriesCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.SeriesEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.SeriesEventData.create)
+    ..aOM<$49.SeriesEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.SeriesEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SeriesCreatedEvent clone() => SeriesCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SeriesCreatedEvent copyWith(void Function(SeriesCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as SeriesCreatedEvent))
           as SeriesCreatedEvent;
@@ -1691,24 +1593,24 @@ class SeriesCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.SeriesEventData get data => $_getN(0);
+  $49.SeriesEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.SeriesEventData v) {
-    setField(1, v);
+  set data($49.SeriesEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.SeriesEventData ensureData() => $_ensure(0);
+  $49.SeriesEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Series is updated.
 class SeriesUpdatedEvent extends $pb.GeneratedMessage {
   factory SeriesUpdatedEvent({
-    $55.SeriesEventData? data,
+    $49.SeriesEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1729,17 +1631,13 @@ class SeriesUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.SeriesEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.SeriesEventData.create)
+    ..aOM<$49.SeriesEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.SeriesEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SeriesUpdatedEvent clone() => SeriesUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SeriesUpdatedEvent copyWith(void Function(SeriesUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as SeriesUpdatedEvent))
           as SeriesUpdatedEvent;
@@ -1758,24 +1656,24 @@ class SeriesUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.SeriesEventData get data => $_getN(0);
+  $49.SeriesEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.SeriesEventData v) {
-    setField(1, v);
+  set data($49.SeriesEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.SeriesEventData ensureData() => $_ensure(0);
+  $49.SeriesEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Series is deleted.
 class SeriesDeletedEvent extends $pb.GeneratedMessage {
   factory SeriesDeletedEvent({
-    $55.SeriesEventData? data,
+    $49.SeriesEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -1796,17 +1694,13 @@ class SeriesDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.visionai.v1'),
       createEmptyInstance: create)
-    ..aOM<$55.SeriesEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $55.SeriesEventData.create)
+    ..aOM<$49.SeriesEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $49.SeriesEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SeriesDeletedEvent clone() => SeriesDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SeriesDeletedEvent copyWith(void Function(SeriesDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as SeriesDeletedEvent))
           as SeriesDeletedEvent;
@@ -1825,18 +1719,18 @@ class SeriesDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $55.SeriesEventData get data => $_getN(0);
+  $49.SeriesEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($55.SeriesEventData v) {
-    setField(1, v);
+  set data($49.SeriesEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $55.SeriesEventData ensureData() => $_ensure(0);
+  $49.SeriesEventData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

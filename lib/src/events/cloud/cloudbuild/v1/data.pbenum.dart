@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/cloudbuild/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,22 +15,39 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Possible status of a build or build step.
 class BuildEventData_Status extends $pb.ProtobufEnum {
+  /// Status of the build is unknown.
   static const BuildEventData_Status STATUS_UNKNOWN =
       BuildEventData_Status._(0, _omitEnumNames ? '' : 'STATUS_UNKNOWN');
+
+  /// Build or step is queued; work has not yet begun.
   static const BuildEventData_Status QUEUED =
       BuildEventData_Status._(1, _omitEnumNames ? '' : 'QUEUED');
+
+  /// Build or step is being executed.
   static const BuildEventData_Status WORKING =
       BuildEventData_Status._(2, _omitEnumNames ? '' : 'WORKING');
+
+  /// Build or step finished successfully.
   static const BuildEventData_Status SUCCESS =
       BuildEventData_Status._(3, _omitEnumNames ? '' : 'SUCCESS');
+
+  /// Build or step failed to complete successfully.
   static const BuildEventData_Status FAILURE =
       BuildEventData_Status._(4, _omitEnumNames ? '' : 'FAILURE');
+
+  /// Build or step failed due to an internal cause.
   static const BuildEventData_Status INTERNAL_ERROR =
       BuildEventData_Status._(5, _omitEnumNames ? '' : 'INTERNAL_ERROR');
+
+  /// Build or step took longer than was allowed.
   static const BuildEventData_Status TIMEOUT =
       BuildEventData_Status._(6, _omitEnumNames ? '' : 'TIMEOUT');
+
+  /// Build or step was canceled by a user.
   static const BuildEventData_Status CANCELLED =
       BuildEventData_Status._(7, _omitEnumNames ? '' : 'CANCELLED');
+
+  /// Build was enqueued for longer than the value of `queue_ttl`.
   static const BuildEventData_Status EXPIRED =
       BuildEventData_Status._(9, _omitEnumNames ? '' : 'EXPIRED');
 
@@ -47,19 +64,25 @@ class BuildEventData_Status extends $pb.ProtobufEnum {
     EXPIRED,
   ];
 
-  static final $core.Map<$core.int, BuildEventData_Status> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
-  static BuildEventData_Status? valueOf($core.int value) => _byValue[value];
+  static final $core.List<BuildEventData_Status?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 9);
+  static BuildEventData_Status? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildEventData_Status._($core.int v, $core.String n) : super(v, n);
+  const BuildEventData_Status._(super.v, super.n);
 }
 
 /// Specifies the hash algorithm, if any.
 class Hash_HashType extends $pb.ProtobufEnum {
+  /// No hash requested.
   static const Hash_HashType NONE =
       Hash_HashType._(0, _omitEnumNames ? '' : 'NONE');
+
+  /// Use a sha256 hash.
   static const Hash_HashType SHA256 =
       Hash_HashType._(1, _omitEnumNames ? '' : 'SHA256');
+
+  /// Use a md5 hash.
   static const Hash_HashType MD5 =
       Hash_HashType._(2, _omitEnumNames ? '' : 'MD5');
 
@@ -69,17 +92,21 @@ class Hash_HashType extends $pb.ProtobufEnum {
     MD5,
   ];
 
-  static final $core.Map<$core.int, Hash_HashType> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
-  static Hash_HashType? valueOf($core.int value) => _byValue[value];
+  static final $core.List<Hash_HashType?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 2);
+  static Hash_HashType? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Hash_HashType._($core.int v, $core.String n) : super(v, n);
+  const Hash_HashType._(super.v, super.n);
 }
 
 /// Specifies the manner in which the build should be verified, if at all.
 class BuildOptions_VerifyOption extends $pb.ProtobufEnum {
+  /// Not a verifiable build. (default)
   static const BuildOptions_VerifyOption NOT_VERIFIED =
       BuildOptions_VerifyOption._(0, _omitEnumNames ? '' : 'NOT_VERIFIED');
+
+  /// Verified build.
   static const BuildOptions_VerifyOption VERIFIED =
       BuildOptions_VerifyOption._(1, _omitEnumNames ? '' : 'VERIFIED');
 
@@ -89,19 +116,25 @@ class BuildOptions_VerifyOption extends $pb.ProtobufEnum {
     VERIFIED,
   ];
 
-  static final $core.Map<$core.int, BuildOptions_VerifyOption> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
-  static BuildOptions_VerifyOption? valueOf($core.int value) => _byValue[value];
+  static final $core.List<BuildOptions_VerifyOption?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 1);
+  static BuildOptions_VerifyOption? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildOptions_VerifyOption._($core.int v, $core.String n) : super(v, n);
+  const BuildOptions_VerifyOption._(super.v, super.n);
 }
 
 /// Supported VM sizes.
 class BuildOptions_MachineType extends $pb.ProtobufEnum {
+  /// Standard machine type.
   static const BuildOptions_MachineType UNSPECIFIED =
       BuildOptions_MachineType._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
+
+  /// Highcpu machine with 8 CPUs.
   static const BuildOptions_MachineType N1_HIGHCPU_8 =
       BuildOptions_MachineType._(1, _omitEnumNames ? '' : 'N1_HIGHCPU_8');
+
+  /// Highcpu machine with 32 CPUs.
   static const BuildOptions_MachineType N1_HIGHCPU_32 =
       BuildOptions_MachineType._(2, _omitEnumNames ? '' : 'N1_HIGHCPU_32');
 
@@ -112,17 +145,22 @@ class BuildOptions_MachineType extends $pb.ProtobufEnum {
     N1_HIGHCPU_32,
   ];
 
-  static final $core.Map<$core.int, BuildOptions_MachineType> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
-  static BuildOptions_MachineType? valueOf($core.int value) => _byValue[value];
+  static final $core.List<BuildOptions_MachineType?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 2);
+  static BuildOptions_MachineType? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildOptions_MachineType._($core.int v, $core.String n) : super(v, n);
+  const BuildOptions_MachineType._(super.v, super.n);
 }
 
 /// Specifies the behavior when there is an error in the substitution checks.
 class BuildOptions_SubstitutionOption extends $pb.ProtobufEnum {
+  /// Fails the build if error in substitutions checks, like missing
+  /// a substitution in the template or in the map.
   static const BuildOptions_SubstitutionOption MUST_MATCH =
       BuildOptions_SubstitutionOption._(0, _omitEnumNames ? '' : 'MUST_MATCH');
+
+  /// Do not fail the build if error in substitutions checks.
   static const BuildOptions_SubstitutionOption ALLOW_LOOSE =
       BuildOptions_SubstitutionOption._(1, _omitEnumNames ? '' : 'ALLOW_LOOSE');
 
@@ -132,22 +170,27 @@ class BuildOptions_SubstitutionOption extends $pb.ProtobufEnum {
     ALLOW_LOOSE,
   ];
 
-  static final $core.Map<$core.int, BuildOptions_SubstitutionOption> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
+  static final $core.List<BuildOptions_SubstitutionOption?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 1);
   static BuildOptions_SubstitutionOption? valueOf($core.int value) =>
-      _byValue[value];
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildOptions_SubstitutionOption._($core.int v, $core.String n)
-      : super(v, n);
+  const BuildOptions_SubstitutionOption._(super.v, super.n);
 }
 
 /// Specifies the behavior when writing build logs to Google Cloud Storage.
 class BuildOptions_LogStreamingOption extends $pb.ProtobufEnum {
+  /// Service may automatically determine build log streaming behavior.
   static const BuildOptions_LogStreamingOption STREAM_DEFAULT =
       BuildOptions_LogStreamingOption._(
           0, _omitEnumNames ? '' : 'STREAM_DEFAULT');
+
+  /// Build logs should be streamed to Google Cloud Storage.
   static const BuildOptions_LogStreamingOption STREAM_ON =
       BuildOptions_LogStreamingOption._(1, _omitEnumNames ? '' : 'STREAM_ON');
+
+  /// Build logs should not be streamed to Google Cloud Storage; they will be
+  /// written when the build is completed.
   static const BuildOptions_LogStreamingOption STREAM_OFF =
       BuildOptions_LogStreamingOption._(2, _omitEnumNames ? '' : 'STREAM_OFF');
 
@@ -158,22 +201,27 @@ class BuildOptions_LogStreamingOption extends $pb.ProtobufEnum {
     STREAM_OFF,
   ];
 
-  static final $core.Map<$core.int, BuildOptions_LogStreamingOption> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
+  static final $core.List<BuildOptions_LogStreamingOption?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 2);
   static BuildOptions_LogStreamingOption? valueOf($core.int value) =>
-      _byValue[value];
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildOptions_LogStreamingOption._($core.int v, $core.String n)
-      : super(v, n);
+  const BuildOptions_LogStreamingOption._(super.v, super.n);
 }
 
 /// Specifies the logging mode.
 class BuildOptions_LoggingMode extends $pb.ProtobufEnum {
+  /// The service determines the logging mode. The default is `LEGACY`. Do not
+  /// rely on the default logging behavior as it may change in the future.
   static const BuildOptions_LoggingMode LOGGING_UNSPECIFIED =
       BuildOptions_LoggingMode._(
           0, _omitEnumNames ? '' : 'LOGGING_UNSPECIFIED');
+
+  /// Stackdriver logging and Cloud Storage logging are enabled.
   static const BuildOptions_LoggingMode LEGACY =
       BuildOptions_LoggingMode._(1, _omitEnumNames ? '' : 'LEGACY');
+
+  /// Only Cloud Storage logging is enabled.
   static const BuildOptions_LoggingMode GCS_ONLY =
       BuildOptions_LoggingMode._(2, _omitEnumNames ? '' : 'GCS_ONLY');
 
@@ -184,11 +232,12 @@ class BuildOptions_LoggingMode extends $pb.ProtobufEnum {
     GCS_ONLY,
   ];
 
-  static final $core.Map<$core.int, BuildOptions_LoggingMode> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
-  static BuildOptions_LoggingMode? valueOf($core.int value) => _byValue[value];
+  static final $core.List<BuildOptions_LoggingMode?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 2);
+  static BuildOptions_LoggingMode? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const BuildOptions_LoggingMode._($core.int v, $core.String n) : super(v, n);
+  const BuildOptions_LoggingMode._(super.v, super.n);
 }
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

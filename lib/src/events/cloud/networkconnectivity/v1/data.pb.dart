@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/networkconnectivity/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,8 +15,10 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../rpc/status.pb.dart' as $19;
+import '../../../../rpc/status.pb.dart' as $9;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -49,14 +51,10 @@ class ServiceConnectionMap_ProducerPscConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'serviceAttachmentUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap_ProducerPscConfig clone() =>
       ServiceConnectionMap_ProducerPscConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap_ProducerPscConfig copyWith(
           void Function(ServiceConnectionMap_ProducerPscConfig) updates) =>
       super.copyWith((message) =>
@@ -90,7 +88,7 @@ class ServiceConnectionMap_ProducerPscConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasServiceAttachmentUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearServiceAttachmentUri() => clearField(1);
+  void clearServiceAttachmentUri() => $_clearField(1);
 }
 
 /// Allow the producer to specify which consumers can connect to it.
@@ -142,14 +140,10 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
         enumValues: ServiceConnectionMap_ConsumerPscConfig_State.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap_ConsumerPscConfig clone() =>
       ServiceConnectionMap_ConsumerPscConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap_ConsumerPscConfig copyWith(
           void Function(ServiceConnectionMap_ConsumerPscConfig) updates) =>
       super.copyWith((message) =>
@@ -181,7 +175,7 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasProject() => $_has(0);
   @$pb.TagNumber(1)
-  void clearProject() => clearField(1);
+  void clearProject() => $_clearField(1);
 
   /// The resource path of the consumer network where PSC connections are
   /// allowed to be created in. Note, this network does not need be in the
@@ -198,7 +192,7 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNetwork() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNetwork() => clearField(2);
+  void clearNetwork() => $_clearField(2);
 
   /// This is used in PSC consumer ForwardingRule to control whether the PSC
   /// endpoint can be accessed from another region.
@@ -212,7 +206,7 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDisableGlobalAccess() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDisableGlobalAccess() => clearField(3);
+  void clearDisableGlobalAccess() => $_clearField(3);
 
   /// Output only. Overall state of PSC Connections management for this
   /// consumer psc config.
@@ -220,13 +214,13 @@ class ServiceConnectionMap_ConsumerPscConfig extends $pb.GeneratedMessage {
   ServiceConnectionMap_ConsumerPscConfig_State get state => $_getN(3);
   @$pb.TagNumber(4)
   set state(ServiceConnectionMap_ConsumerPscConfig_State v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
-  void clearState() => clearField(4);
+  void clearState() => $_clearField(4);
 }
 
 /// PSC connection details on consumer side.
@@ -239,7 +233,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
     $core.String? pscConnectionId,
     $core.String? ip,
     ConnectionErrorType? errorType,
-    $19.Status? error,
+    $9.Status? error,
     $core.String? gceOperation,
     $core.String? forwardingRule,
   }) {
@@ -307,20 +301,16 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
         defaultOrMaker: ConnectionErrorType.CONNECTION_ERROR_TYPE_UNSPECIFIED,
         valueOf: ConnectionErrorType.valueOf,
         enumValues: ConnectionErrorType.values)
-    ..aOM<$19.Status>(8, _omitFieldNames ? '' : 'error',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(8, _omitFieldNames ? '' : 'error',
+        subBuilder: $9.Status.create)
     ..aOS(9, _omitFieldNames ? '' : 'gceOperation')
     ..aOS(10, _omitFieldNames ? '' : 'forwardingRule')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap_ConsumerPscConnection clone() =>
       ServiceConnectionMap_ConsumerPscConnection()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap_ConsumerPscConnection copyWith(
           void Function(ServiceConnectionMap_ConsumerPscConnection) updates) =>
       super.copyWith((message) =>
@@ -354,20 +344,20 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasServiceAttachmentUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearServiceAttachmentUri() => clearField(1);
+  void clearServiceAttachmentUri() => $_clearField(1);
 
   /// The state of the PSC connection.
   @$pb.TagNumber(2)
   ServiceConnectionMap_ConsumerPscConnection_State get state => $_getN(1);
   @$pb.TagNumber(2)
   set state(ServiceConnectionMap_ConsumerPscConnection_State v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
-  void clearState() => clearField(2);
+  void clearState() => $_clearField(2);
 
   /// The consumer project whose PSC forwarding rule is connected to the
   /// service attachments in this service connection map.
@@ -381,7 +371,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasProject() => $_has(2);
   @$pb.TagNumber(3)
-  void clearProject() => clearField(3);
+  void clearProject() => $_clearField(3);
 
   /// The consumer network whose PSC forwarding rule is connected to the
   /// service attachments in this service connection map.
@@ -396,7 +386,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasNetwork() => $_has(3);
   @$pb.TagNumber(4)
-  void clearNetwork() => clearField(4);
+  void clearNetwork() => $_clearField(4);
 
   /// The PSC connection id of the PSC forwarding rule connected
   /// to the service attachments in this service connection map.
@@ -410,7 +400,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasPscConnectionId() => $_has(4);
   @$pb.TagNumber(5)
-  void clearPscConnectionId() => clearField(5);
+  void clearPscConnectionId() => $_clearField(5);
 
   /// The IP literal allocated on the consumer network for the PSC forwarding
   /// rule that is created to connect to the producer service attachment in
@@ -425,7 +415,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasIp() => $_has(5);
   @$pb.TagNumber(6)
-  void clearIp() => clearField(6);
+  void clearIp() => $_clearField(6);
 
   /// The error type indicates whether the error is consumer facing, producer
   /// facing or system internal.
@@ -433,28 +423,28 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   ConnectionErrorType get errorType => $_getN(6);
   @$pb.TagNumber(7)
   set errorType(ConnectionErrorType v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasErrorType() => $_has(6);
   @$pb.TagNumber(7)
-  void clearErrorType() => clearField(7);
+  void clearErrorType() => $_clearField(7);
 
   /// The most recent error during operating this connection.
   @$pb.TagNumber(8)
-  $19.Status get error => $_getN(7);
+  $9.Status get error => $_getN(7);
   @$pb.TagNumber(8)
-  set error($19.Status v) {
-    setField(8, v);
+  set error($9.Status v) {
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasError() => $_has(7);
   @$pb.TagNumber(8)
-  void clearError() => clearField(8);
+  void clearError() => $_clearField(8);
   @$pb.TagNumber(8)
-  $19.Status ensureError() => $_ensure(7);
+  $9.Status ensureError() => $_ensure(7);
 
   /// The last Compute Engine operation to setup PSC connection.
   @$pb.TagNumber(9)
@@ -467,7 +457,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasGceOperation() => $_has(8);
   @$pb.TagNumber(9)
-  void clearGceOperation() => clearField(9);
+  void clearGceOperation() => $_clearField(9);
 
   /// The URI of the consumer forwarding rule created.
   /// Example:
@@ -482,7 +472,7 @@ class ServiceConnectionMap_ConsumerPscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasForwardingRule() => $_has(9);
   @$pb.TagNumber(10)
-  void clearForwardingRule() => clearField(10);
+  void clearForwardingRule() => $_clearField(10);
 }
 
 /// The ServiceConnectionMap resource.
@@ -492,7 +482,7 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? serviceClass,
     Infrastructure? infrastructure,
@@ -513,7 +503,7 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -582,14 +572,10 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
     ..aOS(12, _omitFieldNames ? '' : 'serviceClassUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap clone() =>
       ServiceConnectionMap()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMap copyWith(void Function(ServiceConnectionMap) updates) =>
       super.copyWith((message) => updates(message as ServiceConnectionMap))
           as ServiceConnectionMap;
@@ -620,20 +606,20 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Time when the ServiceConnectionMap was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -642,19 +628,19 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// A description of this resource.
   @$pb.TagNumber(5)
@@ -667,7 +653,7 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// The service class identifier this ServiceConnectionMap is for.
   /// The user of ServiceConnectionMap create API needs to have
@@ -683,7 +669,7 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasServiceClass() => $_has(5);
   @$pb.TagNumber(7)
-  void clearServiceClass() => clearField(7);
+  void clearServiceClass() => $_clearField(7);
 
   /// Output only. The infrastructure used for connections between
   /// consumers/producers.
@@ -691,27 +677,27 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
   Infrastructure get infrastructure => $_getN(6);
   @$pb.TagNumber(8)
   set infrastructure(Infrastructure v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasInfrastructure() => $_has(6);
   @$pb.TagNumber(8)
-  void clearInfrastructure() => clearField(8);
+  void clearInfrastructure() => $_clearField(8);
 
   /// The PSC configurations on producer side.
   @$pb.TagNumber(9)
-  $core.List<ServiceConnectionMap_ProducerPscConfig> get producerPscConfigs =>
+  $pb.PbList<ServiceConnectionMap_ProducerPscConfig> get producerPscConfigs =>
       $_getList(7);
 
   /// The PSC configurations on consumer side.
   @$pb.TagNumber(10)
-  $core.List<ServiceConnectionMap_ConsumerPscConfig> get consumerPscConfigs =>
+  $pb.PbList<ServiceConnectionMap_ConsumerPscConfig> get consumerPscConfigs =>
       $_getList(8);
 
   /// Output only. PSC connection details on consumer side.
   @$pb.TagNumber(11)
-  $core.List<ServiceConnectionMap_ConsumerPscConnection>
+  $pb.PbList<ServiceConnectionMap_ConsumerPscConnection>
       get consumerPscConnections => $_getList(9);
 
   /// Output only. The service class uri this ServiceConnectionMap is for.
@@ -725,7 +711,7 @@ class ServiceConnectionMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasServiceClassUri() => $_has(10);
   @$pb.TagNumber(12)
-  void clearServiceClassUri() => clearField(12);
+  void clearServiceClassUri() => $_clearField(12);
 }
 
 /// Configuration used for Private Service Connect connections. Used when
@@ -762,14 +748,10 @@ class ServiceConnectionPolicy_PscConfig extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'limit')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicy_PscConfig clone() =>
       ServiceConnectionPolicy_PscConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicy_PscConfig copyWith(
           void Function(ServiceConnectionPolicy_PscConfig) updates) =>
       super.copyWith((message) =>
@@ -794,7 +776,7 @@ class ServiceConnectionPolicy_PscConfig extends $pb.GeneratedMessage {
   /// Example:
   /// projects/{projectNumOrId}/regions/{region}/subnetworks/{resourceId}.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get subnetworks => $_getList(0);
+  $pb.PbList<$core.String> get subnetworks => $_getList(0);
 
   /// Optional. Max number of PSC connections for this policy.
   @$pb.TagNumber(2)
@@ -807,7 +789,7 @@ class ServiceConnectionPolicy_PscConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasLimit() => $_has(1);
   @$pb.TagNumber(2)
-  void clearLimit() => clearField(2);
+  void clearLimit() => $_clearField(2);
 }
 
 /// Information about a specific Private Service Connect connection.
@@ -817,7 +799,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
     $core.String? consumerForwardingRule,
     $core.String? consumerAddress,
     ConnectionErrorType? errorType,
-    $19.Status? error,
+    $9.Status? error,
     $core.String? gceOperation,
     $core.String? consumerTargetProject,
     $core.String? pscConnectionId,
@@ -876,21 +858,17 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
         defaultOrMaker: ConnectionErrorType.CONNECTION_ERROR_TYPE_UNSPECIFIED,
         valueOf: ConnectionErrorType.valueOf,
         enumValues: ConnectionErrorType.values)
-    ..aOM<$19.Status>(5, _omitFieldNames ? '' : 'error',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(5, _omitFieldNames ? '' : 'error',
+        subBuilder: $9.Status.create)
     ..aOS(6, _omitFieldNames ? '' : 'gceOperation')
     ..aOS(7, _omitFieldNames ? '' : 'consumerTargetProject')
     ..aOS(8, _omitFieldNames ? '' : 'pscConnectionId')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicy_PscConnection clone() =>
       ServiceConnectionPolicy_PscConnection()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicy_PscConnection copyWith(
           void Function(ServiceConnectionPolicy_PscConnection) updates) =>
       super.copyWith((message) =>
@@ -916,13 +894,13 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   ServiceConnectionPolicy_State get state => $_getN(0);
   @$pb.TagNumber(1)
   set state(ServiceConnectionPolicy_State v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
-  void clearState() => clearField(1);
+  void clearState() => $_clearField(1);
 
   /// The resource reference of the PSC Forwarding Rule within the consumer
   /// VPC.
@@ -936,7 +914,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasConsumerForwardingRule() => $_has(1);
   @$pb.TagNumber(2)
-  void clearConsumerForwardingRule() => clearField(2);
+  void clearConsumerForwardingRule() => $_clearField(2);
 
   /// The resource reference of the consumer address.
   @$pb.TagNumber(3)
@@ -949,7 +927,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasConsumerAddress() => $_has(2);
   @$pb.TagNumber(3)
-  void clearConsumerAddress() => clearField(3);
+  void clearConsumerAddress() => $_clearField(3);
 
   /// The error type indicates whether the error is consumer facing, producer
   /// facing or system internal.
@@ -957,28 +935,28 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   ConnectionErrorType get errorType => $_getN(3);
   @$pb.TagNumber(4)
   set errorType(ConnectionErrorType v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasErrorType() => $_has(3);
   @$pb.TagNumber(4)
-  void clearErrorType() => clearField(4);
+  void clearErrorType() => $_clearField(4);
 
   /// The most recent error during operating this connection.
   @$pb.TagNumber(5)
-  $19.Status get error => $_getN(4);
+  $9.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($19.Status v) {
-    setField(5, v);
+  set error($9.Status v) {
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
-  void clearError() => clearField(5);
+  void clearError() => $_clearField(5);
   @$pb.TagNumber(5)
-  $19.Status ensureError() => $_ensure(4);
+  $9.Status ensureError() => $_ensure(4);
 
   /// The last Compute Engine operation to setup PSC connection.
   @$pb.TagNumber(6)
@@ -991,7 +969,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasGceOperation() => $_has(5);
   @$pb.TagNumber(6)
-  void clearGceOperation() => clearField(6);
+  void clearGceOperation() => $_clearField(6);
 
   /// The project where the PSC connection is created.
   @$pb.TagNumber(7)
@@ -1004,7 +982,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasConsumerTargetProject() => $_has(6);
   @$pb.TagNumber(7)
-  void clearConsumerTargetProject() => clearField(7);
+  void clearConsumerTargetProject() => $_clearField(7);
 
   /// The PSC connection id of the PSC forwarding rule.
   @$pb.TagNumber(8)
@@ -1017,7 +995,7 @@ class ServiceConnectionPolicy_PscConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasPscConnectionId() => $_has(7);
   @$pb.TagNumber(8)
-  void clearPscConnectionId() => clearField(8);
+  void clearPscConnectionId() => $_clearField(8);
 }
 
 /// The ServiceConnectionPolicy resource.
@@ -1027,7 +1005,7 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? network,
     $core.String? serviceClass,
@@ -1046,7 +1024,7 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -1109,14 +1087,10 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
         subBuilder: ServiceConnectionPolicy_PscConnection.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicy clone() =>
       ServiceConnectionPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicy copyWith(
           void Function(ServiceConnectionPolicy) updates) =>
       super.copyWith((message) => updates(message as ServiceConnectionPolicy))
@@ -1148,20 +1122,20 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Time when the ServiceConnectionMap was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -1170,19 +1144,19 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// A description of this resource.
   @$pb.TagNumber(5)
@@ -1195,7 +1169,7 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// The resource path of the consumer network.
   /// Example:
@@ -1210,7 +1184,7 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasNetwork() => $_has(5);
   @$pb.TagNumber(6)
-  void clearNetwork() => clearField(6);
+  void clearNetwork() => $_clearField(6);
 
   /// The service class identifier for which this ServiceConnectionPolicy is for.
   /// The service class identifier is a unique, symbolic representation of a
@@ -1227,7 +1201,7 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasServiceClass() => $_has(6);
   @$pb.TagNumber(7)
-  void clearServiceClass() => clearField(7);
+  void clearServiceClass() => $_clearField(7);
 
   /// Output only. The type of underlying resources used to create the
   /// connection.
@@ -1235,13 +1209,13 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   Infrastructure get infrastructure => $_getN(7);
   @$pb.TagNumber(8)
   set infrastructure(Infrastructure v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasInfrastructure() => $_has(7);
   @$pb.TagNumber(8)
-  void clearInfrastructure() => clearField(8);
+  void clearInfrastructure() => $_clearField(8);
 
   /// Configuration used for Private Service Connect connections. Used when
   /// Infrastructure is PSC.
@@ -1249,20 +1223,20 @@ class ServiceConnectionPolicy extends $pb.GeneratedMessage {
   ServiceConnectionPolicy_PscConfig get pscConfig => $_getN(8);
   @$pb.TagNumber(9)
   set pscConfig(ServiceConnectionPolicy_PscConfig v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasPscConfig() => $_has(8);
   @$pb.TagNumber(9)
-  void clearPscConfig() => clearField(9);
+  void clearPscConfig() => $_clearField(9);
   @$pb.TagNumber(9)
   ServiceConnectionPolicy_PscConfig ensurePscConfig() => $_ensure(8);
 
   /// Output only. [Output only] Information about each Private Service Connect
   /// connection.
   @$pb.TagNumber(10)
-  $core.List<ServiceConnectionPolicy_PscConnection> get pscConnections =>
+  $pb.PbList<ServiceConnectionPolicy_PscConnection> get pscConnections =>
       $_getList(9);
 }
 
@@ -1273,7 +1247,7 @@ class ServiceClass extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.Iterable<$core.String>? serviceConnectionMaps,
     $core.String? serviceClass,
@@ -1289,7 +1263,7 @@ class ServiceClass extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -1332,13 +1306,9 @@ class ServiceClass extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'serviceClass')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClass clone() => ServiceClass()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClass copyWith(void Function(ServiceClass) updates) =>
       super.copyWith((message) => updates(message as ServiceClass))
           as ServiceClass;
@@ -1369,20 +1339,20 @@ class ServiceClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Time when the ServiceClass was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -1391,19 +1361,19 @@ class ServiceClass extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// A description of this resource.
   @$pb.TagNumber(5)
@@ -1416,11 +1386,11 @@ class ServiceClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Output only. URIs of all Service Connection Maps using this service class.
   @$pb.TagNumber(6)
-  $core.List<$core.String> get serviceConnectionMaps => $_getList(5);
+  $pb.PbList<$core.String> get serviceConnectionMaps => $_getList(5);
 
   /// Output only. The generated service class name. Use this name to refer to
   /// the Service class in Service Connection Maps and Service Connection
@@ -1435,7 +1405,7 @@ class ServiceClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasServiceClass() => $_has(6);
   @$pb.TagNumber(7)
-  void clearServiceClass() => clearField(7);
+  void clearServiceClass() => $_clearField(7);
 }
 
 /// The ServiceConnectionToken resource.
@@ -1445,7 +1415,7 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? network,
   }) {
@@ -1460,7 +1430,7 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -1499,14 +1469,10 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'network')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionToken clone() =>
       ServiceConnectionToken()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionToken copyWith(
           void Function(ServiceConnectionToken) updates) =>
       super.copyWith((message) => updates(message as ServiceConnectionToken))
@@ -1538,20 +1504,20 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Time when the ServiceConnectionToken was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -1560,19 +1526,19 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// A description of this resource.
   @$pb.TagNumber(5)
@@ -1585,7 +1551,7 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// The resource path of the network associated with this token.
   /// Example:
@@ -1600,7 +1566,7 @@ class ServiceConnectionToken extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasNetwork() => $_has(5);
   @$pb.TagNumber(6)
-  void clearNetwork() => clearField(6);
+  void clearNetwork() => $_clearField(6);
 }
 
 /// A Network Connectivity Center hub is a global management resource to which
@@ -1614,7 +1580,7 @@ class Hub extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? uniqueId,
     State? state,
@@ -1631,7 +1597,7 @@ class Hub extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -1683,13 +1649,9 @@ class Hub extends $pb.GeneratedMessage {
         subBuilder: RoutingVPC.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Hub clone() => Hub()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Hub copyWith(void Function(Hub) updates) =>
       super.copyWith((message) => updates(message as Hub)) as Hub;
 
@@ -1717,20 +1679,20 @@ class Hub extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The time the hub was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -1739,13 +1701,13 @@ class Hub extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -1753,7 +1715,7 @@ class Hub extends $pb.GeneratedMessage {
   /// [Requirements for
   /// labels](https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements).
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// An optional description of the hub.
   @$pb.TagNumber(5)
@@ -1766,7 +1728,7 @@ class Hub extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Output only. The Google-generated UUID for the hub. This value is unique
   /// across all hub resources. If a hub is deleted and another with the same
@@ -1781,27 +1743,27 @@ class Hub extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasUniqueId() => $_has(5);
   @$pb.TagNumber(8)
-  void clearUniqueId() => clearField(8);
+  void clearUniqueId() => $_clearField(8);
 
   /// Output only. The current lifecycle state of this hub.
   @$pb.TagNumber(9)
   State get state => $_getN(6);
   @$pb.TagNumber(9)
   set state(State v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(9)
-  void clearState() => clearField(9);
+  void clearState() => $_clearField(9);
 
-  ///  The VPC networks associated with this hub's spokes.
+  /// The VPC networks associated with this hub's spokes.
   ///
-  ///  This field is read-only. Network Connectivity Center automatically
-  ///  populates it based on the set of spokes attached to the hub.
+  /// This field is read-only. Network Connectivity Center automatically
+  /// populates it based on the set of spokes attached to the hub.
   @$pb.TagNumber(10)
-  $core.List<RoutingVPC> get routingVpcs => $_getList(7);
+  $pb.PbList<RoutingVPC> get routingVpcs => $_getList(7);
 }
 
 /// RoutingVPC contains information about the VPC networks associated
@@ -1840,13 +1802,9 @@ class RoutingVPC extends $pb.GeneratedMessage {
         2, _omitFieldNames ? '' : 'requiredForNewSiteToSiteDataTransferSpokes')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RoutingVPC clone() => RoutingVPC()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RoutingVPC copyWith(void Function(RoutingVPC) updates) =>
       super.copyWith((message) => updates(message as RoutingVPC)) as RoutingVPC;
 
@@ -1872,7 +1830,7 @@ class RoutingVPC extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUri() => clearField(1);
+  void clearUri() => $_clearField(1);
 
   /// Output only. If true, indicates that this VPC network is currently
   /// associated with spokes that use the data transfer feature (spokes where the
@@ -1889,24 +1847,24 @@ class RoutingVPC extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasRequiredForNewSiteToSiteDataTransferSpokes() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRequiredForNewSiteToSiteDataTransferSpokes() => clearField(2);
+  void clearRequiredForNewSiteToSiteDataTransferSpokes() => $_clearField(2);
 }
 
-///  A Network Connectivity Center spoke represents one or more network
-///  connectivity resources.
+/// A Network Connectivity Center spoke represents one or more network
+/// connectivity resources.
 ///
-///  When you create a spoke, you associate it with a hub. You must also
-///  identify a value for exactly one of the following fields:
+/// When you create a spoke, you associate it with a hub. You must also
+/// identify a value for exactly one of the following fields:
 ///
-///  * linked_vpn_tunnels
-///  * linked_interconnect_attachments
-///  * linked_router_appliance_instances
+/// * linked_vpn_tunnels
+/// * linked_interconnect_attachments
+/// * linked_router_appliance_instances
 class Spoke extends $pb.GeneratedMessage {
   factory Spoke({
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? hub,
     $core.String? uniqueId,
@@ -1926,7 +1884,7 @@ class Spoke extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -1993,13 +1951,9 @@ class Spoke extends $pb.GeneratedMessage {
         subBuilder: LinkedRouterApplianceInstances.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Spoke clone() => Spoke()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Spoke copyWith(void Function(Spoke) updates) =>
       super.copyWith((message) => updates(message as Spoke)) as Spoke;
 
@@ -2027,20 +1981,20 @@ class Spoke extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The time the spoke was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -2049,13 +2003,13 @@ class Spoke extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -2063,7 +2017,7 @@ class Spoke extends $pb.GeneratedMessage {
   /// [Requirements for
   /// labels](https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements).
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// An optional description of the spoke.
   @$pb.TagNumber(5)
@@ -2076,7 +2030,7 @@ class Spoke extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Immutable. The name of the hub that this spoke is attached to.
   @$pb.TagNumber(6)
@@ -2089,7 +2043,7 @@ class Spoke extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasHub() => $_has(5);
   @$pb.TagNumber(6)
-  void clearHub() => clearField(6);
+  void clearHub() => $_clearField(6);
 
   /// Output only. The Google-generated UUID for the spoke. This value is unique
   /// across all spoke resources. If a spoke is deleted and another with the same
@@ -2104,33 +2058,33 @@ class Spoke extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasUniqueId() => $_has(6);
   @$pb.TagNumber(11)
-  void clearUniqueId() => clearField(11);
+  void clearUniqueId() => $_clearField(11);
 
   /// Output only. The current lifecycle state of this spoke.
   @$pb.TagNumber(15)
   State get state => $_getN(7);
   @$pb.TagNumber(15)
   set state(State v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(15)
-  void clearState() => clearField(15);
+  void clearState() => $_clearField(15);
 
   /// VPN tunnels that are associated with the spoke.
   @$pb.TagNumber(17)
   LinkedVpnTunnels get linkedVpnTunnels => $_getN(8);
   @$pb.TagNumber(17)
   set linkedVpnTunnels(LinkedVpnTunnels v) {
-    setField(17, v);
+    $_setField(17, v);
   }
 
   @$pb.TagNumber(17)
   $core.bool hasLinkedVpnTunnels() => $_has(8);
   @$pb.TagNumber(17)
-  void clearLinkedVpnTunnels() => clearField(17);
+  void clearLinkedVpnTunnels() => $_clearField(17);
   @$pb.TagNumber(17)
   LinkedVpnTunnels ensureLinkedVpnTunnels() => $_ensure(8);
 
@@ -2139,13 +2093,13 @@ class Spoke extends $pb.GeneratedMessage {
   LinkedInterconnectAttachments get linkedInterconnectAttachments => $_getN(9);
   @$pb.TagNumber(18)
   set linkedInterconnectAttachments(LinkedInterconnectAttachments v) {
-    setField(18, v);
+    $_setField(18, v);
   }
 
   @$pb.TagNumber(18)
   $core.bool hasLinkedInterconnectAttachments() => $_has(9);
   @$pb.TagNumber(18)
-  void clearLinkedInterconnectAttachments() => clearField(18);
+  void clearLinkedInterconnectAttachments() => $_clearField(18);
   @$pb.TagNumber(18)
   LinkedInterconnectAttachments ensureLinkedInterconnectAttachments() =>
       $_ensure(9);
@@ -2156,13 +2110,13 @@ class Spoke extends $pb.GeneratedMessage {
       $_getN(10);
   @$pb.TagNumber(19)
   set linkedRouterApplianceInstances(LinkedRouterApplianceInstances v) {
-    setField(19, v);
+    $_setField(19, v);
   }
 
   @$pb.TagNumber(19)
   $core.bool hasLinkedRouterApplianceInstances() => $_has(10);
   @$pb.TagNumber(19)
-  void clearLinkedRouterApplianceInstances() => clearField(19);
+  void clearLinkedRouterApplianceInstances() => $_clearField(19);
   @$pb.TagNumber(19)
   LinkedRouterApplianceInstances ensureLinkedRouterApplianceInstances() =>
       $_ensure(10);
@@ -2209,13 +2163,9 @@ class LinkedVpnTunnels extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'vpcNetwork')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LinkedVpnTunnels clone() => LinkedVpnTunnels()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LinkedVpnTunnels copyWith(void Function(LinkedVpnTunnels) updates) =>
       super.copyWith((message) => updates(message as LinkedVpnTunnels))
           as LinkedVpnTunnels;
@@ -2234,7 +2184,7 @@ class LinkedVpnTunnels extends $pb.GeneratedMessage {
 
   /// The URIs of linked VPN tunnel resources.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get uris => $_getList(0);
+  $pb.PbList<$core.String> get uris => $_getList(0);
 
   /// A value that controls whether site-to-site data transfer is enabled for
   /// these resources. Data transfer is available only in [supported
@@ -2249,7 +2199,7 @@ class LinkedVpnTunnels extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSiteToSiteDataTransfer() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSiteToSiteDataTransfer() => clearField(2);
+  void clearSiteToSiteDataTransfer() => $_clearField(2);
 
   /// Output only. The VPC network where these VPN tunnels are located.
   @$pb.TagNumber(3)
@@ -2262,7 +2212,7 @@ class LinkedVpnTunnels extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasVpcNetwork() => $_has(2);
   @$pb.TagNumber(3)
-  void clearVpcNetwork() => clearField(3);
+  void clearVpcNetwork() => $_clearField(3);
 }
 
 /// A collection of VLAN attachment resources. These resources should
@@ -2306,14 +2256,10 @@ class LinkedInterconnectAttachments extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'vpcNetwork')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LinkedInterconnectAttachments clone() =>
       LinkedInterconnectAttachments()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LinkedInterconnectAttachments copyWith(
           void Function(LinkedInterconnectAttachments) updates) =>
       super.copyWith(
@@ -2335,7 +2281,7 @@ class LinkedInterconnectAttachments extends $pb.GeneratedMessage {
 
   /// The URIs of linked interconnect attachment resources
   @$pb.TagNumber(1)
-  $core.List<$core.String> get uris => $_getList(0);
+  $pb.PbList<$core.String> get uris => $_getList(0);
 
   /// A value that controls whether site-to-site data transfer is enabled for
   /// these resources. Data transfer is available only in [supported
@@ -2350,7 +2296,7 @@ class LinkedInterconnectAttachments extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSiteToSiteDataTransfer() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSiteToSiteDataTransfer() => clearField(2);
+  void clearSiteToSiteDataTransfer() => $_clearField(2);
 
   /// Output only. The VPC network where these VLAN attachments are located.
   @$pb.TagNumber(3)
@@ -2363,7 +2309,7 @@ class LinkedInterconnectAttachments extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasVpcNetwork() => $_has(2);
   @$pb.TagNumber(3)
-  void clearVpcNetwork() => clearField(3);
+  void clearVpcNetwork() => $_clearField(3);
 }
 
 /// A collection of router appliance instances. If you configure multiple router
@@ -2409,14 +2355,10 @@ class LinkedRouterApplianceInstances extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'vpcNetwork')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LinkedRouterApplianceInstances clone() =>
       LinkedRouterApplianceInstances()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LinkedRouterApplianceInstances copyWith(
           void Function(LinkedRouterApplianceInstances) updates) =>
       super.copyWith(
@@ -2438,7 +2380,7 @@ class LinkedRouterApplianceInstances extends $pb.GeneratedMessage {
 
   /// The list of router appliance instances.
   @$pb.TagNumber(1)
-  $core.List<RouterApplianceInstance> get instances => $_getList(0);
+  $pb.PbList<RouterApplianceInstance> get instances => $_getList(0);
 
   /// A value that controls whether site-to-site data transfer is enabled for
   /// these resources. Data transfer is available only in [supported
@@ -2453,7 +2395,7 @@ class LinkedRouterApplianceInstances extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSiteToSiteDataTransfer() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSiteToSiteDataTransfer() => clearField(2);
+  void clearSiteToSiteDataTransfer() => $_clearField(2);
 
   /// Output only. The VPC network where these router appliance instances are
   /// located.
@@ -2467,7 +2409,7 @@ class LinkedRouterApplianceInstances extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasVpcNetwork() => $_has(2);
   @$pb.TagNumber(3)
-  void clearVpcNetwork() => clearField(3);
+  void clearVpcNetwork() => $_clearField(3);
 }
 
 /// A router appliance instance is a Compute Engine virtual machine (VM) instance
@@ -2506,14 +2448,10 @@ class RouterApplianceInstance extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'ipAddress')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RouterApplianceInstance clone() =>
       RouterApplianceInstance()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RouterApplianceInstance copyWith(
           void Function(RouterApplianceInstance) updates) =>
       super.copyWith((message) => updates(message as RouterApplianceInstance))
@@ -2542,7 +2480,7 @@ class RouterApplianceInstance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVirtualMachine() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVirtualMachine() => clearField(1);
+  void clearVirtualMachine() => $_clearField(1);
 
   /// The IP address on the VM to use for peering.
   @$pb.TagNumber(3)
@@ -2555,7 +2493,7 @@ class RouterApplianceInstance extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasIpAddress() => $_has(1);
   @$pb.TagNumber(3)
-  void clearIpAddress() => clearField(3);
+  void clearIpAddress() => $_clearField(3);
 }
 
 /// The data within all ServiceClass events.
@@ -2587,14 +2525,10 @@ class ServiceClassEventData extends $pb.GeneratedMessage {
         subBuilder: ServiceClass.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClassEventData clone() =>
       ServiceClassEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceClassEventData copyWith(
           void Function(ServiceClassEventData) updates) =>
       super.copyWith((message) => updates(message as ServiceClassEventData))
@@ -2617,13 +2551,13 @@ class ServiceClassEventData extends $pb.GeneratedMessage {
   ServiceClass get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ServiceClass v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ServiceClass ensurePayload() => $_ensure(0);
 }
@@ -2657,14 +2591,10 @@ class ServiceConnectionTokenEventData extends $pb.GeneratedMessage {
         subBuilder: ServiceConnectionToken.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionTokenEventData clone() =>
       ServiceConnectionTokenEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionTokenEventData copyWith(
           void Function(ServiceConnectionTokenEventData) updates) =>
       super.copyWith(
@@ -2691,13 +2621,13 @@ class ServiceConnectionTokenEventData extends $pb.GeneratedMessage {
   ServiceConnectionToken get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ServiceConnectionToken v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ServiceConnectionToken ensurePayload() => $_ensure(0);
 }
@@ -2731,14 +2661,10 @@ class ServiceConnectionMapEventData extends $pb.GeneratedMessage {
         subBuilder: ServiceConnectionMap.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapEventData clone() =>
       ServiceConnectionMapEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionMapEventData copyWith(
           void Function(ServiceConnectionMapEventData) updates) =>
       super.copyWith(
@@ -2764,13 +2690,13 @@ class ServiceConnectionMapEventData extends $pb.GeneratedMessage {
   ServiceConnectionMap get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ServiceConnectionMap v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ServiceConnectionMap ensurePayload() => $_ensure(0);
 }
@@ -2803,13 +2729,9 @@ class HubEventData extends $pb.GeneratedMessage {
     ..aOM<Hub>(1, _omitFieldNames ? '' : 'payload', subBuilder: Hub.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubEventData clone() => HubEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HubEventData copyWith(void Function(HubEventData) updates) =>
       super.copyWith((message) => updates(message as HubEventData))
           as HubEventData;
@@ -2831,13 +2753,13 @@ class HubEventData extends $pb.GeneratedMessage {
   Hub get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Hub v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Hub ensurePayload() => $_ensure(0);
 }
@@ -2870,13 +2792,9 @@ class SpokeEventData extends $pb.GeneratedMessage {
     ..aOM<Spoke>(1, _omitFieldNames ? '' : 'payload', subBuilder: Spoke.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeEventData clone() => SpokeEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SpokeEventData copyWith(void Function(SpokeEventData) updates) =>
       super.copyWith((message) => updates(message as SpokeEventData))
           as SpokeEventData;
@@ -2898,13 +2816,13 @@ class SpokeEventData extends $pb.GeneratedMessage {
   Spoke get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Spoke v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Spoke ensurePayload() => $_ensure(0);
 }
@@ -2938,14 +2856,10 @@ class ServiceConnectionPolicyEventData extends $pb.GeneratedMessage {
         subBuilder: ServiceConnectionPolicy.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyEventData clone() =>
       ServiceConnectionPolicyEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceConnectionPolicyEventData copyWith(
           void Function(ServiceConnectionPolicyEventData) updates) =>
       super.copyWith(
@@ -2972,13 +2886,13 @@ class ServiceConnectionPolicyEventData extends $pb.GeneratedMessage {
   ServiceConnectionPolicy get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ServiceConnectionPolicy v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ServiceConnectionPolicy ensurePayload() => $_ensure(0);
 }

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/type/timeofday.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -12,6 +12,8 @@
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// Represents a time of day. The date and time zone are either not significant
 /// or are specified elsewhere. An API may choose to allow leap seconds. Related
@@ -56,13 +58,9 @@ class TimeOfDay extends $pb.GeneratedMessage {
     ..a<$core.int>(4, _omitFieldNames ? '' : 'nanos', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TimeOfDay clone() => TimeOfDay()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TimeOfDay copyWith(void Function(TimeOfDay) updates) =>
       super.copyWith((message) => updates(message as TimeOfDay)) as TimeOfDay;
 
@@ -89,7 +87,7 @@ class TimeOfDay extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHours() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHours() => clearField(1);
+  void clearHours() => $_clearField(1);
 
   /// Minutes of hour of day. Must be from 0 to 59.
   @$pb.TagNumber(2)
@@ -102,7 +100,7 @@ class TimeOfDay extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMinutes() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMinutes() => clearField(2);
+  void clearMinutes() => $_clearField(2);
 
   /// Seconds of minutes of the time. Must normally be from 0 to 59. An API may
   /// allow the value 60 if it allows leap-seconds.
@@ -116,7 +114,7 @@ class TimeOfDay extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasSeconds() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSeconds() => clearField(3);
+  void clearSeconds() => $_clearField(3);
 
   /// Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
   @$pb.TagNumber(4)
@@ -129,7 +127,7 @@ class TimeOfDay extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasNanos() => $_has(3);
   @$pb.TagNumber(4)
-  void clearNanos() => clearField(4);
+  void clearNanos() => $_clearField(4);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

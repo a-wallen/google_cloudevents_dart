@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/firestore/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,9 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pbenum.dart' as $0;
+import '../../../../protobuf/struct.pbenum.dart' as $10;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../type/latlng.pb.dart' as $24;
+import '../../../../type/latlng.pb.dart' as $26;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The data within all Firestore document events.
 class DocumentEventData extends $pb.GeneratedMessage {
@@ -58,13 +60,9 @@ class DocumentEventData extends $pb.GeneratedMessage {
         subBuilder: DocumentMask.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentEventData clone() => DocumentEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentEventData copyWith(void Function(DocumentEventData) updates) =>
       super.copyWith((message) => updates(message as DocumentEventData))
           as DocumentEventData;
@@ -87,13 +85,13 @@ class DocumentEventData extends $pb.GeneratedMessage {
   Document get value => $_getN(0);
   @$pb.TagNumber(1)
   set value(Document v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
   @$pb.TagNumber(1)
   Document ensureValue() => $_ensure(0);
 
@@ -103,13 +101,13 @@ class DocumentEventData extends $pb.GeneratedMessage {
   Document get oldValue => $_getN(1);
   @$pb.TagNumber(2)
   set oldValue(Document v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasOldValue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearOldValue() => clearField(2);
+  void clearOldValue() => $_clearField(2);
   @$pb.TagNumber(2)
   Document ensureOldValue() => $_ensure(1);
 
@@ -119,13 +117,13 @@ class DocumentEventData extends $pb.GeneratedMessage {
   DocumentMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
   set updateMask(DocumentMask v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateMask() => clearField(3);
+  void clearUpdateMask() => $_clearField(3);
   @$pb.TagNumber(3)
   DocumentMask ensureUpdateMask() => $_ensure(2);
 }
@@ -157,13 +155,9 @@ class DocumentMask extends $pb.GeneratedMessage {
     ..pPS(1, _omitFieldNames ? '' : 'fieldPaths')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentMask clone() => DocumentMask()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentMask copyWith(void Function(DocumentMask) updates) =>
       super.copyWith((message) => updates(message as DocumentMask))
           as DocumentMask;
@@ -184,14 +178,14 @@ class DocumentMask extends $pb.GeneratedMessage {
   /// See [Document.fields][google.cloud.firestore.v1.events.Document.fields]
   /// for a field path syntax reference.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get fieldPaths => $_getList(0);
+  $pb.PbList<$core.String> get fieldPaths => $_getList(0);
 }
 
 /// A Firestore document.
 class Document extends $pb.GeneratedMessage {
   factory Document({
     $core.String? name,
-    $core.Map<$core.String, Value>? fields,
+    $core.Iterable<$core.MapEntry<$core.String, Value>>? fields,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
   }) {
@@ -200,7 +194,7 @@ class Document extends $pb.GeneratedMessage {
       $result.name = name;
     }
     if (fields != null) {
-      $result.fields.addAll(fields);
+      $result.fields.addEntries(fields);
     }
     if (createTime != null) {
       $result.createTime = createTime;
@@ -237,13 +231,9 @@ class Document extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Document clone() => Document()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Document copyWith(void Function(Document) updates) =>
       super.copyWith((message) => updates(message as Document)) as Document;
 
@@ -270,70 +260,70 @@ class Document extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
-  ///  The document's fields.
+  /// The document's fields.
   ///
-  ///  The map keys represent field names.
+  /// The map keys represent field names.
   ///
-  ///  A simple field name contains only characters `a` to `z`, `A` to `Z`,
-  ///  `0` to `9`, or `_`, and must not start with `0` to `9`. For example,
-  ///  `foo_bar_17`.
+  /// A simple field name contains only characters `a` to `z`, `A` to `Z`,
+  /// `0` to `9`, or `_`, and must not start with `0` to `9`. For example,
+  /// `foo_bar_17`.
   ///
-  ///  Field names matching the regular expression `__.*__` are reserved. Reserved
-  ///  field names are forbidden except in certain documented contexts. The map
-  ///  keys, represented as UTF-8, must not exceed 1,500 bytes and cannot be
-  ///  empty.
+  /// Field names matching the regular expression `__.*__` are reserved. Reserved
+  /// field names are forbidden except in certain documented contexts. The map
+  /// keys, represented as UTF-8, must not exceed 1,500 bytes and cannot be
+  /// empty.
   ///
-  ///  Field paths may be used in other contexts to refer to structured fields
-  ///  defined here. For `map_value`, the field path is represented by the simple
-  ///  or quoted field names of the containing fields, delimited by `.`. For
-  ///  example, the structured field
-  ///  `"foo" : { map_value: { "x&y" : { string_value: "hello" }}}` would be
-  ///  represented by the field path `foo.x&y`.
+  /// Field paths may be used in other contexts to refer to structured fields
+  /// defined here. For `map_value`, the field path is represented by the simple
+  /// or quoted field names of the containing fields, delimited by `.`. For
+  /// example, the structured field
+  /// `"foo" : { map_value: { "x&y" : { string_value: "hello" }}}` would be
+  /// represented by the field path `foo.x&y`.
   ///
-  ///  Within a field path, a quoted field name starts and ends with `` ` `` and
-  ///  may contain any character. Some characters, including `` ` ``, must be
-  ///  escaped using a `\`. For example, `` `x&y` `` represents `x&y` and
-  ///  `` `bak\`tik` `` represents `` bak`tik ``.
+  /// Within a field path, a quoted field name starts and ends with `` ` `` and
+  /// may contain any character. Some characters, including `` ` ``, must be
+  /// escaped using a `\`. For example, `` `x&y` `` represents `x&y` and
+  /// `` `bak\`tik` `` represents `` bak`tik ``.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, Value> get fields => $_getMap(1);
+  $pb.PbMap<$core.String, Value> get fields => $_getMap(1);
 
-  ///  The time at which the document was created.
+  /// The time at which the document was created.
   ///
-  ///  This value increases monotonically when a document is deleted then
-  ///  recreated. It can also be compared to values from other documents and
-  ///  the `read_time` of a query.
+  /// This value increases monotonically when a document is deleted then
+  /// recreated. It can also be compared to values from other documents and
+  /// the `read_time` of a query.
   @$pb.TagNumber(3)
   $2.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
   set createTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCreateTime() => clearField(3);
+  void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureCreateTime() => $_ensure(2);
 
-  ///  The time at which the document was last changed.
+  /// The time at which the document was last changed.
   ///
-  ///  This value is initially set to the `create_time` then increases
-  ///  monotonically with each change to the document. It can also be
-  ///  compared to values from other documents and the `read_time` of a query.
+  /// This value is initially set to the `create_time` then increases
+  /// monotonically with each change to the document. It can also be
+  /// compared to values from other documents and the `read_time` of a query.
   @$pb.TagNumber(4)
   $2.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
   set updateTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUpdateTime() => clearField(4);
+  void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureUpdateTime() => $_ensure(3);
 }
@@ -361,10 +351,10 @@ class Value extends $pb.GeneratedMessage {
     $core.double? doubleValue,
     $core.String? referenceValue,
     MapValue? mapValue,
-    $24.LatLng? geoPointValue,
+    $26.LatLng? geoPointValue,
     ArrayValue? arrayValue,
     $2.Timestamp? timestampValue,
-    $0.NullValue? nullValue,
+    $10.NullValue? nullValue,
     $core.String? stringValue,
     $core.List<$core.int>? bytesValue,
   }) {
@@ -439,29 +429,25 @@ class Value extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'referenceValue')
     ..aOM<MapValue>(6, _omitFieldNames ? '' : 'mapValue',
         subBuilder: MapValue.create)
-    ..aOM<$24.LatLng>(8, _omitFieldNames ? '' : 'geoPointValue',
-        subBuilder: $24.LatLng.create)
+    ..aOM<$26.LatLng>(8, _omitFieldNames ? '' : 'geoPointValue',
+        subBuilder: $26.LatLng.create)
     ..aOM<ArrayValue>(9, _omitFieldNames ? '' : 'arrayValue',
         subBuilder: ArrayValue.create)
     ..aOM<$2.Timestamp>(10, _omitFieldNames ? '' : 'timestampValue',
         subBuilder: $2.Timestamp.create)
-    ..e<$0.NullValue>(
+    ..e<$10.NullValue>(
         11, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE,
-        defaultOrMaker: $0.NullValue.NULL_VALUE,
-        valueOf: $0.NullValue.valueOf,
-        enumValues: $0.NullValue.values)
+        defaultOrMaker: $10.NullValue.NULL_VALUE,
+        valueOf: $10.NullValue.valueOf,
+        enumValues: $10.NullValue.values)
     ..aOS(17, _omitFieldNames ? '' : 'stringValue')
     ..a<$core.List<$core.int>>(
         18, _omitFieldNames ? '' : 'bytesValue', $pb.PbFieldType.OY)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Value clone() => Value()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Value copyWith(void Function(Value) updates) =>
       super.copyWith((message) => updates(message as Value)) as Value;
 
@@ -477,7 +463,7 @@ class Value extends $pb.GeneratedMessage {
   static Value? _defaultInstance;
 
   Value_ValueType whichValueType() => _Value_ValueTypeByTag[$_whichOneof(0)]!;
-  void clearValueType() => clearField($_whichOneof(0));
+  void clearValueType() => $_clearField($_whichOneof(0));
 
   /// A boolean value.
   @$pb.TagNumber(1)
@@ -490,7 +476,7 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasBooleanValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearBooleanValue() => clearField(1);
+  void clearBooleanValue() => $_clearField(1);
 
   /// An integer value.
   @$pb.TagNumber(2)
@@ -503,7 +489,7 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasIntegerValue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIntegerValue() => clearField(2);
+  void clearIntegerValue() => $_clearField(2);
 
   /// A double value.
   @$pb.TagNumber(3)
@@ -516,7 +502,7 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDoubleValue() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDoubleValue() => clearField(3);
+  void clearDoubleValue() => $_clearField(3);
 
   /// A reference to a document. For example:
   /// `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
@@ -530,92 +516,92 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasReferenceValue() => $_has(3);
   @$pb.TagNumber(5)
-  void clearReferenceValue() => clearField(5);
+  void clearReferenceValue() => $_clearField(5);
 
   /// A map value.
   @$pb.TagNumber(6)
   MapValue get mapValue => $_getN(4);
   @$pb.TagNumber(6)
   set mapValue(MapValue v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasMapValue() => $_has(4);
   @$pb.TagNumber(6)
-  void clearMapValue() => clearField(6);
+  void clearMapValue() => $_clearField(6);
   @$pb.TagNumber(6)
   MapValue ensureMapValue() => $_ensure(4);
 
   /// A geo point value representing a point on the surface of Earth.
   @$pb.TagNumber(8)
-  $24.LatLng get geoPointValue => $_getN(5);
+  $26.LatLng get geoPointValue => $_getN(5);
   @$pb.TagNumber(8)
-  set geoPointValue($24.LatLng v) {
-    setField(8, v);
+  set geoPointValue($26.LatLng v) {
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasGeoPointValue() => $_has(5);
   @$pb.TagNumber(8)
-  void clearGeoPointValue() => clearField(8);
+  void clearGeoPointValue() => $_clearField(8);
   @$pb.TagNumber(8)
-  $24.LatLng ensureGeoPointValue() => $_ensure(5);
+  $26.LatLng ensureGeoPointValue() => $_ensure(5);
 
-  ///  An array value.
+  /// An array value.
   ///
-  ///  Cannot directly contain another array value, though can contain an
-  ///  map which contains another array.
+  /// Cannot directly contain another array value, though can contain an
+  /// map which contains another array.
   @$pb.TagNumber(9)
   ArrayValue get arrayValue => $_getN(6);
   @$pb.TagNumber(9)
   set arrayValue(ArrayValue v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasArrayValue() => $_has(6);
   @$pb.TagNumber(9)
-  void clearArrayValue() => clearField(9);
+  void clearArrayValue() => $_clearField(9);
   @$pb.TagNumber(9)
   ArrayValue ensureArrayValue() => $_ensure(6);
 
-  ///  A timestamp value.
+  /// A timestamp value.
   ///
-  ///  Precise only to microseconds. When stored, any additional precision is
-  ///  rounded down.
+  /// Precise only to microseconds. When stored, any additional precision is
+  /// rounded down.
   @$pb.TagNumber(10)
   $2.Timestamp get timestampValue => $_getN(7);
   @$pb.TagNumber(10)
   set timestampValue($2.Timestamp v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasTimestampValue() => $_has(7);
   @$pb.TagNumber(10)
-  void clearTimestampValue() => clearField(10);
+  void clearTimestampValue() => $_clearField(10);
   @$pb.TagNumber(10)
   $2.Timestamp ensureTimestampValue() => $_ensure(7);
 
   /// A null value.
   @$pb.TagNumber(11)
-  $0.NullValue get nullValue => $_getN(8);
+  $10.NullValue get nullValue => $_getN(8);
   @$pb.TagNumber(11)
-  set nullValue($0.NullValue v) {
-    setField(11, v);
+  set nullValue($10.NullValue v) {
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasNullValue() => $_has(8);
   @$pb.TagNumber(11)
-  void clearNullValue() => clearField(11);
+  void clearNullValue() => $_clearField(11);
 
-  ///  A string value.
+  /// A string value.
   ///
-  ///  The string, represented as UTF-8, must not exceed 1 MiB - 89 bytes.
-  ///  Only the first 1,500 bytes of the UTF-8 representation are considered by
-  ///  queries.
+  /// The string, represented as UTF-8, must not exceed 1 MiB - 89 bytes.
+  /// Only the first 1,500 bytes of the UTF-8 representation are considered by
+  /// queries.
   @$pb.TagNumber(17)
   $core.String get stringValue => $_getSZ(9);
   @$pb.TagNumber(17)
@@ -626,12 +612,12 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.bool hasStringValue() => $_has(9);
   @$pb.TagNumber(17)
-  void clearStringValue() => clearField(17);
+  void clearStringValue() => $_clearField(17);
 
-  ///  A bytes value.
+  /// A bytes value.
   ///
-  ///  Must not exceed 1 MiB - 89 bytes.
-  ///  Only the first 1,500 bytes are considered by queries.
+  /// Must not exceed 1 MiB - 89 bytes.
+  /// Only the first 1,500 bytes are considered by queries.
   @$pb.TagNumber(18)
   $core.List<$core.int> get bytesValue => $_getN(10);
   @$pb.TagNumber(18)
@@ -642,7 +628,7 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasBytesValue() => $_has(10);
   @$pb.TagNumber(18)
-  void clearBytesValue() => clearField(18);
+  void clearBytesValue() => $_clearField(18);
 }
 
 /// An array value.
@@ -673,13 +659,9 @@ class ArrayValue extends $pb.GeneratedMessage {
         subBuilder: Value.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ArrayValue clone() => ArrayValue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ArrayValue copyWith(void Function(ArrayValue) updates) =>
       super.copyWith((message) => updates(message as ArrayValue)) as ArrayValue;
 
@@ -696,17 +678,17 @@ class ArrayValue extends $pb.GeneratedMessage {
 
   /// Values in the array.
   @$pb.TagNumber(1)
-  $core.List<Value> get values => $_getList(0);
+  $pb.PbList<Value> get values => $_getList(0);
 }
 
 /// A map value.
 class MapValue extends $pb.GeneratedMessage {
   factory MapValue({
-    $core.Map<$core.String, Value>? fields,
+    $core.Iterable<$core.MapEntry<$core.String, Value>>? fields,
   }) {
     final $result = create();
     if (fields != null) {
-      $result.fields.addAll(fields);
+      $result.fields.addEntries(fields);
     }
     return $result;
   }
@@ -732,13 +714,9 @@ class MapValue extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.firestore.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MapValue clone() => MapValue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MapValue copyWith(void Function(MapValue) updates) =>
       super.copyWith((message) => updates(message as MapValue)) as MapValue;
 
@@ -753,14 +731,14 @@ class MapValue extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MapValue>(create);
   static MapValue? _defaultInstance;
 
-  ///  The map's fields.
+  /// The map's fields.
   ///
-  ///  The map keys represent field names. Field names matching the regular
-  ///  expression `__.*__` are reserved. Reserved field names are forbidden except
-  ///  in certain documented contexts. The map keys, represented as UTF-8, must
-  ///  not exceed 1,500 bytes and cannot be empty.
+  /// The map keys represent field names. Field names matching the regular
+  /// expression `__.*__` are reserved. Reserved field names are forbidden except
+  /// in certain documented contexts. The map keys, represented as UTF-8, must
+  /// not exceed 1,500 bytes and cannot be empty.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, Value> get fields => $_getMap(0);
+  $pb.PbMap<$core.String, Value> get fields => $_getMap(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

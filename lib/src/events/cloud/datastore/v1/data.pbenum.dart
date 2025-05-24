@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/datastore/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -19,13 +19,20 @@ import 'package:protobuf/protobuf.dart' as $pb;
 /// (for example, in message `QueryResultBatch`, field `entity_result_type`
 /// specifies a `ResultType` for all the values in field `entity_results`).
 class EntityResult_ResultType extends $pb.ProtobufEnum {
+  /// Unspecified. This value is never used.
   static const EntityResult_ResultType RESULT_TYPE_UNSPECIFIED =
       EntityResult_ResultType._(
           0, _omitEnumNames ? '' : 'RESULT_TYPE_UNSPECIFIED');
+
+  /// The key and properties.
   static const EntityResult_ResultType FULL =
       EntityResult_ResultType._(1, _omitEnumNames ? '' : 'FULL');
+
+  /// A projected subset of properties. The entity may have no key.
   static const EntityResult_ResultType PROJECTION =
       EntityResult_ResultType._(2, _omitEnumNames ? '' : 'PROJECTION');
+
+  /// Only the key.
   static const EntityResult_ResultType KEY_ONLY =
       EntityResult_ResultType._(3, _omitEnumNames ? '' : 'KEY_ONLY');
 
@@ -37,11 +44,12 @@ class EntityResult_ResultType extends $pb.ProtobufEnum {
     KEY_ONLY,
   ];
 
-  static final $core.Map<$core.int, EntityResult_ResultType> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
-  static EntityResult_ResultType? valueOf($core.int value) => _byValue[value];
+  static final $core.List<EntityResult_ResultType?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 3);
+  static EntityResult_ResultType? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const EntityResult_ResultType._($core.int v, $core.String n) : super(v, n);
+  const EntityResult_ResultType._(super.v, super.n);
 }
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/protobuf/type.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,9 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'any.pb.dart' as $18;
-import 'source_context.pb.dart' as $59;
+import 'any.pb.dart' as $63;
+import 'source_context.pb.dart' as $61;
 import 'type.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'type.pbenum.dart';
 
@@ -26,7 +28,7 @@ class Type extends $pb.GeneratedMessage {
     $core.Iterable<Field>? fields,
     $core.Iterable<$core.String>? oneofs,
     $core.Iterable<Option>? options,
-    $59.SourceContext? sourceContext,
+    $61.SourceContext? sourceContext,
     Syntax? syntax,
   }) {
     final $result = create();
@@ -69,21 +71,17 @@ class Type extends $pb.GeneratedMessage {
     ..pPS(3, _omitFieldNames ? '' : 'oneofs')
     ..pc<Option>(4, _omitFieldNames ? '' : 'options', $pb.PbFieldType.PM,
         subBuilder: Option.create)
-    ..aOM<$59.SourceContext>(5, _omitFieldNames ? '' : 'sourceContext',
-        subBuilder: $59.SourceContext.create)
+    ..aOM<$61.SourceContext>(5, _omitFieldNames ? '' : 'sourceContext',
+        subBuilder: $61.SourceContext.create)
     ..e<Syntax>(6, _omitFieldNames ? '' : 'syntax', $pb.PbFieldType.OE,
         defaultOrMaker: Syntax.SYNTAX_PROTO2,
         valueOf: Syntax.valueOf,
         enumValues: Syntax.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Type clone() => Type()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Type copyWith(void Function(Type) updates) =>
       super.copyWith((message) => updates(message as Type)) as Type;
 
@@ -109,47 +107,47 @@ class Type extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// The list of fields.
   @$pb.TagNumber(2)
-  $core.List<Field> get fields => $_getList(1);
+  $pb.PbList<Field> get fields => $_getList(1);
 
   /// The list of types appearing in `oneof` definitions in this type.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get oneofs => $_getList(2);
+  $pb.PbList<$core.String> get oneofs => $_getList(2);
 
   /// The protocol buffer options.
   @$pb.TagNumber(4)
-  $core.List<Option> get options => $_getList(3);
+  $pb.PbList<Option> get options => $_getList(3);
 
   /// The source context.
   @$pb.TagNumber(5)
-  $59.SourceContext get sourceContext => $_getN(4);
+  $61.SourceContext get sourceContext => $_getN(4);
   @$pb.TagNumber(5)
-  set sourceContext($59.SourceContext v) {
-    setField(5, v);
+  set sourceContext($61.SourceContext v) {
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasSourceContext() => $_has(4);
   @$pb.TagNumber(5)
-  void clearSourceContext() => clearField(5);
+  void clearSourceContext() => $_clearField(5);
   @$pb.TagNumber(5)
-  $59.SourceContext ensureSourceContext() => $_ensure(4);
+  $61.SourceContext ensureSourceContext() => $_ensure(4);
 
   /// The source syntax.
   @$pb.TagNumber(6)
   Syntax get syntax => $_getN(5);
   @$pb.TagNumber(6)
   set syntax(Syntax v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasSyntax() => $_has(5);
   @$pb.TagNumber(6)
-  void clearSyntax() => clearField(6);
+  void clearSyntax() => $_clearField(6);
 }
 
 /// A single field of a message type.
@@ -232,13 +230,9 @@ class Field extends $pb.GeneratedMessage {
     ..aOS(11, _omitFieldNames ? '' : 'defaultValue')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Field clone() => Field()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Field copyWith(void Function(Field) updates) =>
       super.copyWith((message) => updates(message as Field)) as Field;
 
@@ -258,26 +252,26 @@ class Field extends $pb.GeneratedMessage {
   Field_Kind get kind => $_getN(0);
   @$pb.TagNumber(1)
   set kind(Field_Kind v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasKind() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKind() => clearField(1);
+  void clearKind() => $_clearField(1);
 
   /// The field cardinality.
   @$pb.TagNumber(2)
   Field_Cardinality get cardinality => $_getN(1);
   @$pb.TagNumber(2)
   set cardinality(Field_Cardinality v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCardinality() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCardinality() => clearField(2);
+  void clearCardinality() => $_clearField(2);
 
   /// The field number.
   @$pb.TagNumber(3)
@@ -290,7 +284,7 @@ class Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasNumber() => $_has(2);
   @$pb.TagNumber(3)
-  void clearNumber() => clearField(3);
+  void clearNumber() => $_clearField(3);
 
   /// The field name.
   @$pb.TagNumber(4)
@@ -303,7 +297,7 @@ class Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasName() => $_has(3);
   @$pb.TagNumber(4)
-  void clearName() => clearField(4);
+  void clearName() => $_clearField(4);
 
   /// The field type URL, without the scheme, for message or enumeration
   /// types. Example: `"type.googleapis.com/google.protobuf.Timestamp"`.
@@ -317,7 +311,7 @@ class Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasTypeUrl() => $_has(4);
   @$pb.TagNumber(6)
-  void clearTypeUrl() => clearField(6);
+  void clearTypeUrl() => $_clearField(6);
 
   /// The index of the field type in `Type.oneofs`, for message or enumeration
   /// types. The first type has index 1; zero means the type is not in the list.
@@ -331,7 +325,7 @@ class Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasOneofIndex() => $_has(5);
   @$pb.TagNumber(7)
-  void clearOneofIndex() => clearField(7);
+  void clearOneofIndex() => $_clearField(7);
 
   /// Whether to use alternative packed wire representation.
   @$pb.TagNumber(8)
@@ -344,11 +338,11 @@ class Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasPacked() => $_has(6);
   @$pb.TagNumber(8)
-  void clearPacked() => clearField(8);
+  void clearPacked() => $_clearField(8);
 
   /// The protocol buffer options.
   @$pb.TagNumber(9)
-  $core.List<Option> get options => $_getList(7);
+  $pb.PbList<Option> get options => $_getList(7);
 
   /// The field JSON name.
   @$pb.TagNumber(10)
@@ -361,7 +355,7 @@ class Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasJsonName() => $_has(8);
   @$pb.TagNumber(10)
-  void clearJsonName() => clearField(10);
+  void clearJsonName() => $_clearField(10);
 
   /// The string value of the default value of this field. Proto2 syntax only.
   @$pb.TagNumber(11)
@@ -374,7 +368,7 @@ class Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasDefaultValue() => $_has(9);
   @$pb.TagNumber(11)
-  void clearDefaultValue() => clearField(11);
+  void clearDefaultValue() => $_clearField(11);
 }
 
 /// Enum type definition.
@@ -383,7 +377,7 @@ class Enum extends $pb.GeneratedMessage {
     $core.String? name,
     $core.Iterable<EnumValue>? enumvalue,
     $core.Iterable<Option>? options,
-    $59.SourceContext? sourceContext,
+    $61.SourceContext? sourceContext,
     Syntax? syntax,
   }) {
     final $result = create();
@@ -422,21 +416,17 @@ class Enum extends $pb.GeneratedMessage {
         subBuilder: EnumValue.create)
     ..pc<Option>(3, _omitFieldNames ? '' : 'options', $pb.PbFieldType.PM,
         subBuilder: Option.create)
-    ..aOM<$59.SourceContext>(4, _omitFieldNames ? '' : 'sourceContext',
-        subBuilder: $59.SourceContext.create)
+    ..aOM<$61.SourceContext>(4, _omitFieldNames ? '' : 'sourceContext',
+        subBuilder: $61.SourceContext.create)
     ..e<Syntax>(5, _omitFieldNames ? '' : 'syntax', $pb.PbFieldType.OE,
         defaultOrMaker: Syntax.SYNTAX_PROTO2,
         valueOf: Syntax.valueOf,
         enumValues: Syntax.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Enum clone() => Enum()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Enum copyWith(void Function(Enum) updates) =>
       super.copyWith((message) => updates(message as Enum)) as Enum;
 
@@ -462,43 +452,43 @@ class Enum extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Enum value definitions.
   @$pb.TagNumber(2)
-  $core.List<EnumValue> get enumvalue => $_getList(1);
+  $pb.PbList<EnumValue> get enumvalue => $_getList(1);
 
   /// Protocol buffer options.
   @$pb.TagNumber(3)
-  $core.List<Option> get options => $_getList(2);
+  $pb.PbList<Option> get options => $_getList(2);
 
   /// The source context.
   @$pb.TagNumber(4)
-  $59.SourceContext get sourceContext => $_getN(3);
+  $61.SourceContext get sourceContext => $_getN(3);
   @$pb.TagNumber(4)
-  set sourceContext($59.SourceContext v) {
-    setField(4, v);
+  set sourceContext($61.SourceContext v) {
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasSourceContext() => $_has(3);
   @$pb.TagNumber(4)
-  void clearSourceContext() => clearField(4);
+  void clearSourceContext() => $_clearField(4);
   @$pb.TagNumber(4)
-  $59.SourceContext ensureSourceContext() => $_ensure(3);
+  $61.SourceContext ensureSourceContext() => $_ensure(3);
 
   /// The source syntax.
   @$pb.TagNumber(5)
   Syntax get syntax => $_getN(4);
   @$pb.TagNumber(5)
   set syntax(Syntax v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasSyntax() => $_has(4);
   @$pb.TagNumber(5)
-  void clearSyntax() => clearField(5);
+  void clearSyntax() => $_clearField(5);
 }
 
 /// Enum value definition.
@@ -539,13 +529,9 @@ class EnumValue extends $pb.GeneratedMessage {
         subBuilder: Option.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnumValue clone() => EnumValue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnumValue copyWith(void Function(EnumValue) updates) =>
       super.copyWith((message) => updates(message as EnumValue)) as EnumValue;
 
@@ -571,7 +557,7 @@ class EnumValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Enum value number.
   @$pb.TagNumber(2)
@@ -584,11 +570,11 @@ class EnumValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNumber() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNumber() => clearField(2);
+  void clearNumber() => $_clearField(2);
 
   /// Protocol buffer options.
   @$pb.TagNumber(3)
-  $core.List<Option> get options => $_getList(2);
+  $pb.PbList<Option> get options => $_getList(2);
 }
 
 /// A protocol buffer option, which can be attached to a message, field,
@@ -596,7 +582,7 @@ class EnumValue extends $pb.GeneratedMessage {
 class Option extends $pb.GeneratedMessage {
   factory Option({
     $core.String? name,
-    $18.Any? value,
+    $63.Any? value,
   }) {
     final $result = create();
     if (name != null) {
@@ -621,17 +607,13 @@ class Option extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.protobuf'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$18.Any>(2, _omitFieldNames ? '' : 'value',
-        subBuilder: $18.Any.create)
+    ..aOM<$63.Any>(2, _omitFieldNames ? '' : 'value',
+        subBuilder: $63.Any.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Option clone() => Option()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Option copyWith(void Function(Option) updates) =>
       super.copyWith((message) => updates(message as Option)) as Option;
 
@@ -660,25 +642,25 @@ class Option extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// The option's value packed in an Any message. If the value is a primitive,
   /// the corresponding wrapper type defined in google/protobuf/wrappers.proto
   /// should be used. If the value is an enum, it should be stored as an int32
   /// value using the google.protobuf.Int32Value type.
   @$pb.TagNumber(2)
-  $18.Any get value => $_getN(1);
+  $63.Any get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($18.Any v) {
-    setField(2, v);
+  set value($63.Any v) {
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearValue() => clearField(2);
+  void clearValue() => $_clearField(2);
   @$pb.TagNumber(2)
-  $18.Any ensureValue() => $_ensure(1);
+  $63.Any ensureValue() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/firebase/testlab/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,6 +15,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -85,13 +87,9 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'testMatrixId')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TestMatrixEventData clone() => TestMatrixEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TestMatrixEventData copyWith(void Function(TestMatrixEventData) updates) =>
       super.copyWith((message) => updates(message as TestMatrixEventData))
           as TestMatrixEventData;
@@ -113,13 +111,13 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
   set createTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCreateTime() => clearField(1);
+  void clearCreateTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureCreateTime() => $_ensure(0);
 
@@ -128,13 +126,13 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
   TestState get state => $_getN(1);
   @$pb.TagNumber(2)
   set state(TestState v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
-  void clearState() => clearField(2);
+  void clearState() => $_clearField(2);
 
   /// Code that describes why the test matrix is considered invalid. Only set for
   /// matrices in the INVALID state.
@@ -148,33 +146,33 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasInvalidMatrixDetails() => $_has(2);
   @$pb.TagNumber(3)
-  void clearInvalidMatrixDetails() => clearField(3);
+  void clearInvalidMatrixDetails() => $_clearField(3);
 
   /// Outcome summary of the test matrix.
   @$pb.TagNumber(4)
   OutcomeSummary get outcomeSummary => $_getN(3);
   @$pb.TagNumber(4)
   set outcomeSummary(OutcomeSummary v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasOutcomeSummary() => $_has(3);
   @$pb.TagNumber(4)
-  void clearOutcomeSummary() => clearField(4);
+  void clearOutcomeSummary() => $_clearField(4);
 
   /// Locations where test results are stored.
   @$pb.TagNumber(5)
   ResultStorage get resultStorage => $_getN(4);
   @$pb.TagNumber(5)
   set resultStorage(ResultStorage v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasResultStorage() => $_has(4);
   @$pb.TagNumber(5)
-  void clearResultStorage() => clearField(5);
+  void clearResultStorage() => $_clearField(5);
   @$pb.TagNumber(5)
   ResultStorage ensureResultStorage() => $_ensure(4);
 
@@ -183,13 +181,13 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
   ClientInfo get clientInfo => $_getN(5);
   @$pb.TagNumber(6)
   set clientInfo(ClientInfo v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasClientInfo() => $_has(5);
   @$pb.TagNumber(6)
-  void clearClientInfo() => clearField(6);
+  void clearClientInfo() => $_clearField(6);
   @$pb.TagNumber(6)
   ClientInfo ensureClientInfo() => $_ensure(5);
 
@@ -204,21 +202,21 @@ class TestMatrixEventData extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasTestMatrixId() => $_has(6);
   @$pb.TagNumber(7)
-  void clearTestMatrixId() => clearField(7);
+  void clearTestMatrixId() => $_clearField(7);
 }
 
 /// Information about the client which invoked the test.
 class ClientInfo extends $pb.GeneratedMessage {
   factory ClientInfo({
     $core.String? client,
-    $core.Map<$core.String, $core.String>? details,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? details,
   }) {
     final $result = create();
     if (client != null) {
       $result.client = client;
     }
     if (details != null) {
-      $result.details.addAll(details);
+      $result.details.addEntries(details);
     }
     return $result;
   }
@@ -243,13 +241,9 @@ class ClientInfo extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.firebase.testlab.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientInfo clone() => ClientInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClientInfo copyWith(void Function(ClientInfo) updates) =>
       super.copyWith((message) => updates(message as ClientInfo)) as ClientInfo;
 
@@ -275,11 +269,11 @@ class ClientInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasClient() => $_has(0);
   @$pb.TagNumber(1)
-  void clearClient() => clearField(1);
+  void clearClient() => $_clearField(1);
 
   /// Map of detailed information about the client.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $core.String> get details => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get details => $_getMap(1);
 }
 
 /// Locations where test results are stored.
@@ -324,13 +318,9 @@ class ResultStorage extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'gcsPath')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResultStorage clone() => ResultStorage()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResultStorage copyWith(void Function(ResultStorage) updates) =>
       super.copyWith((message) => updates(message as ResultStorage))
           as ResultStorage;
@@ -361,7 +351,7 @@ class ResultStorage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasToolResultsHistory() => $_has(0);
   @$pb.TagNumber(1)
-  void clearToolResultsHistory() => clearField(1);
+  void clearToolResultsHistory() => $_clearField(1);
 
   /// Tool Results execution resource containing test results. Format is
   /// `projects/{project_id}/histories/{history_id}/executions/{execution_id}`.
@@ -378,7 +368,7 @@ class ResultStorage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasToolResultsExecution() => $_has(1);
   @$pb.TagNumber(2)
-  void clearToolResultsExecution() => clearField(2);
+  void clearToolResultsExecution() => $_clearField(2);
 
   /// URI to the test results in the Firebase Web Console.
   @$pb.TagNumber(3)
@@ -391,7 +381,7 @@ class ResultStorage extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasResultsUri() => $_has(2);
   @$pb.TagNumber(3)
-  void clearResultsUri() => clearField(3);
+  void clearResultsUri() => $_clearField(3);
 
   /// Location in Google Cloud Storage where test results are written to.
   /// In the form "gs://bucket/path/to/somewhere".
@@ -405,7 +395,7 @@ class ResultStorage extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasGcsPath() => $_has(3);
   @$pb.TagNumber(4)
-  void clearGcsPath() => clearField(4);
+  void clearGcsPath() => $_clearField(4);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

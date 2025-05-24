@@ -1,3 +1,4 @@
+export 'src/rpc/code.pbenum.dart' show Code;
 export 'src/rpc/error_details.pb.dart'
     show
         RetryInfo,
@@ -14,5 +15,4 @@ export 'src/rpc/error_details.pb.dart'
         Help_Link,
         Help,
         LocalizedMessage;
-export 'src/rpc/code.pbenum.dart' show Code;
 export 'src/rpc/status.pb.dart' show Status;

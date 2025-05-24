@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/certificatemanager/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,9 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $10;
+import '../../../../protobuf/duration.pb.dart' as $0;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -52,16 +54,12 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityS
     ..aOS(1, _omitFieldNames ? '' : 'caPool')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig
       clone() =>
           CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig()
             ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig copyWith(
           void Function(
                   CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig)
@@ -104,7 +102,7 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityS
   @$pb.TagNumber(1)
   $core.bool hasCaPool() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCaPool() => clearField(1);
+  void clearCaPool() => $_clearField(1);
 }
 
 enum CertificateIssuanceConfig_CertificateAuthorityConfig_Kind {
@@ -159,15 +157,11 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig
                 .create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfig_CertificateAuthorityConfig clone() =>
       CertificateIssuanceConfig_CertificateAuthorityConfig()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfig_CertificateAuthorityConfig copyWith(
           void Function(CertificateIssuanceConfig_CertificateAuthorityConfig)
               updates) =>
@@ -194,7 +188,7 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig
   CertificateIssuanceConfig_CertificateAuthorityConfig_Kind whichKind() =>
       _CertificateIssuanceConfig_CertificateAuthorityConfig_KindByTag[
           $_whichOneof(0)]!;
-  void clearKind() => clearField($_whichOneof(0));
+  void clearKind() => $_clearField($_whichOneof(0));
 
   /// Defines a CertificateAuthorityServiceConfig.
   @$pb.TagNumber(1)
@@ -204,13 +198,13 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig
   set certificateAuthorityServiceConfig(
       CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig
           v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCertificateAuthorityServiceConfig() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCertificateAuthorityServiceConfig() => clearField(1);
+  void clearCertificateAuthorityServiceConfig() => $_clearField(1);
   @$pb.TagNumber(1)
   CertificateIssuanceConfig_CertificateAuthorityConfig_CertificateAuthorityServiceConfig
       ensureCertificateAuthorityServiceConfig() => $_ensure(0);
@@ -222,11 +216,11 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     CertificateIssuanceConfig_CertificateAuthorityConfig?
         certificateAuthorityConfig,
-    $10.Duration? lifetime,
+    $0.Duration? lifetime,
     $core.int? rotationWindowPercentage,
     CertificateIssuanceConfig_KeyAlgorithm? keyAlgorithm,
   }) {
@@ -241,7 +235,7 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -288,8 +282,8 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
     ..aOM<CertificateIssuanceConfig_CertificateAuthorityConfig>(
         6, _omitFieldNames ? '' : 'certificateAuthorityConfig',
         subBuilder: CertificateIssuanceConfig_CertificateAuthorityConfig.create)
-    ..aOM<$10.Duration>(7, _omitFieldNames ? '' : 'lifetime',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(7, _omitFieldNames ? '' : 'lifetime',
+        subBuilder: $0.Duration.create)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'rotationWindowPercentage',
         $pb.PbFieldType.O3)
     ..e<CertificateIssuanceConfig_KeyAlgorithm>(
@@ -300,14 +294,10 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
         enumValues: CertificateIssuanceConfig_KeyAlgorithm.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfig clone() =>
       CertificateIssuanceConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfig copyWith(
           void Function(CertificateIssuanceConfig) updates) =>
       super.copyWith((message) => updates(message as CertificateIssuanceConfig))
@@ -338,20 +328,20 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The creation timestamp of a CertificateIssuanceConfig.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -360,19 +350,19 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Set of labels associated with a CertificateIssuanceConfig.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// One or more paragraphs of text description of a CertificateIssuanceConfig.
   @$pb.TagNumber(5)
@@ -385,7 +375,7 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Required. The CA that issues the workload certificate. It includes the CA
   /// address, type, authentication to CA service, etc.
@@ -395,31 +385,31 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   set certificateAuthorityConfig(
       CertificateIssuanceConfig_CertificateAuthorityConfig v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasCertificateAuthorityConfig() => $_has(5);
   @$pb.TagNumber(6)
-  void clearCertificateAuthorityConfig() => clearField(6);
+  void clearCertificateAuthorityConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   CertificateIssuanceConfig_CertificateAuthorityConfig
       ensureCertificateAuthorityConfig() => $_ensure(5);
 
   /// Required. Workload certificate lifetime requested.
   @$pb.TagNumber(7)
-  $10.Duration get lifetime => $_getN(6);
+  $0.Duration get lifetime => $_getN(6);
   @$pb.TagNumber(7)
-  set lifetime($10.Duration v) {
-    setField(7, v);
+  set lifetime($0.Duration v) {
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasLifetime() => $_has(6);
   @$pb.TagNumber(7)
-  void clearLifetime() => clearField(7);
+  void clearLifetime() => $_clearField(7);
   @$pb.TagNumber(7)
-  $10.Duration ensureLifetime() => $_ensure(6);
+  $0.Duration ensureLifetime() => $_ensure(6);
 
   /// Required. Specifies the percentage of elapsed time of the certificate
   /// lifetime to wait before renewing the certificate. Must be a number between
@@ -434,20 +424,20 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasRotationWindowPercentage() => $_has(7);
   @$pb.TagNumber(8)
-  void clearRotationWindowPercentage() => clearField(8);
+  void clearRotationWindowPercentage() => $_clearField(8);
 
   /// Required. The key algorithm to use when generating the private key.
   @$pb.TagNumber(9)
   CertificateIssuanceConfig_KeyAlgorithm get keyAlgorithm => $_getN(8);
   @$pb.TagNumber(9)
   set keyAlgorithm(CertificateIssuanceConfig_KeyAlgorithm v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasKeyAlgorithm() => $_has(8);
   @$pb.TagNumber(9)
-  void clearKeyAlgorithm() => clearField(9);
+  void clearKeyAlgorithm() => $_clearField(9);
 }
 
 /// Certificate data for a SelfManaged Certificate.
@@ -470,14 +460,10 @@ class Certificate_SelfManagedCertificate extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_SelfManagedCertificate clone() =>
       Certificate_SelfManagedCertificate()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_SelfManagedCertificate copyWith(
           void Function(Certificate_SelfManagedCertificate) updates) =>
       super.copyWith((message) =>
@@ -543,15 +529,11 @@ class Certificate_ManagedCertificate_ProvisioningIssue
     ..aOS(2, _omitFieldNames ? '' : 'details')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_ManagedCertificate_ProvisioningIssue clone() =>
       Certificate_ManagedCertificate_ProvisioningIssue()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_ManagedCertificate_ProvisioningIssue copyWith(
           void Function(Certificate_ManagedCertificate_ProvisioningIssue)
               updates) =>
@@ -581,13 +563,13 @@ class Certificate_ManagedCertificate_ProvisioningIssue
       $_getN(0);
   @$pb.TagNumber(1)
   set reason(Certificate_ManagedCertificate_ProvisioningIssue_Reason v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasReason() => $_has(0);
   @$pb.TagNumber(1)
-  void clearReason() => clearField(1);
+  void clearReason() => $_clearField(1);
 
   /// Output only. Human readable explanation about the issue. Provided to
   /// help address the configuration issues. Not guaranteed to be stable. For
@@ -602,7 +584,7 @@ class Certificate_ManagedCertificate_ProvisioningIssue
   @$pb.TagNumber(2)
   $core.bool hasDetails() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDetails() => clearField(2);
+  void clearDetails() => $_clearField(2);
 }
 
 /// State of the latest attempt to authorize a domain for certificate
@@ -673,15 +655,11 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
     ..aOS(4, _omitFieldNames ? '' : 'details')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_ManagedCertificate_AuthorizationAttemptInfo clone() =>
       Certificate_ManagedCertificate_AuthorizationAttemptInfo()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_ManagedCertificate_AuthorizationAttemptInfo copyWith(
           void Function(Certificate_ManagedCertificate_AuthorizationAttemptInfo)
               updates) =>
@@ -717,7 +695,7 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
   @$pb.TagNumber(1)
   $core.bool hasDomain() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDomain() => clearField(1);
+  void clearDomain() => $_clearField(1);
 
   /// Output only. State of the domain for managed certificate issuance.
   @$pb.TagNumber(2)
@@ -725,13 +703,13 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
       $_getN(1);
   @$pb.TagNumber(2)
   set state(Certificate_ManagedCertificate_AuthorizationAttemptInfo_State v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
-  void clearState() => clearField(2);
+  void clearState() => $_clearField(2);
 
   /// Output only. Reason for failure of the authorization attempt for the
   /// domain.
@@ -741,13 +719,13 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
   @$pb.TagNumber(3)
   set failureReason(
       Certificate_ManagedCertificate_AuthorizationAttemptInfo_FailureReason v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasFailureReason() => $_has(2);
   @$pb.TagNumber(3)
-  void clearFailureReason() => clearField(3);
+  void clearFailureReason() => $_clearField(3);
 
   /// Output only. Human readable explanation for reaching the state.
   /// Provided to help address the configuration issues. Not guaranteed to be
@@ -762,7 +740,7 @@ class Certificate_ManagedCertificate_AuthorizationAttemptInfo
   @$pb.TagNumber(4)
   $core.bool hasDetails() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDetails() => clearField(4);
+  void clearDetails() => $_clearField(4);
 }
 
 /// Configuration and state of a Managed Certificate.
@@ -829,14 +807,10 @@ class Certificate_ManagedCertificate extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'issuanceConfig')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_ManagedCertificate clone() =>
       Certificate_ManagedCertificate()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate_ManagedCertificate copyWith(
           void Function(Certificate_ManagedCertificate) updates) =>
       super.copyWith(
@@ -860,12 +834,12 @@ class Certificate_ManagedCertificate extends $pb.GeneratedMessage {
   /// generated. Wildcard domains are only supported with DNS challenge
   /// resolution.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get domains => $_getList(0);
+  $pb.PbList<$core.String> get domains => $_getList(0);
 
   /// Immutable. Authorizations that will be used for performing domain
   /// authorization.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get dnsAuthorizations => $_getList(1);
+  $pb.PbList<$core.String> get dnsAuthorizations => $_getList(1);
 
   /// Output only. Information about issues with provisioning a Managed
   /// Certificate.
@@ -874,13 +848,13 @@ class Certificate_ManagedCertificate extends $pb.GeneratedMessage {
       $_getN(2);
   @$pb.TagNumber(3)
   set provisioningIssue(Certificate_ManagedCertificate_ProvisioningIssue v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasProvisioningIssue() => $_has(2);
   @$pb.TagNumber(3)
-  void clearProvisioningIssue() => clearField(3);
+  void clearProvisioningIssue() => $_clearField(3);
   @$pb.TagNumber(3)
   Certificate_ManagedCertificate_ProvisioningIssue ensureProvisioningIssue() =>
       $_ensure(2);
@@ -890,18 +864,18 @@ class Certificate_ManagedCertificate extends $pb.GeneratedMessage {
   Certificate_ManagedCertificate_State get state => $_getN(3);
   @$pb.TagNumber(4)
   set state(Certificate_ManagedCertificate_State v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
-  void clearState() => clearField(4);
+  void clearState() => $_clearField(4);
 
   /// Output only. Detailed state of the latest authorization attempt for each
   /// domain specified for managed certificate resource.
   @$pb.TagNumber(5)
-  $core.List<Certificate_ManagedCertificate_AuthorizationAttemptInfo>
+  $pb.PbList<Certificate_ManagedCertificate_AuthorizationAttemptInfo>
       get authorizationAttemptInfo => $_getList(4);
 
   /// Immutable. The resource name for a
@@ -921,7 +895,7 @@ class Certificate_ManagedCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasIssuanceConfig() => $_has(5);
   @$pb.TagNumber(6)
-  void clearIssuanceConfig() => clearField(6);
+  void clearIssuanceConfig() => $_clearField(6);
 }
 
 enum Certificate_Type { selfManaged, managed, notSet }
@@ -932,7 +906,7 @@ class Certificate extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     Certificate_SelfManagedCertificate? selfManaged,
     $core.Iterable<$core.String>? sanDnsnames,
     $2.Timestamp? expireTime,
@@ -952,7 +926,7 @@ class Certificate extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (selfManaged != null) {
       $result.selfManaged = selfManaged;
@@ -1024,13 +998,9 @@ class Certificate extends $pb.GeneratedMessage {
         enumValues: Certificate_Scope.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate clone() => Certificate()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Certificate copyWith(void Function(Certificate) updates) =>
       super.copyWith((message) => updates(message as Certificate))
           as Certificate;
@@ -1047,7 +1017,7 @@ class Certificate extends $pb.GeneratedMessage {
   static Certificate? _defaultInstance;
 
   Certificate_Type whichType() => _Certificate_TypeByTag[$_whichOneof(0)]!;
-  void clearType() => clearField($_whichOneof(0));
+  void clearType() => $_clearField($_whichOneof(0));
 
   /// A user-defined name of the certificate. Certificate names must be unique
   /// globally and match pattern `projects/*/locations/*/certificates/*`.
@@ -1061,20 +1031,20 @@ class Certificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The creation timestamp of a Certificate.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -1083,32 +1053,32 @@ class Certificate extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Set of labels associated with a Certificate.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// If set, defines data of a self-managed certificate.
   @$pb.TagNumber(5)
   Certificate_SelfManagedCertificate get selfManaged => $_getN(4);
   @$pb.TagNumber(5)
   set selfManaged(Certificate_SelfManagedCertificate v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasSelfManaged() => $_has(4);
   @$pb.TagNumber(5)
-  void clearSelfManaged() => clearField(5);
+  void clearSelfManaged() => $_clearField(5);
   @$pb.TagNumber(5)
   Certificate_SelfManagedCertificate ensureSelfManaged() => $_ensure(4);
 
@@ -1117,20 +1087,20 @@ class Certificate extends $pb.GeneratedMessage {
   /// haven't been provisioned yet have this field populated with a value of the
   /// managed.domains field.
   @$pb.TagNumber(6)
-  $core.List<$core.String> get sanDnsnames => $_getList(5);
+  $pb.PbList<$core.String> get sanDnsnames => $_getList(5);
 
   /// Output only. The expiry timestamp of a Certificate.
   @$pb.TagNumber(7)
   $2.Timestamp get expireTime => $_getN(6);
   @$pb.TagNumber(7)
   set expireTime($2.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasExpireTime() => $_has(6);
   @$pb.TagNumber(7)
-  void clearExpireTime() => clearField(7);
+  void clearExpireTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $2.Timestamp ensureExpireTime() => $_ensure(6);
 
@@ -1145,7 +1115,7 @@ class Certificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasDescription() => $_has(7);
   @$pb.TagNumber(8)
-  void clearDescription() => clearField(8);
+  void clearDescription() => $_clearField(8);
 
   /// Output only. The PEM-encoded certificate chain.
   @$pb.TagNumber(9)
@@ -1158,20 +1128,20 @@ class Certificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasPemCertificate() => $_has(8);
   @$pb.TagNumber(9)
-  void clearPemCertificate() => clearField(9);
+  void clearPemCertificate() => $_clearField(9);
 
   /// If set, contains configuration and state of a managed certificate.
   @$pb.TagNumber(11)
   Certificate_ManagedCertificate get managed => $_getN(9);
   @$pb.TagNumber(11)
   set managed(Certificate_ManagedCertificate v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasManaged() => $_has(9);
   @$pb.TagNumber(11)
-  void clearManaged() => clearField(11);
+  void clearManaged() => $_clearField(11);
   @$pb.TagNumber(11)
   Certificate_ManagedCertificate ensureManaged() => $_ensure(9);
 
@@ -1180,13 +1150,13 @@ class Certificate extends $pb.GeneratedMessage {
   Certificate_Scope get scope => $_getN(10);
   @$pb.TagNumber(12)
   set scope(Certificate_Scope v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasScope() => $_has(10);
   @$pb.TagNumber(12)
-  void clearScope() => clearField(12);
+  void clearScope() => $_clearField(12);
 }
 
 /// Defines IP configuration where this Certificate Map is serving.
@@ -1221,14 +1191,10 @@ class CertificateMap_GclbTarget_IpConfig extends $pb.GeneratedMessage {
     ..p<$core.int>(3, _omitFieldNames ? '' : 'ports', $pb.PbFieldType.KU3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMap_GclbTarget_IpConfig clone() =>
       CertificateMap_GclbTarget_IpConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMap_GclbTarget_IpConfig copyWith(
           void Function(CertificateMap_GclbTarget_IpConfig) updates) =>
       super.copyWith((message) =>
@@ -1260,11 +1226,11 @@ class CertificateMap_GclbTarget_IpConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasIpAddress() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIpAddress() => clearField(1);
+  void clearIpAddress() => $_clearField(1);
 
   /// Output only. Ports.
   @$pb.TagNumber(3)
-  $core.List<$core.int> get ports => $_getList(1);
+  $pb.PbList<$core.int> get ports => $_getList(1);
 }
 
 enum CertificateMap_GclbTarget_TargetProxy {
@@ -1319,14 +1285,10 @@ class CertificateMap_GclbTarget extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'targetSslProxy')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMap_GclbTarget clone() =>
       CertificateMap_GclbTarget()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMap_GclbTarget copyWith(
           void Function(CertificateMap_GclbTarget) updates) =>
       super.copyWith((message) => updates(message as CertificateMap_GclbTarget))
@@ -1346,7 +1308,7 @@ class CertificateMap_GclbTarget extends $pb.GeneratedMessage {
 
   CertificateMap_GclbTarget_TargetProxy whichTargetProxy() =>
       _CertificateMap_GclbTarget_TargetProxyByTag[$_whichOneof(0)]!;
-  void clearTargetProxy() => clearField($_whichOneof(0));
+  void clearTargetProxy() => $_clearField($_whichOneof(0));
 
   /// Output only. This field returns the resource name in the following
   /// format:
@@ -1361,12 +1323,12 @@ class CertificateMap_GclbTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTargetHttpsProxy() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTargetHttpsProxy() => clearField(1);
+  void clearTargetHttpsProxy() => $_clearField(1);
 
   /// Output only. IP configurations for this Target Proxy where the
   /// Certificate Map is serving.
   @$pb.TagNumber(2)
-  $core.List<CertificateMap_GclbTarget_IpConfig> get ipConfigs => $_getList(1);
+  $pb.PbList<CertificateMap_GclbTarget_IpConfig> get ipConfigs => $_getList(1);
 
   /// Output only. This field returns the resource name in the following
   /// format:
@@ -1381,7 +1343,7 @@ class CertificateMap_GclbTarget extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTargetSslProxy() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTargetSslProxy() => clearField(3);
+  void clearTargetSslProxy() => $_clearField(3);
 }
 
 /// Defines a collection of certificate configurations.
@@ -1389,7 +1351,7 @@ class CertificateMap extends $pb.GeneratedMessage {
   factory CertificateMap({
     $core.String? name,
     $2.Timestamp? createTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.Iterable<CertificateMap_GclbTarget>? gclbTargets,
     $core.String? description,
     $2.Timestamp? updateTime,
@@ -1402,7 +1364,7 @@ class CertificateMap extends $pb.GeneratedMessage {
       $result.createTime = createTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (gclbTargets != null) {
       $result.gclbTargets.addAll(gclbTargets);
@@ -1445,13 +1407,9 @@ class CertificateMap extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMap clone() => CertificateMap()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMap copyWith(void Function(CertificateMap) updates) =>
       super.copyWith((message) => updates(message as CertificateMap))
           as CertificateMap;
@@ -1481,32 +1439,32 @@ class CertificateMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The creation timestamp of a Certificate Map.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Set of labels associated with a Certificate Map.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(2);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(2);
 
   /// Output only. A list of GCLB targets that use this Certificate Map.
   /// A Target Proxy is only present on this list if it's attached to a
   /// Forwarding Rule.
   @$pb.TagNumber(4)
-  $core.List<CertificateMap_GclbTarget> get gclbTargets => $_getList(3);
+  $pb.PbList<CertificateMap_GclbTarget> get gclbTargets => $_getList(3);
 
   /// One or more paragraphs of text description of a certificate map.
   @$pb.TagNumber(5)
@@ -1519,20 +1477,20 @@ class CertificateMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Output only. The update timestamp of a Certificate Map.
   @$pb.TagNumber(6)
   $2.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
   set updateTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
-  void clearUpdateTime() => clearField(6);
+  void clearUpdateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureUpdateTime() => $_ensure(5);
 }
@@ -1545,7 +1503,7 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? hostname,
     $core.Iterable<$core.String>? certificates,
     ServingState? state,
@@ -1563,7 +1521,7 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (hostname != null) {
       $result.hostname = hostname;
@@ -1627,13 +1585,9 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
         enumValues: CertificateMapEntry_Matcher.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntry clone() => CertificateMapEntry()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntry copyWith(void Function(CertificateMapEntry) updates) =>
       super.copyWith((message) => updates(message as CertificateMapEntry))
           as CertificateMapEntry;
@@ -1652,7 +1606,7 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
 
   CertificateMapEntry_Match whichMatch() =>
       _CertificateMapEntry_MatchByTag[$_whichOneof(0)]!;
-  void clearMatch() => clearField($_whichOneof(0));
+  void clearMatch() => $_clearField($_whichOneof(0));
 
   /// A user-defined name of the Certificate Map Entry. Certificate Map Entry
   /// names must be unique globally and match pattern
@@ -1667,20 +1621,20 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The creation timestamp of a Certificate Map Entry.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -1689,19 +1643,19 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Set of labels associated with a Certificate Map Entry.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// A Hostname (FQDN, e.g. `example.com`) or a wildcard hostname expression
   /// (`*.example.com`) for a set of hostnames with common suffix. Used as
@@ -1716,26 +1670,26 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasHostname() => $_has(4);
   @$pb.TagNumber(5)
-  void clearHostname() => clearField(5);
+  void clearHostname() => $_clearField(5);
 
   /// A set of Certificates defines for the given `hostname`. There can be
   /// defined up to fifteen certificates in each Certificate Map Entry. Each
   /// certificate must match pattern `projects/*/locations/*/certificates/*`.
   @$pb.TagNumber(7)
-  $core.List<$core.String> get certificates => $_getList(5);
+  $pb.PbList<$core.String> get certificates => $_getList(5);
 
   /// Output only. A serving state of this Certificate Map Entry.
   @$pb.TagNumber(8)
   ServingState get state => $_getN(6);
   @$pb.TagNumber(8)
   set state(ServingState v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// One or more paragraphs of text description of a certificate map entry.
   @$pb.TagNumber(9)
@@ -1748,20 +1702,20 @@ class CertificateMapEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasDescription() => $_has(7);
   @$pb.TagNumber(9)
-  void clearDescription() => clearField(9);
+  void clearDescription() => $_clearField(9);
 
   /// A predefined matcher for particular cases, other than SNI selection.
   @$pb.TagNumber(10)
   CertificateMapEntry_Matcher get matcher => $_getN(8);
   @$pb.TagNumber(10)
   set matcher(CertificateMapEntry_Matcher v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasMatcher() => $_has(8);
   @$pb.TagNumber(10)
-  void clearMatcher() => clearField(10);
+  void clearMatcher() => $_clearField(10);
 }
 
 /// The structure describing the DNS Resource Record that needs to be added
@@ -1803,14 +1757,10 @@ class DnsAuthorization_DnsResourceRecord extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'data')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorization_DnsResourceRecord clone() =>
       DnsAuthorization_DnsResourceRecord()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorization_DnsResourceRecord copyWith(
           void Function(DnsAuthorization_DnsResourceRecord) updates) =>
       super.copyWith((message) =>
@@ -1843,7 +1793,7 @@ class DnsAuthorization_DnsResourceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Type of the DNS Resource Record.
   /// Currently always set to "CNAME".
@@ -1857,7 +1807,7 @@ class DnsAuthorization_DnsResourceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearType() => clearField(2);
+  void clearType() => $_clearField(2);
 
   /// Output only. Data of the DNS Resource Record.
   @$pb.TagNumber(3)
@@ -1870,7 +1820,7 @@ class DnsAuthorization_DnsResourceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasData() => $_has(2);
   @$pb.TagNumber(3)
-  void clearData() => clearField(3);
+  void clearData() => $_clearField(3);
 }
 
 /// A DnsAuthorization resource describes a way to perform domain authorization
@@ -1880,7 +1830,7 @@ class DnsAuthorization extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.String? domain,
     DnsAuthorization_DnsResourceRecord? dnsResourceRecord,
@@ -1896,7 +1846,7 @@ class DnsAuthorization extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -1940,13 +1890,9 @@ class DnsAuthorization extends $pb.GeneratedMessage {
         subBuilder: DnsAuthorization_DnsResourceRecord.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorization clone() => DnsAuthorization()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorization copyWith(void Function(DnsAuthorization) updates) =>
       super.copyWith((message) => updates(message as DnsAuthorization))
           as DnsAuthorization;
@@ -1976,20 +1922,20 @@ class DnsAuthorization extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The creation timestamp of a DnsAuthorization.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -1998,19 +1944,19 @@ class DnsAuthorization extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Set of labels associated with a DnsAuthorization.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// One or more paragraphs of text description of a DnsAuthorization.
   @$pb.TagNumber(5)
@@ -2023,7 +1969,7 @@ class DnsAuthorization extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Required. Immutable. A domain that is being authorized. A DnsAuthorization
   /// resource covers a single domain and its wildcard, e.g. authorization for
@@ -2039,7 +1985,7 @@ class DnsAuthorization extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDomain() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDomain() => clearField(6);
+  void clearDomain() => $_clearField(6);
 
   /// Output only. DNS Resource Record that needs to be added to DNS
   /// configuration.
@@ -2047,13 +1993,13 @@ class DnsAuthorization extends $pb.GeneratedMessage {
   DnsAuthorization_DnsResourceRecord get dnsResourceRecord => $_getN(6);
   @$pb.TagNumber(10)
   set dnsResourceRecord(DnsAuthorization_DnsResourceRecord v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasDnsResourceRecord() => $_has(6);
   @$pb.TagNumber(10)
-  void clearDnsResourceRecord() => clearField(10);
+  void clearDnsResourceRecord() => $_clearField(10);
   @$pb.TagNumber(10)
   DnsAuthorization_DnsResourceRecord ensureDnsResourceRecord() => $_ensure(6);
 }
@@ -2086,14 +2032,10 @@ class DnsAuthorizationEventData extends $pb.GeneratedMessage {
         subBuilder: DnsAuthorization.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorizationEventData clone() =>
       DnsAuthorizationEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DnsAuthorizationEventData copyWith(
           void Function(DnsAuthorizationEventData) updates) =>
       super.copyWith((message) => updates(message as DnsAuthorizationEventData))
@@ -2116,13 +2058,13 @@ class DnsAuthorizationEventData extends $pb.GeneratedMessage {
   DnsAuthorization get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(DnsAuthorization v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   DnsAuthorization ensurePayload() => $_ensure(0);
 }
@@ -2155,14 +2097,10 @@ class CertificateIssuanceConfigEventData extends $pb.GeneratedMessage {
         subBuilder: CertificateIssuanceConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfigEventData clone() =>
       CertificateIssuanceConfigEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateIssuanceConfigEventData copyWith(
           void Function(CertificateIssuanceConfigEventData) updates) =>
       super.copyWith((message) =>
@@ -2189,13 +2127,13 @@ class CertificateIssuanceConfigEventData extends $pb.GeneratedMessage {
   CertificateIssuanceConfig get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(CertificateIssuanceConfig v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   CertificateIssuanceConfig ensurePayload() => $_ensure(0);
 }
@@ -2228,14 +2166,10 @@ class CertificateMapEntryEventData extends $pb.GeneratedMessage {
         subBuilder: CertificateMapEntry.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntryEventData clone() =>
       CertificateMapEntryEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEntryEventData copyWith(
           void Function(CertificateMapEntryEventData) updates) =>
       super.copyWith(
@@ -2260,13 +2194,13 @@ class CertificateMapEntryEventData extends $pb.GeneratedMessage {
   CertificateMapEntry get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(CertificateMapEntry v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   CertificateMapEntry ensurePayload() => $_ensure(0);
 }
@@ -2299,14 +2233,10 @@ class CertificateMapEventData extends $pb.GeneratedMessage {
         subBuilder: CertificateMap.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEventData clone() =>
       CertificateMapEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateMapEventData copyWith(
           void Function(CertificateMapEventData) updates) =>
       super.copyWith((message) => updates(message as CertificateMapEventData))
@@ -2329,13 +2259,13 @@ class CertificateMapEventData extends $pb.GeneratedMessage {
   CertificateMap get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(CertificateMap v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   CertificateMap ensurePayload() => $_ensure(0);
 }
@@ -2368,14 +2298,10 @@ class CertificateEventData extends $pb.GeneratedMessage {
         subBuilder: Certificate.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateEventData clone() =>
       CertificateEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CertificateEventData copyWith(void Function(CertificateEventData) updates) =>
       super.copyWith((message) => updates(message as CertificateEventData))
           as CertificateEventData;
@@ -2397,13 +2323,13 @@ class CertificateEventData extends $pb.GeneratedMessage {
   Certificate get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Certificate v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Certificate ensurePayload() => $_ensure(0);
 }
