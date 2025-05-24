@@ -200,7 +200,7 @@ String _toProtocArgPath(String path) {
 
 /// The script accepts an optional first argument for the protoc executable.
 ///
-/// Note: This script uses 'sh' and 'bash' for some operations.
+/// Note: This script uses 'sh' and for some operations.
 /// On Windows, it's recommended to run this script within an environment
 /// that provides these utilities, such as Git Bash or Windows Subsystem for Linux (WSL),
 /// to ensure all commands execute correctly.

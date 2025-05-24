@@ -40,7 +40,6 @@ dart run scripts/remove_cloudevent_protos.dart && \
 The refresh scripts require the following command-line tools to be installed and available in your system's PATH:
 *   `git`
 *   `sh`
-*   `bash`
 *   The Protocol Buffer compiler (defaults to `protoc`; its name/path can be specified as an argument in Step 2).
 
 Note: On Windows, you need to run these scripts using an environment that provides these Unix-like utilities, such as Git Bash or Windows Subsystem for Linux (WSL).
