@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/firebase/remoteconfig/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $5;
+import 'data.pb.dart' as $58;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when a Remote Config is updated
 class RemoteConfigUpdatedEvent extends $pb.GeneratedMessage {
   factory RemoteConfigUpdatedEvent({
-    $5.RemoteConfigEventData? data,
+    $58.RemoteConfigEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -39,18 +41,14 @@ class RemoteConfigUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.firebase.remoteconfig.v1'),
       createEmptyInstance: create)
-    ..aOM<$5.RemoteConfigEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $5.RemoteConfigEventData.create)
+    ..aOM<$58.RemoteConfigEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $58.RemoteConfigEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RemoteConfigUpdatedEvent clone() =>
       RemoteConfigUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RemoteConfigUpdatedEvent copyWith(
           void Function(RemoteConfigUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as RemoteConfigUpdatedEvent))
@@ -70,18 +68,18 @@ class RemoteConfigUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $5.RemoteConfigEventData get data => $_getN(0);
+  $58.RemoteConfigEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($5.RemoteConfigEventData v) {
-    setField(1, v);
+  set data($58.RemoteConfigEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $5.RemoteConfigEventData ensureData() => $_ensure(0);
+  $58.RemoteConfigEventData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/notebooks/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $54;
+import 'data.pb.dart' as $42;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when a Runtime is created.
 class RuntimeCreatedEvent extends $pb.GeneratedMessage {
   factory RuntimeCreatedEvent({
-    $54.RuntimeEventData? data,
+    $42.RuntimeEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -39,17 +41,13 @@ class RuntimeCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.notebooks.v1'),
       createEmptyInstance: create)
-    ..aOM<$54.RuntimeEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $54.RuntimeEventData.create)
+    ..aOM<$42.RuntimeEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $42.RuntimeEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeCreatedEvent clone() => RuntimeCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeCreatedEvent copyWith(void Function(RuntimeCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as RuntimeCreatedEvent))
           as RuntimeCreatedEvent;
@@ -68,24 +66,24 @@ class RuntimeCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $54.RuntimeEventData get data => $_getN(0);
+  $42.RuntimeEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($54.RuntimeEventData v) {
-    setField(1, v);
+  set data($42.RuntimeEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $54.RuntimeEventData ensureData() => $_ensure(0);
+  $42.RuntimeEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Runtime is updated.
 class RuntimeUpdatedEvent extends $pb.GeneratedMessage {
   factory RuntimeUpdatedEvent({
-    $54.RuntimeEventData? data,
+    $42.RuntimeEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -106,17 +104,13 @@ class RuntimeUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.notebooks.v1'),
       createEmptyInstance: create)
-    ..aOM<$54.RuntimeEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $54.RuntimeEventData.create)
+    ..aOM<$42.RuntimeEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $42.RuntimeEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeUpdatedEvent clone() => RuntimeUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeUpdatedEvent copyWith(void Function(RuntimeUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as RuntimeUpdatedEvent))
           as RuntimeUpdatedEvent;
@@ -135,24 +129,24 @@ class RuntimeUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $54.RuntimeEventData get data => $_getN(0);
+  $42.RuntimeEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($54.RuntimeEventData v) {
-    setField(1, v);
+  set data($42.RuntimeEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $54.RuntimeEventData ensureData() => $_ensure(0);
+  $42.RuntimeEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Runtime is deleted.
 class RuntimeDeletedEvent extends $pb.GeneratedMessage {
   factory RuntimeDeletedEvent({
-    $54.RuntimeEventData? data,
+    $42.RuntimeEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -173,17 +167,13 @@ class RuntimeDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.notebooks.v1'),
       createEmptyInstance: create)
-    ..aOM<$54.RuntimeEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $54.RuntimeEventData.create)
+    ..aOM<$42.RuntimeEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $42.RuntimeEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeDeletedEvent clone() => RuntimeDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeDeletedEvent copyWith(void Function(RuntimeDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as RuntimeDeletedEvent))
           as RuntimeDeletedEvent;
@@ -202,24 +192,24 @@ class RuntimeDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $54.RuntimeEventData get data => $_getN(0);
+  $42.RuntimeEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($54.RuntimeEventData v) {
-    setField(1, v);
+  set data($42.RuntimeEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $54.RuntimeEventData ensureData() => $_ensure(0);
+  $42.RuntimeEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Instance is created.
 class InstanceCreatedEvent extends $pb.GeneratedMessage {
   factory InstanceCreatedEvent({
-    $54.InstanceEventData? data,
+    $42.InstanceEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -240,18 +230,14 @@ class InstanceCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.notebooks.v1'),
       createEmptyInstance: create)
-    ..aOM<$54.InstanceEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $54.InstanceEventData.create)
+    ..aOM<$42.InstanceEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $42.InstanceEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceCreatedEvent clone() =>
       InstanceCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceCreatedEvent copyWith(void Function(InstanceCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as InstanceCreatedEvent))
           as InstanceCreatedEvent;
@@ -270,24 +256,24 @@ class InstanceCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $54.InstanceEventData get data => $_getN(0);
+  $42.InstanceEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($54.InstanceEventData v) {
-    setField(1, v);
+  set data($42.InstanceEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $54.InstanceEventData ensureData() => $_ensure(0);
+  $42.InstanceEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Instance is deleted.
 class InstanceDeletedEvent extends $pb.GeneratedMessage {
   factory InstanceDeletedEvent({
-    $54.InstanceEventData? data,
+    $42.InstanceEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -308,18 +294,14 @@ class InstanceDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.notebooks.v1'),
       createEmptyInstance: create)
-    ..aOM<$54.InstanceEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $54.InstanceEventData.create)
+    ..aOM<$42.InstanceEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $42.InstanceEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceDeletedEvent clone() =>
       InstanceDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceDeletedEvent copyWith(void Function(InstanceDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as InstanceDeletedEvent))
           as InstanceDeletedEvent;
@@ -338,24 +320,24 @@ class InstanceDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $54.InstanceEventData get data => $_getN(0);
+  $42.InstanceEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($54.InstanceEventData v) {
-    setField(1, v);
+  set data($42.InstanceEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $54.InstanceEventData ensureData() => $_ensure(0);
+  $42.InstanceEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Environment is created.
 class EnvironmentCreatedEvent extends $pb.GeneratedMessage {
   factory EnvironmentCreatedEvent({
-    $54.EnvironmentEventData? data,
+    $42.EnvironmentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -376,18 +358,14 @@ class EnvironmentCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.notebooks.v1'),
       createEmptyInstance: create)
-    ..aOM<$54.EnvironmentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $54.EnvironmentEventData.create)
+    ..aOM<$42.EnvironmentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $42.EnvironmentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnvironmentCreatedEvent clone() =>
       EnvironmentCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnvironmentCreatedEvent copyWith(
           void Function(EnvironmentCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as EnvironmentCreatedEvent))
@@ -407,24 +385,24 @@ class EnvironmentCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $54.EnvironmentEventData get data => $_getN(0);
+  $42.EnvironmentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($54.EnvironmentEventData v) {
-    setField(1, v);
+  set data($42.EnvironmentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $54.EnvironmentEventData ensureData() => $_ensure(0);
+  $42.EnvironmentEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Environment is deleted.
 class EnvironmentDeletedEvent extends $pb.GeneratedMessage {
   factory EnvironmentDeletedEvent({
-    $54.EnvironmentEventData? data,
+    $42.EnvironmentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -445,18 +423,14 @@ class EnvironmentDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.notebooks.v1'),
       createEmptyInstance: create)
-    ..aOM<$54.EnvironmentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $54.EnvironmentEventData.create)
+    ..aOM<$42.EnvironmentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $42.EnvironmentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnvironmentDeletedEvent clone() =>
       EnvironmentDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnvironmentDeletedEvent copyWith(
           void Function(EnvironmentDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as EnvironmentDeletedEvent))
@@ -476,24 +450,24 @@ class EnvironmentDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $54.EnvironmentEventData get data => $_getN(0);
+  $42.EnvironmentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($54.EnvironmentEventData v) {
-    setField(1, v);
+  set data($42.EnvironmentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $54.EnvironmentEventData ensureData() => $_ensure(0);
+  $42.EnvironmentEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Schedule is deleted.
 class ScheduleDeletedEvent extends $pb.GeneratedMessage {
   factory ScheduleDeletedEvent({
-    $54.ScheduleEventData? data,
+    $42.ScheduleEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -514,18 +488,14 @@ class ScheduleDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.notebooks.v1'),
       createEmptyInstance: create)
-    ..aOM<$54.ScheduleEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $54.ScheduleEventData.create)
+    ..aOM<$42.ScheduleEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $42.ScheduleEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScheduleDeletedEvent clone() =>
       ScheduleDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScheduleDeletedEvent copyWith(void Function(ScheduleDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ScheduleDeletedEvent))
           as ScheduleDeletedEvent;
@@ -544,24 +514,24 @@ class ScheduleDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $54.ScheduleEventData get data => $_getN(0);
+  $42.ScheduleEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($54.ScheduleEventData v) {
-    setField(1, v);
+  set data($42.ScheduleEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $54.ScheduleEventData ensureData() => $_ensure(0);
+  $42.ScheduleEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Schedule is created.
 class ScheduleCreatedEvent extends $pb.GeneratedMessage {
   factory ScheduleCreatedEvent({
-    $54.ScheduleEventData? data,
+    $42.ScheduleEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -582,18 +552,14 @@ class ScheduleCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.notebooks.v1'),
       createEmptyInstance: create)
-    ..aOM<$54.ScheduleEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $54.ScheduleEventData.create)
+    ..aOM<$42.ScheduleEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $42.ScheduleEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScheduleCreatedEvent clone() =>
       ScheduleCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScheduleCreatedEvent copyWith(void Function(ScheduleCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as ScheduleCreatedEvent))
           as ScheduleCreatedEvent;
@@ -612,24 +578,24 @@ class ScheduleCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $54.ScheduleEventData get data => $_getN(0);
+  $42.ScheduleEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($54.ScheduleEventData v) {
-    setField(1, v);
+  set data($42.ScheduleEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $54.ScheduleEventData ensureData() => $_ensure(0);
+  $42.ScheduleEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Execution is deleted.
 class ExecutionDeletedEvent extends $pb.GeneratedMessage {
   factory ExecutionDeletedEvent({
-    $54.ExecutionEventData? data,
+    $42.ExecutionEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -650,18 +616,14 @@ class ExecutionDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.notebooks.v1'),
       createEmptyInstance: create)
-    ..aOM<$54.ExecutionEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $54.ExecutionEventData.create)
+    ..aOM<$42.ExecutionEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $42.ExecutionEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionDeletedEvent clone() =>
       ExecutionDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionDeletedEvent copyWith(
           void Function(ExecutionDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ExecutionDeletedEvent))
@@ -681,24 +643,24 @@ class ExecutionDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $54.ExecutionEventData get data => $_getN(0);
+  $42.ExecutionEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($54.ExecutionEventData v) {
-    setField(1, v);
+  set data($42.ExecutionEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $54.ExecutionEventData ensureData() => $_ensure(0);
+  $42.ExecutionEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an Execution is created.
 class ExecutionCreatedEvent extends $pb.GeneratedMessage {
   factory ExecutionCreatedEvent({
-    $54.ExecutionEventData? data,
+    $42.ExecutionEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -719,18 +681,14 @@ class ExecutionCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.notebooks.v1'),
       createEmptyInstance: create)
-    ..aOM<$54.ExecutionEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $54.ExecutionEventData.create)
+    ..aOM<$42.ExecutionEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $42.ExecutionEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionCreatedEvent clone() =>
       ExecutionCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionCreatedEvent copyWith(
           void Function(ExecutionCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as ExecutionCreatedEvent))
@@ -750,18 +708,18 @@ class ExecutionCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $54.ExecutionEventData get data => $_getN(0);
+  $42.ExecutionEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($54.ExecutionEventData v) {
-    setField(1, v);
+  set data($42.ExecutionEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $54.ExecutionEventData ensureData() => $_ensure(0);
+  $42.ExecutionEventData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

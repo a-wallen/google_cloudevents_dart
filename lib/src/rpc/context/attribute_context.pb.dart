@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/rpc/context/attribute_context.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,8 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $0;
+import '../../protobuf/struct.pb.dart' as $10;
 import '../../protobuf/timestamp.pb.dart' as $2;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// This message defines attributes for a node that handles a network request.
 /// The node can be either a service or an application that sends, forwards,
@@ -25,7 +27,7 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
   factory AttributeContext_Peer({
     $core.String? ip,
     $fixnum.Int64? port,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? principal,
     $core.String? regionCode,
   }) {
@@ -37,7 +39,7 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
       $result.port = port;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (principal != null) {
       $result.principal = principal;
@@ -71,14 +73,10 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'regionCode')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Peer clone() =>
       AttributeContext_Peer()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Peer copyWith(
           void Function(AttributeContext_Peer) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Peer))
@@ -107,7 +105,7 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasIp() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIp() => clearField(1);
+  void clearIp() => $_clearField(1);
 
   /// The network port of the peer.
   @$pb.TagNumber(2)
@@ -120,11 +118,11 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPort() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPort() => clearField(2);
+  void clearPort() => $_clearField(2);
 
   /// The labels associated with the peer.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(2);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(2);
 
   /// The identity of this peer. Similar to `Request.auth.principal`, but
   /// relative to the peer instead of the request. For example, the
@@ -139,7 +137,7 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasPrincipal() => $_has(3);
   @$pb.TagNumber(7)
-  void clearPrincipal() => clearField(7);
+  void clearPrincipal() => $_clearField(7);
 
   /// The CLDR country/region code associated with the above IP address.
   /// If the IP address is private, the `region_code` should reflect the
@@ -154,7 +152,7 @@ class AttributeContext_Peer extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasRegionCode() => $_has(4);
   @$pb.TagNumber(8)
-  void clearRegionCode() => clearField(8);
+  void clearRegionCode() => $_clearField(8);
 }
 
 /// This message defines attributes associated with API operations, such as
@@ -201,14 +199,10 @@ class AttributeContext_Api extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'version')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Api clone() =>
       AttributeContext_Api()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Api copyWith(void Function(AttributeContext_Api) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Api))
           as AttributeContext_Api;
@@ -238,7 +232,7 @@ class AttributeContext_Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
-  void clearService() => clearField(1);
+  void clearService() => $_clearField(1);
 
   /// The API operation name. For gRPC requests, it is the fully qualified API
   /// method name, such as "google.pubsub.v1.Publisher.Publish". For OpenAPI
@@ -253,7 +247,7 @@ class AttributeContext_Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasOperation() => $_has(1);
   @$pb.TagNumber(2)
-  void clearOperation() => clearField(2);
+  void clearOperation() => $_clearField(2);
 
   /// The API protocol used for sending the request, such as "http", "https",
   /// "grpc", or "internal".
@@ -267,7 +261,7 @@ class AttributeContext_Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasProtocol() => $_has(2);
   @$pb.TagNumber(3)
-  void clearProtocol() => clearField(3);
+  void clearProtocol() => $_clearField(3);
 
   /// The API version associated with the API operation above, such as "v1" or
   /// "v1alpha1".
@@ -281,7 +275,7 @@ class AttributeContext_Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasVersion() => $_has(3);
   @$pb.TagNumber(4)
-  void clearVersion() => clearField(4);
+  void clearVersion() => $_clearField(4);
 }
 
 /// This message defines request authentication attributes. Terminology is
@@ -292,7 +286,7 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
     $core.String? principal,
     $core.Iterable<$core.String>? audiences,
     $core.String? presenter,
-    $0.Struct? claims,
+    $10.Struct? claims,
     $core.Iterable<$core.String>? accessLevels,
   }) {
     final $result = create();
@@ -329,19 +323,15 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'principal')
     ..pPS(2, _omitFieldNames ? '' : 'audiences')
     ..aOS(3, _omitFieldNames ? '' : 'presenter')
-    ..aOM<$0.Struct>(4, _omitFieldNames ? '' : 'claims',
-        subBuilder: $0.Struct.create)
+    ..aOM<$10.Struct>(4, _omitFieldNames ? '' : 'claims',
+        subBuilder: $10.Struct.create)
     ..pPS(5, _omitFieldNames ? '' : 'accessLevels')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Auth clone() =>
       AttributeContext_Auth()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Auth copyWith(
           void Function(AttributeContext_Auth) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Auth))
@@ -374,24 +364,24 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPrincipal() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPrincipal() => clearField(1);
+  void clearPrincipal() => $_clearField(1);
 
-  ///  The intended audience(s) for this authentication information. Reflects
-  ///  the audience (`aud`) claim within a JWT. The audience
-  ///  value(s) depends on the `issuer`, but typically include one or more of
-  ///  the following pieces of information:
+  /// The intended audience(s) for this authentication information. Reflects
+  /// the audience (`aud`) claim within a JWT. The audience
+  /// value(s) depends on the `issuer`, but typically include one or more of
+  /// the following pieces of information:
   ///
-  ///  *  The services intended to receive the credential such as
-  ///     ["pubsub.googleapis.com", "storage.googleapis.com"]
-  ///  *  A set of service-based scopes. For example,
-  ///     ["https://www.googleapis.com/auth/cloud-platform"]
-  ///  *  The client id of an app, such as the Firebase project id for JWTs
-  ///     from Firebase Auth.
+  /// *  The services intended to receive the credential such as
+  ///    ["pubsub.googleapis.com", "storage.googleapis.com"]
+  /// *  A set of service-based scopes. For example,
+  ///    ["https://www.googleapis.com/auth/cloud-platform"]
+  /// *  The client id of an app, such as the Firebase project id for JWTs
+  ///    from Firebase Auth.
   ///
-  ///  Consult the documentation for the credential issuer to determine the
-  ///  information provided.
+  /// Consult the documentation for the credential issuer to determine the
+  /// information provided.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get audiences => $_getList(1);
+  $pb.PbList<$core.String> get audiences => $_getList(1);
 
   /// The authorized presenter of the credential. Reflects the optional
   /// Authorized Presenter (`azp`) claim within a JWT or the
@@ -407,46 +397,46 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasPresenter() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPresenter() => clearField(3);
+  void clearPresenter() => $_clearField(3);
 
-  ///  Structured claims presented with the credential. JWTs include
-  ///  `{key: value}` pairs for standard and private claims. The following
-  ///  is a subset of the standard required and optional claims that would
-  ///  typically be presented for a Google-based JWT:
+  /// Structured claims presented with the credential. JWTs include
+  /// `{key: value}` pairs for standard and private claims. The following
+  /// is a subset of the standard required and optional claims that would
+  /// typically be presented for a Google-based JWT:
   ///
-  ///     {'iss': 'accounts.google.com',
-  ///      'sub': '113289723416554971153',
-  ///      'aud': ['123456789012', 'pubsub.googleapis.com'],
-  ///      'azp': '123456789012.apps.googleusercontent.com',
-  ///      'email': 'jsmith@example.com',
-  ///      'iat': 1353601026,
-  ///      'exp': 1353604926}
+  ///    {'iss': 'accounts.google.com',
+  ///     'sub': '113289723416554971153',
+  ///     'aud': ['123456789012', 'pubsub.googleapis.com'],
+  ///     'azp': '123456789012.apps.googleusercontent.com',
+  ///     'email': 'jsmith@example.com',
+  ///     'iat': 1353601026,
+  ///     'exp': 1353604926}
   ///
-  ///  SAML assertions are similarly specified, but with an identity provider
-  ///  dependent structure.
+  /// SAML assertions are similarly specified, but with an identity provider
+  /// dependent structure.
   @$pb.TagNumber(4)
-  $0.Struct get claims => $_getN(3);
+  $10.Struct get claims => $_getN(3);
   @$pb.TagNumber(4)
-  set claims($0.Struct v) {
-    setField(4, v);
+  set claims($10.Struct v) {
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasClaims() => $_has(3);
   @$pb.TagNumber(4)
-  void clearClaims() => clearField(4);
+  void clearClaims() => $_clearField(4);
   @$pb.TagNumber(4)
-  $0.Struct ensureClaims() => $_ensure(3);
+  $10.Struct ensureClaims() => $_ensure(3);
 
-  ///  A list of access level resource names that allow resources to be
-  ///  accessed by authenticated requester. It is part of Secure GCP processing
-  ///  for the incoming request. An access level string has the format:
-  ///  "//{api_service_name}/accessPolicies/{policy_id}/accessLevels/{short_name}"
+  /// A list of access level resource names that allow resources to be
+  /// accessed by authenticated requester. It is part of Secure GCP processing
+  /// for the incoming request. An access level string has the format:
+  /// "//{api_service_name}/accessPolicies/{policy_id}/accessLevels/{short_name}"
   ///
-  ///  Example:
-  ///  "//accesscontextmanager.googleapis.com/accessPolicies/MY_POLICY_ID/accessLevels/MY_LEVEL"
+  /// Example:
+  /// "//accesscontextmanager.googleapis.com/accessPolicies/MY_POLICY_ID/accessLevels/MY_LEVEL"
   @$pb.TagNumber(5)
-  $core.List<$core.String> get accessLevels => $_getList(4);
+  $pb.PbList<$core.String> get accessLevels => $_getList(4);
 }
 
 /// This message defines attributes for an HTTP request. If the actual
@@ -456,7 +446,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   factory AttributeContext_Request({
     $core.String? id,
     $core.String? method,
-    $core.Map<$core.String, $core.String>? headers,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? headers,
     $core.String? path,
     $core.String? host,
     $core.String? scheme,
@@ -475,7 +465,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
       $result.method = method;
     }
     if (headers != null) {
-      $result.headers.addAll(headers);
+      $result.headers.addEntries(headers);
     }
     if (path != null) {
       $result.path = path;
@@ -539,14 +529,10 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
         subBuilder: AttributeContext_Auth.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Request clone() =>
       AttributeContext_Request()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Request copyWith(
           void Function(AttributeContext_Request) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Request))
@@ -577,7 +563,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearId() => clearField(1);
+  void clearId() => $_clearField(1);
 
   /// The HTTP request method, such as `GET`, `POST`.
   @$pb.TagNumber(2)
@@ -590,13 +576,13 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMethod() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMethod() => clearField(2);
+  void clearMethod() => $_clearField(2);
 
   /// The HTTP request headers. If multiple headers share the same key, they
   /// must be merged according to the HTTP spec. All header keys must be
   /// lowercased, because HTTP header keys are case-insensitive.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $core.String> get headers => $_getMap(2);
+  $pb.PbMap<$core.String, $core.String> get headers => $_getMap(2);
 
   /// The HTTP URL path.
   @$pb.TagNumber(4)
@@ -609,7 +595,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasPath() => $_has(3);
   @$pb.TagNumber(4)
-  void clearPath() => clearField(4);
+  void clearPath() => $_clearField(4);
 
   /// The HTTP request `Host` header value.
   @$pb.TagNumber(5)
@@ -622,7 +608,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasHost() => $_has(4);
   @$pb.TagNumber(5)
-  void clearHost() => clearField(5);
+  void clearHost() => $_clearField(5);
 
   /// The HTTP URL scheme, such as `http` and `https`.
   @$pb.TagNumber(6)
@@ -635,7 +621,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasScheme() => $_has(5);
   @$pb.TagNumber(6)
-  void clearScheme() => clearField(6);
+  void clearScheme() => $_clearField(6);
 
   /// The HTTP URL query in the format of `name1=value1&name2=value2`, as it
   /// appears in the first line of the HTTP request. No decoding is performed.
@@ -649,7 +635,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasQuery() => $_has(6);
   @$pb.TagNumber(7)
-  void clearQuery() => clearField(7);
+  void clearQuery() => $_clearField(7);
 
   /// The timestamp when the `destination` service receives the first byte of
   /// the request.
@@ -657,13 +643,13 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   $2.Timestamp get time => $_getN(7);
   @$pb.TagNumber(9)
   set time($2.Timestamp v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasTime() => $_has(7);
   @$pb.TagNumber(9)
-  void clearTime() => clearField(9);
+  void clearTime() => $_clearField(9);
   @$pb.TagNumber(9)
   $2.Timestamp ensureTime() => $_ensure(7);
 
@@ -678,7 +664,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasSize() => $_has(8);
   @$pb.TagNumber(10)
-  void clearSize() => clearField(10);
+  void clearSize() => $_clearField(10);
 
   /// The network protocol used with the request, such as "http/1.1",
   /// "spdy/3", "h2", "h2c", "webrtc", "tcp", "udp", "quic". See
@@ -694,7 +680,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasProtocol() => $_has(9);
   @$pb.TagNumber(11)
-  void clearProtocol() => clearField(11);
+  void clearProtocol() => $_clearField(11);
 
   /// A special parameter for request reason. It is used by security systems
   /// to associate auditing information with a request.
@@ -708,7 +694,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasReason() => $_has(10);
   @$pb.TagNumber(12)
-  void clearReason() => clearField(12);
+  void clearReason() => $_clearField(12);
 
   /// The request authentication. May be absent for unauthenticated requests.
   /// Derived from the HTTP request `Authorization` header or equivalent.
@@ -716,13 +702,13 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   AttributeContext_Auth get auth => $_getN(11);
   @$pb.TagNumber(13)
   set auth(AttributeContext_Auth v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasAuth() => $_has(11);
   @$pb.TagNumber(13)
-  void clearAuth() => clearField(13);
+  void clearAuth() => $_clearField(13);
   @$pb.TagNumber(13)
   AttributeContext_Auth ensureAuth() => $_ensure(11);
 }
@@ -733,7 +719,7 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
   factory AttributeContext_Response({
     $fixnum.Int64? code,
     $fixnum.Int64? size,
-    $core.Map<$core.String, $core.String>? headers,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? headers,
     $2.Timestamp? time,
   }) {
     final $result = create();
@@ -744,7 +730,7 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
       $result.size = size;
     }
     if (headers != null) {
-      $result.headers.addAll(headers);
+      $result.headers.addEntries(headers);
     }
     if (time != null) {
       $result.time = time;
@@ -775,14 +761,10 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Response clone() =>
       AttributeContext_Response()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Response copyWith(
           void Function(AttributeContext_Response) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Response))
@@ -811,7 +793,7 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCode() => clearField(1);
+  void clearCode() => $_clearField(1);
 
   /// The HTTP response size in bytes. If unknown, it must be -1.
   @$pb.TagNumber(2)
@@ -824,13 +806,13 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSize() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSize() => clearField(2);
+  void clearSize() => $_clearField(2);
 
   /// The HTTP response headers. If multiple headers share the same key, they
   /// must be merged according to HTTP spec. All header keys must be
   /// lowercased, because HTTP header keys are case-insensitive.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $core.String> get headers => $_getMap(2);
+  $pb.PbMap<$core.String, $core.String> get headers => $_getMap(2);
 
   /// The timestamp when the `destination` service generates the first byte of
   /// the response.
@@ -838,13 +820,13 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
   $2.Timestamp get time => $_getN(3);
   @$pb.TagNumber(4)
   set time($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearTime() => clearField(4);
+  void clearTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureTime() => $_ensure(3);
 }
@@ -857,7 +839,7 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
     $core.String? service,
     $core.String? name,
     $core.String? type,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
   }) {
     final $result = create();
     if (service != null) {
@@ -870,7 +852,7 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
       $result.type = type;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     return $result;
   }
@@ -897,14 +879,10 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.rpc.context'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Resource clone() =>
       AttributeContext_Resource()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext_Resource copyWith(
           void Function(AttributeContext_Resource) updates) =>
       super.copyWith((message) => updates(message as AttributeContext_Resource))
@@ -935,20 +913,20 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
-  void clearService() => clearField(1);
+  void clearService() => $_clearField(1);
 
-  ///  The stable identifier (name) of a resource on the `service`. A resource
-  ///  can be logically identified as "//{resource.service}/{resource.name}".
-  ///  The differences between a resource name and a URI are:
+  /// The stable identifier (name) of a resource on the `service`. A resource
+  /// can be logically identified as "//{resource.service}/{resource.name}".
+  /// The differences between a resource name and a URI are:
   ///
-  ///  *   Resource name is a logical identifier, independent of network
-  ///      protocol and API version. For example,
-  ///      `//pubsub.googleapis.com/projects/123/topics/news-feed`.
-  ///  *   URI often includes protocol and version information, so it can
-  ///      be used directly by applications. For example,
-  ///      `https://pubsub.googleapis.com/v1/projects/123/topics/news-feed`.
+  /// *   Resource name is a logical identifier, independent of network
+  ///     protocol and API version. For example,
+  ///     `//pubsub.googleapis.com/projects/123/topics/news-feed`.
+  /// *   URI often includes protocol and version information, so it can
+  ///     be used directly by applications. For example,
+  ///     `https://pubsub.googleapis.com/v1/projects/123/topics/news-feed`.
   ///
-  ///  See https://cloud.google.com/apis/design/resource_names for details.
+  /// See https://cloud.google.com/apis/design/resource_names for details.
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -959,12 +937,12 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearName() => clearField(2);
+  void clearName() => $_clearField(2);
 
-  ///  The type of the resource. The syntax is platform-specific because
-  ///  different platforms define their resources differently.
+  /// The type of the resource. The syntax is platform-specific because
+  /// different platforms define their resources differently.
   ///
-  ///  For Google APIs, the type format must be "{service}/{kind}".
+  /// For Google APIs, the type format must be "{service}/{kind}".
   @$pb.TagNumber(3)
   $core.String get type => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -975,31 +953,31 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)
-  void clearType() => clearField(3);
+  void clearType() => $_clearField(3);
 
   /// The labels or tags on the resource, such as AWS resource tags and
   /// Kubernetes resource labels.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 }
 
-///  This message defines the standard attribute vocabulary for Google APIs.
+/// This message defines the standard attribute vocabulary for Google APIs.
 ///
-///  An attribute is a piece of metadata that describes an activity on a network
-///  service. For example, the size of an HTTP request, or the status code of
-///  an HTTP response.
+/// An attribute is a piece of metadata that describes an activity on a network
+/// service. For example, the size of an HTTP request, or the status code of
+/// an HTTP response.
 ///
-///  Each attribute has a type and a name, which is logically defined as
-///  a proto message field in `AttributeContext`. The field type becomes the
-///  attribute type, and the field path becomes the attribute name. For example,
-///  the attribute `source.ip` maps to field `AttributeContext.source.ip`.
+/// Each attribute has a type and a name, which is logically defined as
+/// a proto message field in `AttributeContext`. The field type becomes the
+/// attribute type, and the field path becomes the attribute name. For example,
+/// the attribute `source.ip` maps to field `AttributeContext.source.ip`.
 ///
-///  This message definition is guaranteed not to have any wire breaking change.
-///  So you can use it directly for passing attributes across different systems.
+/// This message definition is guaranteed not to have any wire breaking change.
+/// So you can use it directly for passing attributes across different systems.
 ///
-///  NOTE: Different system may generate different subset of attributes. Please
-///  verify the system specification before relying on an attribute generated
-///  a system.
+/// NOTE: Different system may generate different subset of attributes. Please
+/// verify the system specification before relying on an attribute generated
+/// a system.
 class AttributeContext extends $pb.GeneratedMessage {
   factory AttributeContext({
     AttributeContext_Peer? source,
@@ -1063,13 +1041,9 @@ class AttributeContext extends $pb.GeneratedMessage {
         subBuilder: AttributeContext_Peer.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext clone() => AttributeContext()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AttributeContext copyWith(void Function(AttributeContext) updates) =>
       super.copyWith((message) => updates(message as AttributeContext))
           as AttributeContext;
@@ -1093,13 +1067,13 @@ class AttributeContext extends $pb.GeneratedMessage {
   AttributeContext_Peer get source => $_getN(0);
   @$pb.TagNumber(1)
   set source(AttributeContext_Peer v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasSource() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSource() => clearField(1);
+  void clearSource() => $_clearField(1);
   @$pb.TagNumber(1)
   AttributeContext_Peer ensureSource() => $_ensure(0);
 
@@ -1110,13 +1084,13 @@ class AttributeContext extends $pb.GeneratedMessage {
   AttributeContext_Peer get destination => $_getN(1);
   @$pb.TagNumber(2)
   set destination(AttributeContext_Peer v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasDestination() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDestination() => clearField(2);
+  void clearDestination() => $_clearField(2);
   @$pb.TagNumber(2)
   AttributeContext_Peer ensureDestination() => $_ensure(1);
 
@@ -1125,13 +1099,13 @@ class AttributeContext extends $pb.GeneratedMessage {
   AttributeContext_Request get request => $_getN(2);
   @$pb.TagNumber(3)
   set request(AttributeContext_Request v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasRequest() => $_has(2);
   @$pb.TagNumber(3)
-  void clearRequest() => clearField(3);
+  void clearRequest() => $_clearField(3);
   @$pb.TagNumber(3)
   AttributeContext_Request ensureRequest() => $_ensure(2);
 
@@ -1140,13 +1114,13 @@ class AttributeContext extends $pb.GeneratedMessage {
   AttributeContext_Response get response => $_getN(3);
   @$pb.TagNumber(4)
   set response(AttributeContext_Response v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasResponse() => $_has(3);
   @$pb.TagNumber(4)
-  void clearResponse() => clearField(4);
+  void clearResponse() => $_clearField(4);
   @$pb.TagNumber(4)
   AttributeContext_Response ensureResponse() => $_ensure(3);
 
@@ -1157,13 +1131,13 @@ class AttributeContext extends $pb.GeneratedMessage {
   AttributeContext_Resource get resource => $_getN(4);
   @$pb.TagNumber(5)
   set resource(AttributeContext_Resource v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasResource() => $_has(4);
   @$pb.TagNumber(5)
-  void clearResource() => clearField(5);
+  void clearResource() => $_clearField(5);
   @$pb.TagNumber(5)
   AttributeContext_Resource ensureResource() => $_ensure(4);
 
@@ -1172,13 +1146,13 @@ class AttributeContext extends $pb.GeneratedMessage {
   AttributeContext_Api get api => $_getN(5);
   @$pb.TagNumber(6)
   set api(AttributeContext_Api v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasApi() => $_has(5);
   @$pb.TagNumber(6)
-  void clearApi() => clearField(6);
+  void clearApi() => $_clearField(6);
   @$pb.TagNumber(6)
   AttributeContext_Api ensureApi() => $_ensure(5);
 
@@ -1189,13 +1163,13 @@ class AttributeContext extends $pb.GeneratedMessage {
   AttributeContext_Peer get origin => $_getN(6);
   @$pb.TagNumber(7)
   set origin(AttributeContext_Peer v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasOrigin() => $_has(6);
   @$pb.TagNumber(7)
-  void clearOrigin() => clearField(7);
+  void clearOrigin() => $_clearField(7);
   @$pb.TagNumber(7)
   AttributeContext_Peer ensureOrigin() => $_ensure(6);
 }

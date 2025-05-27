@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/datastream/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,9 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $10;
+import '../../../../protobuf/duration.pb.dart' as $0;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -26,7 +28,8 @@ class OracleProfile extends $pb.GeneratedMessage {
     $core.int? port,
     $core.String? username,
     $core.String? databaseService,
-    $core.Map<$core.String, $core.String>? connectionAttributes,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>?
+        connectionAttributes,
   }) {
     final $result = create();
     if (hostname != null) {
@@ -42,7 +45,7 @@ class OracleProfile extends $pb.GeneratedMessage {
       $result.databaseService = databaseService;
     }
     if (connectionAttributes != null) {
-      $result.connectionAttributes.addAll(connectionAttributes);
+      $result.connectionAttributes.addEntries(connectionAttributes);
     }
     return $result;
   }
@@ -71,13 +74,9 @@ class OracleProfile extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.datastream.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleProfile clone() => OracleProfile()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleProfile copyWith(void Function(OracleProfile) updates) =>
       super.copyWith((message) => updates(message as OracleProfile))
           as OracleProfile;
@@ -105,7 +104,7 @@ class OracleProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHostname() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHostname() => clearField(1);
+  void clearHostname() => $_clearField(1);
 
   /// Port for the Oracle connection, default value is 1521.
   @$pb.TagNumber(2)
@@ -118,7 +117,7 @@ class OracleProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPort() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPort() => clearField(2);
+  void clearPort() => $_clearField(2);
 
   /// Required. Username for the Oracle connection.
   @$pb.TagNumber(3)
@@ -131,7 +130,7 @@ class OracleProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUsername() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUsername() => clearField(3);
+  void clearUsername() => $_clearField(3);
 
   /// Required. Database for the Oracle connection.
   @$pb.TagNumber(5)
@@ -144,11 +143,11 @@ class OracleProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDatabaseService() => $_has(3);
   @$pb.TagNumber(5)
-  void clearDatabaseService() => clearField(5);
+  void clearDatabaseService() => $_clearField(5);
 
   /// Connection string attributes
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $core.String> get connectionAttributes => $_getMap(4);
+  $pb.PbMap<$core.String, $core.String> get connectionAttributes => $_getMap(4);
 }
 
 /// MySQL database profile.
@@ -194,13 +193,9 @@ class MysqlProfile extends $pb.GeneratedMessage {
         subBuilder: MysqlSslConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlProfile clone() => MysqlProfile()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlProfile copyWith(void Function(MysqlProfile) updates) =>
       super.copyWith((message) => updates(message as MysqlProfile))
           as MysqlProfile;
@@ -228,7 +223,7 @@ class MysqlProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHostname() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHostname() => clearField(1);
+  void clearHostname() => $_clearField(1);
 
   /// Port for the MySQL connection, default value is 3306.
   @$pb.TagNumber(2)
@@ -241,7 +236,7 @@ class MysqlProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPort() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPort() => clearField(2);
+  void clearPort() => $_clearField(2);
 
   /// Required. Username for the MySQL connection.
   @$pb.TagNumber(3)
@@ -254,20 +249,20 @@ class MysqlProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUsername() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUsername() => clearField(3);
+  void clearUsername() => $_clearField(3);
 
   /// SSL configuration for the MySQL connection.
   @$pb.TagNumber(5)
   MysqlSslConfig get sslConfig => $_getN(3);
   @$pb.TagNumber(5)
   set sslConfig(MysqlSslConfig v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasSslConfig() => $_has(3);
   @$pb.TagNumber(5)
-  void clearSslConfig() => clearField(5);
+  void clearSslConfig() => $_clearField(5);
   @$pb.TagNumber(5)
   MysqlSslConfig ensureSslConfig() => $_ensure(3);
 }
@@ -314,13 +309,9 @@ class PostgresqlProfile extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'database')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlProfile clone() => PostgresqlProfile()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlProfile copyWith(void Function(PostgresqlProfile) updates) =>
       super.copyWith((message) => updates(message as PostgresqlProfile))
           as PostgresqlProfile;
@@ -348,7 +339,7 @@ class PostgresqlProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHostname() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHostname() => clearField(1);
+  void clearHostname() => $_clearField(1);
 
   /// Port for the PostgreSQL connection, default value is 5432.
   @$pb.TagNumber(2)
@@ -361,7 +352,7 @@ class PostgresqlProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPort() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPort() => clearField(2);
+  void clearPort() => $_clearField(2);
 
   /// Required. Username for the PostgreSQL connection.
   @$pb.TagNumber(3)
@@ -374,7 +365,7 @@ class PostgresqlProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUsername() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUsername() => clearField(3);
+  void clearUsername() => $_clearField(3);
 
   /// Required. Database for the PostgreSQL connection.
   @$pb.TagNumber(5)
@@ -387,7 +378,7 @@ class PostgresqlProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDatabase() => $_has(3);
   @$pb.TagNumber(5)
-  void clearDatabase() => clearField(5);
+  void clearDatabase() => $_clearField(5);
 }
 
 /// Cloud Storage bucket profile.
@@ -422,13 +413,9 @@ class GcsProfile extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'rootPath')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GcsProfile clone() => GcsProfile()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GcsProfile copyWith(void Function(GcsProfile) updates) =>
       super.copyWith((message) => updates(message as GcsProfile)) as GcsProfile;
 
@@ -454,7 +441,7 @@ class GcsProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasBucket() => $_has(0);
   @$pb.TagNumber(1)
-  void clearBucket() => clearField(1);
+  void clearBucket() => $_clearField(1);
 
   /// The root path inside the Cloud Storage bucket.
   @$pb.TagNumber(2)
@@ -467,7 +454,7 @@ class GcsProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasRootPath() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRootPath() => clearField(2);
+  void clearRootPath() => $_clearField(2);
 }
 
 /// BigQuery warehouse profile.
@@ -488,13 +475,9 @@ class BigQueryProfile extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryProfile clone() => BigQueryProfile()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryProfile copyWith(void Function(BigQueryProfile) updates) =>
       super.copyWith((message) => updates(message as BigQueryProfile))
           as BigQueryProfile;
@@ -530,14 +513,10 @@ class StaticServiceIpConnectivity extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StaticServiceIpConnectivity clone() =>
       StaticServiceIpConnectivity()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StaticServiceIpConnectivity copyWith(
           void Function(StaticServiceIpConnectivity) updates) =>
       super.copyWith(
@@ -595,14 +574,10 @@ class ForwardSshTunnelConnectivity extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'port', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ForwardSshTunnelConnectivity clone() =>
       ForwardSshTunnelConnectivity()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ForwardSshTunnelConnectivity copyWith(
           void Function(ForwardSshTunnelConnectivity) updates) =>
       super.copyWith(
@@ -633,7 +608,7 @@ class ForwardSshTunnelConnectivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHostname() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHostname() => clearField(1);
+  void clearHostname() => $_clearField(1);
 
   /// Required. Username for the SSH tunnel.
   @$pb.TagNumber(2)
@@ -646,7 +621,7 @@ class ForwardSshTunnelConnectivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUsername() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUsername() => clearField(2);
+  void clearUsername() => $_clearField(2);
 
   /// Port for the SSH tunnel, default value is 22.
   @$pb.TagNumber(3)
@@ -659,7 +634,7 @@ class ForwardSshTunnelConnectivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasPort() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPort() => clearField(3);
+  void clearPort() => $_clearField(3);
 }
 
 /// The VPC Peering configuration is used to create VPC peering between
@@ -695,13 +670,9 @@ class VpcPeeringConfig extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'subnet')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VpcPeeringConfig clone() => VpcPeeringConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VpcPeeringConfig copyWith(void Function(VpcPeeringConfig) updates) =>
       super.copyWith((message) => updates(message as VpcPeeringConfig))
           as VpcPeeringConfig;
@@ -730,7 +701,7 @@ class VpcPeeringConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVpc() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVpc() => clearField(1);
+  void clearVpc() => $_clearField(1);
 
   /// Required. A free subnet for peering. (CIDR of /29)
   @$pb.TagNumber(2)
@@ -743,7 +714,7 @@ class VpcPeeringConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSubnet() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSubnet() => clearField(2);
+  void clearSubnet() => $_clearField(2);
 }
 
 /// The PrivateConnection resource is used to establish private connectivity
@@ -753,7 +724,7 @@ class PrivateConnection extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     PrivateConnection_State? state,
     Error? error,
@@ -770,7 +741,7 @@ class PrivateConnection extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (displayName != null) {
       $result.displayName = displayName;
@@ -820,13 +791,9 @@ class PrivateConnection extends $pb.GeneratedMessage {
         subBuilder: VpcPeeringConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PrivateConnection clone() => PrivateConnection()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PrivateConnection copyWith(void Function(PrivateConnection) updates) =>
       super.copyWith((message) => updates(message as PrivateConnection))
           as PrivateConnection;
@@ -854,20 +821,20 @@ class PrivateConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The create time of the resource.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -876,19 +843,19 @@ class PrivateConnection extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Required. Display name.
   @$pb.TagNumber(5)
@@ -901,33 +868,33 @@ class PrivateConnection extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 
   /// Output only. The state of the Private Connection.
   @$pb.TagNumber(6)
   PrivateConnection_State get state => $_getN(5);
   @$pb.TagNumber(6)
   set state(PrivateConnection_State v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(6)
-  void clearState() => clearField(6);
+  void clearState() => $_clearField(6);
 
   /// Output only. In case of error, the details of the error in a user-friendly format.
   @$pb.TagNumber(7)
   Error get error => $_getN(6);
   @$pb.TagNumber(7)
   set error(Error v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasError() => $_has(6);
   @$pb.TagNumber(7)
-  void clearError() => clearField(7);
+  void clearError() => $_clearField(7);
   @$pb.TagNumber(7)
   Error ensureError() => $_ensure(6);
 
@@ -936,13 +903,13 @@ class PrivateConnection extends $pb.GeneratedMessage {
   VpcPeeringConfig get vpcPeeringConfig => $_getN(7);
   @$pb.TagNumber(100)
   set vpcPeeringConfig(VpcPeeringConfig v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasVpcPeeringConfig() => $_has(7);
   @$pb.TagNumber(100)
-  void clearVpcPeeringConfig() => clearField(100);
+  void clearVpcPeeringConfig() => $_clearField(100);
   @$pb.TagNumber(100)
   VpcPeeringConfig ensureVpcPeeringConfig() => $_ensure(7);
 }
@@ -974,13 +941,9 @@ class PrivateConnectivity extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'privateConnection')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PrivateConnectivity clone() => PrivateConnectivity()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PrivateConnectivity copyWith(void Function(PrivateConnectivity) updates) =>
       super.copyWith((message) => updates(message as PrivateConnectivity))
           as PrivateConnectivity;
@@ -1009,7 +972,7 @@ class PrivateConnectivity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPrivateConnection() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPrivateConnection() => clearField(1);
+  void clearPrivateConnection() => $_clearField(1);
 }
 
 /// The route resource is the child of the private connection resource,
@@ -1019,7 +982,7 @@ class Route extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     $core.String? destinationAddress,
     $core.int? destinationPort,
@@ -1035,7 +998,7 @@ class Route extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (displayName != null) {
       $result.displayName = displayName;
@@ -1077,13 +1040,9 @@ class Route extends $pb.GeneratedMessage {
         7, _omitFieldNames ? '' : 'destinationPort', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Route clone() => Route()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Route copyWith(void Function(Route) updates) =>
       super.copyWith((message) => updates(message as Route)) as Route;
 
@@ -1109,20 +1068,20 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The create time of the resource.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -1131,19 +1090,19 @@ class Route extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Required. Display name.
   @$pb.TagNumber(5)
@@ -1156,7 +1115,7 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 
   /// Required. Destination address for connection
   @$pb.TagNumber(6)
@@ -1169,7 +1128,7 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDestinationAddress() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDestinationAddress() => clearField(6);
+  void clearDestinationAddress() => $_clearField(6);
 
   /// Destination port for connection
   @$pb.TagNumber(7)
@@ -1182,7 +1141,7 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasDestinationPort() => $_has(6);
   @$pb.TagNumber(7)
-  void clearDestinationPort() => clearField(7);
+  void clearDestinationPort() => $_clearField(7);
 }
 
 /// MySQL SSL configuration information.
@@ -1222,13 +1181,9 @@ class MysqlSslConfig extends $pb.GeneratedMessage {
     ..aOB(6, _omitFieldNames ? '' : 'caCertificateSet')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlSslConfig clone() => MysqlSslConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlSslConfig copyWith(void Function(MysqlSslConfig) updates) =>
       super.copyWith((message) => updates(message as MysqlSslConfig))
           as MysqlSslConfig;
@@ -1256,7 +1211,7 @@ class MysqlSslConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasClientKeySet() => $_has(0);
   @$pb.TagNumber(2)
-  void clearClientKeySet() => clearField(2);
+  void clearClientKeySet() => $_clearField(2);
 
   /// Output only. Indicates whether the client_certificate field is set.
   @$pb.TagNumber(4)
@@ -1269,7 +1224,7 @@ class MysqlSslConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasClientCertificateSet() => $_has(1);
   @$pb.TagNumber(4)
-  void clearClientCertificateSet() => clearField(4);
+  void clearClientCertificateSet() => $_clearField(4);
 
   /// Output only. Indicates whether the ca_certificate field is set.
   @$pb.TagNumber(6)
@@ -1282,7 +1237,7 @@ class MysqlSslConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasCaCertificateSet() => $_has(2);
   @$pb.TagNumber(6)
-  void clearCaCertificateSet() => clearField(6);
+  void clearCaCertificateSet() => $_clearField(6);
 }
 
 enum ConnectionProfile_Profile {
@@ -1308,7 +1263,7 @@ class ConnectionProfile extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     OracleProfile? oracleProfile,
     GcsProfile? gcsProfile,
@@ -1330,7 +1285,7 @@ class ConnectionProfile extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (displayName != null) {
       $result.displayName = displayName;
@@ -1424,13 +1379,9 @@ class ConnectionProfile extends $pb.GeneratedMessage {
         subBuilder: PrivateConnectivity.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ConnectionProfile clone() => ConnectionProfile()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ConnectionProfile copyWith(void Function(ConnectionProfile) updates) =>
       super.copyWith((message) => updates(message as ConnectionProfile))
           as ConnectionProfile;
@@ -1449,11 +1400,11 @@ class ConnectionProfile extends $pb.GeneratedMessage {
 
   ConnectionProfile_Profile whichProfile() =>
       _ConnectionProfile_ProfileByTag[$_whichOneof(0)]!;
-  void clearProfile() => clearField($_whichOneof(0));
+  void clearProfile() => $_clearField($_whichOneof(0));
 
   ConnectionProfile_Connectivity whichConnectivity() =>
       _ConnectionProfile_ConnectivityByTag[$_whichOneof(1)]!;
-  void clearConnectivity() => clearField($_whichOneof(1));
+  void clearConnectivity() => $_clearField($_whichOneof(1));
 
   /// Output only. The resource's name.
   @$pb.TagNumber(1)
@@ -1466,20 +1417,20 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The create time of the resource.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -1488,19 +1439,19 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Required. Display name.
   @$pb.TagNumber(5)
@@ -1513,20 +1464,20 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 
   /// Oracle ConnectionProfile configuration.
   @$pb.TagNumber(100)
   OracleProfile get oracleProfile => $_getN(5);
   @$pb.TagNumber(100)
   set oracleProfile(OracleProfile v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasOracleProfile() => $_has(5);
   @$pb.TagNumber(100)
-  void clearOracleProfile() => clearField(100);
+  void clearOracleProfile() => $_clearField(100);
   @$pb.TagNumber(100)
   OracleProfile ensureOracleProfile() => $_ensure(5);
 
@@ -1535,13 +1486,13 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   GcsProfile get gcsProfile => $_getN(6);
   @$pb.TagNumber(101)
   set gcsProfile(GcsProfile v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasGcsProfile() => $_has(6);
   @$pb.TagNumber(101)
-  void clearGcsProfile() => clearField(101);
+  void clearGcsProfile() => $_clearField(101);
   @$pb.TagNumber(101)
   GcsProfile ensureGcsProfile() => $_ensure(6);
 
@@ -1550,13 +1501,13 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   MysqlProfile get mysqlProfile => $_getN(7);
   @$pb.TagNumber(102)
   set mysqlProfile(MysqlProfile v) {
-    setField(102, v);
+    $_setField(102, v);
   }
 
   @$pb.TagNumber(102)
   $core.bool hasMysqlProfile() => $_has(7);
   @$pb.TagNumber(102)
-  void clearMysqlProfile() => clearField(102);
+  void clearMysqlProfile() => $_clearField(102);
   @$pb.TagNumber(102)
   MysqlProfile ensureMysqlProfile() => $_ensure(7);
 
@@ -1565,13 +1516,13 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   BigQueryProfile get bigqueryProfile => $_getN(8);
   @$pb.TagNumber(103)
   set bigqueryProfile(BigQueryProfile v) {
-    setField(103, v);
+    $_setField(103, v);
   }
 
   @$pb.TagNumber(103)
   $core.bool hasBigqueryProfile() => $_has(8);
   @$pb.TagNumber(103)
-  void clearBigqueryProfile() => clearField(103);
+  void clearBigqueryProfile() => $_clearField(103);
   @$pb.TagNumber(103)
   BigQueryProfile ensureBigqueryProfile() => $_ensure(8);
 
@@ -1580,13 +1531,13 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   PostgresqlProfile get postgresqlProfile => $_getN(9);
   @$pb.TagNumber(104)
   set postgresqlProfile(PostgresqlProfile v) {
-    setField(104, v);
+    $_setField(104, v);
   }
 
   @$pb.TagNumber(104)
   $core.bool hasPostgresqlProfile() => $_has(9);
   @$pb.TagNumber(104)
-  void clearPostgresqlProfile() => clearField(104);
+  void clearPostgresqlProfile() => $_clearField(104);
   @$pb.TagNumber(104)
   PostgresqlProfile ensurePostgresqlProfile() => $_ensure(9);
 
@@ -1595,13 +1546,13 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   StaticServiceIpConnectivity get staticServiceIpConnectivity => $_getN(10);
   @$pb.TagNumber(200)
   set staticServiceIpConnectivity(StaticServiceIpConnectivity v) {
-    setField(200, v);
+    $_setField(200, v);
   }
 
   @$pb.TagNumber(200)
   $core.bool hasStaticServiceIpConnectivity() => $_has(10);
   @$pb.TagNumber(200)
-  void clearStaticServiceIpConnectivity() => clearField(200);
+  void clearStaticServiceIpConnectivity() => $_clearField(200);
   @$pb.TagNumber(200)
   StaticServiceIpConnectivity ensureStaticServiceIpConnectivity() =>
       $_ensure(10);
@@ -1611,13 +1562,13 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   ForwardSshTunnelConnectivity get forwardSshConnectivity => $_getN(11);
   @$pb.TagNumber(201)
   set forwardSshConnectivity(ForwardSshTunnelConnectivity v) {
-    setField(201, v);
+    $_setField(201, v);
   }
 
   @$pb.TagNumber(201)
   $core.bool hasForwardSshConnectivity() => $_has(11);
   @$pb.TagNumber(201)
-  void clearForwardSshConnectivity() => clearField(201);
+  void clearForwardSshConnectivity() => $_clearField(201);
   @$pb.TagNumber(201)
   ForwardSshTunnelConnectivity ensureForwardSshConnectivity() => $_ensure(11);
 
@@ -1626,13 +1577,13 @@ class ConnectionProfile extends $pb.GeneratedMessage {
   PrivateConnectivity get privateConnectivity => $_getN(12);
   @$pb.TagNumber(202)
   set privateConnectivity(PrivateConnectivity v) {
-    setField(202, v);
+    $_setField(202, v);
   }
 
   @$pb.TagNumber(202)
   $core.bool hasPrivateConnectivity() => $_has(12);
   @$pb.TagNumber(202)
-  void clearPrivateConnectivity() => clearField(202);
+  void clearPrivateConnectivity() => $_clearField(202);
   @$pb.TagNumber(202)
   PrivateConnectivity ensurePrivateConnectivity() => $_ensure(12);
 }
@@ -1705,13 +1656,9 @@ class OracleColumn extends $pb.GeneratedMessage {
         9, _omitFieldNames ? '' : 'ordinalPosition', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleColumn clone() => OracleColumn()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleColumn copyWith(void Function(OracleColumn) updates) =>
       super.copyWith((message) => updates(message as OracleColumn))
           as OracleColumn;
@@ -1739,7 +1686,7 @@ class OracleColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasColumn() => $_has(0);
   @$pb.TagNumber(1)
-  void clearColumn() => clearField(1);
+  void clearColumn() => $_clearField(1);
 
   /// The Oracle data type.
   @$pb.TagNumber(2)
@@ -1752,7 +1699,7 @@ class OracleColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDataType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDataType() => clearField(2);
+  void clearDataType() => $_clearField(2);
 
   /// Column length.
   @$pb.TagNumber(3)
@@ -1765,7 +1712,7 @@ class OracleColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasLength() => $_has(2);
   @$pb.TagNumber(3)
-  void clearLength() => clearField(3);
+  void clearLength() => $_clearField(3);
 
   /// Column precision.
   @$pb.TagNumber(4)
@@ -1778,7 +1725,7 @@ class OracleColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasPrecision() => $_has(3);
   @$pb.TagNumber(4)
-  void clearPrecision() => clearField(4);
+  void clearPrecision() => $_clearField(4);
 
   /// Column scale.
   @$pb.TagNumber(5)
@@ -1791,7 +1738,7 @@ class OracleColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasScale() => $_has(4);
   @$pb.TagNumber(5)
-  void clearScale() => clearField(5);
+  void clearScale() => $_clearField(5);
 
   /// Column encoding.
   @$pb.TagNumber(6)
@@ -1804,7 +1751,7 @@ class OracleColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasEncoding() => $_has(5);
   @$pb.TagNumber(6)
-  void clearEncoding() => clearField(6);
+  void clearEncoding() => $_clearField(6);
 
   /// Whether or not the column represents a primary key.
   @$pb.TagNumber(7)
@@ -1817,7 +1764,7 @@ class OracleColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasPrimaryKey() => $_has(6);
   @$pb.TagNumber(7)
-  void clearPrimaryKey() => clearField(7);
+  void clearPrimaryKey() => $_clearField(7);
 
   /// Whether or not the column can accept a null value.
   @$pb.TagNumber(8)
@@ -1830,7 +1777,7 @@ class OracleColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasNullable() => $_has(7);
   @$pb.TagNumber(8)
-  void clearNullable() => clearField(8);
+  void clearNullable() => $_clearField(8);
 
   /// The ordinal position of the column in the table.
   @$pb.TagNumber(9)
@@ -1843,7 +1790,7 @@ class OracleColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasOrdinalPosition() => $_has(8);
   @$pb.TagNumber(9)
-  void clearOrdinalPosition() => clearField(9);
+  void clearOrdinalPosition() => $_clearField(9);
 }
 
 /// Oracle table.
@@ -1880,13 +1827,9 @@ class OracleTable extends $pb.GeneratedMessage {
         subBuilder: OracleColumn.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleTable clone() => OracleTable()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleTable copyWith(void Function(OracleTable) updates) =>
       super.copyWith((message) => updates(message as OracleTable))
           as OracleTable;
@@ -1913,13 +1856,13 @@ class OracleTable extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTable() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTable() => clearField(1);
+  void clearTable() => $_clearField(1);
 
   /// Oracle columns in the schema.
   /// When unspecified as part of include/exclude objects, includes/excludes
   /// everything.
   @$pb.TagNumber(2)
-  $core.List<OracleColumn> get oracleColumns => $_getList(1);
+  $pb.PbList<OracleColumn> get oracleColumns => $_getList(1);
 }
 
 /// Oracle schema.
@@ -1956,13 +1899,9 @@ class OracleSchema extends $pb.GeneratedMessage {
         subBuilder: OracleTable.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleSchema clone() => OracleSchema()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleSchema copyWith(void Function(OracleSchema) updates) =>
       super.copyWith((message) => updates(message as OracleSchema))
           as OracleSchema;
@@ -1990,11 +1929,11 @@ class OracleSchema extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSchema() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSchema() => clearField(1);
+  void clearSchema() => $_clearField(1);
 
   /// Tables in the schema.
   @$pb.TagNumber(2)
-  $core.List<OracleTable> get oracleTables => $_getList(1);
+  $pb.PbList<OracleTable> get oracleTables => $_getList(1);
 }
 
 /// Oracle database structure.
@@ -2026,13 +1965,9 @@ class OracleRdbms extends $pb.GeneratedMessage {
         subBuilder: OracleSchema.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleRdbms clone() => OracleRdbms()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleRdbms copyWith(void Function(OracleRdbms) updates) =>
       super.copyWith((message) => updates(message as OracleRdbms))
           as OracleRdbms;
@@ -2050,7 +1985,7 @@ class OracleRdbms extends $pb.GeneratedMessage {
 
   /// Oracle schemas/databases in the database server.
   @$pb.TagNumber(1)
-  $core.List<OracleSchema> get oracleSchemas => $_getList(0);
+  $pb.PbList<OracleSchema> get oracleSchemas => $_getList(0);
 }
 
 /// Configuration to drop large object values.
@@ -2072,14 +2007,10 @@ class OracleSourceConfig_DropLargeObjects extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleSourceConfig_DropLargeObjects clone() =>
       OracleSourceConfig_DropLargeObjects()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleSourceConfig_DropLargeObjects copyWith(
           void Function(OracleSourceConfig_DropLargeObjects) updates) =>
       super.copyWith((message) =>
@@ -2120,14 +2051,10 @@ class OracleSourceConfig_StreamLargeObjects extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleSourceConfig_StreamLargeObjects clone() =>
       OracleSourceConfig_StreamLargeObjects()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleSourceConfig_StreamLargeObjects copyWith(
           void Function(OracleSourceConfig_StreamLargeObjects) updates) =>
       super.copyWith((message) =>
@@ -2216,13 +2143,9 @@ class OracleSourceConfig extends $pb.GeneratedMessage {
         subBuilder: OracleSourceConfig_StreamLargeObjects.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleSourceConfig clone() => OracleSourceConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   OracleSourceConfig copyWith(void Function(OracleSourceConfig) updates) =>
       super.copyWith((message) => updates(message as OracleSourceConfig))
           as OracleSourceConfig;
@@ -2241,20 +2164,20 @@ class OracleSourceConfig extends $pb.GeneratedMessage {
 
   OracleSourceConfig_LargeObjectsHandling whichLargeObjectsHandling() =>
       _OracleSourceConfig_LargeObjectsHandlingByTag[$_whichOneof(0)]!;
-  void clearLargeObjectsHandling() => clearField($_whichOneof(0));
+  void clearLargeObjectsHandling() => $_clearField($_whichOneof(0));
 
   /// Oracle objects to include in the stream.
   @$pb.TagNumber(1)
   OracleRdbms get includeObjects => $_getN(0);
   @$pb.TagNumber(1)
   set includeObjects(OracleRdbms v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasIncludeObjects() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIncludeObjects() => clearField(1);
+  void clearIncludeObjects() => $_clearField(1);
   @$pb.TagNumber(1)
   OracleRdbms ensureIncludeObjects() => $_ensure(0);
 
@@ -2263,13 +2186,13 @@ class OracleSourceConfig extends $pb.GeneratedMessage {
   OracleRdbms get excludeObjects => $_getN(1);
   @$pb.TagNumber(2)
   set excludeObjects(OracleRdbms v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasExcludeObjects() => $_has(1);
   @$pb.TagNumber(2)
-  void clearExcludeObjects() => clearField(2);
+  void clearExcludeObjects() => $_clearField(2);
   @$pb.TagNumber(2)
   OracleRdbms ensureExcludeObjects() => $_ensure(1);
 
@@ -2285,20 +2208,20 @@ class OracleSourceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMaxConcurrentCdcTasks() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMaxConcurrentCdcTasks() => clearField(3);
+  void clearMaxConcurrentCdcTasks() => $_clearField(3);
 
   /// Drop large object values.
   @$pb.TagNumber(100)
   OracleSourceConfig_DropLargeObjects get dropLargeObjects => $_getN(3);
   @$pb.TagNumber(100)
   set dropLargeObjects(OracleSourceConfig_DropLargeObjects v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasDropLargeObjects() => $_has(3);
   @$pb.TagNumber(100)
-  void clearDropLargeObjects() => clearField(100);
+  void clearDropLargeObjects() => $_clearField(100);
   @$pb.TagNumber(100)
   OracleSourceConfig_DropLargeObjects ensureDropLargeObjects() => $_ensure(3);
 
@@ -2307,13 +2230,13 @@ class OracleSourceConfig extends $pb.GeneratedMessage {
   OracleSourceConfig_StreamLargeObjects get streamLargeObjects => $_getN(4);
   @$pb.TagNumber(102)
   set streamLargeObjects(OracleSourceConfig_StreamLargeObjects v) {
-    setField(102, v);
+    $_setField(102, v);
   }
 
   @$pb.TagNumber(102)
   $core.bool hasStreamLargeObjects() => $_has(4);
   @$pb.TagNumber(102)
-  void clearStreamLargeObjects() => clearField(102);
+  void clearStreamLargeObjects() => $_clearField(102);
   @$pb.TagNumber(102)
   OracleSourceConfig_StreamLargeObjects ensureStreamLargeObjects() =>
       $_ensure(4);
@@ -2382,13 +2305,9 @@ class PostgresqlColumn extends $pb.GeneratedMessage {
         9, _omitFieldNames ? '' : 'ordinalPosition', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlColumn clone() => PostgresqlColumn()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlColumn copyWith(void Function(PostgresqlColumn) updates) =>
       super.copyWith((message) => updates(message as PostgresqlColumn))
           as PostgresqlColumn;
@@ -2416,7 +2335,7 @@ class PostgresqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasColumn() => $_has(0);
   @$pb.TagNumber(1)
-  void clearColumn() => clearField(1);
+  void clearColumn() => $_clearField(1);
 
   /// The PostgreSQL data type.
   @$pb.TagNumber(2)
@@ -2429,7 +2348,7 @@ class PostgresqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDataType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDataType() => clearField(2);
+  void clearDataType() => $_clearField(2);
 
   /// Column length.
   @$pb.TagNumber(3)
@@ -2442,7 +2361,7 @@ class PostgresqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasLength() => $_has(2);
   @$pb.TagNumber(3)
-  void clearLength() => clearField(3);
+  void clearLength() => $_clearField(3);
 
   /// Column precision.
   @$pb.TagNumber(4)
@@ -2455,7 +2374,7 @@ class PostgresqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasPrecision() => $_has(3);
   @$pb.TagNumber(4)
-  void clearPrecision() => clearField(4);
+  void clearPrecision() => $_clearField(4);
 
   /// Column scale.
   @$pb.TagNumber(5)
@@ -2468,7 +2387,7 @@ class PostgresqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasScale() => $_has(4);
   @$pb.TagNumber(5)
-  void clearScale() => clearField(5);
+  void clearScale() => $_clearField(5);
 
   /// Whether or not the column represents a primary key.
   @$pb.TagNumber(7)
@@ -2481,7 +2400,7 @@ class PostgresqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasPrimaryKey() => $_has(5);
   @$pb.TagNumber(7)
-  void clearPrimaryKey() => clearField(7);
+  void clearPrimaryKey() => $_clearField(7);
 
   /// Whether or not the column can accept a null value.
   @$pb.TagNumber(8)
@@ -2494,7 +2413,7 @@ class PostgresqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasNullable() => $_has(6);
   @$pb.TagNumber(8)
-  void clearNullable() => clearField(8);
+  void clearNullable() => $_clearField(8);
 
   /// The ordinal position of the column in the table.
   @$pb.TagNumber(9)
@@ -2507,7 +2426,7 @@ class PostgresqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasOrdinalPosition() => $_has(7);
   @$pb.TagNumber(9)
-  void clearOrdinalPosition() => clearField(9);
+  void clearOrdinalPosition() => $_clearField(9);
 }
 
 /// PostgreSQL table.
@@ -2544,13 +2463,9 @@ class PostgresqlTable extends $pb.GeneratedMessage {
         subBuilder: PostgresqlColumn.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlTable clone() => PostgresqlTable()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlTable copyWith(void Function(PostgresqlTable) updates) =>
       super.copyWith((message) => updates(message as PostgresqlTable))
           as PostgresqlTable;
@@ -2578,13 +2493,13 @@ class PostgresqlTable extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTable() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTable() => clearField(1);
+  void clearTable() => $_clearField(1);
 
   /// PostgreSQL columns in the schema.
   /// When unspecified as part of include/exclude objects,
   /// includes/excludes everything.
   @$pb.TagNumber(2)
-  $core.List<PostgresqlColumn> get postgresqlColumns => $_getList(1);
+  $pb.PbList<PostgresqlColumn> get postgresqlColumns => $_getList(1);
 }
 
 /// PostgreSQL schema.
@@ -2621,13 +2536,9 @@ class PostgresqlSchema extends $pb.GeneratedMessage {
         subBuilder: PostgresqlTable.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlSchema clone() => PostgresqlSchema()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlSchema copyWith(void Function(PostgresqlSchema) updates) =>
       super.copyWith((message) => updates(message as PostgresqlSchema))
           as PostgresqlSchema;
@@ -2655,11 +2566,11 @@ class PostgresqlSchema extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSchema() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSchema() => clearField(1);
+  void clearSchema() => $_clearField(1);
 
   /// Tables in the schema.
   @$pb.TagNumber(2)
-  $core.List<PostgresqlTable> get postgresqlTables => $_getList(1);
+  $pb.PbList<PostgresqlTable> get postgresqlTables => $_getList(1);
 }
 
 /// PostgreSQL database structure.
@@ -2691,13 +2602,9 @@ class PostgresqlRdbms extends $pb.GeneratedMessage {
         subBuilder: PostgresqlSchema.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlRdbms clone() => PostgresqlRdbms()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlRdbms copyWith(void Function(PostgresqlRdbms) updates) =>
       super.copyWith((message) => updates(message as PostgresqlRdbms))
           as PostgresqlRdbms;
@@ -2716,7 +2623,7 @@ class PostgresqlRdbms extends $pb.GeneratedMessage {
 
   /// PostgreSQL schemas in the database server.
   @$pb.TagNumber(1)
-  $core.List<PostgresqlSchema> get postgresqlSchemas => $_getList(0);
+  $pb.PbList<PostgresqlSchema> get postgresqlSchemas => $_getList(0);
 }
 
 /// PostgreSQL data source configuration
@@ -2763,14 +2670,10 @@ class PostgresqlSourceConfig extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'publication')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlSourceConfig clone() =>
       PostgresqlSourceConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostgresqlSourceConfig copyWith(
           void Function(PostgresqlSourceConfig) updates) =>
       super.copyWith((message) => updates(message as PostgresqlSourceConfig))
@@ -2793,13 +2696,13 @@ class PostgresqlSourceConfig extends $pb.GeneratedMessage {
   PostgresqlRdbms get includeObjects => $_getN(0);
   @$pb.TagNumber(1)
   set includeObjects(PostgresqlRdbms v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasIncludeObjects() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIncludeObjects() => clearField(1);
+  void clearIncludeObjects() => $_clearField(1);
   @$pb.TagNumber(1)
   PostgresqlRdbms ensureIncludeObjects() => $_ensure(0);
 
@@ -2808,13 +2711,13 @@ class PostgresqlSourceConfig extends $pb.GeneratedMessage {
   PostgresqlRdbms get excludeObjects => $_getN(1);
   @$pb.TagNumber(2)
   set excludeObjects(PostgresqlRdbms v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasExcludeObjects() => $_has(1);
   @$pb.TagNumber(2)
-  void clearExcludeObjects() => clearField(2);
+  void clearExcludeObjects() => $_clearField(2);
   @$pb.TagNumber(2)
   PostgresqlRdbms ensureExcludeObjects() => $_ensure(1);
 
@@ -2830,7 +2733,7 @@ class PostgresqlSourceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasReplicationSlot() => $_has(2);
   @$pb.TagNumber(3)
-  void clearReplicationSlot() => clearField(3);
+  void clearReplicationSlot() => $_clearField(3);
 
   /// Required. The name of the publication that includes the set of all tables that are
   /// defined in the stream's include_objects.
@@ -2844,7 +2747,7 @@ class PostgresqlSourceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasPublication() => $_has(3);
   @$pb.TagNumber(4)
-  void clearPublication() => clearField(4);
+  void clearPublication() => $_clearField(4);
 }
 
 /// MySQL Column.
@@ -2905,13 +2808,9 @@ class MysqlColumn extends $pb.GeneratedMessage {
         7, _omitFieldNames ? '' : 'ordinalPosition', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlColumn clone() => MysqlColumn()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlColumn copyWith(void Function(MysqlColumn) updates) =>
       super.copyWith((message) => updates(message as MysqlColumn))
           as MysqlColumn;
@@ -2938,7 +2837,7 @@ class MysqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasColumn() => $_has(0);
   @$pb.TagNumber(1)
-  void clearColumn() => clearField(1);
+  void clearColumn() => $_clearField(1);
 
   /// The MySQL data type. Full data types list can be found here:
   /// https://dev.mysql.com/doc/refman/8.0/en/data-types.html
@@ -2952,7 +2851,7 @@ class MysqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDataType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDataType() => clearField(2);
+  void clearDataType() => $_clearField(2);
 
   /// Column length.
   @$pb.TagNumber(3)
@@ -2965,7 +2864,7 @@ class MysqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasLength() => $_has(2);
   @$pb.TagNumber(3)
-  void clearLength() => clearField(3);
+  void clearLength() => $_clearField(3);
 
   /// Column collation.
   @$pb.TagNumber(4)
@@ -2978,7 +2877,7 @@ class MysqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasCollation() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCollation() => clearField(4);
+  void clearCollation() => $_clearField(4);
 
   /// Whether or not the column represents a primary key.
   @$pb.TagNumber(5)
@@ -2991,7 +2890,7 @@ class MysqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasPrimaryKey() => $_has(4);
   @$pb.TagNumber(5)
-  void clearPrimaryKey() => clearField(5);
+  void clearPrimaryKey() => $_clearField(5);
 
   /// Whether or not the column can accept a null value.
   @$pb.TagNumber(6)
@@ -3004,7 +2903,7 @@ class MysqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasNullable() => $_has(5);
   @$pb.TagNumber(6)
-  void clearNullable() => clearField(6);
+  void clearNullable() => $_clearField(6);
 
   /// The ordinal position of the column in the table.
   @$pb.TagNumber(7)
@@ -3017,7 +2916,7 @@ class MysqlColumn extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasOrdinalPosition() => $_has(6);
   @$pb.TagNumber(7)
-  void clearOrdinalPosition() => clearField(7);
+  void clearOrdinalPosition() => $_clearField(7);
 }
 
 /// MySQL table.
@@ -3054,13 +2953,9 @@ class MysqlTable extends $pb.GeneratedMessage {
         subBuilder: MysqlColumn.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlTable clone() => MysqlTable()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlTable copyWith(void Function(MysqlTable) updates) =>
       super.copyWith((message) => updates(message as MysqlTable)) as MysqlTable;
 
@@ -3086,13 +2981,13 @@ class MysqlTable extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTable() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTable() => clearField(1);
+  void clearTable() => $_clearField(1);
 
   /// MySQL columns in the database.
   /// When unspecified as part of include/exclude objects, includes/excludes
   /// everything.
   @$pb.TagNumber(2)
-  $core.List<MysqlColumn> get mysqlColumns => $_getList(1);
+  $pb.PbList<MysqlColumn> get mysqlColumns => $_getList(1);
 }
 
 /// MySQL database.
@@ -3129,13 +3024,9 @@ class MysqlDatabase extends $pb.GeneratedMessage {
         subBuilder: MysqlTable.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlDatabase clone() => MysqlDatabase()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlDatabase copyWith(void Function(MysqlDatabase) updates) =>
       super.copyWith((message) => updates(message as MysqlDatabase))
           as MysqlDatabase;
@@ -3163,11 +3054,11 @@ class MysqlDatabase extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDatabase() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDatabase() => clearField(1);
+  void clearDatabase() => $_clearField(1);
 
   /// Tables in the database.
   @$pb.TagNumber(2)
-  $core.List<MysqlTable> get mysqlTables => $_getList(1);
+  $pb.PbList<MysqlTable> get mysqlTables => $_getList(1);
 }
 
 /// MySQL database structure
@@ -3199,13 +3090,9 @@ class MysqlRdbms extends $pb.GeneratedMessage {
         subBuilder: MysqlDatabase.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlRdbms clone() => MysqlRdbms()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlRdbms copyWith(void Function(MysqlRdbms) updates) =>
       super.copyWith((message) => updates(message as MysqlRdbms)) as MysqlRdbms;
 
@@ -3222,7 +3109,7 @@ class MysqlRdbms extends $pb.GeneratedMessage {
 
   /// Mysql databases on the server
   @$pb.TagNumber(1)
-  $core.List<MysqlDatabase> get mysqlDatabases => $_getList(0);
+  $pb.PbList<MysqlDatabase> get mysqlDatabases => $_getList(0);
 }
 
 /// MySQL source configuration
@@ -3265,13 +3152,9 @@ class MysqlSourceConfig extends $pb.GeneratedMessage {
         3, _omitFieldNames ? '' : 'maxConcurrentCdcTasks', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlSourceConfig clone() => MysqlSourceConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MysqlSourceConfig copyWith(void Function(MysqlSourceConfig) updates) =>
       super.copyWith((message) => updates(message as MysqlSourceConfig))
           as MysqlSourceConfig;
@@ -3293,13 +3176,13 @@ class MysqlSourceConfig extends $pb.GeneratedMessage {
   MysqlRdbms get includeObjects => $_getN(0);
   @$pb.TagNumber(1)
   set includeObjects(MysqlRdbms v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasIncludeObjects() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIncludeObjects() => clearField(1);
+  void clearIncludeObjects() => $_clearField(1);
   @$pb.TagNumber(1)
   MysqlRdbms ensureIncludeObjects() => $_ensure(0);
 
@@ -3308,13 +3191,13 @@ class MysqlSourceConfig extends $pb.GeneratedMessage {
   MysqlRdbms get excludeObjects => $_getN(1);
   @$pb.TagNumber(2)
   set excludeObjects(MysqlRdbms v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasExcludeObjects() => $_has(1);
   @$pb.TagNumber(2)
-  void clearExcludeObjects() => clearField(2);
+  void clearExcludeObjects() => $_clearField(2);
   @$pb.TagNumber(2)
   MysqlRdbms ensureExcludeObjects() => $_ensure(1);
 
@@ -3330,7 +3213,7 @@ class MysqlSourceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMaxConcurrentCdcTasks() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMaxConcurrentCdcTasks() => clearField(3);
+  void clearMaxConcurrentCdcTasks() => $_clearField(3);
 }
 
 enum SourceConfig_SourceStreamConfig {
@@ -3394,13 +3277,9 @@ class SourceConfig extends $pb.GeneratedMessage {
         subBuilder: PostgresqlSourceConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SourceConfig clone() => SourceConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SourceConfig copyWith(void Function(SourceConfig) updates) =>
       super.copyWith((message) => updates(message as SourceConfig))
           as SourceConfig;
@@ -3419,7 +3298,7 @@ class SourceConfig extends $pb.GeneratedMessage {
 
   SourceConfig_SourceStreamConfig whichSourceStreamConfig() =>
       _SourceConfig_SourceStreamConfigByTag[$_whichOneof(0)]!;
-  void clearSourceStreamConfig() => clearField($_whichOneof(0));
+  void clearSourceStreamConfig() => $_clearField($_whichOneof(0));
 
   /// Required. Source connection profile resoource.
   /// Format: `projects/{project}/locations/{location}/connectionProfiles/{name}`
@@ -3433,20 +3312,20 @@ class SourceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSourceConnectionProfile() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSourceConnectionProfile() => clearField(1);
+  void clearSourceConnectionProfile() => $_clearField(1);
 
   /// Oracle data source configuration.
   @$pb.TagNumber(100)
   OracleSourceConfig get oracleSourceConfig => $_getN(1);
   @$pb.TagNumber(100)
   set oracleSourceConfig(OracleSourceConfig v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasOracleSourceConfig() => $_has(1);
   @$pb.TagNumber(100)
-  void clearOracleSourceConfig() => clearField(100);
+  void clearOracleSourceConfig() => $_clearField(100);
   @$pb.TagNumber(100)
   OracleSourceConfig ensureOracleSourceConfig() => $_ensure(1);
 
@@ -3455,13 +3334,13 @@ class SourceConfig extends $pb.GeneratedMessage {
   MysqlSourceConfig get mysqlSourceConfig => $_getN(2);
   @$pb.TagNumber(101)
   set mysqlSourceConfig(MysqlSourceConfig v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasMysqlSourceConfig() => $_has(2);
   @$pb.TagNumber(101)
-  void clearMysqlSourceConfig() => clearField(101);
+  void clearMysqlSourceConfig() => $_clearField(101);
   @$pb.TagNumber(101)
   MysqlSourceConfig ensureMysqlSourceConfig() => $_ensure(2);
 
@@ -3470,13 +3349,13 @@ class SourceConfig extends $pb.GeneratedMessage {
   PostgresqlSourceConfig get postgresqlSourceConfig => $_getN(3);
   @$pb.TagNumber(102)
   set postgresqlSourceConfig(PostgresqlSourceConfig v) {
-    setField(102, v);
+    $_setField(102, v);
   }
 
   @$pb.TagNumber(102)
   $core.bool hasPostgresqlSourceConfig() => $_has(3);
   @$pb.TagNumber(102)
-  void clearPostgresqlSourceConfig() => clearField(102);
+  void clearPostgresqlSourceConfig() => $_clearField(102);
   @$pb.TagNumber(102)
   PostgresqlSourceConfig ensurePostgresqlSourceConfig() => $_ensure(3);
 }
@@ -3499,13 +3378,9 @@ class AvroFileFormat extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AvroFileFormat clone() => AvroFileFormat()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AvroFileFormat copyWith(void Function(AvroFileFormat) updates) =>
       super.copyWith((message) => updates(message as AvroFileFormat))
           as AvroFileFormat;
@@ -3565,13 +3440,9 @@ class JsonFileFormat extends $pb.GeneratedMessage {
         enumValues: JsonFileFormat_JsonCompression.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JsonFileFormat clone() => JsonFileFormat()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JsonFileFormat copyWith(void Function(JsonFileFormat) updates) =>
       super.copyWith((message) => updates(message as JsonFileFormat))
           as JsonFileFormat;
@@ -3593,26 +3464,26 @@ class JsonFileFormat extends $pb.GeneratedMessage {
   JsonFileFormat_SchemaFileFormat get schemaFileFormat => $_getN(0);
   @$pb.TagNumber(1)
   set schemaFileFormat(JsonFileFormat_SchemaFileFormat v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasSchemaFileFormat() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSchemaFileFormat() => clearField(1);
+  void clearSchemaFileFormat() => $_clearField(1);
 
   /// Compression of the loaded JSON file.
   @$pb.TagNumber(2)
   JsonFileFormat_JsonCompression get compression => $_getN(1);
   @$pb.TagNumber(2)
   set compression(JsonFileFormat_JsonCompression v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCompression() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCompression() => clearField(2);
+  void clearCompression() => $_clearField(2);
 }
 
 enum GcsDestinationConfig_FileFormat { avroFileFormat, jsonFileFormat, notSet }
@@ -3622,7 +3493,7 @@ class GcsDestinationConfig extends $pb.GeneratedMessage {
   factory GcsDestinationConfig({
     $core.String? path,
     $core.int? fileRotationMb,
-    $10.Duration? fileRotationInterval,
+    $0.Duration? fileRotationInterval,
     AvroFileFormat? avroFileFormat,
     JsonFileFormat? jsonFileFormat,
   }) {
@@ -3667,22 +3538,18 @@ class GcsDestinationConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'path')
     ..a<$core.int>(
         2, _omitFieldNames ? '' : 'fileRotationMb', $pb.PbFieldType.O3)
-    ..aOM<$10.Duration>(3, _omitFieldNames ? '' : 'fileRotationInterval',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(3, _omitFieldNames ? '' : 'fileRotationInterval',
+        subBuilder: $0.Duration.create)
     ..aOM<AvroFileFormat>(100, _omitFieldNames ? '' : 'avroFileFormat',
         subBuilder: AvroFileFormat.create)
     ..aOM<JsonFileFormat>(101, _omitFieldNames ? '' : 'jsonFileFormat',
         subBuilder: JsonFileFormat.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GcsDestinationConfig clone() =>
       GcsDestinationConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GcsDestinationConfig copyWith(void Function(GcsDestinationConfig) updates) =>
       super.copyWith((message) => updates(message as GcsDestinationConfig))
           as GcsDestinationConfig;
@@ -3701,7 +3568,7 @@ class GcsDestinationConfig extends $pb.GeneratedMessage {
 
   GcsDestinationConfig_FileFormat whichFileFormat() =>
       _GcsDestinationConfig_FileFormatByTag[$_whichOneof(0)]!;
-  void clearFileFormat() => clearField($_whichOneof(0));
+  void clearFileFormat() => $_clearField($_whichOneof(0));
 
   /// Path inside the Cloud Storage bucket to write data to.
   @$pb.TagNumber(1)
@@ -3714,7 +3581,7 @@ class GcsDestinationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPath() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPath() => clearField(1);
+  void clearPath() => $_clearField(1);
 
   /// The maximum file size to be saved in the bucket.
   @$pb.TagNumber(2)
@@ -3727,36 +3594,36 @@ class GcsDestinationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasFileRotationMb() => $_has(1);
   @$pb.TagNumber(2)
-  void clearFileRotationMb() => clearField(2);
+  void clearFileRotationMb() => $_clearField(2);
 
   /// The maximum duration for which new events are added before a file is
   /// closed and a new file is created.
   @$pb.TagNumber(3)
-  $10.Duration get fileRotationInterval => $_getN(2);
+  $0.Duration get fileRotationInterval => $_getN(2);
   @$pb.TagNumber(3)
-  set fileRotationInterval($10.Duration v) {
-    setField(3, v);
+  set fileRotationInterval($0.Duration v) {
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasFileRotationInterval() => $_has(2);
   @$pb.TagNumber(3)
-  void clearFileRotationInterval() => clearField(3);
+  void clearFileRotationInterval() => $_clearField(3);
   @$pb.TagNumber(3)
-  $10.Duration ensureFileRotationInterval() => $_ensure(2);
+  $0.Duration ensureFileRotationInterval() => $_ensure(2);
 
   /// AVRO file format configuration.
   @$pb.TagNumber(100)
   AvroFileFormat get avroFileFormat => $_getN(3);
   @$pb.TagNumber(100)
   set avroFileFormat(AvroFileFormat v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasAvroFileFormat() => $_has(3);
   @$pb.TagNumber(100)
-  void clearAvroFileFormat() => clearField(100);
+  void clearAvroFileFormat() => $_clearField(100);
   @$pb.TagNumber(100)
   AvroFileFormat ensureAvroFileFormat() => $_ensure(3);
 
@@ -3765,13 +3632,13 @@ class GcsDestinationConfig extends $pb.GeneratedMessage {
   JsonFileFormat get jsonFileFormat => $_getN(4);
   @$pb.TagNumber(101)
   set jsonFileFormat(JsonFileFormat v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasJsonFileFormat() => $_has(4);
   @$pb.TagNumber(101)
-  void clearJsonFileFormat() => clearField(101);
+  void clearJsonFileFormat() => $_clearField(101);
   @$pb.TagNumber(101)
   JsonFileFormat ensureJsonFileFormat() => $_ensure(4);
 }
@@ -3805,14 +3672,10 @@ class BigQueryDestinationConfig_SingleTargetDataset
     ..aOS(1, _omitFieldNames ? '' : 'datasetId')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryDestinationConfig_SingleTargetDataset clone() =>
       BigQueryDestinationConfig_SingleTargetDataset()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryDestinationConfig_SingleTargetDataset copyWith(
           void Function(BigQueryDestinationConfig_SingleTargetDataset)
               updates) =>
@@ -3847,7 +3710,7 @@ class BigQueryDestinationConfig_SingleTargetDataset
   @$pb.TagNumber(1)
   $core.bool hasDatasetId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDatasetId() => clearField(1);
+  void clearDatasetId() => $_clearField(1);
 }
 
 /// Dataset template used for dynamic dataset creation.
@@ -3893,15 +3756,11 @@ class BigQueryDestinationConfig_SourceHierarchyDatasets_DatasetTemplate
     ..aOS(3, _omitFieldNames ? '' : 'kmsKeyName')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryDestinationConfig_SourceHierarchyDatasets_DatasetTemplate clone() =>
       BigQueryDestinationConfig_SourceHierarchyDatasets_DatasetTemplate()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryDestinationConfig_SourceHierarchyDatasets_DatasetTemplate copyWith(
           void Function(
                   BigQueryDestinationConfig_SourceHierarchyDatasets_DatasetTemplate)
@@ -3943,7 +3802,7 @@ class BigQueryDestinationConfig_SourceHierarchyDatasets_DatasetTemplate
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
-  void clearLocation() => clearField(1);
+  void clearLocation() => $_clearField(1);
 
   /// If supplied, every created dataset will have its name prefixed by the
   /// provided value. The prefix and name will be separated by an underscore.
@@ -3958,7 +3817,7 @@ class BigQueryDestinationConfig_SourceHierarchyDatasets_DatasetTemplate
   @$pb.TagNumber(2)
   $core.bool hasDatasetIdPrefix() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDatasetIdPrefix() => clearField(2);
+  void clearDatasetIdPrefix() => $_clearField(2);
 
   /// Describes the Cloud KMS encryption key that will be used to
   /// protect destination BigQuery table. The BigQuery Service Account
@@ -3977,7 +3836,7 @@ class BigQueryDestinationConfig_SourceHierarchyDatasets_DatasetTemplate
   @$pb.TagNumber(3)
   $core.bool hasKmsKeyName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearKmsKeyName() => clearField(3);
+  void clearKmsKeyName() => $_clearField(3);
 }
 
 /// Destination datasets are created so that hierarchy of the destination data
@@ -4018,15 +3877,11 @@ class BigQueryDestinationConfig_SourceHierarchyDatasets
                 .create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryDestinationConfig_SourceHierarchyDatasets clone() =>
       BigQueryDestinationConfig_SourceHierarchyDatasets()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryDestinationConfig_SourceHierarchyDatasets copyWith(
           void Function(BigQueryDestinationConfig_SourceHierarchyDatasets)
               updates) =>
@@ -4056,13 +3911,13 @@ class BigQueryDestinationConfig_SourceHierarchyDatasets
   @$pb.TagNumber(2)
   set datasetTemplate(
       BigQueryDestinationConfig_SourceHierarchyDatasets_DatasetTemplate v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasDatasetTemplate() => $_has(0);
   @$pb.TagNumber(2)
-  void clearDatasetTemplate() => clearField(2);
+  void clearDatasetTemplate() => $_clearField(2);
   @$pb.TagNumber(2)
   BigQueryDestinationConfig_SourceHierarchyDatasets_DatasetTemplate
       ensureDatasetTemplate() => $_ensure(0);
@@ -4078,7 +3933,7 @@ class BigQueryDestinationConfig extends $pb.GeneratedMessage {
   factory BigQueryDestinationConfig({
     BigQueryDestinationConfig_SingleTargetDataset? singleTargetDataset,
     BigQueryDestinationConfig_SourceHierarchyDatasets? sourceHierarchyDatasets,
-    $10.Duration? dataFreshness,
+    $0.Duration? dataFreshness,
   }) {
     final $result = create();
     if (singleTargetDataset != null) {
@@ -4118,18 +3973,14 @@ class BigQueryDestinationConfig extends $pb.GeneratedMessage {
     ..aOM<BigQueryDestinationConfig_SourceHierarchyDatasets>(
         202, _omitFieldNames ? '' : 'sourceHierarchyDatasets',
         subBuilder: BigQueryDestinationConfig_SourceHierarchyDatasets.create)
-    ..aOM<$10.Duration>(300, _omitFieldNames ? '' : 'dataFreshness',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(300, _omitFieldNames ? '' : 'dataFreshness',
+        subBuilder: $0.Duration.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryDestinationConfig clone() =>
       BigQueryDestinationConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BigQueryDestinationConfig copyWith(
           void Function(BigQueryDestinationConfig) updates) =>
       super.copyWith((message) => updates(message as BigQueryDestinationConfig))
@@ -4149,7 +4000,7 @@ class BigQueryDestinationConfig extends $pb.GeneratedMessage {
 
   BigQueryDestinationConfig_DatasetConfig whichDatasetConfig() =>
       _BigQueryDestinationConfig_DatasetConfigByTag[$_whichOneof(0)]!;
-  void clearDatasetConfig() => clearField($_whichOneof(0));
+  void clearDatasetConfig() => $_clearField($_whichOneof(0));
 
   /// Single destination dataset.
   @$pb.TagNumber(201)
@@ -4157,13 +4008,13 @@ class BigQueryDestinationConfig extends $pb.GeneratedMessage {
       $_getN(0);
   @$pb.TagNumber(201)
   set singleTargetDataset(BigQueryDestinationConfig_SingleTargetDataset v) {
-    setField(201, v);
+    $_setField(201, v);
   }
 
   @$pb.TagNumber(201)
   $core.bool hasSingleTargetDataset() => $_has(0);
   @$pb.TagNumber(201)
-  void clearSingleTargetDataset() => clearField(201);
+  void clearSingleTargetDataset() => $_clearField(201);
   @$pb.TagNumber(201)
   BigQueryDestinationConfig_SingleTargetDataset ensureSingleTargetDataset() =>
       $_ensure(0);
@@ -4175,13 +4026,13 @@ class BigQueryDestinationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(202)
   set sourceHierarchyDatasets(
       BigQueryDestinationConfig_SourceHierarchyDatasets v) {
-    setField(202, v);
+    $_setField(202, v);
   }
 
   @$pb.TagNumber(202)
   $core.bool hasSourceHierarchyDatasets() => $_has(1);
   @$pb.TagNumber(202)
-  void clearSourceHierarchyDatasets() => clearField(202);
+  void clearSourceHierarchyDatasets() => $_clearField(202);
   @$pb.TagNumber(202)
   BigQueryDestinationConfig_SourceHierarchyDatasets
       ensureSourceHierarchyDatasets() => $_ensure(1);
@@ -4191,18 +4042,18 @@ class BigQueryDestinationConfig extends $pb.GeneratedMessage {
   /// future, but existing tables will not be impacted. Lower values mean that
   /// queries will return fresher data, but may result in higher cost.
   @$pb.TagNumber(300)
-  $10.Duration get dataFreshness => $_getN(2);
+  $0.Duration get dataFreshness => $_getN(2);
   @$pb.TagNumber(300)
-  set dataFreshness($10.Duration v) {
-    setField(300, v);
+  set dataFreshness($0.Duration v) {
+    $_setField(300, v);
   }
 
   @$pb.TagNumber(300)
   $core.bool hasDataFreshness() => $_has(2);
   @$pb.TagNumber(300)
-  void clearDataFreshness() => clearField(300);
+  void clearDataFreshness() => $_clearField(300);
   @$pb.TagNumber(300)
-  $10.Duration ensureDataFreshness() => $_ensure(2);
+  $0.Duration ensureDataFreshness() => $_ensure(2);
 }
 
 enum DestinationConfig_DestinationStreamConfig {
@@ -4259,13 +4110,9 @@ class DestinationConfig extends $pb.GeneratedMessage {
         subBuilder: BigQueryDestinationConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DestinationConfig clone() => DestinationConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DestinationConfig copyWith(void Function(DestinationConfig) updates) =>
       super.copyWith((message) => updates(message as DestinationConfig))
           as DestinationConfig;
@@ -4284,7 +4131,7 @@ class DestinationConfig extends $pb.GeneratedMessage {
 
   DestinationConfig_DestinationStreamConfig whichDestinationStreamConfig() =>
       _DestinationConfig_DestinationStreamConfigByTag[$_whichOneof(0)]!;
-  void clearDestinationStreamConfig() => clearField($_whichOneof(0));
+  void clearDestinationStreamConfig() => $_clearField($_whichOneof(0));
 
   /// Required. Destination connection profile resource.
   /// Format: `projects/{project}/locations/{location}/connectionProfiles/{name}`
@@ -4298,20 +4145,20 @@ class DestinationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDestinationConnectionProfile() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDestinationConnectionProfile() => clearField(1);
+  void clearDestinationConnectionProfile() => $_clearField(1);
 
   /// A configuration for how data should be loaded to Cloud Storage.
   @$pb.TagNumber(100)
   GcsDestinationConfig get gcsDestinationConfig => $_getN(1);
   @$pb.TagNumber(100)
   set gcsDestinationConfig(GcsDestinationConfig v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasGcsDestinationConfig() => $_has(1);
   @$pb.TagNumber(100)
-  void clearGcsDestinationConfig() => clearField(100);
+  void clearGcsDestinationConfig() => $_clearField(100);
   @$pb.TagNumber(100)
   GcsDestinationConfig ensureGcsDestinationConfig() => $_ensure(1);
 
@@ -4320,13 +4167,13 @@ class DestinationConfig extends $pb.GeneratedMessage {
   BigQueryDestinationConfig get bigqueryDestinationConfig => $_getN(2);
   @$pb.TagNumber(101)
   set bigqueryDestinationConfig(BigQueryDestinationConfig v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasBigqueryDestinationConfig() => $_has(2);
   @$pb.TagNumber(101)
-  void clearBigqueryDestinationConfig() => clearField(101);
+  void clearBigqueryDestinationConfig() => $_clearField(101);
   @$pb.TagNumber(101)
   BigQueryDestinationConfig ensureBigqueryDestinationConfig() => $_ensure(2);
 }
@@ -4388,14 +4235,10 @@ class Stream_BackfillAllStrategy extends $pb.GeneratedMessage {
         subBuilder: PostgresqlRdbms.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Stream_BackfillAllStrategy clone() =>
       Stream_BackfillAllStrategy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Stream_BackfillAllStrategy copyWith(
           void Function(Stream_BackfillAllStrategy) updates) =>
       super.copyWith(
@@ -4416,20 +4259,20 @@ class Stream_BackfillAllStrategy extends $pb.GeneratedMessage {
 
   Stream_BackfillAllStrategy_ExcludedObjects whichExcludedObjects() =>
       _Stream_BackfillAllStrategy_ExcludedObjectsByTag[$_whichOneof(0)]!;
-  void clearExcludedObjects() => clearField($_whichOneof(0));
+  void clearExcludedObjects() => $_clearField($_whichOneof(0));
 
   /// Oracle data source objects to avoid backfilling.
   @$pb.TagNumber(1)
   OracleRdbms get oracleExcludedObjects => $_getN(0);
   @$pb.TagNumber(1)
   set oracleExcludedObjects(OracleRdbms v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasOracleExcludedObjects() => $_has(0);
   @$pb.TagNumber(1)
-  void clearOracleExcludedObjects() => clearField(1);
+  void clearOracleExcludedObjects() => $_clearField(1);
   @$pb.TagNumber(1)
   OracleRdbms ensureOracleExcludedObjects() => $_ensure(0);
 
@@ -4438,13 +4281,13 @@ class Stream_BackfillAllStrategy extends $pb.GeneratedMessage {
   MysqlRdbms get mysqlExcludedObjects => $_getN(1);
   @$pb.TagNumber(2)
   set mysqlExcludedObjects(MysqlRdbms v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasMysqlExcludedObjects() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMysqlExcludedObjects() => clearField(2);
+  void clearMysqlExcludedObjects() => $_clearField(2);
   @$pb.TagNumber(2)
   MysqlRdbms ensureMysqlExcludedObjects() => $_ensure(1);
 
@@ -4453,13 +4296,13 @@ class Stream_BackfillAllStrategy extends $pb.GeneratedMessage {
   PostgresqlRdbms get postgresqlExcludedObjects => $_getN(2);
   @$pb.TagNumber(3)
   set postgresqlExcludedObjects(PostgresqlRdbms v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasPostgresqlExcludedObjects() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPostgresqlExcludedObjects() => clearField(3);
+  void clearPostgresqlExcludedObjects() => $_clearField(3);
   @$pb.TagNumber(3)
   PostgresqlRdbms ensurePostgresqlExcludedObjects() => $_ensure(2);
 }
@@ -4482,14 +4325,10 @@ class Stream_BackfillNoneStrategy extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Stream_BackfillNoneStrategy clone() =>
       Stream_BackfillNoneStrategy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Stream_BackfillNoneStrategy copyWith(
           void Function(Stream_BackfillNoneStrategy) updates) =>
       super.copyWith(
@@ -4518,7 +4357,7 @@ class Stream extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? displayName,
     SourceConfig? sourceConfig,
     DestinationConfig? destinationConfig,
@@ -4539,7 +4378,7 @@ class Stream extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (displayName != null) {
       $result.displayName = displayName;
@@ -4616,13 +4455,9 @@ class Stream extends $pb.GeneratedMessage {
         subBuilder: Stream_BackfillNoneStrategy.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Stream clone() => Stream()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Stream copyWith(void Function(Stream) updates) =>
       super.copyWith((message) => updates(message as Stream)) as Stream;
 
@@ -4639,7 +4474,7 @@ class Stream extends $pb.GeneratedMessage {
 
   Stream_BackfillStrategy whichBackfillStrategy() =>
       _Stream_BackfillStrategyByTag[$_whichOneof(0)]!;
-  void clearBackfillStrategy() => clearField($_whichOneof(0));
+  void clearBackfillStrategy() => $_clearField($_whichOneof(0));
 
   /// Output only. The stream's name.
   @$pb.TagNumber(1)
@@ -4652,20 +4487,20 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The creation time of the stream.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -4674,19 +4509,19 @@ class Stream extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Required. Display name.
   @$pb.TagNumber(5)
@@ -4699,20 +4534,20 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 
   /// Required. Source connection profile configuration.
   @$pb.TagNumber(6)
   SourceConfig get sourceConfig => $_getN(5);
   @$pb.TagNumber(6)
   set sourceConfig(SourceConfig v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasSourceConfig() => $_has(5);
   @$pb.TagNumber(6)
-  void clearSourceConfig() => clearField(6);
+  void clearSourceConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   SourceConfig ensureSourceConfig() => $_ensure(5);
 
@@ -4721,13 +4556,13 @@ class Stream extends $pb.GeneratedMessage {
   DestinationConfig get destinationConfig => $_getN(6);
   @$pb.TagNumber(7)
   set destinationConfig(DestinationConfig v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasDestinationConfig() => $_has(6);
   @$pb.TagNumber(7)
-  void clearDestinationConfig() => clearField(7);
+  void clearDestinationConfig() => $_clearField(7);
   @$pb.TagNumber(7)
   DestinationConfig ensureDestinationConfig() => $_ensure(6);
 
@@ -4736,17 +4571,17 @@ class Stream extends $pb.GeneratedMessage {
   Stream_State get state => $_getN(7);
   @$pb.TagNumber(8)
   set state(Stream_State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// Output only. Errors on the Stream.
   @$pb.TagNumber(9)
-  $core.List<Error> get errors => $_getList(8);
+  $pb.PbList<Error> get errors => $_getList(8);
 
   /// Immutable. A reference to a KMS encryption key.
   /// If provided, it will be used to encrypt the data.
@@ -4762,7 +4597,7 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasCustomerManagedEncryptionKey() => $_has(9);
   @$pb.TagNumber(10)
-  void clearCustomerManagedEncryptionKey() => clearField(10);
+  void clearCustomerManagedEncryptionKey() => $_clearField(10);
 
   /// Automatically backfill objects included in the stream source
   /// configuration. Specific objects can be excluded.
@@ -4770,13 +4605,13 @@ class Stream extends $pb.GeneratedMessage {
   Stream_BackfillAllStrategy get backfillAll => $_getN(10);
   @$pb.TagNumber(101)
   set backfillAll(Stream_BackfillAllStrategy v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasBackfillAll() => $_has(10);
   @$pb.TagNumber(101)
-  void clearBackfillAll() => clearField(101);
+  void clearBackfillAll() => $_clearField(101);
   @$pb.TagNumber(101)
   Stream_BackfillAllStrategy ensureBackfillAll() => $_ensure(10);
 
@@ -4785,13 +4620,13 @@ class Stream extends $pb.GeneratedMessage {
   Stream_BackfillNoneStrategy get backfillNone => $_getN(11);
   @$pb.TagNumber(102)
   set backfillNone(Stream_BackfillNoneStrategy v) {
-    setField(102, v);
+    $_setField(102, v);
   }
 
   @$pb.TagNumber(102)
   $core.bool hasBackfillNone() => $_has(11);
   @$pb.TagNumber(102)
-  void clearBackfillNone() => clearField(102);
+  void clearBackfillNone() => $_clearField(102);
   @$pb.TagNumber(102)
   Stream_BackfillNoneStrategy ensureBackfillNone() => $_ensure(11);
 }
@@ -4803,7 +4638,7 @@ class Error extends $pb.GeneratedMessage {
     $core.String? errorUuid,
     $core.String? message,
     $2.Timestamp? errorTime,
-    $core.Map<$core.String, $core.String>? details,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? details,
   }) {
     final $result = create();
     if (reason != null) {
@@ -4819,7 +4654,7 @@ class Error extends $pb.GeneratedMessage {
       $result.errorTime = errorTime;
     }
     if (details != null) {
-      $result.details.addAll(details);
+      $result.details.addEntries(details);
     }
     return $result;
   }
@@ -4848,13 +4683,9 @@ class Error extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.datastream.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Error clone() => Error()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Error copyWith(void Function(Error) updates) =>
       super.copyWith((message) => updates(message as Error)) as Error;
 
@@ -4880,7 +4711,7 @@ class Error extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasReason() => $_has(0);
   @$pb.TagNumber(1)
-  void clearReason() => clearField(1);
+  void clearReason() => $_clearField(1);
 
   /// A unique identifier for this specific error,
   /// allowing it to be traced throughout the system in logs and API responses.
@@ -4894,7 +4725,7 @@ class Error extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasErrorUuid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearErrorUuid() => clearField(2);
+  void clearErrorUuid() => $_clearField(2);
 
   /// A message containing more information about the error that occurred.
   @$pb.TagNumber(3)
@@ -4907,26 +4738,26 @@ class Error extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMessage() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMessage() => clearField(3);
+  void clearMessage() => $_clearField(3);
 
   /// The time when the error occurred.
   @$pb.TagNumber(4)
   $2.Timestamp get errorTime => $_getN(3);
   @$pb.TagNumber(4)
   set errorTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasErrorTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearErrorTime() => clearField(4);
+  void clearErrorTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureErrorTime() => $_ensure(3);
 
   /// Additional information about the error.
   @$pb.TagNumber(5)
-  $core.Map<$core.String, $core.String> get details => $_getMap(4);
+  $pb.PbMap<$core.String, $core.String> get details => $_getMap(4);
 }
 
 /// The data within all ConnectionProfile events.
@@ -4957,14 +4788,10 @@ class ConnectionProfileEventData extends $pb.GeneratedMessage {
         subBuilder: ConnectionProfile.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ConnectionProfileEventData clone() =>
       ConnectionProfileEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ConnectionProfileEventData copyWith(
           void Function(ConnectionProfileEventData) updates) =>
       super.copyWith(
@@ -4988,13 +4815,13 @@ class ConnectionProfileEventData extends $pb.GeneratedMessage {
   ConnectionProfile get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ConnectionProfile v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ConnectionProfile ensurePayload() => $_ensure(0);
 }
@@ -5027,14 +4854,10 @@ class PrivateConnectionEventData extends $pb.GeneratedMessage {
         subBuilder: PrivateConnection.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PrivateConnectionEventData clone() =>
       PrivateConnectionEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PrivateConnectionEventData copyWith(
           void Function(PrivateConnectionEventData) updates) =>
       super.copyWith(
@@ -5058,13 +4881,13 @@ class PrivateConnectionEventData extends $pb.GeneratedMessage {
   PrivateConnection get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(PrivateConnection v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   PrivateConnection ensurePayload() => $_ensure(0);
 }
@@ -5097,13 +4920,9 @@ class StreamEventData extends $pb.GeneratedMessage {
         subBuilder: Stream.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StreamEventData clone() => StreamEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StreamEventData copyWith(void Function(StreamEventData) updates) =>
       super.copyWith((message) => updates(message as StreamEventData))
           as StreamEventData;
@@ -5125,13 +4944,13 @@ class StreamEventData extends $pb.GeneratedMessage {
   Stream get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Stream v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Stream ensurePayload() => $_ensure(0);
 }
@@ -5163,13 +4982,9 @@ class RouteEventData extends $pb.GeneratedMessage {
     ..aOM<Route>(1, _omitFieldNames ? '' : 'payload', subBuilder: Route.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RouteEventData clone() => RouteEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RouteEventData copyWith(void Function(RouteEventData) updates) =>
       super.copyWith((message) => updates(message as RouteEventData))
           as RouteEventData;
@@ -5191,13 +5006,13 @@ class RouteEventData extends $pb.GeneratedMessage {
   Route get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Route v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Route ensurePayload() => $_ensure(0);
 }

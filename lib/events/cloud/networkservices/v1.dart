@@ -1,11 +1,3 @@
-export '../../../src/events/cloud/networkservices/v1/data.pbenum.dart'
-    show
-        EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria,
-        EndpointPolicy_EndpointPolicyType,
-        Gateway_Type,
-        GrpcRoute_MethodMatch_Type,
-        GrpcRoute_HeaderMatch_Type,
-        HttpRoute_Redirect_ResponseCode;
 export '../../../src/events/cloud/networkservices/v1/data.pb.dart'
     show
         TrafficPortSelector,
@@ -62,6 +54,14 @@ export '../../../src/events/cloud/networkservices/v1/data.pb.dart'
         GrpcRouteEventData,
         MeshEventData,
         TcpRouteEventData;
+export '../../../src/events/cloud/networkservices/v1/data.pbenum.dart'
+    show
+        EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria,
+        EndpointPolicy_EndpointPolicyType,
+        Gateway_Type,
+        GrpcRoute_MethodMatch_Type,
+        GrpcRoute_HeaderMatch_Type,
+        HttpRoute_Redirect_ResponseCode;
 export '../../../src/events/cloud/networkservices/v1/events.pb.dart'
     show
         EndpointPolicyCreatedEvent,

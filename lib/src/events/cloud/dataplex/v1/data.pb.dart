@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/dataplex/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,9 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $10;
+import '../../../../protobuf/duration.pb.dart' as $0;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -47,13 +49,9 @@ class Lake_Metastore extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'service')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Lake_Metastore clone() => Lake_Metastore()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Lake_Metastore copyWith(void Function(Lake_Metastore) updates) =>
       super.copyWith((message) => updates(message as Lake_Metastore))
           as Lake_Metastore;
@@ -84,7 +82,7 @@ class Lake_Metastore extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
-  void clearService() => clearField(1);
+  void clearService() => $_clearField(1);
 }
 
 /// Status of Lake and Dataproc Metastore service instance association.
@@ -134,14 +132,10 @@ class Lake_MetastoreStatus extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'endpoint')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Lake_MetastoreStatus clone() =>
       Lake_MetastoreStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Lake_MetastoreStatus copyWith(void Function(Lake_MetastoreStatus) updates) =>
       super.copyWith((message) => updates(message as Lake_MetastoreStatus))
           as Lake_MetastoreStatus;
@@ -163,13 +157,13 @@ class Lake_MetastoreStatus extends $pb.GeneratedMessage {
   Lake_MetastoreStatus_State get state => $_getN(0);
   @$pb.TagNumber(1)
   set state(Lake_MetastoreStatus_State v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
-  void clearState() => clearField(1);
+  void clearState() => $_clearField(1);
 
   /// Additional information about the current status.
   @$pb.TagNumber(2)
@@ -182,20 +176,20 @@ class Lake_MetastoreStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMessage() => clearField(2);
+  void clearMessage() => $_clearField(2);
 
   /// Last update time of the metastore status of the lake.
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -210,7 +204,7 @@ class Lake_MetastoreStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasEndpoint() => $_has(3);
   @$pb.TagNumber(4)
-  void clearEndpoint() => clearField(4);
+  void clearEndpoint() => $_clearField(4);
 }
 
 /// A lake is a centralized repository for managing enterprise data across the
@@ -228,7 +222,7 @@ class Lake extends $pb.GeneratedMessage {
     $core.String? uid,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     State? state,
     $core.String? serviceAccount,
@@ -253,7 +247,7 @@ class Lake extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -314,13 +308,9 @@ class Lake extends $pb.GeneratedMessage {
         subBuilder: Lake_MetastoreStatus.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Lake clone() => Lake()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Lake copyWith(void Function(Lake) updates) =>
       super.copyWith((message) => updates(message as Lake)) as Lake;
 
@@ -347,7 +337,7 @@ class Lake extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Optional. User friendly display name.
   @$pb.TagNumber(2)
@@ -360,7 +350,7 @@ class Lake extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// Output only. System generated globally unique ID for the lake. This ID will
   /// be different if the lake is deleted and re-created with the same name.
@@ -374,20 +364,20 @@ class Lake extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUid() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUid() => clearField(3);
+  void clearUid() => $_clearField(3);
 
   /// Output only. The time when the lake was created.
   @$pb.TagNumber(4)
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
   set createTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCreateTime() => clearField(4);
+  void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -396,19 +386,19 @@ class Lake extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
   set updateTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUpdateTime() => clearField(5);
+  void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. User-defined labels for the lake.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(5);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(5);
 
   /// Optional. Description of the lake.
   @$pb.TagNumber(7)
@@ -421,20 +411,20 @@ class Lake extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasDescription() => $_has(6);
   @$pb.TagNumber(7)
-  void clearDescription() => clearField(7);
+  void clearDescription() => $_clearField(7);
 
   /// Output only. Current state of the lake.
   @$pb.TagNumber(8)
   State get state => $_getN(7);
   @$pb.TagNumber(8)
   set state(State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// Output only. Service account associated with this lake. This service
   /// account must be authorized to access or operate on resources managed by the
@@ -449,7 +439,7 @@ class Lake extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasServiceAccount() => $_has(8);
   @$pb.TagNumber(9)
-  void clearServiceAccount() => clearField(9);
+  void clearServiceAccount() => $_clearField(9);
 
   /// Optional. Settings to manage lake and Dataproc Metastore service instance
   /// association.
@@ -457,13 +447,13 @@ class Lake extends $pb.GeneratedMessage {
   Lake_Metastore get metastore => $_getN(9);
   @$pb.TagNumber(102)
   set metastore(Lake_Metastore v) {
-    setField(102, v);
+    $_setField(102, v);
   }
 
   @$pb.TagNumber(102)
   $core.bool hasMetastore() => $_has(9);
   @$pb.TagNumber(102)
-  void clearMetastore() => clearField(102);
+  void clearMetastore() => $_clearField(102);
   @$pb.TagNumber(102)
   Lake_Metastore ensureMetastore() => $_ensure(9);
 
@@ -472,13 +462,13 @@ class Lake extends $pb.GeneratedMessage {
   AssetStatus get assetStatus => $_getN(10);
   @$pb.TagNumber(103)
   set assetStatus(AssetStatus v) {
-    setField(103, v);
+    $_setField(103, v);
   }
 
   @$pb.TagNumber(103)
   $core.bool hasAssetStatus() => $_has(10);
   @$pb.TagNumber(103)
-  void clearAssetStatus() => clearField(103);
+  void clearAssetStatus() => $_clearField(103);
   @$pb.TagNumber(103)
   AssetStatus ensureAssetStatus() => $_ensure(10);
 
@@ -487,13 +477,13 @@ class Lake extends $pb.GeneratedMessage {
   Lake_MetastoreStatus get metastoreStatus => $_getN(11);
   @$pb.TagNumber(104)
   set metastoreStatus(Lake_MetastoreStatus v) {
-    setField(104, v);
+    $_setField(104, v);
   }
 
   @$pb.TagNumber(104)
   $core.bool hasMetastoreStatus() => $_has(11);
   @$pb.TagNumber(104)
-  void clearMetastoreStatus() => clearField(104);
+  void clearMetastoreStatus() => $_clearField(104);
   @$pb.TagNumber(104)
   Lake_MetastoreStatus ensureMetastoreStatus() => $_ensure(11);
 }
@@ -537,13 +527,9 @@ class AssetStatus extends $pb.GeneratedMessage {
         $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AssetStatus clone() => AssetStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AssetStatus copyWith(void Function(AssetStatus) updates) =>
       super.copyWith((message) => updates(message as AssetStatus))
           as AssetStatus;
@@ -564,13 +550,13 @@ class AssetStatus extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(1)
   set updateTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUpdateTime() => clearField(1);
+  void clearUpdateTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureUpdateTime() => $_ensure(0);
 
@@ -585,7 +571,7 @@ class AssetStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasActiveAssets() => $_has(1);
   @$pb.TagNumber(2)
-  void clearActiveAssets() => clearField(2);
+  void clearActiveAssets() => $_clearField(2);
 
   /// Number of assets that are in process of updating the security policy on
   /// attached resources.
@@ -599,7 +585,7 @@ class AssetStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasSecurityPolicyApplyingAssets() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSecurityPolicyApplyingAssets() => clearField(3);
+  void clearSecurityPolicyApplyingAssets() => $_clearField(3);
 }
 
 /// Settings for resources attached as assets within a zone.
@@ -634,13 +620,9 @@ class Zone_ResourceSpec extends $pb.GeneratedMessage {
         enumValues: Zone_ResourceSpec_LocationType.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Zone_ResourceSpec clone() => Zone_ResourceSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Zone_ResourceSpec copyWith(void Function(Zone_ResourceSpec) updates) =>
       super.copyWith((message) => updates(message as Zone_ResourceSpec))
           as Zone_ResourceSpec;
@@ -663,13 +645,13 @@ class Zone_ResourceSpec extends $pb.GeneratedMessage {
   Zone_ResourceSpec_LocationType get locationType => $_getN(0);
   @$pb.TagNumber(1)
   set locationType(Zone_ResourceSpec_LocationType v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasLocationType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearLocationType() => clearField(1);
+  void clearLocationType() => $_clearField(1);
 }
 
 /// Describe CSV and similar semi-structured data formats.
@@ -714,14 +696,10 @@ class Zone_DiscoverySpec_CsvOptions extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'disableTypeInference')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Zone_DiscoverySpec_CsvOptions clone() =>
       Zone_DiscoverySpec_CsvOptions()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Zone_DiscoverySpec_CsvOptions copyWith(
           void Function(Zone_DiscoverySpec_CsvOptions) updates) =>
       super.copyWith(
@@ -753,7 +731,7 @@ class Zone_DiscoverySpec_CsvOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHeaderRows() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHeaderRows() => clearField(1);
+  void clearHeaderRows() => $_clearField(1);
 
   /// Optional. The delimiter being used to separate values. This defaults to
   /// ','.
@@ -767,7 +745,7 @@ class Zone_DiscoverySpec_CsvOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDelimiter() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDelimiter() => clearField(2);
+  void clearDelimiter() => $_clearField(2);
 
   /// Optional. The character encoding of the data. The default is UTF-8.
   @$pb.TagNumber(3)
@@ -780,7 +758,7 @@ class Zone_DiscoverySpec_CsvOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEncoding() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEncoding() => clearField(3);
+  void clearEncoding() => $_clearField(3);
 
   /// Optional. Whether to disable the inference of data type for CSV data.
   /// If true, all columns will be registered as strings.
@@ -794,7 +772,7 @@ class Zone_DiscoverySpec_CsvOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDisableTypeInference() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDisableTypeInference() => clearField(4);
+  void clearDisableTypeInference() => $_clearField(4);
 }
 
 /// Describe JSON data format.
@@ -829,14 +807,10 @@ class Zone_DiscoverySpec_JsonOptions extends $pb.GeneratedMessage {
     ..aOB(2, _omitFieldNames ? '' : 'disableTypeInference')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Zone_DiscoverySpec_JsonOptions clone() =>
       Zone_DiscoverySpec_JsonOptions()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Zone_DiscoverySpec_JsonOptions copyWith(
           void Function(Zone_DiscoverySpec_JsonOptions) updates) =>
       super.copyWith(
@@ -867,7 +841,7 @@ class Zone_DiscoverySpec_JsonOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEncoding() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEncoding() => clearField(1);
+  void clearEncoding() => $_clearField(1);
 
   /// Optional. Whether to disable the inference of data type for Json data.
   /// If true, all columns will be registered as their primitive types
@@ -882,7 +856,7 @@ class Zone_DiscoverySpec_JsonOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisableTypeInference() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisableTypeInference() => clearField(2);
+  void clearDisableTypeInference() => $_clearField(2);
 }
 
 enum Zone_DiscoverySpec_Trigger { schedule, notSet }
@@ -948,13 +922,9 @@ class Zone_DiscoverySpec extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'schedule')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Zone_DiscoverySpec clone() => Zone_DiscoverySpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Zone_DiscoverySpec copyWith(void Function(Zone_DiscoverySpec) updates) =>
       super.copyWith((message) => updates(message as Zone_DiscoverySpec))
           as Zone_DiscoverySpec;
@@ -973,7 +943,7 @@ class Zone_DiscoverySpec extends $pb.GeneratedMessage {
 
   Zone_DiscoverySpec_Trigger whichTrigger() =>
       _Zone_DiscoverySpec_TriggerByTag[$_whichOneof(0)]!;
-  void clearTrigger() => clearField($_whichOneof(0));
+  void clearTrigger() => $_clearField($_whichOneof(0));
 
   /// Required. Whether discovery is enabled.
   @$pb.TagNumber(1)
@@ -986,7 +956,7 @@ class Zone_DiscoverySpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEnabled() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEnabled() => clearField(1);
+  void clearEnabled() => $_clearField(1);
 
   /// Optional. The list of patterns to apply for selecting data to include
   /// during discovery if only a subset of the data should considered. For
@@ -994,27 +964,27 @@ class Zone_DiscoverySpec extends $pb.GeneratedMessage {
   /// to match object names. For BigQuery dataset assets, these are interpreted
   /// as patterns to match table names.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get includePatterns => $_getList(1);
+  $pb.PbList<$core.String> get includePatterns => $_getList(1);
 
   /// Optional. The list of patterns to apply for selecting data to exclude
   /// during discovery.  For Cloud Storage bucket assets, these are interpreted
   /// as glob patterns used to match object names. For BigQuery dataset assets,
   /// these are interpreted as patterns to match table names.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get excludePatterns => $_getList(2);
+  $pb.PbList<$core.String> get excludePatterns => $_getList(2);
 
   /// Optional. Configuration for CSV data.
   @$pb.TagNumber(4)
   Zone_DiscoverySpec_CsvOptions get csvOptions => $_getN(3);
   @$pb.TagNumber(4)
   set csvOptions(Zone_DiscoverySpec_CsvOptions v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCsvOptions() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCsvOptions() => clearField(4);
+  void clearCsvOptions() => $_clearField(4);
   @$pb.TagNumber(4)
   Zone_DiscoverySpec_CsvOptions ensureCsvOptions() => $_ensure(3);
 
@@ -1023,13 +993,13 @@ class Zone_DiscoverySpec extends $pb.GeneratedMessage {
   Zone_DiscoverySpec_JsonOptions get jsonOptions => $_getN(4);
   @$pb.TagNumber(5)
   set jsonOptions(Zone_DiscoverySpec_JsonOptions v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasJsonOptions() => $_has(4);
   @$pb.TagNumber(5)
-  void clearJsonOptions() => clearField(5);
+  void clearJsonOptions() => $_clearField(5);
   @$pb.TagNumber(5)
   Zone_DiscoverySpec_JsonOptions ensureJsonOptions() => $_ensure(4);
 
@@ -1051,7 +1021,7 @@ class Zone_DiscoverySpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasSchedule() => $_has(5);
   @$pb.TagNumber(10)
-  void clearSchedule() => clearField(10);
+  void clearSchedule() => $_clearField(10);
 }
 
 /// A zone represents a logical group of related assets within a lake. A zone can
@@ -1065,7 +1035,7 @@ class Zone extends $pb.GeneratedMessage {
     $core.String? uid,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     State? state,
     Zone_Type? type,
@@ -1090,7 +1060,7 @@ class Zone extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -1154,13 +1124,9 @@ class Zone extends $pb.GeneratedMessage {
         subBuilder: AssetStatus.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Zone clone() => Zone()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Zone copyWith(void Function(Zone) updates) =>
       super.copyWith((message) => updates(message as Zone)) as Zone;
 
@@ -1187,7 +1153,7 @@ class Zone extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Optional. User friendly display name.
   @$pb.TagNumber(2)
@@ -1200,7 +1166,7 @@ class Zone extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// Output only. System generated globally unique ID for the zone. This ID will
   /// be different if the zone is deleted and re-created with the same name.
@@ -1214,20 +1180,20 @@ class Zone extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUid() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUid() => clearField(3);
+  void clearUid() => $_clearField(3);
 
   /// Output only. The time when the zone was created.
   @$pb.TagNumber(4)
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
   set createTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCreateTime() => clearField(4);
+  void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -1236,19 +1202,19 @@ class Zone extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
   set updateTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUpdateTime() => clearField(5);
+  void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. User defined labels for the zone.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(5);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(5);
 
   /// Optional. Description of the zone.
   @$pb.TagNumber(7)
@@ -1261,33 +1227,33 @@ class Zone extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasDescription() => $_has(6);
   @$pb.TagNumber(7)
-  void clearDescription() => clearField(7);
+  void clearDescription() => $_clearField(7);
 
   /// Output only. Current state of the zone.
   @$pb.TagNumber(8)
   State get state => $_getN(7);
   @$pb.TagNumber(8)
   set state(State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// Required. Immutable. The type of the zone.
   @$pb.TagNumber(9)
   Zone_Type get type => $_getN(8);
   @$pb.TagNumber(9)
   set type(Zone_Type v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasType() => $_has(8);
   @$pb.TagNumber(9)
-  void clearType() => clearField(9);
+  void clearType() => $_clearField(9);
 
   /// Optional. Specification of the discovery feature applied to data in this
   /// zone.
@@ -1295,13 +1261,13 @@ class Zone extends $pb.GeneratedMessage {
   Zone_DiscoverySpec get discoverySpec => $_getN(9);
   @$pb.TagNumber(103)
   set discoverySpec(Zone_DiscoverySpec v) {
-    setField(103, v);
+    $_setField(103, v);
   }
 
   @$pb.TagNumber(103)
   $core.bool hasDiscoverySpec() => $_has(9);
   @$pb.TagNumber(103)
-  void clearDiscoverySpec() => clearField(103);
+  void clearDiscoverySpec() => $_clearField(103);
   @$pb.TagNumber(103)
   Zone_DiscoverySpec ensureDiscoverySpec() => $_ensure(9);
 
@@ -1311,13 +1277,13 @@ class Zone extends $pb.GeneratedMessage {
   Zone_ResourceSpec get resourceSpec => $_getN(10);
   @$pb.TagNumber(104)
   set resourceSpec(Zone_ResourceSpec v) {
-    setField(104, v);
+    $_setField(104, v);
   }
 
   @$pb.TagNumber(104)
   $core.bool hasResourceSpec() => $_has(10);
   @$pb.TagNumber(104)
-  void clearResourceSpec() => clearField(104);
+  void clearResourceSpec() => $_clearField(104);
   @$pb.TagNumber(104)
   Zone_ResourceSpec ensureResourceSpec() => $_ensure(10);
 
@@ -1326,13 +1292,13 @@ class Zone extends $pb.GeneratedMessage {
   AssetStatus get assetStatus => $_getN(11);
   @$pb.TagNumber(105)
   set assetStatus(AssetStatus v) {
-    setField(105, v);
+    $_setField(105, v);
   }
 
   @$pb.TagNumber(105)
   $core.bool hasAssetStatus() => $_has(11);
   @$pb.TagNumber(105)
-  void clearAssetStatus() => clearField(105);
+  void clearAssetStatus() => $_clearField(105);
   @$pb.TagNumber(105)
   AssetStatus ensureAssetStatus() => $_ensure(11);
 }
@@ -1380,14 +1346,10 @@ class Asset_SecurityStatus extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_SecurityStatus clone() =>
       Asset_SecurityStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_SecurityStatus copyWith(void Function(Asset_SecurityStatus) updates) =>
       super.copyWith((message) => updates(message as Asset_SecurityStatus))
           as Asset_SecurityStatus;
@@ -1410,13 +1372,13 @@ class Asset_SecurityStatus extends $pb.GeneratedMessage {
   Asset_SecurityStatus_State get state => $_getN(0);
   @$pb.TagNumber(1)
   set state(Asset_SecurityStatus_State v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
-  void clearState() => clearField(1);
+  void clearState() => $_clearField(1);
 
   /// Additional information about the current state.
   @$pb.TagNumber(2)
@@ -1429,20 +1391,20 @@ class Asset_SecurityStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMessage() => clearField(2);
+  void clearMessage() => $_clearField(2);
 
   /// Last update time of the status.
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 }
@@ -1489,14 +1451,10 @@ class Asset_DiscoverySpec_CsvOptions extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'disableTypeInference')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_DiscoverySpec_CsvOptions clone() =>
       Asset_DiscoverySpec_CsvOptions()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_DiscoverySpec_CsvOptions copyWith(
           void Function(Asset_DiscoverySpec_CsvOptions) updates) =>
       super.copyWith(
@@ -1528,7 +1486,7 @@ class Asset_DiscoverySpec_CsvOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHeaderRows() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHeaderRows() => clearField(1);
+  void clearHeaderRows() => $_clearField(1);
 
   /// Optional. The delimiter being used to separate values. This defaults to
   /// ','.
@@ -1542,7 +1500,7 @@ class Asset_DiscoverySpec_CsvOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDelimiter() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDelimiter() => clearField(2);
+  void clearDelimiter() => $_clearField(2);
 
   /// Optional. The character encoding of the data. The default is UTF-8.
   @$pb.TagNumber(3)
@@ -1555,7 +1513,7 @@ class Asset_DiscoverySpec_CsvOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEncoding() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEncoding() => clearField(3);
+  void clearEncoding() => $_clearField(3);
 
   /// Optional. Whether to disable the inference of data type for CSV data.
   /// If true, all columns will be registered as strings.
@@ -1569,7 +1527,7 @@ class Asset_DiscoverySpec_CsvOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDisableTypeInference() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDisableTypeInference() => clearField(4);
+  void clearDisableTypeInference() => $_clearField(4);
 }
 
 /// Describe JSON data format.
@@ -1604,14 +1562,10 @@ class Asset_DiscoverySpec_JsonOptions extends $pb.GeneratedMessage {
     ..aOB(2, _omitFieldNames ? '' : 'disableTypeInference')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_DiscoverySpec_JsonOptions clone() =>
       Asset_DiscoverySpec_JsonOptions()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_DiscoverySpec_JsonOptions copyWith(
           void Function(Asset_DiscoverySpec_JsonOptions) updates) =>
       super.copyWith(
@@ -1643,7 +1597,7 @@ class Asset_DiscoverySpec_JsonOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEncoding() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEncoding() => clearField(1);
+  void clearEncoding() => $_clearField(1);
 
   /// Optional. Whether to disable the inference of data type for Json data.
   /// If true, all columns will be registered as their primitive types
@@ -1658,7 +1612,7 @@ class Asset_DiscoverySpec_JsonOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisableTypeInference() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisableTypeInference() => clearField(2);
+  void clearDisableTypeInference() => $_clearField(2);
 }
 
 enum Asset_DiscoverySpec_Trigger { schedule, notSet }
@@ -1725,13 +1679,9 @@ class Asset_DiscoverySpec extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'schedule')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_DiscoverySpec clone() => Asset_DiscoverySpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_DiscoverySpec copyWith(void Function(Asset_DiscoverySpec) updates) =>
       super.copyWith((message) => updates(message as Asset_DiscoverySpec))
           as Asset_DiscoverySpec;
@@ -1750,7 +1700,7 @@ class Asset_DiscoverySpec extends $pb.GeneratedMessage {
 
   Asset_DiscoverySpec_Trigger whichTrigger() =>
       _Asset_DiscoverySpec_TriggerByTag[$_whichOneof(0)]!;
-  void clearTrigger() => clearField($_whichOneof(0));
+  void clearTrigger() => $_clearField($_whichOneof(0));
 
   /// Optional. Whether discovery is enabled.
   @$pb.TagNumber(1)
@@ -1763,7 +1713,7 @@ class Asset_DiscoverySpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEnabled() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEnabled() => clearField(1);
+  void clearEnabled() => $_clearField(1);
 
   /// Optional. The list of patterns to apply for selecting data to include
   /// during discovery if only a subset of the data should considered.  For
@@ -1771,27 +1721,27 @@ class Asset_DiscoverySpec extends $pb.GeneratedMessage {
   /// to match object names. For BigQuery dataset assets, these are interpreted
   /// as patterns to match table names.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get includePatterns => $_getList(1);
+  $pb.PbList<$core.String> get includePatterns => $_getList(1);
 
   /// Optional. The list of patterns to apply for selecting data to exclude
   /// during discovery.  For Cloud Storage bucket assets, these are interpreted
   /// as glob patterns used to match object names. For BigQuery dataset assets,
   /// these are interpreted as patterns to match table names.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get excludePatterns => $_getList(2);
+  $pb.PbList<$core.String> get excludePatterns => $_getList(2);
 
   /// Optional. Configuration for CSV data.
   @$pb.TagNumber(4)
   Asset_DiscoverySpec_CsvOptions get csvOptions => $_getN(3);
   @$pb.TagNumber(4)
   set csvOptions(Asset_DiscoverySpec_CsvOptions v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCsvOptions() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCsvOptions() => clearField(4);
+  void clearCsvOptions() => $_clearField(4);
   @$pb.TagNumber(4)
   Asset_DiscoverySpec_CsvOptions ensureCsvOptions() => $_ensure(3);
 
@@ -1800,13 +1750,13 @@ class Asset_DiscoverySpec extends $pb.GeneratedMessage {
   Asset_DiscoverySpec_JsonOptions get jsonOptions => $_getN(4);
   @$pb.TagNumber(5)
   set jsonOptions(Asset_DiscoverySpec_JsonOptions v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasJsonOptions() => $_has(4);
   @$pb.TagNumber(5)
-  void clearJsonOptions() => clearField(5);
+  void clearJsonOptions() => $_clearField(5);
   @$pb.TagNumber(5)
   Asset_DiscoverySpec_JsonOptions ensureJsonOptions() => $_ensure(4);
 
@@ -1828,7 +1778,7 @@ class Asset_DiscoverySpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasSchedule() => $_has(5);
   @$pb.TagNumber(10)
-  void clearSchedule() => clearField(10);
+  void clearSchedule() => $_clearField(10);
 }
 
 /// Identifies the cloud resource that is referenced by this asset.
@@ -1876,13 +1826,9 @@ class Asset_ResourceSpec extends $pb.GeneratedMessage {
         enumValues: Asset_ResourceSpec_AccessMode.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_ResourceSpec clone() => Asset_ResourceSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_ResourceSpec copyWith(void Function(Asset_ResourceSpec) updates) =>
       super.copyWith((message) => updates(message as Asset_ResourceSpec))
           as Asset_ResourceSpec;
@@ -1913,20 +1859,20 @@ class Asset_ResourceSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Required. Immutable. Type of resource.
   @$pb.TagNumber(2)
   Asset_ResourceSpec_Type get type => $_getN(1);
   @$pb.TagNumber(2)
   set type(Asset_ResourceSpec_Type v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearType() => clearField(2);
+  void clearType() => $_clearField(2);
 
   /// Optional. Determines how read permissions are handled for each asset and
   /// their associated tables. Only available to storage buckets assets.
@@ -1934,13 +1880,13 @@ class Asset_ResourceSpec extends $pb.GeneratedMessage {
   Asset_ResourceSpec_AccessMode get readAccessMode => $_getN(2);
   @$pb.TagNumber(5)
   set readAccessMode(Asset_ResourceSpec_AccessMode v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasReadAccessMode() => $_has(2);
   @$pb.TagNumber(5)
-  void clearReadAccessMode() => clearField(5);
+  void clearReadAccessMode() => $_clearField(5);
 }
 
 /// Status of the resource referenced by an asset.
@@ -1990,14 +1936,10 @@ class Asset_ResourceStatus extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'managedAccessIdentity')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_ResourceStatus clone() =>
       Asset_ResourceStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_ResourceStatus copyWith(void Function(Asset_ResourceStatus) updates) =>
       super.copyWith((message) => updates(message as Asset_ResourceStatus))
           as Asset_ResourceStatus;
@@ -2019,13 +1961,13 @@ class Asset_ResourceStatus extends $pb.GeneratedMessage {
   Asset_ResourceStatus_State get state => $_getN(0);
   @$pb.TagNumber(1)
   set state(Asset_ResourceStatus_State v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
-  void clearState() => clearField(1);
+  void clearState() => $_clearField(1);
 
   /// Additional information about the current state.
   @$pb.TagNumber(2)
@@ -2038,20 +1980,20 @@ class Asset_ResourceStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMessage() => clearField(2);
+  void clearMessage() => $_clearField(2);
 
   /// Last update time of the status.
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -2066,7 +2008,7 @@ class Asset_ResourceStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasManagedAccessIdentity() => $_has(3);
   @$pb.TagNumber(4)
-  void clearManagedAccessIdentity() => clearField(4);
+  void clearManagedAccessIdentity() => $_clearField(4);
 }
 
 /// The aggregated data statistics for the asset reported by discovery.
@@ -2111,14 +2053,10 @@ class Asset_DiscoveryStatus_Stats extends $pb.GeneratedMessage {
     ..aInt64(4, _omitFieldNames ? '' : 'filesets')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_DiscoveryStatus_Stats clone() =>
       Asset_DiscoveryStatus_Stats()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_DiscoveryStatus_Stats copyWith(
           void Function(Asset_DiscoveryStatus_Stats) updates) =>
       super.copyWith(
@@ -2149,7 +2087,7 @@ class Asset_DiscoveryStatus_Stats extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDataItems() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDataItems() => clearField(1);
+  void clearDataItems() => $_clearField(1);
 
   /// The number of stored data bytes within the referenced resource.
   @$pb.TagNumber(2)
@@ -2162,7 +2100,7 @@ class Asset_DiscoveryStatus_Stats extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDataSize() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDataSize() => clearField(2);
+  void clearDataSize() => $_clearField(2);
 
   /// The count of table entities within the referenced resource.
   @$pb.TagNumber(3)
@@ -2175,7 +2113,7 @@ class Asset_DiscoveryStatus_Stats extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTables() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTables() => clearField(3);
+  void clearTables() => $_clearField(3);
 
   /// The count of fileset entities within the referenced resource.
   @$pb.TagNumber(4)
@@ -2188,7 +2126,7 @@ class Asset_DiscoveryStatus_Stats extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasFilesets() => $_has(3);
   @$pb.TagNumber(4)
-  void clearFilesets() => clearField(4);
+  void clearFilesets() => $_clearField(4);
 }
 
 /// Status of discovery for an asset.
@@ -2199,7 +2137,7 @@ class Asset_DiscoveryStatus extends $pb.GeneratedMessage {
     $2.Timestamp? updateTime,
     $2.Timestamp? lastRunTime,
     Asset_DiscoveryStatus_Stats? stats,
-    $10.Duration? lastRunDuration,
+    $0.Duration? lastRunDuration,
   }) {
     final $result = create();
     if (state != null) {
@@ -2247,18 +2185,14 @@ class Asset_DiscoveryStatus extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..aOM<Asset_DiscoveryStatus_Stats>(6, _omitFieldNames ? '' : 'stats',
         subBuilder: Asset_DiscoveryStatus_Stats.create)
-    ..aOM<$10.Duration>(7, _omitFieldNames ? '' : 'lastRunDuration',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(7, _omitFieldNames ? '' : 'lastRunDuration',
+        subBuilder: $0.Duration.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_DiscoveryStatus clone() =>
       Asset_DiscoveryStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset_DiscoveryStatus copyWith(
           void Function(Asset_DiscoveryStatus) updates) =>
       super.copyWith((message) => updates(message as Asset_DiscoveryStatus))
@@ -2281,13 +2215,13 @@ class Asset_DiscoveryStatus extends $pb.GeneratedMessage {
   Asset_DiscoveryStatus_State get state => $_getN(0);
   @$pb.TagNumber(1)
   set state(Asset_DiscoveryStatus_State v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
-  void clearState() => clearField(1);
+  void clearState() => $_clearField(1);
 
   /// Additional information about the current state.
   @$pb.TagNumber(2)
@@ -2300,20 +2234,20 @@ class Asset_DiscoveryStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMessage() => clearField(2);
+  void clearMessage() => $_clearField(2);
 
   /// Last update time of the status.
   @$pb.TagNumber(3)
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -2322,13 +2256,13 @@ class Asset_DiscoveryStatus extends $pb.GeneratedMessage {
   $2.Timestamp get lastRunTime => $_getN(3);
   @$pb.TagNumber(4)
   set lastRunTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasLastRunTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearLastRunTime() => clearField(4);
+  void clearLastRunTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureLastRunTime() => $_ensure(3);
 
@@ -2337,30 +2271,30 @@ class Asset_DiscoveryStatus extends $pb.GeneratedMessage {
   Asset_DiscoveryStatus_Stats get stats => $_getN(4);
   @$pb.TagNumber(6)
   set stats(Asset_DiscoveryStatus_Stats v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasStats() => $_has(4);
   @$pb.TagNumber(6)
-  void clearStats() => clearField(6);
+  void clearStats() => $_clearField(6);
   @$pb.TagNumber(6)
   Asset_DiscoveryStatus_Stats ensureStats() => $_ensure(4);
 
   /// The duration of the last discovery run.
   @$pb.TagNumber(7)
-  $10.Duration get lastRunDuration => $_getN(5);
+  $0.Duration get lastRunDuration => $_getN(5);
   @$pb.TagNumber(7)
-  set lastRunDuration($10.Duration v) {
-    setField(7, v);
+  set lastRunDuration($0.Duration v) {
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasLastRunDuration() => $_has(5);
   @$pb.TagNumber(7)
-  void clearLastRunDuration() => clearField(7);
+  void clearLastRunDuration() => $_clearField(7);
   @$pb.TagNumber(7)
-  $10.Duration ensureLastRunDuration() => $_ensure(5);
+  $0.Duration ensureLastRunDuration() => $_ensure(5);
 }
 
 /// An asset represents a cloud resource that is being managed within a lake as a
@@ -2372,7 +2306,7 @@ class Asset extends $pb.GeneratedMessage {
     $core.String? uid,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     State? state,
     Asset_ResourceSpec? resourceSpec,
@@ -2398,7 +2332,7 @@ class Asset extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -2465,13 +2399,9 @@ class Asset extends $pb.GeneratedMessage {
         subBuilder: Asset_DiscoveryStatus.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset clone() => Asset()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Asset copyWith(void Function(Asset) updates) =>
       super.copyWith((message) => updates(message as Asset)) as Asset;
 
@@ -2498,7 +2428,7 @@ class Asset extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Optional. User friendly display name.
   @$pb.TagNumber(2)
@@ -2511,7 +2441,7 @@ class Asset extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// Output only. System generated globally unique ID for the asset. This ID
   /// will be different if the asset is deleted and re-created with the same
@@ -2526,20 +2456,20 @@ class Asset extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUid() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUid() => clearField(3);
+  void clearUid() => $_clearField(3);
 
   /// Output only. The time when the asset was created.
   @$pb.TagNumber(4)
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
   set createTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCreateTime() => clearField(4);
+  void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -2548,19 +2478,19 @@ class Asset extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
   set updateTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUpdateTime() => clearField(5);
+  void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. User defined labels for the asset.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(5);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(5);
 
   /// Optional. Description of the asset.
   @$pb.TagNumber(7)
@@ -2573,33 +2503,33 @@ class Asset extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasDescription() => $_has(6);
   @$pb.TagNumber(7)
-  void clearDescription() => clearField(7);
+  void clearDescription() => $_clearField(7);
 
   /// Output only. Current state of the asset.
   @$pb.TagNumber(8)
   State get state => $_getN(7);
   @$pb.TagNumber(8)
   set state(State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// Required. Specification of the resource that is referenced by this asset.
   @$pb.TagNumber(100)
   Asset_ResourceSpec get resourceSpec => $_getN(8);
   @$pb.TagNumber(100)
   set resourceSpec(Asset_ResourceSpec v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasResourceSpec() => $_has(8);
   @$pb.TagNumber(100)
-  void clearResourceSpec() => clearField(100);
+  void clearResourceSpec() => $_clearField(100);
   @$pb.TagNumber(100)
   Asset_ResourceSpec ensureResourceSpec() => $_ensure(8);
 
@@ -2608,13 +2538,13 @@ class Asset extends $pb.GeneratedMessage {
   Asset_ResourceStatus get resourceStatus => $_getN(9);
   @$pb.TagNumber(101)
   set resourceStatus(Asset_ResourceStatus v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasResourceStatus() => $_has(9);
   @$pb.TagNumber(101)
-  void clearResourceStatus() => clearField(101);
+  void clearResourceStatus() => $_clearField(101);
   @$pb.TagNumber(101)
   Asset_ResourceStatus ensureResourceStatus() => $_ensure(9);
 
@@ -2624,13 +2554,13 @@ class Asset extends $pb.GeneratedMessage {
   Asset_SecurityStatus get securityStatus => $_getN(10);
   @$pb.TagNumber(103)
   set securityStatus(Asset_SecurityStatus v) {
-    setField(103, v);
+    $_setField(103, v);
   }
 
   @$pb.TagNumber(103)
   $core.bool hasSecurityStatus() => $_has(10);
   @$pb.TagNumber(103)
-  void clearSecurityStatus() => clearField(103);
+  void clearSecurityStatus() => $_clearField(103);
   @$pb.TagNumber(103)
   Asset_SecurityStatus ensureSecurityStatus() => $_ensure(10);
 
@@ -2641,13 +2571,13 @@ class Asset extends $pb.GeneratedMessage {
   Asset_DiscoverySpec get discoverySpec => $_getN(11);
   @$pb.TagNumber(106)
   set discoverySpec(Asset_DiscoverySpec v) {
-    setField(106, v);
+    $_setField(106, v);
   }
 
   @$pb.TagNumber(106)
   $core.bool hasDiscoverySpec() => $_has(11);
   @$pb.TagNumber(106)
-  void clearDiscoverySpec() => clearField(106);
+  void clearDiscoverySpec() => $_clearField(106);
   @$pb.TagNumber(106)
   Asset_DiscoverySpec ensureDiscoverySpec() => $_ensure(11);
 
@@ -2657,13 +2587,13 @@ class Asset extends $pb.GeneratedMessage {
   Asset_DiscoveryStatus get discoveryStatus => $_getN(12);
   @$pb.TagNumber(107)
   set discoveryStatus(Asset_DiscoveryStatus v) {
-    setField(107, v);
+    $_setField(107, v);
   }
 
   @$pb.TagNumber(107)
   $core.bool hasDiscoveryStatus() => $_has(12);
   @$pb.TagNumber(107)
-  void clearDiscoveryStatus() => clearField(107);
+  void clearDiscoveryStatus() => $_clearField(107);
   @$pb.TagNumber(107)
   Asset_DiscoveryStatus ensureDiscoveryStatus() => $_ensure(12);
 }
@@ -2710,14 +2640,10 @@ class Environment_InfrastructureSpec_ComputeResources
     ..a<$core.int>(3, _omitFieldNames ? '' : 'maxNodeCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_InfrastructureSpec_ComputeResources clone() =>
       Environment_InfrastructureSpec_ComputeResources()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_InfrastructureSpec_ComputeResources copyWith(
           void Function(Environment_InfrastructureSpec_ComputeResources)
               updates) =>
@@ -2752,7 +2678,7 @@ class Environment_InfrastructureSpec_ComputeResources
   @$pb.TagNumber(1)
   $core.bool hasDiskSizeGb() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDiskSizeGb() => clearField(1);
+  void clearDiskSizeGb() => $_clearField(1);
 
   /// Optional. Total number of nodes in the sessions created for this
   /// environment.
@@ -2766,7 +2692,7 @@ class Environment_InfrastructureSpec_ComputeResources
   @$pb.TagNumber(2)
   $core.bool hasNodeCount() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNodeCount() => clearField(2);
+  void clearNodeCount() => $_clearField(2);
 
   /// Optional. Max configurable nodes.
   /// If max_node_count > node_count, then auto-scaling is enabled.
@@ -2780,7 +2706,7 @@ class Environment_InfrastructureSpec_ComputeResources
   @$pb.TagNumber(3)
   $core.bool hasMaxNodeCount() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMaxNodeCount() => clearField(3);
+  void clearMaxNodeCount() => $_clearField(3);
 }
 
 /// Software Runtime Configuration to run Analyze.
@@ -2790,7 +2716,7 @@ class Environment_InfrastructureSpec_OsImageRuntime
     $core.String? imageVersion,
     $core.Iterable<$core.String>? javaLibraries,
     $core.Iterable<$core.String>? pythonPackages,
-    $core.Map<$core.String, $core.String>? properties,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? properties,
   }) {
     final $result = create();
     if (imageVersion != null) {
@@ -2803,7 +2729,7 @@ class Environment_InfrastructureSpec_OsImageRuntime
       $result.pythonPackages.addAll(pythonPackages);
     }
     if (properties != null) {
-      $result.properties.addAll(properties);
+      $result.properties.addEntries(properties);
     }
     return $result;
   }
@@ -2832,14 +2758,10 @@ class Environment_InfrastructureSpec_OsImageRuntime
         packageName: const $pb.PackageName('google.events.cloud.dataplex.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_InfrastructureSpec_OsImageRuntime clone() =>
       Environment_InfrastructureSpec_OsImageRuntime()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_InfrastructureSpec_OsImageRuntime copyWith(
           void Function(Environment_InfrastructureSpec_OsImageRuntime)
               updates) =>
@@ -2874,26 +2796,26 @@ class Environment_InfrastructureSpec_OsImageRuntime
   @$pb.TagNumber(1)
   $core.bool hasImageVersion() => $_has(0);
   @$pb.TagNumber(1)
-  void clearImageVersion() => clearField(1);
+  void clearImageVersion() => $_clearField(1);
 
   /// Optional. List of Java jars to be included in the runtime environment.
   /// Valid input includes Cloud Storage URIs to Jar binaries.
   /// For example, gs://bucket-name/my/path/to/file.jar
   @$pb.TagNumber(2)
-  $core.List<$core.String> get javaLibraries => $_getList(1);
+  $pb.PbList<$core.String> get javaLibraries => $_getList(1);
 
   /// Optional. A list of python packages to be installed.
   /// Valid formats include Cloud Storage URI to a PIP installable library.
   /// For example, gs://bucket-name/my/path/to/lib.tar.gz
   @$pb.TagNumber(3)
-  $core.List<$core.String> get pythonPackages => $_getList(2);
+  $pb.PbList<$core.String> get pythonPackages => $_getList(2);
 
   /// Optional. Spark properties to provide configuration for use in sessions
   /// created for this environment. The properties to set on daemon config
   /// files. Property keys are specified in `prefix:property` format. The
   /// prefix must be "spark".
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get properties => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get properties => $_getMap(3);
 }
 
 enum Environment_InfrastructureSpec_Resources { compute, notSet }
@@ -2948,14 +2870,10 @@ class Environment_InfrastructureSpec extends $pb.GeneratedMessage {
         subBuilder: Environment_InfrastructureSpec_OsImageRuntime.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_InfrastructureSpec clone() =>
       Environment_InfrastructureSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_InfrastructureSpec copyWith(
           void Function(Environment_InfrastructureSpec) updates) =>
       super.copyWith(
@@ -2977,24 +2895,24 @@ class Environment_InfrastructureSpec extends $pb.GeneratedMessage {
 
   Environment_InfrastructureSpec_Resources whichResources() =>
       _Environment_InfrastructureSpec_ResourcesByTag[$_whichOneof(0)]!;
-  void clearResources() => clearField($_whichOneof(0));
+  void clearResources() => $_clearField($_whichOneof(0));
 
   Environment_InfrastructureSpec_Runtime whichRuntime() =>
       _Environment_InfrastructureSpec_RuntimeByTag[$_whichOneof(1)]!;
-  void clearRuntime() => clearField($_whichOneof(1));
+  void clearRuntime() => $_clearField($_whichOneof(1));
 
   /// Optional. Compute resources needed for analyze interactive workloads.
   @$pb.TagNumber(50)
   Environment_InfrastructureSpec_ComputeResources get compute => $_getN(0);
   @$pb.TagNumber(50)
   set compute(Environment_InfrastructureSpec_ComputeResources v) {
-    setField(50, v);
+    $_setField(50, v);
   }
 
   @$pb.TagNumber(50)
   $core.bool hasCompute() => $_has(0);
   @$pb.TagNumber(50)
-  void clearCompute() => clearField(50);
+  void clearCompute() => $_clearField(50);
   @$pb.TagNumber(50)
   Environment_InfrastructureSpec_ComputeResources ensureCompute() =>
       $_ensure(0);
@@ -3005,13 +2923,13 @@ class Environment_InfrastructureSpec extends $pb.GeneratedMessage {
   Environment_InfrastructureSpec_OsImageRuntime get osImage => $_getN(1);
   @$pb.TagNumber(100)
   set osImage(Environment_InfrastructureSpec_OsImageRuntime v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasOsImage() => $_has(1);
   @$pb.TagNumber(100)
-  void clearOsImage() => clearField(100);
+  void clearOsImage() => $_clearField(100);
   @$pb.TagNumber(100)
   Environment_InfrastructureSpec_OsImageRuntime ensureOsImage() => $_ensure(1);
 }
@@ -3019,7 +2937,7 @@ class Environment_InfrastructureSpec extends $pb.GeneratedMessage {
 /// Configuration for sessions created for this environment.
 class Environment_SessionSpec extends $pb.GeneratedMessage {
   factory Environment_SessionSpec({
-    $10.Duration? maxIdleDuration,
+    $0.Duration? maxIdleDuration,
     $core.bool? enableFastStartup,
   }) {
     final $result = create();
@@ -3044,19 +2962,15 @@ class Environment_SessionSpec extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.dataplex.v1'),
       createEmptyInstance: create)
-    ..aOM<$10.Duration>(1, _omitFieldNames ? '' : 'maxIdleDuration',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'maxIdleDuration',
+        subBuilder: $0.Duration.create)
     ..aOB(2, _omitFieldNames ? '' : 'enableFastStartup')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_SessionSpec clone() =>
       Environment_SessionSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_SessionSpec copyWith(
           void Function(Environment_SessionSpec) updates) =>
       super.copyWith((message) => updates(message as Environment_SessionSpec))
@@ -3077,18 +2991,18 @@ class Environment_SessionSpec extends $pb.GeneratedMessage {
   /// Optional. The idle time configuration of the session. The session will be
   /// auto-terminated at the end of this period.
   @$pb.TagNumber(1)
-  $10.Duration get maxIdleDuration => $_getN(0);
+  $0.Duration get maxIdleDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set maxIdleDuration($10.Duration v) {
-    setField(1, v);
+  set maxIdleDuration($0.Duration v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasMaxIdleDuration() => $_has(0);
   @$pb.TagNumber(1)
-  void clearMaxIdleDuration() => clearField(1);
+  void clearMaxIdleDuration() => $_clearField(1);
   @$pb.TagNumber(1)
-  $10.Duration ensureMaxIdleDuration() => $_ensure(0);
+  $0.Duration ensureMaxIdleDuration() => $_ensure(0);
 
   /// Optional. If True, this causes sessions to be pre-created and available
   /// for faster startup to enable interactive exploration use-cases. This
@@ -3105,7 +3019,7 @@ class Environment_SessionSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasEnableFastStartup() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEnableFastStartup() => clearField(2);
+  void clearEnableFastStartup() => $_clearField(2);
 }
 
 /// Status of sessions created for this environment.
@@ -3135,14 +3049,10 @@ class Environment_SessionStatus extends $pb.GeneratedMessage {
     ..aOB(1, _omitFieldNames ? '' : 'active')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_SessionStatus clone() =>
       Environment_SessionStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_SessionStatus copyWith(
           void Function(Environment_SessionStatus) updates) =>
       super.copyWith((message) => updates(message as Environment_SessionStatus))
@@ -3172,7 +3082,7 @@ class Environment_SessionStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasActive() => $_has(0);
   @$pb.TagNumber(1)
-  void clearActive() => clearField(1);
+  void clearActive() => $_clearField(1);
 }
 
 /// URI Endpoints to access sessions associated with the Environment.
@@ -3207,14 +3117,10 @@ class Environment_Endpoints extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'sql')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_Endpoints clone() =>
       Environment_Endpoints()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_Endpoints copyWith(
           void Function(Environment_Endpoints) updates) =>
       super.copyWith((message) => updates(message as Environment_Endpoints))
@@ -3243,7 +3149,7 @@ class Environment_Endpoints extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNotebooks() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNotebooks() => clearField(1);
+  void clearNotebooks() => $_clearField(1);
 
   /// Output only. URI to serve SQL APIs
   @$pb.TagNumber(2)
@@ -3256,7 +3162,7 @@ class Environment_Endpoints extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSql() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSql() => clearField(2);
+  void clearSql() => $_clearField(2);
 }
 
 /// Environment represents a user-visible compute infrastructure for analytics
@@ -3268,7 +3174,7 @@ class Environment extends $pb.GeneratedMessage {
     $core.String? uid,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     State? state,
     Environment_InfrastructureSpec? infrastructureSpec,
@@ -3293,7 +3199,7 @@ class Environment extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -3357,13 +3263,9 @@ class Environment extends $pb.GeneratedMessage {
         subBuilder: Environment_Endpoints.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment clone() => Environment()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment copyWith(void Function(Environment) updates) =>
       super.copyWith((message) => updates(message as Environment))
           as Environment;
@@ -3391,7 +3293,7 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Optional. User friendly display name.
   @$pb.TagNumber(2)
@@ -3404,7 +3306,7 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// Output only. System generated globally unique ID for the environment. This
   /// ID will be different if the environment is deleted and re-created with the
@@ -3419,20 +3321,20 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUid() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUid() => clearField(3);
+  void clearUid() => $_clearField(3);
 
   /// Output only. Environment creation time.
   @$pb.TagNumber(4)
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
   set createTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCreateTime() => clearField(4);
+  void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -3441,19 +3343,19 @@ class Environment extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
   set updateTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUpdateTime() => clearField(5);
+  void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. User defined labels for the environment.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(5);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(5);
 
   /// Optional. Description of the environment.
   @$pb.TagNumber(7)
@@ -3466,33 +3368,33 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasDescription() => $_has(6);
   @$pb.TagNumber(7)
-  void clearDescription() => clearField(7);
+  void clearDescription() => $_clearField(7);
 
   /// Output only. Current state of the environment.
   @$pb.TagNumber(8)
   State get state => $_getN(7);
   @$pb.TagNumber(8)
   set state(State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// Required. Infrastructure specification for the Environment.
   @$pb.TagNumber(100)
   Environment_InfrastructureSpec get infrastructureSpec => $_getN(8);
   @$pb.TagNumber(100)
   set infrastructureSpec(Environment_InfrastructureSpec v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasInfrastructureSpec() => $_has(8);
   @$pb.TagNumber(100)
-  void clearInfrastructureSpec() => clearField(100);
+  void clearInfrastructureSpec() => $_clearField(100);
   @$pb.TagNumber(100)
   Environment_InfrastructureSpec ensureInfrastructureSpec() => $_ensure(8);
 
@@ -3501,13 +3403,13 @@ class Environment extends $pb.GeneratedMessage {
   Environment_SessionSpec get sessionSpec => $_getN(9);
   @$pb.TagNumber(101)
   set sessionSpec(Environment_SessionSpec v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasSessionSpec() => $_has(9);
   @$pb.TagNumber(101)
-  void clearSessionSpec() => clearField(101);
+  void clearSessionSpec() => $_clearField(101);
   @$pb.TagNumber(101)
   Environment_SessionSpec ensureSessionSpec() => $_ensure(9);
 
@@ -3516,13 +3418,13 @@ class Environment extends $pb.GeneratedMessage {
   Environment_SessionStatus get sessionStatus => $_getN(10);
   @$pb.TagNumber(102)
   set sessionStatus(Environment_SessionStatus v) {
-    setField(102, v);
+    $_setField(102, v);
   }
 
   @$pb.TagNumber(102)
   $core.bool hasSessionStatus() => $_has(10);
   @$pb.TagNumber(102)
-  void clearSessionStatus() => clearField(102);
+  void clearSessionStatus() => $_clearField(102);
   @$pb.TagNumber(102)
   Environment_SessionStatus ensureSessionStatus() => $_ensure(10);
 
@@ -3532,13 +3434,13 @@ class Environment extends $pb.GeneratedMessage {
   Environment_Endpoints get endpoints => $_getN(11);
   @$pb.TagNumber(200)
   set endpoints(Environment_Endpoints v) {
-    setField(200, v);
+    $_setField(200, v);
   }
 
   @$pb.TagNumber(200)
   $core.bool hasEndpoints() => $_has(11);
   @$pb.TagNumber(200)
-  void clearEndpoints() => clearField(200);
+  void clearEndpoints() => $_clearField(200);
   @$pb.TagNumber(200)
   Environment_Endpoints ensureEndpoints() => $_ensure(11);
 }
@@ -3561,13 +3463,9 @@ class Trigger_OnDemand extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Trigger_OnDemand clone() => Trigger_OnDemand()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Trigger_OnDemand copyWith(void Function(Trigger_OnDemand) updates) =>
       super.copyWith((message) => updates(message as Trigger_OnDemand))
           as Trigger_OnDemand;
@@ -3612,13 +3510,9 @@ class Trigger_Schedule extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'cron')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Trigger_Schedule clone() => Trigger_Schedule()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Trigger_Schedule copyWith(void Function(Trigger_Schedule) updates) =>
       super.copyWith((message) => updates(message as Trigger_Schedule))
           as Trigger_Schedule;
@@ -3635,18 +3529,18 @@ class Trigger_Schedule extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<Trigger_Schedule>(create);
   static Trigger_Schedule? _defaultInstance;
 
-  ///  Required. [Cron](https://en.wikipedia.org/wiki/Cron) schedule for running
-  ///  scans periodically.
+  /// Required. [Cron](https://en.wikipedia.org/wiki/Cron) schedule for running
+  /// scans periodically.
   ///
-  ///  To explicitly set a timezone in the cron tab, apply a prefix in the
-  ///  cron tab: **"CRON_TZ=${IANA_TIME_ZONE}"** or **"TZ=${IANA_TIME_ZONE}"**.
-  ///  The **${IANA_TIME_ZONE}** may only be a valid string from IANA time zone
-  ///  database
-  ///  ([wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)).
-  ///  For example, `CRON_TZ=America/New_York 1 * * * *`, or
-  ///  `TZ=America/New_York 1 * * * *`.
+  /// To explicitly set a timezone in the cron tab, apply a prefix in the
+  /// cron tab: **"CRON_TZ=${IANA_TIME_ZONE}"** or **"TZ=${IANA_TIME_ZONE}"**.
+  /// The **${IANA_TIME_ZONE}** may only be a valid string from IANA time zone
+  /// database
+  /// ([wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)).
+  /// For example, `CRON_TZ=America/New_York 1 * * * *`, or
+  /// `TZ=America/New_York 1 * * * *`.
   ///
-  ///  This field is required for Schedule scans.
+  /// This field is required for Schedule scans.
   @$pb.TagNumber(1)
   $core.String get cron => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -3657,7 +3551,7 @@ class Trigger_Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCron() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCron() => clearField(1);
+  void clearCron() => $_clearField(1);
 }
 
 enum Trigger_Mode { onDemand, schedule, notSet }
@@ -3702,13 +3596,9 @@ class Trigger extends $pb.GeneratedMessage {
         subBuilder: Trigger_Schedule.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Trigger clone() => Trigger()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Trigger copyWith(void Function(Trigger) updates) =>
       super.copyWith((message) => updates(message as Trigger)) as Trigger;
 
@@ -3724,20 +3614,20 @@ class Trigger extends $pb.GeneratedMessage {
   static Trigger? _defaultInstance;
 
   Trigger_Mode whichMode() => _Trigger_ModeByTag[$_whichOneof(0)]!;
-  void clearMode() => clearField($_whichOneof(0));
+  void clearMode() => $_clearField($_whichOneof(0));
 
   /// The scan runs once via `RunDataScan` API.
   @$pb.TagNumber(100)
   Trigger_OnDemand get onDemand => $_getN(0);
   @$pb.TagNumber(100)
   set onDemand(Trigger_OnDemand v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasOnDemand() => $_has(0);
   @$pb.TagNumber(100)
-  void clearOnDemand() => clearField(100);
+  void clearOnDemand() => $_clearField(100);
   @$pb.TagNumber(100)
   Trigger_OnDemand ensureOnDemand() => $_ensure(0);
 
@@ -3746,13 +3636,13 @@ class Trigger extends $pb.GeneratedMessage {
   Trigger_Schedule get schedule => $_getN(1);
   @$pb.TagNumber(101)
   set schedule(Trigger_Schedule v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasSchedule() => $_has(1);
   @$pb.TagNumber(101)
-  void clearSchedule() => clearField(101);
+  void clearSchedule() => $_clearField(101);
   @$pb.TagNumber(101)
   Trigger_Schedule ensureSchedule() => $_ensure(1);
 }
@@ -3789,13 +3679,9 @@ class DataSource extends $pb.GeneratedMessage {
     ..aOS(100, _omitFieldNames ? '' : 'entity')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataSource clone() => DataSource()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataSource copyWith(void Function(DataSource) updates) =>
       super.copyWith((message) => updates(message as DataSource)) as DataSource;
 
@@ -3811,7 +3697,7 @@ class DataSource extends $pb.GeneratedMessage {
   static DataSource? _defaultInstance;
 
   DataSource_Source whichSource() => _DataSource_SourceByTag[$_whichOneof(0)]!;
-  void clearSource() => clearField($_whichOneof(0));
+  void clearSource() => $_clearField($_whichOneof(0));
 
   /// Immutable. The Dataplex entity that represents the data source (e.g.
   /// BigQuery table) for DataScan, of the form:
@@ -3826,7 +3712,7 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(100)
   $core.bool hasEntity() => $_has(0);
   @$pb.TagNumber(100)
-  void clearEntity() => clearField(100);
+  void clearEntity() => $_clearField(100);
 }
 
 /// A data range denoted by a pair of start/end values of a field.
@@ -3866,14 +3752,10 @@ class ScannedData_IncrementalField extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'end')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScannedData_IncrementalField clone() =>
       ScannedData_IncrementalField()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScannedData_IncrementalField copyWith(
           void Function(ScannedData_IncrementalField) updates) =>
       super.copyWith(
@@ -3905,7 +3787,7 @@ class ScannedData_IncrementalField extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
-  void clearField_1() => clearField(1);
+  void clearField_1() => $_clearField(1);
 
   /// Value that marks the start of the range.
   @$pb.TagNumber(2)
@@ -3918,7 +3800,7 @@ class ScannedData_IncrementalField extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasStart() => $_has(1);
   @$pb.TagNumber(2)
-  void clearStart() => clearField(2);
+  void clearStart() => $_clearField(2);
 
   /// Value that marks the end of the range.
   @$pb.TagNumber(3)
@@ -3931,7 +3813,7 @@ class ScannedData_IncrementalField extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEnd() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEnd() => clearField(3);
+  void clearEnd() => $_clearField(3);
 }
 
 enum ScannedData_DataRange { incrementalField, notSet }
@@ -3971,13 +3853,9 @@ class ScannedData extends $pb.GeneratedMessage {
         subBuilder: ScannedData_IncrementalField.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScannedData clone() => ScannedData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScannedData copyWith(void Function(ScannedData) updates) =>
       super.copyWith((message) => updates(message as ScannedData))
           as ScannedData;
@@ -3995,20 +3873,20 @@ class ScannedData extends $pb.GeneratedMessage {
 
   ScannedData_DataRange whichDataRange() =>
       _ScannedData_DataRangeByTag[$_whichOneof(0)]!;
-  void clearDataRange() => clearField($_whichOneof(0));
+  void clearDataRange() => $_clearField($_whichOneof(0));
 
   /// The range denoted by values of an incremental field
   @$pb.TagNumber(1)
   ScannedData_IncrementalField get incrementalField => $_getN(0);
   @$pb.TagNumber(1)
   set incrementalField(ScannedData_IncrementalField v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasIncrementalField() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIncrementalField() => clearField(1);
+  void clearIncrementalField() => $_clearField(1);
   @$pb.TagNumber(1)
   ScannedData_IncrementalField ensureIncrementalField() => $_ensure(0);
 }
@@ -4031,13 +3909,9 @@ class DataProfileSpec extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileSpec clone() => DataProfileSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileSpec copyWith(void Function(DataProfileSpec) updates) =>
       super.copyWith((message) => updates(message as DataProfileSpec))
           as DataProfileSpec;
@@ -4098,15 +3972,11 @@ class DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo
         3, _omitFieldNames ? '' : 'averageLength', $pb.PbFieldType.OD)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo clone() =>
       DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo copyWith(
           void Function(
                   DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo)
@@ -4143,7 +4013,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo
   @$pb.TagNumber(1)
   $core.bool hasMinLength() => $_has(0);
   @$pb.TagNumber(1)
-  void clearMinLength() => clearField(1);
+  void clearMinLength() => $_clearField(1);
 
   /// Maximum length of non-null values in the scanned data.
   @$pb.TagNumber(2)
@@ -4156,7 +4026,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo
   @$pb.TagNumber(2)
   $core.bool hasMaxLength() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMaxLength() => clearField(2);
+  void clearMaxLength() => $_clearField(2);
 
   /// Average length of non-null values in the scanned data.
   @$pb.TagNumber(3)
@@ -4169,7 +4039,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo
   @$pb.TagNumber(3)
   $core.bool hasAverageLength() => $_has(2);
   @$pb.TagNumber(3)
-  void clearAverageLength() => clearField(3);
+  void clearAverageLength() => $_clearField(3);
 }
 
 /// The profile information for an integer type field.
@@ -4226,15 +4096,11 @@ class DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo
         6, _omitFieldNames ? '' : 'quartiles', $pb.PbFieldType.K6)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo clone() =>
       DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo copyWith(
           void Function(
                   DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo)
@@ -4274,7 +4140,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo
   @$pb.TagNumber(1)
   $core.bool hasAverage() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAverage() => clearField(1);
+  void clearAverage() => $_clearField(1);
 
   /// Standard deviation of non-null values in the scanned data. NaN, if
   /// the field has a NaN.
@@ -4288,7 +4154,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo
   @$pb.TagNumber(3)
   $core.bool hasStandardDeviation() => $_has(1);
   @$pb.TagNumber(3)
-  void clearStandardDeviation() => clearField(3);
+  void clearStandardDeviation() => $_clearField(3);
 
   /// Minimum of non-null values in the scanned data. NaN, if the field
   /// has a NaN.
@@ -4302,7 +4168,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo
   @$pb.TagNumber(4)
   $core.bool hasMin() => $_has(2);
   @$pb.TagNumber(4)
-  void clearMin() => clearField(4);
+  void clearMin() => $_clearField(4);
 
   /// Maximum of non-null values in the scanned data. NaN, if the field
   /// has a NaN.
@@ -4316,7 +4182,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo
   @$pb.TagNumber(5)
   $core.bool hasMax() => $_has(3);
   @$pb.TagNumber(5)
-  void clearMax() => clearField(5);
+  void clearMax() => $_clearField(5);
 
   /// A quartile divides the number of data points into four parts, or
   /// quarters, of more-or-less equal size. Three main quartiles used
@@ -4330,7 +4196,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo
   /// Here, the quartiles is provided as an ordered list of quartile
   /// values for the scanned data, occurring in order Q1, median, Q3.
   @$pb.TagNumber(6)
-  $core.List<$fixnum.Int64> get quartiles => $_getList(4);
+  $pb.PbList<$fixnum.Int64> get quartiles => $_getList(4);
 }
 
 /// The profile information for a double type field.
@@ -4386,15 +4252,11 @@ class DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo
     ..p<$core.double>(6, _omitFieldNames ? '' : 'quartiles', $pb.PbFieldType.KD)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo clone() =>
       DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo copyWith(
           void Function(
                   DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo)
@@ -4432,7 +4294,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo
   @$pb.TagNumber(1)
   $core.bool hasAverage() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAverage() => clearField(1);
+  void clearAverage() => $_clearField(1);
 
   /// Standard deviation of non-null values in the scanned data. NaN, if
   /// the field has a NaN.
@@ -4446,7 +4308,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo
   @$pb.TagNumber(3)
   $core.bool hasStandardDeviation() => $_has(1);
   @$pb.TagNumber(3)
-  void clearStandardDeviation() => clearField(3);
+  void clearStandardDeviation() => $_clearField(3);
 
   /// Minimum of non-null values in the scanned data. NaN, if the field
   /// has a NaN.
@@ -4460,7 +4322,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo
   @$pb.TagNumber(4)
   $core.bool hasMin() => $_has(2);
   @$pb.TagNumber(4)
-  void clearMin() => clearField(4);
+  void clearMin() => $_clearField(4);
 
   /// Maximum of non-null values in the scanned data. NaN, if the field
   /// has a NaN.
@@ -4474,7 +4336,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo
   @$pb.TagNumber(5)
   $core.bool hasMax() => $_has(3);
   @$pb.TagNumber(5)
-  void clearMax() => clearField(5);
+  void clearMax() => $_clearField(5);
 
   /// A quartile divides the number of data points into four parts, or
   /// quarters, of more-or-less equal size. Three main quartiles used
@@ -4488,7 +4350,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo
   /// Here, the quartiles is provided as an ordered list of quartile
   /// values for the scanned data, occurring in order Q1, median, Q3.
   @$pb.TagNumber(6)
-  $core.List<$core.double> get quartiles => $_getList(4);
+  $pb.PbList<$core.double> get quartiles => $_getList(4);
 }
 
 /// Top N non-null values in the scanned data.
@@ -4528,15 +4390,11 @@ class DataProfileResult_Profile_Field_ProfileInfo_TopNValue
     ..aInt64(2, _omitFieldNames ? '' : 'count')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field_ProfileInfo_TopNValue clone() =>
       DataProfileResult_Profile_Field_ProfileInfo_TopNValue()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field_ProfileInfo_TopNValue copyWith(
           void Function(DataProfileResult_Profile_Field_ProfileInfo_TopNValue)
               updates) =>
@@ -4572,7 +4430,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_TopNValue
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 
   /// Count of the corresponding value in the scanned data.
   @$pb.TagNumber(2)
@@ -4585,7 +4443,7 @@ class DataProfileResult_Profile_Field_ProfileInfo_TopNValue
   @$pb.TagNumber(2)
   $core.bool hasCount() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCount() => clearField(2);
+  void clearCount() => $_clearField(2);
 }
 
 enum DataProfileResult_Profile_Field_ProfileInfo_FieldInfo {
@@ -4672,14 +4530,10 @@ class DataProfileResult_Profile_Field_ProfileInfo extends $pb.GeneratedMessage {
             DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field_ProfileInfo clone() =>
       DataProfileResult_Profile_Field_ProfileInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field_ProfileInfo copyWith(
           void Function(DataProfileResult_Profile_Field_ProfileInfo) updates) =>
       super.copyWith((message) =>
@@ -4704,7 +4558,7 @@ class DataProfileResult_Profile_Field_ProfileInfo extends $pb.GeneratedMessage {
   DataProfileResult_Profile_Field_ProfileInfo_FieldInfo whichFieldInfo() =>
       _DataProfileResult_Profile_Field_ProfileInfo_FieldInfoByTag[
           $_whichOneof(0)]!;
-  void clearFieldInfo() => clearField($_whichOneof(0));
+  void clearFieldInfo() => $_clearField($_whichOneof(0));
 
   /// Ratio of rows with null value against total scanned rows.
   @$pb.TagNumber(2)
@@ -4717,7 +4571,7 @@ class DataProfileResult_Profile_Field_ProfileInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNullRatio() => $_has(0);
   @$pb.TagNumber(2)
-  void clearNullRatio() => clearField(2);
+  void clearNullRatio() => $_clearField(2);
 
   /// Ratio of rows with distinct values against total scanned rows.
   /// Not available for complex non-groupable field type RECORD and fields
@@ -4732,14 +4586,14 @@ class DataProfileResult_Profile_Field_ProfileInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDistinctRatio() => $_has(1);
   @$pb.TagNumber(3)
-  void clearDistinctRatio() => clearField(3);
+  void clearDistinctRatio() => $_clearField(3);
 
   /// The list of top N non-null values and number of times they occur in
   /// the scanned data. N is 10 or equal to the number of distinct values
   /// in the field, whichever is smaller. Not available for complex
   /// non-groupable field type RECORD and fields with REPEATABLE mode.
   @$pb.TagNumber(4)
-  $core.List<DataProfileResult_Profile_Field_ProfileInfo_TopNValue>
+  $pb.PbList<DataProfileResult_Profile_Field_ProfileInfo_TopNValue>
       get topNValues => $_getList(2);
 
   /// String type field information.
@@ -4749,13 +4603,13 @@ class DataProfileResult_Profile_Field_ProfileInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(101)
   set stringProfile(
       DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasStringProfile() => $_has(3);
   @$pb.TagNumber(101)
-  void clearStringProfile() => clearField(101);
+  void clearStringProfile() => $_clearField(101);
   @$pb.TagNumber(101)
   DataProfileResult_Profile_Field_ProfileInfo_StringFieldInfo
       ensureStringProfile() => $_ensure(3);
@@ -4767,13 +4621,13 @@ class DataProfileResult_Profile_Field_ProfileInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(102)
   set integerProfile(
       DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo v) {
-    setField(102, v);
+    $_setField(102, v);
   }
 
   @$pb.TagNumber(102)
   $core.bool hasIntegerProfile() => $_has(4);
   @$pb.TagNumber(102)
-  void clearIntegerProfile() => clearField(102);
+  void clearIntegerProfile() => $_clearField(102);
   @$pb.TagNumber(102)
   DataProfileResult_Profile_Field_ProfileInfo_IntegerFieldInfo
       ensureIntegerProfile() => $_ensure(4);
@@ -4785,13 +4639,13 @@ class DataProfileResult_Profile_Field_ProfileInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(103)
   set doubleProfile(
       DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo v) {
-    setField(103, v);
+    $_setField(103, v);
   }
 
   @$pb.TagNumber(103)
   $core.bool hasDoubleProfile() => $_has(5);
   @$pb.TagNumber(103)
-  void clearDoubleProfile() => clearField(103);
+  void clearDoubleProfile() => $_clearField(103);
   @$pb.TagNumber(103)
   DataProfileResult_Profile_Field_ProfileInfo_DoubleFieldInfo
       ensureDoubleProfile() => $_ensure(5);
@@ -4841,14 +4695,10 @@ class DataProfileResult_Profile_Field extends $pb.GeneratedMessage {
         subBuilder: DataProfileResult_Profile_Field_ProfileInfo.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field clone() =>
       DataProfileResult_Profile_Field()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile_Field copyWith(
           void Function(DataProfileResult_Profile_Field) updates) =>
       super.copyWith(
@@ -4880,25 +4730,25 @@ class DataProfileResult_Profile_Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
-  ///  The field data type. Possible values include:
+  /// The field data type. Possible values include:
   ///
-  ///  * STRING
-  ///  * BYTE
-  ///  * INT64
-  ///  * INT32
-  ///  * INT16
-  ///  * DOUBLE
-  ///  * FLOAT
-  ///  * DECIMAL
-  ///  * BOOLEAN
-  ///  * BINARY
-  ///  * TIMESTAMP
-  ///  * DATE
-  ///  * TIME
-  ///  * NULL
-  ///  * RECORD
+  /// * STRING
+  /// * BYTE
+  /// * INT64
+  /// * INT32
+  /// * INT16
+  /// * DOUBLE
+  /// * FLOAT
+  /// * DECIMAL
+  /// * BOOLEAN
+  /// * BINARY
+  /// * TIMESTAMP
+  /// * DATE
+  /// * TIME
+  /// * NULL
+  /// * RECORD
   @$pb.TagNumber(2)
   $core.String get type => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -4909,13 +4759,13 @@ class DataProfileResult_Profile_Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearType() => clearField(2);
+  void clearType() => $_clearField(2);
 
-  ///  The mode of the field. Possible values include:
+  /// The mode of the field. Possible values include:
   ///
-  ///  * REQUIRED, if it is a required field.
-  ///  * NULLABLE, if it is an optional field.
-  ///  * REPEATED, if it is a repeated field.
+  /// * REQUIRED, if it is a required field.
+  /// * NULLABLE, if it is an optional field.
+  /// * REPEATED, if it is a repeated field.
   @$pb.TagNumber(3)
   $core.String get mode => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -4926,20 +4776,20 @@ class DataProfileResult_Profile_Field extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMode() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMode() => clearField(3);
+  void clearMode() => $_clearField(3);
 
   /// Profile information for the corresponding field.
   @$pb.TagNumber(4)
   DataProfileResult_Profile_Field_ProfileInfo get profile => $_getN(3);
   @$pb.TagNumber(4)
   set profile(DataProfileResult_Profile_Field_ProfileInfo v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasProfile() => $_has(3);
   @$pb.TagNumber(4)
-  void clearProfile() => clearField(4);
+  void clearProfile() => $_clearField(4);
   @$pb.TagNumber(4)
   DataProfileResult_Profile_Field_ProfileInfo ensureProfile() => $_ensure(3);
 }
@@ -4973,14 +4823,10 @@ class DataProfileResult_Profile extends $pb.GeneratedMessage {
         subBuilder: DataProfileResult_Profile_Field.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile clone() =>
       DataProfileResult_Profile()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult_Profile copyWith(
           void Function(DataProfileResult_Profile) updates) =>
       super.copyWith((message) => updates(message as DataProfileResult_Profile))
@@ -5000,7 +4846,7 @@ class DataProfileResult_Profile extends $pb.GeneratedMessage {
 
   /// List of fields with structural and profile information for each field.
   @$pb.TagNumber(2)
-  $core.List<DataProfileResult_Profile_Field> get fields => $_getList(0);
+  $pb.PbList<DataProfileResult_Profile_Field> get fields => $_getList(0);
 }
 
 /// DataProfileResult defines the output of DataProfileScan. Each field of the
@@ -5043,13 +4889,9 @@ class DataProfileResult extends $pb.GeneratedMessage {
         subBuilder: ScannedData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult clone() => DataProfileResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataProfileResult copyWith(void Function(DataProfileResult) updates) =>
       super.copyWith((message) => updates(message as DataProfileResult))
           as DataProfileResult;
@@ -5077,20 +4919,20 @@ class DataProfileResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRowCount() => $_has(0);
   @$pb.TagNumber(3)
-  void clearRowCount() => clearField(3);
+  void clearRowCount() => $_clearField(3);
 
   /// The profile information per field.
   @$pb.TagNumber(4)
   DataProfileResult_Profile get profile => $_getN(1);
   @$pb.TagNumber(4)
   set profile(DataProfileResult_Profile v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasProfile() => $_has(1);
   @$pb.TagNumber(4)
-  void clearProfile() => clearField(4);
+  void clearProfile() => $_clearField(4);
   @$pb.TagNumber(4)
   DataProfileResult_Profile ensureProfile() => $_ensure(1);
 
@@ -5099,13 +4941,13 @@ class DataProfileResult extends $pb.GeneratedMessage {
   ScannedData get scannedData => $_getN(2);
   @$pb.TagNumber(5)
   set scannedData(ScannedData v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasScannedData() => $_has(2);
   @$pb.TagNumber(5)
-  void clearScannedData() => clearField(5);
+  void clearScannedData() => $_clearField(5);
   @$pb.TagNumber(5)
   ScannedData ensureScannedData() => $_ensure(2);
 }
@@ -5138,13 +4980,9 @@ class DataQualitySpec extends $pb.GeneratedMessage {
         subBuilder: DataQualityRule.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualitySpec clone() => DataQualitySpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualitySpec copyWith(void Function(DataQualitySpec) updates) =>
       super.copyWith((message) => updates(message as DataQualitySpec))
           as DataQualitySpec;
@@ -5164,7 +5002,7 @@ class DataQualitySpec extends $pb.GeneratedMessage {
   /// The list of rules to evaluate against a data source. At least one rule is
   /// required.
   @$pb.TagNumber(1)
-  $core.List<DataQualityRule> get rules => $_getList(0);
+  $pb.PbList<DataQualityRule> get rules => $_getList(0);
 }
 
 /// The output of a DataQualityScan.
@@ -5219,13 +5057,9 @@ class DataQualityResult extends $pb.GeneratedMessage {
         subBuilder: ScannedData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityResult clone() => DataQualityResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityResult copyWith(void Function(DataQualityResult) updates) =>
       super.copyWith((message) => updates(message as DataQualityResult))
           as DataQualityResult;
@@ -5244,11 +5078,11 @@ class DataQualityResult extends $pb.GeneratedMessage {
 
   /// A list of results at the dimension level.
   @$pb.TagNumber(2)
-  $core.List<DataQualityDimensionResult> get dimensions => $_getList(0);
+  $pb.PbList<DataQualityDimensionResult> get dimensions => $_getList(0);
 
   /// A list of all the rules in a job, and their results.
   @$pb.TagNumber(3)
-  $core.List<DataQualityRuleResult> get rules => $_getList(1);
+  $pb.PbList<DataQualityRuleResult> get rules => $_getList(1);
 
   /// The count of rows processed.
   @$pb.TagNumber(4)
@@ -5261,7 +5095,7 @@ class DataQualityResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasRowCount() => $_has(2);
   @$pb.TagNumber(4)
-  void clearRowCount() => clearField(4);
+  void clearRowCount() => $_clearField(4);
 
   /// Overall data quality result -- `true` if all rules passed.
   @$pb.TagNumber(5)
@@ -5274,20 +5108,20 @@ class DataQualityResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasPassed() => $_has(3);
   @$pb.TagNumber(5)
-  void clearPassed() => clearField(5);
+  void clearPassed() => $_clearField(5);
 
   /// The data scanned for this result.
   @$pb.TagNumber(7)
   ScannedData get scannedData => $_getN(4);
   @$pb.TagNumber(7)
   set scannedData(ScannedData v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasScannedData() => $_has(4);
   @$pb.TagNumber(7)
-  void clearScannedData() => clearField(7);
+  void clearScannedData() => $_clearField(7);
   @$pb.TagNumber(7)
   ScannedData ensureScannedData() => $_ensure(4);
 }
@@ -5350,14 +5184,10 @@ class DataQualityRuleResult extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'failingRowsQuery')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRuleResult clone() =>
       DataQualityRuleResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRuleResult copyWith(
           void Function(DataQualityRuleResult) updates) =>
       super.copyWith((message) => updates(message as DataQualityRuleResult))
@@ -5380,13 +5210,13 @@ class DataQualityRuleResult extends $pb.GeneratedMessage {
   DataQualityRule get rule => $_getN(0);
   @$pb.TagNumber(1)
   set rule(DataQualityRule v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasRule() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRule() => clearField(1);
+  void clearRule() => $_clearField(1);
   @$pb.TagNumber(1)
   DataQualityRule ensureRule() => $_ensure(0);
 
@@ -5401,7 +5231,7 @@ class DataQualityRuleResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasNullCount() => $_has(1);
   @$pb.TagNumber(5)
-  void clearNullCount() => clearField(5);
+  void clearNullCount() => $_clearField(5);
 
   /// The ratio of **passed_count / evaluated_count**.
   /// This field is only valid for ColumnMap type rules.
@@ -5415,7 +5245,7 @@ class DataQualityRuleResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasPassRatio() => $_has(2);
   @$pb.TagNumber(6)
-  void clearPassRatio() => clearField(6);
+  void clearPassRatio() => $_clearField(6);
 
   /// Whether the rule passed or failed.
   @$pb.TagNumber(7)
@@ -5428,7 +5258,7 @@ class DataQualityRuleResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasPassed() => $_has(3);
   @$pb.TagNumber(7)
-  void clearPassed() => clearField(7);
+  void clearPassed() => $_clearField(7);
 
   /// The number of rows which passed a rule evaluation.
   /// This field is only valid for ColumnMap type rules.
@@ -5442,17 +5272,17 @@ class DataQualityRuleResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasPassedCount() => $_has(4);
   @$pb.TagNumber(8)
-  void clearPassedCount() => clearField(8);
+  void clearPassedCount() => $_clearField(8);
 
-  ///  The number of rows a rule was evaluated against. This field is only valid
-  ///  for ColumnMap type rules.
+  /// The number of rows a rule was evaluated against. This field is only valid
+  /// for ColumnMap type rules.
   ///
-  ///  Evaluated count can be configured to either
+  /// Evaluated count can be configured to either
   ///
-  ///  * include all rows (default) - with `null` rows automatically failing rule
-  ///  evaluation, or
-  ///  * exclude `null` rows from the `evaluated_count`, by setting
-  ///  `ignore_nulls = true`.
+  /// * include all rows (default) - with `null` rows automatically failing rule
+  /// evaluation, or
+  /// * exclude `null` rows from the `evaluated_count`, by setting
+  /// `ignore_nulls = true`.
   @$pb.TagNumber(9)
   $fixnum.Int64 get evaluatedCount => $_getI64(5);
   @$pb.TagNumber(9)
@@ -5463,7 +5293,7 @@ class DataQualityRuleResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasEvaluatedCount() => $_has(5);
   @$pb.TagNumber(9)
-  void clearEvaluatedCount() => clearField(9);
+  void clearEvaluatedCount() => $_clearField(9);
 
   /// The query to find rows that did not pass this rule.
   /// Only applies to ColumnMap and RowCondition rules.
@@ -5477,7 +5307,7 @@ class DataQualityRuleResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasFailingRowsQuery() => $_has(6);
   @$pb.TagNumber(10)
-  void clearFailingRowsQuery() => clearField(10);
+  void clearFailingRowsQuery() => $_clearField(10);
 }
 
 /// DataQualityDimensionResult provides a more detailed, per-dimension view of
@@ -5508,14 +5338,10 @@ class DataQualityDimensionResult extends $pb.GeneratedMessage {
     ..aOB(3, _omitFieldNames ? '' : 'passed')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityDimensionResult clone() =>
       DataQualityDimensionResult()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityDimensionResult copyWith(
           void Function(DataQualityDimensionResult) updates) =>
       super.copyWith(
@@ -5545,7 +5371,7 @@ class DataQualityDimensionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasPassed() => $_has(0);
   @$pb.TagNumber(3)
-  void clearPassed() => clearField(3);
+  void clearPassed() => $_clearField(3);
 }
 
 /// Evaluates whether each column value lies between a specified range.
@@ -5590,14 +5416,10 @@ class DataQualityRule_RangeExpectation extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'strictMaxEnabled')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_RangeExpectation clone() =>
       DataQualityRule_RangeExpectation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_RangeExpectation copyWith(
           void Function(DataQualityRule_RangeExpectation) updates) =>
       super.copyWith(
@@ -5631,7 +5453,7 @@ class DataQualityRule_RangeExpectation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasMinValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearMinValue() => clearField(1);
+  void clearMinValue() => $_clearField(1);
 
   /// Optional. The maximum column value allowed for a row to pass this
   /// validation. At least one of `min_value` and `max_value` need to be
@@ -5646,12 +5468,12 @@ class DataQualityRule_RangeExpectation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMaxValue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMaxValue() => clearField(2);
+  void clearMaxValue() => $_clearField(2);
 
-  ///  Optional. Whether each value needs to be strictly greater than ('>') the
-  ///  minimum, or if equality is allowed.
+  /// Optional. Whether each value needs to be strictly greater than ('>') the
+  /// minimum, or if equality is allowed.
   ///
-  ///  Only relevant if a `min_value` has been defined. Default = false.
+  /// Only relevant if a `min_value` has been defined. Default = false.
   @$pb.TagNumber(3)
   $core.bool get strictMinEnabled => $_getBF(2);
   @$pb.TagNumber(3)
@@ -5662,12 +5484,12 @@ class DataQualityRule_RangeExpectation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasStrictMinEnabled() => $_has(2);
   @$pb.TagNumber(3)
-  void clearStrictMinEnabled() => clearField(3);
+  void clearStrictMinEnabled() => $_clearField(3);
 
-  ///  Optional. Whether each value needs to be strictly lesser than ('<') the
-  ///  maximum, or if equality is allowed.
+  /// Optional. Whether each value needs to be strictly lesser than ('<') the
+  /// maximum, or if equality is allowed.
   ///
-  ///  Only relevant if a `max_value` has been defined. Default = false.
+  /// Only relevant if a `max_value` has been defined. Default = false.
   @$pb.TagNumber(4)
   $core.bool get strictMaxEnabled => $_getBF(3);
   @$pb.TagNumber(4)
@@ -5678,7 +5500,7 @@ class DataQualityRule_RangeExpectation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasStrictMaxEnabled() => $_has(3);
   @$pb.TagNumber(4)
-  void clearStrictMaxEnabled() => clearField(4);
+  void clearStrictMaxEnabled() => $_clearField(4);
 }
 
 /// Evaluates whether each column value is null.
@@ -5699,14 +5521,10 @@ class DataQualityRule_NonNullExpectation extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_NonNullExpectation clone() =>
       DataQualityRule_NonNullExpectation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_NonNullExpectation copyWith(
           void Function(DataQualityRule_NonNullExpectation) updates) =>
       super.copyWith((message) =>
@@ -5755,14 +5573,10 @@ class DataQualityRule_SetExpectation extends $pb.GeneratedMessage {
     ..pPS(1, _omitFieldNames ? '' : 'values')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_SetExpectation clone() =>
       DataQualityRule_SetExpectation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_SetExpectation copyWith(
           void Function(DataQualityRule_SetExpectation) updates) =>
       super.copyWith(
@@ -5784,7 +5598,7 @@ class DataQualityRule_SetExpectation extends $pb.GeneratedMessage {
 
   /// Expected values for the column value.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get values => $_getList(0);
+  $pb.PbList<$core.String> get values => $_getList(0);
 }
 
 /// Evaluates whether each column value matches a specified regex.
@@ -5814,14 +5628,10 @@ class DataQualityRule_RegexExpectation extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'regex')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_RegexExpectation clone() =>
       DataQualityRule_RegexExpectation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_RegexExpectation copyWith(
           void Function(DataQualityRule_RegexExpectation) updates) =>
       super.copyWith(
@@ -5853,7 +5663,7 @@ class DataQualityRule_RegexExpectation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasRegex() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRegex() => clearField(1);
+  void clearRegex() => $_clearField(1);
 }
 
 /// Evaluates whether the column has duplicates.
@@ -5875,14 +5685,10 @@ class DataQualityRule_UniquenessExpectation extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_UniquenessExpectation clone() =>
       DataQualityRule_UniquenessExpectation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_UniquenessExpectation copyWith(
           void Function(DataQualityRule_UniquenessExpectation) updates) =>
       super.copyWith((message) =>
@@ -5961,14 +5767,10 @@ class DataQualityRule_StatisticRangeExpectation extends $pb.GeneratedMessage {
     ..aOB(5, _omitFieldNames ? '' : 'strictMaxEnabled')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_StatisticRangeExpectation clone() =>
       DataQualityRule_StatisticRangeExpectation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_StatisticRangeExpectation copyWith(
           void Function(DataQualityRule_StatisticRangeExpectation) updates) =>
       super.copyWith((message) =>
@@ -5995,18 +5797,18 @@ class DataQualityRule_StatisticRangeExpectation extends $pb.GeneratedMessage {
       $_getN(0);
   @$pb.TagNumber(1)
   set statistic(DataQualityRule_StatisticRangeExpectation_ColumnStatistic v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStatistic() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStatistic() => clearField(1);
+  void clearStatistic() => $_clearField(1);
 
-  ///  The minimum column statistic value allowed for a row to pass this
-  ///  validation.
+  /// The minimum column statistic value allowed for a row to pass this
+  /// validation.
   ///
-  ///  At least one of `min_value` and `max_value` need to be provided.
+  /// At least one of `min_value` and `max_value` need to be provided.
   @$pb.TagNumber(2)
   $core.String get minValue => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -6017,12 +5819,12 @@ class DataQualityRule_StatisticRangeExpectation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMinValue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMinValue() => clearField(2);
+  void clearMinValue() => $_clearField(2);
 
-  ///  The maximum column statistic value allowed for a row to pass this
-  ///  validation.
+  /// The maximum column statistic value allowed for a row to pass this
+  /// validation.
   ///
-  ///  At least one of `min_value` and `max_value` need to be provided.
+  /// At least one of `min_value` and `max_value` need to be provided.
   @$pb.TagNumber(3)
   $core.String get maxValue => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -6033,12 +5835,12 @@ class DataQualityRule_StatisticRangeExpectation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMaxValue() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMaxValue() => clearField(3);
+  void clearMaxValue() => $_clearField(3);
 
-  ///  Whether column statistic needs to be strictly greater than ('>')
-  ///  the minimum, or if equality is allowed.
+  /// Whether column statistic needs to be strictly greater than ('>')
+  /// the minimum, or if equality is allowed.
   ///
-  ///  Only relevant if a `min_value` has been defined. Default = false.
+  /// Only relevant if a `min_value` has been defined. Default = false.
   @$pb.TagNumber(4)
   $core.bool get strictMinEnabled => $_getBF(3);
   @$pb.TagNumber(4)
@@ -6049,12 +5851,12 @@ class DataQualityRule_StatisticRangeExpectation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasStrictMinEnabled() => $_has(3);
   @$pb.TagNumber(4)
-  void clearStrictMinEnabled() => clearField(4);
+  void clearStrictMinEnabled() => $_clearField(4);
 
-  ///  Whether column statistic needs to be strictly lesser than ('<') the
-  ///  maximum, or if equality is allowed.
+  /// Whether column statistic needs to be strictly lesser than ('<') the
+  /// maximum, or if equality is allowed.
   ///
-  ///  Only relevant if a `max_value` has been defined. Default = false.
+  /// Only relevant if a `max_value` has been defined. Default = false.
   @$pb.TagNumber(5)
   $core.bool get strictMaxEnabled => $_getBF(4);
   @$pb.TagNumber(5)
@@ -6065,15 +5867,15 @@ class DataQualityRule_StatisticRangeExpectation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasStrictMaxEnabled() => $_has(4);
   @$pb.TagNumber(5)
-  void clearStrictMaxEnabled() => clearField(5);
+  void clearStrictMaxEnabled() => $_clearField(5);
 }
 
-///  Evaluates whether each row passes the specified condition.
+/// Evaluates whether each row passes the specified condition.
 ///
-///  The SQL expression needs to use BigQuery standard SQL syntax and should
-///  produce a boolean value per row as the result.
+/// The SQL expression needs to use BigQuery standard SQL syntax and should
+/// produce a boolean value per row as the result.
 ///
-///  Example: col1 >= 0 AND col2 < 10
+/// Example: col1 >= 0 AND col2 < 10
 class DataQualityRule_RowConditionExpectation extends $pb.GeneratedMessage {
   factory DataQualityRule_RowConditionExpectation({
     $core.String? sqlExpression,
@@ -6101,14 +5903,10 @@ class DataQualityRule_RowConditionExpectation extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'sqlExpression')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_RowConditionExpectation clone() =>
       DataQualityRule_RowConditionExpectation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_RowConditionExpectation copyWith(
           void Function(DataQualityRule_RowConditionExpectation) updates) =>
       super.copyWith((message) =>
@@ -6140,15 +5938,15 @@ class DataQualityRule_RowConditionExpectation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSqlExpression() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSqlExpression() => clearField(1);
+  void clearSqlExpression() => $_clearField(1);
 }
 
-///  Evaluates whether the provided expression is true.
+/// Evaluates whether the provided expression is true.
 ///
-///  The SQL expression needs to use BigQuery standard SQL syntax and should
-///  produce a scalar boolean result.
+/// The SQL expression needs to use BigQuery standard SQL syntax and should
+/// produce a scalar boolean result.
 ///
-///  Example: MIN(col1) >= 0
+/// Example: MIN(col1) >= 0
 class DataQualityRule_TableConditionExpectation extends $pb.GeneratedMessage {
   factory DataQualityRule_TableConditionExpectation({
     $core.String? sqlExpression,
@@ -6176,14 +5974,10 @@ class DataQualityRule_TableConditionExpectation extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'sqlExpression')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_TableConditionExpectation clone() =>
       DataQualityRule_TableConditionExpectation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule_TableConditionExpectation copyWith(
           void Function(DataQualityRule_TableConditionExpectation) updates) =>
       super.copyWith((message) =>
@@ -6216,7 +6010,7 @@ class DataQualityRule_TableConditionExpectation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSqlExpression() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSqlExpression() => clearField(1);
+  void clearSqlExpression() => $_clearField(1);
 }
 
 enum DataQualityRule_RuleType {
@@ -6343,13 +6137,9 @@ class DataQualityRule extends $pb.GeneratedMessage {
         503, _omitFieldNames ? '' : 'threshold', $pb.PbFieldType.OD)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule clone() => DataQualityRule()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataQualityRule copyWith(void Function(DataQualityRule) updates) =>
       super.copyWith((message) => updates(message as DataQualityRule))
           as DataQualityRule;
@@ -6368,7 +6158,7 @@ class DataQualityRule extends $pb.GeneratedMessage {
 
   DataQualityRule_RuleType whichRuleType() =>
       _DataQualityRule_RuleTypeByTag[$_whichOneof(0)]!;
-  void clearRuleType() => clearField($_whichOneof(0));
+  void clearRuleType() => $_clearField($_whichOneof(0));
 
   /// ColumnMap rule which evaluates whether each column value lies between a
   /// specified range.
@@ -6376,13 +6166,13 @@ class DataQualityRule extends $pb.GeneratedMessage {
   DataQualityRule_RangeExpectation get rangeExpectation => $_getN(0);
   @$pb.TagNumber(1)
   set rangeExpectation(DataQualityRule_RangeExpectation v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasRangeExpectation() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRangeExpectation() => clearField(1);
+  void clearRangeExpectation() => $_clearField(1);
   @$pb.TagNumber(1)
   DataQualityRule_RangeExpectation ensureRangeExpectation() => $_ensure(0);
 
@@ -6391,13 +6181,13 @@ class DataQualityRule extends $pb.GeneratedMessage {
   DataQualityRule_NonNullExpectation get nonNullExpectation => $_getN(1);
   @$pb.TagNumber(2)
   set nonNullExpectation(DataQualityRule_NonNullExpectation v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasNonNullExpectation() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNonNullExpectation() => clearField(2);
+  void clearNonNullExpectation() => $_clearField(2);
   @$pb.TagNumber(2)
   DataQualityRule_NonNullExpectation ensureNonNullExpectation() => $_ensure(1);
 
@@ -6407,13 +6197,13 @@ class DataQualityRule extends $pb.GeneratedMessage {
   DataQualityRule_SetExpectation get setExpectation => $_getN(2);
   @$pb.TagNumber(3)
   set setExpectation(DataQualityRule_SetExpectation v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasSetExpectation() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSetExpectation() => clearField(3);
+  void clearSetExpectation() => $_clearField(3);
   @$pb.TagNumber(3)
   DataQualityRule_SetExpectation ensureSetExpectation() => $_ensure(2);
 
@@ -6423,13 +6213,13 @@ class DataQualityRule extends $pb.GeneratedMessage {
   DataQualityRule_RegexExpectation get regexExpectation => $_getN(3);
   @$pb.TagNumber(4)
   set regexExpectation(DataQualityRule_RegexExpectation v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasRegexExpectation() => $_has(3);
   @$pb.TagNumber(4)
-  void clearRegexExpectation() => clearField(4);
+  void clearRegexExpectation() => $_clearField(4);
   @$pb.TagNumber(4)
   DataQualityRule_RegexExpectation ensureRegexExpectation() => $_ensure(3);
 
@@ -6438,13 +6228,13 @@ class DataQualityRule extends $pb.GeneratedMessage {
   DataQualityRule_UniquenessExpectation get uniquenessExpectation => $_getN(4);
   @$pb.TagNumber(100)
   set uniquenessExpectation(DataQualityRule_UniquenessExpectation v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasUniquenessExpectation() => $_has(4);
   @$pb.TagNumber(100)
-  void clearUniquenessExpectation() => clearField(100);
+  void clearUniquenessExpectation() => $_clearField(100);
   @$pb.TagNumber(100)
   DataQualityRule_UniquenessExpectation ensureUniquenessExpectation() =>
       $_ensure(4);
@@ -6456,13 +6246,13 @@ class DataQualityRule extends $pb.GeneratedMessage {
       $_getN(5);
   @$pb.TagNumber(101)
   set statisticRangeExpectation(DataQualityRule_StatisticRangeExpectation v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasStatisticRangeExpectation() => $_has(5);
   @$pb.TagNumber(101)
-  void clearStatisticRangeExpectation() => clearField(101);
+  void clearStatisticRangeExpectation() => $_clearField(101);
   @$pb.TagNumber(101)
   DataQualityRule_StatisticRangeExpectation ensureStatisticRangeExpectation() =>
       $_ensure(5);
@@ -6474,13 +6264,13 @@ class DataQualityRule extends $pb.GeneratedMessage {
       $_getN(6);
   @$pb.TagNumber(200)
   set rowConditionExpectation(DataQualityRule_RowConditionExpectation v) {
-    setField(200, v);
+    $_setField(200, v);
   }
 
   @$pb.TagNumber(200)
   $core.bool hasRowConditionExpectation() => $_has(6);
   @$pb.TagNumber(200)
-  void clearRowConditionExpectation() => clearField(200);
+  void clearRowConditionExpectation() => $_clearField(200);
   @$pb.TagNumber(200)
   DataQualityRule_RowConditionExpectation ensureRowConditionExpectation() =>
       $_ensure(6);
@@ -6491,13 +6281,13 @@ class DataQualityRule extends $pb.GeneratedMessage {
       $_getN(7);
   @$pb.TagNumber(201)
   set tableConditionExpectation(DataQualityRule_TableConditionExpectation v) {
-    setField(201, v);
+    $_setField(201, v);
   }
 
   @$pb.TagNumber(201)
   $core.bool hasTableConditionExpectation() => $_has(7);
   @$pb.TagNumber(201)
-  void clearTableConditionExpectation() => clearField(201);
+  void clearTableConditionExpectation() => $_clearField(201);
   @$pb.TagNumber(201)
   DataQualityRule_TableConditionExpectation ensureTableConditionExpectation() =>
       $_ensure(7);
@@ -6513,13 +6303,13 @@ class DataQualityRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(500)
   $core.bool hasColumn() => $_has(8);
   @$pb.TagNumber(500)
-  void clearColumn() => clearField(500);
+  void clearColumn() => $_clearField(500);
 
-  ///  Optional. Rows with `null` values will automatically fail a rule, unless
-  ///  `ignore_null` is `true`. In that case, such `null` rows are trivially
-  ///  considered passing.
+  /// Optional. Rows with `null` values will automatically fail a rule, unless
+  /// `ignore_null` is `true`. In that case, such `null` rows are trivially
+  /// considered passing.
   ///
-  ///  Only applicable to ColumnMap rules.
+  /// Only applicable to ColumnMap rules.
   @$pb.TagNumber(501)
   $core.bool get ignoreNull => $_getBF(9);
   @$pb.TagNumber(501)
@@ -6530,7 +6320,7 @@ class DataQualityRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(501)
   $core.bool hasIgnoreNull() => $_has(9);
   @$pb.TagNumber(501)
-  void clearIgnoreNull() => clearField(501);
+  void clearIgnoreNull() => $_clearField(501);
 
   /// Required. The dimension a rule belongs to. Results are also aggregated at
   /// the dimension level. Supported dimensions are **["COMPLETENESS",
@@ -6545,12 +6335,12 @@ class DataQualityRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(502)
   $core.bool hasDimension() => $_has(10);
   @$pb.TagNumber(502)
-  void clearDimension() => clearField(502);
+  void clearDimension() => $_clearField(502);
 
-  ///  Optional. The minimum ratio of **passing_rows / total_rows** required to
-  ///  pass this rule, with a range of [0.0, 1.0].
+  /// Optional. The minimum ratio of **passing_rows / total_rows** required to
+  /// pass this rule, with a range of [0.0, 1.0].
   ///
-  ///  0 indicates default value (i.e. 1.0).
+  /// 0 indicates default value (i.e. 1.0).
   @$pb.TagNumber(503)
   $core.double get threshold => $_getN(11);
   @$pb.TagNumber(503)
@@ -6561,7 +6351,7 @@ class DataQualityRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(503)
   $core.bool hasThreshold() => $_has(11);
   @$pb.TagNumber(503)
-  void clearThreshold() => clearField(503);
+  void clearThreshold() => $_clearField(503);
 }
 
 /// ResourceAccessSpec holds the access control configuration to be enforced
@@ -6603,13 +6393,9 @@ class ResourceAccessSpec extends $pb.GeneratedMessage {
     ..pPS(3, _omitFieldNames ? '' : 'owners')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceAccessSpec clone() => ResourceAccessSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceAccessSpec copyWith(void Function(ResourceAccessSpec) updates) =>
       super.copyWith((message) => updates(message as ResourceAccessSpec))
           as ResourceAccessSpec;
@@ -6630,15 +6416,15 @@ class ResourceAccessSpec extends $pb.GeneratedMessage {
   /// bindings. user:{email}, serviceAccount:{email} group:{email}.
   /// The set of principals to be granted reader role on the resource.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get readers => $_getList(0);
+  $pb.PbList<$core.String> get readers => $_getList(0);
 
   /// Optional. The set of principals to be granted writer role on the resource.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get writers => $_getList(1);
+  $pb.PbList<$core.String> get writers => $_getList(1);
 
   /// Optional. The set of principals to be granted owner role on the resource.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get owners => $_getList(2);
+  $pb.PbList<$core.String> get owners => $_getList(2);
 }
 
 /// DataAccessSpec holds the access control configuration to be enforced on data
@@ -6672,13 +6458,9 @@ class DataAccessSpec extends $pb.GeneratedMessage {
     ..pPS(1, _omitFieldNames ? '' : 'readers')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAccessSpec clone() => DataAccessSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAccessSpec copyWith(void Function(DataAccessSpec) updates) =>
       super.copyWith((message) => updates(message as DataAccessSpec))
           as DataAccessSpec;
@@ -6700,7 +6482,7 @@ class DataAccessSpec extends $pb.GeneratedMessage {
   /// The set of principals to be granted reader role on data
   /// stored within resources.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get readers => $_getList(0);
+  $pb.PbList<$core.String> get readers => $_getList(0);
 }
 
 /// DataTaxonomy represents a set of hierarchical DataAttributes resources,
@@ -6714,7 +6496,7 @@ class DataTaxonomy extends $pb.GeneratedMessage {
     $2.Timestamp? updateTime,
     $core.String? description,
     $core.String? displayName,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.int? attributeCount,
     $core.String? etag,
   }) {
@@ -6738,7 +6520,7 @@ class DataTaxonomy extends $pb.GeneratedMessage {
       $result.displayName = displayName;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (attributeCount != null) {
       $result.attributeCount = attributeCount;
@@ -6779,13 +6561,9 @@ class DataTaxonomy extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataTaxonomy clone() => DataTaxonomy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataTaxonomy copyWith(void Function(DataTaxonomy) updates) =>
       super.copyWith((message) => updates(message as DataTaxonomy))
           as DataTaxonomy;
@@ -6814,7 +6592,7 @@ class DataTaxonomy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. System generated globally unique ID for the dataTaxonomy. This
   /// ID will be different if the DataTaxonomy is deleted and re-created with the
@@ -6829,20 +6607,20 @@ class DataTaxonomy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
   /// Output only. The time when the DataTaxonomy was created.
   @$pb.TagNumber(3)
   $2.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
   set createTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCreateTime() => clearField(3);
+  void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureCreateTime() => $_ensure(2);
 
@@ -6851,13 +6629,13 @@ class DataTaxonomy extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
   set updateTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUpdateTime() => clearField(4);
+  void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureUpdateTime() => $_ensure(3);
 
@@ -6872,7 +6650,7 @@ class DataTaxonomy extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Optional. User friendly display name.
   @$pb.TagNumber(6)
@@ -6885,11 +6663,11 @@ class DataTaxonomy extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDisplayName() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDisplayName() => clearField(6);
+  void clearDisplayName() => $_clearField(6);
 
   /// Optional. User-defined labels for the DataTaxonomy.
   @$pb.TagNumber(8)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(6);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(6);
 
   /// Output only. The number of attributes in the DataTaxonomy.
   @$pb.TagNumber(9)
@@ -6902,7 +6680,7 @@ class DataTaxonomy extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasAttributeCount() => $_has(7);
   @$pb.TagNumber(9)
-  void clearAttributeCount() => clearField(9);
+  void clearAttributeCount() => $_clearField(9);
 
   /// This checksum is computed by the server based on the value of other
   /// fields, and may be sent on update and delete requests to ensure the
@@ -6917,20 +6695,20 @@ class DataTaxonomy extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasEtag() => $_has(8);
   @$pb.TagNumber(10)
-  void clearEtag() => clearField(10);
+  void clearEtag() => $_clearField(10);
 }
 
-///  Denotes one dataAttribute in a dataTaxonomy, for example, PII.
-///  DataAttribute resources can be defined in a hierarchy.
-///  A single dataAttribute resource can contain specs of multiple types
+/// Denotes one dataAttribute in a dataTaxonomy, for example, PII.
+/// DataAttribute resources can be defined in a hierarchy.
+/// A single dataAttribute resource can contain specs of multiple types
 ///
-///  ```
-///  PII
-///    - ResourceAccessSpec :
-///                  - readers :foo@bar.com
-///    - DataAccessSpec :
-///                  - readers :bar@foo.com
-///  ```
+/// ```
+/// PII
+///   - ResourceAccessSpec :
+///                 - readers :foo@bar.com
+///   - DataAccessSpec :
+///                 - readers :bar@foo.com
+/// ```
 class DataAttribute extends $pb.GeneratedMessage {
   factory DataAttribute({
     $core.String? name,
@@ -6939,7 +6717,7 @@ class DataAttribute extends $pb.GeneratedMessage {
     $2.Timestamp? updateTime,
     $core.String? description,
     $core.String? displayName,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? parentId,
     $core.int? attributeCount,
     $core.String? etag,
@@ -6966,7 +6744,7 @@ class DataAttribute extends $pb.GeneratedMessage {
       $result.displayName = displayName;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (parentId != null) {
       $result.parentId = parentId;
@@ -7021,13 +6799,9 @@ class DataAttribute extends $pb.GeneratedMessage {
         subBuilder: DataAccessSpec.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAttribute clone() => DataAttribute()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAttribute copyWith(void Function(DataAttribute) updates) =>
       super.copyWith((message) => updates(message as DataAttribute))
           as DataAttribute;
@@ -7056,7 +6830,7 @@ class DataAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. System generated globally unique ID for the DataAttribute.
   /// This ID will be different if the DataAttribute is deleted and re-created
@@ -7071,20 +6845,20 @@ class DataAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
   /// Output only. The time when the DataAttribute was created.
   @$pb.TagNumber(3)
   $2.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
   set createTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCreateTime() => clearField(3);
+  void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureCreateTime() => $_ensure(2);
 
@@ -7093,13 +6867,13 @@ class DataAttribute extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
   set updateTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUpdateTime() => clearField(4);
+  void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureUpdateTime() => $_ensure(3);
 
@@ -7114,7 +6888,7 @@ class DataAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Optional. User friendly display name.
   @$pb.TagNumber(6)
@@ -7127,11 +6901,11 @@ class DataAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDisplayName() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDisplayName() => clearField(6);
+  void clearDisplayName() => $_clearField(6);
 
   /// Optional. User-defined labels for the DataAttribute.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(6);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(6);
 
   /// Optional. The ID of the parent DataAttribute resource, should belong to the
   /// same data taxonomy. Circular dependency in parent chain is not valid.
@@ -7147,7 +6921,7 @@ class DataAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasParentId() => $_has(7);
   @$pb.TagNumber(8)
-  void clearParentId() => clearField(8);
+  void clearParentId() => $_clearField(8);
 
   /// Output only. The number of child attributes present for this attribute.
   @$pb.TagNumber(9)
@@ -7160,7 +6934,7 @@ class DataAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasAttributeCount() => $_has(8);
   @$pb.TagNumber(9)
-  void clearAttributeCount() => clearField(9);
+  void clearAttributeCount() => $_clearField(9);
 
   /// This checksum is computed by the server based on the value of other
   /// fields, and may be sent on update and delete requests to ensure the
@@ -7175,7 +6949,7 @@ class DataAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasEtag() => $_has(9);
   @$pb.TagNumber(10)
-  void clearEtag() => clearField(10);
+  void clearEtag() => $_clearField(10);
 
   /// Optional. Specified when applied to a resource (eg: Cloud Storage bucket,
   /// BigQuery dataset, BigQuery table).
@@ -7183,13 +6957,13 @@ class DataAttribute extends $pb.GeneratedMessage {
   ResourceAccessSpec get resourceAccessSpec => $_getN(10);
   @$pb.TagNumber(100)
   set resourceAccessSpec(ResourceAccessSpec v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasResourceAccessSpec() => $_has(10);
   @$pb.TagNumber(100)
-  void clearResourceAccessSpec() => clearField(100);
+  void clearResourceAccessSpec() => $_clearField(100);
   @$pb.TagNumber(100)
   ResourceAccessSpec ensureResourceAccessSpec() => $_ensure(10);
 
@@ -7199,13 +6973,13 @@ class DataAttribute extends $pb.GeneratedMessage {
   DataAccessSpec get dataAccessSpec => $_getN(11);
   @$pb.TagNumber(101)
   set dataAccessSpec(DataAccessSpec v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasDataAccessSpec() => $_has(11);
   @$pb.TagNumber(101)
-  void clearDataAccessSpec() => clearField(101);
+  void clearDataAccessSpec() => $_clearField(101);
   @$pb.TagNumber(101)
   DataAccessSpec ensureDataAccessSpec() => $_ensure(11);
 }
@@ -7243,14 +7017,10 @@ class DataAttributeBinding_Path extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'attributes')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAttributeBinding_Path clone() =>
       DataAttributeBinding_Path()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAttributeBinding_Path copyWith(
           void Function(DataAttributeBinding_Path) updates) =>
       super.copyWith((message) => updates(message as DataAttributeBinding_Path))
@@ -7280,13 +7050,13 @@ class DataAttributeBinding_Path extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Optional. List of attributes to be associated with the path of the
   /// resource, provided in the form:
   /// projects/{project}/locations/{location}/dataTaxonomies/{dataTaxonomy}/attributes/{data_attribute_id}
   @$pb.TagNumber(2)
-  $core.List<$core.String> get attributes => $_getList(1);
+  $pb.PbList<$core.String> get attributes => $_getList(1);
 }
 
 enum DataAttributeBinding_ResourceReference { resource, notSet }
@@ -7301,7 +7071,7 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
     $2.Timestamp? updateTime,
     $core.String? description,
     $core.String? displayName,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? etag,
     $core.String? resource,
     $core.Iterable<$core.String>? attributes,
@@ -7327,7 +7097,7 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
       $result.displayName = displayName;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (etag != null) {
       $result.etag = etag;
@@ -7383,14 +7153,10 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
         subBuilder: DataAttributeBinding_Path.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAttributeBinding clone() =>
       DataAttributeBinding()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAttributeBinding copyWith(void Function(DataAttributeBinding) updates) =>
       super.copyWith((message) => updates(message as DataAttributeBinding))
           as DataAttributeBinding;
@@ -7409,7 +7175,7 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
 
   DataAttributeBinding_ResourceReference whichResourceReference() =>
       _DataAttributeBinding_ResourceReferenceByTag[$_whichOneof(0)]!;
-  void clearResourceReference() => clearField($_whichOneof(0));
+  void clearResourceReference() => $_clearField($_whichOneof(0));
 
   /// Output only. The relative resource name of the Data Attribute Binding, of
   /// the form:
@@ -7424,7 +7190,7 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. System generated globally unique ID for the
   /// DataAttributeBinding. This ID will be different if the DataAttributeBinding
@@ -7439,20 +7205,20 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
   /// Output only. The time when the DataAttributeBinding was created.
   @$pb.TagNumber(3)
   $2.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
   set createTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCreateTime() => clearField(3);
+  void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureCreateTime() => $_ensure(2);
 
@@ -7461,13 +7227,13 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
   set updateTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUpdateTime() => clearField(4);
+  void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureUpdateTime() => $_ensure(3);
 
@@ -7482,7 +7248,7 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Optional. User friendly display name.
   @$pb.TagNumber(6)
@@ -7495,11 +7261,11 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDisplayName() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDisplayName() => clearField(6);
+  void clearDisplayName() => $_clearField(6);
 
   /// Optional. User-defined labels for the DataAttributeBinding.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(6);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(6);
 
   /// This checksum is computed by the server based on the value of other
   /// fields, and may be sent on update and delete requests to ensure the
@@ -7516,7 +7282,7 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasEtag() => $_has(7);
   @$pb.TagNumber(8)
-  void clearEtag() => clearField(8);
+  void clearEtag() => $_clearField(8);
 
   /// Optional. Immutable. The resource name of the resource that is associated
   /// to attributes. Presently, only entity resource is supported in the form:
@@ -7533,18 +7299,18 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(100)
   $core.bool hasResource() => $_has(8);
   @$pb.TagNumber(100)
-  void clearResource() => clearField(100);
+  void clearResource() => $_clearField(100);
 
   /// Optional. List of attributes to be associated with the resource, provided
   /// in the form:
   /// projects/{project}/locations/{location}/dataTaxonomies/{dataTaxonomy}/attributes/{data_attribute_id}
   @$pb.TagNumber(110)
-  $core.List<$core.String> get attributes => $_getList(9);
+  $pb.PbList<$core.String> get attributes => $_getList(9);
 
   /// Optional. The list of paths for items within the associated resource (eg.
   /// columns within a table) along with attribute bindings.
   @$pb.TagNumber(120)
-  $core.List<DataAttributeBinding_Path> get paths => $_getList(10);
+  $pb.PbList<DataAttributeBinding_Path> get paths => $_getList(10);
 }
 
 enum DataScan_ExecutionSpec_Incremental { field_100, notSet }
@@ -7588,14 +7354,10 @@ class DataScan_ExecutionSpec extends $pb.GeneratedMessage {
     ..aOS(100, _omitFieldNames ? '' : 'field')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataScan_ExecutionSpec clone() =>
       DataScan_ExecutionSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataScan_ExecutionSpec copyWith(
           void Function(DataScan_ExecutionSpec) updates) =>
       super.copyWith((message) => updates(message as DataScan_ExecutionSpec))
@@ -7615,30 +7377,30 @@ class DataScan_ExecutionSpec extends $pb.GeneratedMessage {
 
   DataScan_ExecutionSpec_Incremental whichIncremental() =>
       _DataScan_ExecutionSpec_IncrementalByTag[$_whichOneof(0)]!;
-  void clearIncremental() => clearField($_whichOneof(0));
+  void clearIncremental() => $_clearField($_whichOneof(0));
 
-  ///  Optional. Spec related to how often and when a scan should be triggered.
+  /// Optional. Spec related to how often and when a scan should be triggered.
   ///
-  ///  If not specified, the default is `OnDemand`, which means the scan will
-  ///  not run until the user calls `RunDataScan` API.
+  /// If not specified, the default is `OnDemand`, which means the scan will
+  /// not run until the user calls `RunDataScan` API.
   @$pb.TagNumber(1)
   Trigger get trigger => $_getN(0);
   @$pb.TagNumber(1)
   set trigger(Trigger v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasTrigger() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTrigger() => clearField(1);
+  void clearTrigger() => $_clearField(1);
   @$pb.TagNumber(1)
   Trigger ensureTrigger() => $_ensure(0);
 
-  ///  Immutable. The unnested field (of type *Date* or *Timestamp*) that
-  ///  contains values which monotonically increase over time.
+  /// Immutable. The unnested field (of type *Date* or *Timestamp*) that
+  /// contains values which monotonically increase over time.
   ///
-  ///  If not specified, a data scan will run for all data in the table.
+  /// If not specified, a data scan will run for all data in the table.
   @$pb.TagNumber(100)
   $core.String get field_100 => $_getSZ(1);
   @$pb.TagNumber(100)
@@ -7649,7 +7411,7 @@ class DataScan_ExecutionSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(100)
   $core.bool hasField_100() => $_has(1);
   @$pb.TagNumber(100)
-  void clearField_100() => clearField(100);
+  void clearField_100() => $_clearField(100);
 }
 
 /// Status of the data scan execution.
@@ -7686,14 +7448,10 @@ class DataScan_ExecutionStatus extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataScan_ExecutionStatus clone() =>
       DataScan_ExecutionStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataScan_ExecutionStatus copyWith(
           void Function(DataScan_ExecutionStatus) updates) =>
       super.copyWith((message) => updates(message as DataScan_ExecutionStatus))
@@ -7716,13 +7474,13 @@ class DataScan_ExecutionStatus extends $pb.GeneratedMessage {
   $2.Timestamp get latestJobStartTime => $_getN(0);
   @$pb.TagNumber(4)
   set latestJobStartTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasLatestJobStartTime() => $_has(0);
   @$pb.TagNumber(4)
-  void clearLatestJobStartTime() => clearField(4);
+  void clearLatestJobStartTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureLatestJobStartTime() => $_ensure(0);
 
@@ -7731,13 +7489,13 @@ class DataScan_ExecutionStatus extends $pb.GeneratedMessage {
   $2.Timestamp get latestJobEndTime => $_getN(1);
   @$pb.TagNumber(5)
   set latestJobEndTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasLatestJobEndTime() => $_has(1);
   @$pb.TagNumber(5)
-  void clearLatestJobEndTime() => clearField(5);
+  void clearLatestJobEndTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureLatestJobEndTime() => $_ensure(1);
 }
@@ -7746,23 +7504,23 @@ enum DataScan_Spec { dataQualitySpec, dataProfileSpec, notSet }
 
 enum DataScan_Result { dataQualityResult, dataProfileResult, notSet }
 
-///  Represents a user-visible job which provides the insights for the related
-///  data source.
+/// Represents a user-visible job which provides the insights for the related
+/// data source.
 ///
-///  For example:
+/// For example:
 ///
-///  * Data Quality: generates queries based on the rules and runs against the
-///    data to get data quality check results.
-///  * Data Profile: analyzes the data in table(s) and generates insights about
-///    the structure, content and relationships (such as null percent,
-///    cardinality, min/max/mean, etc).
+/// * Data Quality: generates queries based on the rules and runs against the
+///   data to get data quality check results.
+/// * Data Profile: analyzes the data in table(s) and generates insights about
+///   the structure, content and relationships (such as null percent,
+///   cardinality, min/max/mean, etc).
 class DataScan extends $pb.GeneratedMessage {
   factory DataScan({
     $core.String? name,
     $core.String? uid,
     $core.String? description,
     $core.String? displayName,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     State? state,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
@@ -7789,7 +7547,7 @@ class DataScan extends $pb.GeneratedMessage {
       $result.displayName = displayName;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (state != null) {
       $result.state = state;
@@ -7889,13 +7647,9 @@ class DataScan extends $pb.GeneratedMessage {
         subBuilder: DataProfileResult.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataScan clone() => DataScan()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataScan copyWith(void Function(DataScan) updates) =>
       super.copyWith((message) => updates(message as DataScan)) as DataScan;
 
@@ -7911,10 +7665,10 @@ class DataScan extends $pb.GeneratedMessage {
   static DataScan? _defaultInstance;
 
   DataScan_Spec whichSpec() => _DataScan_SpecByTag[$_whichOneof(0)]!;
-  void clearSpec() => clearField($_whichOneof(0));
+  void clearSpec() => $_clearField($_whichOneof(0));
 
   DataScan_Result whichResult() => _DataScan_ResultByTag[$_whichOneof(1)]!;
-  void clearResult() => clearField($_whichOneof(1));
+  void clearResult() => $_clearField($_whichOneof(1));
 
   /// Output only. The relative resource name of the scan, of the form:
   /// `projects/{project}/locations/{location_id}/dataScans/{datascan_id}`,
@@ -7930,7 +7684,7 @@ class DataScan extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. System generated globally unique ID for the scan. This ID will
   /// be different if the scan is deleted and re-created with the same name.
@@ -7944,11 +7698,11 @@ class DataScan extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
-  ///  Optional. Description of the scan.
+  /// Optional. Description of the scan.
   ///
-  ///  * Must be between 1-1024 characters.
+  /// * Must be between 1-1024 characters.
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -7959,11 +7713,11 @@ class DataScan extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
-  ///  Optional. User friendly display name.
+  /// Optional. User friendly display name.
   ///
-  ///  * Must be between 1-256 characters.
+  /// * Must be between 1-256 characters.
   @$pb.TagNumber(4)
   $core.String get displayName => $_getSZ(3);
   @$pb.TagNumber(4)
@@ -7974,37 +7728,37 @@ class DataScan extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDisplayName() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDisplayName() => clearField(4);
+  void clearDisplayName() => $_clearField(4);
 
   /// Optional. User-defined labels for the scan.
   @$pb.TagNumber(5)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(4);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(4);
 
   /// Output only. Current state of the DataScan.
   @$pb.TagNumber(6)
   State get state => $_getN(5);
   @$pb.TagNumber(6)
   set state(State v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(6)
-  void clearState() => clearField(6);
+  void clearState() => $_clearField(6);
 
   /// Output only. The time when the scan was created.
   @$pb.TagNumber(7)
   $2.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
   set createTime($2.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
-  void clearCreateTime() => clearField(7);
+  void clearCreateTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $2.Timestamp ensureCreateTime() => $_ensure(6);
 
@@ -8013,13 +7767,13 @@ class DataScan extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
   set updateTime($2.Timestamp v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
-  void clearUpdateTime() => clearField(8);
+  void clearUpdateTime() => $_clearField(8);
   @$pb.TagNumber(8)
   $2.Timestamp ensureUpdateTime() => $_ensure(7);
 
@@ -8028,30 +7782,30 @@ class DataScan extends $pb.GeneratedMessage {
   DataSource get data => $_getN(8);
   @$pb.TagNumber(9)
   set data(DataSource v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasData() => $_has(8);
   @$pb.TagNumber(9)
-  void clearData() => clearField(9);
+  void clearData() => $_clearField(9);
   @$pb.TagNumber(9)
   DataSource ensureData() => $_ensure(8);
 
-  ///  Optional. DataScan execution settings.
+  /// Optional. DataScan execution settings.
   ///
-  ///  If not specified, the fields in it will use their default values.
+  /// If not specified, the fields in it will use their default values.
   @$pb.TagNumber(10)
   DataScan_ExecutionSpec get executionSpec => $_getN(9);
   @$pb.TagNumber(10)
   set executionSpec(DataScan_ExecutionSpec v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasExecutionSpec() => $_has(9);
   @$pb.TagNumber(10)
-  void clearExecutionSpec() => clearField(10);
+  void clearExecutionSpec() => $_clearField(10);
   @$pb.TagNumber(10)
   DataScan_ExecutionSpec ensureExecutionSpec() => $_ensure(9);
 
@@ -8060,13 +7814,13 @@ class DataScan extends $pb.GeneratedMessage {
   DataScan_ExecutionStatus get executionStatus => $_getN(10);
   @$pb.TagNumber(11)
   set executionStatus(DataScan_ExecutionStatus v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasExecutionStatus() => $_has(10);
   @$pb.TagNumber(11)
-  void clearExecutionStatus() => clearField(11);
+  void clearExecutionStatus() => $_clearField(11);
   @$pb.TagNumber(11)
   DataScan_ExecutionStatus ensureExecutionStatus() => $_ensure(10);
 
@@ -8075,26 +7829,26 @@ class DataScan extends $pb.GeneratedMessage {
   DataScanType get type => $_getN(11);
   @$pb.TagNumber(12)
   set type(DataScanType v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasType() => $_has(11);
   @$pb.TagNumber(12)
-  void clearType() => clearField(12);
+  void clearType() => $_clearField(12);
 
   /// DataQualityScan related setting.
   @$pb.TagNumber(100)
   DataQualitySpec get dataQualitySpec => $_getN(12);
   @$pb.TagNumber(100)
   set dataQualitySpec(DataQualitySpec v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasDataQualitySpec() => $_has(12);
   @$pb.TagNumber(100)
-  void clearDataQualitySpec() => clearField(100);
+  void clearDataQualitySpec() => $_clearField(100);
   @$pb.TagNumber(100)
   DataQualitySpec ensureDataQualitySpec() => $_ensure(12);
 
@@ -8103,13 +7857,13 @@ class DataScan extends $pb.GeneratedMessage {
   DataProfileSpec get dataProfileSpec => $_getN(13);
   @$pb.TagNumber(101)
   set dataProfileSpec(DataProfileSpec v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasDataProfileSpec() => $_has(13);
   @$pb.TagNumber(101)
-  void clearDataProfileSpec() => clearField(101);
+  void clearDataProfileSpec() => $_clearField(101);
   @$pb.TagNumber(101)
   DataProfileSpec ensureDataProfileSpec() => $_ensure(13);
 
@@ -8118,13 +7872,13 @@ class DataScan extends $pb.GeneratedMessage {
   DataQualityResult get dataQualityResult => $_getN(14);
   @$pb.TagNumber(200)
   set dataQualityResult(DataQualityResult v) {
-    setField(200, v);
+    $_setField(200, v);
   }
 
   @$pb.TagNumber(200)
   $core.bool hasDataQualityResult() => $_has(14);
   @$pb.TagNumber(200)
-  void clearDataQualityResult() => clearField(200);
+  void clearDataQualityResult() => $_clearField(200);
   @$pb.TagNumber(200)
   DataQualityResult ensureDataQualityResult() => $_ensure(14);
 
@@ -8133,13 +7887,13 @@ class DataScan extends $pb.GeneratedMessage {
   DataProfileResult get dataProfileResult => $_getN(15);
   @$pb.TagNumber(201)
   set dataProfileResult(DataProfileResult v) {
-    setField(201, v);
+    $_setField(201, v);
   }
 
   @$pb.TagNumber(201)
   $core.bool hasDataProfileResult() => $_has(15);
   @$pb.TagNumber(201)
-  void clearDataProfileResult() => clearField(201);
+  void clearDataProfileResult() => $_clearField(201);
   @$pb.TagNumber(201)
   DataProfileResult ensureDataProfileResult() => $_ensure(15);
 }
@@ -8180,14 +7934,10 @@ class Task_InfrastructureSpec_BatchComputeResources
         2, _omitFieldNames ? '' : 'maxExecutorsCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_InfrastructureSpec_BatchComputeResources clone() =>
       Task_InfrastructureSpec_BatchComputeResources()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_InfrastructureSpec_BatchComputeResources copyWith(
           void Function(Task_InfrastructureSpec_BatchComputeResources)
               updates) =>
@@ -8223,7 +7973,7 @@ class Task_InfrastructureSpec_BatchComputeResources
   @$pb.TagNumber(1)
   $core.bool hasExecutorsCount() => $_has(0);
   @$pb.TagNumber(1)
-  void clearExecutorsCount() => clearField(1);
+  void clearExecutorsCount() => $_clearField(1);
 
   /// Optional. Max configurable executors.
   /// If max_executors_count > executors_count, then auto-scaling is enabled.
@@ -8238,7 +7988,7 @@ class Task_InfrastructureSpec_BatchComputeResources
   @$pb.TagNumber(2)
   $core.bool hasMaxExecutorsCount() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMaxExecutorsCount() => clearField(2);
+  void clearMaxExecutorsCount() => $_clearField(2);
 }
 
 /// Container Image Runtime Configuration used with Batch execution.
@@ -8248,7 +7998,7 @@ class Task_InfrastructureSpec_ContainerImageRuntime
     $core.String? image,
     $core.Iterable<$core.String>? javaJars,
     $core.Iterable<$core.String>? pythonPackages,
-    $core.Map<$core.String, $core.String>? properties,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? properties,
   }) {
     final $result = create();
     if (image != null) {
@@ -8261,7 +8011,7 @@ class Task_InfrastructureSpec_ContainerImageRuntime
       $result.pythonPackages.addAll(pythonPackages);
     }
     if (properties != null) {
-      $result.properties.addAll(properties);
+      $result.properties.addEntries(properties);
     }
     return $result;
   }
@@ -8290,14 +8040,10 @@ class Task_InfrastructureSpec_ContainerImageRuntime
         packageName: const $pb.PackageName('google.events.cloud.dataplex.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_InfrastructureSpec_ContainerImageRuntime clone() =>
       Task_InfrastructureSpec_ContainerImageRuntime()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_InfrastructureSpec_ContainerImageRuntime copyWith(
           void Function(Task_InfrastructureSpec_ContainerImageRuntime)
               updates) =>
@@ -8332,19 +8078,19 @@ class Task_InfrastructureSpec_ContainerImageRuntime
   @$pb.TagNumber(1)
   $core.bool hasImage() => $_has(0);
   @$pb.TagNumber(1)
-  void clearImage() => clearField(1);
+  void clearImage() => $_clearField(1);
 
   /// Optional. A list of Java JARS to add to the classpath.
   /// Valid input includes Cloud Storage URIs to Jar binaries.
   /// For example, gs://bucket-name/my/path/to/file.jar
   @$pb.TagNumber(2)
-  $core.List<$core.String> get javaJars => $_getList(1);
+  $pb.PbList<$core.String> get javaJars => $_getList(1);
 
   /// Optional. A list of python packages to be installed.
   /// Valid formats include Cloud Storage URI to a PIP installable library.
   /// For example, gs://bucket-name/my/path/to/lib.tar.gz
   @$pb.TagNumber(3)
-  $core.List<$core.String> get pythonPackages => $_getList(2);
+  $pb.PbList<$core.String> get pythonPackages => $_getList(2);
 
   /// Optional. Override to common configuration of open source components
   /// installed on the Dataproc cluster. The properties to set on daemon
@@ -8352,7 +8098,7 @@ class Task_InfrastructureSpec_ContainerImageRuntime
   /// for example `core:hadoop.tmp.dir`. For more information, see [Cluster
   /// properties](https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get properties => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get properties => $_getMap(3);
 }
 
 enum Task_InfrastructureSpec_VpcNetwork_NetworkName {
@@ -8406,14 +8152,10 @@ class Task_InfrastructureSpec_VpcNetwork extends $pb.GeneratedMessage {
     ..pPS(3, _omitFieldNames ? '' : 'networkTags')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_InfrastructureSpec_VpcNetwork clone() =>
       Task_InfrastructureSpec_VpcNetwork()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_InfrastructureSpec_VpcNetwork copyWith(
           void Function(Task_InfrastructureSpec_VpcNetwork) updates) =>
       super.copyWith((message) =>
@@ -8436,7 +8178,7 @@ class Task_InfrastructureSpec_VpcNetwork extends $pb.GeneratedMessage {
 
   Task_InfrastructureSpec_VpcNetwork_NetworkName whichNetworkName() =>
       _Task_InfrastructureSpec_VpcNetwork_NetworkNameByTag[$_whichOneof(0)]!;
-  void clearNetworkName() => clearField($_whichOneof(0));
+  void clearNetworkName() => $_clearField($_whichOneof(0));
 
   /// Optional. The Cloud VPC network in which the job is run. By default,
   /// the Cloud VPC network named Default within the project is used.
@@ -8450,7 +8192,7 @@ class Task_InfrastructureSpec_VpcNetwork extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNetwork() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNetwork() => clearField(1);
+  void clearNetwork() => $_clearField(1);
 
   /// Optional. The Cloud VPC sub-network in which the job is run.
   @$pb.TagNumber(2)
@@ -8463,11 +8205,11 @@ class Task_InfrastructureSpec_VpcNetwork extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSubNetwork() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSubNetwork() => clearField(2);
+  void clearSubNetwork() => $_clearField(2);
 
   /// Optional. List of network tags to apply to the job.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get networkTags => $_getList(2);
+  $pb.PbList<$core.String> get networkTags => $_getList(2);
 }
 
 enum Task_InfrastructureSpec_Resources { batch, notSet }
@@ -8537,14 +8279,10 @@ class Task_InfrastructureSpec extends $pb.GeneratedMessage {
         subBuilder: Task_InfrastructureSpec_VpcNetwork.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_InfrastructureSpec clone() =>
       Task_InfrastructureSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_InfrastructureSpec copyWith(
           void Function(Task_InfrastructureSpec) updates) =>
       super.copyWith((message) => updates(message as Task_InfrastructureSpec))
@@ -8564,28 +8302,28 @@ class Task_InfrastructureSpec extends $pb.GeneratedMessage {
 
   Task_InfrastructureSpec_Resources whichResources() =>
       _Task_InfrastructureSpec_ResourcesByTag[$_whichOneof(0)]!;
-  void clearResources() => clearField($_whichOneof(0));
+  void clearResources() => $_clearField($_whichOneof(0));
 
   Task_InfrastructureSpec_Runtime whichRuntime() =>
       _Task_InfrastructureSpec_RuntimeByTag[$_whichOneof(1)]!;
-  void clearRuntime() => clearField($_whichOneof(1));
+  void clearRuntime() => $_clearField($_whichOneof(1));
 
   Task_InfrastructureSpec_Network whichNetwork() =>
       _Task_InfrastructureSpec_NetworkByTag[$_whichOneof(2)]!;
-  void clearNetwork() => clearField($_whichOneof(2));
+  void clearNetwork() => $_clearField($_whichOneof(2));
 
   /// Compute resources needed for a Task when using Dataproc Serverless.
   @$pb.TagNumber(52)
   Task_InfrastructureSpec_BatchComputeResources get batch => $_getN(0);
   @$pb.TagNumber(52)
   set batch(Task_InfrastructureSpec_BatchComputeResources v) {
-    setField(52, v);
+    $_setField(52, v);
   }
 
   @$pb.TagNumber(52)
   $core.bool hasBatch() => $_has(0);
   @$pb.TagNumber(52)
-  void clearBatch() => clearField(52);
+  void clearBatch() => $_clearField(52);
   @$pb.TagNumber(52)
   Task_InfrastructureSpec_BatchComputeResources ensureBatch() => $_ensure(0);
 
@@ -8594,13 +8332,13 @@ class Task_InfrastructureSpec extends $pb.GeneratedMessage {
   Task_InfrastructureSpec_ContainerImageRuntime get containerImage => $_getN(1);
   @$pb.TagNumber(101)
   set containerImage(Task_InfrastructureSpec_ContainerImageRuntime v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasContainerImage() => $_has(1);
   @$pb.TagNumber(101)
-  void clearContainerImage() => clearField(101);
+  void clearContainerImage() => $_clearField(101);
   @$pb.TagNumber(101)
   Task_InfrastructureSpec_ContainerImageRuntime ensureContainerImage() =>
       $_ensure(1);
@@ -8610,13 +8348,13 @@ class Task_InfrastructureSpec extends $pb.GeneratedMessage {
   Task_InfrastructureSpec_VpcNetwork get vpcNetwork => $_getN(2);
   @$pb.TagNumber(150)
   set vpcNetwork(Task_InfrastructureSpec_VpcNetwork v) {
-    setField(150, v);
+    $_setField(150, v);
   }
 
   @$pb.TagNumber(150)
   $core.bool hasVpcNetwork() => $_has(2);
   @$pb.TagNumber(150)
-  void clearVpcNetwork() => clearField(150);
+  void clearVpcNetwork() => $_clearField(150);
   @$pb.TagNumber(150)
   Task_InfrastructureSpec_VpcNetwork ensureVpcNetwork() => $_ensure(2);
 }
@@ -8681,13 +8419,9 @@ class Task_TriggerSpec extends $pb.GeneratedMessage {
     ..aOS(100, _omitFieldNames ? '' : 'schedule')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_TriggerSpec clone() => Task_TriggerSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_TriggerSpec copyWith(void Function(Task_TriggerSpec) updates) =>
       super.copyWith((message) => updates(message as Task_TriggerSpec))
           as Task_TriggerSpec;
@@ -8706,7 +8440,7 @@ class Task_TriggerSpec extends $pb.GeneratedMessage {
 
   Task_TriggerSpec_Trigger whichTrigger() =>
       _Task_TriggerSpec_TriggerByTag[$_whichOneof(0)]!;
-  void clearTrigger() => clearField($_whichOneof(0));
+  void clearTrigger() => $_clearField($_whichOneof(0));
 
   /// Optional. Prevent the task from executing.
   /// This does not cancel already running tasks. It is intended to temporarily
@@ -8721,20 +8455,20 @@ class Task_TriggerSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDisabled() => $_has(0);
   @$pb.TagNumber(4)
-  void clearDisabled() => clearField(4);
+  void clearDisabled() => $_clearField(4);
 
   /// Required. Immutable. Trigger type of the user-specified Task.
   @$pb.TagNumber(5)
   Task_TriggerSpec_Type get type => $_getN(1);
   @$pb.TagNumber(5)
   set type(Task_TriggerSpec_Type v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(5)
-  void clearType() => clearField(5);
+  void clearType() => $_clearField(5);
 
   /// Optional. The first run of the task will be after this time.
   /// If not specified, the task will run shortly after being submitted if
@@ -8743,13 +8477,13 @@ class Task_TriggerSpec extends $pb.GeneratedMessage {
   $2.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(6)
   set startTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(6)
-  void clearStartTime() => clearField(6);
+  void clearStartTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureStartTime() => $_ensure(2);
 
@@ -8765,7 +8499,7 @@ class Task_TriggerSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasMaxRetries() => $_has(3);
   @$pb.TagNumber(7)
-  void clearMaxRetries() => clearField(7);
+  void clearMaxRetries() => $_clearField(7);
 
   /// Optional. Cron schedule (https://en.wikipedia.org/wiki/Cron) for
   /// running tasks periodically. To explicitly set a timezone to the cron
@@ -8784,21 +8518,21 @@ class Task_TriggerSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(100)
   $core.bool hasSchedule() => $_has(4);
   @$pb.TagNumber(100)
-  void clearSchedule() => clearField(100);
+  void clearSchedule() => $_clearField(100);
 }
 
 /// Execution related settings, like retry and service_account.
 class Task_ExecutionSpec extends $pb.GeneratedMessage {
   factory Task_ExecutionSpec({
-    $core.Map<$core.String, $core.String>? args,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? args,
     $core.String? serviceAccount,
     $core.String? project,
-    $10.Duration? maxJobExecutionLifetime,
+    $0.Duration? maxJobExecutionLifetime,
     $core.String? kmsKey,
   }) {
     final $result = create();
     if (args != null) {
-      $result.args.addAll(args);
+      $result.args.addEntries(args);
     }
     if (serviceAccount != null) {
       $result.serviceAccount = serviceAccount;
@@ -8834,18 +8568,14 @@ class Task_ExecutionSpec extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.dataplex.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'serviceAccount')
     ..aOS(7, _omitFieldNames ? '' : 'project')
-    ..aOM<$10.Duration>(8, _omitFieldNames ? '' : 'maxJobExecutionLifetime',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(8, _omitFieldNames ? '' : 'maxJobExecutionLifetime',
+        subBuilder: $0.Duration.create)
     ..aOS(9, _omitFieldNames ? '' : 'kmsKey')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_ExecutionSpec clone() => Task_ExecutionSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_ExecutionSpec copyWith(void Function(Task_ExecutionSpec) updates) =>
       super.copyWith((message) => updates(message as Task_ExecutionSpec))
           as Task_ExecutionSpec;
@@ -8875,7 +8605,7 @@ class Task_ExecutionSpec extends $pb.GeneratedMessage {
   /// other keys being present in the args, then TASK_ARGS will be passed as
   /// the last argument.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get args => $_getMap(0);
+  $pb.PbMap<$core.String, $core.String> get args => $_getMap(0);
 
   /// Required. Service account to use to execute a task.
   /// If not provided, the default Compute service account for the project is
@@ -8890,7 +8620,7 @@ class Task_ExecutionSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasServiceAccount() => $_has(1);
   @$pb.TagNumber(5)
-  void clearServiceAccount() => clearField(5);
+  void clearServiceAccount() => $_clearField(5);
 
   /// Optional. The project in which jobs are run. By default, the project
   /// containing the Lake is used. If a project is provided, the
@@ -8906,22 +8636,22 @@ class Task_ExecutionSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasProject() => $_has(2);
   @$pb.TagNumber(7)
-  void clearProject() => clearField(7);
+  void clearProject() => $_clearField(7);
 
   /// Optional. The maximum duration after which the job execution is expired.
   @$pb.TagNumber(8)
-  $10.Duration get maxJobExecutionLifetime => $_getN(3);
+  $0.Duration get maxJobExecutionLifetime => $_getN(3);
   @$pb.TagNumber(8)
-  set maxJobExecutionLifetime($10.Duration v) {
-    setField(8, v);
+  set maxJobExecutionLifetime($0.Duration v) {
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasMaxJobExecutionLifetime() => $_has(3);
   @$pb.TagNumber(8)
-  void clearMaxJobExecutionLifetime() => clearField(8);
+  void clearMaxJobExecutionLifetime() => $_clearField(8);
   @$pb.TagNumber(8)
-  $10.Duration ensureMaxJobExecutionLifetime() => $_ensure(3);
+  $0.Duration ensureMaxJobExecutionLifetime() => $_ensure(3);
 
   /// Optional. The Cloud KMS key to use for encryption, of the form:
   /// `projects/{project_number}/locations/{location_id}/keyRings/{key-ring-name}/cryptoKeys/{key-name}`.
@@ -8935,7 +8665,7 @@ class Task_ExecutionSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasKmsKey() => $_has(4);
   @$pb.TagNumber(9)
-  void clearKmsKey() => clearField(9);
+  void clearKmsKey() => $_clearField(9);
 }
 
 enum Task_SparkTaskConfig_Driver {
@@ -9021,14 +8751,10 @@ class Task_SparkTaskConfig extends $pb.GeneratedMessage {
     ..aOS(105, _omitFieldNames ? '' : 'sqlScript')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_SparkTaskConfig clone() =>
       Task_SparkTaskConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_SparkTaskConfig copyWith(void Function(Task_SparkTaskConfig) updates) =>
       super.copyWith((message) => updates(message as Task_SparkTaskConfig))
           as Task_SparkTaskConfig;
@@ -9047,31 +8773,31 @@ class Task_SparkTaskConfig extends $pb.GeneratedMessage {
 
   Task_SparkTaskConfig_Driver whichDriver() =>
       _Task_SparkTaskConfig_DriverByTag[$_whichOneof(0)]!;
-  void clearDriver() => clearField($_whichOneof(0));
+  void clearDriver() => $_clearField($_whichOneof(0));
 
   /// Optional. Cloud Storage URIs of files to be placed in the working
   /// directory of each executor.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get fileUris => $_getList(0);
+  $pb.PbList<$core.String> get fileUris => $_getList(0);
 
   /// Optional. Cloud Storage URIs of archives to be extracted into the working
   /// directory of each executor. Supported file types: .jar, .tar, .tar.gz,
   /// .tgz, and .zip.
   @$pb.TagNumber(4)
-  $core.List<$core.String> get archiveUris => $_getList(1);
+  $pb.PbList<$core.String> get archiveUris => $_getList(1);
 
   /// Optional. Infrastructure specification for the execution.
   @$pb.TagNumber(6)
   Task_InfrastructureSpec get infrastructureSpec => $_getN(2);
   @$pb.TagNumber(6)
   set infrastructureSpec(Task_InfrastructureSpec v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasInfrastructureSpec() => $_has(2);
   @$pb.TagNumber(6)
-  void clearInfrastructureSpec() => clearField(6);
+  void clearInfrastructureSpec() => $_clearField(6);
   @$pb.TagNumber(6)
   Task_InfrastructureSpec ensureInfrastructureSpec() => $_ensure(2);
 
@@ -9088,7 +8814,7 @@ class Task_SparkTaskConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(100)
   $core.bool hasMainJarFileUri() => $_has(3);
   @$pb.TagNumber(100)
-  void clearMainJarFileUri() => clearField(100);
+  void clearMainJarFileUri() => $_clearField(100);
 
   /// The name of the driver's main class. The jar file that contains the
   /// class must be in the default CLASSPATH or specified in
@@ -9105,7 +8831,7 @@ class Task_SparkTaskConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(101)
   $core.bool hasMainClass() => $_has(4);
   @$pb.TagNumber(101)
-  void clearMainClass() => clearField(101);
+  void clearMainClass() => $_clearField(101);
 
   /// The Gcloud Storage URI of the main Python file to use as the driver.
   /// Must be a .py file. The execution args are passed in as a sequence of
@@ -9120,7 +8846,7 @@ class Task_SparkTaskConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(102)
   $core.bool hasPythonScriptFile() => $_has(5);
   @$pb.TagNumber(102)
-  void clearPythonScriptFile() => clearField(102);
+  void clearPythonScriptFile() => $_clearField(102);
 
   /// A reference to a query file. This can be the Cloud Storage URI of the
   /// query file or it can the path to a SqlScript Content. The execution
@@ -9136,7 +8862,7 @@ class Task_SparkTaskConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(104)
   $core.bool hasSqlScriptFile() => $_has(6);
   @$pb.TagNumber(104)
-  void clearSqlScriptFile() => clearField(104);
+  void clearSqlScriptFile() => $_clearField(104);
 
   /// The query text.
   /// The execution args are used to declare a set of script variables
@@ -9151,7 +8877,7 @@ class Task_SparkTaskConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(105)
   $core.bool hasSqlScript() => $_has(7);
   @$pb.TagNumber(105)
-  void clearSqlScript() => clearField(105);
+  void clearSqlScript() => $_clearField(105);
 }
 
 /// Config for running scheduled notebooks.
@@ -9198,14 +8924,10 @@ class Task_NotebookTaskConfig extends $pb.GeneratedMessage {
     ..pPS(6, _omitFieldNames ? '' : 'archiveUris')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_NotebookTaskConfig clone() =>
       Task_NotebookTaskConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_NotebookTaskConfig copyWith(
           void Function(Task_NotebookTaskConfig) updates) =>
       super.copyWith((message) => updates(message as Task_NotebookTaskConfig))
@@ -9228,13 +8950,13 @@ class Task_NotebookTaskConfig extends $pb.GeneratedMessage {
   Task_InfrastructureSpec get infrastructureSpec => $_getN(0);
   @$pb.TagNumber(3)
   set infrastructureSpec(Task_InfrastructureSpec v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasInfrastructureSpec() => $_has(0);
   @$pb.TagNumber(3)
-  void clearInfrastructureSpec() => clearField(3);
+  void clearInfrastructureSpec() => $_clearField(3);
   @$pb.TagNumber(3)
   Task_InfrastructureSpec ensureInfrastructureSpec() => $_ensure(0);
 
@@ -9252,18 +8974,18 @@ class Task_NotebookTaskConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasNotebook() => $_has(1);
   @$pb.TagNumber(4)
-  void clearNotebook() => clearField(4);
+  void clearNotebook() => $_clearField(4);
 
   /// Optional. Cloud Storage URIs of files to be placed in the working
   /// directory of each executor.
   @$pb.TagNumber(5)
-  $core.List<$core.String> get fileUris => $_getList(2);
+  $pb.PbList<$core.String> get fileUris => $_getList(2);
 
   /// Optional. Cloud Storage URIs of archives to be extracted into the working
   /// directory of each executor. Supported file types: .jar, .tar, .tar.gz,
   /// .tgz, and .zip.
   @$pb.TagNumber(6)
-  $core.List<$core.String> get archiveUris => $_getList(3);
+  $pb.PbList<$core.String> get archiveUris => $_getList(3);
 }
 
 /// Status of the task execution (e.g. Jobs).
@@ -9299,14 +9021,10 @@ class Task_ExecutionStatus extends $pb.GeneratedMessage {
     ..aOM<Job>(9, _omitFieldNames ? '' : 'latestJob', subBuilder: Job.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_ExecutionStatus clone() =>
       Task_ExecutionStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task_ExecutionStatus copyWith(void Function(Task_ExecutionStatus) updates) =>
       super.copyWith((message) => updates(message as Task_ExecutionStatus))
           as Task_ExecutionStatus;
@@ -9328,13 +9046,13 @@ class Task_ExecutionStatus extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(0);
 
@@ -9343,13 +9061,13 @@ class Task_ExecutionStatus extends $pb.GeneratedMessage {
   Job get latestJob => $_getN(1);
   @$pb.TagNumber(9)
   set latestJob(Job v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasLatestJob() => $_has(1);
   @$pb.TagNumber(9)
-  void clearLatestJob() => clearField(9);
+  void clearLatestJob() => $_clearField(9);
   @$pb.TagNumber(9)
   Job ensureLatestJob() => $_ensure(1);
 }
@@ -9366,7 +9084,7 @@ class Task extends $pb.GeneratedMessage {
     $core.String? description,
     $core.String? displayName,
     State? state,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     Task_TriggerSpec? triggerSpec,
     Task_ExecutionSpec? executionSpec,
     Task_ExecutionStatus? executionStatus,
@@ -9396,7 +9114,7 @@ class Task extends $pb.GeneratedMessage {
       $result.state = state;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (triggerSpec != null) {
       $result.triggerSpec = triggerSpec;
@@ -9463,13 +9181,9 @@ class Task extends $pb.GeneratedMessage {
         subBuilder: Task_NotebookTaskConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task clone() => Task()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Task copyWith(void Function(Task) updates) =>
       super.copyWith((message) => updates(message as Task)) as Task;
 
@@ -9485,7 +9199,7 @@ class Task extends $pb.GeneratedMessage {
   static Task? _defaultInstance;
 
   Task_Config whichConfig() => _Task_ConfigByTag[$_whichOneof(0)]!;
-  void clearConfig() => clearField($_whichOneof(0));
+  void clearConfig() => $_clearField($_whichOneof(0));
 
   /// Output only. The relative resource name of the task, of the form:
   /// projects/{project_number}/locations/{location_id}/lakes/{lake_id}/
@@ -9500,7 +9214,7 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. System generated globally unique ID for the task. This ID will
   /// be different if the task is deleted and re-created with the same name.
@@ -9514,20 +9228,20 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
   /// Output only. The time when the task was created.
   @$pb.TagNumber(3)
   $2.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
   set createTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCreateTime() => clearField(3);
+  void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureCreateTime() => $_ensure(2);
 
@@ -9536,13 +9250,13 @@ class Task extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
   set updateTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUpdateTime() => clearField(4);
+  void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureUpdateTime() => $_ensure(3);
 
@@ -9557,7 +9271,7 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Optional. User friendly display name.
   @$pb.TagNumber(6)
@@ -9570,37 +9284,37 @@ class Task extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDisplayName() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDisplayName() => clearField(6);
+  void clearDisplayName() => $_clearField(6);
 
   /// Output only. Current state of the task.
   @$pb.TagNumber(7)
   State get state => $_getN(6);
   @$pb.TagNumber(7)
   set state(State v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(7)
-  void clearState() => clearField(7);
+  void clearState() => $_clearField(7);
 
   /// Optional. User-defined labels for the task.
   @$pb.TagNumber(8)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(7);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(7);
 
   /// Required. Spec related to how often and when a task should be triggered.
   @$pb.TagNumber(100)
   Task_TriggerSpec get triggerSpec => $_getN(8);
   @$pb.TagNumber(100)
   set triggerSpec(Task_TriggerSpec v) {
-    setField(100, v);
+    $_setField(100, v);
   }
 
   @$pb.TagNumber(100)
   $core.bool hasTriggerSpec() => $_has(8);
   @$pb.TagNumber(100)
-  void clearTriggerSpec() => clearField(100);
+  void clearTriggerSpec() => $_clearField(100);
   @$pb.TagNumber(100)
   Task_TriggerSpec ensureTriggerSpec() => $_ensure(8);
 
@@ -9609,13 +9323,13 @@ class Task extends $pb.GeneratedMessage {
   Task_ExecutionSpec get executionSpec => $_getN(9);
   @$pb.TagNumber(101)
   set executionSpec(Task_ExecutionSpec v) {
-    setField(101, v);
+    $_setField(101, v);
   }
 
   @$pb.TagNumber(101)
   $core.bool hasExecutionSpec() => $_has(9);
   @$pb.TagNumber(101)
-  void clearExecutionSpec() => clearField(101);
+  void clearExecutionSpec() => $_clearField(101);
   @$pb.TagNumber(101)
   Task_ExecutionSpec ensureExecutionSpec() => $_ensure(9);
 
@@ -9624,13 +9338,13 @@ class Task extends $pb.GeneratedMessage {
   Task_ExecutionStatus get executionStatus => $_getN(10);
   @$pb.TagNumber(201)
   set executionStatus(Task_ExecutionStatus v) {
-    setField(201, v);
+    $_setField(201, v);
   }
 
   @$pb.TagNumber(201)
   $core.bool hasExecutionStatus() => $_has(10);
   @$pb.TagNumber(201)
-  void clearExecutionStatus() => clearField(201);
+  void clearExecutionStatus() => $_clearField(201);
   @$pb.TagNumber(201)
   Task_ExecutionStatus ensureExecutionStatus() => $_ensure(10);
 
@@ -9639,13 +9353,13 @@ class Task extends $pb.GeneratedMessage {
   Task_SparkTaskConfig get spark => $_getN(11);
   @$pb.TagNumber(300)
   set spark(Task_SparkTaskConfig v) {
-    setField(300, v);
+    $_setField(300, v);
   }
 
   @$pb.TagNumber(300)
   $core.bool hasSpark() => $_has(11);
   @$pb.TagNumber(300)
-  void clearSpark() => clearField(300);
+  void clearSpark() => $_clearField(300);
   @$pb.TagNumber(300)
   Task_SparkTaskConfig ensureSpark() => $_ensure(11);
 
@@ -9654,13 +9368,13 @@ class Task extends $pb.GeneratedMessage {
   Task_NotebookTaskConfig get notebook => $_getN(12);
   @$pb.TagNumber(302)
   set notebook(Task_NotebookTaskConfig v) {
-    setField(302, v);
+    $_setField(302, v);
   }
 
   @$pb.TagNumber(302)
   $core.bool hasNotebook() => $_has(12);
   @$pb.TagNumber(302)
-  void clearNotebook() => clearField(302);
+  void clearNotebook() => $_clearField(302);
   @$pb.TagNumber(302)
   Task_NotebookTaskConfig ensureNotebook() => $_ensure(12);
 }
@@ -9740,13 +9454,9 @@ class Job extends $pb.GeneratedMessage {
     ..aOS(9, _omitFieldNames ? '' : 'message')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Job clone() => Job()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Job copyWith(void Function(Job) updates) =>
       super.copyWith((message) => updates(message as Job)) as Job;
 
@@ -9773,7 +9483,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. System generated globally unique ID for the job.
   @$pb.TagNumber(2)
@@ -9786,20 +9496,20 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
   /// Output only. The time when the job was started.
   @$pb.TagNumber(3)
   $2.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
   set startTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearStartTime() => clearField(3);
+  void clearStartTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureStartTime() => $_ensure(2);
 
@@ -9808,13 +9518,13 @@ class Job extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
   set endTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearEndTime() => clearField(4);
+  void clearEndTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureEndTime() => $_ensure(3);
 
@@ -9823,13 +9533,13 @@ class Job extends $pb.GeneratedMessage {
   Job_State get state => $_getN(4);
   @$pb.TagNumber(5)
   set state(Job_State v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(4);
   @$pb.TagNumber(5)
-  void clearState() => clearField(5);
+  void clearState() => $_clearField(5);
 
   /// Output only. The number of times the job has been retried (excluding the
   /// initial attempt).
@@ -9843,20 +9553,20 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasRetryCount() => $_has(5);
   @$pb.TagNumber(6)
-  void clearRetryCount() => clearField(6);
+  void clearRetryCount() => $_clearField(6);
 
   /// Output only. The underlying service running a job.
   @$pb.TagNumber(7)
   Job_Service get service => $_getN(6);
   @$pb.TagNumber(7)
   set service(Job_Service v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasService() => $_has(6);
   @$pb.TagNumber(7)
-  void clearService() => clearField(7);
+  void clearService() => $_clearField(7);
 
   /// Output only. The full resource name for the job run under a particular
   /// service.
@@ -9870,7 +9580,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasServiceJob() => $_has(7);
   @$pb.TagNumber(8)
-  void clearServiceJob() => clearField(8);
+  void clearServiceJob() => $_clearField(8);
 
   /// Output only. Additional information about the current state.
   @$pb.TagNumber(9)
@@ -9883,7 +9593,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasMessage() => $_has(8);
   @$pb.TagNumber(9)
-  void clearMessage() => clearField(9);
+  void clearMessage() => $_clearField(9);
 }
 
 /// The data within all Task events.
@@ -9913,13 +9623,9 @@ class TaskEventData extends $pb.GeneratedMessage {
     ..aOM<Task>(1, _omitFieldNames ? '' : 'payload', subBuilder: Task.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskEventData clone() => TaskEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskEventData copyWith(void Function(TaskEventData) updates) =>
       super.copyWith((message) => updates(message as TaskEventData))
           as TaskEventData;
@@ -9941,13 +9647,13 @@ class TaskEventData extends $pb.GeneratedMessage {
   Task get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Task v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Task ensurePayload() => $_ensure(0);
 }
@@ -9979,13 +9685,9 @@ class ZoneEventData extends $pb.GeneratedMessage {
     ..aOM<Zone>(1, _omitFieldNames ? '' : 'payload', subBuilder: Zone.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ZoneEventData clone() => ZoneEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ZoneEventData copyWith(void Function(ZoneEventData) updates) =>
       super.copyWith((message) => updates(message as ZoneEventData))
           as ZoneEventData;
@@ -10007,13 +9709,13 @@ class ZoneEventData extends $pb.GeneratedMessage {
   Zone get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Zone v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Zone ensurePayload() => $_ensure(0);
 }
@@ -10045,13 +9747,9 @@ class AssetEventData extends $pb.GeneratedMessage {
     ..aOM<Asset>(1, _omitFieldNames ? '' : 'payload', subBuilder: Asset.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AssetEventData clone() => AssetEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AssetEventData copyWith(void Function(AssetEventData) updates) =>
       super.copyWith((message) => updates(message as AssetEventData))
           as AssetEventData;
@@ -10073,13 +9771,13 @@ class AssetEventData extends $pb.GeneratedMessage {
   Asset get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Asset v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Asset ensurePayload() => $_ensure(0);
 }
@@ -10112,14 +9810,10 @@ class EnvironmentEventData extends $pb.GeneratedMessage {
         subBuilder: Environment.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnvironmentEventData clone() =>
       EnvironmentEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnvironmentEventData copyWith(void Function(EnvironmentEventData) updates) =>
       super.copyWith((message) => updates(message as EnvironmentEventData))
           as EnvironmentEventData;
@@ -10141,13 +9835,13 @@ class EnvironmentEventData extends $pb.GeneratedMessage {
   Environment get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Environment v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Environment ensurePayload() => $_ensure(0);
 }
@@ -10180,14 +9874,10 @@ class DataTaxonomyEventData extends $pb.GeneratedMessage {
         subBuilder: DataTaxonomy.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataTaxonomyEventData clone() =>
       DataTaxonomyEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataTaxonomyEventData copyWith(
           void Function(DataTaxonomyEventData) updates) =>
       super.copyWith((message) => updates(message as DataTaxonomyEventData))
@@ -10210,13 +9900,13 @@ class DataTaxonomyEventData extends $pb.GeneratedMessage {
   DataTaxonomy get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(DataTaxonomy v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   DataTaxonomy ensurePayload() => $_ensure(0);
 }
@@ -10249,14 +9939,10 @@ class DataAttributeBindingEventData extends $pb.GeneratedMessage {
         subBuilder: DataAttributeBinding.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAttributeBindingEventData clone() =>
       DataAttributeBindingEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAttributeBindingEventData copyWith(
           void Function(DataAttributeBindingEventData) updates) =>
       super.copyWith(
@@ -10282,13 +9968,13 @@ class DataAttributeBindingEventData extends $pb.GeneratedMessage {
   DataAttributeBinding get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(DataAttributeBinding v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   DataAttributeBinding ensurePayload() => $_ensure(0);
 }
@@ -10321,13 +10007,9 @@ class DataScanEventData extends $pb.GeneratedMessage {
         subBuilder: DataScan.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataScanEventData clone() => DataScanEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataScanEventData copyWith(void Function(DataScanEventData) updates) =>
       super.copyWith((message) => updates(message as DataScanEventData))
           as DataScanEventData;
@@ -10349,13 +10031,13 @@ class DataScanEventData extends $pb.GeneratedMessage {
   DataScan get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(DataScan v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   DataScan ensurePayload() => $_ensure(0);
 }
@@ -10387,13 +10069,9 @@ class LakeEventData extends $pb.GeneratedMessage {
     ..aOM<Lake>(1, _omitFieldNames ? '' : 'payload', subBuilder: Lake.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LakeEventData clone() => LakeEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LakeEventData copyWith(void Function(LakeEventData) updates) =>
       super.copyWith((message) => updates(message as LakeEventData))
           as LakeEventData;
@@ -10415,13 +10093,13 @@ class LakeEventData extends $pb.GeneratedMessage {
   Lake get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Lake v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Lake ensurePayload() => $_ensure(0);
 }
@@ -10454,14 +10132,10 @@ class DataAttributeEventData extends $pb.GeneratedMessage {
         subBuilder: DataAttribute.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAttributeEventData clone() =>
       DataAttributeEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DataAttributeEventData copyWith(
           void Function(DataAttributeEventData) updates) =>
       super.copyWith((message) => updates(message as DataAttributeEventData))
@@ -10484,13 +10158,13 @@ class DataAttributeEventData extends $pb.GeneratedMessage {
   DataAttribute get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(DataAttribute v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   DataAttribute ensurePayload() => $_ensure(0);
 }

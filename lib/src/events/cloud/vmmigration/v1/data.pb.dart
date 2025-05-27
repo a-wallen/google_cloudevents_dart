@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/vmmigration/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,11 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $10;
+import '../../../../protobuf/duration.pb.dart' as $0;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../rpc/error_details.pb.dart' as $31;
-import '../../../../rpc/status.pb.dart' as $19;
+import '../../../../rpc/error_details.pb.dart' as $50;
+import '../../../../rpc/status.pb.dart' as $9;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -29,11 +31,11 @@ class ReplicationCycle extends $pb.GeneratedMessage {
     $2.Timestamp? startTime,
     $core.int? progressPercent,
     $2.Timestamp? endTime,
-    $10.Duration? totalPauseDuration,
+    $0.Duration? totalPauseDuration,
     $core.Iterable<CycleStep>? steps,
     $core.int? cycleNumber,
     ReplicationCycle_State? state,
-    $19.Status? error,
+    $9.Status? error,
     $core.String? name,
     $core.Iterable<MigrationWarning>? warnings,
   }) {
@@ -89,8 +91,8 @@ class ReplicationCycle extends $pb.GeneratedMessage {
         5, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
     ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'endTime',
         subBuilder: $2.Timestamp.create)
-    ..aOM<$10.Duration>(7, _omitFieldNames ? '' : 'totalPauseDuration',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(7, _omitFieldNames ? '' : 'totalPauseDuration',
+        subBuilder: $0.Duration.create)
     ..pc<CycleStep>(9, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM,
         subBuilder: CycleStep.create)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'cycleNumber', $pb.PbFieldType.O3)
@@ -99,21 +101,17 @@ class ReplicationCycle extends $pb.GeneratedMessage {
         defaultOrMaker: ReplicationCycle_State.STATE_UNSPECIFIED,
         valueOf: ReplicationCycle_State.valueOf,
         enumValues: ReplicationCycle_State.values)
-    ..aOM<$19.Status>(12, _omitFieldNames ? '' : 'error',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(12, _omitFieldNames ? '' : 'error',
+        subBuilder: $9.Status.create)
     ..aOS(13, _omitFieldNames ? '' : 'name')
     ..pc<MigrationWarning>(
         14, _omitFieldNames ? '' : 'warnings', $pb.PbFieldType.PM,
         subBuilder: MigrationWarning.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReplicationCycle clone() => ReplicationCycle()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReplicationCycle copyWith(void Function(ReplicationCycle) updates) =>
       super.copyWith((message) => updates(message as ReplicationCycle))
           as ReplicationCycle;
@@ -135,13 +133,13 @@ class ReplicationCycle extends $pb.GeneratedMessage {
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
   set startTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStartTime() => clearField(1);
+  void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureStartTime() => $_ensure(0);
 
@@ -158,41 +156,41 @@ class ReplicationCycle extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasProgressPercent() => $_has(1);
   @$pb.TagNumber(5)
-  void clearProgressPercent() => clearField(5);
+  void clearProgressPercent() => $_clearField(5);
 
   /// The time the replication cycle has ended.
   @$pb.TagNumber(6)
   $2.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(6)
   set endTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(6)
-  void clearEndTime() => clearField(6);
+  void clearEndTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureEndTime() => $_ensure(2);
 
   /// The accumulated duration the replication cycle was paused.
   @$pb.TagNumber(7)
-  $10.Duration get totalPauseDuration => $_getN(3);
+  $0.Duration get totalPauseDuration => $_getN(3);
   @$pb.TagNumber(7)
-  set totalPauseDuration($10.Duration v) {
-    setField(7, v);
+  set totalPauseDuration($0.Duration v) {
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasTotalPauseDuration() => $_has(3);
   @$pb.TagNumber(7)
-  void clearTotalPauseDuration() => clearField(7);
+  void clearTotalPauseDuration() => $_clearField(7);
   @$pb.TagNumber(7)
-  $10.Duration ensureTotalPauseDuration() => $_ensure(3);
+  $0.Duration ensureTotalPauseDuration() => $_ensure(3);
 
   /// The cycle's steps list representing its progress.
   @$pb.TagNumber(9)
-  $core.List<CycleStep> get steps => $_getList(4);
+  $pb.PbList<CycleStep> get steps => $_getList(4);
 
   /// The cycle's ordinal number.
   @$pb.TagNumber(10)
@@ -205,35 +203,35 @@ class ReplicationCycle extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasCycleNumber() => $_has(5);
   @$pb.TagNumber(10)
-  void clearCycleNumber() => clearField(10);
+  void clearCycleNumber() => $_clearField(10);
 
   /// State of the ReplicationCycle.
   @$pb.TagNumber(11)
   ReplicationCycle_State get state => $_getN(6);
   @$pb.TagNumber(11)
   set state(ReplicationCycle_State v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(11)
-  void clearState() => clearField(11);
+  void clearState() => $_clearField(11);
 
   /// Provides details on the state of the cycle in case of an error.
   @$pb.TagNumber(12)
-  $19.Status get error => $_getN(7);
+  $9.Status get error => $_getN(7);
   @$pb.TagNumber(12)
-  set error($19.Status v) {
-    setField(12, v);
+  set error($9.Status v) {
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasError() => $_has(7);
   @$pb.TagNumber(12)
-  void clearError() => clearField(12);
+  void clearError() => $_clearField(12);
   @$pb.TagNumber(12)
-  $19.Status ensureError() => $_ensure(7);
+  $9.Status ensureError() => $_ensure(7);
 
   /// The identifier of the ReplicationCycle.
   @$pb.TagNumber(13)
@@ -246,11 +244,11 @@ class ReplicationCycle extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasName() => $_has(8);
   @$pb.TagNumber(13)
-  void clearName() => clearField(13);
+  void clearName() => $_clearField(13);
 
   /// Output only. Warnings that occurred during the cycle.
   @$pb.TagNumber(14)
-  $core.List<MigrationWarning> get warnings => $_getList(9);
+  $pb.PbList<MigrationWarning> get warnings => $_getList(9);
 }
 
 enum CycleStep_Step {
@@ -320,13 +318,9 @@ class CycleStep extends $pb.GeneratedMessage {
         subBuilder: PostProcessingStep.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CycleStep clone() => CycleStep()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CycleStep copyWith(void Function(CycleStep) updates) =>
       super.copyWith((message) => updates(message as CycleStep)) as CycleStep;
 
@@ -342,20 +336,20 @@ class CycleStep extends $pb.GeneratedMessage {
   static CycleStep? _defaultInstance;
 
   CycleStep_Step whichStep() => _CycleStep_StepByTag[$_whichOneof(0)]!;
-  void clearStep() => clearField($_whichOneof(0));
+  void clearStep() => $_clearField($_whichOneof(0));
 
   /// The time the cycle step has started.
   @$pb.TagNumber(1)
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
   set startTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStartTime() => clearField(1);
+  void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureStartTime() => $_ensure(0);
 
@@ -364,13 +358,13 @@ class CycleStep extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
   set endTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEndTime() => clearField(2);
+  void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureEndTime() => $_ensure(1);
 
@@ -379,13 +373,13 @@ class CycleStep extends $pb.GeneratedMessage {
   InitializingReplicationStep get initializingReplication => $_getN(2);
   @$pb.TagNumber(3)
   set initializingReplication(InitializingReplicationStep v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasInitializingReplication() => $_has(2);
   @$pb.TagNumber(3)
-  void clearInitializingReplication() => clearField(3);
+  void clearInitializingReplication() => $_clearField(3);
   @$pb.TagNumber(3)
   InitializingReplicationStep ensureInitializingReplication() => $_ensure(2);
 
@@ -394,13 +388,13 @@ class CycleStep extends $pb.GeneratedMessage {
   ReplicatingStep get replicating => $_getN(3);
   @$pb.TagNumber(4)
   set replicating(ReplicatingStep v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasReplicating() => $_has(3);
   @$pb.TagNumber(4)
-  void clearReplicating() => clearField(4);
+  void clearReplicating() => $_clearField(4);
   @$pb.TagNumber(4)
   ReplicatingStep ensureReplicating() => $_ensure(3);
 
@@ -409,13 +403,13 @@ class CycleStep extends $pb.GeneratedMessage {
   PostProcessingStep get postProcessing => $_getN(4);
   @$pb.TagNumber(5)
   set postProcessing(PostProcessingStep v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasPostProcessing() => $_has(4);
   @$pb.TagNumber(5)
-  void clearPostProcessing() => clearField(5);
+  void clearPostProcessing() => $_clearField(5);
   @$pb.TagNumber(5)
   PostProcessingStep ensurePostProcessing() => $_ensure(4);
 }
@@ -438,14 +432,10 @@ class InitializingReplicationStep extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InitializingReplicationStep clone() =>
       InitializingReplicationStep()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InitializingReplicationStep copyWith(
           void Function(InitializingReplicationStep) updates) =>
       super.copyWith(
@@ -510,13 +500,9 @@ class ReplicatingStep extends $pb.GeneratedMessage {
     ..aInt64(4, _omitFieldNames ? '' : 'lastThirtyMinutesAverageBytesPerSecond')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReplicatingStep clone() => ReplicatingStep()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReplicatingStep copyWith(void Function(ReplicatingStep) updates) =>
       super.copyWith((message) => updates(message as ReplicatingStep))
           as ReplicatingStep;
@@ -544,7 +530,7 @@ class ReplicatingStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTotalBytes() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTotalBytes() => clearField(1);
+  void clearTotalBytes() => $_clearField(1);
 
   /// Replicated bytes in the step.
   @$pb.TagNumber(2)
@@ -557,7 +543,7 @@ class ReplicatingStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasReplicatedBytes() => $_has(1);
   @$pb.TagNumber(2)
-  void clearReplicatedBytes() => clearField(2);
+  void clearReplicatedBytes() => $_clearField(2);
 
   /// The source disks replication rate for the last 2 minutes in bytes per
   /// second.
@@ -571,7 +557,7 @@ class ReplicatingStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasLastTwoMinutesAverageBytesPerSecond() => $_has(2);
   @$pb.TagNumber(3)
-  void clearLastTwoMinutesAverageBytesPerSecond() => clearField(3);
+  void clearLastTwoMinutesAverageBytesPerSecond() => $_clearField(3);
 
   /// The source disks replication rate for the last 30 minutes in bytes per
   /// second.
@@ -585,7 +571,7 @@ class ReplicatingStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasLastThirtyMinutesAverageBytesPerSecond() => $_has(3);
   @$pb.TagNumber(4)
-  void clearLastThirtyMinutesAverageBytesPerSecond() => clearField(4);
+  void clearLastThirtyMinutesAverageBytesPerSecond() => $_clearField(4);
 }
 
 /// PostProcessingStep contains specific step details.
@@ -606,13 +592,9 @@ class PostProcessingStep extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostProcessingStep clone() => PostProcessingStep()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PostProcessingStep copyWith(void Function(PostProcessingStep) updates) =>
       super.copyWith((message) => updates(message as PostProcessingStep))
           as PostProcessingStep;
@@ -658,13 +640,9 @@ class ReplicationSync extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReplicationSync clone() => ReplicationSync()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReplicationSync copyWith(void Function(ReplicationSync) updates) =>
       super.copyWith((message) => updates(message as ReplicationSync))
           as ReplicationSync;
@@ -687,13 +665,13 @@ class ReplicationSync extends $pb.GeneratedMessage {
   $2.Timestamp get lastSyncTime => $_getN(0);
   @$pb.TagNumber(1)
   set lastSyncTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasLastSyncTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearLastSyncTime() => clearField(1);
+  void clearLastSyncTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureLastSyncTime() => $_ensure(0);
 }
@@ -715,10 +693,10 @@ class MigratingVm extends $pb.GeneratedMessage {
     ReplicationSync? lastSync,
     ReplicationCycle? currentSyncInfo,
     $core.String? group,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.Iterable<CloneJob>? recentCloneJobs,
     $core.String? displayName,
-    $19.Status? error,
+    $9.Status? error,
     $core.Iterable<CutoverJob>? recentCutoverJobs,
     $2.Timestamp? stateTime,
     MigratingVm_State? state,
@@ -756,7 +734,7 @@ class MigratingVm extends $pb.GeneratedMessage {
       $result.group = group;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (recentCloneJobs != null) {
       $result.recentCloneJobs.addAll(recentCloneJobs);
@@ -839,8 +817,8 @@ class MigratingVm extends $pb.GeneratedMessage {
         17, _omitFieldNames ? '' : 'recentCloneJobs', $pb.PbFieldType.PM,
         subBuilder: CloneJob.create)
     ..aOS(18, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$19.Status>(19, _omitFieldNames ? '' : 'error',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(19, _omitFieldNames ? '' : 'error',
+        subBuilder: $9.Status.create)
     ..pc<CutoverJob>(
         20, _omitFieldNames ? '' : 'recentCutoverJobs', $pb.PbFieldType.PM,
         subBuilder: CutoverJob.create)
@@ -862,13 +840,9 @@ class MigratingVm extends $pb.GeneratedMessage {
         subBuilder: CutoverForecast.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigratingVm clone() => MigratingVm()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigratingVm copyWith(void Function(MigratingVm) updates) =>
       super.copyWith((message) => updates(message as MigratingVm))
           as MigratingVm;
@@ -886,11 +860,11 @@ class MigratingVm extends $pb.GeneratedMessage {
 
   MigratingVm_TargetVmDefaults whichTargetVmDefaults() =>
       _MigratingVm_TargetVmDefaultsByTag[$_whichOneof(0)]!;
-  void clearTargetVmDefaults() => clearField($_whichOneof(0));
+  void clearTargetVmDefaults() => $_clearField($_whichOneof(0));
 
   MigratingVm_SourceVmDetails whichSourceVmDetails() =>
       _MigratingVm_SourceVmDetailsByTag[$_whichOneof(1)]!;
-  void clearSourceVmDetails() => clearField($_whichOneof(1));
+  void clearSourceVmDetails() => $_clearField($_whichOneof(1));
 
   /// Output only. The identifier of the MigratingVm.
   @$pb.TagNumber(1)
@@ -903,7 +877,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// The unique ID of the VM in the source.
   /// The VM's name in vSphere can be changed, so this is not the VM's name but
@@ -918,7 +892,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSourceVmId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSourceVmId() => clearField(2);
+  void clearSourceVmId() => $_clearField(2);
 
   /// The description attached to the migrating VM by the user.
   @$pb.TagNumber(3)
@@ -931,20 +905,20 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// The replication schedule policy.
   @$pb.TagNumber(8)
   SchedulePolicy get policy => $_getN(3);
   @$pb.TagNumber(8)
   set policy(SchedulePolicy v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasPolicy() => $_has(3);
   @$pb.TagNumber(8)
-  void clearPolicy() => clearField(8);
+  void clearPolicy() => $_clearField(8);
   @$pb.TagNumber(8)
   SchedulePolicy ensurePolicy() => $_ensure(3);
 
@@ -954,13 +928,13 @@ class MigratingVm extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(9)
   set createTime($2.Timestamp v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(9)
-  void clearCreateTime() => clearField(9);
+  void clearCreateTime() => $_clearField(9);
   @$pb.TagNumber(9)
   $2.Timestamp ensureCreateTime() => $_ensure(4);
 
@@ -969,13 +943,13 @@ class MigratingVm extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(10)
   set updateTime($2.Timestamp v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(10)
-  void clearUpdateTime() => clearField(10);
+  void clearUpdateTime() => $_clearField(10);
   @$pb.TagNumber(10)
   $2.Timestamp ensureUpdateTime() => $_ensure(5);
 
@@ -985,13 +959,13 @@ class MigratingVm extends $pb.GeneratedMessage {
   ReplicationSync get lastSync => $_getN(6);
   @$pb.TagNumber(11)
   set lastSync(ReplicationSync v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasLastSync() => $_has(6);
   @$pb.TagNumber(11)
-  void clearLastSync() => clearField(11);
+  void clearLastSync() => $_clearField(11);
   @$pb.TagNumber(11)
   ReplicationSync ensureLastSync() => $_ensure(6);
 
@@ -1000,13 +974,13 @@ class MigratingVm extends $pb.GeneratedMessage {
   ReplicationCycle get currentSyncInfo => $_getN(7);
   @$pb.TagNumber(13)
   set currentSyncInfo(ReplicationCycle v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasCurrentSyncInfo() => $_has(7);
   @$pb.TagNumber(13)
-  void clearCurrentSyncInfo() => clearField(13);
+  void clearCurrentSyncInfo() => $_clearField(13);
   @$pb.TagNumber(13)
   ReplicationCycle ensureCurrentSyncInfo() => $_ensure(7);
 
@@ -1023,11 +997,11 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasGroup() => $_has(8);
   @$pb.TagNumber(15)
-  void clearGroup() => clearField(15);
+  void clearGroup() => $_clearField(15);
 
   /// The labels of the migrating VM.
   @$pb.TagNumber(16)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(9);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(9);
 
   /// Output only. The recent [clone jobs][google.cloud.vmmigration.v1.CloneJob]
   /// performed on the migrating VM. This field holds the vm's last completed
@@ -1035,7 +1009,7 @@ class MigratingVm extends $pb.GeneratedMessage {
   /// Note: To have this field populated you need to explicitly request it via
   /// the "view" parameter of the Get/List request.
   @$pb.TagNumber(17)
-  $core.List<CloneJob> get recentCloneJobs => $_getList(10);
+  $pb.PbList<CloneJob> get recentCloneJobs => $_getList(10);
 
   /// The display name attached to the MigratingVm by the user.
   @$pb.TagNumber(18)
@@ -1048,23 +1022,23 @@ class MigratingVm extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasDisplayName() => $_has(11);
   @$pb.TagNumber(18)
-  void clearDisplayName() => clearField(18);
+  void clearDisplayName() => $_clearField(18);
 
   /// Output only. Provides details on the state of the Migrating VM in case of
   /// an error in replication.
   @$pb.TagNumber(19)
-  $19.Status get error => $_getN(12);
+  $9.Status get error => $_getN(12);
   @$pb.TagNumber(19)
-  set error($19.Status v) {
-    setField(19, v);
+  set error($9.Status v) {
+    $_setField(19, v);
   }
 
   @$pb.TagNumber(19)
   $core.bool hasError() => $_has(12);
   @$pb.TagNumber(19)
-  void clearError() => clearField(19);
+  void clearError() => $_clearField(19);
   @$pb.TagNumber(19)
-  $19.Status ensureError() => $_ensure(12);
+  $9.Status ensureError() => $_ensure(12);
 
   /// Output only. The recent cutover jobs performed on the migrating VM.
   /// This field holds the vm's last completed cutover job and the vm's
@@ -1072,20 +1046,20 @@ class MigratingVm extends $pb.GeneratedMessage {
   /// Note: To have this field populated you need to explicitly request it via
   /// the "view" parameter of the Get/List request.
   @$pb.TagNumber(20)
-  $core.List<CutoverJob> get recentCutoverJobs => $_getList(13);
+  $pb.PbList<CutoverJob> get recentCutoverJobs => $_getList(13);
 
   /// Output only. The last time the migrating VM state was updated.
   @$pb.TagNumber(22)
   $2.Timestamp get stateTime => $_getN(14);
   @$pb.TagNumber(22)
   set stateTime($2.Timestamp v) {
-    setField(22, v);
+    $_setField(22, v);
   }
 
   @$pb.TagNumber(22)
   $core.bool hasStateTime() => $_has(14);
   @$pb.TagNumber(22)
-  void clearStateTime() => clearField(22);
+  void clearStateTime() => $_clearField(22);
   @$pb.TagNumber(22)
   $2.Timestamp ensureStateTime() => $_ensure(14);
 
@@ -1094,26 +1068,26 @@ class MigratingVm extends $pb.GeneratedMessage {
   MigratingVm_State get state => $_getN(15);
   @$pb.TagNumber(23)
   set state(MigratingVm_State v) {
-    setField(23, v);
+    $_setField(23, v);
   }
 
   @$pb.TagNumber(23)
   $core.bool hasState() => $_has(15);
   @$pb.TagNumber(23)
-  void clearState() => clearField(23);
+  void clearState() => $_clearField(23);
 
   /// Details of the target VM in Compute Engine.
   @$pb.TagNumber(26)
   ComputeEngineTargetDefaults get computeEngineTargetDefaults => $_getN(16);
   @$pb.TagNumber(26)
   set computeEngineTargetDefaults(ComputeEngineTargetDefaults v) {
-    setField(26, v);
+    $_setField(26, v);
   }
 
   @$pb.TagNumber(26)
   $core.bool hasComputeEngineTargetDefaults() => $_has(16);
   @$pb.TagNumber(26)
-  void clearComputeEngineTargetDefaults() => clearField(26);
+  void clearComputeEngineTargetDefaults() => $_clearField(26);
   @$pb.TagNumber(26)
   ComputeEngineTargetDefaults ensureComputeEngineTargetDefaults() =>
       $_ensure(16);
@@ -1123,13 +1097,13 @@ class MigratingVm extends $pb.GeneratedMessage {
   AwsSourceVmDetails get awsSourceVmDetails => $_getN(17);
   @$pb.TagNumber(29)
   set awsSourceVmDetails(AwsSourceVmDetails v) {
-    setField(29, v);
+    $_setField(29, v);
   }
 
   @$pb.TagNumber(29)
   $core.bool hasAwsSourceVmDetails() => $_has(17);
   @$pb.TagNumber(29)
-  void clearAwsSourceVmDetails() => clearField(29);
+  void clearAwsSourceVmDetails() => $_clearField(29);
   @$pb.TagNumber(29)
   AwsSourceVmDetails ensureAwsSourceVmDetails() => $_ensure(17);
 
@@ -1140,13 +1114,13 @@ class MigratingVm extends $pb.GeneratedMessage {
   ReplicationCycle get lastReplicationCycle => $_getN(18);
   @$pb.TagNumber(32)
   set lastReplicationCycle(ReplicationCycle v) {
-    setField(32, v);
+    $_setField(32, v);
   }
 
   @$pb.TagNumber(32)
   $core.bool hasLastReplicationCycle() => $_has(18);
   @$pb.TagNumber(32)
-  void clearLastReplicationCycle() => clearField(32);
+  void clearLastReplicationCycle() => $_clearField(32);
   @$pb.TagNumber(32)
   ReplicationCycle ensureLastReplicationCycle() => $_ensure(18);
 
@@ -1156,13 +1130,13 @@ class MigratingVm extends $pb.GeneratedMessage {
   CutoverForecast get cutoverForecast => $_getN(19);
   @$pb.TagNumber(33)
   set cutoverForecast(CutoverForecast v) {
-    setField(33, v);
+    $_setField(33, v);
   }
 
   @$pb.TagNumber(33)
   $core.bool hasCutoverForecast() => $_has(19);
   @$pb.TagNumber(33)
-  void clearCutoverForecast() => clearField(33);
+  void clearCutoverForecast() => $_clearField(33);
   @$pb.TagNumber(33)
   CutoverForecast ensureCutoverForecast() => $_ensure(19);
 }
@@ -1170,7 +1144,7 @@ class MigratingVm extends $pb.GeneratedMessage {
 /// CutoverForecast holds information about future CutoverJobs of a MigratingVm.
 class CutoverForecast extends $pb.GeneratedMessage {
   factory CutoverForecast({
-    $10.Duration? estimatedCutoverJobDuration,
+    $0.Duration? estimatedCutoverJobDuration,
   }) {
     final $result = create();
     if (estimatedCutoverJobDuration != null) {
@@ -1191,17 +1165,13 @@ class CutoverForecast extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..aOM<$10.Duration>(1, _omitFieldNames ? '' : 'estimatedCutoverJobDuration',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'estimatedCutoverJobDuration',
+        subBuilder: $0.Duration.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverForecast clone() => CutoverForecast()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverForecast copyWith(void Function(CutoverForecast) updates) =>
       super.copyWith((message) => updates(message as CutoverForecast))
           as CutoverForecast;
@@ -1220,18 +1190,18 @@ class CutoverForecast extends $pb.GeneratedMessage {
 
   /// Output only. Estimation of the CutoverJob duration.
   @$pb.TagNumber(1)
-  $10.Duration get estimatedCutoverJobDuration => $_getN(0);
+  $0.Duration get estimatedCutoverJobDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set estimatedCutoverJobDuration($10.Duration v) {
-    setField(1, v);
+  set estimatedCutoverJobDuration($0.Duration v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasEstimatedCutoverJobDuration() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEstimatedCutoverJobDuration() => clearField(1);
+  void clearEstimatedCutoverJobDuration() => $_clearField(1);
   @$pb.TagNumber(1)
-  $10.Duration ensureEstimatedCutoverJobDuration() => $_ensure(0);
+  $0.Duration ensureEstimatedCutoverJobDuration() => $_ensure(0);
 }
 
 enum CloneJob_TargetVmDetails { computeEngineTargetDetails, notSet }
@@ -1252,7 +1222,7 @@ class CloneJob extends $pb.GeneratedMessage {
     $core.String? name,
     CloneJob_State? state,
     $2.Timestamp? stateTime,
-    $19.Status? error,
+    $9.Status? error,
     ComputeEngineTargetDetails? computeEngineTargetDetails,
     $2.Timestamp? endTime,
     $core.Iterable<CloneStep>? steps,
@@ -1312,8 +1282,8 @@ class CloneJob extends $pb.GeneratedMessage {
         enumValues: CloneJob_State.values)
     ..aOM<$2.Timestamp>(14, _omitFieldNames ? '' : 'stateTime',
         subBuilder: $2.Timestamp.create)
-    ..aOM<$19.Status>(17, _omitFieldNames ? '' : 'error',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(17, _omitFieldNames ? '' : 'error',
+        subBuilder: $9.Status.create)
     ..aOM<ComputeEngineTargetDetails>(
         20, _omitFieldNames ? '' : 'computeEngineTargetDetails',
         subBuilder: ComputeEngineTargetDetails.create)
@@ -1323,13 +1293,9 @@ class CloneJob extends $pb.GeneratedMessage {
         subBuilder: CloneStep.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloneJob clone() => CloneJob()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloneJob copyWith(void Function(CloneJob) updates) =>
       super.copyWith((message) => updates(message as CloneJob)) as CloneJob;
 
@@ -1346,7 +1312,7 @@ class CloneJob extends $pb.GeneratedMessage {
 
   CloneJob_TargetVmDetails whichTargetVmDetails() =>
       _CloneJob_TargetVmDetailsByTag[$_whichOneof(0)]!;
-  void clearTargetVmDetails() => clearField($_whichOneof(0));
+  void clearTargetVmDetails() => $_clearField($_whichOneof(0));
 
   /// Output only. The time the clone job was created (as an API call, not when
   /// it was actually created in the target).
@@ -1354,13 +1320,13 @@ class CloneJob extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
   set createTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCreateTime() => clearField(1);
+  void clearCreateTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureCreateTime() => $_ensure(0);
 
@@ -1375,64 +1341,64 @@ class CloneJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
-  void clearName() => clearField(3);
+  void clearName() => $_clearField(3);
 
   /// Output only. State of the clone job.
   @$pb.TagNumber(12)
   CloneJob_State get state => $_getN(2);
   @$pb.TagNumber(12)
   set state(CloneJob_State v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(12)
-  void clearState() => clearField(12);
+  void clearState() => $_clearField(12);
 
   /// Output only. The time the state was last updated.
   @$pb.TagNumber(14)
   $2.Timestamp get stateTime => $_getN(3);
   @$pb.TagNumber(14)
   set stateTime($2.Timestamp v) {
-    setField(14, v);
+    $_setField(14, v);
   }
 
   @$pb.TagNumber(14)
   $core.bool hasStateTime() => $_has(3);
   @$pb.TagNumber(14)
-  void clearStateTime() => clearField(14);
+  void clearStateTime() => $_clearField(14);
   @$pb.TagNumber(14)
   $2.Timestamp ensureStateTime() => $_ensure(3);
 
   /// Output only. Provides details for the errors that led to the Clone Job's
   /// state.
   @$pb.TagNumber(17)
-  $19.Status get error => $_getN(4);
+  $9.Status get error => $_getN(4);
   @$pb.TagNumber(17)
-  set error($19.Status v) {
-    setField(17, v);
+  set error($9.Status v) {
+    $_setField(17, v);
   }
 
   @$pb.TagNumber(17)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(17)
-  void clearError() => clearField(17);
+  void clearError() => $_clearField(17);
   @$pb.TagNumber(17)
-  $19.Status ensureError() => $_ensure(4);
+  $9.Status ensureError() => $_ensure(4);
 
   /// Output only. Details of the target VM in Compute Engine.
   @$pb.TagNumber(20)
   ComputeEngineTargetDetails get computeEngineTargetDetails => $_getN(5);
   @$pb.TagNumber(20)
   set computeEngineTargetDetails(ComputeEngineTargetDetails v) {
-    setField(20, v);
+    $_setField(20, v);
   }
 
   @$pb.TagNumber(20)
   $core.bool hasComputeEngineTargetDetails() => $_has(5);
   @$pb.TagNumber(20)
-  void clearComputeEngineTargetDetails() => clearField(20);
+  void clearComputeEngineTargetDetails() => $_clearField(20);
   @$pb.TagNumber(20)
   ComputeEngineTargetDetails ensureComputeEngineTargetDetails() => $_ensure(5);
 
@@ -1441,19 +1407,19 @@ class CloneJob extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(22)
   set endTime($2.Timestamp v) {
-    setField(22, v);
+    $_setField(22, v);
   }
 
   @$pb.TagNumber(22)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(22)
-  void clearEndTime() => clearField(22);
+  void clearEndTime() => $_clearField(22);
   @$pb.TagNumber(22)
   $2.Timestamp ensureEndTime() => $_ensure(6);
 
   /// Output only. The clone steps list representing its progress.
   @$pb.TagNumber(23)
-  $core.List<CloneStep> get steps => $_getList(7);
+  $pb.PbList<CloneStep> get steps => $_getList(7);
 }
 
 enum CloneStep_Step {
@@ -1523,13 +1489,9 @@ class CloneStep extends $pb.GeneratedMessage {
         subBuilder: InstantiatingMigratedVMStep.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloneStep clone() => CloneStep()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloneStep copyWith(void Function(CloneStep) updates) =>
       super.copyWith((message) => updates(message as CloneStep)) as CloneStep;
 
@@ -1545,20 +1507,20 @@ class CloneStep extends $pb.GeneratedMessage {
   static CloneStep? _defaultInstance;
 
   CloneStep_Step whichStep() => _CloneStep_StepByTag[$_whichOneof(0)]!;
-  void clearStep() => clearField($_whichOneof(0));
+  void clearStep() => $_clearField($_whichOneof(0));
 
   /// The time the step has started.
   @$pb.TagNumber(1)
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
   set startTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStartTime() => clearField(1);
+  void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureStartTime() => $_ensure(0);
 
@@ -1567,13 +1529,13 @@ class CloneStep extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
   set endTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEndTime() => clearField(2);
+  void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureEndTime() => $_ensure(1);
 
@@ -1582,13 +1544,13 @@ class CloneStep extends $pb.GeneratedMessage {
   AdaptingOSStep get adaptingOs => $_getN(2);
   @$pb.TagNumber(3)
   set adaptingOs(AdaptingOSStep v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasAdaptingOs() => $_has(2);
   @$pb.TagNumber(3)
-  void clearAdaptingOs() => clearField(3);
+  void clearAdaptingOs() => $_clearField(3);
   @$pb.TagNumber(3)
   AdaptingOSStep ensureAdaptingOs() => $_ensure(2);
 
@@ -1597,13 +1559,13 @@ class CloneStep extends $pb.GeneratedMessage {
   PreparingVMDisksStep get preparingVmDisks => $_getN(3);
   @$pb.TagNumber(4)
   set preparingVmDisks(PreparingVMDisksStep v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasPreparingVmDisks() => $_has(3);
   @$pb.TagNumber(4)
-  void clearPreparingVmDisks() => clearField(4);
+  void clearPreparingVmDisks() => $_clearField(4);
   @$pb.TagNumber(4)
   PreparingVMDisksStep ensurePreparingVmDisks() => $_ensure(3);
 
@@ -1612,13 +1574,13 @@ class CloneStep extends $pb.GeneratedMessage {
   InstantiatingMigratedVMStep get instantiatingMigratedVm => $_getN(4);
   @$pb.TagNumber(5)
   set instantiatingMigratedVm(InstantiatingMigratedVMStep v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasInstantiatingMigratedVm() => $_has(4);
   @$pb.TagNumber(5)
-  void clearInstantiatingMigratedVm() => clearField(5);
+  void clearInstantiatingMigratedVm() => $_clearField(5);
   @$pb.TagNumber(5)
   InstantiatingMigratedVMStep ensureInstantiatingMigratedVm() => $_ensure(4);
 }
@@ -1641,13 +1603,9 @@ class AdaptingOSStep extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AdaptingOSStep clone() => AdaptingOSStep()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AdaptingOSStep copyWith(void Function(AdaptingOSStep) updates) =>
       super.copyWith((message) => updates(message as AdaptingOSStep))
           as AdaptingOSStep;
@@ -1683,14 +1641,10 @@ class PreparingVMDisksStep extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreparingVMDisksStep clone() =>
       PreparingVMDisksStep()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreparingVMDisksStep copyWith(void Function(PreparingVMDisksStep) updates) =>
       super.copyWith((message) => updates(message as PreparingVMDisksStep))
           as PreparingVMDisksStep;
@@ -1726,14 +1680,10 @@ class InstantiatingMigratedVMStep extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstantiatingMigratedVMStep clone() =>
       InstantiatingMigratedVMStep()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstantiatingMigratedVMStep copyWith(
           void Function(InstantiatingMigratedVMStep) updates) =>
       super.copyWith(
@@ -1765,7 +1715,7 @@ class CutoverJob extends $pb.GeneratedMessage {
     $core.String? name,
     CutoverJob_State? state,
     $2.Timestamp? stateTime,
-    $19.Status? error,
+    $9.Status? error,
     $core.String? stateMessage,
     $core.int? progressPercent,
     ComputeEngineTargetDetails? computeEngineTargetDetails,
@@ -1833,8 +1783,8 @@ class CutoverJob extends $pb.GeneratedMessage {
         enumValues: CutoverJob_State.values)
     ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'stateTime',
         subBuilder: $2.Timestamp.create)
-    ..aOM<$19.Status>(9, _omitFieldNames ? '' : 'error',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(9, _omitFieldNames ? '' : 'error',
+        subBuilder: $9.Status.create)
     ..aOS(10, _omitFieldNames ? '' : 'stateMessage')
     ..a<$core.int>(
         13, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
@@ -1847,13 +1797,9 @@ class CutoverJob extends $pb.GeneratedMessage {
         subBuilder: CutoverStep.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverJob clone() => CutoverJob()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverJob copyWith(void Function(CutoverJob) updates) =>
       super.copyWith((message) => updates(message as CutoverJob)) as CutoverJob;
 
@@ -1870,7 +1816,7 @@ class CutoverJob extends $pb.GeneratedMessage {
 
   CutoverJob_TargetVmDetails whichTargetVmDetails() =>
       _CutoverJob_TargetVmDetailsByTag[$_whichOneof(0)]!;
-  void clearTargetVmDetails() => clearField($_whichOneof(0));
+  void clearTargetVmDetails() => $_clearField($_whichOneof(0));
 
   /// Output only. The time the cutover job was created (as an API call, not when
   /// it was actually created in the target).
@@ -1878,13 +1824,13 @@ class CutoverJob extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
   set createTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCreateTime() => clearField(1);
+  void clearCreateTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureCreateTime() => $_ensure(0);
 
@@ -1899,51 +1845,51 @@ class CutoverJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(3)
-  void clearName() => clearField(3);
+  void clearName() => $_clearField(3);
 
   /// Output only. State of the cutover job.
   @$pb.TagNumber(5)
   CutoverJob_State get state => $_getN(2);
   @$pb.TagNumber(5)
   set state(CutoverJob_State v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(5)
-  void clearState() => clearField(5);
+  void clearState() => $_clearField(5);
 
   /// Output only. The time the state was last updated.
   @$pb.TagNumber(6)
   $2.Timestamp get stateTime => $_getN(3);
   @$pb.TagNumber(6)
   set stateTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasStateTime() => $_has(3);
   @$pb.TagNumber(6)
-  void clearStateTime() => clearField(6);
+  void clearStateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureStateTime() => $_ensure(3);
 
   /// Output only. Provides details for the errors that led to the Cutover Job's
   /// state.
   @$pb.TagNumber(9)
-  $19.Status get error => $_getN(4);
+  $9.Status get error => $_getN(4);
   @$pb.TagNumber(9)
-  set error($19.Status v) {
-    setField(9, v);
+  set error($9.Status v) {
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(9)
-  void clearError() => clearField(9);
+  void clearError() => $_clearField(9);
   @$pb.TagNumber(9)
-  $19.Status ensureError() => $_ensure(4);
+  $9.Status ensureError() => $_ensure(4);
 
   /// Output only. A message providing possible extra details about the current
   /// state.
@@ -1957,7 +1903,7 @@ class CutoverJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasStateMessage() => $_has(5);
   @$pb.TagNumber(10)
-  void clearStateMessage() => clearField(10);
+  void clearStateMessage() => $_clearField(10);
 
   /// Output only. The current progress in percentage of the cutover job.
   @$pb.TagNumber(13)
@@ -1970,20 +1916,20 @@ class CutoverJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasProgressPercent() => $_has(6);
   @$pb.TagNumber(13)
-  void clearProgressPercent() => clearField(13);
+  void clearProgressPercent() => $_clearField(13);
 
   /// Output only. Details of the target VM in Compute Engine.
   @$pb.TagNumber(14)
   ComputeEngineTargetDetails get computeEngineTargetDetails => $_getN(7);
   @$pb.TagNumber(14)
   set computeEngineTargetDetails(ComputeEngineTargetDetails v) {
-    setField(14, v);
+    $_setField(14, v);
   }
 
   @$pb.TagNumber(14)
   $core.bool hasComputeEngineTargetDetails() => $_has(7);
   @$pb.TagNumber(14)
-  void clearComputeEngineTargetDetails() => clearField(14);
+  void clearComputeEngineTargetDetails() => $_clearField(14);
   @$pb.TagNumber(14)
   ComputeEngineTargetDetails ensureComputeEngineTargetDetails() => $_ensure(7);
 
@@ -1992,19 +1938,19 @@ class CutoverJob extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(8);
   @$pb.TagNumber(16)
   set endTime($2.Timestamp v) {
-    setField(16, v);
+    $_setField(16, v);
   }
 
   @$pb.TagNumber(16)
   $core.bool hasEndTime() => $_has(8);
   @$pb.TagNumber(16)
-  void clearEndTime() => clearField(16);
+  void clearEndTime() => $_clearField(16);
   @$pb.TagNumber(16)
   $2.Timestamp ensureEndTime() => $_ensure(8);
 
   /// Output only. The cutover steps list representing its progress.
   @$pb.TagNumber(17)
-  $core.List<CutoverStep> get steps => $_getList(9);
+  $pb.PbList<CutoverStep> get steps => $_getList(9);
 }
 
 enum CutoverStep_Step {
@@ -2092,13 +2038,9 @@ class CutoverStep extends $pb.GeneratedMessage {
         subBuilder: InstantiatingMigratedVMStep.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverStep clone() => CutoverStep()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverStep copyWith(void Function(CutoverStep) updates) =>
       super.copyWith((message) => updates(message as CutoverStep))
           as CutoverStep;
@@ -2115,20 +2057,20 @@ class CutoverStep extends $pb.GeneratedMessage {
   static CutoverStep? _defaultInstance;
 
   CutoverStep_Step whichStep() => _CutoverStep_StepByTag[$_whichOneof(0)]!;
-  void clearStep() => clearField($_whichOneof(0));
+  void clearStep() => $_clearField($_whichOneof(0));
 
   /// The time the step has started.
   @$pb.TagNumber(1)
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
   set startTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStartTime() => clearField(1);
+  void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureStartTime() => $_ensure(0);
 
@@ -2137,13 +2079,13 @@ class CutoverStep extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
   set endTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEndTime() => clearField(2);
+  void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureEndTime() => $_ensure(1);
 
@@ -2152,13 +2094,13 @@ class CutoverStep extends $pb.GeneratedMessage {
   ReplicationCycle get previousReplicationCycle => $_getN(2);
   @$pb.TagNumber(3)
   set previousReplicationCycle(ReplicationCycle v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasPreviousReplicationCycle() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPreviousReplicationCycle() => clearField(3);
+  void clearPreviousReplicationCycle() => $_clearField(3);
   @$pb.TagNumber(3)
   ReplicationCycle ensurePreviousReplicationCycle() => $_ensure(2);
 
@@ -2167,13 +2109,13 @@ class CutoverStep extends $pb.GeneratedMessage {
   ShuttingDownSourceVMStep get shuttingDownSourceVm => $_getN(3);
   @$pb.TagNumber(4)
   set shuttingDownSourceVm(ShuttingDownSourceVMStep v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasShuttingDownSourceVm() => $_has(3);
   @$pb.TagNumber(4)
-  void clearShuttingDownSourceVm() => clearField(4);
+  void clearShuttingDownSourceVm() => $_clearField(4);
   @$pb.TagNumber(4)
   ShuttingDownSourceVMStep ensureShuttingDownSourceVm() => $_ensure(3);
 
@@ -2182,13 +2124,13 @@ class CutoverStep extends $pb.GeneratedMessage {
   ReplicationCycle get finalSync => $_getN(4);
   @$pb.TagNumber(5)
   set finalSync(ReplicationCycle v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasFinalSync() => $_has(4);
   @$pb.TagNumber(5)
-  void clearFinalSync() => clearField(5);
+  void clearFinalSync() => $_clearField(5);
   @$pb.TagNumber(5)
   ReplicationCycle ensureFinalSync() => $_ensure(4);
 
@@ -2197,13 +2139,13 @@ class CutoverStep extends $pb.GeneratedMessage {
   PreparingVMDisksStep get preparingVmDisks => $_getN(5);
   @$pb.TagNumber(6)
   set preparingVmDisks(PreparingVMDisksStep v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasPreparingVmDisks() => $_has(5);
   @$pb.TagNumber(6)
-  void clearPreparingVmDisks() => clearField(6);
+  void clearPreparingVmDisks() => $_clearField(6);
   @$pb.TagNumber(6)
   PreparingVMDisksStep ensurePreparingVmDisks() => $_ensure(5);
 
@@ -2212,13 +2154,13 @@ class CutoverStep extends $pb.GeneratedMessage {
   InstantiatingMigratedVMStep get instantiatingMigratedVm => $_getN(6);
   @$pb.TagNumber(7)
   set instantiatingMigratedVm(InstantiatingMigratedVMStep v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasInstantiatingMigratedVm() => $_has(6);
   @$pb.TagNumber(7)
-  void clearInstantiatingMigratedVm() => clearField(7);
+  void clearInstantiatingMigratedVm() => $_clearField(7);
   @$pb.TagNumber(7)
   InstantiatingMigratedVMStep ensureInstantiatingMigratedVm() => $_ensure(6);
 }
@@ -2241,14 +2183,10 @@ class ShuttingDownSourceVMStep extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ShuttingDownSourceVMStep clone() =>
       ShuttingDownSourceVMStep()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ShuttingDownSourceVMStep copyWith(
           void Function(ShuttingDownSourceVMStep) updates) =>
       super.copyWith((message) => updates(message as ShuttingDownSourceVMStep))
@@ -2276,7 +2214,7 @@ class Source extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     VmwareSourceDetails? vmware,
     AwsSourceDetails? aws,
@@ -2292,7 +2230,7 @@ class Source extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -2343,13 +2281,9 @@ class Source extends $pb.GeneratedMessage {
         subBuilder: AwsSourceDetails.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Source clone() => Source()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Source copyWith(void Function(Source) updates) =>
       super.copyWith((message) => updates(message as Source)) as Source;
 
@@ -2366,7 +2300,7 @@ class Source extends $pb.GeneratedMessage {
 
   Source_SourceDetails whichSourceDetails() =>
       _Source_SourceDetailsByTag[$_whichOneof(0)]!;
-  void clearSourceDetails() => clearField($_whichOneof(0));
+  void clearSourceDetails() => $_clearField($_whichOneof(0));
 
   /// Output only. The Source name.
   @$pb.TagNumber(1)
@@ -2379,20 +2313,20 @@ class Source extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The create time timestamp.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -2401,19 +2335,19 @@ class Source extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The labels of the source.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// User-provided description of the source.
   @$pb.TagNumber(6)
@@ -2426,20 +2360,20 @@ class Source extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(6)
-  void clearDescription() => clearField(6);
+  void clearDescription() => $_clearField(6);
 
   /// Vmware type source details.
   @$pb.TagNumber(10)
   VmwareSourceDetails get vmware => $_getN(5);
   @$pb.TagNumber(10)
   set vmware(VmwareSourceDetails v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasVmware() => $_has(5);
   @$pb.TagNumber(10)
-  void clearVmware() => clearField(10);
+  void clearVmware() => $_clearField(10);
   @$pb.TagNumber(10)
   VmwareSourceDetails ensureVmware() => $_ensure(5);
 
@@ -2448,13 +2382,13 @@ class Source extends $pb.GeneratedMessage {
   AwsSourceDetails get aws => $_getN(6);
   @$pb.TagNumber(12)
   set aws(AwsSourceDetails v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasAws() => $_has(6);
   @$pb.TagNumber(12)
-  void clearAws() => clearField(12);
+  void clearAws() => $_clearField(12);
   @$pb.TagNumber(12)
   AwsSourceDetails ensureAws() => $_ensure(6);
 }
@@ -2502,13 +2436,9 @@ class VmwareSourceDetails extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'resolvedVcenterHost')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmwareSourceDetails clone() => VmwareSourceDetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmwareSourceDetails copyWith(void Function(VmwareSourceDetails) updates) =>
       super.copyWith((message) => updates(message as VmwareSourceDetails))
           as VmwareSourceDetails;
@@ -2536,7 +2466,7 @@ class VmwareSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUsername() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUsername() => clearField(1);
+  void clearUsername() => $_clearField(1);
 
   /// The ip address of the vcenter this Source represents.
   @$pb.TagNumber(3)
@@ -2549,7 +2479,7 @@ class VmwareSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasVcenterIp() => $_has(1);
   @$pb.TagNumber(3)
-  void clearVcenterIp() => clearField(3);
+  void clearVcenterIp() => $_clearField(3);
 
   /// The thumbprint representing the certificate for the vcenter.
   @$pb.TagNumber(4)
@@ -2562,7 +2492,7 @@ class VmwareSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasThumbprint() => $_has(2);
   @$pb.TagNumber(4)
-  void clearThumbprint() => clearField(4);
+  void clearThumbprint() => $_clearField(4);
 
   /// The hostname of the vcenter.
   @$pb.TagNumber(5)
@@ -2575,7 +2505,7 @@ class VmwareSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasResolvedVcenterHost() => $_has(3);
   @$pb.TagNumber(5)
-  void clearResolvedVcenterHost() => clearField(5);
+  void clearResolvedVcenterHost() => $_clearField(5);
 }
 
 /// Message describing AWS Credentials using access key id and secret.
@@ -2606,14 +2536,10 @@ class AwsSourceDetails_AccessKeyCredentials extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'accessKeyId')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceDetails_AccessKeyCredentials clone() =>
       AwsSourceDetails_AccessKeyCredentials()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceDetails_AccessKeyCredentials copyWith(
           void Function(AwsSourceDetails_AccessKeyCredentials) updates) =>
       super.copyWith((message) =>
@@ -2645,7 +2571,7 @@ class AwsSourceDetails_AccessKeyCredentials extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasAccessKeyId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAccessKeyId() => clearField(1);
+  void clearAccessKeyId() => $_clearField(1);
 }
 
 /// Tag is an AWS tag representation.
@@ -2680,14 +2606,10 @@ class AwsSourceDetails_Tag extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'value')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceDetails_Tag clone() =>
       AwsSourceDetails_Tag()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceDetails_Tag copyWith(void Function(AwsSourceDetails_Tag) updates) =>
       super.copyWith((message) => updates(message as AwsSourceDetails_Tag))
           as AwsSourceDetails_Tag;
@@ -2715,7 +2637,7 @@ class AwsSourceDetails_Tag extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKey() => clearField(1);
+  void clearKey() => $_clearField(1);
 
   /// Value of tag.
   @$pb.TagNumber(2)
@@ -2728,7 +2650,7 @@ class AwsSourceDetails_Tag extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearValue() => clearField(2);
+  void clearValue() => $_clearField(2);
 }
 
 enum AwsSourceDetails_CredentialsType { accessKeyCreds, notSet }
@@ -2739,9 +2661,10 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
   factory AwsSourceDetails({
     $core.String? awsRegion,
     AwsSourceDetails_State? state,
-    $19.Status? error,
+    $9.Status? error,
     $core.Iterable<$core.String>? inventorySecurityGroupNames,
-    $core.Map<$core.String, $core.String>? migrationResourcesUserTags,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>?
+        migrationResourcesUserTags,
     $core.String? publicIp,
     $core.Iterable<AwsSourceDetails_Tag>? inventoryTagList,
     AwsSourceDetails_AccessKeyCredentials? accessKeyCreds,
@@ -2760,7 +2683,7 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
       $result.inventorySecurityGroupNames.addAll(inventorySecurityGroupNames);
     }
     if (migrationResourcesUserTags != null) {
-      $result.migrationResourcesUserTags.addAll(migrationResourcesUserTags);
+      $result.migrationResourcesUserTags.addEntries(migrationResourcesUserTags);
     }
     if (publicIp != null) {
       $result.publicIp = publicIp;
@@ -2798,8 +2721,8 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
         defaultOrMaker: AwsSourceDetails_State.STATE_UNSPECIFIED,
         valueOf: AwsSourceDetails_State.valueOf,
         enumValues: AwsSourceDetails_State.values)
-    ..aOM<$19.Status>(5, _omitFieldNames ? '' : 'error',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(5, _omitFieldNames ? '' : 'error',
+        subBuilder: $9.Status.create)
     ..pPS(7, _omitFieldNames ? '' : 'inventorySecurityGroupNames')
     ..m<$core.String, $core.String>(
         8, _omitFieldNames ? '' : 'migrationResourcesUserTags',
@@ -2817,13 +2740,9 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
         subBuilder: AwsSourceDetails_AccessKeyCredentials.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceDetails clone() => AwsSourceDetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceDetails copyWith(void Function(AwsSourceDetails) updates) =>
       super.copyWith((message) => updates(message as AwsSourceDetails))
           as AwsSourceDetails;
@@ -2842,7 +2761,7 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
 
   AwsSourceDetails_CredentialsType whichCredentialsType() =>
       _AwsSourceDetails_CredentialsTypeByTag[$_whichOneof(0)]!;
-  void clearCredentialsType() => clearField($_whichOneof(0));
+  void clearCredentialsType() => $_clearField($_whichOneof(0));
 
   /// Immutable. The AWS region that the source VMs will be migrated from.
   @$pb.TagNumber(3)
@@ -2855,48 +2774,48 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasAwsRegion() => $_has(0);
   @$pb.TagNumber(3)
-  void clearAwsRegion() => clearField(3);
+  void clearAwsRegion() => $_clearField(3);
 
   /// Output only. State of the source as determined by the health check.
   @$pb.TagNumber(4)
   AwsSourceDetails_State get state => $_getN(1);
   @$pb.TagNumber(4)
   set state(AwsSourceDetails_State v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(4)
-  void clearState() => clearField(4);
+  void clearState() => $_clearField(4);
 
   /// Output only. Provides details on the state of the Source in case of an
   /// error.
   @$pb.TagNumber(5)
-  $19.Status get error => $_getN(2);
+  $9.Status get error => $_getN(2);
   @$pb.TagNumber(5)
-  set error($19.Status v) {
-    setField(5, v);
+  set error($9.Status v) {
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(5)
-  void clearError() => clearField(5);
+  void clearError() => $_clearField(5);
   @$pb.TagNumber(5)
-  $19.Status ensureError() => $_ensure(2);
+  $9.Status ensureError() => $_ensure(2);
 
   /// AWS security group names to limit the scope of the source
   /// inventory.
   @$pb.TagNumber(7)
-  $core.List<$core.String> get inventorySecurityGroupNames => $_getList(3);
+  $pb.PbList<$core.String> get inventorySecurityGroupNames => $_getList(3);
 
   /// User specified tags to add to every M2VM generated resource in AWS.
   /// These tags will be set in addition to the default tags that are set as part
   /// of the migration process. The tags must not begin with the reserved prefix
   /// `m2vm`.
   @$pb.TagNumber(8)
-  $core.Map<$core.String, $core.String> get migrationResourcesUserTags =>
+  $pb.PbMap<$core.String, $core.String> get migrationResourcesUserTags =>
       $_getMap(4);
 
   /// Output only. The source's public IP. All communication initiated by this
@@ -2911,24 +2830,24 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasPublicIp() => $_has(5);
   @$pb.TagNumber(9)
-  void clearPublicIp() => clearField(9);
+  void clearPublicIp() => $_clearField(9);
 
   /// AWS resource tags to limit the scope of the source inventory.
   @$pb.TagNumber(10)
-  $core.List<AwsSourceDetails_Tag> get inventoryTagList => $_getList(6);
+  $pb.PbList<AwsSourceDetails_Tag> get inventoryTagList => $_getList(6);
 
   /// AWS Credentials using access key id and secret.
   @$pb.TagNumber(11)
   AwsSourceDetails_AccessKeyCredentials get accessKeyCreds => $_getN(7);
   @$pb.TagNumber(11)
   set accessKeyCreds(AwsSourceDetails_AccessKeyCredentials v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasAccessKeyCreds() => $_has(7);
   @$pb.TagNumber(11)
-  void clearAccessKeyCreds() => clearField(11);
+  void clearAccessKeyCreds() => $_clearField(11);
   @$pb.TagNumber(11)
   AwsSourceDetails_AccessKeyCredentials ensureAccessKeyCreds() => $_ensure(7);
 }
@@ -2947,7 +2866,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
     DatacenterConnector_State? state,
     $2.Timestamp? stateTime,
     $core.String? bucket,
-    $19.Status? error,
+    $9.Status? error,
     $core.String? registrationId,
     $core.String? applianceInfrastructureVersion,
     $core.String? applianceSoftwareVersion,
@@ -3027,8 +2946,8 @@ class DatacenterConnector extends $pb.GeneratedMessage {
     ..aOM<$2.Timestamp>(8, _omitFieldNames ? '' : 'stateTime',
         subBuilder: $2.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'bucket')
-    ..aOM<$19.Status>(11, _omitFieldNames ? '' : 'error',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(11, _omitFieldNames ? '' : 'error',
+        subBuilder: $9.Status.create)
     ..aOS(12, _omitFieldNames ? '' : 'registrationId')
     ..aOS(13, _omitFieldNames ? '' : 'applianceInfrastructureVersion')
     ..aOS(14, _omitFieldNames ? '' : 'applianceSoftwareVersion')
@@ -3038,13 +2957,9 @@ class DatacenterConnector extends $pb.GeneratedMessage {
         subBuilder: UpgradeStatus.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatacenterConnector clone() => DatacenterConnector()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatacenterConnector copyWith(void Function(DatacenterConnector) updates) =>
       super.copyWith((message) => updates(message as DatacenterConnector))
           as DatacenterConnector;
@@ -3067,13 +2982,13 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
   set createTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCreateTime() => clearField(1);
+  void clearCreateTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureCreateTime() => $_ensure(0);
 
@@ -3082,13 +2997,13 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
   set updateTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUpdateTime() => clearField(2);
+  void clearUpdateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureUpdateTime() => $_ensure(1);
 
@@ -3103,7 +3018,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearName() => clearField(3);
+  void clearName() => $_clearField(3);
 
   /// The service account to use in the connector when communicating with the
   /// cloud.
@@ -3117,7 +3032,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasServiceAccount() => $_has(3);
   @$pb.TagNumber(5)
-  void clearServiceAccount() => clearField(5);
+  void clearServiceAccount() => $_clearField(5);
 
   /// The version running in the DatacenterConnector. This is supplied by the OVA
   /// connector during the registration process and can not be modified.
@@ -3131,7 +3046,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasVersion() => $_has(4);
   @$pb.TagNumber(6)
-  void clearVersion() => clearField(6);
+  void clearVersion() => $_clearField(6);
 
   /// Output only. State of the DatacenterConnector, as determined by the health
   /// checks.
@@ -3139,26 +3054,26 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   DatacenterConnector_State get state => $_getN(5);
   @$pb.TagNumber(7)
   set state(DatacenterConnector_State v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(7)
-  void clearState() => clearField(7);
+  void clearState() => $_clearField(7);
 
   /// Output only. The time the state was last set.
   @$pb.TagNumber(8)
   $2.Timestamp get stateTime => $_getN(6);
   @$pb.TagNumber(8)
   set stateTime($2.Timestamp v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasStateTime() => $_has(6);
   @$pb.TagNumber(8)
-  void clearStateTime() => clearField(8);
+  void clearStateTime() => $_clearField(8);
   @$pb.TagNumber(8)
   $2.Timestamp ensureStateTime() => $_ensure(6);
 
@@ -3174,23 +3089,23 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasBucket() => $_has(7);
   @$pb.TagNumber(10)
-  void clearBucket() => clearField(10);
+  void clearBucket() => $_clearField(10);
 
   /// Output only. Provides details on the state of the Datacenter Connector in
   /// case of an error.
   @$pb.TagNumber(11)
-  $19.Status get error => $_getN(8);
+  $9.Status get error => $_getN(8);
   @$pb.TagNumber(11)
-  set error($19.Status v) {
-    setField(11, v);
+  set error($9.Status v) {
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasError() => $_has(8);
   @$pb.TagNumber(11)
-  void clearError() => clearField(11);
+  void clearError() => $_clearField(11);
   @$pb.TagNumber(11)
-  $19.Status ensureError() => $_ensure(8);
+  $9.Status ensureError() => $_ensure(8);
 
   /// Immutable. A unique key for this connector. This key is internal to the OVA
   /// connector and is supplied with its creation during the registration process
@@ -3205,7 +3120,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasRegistrationId() => $_has(9);
   @$pb.TagNumber(12)
-  void clearRegistrationId() => clearField(12);
+  void clearRegistrationId() => $_clearField(12);
 
   /// Output only. Appliance OVA version.
   /// This is the OVA which is manually installed by the user and contains the
@@ -3220,7 +3135,7 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasApplianceInfrastructureVersion() => $_has(10);
   @$pb.TagNumber(13)
-  void clearApplianceInfrastructureVersion() => clearField(13);
+  void clearApplianceInfrastructureVersion() => $_clearField(13);
 
   /// Output only. Appliance last installed update bundle version.
   /// This is the version of the automatically updatable components on the
@@ -3235,20 +3150,20 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasApplianceSoftwareVersion() => $_has(11);
   @$pb.TagNumber(14)
-  void clearApplianceSoftwareVersion() => clearField(14);
+  void clearApplianceSoftwareVersion() => $_clearField(14);
 
   /// Output only. The available versions for updating this appliance.
   @$pb.TagNumber(15)
   AvailableUpdates get availableVersions => $_getN(12);
   @$pb.TagNumber(15)
   set availableVersions(AvailableUpdates v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasAvailableVersions() => $_has(12);
   @$pb.TagNumber(15)
-  void clearAvailableVersions() => clearField(15);
+  void clearAvailableVersions() => $_clearField(15);
   @$pb.TagNumber(15)
   AvailableUpdates ensureAvailableVersions() => $_ensure(12);
 
@@ -3257,13 +3172,13 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   UpgradeStatus get upgradeStatus => $_getN(13);
   @$pb.TagNumber(16)
   set upgradeStatus(UpgradeStatus v) {
-    setField(16, v);
+    $_setField(16, v);
   }
 
   @$pb.TagNumber(16)
   $core.bool hasUpgradeStatus() => $_has(13);
   @$pb.TagNumber(16)
-  void clearUpgradeStatus() => clearField(16);
+  void clearUpgradeStatus() => $_clearField(16);
   @$pb.TagNumber(16)
   UpgradeStatus ensureUpgradeStatus() => $_ensure(13);
 }
@@ -3273,7 +3188,7 @@ class UpgradeStatus extends $pb.GeneratedMessage {
   factory UpgradeStatus({
     $core.String? version,
     UpgradeStatus_State? state,
-    $19.Status? error,
+    $9.Status? error,
     $2.Timestamp? startTime,
     $core.String? previousVersion,
   }) {
@@ -3314,20 +3229,16 @@ class UpgradeStatus extends $pb.GeneratedMessage {
         defaultOrMaker: UpgradeStatus_State.STATE_UNSPECIFIED,
         valueOf: UpgradeStatus_State.valueOf,
         enumValues: UpgradeStatus_State.values)
-    ..aOM<$19.Status>(3, _omitFieldNames ? '' : 'error',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(3, _omitFieldNames ? '' : 'error',
+        subBuilder: $9.Status.create)
     ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
         subBuilder: $2.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'previousVersion')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpgradeStatus clone() => UpgradeStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpgradeStatus copyWith(void Function(UpgradeStatus) updates) =>
       super.copyWith((message) => updates(message as UpgradeStatus))
           as UpgradeStatus;
@@ -3355,48 +3266,48 @@ class UpgradeStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVersion() => clearField(1);
+  void clearVersion() => $_clearField(1);
 
   /// The state of the upgradeAppliance operation.
   @$pb.TagNumber(2)
   UpgradeStatus_State get state => $_getN(1);
   @$pb.TagNumber(2)
   set state(UpgradeStatus_State v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasState() => $_has(1);
   @$pb.TagNumber(2)
-  void clearState() => clearField(2);
+  void clearState() => $_clearField(2);
 
   /// Provides details on the state of the upgrade operation in case of an error.
   @$pb.TagNumber(3)
-  $19.Status get error => $_getN(2);
+  $9.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($19.Status v) {
-    setField(3, v);
+  set error($9.Status v) {
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
-  void clearError() => clearField(3);
+  void clearError() => $_clearField(3);
   @$pb.TagNumber(3)
-  $19.Status ensureError() => $_ensure(2);
+  $9.Status ensureError() => $_ensure(2);
 
   /// The time the operation was started.
   @$pb.TagNumber(4)
   $2.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
   set startTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearStartTime() => clearField(4);
+  void clearStartTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureStartTime() => $_ensure(3);
 
@@ -3411,7 +3322,7 @@ class UpgradeStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasPreviousVersion() => $_has(4);
   @$pb.TagNumber(5)
-  void clearPreviousVersion() => clearField(5);
+  void clearPreviousVersion() => $_clearField(5);
 }
 
 /// Holds informatiom about the available versions for upgrade.
@@ -3448,13 +3359,9 @@ class AvailableUpdates extends $pb.GeneratedMessage {
         subBuilder: ApplianceVersion.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AvailableUpdates clone() => AvailableUpdates()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AvailableUpdates copyWith(void Function(AvailableUpdates) updates) =>
       super.copyWith((message) => updates(message as AvailableUpdates))
           as AvailableUpdates;
@@ -3478,13 +3385,13 @@ class AvailableUpdates extends $pb.GeneratedMessage {
   ApplianceVersion get newDeployableAppliance => $_getN(0);
   @$pb.TagNumber(1)
   set newDeployableAppliance(ApplianceVersion v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasNewDeployableAppliance() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNewDeployableAppliance() => clearField(1);
+  void clearNewDeployableAppliance() => $_clearField(1);
   @$pb.TagNumber(1)
   ApplianceVersion ensureNewDeployableAppliance() => $_ensure(0);
 
@@ -3495,13 +3402,13 @@ class AvailableUpdates extends $pb.GeneratedMessage {
   ApplianceVersion get inPlaceUpdate => $_getN(1);
   @$pb.TagNumber(2)
   set inPlaceUpdate(ApplianceVersion v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasInPlaceUpdate() => $_has(1);
   @$pb.TagNumber(2)
-  void clearInPlaceUpdate() => clearField(2);
+  void clearInPlaceUpdate() => $_clearField(2);
   @$pb.TagNumber(2)
   ApplianceVersion ensureInPlaceUpdate() => $_ensure(1);
 }
@@ -3548,13 +3455,9 @@ class ApplianceVersion extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'releaseNotesUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApplianceVersion clone() => ApplianceVersion()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ApplianceVersion copyWith(void Function(ApplianceVersion) updates) =>
       super.copyWith((message) => updates(message as ApplianceVersion))
           as ApplianceVersion;
@@ -3582,7 +3485,7 @@ class ApplianceVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVersion() => clearField(1);
+  void clearVersion() => $_clearField(1);
 
   /// A link for downloading the version.
   @$pb.TagNumber(2)
@@ -3595,7 +3498,7 @@ class ApplianceVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 
   /// Determine whether it's critical to upgrade the appliance to this version.
   @$pb.TagNumber(3)
@@ -3608,7 +3511,7 @@ class ApplianceVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasCritical() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCritical() => clearField(3);
+  void clearCritical() => $_clearField(3);
 
   /// Link to a page that contains the version release notes.
   @$pb.TagNumber(4)
@@ -3621,7 +3524,7 @@ class ApplianceVersion extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasReleaseNotesUri() => $_has(3);
   @$pb.TagNumber(4)
-  void clearReleaseNotesUri() => clearField(4);
+  void clearReleaseNotesUri() => $_clearField(4);
 }
 
 /// VmwareVmDetails describes a VM in vCenter.
@@ -3714,13 +3617,9 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
         enumValues: VmwareVmDetails_BootOption.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmwareVmDetails clone() => VmwareVmDetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmwareVmDetails copyWith(void Function(VmwareVmDetails) updates) =>
       super.copyWith((message) => updates(message as VmwareVmDetails))
           as VmwareVmDetails;
@@ -3749,7 +3648,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVmId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVmId() => clearField(1);
+  void clearVmId() => $_clearField(1);
 
   /// The id of the vCenter's datacenter this VM is contained in.
   @$pb.TagNumber(2)
@@ -3762,7 +3661,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDatacenterId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDatacenterId() => clearField(2);
+  void clearDatacenterId() => $_clearField(2);
 
   /// The descriptive name of the vCenter's datacenter this VM is contained in.
   @$pb.TagNumber(3)
@@ -3775,7 +3674,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDatacenterDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDatacenterDescription() => clearField(3);
+  void clearDatacenterDescription() => $_clearField(3);
 
   /// The unique identifier of the VM in vCenter.
   @$pb.TagNumber(4)
@@ -3788,7 +3687,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasUuid() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUuid() => clearField(4);
+  void clearUuid() => $_clearField(4);
 
   /// The display name of the VM. Note that this is not necessarily unique.
   @$pb.TagNumber(5)
@@ -3801,20 +3700,20 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 
   /// The power state of the VM at the moment list was taken.
   @$pb.TagNumber(6)
   VmwareVmDetails_PowerState get powerState => $_getN(5);
   @$pb.TagNumber(6)
   set powerState(VmwareVmDetails_PowerState v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasPowerState() => $_has(5);
   @$pb.TagNumber(6)
-  void clearPowerState() => clearField(6);
+  void clearPowerState() => $_clearField(6);
 
   /// The number of cpus in the VM.
   @$pb.TagNumber(7)
@@ -3827,7 +3726,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasCpuCount() => $_has(6);
   @$pb.TagNumber(7)
-  void clearCpuCount() => clearField(7);
+  void clearCpuCount() => $_clearField(7);
 
   /// The size of the memory of the VM in MB.
   @$pb.TagNumber(8)
@@ -3840,7 +3739,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasMemoryMb() => $_has(7);
   @$pb.TagNumber(8)
-  void clearMemoryMb() => clearField(8);
+  void clearMemoryMb() => $_clearField(8);
 
   /// The number of disks the VM has.
   @$pb.TagNumber(9)
@@ -3853,7 +3752,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasDiskCount() => $_has(8);
   @$pb.TagNumber(9)
-  void clearDiskCount() => clearField(9);
+  void clearDiskCount() => $_clearField(9);
 
   /// The VM's OS. See for example
   /// https://vdc-repo.vmware.com/vmwb-repository/dcr-public/da47f910-60ac-438b-8b9b-6122f4d14524/16b7274a-bf8b-4b4c-a05e-746f2aa93c8c/doc/vim.vm.GuestOsDescriptor.GuestOsIdentifier.html
@@ -3868,7 +3767,7 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasGuestDescription() => $_has(9);
   @$pb.TagNumber(11)
-  void clearGuestDescription() => clearField(11);
+  void clearGuestDescription() => $_clearField(11);
 
   /// The total size of the storage allocated to the VM in MB.
   @$pb.TagNumber(12)
@@ -3881,20 +3780,20 @@ class VmwareVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasCommittedStorageMb() => $_has(10);
   @$pb.TagNumber(12)
-  void clearCommittedStorageMb() => clearField(12);
+  void clearCommittedStorageMb() => $_clearField(12);
 
   /// Output only. The VM Boot Option.
   @$pb.TagNumber(13)
   VmwareVmDetails_BootOption get bootOption => $_getN(11);
   @$pb.TagNumber(13)
   set bootOption(VmwareVmDetails_BootOption v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasBootOption() => $_has(11);
   @$pb.TagNumber(13)
-  void clearBootOption() => clearField(13);
+  void clearBootOption() => $_clearField(13);
 }
 
 /// Utilization report details the utilization (CPU, memory, etc.) of selected
@@ -3905,7 +3804,7 @@ class UtilizationReport extends $pb.GeneratedMessage {
     $core.String? displayName,
     UtilizationReport_State? state,
     $2.Timestamp? stateTime,
-    $19.Status? error,
+    $9.Status? error,
     $2.Timestamp? createTime,
     UtilizationReport_TimeFrame? timeFrame,
     $2.Timestamp? frameEndTime,
@@ -3967,8 +3866,8 @@ class UtilizationReport extends $pb.GeneratedMessage {
         enumValues: UtilizationReport_State.values)
     ..aOM<$2.Timestamp>(4, _omitFieldNames ? '' : 'stateTime',
         subBuilder: $2.Timestamp.create)
-    ..aOM<$19.Status>(5, _omitFieldNames ? '' : 'error',
-        subBuilder: $19.Status.create)
+    ..aOM<$9.Status>(5, _omitFieldNames ? '' : 'error',
+        subBuilder: $9.Status.create)
     ..aOM<$2.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
         subBuilder: $2.Timestamp.create)
     ..e<UtilizationReport_TimeFrame>(
@@ -3984,13 +3883,9 @@ class UtilizationReport extends $pb.GeneratedMessage {
         subBuilder: VmUtilizationInfo.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UtilizationReport clone() => UtilizationReport()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UtilizationReport copyWith(void Function(UtilizationReport) updates) =>
       super.copyWith((message) => updates(message as UtilizationReport))
           as UtilizationReport;
@@ -4018,7 +3913,7 @@ class UtilizationReport extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// The report display name, as assigned by the user.
   @$pb.TagNumber(2)
@@ -4031,51 +3926,51 @@ class UtilizationReport extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// Output only. Current state of the report.
   @$pb.TagNumber(3)
   UtilizationReport_State get state => $_getN(2);
   @$pb.TagNumber(3)
   set state(UtilizationReport_State v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
-  void clearState() => clearField(3);
+  void clearState() => $_clearField(3);
 
   /// Output only. The time the state was last set.
   @$pb.TagNumber(4)
   $2.Timestamp get stateTime => $_getN(3);
   @$pb.TagNumber(4)
   set stateTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasStateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearStateTime() => clearField(4);
+  void clearStateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureStateTime() => $_ensure(3);
 
   /// Output only. Provides details on the state of the report in case of an
   /// error.
   @$pb.TagNumber(5)
-  $19.Status get error => $_getN(4);
+  $9.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($19.Status v) {
-    setField(5, v);
+  set error($9.Status v) {
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
-  void clearError() => clearField(5);
+  void clearError() => $_clearField(5);
   @$pb.TagNumber(5)
-  $19.Status ensureError() => $_ensure(4);
+  $9.Status ensureError() => $_ensure(4);
 
   /// Output only. The time the report was created (this refers to the time of
   /// the request, not the time the report creation completed).
@@ -4083,13 +3978,13 @@ class UtilizationReport extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
   set createTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
-  void clearCreateTime() => clearField(6);
+  void clearCreateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureCreateTime() => $_ensure(5);
 
@@ -4098,13 +3993,13 @@ class UtilizationReport extends $pb.GeneratedMessage {
   UtilizationReport_TimeFrame get timeFrame => $_getN(6);
   @$pb.TagNumber(7)
   set timeFrame(UtilizationReport_TimeFrame v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasTimeFrame() => $_has(6);
   @$pb.TagNumber(7)
-  void clearTimeFrame() => clearField(7);
+  void clearTimeFrame() => $_clearField(7);
 
   /// Output only. The point in time when the time frame ends. Notice that the
   /// time frame is counted backwards. For instance if the "frame_end_time" value
@@ -4114,13 +4009,13 @@ class UtilizationReport extends $pb.GeneratedMessage {
   $2.Timestamp get frameEndTime => $_getN(7);
   @$pb.TagNumber(8)
   set frameEndTime($2.Timestamp v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasFrameEndTime() => $_has(7);
   @$pb.TagNumber(8)
-  void clearFrameEndTime() => clearField(8);
+  void clearFrameEndTime() => $_clearField(8);
   @$pb.TagNumber(8)
   $2.Timestamp ensureFrameEndTime() => $_ensure(7);
 
@@ -4135,14 +4030,14 @@ class UtilizationReport extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasVmCount() => $_has(8);
   @$pb.TagNumber(9)
-  void clearVmCount() => clearField(9);
+  void clearVmCount() => $_clearField(9);
 
   /// List of utilization information per VM.
   /// When sent as part of the request, the "vm_id" field is used in order to
   /// specify which VMs to include in the report. In that case all other fields
   /// are ignored.
   @$pb.TagNumber(10)
-  $core.List<VmUtilizationInfo> get vms => $_getList(9);
+  $pb.PbList<VmUtilizationInfo> get vms => $_getList(9);
 }
 
 enum VmUtilizationInfo_VmDetails { vmwareVmDetails, notSet }
@@ -4192,13 +4087,9 @@ class VmUtilizationInfo extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'vmId')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmUtilizationInfo clone() => VmUtilizationInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmUtilizationInfo copyWith(void Function(VmUtilizationInfo) updates) =>
       super.copyWith((message) => updates(message as VmUtilizationInfo))
           as VmUtilizationInfo;
@@ -4217,20 +4108,20 @@ class VmUtilizationInfo extends $pb.GeneratedMessage {
 
   VmUtilizationInfo_VmDetails whichVmDetails() =>
       _VmUtilizationInfo_VmDetailsByTag[$_whichOneof(0)]!;
-  void clearVmDetails() => clearField($_whichOneof(0));
+  void clearVmDetails() => $_clearField($_whichOneof(0));
 
   /// The description of the VM in a Source of type Vmware.
   @$pb.TagNumber(1)
   VmwareVmDetails get vmwareVmDetails => $_getN(0);
   @$pb.TagNumber(1)
   set vmwareVmDetails(VmwareVmDetails v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasVmwareVmDetails() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVmwareVmDetails() => clearField(1);
+  void clearVmwareVmDetails() => $_clearField(1);
   @$pb.TagNumber(1)
   VmwareVmDetails ensureVmwareVmDetails() => $_ensure(0);
 
@@ -4239,13 +4130,13 @@ class VmUtilizationInfo extends $pb.GeneratedMessage {
   VmUtilizationMetrics get utilization => $_getN(1);
   @$pb.TagNumber(2)
   set utilization(VmUtilizationMetrics v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasUtilization() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUtilization() => clearField(2);
+  void clearUtilization() => $_clearField(2);
   @$pb.TagNumber(2)
   VmUtilizationMetrics ensureUtilization() => $_ensure(1);
 
@@ -4260,7 +4151,7 @@ class VmUtilizationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasVmId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearVmId() => clearField(3);
+  void clearVmId() => $_clearField(3);
 }
 
 /// Utilization metrics values for a single VM.
@@ -4329,14 +4220,10 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
     ..aInt64(16, _omitFieldNames ? '' : 'networkThroughputAverageKbps')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmUtilizationMetrics clone() =>
       VmUtilizationMetrics()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmUtilizationMetrics copyWith(void Function(VmUtilizationMetrics) updates) =>
       super.copyWith((message) => updates(message as VmUtilizationMetrics))
           as VmUtilizationMetrics;
@@ -4364,7 +4251,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasCpuMaxPercent() => $_has(0);
   @$pb.TagNumber(9)
-  void clearCpuMaxPercent() => clearField(9);
+  void clearCpuMaxPercent() => $_clearField(9);
 
   /// Average CPU usage, percent.
   @$pb.TagNumber(10)
@@ -4377,7 +4264,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasCpuAveragePercent() => $_has(1);
   @$pb.TagNumber(10)
-  void clearCpuAveragePercent() => clearField(10);
+  void clearCpuAveragePercent() => $_clearField(10);
 
   /// Max memory usage, percent.
   @$pb.TagNumber(11)
@@ -4390,7 +4277,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasMemoryMaxPercent() => $_has(2);
   @$pb.TagNumber(11)
-  void clearMemoryMaxPercent() => clearField(11);
+  void clearMemoryMaxPercent() => $_clearField(11);
 
   /// Average memory usage, percent.
   @$pb.TagNumber(12)
@@ -4403,7 +4290,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasMemoryAveragePercent() => $_has(3);
   @$pb.TagNumber(12)
-  void clearMemoryAveragePercent() => clearField(12);
+  void clearMemoryAveragePercent() => $_clearField(12);
 
   /// Max disk IO rate, in kilobytes per second.
   @$pb.TagNumber(13)
@@ -4416,7 +4303,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasDiskIoRateMaxKbps() => $_has(4);
   @$pb.TagNumber(13)
-  void clearDiskIoRateMaxKbps() => clearField(13);
+  void clearDiskIoRateMaxKbps() => $_clearField(13);
 
   /// Average disk IO rate, in kilobytes per second.
   @$pb.TagNumber(14)
@@ -4429,7 +4316,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasDiskIoRateAverageKbps() => $_has(5);
   @$pb.TagNumber(14)
-  void clearDiskIoRateAverageKbps() => clearField(14);
+  void clearDiskIoRateAverageKbps() => $_clearField(14);
 
   /// Max network throughput (combined transmit-rates and receive-rates), in
   /// kilobytes per second.
@@ -4443,7 +4330,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasNetworkThroughputMaxKbps() => $_has(6);
   @$pb.TagNumber(15)
-  void clearNetworkThroughputMaxKbps() => clearField(15);
+  void clearNetworkThroughputMaxKbps() => $_clearField(15);
 
   /// Average network throughput (combined transmit-rates and receive-rates), in
   /// kilobytes per second.
@@ -4457,7 +4344,7 @@ class VmUtilizationMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasNetworkThroughputAverageKbps() => $_has(7);
   @$pb.TagNumber(16)
-  void clearNetworkThroughputAverageKbps() => clearField(16);
+  void clearNetworkThroughputAverageKbps() => $_clearField(16);
 }
 
 /// ComputeEngineTargetDefaults is a collection of details for creating a VM in a
@@ -4473,13 +4360,13 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
     $core.Iterable<NetworkInterface>? networkInterfaces,
     $core.String? serviceAccount,
     ComputeEngineDiskType? diskType,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     ComputeEngineLicenseType? licenseType,
     AppliedLicense? appliedLicense,
     ComputeScheduling? computeScheduling,
     $core.bool? secureBoot,
     ComputeEngineBootOption? bootOption,
-    $core.Map<$core.String, $core.String>? metadata,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? metadata,
     $core.Iterable<$core.String>? additionalLicenses,
     $core.String? hostname,
   }) {
@@ -4512,7 +4399,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
       $result.diskType = diskType;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (licenseType != null) {
       $result.licenseType = licenseType;
@@ -4530,7 +4417,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
       $result.bootOption = bootOption;
     }
     if (metadata != null) {
-      $result.metadata.addAll(metadata);
+      $result.metadata.addEntries(metadata);
     }
     if (additionalLicenses != null) {
       $result.additionalLicenses.addAll(additionalLicenses);
@@ -4602,14 +4489,10 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
     ..aOS(18, _omitFieldNames ? '' : 'hostname')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeEngineTargetDefaults clone() =>
       ComputeEngineTargetDefaults()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeEngineTargetDefaults copyWith(
           void Function(ComputeEngineTargetDefaults) updates) =>
       super.copyWith(
@@ -4640,7 +4523,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVmName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVmName() => clearField(1);
+  void clearVmName() => $_clearField(1);
 
   /// The full path of the resource of type TargetProject which represents the
   /// Compute Engine project in which to create this VM.
@@ -4654,7 +4537,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTargetProject() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTargetProject() => clearField(2);
+  void clearTargetProject() => $_clearField(2);
 
   /// The zone in which to create the VM.
   @$pb.TagNumber(3)
@@ -4667,7 +4550,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasZone() => $_has(2);
   @$pb.TagNumber(3)
-  void clearZone() => clearField(3);
+  void clearZone() => $_clearField(3);
 
   /// The machine type series to create the VM with.
   @$pb.TagNumber(4)
@@ -4680,7 +4563,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasMachineTypeSeries() => $_has(3);
   @$pb.TagNumber(4)
-  void clearMachineTypeSeries() => clearField(4);
+  void clearMachineTypeSeries() => $_clearField(4);
 
   /// The machine type to create the VM with.
   @$pb.TagNumber(5)
@@ -4693,15 +4576,15 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasMachineType() => $_has(4);
   @$pb.TagNumber(5)
-  void clearMachineType() => clearField(5);
+  void clearMachineType() => $_clearField(5);
 
   /// A map of network tags to associate with the VM.
   @$pb.TagNumber(6)
-  $core.List<$core.String> get networkTags => $_getList(5);
+  $pb.PbList<$core.String> get networkTags => $_getList(5);
 
   /// List of NICs connected to this VM.
   @$pb.TagNumber(7)
-  $core.List<NetworkInterface> get networkInterfaces => $_getList(6);
+  $pb.PbList<NetworkInterface> get networkInterfaces => $_getList(6);
 
   /// The service account to associate the VM with.
   @$pb.TagNumber(8)
@@ -4714,50 +4597,50 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasServiceAccount() => $_has(7);
   @$pb.TagNumber(8)
-  void clearServiceAccount() => clearField(8);
+  void clearServiceAccount() => $_clearField(8);
 
   /// The disk type to use in the VM.
   @$pb.TagNumber(9)
   ComputeEngineDiskType get diskType => $_getN(8);
   @$pb.TagNumber(9)
   set diskType(ComputeEngineDiskType v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasDiskType() => $_has(8);
   @$pb.TagNumber(9)
-  void clearDiskType() => clearField(9);
+  void clearDiskType() => $_clearField(9);
 
   /// A map of labels to associate with the VM.
   @$pb.TagNumber(10)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(9);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(9);
 
   /// The license type to use in OS adaptation.
   @$pb.TagNumber(11)
   ComputeEngineLicenseType get licenseType => $_getN(10);
   @$pb.TagNumber(11)
   set licenseType(ComputeEngineLicenseType v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasLicenseType() => $_has(10);
   @$pb.TagNumber(11)
-  void clearLicenseType() => clearField(11);
+  void clearLicenseType() => $_clearField(11);
 
   /// Output only. The OS license returned from the adaptation module report.
   @$pb.TagNumber(12)
   AppliedLicense get appliedLicense => $_getN(11);
   @$pb.TagNumber(12)
   set appliedLicense(AppliedLicense v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasAppliedLicense() => $_has(11);
   @$pb.TagNumber(12)
-  void clearAppliedLicense() => clearField(12);
+  void clearAppliedLicense() => $_clearField(12);
   @$pb.TagNumber(12)
   AppliedLicense ensureAppliedLicense() => $_ensure(11);
 
@@ -4766,13 +4649,13 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   ComputeScheduling get computeScheduling => $_getN(12);
   @$pb.TagNumber(13)
   set computeScheduling(ComputeScheduling v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasComputeScheduling() => $_has(12);
   @$pb.TagNumber(13)
-  void clearComputeScheduling() => clearField(13);
+  void clearComputeScheduling() => $_clearField(13);
   @$pb.TagNumber(13)
   ComputeScheduling ensureComputeScheduling() => $_ensure(12);
 
@@ -4788,28 +4671,28 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasSecureBoot() => $_has(13);
   @$pb.TagNumber(14)
-  void clearSecureBoot() => clearField(14);
+  void clearSecureBoot() => $_clearField(14);
 
   /// Output only. The VM Boot Option, as set in the source vm.
   @$pb.TagNumber(15)
   ComputeEngineBootOption get bootOption => $_getN(14);
   @$pb.TagNumber(15)
   set bootOption(ComputeEngineBootOption v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasBootOption() => $_has(14);
   @$pb.TagNumber(15)
-  void clearBootOption() => clearField(15);
+  void clearBootOption() => $_clearField(15);
 
   /// The metadata key/value pairs to assign to the VM.
   @$pb.TagNumber(16)
-  $core.Map<$core.String, $core.String> get metadata => $_getMap(15);
+  $pb.PbMap<$core.String, $core.String> get metadata => $_getMap(15);
 
   /// Additional licenses to assign to the VM.
   @$pb.TagNumber(17)
-  $core.List<$core.String> get additionalLicenses => $_getList(16);
+  $pb.PbList<$core.String> get additionalLicenses => $_getList(16);
 
   /// The hostname to assign to the VM.
   @$pb.TagNumber(18)
@@ -4822,7 +4705,7 @@ class ComputeEngineTargetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasHostname() => $_has(17);
   @$pb.TagNumber(18)
-  void clearHostname() => clearField(18);
+  void clearHostname() => $_clearField(18);
 }
 
 /// ComputeEngineTargetDetails is a collection of details for creating a VM in a
@@ -4838,13 +4721,13 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
     $core.Iterable<NetworkInterface>? networkInterfaces,
     $core.String? serviceAccount,
     ComputeEngineDiskType? diskType,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     ComputeEngineLicenseType? licenseType,
     AppliedLicense? appliedLicense,
     ComputeScheduling? computeScheduling,
     $core.bool? secureBoot,
     ComputeEngineBootOption? bootOption,
-    $core.Map<$core.String, $core.String>? metadata,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? metadata,
     $core.Iterable<$core.String>? additionalLicenses,
     $core.String? hostname,
   }) {
@@ -4877,7 +4760,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
       $result.diskType = diskType;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (licenseType != null) {
       $result.licenseType = licenseType;
@@ -4895,7 +4778,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
       $result.bootOption = bootOption;
     }
     if (metadata != null) {
-      $result.metadata.addAll(metadata);
+      $result.metadata.addEntries(metadata);
     }
     if (additionalLicenses != null) {
       $result.additionalLicenses.addAll(additionalLicenses);
@@ -4967,14 +4850,10 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
     ..aOS(18, _omitFieldNames ? '' : 'hostname')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeEngineTargetDetails clone() =>
       ComputeEngineTargetDetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeEngineTargetDetails copyWith(
           void Function(ComputeEngineTargetDetails) updates) =>
       super.copyWith(
@@ -5004,7 +4883,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVmName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVmName() => clearField(1);
+  void clearVmName() => $_clearField(1);
 
   /// The Google Cloud target project ID or project name.
   @$pb.TagNumber(2)
@@ -5017,7 +4896,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasProject() => $_has(1);
   @$pb.TagNumber(2)
-  void clearProject() => clearField(2);
+  void clearProject() => $_clearField(2);
 
   /// The zone in which to create the VM.
   @$pb.TagNumber(3)
@@ -5030,7 +4909,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasZone() => $_has(2);
   @$pb.TagNumber(3)
-  void clearZone() => clearField(3);
+  void clearZone() => $_clearField(3);
 
   /// The machine type series to create the VM with.
   @$pb.TagNumber(4)
@@ -5043,7 +4922,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasMachineTypeSeries() => $_has(3);
   @$pb.TagNumber(4)
-  void clearMachineTypeSeries() => clearField(4);
+  void clearMachineTypeSeries() => $_clearField(4);
 
   /// The machine type to create the VM with.
   @$pb.TagNumber(5)
@@ -5056,15 +4935,15 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasMachineType() => $_has(4);
   @$pb.TagNumber(5)
-  void clearMachineType() => clearField(5);
+  void clearMachineType() => $_clearField(5);
 
   /// A map of network tags to associate with the VM.
   @$pb.TagNumber(6)
-  $core.List<$core.String> get networkTags => $_getList(5);
+  $pb.PbList<$core.String> get networkTags => $_getList(5);
 
   /// List of NICs connected to this VM.
   @$pb.TagNumber(7)
-  $core.List<NetworkInterface> get networkInterfaces => $_getList(6);
+  $pb.PbList<NetworkInterface> get networkInterfaces => $_getList(6);
 
   /// The service account to associate the VM with.
   @$pb.TagNumber(8)
@@ -5077,50 +4956,50 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasServiceAccount() => $_has(7);
   @$pb.TagNumber(8)
-  void clearServiceAccount() => clearField(8);
+  void clearServiceAccount() => $_clearField(8);
 
   /// The disk type to use in the VM.
   @$pb.TagNumber(9)
   ComputeEngineDiskType get diskType => $_getN(8);
   @$pb.TagNumber(9)
   set diskType(ComputeEngineDiskType v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasDiskType() => $_has(8);
   @$pb.TagNumber(9)
-  void clearDiskType() => clearField(9);
+  void clearDiskType() => $_clearField(9);
 
   /// A map of labels to associate with the VM.
   @$pb.TagNumber(10)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(9);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(9);
 
   /// The license type to use in OS adaptation.
   @$pb.TagNumber(11)
   ComputeEngineLicenseType get licenseType => $_getN(10);
   @$pb.TagNumber(11)
   set licenseType(ComputeEngineLicenseType v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasLicenseType() => $_has(10);
   @$pb.TagNumber(11)
-  void clearLicenseType() => clearField(11);
+  void clearLicenseType() => $_clearField(11);
 
   /// The OS license returned from the adaptation module report.
   @$pb.TagNumber(12)
   AppliedLicense get appliedLicense => $_getN(11);
   @$pb.TagNumber(12)
   set appliedLicense(AppliedLicense v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasAppliedLicense() => $_has(11);
   @$pb.TagNumber(12)
-  void clearAppliedLicense() => clearField(12);
+  void clearAppliedLicense() => $_clearField(12);
   @$pb.TagNumber(12)
   AppliedLicense ensureAppliedLicense() => $_ensure(11);
 
@@ -5129,13 +5008,13 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   ComputeScheduling get computeScheduling => $_getN(12);
   @$pb.TagNumber(13)
   set computeScheduling(ComputeScheduling v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasComputeScheduling() => $_has(12);
   @$pb.TagNumber(13)
-  void clearComputeScheduling() => clearField(13);
+  void clearComputeScheduling() => $_clearField(13);
   @$pb.TagNumber(13)
   ComputeScheduling ensureComputeScheduling() => $_ensure(12);
 
@@ -5151,28 +5030,28 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasSecureBoot() => $_has(13);
   @$pb.TagNumber(14)
-  void clearSecureBoot() => clearField(14);
+  void clearSecureBoot() => $_clearField(14);
 
   /// The VM Boot Option, as set in the source vm.
   @$pb.TagNumber(15)
   ComputeEngineBootOption get bootOption => $_getN(14);
   @$pb.TagNumber(15)
   set bootOption(ComputeEngineBootOption v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasBootOption() => $_has(14);
   @$pb.TagNumber(15)
-  void clearBootOption() => clearField(15);
+  void clearBootOption() => $_clearField(15);
 
   /// The metadata key/value pairs to assign to the VM.
   @$pb.TagNumber(16)
-  $core.Map<$core.String, $core.String> get metadata => $_getMap(15);
+  $pb.PbMap<$core.String, $core.String> get metadata => $_getMap(15);
 
   /// Additional licenses to assign to the VM.
   @$pb.TagNumber(17)
-  $core.List<$core.String> get additionalLicenses => $_getList(16);
+  $pb.PbList<$core.String> get additionalLicenses => $_getList(16);
 
   /// The hostname to assign to the VM.
   @$pb.TagNumber(18)
@@ -5185,7 +5064,7 @@ class ComputeEngineTargetDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasHostname() => $_has(17);
   @$pb.TagNumber(18)
-  void clearHostname() => clearField(18);
+  void clearHostname() => $_clearField(18);
 }
 
 /// NetworkInterface represents a NIC of a VM.
@@ -5230,13 +5109,9 @@ class NetworkInterface extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'externalIp')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkInterface clone() => NetworkInterface()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkInterface copyWith(void Function(NetworkInterface) updates) =>
       super.copyWith((message) => updates(message as NetworkInterface))
           as NetworkInterface;
@@ -5264,7 +5139,7 @@ class NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNetwork() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNetwork() => clearField(1);
+  void clearNetwork() => $_clearField(1);
 
   /// The subnetwork to connect the NIC to.
   @$pb.TagNumber(2)
@@ -5277,7 +5152,7 @@ class NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSubnetwork() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSubnetwork() => clearField(2);
+  void clearSubnetwork() => $_clearField(2);
 
   /// The internal IP to define in the NIC.
   /// The formats accepted are: `ephemeral` \ ipv4 address \ a named address
@@ -5292,7 +5167,7 @@ class NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasInternalIp() => $_has(2);
   @$pb.TagNumber(3)
-  void clearInternalIp() => clearField(3);
+  void clearInternalIp() => $_clearField(3);
 
   /// The external IP to define in the NIC.
   @$pb.TagNumber(4)
@@ -5305,7 +5180,7 @@ class NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasExternalIp() => $_has(3);
   @$pb.TagNumber(4)
-  void clearExternalIp() => clearField(4);
+  void clearExternalIp() => $_clearField(4);
 }
 
 /// AppliedLicense holds the license data returned by adaptation module report.
@@ -5344,13 +5219,9 @@ class AppliedLicense extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'osLicense')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppliedLicense clone() => AppliedLicense()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppliedLicense copyWith(void Function(AppliedLicense) updates) =>
       super.copyWith((message) => updates(message as AppliedLicense))
           as AppliedLicense;
@@ -5372,13 +5243,13 @@ class AppliedLicense extends $pb.GeneratedMessage {
   AppliedLicense_Type get type => $_getN(0);
   @$pb.TagNumber(1)
   set type(AppliedLicense_Type v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// The OS license returned from the adaptation module's report.
   @$pb.TagNumber(2)
@@ -5391,7 +5262,7 @@ class AppliedLicense extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasOsLicense() => $_has(1);
   @$pb.TagNumber(2)
-  void clearOsLicense() => clearField(2);
+  void clearOsLicense() => $_clearField(2);
 }
 
 /// Node Affinity: the configuration of desired nodes onto which this Instance
@@ -5437,14 +5308,10 @@ class SchedulingNodeAffinity extends $pb.GeneratedMessage {
     ..pPS(3, _omitFieldNames ? '' : 'values')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SchedulingNodeAffinity clone() =>
       SchedulingNodeAffinity()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SchedulingNodeAffinity copyWith(
           void Function(SchedulingNodeAffinity) updates) =>
       super.copyWith((message) => updates(message as SchedulingNodeAffinity))
@@ -5473,7 +5340,7 @@ class SchedulingNodeAffinity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKey() => clearField(1);
+  void clearKey() => $_clearField(1);
 
   /// The operator to use for the node resources specified in the `values`
   /// parameter.
@@ -5481,17 +5348,17 @@ class SchedulingNodeAffinity extends $pb.GeneratedMessage {
   SchedulingNodeAffinity_Operator get operator => $_getN(1);
   @$pb.TagNumber(2)
   set operator(SchedulingNodeAffinity_Operator v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasOperator() => $_has(1);
   @$pb.TagNumber(2)
-  void clearOperator() => clearField(2);
+  void clearOperator() => $_clearField(2);
 
   /// Corresponds to the label values of Node resource.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get values => $_getList(2);
+  $pb.PbList<$core.String> get values => $_getList(2);
 }
 
 /// Scheduling information for VM on maintenance/restart behaviour and
@@ -5548,13 +5415,9 @@ class ComputeScheduling extends $pb.GeneratedMessage {
         enumValues: ComputeScheduling_RestartType.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeScheduling clone() => ComputeScheduling()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeScheduling copyWith(void Function(ComputeScheduling) updates) =>
       super.copyWith((message) => updates(message as ComputeScheduling))
           as ComputeScheduling;
@@ -5577,18 +5440,18 @@ class ComputeScheduling extends $pb.GeneratedMessage {
   ComputeScheduling_OnHostMaintenance get onHostMaintenance => $_getN(0);
   @$pb.TagNumber(1)
   set onHostMaintenance(ComputeScheduling_OnHostMaintenance v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasOnHostMaintenance() => $_has(0);
   @$pb.TagNumber(1)
-  void clearOnHostMaintenance() => clearField(1);
+  void clearOnHostMaintenance() => $_clearField(1);
 
   /// A set of node affinity and anti-affinity configurations for sole tenant
   /// nodes.
   @$pb.TagNumber(3)
-  $core.List<SchedulingNodeAffinity> get nodeAffinities => $_getList(1);
+  $pb.PbList<SchedulingNodeAffinity> get nodeAffinities => $_getList(1);
 
   /// The minimum number of virtual CPUs this instance will consume when
   /// running on a sole-tenant node. Ignored if no node_affinites are
@@ -5603,7 +5466,7 @@ class ComputeScheduling extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasMinNodeCpus() => $_has(2);
   @$pb.TagNumber(4)
-  void clearMinNodeCpus() => clearField(4);
+  void clearMinNodeCpus() => $_clearField(4);
 
   /// Whether the Instance should be automatically restarted whenever it is
   /// terminated by Compute Engine (not terminated by user).
@@ -5615,19 +5478,19 @@ class ComputeScheduling extends $pb.GeneratedMessage {
   ComputeScheduling_RestartType get restartType => $_getN(3);
   @$pb.TagNumber(5)
   set restartType(ComputeScheduling_RestartType v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasRestartType() => $_has(3);
   @$pb.TagNumber(5)
-  void clearRestartType() => clearField(5);
+  void clearRestartType() => $_clearField(5);
 }
 
 /// A policy for scheduling replications.
 class SchedulePolicy extends $pb.GeneratedMessage {
   factory SchedulePolicy({
-    $10.Duration? idleDuration,
+    $0.Duration? idleDuration,
     $core.bool? skipOsAdaptation,
   }) {
     final $result = create();
@@ -5652,18 +5515,14 @@ class SchedulePolicy extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.vmmigration.v1'),
       createEmptyInstance: create)
-    ..aOM<$10.Duration>(1, _omitFieldNames ? '' : 'idleDuration',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'idleDuration',
+        subBuilder: $0.Duration.create)
     ..aOB(2, _omitFieldNames ? '' : 'skipOsAdaptation')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SchedulePolicy clone() => SchedulePolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SchedulePolicy copyWith(void Function(SchedulePolicy) updates) =>
       super.copyWith((message) => updates(message as SchedulePolicy))
           as SchedulePolicy;
@@ -5682,18 +5541,18 @@ class SchedulePolicy extends $pb.GeneratedMessage {
 
   /// The idle duration between replication stages.
   @$pb.TagNumber(1)
-  $10.Duration get idleDuration => $_getN(0);
+  $0.Duration get idleDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set idleDuration($10.Duration v) {
-    setField(1, v);
+  set idleDuration($0.Duration v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasIdleDuration() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIdleDuration() => clearField(1);
+  void clearIdleDuration() => $_clearField(1);
   @$pb.TagNumber(1)
-  $10.Duration ensureIdleDuration() => $_ensure(0);
+  $0.Duration ensureIdleDuration() => $_ensure(0);
 
   /// A flag to indicate whether to skip OS adaptation during the replication
   /// sync. OS adaptation is a process where the VM's operating system undergoes
@@ -5708,7 +5567,7 @@ class SchedulePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSkipOsAdaptation() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSkipOsAdaptation() => clearField(2);
+  void clearSkipOsAdaptation() => $_clearField(2);
 }
 
 /// TargetProject message represents a target Compute Engine project for a
@@ -5761,13 +5620,9 @@ class TargetProject extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TargetProject clone() => TargetProject()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TargetProject copyWith(void Function(TargetProject) updates) =>
       super.copyWith((message) => updates(message as TargetProject))
           as TargetProject;
@@ -5795,7 +5650,7 @@ class TargetProject extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// The target project ID (number) or project name.
   @$pb.TagNumber(2)
@@ -5808,7 +5663,7 @@ class TargetProject extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasProject() => $_has(1);
   @$pb.TagNumber(2)
-  void clearProject() => clearField(2);
+  void clearProject() => $_clearField(2);
 
   /// The target project's description.
   @$pb.TagNumber(3)
@@ -5821,7 +5676,7 @@ class TargetProject extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// Output only. The time this target project resource was created (not related
   /// to when the Compute Engine project it points to was created).
@@ -5829,13 +5684,13 @@ class TargetProject extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
   set createTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCreateTime() => clearField(4);
+  void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -5844,13 +5699,13 @@ class TargetProject extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
   set updateTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUpdateTime() => clearField(5);
+  void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureUpdateTime() => $_ensure(4);
 }
@@ -5905,13 +5760,9 @@ class Group extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Group clone() => Group()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Group copyWith(void Function(Group) updates) =>
       super.copyWith((message) => updates(message as Group)) as Group;
 
@@ -5937,20 +5788,20 @@ class Group extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The create time timestamp.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -5959,13 +5810,13 @@ class Group extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -5980,7 +5831,7 @@ class Group extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDescription() => clearField(4);
+  void clearDescription() => $_clearField(4);
 
   /// Display name is a user defined name for this group which can be updated.
   @$pb.TagNumber(5)
@@ -5993,7 +5844,7 @@ class Group extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 }
 
 /// Represents migration resource warning information that can be used with
@@ -6002,9 +5853,9 @@ class Group extends $pb.GeneratedMessage {
 class MigrationWarning extends $pb.GeneratedMessage {
   factory MigrationWarning({
     MigrationWarning_WarningCode? code,
-    $31.LocalizedMessage? warningMessage,
-    $31.LocalizedMessage? actionItem,
-    $core.Iterable<$31.Help_Link>? helpLinks,
+    $50.LocalizedMessage? warningMessage,
+    $50.LocalizedMessage? actionItem,
+    $core.Iterable<$50.Help_Link>? helpLinks,
     $2.Timestamp? warningTime,
   }) {
     final $result = create();
@@ -6043,24 +5894,20 @@ class MigrationWarning extends $pb.GeneratedMessage {
         defaultOrMaker: MigrationWarning_WarningCode.WARNING_CODE_UNSPECIFIED,
         valueOf: MigrationWarning_WarningCode.valueOf,
         enumValues: MigrationWarning_WarningCode.values)
-    ..aOM<$31.LocalizedMessage>(2, _omitFieldNames ? '' : 'warningMessage',
-        subBuilder: $31.LocalizedMessage.create)
-    ..aOM<$31.LocalizedMessage>(3, _omitFieldNames ? '' : 'actionItem',
-        subBuilder: $31.LocalizedMessage.create)
-    ..pc<$31.Help_Link>(
+    ..aOM<$50.LocalizedMessage>(2, _omitFieldNames ? '' : 'warningMessage',
+        subBuilder: $50.LocalizedMessage.create)
+    ..aOM<$50.LocalizedMessage>(3, _omitFieldNames ? '' : 'actionItem',
+        subBuilder: $50.LocalizedMessage.create)
+    ..pc<$50.Help_Link>(
         4, _omitFieldNames ? '' : 'helpLinks', $pb.PbFieldType.PM,
-        subBuilder: $31.Help_Link.create)
+        subBuilder: $50.Help_Link.create)
     ..aOM<$2.Timestamp>(5, _omitFieldNames ? '' : 'warningTime',
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigrationWarning clone() => MigrationWarning()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigrationWarning copyWith(void Function(MigrationWarning) updates) =>
       super.copyWith((message) => updates(message as MigrationWarning))
           as MigrationWarning;
@@ -6082,60 +5929,60 @@ class MigrationWarning extends $pb.GeneratedMessage {
   MigrationWarning_WarningCode get code => $_getN(0);
   @$pb.TagNumber(1)
   set code(MigrationWarning_WarningCode v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCode() => clearField(1);
+  void clearCode() => $_clearField(1);
 
   /// The localized warning message.
   @$pb.TagNumber(2)
-  $31.LocalizedMessage get warningMessage => $_getN(1);
+  $50.LocalizedMessage get warningMessage => $_getN(1);
   @$pb.TagNumber(2)
-  set warningMessage($31.LocalizedMessage v) {
-    setField(2, v);
+  set warningMessage($50.LocalizedMessage v) {
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasWarningMessage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearWarningMessage() => clearField(2);
+  void clearWarningMessage() => $_clearField(2);
   @$pb.TagNumber(2)
-  $31.LocalizedMessage ensureWarningMessage() => $_ensure(1);
+  $50.LocalizedMessage ensureWarningMessage() => $_ensure(1);
 
   /// Suggested action for solving the warning.
   @$pb.TagNumber(3)
-  $31.LocalizedMessage get actionItem => $_getN(2);
+  $50.LocalizedMessage get actionItem => $_getN(2);
   @$pb.TagNumber(3)
-  set actionItem($31.LocalizedMessage v) {
-    setField(3, v);
+  set actionItem($50.LocalizedMessage v) {
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasActionItem() => $_has(2);
   @$pb.TagNumber(3)
-  void clearActionItem() => clearField(3);
+  void clearActionItem() => $_clearField(3);
   @$pb.TagNumber(3)
-  $31.LocalizedMessage ensureActionItem() => $_ensure(2);
+  $50.LocalizedMessage ensureActionItem() => $_ensure(2);
 
   /// URL(s) pointing to additional information on handling the current warning.
   @$pb.TagNumber(4)
-  $core.List<$31.Help_Link> get helpLinks => $_getList(3);
+  $pb.PbList<$50.Help_Link> get helpLinks => $_getList(3);
 
   /// The time the warning occurred.
   @$pb.TagNumber(5)
   $2.Timestamp get warningTime => $_getN(4);
   @$pb.TagNumber(5)
   set warningTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasWarningTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearWarningTime() => clearField(5);
+  void clearWarningTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureWarningTime() => $_ensure(4);
 }
@@ -6177,14 +6024,10 @@ class AwsSourceVmDetails_AwsDiskDetails extends $pb.GeneratedMessage {
     ..aInt64(3, _omitFieldNames ? '' : 'sizeGb')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceVmDetails_AwsDiskDetails clone() =>
       AwsSourceVmDetails_AwsDiskDetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceVmDetails_AwsDiskDetails copyWith(
           void Function(AwsSourceVmDetails_AwsDiskDetails) updates) =>
       super.copyWith((message) =>
@@ -6216,7 +6059,7 @@ class AwsSourceVmDetails_AwsDiskDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDiskNumber() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDiskNumber() => clearField(1);
+  void clearDiskNumber() => $_clearField(1);
 
   /// AWS volume ID.
   @$pb.TagNumber(2)
@@ -6229,7 +6072,7 @@ class AwsSourceVmDetails_AwsDiskDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasVolumeId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearVolumeId() => clearField(2);
+  void clearVolumeId() => $_clearField(2);
 
   /// Size in GB.
   @$pb.TagNumber(3)
@@ -6242,7 +6085,7 @@ class AwsSourceVmDetails_AwsDiskDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasSizeGb() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSizeGb() => clearField(3);
+  void clearSizeGb() => $_clearField(3);
 }
 
 /// Represent the source AWS VM details.
@@ -6288,13 +6131,9 @@ class AwsSourceVmDetails extends $pb.GeneratedMessage {
         subBuilder: AwsSourceVmDetails_AwsDiskDetails.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceVmDetails clone() => AwsSourceVmDetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AwsSourceVmDetails copyWith(void Function(AwsSourceVmDetails) updates) =>
       super.copyWith((message) => updates(message as AwsSourceVmDetails))
           as AwsSourceVmDetails;
@@ -6316,13 +6155,13 @@ class AwsSourceVmDetails extends $pb.GeneratedMessage {
   AwsSourceVmDetails_Firmware get firmware => $_getN(0);
   @$pb.TagNumber(1)
   set firmware(AwsSourceVmDetails_Firmware v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasFirmware() => $_has(0);
   @$pb.TagNumber(1)
-  void clearFirmware() => clearField(1);
+  void clearFirmware() => $_clearField(1);
 
   /// The total size of the disks being migrated in bytes.
   @$pb.TagNumber(2)
@@ -6335,11 +6174,11 @@ class AwsSourceVmDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCommittedStorageBytes() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCommittedStorageBytes() => clearField(2);
+  void clearCommittedStorageBytes() => $_clearField(2);
 
   /// The disks attached to the source VM.
   @$pb.TagNumber(3)
-  $core.List<AwsSourceVmDetails_AwsDiskDetails> get disks => $_getList(2);
+  $pb.PbList<AwsSourceVmDetails_AwsDiskDetails> get disks => $_getList(2);
 }
 
 /// The data within all UtilizationReport events.
@@ -6370,14 +6209,10 @@ class UtilizationReportEventData extends $pb.GeneratedMessage {
         subBuilder: UtilizationReport.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UtilizationReportEventData clone() =>
       UtilizationReportEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UtilizationReportEventData copyWith(
           void Function(UtilizationReportEventData) updates) =>
       super.copyWith(
@@ -6401,13 +6236,13 @@ class UtilizationReportEventData extends $pb.GeneratedMessage {
   UtilizationReport get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(UtilizationReport v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   UtilizationReport ensurePayload() => $_ensure(0);
 }
@@ -6439,13 +6274,9 @@ class GroupEventData extends $pb.GeneratedMessage {
     ..aOM<Group>(1, _omitFieldNames ? '' : 'payload', subBuilder: Group.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GroupEventData clone() => GroupEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GroupEventData copyWith(void Function(GroupEventData) updates) =>
       super.copyWith((message) => updates(message as GroupEventData))
           as GroupEventData;
@@ -6467,13 +6298,13 @@ class GroupEventData extends $pb.GeneratedMessage {
   Group get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Group v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Group ensurePayload() => $_ensure(0);
 }
@@ -6506,13 +6337,9 @@ class CloneJobEventData extends $pb.GeneratedMessage {
         subBuilder: CloneJob.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloneJobEventData clone() => CloneJobEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CloneJobEventData copyWith(void Function(CloneJobEventData) updates) =>
       super.copyWith((message) => updates(message as CloneJobEventData))
           as CloneJobEventData;
@@ -6534,13 +6361,13 @@ class CloneJobEventData extends $pb.GeneratedMessage {
   CloneJob get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(CloneJob v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   CloneJob ensurePayload() => $_ensure(0);
 }
@@ -6573,14 +6400,10 @@ class DatacenterConnectorEventData extends $pb.GeneratedMessage {
         subBuilder: DatacenterConnector.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatacenterConnectorEventData clone() =>
       DatacenterConnectorEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatacenterConnectorEventData copyWith(
           void Function(DatacenterConnectorEventData) updates) =>
       super.copyWith(
@@ -6605,13 +6428,13 @@ class DatacenterConnectorEventData extends $pb.GeneratedMessage {
   DatacenterConnector get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(DatacenterConnector v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   DatacenterConnector ensurePayload() => $_ensure(0);
 }
@@ -6644,14 +6467,10 @@ class TargetProjectEventData extends $pb.GeneratedMessage {
         subBuilder: TargetProject.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TargetProjectEventData clone() =>
       TargetProjectEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TargetProjectEventData copyWith(
           void Function(TargetProjectEventData) updates) =>
       super.copyWith((message) => updates(message as TargetProjectEventData))
@@ -6674,13 +6493,13 @@ class TargetProjectEventData extends $pb.GeneratedMessage {
   TargetProject get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(TargetProject v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   TargetProject ensurePayload() => $_ensure(0);
 }
@@ -6713,13 +6532,9 @@ class CutoverJobEventData extends $pb.GeneratedMessage {
         subBuilder: CutoverJob.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverJobEventData clone() => CutoverJobEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CutoverJobEventData copyWith(void Function(CutoverJobEventData) updates) =>
       super.copyWith((message) => updates(message as CutoverJobEventData))
           as CutoverJobEventData;
@@ -6741,13 +6556,13 @@ class CutoverJobEventData extends $pb.GeneratedMessage {
   CutoverJob get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(CutoverJob v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   CutoverJob ensurePayload() => $_ensure(0);
 }
@@ -6780,13 +6595,9 @@ class SourceEventData extends $pb.GeneratedMessage {
         subBuilder: Source.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SourceEventData clone() => SourceEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SourceEventData copyWith(void Function(SourceEventData) updates) =>
       super.copyWith((message) => updates(message as SourceEventData))
           as SourceEventData;
@@ -6808,13 +6619,13 @@ class SourceEventData extends $pb.GeneratedMessage {
   Source get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Source v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Source ensurePayload() => $_ensure(0);
 }
@@ -6847,14 +6658,10 @@ class MigratingVmEventData extends $pb.GeneratedMessage {
         subBuilder: MigratingVm.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigratingVmEventData clone() =>
       MigratingVmEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigratingVmEventData copyWith(void Function(MigratingVmEventData) updates) =>
       super.copyWith((message) => updates(message as MigratingVmEventData))
           as MigratingVmEventData;
@@ -6876,13 +6683,13 @@ class MigratingVmEventData extends $pb.GeneratedMessage {
   MigratingVm get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(MigratingVm v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   MigratingVm ensurePayload() => $_ensure(0);
 }

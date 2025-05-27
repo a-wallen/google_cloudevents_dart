@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/memcache/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,11 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $10;
+import '../../../../protobuf/duration.pb.dart' as $0;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../type/dayofweek.pbenum.dart' as $27;
-import '../../../../type/timeofday.pb.dart' as $26;
+import '../../../../type/dayofweek.pbenum.dart' as $3;
+import '../../../../type/timeofday.pb.dart' as $1;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -53,13 +55,9 @@ class Instance_NodeConfig extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'memorySizeMb', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_NodeConfig clone() => Instance_NodeConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_NodeConfig copyWith(void Function(Instance_NodeConfig) updates) =>
       super.copyWith((message) => updates(message as Instance_NodeConfig))
           as Instance_NodeConfig;
@@ -87,7 +85,7 @@ class Instance_NodeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCpuCount() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCpuCount() => clearField(1);
+  void clearCpuCount() => $_clearField(1);
 
   /// Required. Memory size in MiB for each Memcached node.
   @$pb.TagNumber(2)
@@ -100,7 +98,7 @@ class Instance_NodeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMemorySizeMb() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMemorySizeMb() => clearField(2);
+  void clearMemorySizeMb() => $_clearField(2);
 }
 
 class Instance_Node extends $pb.GeneratedMessage {
@@ -159,13 +157,9 @@ class Instance_Node extends $pb.GeneratedMessage {
         subBuilder: MemcacheParameters.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_Node clone() => Instance_Node()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_Node copyWith(void Function(Instance_Node) updates) =>
       super.copyWith((message) => updates(message as Instance_Node))
           as Instance_Node;
@@ -194,7 +188,7 @@ class Instance_Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNodeId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNodeId() => clearField(1);
+  void clearNodeId() => $_clearField(1);
 
   /// Output only. Location (GCP Zone) for the Memcached node.
   @$pb.TagNumber(2)
@@ -207,20 +201,20 @@ class Instance_Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasZone() => $_has(1);
   @$pb.TagNumber(2)
-  void clearZone() => clearField(2);
+  void clearZone() => $_clearField(2);
 
   /// Output only. Current state of the Memcached node.
   @$pb.TagNumber(3)
   Instance_Node_State get state => $_getN(2);
   @$pb.TagNumber(3)
   set state(Instance_Node_State v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
-  void clearState() => clearField(3);
+  void clearState() => $_clearField(3);
 
   /// Output only. Hostname or IP address of the Memcached node used by the
   /// clients to connect to the Memcached server on this node.
@@ -234,7 +228,7 @@ class Instance_Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasHost() => $_has(3);
   @$pb.TagNumber(4)
-  void clearHost() => clearField(4);
+  void clearHost() => $_clearField(4);
 
   /// Output only. The port number of the Memcached server on this node.
   @$pb.TagNumber(5)
@@ -247,20 +241,20 @@ class Instance_Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasPort() => $_has(4);
   @$pb.TagNumber(5)
-  void clearPort() => clearField(5);
+  void clearPort() => $_clearField(5);
 
   /// User defined parameters currently applied to the node.
   @$pb.TagNumber(6)
   MemcacheParameters get parameters => $_getN(5);
   @$pb.TagNumber(6)
   set parameters(MemcacheParameters v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasParameters() => $_has(5);
   @$pb.TagNumber(6)
-  void clearParameters() => clearField(6);
+  void clearParameters() => $_clearField(6);
   @$pb.TagNumber(6)
   MemcacheParameters ensureParameters() => $_ensure(5);
 }
@@ -300,14 +294,10 @@ class Instance_InstanceMessage extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'message')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_InstanceMessage clone() =>
       Instance_InstanceMessage()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_InstanceMessage copyWith(
           void Function(Instance_InstanceMessage) updates) =>
       super.copyWith((message) => updates(message as Instance_InstanceMessage))
@@ -330,13 +320,13 @@ class Instance_InstanceMessage extends $pb.GeneratedMessage {
   Instance_InstanceMessage_Code get code => $_getN(0);
   @$pb.TagNumber(1)
   set code(Instance_InstanceMessage_Code v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCode() => clearField(1);
+  void clearCode() => $_clearField(1);
 
   /// Message on memcached instance which will be exposed to users.
   @$pb.TagNumber(2)
@@ -349,7 +339,7 @@ class Instance_InstanceMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMessage() => clearField(2);
+  void clearMessage() => $_clearField(2);
 }
 
 /// A Memorystore for Memcached instance
@@ -357,7 +347,7 @@ class Instance extends $pb.GeneratedMessage {
   factory Instance({
     $core.String? name,
     $core.String? displayName,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? authorizedNetwork,
     $core.Iterable<$core.String>? zones,
     $core.int? nodeCount,
@@ -382,7 +372,7 @@ class Instance extends $pb.GeneratedMessage {
       $result.displayName = displayName;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (authorizedNetwork != null) {
       $result.authorizedNetwork = authorizedNetwork;
@@ -485,13 +475,9 @@ class Instance extends $pb.GeneratedMessage {
         subBuilder: MaintenanceSchedule.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance clone() => Instance()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance copyWith(void Function(Instance) updates) =>
       super.copyWith((message) => updates(message as Instance)) as Instance;
 
@@ -506,15 +492,15 @@ class Instance extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Instance>(create);
   static Instance? _defaultInstance;
 
-  ///  Required. Unique name of the resource in this scope including project and
-  ///  location using the form:
-  ///      `projects/{project_id}/locations/{location_id}/instances/{instance_id}`
+  /// Required. Unique name of the resource in this scope including project and
+  /// location using the form:
+  ///     `projects/{project_id}/locations/{location_id}/instances/{instance_id}`
   ///
-  ///  Note: Memcached instances are managed and addressed at the regional level
-  ///  so `location_id` here refers to a Google Cloud region; however, users may
-  ///  choose which zones Memcached nodes should be provisioned in within an
-  ///  instance. Refer to [zones][google.cloud.memcache.v1.Instance.zones] field
-  ///  for more details.
+  /// Note: Memcached instances are managed and addressed at the regional level
+  /// so `location_id` here refers to a Google Cloud region; however, users may
+  /// choose which zones Memcached nodes should be provisioned in within an
+  /// instance. Refer to [zones][google.cloud.memcache.v1.Instance.zones] field
+  /// for more details.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -525,7 +511,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// User provided name for the instance, which is only used for display
   /// purposes. Cannot be more than 80 characters.
@@ -539,13 +525,13 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// Resource labels to represent user-provided metadata.
   /// Refer to cloud documentation on labels for more details.
   /// https://cloud.google.com/compute/docs/labeling-resources
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(2);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(2);
 
   /// The full name of the Google Compute Engine
   /// [network](/compute/docs/networks-and-firewalls#networks) to which the
@@ -561,14 +547,14 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasAuthorizedNetwork() => $_has(3);
   @$pb.TagNumber(4)
-  void clearAuthorizedNetwork() => clearField(4);
+  void clearAuthorizedNetwork() => $_clearField(4);
 
   /// Zones in which Memcached nodes should be provisioned.
   /// Memcached nodes will be equally distributed across these zones. If not
   /// provided, the service will by default create nodes in all zones in the
   /// region for the instance.
   @$pb.TagNumber(5)
-  $core.List<$core.String> get zones => $_getList(4);
+  $pb.PbList<$core.String> get zones => $_getList(4);
 
   /// Required. Number of nodes in the Memcached instance.
   @$pb.TagNumber(6)
@@ -581,20 +567,20 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasNodeCount() => $_has(5);
   @$pb.TagNumber(6)
-  void clearNodeCount() => clearField(6);
+  void clearNodeCount() => $_clearField(6);
 
   /// Required. Configuration for Memcached nodes.
   @$pb.TagNumber(7)
   Instance_NodeConfig get nodeConfig => $_getN(6);
   @$pb.TagNumber(7)
   set nodeConfig(Instance_NodeConfig v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasNodeConfig() => $_has(6);
   @$pb.TagNumber(7)
-  void clearNodeConfig() => clearField(7);
+  void clearNodeConfig() => $_clearField(7);
   @$pb.TagNumber(7)
   Instance_NodeConfig ensureNodeConfig() => $_ensure(6);
 
@@ -607,13 +593,13 @@ class Instance extends $pb.GeneratedMessage {
   MemcacheVersion get memcacheVersion => $_getN(7);
   @$pb.TagNumber(9)
   set memcacheVersion(MemcacheVersion v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasMemcacheVersion() => $_has(7);
   @$pb.TagNumber(9)
-  void clearMemcacheVersion() => clearField(9);
+  void clearMemcacheVersion() => $_clearField(9);
 
   /// User defined parameters to apply to the memcached process
   /// on each node.
@@ -621,13 +607,13 @@ class Instance extends $pb.GeneratedMessage {
   MemcacheParameters get parameters => $_getN(8);
   @$pb.TagNumber(11)
   set parameters(MemcacheParameters v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasParameters() => $_has(8);
   @$pb.TagNumber(11)
-  void clearParameters() => clearField(11);
+  void clearParameters() => $_clearField(11);
   @$pb.TagNumber(11)
   MemcacheParameters ensureParameters() => $_ensure(8);
 
@@ -635,20 +621,20 @@ class Instance extends $pb.GeneratedMessage {
   /// Refer to [Node][google.cloud.memcache.v1.Instance.Node] message for more
   /// details.
   @$pb.TagNumber(12)
-  $core.List<Instance_Node> get memcacheNodes => $_getList(9);
+  $pb.PbList<Instance_Node> get memcacheNodes => $_getList(9);
 
   /// Output only. The time the instance was created.
   @$pb.TagNumber(13)
   $2.Timestamp get createTime => $_getN(10);
   @$pb.TagNumber(13)
   set createTime($2.Timestamp v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasCreateTime() => $_has(10);
   @$pb.TagNumber(13)
-  void clearCreateTime() => clearField(13);
+  void clearCreateTime() => $_clearField(13);
   @$pb.TagNumber(13)
   $2.Timestamp ensureCreateTime() => $_ensure(10);
 
@@ -657,13 +643,13 @@ class Instance extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(11);
   @$pb.TagNumber(14)
   set updateTime($2.Timestamp v) {
-    setField(14, v);
+    $_setField(14, v);
   }
 
   @$pb.TagNumber(14)
   $core.bool hasUpdateTime() => $_has(11);
   @$pb.TagNumber(14)
-  void clearUpdateTime() => clearField(14);
+  void clearUpdateTime() => $_clearField(14);
   @$pb.TagNumber(14)
   $2.Timestamp ensureUpdateTime() => $_ensure(11);
 
@@ -672,13 +658,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_State get state => $_getN(12);
   @$pb.TagNumber(15)
   set state(Instance_State v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasState() => $_has(12);
   @$pb.TagNumber(15)
-  void clearState() => clearField(15);
+  void clearState() => $_clearField(15);
 
   /// Output only. The full version of memcached server running on this instance.
   /// System automatically determines the full memcached version for an instance
@@ -694,11 +680,11 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasMemcacheFullVersion() => $_has(13);
   @$pb.TagNumber(18)
-  void clearMemcacheFullVersion() => clearField(18);
+  void clearMemcacheFullVersion() => $_clearField(18);
 
   /// List of messages that describe the current state of the Memcached instance.
   @$pb.TagNumber(19)
-  $core.List<Instance_InstanceMessage> get instanceMessages => $_getList(14);
+  $pb.PbList<Instance_InstanceMessage> get instanceMessages => $_getList(14);
 
   /// Output only. Endpoint for the Discovery API.
   @$pb.TagNumber(20)
@@ -711,7 +697,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.bool hasDiscoveryEndpoint() => $_has(15);
   @$pb.TagNumber(20)
-  void clearDiscoveryEndpoint() => clearField(20);
+  void clearDiscoveryEndpoint() => $_clearField(20);
 
   /// The maintenance policy for the instance. If not provided,
   /// the maintenance event will be performed based on Memorystore
@@ -720,13 +706,13 @@ class Instance extends $pb.GeneratedMessage {
   MaintenancePolicy get maintenancePolicy => $_getN(16);
   @$pb.TagNumber(21)
   set maintenancePolicy(MaintenancePolicy v) {
-    setField(21, v);
+    $_setField(21, v);
   }
 
   @$pb.TagNumber(21)
   $core.bool hasMaintenancePolicy() => $_has(16);
   @$pb.TagNumber(21)
-  void clearMaintenancePolicy() => clearField(21);
+  void clearMaintenancePolicy() => $_clearField(21);
   @$pb.TagNumber(21)
   MaintenancePolicy ensureMaintenancePolicy() => $_ensure(16);
 
@@ -735,13 +721,13 @@ class Instance extends $pb.GeneratedMessage {
   MaintenanceSchedule get maintenanceSchedule => $_getN(17);
   @$pb.TagNumber(22)
   set maintenanceSchedule(MaintenanceSchedule v) {
-    setField(22, v);
+    $_setField(22, v);
   }
 
   @$pb.TagNumber(22)
   $core.bool hasMaintenanceSchedule() => $_has(17);
   @$pb.TagNumber(22)
-  void clearMaintenanceSchedule() => clearField(22);
+  void clearMaintenanceSchedule() => $_clearField(22);
   @$pb.TagNumber(22)
   MaintenanceSchedule ensureMaintenanceSchedule() => $_ensure(17);
 }
@@ -792,13 +778,9 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
         subBuilder: WeeklyMaintenanceWindow.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MaintenancePolicy clone() => MaintenancePolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MaintenancePolicy copyWith(void Function(MaintenancePolicy) updates) =>
       super.copyWith((message) => updates(message as MaintenancePolicy))
           as MaintenancePolicy;
@@ -820,13 +802,13 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
   set createTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCreateTime() => clearField(1);
+  void clearCreateTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureCreateTime() => $_ensure(0);
 
@@ -835,13 +817,13 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
   set updateTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUpdateTime() => clearField(2);
+  void clearUpdateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureUpdateTime() => $_ensure(1);
 
@@ -857,22 +839,22 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// Required. Maintenance window that is applied to resources covered by this
   /// policy. Minimum 1. For the current version, the maximum number of
   /// weekly_maintenance_windows is expected to be one.
   @$pb.TagNumber(4)
-  $core.List<WeeklyMaintenanceWindow> get weeklyMaintenanceWindow =>
+  $pb.PbList<WeeklyMaintenanceWindow> get weeklyMaintenanceWindow =>
       $_getList(3);
 }
 
 /// Time window specified for weekly operations.
 class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
   factory WeeklyMaintenanceWindow({
-    $27.DayOfWeek? day,
-    $26.TimeOfDay? startTime,
-    $10.Duration? duration,
+    $3.DayOfWeek? day,
+    $1.TimeOfDay? startTime,
+    $0.Duration? duration,
   }) {
     final $result = create();
     if (day != null) {
@@ -899,24 +881,20 @@ class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.memcache.v1'),
       createEmptyInstance: create)
-    ..e<$27.DayOfWeek>(1, _omitFieldNames ? '' : 'day', $pb.PbFieldType.OE,
-        defaultOrMaker: $27.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
-        valueOf: $27.DayOfWeek.valueOf,
-        enumValues: $27.DayOfWeek.values)
-    ..aOM<$26.TimeOfDay>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $26.TimeOfDay.create)
-    ..aOM<$10.Duration>(3, _omitFieldNames ? '' : 'duration',
-        subBuilder: $10.Duration.create)
+    ..e<$3.DayOfWeek>(1, _omitFieldNames ? '' : 'day', $pb.PbFieldType.OE,
+        defaultOrMaker: $3.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
+        valueOf: $3.DayOfWeek.valueOf,
+        enumValues: $3.DayOfWeek.values)
+    ..aOM<$1.TimeOfDay>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $1.TimeOfDay.create)
+    ..aOM<$0.Duration>(3, _omitFieldNames ? '' : 'duration',
+        subBuilder: $0.Duration.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WeeklyMaintenanceWindow clone() =>
       WeeklyMaintenanceWindow()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WeeklyMaintenanceWindow copyWith(
           void Function(WeeklyMaintenanceWindow) updates) =>
       super.copyWith((message) => updates(message as WeeklyMaintenanceWindow))
@@ -936,46 +914,46 @@ class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
 
   /// Required. Allows to define schedule that runs specified day of the week.
   @$pb.TagNumber(1)
-  $27.DayOfWeek get day => $_getN(0);
+  $3.DayOfWeek get day => $_getN(0);
   @$pb.TagNumber(1)
-  set day($27.DayOfWeek v) {
-    setField(1, v);
+  set day($3.DayOfWeek v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasDay() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDay() => clearField(1);
+  void clearDay() => $_clearField(1);
 
   /// Required. Start time of the window in UTC.
   @$pb.TagNumber(2)
-  $26.TimeOfDay get startTime => $_getN(1);
+  $1.TimeOfDay get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($26.TimeOfDay v) {
-    setField(2, v);
+  set startTime($1.TimeOfDay v) {
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearStartTime() => clearField(2);
+  void clearStartTime() => $_clearField(2);
   @$pb.TagNumber(2)
-  $26.TimeOfDay ensureStartTime() => $_ensure(1);
+  $1.TimeOfDay ensureStartTime() => $_ensure(1);
 
   /// Required. Duration of the time window.
   @$pb.TagNumber(3)
-  $10.Duration get duration => $_getN(2);
+  $0.Duration get duration => $_getN(2);
   @$pb.TagNumber(3)
-  set duration($10.Duration v) {
-    setField(3, v);
+  set duration($0.Duration v) {
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasDuration() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDuration() => clearField(3);
+  void clearDuration() => $_clearField(3);
   @$pb.TagNumber(3)
-  $10.Duration ensureDuration() => $_ensure(2);
+  $0.Duration ensureDuration() => $_ensure(2);
 }
 
 /// Upcoming maintenance schedule.
@@ -1018,13 +996,9 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MaintenanceSchedule clone() => MaintenanceSchedule()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MaintenanceSchedule copyWith(void Function(MaintenanceSchedule) updates) =>
       super.copyWith((message) => updates(message as MaintenanceSchedule))
           as MaintenanceSchedule;
@@ -1047,13 +1021,13 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
   set startTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStartTime() => clearField(1);
+  void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureStartTime() => $_ensure(0);
 
@@ -1063,13 +1037,13 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
   set endTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEndTime() => clearField(2);
+  void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureEndTime() => $_ensure(1);
 
@@ -1079,13 +1053,13 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   $2.Timestamp get scheduleDeadlineTime => $_getN(2);
   @$pb.TagNumber(4)
   set scheduleDeadlineTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasScheduleDeadlineTime() => $_has(2);
   @$pb.TagNumber(4)
-  void clearScheduleDeadlineTime() => clearField(4);
+  void clearScheduleDeadlineTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureScheduleDeadlineTime() => $_ensure(2);
 }
@@ -1093,14 +1067,14 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
 class MemcacheParameters extends $pb.GeneratedMessage {
   factory MemcacheParameters({
     $core.String? id,
-    $core.Map<$core.String, $core.String>? params,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? params,
   }) {
     final $result = create();
     if (id != null) {
       $result.id = id;
     }
     if (params != null) {
-      $result.params.addAll(params);
+      $result.params.addEntries(params);
     }
     return $result;
   }
@@ -1125,13 +1099,9 @@ class MemcacheParameters extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.memcache.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MemcacheParameters clone() => MemcacheParameters()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MemcacheParameters copyWith(void Function(MemcacheParameters) updates) =>
       super.copyWith((message) => updates(message as MemcacheParameters))
           as MemcacheParameters;
@@ -1163,11 +1133,11 @@ class MemcacheParameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearId() => clearField(1);
+  void clearId() => $_clearField(1);
 
   /// User defined set of parameters to use in the memcached process.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $core.String> get params => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get params => $_getMap(1);
 }
 
 /// The data within all Instance events.
@@ -1198,13 +1168,9 @@ class InstanceEventData extends $pb.GeneratedMessage {
         subBuilder: Instance.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData clone() => InstanceEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData copyWith(void Function(InstanceEventData) updates) =>
       super.copyWith((message) => updates(message as InstanceEventData))
           as InstanceEventData;
@@ -1226,13 +1192,13 @@ class InstanceEventData extends $pb.GeneratedMessage {
   Instance get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Instance v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Instance ensurePayload() => $_ensure(0);
 }

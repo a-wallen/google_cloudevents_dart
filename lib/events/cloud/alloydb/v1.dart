@@ -1,17 +1,3 @@
-export '../../../src/events/cloud/alloydb/v1/data.pbenum.dart'
-    show
-        DatabaseVersion,
-        MigrationSource_MigrationSourceType,
-        EncryptionInfo_Type,
-        SslConfig_SslMode,
-        SslConfig_CaSource,
-        Cluster_State,
-        Cluster_ClusterType,
-        Instance_State,
-        Instance_InstanceType,
-        Instance_AvailabilityType,
-        Backup_State,
-        Backup_Type;
 export '../../../src/events/cloud/alloydb/v1/data.pb.dart'
     show
         UserPassword,
@@ -36,6 +22,20 @@ export '../../../src/events/cloud/alloydb/v1/data.pb.dart'
         InstanceEventData,
         BackupEventData,
         ClusterEventData;
+export '../../../src/events/cloud/alloydb/v1/data.pbenum.dart'
+    show
+        DatabaseVersion,
+        MigrationSource_MigrationSourceType,
+        EncryptionInfo_Type,
+        SslConfig_SslMode,
+        SslConfig_CaSource,
+        Cluster_State,
+        Cluster_ClusterType,
+        Instance_State,
+        Instance_InstanceType,
+        Instance_AvailabilityType,
+        Backup_State,
+        Backup_Type;
 export '../../../src/events/cloud/alloydb/v1/events.pb.dart'
     show
         ClusterCreatedEvent,

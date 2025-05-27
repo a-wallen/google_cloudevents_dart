@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/batch/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,9 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $10;
+import '../../../../protobuf/duration.pb.dart' as $0;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -76,13 +78,9 @@ class Volume extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'deviceName')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Volume clone() => Volume()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Volume copyWith(void Function(Volume) updates) =>
       super.copyWith((message) => updates(message as Volume)) as Volume;
 
@@ -98,7 +96,7 @@ class Volume extends $pb.GeneratedMessage {
   static Volume? _defaultInstance;
 
   Volume_Source whichSource() => _Volume_SourceByTag[$_whichOneof(0)]!;
-  void clearSource() => clearField($_whichOneof(0));
+  void clearSource() => $_clearField($_whichOneof(0));
 
   /// A Network File System (NFS) volume. For example, a
   /// Filestore file share.
@@ -106,13 +104,13 @@ class Volume extends $pb.GeneratedMessage {
   NFS get nfs => $_getN(0);
   @$pb.TagNumber(1)
   set nfs(NFS v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasNfs() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNfs() => clearField(1);
+  void clearNfs() => $_clearField(1);
   @$pb.TagNumber(1)
   NFS ensureNfs() => $_ensure(0);
 
@@ -121,13 +119,13 @@ class Volume extends $pb.GeneratedMessage {
   GCS get gcs => $_getN(1);
   @$pb.TagNumber(3)
   set gcs(GCS v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasGcs() => $_has(1);
   @$pb.TagNumber(3)
-  void clearGcs() => clearField(3);
+  void clearGcs() => $_clearField(3);
   @$pb.TagNumber(3)
   GCS ensureGcs() => $_ensure(1);
 
@@ -142,7 +140,7 @@ class Volume extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasMountPath() => $_has(2);
   @$pb.TagNumber(4)
-  void clearMountPath() => clearField(4);
+  void clearMountPath() => $_clearField(4);
 
   /// For Google Cloud Storage (GCS), mount options are the options supported by
   /// the gcsfuse tool (https://github.com/GoogleCloudPlatform/gcsfuse).
@@ -154,7 +152,7 @@ class Volume extends $pb.GeneratedMessage {
   /// these supported by the mount command
   /// (https://man7.org/linux/man-pages/man8/mount.8.html).
   @$pb.TagNumber(5)
-  $core.List<$core.String> get mountOptions => $_getList(3);
+  $pb.PbList<$core.String> get mountOptions => $_getList(3);
 
   /// Device name of an attached disk volume, which should align with a
   /// device_name specified by
@@ -171,7 +169,7 @@ class Volume extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDeviceName() => $_has(4);
   @$pb.TagNumber(6)
-  void clearDeviceName() => clearField(6);
+  void clearDeviceName() => $_clearField(6);
 }
 
 /// Represents an NFS volume.
@@ -206,13 +204,9 @@ class NFS extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'remotePath')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NFS clone() => NFS()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NFS copyWith(void Function(NFS) updates) =>
       super.copyWith((message) => updates(message as NFS)) as NFS;
 
@@ -238,7 +232,7 @@ class NFS extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasServer() => $_has(0);
   @$pb.TagNumber(1)
-  void clearServer() => clearField(1);
+  void clearServer() => $_clearField(1);
 
   /// Remote source path exported from the NFS, e.g., "/share".
   @$pb.TagNumber(2)
@@ -251,7 +245,7 @@ class NFS extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasRemotePath() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRemotePath() => clearField(2);
+  void clearRemotePath() => $_clearField(2);
 }
 
 /// Represents a Google Cloud Storage volume.
@@ -281,13 +275,9 @@ class GCS extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'remotePath')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GCS clone() => GCS()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GCS copyWith(void Function(GCS) updates) =>
       super.copyWith((message) => updates(message as GCS)) as GCS;
 
@@ -314,7 +304,7 @@ class GCS extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasRemotePath() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRemotePath() => clearField(1);
+  void clearRemotePath() => $_clearField(1);
 }
 
 /// Compute resource requirements
@@ -354,13 +344,9 @@ class ComputeResource extends $pb.GeneratedMessage {
     ..aInt64(4, _omitFieldNames ? '' : 'bootDiskMib')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeResource clone() => ComputeResource()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ComputeResource copyWith(void Function(ComputeResource) updates) =>
       super.copyWith((message) => updates(message as ComputeResource))
           as ComputeResource;
@@ -388,7 +374,7 @@ class ComputeResource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCpuMilli() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCpuMilli() => clearField(1);
+  void clearCpuMilli() => $_clearField(1);
 
   /// Memory in MiB.
   @$pb.TagNumber(2)
@@ -401,7 +387,7 @@ class ComputeResource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMemoryMib() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMemoryMib() => clearField(2);
+  void clearMemoryMib() => $_clearField(2);
 
   /// Extra boot disk size in MiB for each task.
   @$pb.TagNumber(4)
@@ -414,7 +400,7 @@ class ComputeResource extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasBootDiskMib() => $_has(2);
   @$pb.TagNumber(4)
-  void clearBootDiskMib() => clearField(4);
+  void clearBootDiskMib() => $_clearField(4);
 }
 
 /// Status event
@@ -470,13 +456,9 @@ class StatusEvent extends $pb.GeneratedMessage {
         enumValues: TaskStatus_State.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StatusEvent clone() => StatusEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StatusEvent copyWith(void Function(StatusEvent) updates) =>
       super.copyWith((message) => updates(message as StatusEvent))
           as StatusEvent;
@@ -503,20 +485,20 @@ class StatusEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDescription() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDescription() => clearField(1);
+  void clearDescription() => $_clearField(1);
 
   /// The time this event occurred.
   @$pb.TagNumber(2)
   $2.Timestamp get eventTime => $_getN(1);
   @$pb.TagNumber(2)
   set eventTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasEventTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEventTime() => clearField(2);
+  void clearEventTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureEventTime() => $_ensure(1);
 
@@ -531,20 +513,20 @@ class StatusEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)
-  void clearType() => clearField(3);
+  void clearType() => $_clearField(3);
 
   /// Task Execution
   @$pb.TagNumber(4)
   TaskExecution get taskExecution => $_getN(3);
   @$pb.TagNumber(4)
   set taskExecution(TaskExecution v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasTaskExecution() => $_has(3);
   @$pb.TagNumber(4)
-  void clearTaskExecution() => clearField(4);
+  void clearTaskExecution() => $_clearField(4);
   @$pb.TagNumber(4)
   TaskExecution ensureTaskExecution() => $_ensure(3);
 
@@ -553,13 +535,13 @@ class StatusEvent extends $pb.GeneratedMessage {
   TaskStatus_State get taskState => $_getN(4);
   @$pb.TagNumber(5)
   set taskState(TaskStatus_State v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasTaskState() => $_has(4);
   @$pb.TagNumber(5)
-  void clearTaskState() => clearField(5);
+  void clearTaskState() => $_clearField(5);
 }
 
 /// This Task Execution field includes detail information for
@@ -590,13 +572,9 @@ class TaskExecution extends $pb.GeneratedMessage {
     ..a<$core.int>(1, _omitFieldNames ? '' : 'exitCode', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskExecution clone() => TaskExecution()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskExecution copyWith(void Function(TaskExecution) updates) =>
       super.copyWith((message) => updates(message as TaskExecution))
           as TaskExecution;
@@ -625,7 +603,7 @@ class TaskExecution extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasExitCode() => $_has(0);
   @$pb.TagNumber(1)
-  void clearExitCode() => clearField(1);
+  void clearExitCode() => $_clearField(1);
 }
 
 /// Status of a task
@@ -646,13 +624,9 @@ class TaskStatus extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskStatus clone() => TaskStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskStatus copyWith(void Function(TaskStatus) updates) =>
       super.copyWith((message) => updates(message as TaskStatus)) as TaskStatus;
 
@@ -730,13 +704,9 @@ class Runnable_Container extends $pb.GeneratedMessage {
     ..aOS(11, _omitFieldNames ? '' : 'password')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable_Container clone() => Runnable_Container()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable_Container copyWith(void Function(Runnable_Container) updates) =>
       super.copyWith((message) => updates(message as Runnable_Container))
           as Runnable_Container;
@@ -764,13 +734,13 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasImageUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearImageUri() => clearField(1);
+  void clearImageUri() => $_clearField(1);
 
   /// Overrides the `CMD` specified in the container. If there is an ENTRYPOINT
   /// (either in the container image or with the entrypoint field below) then
   /// commands are appended as arguments to the ENTRYPOINT.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get commands => $_getList(1);
+  $pb.PbList<$core.String> get commands => $_getList(1);
 
   /// Overrides the `ENTRYPOINT` specified in the container.
   @$pb.TagNumber(3)
@@ -783,13 +753,13 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEntrypoint() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEntrypoint() => clearField(3);
+  void clearEntrypoint() => $_clearField(3);
 
   /// Volumes to mount (bind mount) from the host machine files or directories
   /// into the container, formatted to match docker run's --volume option,
   /// e.g. /foo:/bar, or /foo:/bar:ro
   @$pb.TagNumber(7)
-  $core.List<$core.String> get volumes => $_getList(3);
+  $pb.PbList<$core.String> get volumes => $_getList(3);
 
   /// Arbitrary additional options to include in the "docker run" command when
   /// running this container, e.g. "--network host".
@@ -803,7 +773,7 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasOptions() => $_has(4);
   @$pb.TagNumber(8)
-  void clearOptions() => clearField(8);
+  void clearOptions() => $_clearField(8);
 
   /// If set to true, external network access to and from container will be
   /// blocked, containers that are with block_external_network as true can
@@ -819,7 +789,7 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasBlockExternalNetwork() => $_has(5);
   @$pb.TagNumber(9)
-  void clearBlockExternalNetwork() => clearField(9);
+  void clearBlockExternalNetwork() => $_clearField(9);
 
   /// Optional username for logging in to a docker registry. If username
   /// matches `projects/*/secrets/*/versions/*` then Batch will read the
@@ -834,7 +804,7 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasUsername() => $_has(6);
   @$pb.TagNumber(10)
-  void clearUsername() => clearField(10);
+  void clearUsername() => $_clearField(10);
 
   /// Optional password for logging in to a docker registry. If password
   /// matches `projects/*/secrets/*/versions/*` then Batch will read the
@@ -849,7 +819,7 @@ class Runnable_Container extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasPassword() => $_has(7);
   @$pb.TagNumber(11)
-  void clearPassword() => clearField(11);
+  void clearPassword() => $_clearField(11);
 }
 
 enum Runnable_Script_Command { path, text, notSet }
@@ -893,13 +863,9 @@ class Runnable_Script extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'text')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable_Script clone() => Runnable_Script()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable_Script copyWith(void Function(Runnable_Script) updates) =>
       super.copyWith((message) => updates(message as Runnable_Script))
           as Runnable_Script;
@@ -918,17 +884,17 @@ class Runnable_Script extends $pb.GeneratedMessage {
 
   Runnable_Script_Command whichCommand() =>
       _Runnable_Script_CommandByTag[$_whichOneof(0)]!;
-  void clearCommand() => clearField($_whichOneof(0));
+  void clearCommand() => $_clearField($_whichOneof(0));
 
-  ///  Script file path on the host VM.
+  /// Script file path on the host VM.
   ///
-  ///  To specify an interpreter, please add a `#!<interpreter>`(also known as
-  ///  [shebang line](https://en.wikipedia.org/wiki/Shebang_(Unix))) as the
-  ///  first line of the file.(For example, to execute the script using bash,
-  ///  `#!/bin/bash` should be the first line of the file. To execute the
-  ///  script using`Python3`, `#!/usr/bin/env python3` should be the first
-  ///  line of the file.) Otherwise, the file will by default be excuted by
-  ///  `/bin/sh`.
+  /// To specify an interpreter, please add a `#!<interpreter>`(also known as
+  /// [shebang line](https://en.wikipedia.org/wiki/Shebang_(Unix))) as the
+  /// first line of the file.(For example, to execute the script using bash,
+  /// `#!/bin/bash` should be the first line of the file. To execute the
+  /// script using`Python3`, `#!/usr/bin/env python3` should be the first
+  /// line of the file.) Otherwise, the file will by default be excuted by
+  /// `/bin/sh`.
   @$pb.TagNumber(1)
   $core.String get path => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -939,15 +905,15 @@ class Runnable_Script extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPath() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPath() => clearField(1);
+  void clearPath() => $_clearField(1);
 
-  ///  Shell script text.
+  /// Shell script text.
   ///
-  ///  To specify an interpreter, please add a `#!<interpreter>\n` at the
-  ///  beginning of the text.(For example, to execute the script using bash,
-  ///  `#!/bin/bash\n` should be added. To execute the script using`Python3`,
-  ///  `#!/usr/bin/env python3\n` should be added.) Otherwise, the script will
-  ///  by default be excuted by `/bin/sh`.
+  /// To specify an interpreter, please add a `#!<interpreter>\n` at the
+  /// beginning of the text.(For example, to execute the script using bash,
+  /// `#!/bin/bash\n` should be added. To execute the script using`Python3`,
+  /// `#!/usr/bin/env python3\n` should be added.) Otherwise, the script will
+  /// by default be excuted by `/bin/sh`.
   @$pb.TagNumber(2)
   $core.String get text => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -958,7 +924,7 @@ class Runnable_Script extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasText() => $_has(1);
   @$pb.TagNumber(2)
-  void clearText() => clearField(2);
+  void clearText() => $_clearField(2);
 }
 
 /// Barrier runnable blocks until all tasks in a taskgroup reach it.
@@ -988,13 +954,9 @@ class Runnable_Barrier extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable_Barrier clone() => Runnable_Barrier()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable_Barrier copyWith(void Function(Runnable_Barrier) updates) =>
       super.copyWith((message) => updates(message as Runnable_Barrier))
           as Runnable_Barrier;
@@ -1023,7 +985,7 @@ class Runnable_Barrier extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 }
 
 enum Runnable_Executable { container, script, barrier, notSet }
@@ -1039,8 +1001,8 @@ class Runnable extends $pb.GeneratedMessage {
     $core.bool? alwaysRun,
     Runnable_Barrier? barrier,
     Environment? environment,
-    $10.Duration? timeout,
-    $core.Map<$core.String, $core.String>? labels,
+    $0.Duration? timeout,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
   }) {
     final $result = create();
     if (container != null) {
@@ -1068,7 +1030,7 @@ class Runnable extends $pb.GeneratedMessage {
       $result.timeout = timeout;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     return $result;
   }
@@ -1104,8 +1066,8 @@ class Runnable extends $pb.GeneratedMessage {
         subBuilder: Runnable_Barrier.create)
     ..aOM<Environment>(7, _omitFieldNames ? '' : 'environment',
         subBuilder: Environment.create)
-    ..aOM<$10.Duration>(8, _omitFieldNames ? '' : 'timeout',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(8, _omitFieldNames ? '' : 'timeout',
+        subBuilder: $0.Duration.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Runnable.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -1113,13 +1075,9 @@ class Runnable extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.batch.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable clone() => Runnable()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runnable copyWith(void Function(Runnable) updates) =>
       super.copyWith((message) => updates(message as Runnable)) as Runnable;
 
@@ -1136,20 +1094,20 @@ class Runnable extends $pb.GeneratedMessage {
 
   Runnable_Executable whichExecutable() =>
       _Runnable_ExecutableByTag[$_whichOneof(0)]!;
-  void clearExecutable() => clearField($_whichOneof(0));
+  void clearExecutable() => $_clearField($_whichOneof(0));
 
   /// Container runnable.
   @$pb.TagNumber(1)
   Runnable_Container get container => $_getN(0);
   @$pb.TagNumber(1)
   set container(Runnable_Container v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasContainer() => $_has(0);
   @$pb.TagNumber(1)
-  void clearContainer() => clearField(1);
+  void clearContainer() => $_clearField(1);
   @$pb.TagNumber(1)
   Runnable_Container ensureContainer() => $_ensure(0);
 
@@ -1158,13 +1116,13 @@ class Runnable extends $pb.GeneratedMessage {
   Runnable_Script get script => $_getN(1);
   @$pb.TagNumber(2)
   set script(Runnable_Script v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasScript() => $_has(1);
   @$pb.TagNumber(2)
-  void clearScript() => clearField(2);
+  void clearScript() => $_clearField(2);
   @$pb.TagNumber(2)
   Runnable_Script ensureScript() => $_ensure(1);
 
@@ -1180,7 +1138,7 @@ class Runnable extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasIgnoreExitStatus() => $_has(2);
   @$pb.TagNumber(3)
-  void clearIgnoreExitStatus() => clearField(3);
+  void clearIgnoreExitStatus() => $_clearField(3);
 
   /// This flag allows a Runnable to continue running in the background while the
   /// Task executes subsequent Runnables. This is useful to provide services to
@@ -1195,16 +1153,16 @@ class Runnable extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasBackground() => $_has(3);
   @$pb.TagNumber(4)
-  void clearBackground() => clearField(4);
+  void clearBackground() => $_clearField(4);
 
-  ///  By default, after a Runnable fails, no further Runnable are executed. This
-  ///  flag indicates that this Runnable must be run even if the Task has already
-  ///  failed. This is useful for Runnables that copy output files off of the VM
-  ///  or for debugging.
+  /// By default, after a Runnable fails, no further Runnable are executed. This
+  /// flag indicates that this Runnable must be run even if the Task has already
+  /// failed. This is useful for Runnables that copy output files off of the VM
+  /// or for debugging.
   ///
-  ///  The always_run flag does not override the Task's overall max_run_duration.
-  ///  If the max_run_duration has expired then no further Runnables will execute,
-  ///  not even always_run Runnables.
+  /// The always_run flag does not override the Task's overall max_run_duration.
+  /// If the max_run_duration has expired then no further Runnables will execute,
+  /// not even always_run Runnables.
   @$pb.TagNumber(5)
   $core.bool get alwaysRun => $_getBF(4);
   @$pb.TagNumber(5)
@@ -1215,20 +1173,20 @@ class Runnable extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasAlwaysRun() => $_has(4);
   @$pb.TagNumber(5)
-  void clearAlwaysRun() => clearField(5);
+  void clearAlwaysRun() => $_clearField(5);
 
   /// Barrier runnable.
   @$pb.TagNumber(6)
   Runnable_Barrier get barrier => $_getN(5);
   @$pb.TagNumber(6)
   set barrier(Runnable_Barrier v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasBarrier() => $_has(5);
   @$pb.TagNumber(6)
-  void clearBarrier() => clearField(6);
+  void clearBarrier() => $_clearField(6);
   @$pb.TagNumber(6)
   Runnable_Barrier ensureBarrier() => $_ensure(5);
 
@@ -1238,43 +1196,43 @@ class Runnable extends $pb.GeneratedMessage {
   Environment get environment => $_getN(6);
   @$pb.TagNumber(7)
   set environment(Environment v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasEnvironment() => $_has(6);
   @$pb.TagNumber(7)
-  void clearEnvironment() => clearField(7);
+  void clearEnvironment() => $_clearField(7);
   @$pb.TagNumber(7)
   Environment ensureEnvironment() => $_ensure(6);
 
   /// Timeout for this Runnable.
   @$pb.TagNumber(8)
-  $10.Duration get timeout => $_getN(7);
+  $0.Duration get timeout => $_getN(7);
   @$pb.TagNumber(8)
-  set timeout($10.Duration v) {
-    setField(8, v);
+  set timeout($0.Duration v) {
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasTimeout() => $_has(7);
   @$pb.TagNumber(8)
-  void clearTimeout() => clearField(8);
+  void clearTimeout() => $_clearField(8);
   @$pb.TagNumber(8)
-  $10.Duration ensureTimeout() => $_ensure(7);
+  $0.Duration ensureTimeout() => $_ensure(7);
 
   /// Labels for this Runnable.
   @$pb.TagNumber(9)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(8);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(8);
 }
 
 /// Spec of a task
 class TaskSpec extends $pb.GeneratedMessage {
   factory TaskSpec({
     ComputeResource? computeResource,
-    $10.Duration? maxRunDuration,
+    $0.Duration? maxRunDuration,
     $core.int? maxRetryCount,
-    $core.Map<$core.String, $core.String>? environments,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? environments,
     $core.Iterable<Volume>? volumes,
     $core.Iterable<Runnable>? runnables,
     $core.Iterable<LifecyclePolicy>? lifecyclePolicies,
@@ -1291,7 +1249,7 @@ class TaskSpec extends $pb.GeneratedMessage {
       $result.maxRetryCount = maxRetryCount;
     }
     if (environments != null) {
-      $result.environments.addAll(environments);
+      $result.environments.addEntries(environments);
     }
     if (volumes != null) {
       $result.volumes.addAll(volumes);
@@ -1322,8 +1280,8 @@ class TaskSpec extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<ComputeResource>(3, _omitFieldNames ? '' : 'computeResource',
         subBuilder: ComputeResource.create)
-    ..aOM<$10.Duration>(4, _omitFieldNames ? '' : 'maxRunDuration',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(4, _omitFieldNames ? '' : 'maxRunDuration',
+        subBuilder: $0.Duration.create)
     ..a<$core.int>(
         5, _omitFieldNames ? '' : 'maxRetryCount', $pb.PbFieldType.O3)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'environments',
@@ -1342,13 +1300,9 @@ class TaskSpec extends $pb.GeneratedMessage {
         subBuilder: Environment.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskSpec clone() => TaskSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskSpec copyWith(void Function(TaskSpec) updates) =>
       super.copyWith((message) => updates(message as TaskSpec)) as TaskSpec;
 
@@ -1368,31 +1322,31 @@ class TaskSpec extends $pb.GeneratedMessage {
   ComputeResource get computeResource => $_getN(0);
   @$pb.TagNumber(3)
   set computeResource(ComputeResource v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasComputeResource() => $_has(0);
   @$pb.TagNumber(3)
-  void clearComputeResource() => clearField(3);
+  void clearComputeResource() => $_clearField(3);
   @$pb.TagNumber(3)
   ComputeResource ensureComputeResource() => $_ensure(0);
 
   /// Maximum duration the task should run.
   /// The task will be killed and marked as FAILED if over this limit.
   @$pb.TagNumber(4)
-  $10.Duration get maxRunDuration => $_getN(1);
+  $0.Duration get maxRunDuration => $_getN(1);
   @$pb.TagNumber(4)
-  set maxRunDuration($10.Duration v) {
-    setField(4, v);
+  set maxRunDuration($0.Duration v) {
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasMaxRunDuration() => $_has(1);
   @$pb.TagNumber(4)
-  void clearMaxRunDuration() => clearField(4);
+  void clearMaxRunDuration() => $_clearField(4);
   @$pb.TagNumber(4)
-  $10.Duration ensureMaxRunDuration() => $_ensure(1);
+  $0.Duration ensureMaxRunDuration() => $_ensure(1);
 
   /// Maximum number of retries on failures.
   /// The default, 0, which means never retry.
@@ -1407,28 +1361,28 @@ class TaskSpec extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasMaxRetryCount() => $_has(2);
   @$pb.TagNumber(5)
-  void clearMaxRetryCount() => clearField(5);
+  void clearMaxRetryCount() => $_clearField(5);
 
   /// Deprecated: please use environment(non-plural) instead.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $core.String> get environments => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get environments => $_getMap(3);
 
   /// Volumes to mount before running Tasks using this TaskSpec.
   @$pb.TagNumber(7)
-  $core.List<Volume> get volumes => $_getList(4);
+  $pb.PbList<Volume> get volumes => $_getList(4);
 
-  ///  The sequence of scripts or containers to run for this Task. Each Task using
-  ///  this TaskSpec executes its list of runnables in order. The Task succeeds if
-  ///  all of its runnables either exit with a zero status or any that exit with a
-  ///  non-zero status have the ignore_exit_status flag.
+  /// The sequence of scripts or containers to run for this Task. Each Task using
+  /// this TaskSpec executes its list of runnables in order. The Task succeeds if
+  /// all of its runnables either exit with a zero status or any that exit with a
+  /// non-zero status have the ignore_exit_status flag.
   ///
-  ///  Background runnables are killed automatically (if they have not already
-  ///  exited) a short time after all foreground runnables have completed. Even
-  ///  though this is likely to result in a non-zero exit status for the
-  ///  background runnable, these automatic kills are not treated as Task
-  ///  failures.
+  /// Background runnables are killed automatically (if they have not already
+  /// exited) a short time after all foreground runnables have completed. Even
+  /// though this is likely to result in a non-zero exit status for the
+  /// background runnable, these automatic kills are not treated as Task
+  /// failures.
   @$pb.TagNumber(8)
-  $core.List<Runnable> get runnables => $_getList(5);
+  $pb.PbList<Runnable> get runnables => $_getList(5);
 
   /// Lifecycle management schema when any task in a task group is failed.
   /// Currently we only support one lifecycle policy.
@@ -1439,20 +1393,20 @@ class TaskSpec extends $pb.GeneratedMessage {
   /// Default policy means if the exit code is 0, exit task.
   /// If task ends with non-zero exit code, retry the task with max_retry_count.
   @$pb.TagNumber(9)
-  $core.List<LifecyclePolicy> get lifecyclePolicies => $_getList(6);
+  $pb.PbList<LifecyclePolicy> get lifecyclePolicies => $_getList(6);
 
   /// Environment variables to set before running the Task.
   @$pb.TagNumber(10)
   Environment get environment => $_getN(7);
   @$pb.TagNumber(10)
   set environment(Environment v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasEnvironment() => $_has(7);
   @$pb.TagNumber(10)
-  void clearEnvironment() => clearField(10);
+  void clearEnvironment() => $_clearField(10);
   @$pb.TagNumber(10)
   Environment ensureEnvironment() => $_ensure(7);
 }
@@ -1484,14 +1438,10 @@ class LifecyclePolicy_ActionCondition extends $pb.GeneratedMessage {
     ..p<$core.int>(1, _omitFieldNames ? '' : 'exitCodes', $pb.PbFieldType.K3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LifecyclePolicy_ActionCondition clone() =>
       LifecyclePolicy_ActionCondition()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LifecyclePolicy_ActionCondition copyWith(
           void Function(LifecyclePolicy_ActionCondition) updates) =>
       super.copyWith(
@@ -1517,7 +1467,7 @@ class LifecyclePolicy_ActionCondition extends $pb.GeneratedMessage {
   /// when task executes with any of the exit code in the list,
   /// the condition is met and the action will be executed.
   @$pb.TagNumber(1)
-  $core.List<$core.int> get exitCodes => $_getList(0);
+  $pb.PbList<$core.int> get exitCodes => $_getList(0);
 }
 
 /// LifecyclePolicy describes how to deal with task failures
@@ -1559,13 +1509,9 @@ class LifecyclePolicy extends $pb.GeneratedMessage {
         subBuilder: LifecyclePolicy_ActionCondition.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LifecyclePolicy clone() => LifecyclePolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LifecyclePolicy copyWith(void Function(LifecyclePolicy) updates) =>
       super.copyWith((message) => updates(message as LifecyclePolicy))
           as LifecyclePolicy;
@@ -1591,26 +1537,26 @@ class LifecyclePolicy extends $pb.GeneratedMessage {
   LifecyclePolicy_Action get action => $_getN(0);
   @$pb.TagNumber(1)
   set action(LifecyclePolicy_Action v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasAction() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAction() => clearField(1);
+  void clearAction() => $_clearField(1);
 
   /// Conditions that decide why a task failure is dealt with a specific action.
   @$pb.TagNumber(2)
   LifecyclePolicy_ActionCondition get actionCondition => $_getN(1);
   @$pb.TagNumber(2)
   set actionCondition(LifecyclePolicy_ActionCondition v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasActionCondition() => $_has(1);
   @$pb.TagNumber(2)
-  void clearActionCondition() => clearField(2);
+  void clearActionCondition() => $_clearField(2);
   @$pb.TagNumber(2)
   LifecyclePolicy_ActionCondition ensureActionCondition() => $_ensure(1);
 }
@@ -1646,14 +1592,10 @@ class Environment_KMSEnvMap extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'cipherText')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_KMSEnvMap clone() =>
       Environment_KMSEnvMap()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment_KMSEnvMap copyWith(
           void Function(Environment_KMSEnvMap) updates) =>
       super.copyWith((message) => updates(message as Environment_KMSEnvMap))
@@ -1682,7 +1624,7 @@ class Environment_KMSEnvMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasKeyName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKeyName() => clearField(1);
+  void clearKeyName() => $_clearField(1);
 
   /// The value of the cipherText response from the `encrypt` method.
   @$pb.TagNumber(2)
@@ -1695,23 +1637,23 @@ class Environment_KMSEnvMap extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCipherText() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCipherText() => clearField(2);
+  void clearCipherText() => $_clearField(2);
 }
 
 /// An Environment describes a collection of environment variables to set when
 /// executing Tasks.
 class Environment extends $pb.GeneratedMessage {
   factory Environment({
-    $core.Map<$core.String, $core.String>? variables,
-    $core.Map<$core.String, $core.String>? secretVariables,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? variables,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? secretVariables,
     Environment_KMSEnvMap? encryptedVariables,
   }) {
     final $result = create();
     if (variables != null) {
-      $result.variables.addAll(variables);
+      $result.variables.addEntries(variables);
     }
     if (secretVariables != null) {
-      $result.secretVariables.addAll(secretVariables);
+      $result.secretVariables.addEntries(secretVariables);
     }
     if (encryptedVariables != null) {
       $result.encryptedVariables = encryptedVariables;
@@ -1745,13 +1687,9 @@ class Environment extends $pb.GeneratedMessage {
         subBuilder: Environment_KMSEnvMap.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment clone() => Environment()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment copyWith(void Function(Environment) updates) =>
       super.copyWith((message) => updates(message as Environment))
           as Environment;
@@ -1769,13 +1707,13 @@ class Environment extends $pb.GeneratedMessage {
 
   /// A map of environment variable names to values.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, $core.String> get variables => $_getMap(0);
+  $pb.PbMap<$core.String, $core.String> get variables => $_getMap(0);
 
   /// A map of environment variable names to Secret Manager secret names.
   /// The VM will access the named secrets to set the value of each environment
   /// variable.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $core.String> get secretVariables => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get secretVariables => $_getMap(1);
 
   /// An encrypted JSON dictionary where the key/value pairs correspond to
   /// environment variable names and their values.
@@ -1783,13 +1721,13 @@ class Environment extends $pb.GeneratedMessage {
   Environment_KMSEnvMap get encryptedVariables => $_getN(2);
   @$pb.TagNumber(3)
   set encryptedVariables(Environment_KMSEnvMap v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasEncryptedVariables() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEncryptedVariables() => clearField(3);
+  void clearEncryptedVariables() => $_clearField(3);
   @$pb.TagNumber(3)
   Environment_KMSEnvMap ensureEncryptedVariables() => $_ensure(2);
 }
@@ -1802,7 +1740,7 @@ class Job extends $pb.GeneratedMessage {
     $fixnum.Int64? priority,
     $core.Iterable<TaskGroup>? taskGroups,
     AllocationPolicy? allocationPolicy,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     JobStatus? status,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
@@ -1826,7 +1764,7 @@ class Job extends $pb.GeneratedMessage {
       $result.allocationPolicy = allocationPolicy;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (status != null) {
       $result.status = status;
@@ -1883,13 +1821,9 @@ class Job extends $pb.GeneratedMessage {
         subBuilder: JobNotification.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Job clone() => Job()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Job copyWith(void Function(Job) updates) =>
       super.copyWith((message) => updates(message as Job)) as Job;
 
@@ -1916,7 +1850,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. A system generated unique ID (in UUID4 format) for the Job.
   @$pb.TagNumber(2)
@@ -1929,7 +1863,7 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
   /// Priority of the Job.
   /// The valid value range is [0, 100). Default value is 0.
@@ -1946,24 +1880,24 @@ class Job extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasPriority() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPriority() => clearField(3);
+  void clearPriority() => $_clearField(3);
 
   /// Required. TaskGroups in the Job. Only one TaskGroup is supported now.
   @$pb.TagNumber(4)
-  $core.List<TaskGroup> get taskGroups => $_getList(3);
+  $pb.PbList<TaskGroup> get taskGroups => $_getList(3);
 
   /// Compute resource allocation for all TaskGroups in the Job.
   @$pb.TagNumber(7)
   AllocationPolicy get allocationPolicy => $_getN(4);
   @$pb.TagNumber(7)
   set allocationPolicy(AllocationPolicy v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasAllocationPolicy() => $_has(4);
   @$pb.TagNumber(7)
-  void clearAllocationPolicy() => clearField(7);
+  void clearAllocationPolicy() => $_clearField(7);
   @$pb.TagNumber(7)
   AllocationPolicy ensureAllocationPolicy() => $_ensure(4);
 
@@ -1978,20 +1912,20 @@ class Job extends $pb.GeneratedMessage {
   /// apply.
   /// Label names that start with "goog-" or "google-" are reserved.
   @$pb.TagNumber(8)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(5);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(5);
 
   /// Output only. Job status. It is read only for users.
   @$pb.TagNumber(9)
   JobStatus get status => $_getN(6);
   @$pb.TagNumber(9)
   set status(JobStatus v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasStatus() => $_has(6);
   @$pb.TagNumber(9)
-  void clearStatus() => clearField(9);
+  void clearStatus() => $_clearField(9);
   @$pb.TagNumber(9)
   JobStatus ensureStatus() => $_ensure(6);
 
@@ -2000,13 +1934,13 @@ class Job extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(11)
   set createTime($2.Timestamp v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(11)
-  void clearCreateTime() => clearField(11);
+  void clearCreateTime() => $_clearField(11);
   @$pb.TagNumber(11)
   $2.Timestamp ensureCreateTime() => $_ensure(7);
 
@@ -2015,13 +1949,13 @@ class Job extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(12)
   set updateTime($2.Timestamp v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(12)
-  void clearUpdateTime() => clearField(12);
+  void clearUpdateTime() => $_clearField(12);
   @$pb.TagNumber(12)
   $2.Timestamp ensureUpdateTime() => $_ensure(8);
 
@@ -2030,19 +1964,19 @@ class Job extends $pb.GeneratedMessage {
   LogsPolicy get logsPolicy => $_getN(9);
   @$pb.TagNumber(13)
   set logsPolicy(LogsPolicy v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasLogsPolicy() => $_has(9);
   @$pb.TagNumber(13)
-  void clearLogsPolicy() => clearField(13);
+  void clearLogsPolicy() => $_clearField(13);
   @$pb.TagNumber(13)
   LogsPolicy ensureLogsPolicy() => $_ensure(9);
 
   /// Notification configurations.
   @$pb.TagNumber(14)
-  $core.List<JobNotification> get notifications => $_getList(10);
+  $pb.PbList<JobNotification> get notifications => $_getList(10);
 }
 
 /// LogsPolicy describes how outputs from a Job's Tasks (stdout/stderr) will be
@@ -2082,13 +2016,9 @@ class LogsPolicy extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'logsPath')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogsPolicy clone() => LogsPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogsPolicy copyWith(void Function(LogsPolicy) updates) =>
       super.copyWith((message) => updates(message as LogsPolicy)) as LogsPolicy;
 
@@ -2108,13 +2038,13 @@ class LogsPolicy extends $pb.GeneratedMessage {
   LogsPolicy_Destination get destination => $_getN(0);
   @$pb.TagNumber(1)
   set destination(LogsPolicy_Destination v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasDestination() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDestination() => clearField(1);
+  void clearDestination() => $_clearField(1);
 
   /// The path to which logs are saved when the destination = PATH. This can be a
   /// local file path on the VM, or under the mount point of a Persistent Disk or
@@ -2129,7 +2059,7 @@ class LogsPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasLogsPath() => $_has(1);
   @$pb.TagNumber(2)
-  void clearLogsPath() => clearField(2);
+  void clearLogsPath() => $_clearField(2);
 }
 
 /// VM instance status.
@@ -2180,14 +2110,10 @@ class JobStatus_InstanceStatus extends $pb.GeneratedMessage {
         subBuilder: AllocationPolicy_Disk.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobStatus_InstanceStatus clone() =>
       JobStatus_InstanceStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobStatus_InstanceStatus copyWith(
           void Function(JobStatus_InstanceStatus) updates) =>
       super.copyWith((message) => updates(message as JobStatus_InstanceStatus))
@@ -2216,20 +2142,20 @@ class JobStatus_InstanceStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasMachineType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearMachineType() => clearField(1);
+  void clearMachineType() => $_clearField(1);
 
   /// The VM instance provisioning model.
   @$pb.TagNumber(2)
   AllocationPolicy_ProvisioningModel get provisioningModel => $_getN(1);
   @$pb.TagNumber(2)
   set provisioningModel(AllocationPolicy_ProvisioningModel v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasProvisioningModel() => $_has(1);
   @$pb.TagNumber(2)
-  void clearProvisioningModel() => clearField(2);
+  void clearProvisioningModel() => $_clearField(2);
 
   /// The max number of tasks can be assigned to this instance type.
   @$pb.TagNumber(3)
@@ -2242,20 +2168,20 @@ class JobStatus_InstanceStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTaskPack() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTaskPack() => clearField(3);
+  void clearTaskPack() => $_clearField(3);
 
   /// The VM boot disk.
   @$pb.TagNumber(4)
   AllocationPolicy_Disk get bootDisk => $_getN(3);
   @$pb.TagNumber(4)
   set bootDisk(AllocationPolicy_Disk v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasBootDisk() => $_has(3);
   @$pb.TagNumber(4)
-  void clearBootDisk() => clearField(4);
+  void clearBootDisk() => $_clearField(4);
   @$pb.TagNumber(4)
   AllocationPolicy_Disk ensureBootDisk() => $_ensure(3);
 }
@@ -2263,12 +2189,12 @@ class JobStatus_InstanceStatus extends $pb.GeneratedMessage {
 /// Aggregated task status for a TaskGroup.
 class JobStatus_TaskGroupStatus extends $pb.GeneratedMessage {
   factory JobStatus_TaskGroupStatus({
-    $core.Map<$core.String, $fixnum.Int64>? counts,
+    $core.Iterable<$core.MapEntry<$core.String, $fixnum.Int64>>? counts,
     $core.Iterable<JobStatus_InstanceStatus>? instances,
   }) {
     final $result = create();
     if (counts != null) {
-      $result.counts.addAll(counts);
+      $result.counts.addEntries(counts);
     }
     if (instances != null) {
       $result.instances.addAll(instances);
@@ -2298,14 +2224,10 @@ class JobStatus_TaskGroupStatus extends $pb.GeneratedMessage {
         subBuilder: JobStatus_InstanceStatus.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobStatus_TaskGroupStatus clone() =>
       JobStatus_TaskGroupStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobStatus_TaskGroupStatus copyWith(
           void Function(JobStatus_TaskGroupStatus) updates) =>
       super.copyWith((message) => updates(message as JobStatus_TaskGroupStatus))
@@ -2326,11 +2248,11 @@ class JobStatus_TaskGroupStatus extends $pb.GeneratedMessage {
   /// Count of task in each state in the TaskGroup.
   /// The map key is task state name.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, $fixnum.Int64> get counts => $_getMap(0);
+  $pb.PbMap<$core.String, $fixnum.Int64> get counts => $_getMap(0);
 
   /// Status of instances allocated for the TaskGroup.
   @$pb.TagNumber(2)
-  $core.List<JobStatus_InstanceStatus> get instances => $_getList(1);
+  $pb.PbList<JobStatus_InstanceStatus> get instances => $_getList(1);
 }
 
 /// Job status.
@@ -2338,8 +2260,9 @@ class JobStatus extends $pb.GeneratedMessage {
   factory JobStatus({
     JobStatus_State? state,
     $core.Iterable<StatusEvent>? statusEvents,
-    $core.Map<$core.String, JobStatus_TaskGroupStatus>? taskGroups,
-    $10.Duration? runDuration,
+    $core.Iterable<$core.MapEntry<$core.String, JobStatus_TaskGroupStatus>>?
+        taskGroups,
+    $0.Duration? runDuration,
   }) {
     final $result = create();
     if (state != null) {
@@ -2349,7 +2272,7 @@ class JobStatus extends $pb.GeneratedMessage {
       $result.statusEvents.addAll(statusEvents);
     }
     if (taskGroups != null) {
-      $result.taskGroups.addAll(taskGroups);
+      $result.taskGroups.addEntries(taskGroups);
     }
     if (runDuration != null) {
       $result.runDuration = runDuration;
@@ -2384,17 +2307,13 @@ class JobStatus extends $pb.GeneratedMessage {
         valueCreator: JobStatus_TaskGroupStatus.create,
         valueDefaultOrMaker: JobStatus_TaskGroupStatus.getDefault,
         packageName: const $pb.PackageName('google.events.cloud.batch.v1'))
-    ..aOM<$10.Duration>(5, _omitFieldNames ? '' : 'runDuration',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(5, _omitFieldNames ? '' : 'runDuration',
+        subBuilder: $0.Duration.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobStatus clone() => JobStatus()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobStatus copyWith(void Function(JobStatus) updates) =>
       super.copyWith((message) => updates(message as JobStatus)) as JobStatus;
 
@@ -2414,38 +2333,38 @@ class JobStatus extends $pb.GeneratedMessage {
   JobStatus_State get state => $_getN(0);
   @$pb.TagNumber(1)
   set state(JobStatus_State v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasState() => $_has(0);
   @$pb.TagNumber(1)
-  void clearState() => clearField(1);
+  void clearState() => $_clearField(1);
 
   /// Job status events
   @$pb.TagNumber(2)
-  $core.List<StatusEvent> get statusEvents => $_getList(1);
+  $pb.PbList<StatusEvent> get statusEvents => $_getList(1);
 
   /// Aggregated task status for each TaskGroup in the Job.
   /// The map key is TaskGroup ID.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, JobStatus_TaskGroupStatus> get taskGroups =>
+  $pb.PbMap<$core.String, JobStatus_TaskGroupStatus> get taskGroups =>
       $_getMap(2);
 
   /// The duration of time that the Job spent in status RUNNING.
   @$pb.TagNumber(5)
-  $10.Duration get runDuration => $_getN(3);
+  $0.Duration get runDuration => $_getN(3);
   @$pb.TagNumber(5)
-  set runDuration($10.Duration v) {
-    setField(5, v);
+  set runDuration($0.Duration v) {
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasRunDuration() => $_has(3);
   @$pb.TagNumber(5)
-  void clearRunDuration() => clearField(5);
+  void clearRunDuration() => $_clearField(5);
   @$pb.TagNumber(5)
-  $10.Duration ensureRunDuration() => $_ensure(3);
+  $0.Duration ensureRunDuration() => $_ensure(3);
 }
 
 /// Message details.
@@ -2499,14 +2418,10 @@ class JobNotification_Message extends $pb.GeneratedMessage {
         enumValues: TaskStatus_State.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobNotification_Message clone() =>
       JobNotification_Message()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobNotification_Message copyWith(
           void Function(JobNotification_Message) updates) =>
       super.copyWith((message) => updates(message as JobNotification_Message))
@@ -2529,39 +2444,39 @@ class JobNotification_Message extends $pb.GeneratedMessage {
   JobNotification_Type get type => $_getN(0);
   @$pb.TagNumber(1)
   set type(JobNotification_Type v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// The new job state.
   @$pb.TagNumber(2)
   JobStatus_State get newJobState => $_getN(1);
   @$pb.TagNumber(2)
   set newJobState(JobStatus_State v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasNewJobState() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNewJobState() => clearField(2);
+  void clearNewJobState() => $_clearField(2);
 
   /// The new task state.
   @$pb.TagNumber(3)
   TaskStatus_State get newTaskState => $_getN(2);
   @$pb.TagNumber(3)
   set newTaskState(TaskStatus_State v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasNewTaskState() => $_has(2);
   @$pb.TagNumber(3)
-  void clearNewTaskState() => clearField(3);
+  void clearNewTaskState() => $_clearField(3);
 }
 
 /// Notification configurations.
@@ -2597,13 +2512,9 @@ class JobNotification extends $pb.GeneratedMessage {
         subBuilder: JobNotification_Message.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobNotification clone() => JobNotification()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobNotification copyWith(void Function(JobNotification) updates) =>
       super.copyWith((message) => updates(message as JobNotification))
           as JobNotification;
@@ -2635,7 +2546,7 @@ class JobNotification extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPubsubTopic() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPubsubTopic() => clearField(1);
+  void clearPubsubTopic() => $_clearField(1);
 
   /// The attribute requirements of messages to be sent to this Pub/Sub topic.
   /// Without this field, no message will be sent.
@@ -2643,13 +2554,13 @@ class JobNotification extends $pb.GeneratedMessage {
   JobNotification_Message get message => $_getN(1);
   @$pb.TagNumber(2)
   set message(JobNotification_Message v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMessage() => clearField(2);
+  void clearMessage() => $_clearField(2);
   @$pb.TagNumber(2)
   JobNotification_Message ensureMessage() => $_ensure(1);
 }
@@ -2680,14 +2591,10 @@ class AllocationPolicy_LocationPolicy extends $pb.GeneratedMessage {
     ..pPS(1, _omitFieldNames ? '' : 'allowedLocations')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_LocationPolicy clone() =>
       AllocationPolicy_LocationPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_LocationPolicy copyWith(
           void Function(AllocationPolicy_LocationPolicy) updates) =>
       super.copyWith(
@@ -2708,22 +2615,22 @@ class AllocationPolicy_LocationPolicy extends $pb.GeneratedMessage {
           create);
   static AllocationPolicy_LocationPolicy? _defaultInstance;
 
-  ///  A list of allowed location names represented by internal URLs.
+  /// A list of allowed location names represented by internal URLs.
   ///
-  ///  Each location can be a region or a zone.
-  ///  Only one region or multiple zones in one region is supported now.
-  ///  For example,
-  ///  ["regions/us-central1"] allow VMs in any zones in region us-central1.
-  ///  ["zones/us-central1-a", "zones/us-central1-c"] only allow VMs
-  ///  in zones us-central1-a and us-central1-c.
+  /// Each location can be a region or a zone.
+  /// Only one region or multiple zones in one region is supported now.
+  /// For example,
+  /// ["regions/us-central1"] allow VMs in any zones in region us-central1.
+  /// ["zones/us-central1-a", "zones/us-central1-c"] only allow VMs
+  /// in zones us-central1-a and us-central1-c.
   ///
-  ///  All locations end up in different regions would cause errors.
-  ///  For example,
-  ///  ["regions/us-central1", "zones/us-central1-a", "zones/us-central1-b",
-  ///  "zones/us-west1-a"] contains 2 regions "us-central1" and
-  ///  "us-west1". An error is expected in this case.
+  /// All locations end up in different regions would cause errors.
+  /// For example,
+  /// ["regions/us-central1", "zones/us-central1-a", "zones/us-central1-b",
+  /// "zones/us-west1-a"] contains 2 regions "us-central1" and
+  /// "us-west1". An error is expected in this case.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get allowedLocations => $_getList(0);
+  $pb.PbList<$core.String> get allowedLocations => $_getList(0);
 }
 
 enum AllocationPolicy_Disk_DataSource { image, snapshot, notSet }
@@ -2785,14 +2692,10 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'diskInterface')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_Disk clone() =>
       AllocationPolicy_Disk()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_Disk copyWith(
           void Function(AllocationPolicy_Disk) updates) =>
       super.copyWith((message) => updates(message as AllocationPolicy_Disk))
@@ -2812,7 +2715,7 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
 
   AllocationPolicy_Disk_DataSource whichDataSource() =>
       _AllocationPolicy_Disk_DataSourceByTag[$_whichOneof(0)]!;
-  void clearDataSource() => clearField($_whichOneof(0));
+  void clearDataSource() => $_clearField($_whichOneof(0));
 
   /// Disk type as shown in `gcloud compute disk-types list`.
   /// For example, local SSD uses type "local-ssd".
@@ -2828,18 +2731,18 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
-  ///  Disk size in GB.
+  /// Disk size in GB.
   ///
-  ///  For persistent disk, this field is ignored if `data_source` is `image` or
-  ///  `snapshot`.
-  ///  For local SSD, size_gb should be a multiple of 375GB,
-  ///  otherwise, the final size will be the next greater multiple of 375 GB.
-  ///  For boot disk, Batch will calculate the boot disk size based on source
-  ///  image and task requirements if you do not speicify the size.
-  ///  If both this field and the boot_disk_mib field in task spec's
-  ///  compute_resource are defined, Batch will only honor this field.
+  /// For persistent disk, this field is ignored if `data_source` is `image` or
+  /// `snapshot`.
+  /// For local SSD, size_gb should be a multiple of 375GB,
+  /// otherwise, the final size will be the next greater multiple of 375 GB.
+  /// For boot disk, Batch will calculate the boot disk size based on source
+  /// image and task requirements if you do not speicify the size.
+  /// If both this field and the boot_disk_mib field in task spec's
+  /// compute_resource are defined, Batch will only honor this field.
   @$pb.TagNumber(2)
   $fixnum.Int64 get sizeGb => $_getI64(1);
   @$pb.TagNumber(2)
@@ -2850,23 +2753,23 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSizeGb() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSizeGb() => clearField(2);
+  void clearSizeGb() => $_clearField(2);
 
-  ///  Name of a public or custom image used as the data source.
-  ///  For example, the following are all valid URLs:
+  /// Name of a public or custom image used as the data source.
+  /// For example, the following are all valid URLs:
   ///
-  ///  * Specify the image by its family name:
-  ///  projects/{project}/global/images/family/{image_family}
-  ///  * Specify the image version:
-  ///  projects/{project}/global/images/{image_version}
+  /// * Specify the image by its family name:
+  /// projects/{project}/global/images/family/{image_family}
+  /// * Specify the image version:
+  /// projects/{project}/global/images/{image_version}
   ///
-  ///  You can also use Batch customized image in short names.
-  ///  The following image values are supported for a boot disk:
+  /// You can also use Batch customized image in short names.
+  /// The following image values are supported for a boot disk:
   ///
-  ///  * "batch-debian": use Batch Debian images.
-  ///  * "batch-centos": use Batch CentOS images.
-  ///  * "batch-cos": use Batch Container-Optimized images.
-  ///  * "batch-hpc-centos": use Batch HPC CentOS images.
+  /// * "batch-debian": use Batch Debian images.
+  /// * "batch-centos": use Batch CentOS images.
+  /// * "batch-cos": use Batch Container-Optimized images.
+  /// * "batch-hpc-centos": use Batch HPC CentOS images.
   @$pb.TagNumber(4)
   $core.String get image => $_getSZ(2);
   @$pb.TagNumber(4)
@@ -2877,7 +2780,7 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(2);
   @$pb.TagNumber(4)
-  void clearImage() => clearField(4);
+  void clearImage() => $_clearField(4);
 
   /// Name of a snapshot used as the data source.
   /// Snapshot is not supported as boot disk now.
@@ -2891,7 +2794,7 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasSnapshot() => $_has(3);
   @$pb.TagNumber(5)
-  void clearSnapshot() => clearField(5);
+  void clearSnapshot() => $_clearField(5);
 
   /// Local SSDs are available through both "SCSI" and "NVMe" interfaces.
   /// If not indicated, "NVMe" will be the default one for local ssds.
@@ -2906,7 +2809,7 @@ class AllocationPolicy_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDiskInterface() => $_has(4);
   @$pb.TagNumber(6)
-  void clearDiskInterface() => clearField(6);
+  void clearDiskInterface() => $_clearField(6);
 }
 
 enum AllocationPolicy_AttachedDisk_Attached { newDisk, existingDisk, notSet }
@@ -2957,14 +2860,10 @@ class AllocationPolicy_AttachedDisk extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'deviceName')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_AttachedDisk clone() =>
       AllocationPolicy_AttachedDisk()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_AttachedDisk copyWith(
           void Function(AllocationPolicy_AttachedDisk) updates) =>
       super.copyWith(
@@ -2986,19 +2885,19 @@ class AllocationPolicy_AttachedDisk extends $pb.GeneratedMessage {
 
   AllocationPolicy_AttachedDisk_Attached whichAttached() =>
       _AllocationPolicy_AttachedDisk_AttachedByTag[$_whichOneof(0)]!;
-  void clearAttached() => clearField($_whichOneof(0));
+  void clearAttached() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   AllocationPolicy_Disk get newDisk => $_getN(0);
   @$pb.TagNumber(1)
   set newDisk(AllocationPolicy_Disk v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasNewDisk() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNewDisk() => clearField(1);
+  void clearNewDisk() => $_clearField(1);
   @$pb.TagNumber(1)
   AllocationPolicy_Disk ensureNewDisk() => $_ensure(0);
 
@@ -3013,7 +2912,7 @@ class AllocationPolicy_AttachedDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasExistingDisk() => $_has(1);
   @$pb.TagNumber(2)
-  void clearExistingDisk() => clearField(2);
+  void clearExistingDisk() => $_clearField(2);
 
   /// Device name that the guest operating system will see.
   /// It is used by Runnable.volumes field to mount disks. So please specify
@@ -3029,7 +2928,7 @@ class AllocationPolicy_AttachedDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDeviceName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDeviceName() => clearField(3);
+  void clearDeviceName() => $_clearField(3);
 }
 
 /// Accelerator describes Compute Engine accelerators to be attached to the VM.
@@ -3069,14 +2968,10 @@ class AllocationPolicy_Accelerator extends $pb.GeneratedMessage {
     ..aOB(3, _omitFieldNames ? '' : 'installGpuDrivers')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_Accelerator clone() =>
       AllocationPolicy_Accelerator()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_Accelerator copyWith(
           void Function(AllocationPolicy_Accelerator) updates) =>
       super.copyWith(
@@ -3108,7 +3003,7 @@ class AllocationPolicy_Accelerator extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// The number of accelerators of this type.
   @$pb.TagNumber(2)
@@ -3121,7 +3016,7 @@ class AllocationPolicy_Accelerator extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCount() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCount() => clearField(2);
+  void clearCount() => $_clearField(2);
 
   /// Deprecated: please use instances[0].install_gpu_drivers instead.
   @$pb.TagNumber(3)
@@ -3134,7 +3029,7 @@ class AllocationPolicy_Accelerator extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasInstallGpuDrivers() => $_has(2);
   @$pb.TagNumber(3)
-  void clearInstallGpuDrivers() => clearField(3);
+  void clearInstallGpuDrivers() => $_clearField(3);
 }
 
 /// InstancePolicy describes an instance type and resources attached to each VM
@@ -3200,14 +3095,10 @@ class AllocationPolicy_InstancePolicy extends $pb.GeneratedMessage {
         subBuilder: AllocationPolicy_Disk.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_InstancePolicy clone() =>
       AllocationPolicy_InstancePolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_InstancePolicy copyWith(
           void Function(AllocationPolicy_InstancePolicy) updates) =>
       super.copyWith(
@@ -3239,7 +3130,7 @@ class AllocationPolicy_InstancePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMachineType() => $_has(0);
   @$pb.TagNumber(2)
-  void clearMachineType() => clearField(2);
+  void clearMachineType() => $_clearField(2);
 
   /// The minimum CPU platform.
   /// See
@@ -3254,29 +3145,29 @@ class AllocationPolicy_InstancePolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMinCpuPlatform() => $_has(1);
   @$pb.TagNumber(3)
-  void clearMinCpuPlatform() => clearField(3);
+  void clearMinCpuPlatform() => $_clearField(3);
 
   /// The provisioning model.
   @$pb.TagNumber(4)
   AllocationPolicy_ProvisioningModel get provisioningModel => $_getN(2);
   @$pb.TagNumber(4)
   set provisioningModel(AllocationPolicy_ProvisioningModel v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasProvisioningModel() => $_has(2);
   @$pb.TagNumber(4)
-  void clearProvisioningModel() => clearField(4);
+  void clearProvisioningModel() => $_clearField(4);
 
   /// The accelerators attached to each VM instance.
   @$pb.TagNumber(5)
-  $core.List<AllocationPolicy_Accelerator> get accelerators => $_getList(3);
+  $pb.PbList<AllocationPolicy_Accelerator> get accelerators => $_getList(3);
 
   /// Non-boot disks to be attached for each VM created by this InstancePolicy.
   /// New disks will be deleted when the VM is deleted.
   @$pb.TagNumber(6)
-  $core.List<AllocationPolicy_AttachedDisk> get disks => $_getList(4);
+  $pb.PbList<AllocationPolicy_AttachedDisk> get disks => $_getList(4);
 
   /// Boot disk to be created and attached to each VM by this InstancePolicy.
   /// Boot disk will be deleted when the VM is deleted.
@@ -3285,13 +3176,13 @@ class AllocationPolicy_InstancePolicy extends $pb.GeneratedMessage {
   AllocationPolicy_Disk get bootDisk => $_getN(5);
   @$pb.TagNumber(8)
   set bootDisk(AllocationPolicy_Disk v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasBootDisk() => $_has(5);
   @$pb.TagNumber(8)
-  void clearBootDisk() => clearField(8);
+  void clearBootDisk() => $_clearField(8);
   @$pb.TagNumber(8)
   AllocationPolicy_Disk ensureBootDisk() => $_ensure(5);
 }
@@ -3350,14 +3241,10 @@ class AllocationPolicy_InstancePolicyOrTemplate extends $pb.GeneratedMessage {
     ..aOB(3, _omitFieldNames ? '' : 'installGpuDrivers')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_InstancePolicyOrTemplate clone() =>
       AllocationPolicy_InstancePolicyOrTemplate()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_InstancePolicyOrTemplate copyWith(
           void Function(AllocationPolicy_InstancePolicyOrTemplate) updates) =>
       super.copyWith((message) =>
@@ -3383,20 +3270,20 @@ class AllocationPolicy_InstancePolicyOrTemplate extends $pb.GeneratedMessage {
       whichPolicyTemplate() =>
           _AllocationPolicy_InstancePolicyOrTemplate_PolicyTemplateByTag[
               $_whichOneof(0)]!;
-  void clearPolicyTemplate() => clearField($_whichOneof(0));
+  void clearPolicyTemplate() => $_clearField($_whichOneof(0));
 
   /// InstancePolicy.
   @$pb.TagNumber(1)
   AllocationPolicy_InstancePolicy get policy => $_getN(0);
   @$pb.TagNumber(1)
   set policy(AllocationPolicy_InstancePolicy v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPolicy() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPolicy() => clearField(1);
+  void clearPolicy() => $_clearField(1);
   @$pb.TagNumber(1)
   AllocationPolicy_InstancePolicy ensurePolicy() => $_ensure(0);
 
@@ -3413,7 +3300,7 @@ class AllocationPolicy_InstancePolicyOrTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasInstanceTemplate() => $_has(1);
   @$pb.TagNumber(2)
-  void clearInstanceTemplate() => clearField(2);
+  void clearInstanceTemplate() => $_clearField(2);
 
   /// Set this field true if users want Batch to help fetch drivers from a
   /// third party location and install them for GPUs specified in
@@ -3429,7 +3316,7 @@ class AllocationPolicy_InstancePolicyOrTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasInstallGpuDrivers() => $_has(2);
   @$pb.TagNumber(3)
-  void clearInstallGpuDrivers() => clearField(3);
+  void clearInstallGpuDrivers() => $_clearField(3);
 }
 
 /// A network interface.
@@ -3469,14 +3356,10 @@ class AllocationPolicy_NetworkInterface extends $pb.GeneratedMessage {
     ..aOB(3, _omitFieldNames ? '' : 'noExternalIpAddress')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_NetworkInterface clone() =>
       AllocationPolicy_NetworkInterface()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_NetworkInterface copyWith(
           void Function(AllocationPolicy_NetworkInterface) updates) =>
       super.copyWith((message) =>
@@ -3497,14 +3380,14 @@ class AllocationPolicy_NetworkInterface extends $pb.GeneratedMessage {
           create);
   static AllocationPolicy_NetworkInterface? _defaultInstance;
 
-  ///  The URL of an existing network resource.
-  ///  You can specify the network as a full or partial URL.
+  /// The URL of an existing network resource.
+  /// You can specify the network as a full or partial URL.
   ///
-  ///  For example, the following are all valid URLs:
+  /// For example, the following are all valid URLs:
   ///
-  ///  * https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}
-  ///  * projects/{project}/global/networks/{network}
-  ///  * global/networks/{network}
+  /// * https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}
+  /// * projects/{project}/global/networks/{network}
+  /// * global/networks/{network}
   @$pb.TagNumber(1)
   $core.String get network => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -3515,16 +3398,16 @@ class AllocationPolicy_NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNetwork() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNetwork() => clearField(1);
+  void clearNetwork() => $_clearField(1);
 
-  ///  The URL of an existing subnetwork resource in the network.
-  ///  You can specify the subnetwork as a full or partial URL.
+  /// The URL of an existing subnetwork resource in the network.
+  /// You can specify the subnetwork as a full or partial URL.
   ///
-  ///  For example, the following are all valid URLs:
+  /// For example, the following are all valid URLs:
   ///
-  ///  * https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/subnetworks/{subnetwork}
-  ///  * projects/{project}/regions/{region}/subnetworks/{subnetwork}
-  ///  * regions/{region}/subnetworks/{subnetwork}
+  /// * https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/subnetworks/{subnetwork}
+  /// * projects/{project}/regions/{region}/subnetworks/{subnetwork}
+  /// * regions/{region}/subnetworks/{subnetwork}
   @$pb.TagNumber(2)
   $core.String get subnetwork => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -3535,7 +3418,7 @@ class AllocationPolicy_NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSubnetwork() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSubnetwork() => clearField(2);
+  void clearSubnetwork() => $_clearField(2);
 
   /// Default is false (with an external IP address). Required if
   /// no external public IP address is attached to the VM. If no external
@@ -3554,7 +3437,7 @@ class AllocationPolicy_NetworkInterface extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasNoExternalIpAddress() => $_has(2);
   @$pb.TagNumber(3)
-  void clearNoExternalIpAddress() => clearField(3);
+  void clearNoExternalIpAddress() => $_clearField(3);
 }
 
 /// NetworkPolicy describes VM instance network configurations.
@@ -3586,14 +3469,10 @@ class AllocationPolicy_NetworkPolicy extends $pb.GeneratedMessage {
         subBuilder: AllocationPolicy_NetworkInterface.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_NetworkPolicy clone() =>
       AllocationPolicy_NetworkPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_NetworkPolicy copyWith(
           void Function(AllocationPolicy_NetworkPolicy) updates) =>
       super.copyWith(
@@ -3615,7 +3494,7 @@ class AllocationPolicy_NetworkPolicy extends $pb.GeneratedMessage {
 
   /// Network configurations.
   @$pb.TagNumber(1)
-  $core.List<AllocationPolicy_NetworkInterface> get networkInterfaces =>
+  $pb.PbList<AllocationPolicy_NetworkInterface> get networkInterfaces =>
       $_getList(0);
 }
 
@@ -3652,14 +3531,10 @@ class AllocationPolicy_PlacementPolicy extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'maxDistance')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_PlacementPolicy clone() =>
       AllocationPolicy_PlacementPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy_PlacementPolicy copyWith(
           void Function(AllocationPolicy_PlacementPolicy) updates) =>
       super.copyWith(
@@ -3694,7 +3569,7 @@ class AllocationPolicy_PlacementPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollocation() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollocation() => clearField(1);
+  void clearCollocation() => $_clearField(1);
 
   /// When specified, causes the job to fail if more than max_distance logical
   /// switches are required between VMs. Batch uses the most compact possible
@@ -3711,7 +3586,7 @@ class AllocationPolicy_PlacementPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMaxDistance() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMaxDistance() => clearField(2);
+  void clearMaxDistance() => $_clearField(2);
 }
 
 /// A Job's resource allocation policy describes when, where, and how compute
@@ -3719,7 +3594,7 @@ class AllocationPolicy_PlacementPolicy extends $pb.GeneratedMessage {
 class AllocationPolicy extends $pb.GeneratedMessage {
   factory AllocationPolicy({
     AllocationPolicy_LocationPolicy? location,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     AllocationPolicy_NetworkPolicy? network,
     $core.Iterable<AllocationPolicy_InstancePolicyOrTemplate>? instances,
     ServiceAccount? serviceAccount,
@@ -3730,7 +3605,7 @@ class AllocationPolicy extends $pb.GeneratedMessage {
       $result.location = location;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (network != null) {
       $result.network = network;
@@ -3778,13 +3653,9 @@ class AllocationPolicy extends $pb.GeneratedMessage {
         subBuilder: AllocationPolicy_PlacementPolicy.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy clone() => AllocationPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AllocationPolicy copyWith(void Function(AllocationPolicy) updates) =>
       super.copyWith((message) => updates(message as AllocationPolicy))
           as AllocationPolicy;
@@ -3806,13 +3677,13 @@ class AllocationPolicy extends $pb.GeneratedMessage {
   AllocationPolicy_LocationPolicy get location => $_getN(0);
   @$pb.TagNumber(1)
   set location(AllocationPolicy_LocationPolicy v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
-  void clearLocation() => clearField(1);
+  void clearLocation() => $_clearField(1);
   @$pb.TagNumber(1)
   AllocationPolicy_LocationPolicy ensureLocation() => $_ensure(0);
 
@@ -3824,27 +3695,27 @@ class AllocationPolicy extends $pb.GeneratedMessage {
   /// apply.
   /// Label names that start with "goog-" or "google-" are reserved.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(1);
 
   /// The network policy.
   @$pb.TagNumber(7)
   AllocationPolicy_NetworkPolicy get network => $_getN(2);
   @$pb.TagNumber(7)
   set network(AllocationPolicy_NetworkPolicy v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasNetwork() => $_has(2);
   @$pb.TagNumber(7)
-  void clearNetwork() => clearField(7);
+  void clearNetwork() => $_clearField(7);
   @$pb.TagNumber(7)
   AllocationPolicy_NetworkPolicy ensureNetwork() => $_ensure(2);
 
   /// Describe instances that can be created by this AllocationPolicy.
   /// Only instances[0] is supported now.
   @$pb.TagNumber(8)
-  $core.List<AllocationPolicy_InstancePolicyOrTemplate> get instances =>
+  $pb.PbList<AllocationPolicy_InstancePolicyOrTemplate> get instances =>
       $_getList(3);
 
   /// Service account that VMs will run as.
@@ -3852,13 +3723,13 @@ class AllocationPolicy extends $pb.GeneratedMessage {
   ServiceAccount get serviceAccount => $_getN(4);
   @$pb.TagNumber(9)
   set serviceAccount(ServiceAccount v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasServiceAccount() => $_has(4);
   @$pb.TagNumber(9)
-  void clearServiceAccount() => clearField(9);
+  void clearServiceAccount() => $_clearField(9);
   @$pb.TagNumber(9)
   ServiceAccount ensureServiceAccount() => $_ensure(4);
 
@@ -3867,13 +3738,13 @@ class AllocationPolicy extends $pb.GeneratedMessage {
   AllocationPolicy_PlacementPolicy get placement => $_getN(5);
   @$pb.TagNumber(10)
   set placement(AllocationPolicy_PlacementPolicy v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasPlacement() => $_has(5);
   @$pb.TagNumber(10)
-  void clearPlacement() => clearField(10);
+  void clearPlacement() => $_clearField(10);
   @$pb.TagNumber(10)
   AllocationPolicy_PlacementPolicy ensurePlacement() => $_ensure(5);
 }
@@ -3953,13 +3824,9 @@ class TaskGroup extends $pb.GeneratedMessage {
     ..aOB(12, _omitFieldNames ? '' : 'permissiveSsh')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskGroup clone() => TaskGroup()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TaskGroup copyWith(void Function(TaskGroup) updates) =>
       super.copyWith((message) => updates(message as TaskGroup)) as TaskGroup;
 
@@ -3988,20 +3855,20 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Required. Tasks in the group share the same task spec.
   @$pb.TagNumber(3)
   TaskSpec get taskSpec => $_getN(1);
   @$pb.TagNumber(3)
   set taskSpec(TaskSpec v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasTaskSpec() => $_has(1);
   @$pb.TagNumber(3)
-  void clearTaskSpec() => clearField(3);
+  void clearTaskSpec() => $_clearField(3);
   @$pb.TagNumber(3)
   TaskSpec ensureTaskSpec() => $_ensure(1);
 
@@ -4017,7 +3884,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasTaskCount() => $_has(2);
   @$pb.TagNumber(4)
-  void clearTaskCount() => clearField(4);
+  void clearTaskCount() => $_clearField(4);
 
   /// Max number of tasks that can run in parallel.
   /// Default to min(task_count, 1000).
@@ -4032,7 +3899,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasParallelism() => $_has(3);
   @$pb.TagNumber(5)
-  void clearParallelism() => clearField(5);
+  void clearParallelism() => $_clearField(5);
 
   /// Scheduling policy for Tasks in the TaskGroup.
   /// The default value is AS_SOON_AS_POSSIBLE.
@@ -4040,25 +3907,25 @@ class TaskGroup extends $pb.GeneratedMessage {
   TaskGroup_SchedulingPolicy get schedulingPolicy => $_getN(4);
   @$pb.TagNumber(6)
   set schedulingPolicy(TaskGroup_SchedulingPolicy v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasSchedulingPolicy() => $_has(4);
   @$pb.TagNumber(6)
-  void clearSchedulingPolicy() => clearField(6);
+  void clearSchedulingPolicy() => $_clearField(6);
 
-  ///  An array of environment variable mappings, which are passed to Tasks with
-  ///  matching indices. If task_environments is used then task_count should
-  ///  not be specified in the request (and will be ignored). Task count will be
-  ///  the length of task_environments.
+  /// An array of environment variable mappings, which are passed to Tasks with
+  /// matching indices. If task_environments is used then task_count should
+  /// not be specified in the request (and will be ignored). Task count will be
+  /// the length of task_environments.
   ///
-  ///  Tasks get a BATCH_TASK_INDEX and BATCH_TASK_COUNT environment variable, in
-  ///  addition to any environment variables set in task_environments, specifying
-  ///  the number of Tasks in the Task's parent TaskGroup, and the specific Task's
-  ///  index in the TaskGroup (0 through BATCH_TASK_COUNT - 1).
+  /// Tasks get a BATCH_TASK_INDEX and BATCH_TASK_COUNT environment variable, in
+  /// addition to any environment variables set in task_environments, specifying
+  /// the number of Tasks in the Task's parent TaskGroup, and the specific Task's
+  /// index in the TaskGroup (0 through BATCH_TASK_COUNT - 1).
   @$pb.TagNumber(9)
-  $core.List<Environment> get taskEnvironments => $_getList(5);
+  $pb.PbList<Environment> get taskEnvironments => $_getList(5);
 
   /// Max number of tasks that can be run on a VM at the same time.
   /// If not specified, the system will decide a value based on available
@@ -4073,7 +3940,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasTaskCountPerNode() => $_has(6);
   @$pb.TagNumber(10)
-  void clearTaskCountPerNode() => clearField(10);
+  void clearTaskCountPerNode() => $_clearField(10);
 
   /// When true, Batch will populate a file with a list of all VMs assigned to
   /// the TaskGroup and set the BATCH_HOSTS_FILE environment variable to the path
@@ -4088,7 +3955,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasRequireHostsFile() => $_has(7);
   @$pb.TagNumber(11)
-  void clearRequireHostsFile() => clearField(11);
+  void clearRequireHostsFile() => $_clearField(11);
 
   /// When true, Batch will configure SSH to allow passwordless login between
   /// VMs running the Batch tasks in the same TaskGroup.
@@ -4102,7 +3969,7 @@ class TaskGroup extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasPermissiveSsh() => $_has(8);
   @$pb.TagNumber(12)
-  void clearPermissiveSsh() => clearField(12);
+  void clearPermissiveSsh() => $_clearField(12);
 }
 
 /// Carries information about a Google Cloud service account.
@@ -4137,13 +4004,9 @@ class ServiceAccount extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'scopes')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccount clone() => ServiceAccount()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceAccount copyWith(void Function(ServiceAccount) updates) =>
       super.copyWith((message) => updates(message as ServiceAccount))
           as ServiceAccount;
@@ -4174,12 +4037,12 @@ class ServiceAccount extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEmail() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEmail() => clearField(1);
+  void clearEmail() => $_clearField(1);
 
   /// List of scopes to be enabled for this service account on the VM, in
   /// addition to the cloud-platform API scope that will be added by default.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get scopes => $_getList(1);
+  $pb.PbList<$core.String> get scopes => $_getList(1);
 }
 
 /// The data within all Job events.
@@ -4209,13 +4072,9 @@ class JobEventData extends $pb.GeneratedMessage {
     ..aOM<Job>(1, _omitFieldNames ? '' : 'payload', subBuilder: Job.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobEventData clone() => JobEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   JobEventData copyWith(void Function(JobEventData) updates) =>
       super.copyWith((message) => updates(message as JobEventData))
           as JobEventData;
@@ -4237,13 +4096,13 @@ class JobEventData extends $pb.GeneratedMessage {
   Job get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Job v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Job ensurePayload() => $_ensure(0);
 }

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/firebase/database/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,13 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $0;
+import '../../../../protobuf/struct.pb.dart' as $10;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The data within all Firebase Real Time Database reference events.
 class ReferenceEventData extends $pb.GeneratedMessage {
   factory ReferenceEventData({
-    $0.Value? data,
-    $0.Value? delta,
+    $10.Value? data,
+    $10.Value? delta,
   }) {
     final $result = create();
     if (data != null) {
@@ -43,19 +45,15 @@ class ReferenceEventData extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.firebase.database.v1'),
       createEmptyInstance: create)
-    ..aOM<$0.Value>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $0.Value.create)
-    ..aOM<$0.Value>(2, _omitFieldNames ? '' : 'delta',
-        subBuilder: $0.Value.create)
+    ..aOM<$10.Value>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $10.Value.create)
+    ..aOM<$10.Value>(2, _omitFieldNames ? '' : 'delta',
+        subBuilder: $10.Value.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReferenceEventData clone() => ReferenceEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReferenceEventData copyWith(void Function(ReferenceEventData) updates) =>
       super.copyWith((message) => updates(message as ReferenceEventData))
           as ReferenceEventData;
@@ -74,33 +72,33 @@ class ReferenceEventData extends $pb.GeneratedMessage {
 
   /// The original data for the reference.
   @$pb.TagNumber(1)
-  $0.Value get data => $_getN(0);
+  $10.Value get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($0.Value v) {
-    setField(1, v);
+  set data($10.Value v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $0.Value ensureData() => $_ensure(0);
+  $10.Value ensureData() => $_ensure(0);
 
   /// The change in the reference data.
   @$pb.TagNumber(2)
-  $0.Value get delta => $_getN(1);
+  $10.Value get delta => $_getN(1);
   @$pb.TagNumber(2)
-  set delta($0.Value v) {
-    setField(2, v);
+  set delta($10.Value v) {
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasDelta() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDelta() => clearField(2);
+  void clearDelta() => $_clearField(2);
   @$pb.TagNumber(2)
-  $0.Value ensureDelta() => $_ensure(1);
+  $10.Value ensureDelta() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

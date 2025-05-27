@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/type/fraction.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,6 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// Represents a fraction in terms of a numerator divided by a denominator.
 class Fraction extends $pb.GeneratedMessage {
@@ -45,13 +47,9 @@ class Fraction extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'denominator')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Fraction clone() => Fraction()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Fraction copyWith(void Function(Fraction) updates) =>
       super.copyWith((message) => updates(message as Fraction)) as Fraction;
 
@@ -77,7 +75,7 @@ class Fraction extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNumerator() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNumerator() => clearField(1);
+  void clearNumerator() => $_clearField(1);
 
   /// The value by which the numerator is divided, e.g. 3 in 2/3. Must be
   /// positive.
@@ -91,7 +89,7 @@ class Fraction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDenominator() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDenominator() => clearField(2);
+  void clearDenominator() => $_clearField(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

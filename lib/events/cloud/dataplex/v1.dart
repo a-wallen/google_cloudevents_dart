@@ -1,19 +1,3 @@
-export '../../../src/events/cloud/dataplex/v1/data.pbenum.dart'
-    show
-        State,
-        DataScanType,
-        Lake_MetastoreStatus_State,
-        Zone_Type,
-        Zone_ResourceSpec_LocationType,
-        Asset_SecurityStatus_State,
-        Asset_ResourceSpec_Type,
-        Asset_ResourceSpec_AccessMode,
-        Asset_ResourceStatus_State,
-        Asset_DiscoveryStatus_State,
-        DataQualityRule_StatisticRangeExpectation_ColumnStatistic,
-        Task_TriggerSpec_Type,
-        Job_Service,
-        Job_State;
 export '../../../src/events/cloud/dataplex/v1/data.pb.dart'
     show
         Lake_Metastore,
@@ -98,6 +82,22 @@ export '../../../src/events/cloud/dataplex/v1/data.pb.dart'
         DataScanEventData,
         LakeEventData,
         DataAttributeEventData;
+export '../../../src/events/cloud/dataplex/v1/data.pbenum.dart'
+    show
+        State,
+        DataScanType,
+        Lake_MetastoreStatus_State,
+        Zone_Type,
+        Zone_ResourceSpec_LocationType,
+        Asset_SecurityStatus_State,
+        Asset_ResourceSpec_Type,
+        Asset_ResourceSpec_AccessMode,
+        Asset_ResourceStatus_State,
+        Asset_DiscoveryStatus_State,
+        DataQualityRule_StatisticRangeExpectation_ColumnStatistic,
+        Task_TriggerSpec_Type,
+        Job_Service,
+        Job_State;
 export '../../../src/events/cloud/dataplex/v1/events.pb.dart'
     show
         DataTaxonomyCreatedEvent,

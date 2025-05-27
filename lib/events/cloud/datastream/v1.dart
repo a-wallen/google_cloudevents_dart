@@ -1,9 +1,3 @@
-export '../../../src/events/cloud/datastream/v1/data.pbenum.dart'
-    show
-        PrivateConnection_State,
-        JsonFileFormat_SchemaFileFormat,
-        JsonFileFormat_JsonCompression,
-        Stream_State;
 export '../../../src/events/cloud/datastream/v1/data.pb.dart'
     show
         OracleProfile,
@@ -53,6 +47,12 @@ export '../../../src/events/cloud/datastream/v1/data.pb.dart'
         PrivateConnectionEventData,
         StreamEventData,
         RouteEventData;
+export '../../../src/events/cloud/datastream/v1/data.pbenum.dart'
+    show
+        PrivateConnection_State,
+        JsonFileFormat_SchemaFileFormat,
+        JsonFileFormat_JsonCompression,
+        Stream_State;
 export '../../../src/events/cloud/datastream/v1/events.pb.dart'
     show
         ConnectionProfileCreatedEvent,

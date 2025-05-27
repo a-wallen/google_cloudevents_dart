@@ -1,11 +1,3 @@
-export '../../../src/events/cloud/gkehub/v1/data.pbenum.dart'
-    show
-        FeatureResourceState_State,
-        FeatureState_Code,
-        ScopeLifecycleState_Code,
-        MembershipBindingLifecycleState_Code,
-        OnPremCluster_ClusterType,
-        MembershipState_Code;
 export '../../../src/events/cloud/gkehub/v1/data.pb.dart'
     show
         Feature,
@@ -35,6 +27,14 @@ export '../../../src/events/cloud/gkehub/v1/data.pb.dart'
         MembershipEventData,
         FeatureEventData,
         MembershipBindingEventData;
+export '../../../src/events/cloud/gkehub/v1/data.pbenum.dart'
+    show
+        FeatureResourceState_State,
+        FeatureState_Code,
+        ScopeLifecycleState_Code,
+        MembershipBindingLifecycleState_Code,
+        OnPremCluster_ClusterType,
+        MembershipState_Code;
 export '../../../src/events/cloud/gkehub/v1/events.pb.dart'
     show
         MembershipCreatedEvent,

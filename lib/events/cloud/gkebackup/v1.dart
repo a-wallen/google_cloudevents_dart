@@ -1,10 +1,3 @@
-export '../../../src/events/cloud/gkebackup/v1/data.pbenum.dart'
-    show
-        Backup_State,
-        Restore_State,
-        RestoreConfig_VolumeDataRestorePolicy,
-        RestoreConfig_ClusterResourceConflictPolicy,
-        RestoreConfig_NamespacedResourceRestoreMode;
 export '../../../src/events/cloud/gkebackup/v1/data.pb.dart'
     show
         Namespaces,
@@ -27,6 +20,13 @@ export '../../../src/events/cloud/gkebackup/v1/data.pb.dart'
         BackupEventData,
         BackupPlanEventData,
         RestoreEventData;
+export '../../../src/events/cloud/gkebackup/v1/data.pbenum.dart'
+    show
+        Backup_State,
+        Restore_State,
+        RestoreConfig_VolumeDataRestorePolicy,
+        RestoreConfig_ClusterResourceConflictPolicy,
+        RestoreConfig_NamespacedResourceRestoreMode;
 export '../../../src/events/cloud/gkebackup/v1/events.pb.dart'
     show
         BackupPlanCreatedEvent,

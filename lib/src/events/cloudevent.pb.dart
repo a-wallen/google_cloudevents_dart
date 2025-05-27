@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloudevent.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -12,6 +12,8 @@
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// Description of an extension attribute.
 class ExtensionAttribute extends $pb.GeneratedMessage {
@@ -49,13 +51,9 @@ class ExtensionAttribute extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'camelCaseName')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExtensionAttribute clone() => ExtensionAttribute()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExtensionAttribute copyWith(void Function(ExtensionAttribute) updates) =>
       super.copyWith((message) => updates(message as ExtensionAttribute))
           as ExtensionAttribute;
@@ -84,7 +82,7 @@ class ExtensionAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Description of the attribute.
   @$pb.TagNumber(2)
@@ -97,7 +95,7 @@ class ExtensionAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDescription() => clearField(2);
+  void clearDescription() => $_clearField(2);
 
   /// The name of the CloudEvents attribute in lower Camel case, e.g. "firebaseDatabaseHost".
   /// This only needs to be populated if the name would otherwise be mis-represented.
@@ -111,7 +109,7 @@ class ExtensionAttribute extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasCamelCaseName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCamelCaseName() => clearField(3);
+  void clearCamelCaseName() => $_clearField(3);
 }
 
 class Cloudevent {

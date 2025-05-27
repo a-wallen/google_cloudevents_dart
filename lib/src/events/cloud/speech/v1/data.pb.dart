@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/speech/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,6 +15,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -45,14 +47,10 @@ class CustomClass_ClassItem extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'value')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CustomClass_ClassItem clone() =>
       CustomClass_ClassItem()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CustomClass_ClassItem copyWith(
           void Function(CustomClass_ClassItem) updates) =>
       super.copyWith((message) => updates(message as CustomClass_ClassItem))
@@ -81,7 +79,7 @@ class CustomClass_ClassItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 /// A set of words or phrases that represents a common concept likely to appear
@@ -99,7 +97,7 @@ class CustomClass extends $pb.GeneratedMessage {
     CustomClass_State? state,
     $2.Timestamp? deleteTime,
     $2.Timestamp? expireTime,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
     $core.String? etag,
     $core.bool? reconciling,
   }) {
@@ -135,7 +133,7 @@ class CustomClass extends $pb.GeneratedMessage {
       $result.expireTime = expireTime;
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     if (etag != null) {
       $result.etag = etag;
@@ -185,13 +183,9 @@ class CustomClass extends $pb.GeneratedMessage {
     ..aOB(15, _omitFieldNames ? '' : 'reconciling')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CustomClass clone() => CustomClass()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CustomClass copyWith(void Function(CustomClass) updates) =>
       super.copyWith((message) => updates(message as CustomClass))
           as CustomClass;
@@ -218,7 +212,7 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// If this custom class is a resource, the custom_class_id is the resource id
   /// of the CustomClass. Case sensitive.
@@ -232,11 +226,11 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCustomClassId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCustomClassId() => clearField(2);
+  void clearCustomClassId() => $_clearField(2);
 
   /// A collection of class items.
   @$pb.TagNumber(3)
-  $core.List<CustomClass_ClassItem> get items => $_getList(2);
+  $pb.PbList<CustomClass_ClassItem> get items => $_getList(2);
 
   /// Output only. The [KMS key
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#keys) with which
@@ -252,7 +246,7 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasKmsKeyName() => $_has(3);
   @$pb.TagNumber(6)
-  void clearKmsKeyName() => clearField(6);
+  void clearKmsKeyName() => $_clearField(6);
 
   /// Output only. The [KMS key version
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#key_versions)
@@ -268,7 +262,7 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasKmsKeyVersionName() => $_has(4);
   @$pb.TagNumber(7)
-  void clearKmsKeyVersionName() => clearField(7);
+  void clearKmsKeyVersionName() => $_clearField(7);
 
   /// Output only. System-assigned unique identifier for the CustomClass.
   /// This field is not used.
@@ -282,7 +276,7 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasUid() => $_has(5);
   @$pb.TagNumber(8)
-  void clearUid() => clearField(8);
+  void clearUid() => $_clearField(8);
 
   /// Output only. User-settable, human-readable name for the CustomClass. Must
   /// be 63 characters or less. This field is not used.
@@ -296,7 +290,7 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasDisplayName() => $_has(6);
   @$pb.TagNumber(9)
-  void clearDisplayName() => clearField(9);
+  void clearDisplayName() => $_clearField(9);
 
   /// Output only. The CustomClass lifecycle state.
   /// This field is not used.
@@ -304,13 +298,13 @@ class CustomClass extends $pb.GeneratedMessage {
   CustomClass_State get state => $_getN(7);
   @$pb.TagNumber(10)
   set state(CustomClass_State v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(10)
-  void clearState() => clearField(10);
+  void clearState() => $_clearField(10);
 
   /// Output only. The time at which this resource was requested for deletion.
   /// This field is not used.
@@ -318,13 +312,13 @@ class CustomClass extends $pb.GeneratedMessage {
   $2.Timestamp get deleteTime => $_getN(8);
   @$pb.TagNumber(11)
   set deleteTime($2.Timestamp v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasDeleteTime() => $_has(8);
   @$pb.TagNumber(11)
-  void clearDeleteTime() => clearField(11);
+  void clearDeleteTime() => $_clearField(11);
   @$pb.TagNumber(11)
   $2.Timestamp ensureDeleteTime() => $_ensure(8);
 
@@ -334,13 +328,13 @@ class CustomClass extends $pb.GeneratedMessage {
   $2.Timestamp get expireTime => $_getN(9);
   @$pb.TagNumber(12)
   set expireTime($2.Timestamp v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasExpireTime() => $_has(9);
   @$pb.TagNumber(12)
-  void clearExpireTime() => clearField(12);
+  void clearExpireTime() => $_clearField(12);
   @$pb.TagNumber(12)
   $2.Timestamp ensureExpireTime() => $_ensure(9);
 
@@ -349,7 +343,7 @@ class CustomClass extends $pb.GeneratedMessage {
   /// At most 100 annotations.
   /// This field is not used.
   @$pb.TagNumber(13)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(10);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(10);
 
   /// Output only. This checksum is computed by the server based on the value of
   /// other fields. This may be sent on update, undelete, and delete requests to
@@ -365,7 +359,7 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasEtag() => $_has(11);
   @$pb.TagNumber(14)
-  void clearEtag() => clearField(14);
+  void clearEtag() => $_clearField(14);
 
   /// Output only. Whether or not this CustomClass is in the process of being
   /// updated. This field is not used.
@@ -379,34 +373,34 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasReconciling() => $_has(12);
   @$pb.TagNumber(15)
-  void clearReconciling() => clearField(15);
+  void clearReconciling() => $_clearField(15);
 }
 
-///  A phrases containing words and phrase "hints" so that
-///  the speech recognition is more likely to recognize them. This can be used
-///  to improve the accuracy for specific words and phrases, for example, if
-///  specific commands are typically spoken by the user. This can also be used
-///  to add additional words to the vocabulary of the recognizer. See
-///  [usage limits](https://cloud.google.com/speech-to-text/quotas#content).
+/// A phrases containing words and phrase "hints" so that
+/// the speech recognition is more likely to recognize them. This can be used
+/// to improve the accuracy for specific words and phrases, for example, if
+/// specific commands are typically spoken by the user. This can also be used
+/// to add additional words to the vocabulary of the recognizer. See
+/// [usage limits](https://cloud.google.com/speech-to-text/quotas#content).
 ///
-///  List items can also include pre-built or custom classes containing groups
-///  of words that represent common concepts that occur in natural language. For
-///  example, rather than providing a phrase hint for every month of the
-///  year (e.g. "i was born in january", "i was born in febuary", ...), use the
-///  pre-built `$MONTH` class improves the likelihood of correctly transcribing
-///  audio that includes months (e.g. "i was born in $month").
-///  To refer to pre-built classes, use the class' symbol prepended with `$`
-///  e.g. `$MONTH`. To refer to custom classes that were defined inline in the
-///  request, set the class's `custom_class_id` to a string unique to all class
-///  resources and inline classes. Then use the class' id wrapped in $`{...}`
-///  e.g. "${my-months}". To refer to custom classes resources, use the class'
-///  id wrapped in `${}` (e.g. `${my-months}`).
+/// List items can also include pre-built or custom classes containing groups
+/// of words that represent common concepts that occur in natural language. For
+/// example, rather than providing a phrase hint for every month of the
+/// year (e.g. "i was born in january", "i was born in febuary", ...), use the
+/// pre-built `$MONTH` class improves the likelihood of correctly transcribing
+/// audio that includes months (e.g. "i was born in $month").
+/// To refer to pre-built classes, use the class' symbol prepended with `$`
+/// e.g. `$MONTH`. To refer to custom classes that were defined inline in the
+/// request, set the class's `custom_class_id` to a string unique to all class
+/// resources and inline classes. Then use the class' id wrapped in $`{...}`
+/// e.g. "${my-months}". To refer to custom classes resources, use the class'
+/// id wrapped in `${}` (e.g. `${my-months}`).
 ///
-///  Speech-to-Text supports three locations: `global`, `us` (US North America),
-///  and `eu` (Europe). If you are calling the `speech.googleapis.com`
-///  endpoint, use the `global` location. To specify a region, use a
-///  [regional endpoint](https://cloud.google.com/speech-to-text/docs/endpoints)
-///  with matching `us` or `eu` location value.
+/// Speech-to-Text supports three locations: `global`, `us` (US North America),
+/// and `eu` (Europe). If you are calling the `speech.googleapis.com`
+/// endpoint, use the `global` location. To specify a region, use a
+/// [regional endpoint](https://cloud.google.com/speech-to-text/docs/endpoints)
+/// with matching `us` or `eu` location value.
 class PhraseSet_Phrase extends $pb.GeneratedMessage {
   factory PhraseSet_Phrase({
     $core.String? value,
@@ -438,13 +432,9 @@ class PhraseSet_Phrase extends $pb.GeneratedMessage {
     ..a<$core.double>(2, _omitFieldNames ? '' : 'boost', $pb.PbFieldType.OF)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PhraseSet_Phrase clone() => PhraseSet_Phrase()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PhraseSet_Phrase copyWith(void Function(PhraseSet_Phrase) updates) =>
       super.copyWith((message) => updates(message as PhraseSet_Phrase))
           as PhraseSet_Phrase;
@@ -472,7 +462,7 @@ class PhraseSet_Phrase extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 
   /// Hint Boost. Overrides the boost set at the phrase set level.
   /// Positive value will increase the probability that a specific phrase will
@@ -493,7 +483,7 @@ class PhraseSet_Phrase extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasBoost() => $_has(1);
   @$pb.TagNumber(2)
-  void clearBoost() => clearField(2);
+  void clearBoost() => $_clearField(2);
 }
 
 /// Provides "hints" to the speech recognizer to favor specific words and phrases
@@ -510,7 +500,7 @@ class PhraseSet extends $pb.GeneratedMessage {
     PhraseSet_State? state,
     $2.Timestamp? deleteTime,
     $2.Timestamp? expireTime,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
     $core.String? etag,
     $core.bool? reconciling,
   }) {
@@ -546,7 +536,7 @@ class PhraseSet extends $pb.GeneratedMessage {
       $result.expireTime = expireTime;
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     if (etag != null) {
       $result.etag = etag;
@@ -595,13 +585,9 @@ class PhraseSet extends $pb.GeneratedMessage {
     ..aOB(16, _omitFieldNames ? '' : 'reconciling')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PhraseSet clone() => PhraseSet()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PhraseSet copyWith(void Function(PhraseSet) updates) =>
       super.copyWith((message) => updates(message as PhraseSet)) as PhraseSet;
 
@@ -627,11 +613,11 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// A list of word and phrases.
   @$pb.TagNumber(2)
-  $core.List<PhraseSet_Phrase> get phrases => $_getList(1);
+  $pb.PbList<PhraseSet_Phrase> get phrases => $_getList(1);
 
   /// Hint Boost. Positive value will increase the probability that a specific
   /// phrase will be recognized over other similar sounding phrases. The higher
@@ -652,7 +638,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasBoost() => $_has(2);
   @$pb.TagNumber(4)
-  void clearBoost() => clearField(4);
+  void clearBoost() => $_clearField(4);
 
   /// Output only. The [KMS key
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#keys) with which
@@ -668,7 +654,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasKmsKeyName() => $_has(3);
   @$pb.TagNumber(7)
-  void clearKmsKeyName() => clearField(7);
+  void clearKmsKeyName() => $_clearField(7);
 
   /// Output only. The [KMS key version
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#key_versions)
@@ -684,7 +670,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasKmsKeyVersionName() => $_has(4);
   @$pb.TagNumber(8)
-  void clearKmsKeyVersionName() => clearField(8);
+  void clearKmsKeyVersionName() => $_clearField(8);
 
   /// Output only. System-assigned unique identifier for the PhraseSet.
   /// This field is not used.
@@ -698,7 +684,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasUid() => $_has(5);
   @$pb.TagNumber(9)
-  void clearUid() => clearField(9);
+  void clearUid() => $_clearField(9);
 
   /// Output only. User-settable, human-readable name for the PhraseSet. Must be
   /// 63 characters or less. This field is not used.
@@ -712,7 +698,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasDisplayName() => $_has(6);
   @$pb.TagNumber(10)
-  void clearDisplayName() => clearField(10);
+  void clearDisplayName() => $_clearField(10);
 
   /// Output only. The CustomClass lifecycle state.
   /// This field is not used.
@@ -720,13 +706,13 @@ class PhraseSet extends $pb.GeneratedMessage {
   PhraseSet_State get state => $_getN(7);
   @$pb.TagNumber(11)
   set state(PhraseSet_State v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(11)
-  void clearState() => clearField(11);
+  void clearState() => $_clearField(11);
 
   /// Output only. The time at which this resource was requested for deletion.
   /// This field is not used.
@@ -734,13 +720,13 @@ class PhraseSet extends $pb.GeneratedMessage {
   $2.Timestamp get deleteTime => $_getN(8);
   @$pb.TagNumber(12)
   set deleteTime($2.Timestamp v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasDeleteTime() => $_has(8);
   @$pb.TagNumber(12)
-  void clearDeleteTime() => clearField(12);
+  void clearDeleteTime() => $_clearField(12);
   @$pb.TagNumber(12)
   $2.Timestamp ensureDeleteTime() => $_ensure(8);
 
@@ -750,13 +736,13 @@ class PhraseSet extends $pb.GeneratedMessage {
   $2.Timestamp get expireTime => $_getN(9);
   @$pb.TagNumber(13)
   set expireTime($2.Timestamp v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasExpireTime() => $_has(9);
   @$pb.TagNumber(13)
-  void clearExpireTime() => clearField(13);
+  void clearExpireTime() => $_clearField(13);
   @$pb.TagNumber(13)
   $2.Timestamp ensureExpireTime() => $_ensure(9);
 
@@ -765,7 +751,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   /// At most 100 annotations.
   /// This field is not used.
   @$pb.TagNumber(14)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(10);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(10);
 
   /// Output only. This checksum is computed by the server based on the value of
   /// other fields. This may be sent on update, undelete, and delete requests to
@@ -781,7 +767,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasEtag() => $_has(11);
   @$pb.TagNumber(15)
-  void clearEtag() => clearField(15);
+  void clearEtag() => $_clearField(15);
 
   /// Output only. Whether or not this PhraseSet is in the process of being
   /// updated. This field is not used.
@@ -795,7 +781,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasReconciling() => $_has(12);
   @$pb.TagNumber(16)
-  void clearReconciling() => clearField(16);
+  void clearReconciling() => $_clearField(16);
 }
 
 /// The data within all PhraseSet events.
@@ -826,13 +812,9 @@ class PhraseSetEventData extends $pb.GeneratedMessage {
         subBuilder: PhraseSet.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PhraseSetEventData clone() => PhraseSetEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PhraseSetEventData copyWith(void Function(PhraseSetEventData) updates) =>
       super.copyWith((message) => updates(message as PhraseSetEventData))
           as PhraseSetEventData;
@@ -854,13 +836,13 @@ class PhraseSetEventData extends $pb.GeneratedMessage {
   PhraseSet get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(PhraseSet v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   PhraseSet ensurePayload() => $_ensure(0);
 }
@@ -893,14 +875,10 @@ class CustomClassEventData extends $pb.GeneratedMessage {
         subBuilder: CustomClass.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CustomClassEventData clone() =>
       CustomClassEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CustomClassEventData copyWith(void Function(CustomClassEventData) updates) =>
       super.copyWith((message) => updates(message as CustomClassEventData))
           as CustomClassEventData;
@@ -922,13 +900,13 @@ class CustomClassEventData extends $pb.GeneratedMessage {
   CustomClass get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(CustomClass v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   CustomClass ensurePayload() => $_ensure(0);
 }

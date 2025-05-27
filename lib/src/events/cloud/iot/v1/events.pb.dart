@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/iot/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $38;
+import 'data.pb.dart' as $36;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// CreateDevice event.
 class CreateDeviceEvent extends $pb.GeneratedMessage {
   factory CreateDeviceEvent({
-    $38.DeviceEventData? data,
+    $36.DeviceEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -39,17 +41,13 @@ class CreateDeviceEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..aOM<$38.DeviceEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $38.DeviceEventData.create)
+    ..aOM<$36.DeviceEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $36.DeviceEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CreateDeviceEvent clone() => CreateDeviceEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CreateDeviceEvent copyWith(void Function(CreateDeviceEvent) updates) =>
       super.copyWith((message) => updates(message as CreateDeviceEvent))
           as CreateDeviceEvent;
@@ -68,24 +66,24 @@ class CreateDeviceEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $38.DeviceEventData get data => $_getN(0);
+  $36.DeviceEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($38.DeviceEventData v) {
-    setField(1, v);
+  set data($36.DeviceEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $38.DeviceEventData ensureData() => $_ensure(0);
+  $36.DeviceEventData ensureData() => $_ensure(0);
 }
 
 /// UpdateDevice event.
 class UpdateDeviceEvent extends $pb.GeneratedMessage {
   factory UpdateDeviceEvent({
-    $38.DeviceEventData? data,
+    $36.DeviceEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -106,17 +104,13 @@ class UpdateDeviceEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..aOM<$38.DeviceEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $38.DeviceEventData.create)
+    ..aOM<$36.DeviceEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $36.DeviceEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateDeviceEvent clone() => UpdateDeviceEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateDeviceEvent copyWith(void Function(UpdateDeviceEvent) updates) =>
       super.copyWith((message) => updates(message as UpdateDeviceEvent))
           as UpdateDeviceEvent;
@@ -135,24 +129,24 @@ class UpdateDeviceEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $38.DeviceEventData get data => $_getN(0);
+  $36.DeviceEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($38.DeviceEventData v) {
-    setField(1, v);
+  set data($36.DeviceEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $38.DeviceEventData ensureData() => $_ensure(0);
+  $36.DeviceEventData ensureData() => $_ensure(0);
 }
 
 /// DeleteDevice event.
 class DeleteDeviceEvent extends $pb.GeneratedMessage {
   factory DeleteDeviceEvent({
-    $38.DeviceEventData? data,
+    $36.DeviceEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -173,17 +167,13 @@ class DeleteDeviceEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..aOM<$38.DeviceEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $38.DeviceEventData.create)
+    ..aOM<$36.DeviceEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $36.DeviceEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteDeviceEvent clone() => DeleteDeviceEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteDeviceEvent copyWith(void Function(DeleteDeviceEvent) updates) =>
       super.copyWith((message) => updates(message as DeleteDeviceEvent))
           as DeleteDeviceEvent;
@@ -202,24 +192,24 @@ class DeleteDeviceEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $38.DeviceEventData get data => $_getN(0);
+  $36.DeviceEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($38.DeviceEventData v) {
-    setField(1, v);
+  set data($36.DeviceEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $38.DeviceEventData ensureData() => $_ensure(0);
+  $36.DeviceEventData ensureData() => $_ensure(0);
 }
 
 /// CreateDeviceRegistry event.
 class CreateDeviceRegistryEvent extends $pb.GeneratedMessage {
   factory CreateDeviceRegistryEvent({
-    $38.RegistryEventData? data,
+    $36.RegistryEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -240,18 +230,14 @@ class CreateDeviceRegistryEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..aOM<$38.RegistryEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $38.RegistryEventData.create)
+    ..aOM<$36.RegistryEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $36.RegistryEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CreateDeviceRegistryEvent clone() =>
       CreateDeviceRegistryEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CreateDeviceRegistryEvent copyWith(
           void Function(CreateDeviceRegistryEvent) updates) =>
       super.copyWith((message) => updates(message as CreateDeviceRegistryEvent))
@@ -271,24 +257,24 @@ class CreateDeviceRegistryEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $38.RegistryEventData get data => $_getN(0);
+  $36.RegistryEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($38.RegistryEventData v) {
-    setField(1, v);
+  set data($36.RegistryEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $38.RegistryEventData ensureData() => $_ensure(0);
+  $36.RegistryEventData ensureData() => $_ensure(0);
 }
 
 /// UpdateDeviceRegistry event.
 class UpdateDeviceRegistryEvent extends $pb.GeneratedMessage {
   factory UpdateDeviceRegistryEvent({
-    $38.RegistryEventData? data,
+    $36.RegistryEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -309,18 +295,14 @@ class UpdateDeviceRegistryEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..aOM<$38.RegistryEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $38.RegistryEventData.create)
+    ..aOM<$36.RegistryEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $36.RegistryEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateDeviceRegistryEvent clone() =>
       UpdateDeviceRegistryEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateDeviceRegistryEvent copyWith(
           void Function(UpdateDeviceRegistryEvent) updates) =>
       super.copyWith((message) => updates(message as UpdateDeviceRegistryEvent))
@@ -340,24 +322,24 @@ class UpdateDeviceRegistryEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $38.RegistryEventData get data => $_getN(0);
+  $36.RegistryEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($38.RegistryEventData v) {
-    setField(1, v);
+  set data($36.RegistryEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $38.RegistryEventData ensureData() => $_ensure(0);
+  $36.RegistryEventData ensureData() => $_ensure(0);
 }
 
 /// DeleteDeviceRegistry event.
 class DeleteDeviceRegistryEvent extends $pb.GeneratedMessage {
   factory DeleteDeviceRegistryEvent({
-    $38.RegistryEventData? data,
+    $36.RegistryEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -378,18 +360,14 @@ class DeleteDeviceRegistryEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.iot.v1'),
       createEmptyInstance: create)
-    ..aOM<$38.RegistryEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $38.RegistryEventData.create)
+    ..aOM<$36.RegistryEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $36.RegistryEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteDeviceRegistryEvent clone() =>
       DeleteDeviceRegistryEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteDeviceRegistryEvent copyWith(
           void Function(DeleteDeviceRegistryEvent) updates) =>
       super.copyWith((message) => updates(message as DeleteDeviceRegistryEvent))
@@ -409,18 +387,18 @@ class DeleteDeviceRegistryEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $38.RegistryEventData get data => $_getN(0);
+  $36.RegistryEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($38.RegistryEventData v) {
-    setField(1, v);
+  set data($36.RegistryEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $38.RegistryEventData ensureData() => $_ensure(0);
+  $36.RegistryEventData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

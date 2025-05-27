@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/storage/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $37;
+import 'data.pb.dart' as $47;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when an object is finalized in Google Cloud Storage.
 class ObjectFinalizedEvent extends $pb.GeneratedMessage {
   factory ObjectFinalizedEvent({
-    $37.StorageObjectData? data,
+    $47.StorageObjectData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -39,18 +41,14 @@ class ObjectFinalizedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.storage.v1'),
       createEmptyInstance: create)
-    ..aOM<$37.StorageObjectData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $37.StorageObjectData.create)
+    ..aOM<$47.StorageObjectData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $47.StorageObjectData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ObjectFinalizedEvent clone() =>
       ObjectFinalizedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ObjectFinalizedEvent copyWith(void Function(ObjectFinalizedEvent) updates) =>
       super.copyWith((message) => updates(message as ObjectFinalizedEvent))
           as ObjectFinalizedEvent;
@@ -69,24 +67,24 @@ class ObjectFinalizedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $37.StorageObjectData get data => $_getN(0);
+  $47.StorageObjectData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($37.StorageObjectData v) {
-    setField(1, v);
+  set data($47.StorageObjectData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $37.StorageObjectData ensureData() => $_ensure(0);
+  $47.StorageObjectData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an object is archived in Google Cloud Storage.
 class ObjectArchivedEvent extends $pb.GeneratedMessage {
   factory ObjectArchivedEvent({
-    $37.StorageObjectData? data,
+    $47.StorageObjectData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -107,17 +105,13 @@ class ObjectArchivedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.storage.v1'),
       createEmptyInstance: create)
-    ..aOM<$37.StorageObjectData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $37.StorageObjectData.create)
+    ..aOM<$47.StorageObjectData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $47.StorageObjectData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ObjectArchivedEvent clone() => ObjectArchivedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ObjectArchivedEvent copyWith(void Function(ObjectArchivedEvent) updates) =>
       super.copyWith((message) => updates(message as ObjectArchivedEvent))
           as ObjectArchivedEvent;
@@ -136,24 +130,24 @@ class ObjectArchivedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $37.StorageObjectData get data => $_getN(0);
+  $47.StorageObjectData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($37.StorageObjectData v) {
-    setField(1, v);
+  set data($47.StorageObjectData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $37.StorageObjectData ensureData() => $_ensure(0);
+  $47.StorageObjectData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an object is deleted  in Google Cloud Storage.
 class ObjectDeletedEvent extends $pb.GeneratedMessage {
   factory ObjectDeletedEvent({
-    $37.StorageObjectData? data,
+    $47.StorageObjectData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -174,17 +168,13 @@ class ObjectDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.storage.v1'),
       createEmptyInstance: create)
-    ..aOM<$37.StorageObjectData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $37.StorageObjectData.create)
+    ..aOM<$47.StorageObjectData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $47.StorageObjectData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ObjectDeletedEvent clone() => ObjectDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ObjectDeletedEvent copyWith(void Function(ObjectDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ObjectDeletedEvent))
           as ObjectDeletedEvent;
@@ -203,25 +193,25 @@ class ObjectDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $37.StorageObjectData get data => $_getN(0);
+  $47.StorageObjectData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($37.StorageObjectData v) {
-    setField(1, v);
+  set data($47.StorageObjectData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $37.StorageObjectData ensureData() => $_ensure(0);
+  $47.StorageObjectData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when an object's metadata is updated  in Google Cloud
 /// Storage.
 class ObjectMetadataUpdatedEvent extends $pb.GeneratedMessage {
   factory ObjectMetadataUpdatedEvent({
-    $37.StorageObjectData? data,
+    $47.StorageObjectData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -242,18 +232,14 @@ class ObjectMetadataUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.storage.v1'),
       createEmptyInstance: create)
-    ..aOM<$37.StorageObjectData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $37.StorageObjectData.create)
+    ..aOM<$47.StorageObjectData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $47.StorageObjectData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ObjectMetadataUpdatedEvent clone() =>
       ObjectMetadataUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ObjectMetadataUpdatedEvent copyWith(
           void Function(ObjectMetadataUpdatedEvent) updates) =>
       super.copyWith(
@@ -274,18 +260,18 @@ class ObjectMetadataUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $37.StorageObjectData get data => $_getN(0);
+  $47.StorageObjectData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($37.StorageObjectData v) {
-    setField(1, v);
+  set data($47.StorageObjectData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $37.StorageObjectData ensureData() => $_ensure(0);
+  $47.StorageObjectData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/protobuf/empty.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,15 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-///  A generic empty message that you can re-use to avoid defining duplicated
-///  empty messages in your APIs. A typical example is to use it as the request
-///  or the response type of an API method. For instance:
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
+/// A generic empty message that you can re-use to avoid defining duplicated
+/// empty messages in your APIs. A typical example is to use it as the request
+/// or the response type of an API method. For instance:
 ///
-///      service Foo {
-///        rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty);
-///      }
+///     service Foo {
+///       rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty);
+///     }
 ///
-///  The JSON representation for `Empty` is empty JSON object `{}`.
+/// The JSON representation for `Empty` is empty JSON object `{}`.
 class Empty extends $pb.GeneratedMessage {
   factory Empty() => create();
   Empty._() : super();
@@ -39,13 +41,9 @@ class Empty extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Empty clone() => Empty()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Empty copyWith(void Function(Empty) updates) =>
       super.copyWith((message) => updates(message as Empty)) as Empty;
 

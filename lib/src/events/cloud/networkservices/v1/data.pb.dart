@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/networkservices/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,9 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $10;
+import '../../../../protobuf/duration.pb.dart' as $0;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -46,13 +48,9 @@ class TrafficPortSelector extends $pb.GeneratedMessage {
     ..pPS(1, _omitFieldNames ? '' : 'ports')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TrafficPortSelector clone() => TrafficPortSelector()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TrafficPortSelector copyWith(void Function(TrafficPortSelector) updates) =>
       super.copyWith((message) => updates(message as TrafficPortSelector))
           as TrafficPortSelector;
@@ -74,7 +72,7 @@ class TrafficPortSelector extends $pb.GeneratedMessage {
   /// 80 and 90) or named ports or * to specify all ports. If the
   /// list is empty, all ports are selected.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get ports => $_getList(0);
+  $pb.PbList<$core.String> get ports => $_getList(0);
 }
 
 /// Defines a name-pair value for a single label.
@@ -114,15 +112,11 @@ class EndpointMatcher_MetadataLabelMatcher_MetadataLabels
     ..aOS(2, _omitFieldNames ? '' : 'labelValue')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointMatcher_MetadataLabelMatcher_MetadataLabels clone() =>
       EndpointMatcher_MetadataLabelMatcher_MetadataLabels()
         ..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointMatcher_MetadataLabelMatcher_MetadataLabels copyWith(
           void Function(EndpointMatcher_MetadataLabelMatcher_MetadataLabels)
               updates) =>
@@ -157,7 +151,7 @@ class EndpointMatcher_MetadataLabelMatcher_MetadataLabels
   @$pb.TagNumber(1)
   $core.bool hasLabelName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearLabelName() => clearField(1);
+  void clearLabelName() => $_clearField(1);
 
   /// Required. Label value presented as value corresponding to the above
   /// key, in xDS Node Metadata.
@@ -171,7 +165,7 @@ class EndpointMatcher_MetadataLabelMatcher_MetadataLabels
   @$pb.TagNumber(2)
   $core.bool hasLabelValue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearLabelValue() => clearField(2);
+  void clearLabelValue() => $_clearField(2);
 }
 
 /// The matcher that is based on node metadata presented by xDS clients.
@@ -220,14 +214,10 @@ class EndpointMatcher_MetadataLabelMatcher extends $pb.GeneratedMessage {
         subBuilder: EndpointMatcher_MetadataLabelMatcher_MetadataLabels.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointMatcher_MetadataLabelMatcher clone() =>
       EndpointMatcher_MetadataLabelMatcher()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointMatcher_MetadataLabelMatcher copyWith(
           void Function(EndpointMatcher_MetadataLabelMatcher) updates) =>
       super.copyWith((message) =>
@@ -248,45 +238,45 @@ class EndpointMatcher_MetadataLabelMatcher extends $pb.GeneratedMessage {
           EndpointMatcher_MetadataLabelMatcher>(create);
   static EndpointMatcher_MetadataLabelMatcher? _defaultInstance;
 
-  ///  Specifies how matching should be done.
+  /// Specifies how matching should be done.
   ///
-  ///  Supported values are:
-  ///  MATCH_ANY: At least one of the Labels specified in the
-  ///    matcher should match the metadata presented by xDS client.
-  ///  MATCH_ALL: The metadata presented by the xDS client should
-  ///    contain all of the labels specified here.
+  /// Supported values are:
+  /// MATCH_ANY: At least one of the Labels specified in the
+  ///   matcher should match the metadata presented by xDS client.
+  /// MATCH_ALL: The metadata presented by the xDS client should
+  ///   contain all of the labels specified here.
   ///
-  ///  The selection is determined based on the best match. For
-  ///  example, suppose there are three EndpointPolicy
-  ///  resources P1, P2 and P3 and if P1 has a the matcher as
-  ///  MATCH_ANY <A:1, B:1>, P2 has MATCH_ALL <A:1,B:1>, and P3 has
-  ///  MATCH_ALL <A:1,B:1,C:1>.
+  /// The selection is determined based on the best match. For
+  /// example, suppose there are three EndpointPolicy
+  /// resources P1, P2 and P3 and if P1 has a the matcher as
+  /// MATCH_ANY <A:1, B:1>, P2 has MATCH_ALL <A:1,B:1>, and P3 has
+  /// MATCH_ALL <A:1,B:1,C:1>.
   ///
-  ///  If a client with label <A:1> connects, the config from P1
-  ///  will be selected.
+  /// If a client with label <A:1> connects, the config from P1
+  /// will be selected.
   ///
-  ///  If a client with label <A:1,B:1> connects, the config from P2
-  ///  will be selected.
+  /// If a client with label <A:1,B:1> connects, the config from P2
+  /// will be selected.
   ///
-  ///  If a client with label <A:1,B:1,C:1> connects, the config
-  ///  from P3 will be selected.
+  /// If a client with label <A:1,B:1,C:1> connects, the config
+  /// from P3 will be selected.
   ///
-  ///  If there is more than one best match, (for example, if a
-  ///  config P4 with selector <A:1,D:1> exists and if a client with
-  ///  label <A:1,B:1,D:1> connects), an error will be thrown.
+  /// If there is more than one best match, (for example, if a
+  /// config P4 with selector <A:1,D:1> exists and if a client with
+  /// label <A:1,B:1,D:1> connects), an error will be thrown.
   @$pb.TagNumber(1)
   EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria
       get metadataLabelMatchCriteria => $_getN(0);
   @$pb.TagNumber(1)
   set metadataLabelMatchCriteria(
       EndpointMatcher_MetadataLabelMatcher_MetadataLabelMatchCriteria v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasMetadataLabelMatchCriteria() => $_has(0);
   @$pb.TagNumber(1)
-  void clearMetadataLabelMatchCriteria() => clearField(1);
+  void clearMetadataLabelMatchCriteria() => $_clearField(1);
 
   /// The list of label value pairs that must match labels in the
   /// provided metadata based on filterMatchCriteria This list can
@@ -294,7 +284,7 @@ class EndpointMatcher_MetadataLabelMatcher extends $pb.GeneratedMessage {
   /// criteria is MATCH_ANY, to specify a wildcard match (i.e this
   /// matches any client).
   @$pb.TagNumber(2)
-  $core.List<EndpointMatcher_MetadataLabelMatcher_MetadataLabels>
+  $pb.PbList<EndpointMatcher_MetadataLabelMatcher_MetadataLabels>
       get metadataLabels => $_getList(1);
 }
 
@@ -336,13 +326,9 @@ class EndpointMatcher extends $pb.GeneratedMessage {
         subBuilder: EndpointMatcher_MetadataLabelMatcher.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointMatcher clone() => EndpointMatcher()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointMatcher copyWith(void Function(EndpointMatcher) updates) =>
       super.copyWith((message) => updates(message as EndpointMatcher))
           as EndpointMatcher;
@@ -361,20 +347,20 @@ class EndpointMatcher extends $pb.GeneratedMessage {
 
   EndpointMatcher_MatcherType whichMatcherType() =>
       _EndpointMatcher_MatcherTypeByTag[$_whichOneof(0)]!;
-  void clearMatcherType() => clearField($_whichOneof(0));
+  void clearMatcherType() => $_clearField($_whichOneof(0));
 
   /// The matcher is based on node metadata presented by xDS clients.
   @$pb.TagNumber(1)
   EndpointMatcher_MetadataLabelMatcher get metadataLabelMatcher => $_getN(0);
   @$pb.TagNumber(1)
   set metadataLabelMatcher(EndpointMatcher_MetadataLabelMatcher v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasMetadataLabelMatcher() => $_has(0);
   @$pb.TagNumber(1)
-  void clearMetadataLabelMatcher() => clearField(1);
+  void clearMetadataLabelMatcher() => $_clearField(1);
   @$pb.TagNumber(1)
   EndpointMatcher_MetadataLabelMatcher ensureMetadataLabelMatcher() =>
       $_ensure(0);
@@ -389,7 +375,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     EndpointPolicy_EndpointPolicyType? type,
     $core.String? authorizationPolicy,
     EndpointMatcher? endpointMatcher,
@@ -409,7 +395,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (type != null) {
       $result.type = type;
@@ -474,13 +460,9 @@ class EndpointPolicy extends $pb.GeneratedMessage {
     ..aOS(13, _omitFieldNames ? '' : 'clientTlsPolicy')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointPolicy clone() => EndpointPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointPolicy copyWith(void Function(EndpointPolicy) updates) =>
       super.copyWith((message) => updates(message as EndpointPolicy))
           as EndpointPolicy;
@@ -509,20 +491,20 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -531,19 +513,19 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Set of label tags associated with the EndpointPolicy resource.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Required. The type of endpoint policy. This is primarily used to validate
   /// the configuration.
@@ -551,13 +533,13 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   EndpointPolicy_EndpointPolicyType get type => $_getN(4);
   @$pb.TagNumber(5)
   set type(EndpointPolicy_EndpointPolicyType v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)
-  void clearType() => clearField(5);
+  void clearType() => $_clearField(5);
 
   /// Optional. This field specifies the URL of AuthorizationPolicy resource that
   /// applies authorization policies to the inbound traffic at the
@@ -574,7 +556,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasAuthorizationPolicy() => $_has(5);
   @$pb.TagNumber(7)
-  void clearAuthorizationPolicy() => clearField(7);
+  void clearAuthorizationPolicy() => $_clearField(7);
 
   /// Required. A matcher that selects endpoints to which the policies should be
   /// applied.
@@ -582,13 +564,13 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   EndpointMatcher get endpointMatcher => $_getN(6);
   @$pb.TagNumber(9)
   set endpointMatcher(EndpointMatcher v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasEndpointMatcher() => $_has(6);
   @$pb.TagNumber(9)
-  void clearEndpointMatcher() => clearField(9);
+  void clearEndpointMatcher() => $_clearField(9);
   @$pb.TagNumber(9)
   EndpointMatcher ensureEndpointMatcher() => $_ensure(6);
 
@@ -598,13 +580,13 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   TrafficPortSelector get trafficPortSelector => $_getN(7);
   @$pb.TagNumber(10)
   set trafficPortSelector(TrafficPortSelector v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasTrafficPortSelector() => $_has(7);
   @$pb.TagNumber(10)
-  void clearTrafficPortSelector() => clearField(10);
+  void clearTrafficPortSelector() => $_clearField(10);
   @$pb.TagNumber(10)
   TrafficPortSelector ensureTrafficPortSelector() => $_ensure(7);
 
@@ -620,7 +602,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasDescription() => $_has(8);
   @$pb.TagNumber(11)
-  void clearDescription() => clearField(11);
+  void clearDescription() => $_clearField(11);
 
   /// Optional. A URL referring to ServerTlsPolicy resource. ServerTlsPolicy is
   /// used to determine the authentication policy to be applied to terminate the
@@ -636,7 +618,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasServerTlsPolicy() => $_has(9);
   @$pb.TagNumber(12)
-  void clearServerTlsPolicy() => clearField(12);
+  void clearServerTlsPolicy() => $_clearField(12);
 
   /// Optional. A URL referring to a ClientTlsPolicy resource. ClientTlsPolicy
   /// can be set to specify the authentication for traffic from the proxy to the
@@ -656,7 +638,7 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasClientTlsPolicy() => $_has(10);
   @$pb.TagNumber(13)
-  void clearClientTlsPolicy() => clearField(13);
+  void clearClientTlsPolicy() => $_clearField(13);
 }
 
 /// Gateway represents the configuration for a proxy, typically a load balancer.
@@ -668,7 +650,7 @@ class Gateway extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     Gateway_Type? type,
     $core.Iterable<$core.String>? addresses,
@@ -692,7 +674,7 @@ class Gateway extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -769,13 +751,9 @@ class Gateway extends $pb.GeneratedMessage {
     ..aOS(18, _omitFieldNames ? '' : 'gatewaySecurityPolicy')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Gateway clone() => Gateway()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Gateway copyWith(void Function(Gateway) updates) =>
       super.copyWith((message) => updates(message as Gateway)) as Gateway;
 
@@ -802,20 +780,20 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -824,19 +802,19 @@ class Gateway extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Set of label tags associated with the Gateway resource.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Optional. A free-text description of the resource. Max length 1024
   /// characters.
@@ -850,7 +828,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Immutable. The type of the customer managed gateway.
   /// This field is required. If unspecified, an error is returned.
@@ -858,31 +836,31 @@ class Gateway extends $pb.GeneratedMessage {
   Gateway_Type get type => $_getN(5);
   @$pb.TagNumber(6)
   set type(Gateway_Type v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasType() => $_has(5);
   @$pb.TagNumber(6)
-  void clearType() => clearField(6);
+  void clearType() => $_clearField(6);
 
-  ///  Optional. Zero or one IPv4 or IPv6 address on which the Gateway will
-  ///  receive the traffic. When no address is provided, an IP from the subnetwork
-  ///  is allocated
+  /// Optional. Zero or one IPv4 or IPv6 address on which the Gateway will
+  /// receive the traffic. When no address is provided, an IP from the subnetwork
+  /// is allocated
   ///
-  ///  This field only applies to gateways of type 'SECURE_WEB_GATEWAY'.
-  ///  Gateways of type 'OPEN_MESH' listen on 0.0.0.0 for IPv4 and :: for IPv6.
+  /// This field only applies to gateways of type 'SECURE_WEB_GATEWAY'.
+  /// Gateways of type 'OPEN_MESH' listen on 0.0.0.0 for IPv4 and :: for IPv6.
   @$pb.TagNumber(7)
-  $core.List<$core.String> get addresses => $_getList(6);
+  $pb.PbList<$core.String> get addresses => $_getList(6);
 
-  ///  Optional. Scope determines how configuration across multiple Gateway
-  ///  instances are merged. The configuration for multiple Gateway instances with
-  ///  the same scope will be merged as presented as a single coniguration to the
-  ///  proxy/load balancer.
+  /// Optional. Scope determines how configuration across multiple Gateway
+  /// instances are merged. The configuration for multiple Gateway instances with
+  /// the same scope will be merged as presented as a single coniguration to the
+  /// proxy/load balancer.
   ///
-  ///  Max length 64 characters.
-  ///  Scope should start with a letter and can only have letters, numbers,
-  ///  hyphens.
+  /// Max length 64 characters.
+  /// Scope should start with a letter and can only have letters, numbers,
+  /// hyphens.
   @$pb.TagNumber(8)
   $core.String get scope => $_getSZ(7);
   @$pb.TagNumber(8)
@@ -893,7 +871,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasScope() => $_has(7);
   @$pb.TagNumber(8)
-  void clearScope() => clearField(8);
+  void clearScope() => $_clearField(8);
 
   /// Optional. A fully-qualified ServerTLSPolicy URL reference. Specifies how
   /// TLS traffic is terminated. If empty, TLS termination is disabled.
@@ -907,7 +885,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasServerTlsPolicy() => $_has(8);
   @$pb.TagNumber(9)
-  void clearServerTlsPolicy() => clearField(9);
+  void clearServerTlsPolicy() => $_clearField(9);
 
   /// Required. One or more port numbers (1-65535), on which the Gateway will
   /// receive traffic. The proxy binds to the specified ports.
@@ -915,7 +893,7 @@ class Gateway extends $pb.GeneratedMessage {
   /// Gateways of type 'OPEN_MESH' listen on 0.0.0.0 for IPv4 and :: for IPv6 and
   /// support multiple ports.
   @$pb.TagNumber(11)
-  $core.List<$core.int> get ports => $_getList(9);
+  $pb.PbList<$core.int> get ports => $_getList(9);
 
   /// Output only. Server-defined URL of this resource
   @$pb.TagNumber(13)
@@ -928,19 +906,19 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasSelfLink() => $_has(10);
   @$pb.TagNumber(13)
-  void clearSelfLink() => clearField(13);
+  void clearSelfLink() => $_clearField(13);
 
   /// Optional. A fully-qualified Certificates URL reference. The proxy presents
   /// a Certificate (selected based on SNI) when establishing a TLS connection.
   /// This feature only applies to gateways of type 'SECURE_WEB_GATEWAY'.
   @$pb.TagNumber(14)
-  $core.List<$core.String> get certificateUrls => $_getList(11);
+  $pb.PbList<$core.String> get certificateUrls => $_getList(11);
 
-  ///  Optional. The relative resource name identifying the VPC network that is
-  ///  using this configuration. For example:
-  ///  `projects/*/global/networks/network-1`.
+  /// Optional. The relative resource name identifying the VPC network that is
+  /// using this configuration. For example:
+  /// `projects/*/global/networks/network-1`.
   ///
-  ///  Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY'.
+  /// Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY'.
   @$pb.TagNumber(16)
   $core.String get network => $_getSZ(12);
   @$pb.TagNumber(16)
@@ -951,13 +929,13 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasNetwork() => $_has(12);
   @$pb.TagNumber(16)
-  void clearNetwork() => clearField(16);
+  void clearNetwork() => $_clearField(16);
 
-  ///  Optional. The relative resource name identifying  the subnetwork in which
-  ///  this SWG is allocated. For example:
-  ///  `projects/*/regions/us-central1/subnetworks/network-1`
+  /// Optional. The relative resource name identifying  the subnetwork in which
+  /// this SWG is allocated. For example:
+  /// `projects/*/regions/us-central1/subnetworks/network-1`
   ///
-  ///  Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY".
+  /// Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY".
   @$pb.TagNumber(17)
   $core.String get subnetwork => $_getSZ(13);
   @$pb.TagNumber(17)
@@ -968,16 +946,16 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.bool hasSubnetwork() => $_has(13);
   @$pb.TagNumber(17)
-  void clearSubnetwork() => clearField(17);
+  void clearSubnetwork() => $_clearField(17);
 
-  ///  Optional. A fully-qualified GatewaySecurityPolicy URL reference.
-  ///  Defines how a server should apply security policy to inbound
-  ///  (VM to Proxy) initiated connections.
+  /// Optional. A fully-qualified GatewaySecurityPolicy URL reference.
+  /// Defines how a server should apply security policy to inbound
+  /// (VM to Proxy) initiated connections.
   ///
-  ///  For example:
-  ///  `projects/*/locations/*/gatewaySecurityPolicies/swg-policy`.
+  /// For example:
+  /// `projects/*/locations/*/gatewaySecurityPolicies/swg-policy`.
   ///
-  ///  This policy is specific to gateways of type 'SECURE_WEB_GATEWAY'.
+  /// This policy is specific to gateways of type 'SECURE_WEB_GATEWAY'.
   @$pb.TagNumber(18)
   $core.String get gatewaySecurityPolicy => $_getSZ(14);
   @$pb.TagNumber(18)
@@ -988,7 +966,7 @@ class Gateway extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasGatewaySecurityPolicy() => $_has(14);
   @$pb.TagNumber(18)
-  void clearGatewaySecurityPolicy() => clearField(18);
+  void clearGatewaySecurityPolicy() => $_clearField(18);
 }
 
 /// Specifies a match against a method.
@@ -1037,14 +1015,10 @@ class GrpcRoute_MethodMatch extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'caseSensitive')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_MethodMatch clone() =>
       GrpcRoute_MethodMatch()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_MethodMatch copyWith(
           void Function(GrpcRoute_MethodMatch) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_MethodMatch))
@@ -1068,13 +1042,13 @@ class GrpcRoute_MethodMatch extends $pb.GeneratedMessage {
   GrpcRoute_MethodMatch_Type get type => $_getN(0);
   @$pb.TagNumber(1)
   set type(GrpcRoute_MethodMatch_Type v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// Required. Name of the service to match against. If unspecified, will
   /// match all services.
@@ -1088,7 +1062,7 @@ class GrpcRoute_MethodMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasGrpcService() => $_has(1);
   @$pb.TagNumber(2)
-  void clearGrpcService() => clearField(2);
+  void clearGrpcService() => $_clearField(2);
 
   /// Required. Name of the method to match against. If unspecified, will match
   /// all methods.
@@ -1102,7 +1076,7 @@ class GrpcRoute_MethodMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasGrpcMethod() => $_has(2);
   @$pb.TagNumber(3)
-  void clearGrpcMethod() => clearField(3);
+  void clearGrpcMethod() => $_clearField(3);
 
   /// Optional. Specifies that matches are case sensitive.  The default value
   /// is true. case_sensitive must not be used with a type of
@@ -1117,7 +1091,7 @@ class GrpcRoute_MethodMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasCaseSensitive() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCaseSensitive() => clearField(4);
+  void clearCaseSensitive() => $_clearField(4);
 }
 
 /// A match against a collection of headers.
@@ -1161,14 +1135,10 @@ class GrpcRoute_HeaderMatch extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'value')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_HeaderMatch clone() =>
       GrpcRoute_HeaderMatch()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_HeaderMatch copyWith(
           void Function(GrpcRoute_HeaderMatch) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_HeaderMatch))
@@ -1192,13 +1162,13 @@ class GrpcRoute_HeaderMatch extends $pb.GeneratedMessage {
   GrpcRoute_HeaderMatch_Type get type => $_getN(0);
   @$pb.TagNumber(1)
   set type(GrpcRoute_HeaderMatch_Type v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// Required. The key of the header.
   @$pb.TagNumber(2)
@@ -1211,7 +1181,7 @@ class GrpcRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasKey() => $_has(1);
   @$pb.TagNumber(2)
-  void clearKey() => clearField(2);
+  void clearKey() => $_clearField(2);
 
   /// Required. The value of the header.
   @$pb.TagNumber(3)
@@ -1224,7 +1194,7 @@ class GrpcRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasValue() => $_has(2);
   @$pb.TagNumber(3)
-  void clearValue() => clearField(3);
+  void clearValue() => $_clearField(3);
 }
 
 /// Criteria for matching traffic. A RouteMatch will be considered to match
@@ -1263,14 +1233,10 @@ class GrpcRoute_RouteMatch extends $pb.GeneratedMessage {
         subBuilder: GrpcRoute_HeaderMatch.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RouteMatch clone() =>
       GrpcRoute_RouteMatch()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RouteMatch copyWith(void Function(GrpcRoute_RouteMatch) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_RouteMatch))
           as GrpcRoute_RouteMatch;
@@ -1293,19 +1259,19 @@ class GrpcRoute_RouteMatch extends $pb.GeneratedMessage {
   GrpcRoute_MethodMatch get method => $_getN(0);
   @$pb.TagNumber(1)
   set method(GrpcRoute_MethodMatch v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasMethod() => $_has(0);
   @$pb.TagNumber(1)
-  void clearMethod() => clearField(1);
+  void clearMethod() => $_clearField(1);
   @$pb.TagNumber(1)
   GrpcRoute_MethodMatch ensureMethod() => $_ensure(0);
 
   /// Optional. Specifies a collection of headers to match.
   @$pb.TagNumber(2)
-  $core.List<GrpcRoute_HeaderMatch> get headers => $_getList(1);
+  $pb.PbList<GrpcRoute_HeaderMatch> get headers => $_getList(1);
 }
 
 enum GrpcRoute_Destination_DestinationType { serviceName, notSet }
@@ -1348,14 +1314,10 @@ class GrpcRoute_Destination extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'weight', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_Destination clone() =>
       GrpcRoute_Destination()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_Destination copyWith(
           void Function(GrpcRoute_Destination) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_Destination))
@@ -1375,7 +1337,7 @@ class GrpcRoute_Destination extends $pb.GeneratedMessage {
 
   GrpcRoute_Destination_DestinationType whichDestinationType() =>
       _GrpcRoute_Destination_DestinationTypeByTag[$_whichOneof(0)]!;
-  void clearDestinationType() => clearField($_whichOneof(0));
+  void clearDestinationType() => $_clearField($_whichOneof(0));
 
   /// Required. The URL of a destination service to which to route traffic.
   /// Must refer to either a BackendService or ServiceDirectoryService.
@@ -1389,22 +1351,22 @@ class GrpcRoute_Destination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasServiceName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearServiceName() => clearField(1);
+  void clearServiceName() => $_clearField(1);
 
-  ///  Optional. Specifies the proportion of requests forwarded to the backend
-  ///  referenced by the serviceName field. This is computed as:
-  ///          weight/Sum(weights in this destination list).
-  ///  For non-zero values, there may be some epsilon from the exact proportion
-  ///  defined here depending on the precision an implementation supports.
+  /// Optional. Specifies the proportion of requests forwarded to the backend
+  /// referenced by the serviceName field. This is computed as:
+  ///         weight/Sum(weights in this destination list).
+  /// For non-zero values, there may be some epsilon from the exact proportion
+  /// defined here depending on the precision an implementation supports.
   ///
-  ///  If only one serviceName is specified and it has a weight greater than 0,
-  ///  100% of the traffic is forwarded to that backend.
+  /// If only one serviceName is specified and it has a weight greater than 0,
+  /// 100% of the traffic is forwarded to that backend.
   ///
-  ///  If weights are specified for any one service name, they need to be
-  ///  specified for all of them.
+  /// If weights are specified for any one service name, they need to be
+  /// specified for all of them.
   ///
-  ///  If weights are unspecified for all services, then, traffic is distributed
-  ///  in equal proportions to all of them.
+  /// If weights are unspecified for all services, then, traffic is distributed
+  /// in equal proportions to all of them.
   @$pb.TagNumber(2)
   $core.int get weight => $_getIZ(1);
   @$pb.TagNumber(2)
@@ -1415,14 +1377,14 @@ class GrpcRoute_Destination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasWeight() => $_has(1);
   @$pb.TagNumber(2)
-  void clearWeight() => clearField(2);
+  void clearWeight() => $_clearField(2);
 }
 
 /// Specification of how client requests are delayed as part of fault
 /// injection before being sent to a destination.
 class GrpcRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   factory GrpcRoute_FaultInjectionPolicy_Delay({
-    $10.Duration? fixedDelay,
+    $0.Duration? fixedDelay,
     $core.int? percentage,
   }) {
     final $result = create();
@@ -1448,19 +1410,15 @@ class GrpcRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..aOM<$10.Duration>(1, _omitFieldNames ? '' : 'fixedDelay',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'fixedDelay',
+        subBuilder: $0.Duration.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'percentage', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_FaultInjectionPolicy_Delay clone() =>
       GrpcRoute_FaultInjectionPolicy_Delay()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_FaultInjectionPolicy_Delay copyWith(
           void Function(GrpcRoute_FaultInjectionPolicy_Delay) updates) =>
       super.copyWith((message) =>
@@ -1483,22 +1441,22 @@ class GrpcRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
 
   /// Specify a fixed delay before forwarding the request.
   @$pb.TagNumber(1)
-  $10.Duration get fixedDelay => $_getN(0);
+  $0.Duration get fixedDelay => $_getN(0);
   @$pb.TagNumber(1)
-  set fixedDelay($10.Duration v) {
-    setField(1, v);
+  set fixedDelay($0.Duration v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasFixedDelay() => $_has(0);
   @$pb.TagNumber(1)
-  void clearFixedDelay() => clearField(1);
+  void clearFixedDelay() => $_clearField(1);
   @$pb.TagNumber(1)
-  $10.Duration ensureFixedDelay() => $_ensure(0);
+  $0.Duration ensureFixedDelay() => $_ensure(0);
 
-  ///  The percentage of traffic on which delay will be injected.
+  /// The percentage of traffic on which delay will be injected.
   ///
-  ///  The value must be between [0, 100]
+  /// The value must be between [0, 100]
   @$pb.TagNumber(2)
   $core.int get percentage => $_getIZ(1);
   @$pb.TagNumber(2)
@@ -1509,7 +1467,7 @@ class GrpcRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPercentage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPercentage() => clearField(2);
+  void clearPercentage() => $_clearField(2);
 }
 
 /// Specification of how client requests are aborted as part of fault
@@ -1546,14 +1504,10 @@ class GrpcRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'percentage', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_FaultInjectionPolicy_Abort clone() =>
       GrpcRoute_FaultInjectionPolicy_Abort()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_FaultInjectionPolicy_Abort copyWith(
           void Function(GrpcRoute_FaultInjectionPolicy_Abort) updates) =>
       super.copyWith((message) =>
@@ -1574,9 +1528,9 @@ class GrpcRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
           GrpcRoute_FaultInjectionPolicy_Abort>(create);
   static GrpcRoute_FaultInjectionPolicy_Abort? _defaultInstance;
 
-  ///  The HTTP status code used to abort the request.
+  /// The HTTP status code used to abort the request.
   ///
-  ///  The value must be between 200 and 599 inclusive.
+  /// The value must be between 200 and 599 inclusive.
   @$pb.TagNumber(1)
   $core.int get httpStatus => $_getIZ(0);
   @$pb.TagNumber(1)
@@ -1587,11 +1541,11 @@ class GrpcRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHttpStatus() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHttpStatus() => clearField(1);
+  void clearHttpStatus() => $_clearField(1);
 
-  ///  The percentage of traffic which will be aborted.
+  /// The percentage of traffic which will be aborted.
   ///
-  ///  The value must be between [0, 100]
+  /// The value must be between [0, 100]
   @$pb.TagNumber(2)
   $core.int get percentage => $_getIZ(1);
   @$pb.TagNumber(2)
@@ -1602,7 +1556,7 @@ class GrpcRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPercentage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPercentage() => clearField(2);
+  void clearPercentage() => $_clearField(2);
 }
 
 /// The specification for fault injection introduced into traffic to test the
@@ -1646,14 +1600,10 @@ class GrpcRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
         subBuilder: GrpcRoute_FaultInjectionPolicy_Abort.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_FaultInjectionPolicy clone() =>
       GrpcRoute_FaultInjectionPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_FaultInjectionPolicy copyWith(
           void Function(GrpcRoute_FaultInjectionPolicy) updates) =>
       super.copyWith(
@@ -1678,13 +1628,13 @@ class GrpcRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
   GrpcRoute_FaultInjectionPolicy_Delay get delay => $_getN(0);
   @$pb.TagNumber(1)
   set delay(GrpcRoute_FaultInjectionPolicy_Delay v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasDelay() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDelay() => clearField(1);
+  void clearDelay() => $_clearField(1);
   @$pb.TagNumber(1)
   GrpcRoute_FaultInjectionPolicy_Delay ensureDelay() => $_ensure(0);
 
@@ -1693,13 +1643,13 @@ class GrpcRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
   GrpcRoute_FaultInjectionPolicy_Abort get abort => $_getN(1);
   @$pb.TagNumber(2)
   set abort(GrpcRoute_FaultInjectionPolicy_Abort v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasAbort() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAbort() => clearField(2);
+  void clearAbort() => $_clearField(2);
   @$pb.TagNumber(2)
   GrpcRoute_FaultInjectionPolicy_Abort ensureAbort() => $_ensure(1);
 }
@@ -1736,14 +1686,10 @@ class GrpcRoute_RetryPolicy extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'numRetries', $pb.PbFieldType.OU3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RetryPolicy clone() =>
       GrpcRoute_RetryPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RetryPolicy copyWith(
           void Function(GrpcRoute_RetryPolicy) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_RetryPolicy))
@@ -1778,7 +1724,7 @@ class GrpcRoute_RetryPolicy extends $pb.GeneratedMessage {
   /// - unavailable: Router will retry if the gRPC status code in the response
   ///    header is set to unavailable
   @$pb.TagNumber(1)
-  $core.List<$core.String> get retryConditions => $_getList(0);
+  $pb.PbList<$core.String> get retryConditions => $_getList(0);
 
   /// Specifies the allowed number of retries. This number must be > 0. If not
   /// specified, default to 1.
@@ -1792,7 +1738,7 @@ class GrpcRoute_RetryPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNumRetries() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNumRetries() => clearField(2);
+  void clearNumRetries() => $_clearField(2);
 }
 
 /// Specifies how to route matched traffic.
@@ -1800,7 +1746,7 @@ class GrpcRoute_RouteAction extends $pb.GeneratedMessage {
   factory GrpcRoute_RouteAction({
     $core.Iterable<GrpcRoute_Destination>? destinations,
     GrpcRoute_FaultInjectionPolicy? faultInjectionPolicy,
-    $10.Duration? timeout,
+    $0.Duration? timeout,
     GrpcRoute_RetryPolicy? retryPolicy,
   }) {
     final $result = create();
@@ -1837,20 +1783,16 @@ class GrpcRoute_RouteAction extends $pb.GeneratedMessage {
     ..aOM<GrpcRoute_FaultInjectionPolicy>(
         3, _omitFieldNames ? '' : 'faultInjectionPolicy',
         subBuilder: GrpcRoute_FaultInjectionPolicy.create)
-    ..aOM<$10.Duration>(7, _omitFieldNames ? '' : 'timeout',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(7, _omitFieldNames ? '' : 'timeout',
+        subBuilder: $0.Duration.create)
     ..aOM<GrpcRoute_RetryPolicy>(8, _omitFieldNames ? '' : 'retryPolicy',
         subBuilder: GrpcRoute_RetryPolicy.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RouteAction clone() =>
       GrpcRoute_RouteAction()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RouteAction copyWith(
           void Function(GrpcRoute_RouteAction) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_RouteAction))
@@ -1872,28 +1814,28 @@ class GrpcRoute_RouteAction extends $pb.GeneratedMessage {
   /// If multiple destinations are specified, traffic will be split between
   /// Backend Service(s) according to the weight field of these destinations.
   @$pb.TagNumber(1)
-  $core.List<GrpcRoute_Destination> get destinations => $_getList(0);
+  $pb.PbList<GrpcRoute_Destination> get destinations => $_getList(0);
 
-  ///  Optional. The specification for fault injection introduced into traffic
-  ///  to test the resiliency of clients to destination service failure. As part
-  ///  of fault injection, when clients send requests to a destination, delays
-  ///  can be introduced on a percentage of requests before sending those
-  ///  requests to the destination service. Similarly requests from clients can
-  ///  be aborted by for a percentage of requests.
+  /// Optional. The specification for fault injection introduced into traffic
+  /// to test the resiliency of clients to destination service failure. As part
+  /// of fault injection, when clients send requests to a destination, delays
+  /// can be introduced on a percentage of requests before sending those
+  /// requests to the destination service. Similarly requests from clients can
+  /// be aborted by for a percentage of requests.
   ///
-  ///  timeout and retry_policy will be ignored by clients that are configured
-  ///  with a fault_injection_policy
+  /// timeout and retry_policy will be ignored by clients that are configured
+  /// with a fault_injection_policy
   @$pb.TagNumber(3)
   GrpcRoute_FaultInjectionPolicy get faultInjectionPolicy => $_getN(1);
   @$pb.TagNumber(3)
   set faultInjectionPolicy(GrpcRoute_FaultInjectionPolicy v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasFaultInjectionPolicy() => $_has(1);
   @$pb.TagNumber(3)
-  void clearFaultInjectionPolicy() => clearField(3);
+  void clearFaultInjectionPolicy() => $_clearField(3);
   @$pb.TagNumber(3)
   GrpcRoute_FaultInjectionPolicy ensureFaultInjectionPolicy() => $_ensure(1);
 
@@ -1902,31 +1844,31 @@ class GrpcRoute_RouteAction extends $pb.GeneratedMessage {
   /// up until the response has been completely processed. Timeout includes all
   /// retries.
   @$pb.TagNumber(7)
-  $10.Duration get timeout => $_getN(2);
+  $0.Duration get timeout => $_getN(2);
   @$pb.TagNumber(7)
-  set timeout($10.Duration v) {
-    setField(7, v);
+  set timeout($0.Duration v) {
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasTimeout() => $_has(2);
   @$pb.TagNumber(7)
-  void clearTimeout() => clearField(7);
+  void clearTimeout() => $_clearField(7);
   @$pb.TagNumber(7)
-  $10.Duration ensureTimeout() => $_ensure(2);
+  $0.Duration ensureTimeout() => $_ensure(2);
 
   /// Optional. Specifies the retry policy associated with this route.
   @$pb.TagNumber(8)
   GrpcRoute_RetryPolicy get retryPolicy => $_getN(3);
   @$pb.TagNumber(8)
   set retryPolicy(GrpcRoute_RetryPolicy v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasRetryPolicy() => $_has(3);
   @$pb.TagNumber(8)
-  void clearRetryPolicy() => clearField(8);
+  void clearRetryPolicy() => $_clearField(8);
   @$pb.TagNumber(8)
   GrpcRoute_RetryPolicy ensureRetryPolicy() => $_ensure(3);
 }
@@ -1966,13 +1908,9 @@ class GrpcRoute_RouteRule extends $pb.GeneratedMessage {
         subBuilder: GrpcRoute_RouteAction.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RouteRule clone() => GrpcRoute_RouteRule()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute_RouteRule copyWith(void Function(GrpcRoute_RouteRule) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute_RouteRule))
           as GrpcRoute_RouteRule;
@@ -1994,7 +1932,7 @@ class GrpcRoute_RouteRule extends $pb.GeneratedMessage {
   /// matched if ANY one of the matches is satisfied.  If no matches field is
   /// specified, this rule will unconditionally match traffic.
   @$pb.TagNumber(1)
-  $core.List<GrpcRoute_RouteMatch> get matches => $_getList(0);
+  $pb.PbList<GrpcRoute_RouteMatch> get matches => $_getList(0);
 
   /// Required. A detailed rule defining how to route traffic. This field is
   /// required.
@@ -2002,13 +1940,13 @@ class GrpcRoute_RouteRule extends $pb.GeneratedMessage {
   GrpcRoute_RouteAction get action => $_getN(1);
   @$pb.TagNumber(2)
   set action(GrpcRoute_RouteAction v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasAction() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAction() => clearField(2);
+  void clearAction() => $_clearField(2);
   @$pb.TagNumber(2)
   GrpcRoute_RouteAction ensureAction() => $_ensure(1);
 }
@@ -2020,7 +1958,7 @@ class GrpcRoute extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.Iterable<$core.String>? hostnames,
     $core.Iterable<GrpcRoute_RouteRule>? rules,
@@ -2039,7 +1977,7 @@ class GrpcRoute extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -2095,13 +2033,9 @@ class GrpcRoute extends $pb.GeneratedMessage {
     ..aOS(12, _omitFieldNames ? '' : 'selfLink')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute clone() => GrpcRoute()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRoute copyWith(void Function(GrpcRoute) updates) =>
       super.copyWith((message) => updates(message as GrpcRoute)) as GrpcRoute;
 
@@ -2128,20 +2062,20 @@ class GrpcRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -2150,19 +2084,19 @@ class GrpcRoute extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Set of label tags associated with the GrpcRoute resource.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Optional. A free-text description of the resource. Max length 1024
   /// characters.
@@ -2176,66 +2110,66 @@ class GrpcRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
-  ///  Required. Service hostnames with an optional port for which this route
-  ///  describes traffic.
+  /// Required. Service hostnames with an optional port for which this route
+  /// describes traffic.
   ///
-  ///  Format: <hostname>[:<port>]
+  /// Format: <hostname>[:<port>]
   ///
-  ///  Hostname is the fully qualified domain name of a network host. This matches
-  ///  the RFC 1123 definition of a hostname with 2 notable exceptions:
-  ///   - IPs are not allowed.
-  ///   - A hostname may be prefixed with a wildcard label (`*.`). The wildcard
-  ///     label must appear by itself as the first label.
+  /// Hostname is the fully qualified domain name of a network host. This matches
+  /// the RFC 1123 definition of a hostname with 2 notable exceptions:
+  ///  - IPs are not allowed.
+  ///  - A hostname may be prefixed with a wildcard label (`*.`). The wildcard
+  ///    label must appear by itself as the first label.
   ///
-  ///  Hostname can be "precise" which is a domain name without the terminating
-  ///  dot of a network host (e.g. `foo.example.com`) or "wildcard", which is a
-  ///  domain name prefixed with a single wildcard label (e.g. `*.example.com`).
+  /// Hostname can be "precise" which is a domain name without the terminating
+  /// dot of a network host (e.g. `foo.example.com`) or "wildcard", which is a
+  /// domain name prefixed with a single wildcard label (e.g. `*.example.com`).
   ///
-  ///  Note that as per RFC1035 and RFC1123, a label must consist of lower case
-  ///  alphanumeric characters or '-', and must start and end with an alphanumeric
-  ///  character. No other punctuation is allowed.
+  /// Note that as per RFC1035 and RFC1123, a label must consist of lower case
+  /// alphanumeric characters or '-', and must start and end with an alphanumeric
+  /// character. No other punctuation is allowed.
   ///
-  ///  The routes associated with a Mesh or Gateway must have unique hostnames. If
-  ///  you attempt to attach multiple routes with conflicting hostnames, the
-  ///  configuration will be rejected.
+  /// The routes associated with a Mesh or Gateway must have unique hostnames. If
+  /// you attempt to attach multiple routes with conflicting hostnames, the
+  /// configuration will be rejected.
   ///
-  ///  For example, while it is acceptable for routes for the hostnames
-  ///  `*.foo.bar.com` and `*.bar.com` to be associated with the same route, it is
-  ///  not possible to associate two routes both with `*.bar.com` or both with
-  ///  `bar.com`.
+  /// For example, while it is acceptable for routes for the hostnames
+  /// `*.foo.bar.com` and `*.bar.com` to be associated with the same route, it is
+  /// not possible to associate two routes both with `*.bar.com` or both with
+  /// `bar.com`.
   ///
-  ///  If a port is specified, then gRPC clients must use the channel URI with the
-  ///  port to match this rule (i.e. "xds:///service:123"), otherwise they must
-  ///  supply the URI without a port (i.e. "xds:///service").
+  /// If a port is specified, then gRPC clients must use the channel URI with the
+  /// port to match this rule (i.e. "xds:///service:123"), otherwise they must
+  /// supply the URI without a port (i.e. "xds:///service").
   @$pb.TagNumber(6)
-  $core.List<$core.String> get hostnames => $_getList(5);
+  $pb.PbList<$core.String> get hostnames => $_getList(5);
 
-  ///  Required. A list of detailed rules defining how to route traffic.
+  /// Required. A list of detailed rules defining how to route traffic.
   ///
-  ///  Within a single GrpcRoute, the GrpcRoute.RouteAction associated with the
-  ///  first matching GrpcRoute.RouteRule will be executed. At least one rule
-  ///  must be supplied.
+  /// Within a single GrpcRoute, the GrpcRoute.RouteAction associated with the
+  /// first matching GrpcRoute.RouteRule will be executed. At least one rule
+  /// must be supplied.
   @$pb.TagNumber(7)
-  $core.List<GrpcRoute_RouteRule> get rules => $_getList(6);
+  $pb.PbList<GrpcRoute_RouteRule> get rules => $_getList(6);
 
-  ///  Optional. Meshes defines a list of meshes this GrpcRoute is attached to, as
-  ///  one of the routing rules to route the requests served by the mesh.
+  /// Optional. Meshes defines a list of meshes this GrpcRoute is attached to, as
+  /// one of the routing rules to route the requests served by the mesh.
   ///
-  ///  Each mesh reference should match the pattern:
-  ///  `projects/*/locations/global/meshes/<mesh_name>`
+  /// Each mesh reference should match the pattern:
+  /// `projects/*/locations/global/meshes/<mesh_name>`
   @$pb.TagNumber(9)
-  $core.List<$core.String> get meshes => $_getList(7);
+  $pb.PbList<$core.String> get meshes => $_getList(7);
 
-  ///  Optional. Gateways defines a list of gateways this GrpcRoute is attached
-  ///  to, as one of the routing rules to route the requests served by the
-  ///  gateway.
+  /// Optional. Gateways defines a list of gateways this GrpcRoute is attached
+  /// to, as one of the routing rules to route the requests served by the
+  /// gateway.
   ///
-  ///  Each gateway reference should match the pattern:
-  ///  `projects/*/locations/global/gateways/<gateway_name>`
+  /// Each gateway reference should match the pattern:
+  /// `projects/*/locations/global/gateways/<gateway_name>`
   @$pb.TagNumber(10)
-  $core.List<$core.String> get gateways => $_getList(8);
+  $pb.PbList<$core.String> get gateways => $_getList(8);
 
   /// Output only. Server-defined URL of this resource
   @$pb.TagNumber(12)
@@ -2248,7 +2182,7 @@ class GrpcRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasSelfLink() => $_has(9);
   @$pb.TagNumber(12)
-  void clearSelfLink() => clearField(12);
+  void clearSelfLink() => $_clearField(12);
 }
 
 /// Represents an integer value range.
@@ -2283,14 +2217,10 @@ class HttpRoute_HeaderMatch_IntegerRange extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'end', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_HeaderMatch_IntegerRange clone() =>
       HttpRoute_HeaderMatch_IntegerRange()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_HeaderMatch_IntegerRange copyWith(
           void Function(HttpRoute_HeaderMatch_IntegerRange) updates) =>
       super.copyWith((message) =>
@@ -2322,7 +2252,7 @@ class HttpRoute_HeaderMatch_IntegerRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasStart() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStart() => clearField(1);
+  void clearStart() => $_clearField(1);
 
   /// End of the range (exclusive)
   @$pb.TagNumber(2)
@@ -2335,7 +2265,7 @@ class HttpRoute_HeaderMatch_IntegerRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasEnd() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEnd() => clearField(2);
+  void clearEnd() => $_clearField(2);
 }
 
 enum HttpRoute_HeaderMatch_MatchType {
@@ -2423,14 +2353,10 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
     ..aOB(8, _omitFieldNames ? '' : 'invertMatch')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_HeaderMatch clone() =>
       HttpRoute_HeaderMatch()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_HeaderMatch copyWith(
           void Function(HttpRoute_HeaderMatch) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_HeaderMatch))
@@ -2450,7 +2376,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
 
   HttpRoute_HeaderMatch_MatchType whichMatchType() =>
       _HttpRoute_HeaderMatch_MatchTypeByTag[$_whichOneof(0)]!;
-  void clearMatchType() => clearField($_whichOneof(0));
+  void clearMatchType() => $_clearField($_whichOneof(0));
 
   /// The name of the HTTP header to match against.
   @$pb.TagNumber(1)
@@ -2463,7 +2389,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHeader() => clearField(1);
+  void clearHeader() => $_clearField(1);
 
   /// The value of the header should match exactly the content of
   /// exact_match.
@@ -2477,7 +2403,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasExactMatch() => $_has(1);
   @$pb.TagNumber(2)
-  void clearExactMatch() => clearField(2);
+  void clearExactMatch() => $_clearField(2);
 
   /// The value of the header must match the regular expression specified in
   /// regex_match. For regular expression grammar, please see:
@@ -2492,7 +2418,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRegexMatch() => $_has(2);
   @$pb.TagNumber(3)
-  void clearRegexMatch() => clearField(3);
+  void clearRegexMatch() => $_clearField(3);
 
   /// The value of the header must start with the contents of prefix_match.
   @$pb.TagNumber(4)
@@ -2505,7 +2431,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasPrefixMatch() => $_has(3);
   @$pb.TagNumber(4)
-  void clearPrefixMatch() => clearField(4);
+  void clearPrefixMatch() => $_clearField(4);
 
   /// A header with header_name must exist. The match takes place whether or
   /// not the header has a value.
@@ -2519,7 +2445,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasPresentMatch() => $_has(4);
   @$pb.TagNumber(5)
-  void clearPresentMatch() => clearField(5);
+  void clearPresentMatch() => $_clearField(5);
 
   /// The value of the header must end with the contents of suffix_match.
   @$pb.TagNumber(6)
@@ -2532,7 +2458,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasSuffixMatch() => $_has(5);
   @$pb.TagNumber(6)
-  void clearSuffixMatch() => clearField(6);
+  void clearSuffixMatch() => $_clearField(6);
 
   /// If specified, the rule will match if the request header value is within
   /// the range.
@@ -2540,13 +2466,13 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   HttpRoute_HeaderMatch_IntegerRange get rangeMatch => $_getN(6);
   @$pb.TagNumber(7)
   set rangeMatch(HttpRoute_HeaderMatch_IntegerRange v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasRangeMatch() => $_has(6);
   @$pb.TagNumber(7)
-  void clearRangeMatch() => clearField(7);
+  void clearRangeMatch() => $_clearField(7);
   @$pb.TagNumber(7)
   HttpRoute_HeaderMatch_IntegerRange ensureRangeMatch() => $_ensure(6);
 
@@ -2562,7 +2488,7 @@ class HttpRoute_HeaderMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasInvertMatch() => $_has(7);
   @$pb.TagNumber(8)
-  void clearInvertMatch() => clearField(8);
+  void clearInvertMatch() => $_clearField(8);
 }
 
 enum HttpRoute_QueryParameterMatch_MatchType {
@@ -2622,14 +2548,10 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'presentMatch')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_QueryParameterMatch clone() =>
       HttpRoute_QueryParameterMatch()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_QueryParameterMatch copyWith(
           void Function(HttpRoute_QueryParameterMatch) updates) =>
       super.copyWith(
@@ -2651,7 +2573,7 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
 
   HttpRoute_QueryParameterMatch_MatchType whichMatchType() =>
       _HttpRoute_QueryParameterMatch_MatchTypeByTag[$_whichOneof(0)]!;
-  void clearMatchType() => clearField($_whichOneof(0));
+  void clearMatchType() => $_clearField($_whichOneof(0));
 
   /// The name of the query parameter to match.
   @$pb.TagNumber(1)
@@ -2664,12 +2586,12 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasQueryParameter() => $_has(0);
   @$pb.TagNumber(1)
-  void clearQueryParameter() => clearField(1);
+  void clearQueryParameter() => $_clearField(1);
 
-  ///  The value of the query parameter must exactly match the contents of
-  ///  exact_match.
+  /// The value of the query parameter must exactly match the contents of
+  /// exact_match.
   ///
-  ///  Only one of exact_match, regex_match, or present_match must be set.
+  /// Only one of exact_match, regex_match, or present_match must be set.
   @$pb.TagNumber(2)
   $core.String get exactMatch => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -2680,13 +2602,13 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasExactMatch() => $_has(1);
   @$pb.TagNumber(2)
-  void clearExactMatch() => clearField(2);
+  void clearExactMatch() => $_clearField(2);
 
-  ///  The value of the query parameter must match the regular expression
-  ///  specified by regex_match. For regular expression grammar, please see
-  ///  https://github.com/google/re2/wiki/Syntax
+  /// The value of the query parameter must match the regular expression
+  /// specified by regex_match. For regular expression grammar, please see
+  /// https://github.com/google/re2/wiki/Syntax
   ///
-  ///  Only one of exact_match, regex_match, or present_match must be set.
+  /// Only one of exact_match, regex_match, or present_match must be set.
   @$pb.TagNumber(3)
   $core.String get regexMatch => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -2697,13 +2619,13 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRegexMatch() => $_has(2);
   @$pb.TagNumber(3)
-  void clearRegexMatch() => clearField(3);
+  void clearRegexMatch() => $_clearField(3);
 
-  ///  Specifies that the QueryParameterMatcher matches if request contains
-  ///  query parameter, irrespective of whether the parameter has a value or
-  ///  not.
+  /// Specifies that the QueryParameterMatcher matches if request contains
+  /// query parameter, irrespective of whether the parameter has a value or
+  /// not.
   ///
-  ///  Only one of exact_match, regex_match, or present_match must be set.
+  /// Only one of exact_match, regex_match, or present_match must be set.
   @$pb.TagNumber(4)
   $core.bool get presentMatch => $_getBF(3);
   @$pb.TagNumber(4)
@@ -2714,7 +2636,7 @@ class HttpRoute_QueryParameterMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasPresentMatch() => $_has(3);
   @$pb.TagNumber(4)
-  void clearPresentMatch() => clearField(4);
+  void clearPresentMatch() => $_clearField(4);
 }
 
 enum HttpRoute_RouteMatch_PathMatch {
@@ -2790,14 +2712,10 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
         subBuilder: HttpRoute_QueryParameterMatch.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RouteMatch clone() =>
       HttpRoute_RouteMatch()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RouteMatch copyWith(void Function(HttpRoute_RouteMatch) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_RouteMatch))
           as HttpRoute_RouteMatch;
@@ -2816,12 +2734,12 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
 
   HttpRoute_RouteMatch_PathMatch whichPathMatch() =>
       _HttpRoute_RouteMatch_PathMatchByTag[$_whichOneof(0)]!;
-  void clearPathMatch() => clearField($_whichOneof(0));
+  void clearPathMatch() => $_clearField($_whichOneof(0));
 
-  ///  The HTTP request path value should exactly match this value.
+  /// The HTTP request path value should exactly match this value.
   ///
-  ///  Only one of full_path_match, prefix_match, or regex_match should be
-  ///  used.
+  /// Only one of full_path_match, prefix_match, or regex_match should be
+  /// used.
   @$pb.TagNumber(1)
   $core.String get fullPathMatch => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -2832,13 +2750,13 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasFullPathMatch() => $_has(0);
   @$pb.TagNumber(1)
-  void clearFullPathMatch() => clearField(1);
+  void clearFullPathMatch() => $_clearField(1);
 
-  ///  The HTTP request path value must begin with specified prefix_match.
-  ///  prefix_match must begin with a /.
+  /// The HTTP request path value must begin with specified prefix_match.
+  /// prefix_match must begin with a /.
   ///
-  ///  Only one of full_path_match, prefix_match, or regex_match should be
-  ///  used.
+  /// Only one of full_path_match, prefix_match, or regex_match should be
+  /// used.
   @$pb.TagNumber(2)
   $core.String get prefixMatch => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -2849,15 +2767,15 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPrefixMatch() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPrefixMatch() => clearField(2);
+  void clearPrefixMatch() => $_clearField(2);
 
-  ///  The HTTP request path value must satisfy the regular expression
-  ///  specified by regex_match after removing any query parameters and anchor
-  ///  supplied with the original URL. For regular expression grammar, please
-  ///  see https://github.com/google/re2/wiki/Syntax
+  /// The HTTP request path value must satisfy the regular expression
+  /// specified by regex_match after removing any query parameters and anchor
+  /// supplied with the original URL. For regular expression grammar, please
+  /// see https://github.com/google/re2/wiki/Syntax
   ///
-  ///  Only one of full_path_match, prefix_match, or regex_match should be
-  ///  used.
+  /// Only one of full_path_match, prefix_match, or regex_match should be
+  /// used.
   @$pb.TagNumber(3)
   $core.String get regexMatch => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -2868,7 +2786,7 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRegexMatch() => $_has(2);
   @$pb.TagNumber(3)
-  void clearRegexMatch() => clearField(3);
+  void clearRegexMatch() => $_clearField(3);
 
   /// Specifies if prefix_match and full_path_match matches are case sensitive.
   /// The default value is false.
@@ -2882,17 +2800,17 @@ class HttpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasIgnoreCase() => $_has(3);
   @$pb.TagNumber(4)
-  void clearIgnoreCase() => clearField(4);
+  void clearIgnoreCase() => $_clearField(4);
 
   /// Specifies a list of HTTP request headers to match against. ALL of the
   /// supplied headers must be matched.
   @$pb.TagNumber(5)
-  $core.List<HttpRoute_HeaderMatch> get headers => $_getList(4);
+  $pb.PbList<HttpRoute_HeaderMatch> get headers => $_getList(4);
 
   /// Specifies a list of query parameters to match against. ALL of the query
   /// parameters must be matched.
   @$pb.TagNumber(6)
-  $core.List<HttpRoute_QueryParameterMatch> get queryParameters => $_getList(5);
+  $pb.PbList<HttpRoute_QueryParameterMatch> get queryParameters => $_getList(5);
 }
 
 /// Specifications of a destination to which the request should be routed to.
@@ -2927,14 +2845,10 @@ class HttpRoute_Destination extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'weight', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_Destination clone() =>
       HttpRoute_Destination()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_Destination copyWith(
           void Function(HttpRoute_Destination) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_Destination))
@@ -2963,22 +2877,22 @@ class HttpRoute_Destination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasServiceName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearServiceName() => clearField(1);
+  void clearServiceName() => $_clearField(1);
 
-  ///  Specifies the proportion of requests forwarded to the backend referenced
-  ///  by the serviceName field. This is computed as:
-  ///          weight/Sum(weights in this destination list).
-  ///  For non-zero values, there may be some epsilon from the exact proportion
-  ///  defined here depending on the precision an implementation supports.
+  /// Specifies the proportion of requests forwarded to the backend referenced
+  /// by the serviceName field. This is computed as:
+  ///         weight/Sum(weights in this destination list).
+  /// For non-zero values, there may be some epsilon from the exact proportion
+  /// defined here depending on the precision an implementation supports.
   ///
-  ///  If only one serviceName is specified and it has a weight greater than 0,
-  ///  100% of the traffic is forwarded to that backend.
+  /// If only one serviceName is specified and it has a weight greater than 0,
+  /// 100% of the traffic is forwarded to that backend.
   ///
-  ///  If weights are specified for any one service name, they need to be
-  ///  specified for all of them.
+  /// If weights are specified for any one service name, they need to be
+  /// specified for all of them.
   ///
-  ///  If weights are unspecified for all services, then, traffic is distributed
-  ///  in equal proportions to all of them.
+  /// If weights are unspecified for all services, then, traffic is distributed
+  /// in equal proportions to all of them.
   @$pb.TagNumber(2)
   $core.int get weight => $_getIZ(1);
   @$pb.TagNumber(2)
@@ -2989,7 +2903,7 @@ class HttpRoute_Destination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasWeight() => $_has(1);
   @$pb.TagNumber(2)
-  void clearWeight() => clearField(2);
+  void clearWeight() => $_clearField(2);
 }
 
 /// The specification for redirecting traffic.
@@ -3054,13 +2968,9 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
     ..a<$core.int>(7, _omitFieldNames ? '' : 'portRedirect', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_Redirect clone() => HttpRoute_Redirect()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_Redirect copyWith(void Function(HttpRoute_Redirect) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_Redirect))
           as HttpRoute_Redirect;
@@ -3089,7 +2999,7 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHostRedirect() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHostRedirect() => clearField(1);
+  void clearHostRedirect() => $_clearField(1);
 
   /// The path that will be used in the redirect response instead of the one
   /// that was supplied in the request.
@@ -3106,7 +3016,7 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPathRedirect() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPathRedirect() => clearField(2);
+  void clearPathRedirect() => $_clearField(2);
 
   /// Indicates that during redirection, the matched prefix (or path) should be
   /// swapped with this value. This option allows URLs be dynamically created
@@ -3121,26 +3031,26 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasPrefixRewrite() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPrefixRewrite() => clearField(3);
+  void clearPrefixRewrite() => $_clearField(3);
 
   /// The HTTP Status code to use for the redirect.
   @$pb.TagNumber(4)
   HttpRoute_Redirect_ResponseCode get responseCode => $_getN(3);
   @$pb.TagNumber(4)
   set responseCode(HttpRoute_Redirect_ResponseCode v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasResponseCode() => $_has(3);
   @$pb.TagNumber(4)
-  void clearResponseCode() => clearField(4);
+  void clearResponseCode() => $_clearField(4);
 
-  ///  If set to true, the URL scheme in the redirected request is set to https.
-  ///  If set to false, the URL scheme of the redirected request will remain the
-  ///  same as that of the request.
+  /// If set to true, the URL scheme in the redirected request is set to https.
+  /// If set to false, the URL scheme of the redirected request will remain the
+  /// same as that of the request.
   ///
-  ///  The default is set to false.
+  /// The default is set to false.
   @$pb.TagNumber(5)
   $core.bool get httpsRedirect => $_getBF(4);
   @$pb.TagNumber(5)
@@ -3151,13 +3061,13 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasHttpsRedirect() => $_has(4);
   @$pb.TagNumber(5)
-  void clearHttpsRedirect() => clearField(5);
+  void clearHttpsRedirect() => $_clearField(5);
 
-  ///  if set to true, any accompanying query portion of the original URL is
-  ///  removed prior to redirecting the request. If set to false, the query
-  ///  portion of the original URL is retained.
+  /// if set to true, any accompanying query portion of the original URL is
+  /// removed prior to redirecting the request. If set to false, the query
+  /// portion of the original URL is retained.
   ///
-  ///  The default is set to false.
+  /// The default is set to false.
   @$pb.TagNumber(6)
   $core.bool get stripQuery => $_getBF(5);
   @$pb.TagNumber(6)
@@ -3168,7 +3078,7 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasStripQuery() => $_has(5);
   @$pb.TagNumber(6)
-  void clearStripQuery() => clearField(6);
+  void clearStripQuery() => $_clearField(6);
 
   /// The port that will be used in the redirected request instead of the one
   /// that was supplied in the request.
@@ -3182,14 +3092,14 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasPortRedirect() => $_has(6);
   @$pb.TagNumber(7)
-  void clearPortRedirect() => clearField(7);
+  void clearPortRedirect() => $_clearField(7);
 }
 
 /// Specification of how client requests are delayed as part of fault
 /// injection before being sent to a destination.
 class HttpRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   factory HttpRoute_FaultInjectionPolicy_Delay({
-    $10.Duration? fixedDelay,
+    $0.Duration? fixedDelay,
     $core.int? percentage,
   }) {
     final $result = create();
@@ -3215,19 +3125,15 @@ class HttpRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.networkservices.v1'),
       createEmptyInstance: create)
-    ..aOM<$10.Duration>(1, _omitFieldNames ? '' : 'fixedDelay',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'fixedDelay',
+        subBuilder: $0.Duration.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'percentage', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_FaultInjectionPolicy_Delay clone() =>
       HttpRoute_FaultInjectionPolicy_Delay()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_FaultInjectionPolicy_Delay copyWith(
           void Function(HttpRoute_FaultInjectionPolicy_Delay) updates) =>
       super.copyWith((message) =>
@@ -3250,22 +3156,22 @@ class HttpRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
 
   /// Specify a fixed delay before forwarding the request.
   @$pb.TagNumber(1)
-  $10.Duration get fixedDelay => $_getN(0);
+  $0.Duration get fixedDelay => $_getN(0);
   @$pb.TagNumber(1)
-  set fixedDelay($10.Duration v) {
-    setField(1, v);
+  set fixedDelay($0.Duration v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasFixedDelay() => $_has(0);
   @$pb.TagNumber(1)
-  void clearFixedDelay() => clearField(1);
+  void clearFixedDelay() => $_clearField(1);
   @$pb.TagNumber(1)
-  $10.Duration ensureFixedDelay() => $_ensure(0);
+  $0.Duration ensureFixedDelay() => $_ensure(0);
 
-  ///  The percentage of traffic on which delay will be injected.
+  /// The percentage of traffic on which delay will be injected.
   ///
-  ///  The value must be between [0, 100]
+  /// The value must be between [0, 100]
   @$pb.TagNumber(2)
   $core.int get percentage => $_getIZ(1);
   @$pb.TagNumber(2)
@@ -3276,7 +3182,7 @@ class HttpRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPercentage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPercentage() => clearField(2);
+  void clearPercentage() => $_clearField(2);
 }
 
 /// Specification of how client requests are aborted as part of fault
@@ -3313,14 +3219,10 @@ class HttpRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'percentage', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_FaultInjectionPolicy_Abort clone() =>
       HttpRoute_FaultInjectionPolicy_Abort()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_FaultInjectionPolicy_Abort copyWith(
           void Function(HttpRoute_FaultInjectionPolicy_Abort) updates) =>
       super.copyWith((message) =>
@@ -3341,9 +3243,9 @@ class HttpRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
           HttpRoute_FaultInjectionPolicy_Abort>(create);
   static HttpRoute_FaultInjectionPolicy_Abort? _defaultInstance;
 
-  ///  The HTTP status code used to abort the request.
+  /// The HTTP status code used to abort the request.
   ///
-  ///  The value must be between 200 and 599 inclusive.
+  /// The value must be between 200 and 599 inclusive.
   @$pb.TagNumber(1)
   $core.int get httpStatus => $_getIZ(0);
   @$pb.TagNumber(1)
@@ -3354,11 +3256,11 @@ class HttpRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHttpStatus() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHttpStatus() => clearField(1);
+  void clearHttpStatus() => $_clearField(1);
 
-  ///  The percentage of traffic which will be aborted.
+  /// The percentage of traffic which will be aborted.
   ///
-  ///  The value must be between [0, 100]
+  /// The value must be between [0, 100]
   @$pb.TagNumber(2)
   $core.int get percentage => $_getIZ(1);
   @$pb.TagNumber(2)
@@ -3369,7 +3271,7 @@ class HttpRoute_FaultInjectionPolicy_Abort extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPercentage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPercentage() => clearField(2);
+  void clearPercentage() => $_clearField(2);
 }
 
 /// The specification for fault injection introduced into traffic to test the
@@ -3413,14 +3315,10 @@ class HttpRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
         subBuilder: HttpRoute_FaultInjectionPolicy_Abort.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_FaultInjectionPolicy clone() =>
       HttpRoute_FaultInjectionPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_FaultInjectionPolicy copyWith(
           void Function(HttpRoute_FaultInjectionPolicy) updates) =>
       super.copyWith(
@@ -3445,13 +3343,13 @@ class HttpRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
   HttpRoute_FaultInjectionPolicy_Delay get delay => $_getN(0);
   @$pb.TagNumber(1)
   set delay(HttpRoute_FaultInjectionPolicy_Delay v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasDelay() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDelay() => clearField(1);
+  void clearDelay() => $_clearField(1);
   @$pb.TagNumber(1)
   HttpRoute_FaultInjectionPolicy_Delay ensureDelay() => $_ensure(0);
 
@@ -3460,13 +3358,13 @@ class HttpRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
   HttpRoute_FaultInjectionPolicy_Abort get abort => $_getN(1);
   @$pb.TagNumber(2)
   set abort(HttpRoute_FaultInjectionPolicy_Abort v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasAbort() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAbort() => clearField(2);
+  void clearAbort() => $_clearField(2);
   @$pb.TagNumber(2)
   HttpRoute_FaultInjectionPolicy_Abort ensureAbort() => $_ensure(1);
 }
@@ -3475,16 +3373,16 @@ class HttpRoute_FaultInjectionPolicy extends $pb.GeneratedMessage {
 /// response.
 class HttpRoute_HeaderModifier extends $pb.GeneratedMessage {
   factory HttpRoute_HeaderModifier({
-    $core.Map<$core.String, $core.String>? set,
-    $core.Map<$core.String, $core.String>? add,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? set,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? add,
     $core.Iterable<$core.String>? remove,
   }) {
     final $result = create();
     if (set != null) {
-      $result.set.addAll(set);
+      $result.set.addEntries(set);
     }
     if (add != null) {
-      $result.add.addAll(add);
+      $result.add.addEntries(add);
     }
     if (remove != null) {
       $result.remove.addAll(remove);
@@ -3519,14 +3417,10 @@ class HttpRoute_HeaderModifier extends $pb.GeneratedMessage {
     ..pPS(3, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_HeaderModifier clone() =>
       HttpRoute_HeaderModifier()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_HeaderModifier copyWith(
           void Function(HttpRoute_HeaderModifier) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_HeaderModifier))
@@ -3547,16 +3441,16 @@ class HttpRoute_HeaderModifier extends $pb.GeneratedMessage {
   /// Completely overwrite/replace the headers with given map where key is the
   /// name of the header, value is the value of the header.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, $core.String> get set => $_getMap(0);
+  $pb.PbMap<$core.String, $core.String> get set => $_getMap(0);
 
   /// Add the headers with given map where key is the name of the header, value
   /// is the value of the header.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $core.String> get add => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get add => $_getMap(1);
 
   /// Remove headers (matching by header names) specified in the list.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get remove => $_getList(2);
+  $pb.PbList<$core.String> get remove => $_getList(2);
 }
 
 /// The specification for modifying the URL of the request, prior to forwarding
@@ -3592,14 +3486,10 @@ class HttpRoute_URLRewrite extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'hostRewrite')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_URLRewrite clone() =>
       HttpRoute_URLRewrite()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_URLRewrite copyWith(void Function(HttpRoute_URLRewrite) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_URLRewrite))
           as HttpRoute_URLRewrite;
@@ -3628,7 +3518,7 @@ class HttpRoute_URLRewrite extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPathPrefixRewrite() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPathPrefixRewrite() => clearField(1);
+  void clearPathPrefixRewrite() => $_clearField(1);
 
   /// Prior to forwarding the request to the selected destination, the requests
   /// host header is replaced by this value.
@@ -3642,7 +3532,7 @@ class HttpRoute_URLRewrite extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasHostRewrite() => $_has(1);
   @$pb.TagNumber(2)
-  void clearHostRewrite() => clearField(2);
+  void clearHostRewrite() => $_clearField(2);
 }
 
 /// The specifications for retries.
@@ -3650,7 +3540,7 @@ class HttpRoute_RetryPolicy extends $pb.GeneratedMessage {
   factory HttpRoute_RetryPolicy({
     $core.Iterable<$core.String>? retryConditions,
     $core.int? numRetries,
-    $10.Duration? perTryTimeout,
+    $0.Duration? perTryTimeout,
   }) {
     final $result = create();
     if (retryConditions != null) {
@@ -3679,18 +3569,14 @@ class HttpRoute_RetryPolicy extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'retryConditions')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'numRetries', $pb.PbFieldType.O3)
-    ..aOM<$10.Duration>(3, _omitFieldNames ? '' : 'perTryTimeout',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(3, _omitFieldNames ? '' : 'perTryTimeout',
+        subBuilder: $0.Duration.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RetryPolicy clone() =>
       HttpRoute_RetryPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RetryPolicy copyWith(
           void Function(HttpRoute_RetryPolicy) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_RetryPolicy))
@@ -3708,30 +3594,30 @@ class HttpRoute_RetryPolicy extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_RetryPolicy>(create);
   static HttpRoute_RetryPolicy? _defaultInstance;
 
-  ///  Specifies one or more conditions when this retry policy applies. Valid
-  ///  values are:
-  ///    5xx: Proxy will attempt a retry if the destination service responds
-  ///      with any 5xx response code, of if the destination service does not
-  ///      respond at all, example: disconnect, reset, read timeout, connection
-  ///      failure and refused streams.
+  /// Specifies one or more conditions when this retry policy applies. Valid
+  /// values are:
+  ///   5xx: Proxy will attempt a retry if the destination service responds
+  ///     with any 5xx response code, of if the destination service does not
+  ///     respond at all, example: disconnect, reset, read timeout, connection
+  ///     failure and refused streams.
   ///
-  ///    gateway-error: Similar to 5xx, but only applies to response codes 502,
-  ///      503, 504.
+  ///   gateway-error: Similar to 5xx, but only applies to response codes 502,
+  ///     503, 504.
   ///
-  ///    reset: Proxy will attempt a retry if the destination service does not
-  ///      respond at all (disconnect/reset/read timeout)
+  ///   reset: Proxy will attempt a retry if the destination service does not
+  ///     respond at all (disconnect/reset/read timeout)
   ///
-  ///    connect-failure: Proxy will retry on failures connecting to destination
-  ///      for example due to connection timeouts.
+  ///   connect-failure: Proxy will retry on failures connecting to destination
+  ///     for example due to connection timeouts.
   ///
-  ///    retriable-4xx: Proxy will retry fro retriable 4xx response codes.
-  ///      Currently the only retriable error supported is 409.
+  ///   retriable-4xx: Proxy will retry fro retriable 4xx response codes.
+  ///     Currently the only retriable error supported is 409.
   ///
-  ///    refused-stream: Proxy will retry if the destination resets the stream
-  ///      with a REFUSED_STREAM error code. This reset type indicates that it
-  ///      is safe to retry.
+  ///   refused-stream: Proxy will retry if the destination resets the stream
+  ///     with a REFUSED_STREAM error code. This reset type indicates that it
+  ///     is safe to retry.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get retryConditions => $_getList(0);
+  $pb.PbList<$core.String> get retryConditions => $_getList(0);
 
   /// Specifies the allowed number of retries. This number must be > 0. If not
   /// specified, default to 1.
@@ -3745,22 +3631,22 @@ class HttpRoute_RetryPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNumRetries() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNumRetries() => clearField(2);
+  void clearNumRetries() => $_clearField(2);
 
   /// Specifies a non-zero timeout per retry attempt.
   @$pb.TagNumber(3)
-  $10.Duration get perTryTimeout => $_getN(2);
+  $0.Duration get perTryTimeout => $_getN(2);
   @$pb.TagNumber(3)
-  set perTryTimeout($10.Duration v) {
-    setField(3, v);
+  set perTryTimeout($0.Duration v) {
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasPerTryTimeout() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPerTryTimeout() => clearField(3);
+  void clearPerTryTimeout() => $_clearField(3);
   @$pb.TagNumber(3)
-  $10.Duration ensurePerTryTimeout() => $_ensure(2);
+  $0.Duration ensurePerTryTimeout() => $_ensure(2);
 }
 
 /// Specifies the policy on how requests are shadowed to a separate mirrored
@@ -3794,14 +3680,10 @@ class HttpRoute_RequestMirrorPolicy extends $pb.GeneratedMessage {
         subBuilder: HttpRoute_Destination.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RequestMirrorPolicy clone() =>
       HttpRoute_RequestMirrorPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RequestMirrorPolicy copyWith(
           void Function(HttpRoute_RequestMirrorPolicy) updates) =>
       super.copyWith(
@@ -3827,13 +3709,13 @@ class HttpRoute_RequestMirrorPolicy extends $pb.GeneratedMessage {
   HttpRoute_Destination get destination => $_getN(0);
   @$pb.TagNumber(1)
   set destination(HttpRoute_Destination v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasDestination() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDestination() => clearField(1);
+  void clearDestination() => $_clearField(1);
   @$pb.TagNumber(1)
   HttpRoute_Destination ensureDestination() => $_ensure(0);
 }
@@ -3900,14 +3782,10 @@ class HttpRoute_CorsPolicy extends $pb.GeneratedMessage {
     ..aOB(8, _omitFieldNames ? '' : 'disabled')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_CorsPolicy clone() =>
       HttpRoute_CorsPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_CorsPolicy copyWith(void Function(HttpRoute_CorsPolicy) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_CorsPolicy))
           as HttpRoute_CorsPolicy;
@@ -3928,25 +3806,25 @@ class HttpRoute_CorsPolicy extends $pb.GeneratedMessage {
   /// An origin is allowed if it matches either an item in allow_origins or
   /// an item in allow_origin_regexes.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get allowOrigins => $_getList(0);
+  $pb.PbList<$core.String> get allowOrigins => $_getList(0);
 
   /// Specifies the regular expression patterns that match allowed origins. For
   /// regular expression grammar, please see
   /// https://github.com/google/re2/wiki/Syntax.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get allowOriginRegexes => $_getList(1);
+  $pb.PbList<$core.String> get allowOriginRegexes => $_getList(1);
 
   /// Specifies the content for Access-Control-Allow-Methods header.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get allowMethods => $_getList(2);
+  $pb.PbList<$core.String> get allowMethods => $_getList(2);
 
   /// Specifies the content for Access-Control-Allow-Headers header.
   @$pb.TagNumber(4)
-  $core.List<$core.String> get allowHeaders => $_getList(3);
+  $pb.PbList<$core.String> get allowHeaders => $_getList(3);
 
   /// Specifies the content for Access-Control-Expose-Headers header.
   @$pb.TagNumber(5)
-  $core.List<$core.String> get exposeHeaders => $_getList(4);
+  $pb.PbList<$core.String> get exposeHeaders => $_getList(4);
 
   /// Specifies how long result of a preflight request can be cached in
   /// seconds. This translates to the Access-Control-Max-Age header.
@@ -3960,13 +3838,13 @@ class HttpRoute_CorsPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasMaxAge() => $_has(5);
   @$pb.TagNumber(6)
-  void clearMaxAge() => clearField(6);
+  void clearMaxAge() => $_clearField(6);
 
-  ///  In response to a preflight request, setting this to true indicates that
-  ///  the actual request can include user credentials. This translates to the
-  ///  Access-Control-Allow-Credentials header.
+  /// In response to a preflight request, setting this to true indicates that
+  /// the actual request can include user credentials. This translates to the
+  /// Access-Control-Allow-Credentials header.
   ///
-  ///  Default value is false.
+  /// Default value is false.
   @$pb.TagNumber(7)
   $core.bool get allowCredentials => $_getBF(6);
   @$pb.TagNumber(7)
@@ -3977,7 +3855,7 @@ class HttpRoute_CorsPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasAllowCredentials() => $_has(6);
   @$pb.TagNumber(7)
-  void clearAllowCredentials() => clearField(7);
+  void clearAllowCredentials() => $_clearField(7);
 
   /// If true, the CORS policy is disabled. The default value is false, which
   /// indicates that the CORS policy is in effect.
@@ -3991,7 +3869,7 @@ class HttpRoute_CorsPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasDisabled() => $_has(7);
   @$pb.TagNumber(8)
-  void clearDisabled() => clearField(8);
+  void clearDisabled() => $_clearField(8);
 }
 
 /// The specifications for routing traffic and applying associated policies.
@@ -4003,7 +3881,7 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
     HttpRoute_HeaderModifier? requestHeaderModifier,
     HttpRoute_HeaderModifier? responseHeaderModifier,
     HttpRoute_URLRewrite? urlRewrite,
-    $10.Duration? timeout,
+    $0.Duration? timeout,
     HttpRoute_RetryPolicy? retryPolicy,
     HttpRoute_RequestMirrorPolicy? requestMirrorPolicy,
     HttpRoute_CorsPolicy? corsPolicy,
@@ -4070,8 +3948,8 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
         subBuilder: HttpRoute_HeaderModifier.create)
     ..aOM<HttpRoute_URLRewrite>(7, _omitFieldNames ? '' : 'urlRewrite',
         subBuilder: HttpRoute_URLRewrite.create)
-    ..aOM<$10.Duration>(8, _omitFieldNames ? '' : 'timeout',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(8, _omitFieldNames ? '' : 'timeout',
+        subBuilder: $0.Duration.create)
     ..aOM<HttpRoute_RetryPolicy>(9, _omitFieldNames ? '' : 'retryPolicy',
         subBuilder: HttpRoute_RetryPolicy.create)
     ..aOM<HttpRoute_RequestMirrorPolicy>(
@@ -4081,14 +3959,10 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
         subBuilder: HttpRoute_CorsPolicy.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RouteAction clone() =>
       HttpRoute_RouteAction()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RouteAction copyWith(
           void Function(HttpRoute_RouteAction) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_RouteAction))
@@ -4108,43 +3982,43 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
 
   /// The destination to which traffic should be forwarded.
   @$pb.TagNumber(1)
-  $core.List<HttpRoute_Destination> get destinations => $_getList(0);
+  $pb.PbList<HttpRoute_Destination> get destinations => $_getList(0);
 
   /// If set, the request is directed as configured by this field.
   @$pb.TagNumber(2)
   HttpRoute_Redirect get redirect => $_getN(1);
   @$pb.TagNumber(2)
   set redirect(HttpRoute_Redirect v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasRedirect() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRedirect() => clearField(2);
+  void clearRedirect() => $_clearField(2);
   @$pb.TagNumber(2)
   HttpRoute_Redirect ensureRedirect() => $_ensure(1);
 
-  ///  The specification for fault injection introduced into traffic to test the
-  ///  resiliency of clients to backend service failure. As part of fault
-  ///  injection, when clients send requests to a backend service, delays can be
-  ///  introduced  on a percentage of requests before sending those requests to
-  ///  the backend service. Similarly requests from clients can be aborted for a
-  ///  percentage of requests.
+  /// The specification for fault injection introduced into traffic to test the
+  /// resiliency of clients to backend service failure. As part of fault
+  /// injection, when clients send requests to a backend service, delays can be
+  /// introduced  on a percentage of requests before sending those requests to
+  /// the backend service. Similarly requests from clients can be aborted for a
+  /// percentage of requests.
   ///
-  ///  timeout and retry_policy will be ignored by clients that are configured
-  ///  with a fault_injection_policy
+  /// timeout and retry_policy will be ignored by clients that are configured
+  /// with a fault_injection_policy
   @$pb.TagNumber(4)
   HttpRoute_FaultInjectionPolicy get faultInjectionPolicy => $_getN(2);
   @$pb.TagNumber(4)
   set faultInjectionPolicy(HttpRoute_FaultInjectionPolicy v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasFaultInjectionPolicy() => $_has(2);
   @$pb.TagNumber(4)
-  void clearFaultInjectionPolicy() => clearField(4);
+  void clearFaultInjectionPolicy() => $_clearField(4);
   @$pb.TagNumber(4)
   HttpRoute_FaultInjectionPolicy ensureFaultInjectionPolicy() => $_ensure(2);
 
@@ -4154,13 +4028,13 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   HttpRoute_HeaderModifier get requestHeaderModifier => $_getN(3);
   @$pb.TagNumber(5)
   set requestHeaderModifier(HttpRoute_HeaderModifier v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasRequestHeaderModifier() => $_has(3);
   @$pb.TagNumber(5)
-  void clearRequestHeaderModifier() => clearField(5);
+  void clearRequestHeaderModifier() => $_clearField(5);
   @$pb.TagNumber(5)
   HttpRoute_HeaderModifier ensureRequestHeaderModifier() => $_ensure(3);
 
@@ -4170,13 +4044,13 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   HttpRoute_HeaderModifier get responseHeaderModifier => $_getN(4);
   @$pb.TagNumber(6)
   set responseHeaderModifier(HttpRoute_HeaderModifier v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasResponseHeaderModifier() => $_has(4);
   @$pb.TagNumber(6)
-  void clearResponseHeaderModifier() => clearField(6);
+  void clearResponseHeaderModifier() => $_clearField(6);
   @$pb.TagNumber(6)
   HttpRoute_HeaderModifier ensureResponseHeaderModifier() => $_ensure(4);
 
@@ -4186,13 +4060,13 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   HttpRoute_URLRewrite get urlRewrite => $_getN(5);
   @$pb.TagNumber(7)
   set urlRewrite(HttpRoute_URLRewrite v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasUrlRewrite() => $_has(5);
   @$pb.TagNumber(7)
-  void clearUrlRewrite() => clearField(7);
+  void clearUrlRewrite() => $_clearField(7);
   @$pb.TagNumber(7)
   HttpRoute_URLRewrite ensureUrlRewrite() => $_ensure(5);
 
@@ -4200,31 +4074,31 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   /// time the request has been fully processed (i.e. end of stream) up until
   /// the response has been completely processed. Timeout includes all retries.
   @$pb.TagNumber(8)
-  $10.Duration get timeout => $_getN(6);
+  $0.Duration get timeout => $_getN(6);
   @$pb.TagNumber(8)
-  set timeout($10.Duration v) {
-    setField(8, v);
+  set timeout($0.Duration v) {
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasTimeout() => $_has(6);
   @$pb.TagNumber(8)
-  void clearTimeout() => clearField(8);
+  void clearTimeout() => $_clearField(8);
   @$pb.TagNumber(8)
-  $10.Duration ensureTimeout() => $_ensure(6);
+  $0.Duration ensureTimeout() => $_ensure(6);
 
   /// Specifies the retry policy associated with this route.
   @$pb.TagNumber(9)
   HttpRoute_RetryPolicy get retryPolicy => $_getN(7);
   @$pb.TagNumber(9)
   set retryPolicy(HttpRoute_RetryPolicy v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasRetryPolicy() => $_has(7);
   @$pb.TagNumber(9)
-  void clearRetryPolicy() => clearField(9);
+  void clearRetryPolicy() => $_clearField(9);
   @$pb.TagNumber(9)
   HttpRoute_RetryPolicy ensureRetryPolicy() => $_ensure(7);
 
@@ -4237,13 +4111,13 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   HttpRoute_RequestMirrorPolicy get requestMirrorPolicy => $_getN(8);
   @$pb.TagNumber(10)
   set requestMirrorPolicy(HttpRoute_RequestMirrorPolicy v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasRequestMirrorPolicy() => $_has(8);
   @$pb.TagNumber(10)
-  void clearRequestMirrorPolicy() => clearField(10);
+  void clearRequestMirrorPolicy() => $_clearField(10);
   @$pb.TagNumber(10)
   HttpRoute_RequestMirrorPolicy ensureRequestMirrorPolicy() => $_ensure(8);
 
@@ -4252,13 +4126,13 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   HttpRoute_CorsPolicy get corsPolicy => $_getN(9);
   @$pb.TagNumber(11)
   set corsPolicy(HttpRoute_CorsPolicy v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasCorsPolicy() => $_has(9);
   @$pb.TagNumber(11)
-  void clearCorsPolicy() => clearField(11);
+  void clearCorsPolicy() => $_clearField(11);
   @$pb.TagNumber(11)
   HttpRoute_CorsPolicy ensureCorsPolicy() => $_ensure(9);
 }
@@ -4299,13 +4173,9 @@ class HttpRoute_RouteRule extends $pb.GeneratedMessage {
         subBuilder: HttpRoute_RouteAction.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RouteRule clone() => HttpRoute_RouteRule()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute_RouteRule copyWith(void Function(HttpRoute_RouteRule) updates) =>
       super.copyWith((message) => updates(message as HttpRoute_RouteRule))
           as HttpRoute_RouteRule;
@@ -4322,30 +4192,30 @@ class HttpRoute_RouteRule extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<HttpRoute_RouteRule>(create);
   static HttpRoute_RouteRule? _defaultInstance;
 
-  ///  A list of matches define conditions used for matching the rule against
-  ///  incoming HTTP requests. Each match is independent, i.e. this rule will be
-  ///  matched if ANY one of the matches is satisfied.
+  /// A list of matches define conditions used for matching the rule against
+  /// incoming HTTP requests. Each match is independent, i.e. this rule will be
+  /// matched if ANY one of the matches is satisfied.
   ///
-  ///  If no matches field is specified, this rule will unconditionally match
-  ///  traffic.
+  /// If no matches field is specified, this rule will unconditionally match
+  /// traffic.
   ///
-  ///  If a default rule is desired to be configured, add a rule with no matches
-  ///  specified to the end of the rules list.
+  /// If a default rule is desired to be configured, add a rule with no matches
+  /// specified to the end of the rules list.
   @$pb.TagNumber(1)
-  $core.List<HttpRoute_RouteMatch> get matches => $_getList(0);
+  $pb.PbList<HttpRoute_RouteMatch> get matches => $_getList(0);
 
   /// The detailed rule defining how to route matched traffic.
   @$pb.TagNumber(2)
   HttpRoute_RouteAction get action => $_getN(1);
   @$pb.TagNumber(2)
   set action(HttpRoute_RouteAction v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasAction() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAction() => clearField(2);
+  void clearAction() => $_clearField(2);
   @$pb.TagNumber(2)
   HttpRoute_RouteAction ensureAction() => $_ensure(1);
 }
@@ -4362,7 +4232,7 @@ class HttpRoute extends $pb.GeneratedMessage {
     $core.Iterable<HttpRoute_RouteRule>? rules,
     $core.Iterable<$core.String>? meshes,
     $core.Iterable<$core.String>? gateways,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? selfLink,
   }) {
     final $result = create();
@@ -4391,7 +4261,7 @@ class HttpRoute extends $pb.GeneratedMessage {
       $result.gateways.addAll(gateways);
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (selfLink != null) {
       $result.selfLink = selfLink;
@@ -4432,13 +4302,9 @@ class HttpRoute extends $pb.GeneratedMessage {
     ..aOS(11, _omitFieldNames ? '' : 'selfLink')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute clone() => HttpRoute()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRoute copyWith(void Function(HttpRoute) updates) =>
       super.copyWith((message) => updates(message as HttpRoute)) as HttpRoute;
 
@@ -4465,7 +4331,7 @@ class HttpRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Optional. A free-text description of the resource. Max length 1024
   /// characters.
@@ -4479,20 +4345,20 @@ class HttpRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDescription() => clearField(2);
+  void clearDescription() => $_clearField(2);
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(3)
   $2.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
   set createTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCreateTime() => clearField(3);
+  void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureCreateTime() => $_ensure(2);
 
@@ -4501,71 +4367,71 @@ class HttpRoute extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
   set updateTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUpdateTime() => clearField(4);
+  void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureUpdateTime() => $_ensure(3);
 
-  ///  Required. Hostnames define a set of hosts that should match against the
-  ///  HTTP host header to select a HttpRoute to process the request. Hostname is
-  ///  the fully qualified domain name of a network host, as defined by RFC 1123
-  ///  with the exception that:
-  ///   - IPs are not allowed.
-  ///   - A hostname may be prefixed with a wildcard label (`*.`). The wildcard
-  ///     label must appear by itself as the first label.
+  /// Required. Hostnames define a set of hosts that should match against the
+  /// HTTP host header to select a HttpRoute to process the request. Hostname is
+  /// the fully qualified domain name of a network host, as defined by RFC 1123
+  /// with the exception that:
+  ///  - IPs are not allowed.
+  ///  - A hostname may be prefixed with a wildcard label (`*.`). The wildcard
+  ///    label must appear by itself as the first label.
   ///
-  ///  Hostname can be "precise" which is a domain name without the terminating
-  ///  dot of a network host (e.g. `foo.example.com`) or "wildcard", which is a
-  ///  domain name prefixed with a single wildcard label (e.g. `*.example.com`).
+  /// Hostname can be "precise" which is a domain name without the terminating
+  /// dot of a network host (e.g. `foo.example.com`) or "wildcard", which is a
+  /// domain name prefixed with a single wildcard label (e.g. `*.example.com`).
   ///
-  ///  Note that as per RFC1035 and RFC1123, a label must consist of lower case
-  ///  alphanumeric characters or '-', and must start and end with an alphanumeric
-  ///  character. No other punctuation is allowed.
+  /// Note that as per RFC1035 and RFC1123, a label must consist of lower case
+  /// alphanumeric characters or '-', and must start and end with an alphanumeric
+  /// character. No other punctuation is allowed.
   ///
-  ///  The routes associated with a Mesh or Gateways  must have unique hostnames.
-  ///  If you attempt to attach multiple routes with conflicting hostnames,
-  ///  the configuration will be rejected.
+  /// The routes associated with a Mesh or Gateways  must have unique hostnames.
+  /// If you attempt to attach multiple routes with conflicting hostnames,
+  /// the configuration will be rejected.
   ///
-  ///  For example, while it is acceptable for routes for the hostnames
-  ///  `*.foo.bar.com` and `*.bar.com` to be associated with the same Mesh (or
-  ///  Gateways under the same scope), it is not possible to associate two routes
-  ///  both with `*.bar.com` or both with `bar.com`.
+  /// For example, while it is acceptable for routes for the hostnames
+  /// `*.foo.bar.com` and `*.bar.com` to be associated with the same Mesh (or
+  /// Gateways under the same scope), it is not possible to associate two routes
+  /// both with `*.bar.com` or both with `bar.com`.
   @$pb.TagNumber(5)
-  $core.List<$core.String> get hostnames => $_getList(4);
+  $pb.PbList<$core.String> get hostnames => $_getList(4);
 
   /// Required. Rules that define how traffic is routed and handled.
   /// Rules will be matched sequentially based on the RouteMatch specified for
   /// the rule.
   @$pb.TagNumber(6)
-  $core.List<HttpRoute_RouteRule> get rules => $_getList(5);
+  $pb.PbList<HttpRoute_RouteRule> get rules => $_getList(5);
 
-  ///  Optional. Meshes defines a list of meshes this HttpRoute is attached to, as
-  ///  one of the routing rules to route the requests served by the mesh.
+  /// Optional. Meshes defines a list of meshes this HttpRoute is attached to, as
+  /// one of the routing rules to route the requests served by the mesh.
   ///
-  ///  Each mesh reference should match the pattern:
-  ///  `projects/*/locations/global/meshes/<mesh_name>`
+  /// Each mesh reference should match the pattern:
+  /// `projects/*/locations/global/meshes/<mesh_name>`
   ///
-  ///  The attached Mesh should be of a type SIDECAR
+  /// The attached Mesh should be of a type SIDECAR
   @$pb.TagNumber(8)
-  $core.List<$core.String> get meshes => $_getList(6);
+  $pb.PbList<$core.String> get meshes => $_getList(6);
 
-  ///  Optional. Gateways defines a list of gateways this HttpRoute is attached
-  ///  to, as one of the routing rules to route the requests served by the
-  ///  gateway.
+  /// Optional. Gateways defines a list of gateways this HttpRoute is attached
+  /// to, as one of the routing rules to route the requests served by the
+  /// gateway.
   ///
-  ///  Each gateway reference should match the pattern:
-  ///  `projects/*/locations/global/gateways/<gateway_name>`
+  /// Each gateway reference should match the pattern:
+  /// `projects/*/locations/global/gateways/<gateway_name>`
   @$pb.TagNumber(9)
-  $core.List<$core.String> get gateways => $_getList(7);
+  $pb.PbList<$core.String> get gateways => $_getList(7);
 
   /// Optional. Set of label tags associated with the HttpRoute resource.
   @$pb.TagNumber(10)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(8);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(8);
 
   /// Output only. Server-defined URL of this resource
   @$pb.TagNumber(11)
@@ -4578,7 +4444,7 @@ class HttpRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasSelfLink() => $_has(9);
   @$pb.TagNumber(11)
-  void clearSelfLink() => clearField(11);
+  void clearSelfLink() => $_clearField(11);
 }
 
 /// Mesh represents a logical configuration grouping for workload to workload
@@ -4589,7 +4455,7 @@ class Mesh extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? description,
     $core.int? interceptionPort,
     $core.String? selfLink,
@@ -4605,7 +4471,7 @@ class Mesh extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (description != null) {
       $result.description = description;
@@ -4648,13 +4514,9 @@ class Mesh extends $pb.GeneratedMessage {
     ..aOS(9, _omitFieldNames ? '' : 'selfLink')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Mesh clone() => Mesh()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Mesh copyWith(void Function(Mesh) updates) =>
       super.copyWith((message) => updates(message as Mesh)) as Mesh;
 
@@ -4681,20 +4543,20 @@ class Mesh extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -4703,19 +4565,19 @@ class Mesh extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Set of label tags associated with the Mesh resource.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Optional. A free-text description of the resource. Max length 1024
   /// characters.
@@ -4729,7 +4591,7 @@ class Mesh extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDescription() => clearField(5);
+  void clearDescription() => $_clearField(5);
 
   /// Optional. If set to a valid TCP port (1-65535), instructs the SIDECAR proxy
   /// to listen on the specified port of localhost (127.0.0.1) address. The
@@ -4747,7 +4609,7 @@ class Mesh extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasInterceptionPort() => $_has(5);
   @$pb.TagNumber(8)
-  void clearInterceptionPort() => clearField(8);
+  void clearInterceptionPort() => $_clearField(8);
 
   /// Output only. Server-defined URL of this resource
   @$pb.TagNumber(9)
@@ -4760,7 +4622,7 @@ class Mesh extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasSelfLink() => $_has(6);
   @$pb.TagNumber(9)
-  void clearSelfLink() => clearField(9);
+  void clearSelfLink() => $_clearField(9);
 }
 
 /// ServiceBinding is the resource that defines a Service Directory Service to
@@ -4772,7 +4634,7 @@ class ServiceBinding extends $pb.GeneratedMessage {
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
     $core.String? service,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? serviceId,
   }) {
     final $result = create();
@@ -4792,7 +4654,7 @@ class ServiceBinding extends $pb.GeneratedMessage {
       $result.service = service;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (serviceId != null) {
       $result.serviceId = serviceId;
@@ -4828,13 +4690,9 @@ class ServiceBinding extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'serviceId')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceBinding clone() => ServiceBinding()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceBinding copyWith(void Function(ServiceBinding) updates) =>
       super.copyWith((message) => updates(message as ServiceBinding))
           as ServiceBinding;
@@ -4863,7 +4721,7 @@ class ServiceBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Optional. A free-text description of the resource. Max length 1024
   /// characters.
@@ -4877,20 +4735,20 @@ class ServiceBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDescription() => clearField(2);
+  void clearDescription() => $_clearField(2);
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(3)
   $2.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
   set createTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCreateTime() => clearField(3);
+  void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureCreateTime() => $_ensure(2);
 
@@ -4899,13 +4757,13 @@ class ServiceBinding extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
   set updateTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUpdateTime() => clearField(4);
+  void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureUpdateTime() => $_ensure(3);
 
@@ -4921,11 +4779,11 @@ class ServiceBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasService() => $_has(4);
   @$pb.TagNumber(5)
-  void clearService() => clearField(5);
+  void clearService() => $_clearField(5);
 
   /// Optional. Set of label tags associated with the ServiceBinding resource.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(5);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(5);
 
   /// Output only. The unique identifier of the Service Directory Service against
   /// which the Service Binding resource is validated. This is populated when the
@@ -4941,7 +4799,7 @@ class ServiceBinding extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasServiceId() => $_has(6);
   @$pb.TagNumber(8)
-  void clearServiceId() => clearField(8);
+  void clearServiceId() => $_clearField(8);
 }
 
 /// Specifies how to match traffic and how to route traffic when traffic is
@@ -4980,13 +4838,9 @@ class TcpRoute_RouteRule extends $pb.GeneratedMessage {
         subBuilder: TcpRoute_RouteAction.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteRule clone() => TcpRoute_RouteRule()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteRule copyWith(void Function(TcpRoute_RouteRule) updates) =>
       super.copyWith((message) => updates(message as TcpRoute_RouteRule))
           as TcpRoute_RouteRule;
@@ -5008,20 +4862,20 @@ class TcpRoute_RouteRule extends $pb.GeneratedMessage {
   /// routeMatch field is specified, this rule will unconditionally match
   /// traffic.
   @$pb.TagNumber(1)
-  $core.List<TcpRoute_RouteMatch> get matches => $_getList(0);
+  $pb.PbList<TcpRoute_RouteMatch> get matches => $_getList(0);
 
   /// Required. The detailed rule defining how to route matched traffic.
   @$pb.TagNumber(2)
   TcpRoute_RouteAction get action => $_getN(1);
   @$pb.TagNumber(2)
   set action(TcpRoute_RouteAction v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasAction() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAction() => clearField(2);
+  void clearAction() => $_clearField(2);
   @$pb.TagNumber(2)
   TcpRoute_RouteAction ensureAction() => $_ensure(1);
 }
@@ -5061,13 +4915,9 @@ class TcpRoute_RouteMatch extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'port')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteMatch clone() => TcpRoute_RouteMatch()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteMatch copyWith(void Function(TcpRoute_RouteMatch) updates) =>
       super.copyWith((message) => updates(message as TcpRoute_RouteMatch))
           as TcpRoute_RouteMatch;
@@ -5101,7 +4951,7 @@ class TcpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasAddress() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAddress() => clearField(1);
+  void clearAddress() => $_clearField(1);
 
   /// Required. Specifies the destination port to match against.
   @$pb.TagNumber(2)
@@ -5114,7 +4964,7 @@ class TcpRoute_RouteMatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPort() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPort() => clearField(2);
+  void clearPort() => $_clearField(2);
 }
 
 /// The specifications for routing traffic and applying associated policies.
@@ -5151,14 +5001,10 @@ class TcpRoute_RouteAction extends $pb.GeneratedMessage {
     ..aOB(3, _omitFieldNames ? '' : 'originalDestination')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteAction clone() =>
       TcpRoute_RouteAction()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteAction copyWith(void Function(TcpRoute_RouteAction) updates) =>
       super.copyWith((message) => updates(message as TcpRoute_RouteAction))
           as TcpRoute_RouteAction;
@@ -5179,7 +5025,7 @@ class TcpRoute_RouteAction extends $pb.GeneratedMessage {
   /// At least one destination service is required. Only one of route
   /// destination or original destination can be set.
   @$pb.TagNumber(1)
-  $core.List<TcpRoute_RouteDestination> get destinations => $_getList(0);
+  $pb.PbList<TcpRoute_RouteDestination> get destinations => $_getList(0);
 
   /// Optional. If true, Router will use the destination IP and port of the
   /// original connection as the destination of the request. Default is false.
@@ -5194,7 +5040,7 @@ class TcpRoute_RouteAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasOriginalDestination() => $_has(1);
   @$pb.TagNumber(3)
-  void clearOriginalDestination() => clearField(3);
+  void clearOriginalDestination() => $_clearField(3);
 }
 
 /// Describe the destination for traffic to be routed to.
@@ -5229,14 +5075,10 @@ class TcpRoute_RouteDestination extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'weight', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteDestination clone() =>
       TcpRoute_RouteDestination()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute_RouteDestination copyWith(
           void Function(TcpRoute_RouteDestination) updates) =>
       super.copyWith((message) => updates(message as TcpRoute_RouteDestination))
@@ -5265,22 +5107,22 @@ class TcpRoute_RouteDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasServiceName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearServiceName() => clearField(1);
+  void clearServiceName() => $_clearField(1);
 
-  ///  Optional. Specifies the proportion of requests forwarded to the backend
-  ///  referenced by the serviceName field. This is computed as:
-  ///          weight/Sum(weights in this destination list).
-  ///  For non-zero values, there may be some epsilon from the exact proportion
-  ///  defined here depending on the precision an implementation supports.
+  /// Optional. Specifies the proportion of requests forwarded to the backend
+  /// referenced by the serviceName field. This is computed as:
+  ///         weight/Sum(weights in this destination list).
+  /// For non-zero values, there may be some epsilon from the exact proportion
+  /// defined here depending on the precision an implementation supports.
   ///
-  ///  If only one serviceName is specified and it has a weight greater than 0,
-  ///  100% of the traffic is forwarded to that backend.
+  /// If only one serviceName is specified and it has a weight greater than 0,
+  /// 100% of the traffic is forwarded to that backend.
   ///
-  ///  If weights are specified for any one service name, they need to be
-  ///  specified for all of them.
+  /// If weights are specified for any one service name, they need to be
+  /// specified for all of them.
   ///
-  ///  If weights are unspecified for all services, then, traffic is distributed
-  ///  in equal proportions to all of them.
+  /// If weights are unspecified for all services, then, traffic is distributed
+  /// in equal proportions to all of them.
   @$pb.TagNumber(2)
   $core.int get weight => $_getIZ(1);
   @$pb.TagNumber(2)
@@ -5291,7 +5133,7 @@ class TcpRoute_RouteDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasWeight() => $_has(1);
   @$pb.TagNumber(2)
-  void clearWeight() => clearField(2);
+  void clearWeight() => $_clearField(2);
 }
 
 /// TcpRoute is the resource defining how TCP traffic should be routed by a
@@ -5305,7 +5147,7 @@ class TcpRoute extends $pb.GeneratedMessage {
     $core.Iterable<TcpRoute_RouteRule>? rules,
     $core.Iterable<$core.String>? meshes,
     $core.Iterable<$core.String>? gateways,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? selfLink,
   }) {
     final $result = create();
@@ -5331,7 +5173,7 @@ class TcpRoute extends $pb.GeneratedMessage {
       $result.gateways.addAll(gateways);
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (selfLink != null) {
       $result.selfLink = selfLink;
@@ -5371,13 +5213,9 @@ class TcpRoute extends $pb.GeneratedMessage {
     ..aOS(11, _omitFieldNames ? '' : 'selfLink')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute clone() => TcpRoute()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRoute copyWith(void Function(TcpRoute) updates) =>
       super.copyWith((message) => updates(message as TcpRoute)) as TcpRoute;
 
@@ -5404,20 +5242,20 @@ class TcpRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -5426,13 +5264,13 @@ class TcpRoute extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -5448,35 +5286,35 @@ class TcpRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDescription() => clearField(4);
+  void clearDescription() => $_clearField(4);
 
   /// Required. Rules that define how traffic is routed and handled. At least one
   /// RouteRule must be supplied. If there are multiple rules then the action
   /// taken will be the first rule to match.
   @$pb.TagNumber(5)
-  $core.List<TcpRoute_RouteRule> get rules => $_getList(4);
+  $pb.PbList<TcpRoute_RouteRule> get rules => $_getList(4);
 
-  ///  Optional. Meshes defines a list of meshes this TcpRoute is attached to, as
-  ///  one of the routing rules to route the requests served by the mesh.
+  /// Optional. Meshes defines a list of meshes this TcpRoute is attached to, as
+  /// one of the routing rules to route the requests served by the mesh.
   ///
-  ///  Each mesh reference should match the pattern:
-  ///  `projects/*/locations/global/meshes/<mesh_name>`
+  /// Each mesh reference should match the pattern:
+  /// `projects/*/locations/global/meshes/<mesh_name>`
   ///
-  ///  The attached Mesh should be of a type SIDECAR
+  /// The attached Mesh should be of a type SIDECAR
   @$pb.TagNumber(8)
-  $core.List<$core.String> get meshes => $_getList(5);
+  $pb.PbList<$core.String> get meshes => $_getList(5);
 
-  ///  Optional. Gateways defines a list of gateways this TcpRoute is attached to,
-  ///  as one of the routing rules to route the requests served by the gateway.
+  /// Optional. Gateways defines a list of gateways this TcpRoute is attached to,
+  /// as one of the routing rules to route the requests served by the gateway.
   ///
-  ///  Each gateway reference should match the pattern:
-  ///  `projects/*/locations/global/gateways/<gateway_name>`
+  /// Each gateway reference should match the pattern:
+  /// `projects/*/locations/global/gateways/<gateway_name>`
   @$pb.TagNumber(9)
-  $core.List<$core.String> get gateways => $_getList(6);
+  $pb.PbList<$core.String> get gateways => $_getList(6);
 
   /// Optional. Set of label tags associated with the TcpRoute resource.
   @$pb.TagNumber(10)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(7);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(7);
 
   /// Output only. Server-defined URL of this resource
   @$pb.TagNumber(11)
@@ -5489,7 +5327,7 @@ class TcpRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasSelfLink() => $_has(8);
   @$pb.TagNumber(11)
-  void clearSelfLink() => clearField(11);
+  void clearSelfLink() => $_clearField(11);
 }
 
 /// Specifies how to match traffic and how to route traffic when traffic is
@@ -5528,13 +5366,9 @@ class TlsRoute_RouteRule extends $pb.GeneratedMessage {
         subBuilder: TlsRoute_RouteAction.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteRule clone() => TlsRoute_RouteRule()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteRule copyWith(void Function(TlsRoute_RouteRule) updates) =>
       super.copyWith((message) => updates(message as TlsRoute_RouteRule))
           as TlsRoute_RouteRule;
@@ -5554,20 +5388,20 @@ class TlsRoute_RouteRule extends $pb.GeneratedMessage {
   /// Required. RouteMatch defines the predicate used to match requests to a
   /// given action. Multiple match types are "OR"ed for evaluation.
   @$pb.TagNumber(1)
-  $core.List<TlsRoute_RouteMatch> get matches => $_getList(0);
+  $pb.PbList<TlsRoute_RouteMatch> get matches => $_getList(0);
 
   /// Required. The detailed rule defining how to route matched traffic.
   @$pb.TagNumber(2)
   TlsRoute_RouteAction get action => $_getN(1);
   @$pb.TagNumber(2)
   set action(TlsRoute_RouteAction v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasAction() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAction() => clearField(2);
+  void clearAction() => $_clearField(2);
   @$pb.TagNumber(2)
   TlsRoute_RouteAction ensureAction() => $_ensure(1);
 }
@@ -5607,13 +5441,9 @@ class TlsRoute_RouteMatch extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'alpn')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteMatch clone() => TlsRoute_RouteMatch()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteMatch copyWith(void Function(TlsRoute_RouteMatch) updates) =>
       super.copyWith((message) => updates(message as TlsRoute_RouteMatch))
           as TlsRoute_RouteMatch;
@@ -5639,14 +5469,14 @@ class TlsRoute_RouteMatch extends $pb.GeneratedMessage {
   /// At least one of sni_host and alpn is required.
   /// Up to 5 sni hosts across all matches can be set.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get sniHost => $_getList(0);
+  $pb.PbList<$core.String> get sniHost => $_getList(0);
 
   /// Optional. ALPN (Application-Layer Protocol Negotiation) to match against.
   /// Examples: "http/1.1", "h2".
   /// At least one of sni_host and alpn is required.
   /// Up to 5 alpns across all matches can be set.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get alpn => $_getList(1);
+  $pb.PbList<$core.String> get alpn => $_getList(1);
 }
 
 /// The specifications for routing traffic and applying associated policies.
@@ -5678,14 +5508,10 @@ class TlsRoute_RouteAction extends $pb.GeneratedMessage {
         subBuilder: TlsRoute_RouteDestination.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteAction clone() =>
       TlsRoute_RouteAction()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteAction copyWith(void Function(TlsRoute_RouteAction) updates) =>
       super.copyWith((message) => updates(message as TlsRoute_RouteAction))
           as TlsRoute_RouteAction;
@@ -5705,7 +5531,7 @@ class TlsRoute_RouteAction extends $pb.GeneratedMessage {
   /// Required. The destination services to which traffic should be forwarded.
   /// At least one destination service is required.
   @$pb.TagNumber(1)
-  $core.List<TlsRoute_RouteDestination> get destinations => $_getList(0);
+  $pb.PbList<TlsRoute_RouteDestination> get destinations => $_getList(0);
 }
 
 /// Describe the destination for traffic to be routed to.
@@ -5740,14 +5566,10 @@ class TlsRoute_RouteDestination extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'weight', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteDestination clone() =>
       TlsRoute_RouteDestination()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute_RouteDestination copyWith(
           void Function(TlsRoute_RouteDestination) updates) =>
       super.copyWith((message) => updates(message as TlsRoute_RouteDestination))
@@ -5776,7 +5598,7 @@ class TlsRoute_RouteDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasServiceName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearServiceName() => clearField(1);
+  void clearServiceName() => $_clearField(1);
 
   /// Optional. Specifies the proportion of requests forwareded to the backend
   /// referenced by the service_name field. This is computed as:
@@ -5792,7 +5614,7 @@ class TlsRoute_RouteDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasWeight() => $_has(1);
   @$pb.TagNumber(2)
-  void clearWeight() => clearField(2);
+  void clearWeight() => $_clearField(2);
 }
 
 /// TlsRoute defines how traffic should be routed based on SNI and other matching
@@ -5862,13 +5684,9 @@ class TlsRoute extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'selfLink')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute clone() => TlsRoute()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRoute copyWith(void Function(TlsRoute) updates) =>
       super.copyWith((message) => updates(message as TlsRoute)) as TlsRoute;
 
@@ -5895,20 +5713,20 @@ class TlsRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -5917,13 +5735,13 @@ class TlsRoute extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
@@ -5939,31 +5757,31 @@ class TlsRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDescription() => clearField(4);
+  void clearDescription() => $_clearField(4);
 
   /// Required. Rules that define how traffic is routed and handled. At least one
   /// RouteRule must be supplied. If there are multiple rules then the action
   /// taken will be the first rule to match.
   @$pb.TagNumber(5)
-  $core.List<TlsRoute_RouteRule> get rules => $_getList(4);
+  $pb.PbList<TlsRoute_RouteRule> get rules => $_getList(4);
 
-  ///  Optional. Meshes defines a list of meshes this TlsRoute is attached to, as
-  ///  one of the routing rules to route the requests served by the mesh.
+  /// Optional. Meshes defines a list of meshes this TlsRoute is attached to, as
+  /// one of the routing rules to route the requests served by the mesh.
   ///
-  ///  Each mesh reference should match the pattern:
-  ///  `projects/*/locations/global/meshes/<mesh_name>`
+  /// Each mesh reference should match the pattern:
+  /// `projects/*/locations/global/meshes/<mesh_name>`
   ///
-  ///  The attached Mesh should be of a type SIDECAR
+  /// The attached Mesh should be of a type SIDECAR
   @$pb.TagNumber(6)
-  $core.List<$core.String> get meshes => $_getList(5);
+  $pb.PbList<$core.String> get meshes => $_getList(5);
 
-  ///  Optional. Gateways defines a list of gateways this TlsRoute is attached to,
-  ///  as one of the routing rules to route the requests served by the gateway.
+  /// Optional. Gateways defines a list of gateways this TlsRoute is attached to,
+  /// as one of the routing rules to route the requests served by the gateway.
   ///
-  ///  Each gateway reference should match the pattern:
-  ///  `projects/*/locations/global/gateways/<gateway_name>`
+  /// Each gateway reference should match the pattern:
+  /// `projects/*/locations/global/gateways/<gateway_name>`
   @$pb.TagNumber(7)
-  $core.List<$core.String> get gateways => $_getList(6);
+  $pb.PbList<$core.String> get gateways => $_getList(6);
 
   /// Output only. Server-defined URL of this resource
   @$pb.TagNumber(8)
@@ -5976,7 +5794,7 @@ class TlsRoute extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasSelfLink() => $_has(7);
   @$pb.TagNumber(8)
-  void clearSelfLink() => clearField(8);
+  void clearSelfLink() => $_clearField(8);
 }
 
 /// The data within all EndpointPolicy events.
@@ -6007,14 +5825,10 @@ class EndpointPolicyEventData extends $pb.GeneratedMessage {
         subBuilder: EndpointPolicy.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointPolicyEventData clone() =>
       EndpointPolicyEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EndpointPolicyEventData copyWith(
           void Function(EndpointPolicyEventData) updates) =>
       super.copyWith((message) => updates(message as EndpointPolicyEventData))
@@ -6037,13 +5851,13 @@ class EndpointPolicyEventData extends $pb.GeneratedMessage {
   EndpointPolicy get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(EndpointPolicy v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   EndpointPolicy ensurePayload() => $_ensure(0);
 }
@@ -6076,13 +5890,9 @@ class HttpRouteEventData extends $pb.GeneratedMessage {
         subBuilder: HttpRoute.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRouteEventData clone() => HttpRouteEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HttpRouteEventData copyWith(void Function(HttpRouteEventData) updates) =>
       super.copyWith((message) => updates(message as HttpRouteEventData))
           as HttpRouteEventData;
@@ -6104,13 +5914,13 @@ class HttpRouteEventData extends $pb.GeneratedMessage {
   HttpRoute get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(HttpRoute v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   HttpRoute ensurePayload() => $_ensure(0);
 }
@@ -6143,14 +5953,10 @@ class ServiceBindingEventData extends $pb.GeneratedMessage {
         subBuilder: ServiceBinding.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceBindingEventData clone() =>
       ServiceBindingEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceBindingEventData copyWith(
           void Function(ServiceBindingEventData) updates) =>
       super.copyWith((message) => updates(message as ServiceBindingEventData))
@@ -6173,13 +5979,13 @@ class ServiceBindingEventData extends $pb.GeneratedMessage {
   ServiceBinding get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(ServiceBinding v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   ServiceBinding ensurePayload() => $_ensure(0);
 }
@@ -6212,13 +6018,9 @@ class GatewayEventData extends $pb.GeneratedMessage {
         subBuilder: Gateway.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GatewayEventData clone() => GatewayEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GatewayEventData copyWith(void Function(GatewayEventData) updates) =>
       super.copyWith((message) => updates(message as GatewayEventData))
           as GatewayEventData;
@@ -6240,13 +6042,13 @@ class GatewayEventData extends $pb.GeneratedMessage {
   Gateway get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Gateway v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Gateway ensurePayload() => $_ensure(0);
 }
@@ -6279,13 +6081,9 @@ class TlsRouteEventData extends $pb.GeneratedMessage {
         subBuilder: TlsRoute.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRouteEventData clone() => TlsRouteEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TlsRouteEventData copyWith(void Function(TlsRouteEventData) updates) =>
       super.copyWith((message) => updates(message as TlsRouteEventData))
           as TlsRouteEventData;
@@ -6307,13 +6105,13 @@ class TlsRouteEventData extends $pb.GeneratedMessage {
   TlsRoute get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(TlsRoute v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   TlsRoute ensurePayload() => $_ensure(0);
 }
@@ -6346,13 +6144,9 @@ class GrpcRouteEventData extends $pb.GeneratedMessage {
         subBuilder: GrpcRoute.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRouteEventData clone() => GrpcRouteEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GrpcRouteEventData copyWith(void Function(GrpcRouteEventData) updates) =>
       super.copyWith((message) => updates(message as GrpcRouteEventData))
           as GrpcRouteEventData;
@@ -6374,13 +6168,13 @@ class GrpcRouteEventData extends $pb.GeneratedMessage {
   GrpcRoute get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(GrpcRoute v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   GrpcRoute ensurePayload() => $_ensure(0);
 }
@@ -6412,13 +6206,9 @@ class MeshEventData extends $pb.GeneratedMessage {
     ..aOM<Mesh>(1, _omitFieldNames ? '' : 'payload', subBuilder: Mesh.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MeshEventData clone() => MeshEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MeshEventData copyWith(void Function(MeshEventData) updates) =>
       super.copyWith((message) => updates(message as MeshEventData))
           as MeshEventData;
@@ -6440,13 +6230,13 @@ class MeshEventData extends $pb.GeneratedMessage {
   Mesh get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Mesh v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Mesh ensurePayload() => $_ensure(0);
 }
@@ -6479,13 +6269,9 @@ class TcpRouteEventData extends $pb.GeneratedMessage {
         subBuilder: TcpRoute.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRouteEventData clone() => TcpRouteEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TcpRouteEventData copyWith(void Function(TcpRouteEventData) updates) =>
       super.copyWith((message) => updates(message as TcpRouteEventData))
           as TcpRouteEventData;
@@ -6507,13 +6293,13 @@ class TcpRouteEventData extends $pb.GeneratedMessage {
   TcpRoute get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(TcpRoute v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   TcpRoute ensurePayload() => $_ensure(0);
 }

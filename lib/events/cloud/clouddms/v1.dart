@@ -1,17 +1,3 @@
-export '../../../src/events/cloud/clouddms/v1/data.pbenum.dart'
-    show
-        NetworkArchitecture,
-        DatabaseEngine,
-        DatabaseProvider,
-        SslConfig_SslType,
-        CloudSqlSettings_SqlActivationPolicy,
-        CloudSqlSettings_SqlDataDiskType,
-        CloudSqlSettings_SqlDatabaseVersion,
-        CloudSqlSettings_SqlAvailabilityType,
-        MigrationJob_State,
-        MigrationJob_Phase,
-        MigrationJob_Type,
-        ConnectionProfile_State;
 export '../../../src/events/cloud/clouddms/v1/data.pb.dart'
     show
         SslConfig,
@@ -36,6 +22,20 @@ export '../../../src/events/cloud/clouddms/v1/data.pb.dart'
         ConnectionProfile,
         ConnectionProfileEventData,
         MigrationJobEventData;
+export '../../../src/events/cloud/clouddms/v1/data.pbenum.dart'
+    show
+        NetworkArchitecture,
+        DatabaseEngine,
+        DatabaseProvider,
+        SslConfig_SslType,
+        CloudSqlSettings_SqlActivationPolicy,
+        CloudSqlSettings_SqlDataDiskType,
+        CloudSqlSettings_SqlDatabaseVersion,
+        CloudSqlSettings_SqlAvailabilityType,
+        MigrationJob_State,
+        MigrationJob_Phase,
+        MigrationJob_Type,
+        ConnectionProfile_State;
 export '../../../src/events/cloud/clouddms/v1/events.pb.dart'
     show
         MigrationJobCreatedEvent,

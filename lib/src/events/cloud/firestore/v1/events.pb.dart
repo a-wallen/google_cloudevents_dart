@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/firestore/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,12 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $25;
+import 'data.pb.dart' as $32;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when a Firestore document is created.
 class DocumentCreatedEvent extends $pb.GeneratedMessage {
   factory DocumentCreatedEvent({
-    $25.DocumentEventData? data,
+    $32.DocumentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -39,18 +41,14 @@ class DocumentCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.firestore.v1'),
       createEmptyInstance: create)
-    ..aOM<$25.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $25.DocumentEventData.create)
+    ..aOM<$32.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $32.DocumentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentCreatedEvent clone() =>
       DocumentCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentCreatedEvent copyWith(void Function(DocumentCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as DocumentCreatedEvent))
           as DocumentCreatedEvent;
@@ -69,24 +67,24 @@ class DocumentCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $25.DocumentEventData get data => $_getN(0);
+  $32.DocumentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($25.DocumentEventData v) {
-    setField(1, v);
+  set data($32.DocumentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $25.DocumentEventData ensureData() => $_ensure(0);
+  $32.DocumentEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Firestore document is updated.
 class DocumentUpdatedEvent extends $pb.GeneratedMessage {
   factory DocumentUpdatedEvent({
-    $25.DocumentEventData? data,
+    $32.DocumentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -107,18 +105,14 @@ class DocumentUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.firestore.v1'),
       createEmptyInstance: create)
-    ..aOM<$25.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $25.DocumentEventData.create)
+    ..aOM<$32.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $32.DocumentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentUpdatedEvent clone() =>
       DocumentUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentUpdatedEvent copyWith(void Function(DocumentUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as DocumentUpdatedEvent))
           as DocumentUpdatedEvent;
@@ -137,24 +131,24 @@ class DocumentUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $25.DocumentEventData get data => $_getN(0);
+  $32.DocumentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($25.DocumentEventData v) {
-    setField(1, v);
+  set data($32.DocumentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $25.DocumentEventData ensureData() => $_ensure(0);
+  $32.DocumentEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Firestore document is deleted.
 class DocumentDeletedEvent extends $pb.GeneratedMessage {
   factory DocumentDeletedEvent({
-    $25.DocumentEventData? data,
+    $32.DocumentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -175,18 +169,14 @@ class DocumentDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.firestore.v1'),
       createEmptyInstance: create)
-    ..aOM<$25.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $25.DocumentEventData.create)
+    ..aOM<$32.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $32.DocumentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentDeletedEvent clone() =>
       DocumentDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentDeletedEvent copyWith(void Function(DocumentDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as DocumentDeletedEvent))
           as DocumentDeletedEvent;
@@ -205,25 +195,25 @@ class DocumentDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $25.DocumentEventData get data => $_getN(0);
+  $32.DocumentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($25.DocumentEventData v) {
-    setField(1, v);
+  set data($32.DocumentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $25.DocumentEventData ensureData() => $_ensure(0);
+  $32.DocumentEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a Firestore document is created, updated or
 /// deleted.
 class DocumentWrittenEvent extends $pb.GeneratedMessage {
   factory DocumentWrittenEvent({
-    $25.DocumentEventData? data,
+    $32.DocumentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -244,18 +234,14 @@ class DocumentWrittenEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.firestore.v1'),
       createEmptyInstance: create)
-    ..aOM<$25.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $25.DocumentEventData.create)
+    ..aOM<$32.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $32.DocumentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentWrittenEvent clone() =>
       DocumentWrittenEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentWrittenEvent copyWith(void Function(DocumentWrittenEvent) updates) =>
       super.copyWith((message) => updates(message as DocumentWrittenEvent))
           as DocumentWrittenEvent;
@@ -274,24 +260,24 @@ class DocumentWrittenEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $25.DocumentEventData get data => $_getN(0);
+  $32.DocumentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($25.DocumentEventData v) {
-    setField(1, v);
+  set data($32.DocumentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $25.DocumentEventData ensureData() => $_ensure(0);
+  $32.DocumentEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent with Auth Context raised when a Firestore document is created.
 class DocumentCreatedEventWithAuthContext extends $pb.GeneratedMessage {
   factory DocumentCreatedEventWithAuthContext({
-    $25.DocumentEventData? data,
+    $32.DocumentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -313,18 +299,14 @@ class DocumentCreatedEventWithAuthContext extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.firestore.v1'),
       createEmptyInstance: create)
-    ..aOM<$25.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $25.DocumentEventData.create)
+    ..aOM<$32.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $32.DocumentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentCreatedEventWithAuthContext clone() =>
       DocumentCreatedEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentCreatedEventWithAuthContext copyWith(
           void Function(DocumentCreatedEventWithAuthContext) updates) =>
       super.copyWith((message) =>
@@ -347,24 +329,24 @@ class DocumentCreatedEventWithAuthContext extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $25.DocumentEventData get data => $_getN(0);
+  $32.DocumentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($25.DocumentEventData v) {
-    setField(1, v);
+  set data($32.DocumentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $25.DocumentEventData ensureData() => $_ensure(0);
+  $32.DocumentEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent with Auth Context raised when a Firestore document is updated.
 class DocumentUpdatedEventWithAuthContext extends $pb.GeneratedMessage {
   factory DocumentUpdatedEventWithAuthContext({
-    $25.DocumentEventData? data,
+    $32.DocumentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -386,18 +368,14 @@ class DocumentUpdatedEventWithAuthContext extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.firestore.v1'),
       createEmptyInstance: create)
-    ..aOM<$25.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $25.DocumentEventData.create)
+    ..aOM<$32.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $32.DocumentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentUpdatedEventWithAuthContext clone() =>
       DocumentUpdatedEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentUpdatedEventWithAuthContext copyWith(
           void Function(DocumentUpdatedEventWithAuthContext) updates) =>
       super.copyWith((message) =>
@@ -420,24 +398,24 @@ class DocumentUpdatedEventWithAuthContext extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $25.DocumentEventData get data => $_getN(0);
+  $32.DocumentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($25.DocumentEventData v) {
-    setField(1, v);
+  set data($32.DocumentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $25.DocumentEventData ensureData() => $_ensure(0);
+  $32.DocumentEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent with Auth Context raised when a Firestore document is deleted.
 class DocumentDeletedEventWithAuthContext extends $pb.GeneratedMessage {
   factory DocumentDeletedEventWithAuthContext({
-    $25.DocumentEventData? data,
+    $32.DocumentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -459,18 +437,14 @@ class DocumentDeletedEventWithAuthContext extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.firestore.v1'),
       createEmptyInstance: create)
-    ..aOM<$25.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $25.DocumentEventData.create)
+    ..aOM<$32.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $32.DocumentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentDeletedEventWithAuthContext clone() =>
       DocumentDeletedEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentDeletedEventWithAuthContext copyWith(
           void Function(DocumentDeletedEventWithAuthContext) updates) =>
       super.copyWith((message) =>
@@ -493,25 +467,25 @@ class DocumentDeletedEventWithAuthContext extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $25.DocumentEventData get data => $_getN(0);
+  $32.DocumentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($25.DocumentEventData v) {
-    setField(1, v);
+  set data($32.DocumentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $25.DocumentEventData ensureData() => $_ensure(0);
+  $32.DocumentEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent with Auth Context raised when a Firestore document is created,
 /// updated or deleted.
 class DocumentWrittenEventWithAuthContext extends $pb.GeneratedMessage {
   factory DocumentWrittenEventWithAuthContext({
-    $25.DocumentEventData? data,
+    $32.DocumentEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -533,18 +507,14 @@ class DocumentWrittenEventWithAuthContext extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.firestore.v1'),
       createEmptyInstance: create)
-    ..aOM<$25.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $25.DocumentEventData.create)
+    ..aOM<$32.DocumentEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $32.DocumentEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentWrittenEventWithAuthContext clone() =>
       DocumentWrittenEventWithAuthContext()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DocumentWrittenEventWithAuthContext copyWith(
           void Function(DocumentWrittenEventWithAuthContext) updates) =>
       super.copyWith((message) =>
@@ -567,18 +537,18 @@ class DocumentWrittenEventWithAuthContext extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $25.DocumentEventData get data => $_getN(0);
+  $32.DocumentEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($25.DocumentEventData v) {
-    setField(1, v);
+  set data($32.DocumentEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $25.DocumentEventData ensureData() => $_ensure(0);
+  $32.DocumentEventData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

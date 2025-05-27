@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/metastore/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,9 +14,11 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../protobuf/wrappers.pb.dart' as $45;
-import '../../../../type/dayofweek.pbenum.dart' as $27;
+import '../../../../protobuf/wrappers.pb.dart' as $21;
+import '../../../../type/dayofweek.pbenum.dart' as $3;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -26,9 +28,10 @@ class Federation extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? version,
-    $core.Map<$core.int, BackendMetastore>? backendMetastores,
+    $core.Iterable<$core.MapEntry<$core.int, BackendMetastore>>?
+        backendMetastores,
     $core.String? endpointUri,
     Federation_State? state,
     $core.String? stateMessage,
@@ -45,13 +48,13 @@ class Federation extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (version != null) {
       $result.version = version;
     }
     if (backendMetastores != null) {
-      $result.backendMetastores.addAll(backendMetastores);
+      $result.backendMetastores.addEntries(backendMetastores);
     }
     if (endpointUri != null) {
       $result.endpointUri = endpointUri;
@@ -108,13 +111,9 @@ class Federation extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'uid')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Federation clone() => Federation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Federation copyWith(void Function(Federation) updates) =>
       super.copyWith((message) => updates(message as Federation)) as Federation;
 
@@ -142,20 +141,20 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The time when the metastore federation was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -164,19 +163,19 @@ class Federation extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels for the metastore federation.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Immutable. The Apache Hive metastore version of the federation. All backend
   /// metastore versions must be compatible with the federation version.
@@ -190,7 +189,7 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasVersion() => $_has(4);
   @$pb.TagNumber(5)
-  void clearVersion() => clearField(5);
+  void clearVersion() => $_clearField(5);
 
   /// A map from `BackendMetastore` rank to `BackendMetastore`s from which the
   /// federation service serves metadata at query time. The map key represents
@@ -199,7 +198,7 @@ class Federation extends $pb.GeneratedMessage {
   /// `BackendMetastore` with a lower number will be evaluated before a
   /// `BackendMetastore` with a higher number.
   @$pb.TagNumber(6)
-  $core.Map<$core.int, BackendMetastore> get backendMetastores => $_getMap(5);
+  $pb.PbMap<$core.int, BackendMetastore> get backendMetastores => $_getMap(5);
 
   /// Output only. The federation endpoint.
   @$pb.TagNumber(7)
@@ -212,20 +211,20 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasEndpointUri() => $_has(6);
   @$pb.TagNumber(7)
-  void clearEndpointUri() => clearField(7);
+  void clearEndpointUri() => $_clearField(7);
 
   /// Output only. The current state of the federation.
   @$pb.TagNumber(8)
   Federation_State get state => $_getN(7);
   @$pb.TagNumber(8)
   set state(Federation_State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// Output only. Additional information about the current state of the
   /// metastore federation, if available.
@@ -239,7 +238,7 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasStateMessage() => $_has(8);
   @$pb.TagNumber(9)
-  void clearStateMessage() => clearField(9);
+  void clearStateMessage() => $_clearField(9);
 
   /// Output only. The globally unique resource identifier of the metastore
   /// federation.
@@ -253,7 +252,7 @@ class Federation extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasUid() => $_has(9);
   @$pb.TagNumber(10)
-  void clearUid() => clearField(10);
+  void clearUid() => $_clearField(10);
 }
 
 /// Represents a backend metastore for the federation.
@@ -293,13 +292,9 @@ class BackendMetastore extends $pb.GeneratedMessage {
         enumValues: BackendMetastore_MetastoreType.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackendMetastore clone() => BackendMetastore()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackendMetastore copyWith(void Function(BackendMetastore) updates) =>
       super.copyWith((message) => updates(message as BackendMetastore))
           as BackendMetastore;
@@ -316,14 +311,14 @@ class BackendMetastore extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<BackendMetastore>(create);
   static BackendMetastore? _defaultInstance;
 
-  ///  The relative resource name of the metastore that is being federated.
-  ///  The formats of the relative resource names for the currently supported
-  ///  metastores are listed below:
+  /// The relative resource name of the metastore that is being federated.
+  /// The formats of the relative resource names for the currently supported
+  /// metastores are listed below:
   ///
-  ///  * BigQuery
-  ///      * `projects/{project_id}`
-  ///  * Dataproc Metastore
-  ///      * `projects/{project_id}/locations/{location}/services/{service_id}`
+  /// * BigQuery
+  ///     * `projects/{project_id}`
+  /// * Dataproc Metastore
+  ///     * `projects/{project_id}/locations/{location}/services/{service_id}`
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -334,20 +329,20 @@ class BackendMetastore extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// The type of the backend metastore.
   @$pb.TagNumber(2)
   BackendMetastore_MetastoreType get metastoreType => $_getN(1);
   @$pb.TagNumber(2)
   set metastoreType(BackendMetastore_MetastoreType v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasMetastoreType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMetastoreType() => clearField(2);
+  void clearMetastoreType() => $_clearField(2);
 }
 
 enum Service_MetastoreConfig { hiveMetastoreConfig, notSet }
@@ -358,7 +353,7 @@ class Service extends $pb.GeneratedMessage {
     $core.String? name,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     HiveMetastoreConfig? hiveMetastoreConfig,
     $core.String? network,
     $core.String? endpointUri,
@@ -388,7 +383,7 @@ class Service extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (hiveMetastoreConfig != null) {
       $result.hiveMetastoreConfig = hiveMetastoreConfig;
@@ -513,13 +508,9 @@ class Service extends $pb.GeneratedMessage {
         subBuilder: ScalingConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Service clone() => Service()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Service copyWith(void Function(Service) updates) =>
       super.copyWith((message) => updates(message as Service)) as Service;
 
@@ -536,12 +527,12 @@ class Service extends $pb.GeneratedMessage {
 
   Service_MetastoreConfig whichMetastoreConfig() =>
       _Service_MetastoreConfigByTag[$_whichOneof(0)]!;
-  void clearMetastoreConfig() => clearField($_whichOneof(0));
+  void clearMetastoreConfig() => $_clearField($_whichOneof(0));
 
-  ///  Immutable. The relative resource name of the metastore service, in the
-  ///  following format:
+  /// Immutable. The relative resource name of the metastore service, in the
+  /// following format:
   ///
-  ///  `projects/{project_number}/locations/{location_id}/services/{service_id}`.
+  /// `projects/{project_number}/locations/{location_id}/services/{service_id}`.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -552,20 +543,20 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The time when the metastore service was created.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -574,19 +565,19 @@ class Service extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels for the metastore service.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Configuration information specific to running Hive metastore
   /// software as the metastore service.
@@ -594,20 +585,20 @@ class Service extends $pb.GeneratedMessage {
   HiveMetastoreConfig get hiveMetastoreConfig => $_getN(4);
   @$pb.TagNumber(5)
   set hiveMetastoreConfig(HiveMetastoreConfig v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasHiveMetastoreConfig() => $_has(4);
   @$pb.TagNumber(5)
-  void clearHiveMetastoreConfig() => clearField(5);
+  void clearHiveMetastoreConfig() => $_clearField(5);
   @$pb.TagNumber(5)
   HiveMetastoreConfig ensureHiveMetastoreConfig() => $_ensure(4);
 
-  ///  Immutable. The relative resource name of the VPC network on which the
-  ///  instance can be accessed. It is specified in the following form:
+  /// Immutable. The relative resource name of the VPC network on which the
+  /// instance can be accessed. It is specified in the following form:
   ///
-  ///  `projects/{project_number}/global/networks/{network_id}`.
+  /// `projects/{project_number}/global/networks/{network_id}`.
   @$pb.TagNumber(7)
   $core.String get network => $_getSZ(5);
   @$pb.TagNumber(7)
@@ -618,7 +609,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasNetwork() => $_has(5);
   @$pb.TagNumber(7)
-  void clearNetwork() => clearField(7);
+  void clearNetwork() => $_clearField(7);
 
   /// Output only. The URI of the endpoint used to access the metastore service.
   @$pb.TagNumber(8)
@@ -631,7 +622,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasEndpointUri() => $_has(6);
   @$pb.TagNumber(8)
-  void clearEndpointUri() => clearField(8);
+  void clearEndpointUri() => $_clearField(8);
 
   /// The TCP port at which the metastore service is reached. Default: 9083.
   @$pb.TagNumber(9)
@@ -644,20 +635,20 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasPort() => $_has(7);
   @$pb.TagNumber(9)
-  void clearPort() => clearField(9);
+  void clearPort() => $_clearField(9);
 
   /// Output only. The current state of the metastore service.
   @$pb.TagNumber(10)
   Service_State get state => $_getN(8);
   @$pb.TagNumber(10)
   set state(Service_State v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasState() => $_has(8);
   @$pb.TagNumber(10)
-  void clearState() => clearField(10);
+  void clearState() => $_clearField(10);
 
   /// Output only. Additional information about the current state of the
   /// metastore service, if available.
@@ -671,7 +662,7 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasStateMessage() => $_has(9);
   @$pb.TagNumber(11)
-  void clearStateMessage() => clearField(11);
+  void clearStateMessage() => $_clearField(11);
 
   /// Output only. A Cloud Storage URI (starting with `gs://`) that specifies
   /// where artifacts related to the metastore service are stored.
@@ -685,20 +676,20 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasArtifactGcsUri() => $_has(10);
   @$pb.TagNumber(12)
-  void clearArtifactGcsUri() => clearField(12);
+  void clearArtifactGcsUri() => $_clearField(12);
 
   /// The tier of the service.
   @$pb.TagNumber(13)
   Service_Tier get tier => $_getN(11);
   @$pb.TagNumber(13)
   set tier(Service_Tier v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasTier() => $_has(11);
   @$pb.TagNumber(13)
-  void clearTier() => clearField(13);
+  void clearTier() => $_clearField(13);
 
   /// The one hour maintenance window of the metastore service. This specifies
   /// when the service can be restarted for maintenance purposes in UTC time.
@@ -708,13 +699,13 @@ class Service extends $pb.GeneratedMessage {
   MaintenanceWindow get maintenanceWindow => $_getN(12);
   @$pb.TagNumber(15)
   set maintenanceWindow(MaintenanceWindow v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasMaintenanceWindow() => $_has(12);
   @$pb.TagNumber(15)
-  void clearMaintenanceWindow() => clearField(15);
+  void clearMaintenanceWindow() => $_clearField(15);
   @$pb.TagNumber(15)
   MaintenanceWindow ensureMaintenanceWindow() => $_ensure(12);
 
@@ -730,20 +721,20 @@ class Service extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasUid() => $_has(13);
   @$pb.TagNumber(16)
-  void clearUid() => clearField(16);
+  void clearUid() => $_clearField(16);
 
   /// Output only. The metadata management activities of the metastore service.
   @$pb.TagNumber(17)
   MetadataManagementActivity get metadataManagementActivity => $_getN(14);
   @$pb.TagNumber(17)
   set metadataManagementActivity(MetadataManagementActivity v) {
-    setField(17, v);
+    $_setField(17, v);
   }
 
   @$pb.TagNumber(17)
   $core.bool hasMetadataManagementActivity() => $_has(14);
   @$pb.TagNumber(17)
-  void clearMetadataManagementActivity() => clearField(17);
+  void clearMetadataManagementActivity() => $_clearField(17);
   @$pb.TagNumber(17)
   MetadataManagementActivity ensureMetadataManagementActivity() => $_ensure(14);
 
@@ -753,13 +744,13 @@ class Service extends $pb.GeneratedMessage {
   Service_ReleaseChannel get releaseChannel => $_getN(15);
   @$pb.TagNumber(19)
   set releaseChannel(Service_ReleaseChannel v) {
-    setField(19, v);
+    $_setField(19, v);
   }
 
   @$pb.TagNumber(19)
   $core.bool hasReleaseChannel() => $_has(15);
   @$pb.TagNumber(19)
-  void clearReleaseChannel() => clearField(19);
+  void clearReleaseChannel() => $_clearField(19);
 
   /// Immutable. Information used to configure the Dataproc Metastore service to
   /// encrypt customer data at rest. Cannot be updated.
@@ -767,13 +758,13 @@ class Service extends $pb.GeneratedMessage {
   EncryptionConfig get encryptionConfig => $_getN(16);
   @$pb.TagNumber(20)
   set encryptionConfig(EncryptionConfig v) {
-    setField(20, v);
+    $_setField(20, v);
   }
 
   @$pb.TagNumber(20)
   $core.bool hasEncryptionConfig() => $_has(16);
   @$pb.TagNumber(20)
-  void clearEncryptionConfig() => clearField(20);
+  void clearEncryptionConfig() => $_clearField(20);
   @$pb.TagNumber(20)
   EncryptionConfig ensureEncryptionConfig() => $_ensure(16);
 
@@ -783,13 +774,13 @@ class Service extends $pb.GeneratedMessage {
   NetworkConfig get networkConfig => $_getN(17);
   @$pb.TagNumber(21)
   set networkConfig(NetworkConfig v) {
-    setField(21, v);
+    $_setField(21, v);
   }
 
   @$pb.TagNumber(21)
   $core.bool hasNetworkConfig() => $_has(17);
   @$pb.TagNumber(21)
-  void clearNetworkConfig() => clearField(21);
+  void clearNetworkConfig() => $_clearField(21);
   @$pb.TagNumber(21)
   NetworkConfig ensureNetworkConfig() => $_ensure(17);
 
@@ -798,13 +789,13 @@ class Service extends $pb.GeneratedMessage {
   Service_DatabaseType get databaseType => $_getN(18);
   @$pb.TagNumber(22)
   set databaseType(Service_DatabaseType v) {
-    setField(22, v);
+    $_setField(22, v);
   }
 
   @$pb.TagNumber(22)
   $core.bool hasDatabaseType() => $_has(18);
   @$pb.TagNumber(22)
-  void clearDatabaseType() => clearField(22);
+  void clearDatabaseType() => $_clearField(22);
 
   /// The configuration specifying telemetry settings for the Dataproc Metastore
   /// service. If unspecified defaults to `JSON`.
@@ -812,13 +803,13 @@ class Service extends $pb.GeneratedMessage {
   TelemetryConfig get telemetryConfig => $_getN(19);
   @$pb.TagNumber(23)
   set telemetryConfig(TelemetryConfig v) {
-    setField(23, v);
+    $_setField(23, v);
   }
 
   @$pb.TagNumber(23)
   $core.bool hasTelemetryConfig() => $_has(19);
   @$pb.TagNumber(23)
-  void clearTelemetryConfig() => clearField(23);
+  void clearTelemetryConfig() => $_clearField(23);
   @$pb.TagNumber(23)
   TelemetryConfig ensureTelemetryConfig() => $_ensure(19);
 
@@ -827,13 +818,13 @@ class Service extends $pb.GeneratedMessage {
   ScalingConfig get scalingConfig => $_getN(20);
   @$pb.TagNumber(24)
   set scalingConfig(ScalingConfig v) {
-    setField(24, v);
+    $_setField(24, v);
   }
 
   @$pb.TagNumber(24)
   $core.bool hasScalingConfig() => $_has(20);
   @$pb.TagNumber(24)
-  void clearScalingConfig() => clearField(24);
+  void clearScalingConfig() => $_clearField(24);
   @$pb.TagNumber(24)
   ScalingConfig ensureScalingConfig() => $_ensure(20);
 }
@@ -842,8 +833,8 @@ class Service extends $pb.GeneratedMessage {
 /// may perform system maintenance operation to the service.
 class MaintenanceWindow extends $pb.GeneratedMessage {
   factory MaintenanceWindow({
-    $45.Int32Value? hourOfDay,
-    $27.DayOfWeek? dayOfWeek,
+    $21.Int32Value? hourOfDay,
+    $3.DayOfWeek? dayOfWeek,
   }) {
     final $result = create();
     if (hourOfDay != null) {
@@ -867,22 +858,17 @@ class MaintenanceWindow extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.metastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$45.Int32Value>(1, _omitFieldNames ? '' : 'hourOfDay',
-        subBuilder: $45.Int32Value.create)
-    ..e<$27.DayOfWeek>(
-        2, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE,
-        defaultOrMaker: $27.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
-        valueOf: $27.DayOfWeek.valueOf,
-        enumValues: $27.DayOfWeek.values)
+    ..aOM<$21.Int32Value>(1, _omitFieldNames ? '' : 'hourOfDay',
+        subBuilder: $21.Int32Value.create)
+    ..e<$3.DayOfWeek>(2, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE,
+        defaultOrMaker: $3.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
+        valueOf: $3.DayOfWeek.valueOf,
+        enumValues: $3.DayOfWeek.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MaintenanceWindow clone() => MaintenanceWindow()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MaintenanceWindow copyWith(void Function(MaintenanceWindow) updates) =>
       super.copyWith((message) => updates(message as MaintenanceWindow))
           as MaintenanceWindow;
@@ -901,31 +887,31 @@ class MaintenanceWindow extends $pb.GeneratedMessage {
 
   /// The hour of day (0-23) when the window starts.
   @$pb.TagNumber(1)
-  $45.Int32Value get hourOfDay => $_getN(0);
+  $21.Int32Value get hourOfDay => $_getN(0);
   @$pb.TagNumber(1)
-  set hourOfDay($45.Int32Value v) {
-    setField(1, v);
+  set hourOfDay($21.Int32Value v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasHourOfDay() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHourOfDay() => clearField(1);
+  void clearHourOfDay() => $_clearField(1);
   @$pb.TagNumber(1)
-  $45.Int32Value ensureHourOfDay() => $_ensure(0);
+  $21.Int32Value ensureHourOfDay() => $_ensure(0);
 
   /// The day of week, when the window starts.
   @$pb.TagNumber(2)
-  $27.DayOfWeek get dayOfWeek => $_getN(1);
+  $3.DayOfWeek get dayOfWeek => $_getN(1);
   @$pb.TagNumber(2)
-  set dayOfWeek($27.DayOfWeek v) {
-    setField(2, v);
+  set dayOfWeek($3.DayOfWeek v) {
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasDayOfWeek() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDayOfWeek() => clearField(2);
+  void clearDayOfWeek() => $_clearField(2);
 }
 
 /// Specifies configuration information specific to running Hive metastore
@@ -933,22 +919,23 @@ class MaintenanceWindow extends $pb.GeneratedMessage {
 class HiveMetastoreConfig extends $pb.GeneratedMessage {
   factory HiveMetastoreConfig({
     $core.String? version,
-    $core.Map<$core.String, $core.String>? configOverrides,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? configOverrides,
     KerberosConfig? kerberosConfig,
-    $core.Map<$core.String, AuxiliaryVersionConfig>? auxiliaryVersions,
+    $core.Iterable<$core.MapEntry<$core.String, AuxiliaryVersionConfig>>?
+        auxiliaryVersions,
   }) {
     final $result = create();
     if (version != null) {
       $result.version = version;
     }
     if (configOverrides != null) {
-      $result.configOverrides.addAll(configOverrides);
+      $result.configOverrides.addEntries(configOverrides);
     }
     if (kerberosConfig != null) {
       $result.kerberosConfig = kerberosConfig;
     }
     if (auxiliaryVersions != null) {
-      $result.auxiliaryVersions.addAll(auxiliaryVersions);
+      $result.auxiliaryVersions.addEntries(auxiliaryVersions);
     }
     return $result;
   }
@@ -983,13 +970,9 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.metastore.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HiveMetastoreConfig clone() => HiveMetastoreConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HiveMetastoreConfig copyWith(void Function(HiveMetastoreConfig) updates) =>
       super.copyWith((message) => updates(message as HiveMetastoreConfig))
           as HiveMetastoreConfig;
@@ -1017,7 +1000,7 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVersion() => clearField(1);
+  void clearVersion() => $_clearField(1);
 
   /// A mapping of Hive metastore configuration key-value pairs to apply to the
   /// Hive metastore (configured in `hive-site.xml`). The mappings
@@ -1025,7 +1008,7 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
   /// overrides are also applied to auxiliary versions and can be further
   /// customized in the auxiliary version's `AuxiliaryVersionConfig`.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $core.String> get configOverrides => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get configOverrides => $_getMap(1);
 
   /// Information used to configure the Hive metastore service as a service
   /// principal in a Kerberos realm. To disable Kerberos, use the `UpdateService`
@@ -1036,13 +1019,13 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
   KerberosConfig get kerberosConfig => $_getN(2);
   @$pb.TagNumber(3)
   set kerberosConfig(KerberosConfig v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasKerberosConfig() => $_has(2);
   @$pb.TagNumber(3)
-  void clearKerberosConfig() => clearField(3);
+  void clearKerberosConfig() => $_clearField(3);
   @$pb.TagNumber(3)
   KerberosConfig ensureKerberosConfig() => $_ensure(2);
 
@@ -1055,7 +1038,7 @@ class HiveMetastoreConfig extends $pb.GeneratedMessage {
   /// following characters must be hyphens, lowercase letters, or digits, except
   /// the last character, which cannot be a hyphen.
   @$pb.TagNumber(5)
-  $core.Map<$core.String, AuxiliaryVersionConfig> get auxiliaryVersions =>
+  $pb.PbMap<$core.String, AuxiliaryVersionConfig> get auxiliaryVersions =>
       $_getMap(3);
 }
 
@@ -1096,13 +1079,9 @@ class KerberosConfig extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'krb5ConfigGcsUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   KerberosConfig clone() => KerberosConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   KerberosConfig copyWith(void Function(KerberosConfig) updates) =>
       super.copyWith((message) => updates(message as KerberosConfig))
           as KerberosConfig;
@@ -1125,13 +1104,13 @@ class KerberosConfig extends $pb.GeneratedMessage {
   Secret get keytab => $_getN(0);
   @$pb.TagNumber(1)
   set keytab(Secret v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasKeytab() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKeytab() => clearField(1);
+  void clearKeytab() => $_clearField(1);
   @$pb.TagNumber(1)
   Secret ensureKeytab() => $_ensure(0);
 
@@ -1148,7 +1127,7 @@ class KerberosConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPrincipal() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPrincipal() => clearField(2);
+  void clearPrincipal() => $_clearField(2);
 
   /// A Cloud Storage URI that specifies the path to a
   /// krb5.conf file. It is of the form `gs://{bucket_name}/path/to/krb5.conf`,
@@ -1163,7 +1142,7 @@ class KerberosConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasKrb5ConfigGcsUri() => $_has(2);
   @$pb.TagNumber(3)
-  void clearKrb5ConfigGcsUri() => clearField(3);
+  void clearKrb5ConfigGcsUri() => $_clearField(3);
 }
 
 enum Secret_Value { cloudSecret, notSet }
@@ -1200,13 +1179,9 @@ class Secret extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'cloudSecret')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Secret clone() => Secret()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Secret copyWith(void Function(Secret) updates) =>
       super.copyWith((message) => updates(message as Secret)) as Secret;
 
@@ -1222,12 +1197,12 @@ class Secret extends $pb.GeneratedMessage {
   static Secret? _defaultInstance;
 
   Secret_Value whichValue() => _Secret_ValueByTag[$_whichOneof(0)]!;
-  void clearValue() => clearField($_whichOneof(0));
+  void clearValue() => $_clearField($_whichOneof(0));
 
-  ///  The relative resource name of a Secret Manager secret version, in the
-  ///  following form:
+  /// The relative resource name of a Secret Manager secret version, in the
+  /// following form:
   ///
-  ///  `projects/{project_number}/secrets/{secret_id}/versions/{version_id}`.
+  /// `projects/{project_number}/secrets/{secret_id}/versions/{version_id}`.
   @$pb.TagNumber(2)
   $core.String get cloudSecret => $_getSZ(0);
   @$pb.TagNumber(2)
@@ -1238,7 +1213,7 @@ class Secret extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCloudSecret() => $_has(0);
   @$pb.TagNumber(2)
-  void clearCloudSecret() => clearField(2);
+  void clearCloudSecret() => $_clearField(2);
 }
 
 /// Encryption settings for the service.
@@ -1268,13 +1243,9 @@ class EncryptionConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'kmsKey')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EncryptionConfig clone() => EncryptionConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EncryptionConfig copyWith(void Function(EncryptionConfig) updates) =>
       super.copyWith((message) => updates(message as EncryptionConfig))
           as EncryptionConfig;
@@ -1291,10 +1262,10 @@ class EncryptionConfig extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<EncryptionConfig>(create);
   static EncryptionConfig? _defaultInstance;
 
-  ///  The fully qualified customer provided Cloud KMS key name to use for
-  ///  customer data encryption, in the following form:
+  /// The fully qualified customer provided Cloud KMS key name to use for
+  /// customer data encryption, in the following form:
   ///
-  ///  `projects/{project_number}/locations/{location_id}/keyRings/{key_ring_id}/cryptoKeys/{crypto_key_id}`.
+  /// `projects/{project_number}/locations/{location_id}/keyRings/{key_ring_id}/cryptoKeys/{crypto_key_id}`.
   @$pb.TagNumber(1)
   $core.String get kmsKey => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -1305,14 +1276,14 @@ class EncryptionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasKmsKey() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKmsKey() => clearField(1);
+  void clearKmsKey() => $_clearField(1);
 }
 
 /// Configuration information for the auxiliary service versions.
 class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
   factory AuxiliaryVersionConfig({
     $core.String? version,
-    $core.Map<$core.String, $core.String>? configOverrides,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? configOverrides,
     NetworkConfig? networkConfig,
   }) {
     final $result = create();
@@ -1320,7 +1291,7 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
       $result.version = version;
     }
     if (configOverrides != null) {
-      $result.configOverrides.addAll(configOverrides);
+      $result.configOverrides.addEntries(configOverrides);
     }
     if (networkConfig != null) {
       $result.networkConfig = networkConfig;
@@ -1350,14 +1321,10 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
         subBuilder: NetworkConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuxiliaryVersionConfig clone() =>
       AuxiliaryVersionConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AuxiliaryVersionConfig copyWith(
           void Function(AuxiliaryVersionConfig) updates) =>
       super.copyWith((message) => updates(message as AuxiliaryVersionConfig))
@@ -1387,7 +1354,7 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasVersion() => $_has(0);
   @$pb.TagNumber(1)
-  void clearVersion() => clearField(1);
+  void clearVersion() => $_clearField(1);
 
   /// A mapping of Hive metastore configuration key-value pairs to apply to the
   /// auxiliary Hive metastore (configured in `hive-site.xml`) in addition to
@@ -1395,7 +1362,7 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
   /// version's overrides and the primary version's overrides, the value from
   /// the auxiliary version's overrides takes precedence.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $core.String> get configOverrides => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get configOverrides => $_getMap(1);
 
   /// Output only. The network configuration contains the endpoint URI(s) of the
   /// auxiliary Hive metastore service.
@@ -1403,13 +1370,13 @@ class AuxiliaryVersionConfig extends $pb.GeneratedMessage {
   NetworkConfig get networkConfig => $_getN(2);
   @$pb.TagNumber(3)
   set networkConfig(NetworkConfig v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasNetworkConfig() => $_has(2);
   @$pb.TagNumber(3)
-  void clearNetworkConfig() => clearField(3);
+  void clearNetworkConfig() => $_clearField(3);
   @$pb.TagNumber(3)
   NetworkConfig ensureNetworkConfig() => $_ensure(2);
 }
@@ -1454,14 +1421,10 @@ class NetworkConfig_Consumer extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'endpointUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkConfig_Consumer clone() =>
       NetworkConfig_Consumer()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkConfig_Consumer copyWith(
           void Function(NetworkConfig_Consumer) updates) =>
       super.copyWith((message) => updates(message as NetworkConfig_Consumer))
@@ -1481,16 +1444,16 @@ class NetworkConfig_Consumer extends $pb.GeneratedMessage {
 
   NetworkConfig_Consumer_VpcResource whichVpcResource() =>
       _NetworkConfig_Consumer_VpcResourceByTag[$_whichOneof(0)]!;
-  void clearVpcResource() => clearField($_whichOneof(0));
+  void clearVpcResource() => $_clearField($_whichOneof(0));
 
-  ///  Immutable. The subnetwork of the customer project from which an IP
-  ///  address is reserved and used as the Dataproc Metastore service's
-  ///  endpoint. It is accessible to hosts in the subnet and to all
-  ///  hosts in a subnet in the same region and same network. There must
-  ///  be at least one IP address available in the subnet's primary range. The
-  ///  subnet is specified in the following form:
+  /// Immutable. The subnetwork of the customer project from which an IP
+  /// address is reserved and used as the Dataproc Metastore service's
+  /// endpoint. It is accessible to hosts in the subnet and to all
+  /// hosts in a subnet in the same region and same network. There must
+  /// be at least one IP address available in the subnet's primary range. The
+  /// subnet is specified in the following form:
   ///
-  ///  `projects/{project_number}/regions/{region_id}/subnetworks/{subnetwork_id}`
+  /// `projects/{project_number}/regions/{region_id}/subnetworks/{subnetwork_id}`
   @$pb.TagNumber(1)
   $core.String get subnetwork => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -1501,7 +1464,7 @@ class NetworkConfig_Consumer extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSubnetwork() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSubnetwork() => clearField(1);
+  void clearSubnetwork() => $_clearField(1);
 
   /// Output only. The URI of the endpoint used to access the metastore
   /// service.
@@ -1515,7 +1478,7 @@ class NetworkConfig_Consumer extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEndpointUri() => $_has(1);
   @$pb.TagNumber(3)
-  void clearEndpointUri() => clearField(3);
+  void clearEndpointUri() => $_clearField(3);
 }
 
 /// Network configuration for the Dataproc Metastore service.
@@ -1547,13 +1510,9 @@ class NetworkConfig extends $pb.GeneratedMessage {
         subBuilder: NetworkConfig_Consumer.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkConfig clone() => NetworkConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   NetworkConfig copyWith(void Function(NetworkConfig) updates) =>
       super.copyWith((message) => updates(message as NetworkConfig))
           as NetworkConfig;
@@ -1573,7 +1532,7 @@ class NetworkConfig extends $pb.GeneratedMessage {
   /// Immutable. The consumer-side network configuration for the Dataproc
   /// Metastore instance.
   @$pb.TagNumber(1)
-  $core.List<NetworkConfig_Consumer> get consumers => $_getList(0);
+  $pb.PbList<NetworkConfig_Consumer> get consumers => $_getList(0);
 }
 
 /// Telemetry Configuration for the Dataproc Metastore service.
@@ -1607,13 +1566,9 @@ class TelemetryConfig extends $pb.GeneratedMessage {
         enumValues: TelemetryConfig_LogFormat.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TelemetryConfig clone() => TelemetryConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TelemetryConfig copyWith(void Function(TelemetryConfig) updates) =>
       super.copyWith((message) => updates(message as TelemetryConfig))
           as TelemetryConfig;
@@ -1635,13 +1590,13 @@ class TelemetryConfig extends $pb.GeneratedMessage {
   TelemetryConfig_LogFormat get logFormat => $_getN(0);
   @$pb.TagNumber(1)
   set logFormat(TelemetryConfig_LogFormat v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasLogFormat() => $_has(0);
   @$pb.TagNumber(1)
-  void clearLogFormat() => clearField(1);
+  void clearLogFormat() => $_clearField(1);
 }
 
 /// The metadata management activities of the metastore service.
@@ -1679,14 +1634,10 @@ class MetadataManagementActivity extends $pb.GeneratedMessage {
         subBuilder: Restore.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataManagementActivity clone() =>
       MetadataManagementActivity()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataManagementActivity copyWith(
           void Function(MetadataManagementActivity) updates) =>
       super.copyWith(
@@ -1707,11 +1658,11 @@ class MetadataManagementActivity extends $pb.GeneratedMessage {
 
   /// Output only. The latest metadata exports of the metastore service.
   @$pb.TagNumber(1)
-  $core.List<MetadataExport> get metadataExports => $_getList(0);
+  $pb.PbList<MetadataExport> get metadataExports => $_getList(0);
 
   /// Output only. The latest restores of the metastore service.
   @$pb.TagNumber(2)
-  $core.List<Restore> get restores => $_getList(1);
+  $pb.PbList<Restore> get restores => $_getList(1);
 }
 
 /// A specification of the location of and metadata about a database dump from
@@ -1766,14 +1717,10 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
         enumValues: DatabaseDumpSpec_Type.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataImport_DatabaseDump clone() =>
       MetadataImport_DatabaseDump()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataImport_DatabaseDump copyWith(
           void Function(MetadataImport_DatabaseDump) updates) =>
       super.copyWith(
@@ -1798,13 +1745,13 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
   MetadataImport_DatabaseDump_DatabaseType get databaseType => $_getN(0);
   @$pb.TagNumber(1)
   set databaseType(MetadataImport_DatabaseDump_DatabaseType v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasDatabaseType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDatabaseType() => clearField(1);
+  void clearDatabaseType() => $_clearField(1);
 
   /// A Cloud Storage object or folder URI that specifies the source from which
   /// to import metadata. It must begin with `gs://`.
@@ -1818,7 +1765,7 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasGcsUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearGcsUri() => clearField(2);
+  void clearGcsUri() => $_clearField(2);
 
   /// The name of the source database.
   @$pb.TagNumber(3)
@@ -1831,7 +1778,7 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasSourceDatabase() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSourceDatabase() => clearField(3);
+  void clearSourceDatabase() => $_clearField(3);
 
   /// Optional. The type of the database dump. If unspecified, defaults to
   /// `MYSQL`.
@@ -1839,13 +1786,13 @@ class MetadataImport_DatabaseDump extends $pb.GeneratedMessage {
   DatabaseDumpSpec_Type get type => $_getN(3);
   @$pb.TagNumber(4)
   set type(DatabaseDumpSpec_Type v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)
-  void clearType() => clearField(4);
+  void clearType() => $_clearField(4);
 }
 
 enum MetadataImport_Metadata { databaseDump, notSet }
@@ -1921,13 +1868,9 @@ class MetadataImport extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataImport clone() => MetadataImport()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataImport copyWith(void Function(MetadataImport) updates) =>
       super.copyWith((message) => updates(message as MetadataImport))
           as MetadataImport;
@@ -1946,11 +1889,11 @@ class MetadataImport extends $pb.GeneratedMessage {
 
   MetadataImport_Metadata whichMetadata() =>
       _MetadataImport_MetadataByTag[$_whichOneof(0)]!;
-  void clearMetadata() => clearField($_whichOneof(0));
+  void clearMetadata() => $_clearField($_whichOneof(0));
 
-  ///  Immutable. The relative resource name of the metadata import, of the form:
+  /// Immutable. The relative resource name of the metadata import, of the form:
   ///
-  ///  `projects/{project_number}/locations/{location_id}/services/{service_id}/metadataImports/{metadata_import_id}`.
+  /// `projects/{project_number}/locations/{location_id}/services/{service_id}/metadataImports/{metadata_import_id}`.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -1961,7 +1904,7 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// The description of the metadata import.
   @$pb.TagNumber(2)
@@ -1974,20 +1917,20 @@ class MetadataImport extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDescription() => clearField(2);
+  void clearDescription() => $_clearField(2);
 
   /// Output only. The time when the metadata import was started.
   @$pb.TagNumber(3)
   $2.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
   set createTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCreateTime() => clearField(3);
+  void clearCreateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureCreateTime() => $_ensure(2);
 
@@ -1996,13 +1939,13 @@ class MetadataImport extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
   set updateTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUpdateTime() => clearField(4);
+  void clearUpdateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureUpdateTime() => $_ensure(3);
 
@@ -2011,26 +1954,26 @@ class MetadataImport extends $pb.GeneratedMessage {
   MetadataImport_State get state => $_getN(4);
   @$pb.TagNumber(5)
   set state(MetadataImport_State v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(4);
   @$pb.TagNumber(5)
-  void clearState() => clearField(5);
+  void clearState() => $_clearField(5);
 
   /// Immutable. A database dump from a pre-existing metastore's database.
   @$pb.TagNumber(6)
   MetadataImport_DatabaseDump get databaseDump => $_getN(5);
   @$pb.TagNumber(6)
   set databaseDump(MetadataImport_DatabaseDump v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasDatabaseDump() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDatabaseDump() => clearField(6);
+  void clearDatabaseDump() => $_clearField(6);
   @$pb.TagNumber(6)
   MetadataImport_DatabaseDump ensureDatabaseDump() => $_ensure(5);
 
@@ -2039,13 +1982,13 @@ class MetadataImport extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(7)
   set endTime($2.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(7)
-  void clearEndTime() => clearField(7);
+  void clearEndTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $2.Timestamp ensureEndTime() => $_ensure(6);
 }
@@ -2115,13 +2058,9 @@ class MetadataExport extends $pb.GeneratedMessage {
         enumValues: DatabaseDumpSpec_Type.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataExport clone() => MetadataExport()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataExport copyWith(void Function(MetadataExport) updates) =>
       super.copyWith((message) => updates(message as MetadataExport))
           as MetadataExport;
@@ -2140,20 +2079,20 @@ class MetadataExport extends $pb.GeneratedMessage {
 
   MetadataExport_Destination whichDestination() =>
       _MetadataExport_DestinationByTag[$_whichOneof(0)]!;
-  void clearDestination() => clearField($_whichOneof(0));
+  void clearDestination() => $_clearField($_whichOneof(0));
 
   /// Output only. The time when the export started.
   @$pb.TagNumber(1)
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
   set startTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStartTime() => clearField(1);
+  void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureStartTime() => $_ensure(0);
 
@@ -2162,13 +2101,13 @@ class MetadataExport extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
   set endTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEndTime() => clearField(2);
+  void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureEndTime() => $_ensure(1);
 
@@ -2177,13 +2116,13 @@ class MetadataExport extends $pb.GeneratedMessage {
   MetadataExport_State get state => $_getN(2);
   @$pb.TagNumber(3)
   set state(MetadataExport_State v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
-  void clearState() => clearField(3);
+  void clearState() => $_clearField(3);
 
   /// Output only. A Cloud Storage URI of a folder that metadata are exported
   /// to, in the form of
@@ -2199,20 +2138,20 @@ class MetadataExport extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDestinationGcsUri() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDestinationGcsUri() => clearField(4);
+  void clearDestinationGcsUri() => $_clearField(4);
 
   /// Output only. The type of the database dump.
   @$pb.TagNumber(5)
   DatabaseDumpSpec_Type get databaseDumpType => $_getN(4);
   @$pb.TagNumber(5)
   set databaseDumpType(DatabaseDumpSpec_Type v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasDatabaseDumpType() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDatabaseDumpType() => clearField(5);
+  void clearDatabaseDumpType() => $_clearField(5);
 }
 
 /// The details of a backup resource.
@@ -2278,13 +2217,9 @@ class Backup extends $pb.GeneratedMessage {
     ..pPS(7, _omitFieldNames ? '' : 'restoringServices')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Backup clone() => Backup()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Backup copyWith(void Function(Backup) updates) =>
       super.copyWith((message) => updates(message as Backup)) as Backup;
 
@@ -2299,9 +2234,9 @@ class Backup extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Backup>(create);
   static Backup? _defaultInstance;
 
-  ///  Immutable. The relative resource name of the backup, in the following form:
+  /// Immutable. The relative resource name of the backup, in the following form:
   ///
-  ///  `projects/{project_number}/locations/{location_id}/services/{service_id}/backups/{backup_id}`
+  /// `projects/{project_number}/locations/{location_id}/services/{service_id}/backups/{backup_id}`
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -2312,20 +2247,20 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. The time when the backup was started.
   @$pb.TagNumber(2)
   $2.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
   set createTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCreateTime() => clearField(2);
+  void clearCreateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureCreateTime() => $_ensure(1);
 
@@ -2334,13 +2269,13 @@ class Backup extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
   set endTime($2.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEndTime() => clearField(3);
+  void clearEndTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $2.Timestamp ensureEndTime() => $_ensure(2);
 
@@ -2349,26 +2284,26 @@ class Backup extends $pb.GeneratedMessage {
   Backup_State get state => $_getN(3);
   @$pb.TagNumber(4)
   set state(Backup_State v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
-  void clearState() => clearField(4);
+  void clearState() => $_clearField(4);
 
   /// Output only. The revision of the service at the time of backup.
   @$pb.TagNumber(5)
   Service get serviceRevision => $_getN(4);
   @$pb.TagNumber(5)
   set serviceRevision(Service v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasServiceRevision() => $_has(4);
   @$pb.TagNumber(5)
-  void clearServiceRevision() => clearField(5);
+  void clearServiceRevision() => $_clearField(5);
   @$pb.TagNumber(5)
   Service ensureServiceRevision() => $_ensure(4);
 
@@ -2383,11 +2318,11 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDescription() => clearField(6);
+  void clearDescription() => $_clearField(6);
 
   /// Output only. Services that are restoring from the backup.
   @$pb.TagNumber(7)
-  $core.List<$core.String> get restoringServices => $_getList(6);
+  $pb.PbList<$core.String> get restoringServices => $_getList(6);
 }
 
 /// The details of a metadata restore operation.
@@ -2451,13 +2386,9 @@ class Restore extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'details')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Restore clone() => Restore()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Restore copyWith(void Function(Restore) updates) =>
       super.copyWith((message) => updates(message as Restore)) as Restore;
 
@@ -2477,13 +2408,13 @@ class Restore extends $pb.GeneratedMessage {
   $2.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
   set startTime($2.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStartTime() => clearField(1);
+  void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $2.Timestamp ensureStartTime() => $_ensure(0);
 
@@ -2492,13 +2423,13 @@ class Restore extends $pb.GeneratedMessage {
   $2.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
   set endTime($2.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEndTime() => clearField(2);
+  void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Timestamp ensureEndTime() => $_ensure(1);
 
@@ -2507,18 +2438,18 @@ class Restore extends $pb.GeneratedMessage {
   Restore_State get state => $_getN(2);
   @$pb.TagNumber(3)
   set state(Restore_State v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
-  void clearState() => clearField(3);
+  void clearState() => $_clearField(3);
 
-  ///  Output only. The relative resource name of the metastore service backup to
-  ///  restore from, in the following form:
+  /// Output only. The relative resource name of the metastore service backup to
+  /// restore from, in the following form:
   ///
-  ///  `projects/{project_id}/locations/{location_id}/services/{service_id}/backups/{backup_id}`.
+  /// `projects/{project_id}/locations/{location_id}/services/{service_id}/backups/{backup_id}`.
   @$pb.TagNumber(4)
   $core.String get backup => $_getSZ(3);
   @$pb.TagNumber(4)
@@ -2529,20 +2460,20 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasBackup() => $_has(3);
   @$pb.TagNumber(4)
-  void clearBackup() => clearField(4);
+  void clearBackup() => $_clearField(4);
 
   /// Output only. The type of restore.
   @$pb.TagNumber(5)
   Restore_RestoreType get type => $_getN(4);
   @$pb.TagNumber(5)
   set type(Restore_RestoreType v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)
-  void clearType() => clearField(5);
+  void clearType() => $_clearField(5);
 
   /// Output only. The restore details containing the revision of the service to
   /// be restored to, in format of JSON.
@@ -2556,7 +2487,7 @@ class Restore extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDetails() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDetails() => clearField(6);
+  void clearDetails() => $_clearField(6);
 }
 
 enum ScalingConfig_ScalingModel { instanceSize, scalingFactor, notSet }
@@ -2605,13 +2536,9 @@ class ScalingConfig extends $pb.GeneratedMessage {
         2, _omitFieldNames ? '' : 'scalingFactor', $pb.PbFieldType.OF)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScalingConfig clone() => ScalingConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScalingConfig copyWith(void Function(ScalingConfig) updates) =>
       super.copyWith((message) => updates(message as ScalingConfig))
           as ScalingConfig;
@@ -2630,7 +2557,7 @@ class ScalingConfig extends $pb.GeneratedMessage {
 
   ScalingConfig_ScalingModel whichScalingModel() =>
       _ScalingConfig_ScalingModelByTag[$_whichOneof(0)]!;
-  void clearScalingModel() => clearField($_whichOneof(0));
+  void clearScalingModel() => $_clearField($_whichOneof(0));
 
   /// An enum of readable instance sizes, with each instance size mapping to a
   /// float value (e.g. InstanceSize.EXTRA_SMALL = scaling_factor(0.1))
@@ -2638,13 +2565,13 @@ class ScalingConfig extends $pb.GeneratedMessage {
   ScalingConfig_InstanceSize get instanceSize => $_getN(0);
   @$pb.TagNumber(1)
   set instanceSize(ScalingConfig_InstanceSize v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasInstanceSize() => $_has(0);
   @$pb.TagNumber(1)
-  void clearInstanceSize() => clearField(1);
+  void clearInstanceSize() => $_clearField(1);
 
   /// Scaling factor, increments of 0.1 for values less than 1.0, and
   /// increments of 1.0 for values greater than 1.0.
@@ -2658,7 +2585,7 @@ class ScalingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasScalingFactor() => $_has(1);
   @$pb.TagNumber(2)
-  void clearScalingFactor() => clearField(2);
+  void clearScalingFactor() => $_clearField(2);
 }
 
 /// The specification of database dump to import from or export to.
@@ -2679,13 +2606,9 @@ class DatabaseDumpSpec extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatabaseDumpSpec clone() => DatabaseDumpSpec()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DatabaseDumpSpec copyWith(void Function(DatabaseDumpSpec) updates) =>
       super.copyWith((message) => updates(message as DatabaseDumpSpec))
           as DatabaseDumpSpec;
@@ -2731,14 +2654,10 @@ class MetadataImportEventData extends $pb.GeneratedMessage {
         subBuilder: MetadataImport.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataImportEventData clone() =>
       MetadataImportEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MetadataImportEventData copyWith(
           void Function(MetadataImportEventData) updates) =>
       super.copyWith((message) => updates(message as MetadataImportEventData))
@@ -2761,13 +2680,13 @@ class MetadataImportEventData extends $pb.GeneratedMessage {
   MetadataImport get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(MetadataImport v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   MetadataImport ensurePayload() => $_ensure(0);
 }
@@ -2800,13 +2719,9 @@ class FederationEventData extends $pb.GeneratedMessage {
         subBuilder: Federation.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FederationEventData clone() => FederationEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   FederationEventData copyWith(void Function(FederationEventData) updates) =>
       super.copyWith((message) => updates(message as FederationEventData))
           as FederationEventData;
@@ -2828,13 +2743,13 @@ class FederationEventData extends $pb.GeneratedMessage {
   Federation get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Federation v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Federation ensurePayload() => $_ensure(0);
 }
@@ -2867,13 +2782,9 @@ class BackupEventData extends $pb.GeneratedMessage {
         subBuilder: Backup.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupEventData clone() => BackupEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupEventData copyWith(void Function(BackupEventData) updates) =>
       super.copyWith((message) => updates(message as BackupEventData))
           as BackupEventData;
@@ -2895,13 +2806,13 @@ class BackupEventData extends $pb.GeneratedMessage {
   Backup get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Backup v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Backup ensurePayload() => $_ensure(0);
 }
@@ -2934,13 +2845,9 @@ class ServiceEventData extends $pb.GeneratedMessage {
         subBuilder: Service.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceEventData clone() => ServiceEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ServiceEventData copyWith(void Function(ServiceEventData) updates) =>
       super.copyWith((message) => updates(message as ServiceEventData))
           as ServiceEventData;
@@ -2962,13 +2869,13 @@ class ServiceEventData extends $pb.GeneratedMessage {
   Service get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Service v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Service ensurePayload() => $_ensure(0);
 }

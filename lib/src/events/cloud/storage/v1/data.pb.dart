@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/storage/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,6 +15,8 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// Describes the customer-specified mechanism used to store the data at rest.
 class StorageObjectData_CustomerEncryption extends $pb.GeneratedMessage {
@@ -49,14 +51,10 @@ class StorageObjectData_CustomerEncryption extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'keySha256')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StorageObjectData_CustomerEncryption clone() =>
       StorageObjectData_CustomerEncryption()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StorageObjectData_CustomerEncryption copyWith(
           void Function(StorageObjectData_CustomerEncryption) updates) =>
       super.copyWith((message) =>
@@ -88,7 +86,7 @@ class StorageObjectData_CustomerEncryption extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEncryptionAlgorithm() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEncryptionAlgorithm() => clearField(1);
+  void clearEncryptionAlgorithm() => $_clearField(1);
 
   /// SHA256 hash value of the encryption key.
   @$pb.TagNumber(2)
@@ -101,7 +99,7 @@ class StorageObjectData_CustomerEncryption extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasKeySha256() => $_has(1);
   @$pb.TagNumber(2)
-  void clearKeySha256() => clearField(2);
+  void clearKeySha256() => $_clearField(2);
 }
 
 /// An object within Google Cloud Storage.
@@ -126,7 +124,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
     $2.Timestamp? timeStorageClassUpdated,
     $core.bool? temporaryHold,
     $2.Timestamp? retentionExpirationTime,
-    $core.Map<$core.String, $core.String>? metadata,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? metadata,
     $core.String? name,
     $core.String? id,
     $core.String? bucket,
@@ -196,7 +194,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
       $result.retentionExpirationTime = retentionExpirationTime;
     }
     if (metadata != null) {
-      $result.metadata.addAll(metadata);
+      $result.metadata.addEntries(metadata);
     }
     if (name != null) {
       $result.name = name;
@@ -283,13 +281,9 @@ class StorageObjectData extends $pb.GeneratedMessage {
     ..aOS(102, _omitFieldNames ? '' : 'kind')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StorageObjectData clone() => StorageObjectData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StorageObjectData copyWith(void Function(StorageObjectData) updates) =>
       super.copyWith((message) => updates(message as StorageObjectData))
           as StorageObjectData;
@@ -318,7 +312,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasContentEncoding() => $_has(0);
   @$pb.TagNumber(1)
-  void clearContentEncoding() => clearField(1);
+  void clearContentEncoding() => $_clearField(1);
 
   /// Content-Disposition of the object data, matching
   /// [https://tools.ietf.org/html/rfc6266][RFC 6266].
@@ -332,7 +326,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasContentDisposition() => $_has(1);
   @$pb.TagNumber(2)
-  void clearContentDisposition() => clearField(2);
+  void clearContentDisposition() => $_clearField(2);
 
   /// Cache-Control directive for the object data, matching
   /// [https://tools.ietf.org/html/rfc7234#section-5.2"][RFC 7234 §5.2].
@@ -346,7 +340,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasCacheControl() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCacheControl() => clearField(3);
+  void clearCacheControl() => $_clearField(3);
 
   /// Content-Language of the object data, matching
   /// [https://tools.ietf.org/html/rfc7231#section-3.1.3.2][RFC 7231 §3.1.3.2].
@@ -360,7 +354,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasContentLanguage() => $_has(3);
   @$pb.TagNumber(5)
-  void clearContentLanguage() => clearField(5);
+  void clearContentLanguage() => $_clearField(5);
 
   /// The version of the metadata for this object at this generation. Used for
   /// preconditions and for detecting changes in metadata. A metageneration
@@ -376,7 +370,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasMetageneration() => $_has(4);
   @$pb.TagNumber(6)
-  void clearMetageneration() => clearField(6);
+  void clearMetageneration() => $_clearField(6);
 
   /// The deletion time of the object. Will be returned if and only if this
   /// version of the object has been deleted.
@@ -384,13 +378,13 @@ class StorageObjectData extends $pb.GeneratedMessage {
   $2.Timestamp get timeDeleted => $_getN(5);
   @$pb.TagNumber(7)
   set timeDeleted($2.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasTimeDeleted() => $_has(5);
   @$pb.TagNumber(7)
-  void clearTimeDeleted() => clearField(7);
+  void clearTimeDeleted() => $_clearField(7);
   @$pb.TagNumber(7)
   $2.Timestamp ensureTimeDeleted() => $_ensure(5);
 
@@ -408,7 +402,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasContentType() => $_has(6);
   @$pb.TagNumber(8)
-  void clearContentType() => clearField(8);
+  void clearContentType() => $_clearField(8);
 
   /// Content-Length of the object data in bytes, matching
   /// [https://tools.ietf.org/html/rfc7230#section-3.3.2][RFC 7230 §3.3.2].
@@ -422,7 +416,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasSize() => $_has(7);
   @$pb.TagNumber(9)
-  void clearSize() => clearField(9);
+  void clearSize() => $_clearField(9);
 
   /// The creation time of the object.
   /// Attempting to set this field will result in an error.
@@ -430,13 +424,13 @@ class StorageObjectData extends $pb.GeneratedMessage {
   $2.Timestamp get timeCreated => $_getN(8);
   @$pb.TagNumber(10)
   set timeCreated($2.Timestamp v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasTimeCreated() => $_has(8);
   @$pb.TagNumber(10)
-  void clearTimeCreated() => clearField(10);
+  void clearTimeCreated() => $_clearField(10);
   @$pb.TagNumber(10)
   $2.Timestamp ensureTimeCreated() => $_ensure(8);
 
@@ -454,7 +448,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasCrc32c() => $_has(9);
   @$pb.TagNumber(11)
-  void clearCrc32c() => clearField(11);
+  void clearCrc32c() => $_clearField(11);
 
   /// Number of underlying components that make up this object. Components are
   /// accumulated by compose operations.
@@ -469,7 +463,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasComponentCount() => $_has(10);
   @$pb.TagNumber(12)
-  void clearComponentCount() => clearField(12);
+  void clearComponentCount() => $_clearField(12);
 
   /// MD5 hash of the data; encoded using base64 as per
   /// [https://tools.ietf.org/html/rfc4648#section-4][RFC 4648 §4]. For more
@@ -486,7 +480,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasMd5Hash() => $_has(11);
   @$pb.TagNumber(13)
-  void clearMd5Hash() => clearField(13);
+  void clearMd5Hash() => $_clearField(13);
 
   /// HTTP 1.1 Entity tag for the object. See
   /// [https://tools.ietf.org/html/rfc7232#section-2.3][RFC 7232 §2.3].
@@ -500,20 +494,20 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasEtag() => $_has(12);
   @$pb.TagNumber(14)
-  void clearEtag() => clearField(14);
+  void clearEtag() => $_clearField(14);
 
   /// The modification time of the object metadata.
   @$pb.TagNumber(15)
   $2.Timestamp get updated => $_getN(13);
   @$pb.TagNumber(15)
   set updated($2.Timestamp v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasUpdated() => $_has(13);
   @$pb.TagNumber(15)
-  void clearUpdated() => clearField(15);
+  void clearUpdated() => $_clearField(15);
   @$pb.TagNumber(15)
   $2.Timestamp ensureUpdated() => $_ensure(13);
 
@@ -528,7 +522,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasStorageClass() => $_has(14);
   @$pb.TagNumber(16)
-  void clearStorageClass() => clearField(16);
+  void clearStorageClass() => $_clearField(16);
 
   /// Cloud KMS Key used to encrypt this object, if the object is encrypted by
   /// such a key.
@@ -542,20 +536,20 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.bool hasKmsKeyName() => $_has(15);
   @$pb.TagNumber(17)
-  void clearKmsKeyName() => clearField(17);
+  void clearKmsKeyName() => $_clearField(17);
 
   /// The time at which the object's storage class was last changed.
   @$pb.TagNumber(18)
   $2.Timestamp get timeStorageClassUpdated => $_getN(16);
   @$pb.TagNumber(18)
   set timeStorageClassUpdated($2.Timestamp v) {
-    setField(18, v);
+    $_setField(18, v);
   }
 
   @$pb.TagNumber(18)
   $core.bool hasTimeStorageClassUpdated() => $_has(16);
   @$pb.TagNumber(18)
-  void clearTimeStorageClassUpdated() => clearField(18);
+  void clearTimeStorageClassUpdated() => $_clearField(18);
   @$pb.TagNumber(18)
   $2.Timestamp ensureTimeStorageClassUpdated() => $_ensure(16);
 
@@ -570,7 +564,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.bool hasTemporaryHold() => $_has(17);
   @$pb.TagNumber(19)
-  void clearTemporaryHold() => clearField(19);
+  void clearTemporaryHold() => $_clearField(19);
 
   /// A server-determined value that specifies the earliest time that the
   /// object's retention period expires.
@@ -578,19 +572,19 @@ class StorageObjectData extends $pb.GeneratedMessage {
   $2.Timestamp get retentionExpirationTime => $_getN(18);
   @$pb.TagNumber(20)
   set retentionExpirationTime($2.Timestamp v) {
-    setField(20, v);
+    $_setField(20, v);
   }
 
   @$pb.TagNumber(20)
   $core.bool hasRetentionExpirationTime() => $_has(18);
   @$pb.TagNumber(20)
-  void clearRetentionExpirationTime() => clearField(20);
+  void clearRetentionExpirationTime() => $_clearField(20);
   @$pb.TagNumber(20)
   $2.Timestamp ensureRetentionExpirationTime() => $_ensure(18);
 
   /// User-provided metadata, in key/value pairs.
   @$pb.TagNumber(21)
-  $core.Map<$core.String, $core.String> get metadata => $_getMap(19);
+  $pb.PbMap<$core.String, $core.String> get metadata => $_getMap(19);
 
   /// The name of the object.
   @$pb.TagNumber(23)
@@ -603,7 +597,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   $core.bool hasName() => $_has(20);
   @$pb.TagNumber(23)
-  void clearName() => clearField(23);
+  void clearName() => $_clearField(23);
 
   /// The ID of the object, including the bucket name, object name, and
   /// generation number.
@@ -617,7 +611,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   $core.bool hasId() => $_has(21);
   @$pb.TagNumber(24)
-  void clearId() => clearField(24);
+  void clearId() => $_clearField(24);
 
   /// The name of the bucket containing this object.
   @$pb.TagNumber(25)
@@ -630,7 +624,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   $core.bool hasBucket() => $_has(22);
   @$pb.TagNumber(25)
-  void clearBucket() => clearField(25);
+  void clearBucket() => $_clearField(25);
 
   /// The content generation of this object. Used for object versioning.
   /// Attempting to set this field will result in an error.
@@ -644,7 +638,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   $core.bool hasGeneration() => $_has(23);
   @$pb.TagNumber(26)
-  void clearGeneration() => clearField(26);
+  void clearGeneration() => $_clearField(26);
 
   /// Metadata of customer-supplied encryption key, if the object is encrypted by
   /// such a key.
@@ -652,13 +646,13 @@ class StorageObjectData extends $pb.GeneratedMessage {
   StorageObjectData_CustomerEncryption get customerEncryption => $_getN(24);
   @$pb.TagNumber(28)
   set customerEncryption(StorageObjectData_CustomerEncryption v) {
-    setField(28, v);
+    $_setField(28, v);
   }
 
   @$pb.TagNumber(28)
   $core.bool hasCustomerEncryption() => $_has(24);
   @$pb.TagNumber(28)
-  void clearCustomerEncryption() => clearField(28);
+  void clearCustomerEncryption() => $_clearField(28);
   @$pb.TagNumber(28)
   StorageObjectData_CustomerEncryption ensureCustomerEncryption() =>
       $_ensure(24);
@@ -674,7 +668,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(29)
   $core.bool hasEventBasedHold() => $_has(25);
   @$pb.TagNumber(29)
-  void clearEventBasedHold() => clearField(29);
+  void clearEventBasedHold() => $_clearField(29);
 
   /// Media download link.
   @$pb.TagNumber(100)
@@ -687,7 +681,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(100)
   $core.bool hasMediaLink() => $_has(26);
   @$pb.TagNumber(100)
-  void clearMediaLink() => clearField(100);
+  void clearMediaLink() => $_clearField(100);
 
   /// The link to this object.
   @$pb.TagNumber(101)
@@ -700,7 +694,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(101)
   $core.bool hasSelfLink() => $_has(27);
   @$pb.TagNumber(101)
-  void clearSelfLink() => clearField(101);
+  void clearSelfLink() => $_clearField(101);
 
   /// The kind of item this is. For objects, this is always "storage#object".
   @$pb.TagNumber(102)
@@ -713,7 +707,7 @@ class StorageObjectData extends $pb.GeneratedMessage {
   @$pb.TagNumber(102)
   $core.bool hasKind() => $_has(28);
   @$pb.TagNumber(102)
-  void clearKind() => clearField(102);
+  void clearKind() => $_clearField(102);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

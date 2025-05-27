@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/rpc/error_details.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,24 +13,26 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/duration.pb.dart' as $10;
+import '../protobuf/duration.pb.dart' as $0;
 
-///  Describes when the clients can retry a failed request. Clients could ignore
-///  the recommendation here or retry when this information is missing from error
-///  responses.
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
+/// Describes when the clients can retry a failed request. Clients could ignore
+/// the recommendation here or retry when this information is missing from error
+/// responses.
 ///
-///  It's always recommended that clients should use exponential backoff when
-///  retrying.
+/// It's always recommended that clients should use exponential backoff when
+/// retrying.
 ///
-///  Clients should wait until `retry_delay` amount of time has passed since
-///  receiving the error response before retrying.  If retrying requests also
-///  fail, clients should use an exponential backoff scheme to gradually increase
-///  the delay between retries based on `retry_delay`, until either a maximum
-///  number of retries have been reached or a maximum retry delay cap has been
-///  reached.
+/// Clients should wait until `retry_delay` amount of time has passed since
+/// receiving the error response before retrying.  If retrying requests also
+/// fail, clients should use an exponential backoff scheme to gradually increase
+/// the delay between retries based on `retry_delay`, until either a maximum
+/// number of retries have been reached or a maximum retry delay cap has been
+/// reached.
 class RetryInfo extends $pb.GeneratedMessage {
   factory RetryInfo({
-    $10.Duration? retryDelay,
+    $0.Duration? retryDelay,
   }) {
     final $result = create();
     if (retryDelay != null) {
@@ -50,17 +52,13 @@ class RetryInfo extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'RetryInfo',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.rpc'),
       createEmptyInstance: create)
-    ..aOM<$10.Duration>(1, _omitFieldNames ? '' : 'retryDelay',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'retryDelay',
+        subBuilder: $0.Duration.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RetryInfo clone() => RetryInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RetryInfo copyWith(void Function(RetryInfo) updates) =>
       super.copyWith((message) => updates(message as RetryInfo)) as RetryInfo;
 
@@ -77,18 +75,18 @@ class RetryInfo extends $pb.GeneratedMessage {
 
   /// Clients should wait at least this long between retrying the same request.
   @$pb.TagNumber(1)
-  $10.Duration get retryDelay => $_getN(0);
+  $0.Duration get retryDelay => $_getN(0);
   @$pb.TagNumber(1)
-  set retryDelay($10.Duration v) {
-    setField(1, v);
+  set retryDelay($0.Duration v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasRetryDelay() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRetryDelay() => clearField(1);
+  void clearRetryDelay() => $_clearField(1);
   @$pb.TagNumber(1)
-  $10.Duration ensureRetryDelay() => $_ensure(0);
+  $0.Duration ensureRetryDelay() => $_ensure(0);
 }
 
 /// Describes additional debugging info.
@@ -122,13 +120,9 @@ class DebugInfo extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'detail')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DebugInfo clone() => DebugInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DebugInfo copyWith(void Function(DebugInfo) updates) =>
       super.copyWith((message) => updates(message as DebugInfo)) as DebugInfo;
 
@@ -145,7 +139,7 @@ class DebugInfo extends $pb.GeneratedMessage {
 
   /// The stack trace entries indicating where the error occurred.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get stackEntries => $_getList(0);
+  $pb.PbList<$core.String> get stackEntries => $_getList(0);
 
   /// Additional debugging information provided by the server.
   @$pb.TagNumber(2)
@@ -158,7 +152,7 @@ class DebugInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDetail() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDetail() => clearField(2);
+  void clearDetail() => $_clearField(2);
 }
 
 /// A message type used to describe a single quota violation.  For example, a
@@ -193,14 +187,10 @@ class QuotaFailure_Violation extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   QuotaFailure_Violation clone() =>
       QuotaFailure_Violation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   QuotaFailure_Violation copyWith(
           void Function(QuotaFailure_Violation) updates) =>
       super.copyWith((message) => updates(message as QuotaFailure_Violation))
@@ -231,15 +221,15 @@ class QuotaFailure_Violation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSubject() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSubject() => clearField(1);
+  void clearSubject() => $_clearField(1);
 
-  ///  A description of how the quota check failed. Clients can use this
-  ///  description to find more about the quota configuration in the service's
-  ///  public documentation, or find the relevant quota limit to adjust through
-  ///  developer console.
+  /// A description of how the quota check failed. Clients can use this
+  /// description to find more about the quota configuration in the service's
+  /// public documentation, or find the relevant quota limit to adjust through
+  /// developer console.
   ///
-  ///  For example: "Service disabled" or "Daily Limit for read operations
-  ///  exceeded".
+  /// For example: "Service disabled" or "Daily Limit for read operations
+  /// exceeded".
   @$pb.TagNumber(2)
   $core.String get description => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -250,20 +240,20 @@ class QuotaFailure_Violation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDescription() => clearField(2);
+  void clearDescription() => $_clearField(2);
 }
 
-///  Describes how a quota check failed.
+/// Describes how a quota check failed.
 ///
-///  For example if a daily limit was exceeded for the calling project,
-///  a service could respond with a QuotaFailure detail containing the project
-///  id and the description of the quota limit that was exceeded.  If the
-///  calling project hasn't enabled the service in the developer console, then
-///  a service could respond with the project id and set `service_disabled`
-///  to true.
+/// For example if a daily limit was exceeded for the calling project,
+/// a service could respond with a QuotaFailure detail containing the project
+/// id and the description of the quota limit that was exceeded.  If the
+/// calling project hasn't enabled the service in the developer console, then
+/// a service could respond with the project id and set `service_disabled`
+/// to true.
 ///
-///  Also see RetryInfo and Help types for other details about handling a
-///  quota failure.
+/// Also see RetryInfo and Help types for other details about handling a
+/// quota failure.
 class QuotaFailure extends $pb.GeneratedMessage {
   factory QuotaFailure({
     $core.Iterable<QuotaFailure_Violation>? violations,
@@ -291,13 +281,9 @@ class QuotaFailure extends $pb.GeneratedMessage {
         subBuilder: QuotaFailure_Violation.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   QuotaFailure clone() => QuotaFailure()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   QuotaFailure copyWith(void Function(QuotaFailure) updates) =>
       super.copyWith((message) => updates(message as QuotaFailure))
           as QuotaFailure;
@@ -316,35 +302,35 @@ class QuotaFailure extends $pb.GeneratedMessage {
 
   /// Describes all quota violations.
   @$pb.TagNumber(1)
-  $core.List<QuotaFailure_Violation> get violations => $_getList(0);
+  $pb.PbList<QuotaFailure_Violation> get violations => $_getList(0);
 }
 
-///  Describes the cause of the error with structured details.
+/// Describes the cause of the error with structured details.
 ///
-///  Example of an error when contacting the "pubsub.googleapis.com" API when it
-///  is not enabled:
-///      { "reason": "API_DISABLED"
-///        "domain": "googleapis.com"
-///        "metadata": {
-///          "resource": "projects/123",
-///          "service": "pubsub.googleapis.com"
-///        }
-///      }
-///  This response indicates that the pubsub.googleapis.com API is not enabled.
+/// Example of an error when contacting the "pubsub.googleapis.com" API when it
+/// is not enabled:
+///     { "reason": "API_DISABLED"
+///       "domain": "googleapis.com"
+///       "metadata": {
+///         "resource": "projects/123",
+///         "service": "pubsub.googleapis.com"
+///       }
+///     }
+/// This response indicates that the pubsub.googleapis.com API is not enabled.
 ///
-///  Example of an error that is returned when attempting to create a Spanner
-///  instance in a region that is out of stock:
-///      { "reason": "STOCKOUT"
-///        "domain": "spanner.googleapis.com",
-///        "metadata": {
-///          "availableRegions": "us-central1,us-east2"
-///        }
-///      }
+/// Example of an error that is returned when attempting to create a Spanner
+/// instance in a region that is out of stock:
+///     { "reason": "STOCKOUT"
+///       "domain": "spanner.googleapis.com",
+///       "metadata": {
+///         "availableRegions": "us-central1,us-east2"
+///       }
+///     }
 class ErrorInfo extends $pb.GeneratedMessage {
   factory ErrorInfo({
     $core.String? reason,
     $core.String? domain,
-    $core.Map<$core.String, $core.String>? metadata,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? metadata,
   }) {
     final $result = create();
     if (reason != null) {
@@ -354,7 +340,7 @@ class ErrorInfo extends $pb.GeneratedMessage {
       $result.domain = domain;
     }
     if (metadata != null) {
-      $result.metadata.addAll(metadata);
+      $result.metadata.addEntries(metadata);
     }
     return $result;
   }
@@ -379,13 +365,9 @@ class ErrorInfo extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.rpc'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ErrorInfo clone() => ErrorInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ErrorInfo copyWith(void Function(ErrorInfo) updates) =>
       super.copyWith((message) => updates(message as ErrorInfo)) as ErrorInfo;
 
@@ -414,7 +396,7 @@ class ErrorInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasReason() => $_has(0);
   @$pb.TagNumber(1)
-  void clearReason() => clearField(1);
+  void clearReason() => $_clearField(1);
 
   /// The logical grouping to which the "reason" belongs.  Often "domain" will
   /// contain the registered service name of the tool or product that is the
@@ -431,18 +413,18 @@ class ErrorInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDomain() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDomain() => clearField(2);
+  void clearDomain() => $_clearField(2);
 
-  ///  Additional structured details about this error.
+  /// Additional structured details about this error.
   ///
-  ///  Keys should match /[a-zA-Z0-9-_]/ and be limited to 64 characters in
-  ///  length. When identifying the current value of an exceeded limit, the units
-  ///  should be contained in the key, not the value.  For example, rather than
-  ///  {"instanceLimit": "100/request"}, should be returned as,
-  ///  {"instanceLimitPerRequest": "100"}, if the client exceeds the number of
-  ///  instances that can be created in a single (batch) request.
+  /// Keys should match /[a-zA-Z0-9-_]/ and be limited to 64 characters in
+  /// length. When identifying the current value of an exceeded limit, the units
+  /// should be contained in the key, not the value.  For example, rather than
+  /// {"instanceLimit": "100/request"}, should be returned as,
+  /// {"instanceLimitPerRequest": "100"}, if the client exceeds the number of
+  /// instances that can be created in a single (batch) request.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $core.String> get metadata => $_getMap(2);
+  $pb.PbMap<$core.String, $core.String> get metadata => $_getMap(2);
 }
 
 /// A message type used to describe a single precondition failure.
@@ -481,14 +463,10 @@ class PreconditionFailure_Violation extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreconditionFailure_Violation clone() =>
       PreconditionFailure_Violation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreconditionFailure_Violation copyWith(
           void Function(PreconditionFailure_Violation) updates) =>
       super.copyWith(
@@ -521,7 +499,7 @@ class PreconditionFailure_Violation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// The subject, relative to the type, that failed.
   /// For example, "google.com/cloud" relative to the "TOS" type would indicate
@@ -536,12 +514,12 @@ class PreconditionFailure_Violation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSubject() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSubject() => clearField(2);
+  void clearSubject() => $_clearField(2);
 
-  ///  A description of how the precondition failed. Developers can use this
-  ///  description to understand how to fix the failure.
+  /// A description of how the precondition failed. Developers can use this
+  /// description to understand how to fix the failure.
   ///
-  ///  For example: "Terms of service not accepted".
+  /// For example: "Terms of service not accepted".
   @$pb.TagNumber(3)
   $core.String get description => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -552,14 +530,14 @@ class PreconditionFailure_Violation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 }
 
-///  Describes what preconditions have failed.
+/// Describes what preconditions have failed.
 ///
-///  For example, if an RPC failed because it required the Terms of Service to be
-///  acknowledged, it could list the terms of service violation in the
-///  PreconditionFailure message.
+/// For example, if an RPC failed because it required the Terms of Service to be
+/// acknowledged, it could list the terms of service violation in the
+/// PreconditionFailure message.
 class PreconditionFailure extends $pb.GeneratedMessage {
   factory PreconditionFailure({
     $core.Iterable<PreconditionFailure_Violation>? violations,
@@ -587,13 +565,9 @@ class PreconditionFailure extends $pb.GeneratedMessage {
         subBuilder: PreconditionFailure_Violation.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreconditionFailure clone() => PreconditionFailure()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   PreconditionFailure copyWith(void Function(PreconditionFailure) updates) =>
       super.copyWith((message) => updates(message as PreconditionFailure))
           as PreconditionFailure;
@@ -612,7 +586,7 @@ class PreconditionFailure extends $pb.GeneratedMessage {
 
   /// Describes all precondition violations.
   @$pb.TagNumber(1)
-  $core.List<PreconditionFailure_Violation> get violations => $_getList(0);
+  $pb.PbList<PreconditionFailure_Violation> get violations => $_getList(0);
 }
 
 /// A message type used to describe a single bad request field.
@@ -646,14 +620,10 @@ class BadRequest_FieldViolation extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BadRequest_FieldViolation clone() =>
       BadRequest_FieldViolation()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BadRequest_FieldViolation copyWith(
           void Function(BadRequest_FieldViolation) updates) =>
       super.copyWith((message) => updates(message as BadRequest_FieldViolation))
@@ -684,7 +654,7 @@ class BadRequest_FieldViolation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
-  void clearField_1() => clearField(1);
+  void clearField_1() => $_clearField(1);
 
   /// A description of why the request element is bad.
   @$pb.TagNumber(2)
@@ -697,7 +667,7 @@ class BadRequest_FieldViolation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDescription() => clearField(2);
+  void clearDescription() => $_clearField(2);
 }
 
 /// Describes violations in a client request. This error type focuses on the
@@ -729,13 +699,9 @@ class BadRequest extends $pb.GeneratedMessage {
         subBuilder: BadRequest_FieldViolation.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BadRequest clone() => BadRequest()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BadRequest copyWith(void Function(BadRequest) updates) =>
       super.copyWith((message) => updates(message as BadRequest)) as BadRequest;
 
@@ -752,7 +718,7 @@ class BadRequest extends $pb.GeneratedMessage {
 
   /// Describes all violations in a client request.
   @$pb.TagNumber(1)
-  $core.List<BadRequest_FieldViolation> get fieldViolations => $_getList(0);
+  $pb.PbList<BadRequest_FieldViolation> get fieldViolations => $_getList(0);
 }
 
 /// Contains metadata about the request that clients can attach when filing a bug
@@ -787,13 +753,9 @@ class RequestInfo extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'servingData')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RequestInfo clone() => RequestInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RequestInfo copyWith(void Function(RequestInfo) updates) =>
       super.copyWith((message) => updates(message as RequestInfo))
           as RequestInfo;
@@ -821,7 +783,7 @@ class RequestInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasRequestId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRequestId() => clearField(1);
+  void clearRequestId() => $_clearField(1);
 
   /// Any data that was used to serve this request. For example, an encrypted
   /// stack trace that can be sent back to the service provider for debugging.
@@ -835,7 +797,7 @@ class RequestInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasServingData() => $_has(1);
   @$pb.TagNumber(2)
-  void clearServingData() => clearField(2);
+  void clearServingData() => $_clearField(2);
 }
 
 /// Describes the resource that is being accessed.
@@ -879,13 +841,9 @@ class ResourceInfo extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceInfo clone() => ResourceInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResourceInfo copyWith(void Function(ResourceInfo) updates) =>
       super.copyWith((message) => updates(message as ResourceInfo))
           as ResourceInfo;
@@ -915,7 +873,7 @@ class ResourceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasResourceType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearResourceType() => clearField(1);
+  void clearResourceType() => $_clearField(1);
 
   /// The name of the resource being accessed.  For example, a shared calendar
   /// name: "example.com_4fghdhgsrgh@group.calendar.google.com", if the current
@@ -930,7 +888,7 @@ class ResourceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasResourceName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearResourceName() => clearField(2);
+  void clearResourceName() => $_clearField(2);
 
   /// The owner of the resource (optional).
   /// For example, "user:<owner email>" or "project:<Google developer project
@@ -945,7 +903,7 @@ class ResourceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasOwner() => $_has(2);
   @$pb.TagNumber(3)
-  void clearOwner() => clearField(3);
+  void clearOwner() => $_clearField(3);
 
   /// Describes what error is encountered when accessing this resource.
   /// For example, updating a cloud project may require the `writer` permission
@@ -960,7 +918,7 @@ class ResourceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDescription() => clearField(4);
+  void clearDescription() => $_clearField(4);
 }
 
 /// Describes a URL link.
@@ -994,13 +952,9 @@ class Help_Link extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'url')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Help_Link clone() => Help_Link()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Help_Link copyWith(void Function(Help_Link) updates) =>
       super.copyWith((message) => updates(message as Help_Link)) as Help_Link;
 
@@ -1026,7 +980,7 @@ class Help_Link extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDescription() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDescription() => clearField(1);
+  void clearDescription() => $_clearField(1);
 
   /// The URL of the link.
   @$pb.TagNumber(2)
@@ -1039,14 +993,14 @@ class Help_Link extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUrl() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUrl() => clearField(2);
+  void clearUrl() => $_clearField(2);
 }
 
-///  Provides links to documentation or for performing an out of band action.
+/// Provides links to documentation or for performing an out of band action.
 ///
-///  For example, if a quota check failed with an error indicating the calling
-///  project hasn't enabled the accessed service, this can contain a URL pointing
-///  directly to the right place in the developer console to flip the bit.
+/// For example, if a quota check failed with an error indicating the calling
+/// project hasn't enabled the accessed service, this can contain a URL pointing
+/// directly to the right place in the developer console to flip the bit.
 class Help extends $pb.GeneratedMessage {
   factory Help({
     $core.Iterable<Help_Link>? links,
@@ -1073,13 +1027,9 @@ class Help extends $pb.GeneratedMessage {
         subBuilder: Help_Link.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Help clone() => Help()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Help copyWith(void Function(Help) updates) =>
       super.copyWith((message) => updates(message as Help)) as Help;
 
@@ -1096,7 +1046,7 @@ class Help extends $pb.GeneratedMessage {
 
   /// URL(s) pointing to additional information on handling the current error.
   @$pb.TagNumber(1)
-  $core.List<Help_Link> get links => $_getList(0);
+  $pb.PbList<Help_Link> get links => $_getList(0);
 }
 
 /// Provides a localized error message that is safe to return to the user
@@ -1131,13 +1081,9 @@ class LocalizedMessage extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'message')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LocalizedMessage clone() => LocalizedMessage()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LocalizedMessage copyWith(void Function(LocalizedMessage) updates) =>
       super.copyWith((message) => updates(message as LocalizedMessage))
           as LocalizedMessage;
@@ -1167,7 +1113,7 @@ class LocalizedMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasLocale() => $_has(0);
   @$pb.TagNumber(1)
-  void clearLocale() => clearField(1);
+  void clearLocale() => $_clearField(1);
 
   /// The localized error message in the above locale.
   @$pb.TagNumber(2)
@@ -1180,7 +1126,7 @@ class LocalizedMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMessage() => clearField(2);
+  void clearMessage() => $_clearField(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

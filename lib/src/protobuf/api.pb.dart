@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/protobuf/api.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,26 +13,28 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'source_context.pb.dart' as $59;
+import 'source_context.pb.dart' as $61;
 import 'type.pb.dart' as $60;
 import 'type.pbenum.dart' as $60;
 
-///  Api is a light-weight descriptor for an API Interface.
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
+/// Api is a light-weight descriptor for an API Interface.
 ///
-///  Interfaces are also described as "protocol buffer services" in some contexts,
-///  such as by the "service" keyword in a .proto file, but they are different
-///  from API Services, which represent a concrete implementation of an interface
-///  as opposed to simply a description of methods and bindings. They are also
-///  sometimes simply referred to as "APIs" in other contexts, such as the name of
-///  this message itself. See https://cloud.google.com/apis/design/glossary for
-///  detailed terminology.
+/// Interfaces are also described as "protocol buffer services" in some contexts,
+/// such as by the "service" keyword in a .proto file, but they are different
+/// from API Services, which represent a concrete implementation of an interface
+/// as opposed to simply a description of methods and bindings. They are also
+/// sometimes simply referred to as "APIs" in other contexts, such as the name of
+/// this message itself. See https://cloud.google.com/apis/design/glossary for
+/// detailed terminology.
 class Api extends $pb.GeneratedMessage {
   factory Api({
     $core.String? name,
     $core.Iterable<Method>? methods,
     $core.Iterable<$60.Option>? options,
     $core.String? version,
-    $59.SourceContext? sourceContext,
+    $61.SourceContext? sourceContext,
     $core.Iterable<Mixin>? mixins,
     $60.Syntax? syntax,
   }) {
@@ -79,8 +81,8 @@ class Api extends $pb.GeneratedMessage {
     ..pc<$60.Option>(3, _omitFieldNames ? '' : 'options', $pb.PbFieldType.PM,
         subBuilder: $60.Option.create)
     ..aOS(4, _omitFieldNames ? '' : 'version')
-    ..aOM<$59.SourceContext>(5, _omitFieldNames ? '' : 'sourceContext',
-        subBuilder: $59.SourceContext.create)
+    ..aOM<$61.SourceContext>(5, _omitFieldNames ? '' : 'sourceContext',
+        subBuilder: $61.SourceContext.create)
     ..pc<Mixin>(6, _omitFieldNames ? '' : 'mixins', $pb.PbFieldType.PM,
         subBuilder: Mixin.create)
     ..e<$60.Syntax>(7, _omitFieldNames ? '' : 'syntax', $pb.PbFieldType.OE,
@@ -89,13 +91,9 @@ class Api extends $pb.GeneratedMessage {
         enumValues: $60.Syntax.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Api clone() => Api()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Api copyWith(void Function(Api) updates) =>
       super.copyWith((message) => updates(message as Api)) as Api;
 
@@ -122,35 +120,35 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// The methods of this interface, in unspecified order.
   @$pb.TagNumber(2)
-  $core.List<Method> get methods => $_getList(1);
+  $pb.PbList<Method> get methods => $_getList(1);
 
   /// Any metadata attached to the interface.
   @$pb.TagNumber(3)
-  $core.List<$60.Option> get options => $_getList(2);
+  $pb.PbList<$60.Option> get options => $_getList(2);
 
-  ///  A version string for this interface. If specified, must have the form
-  ///  `major-version.minor-version`, as in `1.10`. If the minor version is
-  ///  omitted, it defaults to zero. If the entire version field is empty, the
-  ///  major version is derived from the package name, as outlined below. If the
-  ///  field is not empty, the version in the package name will be verified to be
-  ///  consistent with what is provided here.
+  /// A version string for this interface. If specified, must have the form
+  /// `major-version.minor-version`, as in `1.10`. If the minor version is
+  /// omitted, it defaults to zero. If the entire version field is empty, the
+  /// major version is derived from the package name, as outlined below. If the
+  /// field is not empty, the version in the package name will be verified to be
+  /// consistent with what is provided here.
   ///
-  ///  The versioning schema uses [semantic
-  ///  versioning](http://semver.org) where the major version number
-  ///  indicates a breaking change and the minor version an additive,
-  ///  non-breaking change. Both version numbers are signals to users
-  ///  what to expect from different versions, and should be carefully
-  ///  chosen based on the product plan.
+  /// The versioning schema uses [semantic
+  /// versioning](http://semver.org) where the major version number
+  /// indicates a breaking change and the minor version an additive,
+  /// non-breaking change. Both version numbers are signals to users
+  /// what to expect from different versions, and should be carefully
+  /// chosen based on the product plan.
   ///
-  ///  The major version is also reflected in the package name of the
-  ///  interface, which must end in `v<major-version>`, as in
-  ///  `google.feature.v1`. For major versions 0 and 1, the suffix can
-  ///  be omitted. Zero major versions must only be used for
-  ///  experimental, non-GA interfaces.
+  /// The major version is also reflected in the package name of the
+  /// interface, which must end in `v<major-version>`, as in
+  /// `google.feature.v1`. For major versions 0 and 1, the suffix can
+  /// be omitted. Zero major versions must only be used for
+  /// experimental, non-GA interfaces.
   @$pb.TagNumber(4)
   $core.String get version => $_getSZ(3);
   @$pb.TagNumber(4)
@@ -161,40 +159,40 @@ class Api extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasVersion() => $_has(3);
   @$pb.TagNumber(4)
-  void clearVersion() => clearField(4);
+  void clearVersion() => $_clearField(4);
 
   /// Source context for the protocol buffer service represented by this
   /// message.
   @$pb.TagNumber(5)
-  $59.SourceContext get sourceContext => $_getN(4);
+  $61.SourceContext get sourceContext => $_getN(4);
   @$pb.TagNumber(5)
-  set sourceContext($59.SourceContext v) {
-    setField(5, v);
+  set sourceContext($61.SourceContext v) {
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasSourceContext() => $_has(4);
   @$pb.TagNumber(5)
-  void clearSourceContext() => clearField(5);
+  void clearSourceContext() => $_clearField(5);
   @$pb.TagNumber(5)
-  $59.SourceContext ensureSourceContext() => $_ensure(4);
+  $61.SourceContext ensureSourceContext() => $_ensure(4);
 
   /// Included interfaces. See [Mixin][].
   @$pb.TagNumber(6)
-  $core.List<Mixin> get mixins => $_getList(5);
+  $pb.PbList<Mixin> get mixins => $_getList(5);
 
   /// The source syntax of the service.
   @$pb.TagNumber(7)
   $60.Syntax get syntax => $_getN(6);
   @$pb.TagNumber(7)
   set syntax($60.Syntax v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasSyntax() => $_has(6);
   @$pb.TagNumber(7)
-  void clearSyntax() => clearField(7);
+  void clearSyntax() => $_clearField(7);
 }
 
 /// Method represents a method of an API interface.
@@ -258,13 +256,9 @@ class Method extends $pb.GeneratedMessage {
         enumValues: $60.Syntax.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Method clone() => Method()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Method copyWith(void Function(Method) updates) =>
       super.copyWith((message) => updates(message as Method)) as Method;
 
@@ -290,7 +284,7 @@ class Method extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// A URL of the input message type.
   @$pb.TagNumber(2)
@@ -303,7 +297,7 @@ class Method extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasRequestTypeUrl() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRequestTypeUrl() => clearField(2);
+  void clearRequestTypeUrl() => $_clearField(2);
 
   /// If true, the request is streamed.
   @$pb.TagNumber(3)
@@ -316,7 +310,7 @@ class Method extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRequestStreaming() => $_has(2);
   @$pb.TagNumber(3)
-  void clearRequestStreaming() => clearField(3);
+  void clearRequestStreaming() => $_clearField(3);
 
   /// The URL of the output message type.
   @$pb.TagNumber(4)
@@ -329,7 +323,7 @@ class Method extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasResponseTypeUrl() => $_has(3);
   @$pb.TagNumber(4)
-  void clearResponseTypeUrl() => clearField(4);
+  void clearResponseTypeUrl() => $_clearField(4);
 
   /// If true, the response is streamed.
   @$pb.TagNumber(5)
@@ -342,104 +336,104 @@ class Method extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasResponseStreaming() => $_has(4);
   @$pb.TagNumber(5)
-  void clearResponseStreaming() => clearField(5);
+  void clearResponseStreaming() => $_clearField(5);
 
   /// Any metadata attached to the method.
   @$pb.TagNumber(6)
-  $core.List<$60.Option> get options => $_getList(5);
+  $pb.PbList<$60.Option> get options => $_getList(5);
 
   /// The source syntax of this method.
   @$pb.TagNumber(7)
   $60.Syntax get syntax => $_getN(6);
   @$pb.TagNumber(7)
   set syntax($60.Syntax v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasSyntax() => $_has(6);
   @$pb.TagNumber(7)
-  void clearSyntax() => clearField(7);
+  void clearSyntax() => $_clearField(7);
 }
 
-///  Declares an API Interface to be included in this interface. The including
-///  interface must redeclare all the methods from the included interface, but
-///  documentation and options are inherited as follows:
+/// Declares an API Interface to be included in this interface. The including
+/// interface must redeclare all the methods from the included interface, but
+/// documentation and options are inherited as follows:
 ///
-///  - If after comment and whitespace stripping, the documentation
-///    string of the redeclared method is empty, it will be inherited
-///    from the original method.
+/// - If after comment and whitespace stripping, the documentation
+///   string of the redeclared method is empty, it will be inherited
+///   from the original method.
 ///
-///  - Each annotation belonging to the service config (http,
-///    visibility) which is not set in the redeclared method will be
-///    inherited.
+/// - Each annotation belonging to the service config (http,
+///   visibility) which is not set in the redeclared method will be
+///   inherited.
 ///
-///  - If an http annotation is inherited, the path pattern will be
-///    modified as follows. Any version prefix will be replaced by the
-///    version of the including interface plus the [root][] path if
-///    specified.
+/// - If an http annotation is inherited, the path pattern will be
+///   modified as follows. Any version prefix will be replaced by the
+///   version of the including interface plus the [root][] path if
+///   specified.
 ///
-///  Example of a simple mixin:
+/// Example of a simple mixin:
 ///
-///      package google.acl.v1;
-///      service AccessControl {
-///        // Get the underlying ACL object.
-///        rpc GetAcl(GetAclRequest) returns (Acl) {
-///          option (google.api.http).get = "/v1/{resource=**}:getAcl";
-///        }
-///      }
+///     package google.acl.v1;
+///     service AccessControl {
+///       // Get the underlying ACL object.
+///       rpc GetAcl(GetAclRequest) returns (Acl) {
+///         option (google.api.http).get = "/v1/{resource=**}:getAcl";
+///       }
+///     }
 ///
-///      package google.storage.v2;
-///      service Storage {
-///        rpc GetAcl(GetAclRequest) returns (Acl);
+///     package google.storage.v2;
+///     service Storage {
+///       rpc GetAcl(GetAclRequest) returns (Acl);
 ///
-///        // Get a data record.
-///        rpc GetData(GetDataRequest) returns (Data) {
-///          option (google.api.http).get = "/v2/{resource=**}";
-///        }
-///      }
+///       // Get a data record.
+///       rpc GetData(GetDataRequest) returns (Data) {
+///         option (google.api.http).get = "/v2/{resource=**}";
+///       }
+///     }
 ///
-///  Example of a mixin configuration:
+/// Example of a mixin configuration:
 ///
-///      apis:
-///      - name: google.storage.v2.Storage
-///        mixins:
-///        - name: google.acl.v1.AccessControl
+///     apis:
+///     - name: google.storage.v2.Storage
+///       mixins:
+///       - name: google.acl.v1.AccessControl
 ///
-///  The mixin construct implies that all methods in `AccessControl` are
-///  also declared with same name and request/response types in
-///  `Storage`. A documentation generator or annotation processor will
-///  see the effective `Storage.GetAcl` method after inheriting
-///  documentation and annotations as follows:
+/// The mixin construct implies that all methods in `AccessControl` are
+/// also declared with same name and request/response types in
+/// `Storage`. A documentation generator or annotation processor will
+/// see the effective `Storage.GetAcl` method after inheriting
+/// documentation and annotations as follows:
 ///
-///      service Storage {
-///        // Get the underlying ACL object.
-///        rpc GetAcl(GetAclRequest) returns (Acl) {
-///          option (google.api.http).get = "/v2/{resource=**}:getAcl";
-///        }
-///        ...
-///      }
+///     service Storage {
+///       // Get the underlying ACL object.
+///       rpc GetAcl(GetAclRequest) returns (Acl) {
+///         option (google.api.http).get = "/v2/{resource=**}:getAcl";
+///       }
+///       ...
+///     }
 ///
-///  Note how the version in the path pattern changed from `v1` to `v2`.
+/// Note how the version in the path pattern changed from `v1` to `v2`.
 ///
-///  If the `root` field in the mixin is specified, it should be a
-///  relative path under which inherited HTTP paths are placed. Example:
+/// If the `root` field in the mixin is specified, it should be a
+/// relative path under which inherited HTTP paths are placed. Example:
 ///
-///      apis:
-///      - name: google.storage.v2.Storage
-///        mixins:
-///        - name: google.acl.v1.AccessControl
-///          root: acls
+///     apis:
+///     - name: google.storage.v2.Storage
+///       mixins:
+///       - name: google.acl.v1.AccessControl
+///         root: acls
 ///
-///  This implies the following inherited HTTP annotation:
+/// This implies the following inherited HTTP annotation:
 ///
-///      service Storage {
-///        // Get the underlying ACL object.
-///        rpc GetAcl(GetAclRequest) returns (Acl) {
-///          option (google.api.http).get = "/v2/acls/{resource=**}:getAcl";
-///        }
-///        ...
-///      }
+///     service Storage {
+///       // Get the underlying ACL object.
+///       rpc GetAcl(GetAclRequest) returns (Acl) {
+///         option (google.api.http).get = "/v2/acls/{resource=**}:getAcl";
+///       }
+///       ...
+///     }
 class Mixin extends $pb.GeneratedMessage {
   factory Mixin({
     $core.String? name,
@@ -471,13 +465,9 @@ class Mixin extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'root')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Mixin clone() => Mixin()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Mixin copyWith(void Function(Mixin) updates) =>
       super.copyWith((message) => updates(message as Mixin)) as Mixin;
 
@@ -503,7 +493,7 @@ class Mixin extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// If non-empty specifies a path under which inherited HTTP paths
   /// are rooted.
@@ -517,7 +507,7 @@ class Mixin extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasRoot() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRoot() => clearField(2);
+  void clearRoot() => $_clearField(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/api/monitored_resource.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,19 +13,21 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
 /// An object representing a resource that can be used for monitoring, logging,
 /// billing, or other purposes.
 class MonitoredResource extends $pb.GeneratedMessage {
   factory MonitoredResource({
     $core.String? type,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
   }) {
     final $result = create();
     if (type != null) {
       $result.type = type;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     return $result;
   }
@@ -49,13 +51,9 @@ class MonitoredResource extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.api'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MonitoredResource clone() => MonitoredResource()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MonitoredResource copyWith(void Function(MonitoredResource) updates) =>
       super.copyWith((message) => updates(message as MonitoredResource))
           as MonitoredResource;
@@ -84,13 +82,13 @@ class MonitoredResource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// Values for all of the labels listed in the associated monitored
   /// resource descriptor. For example, Compute Engine VM instances use the
   /// labels `"project_id"`, `"instance_id"`, and `"zone"`.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

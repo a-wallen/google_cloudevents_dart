@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/alloydb/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,11 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $10;
+import '../../../../protobuf/duration.pb.dart' as $0;
 import '../../../../protobuf/timestamp.pb.dart' as $2;
-import '../../../../type/dayofweek.pbenum.dart' as $27;
-import '../../../../type/timeofday.pb.dart' as $26;
+import '../../../../type/dayofweek.pbenum.dart' as $3;
+import '../../../../type/timeofday.pb.dart' as $1;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -55,13 +57,9 @@ class UserPassword extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'password')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UserPassword clone() => UserPassword()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UserPassword copyWith(void Function(UserPassword) updates) =>
       super.copyWith((message) => updates(message as UserPassword))
           as UserPassword;
@@ -89,7 +87,7 @@ class UserPassword extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUser() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUser() => clearField(1);
+  void clearUser() => $_clearField(1);
 
   /// The initial password for the user.
   @$pb.TagNumber(2)
@@ -102,7 +100,7 @@ class UserPassword extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPassword() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPassword() => clearField(2);
+  void clearPassword() => $_clearField(2);
 }
 
 /// Subset of the source instance configuration that is available when reading
@@ -148,13 +146,9 @@ class MigrationSource extends $pb.GeneratedMessage {
         enumValues: MigrationSource_MigrationSourceType.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigrationSource clone() => MigrationSource()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MigrationSource copyWith(void Function(MigrationSource) updates) =>
       super.copyWith((message) => updates(message as MigrationSource))
           as MigrationSource;
@@ -183,7 +177,7 @@ class MigrationSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasHostPort() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHostPort() => clearField(1);
+  void clearHostPort() => $_clearField(1);
 
   /// Output only. Place holder for the external source identifier(e.g DMS job
   /// name) that created the cluster.
@@ -197,20 +191,20 @@ class MigrationSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasReferenceId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearReferenceId() => clearField(2);
+  void clearReferenceId() => $_clearField(2);
 
   /// Output only. Type of migration source.
   @$pb.TagNumber(3)
   MigrationSource_MigrationSourceType get sourceType => $_getN(2);
   @$pb.TagNumber(3)
   set sourceType(MigrationSource_MigrationSourceType v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasSourceType() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSourceType() => clearField(3);
+  void clearSourceType() => $_clearField(3);
 }
 
 /// EncryptionConfig describes the encryption config of a cluster or a backup
@@ -241,13 +235,9 @@ class EncryptionConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'kmsKeyName')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EncryptionConfig clone() => EncryptionConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EncryptionConfig copyWith(void Function(EncryptionConfig) updates) =>
       super.copyWith((message) => updates(message as EncryptionConfig))
           as EncryptionConfig;
@@ -277,7 +267,7 @@ class EncryptionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasKmsKeyName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKmsKeyName() => clearField(1);
+  void clearKmsKeyName() => $_clearField(1);
 }
 
 /// EncryptionInfo describes the encryption information of a cluster or a backup.
@@ -316,13 +306,9 @@ class EncryptionInfo extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'kmsKeyVersions')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EncryptionInfo clone() => EncryptionInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EncryptionInfo copyWith(void Function(EncryptionInfo) updates) =>
       super.copyWith((message) => updates(message as EncryptionInfo))
           as EncryptionInfo;
@@ -344,18 +330,18 @@ class EncryptionInfo extends $pb.GeneratedMessage {
   EncryptionInfo_Type get encryptionType => $_getN(0);
   @$pb.TagNumber(1)
   set encryptionType(EncryptionInfo_Type v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasEncryptionType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEncryptionType() => clearField(1);
+  void clearEncryptionType() => $_clearField(1);
 
   /// Output only. Cloud KMS key versions that are being used to protect the
   /// database or the backup.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get kmsKeyVersions => $_getList(1);
+  $pb.PbList<$core.String> get kmsKeyVersions => $_getList(1);
 }
 
 /// SSL configuration for an AlloyDB Cluster.
@@ -398,13 +384,9 @@ class SslConfig extends $pb.GeneratedMessage {
         enumValues: SslConfig_CaSource.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SslConfig clone() => SslConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SslConfig copyWith(void Function(SslConfig) updates) =>
       super.copyWith((message) => updates(message as SslConfig)) as SslConfig;
 
@@ -424,13 +406,13 @@ class SslConfig extends $pb.GeneratedMessage {
   SslConfig_SslMode get sslMode => $_getN(0);
   @$pb.TagNumber(1)
   set sslMode(SslConfig_SslMode v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasSslMode() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSslMode() => clearField(1);
+  void clearSslMode() => $_clearField(1);
 
   /// Optional. Certificate Authority (CA) source. Only CA_SOURCE_MANAGED is
   /// supported currently, and is the default value.
@@ -438,26 +420,26 @@ class SslConfig extends $pb.GeneratedMessage {
   SslConfig_CaSource get caSource => $_getN(1);
   @$pb.TagNumber(2)
   set caSource(SslConfig_CaSource v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasCaSource() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCaSource() => clearField(2);
+  void clearCaSource() => $_clearField(2);
 }
 
-///  A weekly schedule starts a backup at prescribed start times within a
-///  day, for the specified days of the week.
+/// A weekly schedule starts a backup at prescribed start times within a
+/// day, for the specified days of the week.
 ///
-///  The weekly schedule message is flexible and can be used to create many
-///  types of schedules. For example, to have a daily backup that starts at
-///  22:00, configure the `start_times` field to have one element "22:00" and
-///  the `days_of_week` field to have all seven days of the week.
+/// The weekly schedule message is flexible and can be used to create many
+/// types of schedules. For example, to have a daily backup that starts at
+/// 22:00, configure the `start_times` field to have one element "22:00" and
+/// the `days_of_week` field to have all seven days of the week.
 class AutomatedBackupPolicy_WeeklySchedule extends $pb.GeneratedMessage {
   factory AutomatedBackupPolicy_WeeklySchedule({
-    $core.Iterable<$26.TimeOfDay>? startTimes,
-    $core.Iterable<$27.DayOfWeek>? daysOfWeek,
+    $core.Iterable<$1.TimeOfDay>? startTimes,
+    $core.Iterable<$3.DayOfWeek>? daysOfWeek,
   }) {
     final $result = create();
     if (startTimes != null) {
@@ -482,24 +464,20 @@ class AutomatedBackupPolicy_WeeklySchedule extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.alloydb.v1'),
       createEmptyInstance: create)
-    ..pc<$26.TimeOfDay>(
+    ..pc<$1.TimeOfDay>(
         1, _omitFieldNames ? '' : 'startTimes', $pb.PbFieldType.PM,
-        subBuilder: $26.TimeOfDay.create)
-    ..pc<$27.DayOfWeek>(
+        subBuilder: $1.TimeOfDay.create)
+    ..pc<$3.DayOfWeek>(
         2, _omitFieldNames ? '' : 'daysOfWeek', $pb.PbFieldType.KE,
-        valueOf: $27.DayOfWeek.valueOf,
-        enumValues: $27.DayOfWeek.values,
-        defaultEnumValue: $27.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED)
+        valueOf: $3.DayOfWeek.valueOf,
+        enumValues: $3.DayOfWeek.values,
+        defaultEnumValue: $3.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AutomatedBackupPolicy_WeeklySchedule clone() =>
       AutomatedBackupPolicy_WeeklySchedule()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AutomatedBackupPolicy_WeeklySchedule copyWith(
           void Function(AutomatedBackupPolicy_WeeklySchedule) updates) =>
       super.copyWith((message) =>
@@ -520,27 +498,27 @@ class AutomatedBackupPolicy_WeeklySchedule extends $pb.GeneratedMessage {
           AutomatedBackupPolicy_WeeklySchedule>(create);
   static AutomatedBackupPolicy_WeeklySchedule? _defaultInstance;
 
-  ///  The times during the day to start a backup. The start times are assumed
-  ///  to be in UTC and to be an exact hour (e.g., 04:00:00).
+  /// The times during the day to start a backup. The start times are assumed
+  /// to be in UTC and to be an exact hour (e.g., 04:00:00).
   ///
-  ///  If no start times are provided, a single fixed start time is chosen
-  ///  arbitrarily.
+  /// If no start times are provided, a single fixed start time is chosen
+  /// arbitrarily.
   @$pb.TagNumber(1)
-  $core.List<$26.TimeOfDay> get startTimes => $_getList(0);
+  $pb.PbList<$1.TimeOfDay> get startTimes => $_getList(0);
 
-  ///  The days of the week to perform a backup.
+  /// The days of the week to perform a backup.
   ///
-  ///  If this field is left empty, the default of every day of the week is
-  ///  used.
+  /// If this field is left empty, the default of every day of the week is
+  /// used.
   @$pb.TagNumber(2)
-  $core.List<$27.DayOfWeek> get daysOfWeek => $_getList(1);
+  $pb.PbList<$3.DayOfWeek> get daysOfWeek => $_getList(1);
 }
 
 /// A time based retention policy specifies that all backups within a certain
 /// time period should be retained.
 class AutomatedBackupPolicy_TimeBasedRetention extends $pb.GeneratedMessage {
   factory AutomatedBackupPolicy_TimeBasedRetention({
-    $10.Duration? retentionPeriod,
+    $0.Duration? retentionPeriod,
   }) {
     final $result = create();
     if (retentionPeriod != null) {
@@ -562,18 +540,14 @@ class AutomatedBackupPolicy_TimeBasedRetention extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.cloud.alloydb.v1'),
       createEmptyInstance: create)
-    ..aOM<$10.Duration>(1, _omitFieldNames ? '' : 'retentionPeriod',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(1, _omitFieldNames ? '' : 'retentionPeriod',
+        subBuilder: $0.Duration.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AutomatedBackupPolicy_TimeBasedRetention clone() =>
       AutomatedBackupPolicy_TimeBasedRetention()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AutomatedBackupPolicy_TimeBasedRetention copyWith(
           void Function(AutomatedBackupPolicy_TimeBasedRetention) updates) =>
       super.copyWith((message) =>
@@ -597,18 +571,18 @@ class AutomatedBackupPolicy_TimeBasedRetention extends $pb.GeneratedMessage {
 
   /// The retention period.
   @$pb.TagNumber(1)
-  $10.Duration get retentionPeriod => $_getN(0);
+  $0.Duration get retentionPeriod => $_getN(0);
   @$pb.TagNumber(1)
-  set retentionPeriod($10.Duration v) {
-    setField(1, v);
+  set retentionPeriod($0.Duration v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasRetentionPeriod() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRetentionPeriod() => clearField(1);
+  void clearRetentionPeriod() => $_clearField(1);
   @$pb.TagNumber(1)
-  $10.Duration ensureRetentionPeriod() => $_ensure(0);
+  $0.Duration ensureRetentionPeriod() => $_ensure(0);
 }
 
 /// A quantity based policy specifies that a certain number of the most recent
@@ -641,14 +615,10 @@ class AutomatedBackupPolicy_QuantityBasedRetention
     ..a<$core.int>(1, _omitFieldNames ? '' : 'count', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AutomatedBackupPolicy_QuantityBasedRetention clone() =>
       AutomatedBackupPolicy_QuantityBasedRetention()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AutomatedBackupPolicy_QuantityBasedRetention copyWith(
           void Function(AutomatedBackupPolicy_QuantityBasedRetention)
               updates) =>
@@ -683,7 +653,7 @@ class AutomatedBackupPolicy_QuantityBasedRetention
   @$pb.TagNumber(1)
   $core.bool hasCount() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCount() => clearField(1);
+  void clearCount() => $_clearField(1);
 }
 
 enum AutomatedBackupPolicy_Schedule { weeklySchedule, notSet }
@@ -694,19 +664,19 @@ enum AutomatedBackupPolicy_Retention {
   notSet
 }
 
-///  Message describing the user-specified automated backup policy.
+/// Message describing the user-specified automated backup policy.
 ///
-///  All fields in the automated backup policy are optional. Defaults for each
-///  field are provided if they are not set.
+/// All fields in the automated backup policy are optional. Defaults for each
+/// field are provided if they are not set.
 class AutomatedBackupPolicy extends $pb.GeneratedMessage {
   factory AutomatedBackupPolicy({
     $core.bool? enabled,
     AutomatedBackupPolicy_WeeklySchedule? weeklySchedule,
-    $10.Duration? backupWindow,
+    $0.Duration? backupWindow,
     AutomatedBackupPolicy_TimeBasedRetention? timeBasedRetention,
     AutomatedBackupPolicy_QuantityBasedRetention? quantityBasedRetention,
     $core.String? location,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     EncryptionConfig? encryptionConfig,
   }) {
     final $result = create();
@@ -729,7 +699,7 @@ class AutomatedBackupPolicy extends $pb.GeneratedMessage {
       $result.location = location;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (encryptionConfig != null) {
       $result.encryptionConfig = encryptionConfig;
@@ -766,8 +736,8 @@ class AutomatedBackupPolicy extends $pb.GeneratedMessage {
     ..aOM<AutomatedBackupPolicy_WeeklySchedule>(
         2, _omitFieldNames ? '' : 'weeklySchedule',
         subBuilder: AutomatedBackupPolicy_WeeklySchedule.create)
-    ..aOM<$10.Duration>(3, _omitFieldNames ? '' : 'backupWindow',
-        subBuilder: $10.Duration.create)
+    ..aOM<$0.Duration>(3, _omitFieldNames ? '' : 'backupWindow',
+        subBuilder: $0.Duration.create)
     ..aOM<AutomatedBackupPolicy_TimeBasedRetention>(
         4, _omitFieldNames ? '' : 'timeBasedRetention',
         subBuilder: AutomatedBackupPolicy_TimeBasedRetention.create)
@@ -784,14 +754,10 @@ class AutomatedBackupPolicy extends $pb.GeneratedMessage {
         subBuilder: EncryptionConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AutomatedBackupPolicy clone() =>
       AutomatedBackupPolicy()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AutomatedBackupPolicy copyWith(
           void Function(AutomatedBackupPolicy) updates) =>
       super.copyWith((message) => updates(message as AutomatedBackupPolicy))
@@ -811,11 +777,11 @@ class AutomatedBackupPolicy extends $pb.GeneratedMessage {
 
   AutomatedBackupPolicy_Schedule whichSchedule() =>
       _AutomatedBackupPolicy_ScheduleByTag[$_whichOneof(0)]!;
-  void clearSchedule() => clearField($_whichOneof(0));
+  void clearSchedule() => $_clearField($_whichOneof(0));
 
   AutomatedBackupPolicy_Retention whichRetention() =>
       _AutomatedBackupPolicy_RetentionByTag[$_whichOneof(1)]!;
-  void clearRetention() => clearField($_whichOneof(1));
+  void clearRetention() => $_clearField($_whichOneof(1));
 
   /// Whether automated automated backups are enabled. If not set, defaults to
   /// true.
@@ -829,55 +795,55 @@ class AutomatedBackupPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEnabled() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEnabled() => clearField(1);
+  void clearEnabled() => $_clearField(1);
 
   /// Weekly schedule for the Backup.
   @$pb.TagNumber(2)
   AutomatedBackupPolicy_WeeklySchedule get weeklySchedule => $_getN(1);
   @$pb.TagNumber(2)
   set weeklySchedule(AutomatedBackupPolicy_WeeklySchedule v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasWeeklySchedule() => $_has(1);
   @$pb.TagNumber(2)
-  void clearWeeklySchedule() => clearField(2);
+  void clearWeeklySchedule() => $_clearField(2);
   @$pb.TagNumber(2)
   AutomatedBackupPolicy_WeeklySchedule ensureWeeklySchedule() => $_ensure(1);
 
-  ///  The length of the time window during which a backup can be
-  ///  taken. If a backup does not succeed within this time window, it will be
-  ///  canceled and considered failed.
+  /// The length of the time window during which a backup can be
+  /// taken. If a backup does not succeed within this time window, it will be
+  /// canceled and considered failed.
   ///
-  ///  The backup window must be at least 5 minutes long. There is no upper bound
-  ///  on the window. If not set, it defaults to 1 hour.
+  /// The backup window must be at least 5 minutes long. There is no upper bound
+  /// on the window. If not set, it defaults to 1 hour.
   @$pb.TagNumber(3)
-  $10.Duration get backupWindow => $_getN(2);
+  $0.Duration get backupWindow => $_getN(2);
   @$pb.TagNumber(3)
-  set backupWindow($10.Duration v) {
-    setField(3, v);
+  set backupWindow($0.Duration v) {
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasBackupWindow() => $_has(2);
   @$pb.TagNumber(3)
-  void clearBackupWindow() => clearField(3);
+  void clearBackupWindow() => $_clearField(3);
   @$pb.TagNumber(3)
-  $10.Duration ensureBackupWindow() => $_ensure(2);
+  $0.Duration ensureBackupWindow() => $_ensure(2);
 
   /// Time-based Backup retention policy.
   @$pb.TagNumber(4)
   AutomatedBackupPolicy_TimeBasedRetention get timeBasedRetention => $_getN(3);
   @$pb.TagNumber(4)
   set timeBasedRetention(AutomatedBackupPolicy_TimeBasedRetention v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasTimeBasedRetention() => $_has(3);
   @$pb.TagNumber(4)
-  void clearTimeBasedRetention() => clearField(4);
+  void clearTimeBasedRetention() => $_clearField(4);
   @$pb.TagNumber(4)
   AutomatedBackupPolicy_TimeBasedRetention ensureTimeBasedRetention() =>
       $_ensure(3);
@@ -888,21 +854,21 @@ class AutomatedBackupPolicy extends $pb.GeneratedMessage {
       $_getN(4);
   @$pb.TagNumber(5)
   set quantityBasedRetention(AutomatedBackupPolicy_QuantityBasedRetention v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasQuantityBasedRetention() => $_has(4);
   @$pb.TagNumber(5)
-  void clearQuantityBasedRetention() => clearField(5);
+  void clearQuantityBasedRetention() => $_clearField(5);
   @$pb.TagNumber(5)
   AutomatedBackupPolicy_QuantityBasedRetention ensureQuantityBasedRetention() =>
       $_ensure(4);
 
-  ///  The location where the backup will be stored. Currently, the only supported
-  ///  option is to store the backup in the same region as the cluster.
+  /// The location where the backup will be stored. Currently, the only supported
+  /// option is to store the backup in the same region as the cluster.
   ///
-  ///  If empty, defaults to the region of the cluster.
+  /// If empty, defaults to the region of the cluster.
   @$pb.TagNumber(6)
   $core.String get location => $_getSZ(5);
   @$pb.TagNumber(6)
@@ -913,11 +879,11 @@ class AutomatedBackupPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasLocation() => $_has(5);
   @$pb.TagNumber(6)
-  void clearLocation() => clearField(6);
+  void clearLocation() => $_clearField(6);
 
   /// Labels to apply to backups created using this configuration.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(6);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(6);
 
   /// Optional. The encryption config can be specified to encrypt the
   /// backups with a customer-managed encryption key (CMEK). When this field is
@@ -927,13 +893,13 @@ class AutomatedBackupPolicy extends $pb.GeneratedMessage {
   EncryptionConfig get encryptionConfig => $_getN(7);
   @$pb.TagNumber(8)
   set encryptionConfig(EncryptionConfig v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasEncryptionConfig() => $_has(7);
   @$pb.TagNumber(8)
-  void clearEncryptionConfig() => clearField(8);
+  void clearEncryptionConfig() => $_clearField(8);
   @$pb.TagNumber(8)
   EncryptionConfig ensureEncryptionConfig() => $_ensure(7);
 }
@@ -970,13 +936,9 @@ class BackupSource extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'backupUid')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupSource clone() => BackupSource()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupSource copyWith(void Function(BackupSource) updates) =>
       super.copyWith((message) => updates(message as BackupSource))
           as BackupSource;
@@ -1005,7 +967,7 @@ class BackupSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasBackupName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearBackupName() => clearField(1);
+  void clearBackupName() => $_clearField(1);
 
   /// Output only. The system-generated UID of the backup which was used to
   /// create this resource. The UID is generated when the backup is created, and
@@ -1020,7 +982,7 @@ class BackupSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasBackupUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearBackupUid() => clearField(2);
+  void clearBackupUid() => $_clearField(2);
 }
 
 /// Configuration information for the secondary cluster. This should be set
@@ -1051,14 +1013,10 @@ class Cluster_SecondaryConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'primaryClusterName')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Cluster_SecondaryConfig clone() =>
       Cluster_SecondaryConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Cluster_SecondaryConfig copyWith(
           void Function(Cluster_SecondaryConfig) updates) =>
       super.copyWith((message) => updates(message as Cluster_SecondaryConfig))
@@ -1088,7 +1046,7 @@ class Cluster_SecondaryConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPrimaryClusterName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPrimaryClusterName() => clearField(1);
+  void clearPrimaryClusterName() => $_clearField(1);
 }
 
 /// Configuration for the primary cluster. It has the list of clusters that are
@@ -1120,14 +1078,10 @@ class Cluster_PrimaryConfig extends $pb.GeneratedMessage {
     ..pPS(1, _omitFieldNames ? '' : 'secondaryClusterNames')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Cluster_PrimaryConfig clone() =>
       Cluster_PrimaryConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Cluster_PrimaryConfig copyWith(
           void Function(Cluster_PrimaryConfig) updates) =>
       super.copyWith((message) => updates(message as Cluster_PrimaryConfig))
@@ -1148,7 +1102,7 @@ class Cluster_PrimaryConfig extends $pb.GeneratedMessage {
   /// Output only. Names of the clusters that are replicating from this
   /// cluster.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get secondaryClusterNames => $_getList(0);
+  $pb.PbList<$core.String> get secondaryClusterNames => $_getList(0);
 }
 
 enum Cluster_Source { backupSource, migrationSource, notSet }
@@ -1164,12 +1118,12 @@ class Cluster extends $pb.GeneratedMessage {
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
     $2.Timestamp? deleteTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     Cluster_State? state,
     DatabaseVersion? databaseVersion,
     $core.String? network,
     $core.String? etag,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
     $core.bool? reconciling,
     BackupSource? backupSource,
     MigrationSource? migrationSource,
@@ -1201,7 +1155,7 @@ class Cluster extends $pb.GeneratedMessage {
       $result.deleteTime = deleteTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (state != null) {
       $result.state = state;
@@ -1216,7 +1170,7 @@ class Cluster extends $pb.GeneratedMessage {
       $result.etag = etag;
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     if (reconciling != null) {
       $result.reconciling = reconciling;
@@ -1324,13 +1278,9 @@ class Cluster extends $pb.GeneratedMessage {
         enumValues: Cluster_ClusterType.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Cluster clone() => Cluster()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Cluster copyWith(void Function(Cluster) updates) =>
       super.copyWith((message) => updates(message as Cluster)) as Cluster;
 
@@ -1346,7 +1296,7 @@ class Cluster extends $pb.GeneratedMessage {
   static Cluster? _defaultInstance;
 
   Cluster_Source whichSource() => _Cluster_SourceByTag[$_whichOneof(0)]!;
-  void clearSource() => clearField($_whichOneof(0));
+  void clearSource() => $_clearField($_whichOneof(0));
 
   /// Output only. The name of the cluster resource with the format:
   ///  * projects/{project}/locations/{region}/clusters/{cluster_id}
@@ -1364,7 +1314,7 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// User-settable and human-readable display name for the Cluster.
   @$pb.TagNumber(2)
@@ -1377,7 +1327,7 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// Output only. The system-generated UID of the resource. The UID is assigned
   /// when the resource is created, and it is retained until it is deleted.
@@ -1391,20 +1341,20 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUid() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUid() => clearField(3);
+  void clearUid() => $_clearField(3);
 
   /// Output only. Create time stamp
   @$pb.TagNumber(4)
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
   set createTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCreateTime() => clearField(4);
+  void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -1413,13 +1363,13 @@ class Cluster extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
   set updateTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUpdateTime() => clearField(5);
+  void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureUpdateTime() => $_ensure(4);
 
@@ -1428,32 +1378,32 @@ class Cluster extends $pb.GeneratedMessage {
   $2.Timestamp get deleteTime => $_getN(5);
   @$pb.TagNumber(6)
   set deleteTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasDeleteTime() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDeleteTime() => clearField(6);
+  void clearDeleteTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureDeleteTime() => $_ensure(5);
 
   /// Labels as key value pairs
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(6);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(6);
 
   /// Output only. The current serving state of the cluster.
   @$pb.TagNumber(8)
   Cluster_State get state => $_getN(7);
   @$pb.TagNumber(8)
   set state(Cluster_State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// Output only. The database engine major version. This is an output-only
   /// field and it's populated at the Cluster creation time. This field cannot be
@@ -1462,13 +1412,13 @@ class Cluster extends $pb.GeneratedMessage {
   DatabaseVersion get databaseVersion => $_getN(8);
   @$pb.TagNumber(9)
   set databaseVersion(DatabaseVersion v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasDatabaseVersion() => $_has(8);
   @$pb.TagNumber(9)
-  void clearDatabaseVersion() => clearField(9);
+  void clearDatabaseVersion() => $_clearField(9);
 
   /// Required. The resource link for the VPC network in which cluster resources
   /// are created and from which they are accessible via Private IP. The network
@@ -1485,7 +1435,7 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasNetwork() => $_has(9);
   @$pb.TagNumber(10)
-  void clearNetwork() => clearField(10);
+  void clearNetwork() => $_clearField(10);
 
   /// For Resource freshness validation (https://google.aip.dev/154)
   @$pb.TagNumber(11)
@@ -1498,13 +1448,13 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasEtag() => $_has(10);
   @$pb.TagNumber(11)
-  void clearEtag() => clearField(11);
+  void clearEtag() => $_clearField(11);
 
   /// Annotations to allow client tools to store small amount of arbitrary data.
   /// This is distinct from labels.
   /// https://google.aip.dev/128
   @$pb.TagNumber(12)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(11);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(11);
 
   /// Output only. Reconciling (https://google.aip.dev/128#reconciliation).
   /// Set to true if the current state of Cluster does not match the user's
@@ -1521,20 +1471,20 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasReconciling() => $_has(12);
   @$pb.TagNumber(13)
-  void clearReconciling() => clearField(13);
+  void clearReconciling() => $_clearField(13);
 
   /// Output only. Cluster created from backup.
   @$pb.TagNumber(15)
   BackupSource get backupSource => $_getN(13);
   @$pb.TagNumber(15)
   set backupSource(BackupSource v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasBackupSource() => $_has(13);
   @$pb.TagNumber(15)
-  void clearBackupSource() => clearField(15);
+  void clearBackupSource() => $_clearField(15);
   @$pb.TagNumber(15)
   BackupSource ensureBackupSource() => $_ensure(13);
 
@@ -1543,34 +1493,34 @@ class Cluster extends $pb.GeneratedMessage {
   MigrationSource get migrationSource => $_getN(14);
   @$pb.TagNumber(16)
   set migrationSource(MigrationSource v) {
-    setField(16, v);
+    $_setField(16, v);
   }
 
   @$pb.TagNumber(16)
   $core.bool hasMigrationSource() => $_has(14);
   @$pb.TagNumber(16)
-  void clearMigrationSource() => clearField(16);
+  void clearMigrationSource() => $_clearField(16);
   @$pb.TagNumber(16)
   MigrationSource ensureMigrationSource() => $_ensure(14);
 
-  ///  The automated backup policy for this cluster.
+  /// The automated backup policy for this cluster.
   ///
-  ///  If no policy is provided then the default policy will be used. If backups
-  ///  are supported for the cluster, the default policy takes one backup a day,
-  ///  has a backup window of 1 hour, and retains backups for 14 days.
-  ///  For more information on the defaults, consult the
-  ///  documentation for the message type.
+  /// If no policy is provided then the default policy will be used. If backups
+  /// are supported for the cluster, the default policy takes one backup a day,
+  /// has a backup window of 1 hour, and retains backups for 14 days.
+  /// For more information on the defaults, consult the
+  /// documentation for the message type.
   @$pb.TagNumber(17)
   AutomatedBackupPolicy get automatedBackupPolicy => $_getN(15);
   @$pb.TagNumber(17)
   set automatedBackupPolicy(AutomatedBackupPolicy v) {
-    setField(17, v);
+    $_setField(17, v);
   }
 
   @$pb.TagNumber(17)
   $core.bool hasAutomatedBackupPolicy() => $_has(15);
   @$pb.TagNumber(17)
-  void clearAutomatedBackupPolicy() => clearField(17);
+  void clearAutomatedBackupPolicy() => $_clearField(17);
   @$pb.TagNumber(17)
   AutomatedBackupPolicy ensureAutomatedBackupPolicy() => $_ensure(15);
 
@@ -1579,13 +1529,13 @@ class Cluster extends $pb.GeneratedMessage {
   SslConfig get sslConfig => $_getN(16);
   @$pb.TagNumber(18)
   set sslConfig(SslConfig v) {
-    setField(18, v);
+    $_setField(18, v);
   }
 
   @$pb.TagNumber(18)
   $core.bool hasSslConfig() => $_has(16);
   @$pb.TagNumber(18)
-  void clearSslConfig() => clearField(18);
+  void clearSslConfig() => $_clearField(18);
   @$pb.TagNumber(18)
   SslConfig ensureSslConfig() => $_ensure(16);
 
@@ -1598,13 +1548,13 @@ class Cluster extends $pb.GeneratedMessage {
   EncryptionConfig get encryptionConfig => $_getN(17);
   @$pb.TagNumber(19)
   set encryptionConfig(EncryptionConfig v) {
-    setField(19, v);
+    $_setField(19, v);
   }
 
   @$pb.TagNumber(19)
   $core.bool hasEncryptionConfig() => $_has(17);
   @$pb.TagNumber(19)
-  void clearEncryptionConfig() => clearField(19);
+  void clearEncryptionConfig() => $_clearField(19);
   @$pb.TagNumber(19)
   EncryptionConfig ensureEncryptionConfig() => $_ensure(17);
 
@@ -1613,13 +1563,13 @@ class Cluster extends $pb.GeneratedMessage {
   EncryptionInfo get encryptionInfo => $_getN(18);
   @$pb.TagNumber(20)
   set encryptionInfo(EncryptionInfo v) {
-    setField(20, v);
+    $_setField(20, v);
   }
 
   @$pb.TagNumber(20)
   $core.bool hasEncryptionInfo() => $_has(18);
   @$pb.TagNumber(20)
-  void clearEncryptionInfo() => clearField(20);
+  void clearEncryptionInfo() => $_clearField(20);
   @$pb.TagNumber(20)
   EncryptionInfo ensureEncryptionInfo() => $_ensure(18);
 
@@ -1628,13 +1578,13 @@ class Cluster extends $pb.GeneratedMessage {
   Cluster_SecondaryConfig get secondaryConfig => $_getN(19);
   @$pb.TagNumber(22)
   set secondaryConfig(Cluster_SecondaryConfig v) {
-    setField(22, v);
+    $_setField(22, v);
   }
 
   @$pb.TagNumber(22)
   $core.bool hasSecondaryConfig() => $_has(19);
   @$pb.TagNumber(22)
-  void clearSecondaryConfig() => clearField(22);
+  void clearSecondaryConfig() => $_clearField(22);
   @$pb.TagNumber(22)
   Cluster_SecondaryConfig ensureSecondaryConfig() => $_ensure(19);
 
@@ -1643,13 +1593,13 @@ class Cluster extends $pb.GeneratedMessage {
   Cluster_PrimaryConfig get primaryConfig => $_getN(20);
   @$pb.TagNumber(23)
   set primaryConfig(Cluster_PrimaryConfig v) {
-    setField(23, v);
+    $_setField(23, v);
   }
 
   @$pb.TagNumber(23)
   $core.bool hasPrimaryConfig() => $_has(20);
   @$pb.TagNumber(23)
-  void clearPrimaryConfig() => clearField(23);
+  void clearPrimaryConfig() => $_clearField(23);
   @$pb.TagNumber(23)
   Cluster_PrimaryConfig ensurePrimaryConfig() => $_ensure(20);
 
@@ -1661,13 +1611,13 @@ class Cluster extends $pb.GeneratedMessage {
   Cluster_ClusterType get clusterType => $_getN(21);
   @$pb.TagNumber(24)
   set clusterType(Cluster_ClusterType v) {
-    setField(24, v);
+    $_setField(24, v);
   }
 
   @$pb.TagNumber(24)
   $core.bool hasClusterType() => $_has(21);
   @$pb.TagNumber(24)
-  void clearClusterType() => clearField(24);
+  void clearClusterType() => $_clearField(24);
 }
 
 /// MachineConfig describes the configuration of a machine.
@@ -1697,14 +1647,10 @@ class Instance_MachineConfig extends $pb.GeneratedMessage {
     ..a<$core.int>(1, _omitFieldNames ? '' : 'cpuCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_MachineConfig clone() =>
       Instance_MachineConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_MachineConfig copyWith(
           void Function(Instance_MachineConfig) updates) =>
       super.copyWith((message) => updates(message as Instance_MachineConfig))
@@ -1733,7 +1679,7 @@ class Instance_MachineConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCpuCount() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCpuCount() => clearField(1);
+  void clearCpuCount() => $_clearField(1);
 }
 
 /// Details of a single node in the instance.
@@ -1780,13 +1726,9 @@ class Instance_Node extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'state')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_Node clone() => Instance_Node()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_Node copyWith(void Function(Instance_Node) updates) =>
       super.copyWith((message) => updates(message as Instance_Node))
           as Instance_Node;
@@ -1814,7 +1756,7 @@ class Instance_Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasZoneId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearZoneId() => clearField(1);
+  void clearZoneId() => $_clearField(1);
 
   /// The identifier of the VM e.g. "test-read-0601-407e52be-ms3l".
   @$pb.TagNumber(2)
@@ -1827,7 +1769,7 @@ class Instance_Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearId() => clearField(2);
+  void clearId() => $_clearField(2);
 
   /// The private IP address of the VM e.g. "10.57.0.34".
   @$pb.TagNumber(3)
@@ -1840,7 +1782,7 @@ class Instance_Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasIp() => $_has(2);
   @$pb.TagNumber(3)
-  void clearIp() => clearField(3);
+  void clearIp() => $_clearField(3);
 
   /// Determined by state of the compute VM and postgres-service health.
   /// Compute VM state can have values listed in
@@ -1856,7 +1798,7 @@ class Instance_Node extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
-  void clearState() => clearField(4);
+  void clearState() => $_clearField(4);
 }
 
 /// QueryInsights Instance specific configuration.
@@ -1904,14 +1846,10 @@ class Instance_QueryInsightsInstanceConfig extends $pb.GeneratedMessage {
         5, _omitFieldNames ? '' : 'queryPlansPerMinute', $pb.PbFieldType.OU3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_QueryInsightsInstanceConfig clone() =>
       Instance_QueryInsightsInstanceConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_QueryInsightsInstanceConfig copyWith(
           void Function(Instance_QueryInsightsInstanceConfig) updates) =>
       super.copyWith((message) =>
@@ -1944,7 +1882,7 @@ class Instance_QueryInsightsInstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasRecordApplicationTags() => $_has(0);
   @$pb.TagNumber(2)
-  void clearRecordApplicationTags() => clearField(2);
+  void clearRecordApplicationTags() => $_clearField(2);
 
   /// Record client address for an instance. Client address is PII information.
   /// This flag is turned "on" by default.
@@ -1958,7 +1896,7 @@ class Instance_QueryInsightsInstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRecordClientAddress() => $_has(1);
   @$pb.TagNumber(3)
-  void clearRecordClientAddress() => clearField(3);
+  void clearRecordClientAddress() => $_clearField(3);
 
   /// Query string length. The default value is 1024.
   /// Any integer between 256 and 4500 is considered valid.
@@ -1972,7 +1910,7 @@ class Instance_QueryInsightsInstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasQueryStringLength() => $_has(2);
   @$pb.TagNumber(4)
-  void clearQueryStringLength() => clearField(4);
+  void clearQueryStringLength() => $_clearField(4);
 
   /// Number of query execution plans captured by Insights per minute
   /// for all queries combined. The default value is 5.
@@ -1987,7 +1925,7 @@ class Instance_QueryInsightsInstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasQueryPlansPerMinute() => $_has(3);
   @$pb.TagNumber(5)
-  void clearQueryPlansPerMinute() => clearField(5);
+  void clearQueryPlansPerMinute() => $_clearField(5);
 }
 
 /// Configuration for a read pool instance.
@@ -2017,14 +1955,10 @@ class Instance_ReadPoolConfig extends $pb.GeneratedMessage {
     ..a<$core.int>(1, _omitFieldNames ? '' : 'nodeCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_ReadPoolConfig clone() =>
       Instance_ReadPoolConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_ReadPoolConfig copyWith(
           void Function(Instance_ReadPoolConfig) updates) =>
       super.copyWith((message) => updates(message as Instance_ReadPoolConfig))
@@ -2053,7 +1987,7 @@ class Instance_ReadPoolConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNodeCount() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNodeCount() => clearField(1);
+  void clearNodeCount() => $_clearField(1);
 }
 
 /// An Instance is a computing unit that an end customer can connect to.
@@ -2066,18 +2000,18 @@ class Instance extends $pb.GeneratedMessage {
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
     $2.Timestamp? deleteTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     Instance_State? state,
     Instance_InstanceType? instanceType,
     Instance_MachineConfig? machineConfig,
     Instance_AvailabilityType? availabilityType,
     $core.String? gceZone,
-    $core.Map<$core.String, $core.String>? databaseFlags,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? databaseFlags,
     Instance_ReadPoolConfig? readPoolConfig,
     $core.String? ipAddress,
     $core.bool? reconciling,
     $core.String? etag,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
     Instance_Node? writableNode,
     $core.Iterable<Instance_Node>? nodes,
     Instance_QueryInsightsInstanceConfig? queryInsightsConfig,
@@ -2102,7 +2036,7 @@ class Instance extends $pb.GeneratedMessage {
       $result.deleteTime = deleteTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (state != null) {
       $result.state = state;
@@ -2120,7 +2054,7 @@ class Instance extends $pb.GeneratedMessage {
       $result.gceZone = gceZone;
     }
     if (databaseFlags != null) {
-      $result.databaseFlags.addAll(databaseFlags);
+      $result.databaseFlags.addEntries(databaseFlags);
     }
     if (readPoolConfig != null) {
       $result.readPoolConfig = readPoolConfig;
@@ -2135,7 +2069,7 @@ class Instance extends $pb.GeneratedMessage {
       $result.etag = etag;
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     if (writableNode != null) {
       $result.writableNode = writableNode;
@@ -2216,13 +2150,9 @@ class Instance extends $pb.GeneratedMessage {
         subBuilder: Instance_QueryInsightsInstanceConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance clone() => Instance()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance copyWith(void Function(Instance) updates) =>
       super.copyWith((message) => updates(message as Instance)) as Instance;
 
@@ -2256,7 +2186,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// User-settable and human-readable display name for the Instance.
   @$pb.TagNumber(2)
@@ -2269,7 +2199,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// Output only. The system-generated UID of the resource. The UID is assigned
   /// when the resource is created, and it is retained until it is deleted.
@@ -2283,20 +2213,20 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUid() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUid() => clearField(3);
+  void clearUid() => $_clearField(3);
 
   /// Output only. Create time stamp
   @$pb.TagNumber(4)
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
   set createTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCreateTime() => clearField(4);
+  void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -2305,13 +2235,13 @@ class Instance extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
   set updateTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUpdateTime() => clearField(5);
+  void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureUpdateTime() => $_ensure(4);
 
@@ -2320,45 +2250,45 @@ class Instance extends $pb.GeneratedMessage {
   $2.Timestamp get deleteTime => $_getN(5);
   @$pb.TagNumber(6)
   set deleteTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasDeleteTime() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDeleteTime() => clearField(6);
+  void clearDeleteTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureDeleteTime() => $_ensure(5);
 
   /// Labels as key value pairs
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(6);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(6);
 
   /// Output only. The current serving state of the instance.
   @$pb.TagNumber(8)
   Instance_State get state => $_getN(7);
   @$pb.TagNumber(8)
   set state(Instance_State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// Required. The type of the instance. Specified at creation time.
   @$pb.TagNumber(9)
   Instance_InstanceType get instanceType => $_getN(8);
   @$pb.TagNumber(9)
   set instanceType(Instance_InstanceType v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasInstanceType() => $_has(8);
   @$pb.TagNumber(9)
-  void clearInstanceType() => clearField(9);
+  void clearInstanceType() => $_clearField(9);
 
   /// Configurations for the machines that host the underlying
   /// database engine.
@@ -2366,13 +2296,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_MachineConfig get machineConfig => $_getN(9);
   @$pb.TagNumber(10)
   set machineConfig(Instance_MachineConfig v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasMachineConfig() => $_has(9);
   @$pb.TagNumber(10)
-  void clearMachineConfig() => clearField(10);
+  void clearMachineConfig() => $_clearField(10);
   @$pb.TagNumber(10)
   Instance_MachineConfig ensureMachineConfig() => $_ensure(9);
 
@@ -2386,13 +2316,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_AvailabilityType get availabilityType => $_getN(10);
   @$pb.TagNumber(11)
   set availabilityType(Instance_AvailabilityType v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasAvailabilityType() => $_has(10);
   @$pb.TagNumber(11)
-  void clearAvailabilityType() => clearField(11);
+  void clearAvailabilityType() => $_clearField(11);
 
   /// The Compute Engine zone that the instance should serve from, per
   /// https://cloud.google.com/compute/docs/regions-zones
@@ -2410,37 +2340,37 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasGceZone() => $_has(11);
   @$pb.TagNumber(12)
-  void clearGceZone() => clearField(12);
+  void clearGceZone() => $_clearField(12);
 
-  ///  Database flags. Set at instance level.
-  ///   * They are copied from primary instance on read instance creation.
-  ///   * Read instances can set new or override existing flags that are relevant
-  ///     for reads, e.g. for enabling columnar cache on a read instance. Flags
-  ///     set on read instance may or may not be present on primary.
+  /// Database flags. Set at instance level.
+  ///  * They are copied from primary instance on read instance creation.
+  ///  * Read instances can set new or override existing flags that are relevant
+  ///    for reads, e.g. for enabling columnar cache on a read instance. Flags
+  ///    set on read instance may or may not be present on primary.
   ///
   ///
-  ///  This is a list of "key": "value" pairs.
-  ///  "key": The name of the flag. These flags are passed at instance setup time,
-  ///  so include both server options and system variables for Postgres. Flags are
-  ///  specified with underscores, not hyphens.
-  ///  "value": The value of the flag. Booleans are set to **on** for true
-  ///  and **off** for false. This field must be omitted if the flag
-  ///  doesn't take a value.
+  /// This is a list of "key": "value" pairs.
+  /// "key": The name of the flag. These flags are passed at instance setup time,
+  /// so include both server options and system variables for Postgres. Flags are
+  /// specified with underscores, not hyphens.
+  /// "value": The value of the flag. Booleans are set to **on** for true
+  /// and **off** for false. This field must be omitted if the flag
+  /// doesn't take a value.
   @$pb.TagNumber(13)
-  $core.Map<$core.String, $core.String> get databaseFlags => $_getMap(12);
+  $pb.PbMap<$core.String, $core.String> get databaseFlags => $_getMap(12);
 
   /// Read pool specific config.
   @$pb.TagNumber(14)
   Instance_ReadPoolConfig get readPoolConfig => $_getN(13);
   @$pb.TagNumber(14)
   set readPoolConfig(Instance_ReadPoolConfig v) {
-    setField(14, v);
+    $_setField(14, v);
   }
 
   @$pb.TagNumber(14)
   $core.bool hasReadPoolConfig() => $_has(13);
   @$pb.TagNumber(14)
-  void clearReadPoolConfig() => clearField(14);
+  void clearReadPoolConfig() => $_clearField(14);
   @$pb.TagNumber(14)
   Instance_ReadPoolConfig ensureReadPoolConfig() => $_ensure(13);
 
@@ -2456,7 +2386,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasIpAddress() => $_has(14);
   @$pb.TagNumber(15)
-  void clearIpAddress() => clearField(15);
+  void clearIpAddress() => $_clearField(15);
 
   /// Output only. Reconciling (https://google.aip.dev/128#reconciliation).
   /// Set to true if the current state of Instance does not match the user's
@@ -2473,7 +2403,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasReconciling() => $_has(15);
   @$pb.TagNumber(16)
-  void clearReconciling() => clearField(16);
+  void clearReconciling() => $_clearField(16);
 
   /// For Resource freshness validation (https://google.aip.dev/154)
   @$pb.TagNumber(17)
@@ -2486,13 +2416,13 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.bool hasEtag() => $_has(16);
   @$pb.TagNumber(17)
-  void clearEtag() => clearField(17);
+  void clearEtag() => $_clearField(17);
 
   /// Annotations to allow client tools to store small amount of arbitrary data.
   /// This is distinct from labels.
   /// https://google.aip.dev/128
   @$pb.TagNumber(18)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(17);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(17);
 
   /// Output only. This is set for the read-write VM of the PRIMARY instance
   /// only.
@@ -2500,33 +2430,33 @@ class Instance extends $pb.GeneratedMessage {
   Instance_Node get writableNode => $_getN(18);
   @$pb.TagNumber(19)
   set writableNode(Instance_Node v) {
-    setField(19, v);
+    $_setField(19, v);
   }
 
   @$pb.TagNumber(19)
   $core.bool hasWritableNode() => $_has(18);
   @$pb.TagNumber(19)
-  void clearWritableNode() => clearField(19);
+  void clearWritableNode() => $_clearField(19);
   @$pb.TagNumber(19)
   Instance_Node ensureWritableNode() => $_ensure(18);
 
   /// Output only. List of available read-only VMs in this instance, including
   /// the standby for a PRIMARY instance.
   @$pb.TagNumber(20)
-  $core.List<Instance_Node> get nodes => $_getList(19);
+  $pb.PbList<Instance_Node> get nodes => $_getList(19);
 
   /// Configuration for query insights.
   @$pb.TagNumber(21)
   Instance_QueryInsightsInstanceConfig get queryInsightsConfig => $_getN(20);
   @$pb.TagNumber(21)
   set queryInsightsConfig(Instance_QueryInsightsInstanceConfig v) {
-    setField(21, v);
+    $_setField(21, v);
   }
 
   @$pb.TagNumber(21)
   $core.bool hasQueryInsightsConfig() => $_has(20);
   @$pb.TagNumber(21)
-  void clearQueryInsightsConfig() => clearField(21);
+  void clearQueryInsightsConfig() => $_clearField(21);
   @$pb.TagNumber(21)
   Instance_QueryInsightsInstanceConfig ensureQueryInsightsConfig() =>
       $_ensure(20);
@@ -2540,7 +2470,7 @@ class Backup extends $pb.GeneratedMessage {
     $core.String? uid,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     Backup_State? state,
     Backup_Type? type,
     $core.String? description,
@@ -2550,7 +2480,7 @@ class Backup extends $pb.GeneratedMessage {
     EncryptionInfo? encryptionInfo,
     $core.String? etag,
     $2.Timestamp? deleteTime,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
     $fixnum.Int64? sizeBytes,
     $core.String? clusterUid,
     $2.Timestamp? expiryTime,
@@ -2572,7 +2502,7 @@ class Backup extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (state != null) {
       $result.state = state;
@@ -2602,7 +2532,7 @@ class Backup extends $pb.GeneratedMessage {
       $result.deleteTime = deleteTime;
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     if (sizeBytes != null) {
       $result.sizeBytes = sizeBytes;
@@ -2669,13 +2599,9 @@ class Backup extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Backup clone() => Backup()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Backup copyWith(void Function(Backup) updates) =>
       super.copyWith((message) => updates(message as Backup)) as Backup;
 
@@ -2709,7 +2635,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// User-settable and human-readable display name for the Backup.
   @$pb.TagNumber(2)
@@ -2722,7 +2648,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// Output only. The system-generated UID of the resource. The UID is assigned
   /// when the resource is created, and it is retained until it is deleted.
@@ -2736,20 +2662,20 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUid() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUid() => clearField(3);
+  void clearUid() => $_clearField(3);
 
   /// Output only. Create time stamp
   @$pb.TagNumber(4)
   $2.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
   set createTime($2.Timestamp v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCreateTime() => clearField(4);
+  void clearCreateTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $2.Timestamp ensureCreateTime() => $_ensure(3);
 
@@ -2758,45 +2684,45 @@ class Backup extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
   set updateTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUpdateTime() => clearField(5);
+  void clearUpdateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Labels as key value pairs
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(5);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(5);
 
   /// Output only. The current state of the backup.
   @$pb.TagNumber(7)
   Backup_State get state => $_getN(6);
   @$pb.TagNumber(7)
   set state(Backup_State v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(7)
-  void clearState() => clearField(7);
+  void clearState() => $_clearField(7);
 
   /// The backup type, which suggests the trigger for the backup.
   @$pb.TagNumber(8)
   Backup_Type get type => $_getN(7);
   @$pb.TagNumber(8)
   set type(Backup_Type v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasType() => $_has(7);
   @$pb.TagNumber(8)
-  void clearType() => clearField(8);
+  void clearType() => $_clearField(8);
 
   /// User-provided description of the backup.
   @$pb.TagNumber(9)
@@ -2809,7 +2735,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasDescription() => $_has(8);
   @$pb.TagNumber(9)
-  void clearDescription() => clearField(9);
+  void clearDescription() => $_clearField(9);
 
   /// Required. The full resource name of the backup source cluster
   /// (e.g., projects/{project}/locations/{region}/clusters/{cluster_id}).
@@ -2823,7 +2749,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasClusterName() => $_has(9);
   @$pb.TagNumber(10)
-  void clearClusterName() => clearField(10);
+  void clearClusterName() => $_clearField(10);
 
   /// Output only. Reconciling (https://google.aip.dev/128#reconciliation), if
   /// true, indicates that the service is actively updating the resource. This
@@ -2839,7 +2765,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasReconciling() => $_has(10);
   @$pb.TagNumber(11)
-  void clearReconciling() => clearField(11);
+  void clearReconciling() => $_clearField(11);
 
   /// Optional. The encryption config can be specified to encrypt the
   /// backup with a customer-managed encryption key (CMEK). When this field is
@@ -2849,13 +2775,13 @@ class Backup extends $pb.GeneratedMessage {
   EncryptionConfig get encryptionConfig => $_getN(11);
   @$pb.TagNumber(12)
   set encryptionConfig(EncryptionConfig v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasEncryptionConfig() => $_has(11);
   @$pb.TagNumber(12)
-  void clearEncryptionConfig() => clearField(12);
+  void clearEncryptionConfig() => $_clearField(12);
   @$pb.TagNumber(12)
   EncryptionConfig ensureEncryptionConfig() => $_ensure(11);
 
@@ -2864,13 +2790,13 @@ class Backup extends $pb.GeneratedMessage {
   EncryptionInfo get encryptionInfo => $_getN(12);
   @$pb.TagNumber(13)
   set encryptionInfo(EncryptionInfo v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasEncryptionInfo() => $_has(12);
   @$pb.TagNumber(13)
-  void clearEncryptionInfo() => clearField(13);
+  void clearEncryptionInfo() => $_clearField(13);
   @$pb.TagNumber(13)
   EncryptionInfo ensureEncryptionInfo() => $_ensure(12);
 
@@ -2885,20 +2811,20 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasEtag() => $_has(13);
   @$pb.TagNumber(14)
-  void clearEtag() => clearField(14);
+  void clearEtag() => $_clearField(14);
 
   /// Output only. Delete time stamp
   @$pb.TagNumber(15)
   $2.Timestamp get deleteTime => $_getN(14);
   @$pb.TagNumber(15)
   set deleteTime($2.Timestamp v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasDeleteTime() => $_has(14);
   @$pb.TagNumber(15)
-  void clearDeleteTime() => clearField(15);
+  void clearDeleteTime() => $_clearField(15);
   @$pb.TagNumber(15)
   $2.Timestamp ensureDeleteTime() => $_ensure(14);
 
@@ -2906,7 +2832,7 @@ class Backup extends $pb.GeneratedMessage {
   /// This is distinct from labels.
   /// https://google.aip.dev/128
   @$pb.TagNumber(16)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(15);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(15);
 
   /// Output only. The size of the backup in bytes.
   @$pb.TagNumber(17)
@@ -2919,7 +2845,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.bool hasSizeBytes() => $_has(16);
   @$pb.TagNumber(17)
-  void clearSizeBytes() => clearField(17);
+  void clearSizeBytes() => $_clearField(17);
 
   /// Output only. The system-generated UID of the cluster which was used to
   /// create this resource.
@@ -2933,7 +2859,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasClusterUid() => $_has(17);
   @$pb.TagNumber(18)
-  void clearClusterUid() => clearField(18);
+  void clearClusterUid() => $_clearField(18);
 
   /// Output only. The time at which after the backup is eligible to be garbage
   /// collected. It is the duration specified by the backup's retention policy,
@@ -2942,13 +2868,13 @@ class Backup extends $pb.GeneratedMessage {
   $2.Timestamp get expiryTime => $_getN(18);
   @$pb.TagNumber(19)
   set expiryTime($2.Timestamp v) {
-    setField(19, v);
+    $_setField(19, v);
   }
 
   @$pb.TagNumber(19)
   $core.bool hasExpiryTime() => $_has(18);
   @$pb.TagNumber(19)
-  void clearExpiryTime() => clearField(19);
+  void clearExpiryTime() => $_clearField(19);
   @$pb.TagNumber(19)
   $2.Timestamp ensureExpiryTime() => $_ensure(18);
 }
@@ -2981,13 +2907,9 @@ class InstanceEventData extends $pb.GeneratedMessage {
         subBuilder: Instance.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData clone() => InstanceEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData copyWith(void Function(InstanceEventData) updates) =>
       super.copyWith((message) => updates(message as InstanceEventData))
           as InstanceEventData;
@@ -3009,13 +2931,13 @@ class InstanceEventData extends $pb.GeneratedMessage {
   Instance get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Instance v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Instance ensurePayload() => $_ensure(0);
 }
@@ -3048,13 +2970,9 @@ class BackupEventData extends $pb.GeneratedMessage {
         subBuilder: Backup.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupEventData clone() => BackupEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   BackupEventData copyWith(void Function(BackupEventData) updates) =>
       super.copyWith((message) => updates(message as BackupEventData))
           as BackupEventData;
@@ -3076,13 +2994,13 @@ class BackupEventData extends $pb.GeneratedMessage {
   Backup get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Backup v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Backup ensurePayload() => $_ensure(0);
 }
@@ -3115,13 +3033,9 @@ class ClusterEventData extends $pb.GeneratedMessage {
         subBuilder: Cluster.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClusterEventData clone() => ClusterEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ClusterEventData copyWith(void Function(ClusterEventData) updates) =>
       super.copyWith((message) => updates(message as ClusterEventData))
           as ClusterEventData;
@@ -3143,13 +3057,13 @@ class ClusterEventData extends $pb.GeneratedMessage {
   Cluster get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Cluster v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Cluster ensurePayload() => $_ensure(0);
 }

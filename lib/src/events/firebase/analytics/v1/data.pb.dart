@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/firebase/analytics/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,6 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The data within Firebase Analytics log events.
 class AnalyticsLogData extends $pb.GeneratedMessage {
@@ -49,13 +51,9 @@ class AnalyticsLogData extends $pb.GeneratedMessage {
         subBuilder: EventDimensions.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalyticsLogData clone() => AnalyticsLogData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalyticsLogData copyWith(void Function(AnalyticsLogData) updates) =>
       super.copyWith((message) => updates(message as AnalyticsLogData))
           as AnalyticsLogData;
@@ -77,19 +75,19 @@ class AnalyticsLogData extends $pb.GeneratedMessage {
   UserDimensions get userDim => $_getN(0);
   @$pb.TagNumber(1)
   set userDim(UserDimensions v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasUserDim() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUserDim() => clearField(1);
+  void clearUserDim() => $_clearField(1);
   @$pb.TagNumber(1)
   UserDimensions ensureUserDim() => $_ensure(0);
 
   /// A repeated record of event related dimensions.
   @$pb.TagNumber(2)
-  $core.List<EventDimensions> get eventDim => $_getList(1);
+  $pb.PbList<EventDimensions> get eventDim => $_getList(1);
 }
 
 /// Message containing information about the user associated with the event.
@@ -97,7 +95,8 @@ class UserDimensions extends $pb.GeneratedMessage {
   factory UserDimensions({
     $core.String? userId,
     $fixnum.Int64? firstOpenTimestampMicros,
-    $core.Map<$core.String, UserPropertyValue>? userProperties,
+    $core.Iterable<$core.MapEntry<$core.String, UserPropertyValue>>?
+        userProperties,
     DeviceInfo? deviceInfo,
     GeoInfo? geoInfo,
     AppInfo? appInfo,
@@ -113,7 +112,7 @@ class UserDimensions extends $pb.GeneratedMessage {
       $result.firstOpenTimestampMicros = firstOpenTimestampMicros;
     }
     if (userProperties != null) {
-      $result.userProperties.addAll(userProperties);
+      $result.userProperties.addEntries(userProperties);
     }
     if (deviceInfo != null) {
       $result.deviceInfo = deviceInfo;
@@ -173,13 +172,9 @@ class UserDimensions extends $pb.GeneratedMessage {
         subBuilder: LtvInfo.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UserDimensions clone() => UserDimensions()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UserDimensions copyWith(void Function(UserDimensions) updates) =>
       super.copyWith((message) => updates(message as UserDimensions))
           as UserDimensions;
@@ -207,7 +202,7 @@ class UserDimensions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUserId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUserId() => clearField(1);
+  void clearUserId() => $_clearField(1);
 
   /// The time (in microseconds) at which the user first opened the app.
   @$pb.TagNumber(2)
@@ -220,25 +215,25 @@ class UserDimensions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasFirstOpenTimestampMicros() => $_has(1);
   @$pb.TagNumber(2)
-  void clearFirstOpenTimestampMicros() => clearField(2);
+  void clearFirstOpenTimestampMicros() => $_clearField(2);
 
   /// A repeated record of user properties set with the setUserProperty API.
   /// https://firebase.google.com/docs/analytics/android/properties
   @$pb.TagNumber(3)
-  $core.Map<$core.String, UserPropertyValue> get userProperties => $_getMap(2);
+  $pb.PbMap<$core.String, UserPropertyValue> get userProperties => $_getMap(2);
 
   /// Device information.
   @$pb.TagNumber(4)
   DeviceInfo get deviceInfo => $_getN(3);
   @$pb.TagNumber(4)
   set deviceInfo(DeviceInfo v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasDeviceInfo() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDeviceInfo() => clearField(4);
+  void clearDeviceInfo() => $_clearField(4);
   @$pb.TagNumber(4)
   DeviceInfo ensureDeviceInfo() => $_ensure(3);
 
@@ -247,13 +242,13 @@ class UserDimensions extends $pb.GeneratedMessage {
   GeoInfo get geoInfo => $_getN(4);
   @$pb.TagNumber(5)
   set geoInfo(GeoInfo v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasGeoInfo() => $_has(4);
   @$pb.TagNumber(5)
-  void clearGeoInfo() => clearField(5);
+  void clearGeoInfo() => $_clearField(5);
   @$pb.TagNumber(5)
   GeoInfo ensureGeoInfo() => $_ensure(4);
 
@@ -262,13 +257,13 @@ class UserDimensions extends $pb.GeneratedMessage {
   AppInfo get appInfo => $_getN(5);
   @$pb.TagNumber(6)
   set appInfo(AppInfo v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasAppInfo() => $_has(5);
   @$pb.TagNumber(6)
-  void clearAppInfo() => clearField(6);
+  void clearAppInfo() => $_clearField(6);
   @$pb.TagNumber(6)
   AppInfo ensureAppInfo() => $_ensure(5);
 
@@ -277,13 +272,13 @@ class UserDimensions extends $pb.GeneratedMessage {
   TrafficSource get trafficSource => $_getN(6);
   @$pb.TagNumber(7)
   set trafficSource(TrafficSource v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasTrafficSource() => $_has(6);
   @$pb.TagNumber(7)
-  void clearTrafficSource() => clearField(7);
+  void clearTrafficSource() => $_clearField(7);
   @$pb.TagNumber(7)
   TrafficSource ensureTrafficSource() => $_ensure(6);
 
@@ -292,13 +287,13 @@ class UserDimensions extends $pb.GeneratedMessage {
   ExportBundleInfo get bundleInfo => $_getN(7);
   @$pb.TagNumber(8)
   set bundleInfo(ExportBundleInfo v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasBundleInfo() => $_has(7);
   @$pb.TagNumber(8)
-  void clearBundleInfo() => clearField(8);
+  void clearBundleInfo() => $_clearField(8);
   @$pb.TagNumber(8)
   ExportBundleInfo ensureBundleInfo() => $_ensure(7);
 
@@ -307,13 +302,13 @@ class UserDimensions extends $pb.GeneratedMessage {
   LtvInfo get ltvInfo => $_getN(8);
   @$pb.TagNumber(9)
   set ltvInfo(LtvInfo v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasLtvInfo() => $_has(8);
   @$pb.TagNumber(9)
-  void clearLtvInfo() => clearField(9);
+  void clearLtvInfo() => $_clearField(9);
   @$pb.TagNumber(9)
   LtvInfo ensureLtvInfo() => $_ensure(8);
 }
@@ -357,13 +352,9 @@ class UserPropertyValue extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'index', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UserPropertyValue clone() => UserPropertyValue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UserPropertyValue copyWith(void Function(UserPropertyValue) updates) =>
       super.copyWith((message) => updates(message as UserPropertyValue))
           as UserPropertyValue;
@@ -385,13 +376,13 @@ class UserPropertyValue extends $pb.GeneratedMessage {
   AnalyticsValue get value => $_getN(0);
   @$pb.TagNumber(1)
   set value(AnalyticsValue v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
   @$pb.TagNumber(1)
   AnalyticsValue ensureValue() => $_ensure(0);
 
@@ -406,7 +397,7 @@ class UserPropertyValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSetTimestampUsec() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSetTimestampUsec() => clearField(2);
+  void clearSetTimestampUsec() => $_clearField(2);
 
   /// Index for user property (one-based).
   @$pb.TagNumber(3)
@@ -419,7 +410,7 @@ class UserPropertyValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasIndex() => $_has(2);
   @$pb.TagNumber(3)
-  void clearIndex() => clearField(3);
+  void clearIndex() => $_clearField(3);
 }
 
 enum AnalyticsValue_ParamValue {
@@ -484,13 +475,9 @@ class AnalyticsValue extends $pb.GeneratedMessage {
         4, _omitFieldNames ? '' : 'doubleValue', $pb.PbFieldType.OD)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalyticsValue clone() => AnalyticsValue()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AnalyticsValue copyWith(void Function(AnalyticsValue) updates) =>
       super.copyWith((message) => updates(message as AnalyticsValue))
           as AnalyticsValue;
@@ -509,7 +496,7 @@ class AnalyticsValue extends $pb.GeneratedMessage {
 
   AnalyticsValue_ParamValue whichParamValue() =>
       _AnalyticsValue_ParamValueByTag[$_whichOneof(0)]!;
-  void clearParamValue() => clearField($_whichOneof(0));
+  void clearParamValue() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   $core.String get stringValue => $_getSZ(0);
@@ -521,7 +508,7 @@ class AnalyticsValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasStringValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStringValue() => clearField(1);
+  void clearStringValue() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get intValue => $_getI64(1);
@@ -533,7 +520,7 @@ class AnalyticsValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasIntValue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIntValue() => clearField(2);
+  void clearIntValue() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $core.double get floatValue => $_getN(2);
@@ -545,7 +532,7 @@ class AnalyticsValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasFloatValue() => $_has(2);
   @$pb.TagNumber(3)
-  void clearFloatValue() => clearField(3);
+  void clearFloatValue() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $core.double get doubleValue => $_getN(3);
@@ -557,7 +544,7 @@ class AnalyticsValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDoubleValue() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDoubleValue() => clearField(4);
+  void clearDoubleValue() => $_clearField(4);
 }
 
 /// Message containing device informations.
@@ -638,13 +625,9 @@ class DeviceInfo extends $pb.GeneratedMessage {
     ..aOS(12, _omitFieldNames ? '' : 'deviceModel')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeviceInfo clone() => DeviceInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeviceInfo copyWith(void Function(DeviceInfo) updates) =>
       super.copyWith((message) => updates(message as DeviceInfo)) as DeviceInfo;
 
@@ -671,7 +654,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDeviceCategory() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDeviceCategory() => clearField(1);
+  void clearDeviceCategory() => $_clearField(1);
 
   /// Device brand name.
   /// Eg. Samsung, HTC, etc.
@@ -685,7 +668,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMobileBrandName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMobileBrandName() => clearField(2);
+  void clearMobileBrandName() => $_clearField(2);
 
   /// Device model name.
   /// Eg. GT-I9192
@@ -699,7 +682,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMobileModelName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMobileModelName() => clearField(3);
+  void clearMobileModelName() => $_clearField(3);
 
   /// Device marketing name.
   /// Eg. Galaxy S4 Mini
@@ -713,7 +696,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasMobileMarketingName() => $_has(3);
   @$pb.TagNumber(4)
-  void clearMobileMarketingName() => clearField(4);
+  void clearMobileMarketingName() => $_clearField(4);
 
   /// Device OS version when data capture ended.
   /// Eg. 4.4.2
@@ -727,7 +710,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasPlatformVersion() => $_has(4);
   @$pb.TagNumber(6)
-  void clearPlatformVersion() => clearField(6);
+  void clearPlatformVersion() => $_clearField(6);
 
   /// Vendor specific device identifier. This is IDFV on iOS. Not used for
   /// Android.
@@ -742,7 +725,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasDeviceId() => $_has(5);
   @$pb.TagNumber(7)
-  void clearDeviceId() => clearField(7);
+  void clearDeviceId() => $_clearField(7);
 
   /// The type of the resettable_device_id is always IDFA on iOS and AdId
   /// on Android.
@@ -757,7 +740,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasResettableDeviceId() => $_has(6);
   @$pb.TagNumber(8)
-  void clearResettableDeviceId() => clearField(8);
+  void clearResettableDeviceId() => $_clearField(8);
 
   /// The user language.
   /// Eg. "en-us", "en-za", "zh-tw", "jp"
@@ -771,7 +754,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasUserDefaultLanguage() => $_has(7);
   @$pb.TagNumber(9)
-  void clearUserDefaultLanguage() => clearField(9);
+  void clearUserDefaultLanguage() => $_clearField(9);
 
   /// The timezone of the device when data was uploaded as seconds skew from UTC.
   @$pb.TagNumber(10)
@@ -784,7 +767,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasDeviceTimeZoneOffsetSeconds() => $_has(8);
   @$pb.TagNumber(10)
-  void clearDeviceTimeZoneOffsetSeconds() => clearField(10);
+  void clearDeviceTimeZoneOffsetSeconds() => $_clearField(10);
 
   /// The device's Limit Ad Tracking setting.
   /// When true, we cannot use device_id for remarketing, demographics or
@@ -800,7 +783,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasLimitedAdTracking() => $_has(9);
   @$pb.TagNumber(11)
-  void clearLimitedAdTracking() => clearField(11);
+  void clearLimitedAdTracking() => $_clearField(11);
 
   /// Device model.
   /// Eg. GT-I9192
@@ -814,7 +797,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasDeviceModel() => $_has(10);
   @$pb.TagNumber(12)
-  void clearDeviceModel() => clearField(12);
+  void clearDeviceModel() => $_clearField(12);
 }
 
 /// Message which contains App Information.
@@ -864,13 +847,9 @@ class AppInfo extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'appId')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppInfo clone() => AppInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   AppInfo copyWith(void Function(AppInfo) updates) =>
       super.copyWith((message) => updates(message as AppInfo)) as AppInfo;
 
@@ -897,7 +876,7 @@ class AppInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasAppVersion() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAppVersion() => clearField(1);
+  void clearAppVersion() => $_clearField(1);
 
   /// Unique id for this instance of the app.
   /// Example: "71683BF9FA3B4B0D9535A1F05188BAF3"
@@ -911,7 +890,7 @@ class AppInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasAppInstanceId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAppInstanceId() => clearField(2);
+  void clearAppInstanceId() => $_clearField(2);
 
   /// The identifier of the store that installed the app.
   /// Eg. "com.sec.android.app.samsungapps", "com.amazon.venezia",
@@ -926,7 +905,7 @@ class AppInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasAppStore() => $_has(2);
   @$pb.TagNumber(3)
-  void clearAppStore() => clearField(3);
+  void clearAppStore() => $_clearField(3);
 
   /// The app platform.
   /// Eg "ANDROID", "IOS".
@@ -940,7 +919,7 @@ class AppInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasAppPlatform() => $_has(3);
   @$pb.TagNumber(4)
-  void clearAppPlatform() => clearField(4);
+  void clearAppPlatform() => $_clearField(4);
 
   /// Unique application identifier within an app store.
   @$pb.TagNumber(5)
@@ -953,7 +932,7 @@ class AppInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasAppId() => $_has(4);
   @$pb.TagNumber(5)
-  void clearAppId() => clearField(5);
+  void clearAppId() => $_clearField(5);
 }
 
 /// User's geographic informaiton.
@@ -998,13 +977,9 @@ class GeoInfo extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'city')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GeoInfo clone() => GeoInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GeoInfo copyWith(void Function(GeoInfo) updates) =>
       super.copyWith((message) => updates(message as GeoInfo)) as GeoInfo;
 
@@ -1031,7 +1006,7 @@ class GeoInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasContinent() => $_has(0);
   @$pb.TagNumber(1)
-  void clearContinent() => clearField(1);
+  void clearContinent() => $_clearField(1);
 
   /// The geographic country.
   /// Eg. Brazil
@@ -1045,7 +1020,7 @@ class GeoInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCountry() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCountry() => clearField(2);
+  void clearCountry() => $_clearField(2);
 
   /// The geographic region.
   /// Eg. State of Sao Paulo
@@ -1059,7 +1034,7 @@ class GeoInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRegion() => $_has(2);
   @$pb.TagNumber(3)
-  void clearRegion() => clearField(3);
+  void clearRegion() => $_clearField(3);
 
   /// The geographic city.
   /// Eg. Sao Paulo
@@ -1073,7 +1048,7 @@ class GeoInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasCity() => $_has(3);
   @$pb.TagNumber(4)
-  void clearCity() => clearField(4);
+  void clearCity() => $_clearField(4);
 }
 
 /// Mesage containing marketing campaign information which acquired the user.
@@ -1113,13 +1088,9 @@ class TrafficSource extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'userAcquiredMedium')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TrafficSource clone() => TrafficSource()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TrafficSource copyWith(void Function(TrafficSource) updates) =>
       super.copyWith((message) => updates(message as TrafficSource))
           as TrafficSource;
@@ -1147,7 +1118,7 @@ class TrafficSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUserAcquiredCampaign() => $_has(0);
   @$pb.TagNumber(2)
-  void clearUserAcquiredCampaign() => clearField(2);
+  void clearUserAcquiredCampaign() => $_clearField(2);
 
   /// The name of the network which acquired the user.
   @$pb.TagNumber(3)
@@ -1160,7 +1131,7 @@ class TrafficSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUserAcquiredSource() => $_has(1);
   @$pb.TagNumber(3)
-  void clearUserAcquiredSource() => clearField(3);
+  void clearUserAcquiredSource() => $_clearField(3);
 
   /// The name of the medium which acquired the user.
   @$pb.TagNumber(4)
@@ -1173,7 +1144,7 @@ class TrafficSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasUserAcquiredMedium() => $_has(2);
   @$pb.TagNumber(4)
-  void clearUserAcquiredMedium() => clearField(4);
+  void clearUserAcquiredMedium() => $_clearField(4);
 }
 
 /// Message containing information regarding the bundle in which these
@@ -1210,13 +1181,9 @@ class ExportBundleInfo extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'serverTimestampOffsetMicros')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExportBundleInfo clone() => ExportBundleInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExportBundleInfo copyWith(void Function(ExportBundleInfo) updates) =>
       super.copyWith((message) => updates(message as ExportBundleInfo))
           as ExportBundleInfo;
@@ -1244,7 +1211,7 @@ class ExportBundleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasBundleSequenceId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearBundleSequenceId() => clearField(1);
+  void clearBundleSequenceId() => $_clearField(1);
 
   /// Timestamp offset between collection time and upload time.
   @$pb.TagNumber(2)
@@ -1257,7 +1224,7 @@ class ExportBundleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasServerTimestampOffsetMicros() => $_has(1);
   @$pb.TagNumber(2)
-  void clearServerTimestampOffsetMicros() => clearField(2);
+  void clearServerTimestampOffsetMicros() => $_clearField(2);
 }
 
 /// Lifetime Value information about this user.
@@ -1292,13 +1259,9 @@ class LtvInfo extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'currency')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LtvInfo clone() => LtvInfo()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LtvInfo copyWith(void Function(LtvInfo) updates) =>
       super.copyWith((message) => updates(message as LtvInfo)) as LtvInfo;
 
@@ -1324,7 +1287,7 @@ class LtvInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasRevenue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRevenue() => clearField(1);
+  void clearRevenue() => $_clearField(1);
 
   /// The currency corresponding to the revenue.
   @$pb.TagNumber(2)
@@ -1337,14 +1300,14 @@ class LtvInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCurrency() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCurrency() => clearField(2);
+  void clearCurrency() => $_clearField(2);
 }
 
 /// Message containing information pertaining to the event.
 class EventDimensions extends $pb.GeneratedMessage {
   factory EventDimensions({
     $core.String? name,
-    $core.Map<$core.String, AnalyticsValue>? params,
+    $core.Iterable<$core.MapEntry<$core.String, AnalyticsValue>>? params,
     $fixnum.Int64? timestampMicros,
     $fixnum.Int64? previousTimestampMicros,
     $core.String? date,
@@ -1355,7 +1318,7 @@ class EventDimensions extends $pb.GeneratedMessage {
       $result.name = name;
     }
     if (params != null) {
-      $result.params.addAll(params);
+      $result.params.addEntries(params);
     }
     if (timestampMicros != null) {
       $result.timestampMicros = timestampMicros;
@@ -1400,13 +1363,9 @@ class EventDimensions extends $pb.GeneratedMessage {
         7, _omitFieldNames ? '' : 'valueInUsd', $pb.PbFieldType.OD)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventDimensions clone() => EventDimensions()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EventDimensions copyWith(void Function(EventDimensions) updates) =>
       super.copyWith((message) => updates(message as EventDimensions))
           as EventDimensions;
@@ -1434,11 +1393,11 @@ class EventDimensions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// A repeated record of the parameters associated with this event.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, AnalyticsValue> get params => $_getMap(1);
+  $pb.PbMap<$core.String, AnalyticsValue> get params => $_getMap(1);
 
   /// UTC client time when the event happened.
   @$pb.TagNumber(4)
@@ -1451,7 +1410,7 @@ class EventDimensions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasTimestampMicros() => $_has(2);
   @$pb.TagNumber(4)
-  void clearTimestampMicros() => clearField(4);
+  void clearTimestampMicros() => $_clearField(4);
 
   /// UTC client time when the previous event happened.
   @$pb.TagNumber(5)
@@ -1464,7 +1423,7 @@ class EventDimensions extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasPreviousTimestampMicros() => $_has(3);
   @$pb.TagNumber(5)
-  void clearPreviousTimestampMicros() => clearField(5);
+  void clearPreviousTimestampMicros() => $_clearField(5);
 
   /// The date on which this event was logged.
   /// (YYYYMMDD format in the registered timezone of your app.)
@@ -1478,7 +1437,7 @@ class EventDimensions extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasDate() => $_has(4);
   @$pb.TagNumber(6)
-  void clearDate() => clearField(6);
+  void clearDate() => $_clearField(6);
 
   /// Value param in USD.
   @$pb.TagNumber(7)
@@ -1491,7 +1450,7 @@ class EventDimensions extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasValueInUsd() => $_has(5);
   @$pb.TagNumber(7)
-  void clearValueInUsd() => clearField(7);
+  void clearValueInUsd() => $_clearField(7);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

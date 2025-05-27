@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/cloud/notebooks/v1/data.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -16,6 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $2;
 import 'data.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'data.pbenum.dart';
 
@@ -89,13 +91,9 @@ class Environment extends $pb.GeneratedMessage {
         subBuilder: $2.Timestamp.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment clone() => Environment()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Environment copyWith(void Function(Environment) updates) =>
       super.copyWith((message) => updates(message as Environment))
           as Environment;
@@ -113,7 +111,7 @@ class Environment extends $pb.GeneratedMessage {
 
   Environment_ImageType whichImageType() =>
       _Environment_ImageTypeByTag[$_whichOneof(0)]!;
-  void clearImageType() => clearField($_whichOneof(0));
+  void clearImageType() => $_clearField($_whichOneof(0));
 
   /// Output only. Name of this environment.
   /// Format:
@@ -128,7 +126,7 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Display name of this environment for the UI.
   @$pb.TagNumber(2)
@@ -141,7 +139,7 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// A brief description of this environment.
   @$pb.TagNumber(3)
@@ -154,20 +152,20 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// Use a Compute Engine VM image to start the notebook instance.
   @$pb.TagNumber(6)
   VmImage get vmImage => $_getN(3);
   @$pb.TagNumber(6)
   set vmImage(VmImage v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasVmImage() => $_has(3);
   @$pb.TagNumber(6)
-  void clearVmImage() => clearField(6);
+  void clearVmImage() => $_clearField(6);
   @$pb.TagNumber(6)
   VmImage ensureVmImage() => $_ensure(3);
 
@@ -176,13 +174,13 @@ class Environment extends $pb.GeneratedMessage {
   ContainerImage get containerImage => $_getN(4);
   @$pb.TagNumber(7)
   set containerImage(ContainerImage v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasContainerImage() => $_has(4);
   @$pb.TagNumber(7)
-  void clearContainerImage() => clearField(7);
+  void clearContainerImage() => $_clearField(7);
   @$pb.TagNumber(7)
   ContainerImage ensureContainerImage() => $_ensure(4);
 
@@ -199,20 +197,20 @@ class Environment extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasPostStartupScript() => $_has(5);
   @$pb.TagNumber(8)
-  void clearPostStartupScript() => clearField(8);
+  void clearPostStartupScript() => $_clearField(8);
 
   /// Output only. The time at which this environment was created.
   @$pb.TagNumber(9)
   $2.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(9)
   set createTime($2.Timestamp v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(9)
-  void clearCreateTime() => clearField(9);
+  void clearCreateTime() => $_clearField(9);
   @$pb.TagNumber(9)
   $2.Timestamp ensureCreateTime() => $_ensure(6);
 }
@@ -263,13 +261,9 @@ class VmImage extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'imageFamily')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmImage clone() => VmImage()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VmImage copyWith(void Function(VmImage) updates) =>
       super.copyWith((message) => updates(message as VmImage)) as VmImage;
 
@@ -285,7 +279,7 @@ class VmImage extends $pb.GeneratedMessage {
   static VmImage? _defaultInstance;
 
   VmImage_Image whichImage() => _VmImage_ImageByTag[$_whichOneof(0)]!;
-  void clearImage() => clearField($_whichOneof(0));
+  void clearImage() => $_clearField($_whichOneof(0));
 
   /// Required. The name of the Google Cloud project that this VM image belongs
   /// to. Format: `{project_id}`
@@ -299,7 +293,7 @@ class VmImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasProject() => $_has(0);
   @$pb.TagNumber(1)
-  void clearProject() => clearField(1);
+  void clearProject() => $_clearField(1);
 
   /// Use VM image name to find the image.
   @$pb.TagNumber(2)
@@ -312,7 +306,7 @@ class VmImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasImageName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearImageName() => clearField(2);
+  void clearImageName() => $_clearField(2);
 
   /// Use this VM image family to find the image; the newest image in this
   /// family will be used.
@@ -326,7 +320,7 @@ class VmImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasImageFamily() => $_has(2);
   @$pb.TagNumber(3)
-  void clearImageFamily() => clearField(3);
+  void clearImageFamily() => $_clearField(3);
 }
 
 /// Definition of a container image for starting a notebook instance with the
@@ -362,13 +356,9 @@ class ContainerImage extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'tag')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ContainerImage clone() => ContainerImage()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ContainerImage copyWith(void Function(ContainerImage) updates) =>
       super.copyWith((message) => updates(message as ContainerImage))
           as ContainerImage;
@@ -397,7 +387,7 @@ class ContainerImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasRepository() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRepository() => clearField(1);
+  void clearRepository() => $_clearField(1);
 
   /// The tag of the container image. If not specified, this defaults
   /// to the latest tag.
@@ -411,7 +401,7 @@ class ContainerImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTag() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTag() => clearField(2);
+  void clearTag() => $_clearField(2);
 }
 
 enum Runtime_RuntimeType { virtualMachine, notSet }
@@ -428,7 +418,7 @@ class Runtime extends $pb.GeneratedMessage {
     RuntimeMetrics? metrics,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
   }) {
     final $result = create();
     if (name != null) {
@@ -459,7 +449,7 @@ class Runtime extends $pb.GeneratedMessage {
       $result.updateTime = updateTime;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     return $result;
   }
@@ -511,13 +501,9 @@ class Runtime extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.notebooks.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runtime clone() => Runtime()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Runtime copyWith(void Function(Runtime) updates) =>
       super.copyWith((message) => updates(message as Runtime)) as Runtime;
 
@@ -534,7 +520,7 @@ class Runtime extends $pb.GeneratedMessage {
 
   Runtime_RuntimeType whichRuntimeType() =>
       _Runtime_RuntimeTypeByTag[$_whichOneof(0)]!;
-  void clearRuntimeType() => clearField($_whichOneof(0));
+  void clearRuntimeType() => $_clearField($_whichOneof(0));
 
   /// Output only. The resource name of the runtime.
   /// Format:
@@ -549,20 +535,20 @@ class Runtime extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Use a Compute Engine VM image to start the managed notebook instance.
   @$pb.TagNumber(2)
   VirtualMachine get virtualMachine => $_getN(1);
   @$pb.TagNumber(2)
   set virtualMachine(VirtualMachine v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasVirtualMachine() => $_has(1);
   @$pb.TagNumber(2)
-  void clearVirtualMachine() => clearField(2);
+  void clearVirtualMachine() => $_clearField(2);
   @$pb.TagNumber(2)
   VirtualMachine ensureVirtualMachine() => $_ensure(1);
 
@@ -571,39 +557,39 @@ class Runtime extends $pb.GeneratedMessage {
   Runtime_State get state => $_getN(2);
   @$pb.TagNumber(3)
   set state(Runtime_State v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
-  void clearState() => clearField(3);
+  void clearState() => $_clearField(3);
 
   /// Output only. Runtime health_state.
   @$pb.TagNumber(4)
   Runtime_HealthState get healthState => $_getN(3);
   @$pb.TagNumber(4)
   set healthState(Runtime_HealthState v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasHealthState() => $_has(3);
   @$pb.TagNumber(4)
-  void clearHealthState() => clearField(4);
+  void clearHealthState() => $_clearField(4);
 
   /// The config settings for accessing runtime.
   @$pb.TagNumber(5)
   RuntimeAccessConfig get accessConfig => $_getN(4);
   @$pb.TagNumber(5)
   set accessConfig(RuntimeAccessConfig v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasAccessConfig() => $_has(4);
   @$pb.TagNumber(5)
-  void clearAccessConfig() => clearField(5);
+  void clearAccessConfig() => $_clearField(5);
   @$pb.TagNumber(5)
   RuntimeAccessConfig ensureAccessConfig() => $_ensure(4);
 
@@ -612,13 +598,13 @@ class Runtime extends $pb.GeneratedMessage {
   RuntimeSoftwareConfig get softwareConfig => $_getN(5);
   @$pb.TagNumber(6)
   set softwareConfig(RuntimeSoftwareConfig v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasSoftwareConfig() => $_has(5);
   @$pb.TagNumber(6)
-  void clearSoftwareConfig() => clearField(6);
+  void clearSoftwareConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   RuntimeSoftwareConfig ensureSoftwareConfig() => $_ensure(5);
 
@@ -628,13 +614,13 @@ class Runtime extends $pb.GeneratedMessage {
   RuntimeMetrics get metrics => $_getN(6);
   @$pb.TagNumber(7)
   set metrics(RuntimeMetrics v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasMetrics() => $_has(6);
   @$pb.TagNumber(7)
-  void clearMetrics() => clearField(7);
+  void clearMetrics() => $_clearField(7);
   @$pb.TagNumber(7)
   RuntimeMetrics ensureMetrics() => $_ensure(6);
 
@@ -643,13 +629,13 @@ class Runtime extends $pb.GeneratedMessage {
   $2.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(20)
   set createTime($2.Timestamp v) {
-    setField(20, v);
+    $_setField(20, v);
   }
 
   @$pb.TagNumber(20)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(20)
-  void clearCreateTime() => clearField(20);
+  void clearCreateTime() => $_clearField(20);
   @$pb.TagNumber(20)
   $2.Timestamp ensureCreateTime() => $_ensure(7);
 
@@ -658,13 +644,13 @@ class Runtime extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(21)
   set updateTime($2.Timestamp v) {
-    setField(21, v);
+    $_setField(21, v);
   }
 
   @$pb.TagNumber(21)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(21)
-  void clearUpdateTime() => clearField(21);
+  void clearUpdateTime() => $_clearField(21);
   @$pb.TagNumber(21)
   $2.Timestamp ensureUpdateTime() => $_ensure(8);
 
@@ -676,21 +662,21 @@ class Runtime extends $pb.GeneratedMessage {
   /// 1035](https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be
   /// associated with a cluster.
   @$pb.TagNumber(23)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(9);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(9);
 }
 
-///  Definition of the types of hardware accelerators that can be used.
-///  Definition of the types of hardware accelerators that can be used.
-///  See [Compute Engine
-///  AcceleratorTypes](https://cloud.google.com/compute/docs/reference/beta/acceleratorTypes).
-///  Examples:
+/// Definition of the types of hardware accelerators that can be used.
+/// Definition of the types of hardware accelerators that can be used.
+/// See [Compute Engine
+/// AcceleratorTypes](https://cloud.google.com/compute/docs/reference/beta/acceleratorTypes).
+/// Examples:
 ///
-///  * `nvidia-tesla-k80`
-///  * `nvidia-tesla-p100`
-///  * `nvidia-tesla-v100`
-///  * `nvidia-tesla-p4`
-///  * `nvidia-tesla-t4`
-///  * `nvidia-tesla-a100`
+/// * `nvidia-tesla-k80`
+/// * `nvidia-tesla-p100`
+/// * `nvidia-tesla-v100`
+/// * `nvidia-tesla-p4`
+/// * `nvidia-tesla-t4`
+/// * `nvidia-tesla-a100`
 class RuntimeAcceleratorConfig extends $pb.GeneratedMessage {
   factory RuntimeAcceleratorConfig({
     RuntimeAcceleratorConfig_AcceleratorType? type,
@@ -727,14 +713,10 @@ class RuntimeAcceleratorConfig extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'coreCount')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeAcceleratorConfig clone() =>
       RuntimeAcceleratorConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeAcceleratorConfig copyWith(
           void Function(RuntimeAcceleratorConfig) updates) =>
       super.copyWith((message) => updates(message as RuntimeAcceleratorConfig))
@@ -757,13 +739,13 @@ class RuntimeAcceleratorConfig extends $pb.GeneratedMessage {
   RuntimeAcceleratorConfig_AcceleratorType get type => $_getN(0);
   @$pb.TagNumber(1)
   set type(RuntimeAcceleratorConfig_AcceleratorType v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// Count of cores of this accelerator.
   @$pb.TagNumber(2)
@@ -776,7 +758,7 @@ class RuntimeAcceleratorConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCoreCount() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCoreCount() => clearField(2);
+  void clearCoreCount() => $_clearField(2);
 }
 
 /// Represents a custom encryption key configuration that can be applied to
@@ -807,13 +789,9 @@ class EncryptionConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'kmsKey')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EncryptionConfig clone() => EncryptionConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EncryptionConfig copyWith(void Function(EncryptionConfig) updates) =>
       super.copyWith((message) => updates(message as EncryptionConfig))
           as EncryptionConfig;
@@ -844,7 +822,7 @@ class EncryptionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasKmsKey() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKmsKey() => clearField(1);
+  void clearKmsKey() => $_clearField(1);
 }
 
 /// Optional. A list of features to enable on the guest operating system.
@@ -879,14 +857,10 @@ class LocalDisk_RuntimeGuestOsFeature extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LocalDisk_RuntimeGuestOsFeature clone() =>
       LocalDisk_RuntimeGuestOsFeature()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LocalDisk_RuntimeGuestOsFeature copyWith(
           void Function(LocalDisk_RuntimeGuestOsFeature) updates) =>
       super.copyWith(
@@ -907,18 +881,18 @@ class LocalDisk_RuntimeGuestOsFeature extends $pb.GeneratedMessage {
           create);
   static LocalDisk_RuntimeGuestOsFeature? _defaultInstance;
 
-  ///  The ID of a supported feature. Read [Enabling guest operating system
-  ///  features](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#guest-os-features)
-  ///  to see a list of available options.
+  /// The ID of a supported feature. Read [Enabling guest operating system
+  /// features](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#guest-os-features)
+  /// to see a list of available options.
   ///
-  ///  Valid values:
+  /// Valid values:
   ///
-  ///  * `FEATURE_TYPE_UNSPECIFIED`
-  ///  * `MULTI_IP_SUBNET`
-  ///  * `SECURE_BOOT`
-  ///  * `UEFI_COMPATIBLE`
-  ///  * `VIRTIO_SCSI_MULTIQUEUE`
-  ///  * `WINDOWS`
+  /// * `FEATURE_TYPE_UNSPECIFIED`
+  /// * `MULTI_IP_SUBNET`
+  /// * `SECURE_BOOT`
+  /// * `UEFI_COMPATIBLE`
+  /// * `VIRTIO_SCSI_MULTIQUEUE`
+  /// * `WINDOWS`
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -929,7 +903,7 @@ class LocalDisk_RuntimeGuestOsFeature extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 }
 
 /// A Local attached disk resource.
@@ -1011,13 +985,9 @@ class LocalDisk extends $pb.GeneratedMessage {
     ..aOS(12, _omitFieldNames ? '' : 'type')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LocalDisk clone() => LocalDisk()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LocalDisk copyWith(void Function(LocalDisk) updates) =>
       super.copyWith((message) => updates(message as LocalDisk)) as LocalDisk;
 
@@ -1045,7 +1015,7 @@ class LocalDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasAutoDelete() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAutoDelete() => clearField(1);
+  void clearAutoDelete() => $_clearField(1);
 
   /// Optional. Output only. Indicates that this is a boot disk. The virtual
   /// machine will use the first partition of the disk for its root filesystem.
@@ -1059,17 +1029,17 @@ class LocalDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasBoot() => $_has(1);
   @$pb.TagNumber(2)
-  void clearBoot() => clearField(2);
+  void clearBoot() => $_clearField(2);
 
-  ///  Optional. Output only. Specifies a unique device name
-  ///  of your choice that is reflected into the
-  ///  `/dev/disk/by-id/google-*` tree of a Linux operating system running within
-  ///  the instance. This name can be used to reference the device for mounting,
-  ///  resizing, and so on, from within the instance.
+  /// Optional. Output only. Specifies a unique device name
+  /// of your choice that is reflected into the
+  /// `/dev/disk/by-id/google-*` tree of a Linux operating system running within
+  /// the instance. This name can be used to reference the device for mounting,
+  /// resizing, and so on, from within the instance.
   ///
-  ///  If not specified, the server chooses a default device name to apply to this
-  ///  disk, in the form persistent-disk-x, where x is a number assigned by Google
-  ///  Compute Engine. This field is only applicable for persistent disks.
+  /// If not specified, the server chooses a default device name to apply to this
+  /// disk, in the form persistent-disk-x, where x is a number assigned by Google
+  /// Compute Engine. This field is only applicable for persistent disks.
   @$pb.TagNumber(3)
   $core.String get deviceName => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -1080,13 +1050,13 @@ class LocalDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDeviceName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDeviceName() => clearField(3);
+  void clearDeviceName() => $_clearField(3);
 
   /// Output only. Indicates a list of features to enable on the guest operating
   /// system. Applicable only for bootable images. Read  Enabling guest operating
   /// system features to see a list of available options.
   @$pb.TagNumber(4)
-  $core.List<LocalDisk_RuntimeGuestOsFeature> get guestOsFeatures =>
+  $pb.PbList<LocalDisk_RuntimeGuestOsFeature> get guestOsFeatures =>
       $_getList(3);
 
   /// Output only. A zero-based index to this disk, where 0 is reserved for the
@@ -1102,17 +1072,17 @@ class LocalDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasIndex() => $_has(4);
   @$pb.TagNumber(5)
-  void clearIndex() => clearField(5);
+  void clearIndex() => $_clearField(5);
 
-  ///  Specifies the disk interface to use for attaching this disk, which is
-  ///  either SCSI or NVME. The default is SCSI. Persistent disks must always use
-  ///  SCSI and the request will fail if you attempt to attach a persistent disk
-  ///  in any other format than SCSI. Local SSDs can use either NVME or SCSI. For
-  ///  performance characteristics of SCSI over NVMe, see Local SSD performance.
-  ///  Valid values:
+  /// Specifies the disk interface to use for attaching this disk, which is
+  /// either SCSI or NVME. The default is SCSI. Persistent disks must always use
+  /// SCSI and the request will fail if you attempt to attach a persistent disk
+  /// in any other format than SCSI. Local SSDs can use either NVME or SCSI. For
+  /// performance characteristics of SCSI over NVMe, see Local SSD performance.
+  /// Valid values:
   ///
-  ///  * `NVME`
-  ///  * `SCSI`
+  /// * `NVME`
+  /// * `SCSI`
   @$pb.TagNumber(7)
   $core.String get interface => $_getSZ(5);
   @$pb.TagNumber(7)
@@ -1123,7 +1093,7 @@ class LocalDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasInterface() => $_has(5);
   @$pb.TagNumber(7)
-  void clearInterface() => clearField(7);
+  void clearInterface() => $_clearField(7);
 
   /// Output only. Type of the resource. Always compute#attachedDisk for attached
   /// disks.
@@ -1137,18 +1107,18 @@ class LocalDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasKind() => $_has(6);
   @$pb.TagNumber(8)
-  void clearKind() => clearField(8);
+  void clearKind() => $_clearField(8);
 
   /// Output only. Any valid publicly visible licenses.
   @$pb.TagNumber(9)
-  $core.List<$core.String> get licenses => $_getList(7);
+  $pb.PbList<$core.String> get licenses => $_getList(7);
 
-  ///  The mode in which to attach this disk, either `READ_WRITE` or `READ_ONLY`.
-  ///  If not specified, the default is to attach the disk in `READ_WRITE` mode.
-  ///  Valid values:
+  /// The mode in which to attach this disk, either `READ_WRITE` or `READ_ONLY`.
+  /// If not specified, the default is to attach the disk in `READ_WRITE` mode.
+  /// Valid values:
   ///
-  ///  * `READ_ONLY`
-  ///  * `READ_WRITE`
+  /// * `READ_ONLY`
+  /// * `READ_WRITE`
   @$pb.TagNumber(10)
   $core.String get mode => $_getSZ(8);
   @$pb.TagNumber(10)
@@ -1159,7 +1129,7 @@ class LocalDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasMode() => $_has(8);
   @$pb.TagNumber(10)
-  void clearMode() => clearField(10);
+  void clearMode() => $_clearField(10);
 
   /// Specifies a valid partial or full URL to an existing Persistent Disk
   /// resource.
@@ -1173,14 +1143,14 @@ class LocalDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasSource() => $_has(9);
   @$pb.TagNumber(11)
-  void clearSource() => clearField(11);
+  void clearSource() => $_clearField(11);
 
-  ///  Specifies the type of the disk, either `SCRATCH` or `PERSISTENT`. If not
-  ///  specified, the default is `PERSISTENT`.
-  ///  Valid values:
+  /// Specifies the type of the disk, either `SCRATCH` or `PERSISTENT`. If not
+  /// specified, the default is `PERSISTENT`.
+  /// Valid values:
   ///
-  ///  * `PERSISTENT`
-  ///  * `SCRATCH`
+  /// * `PERSISTENT`
+  /// * `SCRATCH`
   @$pb.TagNumber(12)
   $core.String get type => $_getSZ(10);
   @$pb.TagNumber(12)
@@ -1191,7 +1161,7 @@ class LocalDisk extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasType() => $_has(10);
   @$pb.TagNumber(12)
-  void clearType() => clearField(12);
+  void clearType() => $_clearField(12);
 }
 
 /// Input only. Specifies the parameters for a new disk that will be created
@@ -1204,7 +1174,7 @@ class LocalDiskInitializeParams extends $pb.GeneratedMessage {
     $core.String? description,
     $core.String? diskName,
     $fixnum.Int64? diskSizeGb,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
   }) {
     final $result = create();
     if (description != null) {
@@ -1217,7 +1187,7 @@ class LocalDiskInitializeParams extends $pb.GeneratedMessage {
       $result.diskSizeGb = diskSizeGb;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     return $result;
   }
@@ -1244,14 +1214,10 @@ class LocalDiskInitializeParams extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.notebooks.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LocalDiskInitializeParams clone() =>
       LocalDiskInitializeParams()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LocalDiskInitializeParams copyWith(
           void Function(LocalDiskInitializeParams) updates) =>
       super.copyWith((message) => updates(message as LocalDiskInitializeParams))
@@ -1280,7 +1246,7 @@ class LocalDiskInitializeParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDescription() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDescription() => clearField(1);
+  void clearDescription() => $_clearField(1);
 
   /// Optional. Specifies the disk name. If not specified, the default is to use
   /// the name of the instance. If the disk with the instance name exists already
@@ -1295,7 +1261,7 @@ class LocalDiskInitializeParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDiskName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDiskName() => clearField(2);
+  void clearDiskName() => $_clearField(2);
 
   /// Optional. Specifies the size of the disk in base-2 GB. If not specified,
   /// the disk will be the same size as the image (usually 10GB). If specified,
@@ -1310,12 +1276,12 @@ class LocalDiskInitializeParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDiskSizeGb() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDiskSizeGb() => clearField(3);
+  void clearDiskSizeGb() => $_clearField(3);
 
   /// Optional. Labels to apply to this disk. These can be later modified by the
   /// disks.setLabels method. This field is only applicable for persistent disks.
   @$pb.TagNumber(5)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 }
 
 /// Specifies the login configuration for Runtime
@@ -1360,13 +1326,9 @@ class RuntimeAccessConfig extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'proxyUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeAccessConfig clone() => RuntimeAccessConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeAccessConfig copyWith(void Function(RuntimeAccessConfig) updates) =>
       super.copyWith((message) => updates(message as RuntimeAccessConfig))
           as RuntimeAccessConfig;
@@ -1388,13 +1350,13 @@ class RuntimeAccessConfig extends $pb.GeneratedMessage {
   RuntimeAccessConfig_RuntimeAccessType get accessType => $_getN(0);
   @$pb.TagNumber(1)
   set accessType(RuntimeAccessConfig_RuntimeAccessType v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasAccessType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAccessType() => clearField(1);
+  void clearAccessType() => $_clearField(1);
 
   /// The owner of this runtime after creation. Format: `alias@example.com`
   /// Currently supports one owner only.
@@ -1408,7 +1370,7 @@ class RuntimeAccessConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasRuntimeOwner() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRuntimeOwner() => clearField(2);
+  void clearRuntimeOwner() => $_clearField(2);
 
   /// Output only. The proxy endpoint that is used to access the runtime.
   @$pb.TagNumber(3)
@@ -1421,16 +1383,16 @@ class RuntimeAccessConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasProxyUri() => $_has(2);
   @$pb.TagNumber(3)
-  void clearProxyUri() => clearField(3);
+  void clearProxyUri() => $_clearField(3);
 }
 
-///  Specifies the selection and configuration of software inside the runtime.
-///  The properties to set on runtime.
-///  Properties keys are specified in `key:value` format, for example:
+/// Specifies the selection and configuration of software inside the runtime.
+/// The properties to set on runtime.
+/// Properties keys are specified in `key:value` format, for example:
 ///
-///  * `idle_shutdown: true`
-///  * `idle_shutdown_timeout: 180`
-///  * `enable_health_monitoring: true`
+/// * `idle_shutdown: true`
+/// * `idle_shutdown_timeout: 180`
+/// * `enable_health_monitoring: true`
 class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   factory RuntimeSoftwareConfig({
     $core.String? notebookUpgradeSchedule,
@@ -1525,14 +1487,10 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
     ..aOB(13, _omitFieldNames ? '' : 'mixerDisabled')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeSoftwareConfig clone() =>
       RuntimeSoftwareConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeSoftwareConfig copyWith(
           void Function(RuntimeSoftwareConfig) updates) =>
       super.copyWith((message) => updates(message as RuntimeSoftwareConfig))
@@ -1562,7 +1520,7 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNotebookUpgradeSchedule() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNotebookUpgradeSchedule() => clearField(1);
+  void clearNotebookUpgradeSchedule() => $_clearField(1);
 
   /// Verifies core internal services are running.
   /// Default: True
@@ -1576,7 +1534,7 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasEnableHealthMonitoring() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEnableHealthMonitoring() => clearField(2);
+  void clearEnableHealthMonitoring() => $_clearField(2);
 
   /// Runtime will automatically shutdown after idle_shutdown_time.
   /// Default: True
@@ -1590,7 +1548,7 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasIdleShutdown() => $_has(2);
   @$pb.TagNumber(3)
-  void clearIdleShutdown() => clearField(3);
+  void clearIdleShutdown() => $_clearField(3);
 
   /// Time in minutes to wait before shutting down runtime. Default: 180 minutes
   @$pb.TagNumber(4)
@@ -1603,7 +1561,7 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasIdleShutdownTimeout() => $_has(3);
   @$pb.TagNumber(4)
-  void clearIdleShutdownTimeout() => clearField(4);
+  void clearIdleShutdownTimeout() => $_clearField(4);
 
   /// Install Nvidia Driver automatically.
   /// Default: True
@@ -1617,7 +1575,7 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasInstallGpuDriver() => $_has(4);
   @$pb.TagNumber(5)
-  void clearInstallGpuDriver() => clearField(5);
+  void clearInstallGpuDriver() => $_clearField(5);
 
   /// Specify a custom Cloud Storage path where the GPU driver is stored.
   /// If not specified, we'll automatically choose from official GPU drivers.
@@ -1631,7 +1589,7 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasCustomGpuDriverPath() => $_has(5);
   @$pb.TagNumber(6)
-  void clearCustomGpuDriverPath() => clearField(6);
+  void clearCustomGpuDriverPath() => $_clearField(6);
 
   /// Path to a Bash script that automatically runs after a notebook instance
   /// fully boots up. The path must be a URL or
@@ -1646,12 +1604,12 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasPostStartupScript() => $_has(6);
   @$pb.TagNumber(7)
-  void clearPostStartupScript() => clearField(7);
+  void clearPostStartupScript() => $_clearField(7);
 
   /// Optional. Use a list of container images to use as Kernels in the notebook
   /// instance.
   @$pb.TagNumber(8)
-  $core.List<ContainerImage> get kernels => $_getList(7);
+  $pb.PbList<ContainerImage> get kernels => $_getList(7);
 
   /// Output only. Bool indicating whether an newer image is available in an
   /// image family.
@@ -1665,7 +1623,7 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasUpgradeable() => $_has(8);
   @$pb.TagNumber(9)
-  void clearUpgradeable() => clearField(9);
+  void clearUpgradeable() => $_clearField(9);
 
   /// Behavior for the post startup script.
   @$pb.TagNumber(10)
@@ -1674,13 +1632,13 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   set postStartupScriptBehavior(
       RuntimeSoftwareConfig_PostStartupScriptBehavior v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasPostStartupScriptBehavior() => $_has(9);
   @$pb.TagNumber(10)
-  void clearPostStartupScriptBehavior() => clearField(10);
+  void clearPostStartupScriptBehavior() => $_clearField(10);
 
   /// Bool indicating whether JupyterLab terminal will be available or not.
   /// Default: False
@@ -1694,7 +1652,7 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasDisableTerminal() => $_has(10);
   @$pb.TagNumber(11)
-  void clearDisableTerminal() => clearField(11);
+  void clearDisableTerminal() => $_clearField(11);
 
   /// Output only. version of boot image such as M100, from release label of the
   /// image.
@@ -1708,7 +1666,7 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasVersion() => $_has(11);
   @$pb.TagNumber(12)
-  void clearVersion() => clearField(12);
+  void clearVersion() => $_clearField(12);
 
   /// Bool indicating whether mixer client should be disabled.
   /// Default: False
@@ -1722,17 +1680,17 @@ class RuntimeSoftwareConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasMixerDisabled() => $_has(12);
   @$pb.TagNumber(13)
-  void clearMixerDisabled() => clearField(13);
+  void clearMixerDisabled() => $_clearField(13);
 }
 
 /// Contains runtime daemon metrics, such as OS and kernels and sessions stats.
 class RuntimeMetrics extends $pb.GeneratedMessage {
   factory RuntimeMetrics({
-    $core.Map<$core.String, $core.String>? systemMetrics,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? systemMetrics,
   }) {
     final $result = create();
     if (systemMetrics != null) {
-      $result.systemMetrics.addAll(systemMetrics);
+      $result.systemMetrics.addEntries(systemMetrics);
     }
     return $result;
   }
@@ -1756,13 +1714,9 @@ class RuntimeMetrics extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.notebooks.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeMetrics clone() => RuntimeMetrics()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeMetrics copyWith(void Function(RuntimeMetrics) updates) =>
       super.copyWith((message) => updates(message as RuntimeMetrics))
           as RuntimeMetrics;
@@ -1781,7 +1735,7 @@ class RuntimeMetrics extends $pb.GeneratedMessage {
 
   /// Output only. The system metrics.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, $core.String> get systemMetrics => $_getMap(0);
+  $pb.PbMap<$core.String, $core.String> get systemMetrics => $_getMap(0);
 }
 
 /// A set of Shielded Instance options.
@@ -1824,14 +1778,10 @@ class RuntimeShieldedInstanceConfig extends $pb.GeneratedMessage {
     ..aOB(3, _omitFieldNames ? '' : 'enableIntegrityMonitoring')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeShieldedInstanceConfig clone() =>
       RuntimeShieldedInstanceConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeShieldedInstanceConfig copyWith(
           void Function(RuntimeShieldedInstanceConfig) updates) =>
       super.copyWith(
@@ -1851,11 +1801,11 @@ class RuntimeShieldedInstanceConfig extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<RuntimeShieldedInstanceConfig>(create);
   static RuntimeShieldedInstanceConfig? _defaultInstance;
 
-  ///  Defines whether the instance has Secure Boot enabled.
+  /// Defines whether the instance has Secure Boot enabled.
   ///
-  ///  Secure Boot helps ensure that the system only runs authentic software by
-  ///  verifying the digital signature of all boot components, and halting the
-  ///  boot process if signature verification fails. Disabled by default.
+  /// Secure Boot helps ensure that the system only runs authentic software by
+  /// verifying the digital signature of all boot components, and halting the
+  /// boot process if signature verification fails. Disabled by default.
   @$pb.TagNumber(1)
   $core.bool get enableSecureBoot => $_getBF(0);
   @$pb.TagNumber(1)
@@ -1866,7 +1816,7 @@ class RuntimeShieldedInstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEnableSecureBoot() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEnableSecureBoot() => clearField(1);
+  void clearEnableSecureBoot() => $_clearField(1);
 
   /// Defines whether the instance has the vTPM enabled. Enabled by default.
   @$pb.TagNumber(2)
@@ -1879,14 +1829,14 @@ class RuntimeShieldedInstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasEnableVtpm() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEnableVtpm() => clearField(2);
+  void clearEnableVtpm() => $_clearField(2);
 
-  ///  Defines whether the instance has integrity monitoring enabled.
+  /// Defines whether the instance has integrity monitoring enabled.
   ///
-  ///  Enables monitoring and attestation of the boot integrity of the instance.
-  ///  The attestation is performed against the integrity policy baseline. This
-  ///  baseline is initially derived from the implicitly trusted boot image when
-  ///  the instance is created. Enabled by default.
+  /// Enables monitoring and attestation of the boot integrity of the instance.
+  /// The attestation is performed against the integrity policy baseline. This
+  /// baseline is initially derived from the implicitly trusted boot image when
+  /// the instance is created. Enabled by default.
   @$pb.TagNumber(3)
   $core.bool get enableIntegrityMonitoring => $_getBF(2);
   @$pb.TagNumber(3)
@@ -1897,7 +1847,7 @@ class RuntimeShieldedInstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEnableIntegrityMonitoring() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEnableIntegrityMonitoring() => clearField(3);
+  void clearEnableIntegrityMonitoring() => $_clearField(3);
 }
 
 /// Runtime using Virtual Machine for computing.
@@ -1939,13 +1889,9 @@ class VirtualMachine extends $pb.GeneratedMessage {
         subBuilder: VirtualMachineConfig.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VirtualMachine clone() => VirtualMachine()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VirtualMachine copyWith(void Function(VirtualMachine) updates) =>
       super.copyWith((message) => updates(message as VirtualMachine))
           as VirtualMachine;
@@ -1973,7 +1919,7 @@ class VirtualMachine extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasInstanceName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearInstanceName() => clearField(1);
+  void clearInstanceName() => $_clearField(1);
 
   /// Output only. The unique identifier of the Managed Compute Engine instance.
   @$pb.TagNumber(2)
@@ -1986,20 +1932,20 @@ class VirtualMachine extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasInstanceId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearInstanceId() => clearField(2);
+  void clearInstanceId() => $_clearField(2);
 
   /// Virtual Machine configuration settings.
   @$pb.TagNumber(3)
   VirtualMachineConfig get virtualMachineConfig => $_getN(2);
   @$pb.TagNumber(3)
   set virtualMachineConfig(VirtualMachineConfig v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasVirtualMachineConfig() => $_has(2);
   @$pb.TagNumber(3)
-  void clearVirtualMachineConfig() => clearField(3);
+  void clearVirtualMachineConfig() => $_clearField(3);
   @$pb.TagNumber(3)
   VirtualMachineConfig ensureVirtualMachineConfig() => $_ensure(2);
 }
@@ -2023,14 +1969,10 @@ class VirtualMachineConfig_BootImage extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VirtualMachineConfig_BootImage clone() =>
       VirtualMachineConfig_BootImage()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VirtualMachineConfig_BootImage copyWith(
           void Function(VirtualMachineConfig_BootImage) updates) =>
       super.copyWith(
@@ -2065,9 +2007,9 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
     $core.String? subnet,
     $core.bool? internalIpOnly,
     $core.Iterable<$core.String>? tags,
-    $core.Map<$core.String, $core.String>? guestAttributes,
-    $core.Map<$core.String, $core.String>? metadata,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? guestAttributes,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? metadata,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     VirtualMachineConfig_NicType? nicType,
     $core.String? reservedIpRange,
     VirtualMachineConfig_BootImage? bootImage,
@@ -2107,13 +2049,13 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
       $result.tags.addAll(tags);
     }
     if (guestAttributes != null) {
-      $result.guestAttributes.addAll(guestAttributes);
+      $result.guestAttributes.addEntries(guestAttributes);
     }
     if (metadata != null) {
-      $result.metadata.addAll(metadata);
+      $result.metadata.addEntries(metadata);
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (nicType != null) {
       $result.nicType = nicType;
@@ -2185,14 +2127,10 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
         subBuilder: VirtualMachineConfig_BootImage.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VirtualMachineConfig clone() =>
       VirtualMachineConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   VirtualMachineConfig copyWith(void Function(VirtualMachineConfig) updates) =>
       super.copyWith((message) => updates(message as VirtualMachineConfig))
           as VirtualMachineConfig;
@@ -2224,7 +2162,7 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasZone() => $_has(0);
   @$pb.TagNumber(1)
-  void clearZone() => clearField(1);
+  void clearZone() => $_clearField(1);
 
   /// Required. The Compute Engine machine type used for runtimes.
   /// Short name is valid. Examples:
@@ -2240,25 +2178,25 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMachineType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMachineType() => clearField(2);
+  void clearMachineType() => $_clearField(2);
 
   /// Optional. Use a list of container images to use as Kernels in the notebook
   /// instance.
   @$pb.TagNumber(3)
-  $core.List<ContainerImage> get containerImages => $_getList(2);
+  $pb.PbList<ContainerImage> get containerImages => $_getList(2);
 
   /// Required. Data disk option configuration settings.
   @$pb.TagNumber(4)
   LocalDisk get dataDisk => $_getN(3);
   @$pb.TagNumber(4)
   set dataDisk(LocalDisk v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasDataDisk() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDataDisk() => clearField(4);
+  void clearDataDisk() => $_clearField(4);
   @$pb.TagNumber(4)
   LocalDisk ensureDataDisk() => $_ensure(3);
 
@@ -2267,13 +2205,13 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
   EncryptionConfig get encryptionConfig => $_getN(4);
   @$pb.TagNumber(5)
   set encryptionConfig(EncryptionConfig v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasEncryptionConfig() => $_has(4);
   @$pb.TagNumber(5)
-  void clearEncryptionConfig() => clearField(5);
+  void clearEncryptionConfig() => $_clearField(5);
   @$pb.TagNumber(5)
   EncryptionConfig ensureEncryptionConfig() => $_ensure(4);
 
@@ -2282,13 +2220,13 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
   RuntimeShieldedInstanceConfig get shieldedInstanceConfig => $_getN(5);
   @$pb.TagNumber(6)
   set shieldedInstanceConfig(RuntimeShieldedInstanceConfig v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasShieldedInstanceConfig() => $_has(5);
   @$pb.TagNumber(6)
-  void clearShieldedInstanceConfig() => clearField(6);
+  void clearShieldedInstanceConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   RuntimeShieldedInstanceConfig ensureShieldedInstanceConfig() => $_ensure(5);
 
@@ -2297,34 +2235,34 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
   RuntimeAcceleratorConfig get acceleratorConfig => $_getN(6);
   @$pb.TagNumber(7)
   set acceleratorConfig(RuntimeAcceleratorConfig v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasAcceleratorConfig() => $_has(6);
   @$pb.TagNumber(7)
-  void clearAcceleratorConfig() => clearField(7);
+  void clearAcceleratorConfig() => $_clearField(7);
   @$pb.TagNumber(7)
   RuntimeAcceleratorConfig ensureAcceleratorConfig() => $_ensure(6);
 
-  ///  Optional. The Compute Engine network to be used for machine
-  ///  communications. Cannot be specified with subnetwork. If neither
-  ///  `network` nor `subnet` is specified, the "default" network of
-  ///  the project is used, if it exists.
+  /// Optional. The Compute Engine network to be used for machine
+  /// communications. Cannot be specified with subnetwork. If neither
+  /// `network` nor `subnet` is specified, the "default" network of
+  /// the project is used, if it exists.
   ///
-  ///  A full URL or partial URI. Examples:
+  /// A full URL or partial URI. Examples:
   ///
-  ///  * `https://www.googleapis.com/compute/v1/projects/[project_id]/global/networks/default`
-  ///  * `projects/[project_id]/global/networks/default`
+  /// * `https://www.googleapis.com/compute/v1/projects/[project_id]/global/networks/default`
+  /// * `projects/[project_id]/global/networks/default`
   ///
-  ///  Runtimes are managed resources inside Google Infrastructure.
-  ///  Runtimes support the following network configurations:
+  /// Runtimes are managed resources inside Google Infrastructure.
+  /// Runtimes support the following network configurations:
   ///
-  ///  * Google Managed Network (Network & subnet are empty)
-  ///  * Consumer Project VPC (network & subnet are required). Requires
-  ///  configuring Private Service Access.
-  ///  * Shared VPC (network & subnet are required). Requires configuring Private
-  ///  Service Access.
+  /// * Google Managed Network (Network & subnet are empty)
+  /// * Consumer Project VPC (network & subnet are required). Requires
+  /// configuring Private Service Access.
+  /// * Shared VPC (network & subnet are required). Requires configuring Private
+  /// Service Access.
   @$pb.TagNumber(8)
   $core.String get network => $_getSZ(7);
   @$pb.TagNumber(8)
@@ -2335,15 +2273,15 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasNetwork() => $_has(7);
   @$pb.TagNumber(8)
-  void clearNetwork() => clearField(8);
+  void clearNetwork() => $_clearField(8);
 
-  ///  Optional. The Compute Engine subnetwork to be used for machine
-  ///  communications. Cannot be specified with network.
+  /// Optional. The Compute Engine subnetwork to be used for machine
+  /// communications. Cannot be specified with network.
   ///
-  ///  A full URL or partial URI are valid. Examples:
+  /// A full URL or partial URI are valid. Examples:
   ///
-  ///  * `https://www.googleapis.com/compute/v1/projects/[project_id]/regions/us-east1/subnetworks/sub0`
-  ///  * `projects/[project_id]/regions/us-east1/subnetworks/sub0`
+  /// * `https://www.googleapis.com/compute/v1/projects/[project_id]/regions/us-east1/subnetworks/sub0`
+  /// * `projects/[project_id]/regions/us-east1/subnetworks/sub0`
   @$pb.TagNumber(9)
   $core.String get subnet => $_getSZ(8);
   @$pb.TagNumber(9)
@@ -2354,7 +2292,7 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasSubnet() => $_has(8);
   @$pb.TagNumber(9)
-  void clearSubnet() => clearField(9);
+  void clearSubnet() => $_clearField(9);
 
   /// Optional. If true, runtime will only have internal IP
   /// addresses. By default, runtimes are not restricted to internal IP
@@ -2372,25 +2310,25 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasInternalIpOnly() => $_has(9);
   @$pb.TagNumber(10)
-  void clearInternalIpOnly() => clearField(10);
+  void clearInternalIpOnly() => $_clearField(10);
 
   /// Optional. The Compute Engine tags to add to runtime (see [Tagging
   /// instances](https://cloud.google.com/compute/docs/label-or-tag-resources#tags)).
   @$pb.TagNumber(13)
-  $core.List<$core.String> get tags => $_getList(10);
+  $pb.PbList<$core.String> get tags => $_getList(10);
 
   /// Output only. The Compute Engine guest attributes. (see
   /// [Project and instance
   /// guest
   /// attributes](https://cloud.google.com/compute/docs/storing-retrieving-metadata#guest_attributes)).
   @$pb.TagNumber(14)
-  $core.Map<$core.String, $core.String> get guestAttributes => $_getMap(11);
+  $pb.PbMap<$core.String, $core.String> get guestAttributes => $_getMap(11);
 
   /// Optional. The Compute Engine metadata entries to add to virtual machine.
   /// (see [Project and instance
   /// metadata](https://cloud.google.com/compute/docs/storing-retrieving-metadata#project_and_instance_metadata)).
   @$pb.TagNumber(15)
-  $core.Map<$core.String, $core.String> get metadata => $_getMap(12);
+  $pb.PbMap<$core.String, $core.String> get metadata => $_getMap(12);
 
   /// Optional. The labels to associate with this runtime.
   /// Label **keys** must contain 1 to 63 characters, and must conform to
@@ -2400,7 +2338,7 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
   /// 1035](https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be
   /// associated with a cluster.
   @$pb.TagNumber(16)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(13);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(13);
 
   /// Optional. The type of vNIC to be used on this interface. This may be gVNIC
   /// or VirtioNet.
@@ -2408,29 +2346,29 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
   VirtualMachineConfig_NicType get nicType => $_getN(14);
   @$pb.TagNumber(17)
   set nicType(VirtualMachineConfig_NicType v) {
-    setField(17, v);
+    $_setField(17, v);
   }
 
   @$pb.TagNumber(17)
   $core.bool hasNicType() => $_has(14);
   @$pb.TagNumber(17)
-  void clearNicType() => clearField(17);
+  void clearNicType() => $_clearField(17);
 
-  ///  Optional. Reserved IP Range name is used for VPC Peering.
-  ///  The subnetwork allocation will use the range *name* if it's assigned.
+  /// Optional. Reserved IP Range name is used for VPC Peering.
+  /// The subnetwork allocation will use the range *name* if it's assigned.
   ///
-  ///  Example: managed-notebooks-range-c
+  /// Example: managed-notebooks-range-c
   ///
-  ///      PEERING_RANGE_NAME_3=managed-notebooks-range-c
-  ///      gcloud compute addresses create $PEERING_RANGE_NAME_3 \
-  ///        --global \
-  ///        --prefix-length=24 \
-  ///        --description="Google Cloud Managed Notebooks Range 24 c" \
-  ///        --network=$NETWORK \
-  ///        --addresses=192.168.0.0 \
-  ///        --purpose=VPC_PEERING
+  ///     PEERING_RANGE_NAME_3=managed-notebooks-range-c
+  ///     gcloud compute addresses create $PEERING_RANGE_NAME_3 \
+  ///       --global \
+  ///       --prefix-length=24 \
+  ///       --description="Google Cloud Managed Notebooks Range 24 c" \
+  ///       --network=$NETWORK \
+  ///       --addresses=192.168.0.0 \
+  ///       --purpose=VPC_PEERING
   ///
-  ///  Field value will be: `managed-notebooks-range-c`
+  /// Field value will be: `managed-notebooks-range-c`
   @$pb.TagNumber(18)
   $core.String get reservedIpRange => $_getSZ(15);
   @$pb.TagNumber(18)
@@ -2441,20 +2379,20 @@ class VirtualMachineConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasReservedIpRange() => $_has(15);
   @$pb.TagNumber(18)
-  void clearReservedIpRange() => clearField(18);
+  void clearReservedIpRange() => $_clearField(18);
 
   /// Optional. Boot image metadata used for runtime upgradeability.
   @$pb.TagNumber(19)
   VirtualMachineConfig_BootImage get bootImage => $_getN(16);
   @$pb.TagNumber(19)
   set bootImage(VirtualMachineConfig_BootImage v) {
-    setField(19, v);
+    $_setField(19, v);
   }
 
   @$pb.TagNumber(19)
   $core.bool hasBootImage() => $_has(16);
   @$pb.TagNumber(19)
-  void clearBootImage() => clearField(19);
+  void clearBootImage() => $_clearField(19);
   @$pb.TagNumber(19)
   VirtualMachineConfig_BootImage ensureBootImage() => $_ensure(16);
 }
@@ -2501,14 +2439,10 @@ class ExecutionTemplate_SchedulerAcceleratorConfig
     ..aInt64(2, _omitFieldNames ? '' : 'coreCount')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionTemplate_SchedulerAcceleratorConfig clone() =>
       ExecutionTemplate_SchedulerAcceleratorConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionTemplate_SchedulerAcceleratorConfig copyWith(
           void Function(ExecutionTemplate_SchedulerAcceleratorConfig)
               updates) =>
@@ -2537,13 +2471,13 @@ class ExecutionTemplate_SchedulerAcceleratorConfig
   ExecutionTemplate_SchedulerAcceleratorType get type => $_getN(0);
   @$pb.TagNumber(1)
   set type(ExecutionTemplate_SchedulerAcceleratorType v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// Count of cores of this accelerator.
   @$pb.TagNumber(2)
@@ -2556,7 +2490,7 @@ class ExecutionTemplate_SchedulerAcceleratorConfig
   @$pb.TagNumber(2)
   $core.bool hasCoreCount() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCoreCount() => clearField(2);
+  void clearCoreCount() => $_clearField(2);
 }
 
 /// Parameters used in Dataproc JobType executions.
@@ -2587,14 +2521,10 @@ class ExecutionTemplate_DataprocParameters extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'cluster')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionTemplate_DataprocParameters clone() =>
       ExecutionTemplate_DataprocParameters()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionTemplate_DataprocParameters copyWith(
           void Function(ExecutionTemplate_DataprocParameters) updates) =>
       super.copyWith((message) =>
@@ -2627,21 +2557,21 @@ class ExecutionTemplate_DataprocParameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCluster() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCluster() => clearField(1);
+  void clearCluster() => $_clearField(1);
 }
 
 /// Parameters used in Vertex AI JobType executions.
 class ExecutionTemplate_VertexAIParameters extends $pb.GeneratedMessage {
   factory ExecutionTemplate_VertexAIParameters({
     $core.String? network,
-    $core.Map<$core.String, $core.String>? env,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? env,
   }) {
     final $result = create();
     if (network != null) {
       $result.network = network;
     }
     if (env != null) {
-      $result.env.addAll(env);
+      $result.env.addEntries(env);
     }
     return $result;
   }
@@ -2667,14 +2597,10 @@ class ExecutionTemplate_VertexAIParameters extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.events.cloud.notebooks.v1'))
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionTemplate_VertexAIParameters clone() =>
       ExecutionTemplate_VertexAIParameters()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionTemplate_VertexAIParameters copyWith(
           void Function(ExecutionTemplate_VertexAIParameters) updates) =>
       super.copyWith((message) =>
@@ -2695,17 +2621,17 @@ class ExecutionTemplate_VertexAIParameters extends $pb.GeneratedMessage {
           ExecutionTemplate_VertexAIParameters>(create);
   static ExecutionTemplate_VertexAIParameters? _defaultInstance;
 
-  ///  The full name of the Compute Engine
-  ///  [network](https://cloud.google.com/compute/docs/networks-and-firewalls#networks)
-  ///  to which the Job should be peered. For example,
-  ///  `projects/12345/global/networks/myVPC`.
-  ///  [Format](https://cloud.google.com/compute/docs/reference/rest/v1/networks/insert)
-  ///  is of the form `projects/{project}/global/networks/{network}`.
-  ///  Where `{project}` is a project number, as in `12345`, and `{network}` is
-  ///  a network name.
+  /// The full name of the Compute Engine
+  /// [network](https://cloud.google.com/compute/docs/networks-and-firewalls#networks)
+  /// to which the Job should be peered. For example,
+  /// `projects/12345/global/networks/myVPC`.
+  /// [Format](https://cloud.google.com/compute/docs/reference/rest/v1/networks/insert)
+  /// is of the form `projects/{project}/global/networks/{network}`.
+  /// Where `{project}` is a project number, as in `12345`, and `{network}` is
+  /// a network name.
   ///
-  ///  Private services access must already be configured for the network. If
-  ///  left unspecified, the job is not peered with any network.
+  /// Private services access must already be configured for the network. If
+  /// left unspecified, the job is not peered with any network.
   @$pb.TagNumber(1)
   $core.String get network => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -2716,13 +2642,13 @@ class ExecutionTemplate_VertexAIParameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasNetwork() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNetwork() => clearField(1);
+  void clearNetwork() => $_clearField(1);
 
   /// Environment variables.
   /// At most 100 environment variables can be specified and unique.
   /// Example: `GCP_BUCKET=gs://my-bucket/samples/`
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $core.String> get env => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get env => $_getMap(1);
 }
 
 enum ExecutionTemplate_JobParameters {
@@ -2737,7 +2663,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
     ExecutionTemplate_ScaleTier? scaleTier,
     $core.String? masterType,
     ExecutionTemplate_SchedulerAcceleratorConfig? acceleratorConfig,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
     $core.String? inputNotebookFile,
     $core.String? containerImageUri,
     $core.String? outputNotebookFolder,
@@ -2761,7 +2687,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
       $result.acceleratorConfig = acceleratorConfig;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (inputNotebookFile != null) {
       $result.inputNotebookFile = inputNotebookFile;
@@ -2853,13 +2779,9 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
     ..aOS(15, _omitFieldNames ? '' : 'tensorboard')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionTemplate clone() => ExecutionTemplate()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionTemplate copyWith(void Function(ExecutionTemplate) updates) =>
       super.copyWith((message) => updates(message as ExecutionTemplate))
           as ExecutionTemplate;
@@ -2878,7 +2800,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
 
   ExecutionTemplate_JobParameters whichJobParameters() =>
       _ExecutionTemplate_JobParametersByTag[$_whichOneof(0)]!;
-  void clearJobParameters() => clearField($_whichOneof(0));
+  void clearJobParameters() => $_clearField($_whichOneof(0));
 
   /// Required. Scale tier of the hardware used for notebook execution.
   /// DEPRECATED Will be discontinued. As right now only CUSTOM is supported.
@@ -2886,62 +2808,62 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   ExecutionTemplate_ScaleTier get scaleTier => $_getN(0);
   @$pb.TagNumber(1)
   set scaleTier(ExecutionTemplate_ScaleTier v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasScaleTier() => $_has(0);
   @$pb.TagNumber(1)
-  void clearScaleTier() => clearField(1);
+  void clearScaleTier() => $_clearField(1);
 
-  ///  Specifies the type of virtual machine to use for your training
-  ///  job's master worker. You must specify this field when `scaleTier` is set to
-  ///  `CUSTOM`.
+  /// Specifies the type of virtual machine to use for your training
+  /// job's master worker. You must specify this field when `scaleTier` is set to
+  /// `CUSTOM`.
   ///
-  ///  You can use certain Compute Engine machine types directly in this field.
-  ///  The following types are supported:
+  /// You can use certain Compute Engine machine types directly in this field.
+  /// The following types are supported:
   ///
-  ///  - `n1-standard-4`
-  ///  - `n1-standard-8`
-  ///  - `n1-standard-16`
-  ///  - `n1-standard-32`
-  ///  - `n1-standard-64`
-  ///  - `n1-standard-96`
-  ///  - `n1-highmem-2`
-  ///  - `n1-highmem-4`
-  ///  - `n1-highmem-8`
-  ///  - `n1-highmem-16`
-  ///  - `n1-highmem-32`
-  ///  - `n1-highmem-64`
-  ///  - `n1-highmem-96`
-  ///  - `n1-highcpu-16`
-  ///  - `n1-highcpu-32`
-  ///  - `n1-highcpu-64`
-  ///  - `n1-highcpu-96`
-  ///
-  ///
-  ///  Alternatively, you can use the following legacy machine types:
-  ///
-  ///  - `standard`
-  ///  - `large_model`
-  ///  - `complex_model_s`
-  ///  - `complex_model_m`
-  ///  - `complex_model_l`
-  ///  - `standard_gpu`
-  ///  - `complex_model_m_gpu`
-  ///  - `complex_model_l_gpu`
-  ///  - `standard_p100`
-  ///  - `complex_model_m_p100`
-  ///  - `standard_v100`
-  ///  - `large_model_v100`
-  ///  - `complex_model_m_v100`
-  ///  - `complex_model_l_v100`
+  /// - `n1-standard-4`
+  /// - `n1-standard-8`
+  /// - `n1-standard-16`
+  /// - `n1-standard-32`
+  /// - `n1-standard-64`
+  /// - `n1-standard-96`
+  /// - `n1-highmem-2`
+  /// - `n1-highmem-4`
+  /// - `n1-highmem-8`
+  /// - `n1-highmem-16`
+  /// - `n1-highmem-32`
+  /// - `n1-highmem-64`
+  /// - `n1-highmem-96`
+  /// - `n1-highcpu-16`
+  /// - `n1-highcpu-32`
+  /// - `n1-highcpu-64`
+  /// - `n1-highcpu-96`
   ///
   ///
-  ///  Finally, if you want to use a TPU for training, specify `cloud_tpu` in this
-  ///  field. Learn more about the [special configuration options for training
-  ///  with
-  ///  TPU](https://cloud.google.com/ai-platform/training/docs/using-tpus#configuring_a_custom_tpu_machine).
+  /// Alternatively, you can use the following legacy machine types:
+  ///
+  /// - `standard`
+  /// - `large_model`
+  /// - `complex_model_s`
+  /// - `complex_model_m`
+  /// - `complex_model_l`
+  /// - `standard_gpu`
+  /// - `complex_model_m_gpu`
+  /// - `complex_model_l_gpu`
+  /// - `standard_p100`
+  /// - `complex_model_m_p100`
+  /// - `standard_v100`
+  /// - `large_model_v100`
+  /// - `complex_model_m_v100`
+  /// - `complex_model_l_v100`
+  ///
+  ///
+  /// Finally, if you want to use a TPU for training, specify `cloud_tpu` in this
+  /// field. Learn more about the [special configuration options for training
+  /// with
+  /// TPU](https://cloud.google.com/ai-platform/training/docs/using-tpus#configuring_a_custom_tpu_machine).
   @$pb.TagNumber(2)
   $core.String get masterType => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -2952,7 +2874,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMasterType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMasterType() => clearField(2);
+  void clearMasterType() => $_clearField(2);
 
   /// Configuration (count and accelerator type) for hardware running notebook
   /// execution.
@@ -2961,13 +2883,13 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
       $_getN(2);
   @$pb.TagNumber(3)
   set acceleratorConfig(ExecutionTemplate_SchedulerAcceleratorConfig v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasAcceleratorConfig() => $_has(2);
   @$pb.TagNumber(3)
-  void clearAcceleratorConfig() => clearField(3);
+  void clearAcceleratorConfig() => $_clearField(3);
   @$pb.TagNumber(3)
   ExecutionTemplate_SchedulerAcceleratorConfig ensureAcceleratorConfig() =>
       $_ensure(2);
@@ -2978,7 +2900,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   /// 'nbs-immediate'. Use fields to efficiently index between various types of
   /// executions.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(3);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(3);
 
   /// Path to the notebook file to execute.
   /// Must be in a Google Cloud Storage bucket.
@@ -2994,7 +2916,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasInputNotebookFile() => $_has(4);
   @$pb.TagNumber(5)
-  void clearInputNotebookFile() => clearField(5);
+  void clearInputNotebookFile() => $_clearField(5);
 
   /// Container Image URI to a DLVM
   /// Example: 'gcr.io/deeplearning-platform-release/base-cu100'
@@ -3010,7 +2932,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasContainerImageUri() => $_has(5);
   @$pb.TagNumber(6)
-  void clearContainerImageUri() => clearField(6);
+  void clearContainerImageUri() => $_clearField(6);
 
   /// Path to the notebook folder to write to.
   /// Must be in a Google Cloud Storage bucket path.
@@ -3026,7 +2948,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasOutputNotebookFolder() => $_has(6);
   @$pb.TagNumber(7)
-  void clearOutputNotebookFolder() => clearField(7);
+  void clearOutputNotebookFolder() => $_clearField(7);
 
   /// Parameters to be overridden in the notebook during execution.
   /// Ref https://papermill.readthedocs.io/en/latest/usage-parameterize.html on
@@ -3043,7 +2965,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasParamsYamlFile() => $_has(7);
   @$pb.TagNumber(8)
-  void clearParamsYamlFile() => clearField(8);
+  void clearParamsYamlFile() => $_clearField(8);
 
   /// Parameters used within the 'input_notebook_file' notebook.
   @$pb.TagNumber(9)
@@ -3056,7 +2978,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasParameters() => $_has(8);
   @$pb.TagNumber(9)
-  void clearParameters() => clearField(9);
+  void clearParameters() => $_clearField(9);
 
   /// The email address of a service account to use when running the execution.
   /// You must have the `iam.serviceAccounts.actAs` permission for the specified
@@ -3071,33 +2993,33 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasServiceAccount() => $_has(9);
   @$pb.TagNumber(10)
-  void clearServiceAccount() => clearField(10);
+  void clearServiceAccount() => $_clearField(10);
 
   /// The type of Job to be used on this execution.
   @$pb.TagNumber(11)
   ExecutionTemplate_JobType get jobType => $_getN(10);
   @$pb.TagNumber(11)
   set jobType(ExecutionTemplate_JobType v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasJobType() => $_has(10);
   @$pb.TagNumber(11)
-  void clearJobType() => clearField(11);
+  void clearJobType() => $_clearField(11);
 
   /// Parameters used in Dataproc JobType executions.
   @$pb.TagNumber(12)
   ExecutionTemplate_DataprocParameters get dataprocParameters => $_getN(11);
   @$pb.TagNumber(12)
   set dataprocParameters(ExecutionTemplate_DataprocParameters v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasDataprocParameters() => $_has(11);
   @$pb.TagNumber(12)
-  void clearDataprocParameters() => clearField(12);
+  void clearDataprocParameters() => $_clearField(12);
   @$pb.TagNumber(12)
   ExecutionTemplate_DataprocParameters ensureDataprocParameters() =>
       $_ensure(11);
@@ -3107,13 +3029,13 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   ExecutionTemplate_VertexAIParameters get vertexAiParameters => $_getN(12);
   @$pb.TagNumber(13)
   set vertexAiParameters(ExecutionTemplate_VertexAIParameters v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasVertexAiParameters() => $_has(12);
   @$pb.TagNumber(13)
-  void clearVertexAiParameters() => clearField(13);
+  void clearVertexAiParameters() => $_clearField(13);
   @$pb.TagNumber(13)
   ExecutionTemplate_VertexAIParameters ensureVertexAiParameters() =>
       $_ensure(12);
@@ -3131,7 +3053,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasKernelSpec() => $_has(13);
   @$pb.TagNumber(14)
-  void clearKernelSpec() => clearField(14);
+  void clearKernelSpec() => $_clearField(14);
 
   /// The name of a Vertex AI [Tensorboard] resource to which this execution
   /// will upload Tensorboard logs.
@@ -3147,7 +3069,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasTensorboard() => $_has(14);
   @$pb.TagNumber(15)
-  void clearTensorboard() => clearField(15);
+  void clearTensorboard() => $_clearField(15);
 }
 
 /// The definition of a single executed notebook.
@@ -3223,13 +3145,9 @@ class Execution extends $pb.GeneratedMessage {
     ..aOS(9, _omitFieldNames ? '' : 'jobUri')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Execution clone() => Execution()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Execution copyWith(void Function(Execution) updates) =>
       super.copyWith((message) => updates(message as Execution)) as Execution;
 
@@ -3249,13 +3167,13 @@ class Execution extends $pb.GeneratedMessage {
   ExecutionTemplate get executionTemplate => $_getN(0);
   @$pb.TagNumber(1)
   set executionTemplate(ExecutionTemplate v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasExecutionTemplate() => $_has(0);
   @$pb.TagNumber(1)
-  void clearExecutionTemplate() => clearField(1);
+  void clearExecutionTemplate() => $_clearField(1);
   @$pb.TagNumber(1)
   ExecutionTemplate ensureExecutionTemplate() => $_ensure(0);
 
@@ -3271,7 +3189,7 @@ class Execution extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearName() => clearField(2);
+  void clearName() => $_clearField(2);
 
   /// Output only. Name used for UI purposes.
   /// Name can only contain alphanumeric characters and underscores '_'.
@@ -3285,7 +3203,7 @@ class Execution extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDisplayName() => clearField(3);
+  void clearDisplayName() => $_clearField(3);
 
   /// A brief description of this execution.
   @$pb.TagNumber(4)
@@ -3298,20 +3216,20 @@ class Execution extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDescription() => clearField(4);
+  void clearDescription() => $_clearField(4);
 
   /// Output only. Time the Execution was instantiated.
   @$pb.TagNumber(5)
   $2.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
   set createTime($2.Timestamp v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
-  void clearCreateTime() => clearField(5);
+  void clearCreateTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Timestamp ensureCreateTime() => $_ensure(4);
 
@@ -3320,13 +3238,13 @@ class Execution extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
   set updateTime($2.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
-  void clearUpdateTime() => clearField(6);
+  void clearUpdateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $2.Timestamp ensureUpdateTime() => $_ensure(5);
 
@@ -3335,13 +3253,13 @@ class Execution extends $pb.GeneratedMessage {
   Execution_State get state => $_getN(6);
   @$pb.TagNumber(7)
   set state(Execution_State v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(7)
-  void clearState() => clearField(7);
+  void clearState() => $_clearField(7);
 
   /// Output notebook file generated by this execution
   @$pb.TagNumber(8)
@@ -3354,7 +3272,7 @@ class Execution extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasOutputNotebookFile() => $_has(7);
   @$pb.TagNumber(8)
-  void clearOutputNotebookFile() => clearField(8);
+  void clearOutputNotebookFile() => $_clearField(8);
 
   /// Output only. The URI of the external job used to execute the notebook.
   @$pb.TagNumber(9)
@@ -3367,7 +3285,7 @@ class Execution extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasJobUri() => $_has(8);
   @$pb.TagNumber(9)
-  void clearJobUri() => clearField(9);
+  void clearJobUri() => $_clearField(9);
 }
 
 /// Reservation Affinity for consuming Zonal reservation.
@@ -3411,13 +3329,9 @@ class ReservationAffinity extends $pb.GeneratedMessage {
     ..pPS(3, _omitFieldNames ? '' : 'values')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReservationAffinity clone() => ReservationAffinity()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReservationAffinity copyWith(void Function(ReservationAffinity) updates) =>
       super.copyWith((message) => updates(message as ReservationAffinity))
           as ReservationAffinity;
@@ -3439,13 +3353,13 @@ class ReservationAffinity extends $pb.GeneratedMessage {
   ReservationAffinity_Type get consumeReservationType => $_getN(0);
   @$pb.TagNumber(1)
   set consumeReservationType(ReservationAffinity_Type v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasConsumeReservationType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearConsumeReservationType() => clearField(1);
+  void clearConsumeReservationType() => $_clearField(1);
 
   /// Optional. Corresponds to the label key of reservation resource.
   @$pb.TagNumber(2)
@@ -3458,11 +3372,11 @@ class ReservationAffinity extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasKey() => $_has(1);
   @$pb.TagNumber(2)
-  void clearKey() => clearField(2);
+  void clearKey() => $_clearField(2);
 
   /// Optional. Corresponds to the label values of reservation resource.
   @$pb.TagNumber(3)
-  $core.List<$core.String> get values => $_getList(2);
+  $pb.PbList<$core.String> get values => $_getList(2);
 }
 
 /// Definition of a hardware accelerator. Note that not all combinations
@@ -3504,14 +3418,10 @@ class Instance_AcceleratorConfig extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'coreCount')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_AcceleratorConfig clone() =>
       Instance_AcceleratorConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_AcceleratorConfig copyWith(
           void Function(Instance_AcceleratorConfig) updates) =>
       super.copyWith(
@@ -3535,13 +3445,13 @@ class Instance_AcceleratorConfig extends $pb.GeneratedMessage {
   Instance_AcceleratorType get type => $_getN(0);
   @$pb.TagNumber(1)
   set type(Instance_AcceleratorType v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// Count of cores of this accelerator.
   @$pb.TagNumber(2)
@@ -3554,7 +3464,7 @@ class Instance_AcceleratorConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCoreCount() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCoreCount() => clearField(2);
+  void clearCoreCount() => $_clearField(2);
 }
 
 /// Guest OS features for boot disk.
@@ -3584,14 +3494,10 @@ class Instance_Disk_GuestOsFeature extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_Disk_GuestOsFeature clone() =>
       Instance_Disk_GuestOsFeature()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_Disk_GuestOsFeature copyWith(
           void Function(Instance_Disk_GuestOsFeature) updates) =>
       super.copyWith(
@@ -3611,16 +3517,16 @@ class Instance_Disk_GuestOsFeature extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<Instance_Disk_GuestOsFeature>(create);
   static Instance_Disk_GuestOsFeature? _defaultInstance;
 
-  ///  The ID of a supported feature. Read  Enabling guest operating system
-  ///  features to see a list of available options.
-  ///  Valid values:
+  /// The ID of a supported feature. Read  Enabling guest operating system
+  /// features to see a list of available options.
+  /// Valid values:
   ///
-  ///  * `FEATURE_TYPE_UNSPECIFIED`
-  ///  * `MULTI_IP_SUBNET`
-  ///  * `SECURE_BOOT`
-  ///  * `UEFI_COMPATIBLE`
-  ///  * `VIRTIO_SCSI_MULTIQUEUE`
-  ///  * `WINDOWS`
+  /// * `FEATURE_TYPE_UNSPECIFIED`
+  /// * `MULTI_IP_SUBNET`
+  /// * `SECURE_BOOT`
+  /// * `UEFI_COMPATIBLE`
+  /// * `VIRTIO_SCSI_MULTIQUEUE`
+  /// * `WINDOWS`
   @$pb.TagNumber(1)
   $core.String get type => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -3631,7 +3537,7 @@ class Instance_Disk_GuestOsFeature extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 }
 
 /// An instance-attached disk resource.
@@ -3718,13 +3624,9 @@ class Instance_Disk extends $pb.GeneratedMessage {
     ..aOS(12, _omitFieldNames ? '' : 'type')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_Disk clone() => Instance_Disk()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_Disk copyWith(void Function(Instance_Disk) updates) =>
       super.copyWith((message) => updates(message as Instance_Disk))
           as Instance_Disk;
@@ -3753,7 +3655,7 @@ class Instance_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasAutoDelete() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAutoDelete() => clearField(1);
+  void clearAutoDelete() => $_clearField(1);
 
   /// Indicates that this is a boot disk. The virtual machine will use the
   /// first partition of the disk for its root filesystem.
@@ -3767,16 +3669,16 @@ class Instance_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasBoot() => $_has(1);
   @$pb.TagNumber(2)
-  void clearBoot() => clearField(2);
+  void clearBoot() => $_clearField(2);
 
-  ///  Indicates a unique device name of your choice that is reflected into the
-  ///  `/dev/disk/by-id/google-*` tree of a Linux operating system running
-  ///  within the instance. This name can be used to reference the device for
-  ///  mounting, resizing, and so on, from within the instance.
+  /// Indicates a unique device name of your choice that is reflected into the
+  /// `/dev/disk/by-id/google-*` tree of a Linux operating system running
+  /// within the instance. This name can be used to reference the device for
+  /// mounting, resizing, and so on, from within the instance.
   ///
-  ///  If not specified, the server chooses a default device name to apply to
-  ///  this disk, in the form persistent-disk-x, where x is a number assigned by
-  ///  Google Compute Engine.This field is only applicable for persistent disks.
+  /// If not specified, the server chooses a default device name to apply to
+  /// this disk, in the form persistent-disk-x, where x is a number assigned by
+  /// Google Compute Engine.This field is only applicable for persistent disks.
   @$pb.TagNumber(3)
   $core.String get deviceName => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -3787,7 +3689,7 @@ class Instance_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDeviceName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDeviceName() => clearField(3);
+  void clearDeviceName() => $_clearField(3);
 
   /// Indicates the size of the disk in base-2 GB.
   @$pb.TagNumber(4)
@@ -3800,13 +3702,13 @@ class Instance_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDiskSizeGb() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDiskSizeGb() => clearField(4);
+  void clearDiskSizeGb() => $_clearField(4);
 
   /// Indicates a list of features to enable on the guest operating system.
   /// Applicable only for bootable images. Read  Enabling guest operating
   /// system features to see a list of available options.
   @$pb.TagNumber(5)
-  $core.List<Instance_Disk_GuestOsFeature> get guestOsFeatures => $_getList(4);
+  $pb.PbList<Instance_Disk_GuestOsFeature> get guestOsFeatures => $_getList(4);
 
   /// A zero-based index to this disk, where 0 is reserved for the
   /// boot disk. If you have many disks attached to an instance, each disk
@@ -3821,18 +3723,18 @@ class Instance_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasIndex() => $_has(5);
   @$pb.TagNumber(6)
-  void clearIndex() => clearField(6);
+  void clearIndex() => $_clearField(6);
 
-  ///  Indicates the disk interface to use for attaching this disk, which is
-  ///  either SCSI or NVME. The default is SCSI. Persistent disks must always
-  ///  use SCSI and the request will fail if you attempt to attach a persistent
-  ///  disk in any other format than SCSI. Local SSDs can use either NVME or
-  ///  SCSI. For performance characteristics of SCSI over NVMe, see Local SSD
-  ///  performance.
-  ///  Valid values:
+  /// Indicates the disk interface to use for attaching this disk, which is
+  /// either SCSI or NVME. The default is SCSI. Persistent disks must always
+  /// use SCSI and the request will fail if you attempt to attach a persistent
+  /// disk in any other format than SCSI. Local SSDs can use either NVME or
+  /// SCSI. For performance characteristics of SCSI over NVMe, see Local SSD
+  /// performance.
+  /// Valid values:
   ///
-  ///  * `NVME`
-  ///  * `SCSI`
+  /// * `NVME`
+  /// * `SCSI`
   @$pb.TagNumber(7)
   $core.String get interface => $_getSZ(6);
   @$pb.TagNumber(7)
@@ -3843,7 +3745,7 @@ class Instance_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasInterface() => $_has(6);
   @$pb.TagNumber(7)
-  void clearInterface() => clearField(7);
+  void clearInterface() => $_clearField(7);
 
   /// Type of the resource. Always compute#attachedDisk for attached
   /// disks.
@@ -3857,20 +3759,20 @@ class Instance_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasKind() => $_has(7);
   @$pb.TagNumber(8)
-  void clearKind() => clearField(8);
+  void clearKind() => $_clearField(8);
 
   /// A list of publicly visible licenses. Reserved for Google's use.
   /// A License represents billing and aggregate usage data for public
   /// and marketplace images.
   @$pb.TagNumber(9)
-  $core.List<$core.String> get licenses => $_getList(8);
+  $pb.PbList<$core.String> get licenses => $_getList(8);
 
-  ///  The mode in which to attach this disk, either `READ_WRITE` or
-  ///  `READ_ONLY`. If not specified, the default is to attach the disk in
-  ///  `READ_WRITE` mode. Valid values:
+  /// The mode in which to attach this disk, either `READ_WRITE` or
+  /// `READ_ONLY`. If not specified, the default is to attach the disk in
+  /// `READ_WRITE` mode. Valid values:
   ///
-  ///  * `READ_ONLY`
-  ///  * `READ_WRITE`
+  /// * `READ_ONLY`
+  /// * `READ_WRITE`
   @$pb.TagNumber(10)
   $core.String get mode => $_getSZ(9);
   @$pb.TagNumber(10)
@@ -3881,7 +3783,7 @@ class Instance_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasMode() => $_has(9);
   @$pb.TagNumber(10)
-  void clearMode() => clearField(10);
+  void clearMode() => $_clearField(10);
 
   /// Indicates a valid partial or full URL to an existing Persistent Disk
   /// resource.
@@ -3895,13 +3797,13 @@ class Instance_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasSource() => $_has(10);
   @$pb.TagNumber(11)
-  void clearSource() => clearField(11);
+  void clearSource() => $_clearField(11);
 
-  ///  Indicates the type of the disk, either `SCRATCH` or `PERSISTENT`.
-  ///  Valid values:
+  /// Indicates the type of the disk, either `SCRATCH` or `PERSISTENT`.
+  /// Valid values:
   ///
-  ///  * `PERSISTENT`
-  ///  * `SCRATCH`
+  /// * `PERSISTENT`
+  /// * `SCRATCH`
   @$pb.TagNumber(12)
   $core.String get type => $_getSZ(11);
   @$pb.TagNumber(12)
@@ -3912,7 +3814,7 @@ class Instance_Disk extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasType() => $_has(11);
   @$pb.TagNumber(12)
-  void clearType() => clearField(12);
+  void clearType() => $_clearField(12);
 }
 
 /// A set of Shielded Instance options.
@@ -3955,14 +3857,10 @@ class Instance_ShieldedInstanceConfig extends $pb.GeneratedMessage {
     ..aOB(3, _omitFieldNames ? '' : 'enableIntegrityMonitoring')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_ShieldedInstanceConfig clone() =>
       Instance_ShieldedInstanceConfig()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_ShieldedInstanceConfig copyWith(
           void Function(Instance_ShieldedInstanceConfig) updates) =>
       super.copyWith(
@@ -3983,11 +3881,11 @@ class Instance_ShieldedInstanceConfig extends $pb.GeneratedMessage {
           create);
   static Instance_ShieldedInstanceConfig? _defaultInstance;
 
-  ///  Defines whether the instance has Secure Boot enabled.
+  /// Defines whether the instance has Secure Boot enabled.
   ///
-  ///  Secure Boot helps ensure that the system only runs authentic software by
-  ///  verifying the digital signature of all boot components, and halting the
-  ///  boot process if signature verification fails. Disabled by default.
+  /// Secure Boot helps ensure that the system only runs authentic software by
+  /// verifying the digital signature of all boot components, and halting the
+  /// boot process if signature verification fails. Disabled by default.
   @$pb.TagNumber(1)
   $core.bool get enableSecureBoot => $_getBF(0);
   @$pb.TagNumber(1)
@@ -3998,7 +3896,7 @@ class Instance_ShieldedInstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEnableSecureBoot() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEnableSecureBoot() => clearField(1);
+  void clearEnableSecureBoot() => $_clearField(1);
 
   /// Defines whether the instance has the vTPM enabled. Enabled by default.
   @$pb.TagNumber(2)
@@ -4011,14 +3909,14 @@ class Instance_ShieldedInstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasEnableVtpm() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEnableVtpm() => clearField(2);
+  void clearEnableVtpm() => $_clearField(2);
 
-  ///  Defines whether the instance has integrity monitoring enabled.
+  /// Defines whether the instance has integrity monitoring enabled.
   ///
-  ///  Enables monitoring and attestation of the boot integrity of the instance.
-  ///  The attestation is performed against the integrity policy baseline. This
-  ///  baseline is initially derived from the implicitly trusted boot image when
-  ///  the instance is created. Enabled by default.
+  /// Enables monitoring and attestation of the boot integrity of the instance.
+  /// The attestation is performed against the integrity policy baseline. This
+  /// baseline is initially derived from the implicitly trusted boot image when
+  /// the instance is created. Enabled by default.
   @$pb.TagNumber(3)
   $core.bool get enableIntegrityMonitoring => $_getBF(2);
   @$pb.TagNumber(3)
@@ -4029,7 +3927,7 @@ class Instance_ShieldedInstanceConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEnableIntegrityMonitoring() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEnableIntegrityMonitoring() => clearField(3);
+  void clearEnableIntegrityMonitoring() => $_clearField(3);
 }
 
 /// The entry of VM image upgrade history.
@@ -4113,14 +4011,10 @@ class Instance_UpgradeHistoryEntry extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'targetVersion')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_UpgradeHistoryEntry clone() =>
       Instance_UpgradeHistoryEntry()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance_UpgradeHistoryEntry copyWith(
           void Function(Instance_UpgradeHistoryEntry) updates) =>
       super.copyWith(
@@ -4151,7 +4045,7 @@ class Instance_UpgradeHistoryEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSnapshot() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSnapshot() => clearField(1);
+  void clearSnapshot() => $_clearField(1);
 
   /// The VM image before this instance upgrade.
   @$pb.TagNumber(2)
@@ -4164,7 +4058,7 @@ class Instance_UpgradeHistoryEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasVmImage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearVmImage() => clearField(2);
+  void clearVmImage() => $_clearField(2);
 
   /// The container image before this instance upgrade.
   @$pb.TagNumber(3)
@@ -4177,7 +4071,7 @@ class Instance_UpgradeHistoryEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasContainerImage() => $_has(2);
   @$pb.TagNumber(3)
-  void clearContainerImage() => clearField(3);
+  void clearContainerImage() => $_clearField(3);
 
   /// The framework of this notebook instance.
   @$pb.TagNumber(4)
@@ -4190,7 +4084,7 @@ class Instance_UpgradeHistoryEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasFramework() => $_has(3);
   @$pb.TagNumber(4)
-  void clearFramework() => clearField(4);
+  void clearFramework() => $_clearField(4);
 
   /// The version of the notebook instance before this upgrade.
   @$pb.TagNumber(5)
@@ -4203,33 +4097,33 @@ class Instance_UpgradeHistoryEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasVersion() => $_has(4);
   @$pb.TagNumber(5)
-  void clearVersion() => clearField(5);
+  void clearVersion() => $_clearField(5);
 
   /// The state of this instance upgrade history entry.
   @$pb.TagNumber(6)
   Instance_UpgradeHistoryEntry_State get state => $_getN(5);
   @$pb.TagNumber(6)
   set state(Instance_UpgradeHistoryEntry_State v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(6)
-  void clearState() => clearField(6);
+  void clearState() => $_clearField(6);
 
   /// The time that this instance upgrade history entry is created.
   @$pb.TagNumber(7)
   $2.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
   set createTime($2.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
-  void clearCreateTime() => clearField(7);
+  void clearCreateTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $2.Timestamp ensureCreateTime() => $_ensure(6);
 
@@ -4244,20 +4138,20 @@ class Instance_UpgradeHistoryEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasTargetImage() => $_has(7);
   @$pb.TagNumber(8)
-  void clearTargetImage() => clearField(8);
+  void clearTargetImage() => $_clearField(8);
 
   /// Action. Rolloback or Upgrade.
   @$pb.TagNumber(9)
   Instance_UpgradeHistoryEntry_Action get action => $_getN(8);
   @$pb.TagNumber(9)
   set action(Instance_UpgradeHistoryEntry_Action v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasAction() => $_has(8);
   @$pb.TagNumber(9)
-  void clearAction() => clearField(9);
+  void clearAction() => $_clearField(9);
 
   /// Target VM Version, like m63.
   @$pb.TagNumber(10)
@@ -4270,7 +4164,7 @@ class Instance_UpgradeHistoryEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasTargetVersion() => $_has(9);
   @$pb.TagNumber(10)
-  void clearTargetVersion() => clearField(10);
+  void clearTargetVersion() => $_clearField(10);
 }
 
 enum Instance_Environment { vmImage, containerImage, notSet }
@@ -4293,8 +4187,8 @@ class Instance extends $pb.GeneratedMessage {
     $core.bool? noProxyAccess,
     $core.String? network,
     $core.String? subnet,
-    $core.Map<$core.String, $core.String>? labels,
-    $core.Map<$core.String, $core.String>? metadata,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? metadata,
     $2.Timestamp? createTime,
     $2.Timestamp? updateTime,
     $core.Iterable<Instance_Disk>? disks,
@@ -4354,10 +4248,10 @@ class Instance extends $pb.GeneratedMessage {
       $result.subnet = subnet;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     if (metadata != null) {
-      $result.metadata.addAll(metadata);
+      $result.metadata.addEntries(metadata);
     }
     if (createTime != null) {
       $result.createTime = createTime;
@@ -4471,13 +4365,9 @@ class Instance extends $pb.GeneratedMessage {
     ..aOB(39, _omitFieldNames ? '' : 'canIpForward')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance clone() => Instance()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Instance copyWith(void Function(Instance) updates) =>
       super.copyWith((message) => updates(message as Instance)) as Instance;
 
@@ -4494,7 +4384,7 @@ class Instance extends $pb.GeneratedMessage {
 
   Instance_Environment whichEnvironment() =>
       _Instance_EnvironmentByTag[$_whichOneof(0)]!;
-  void clearEnvironment() => clearField($_whichOneof(0));
+  void clearEnvironment() => $_clearField($_whichOneof(0));
 
   /// Output only. The name of this notebook instance. Format:
   /// `projects/{project_id}/locations/{location}/instances/{instance_id}`
@@ -4508,20 +4398,20 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Use a Compute Engine VM image to start the notebook instance.
   @$pb.TagNumber(2)
   VmImage get vmImage => $_getN(1);
   @$pb.TagNumber(2)
   set vmImage(VmImage v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasVmImage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearVmImage() => clearField(2);
+  void clearVmImage() => $_clearField(2);
   @$pb.TagNumber(2)
   VmImage ensureVmImage() => $_ensure(1);
 
@@ -4530,13 +4420,13 @@ class Instance extends $pb.GeneratedMessage {
   ContainerImage get containerImage => $_getN(2);
   @$pb.TagNumber(3)
   set containerImage(ContainerImage v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasContainerImage() => $_has(2);
   @$pb.TagNumber(3)
-  void clearContainerImage() => clearField(3);
+  void clearContainerImage() => $_clearField(3);
   @$pb.TagNumber(3)
   ContainerImage ensureContainerImage() => $_ensure(2);
 
@@ -4553,7 +4443,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasPostStartupScript() => $_has(3);
   @$pb.TagNumber(4)
-  void clearPostStartupScript() => clearField(4);
+  void clearPostStartupScript() => $_clearField(4);
 
   /// Output only. The proxy endpoint that is used to access the Jupyter
   /// notebook.
@@ -4567,16 +4457,16 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasProxyUri() => $_has(4);
   @$pb.TagNumber(5)
-  void clearProxyUri() => clearField(5);
+  void clearProxyUri() => $_clearField(5);
 
-  ///  The service account on this instance, giving access to other Google
-  ///  Cloud services.
-  ///  You can use any service account within the same project, but you
-  ///  must have the service account user permission to use the instance.
+  /// The service account on this instance, giving access to other Google
+  /// Cloud services.
+  /// You can use any service account within the same project, but you
+  /// must have the service account user permission to use the instance.
   ///
-  ///  If not specified, the [Compute Engine default service
-  ///  account](https://cloud.google.com/compute/docs/access/service-accounts#default_service_account)
-  ///  is used.
+  /// If not specified, the [Compute Engine default service
+  /// account](https://cloud.google.com/compute/docs/access/service-accounts#default_service_account)
+  /// is used.
   @$pb.TagNumber(7)
   $core.String get serviceAccount => $_getSZ(5);
   @$pb.TagNumber(7)
@@ -4587,7 +4477,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasServiceAccount() => $_has(5);
   @$pb.TagNumber(7)
-  void clearServiceAccount() => clearField(7);
+  void clearServiceAccount() => $_clearField(7);
 
   /// Required. The [Compute Engine machine
   /// type](https://cloud.google.com/compute/docs/machine-types) of this
@@ -4602,7 +4492,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasMachineType() => $_has(6);
   @$pb.TagNumber(8)
-  void clearMachineType() => clearField(8);
+  void clearMachineType() => $_clearField(8);
 
   /// The hardware accelerator used on this instance. If you use
   /// accelerators, make sure that your configuration has
@@ -4612,13 +4502,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_AcceleratorConfig get acceleratorConfig => $_getN(7);
   @$pb.TagNumber(9)
   set acceleratorConfig(Instance_AcceleratorConfig v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasAcceleratorConfig() => $_has(7);
   @$pb.TagNumber(9)
-  void clearAcceleratorConfig() => clearField(9);
+  void clearAcceleratorConfig() => $_clearField(9);
   @$pb.TagNumber(9)
   Instance_AcceleratorConfig ensureAcceleratorConfig() => $_ensure(7);
 
@@ -4627,13 +4517,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_State get state => $_getN(8);
   @$pb.TagNumber(10)
   set state(Instance_State v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasState() => $_has(8);
   @$pb.TagNumber(10)
-  void clearState() => clearField(10);
+  void clearState() => $_clearField(10);
 
   /// Whether the end user authorizes Google Cloud to install GPU driver
   /// on this instance.
@@ -4649,7 +4539,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasInstallGpuDriver() => $_has(9);
   @$pb.TagNumber(11)
-  void clearInstallGpuDriver() => clearField(11);
+  void clearInstallGpuDriver() => $_clearField(11);
 
   /// Specify a custom Cloud Storage path where the GPU driver is stored.
   /// If not specified, we'll automatically choose from official GPU drivers.
@@ -4663,7 +4553,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasCustomGpuDriverPath() => $_has(10);
   @$pb.TagNumber(12)
-  void clearCustomGpuDriverPath() => clearField(12);
+  void clearCustomGpuDriverPath() => $_clearField(12);
 
   /// If true, no external IP will be assigned to this instance.
   @$pb.TagNumber(17)
@@ -4676,7 +4566,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $core.bool hasNoPublicIp() => $_has(11);
   @$pb.TagNumber(17)
-  void clearNoPublicIp() => clearField(17);
+  void clearNoPublicIp() => $_clearField(17);
 
   /// If true, the notebook instance will not register with the proxy.
   @$pb.TagNumber(18)
@@ -4689,7 +4579,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasNoProxyAccess() => $_has(12);
   @$pb.TagNumber(18)
-  void clearNoProxyAccess() => clearField(18);
+  void clearNoProxyAccess() => $_clearField(18);
 
   /// The name of the VPC that this instance is in.
   /// Format:
@@ -4704,7 +4594,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   $core.bool hasNetwork() => $_has(13);
   @$pb.TagNumber(19)
-  void clearNetwork() => clearField(19);
+  void clearNetwork() => $_clearField(19);
 
   /// The name of the subnet that this instance is in.
   /// Format:
@@ -4719,29 +4609,29 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   $core.bool hasSubnet() => $_has(14);
   @$pb.TagNumber(20)
-  void clearSubnet() => clearField(20);
+  void clearSubnet() => $_clearField(20);
 
   /// Labels to apply to this instance.
   /// These can be later modified by the setLabels method.
   @$pb.TagNumber(21)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(15);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(15);
 
   /// Custom metadata to apply to this instance.
   @$pb.TagNumber(22)
-  $core.Map<$core.String, $core.String> get metadata => $_getMap(16);
+  $pb.PbMap<$core.String, $core.String> get metadata => $_getMap(16);
 
   /// Output only. Instance creation time.
   @$pb.TagNumber(23)
   $2.Timestamp get createTime => $_getN(17);
   @$pb.TagNumber(23)
   set createTime($2.Timestamp v) {
-    setField(23, v);
+    $_setField(23, v);
   }
 
   @$pb.TagNumber(23)
   $core.bool hasCreateTime() => $_has(17);
   @$pb.TagNumber(23)
-  void clearCreateTime() => clearField(23);
+  void clearCreateTime() => $_clearField(23);
   @$pb.TagNumber(23)
   $2.Timestamp ensureCreateTime() => $_ensure(17);
 
@@ -4750,23 +4640,23 @@ class Instance extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(18);
   @$pb.TagNumber(24)
   set updateTime($2.Timestamp v) {
-    setField(24, v);
+    $_setField(24, v);
   }
 
   @$pb.TagNumber(24)
   $core.bool hasUpdateTime() => $_has(18);
   @$pb.TagNumber(24)
-  void clearUpdateTime() => clearField(24);
+  void clearUpdateTime() => $_clearField(24);
   @$pb.TagNumber(24)
   $2.Timestamp ensureUpdateTime() => $_ensure(18);
 
   /// Output only. Attached disks to notebook instance.
   @$pb.TagNumber(28)
-  $core.List<Instance_Disk> get disks => $_getList(19);
+  $pb.PbList<Instance_Disk> get disks => $_getList(19);
 
   /// The upgrade history of this instance.
   @$pb.TagNumber(29)
-  $core.List<Instance_UpgradeHistoryEntry> get upgradeHistory => $_getList(20);
+  $pb.PbList<Instance_UpgradeHistoryEntry> get upgradeHistory => $_getList(20);
 
   /// Optional. Shielded VM configuration.
   /// [Images using supported Shielded VM
@@ -4775,34 +4665,34 @@ class Instance extends $pb.GeneratedMessage {
   Instance_ShieldedInstanceConfig get shieldedInstanceConfig => $_getN(21);
   @$pb.TagNumber(30)
   set shieldedInstanceConfig(Instance_ShieldedInstanceConfig v) {
-    setField(30, v);
+    $_setField(30, v);
   }
 
   @$pb.TagNumber(30)
   $core.bool hasShieldedInstanceConfig() => $_has(21);
   @$pb.TagNumber(30)
-  void clearShieldedInstanceConfig() => clearField(30);
+  void clearShieldedInstanceConfig() => $_clearField(30);
   @$pb.TagNumber(30)
   Instance_ShieldedInstanceConfig ensureShieldedInstanceConfig() =>
       $_ensure(21);
 
-  ///  Optional. The URIs of service account scopes to be included in
-  ///  Compute Engine instances.
+  /// Optional. The URIs of service account scopes to be included in
+  /// Compute Engine instances.
   ///
-  ///  If not specified, the following
-  ///  [scopes](https://cloud.google.com/compute/docs/access/service-accounts#accesscopesiam)
-  ///  are defined:
-  ///   - https://www.googleapis.com/auth/cloud-platform
-  ///   - https://www.googleapis.com/auth/userinfo.email
-  ///  If not using default scopes, you need at least:
-  ///     https://www.googleapis.com/auth/compute
+  /// If not specified, the following
+  /// [scopes](https://cloud.google.com/compute/docs/access/service-accounts#accesscopesiam)
+  /// are defined:
+  ///  - https://www.googleapis.com/auth/cloud-platform
+  ///  - https://www.googleapis.com/auth/userinfo.email
+  /// If not using default scopes, you need at least:
+  ///    https://www.googleapis.com/auth/compute
   @$pb.TagNumber(31)
-  $core.List<$core.String> get serviceAccountScopes => $_getList(22);
+  $pb.PbList<$core.String> get serviceAccountScopes => $_getList(22);
 
   /// Optional. The Compute Engine tags to add to runtime (see [Tagging
   /// instances](https://cloud.google.com/compute/docs/label-or-tag-resources#tags)).
   @$pb.TagNumber(32)
-  $core.List<$core.String> get tags => $_getList(23);
+  $pb.PbList<$core.String> get tags => $_getList(23);
 
   /// Optional. The type of vNIC to be used on this interface. This may be gVNIC
   /// or VirtioNet.
@@ -4810,13 +4700,13 @@ class Instance extends $pb.GeneratedMessage {
   Instance_NicType get nicType => $_getN(24);
   @$pb.TagNumber(33)
   set nicType(Instance_NicType v) {
-    setField(33, v);
+    $_setField(33, v);
   }
 
   @$pb.TagNumber(33)
   $core.bool hasNicType() => $_has(24);
   @$pb.TagNumber(33)
-  void clearNicType() => clearField(33);
+  void clearNicType() => $_clearField(33);
 
   /// Optional. The optional reservation affinity. Setting this field will apply
   /// the specified [Zonal Compute
@@ -4826,13 +4716,13 @@ class Instance extends $pb.GeneratedMessage {
   ReservationAffinity get reservationAffinity => $_getN(25);
   @$pb.TagNumber(34)
   set reservationAffinity(ReservationAffinity v) {
-    setField(34, v);
+    $_setField(34, v);
   }
 
   @$pb.TagNumber(34)
   $core.bool hasReservationAffinity() => $_has(25);
   @$pb.TagNumber(34)
-  void clearReservationAffinity() => clearField(34);
+  void clearReservationAffinity() => $_clearField(34);
   @$pb.TagNumber(34)
   ReservationAffinity ensureReservationAffinity() => $_ensure(25);
 
@@ -4848,7 +4738,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(36)
   $core.bool hasCreator() => $_has(26);
   @$pb.TagNumber(36)
-  void clearCreator() => clearField(36);
+  void clearCreator() => $_clearField(36);
 
   /// Optional. Flag to enable ip forwarding or not, default false/off.
   /// https://cloud.google.com/vpc/docs/using-routes#canipforward
@@ -4862,7 +4752,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(39)
   $core.bool hasCanIpForward() => $_has(27);
   @$pb.TagNumber(39)
-  void clearCanIpForward() => clearField(39);
+  void clearCanIpForward() => $_clearField(39);
 }
 
 /// The definition of a schedule.
@@ -4945,13 +4835,9 @@ class Schedule extends $pb.GeneratedMessage {
         subBuilder: Execution.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Schedule clone() => Schedule()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Schedule copyWith(void Function(Schedule) updates) =>
       super.copyWith((message) => updates(message as Schedule)) as Schedule;
 
@@ -4978,7 +4864,7 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. Display name used for UI purposes.
   /// Name can only contain alphanumeric characters, hyphens `-`,
@@ -4993,7 +4879,7 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// A brief description of this environment.
   @$pb.TagNumber(3)
@@ -5006,19 +4892,19 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   @$pb.TagNumber(4)
   Schedule_State get state => $_getN(3);
   @$pb.TagNumber(4)
   set state(Schedule_State v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
-  void clearState() => clearField(4);
+  void clearState() => $_clearField(4);
 
   /// Cron-tab formatted schedule by which the job will execute.
   /// Format: minute, hour, day of month, month, day of week,
@@ -5034,16 +4920,16 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasCronSchedule() => $_has(4);
   @$pb.TagNumber(5)
-  void clearCronSchedule() => clearField(5);
+  void clearCronSchedule() => $_clearField(5);
 
-  ///  Timezone on which the cron_schedule.
-  ///  The value of this field must be a time zone name from the tz database.
-  ///  TZ Database: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  /// Timezone on which the cron_schedule.
+  /// The value of this field must be a time zone name from the tz database.
+  /// TZ Database: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   ///
-  ///  Note that some time zones include a provision for daylight savings time.
-  ///  The rules for daylight saving time are determined by the chosen tz.
-  ///  For UTC use the string "utc". If a time zone is not specified,
-  ///  the default will be in UTC (also known as GMT).
+  /// Note that some time zones include a provision for daylight savings time.
+  /// The rules for daylight saving time are determined by the chosen tz.
+  /// For UTC use the string "utc". If a time zone is not specified,
+  /// the default will be in UTC (also known as GMT).
   @$pb.TagNumber(6)
   $core.String get timeZone => $_getSZ(5);
   @$pb.TagNumber(6)
@@ -5054,20 +4940,20 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasTimeZone() => $_has(5);
   @$pb.TagNumber(6)
-  void clearTimeZone() => clearField(6);
+  void clearTimeZone() => $_clearField(6);
 
   /// Output only. Time the schedule was created.
   @$pb.TagNumber(7)
   $2.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
   set createTime($2.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
-  void clearCreateTime() => clearField(7);
+  void clearCreateTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $2.Timestamp ensureCreateTime() => $_ensure(6);
 
@@ -5076,13 +4962,13 @@ class Schedule extends $pb.GeneratedMessage {
   $2.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
   set updateTime($2.Timestamp v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
-  void clearUpdateTime() => clearField(8);
+  void clearUpdateTime() => $_clearField(8);
   @$pb.TagNumber(8)
   $2.Timestamp ensureUpdateTime() => $_ensure(7);
 
@@ -5091,20 +4977,20 @@ class Schedule extends $pb.GeneratedMessage {
   ExecutionTemplate get executionTemplate => $_getN(8);
   @$pb.TagNumber(9)
   set executionTemplate(ExecutionTemplate v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasExecutionTemplate() => $_has(8);
   @$pb.TagNumber(9)
-  void clearExecutionTemplate() => clearField(9);
+  void clearExecutionTemplate() => $_clearField(9);
   @$pb.TagNumber(9)
   ExecutionTemplate ensureExecutionTemplate() => $_ensure(8);
 
   /// Output only. The most recent execution names triggered from this schedule
   /// and their corresponding states.
   @$pb.TagNumber(10)
-  $core.List<Execution> get recentExecutions => $_getList(9);
+  $pb.PbList<Execution> get recentExecutions => $_getList(9);
 }
 
 /// The data within all Runtime events.
@@ -5135,13 +5021,9 @@ class RuntimeEventData extends $pb.GeneratedMessage {
         subBuilder: Runtime.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeEventData clone() => RuntimeEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RuntimeEventData copyWith(void Function(RuntimeEventData) updates) =>
       super.copyWith((message) => updates(message as RuntimeEventData))
           as RuntimeEventData;
@@ -5163,13 +5045,13 @@ class RuntimeEventData extends $pb.GeneratedMessage {
   Runtime get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Runtime v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Runtime ensurePayload() => $_ensure(0);
 }
@@ -5202,13 +5084,9 @@ class ExecutionEventData extends $pb.GeneratedMessage {
         subBuilder: Execution.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionEventData clone() => ExecutionEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecutionEventData copyWith(void Function(ExecutionEventData) updates) =>
       super.copyWith((message) => updates(message as ExecutionEventData))
           as ExecutionEventData;
@@ -5230,13 +5108,13 @@ class ExecutionEventData extends $pb.GeneratedMessage {
   Execution get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Execution v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Execution ensurePayload() => $_ensure(0);
 }
@@ -5269,13 +5147,9 @@ class InstanceEventData extends $pb.GeneratedMessage {
         subBuilder: Instance.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData clone() => InstanceEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   InstanceEventData copyWith(void Function(InstanceEventData) updates) =>
       super.copyWith((message) => updates(message as InstanceEventData))
           as InstanceEventData;
@@ -5297,13 +5171,13 @@ class InstanceEventData extends $pb.GeneratedMessage {
   Instance get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Instance v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Instance ensurePayload() => $_ensure(0);
 }
@@ -5336,13 +5210,9 @@ class ScheduleEventData extends $pb.GeneratedMessage {
         subBuilder: Schedule.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScheduleEventData clone() => ScheduleEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ScheduleEventData copyWith(void Function(ScheduleEventData) updates) =>
       super.copyWith((message) => updates(message as ScheduleEventData))
           as ScheduleEventData;
@@ -5364,13 +5234,13 @@ class ScheduleEventData extends $pb.GeneratedMessage {
   Schedule get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Schedule v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Schedule ensurePayload() => $_ensure(0);
 }
@@ -5403,14 +5273,10 @@ class EnvironmentEventData extends $pb.GeneratedMessage {
         subBuilder: Environment.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnvironmentEventData clone() =>
       EnvironmentEventData()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnvironmentEventData copyWith(void Function(EnvironmentEventData) updates) =>
       super.copyWith((message) => updates(message as EnvironmentEventData))
           as EnvironmentEventData;
@@ -5432,13 +5298,13 @@ class EnvironmentEventData extends $pb.GeneratedMessage {
   Environment get payload => $_getN(0);
   @$pb.TagNumber(1)
   set payload(Environment v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPayload() => clearField(1);
+  void clearPayload() => $_clearField(1);
   @$pb.TagNumber(1)
   Environment ensurePayload() => $_ensure(0);
 }

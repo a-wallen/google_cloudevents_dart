@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/events/firebase/database/v1/events.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,13 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $1;
+import 'data.pb.dart' as $55;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// The CloudEvent raised when a ref is created in the Firebase Realtime
 /// Database.
 class ReferenceCreatedEvent extends $pb.GeneratedMessage {
   factory ReferenceCreatedEvent({
-    $1.ReferenceEventData? data,
+    $55.ReferenceEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -40,18 +42,14 @@ class ReferenceCreatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.firebase.database.v1'),
       createEmptyInstance: create)
-    ..aOM<$1.ReferenceEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $1.ReferenceEventData.create)
+    ..aOM<$55.ReferenceEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $55.ReferenceEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReferenceCreatedEvent clone() =>
       ReferenceCreatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReferenceCreatedEvent copyWith(
           void Function(ReferenceCreatedEvent) updates) =>
       super.copyWith((message) => updates(message as ReferenceCreatedEvent))
@@ -71,25 +69,25 @@ class ReferenceCreatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $1.ReferenceEventData get data => $_getN(0);
+  $55.ReferenceEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($1.ReferenceEventData v) {
-    setField(1, v);
+  set data($55.ReferenceEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $1.ReferenceEventData ensureData() => $_ensure(0);
+  $55.ReferenceEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a reference is updated in the Firebase Realtime
 /// Database.
 class ReferenceUpdatedEvent extends $pb.GeneratedMessage {
   factory ReferenceUpdatedEvent({
-    $1.ReferenceEventData? data,
+    $55.ReferenceEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -110,18 +108,14 @@ class ReferenceUpdatedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.firebase.database.v1'),
       createEmptyInstance: create)
-    ..aOM<$1.ReferenceEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $1.ReferenceEventData.create)
+    ..aOM<$55.ReferenceEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $55.ReferenceEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReferenceUpdatedEvent clone() =>
       ReferenceUpdatedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReferenceUpdatedEvent copyWith(
           void Function(ReferenceUpdatedEvent) updates) =>
       super.copyWith((message) => updates(message as ReferenceUpdatedEvent))
@@ -141,25 +135,25 @@ class ReferenceUpdatedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $1.ReferenceEventData get data => $_getN(0);
+  $55.ReferenceEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($1.ReferenceEventData v) {
-    setField(1, v);
+  set data($55.ReferenceEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $1.ReferenceEventData ensureData() => $_ensure(0);
+  $55.ReferenceEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a reference is deleted in the Firebase Realtime
 /// Database.
 class ReferenceDeletedEvent extends $pb.GeneratedMessage {
   factory ReferenceDeletedEvent({
-    $1.ReferenceEventData? data,
+    $55.ReferenceEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -180,18 +174,14 @@ class ReferenceDeletedEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.firebase.database.v1'),
       createEmptyInstance: create)
-    ..aOM<$1.ReferenceEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $1.ReferenceEventData.create)
+    ..aOM<$55.ReferenceEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $55.ReferenceEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReferenceDeletedEvent clone() =>
       ReferenceDeletedEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReferenceDeletedEvent copyWith(
           void Function(ReferenceDeletedEvent) updates) =>
       super.copyWith((message) => updates(message as ReferenceDeletedEvent))
@@ -211,25 +201,25 @@ class ReferenceDeletedEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $1.ReferenceEventData get data => $_getN(0);
+  $55.ReferenceEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($1.ReferenceEventData v) {
-    setField(1, v);
+  set data($55.ReferenceEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $1.ReferenceEventData ensureData() => $_ensure(0);
+  $55.ReferenceEventData ensureData() => $_ensure(0);
 }
 
 /// The CloudEvent raised when a reference is written (created, updated or
 /// deleted) in the Firebase Realtime Database.
 class ReferenceWrittenEvent extends $pb.GeneratedMessage {
   factory ReferenceWrittenEvent({
-    $1.ReferenceEventData? data,
+    $55.ReferenceEventData? data,
   }) {
     final $result = create();
     if (data != null) {
@@ -250,18 +240,14 @@ class ReferenceWrittenEvent extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.events.firebase.database.v1'),
       createEmptyInstance: create)
-    ..aOM<$1.ReferenceEventData>(1, _omitFieldNames ? '' : 'data',
-        subBuilder: $1.ReferenceEventData.create)
+    ..aOM<$55.ReferenceEventData>(1, _omitFieldNames ? '' : 'data',
+        subBuilder: $55.ReferenceEventData.create)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReferenceWrittenEvent clone() =>
       ReferenceWrittenEvent()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ReferenceWrittenEvent copyWith(
           void Function(ReferenceWrittenEvent) updates) =>
       super.copyWith((message) => updates(message as ReferenceWrittenEvent))
@@ -281,18 +267,18 @@ class ReferenceWrittenEvent extends $pb.GeneratedMessage {
 
   /// The data associated with the event.
   @$pb.TagNumber(1)
-  $1.ReferenceEventData get data => $_getN(0);
+  $55.ReferenceEventData get data => $_getN(0);
   @$pb.TagNumber(1)
-  set data($1.ReferenceEventData v) {
-    setField(1, v);
+  set data($55.ReferenceEventData v) {
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasData() => $_has(0);
   @$pb.TagNumber(1)
-  void clearData() => clearField(1);
+  void clearData() => $_clearField(1);
   @$pb.TagNumber(1)
-  $1.ReferenceEventData ensureData() => $_ensure(0);
+  $55.ReferenceEventData ensureData() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
