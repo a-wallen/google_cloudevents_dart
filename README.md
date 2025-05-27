@@ -22,6 +22,64 @@ Then, run `pub get` or `flutter pub get` to install the package.
 
 For an example of using this package in a server application, see the example in this package.
 
+## Refreshing the Library
+
+This library's Dart files are generated from protobuf definitions. To refresh these files with the latest specifications, use the scripts provided in the `scripts` directory. The `cloudevents` directory, used during this process, is temporarily created and is excluded from Git.
+
+TLDR:
+
+```bash
+dart run scripts/remove_cloudevent_protos.dart && \
+  dart run scripts/clone_cloudevent_protos.dart && \
+  dart run scripts/generate_cloudevent_protos.dart && \
+  dart run scripts/generate_cloudevent_library.dart && \
+  dart format lib
+```
+
+**Prerequisites**:
+The refresh scripts require the following command-line tools to be installed and available in your system's PATH:
+*   `git`
+*   `sh`
+*   The Protocol Buffer compiler (defaults to `protoc`; its name/path can be specified as an argument in Step 2).
+
+Note: On Windows, you need to run these scripts using an environment that provides these Unix-like utilities, such as Git Bash or Windows Subsystem for Linux (WSL).
+
+
+Here's the typical workflow:
+
+1.  **Clone Protobuf Definitions**:
+
+    Run `dart run scripts/clone_cloudevent_protos.dart`
+
+    This script clones the `googleapis/google-cloudevents` repository into a local `cloudevents` directory, which will contain the `.proto` files.
+
+2.  **Generate Dart Files from Protobufs**:
+    
+    Run `dart run scripts/generate_cloudevent_protos.dart [optional_protoc_executable]`
+
+    This script generates Dart files from the `.proto` definitions. It executes helper scripts, invokes the Protocol Buffer compiler, and organizes the output files.
+    
+    The Protocol Buffer compiler executable can be provided as an argument and defaults to `protoc` if not specified.
+
+3.  **Generate Library Export Files**:
+
+    Run `dart run scripts/generate_cloudevent_library.dart`
+    
+    This script analyzes the generated Dart files in `lib/src` and creates or updates the main library export files in `lib`.
+
+4.  **Format Generated Code**:
+
+    Run `dart format lib`
+    
+    This command formats the generated Dart files in the `lib` directory to ensure consistent code style.
+
+
+**Cleanup**:
+
+To remove the `cloudevents` directory (created in Step 1), for instance, after generation or to ensure a fresh clone:
+Run `dart run scripts/remove_cloudevent_protos.dart`
+This will delete the directory and its contents. To re-clone the protobuf definitions if needed, run Step 1 again.
+
 ## Documentation
 
 For detailed documentation on all features and functionalities, please visit the following documentation.

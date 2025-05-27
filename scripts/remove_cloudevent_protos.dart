@@ -14,21 +14,26 @@ void setupLogging() {
   });
 }
 
-Future<void> removeCloudeventsDir() async {
+Future<bool> removeCloudeventsDir() async {
   final directory = Directory('cloudevents');
   if (directory.existsSync()) {
     try {
       await directory.delete(recursive: true);
       logger.info('The "cloudevents" directory has been successfully removed.');
-    } catch (e) {
-      logger.severe('Failed to remove the "cloudevents" directory: $e');
+      return true;
+    } catch (e, s) {
+      logger.severe('Failed to remove the "cloudevents" directory: $e\nStack trace:\n$s');
+      return false;
     }
   } else {
     logger.info('The "cloudevents" directory does not exist.');
+    return true;
   }
 }
 
 void main() async {
   setupLogging();
-  await removeCloudeventsDir();
+  if (!await removeCloudeventsDir()) {
+    exitCode = 1; // Propagate error state as a non-zero exit code
+  }
 }

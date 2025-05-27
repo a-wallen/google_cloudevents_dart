@@ -17,8 +17,8 @@ void setupLogging() {
   });
 }
 
-Future<void> cloneCloudEvents() async {
-  const repoUrl = 'git@github.com:googleapis/google-cloudevents.git';
+Future<bool> cloneCloudEvents() async {
+  const repoUrl = 'https://github.com/googleapis/google-cloudevents.git';
   const cloneDirectory = 'cloudevents';
 
   if (Directory(cloneDirectory).existsSync()) {
@@ -26,19 +26,23 @@ Future<void> cloneCloudEvents() async {
       'The directory "$cloneDirectory" already exists. '
       'Skipping clone operation.',
     );
-    return;
+    return true; // Considered success as the directory is present
   }
 
   final result = await Process.run('git', ['clone', repoUrl, cloneDirectory]);
 
   if (result.exitCode != 0) {
     _logger.severe('Error cloning the repository: ${result.stderr}');
+    return false;
   } else {
     _logger.info('Repository cloned into "$cloneDirectory".');
+    return true;
   }
 }
 
 void main() async {
   setupLogging();
-  await cloneCloudEvents();
+  if (!await cloneCloudEvents()) {
+    exitCode = 1; // Propagate error state as a non-zero exit code
+  }
 }

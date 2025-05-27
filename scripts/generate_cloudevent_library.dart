@@ -14,7 +14,14 @@ void main(List<String> arguments) async {
   const targetDirectory = 'lib/src';
 
   final fileSymbols = await analyzeDirectory(targetDirectory);
-  await generateLibraryFiles(fileSymbols, libDirectoryPath);
+  if (fileSymbols.isEmpty) {
+    logger.severe('Found no files to export');
+    exitCode = 1;
+  }
+
+  if (!await generateLibraryFiles(fileSymbols, libDirectoryPath)) {
+    exitCode = 1; // Propagate error state as a non-zero exit code
+  }
   logger.info('Exported symbols to library files');
 }
 
@@ -55,7 +62,7 @@ Future<Set<String>> analyzeFile(String filePath) async {
   return symbols;
 }
 
-Future<void> generateLibraryFiles(
+Future<bool> generateLibraryFiles(
     Map<String, Set<String>> fileSymbols, String libDirectoryPath) async {
   final libFiles = <String, StringBuffer>{};
 
@@ -81,8 +88,12 @@ Future<void> generateLibraryFiles(
       final srcReferencePath =
           p.relative(normalizedPath, from: '$libFileDirectory/..');
 
-      libFiles[libraryFilePath]!
-          .writeln("export '$srcReferencePath' show ${symbols.join(', ')};");
+      // Dart export statements require forward slashes for paths, regardless of the
+      // operating system. This ensures compatibility, especially on Windows.
+      final dartSrcReferencePath =
+          srcReferencePath.replaceAll(p.separator, '/');
+      libFiles[libraryFilePath]!.writeln(
+          "export '$dartSrcReferencePath' show ${symbols.join(', ')};");
     }
   });
 
@@ -93,6 +104,8 @@ Future<void> generateLibraryFiles(
     await file.writeAsString(libFiles[filePath]!.toString());
     logger.info('Created library file: $filePath');
   }
+
+  return true;
 }
 
 void setupLogging() {
