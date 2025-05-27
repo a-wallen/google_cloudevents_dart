@@ -17,11 +17,15 @@ void main(List<String> arguments) async {
   if (fileSymbols.isEmpty) {
     logger.severe('Found no files to export');
     exitCode = 1;
+    return;
   }
 
   if (!await generateLibraryFiles(fileSymbols, libDirectoryPath)) {
+    logger.severe('Failed to generate the library files');
     exitCode = 1; // Propagate error state as a non-zero exit code
+    return;
   }
+
   logger.info('Exported symbols to library files');
 }
 
